@@ -1,0 +1,68 @@
+{
+ "id": "THE-PER-002",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-02",
+ "topic": "電気陰性度",
+ "course": "化学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "compare"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の元素を，電気陰性度の大きい順に並べよ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "F＞O＞N＞C",
+    "grading": "並べる{C|N|O|F}=4>3>2>1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "周期表の右上ほど大きい（貴ガスを除く）．F が最大．　F 3.98，O 3.44，N 3.04，C 2.55．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "periodicity"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "比較問題",
+  "周期性"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "elements",
+  "key": "C"
+ }
+}

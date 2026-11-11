@@ -1,0 +1,69 @@
+{
+ "id": "INO-GPR-002",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-09",
+ "topic": "酸素の製法（過酸化水素）",
+ "course": "化学",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "equation"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応式の空欄 ア に当てはまる化学式を答えよ．\\\\（酸素の製法（過酸化水素）：酸化マンガン(IV) MnO₂ を触媒に）\\[\\ce{2H2O2} \\ce{->} \\ce{2H2O} + \\boxed{\\,\\text{ア}\\,}\\]"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$\\ce{O2}$",
+    "grading": "語{O2|酸素}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{2H2O2 -> 2H2O + O2 ^}$．MnO₂ は触媒（反応の前後で変化しない）（酸化還元）"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "gas-preparation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応式補完",
+  "反応式",
+  "酸化還元"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "gas-o2-h2o2"
+ }
+}

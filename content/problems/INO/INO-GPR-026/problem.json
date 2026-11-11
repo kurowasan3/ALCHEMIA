@@ -1,0 +1,68 @@
+{
+ "id": "INO-GPR-026",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-09",
+ "topic": "反応の型と気体の発生",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の気体の発生のうち，「弱酸の塩に強酸を加えて弱酸を遊離させる」反応で起こるものをすべて選べ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$\\ce{FeS}$ に希硫酸（$\\ce{H2S}$），$\\ce{CaCO3}$ に希塩酸（$\\ce{CO2}$），$\\ce{NaHSO3}$ に希硫酸（$\\ce{SO2}$）",
+    "grading": "すべて選ぶ{$\\ce{FeS}$ に希硫酸を加える|$\\ce{NaCl}$ に濃硫酸を加えて加熱する|$\\ce{CaCO3}$ に希塩酸を加える|$\\ce{Zn}$ に希硫酸を加える|$\\ce{NaHSO3}$ に希硫酸を加える|$\\ce{NH4Cl}$ と $\\ce{Ca(OH)2}$ を加熱する}=1,3,5"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "NaCl＋濃硫酸は揮発性の酸の遊離，Zn＋希硫酸は酸化還元，NH₄Cl＋Ca(OH)₂ は弱塩基の遊離．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "gas-preparation",
+  "acid-base"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "条件判断",
+  "反応の型"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions"
+ }
+}

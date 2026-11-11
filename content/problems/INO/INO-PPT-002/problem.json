@@ -1,0 +1,87 @@
+{
+ "id": "INO-PPT-002",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-08",
+ "topic": "銀イオンと塩化物イオン",
+ "course": "化学",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "硝酸銀水溶液に希塩酸を加えると沈殿が生じた．この沈殿の化学式と色を答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "沈殿の化学式"
+     },
+     {
+      "id": "2",
+      "tex": "沈殿の色"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{AgCl}$",
+    "grading": "語{AgCl|塩化銀}"
+   },
+   {
+    "id": "2",
+    "tex": "白色",
+    "grading": "語{白|白色}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{Ag+ + Cl- -> AgCl v}$．塩化銀は白色で，光によって分解し黒ずむ（感光性）．過剰のアンモニア水には $\\ce{[Ag(NH3)2]+}$ となって溶ける．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "precipitation",
+  "complex-ion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "ハロゲン化銀"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "ions",
+  "key": "Ag+"
+ }
+}

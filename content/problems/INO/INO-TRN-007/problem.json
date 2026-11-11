@@ -1,0 +1,70 @@
+{
+ "id": "INO-TRN-007",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-07",
+ "topic": "銀と希硝酸（係数）",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "equation"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応式の係数 a，b，c，d，e を答えよ．係数が 1 のときも 1 と書くこと．\\\\（銀と希硝酸）\\[\\boxed{\\,a\\,}\\,\\ce{Ag} + \\boxed{\\,b\\,}\\,\\ce{HNO3} \\ce{->} \\boxed{\\,c\\,}\\,\\ce{AgNO3} + \\boxed{\\,d\\,}\\,\\ce{NO} + \\boxed{\\,e\\,}\\,\\ce{H2O}\\]"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "a=3，b=4，c=3，d=1，e=2",
+    "grading": "a：3 ; b：4 ; c：3 ; d：1 ; e：2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{3Ag + 4HNO3 -> 3AgNO3 + NO + 2H2O}$．酸化剤・還元剤の半反応式をつくり，電子の数をそろえて足し合わせると係数が決まる．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "transition-metals",
+  "redox"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応式補完",
+  "反応式",
+  "係数"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "ag-hno3"
+ }
+}

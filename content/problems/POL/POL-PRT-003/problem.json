@@ -1,0 +1,93 @@
+{
+ "id": "POL-PRT-003",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-05",
+ "topic": "アミノ酸の電離と等電点",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "グリシン $\\ce{H2NCH2COOH}$ の水溶液について答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "強い酸性の水溶液中で最も多く存在するイオン"
+     },
+     {
+      "id": "2",
+      "tex": "強い塩基性の水溶液中で最も多く存在するイオン"
+     },
+     {
+      "id": "3",
+      "tex": "電荷の総和が 0 になる pH の名称"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{H3N+CH2COOH}$",
+    "grading": "選ぶ{$\\ce{H3N+CH2COOH}$|$\\ce{H3N+CH2COO-}$|$\\ce{H2NCH2COO-}$}=1"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{H2NCH2COO-}$",
+    "grading": "選ぶ{$\\ce{H3N+CH2COOH}$|$\\ce{H3N+CH2COO-}$|$\\ce{H2NCH2COO-}$}=3"
+   },
+   {
+    "id": "3",
+    "tex": "等電点",
+    "grading": "語{等電点}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "結晶中や中性付近では双性イオン $\\ce{H3N+CH2COO-}$．酸性では −COO⁻ が H⁺ を受け取って陽イオン，塩基性では −NH₃⁺ が H⁺ を失って陰イオンになる．電荷の総和が 0 になる pH を等電点といい，グリシンでは約 6.0．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "protein-amino",
+  "ionization-equilibrium"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "条件判断",
+  "アミノ酸",
+  "等電点"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

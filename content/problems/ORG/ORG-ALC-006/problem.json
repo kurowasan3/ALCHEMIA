@@ -1,0 +1,104 @@
+{
+ "id": "ORG-ALC-006",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-03",
+ "topic": "エタノールから酢酸エチル",
+ "course": "化学",
+ "level": 1,
+ "minutes": 4,
+ "format": [
+  "pathway"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応経路について，空欄に当てはまる化合物の名称（または示性式）を答えよ．また，（ア）の反応に用いる試薬・条件として適当なものを選べ．\\[\\ce{C2H5OH} \\xrightarrow{\\text{K₂Cr₂O₇}} \\boxed{\\,\\text{A}\\,} \\xrightarrow{\\text{酸化}} \\boxed{\\,\\text{B}\\,} \\xrightarrow{\\text{（ア）}} \\ce{CH3COOC2H5}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A に当てはまる化合物"
+     },
+     {
+      "id": "2",
+      "tex": "B に当てはまる化合物"
+     },
+     {
+      "id": "3",
+      "tex": "（ア）の試薬・条件"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "アセトアルデヒド　$\\ce{CH3CHO}$",
+    "grading": "A：語{アセトアルデヒド|CH3CHO}"
+   },
+   {
+    "id": "2",
+    "tex": "酢酸　$\\ce{CH3COOH}$",
+    "grading": "B：語{酢酸|CH3COOH}"
+   },
+   {
+    "id": "3",
+    "tex": "C₂H₅OH（濃硫酸触媒・加熱）",
+    "grading": "選ぶ{C₂H₅OH（濃硫酸触媒・加熱）|NaOH 水溶液（加熱）|K₂Cr₂O₇（硫酸酸性）|P₄O₁₀（脱水剤）}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "エタノール → アセトアルデヒド：K₂Cr₂O₇（硫酸酸性）（酸化）　$\\ce{3C2H5OH + K2Cr2O7 + 4H2SO4 -> 3CH3CHO + Cr2(SO4)3 + K2SO4 + 7H2O}$．第一級アルコール → アルデヒド"
+    },
+    {
+     "type": "text",
+     "tex": "アセトアルデヒド → 酢酸：酸化（O₂・触媒、K₂Cr₂O₇ など）（酸化）　$\\ce{2CH3CHO + O2 -> 2CH3COOH}$"
+    },
+    {
+     "type": "text",
+     "tex": "酢酸 → 酢酸エチル：C₂H₅OH（濃硫酸触媒・加熱）（エステル化）　$\\ce{CH3COOH + C2H5OH <=> CH3COOC2H5 + H2O}$．可逆反応"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "alcohol-carbonyl",
+  "carboxylic-ester"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応経路",
+  "エステル化"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "organic",
+  "key": "acetaldehyde"
+ }
+}

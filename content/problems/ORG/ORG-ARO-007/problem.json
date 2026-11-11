@@ -1,0 +1,93 @@
+{
+ "id": "ORG-ARO-007",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-05",
+ "topic": "側鎖の酸化",
+ "course": "化学",
+ "level": 1,
+ "minutes": 4,
+ "format": [
+  "pathway"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応経路について，空欄に当てはまる化合物の名称（または示性式）を答えよ．\\[\\ce{C6H4(CH3)2} \\xrightarrow{\\text{KMnO₄}} \\boxed{\\,\\text{A}\\,} \\xrightarrow{\\text{加熱}} \\boxed{\\,\\text{B}\\,}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A に当てはまる化合物"
+     },
+     {
+      "id": "2",
+      "tex": "B に当てはまる化合物"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "フタル酸　$\\ce{C6H4(COOH)2}$",
+    "grading": "A：語{フタル酸|C6H4(COOH)2}"
+   },
+   {
+    "id": "2",
+    "tex": "無水フタル酸　$\\ce{C6H4(CO)2O}$",
+    "grading": "B：語{無水フタル酸|C6H4(CO)2O}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "o-キシレン → フタル酸：KMnO₄（加熱）、その後に酸（酸化）"
+    },
+    {
+     "type": "text",
+     "tex": "フタル酸 → 無水フタル酸：加熱（脱水（分子内））　$\\ce{C6H4(COOH)2 -> C6H4(CO)2O + H2O}$"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "aromatic"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応経路",
+  "側鎖の酸化"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "idea": {
+  "tex": "ベンゼン環に直接結合した炭素は，KMnO₄ で酸化されると鎖の長さによらず −COOH になる．オルト位の 2 つの −COOH は加熱で分子内脱水する．"
+ },
+ "zukan": {
+  "page": "organic",
+  "key": "phthalic-acid"
+ }
+}

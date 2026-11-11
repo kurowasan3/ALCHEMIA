@@ -1,0 +1,68 @@
+{
+ "id": "THE-MOL-006",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-04",
+ "topic": "化学反応式の係数（プロパンの燃焼）",
+ "course": "化学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "equation"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の化学反応式の係数 a，b，c，d を，最も簡単な整数の比で答えよ．係数が 1 のときも 1 と書くこと．\\[\\boxed{\\,a\\,}\\,\\ce{C3H8} + \\boxed{\\,b\\,}\\,\\ce{O2} \\ce{->} \\boxed{\\,c\\,}\\,\\ce{CO2} + \\boxed{\\,d\\,}\\,\\ce{H2O}\\]"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "a=1，b=5，c=3，d=4",
+    "grading": "a：1 ; b：5 ; c：3 ; d：4"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{C3H8 + 5O2 -> 3CO2 + 4H2O}$．登場回数の少ない元素から係数を決め（未定係数法），最後に O をそろえる．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "mole",
+  "chemical-equation"
+ ],
+ "laws": [
+  "mass-conservation"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "反応式補完",
+  "反応式",
+  "係数"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

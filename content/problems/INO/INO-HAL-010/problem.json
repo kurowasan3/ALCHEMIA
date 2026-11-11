@@ -1,0 +1,91 @@
+{
+ "id": "INO-HAL-010",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-01",
+ "topic": "貴ガスの性質",
+ "course": "化学",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "貴ガスについて，次の問いに答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "貴ガスの価電子の数"
+     },
+     {
+      "id": "2",
+      "tex": "空気中に最も多く含まれる貴ガス"
+     },
+     {
+      "id": "3",
+      "tex": "気球や飛行船に使われる貴ガス"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "0 個（価電子として数えない）",
+    "grading": "約{0|1} [個]"
+   },
+   {
+    "id": "2",
+    "tex": "アルゴン Ar",
+    "grading": "語{アルゴン|Ar}"
+   },
+   {
+    "id": "3",
+    "tex": "ヘリウム He",
+    "grading": "語{ヘリウム|He}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "貴ガスの最外殻は閉殻（He は 2 個，ほかは 8 個）で安定なので，価電子は 0 個とする．空気中に約 1 ％ 含まれるのはアルゴン．ヘリウムは水素の次に軽く燃えないので，気球に使う．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "electron-config"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "貴ガス"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

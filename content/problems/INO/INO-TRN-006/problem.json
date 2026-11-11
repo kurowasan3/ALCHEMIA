@@ -1,0 +1,69 @@
+{
+ "id": "INO-TRN-006",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-07",
+ "topic": "過マンガン酸イオンの酸化作用",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "equation"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応式の空欄 ア に当てはまる化学式を答えよ．\\\\（過マンガン酸イオンの酸化作用：硫酸酸性）\\[\\ce{MnO4-} + \\ce{8H+} + \\ce{5e-} \\ce{->} \\boxed{\\,\\text{ア}\\,} + \\ce{4H2O}\\]"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$\\ce{Mn^2+}$",
+    "grading": "語{Mn^2+|マンガン(II)イオン}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{MnO4- + 8H+ + 5e- -> Mn^2+ + 4H2O}$．赤紫色 → ほぼ無色（淡桃色）（酸化還元）"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "transition-metals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応式補完",
+  "反応式",
+  "酸化還元"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "mn-oxidant"
+ }
+}

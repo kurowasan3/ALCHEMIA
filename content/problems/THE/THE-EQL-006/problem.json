@@ -1,0 +1,88 @@
+{
+ "id": "THE-EQL-006",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "一次反応と半減期",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "過酸化水素の分解 $\\ce{2H2O2 -> 2H2O + O2}$ は $v=k[\\mathrm{H_2O_2}]$ に従い，ある条件での半減期は 10 分である．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "30 分後に残っている H₂O₂ は，はじめの何 % か．"
+     },
+     {
+      "id": "2",
+      "tex": "初濃度を 2 倍にすると半減期はどうなるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$12.5\\,\\%$",
+    "grading": "約{12.5|3} [%]"
+   },
+   {
+    "id": "2",
+    "tex": "変わらない（10 分）",
+    "grading": "選ぶ{短くなる|変わらない|長くなる}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 30 分は半減期 3 回分：$\\left(\\frac12\\right)^3=\\frac18=12.5\\,\\%$．(2) 一次反応の半減期 $t_{1/2}=\\dfrac{\\log_e2}{k}$ は初濃度によらない．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "reaction-rate"
+ ],
+ "laws": [
+  "first-order"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "半減期"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "laws",
+  "key": "first-order"
+ }
+}

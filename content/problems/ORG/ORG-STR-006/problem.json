@@ -1,0 +1,91 @@
+{
+ "id": "ORG-STR-006",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-01",
+ "topic": "異性体の種類",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の関係にある異性体の名称を答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "エタノールとジメチルエーテル"
+     },
+     {
+      "id": "2",
+      "tex": "マレイン酸とフマル酸"
+     },
+     {
+      "id": "3",
+      "tex": "L-乳酸と D-乳酸"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "構造異性体",
+    "grading": "語{構造異性体}"
+   },
+   {
+    "id": "2",
+    "tex": "シス-トランス異性体（幾何異性体）",
+    "grading": "語{シス-トランス異性体|シストランス異性体|幾何異性体}"
+   },
+   {
+    "id": "3",
+    "tex": "鏡像異性体（光学異性体）",
+    "grading": "語{鏡像異性体|光学異性体}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "分子式は同じで構造式が違うのが構造異性体．立体的な配置だけが違う立体異性体のうち，二重結合のまわりの配置が違うのがシス-トランス異性体，不斉炭素原子のまわりの配置が鏡像の関係にあるのが鏡像異性体．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "organic-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "異性体"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

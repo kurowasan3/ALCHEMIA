@@ -1,0 +1,90 @@
+{
+ "id": "ORG-ALC-004",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-03",
+ "topic": "エタノールの脱水（温度で変わる生成物）",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "エタノールに濃硫酸を加えて加熱したときの主な生成物を答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "130〜140 ℃ に加熱したとき"
+     },
+     {
+      "id": "2",
+      "tex": "160〜170 ℃ に加熱したとき"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "ジエチルエーテル",
+    "grading": "語{ジエチルエーテル|C2H5OC2H5}"
+   },
+   {
+    "id": "2",
+    "tex": "エチレン",
+    "grading": "語{エチレン|CH2=CH2|C2H4}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "130〜140 ℃：2 分子の間で脱水（縮合）して $\\ce{2C2H5OH -> C2H5OC2H5 + H2O}$．"
+    },
+    {
+     "type": "text",
+     "tex": "160〜170 ℃：分子内で脱水（脱離）して $\\ce{C2H5OH -> CH2=CH2 + H2O}$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "alcohol-carbonyl"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "条件判断",
+  "脱水"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "organic",
+  "key": "ethanol"
+ }
+}

@@ -1,0 +1,1341 @@
+{
+ "schema": "alchemia.organic/1",
+ "compounds": [
+  {
+   "id": "methane",
+   "name": "メタン",
+   "cf": "CH4",
+   "smiles": "C",
+   "cls": "アルカン",
+   "note": "天然ガスの主成分"
+  },
+  {
+   "id": "chloromethane",
+   "name": "クロロメタン",
+   "cf": "CH3Cl",
+   "smiles": "CCl",
+   "cls": "ハロゲン化アルキル",
+   "note": "さらに置換が進むとジクロロメタン・クロロホルム・四塩化炭素"
+  },
+  {
+   "id": "ethane",
+   "name": "エタン",
+   "cf": "C2H6",
+   "smiles": "CC",
+   "cls": "アルカン"
+  },
+  {
+   "id": "ethylene",
+   "name": "エチレン",
+   "cf": "CH2=CH2",
+   "smiles": "C=C",
+   "cls": "アルケン",
+   "note": "植物ホルモン（果実の成熟）"
+  },
+  {
+   "id": "acetylene",
+   "name": "アセチレン",
+   "cf": "CH#CH",
+   "smiles": "C#C",
+   "cls": "アルキン",
+   "note": "直線形。酸素アセチレン炎（溶接）"
+  },
+  {
+   "id": "cac2",
+   "name": "炭化カルシウム",
+   "cf": "CaC2",
+   "smiles": "[C-]#[C-].[Ca+2]",
+   "cls": "無機",
+   "note": "カーバイド"
+  },
+  {
+   "id": "dibromoethane",
+   "name": "1,2-ジブロモエタン",
+   "cf": "CH2BrCH2Br",
+   "smiles": "BrCCBr",
+   "cls": "ハロゲン化アルキル",
+   "note": "臭素の付加で生じる（臭素の赤褐色が消える）"
+  },
+  {
+   "id": "polyethylene",
+   "name": "ポリエチレン",
+   "cf": "[CH2-CH2]_{n}",
+   "smiles": null,
+   "cls": "高分子",
+   "note": "付加重合"
+  },
+  {
+   "id": "vinyl-chloride",
+   "name": "塩化ビニル",
+   "cf": "CH2=CHCl",
+   "smiles": "C=CCl",
+   "cls": "ハロゲン化アルケン"
+  },
+  {
+   "id": "pvc",
+   "name": "ポリ塩化ビニル",
+   "cf": "[CH2-CHCl]_{n}",
+   "smiles": null,
+   "cls": "高分子"
+  },
+  {
+   "id": "vinyl-acetate",
+   "name": "酢酸ビニル",
+   "cf": "CH2=CHOCOCH3",
+   "smiles": "C=COC(C)=O",
+   "cls": "エステル"
+  },
+  {
+   "id": "pvac",
+   "name": "ポリ酢酸ビニル",
+   "cf": "[CH2-CH(OCOCH3)]_{n}",
+   "smiles": null,
+   "cls": "高分子",
+   "note": "けん化するとポリビニルアルコール"
+  },
+  {
+   "id": "ethanol",
+   "name": "エタノール",
+   "cf": "C2H5OH",
+   "smiles": "CCO",
+   "cls": "アルコール",
+   "note": "第一級アルコール"
+  },
+  {
+   "id": "diethyl-ether",
+   "name": "ジエチルエーテル",
+   "cf": "C2H5OC2H5",
+   "smiles": "CCOCC",
+   "cls": "エーテル",
+   "note": "揮発性・引火性が大きい。麻酔作用"
+  },
+  {
+   "id": "sodium-ethoxide",
+   "name": "ナトリウムエトキシド",
+   "cf": "C2H5ONa",
+   "smiles": "CC[O-].[Na+]",
+   "cls": "アルコキシド"
+  },
+  {
+   "id": "acetaldehyde",
+   "name": "アセトアルデヒド",
+   "cf": "CH3CHO",
+   "smiles": "CC=O",
+   "cls": "アルデヒド",
+   "note": "還元性（銀鏡反応・フェーリング液の還元）"
+  },
+  {
+   "id": "acetic-acid",
+   "name": "酢酸",
+   "cf": "CH3COOH",
+   "smiles": "CC(=O)O",
+   "cls": "カルボン酸",
+   "note": "純粋なものは冬に凍るので氷酢酸"
+  },
+  {
+   "id": "ethyl-acetate",
+   "name": "酢酸エチル",
+   "cf": "CH3COOC2H5",
+   "smiles": "CCOC(C)=O",
+   "cls": "エステル",
+   "note": "果実のような香り"
+  },
+  {
+   "id": "sodium-acetate",
+   "name": "酢酸ナトリウム",
+   "cf": "CH3COONa",
+   "smiles": "CC(=O)[O-].[Na+]",
+   "cls": "カルボン酸塩"
+  },
+  {
+   "id": "acetic-anhydride",
+   "name": "無水酢酸",
+   "cf": "(CH3CO)2O",
+   "smiles": "CC(=O)OC(C)=O",
+   "cls": "酸無水物",
+   "note": "アセチル化に使う"
+  },
+  {
+   "id": "methanol",
+   "name": "メタノール",
+   "cf": "CH3OH",
+   "smiles": "CO",
+   "cls": "アルコール",
+   "note": "有毒"
+  },
+  {
+   "id": "formaldehyde",
+   "name": "ホルムアルデヒド",
+   "cf": "HCHO",
+   "smiles": "C=O",
+   "cls": "アルデヒド",
+   "note": "水溶液はホルマリン"
+  },
+  {
+   "id": "formic-acid",
+   "name": "ギ酸",
+   "cf": "HCOOH",
+   "smiles": "O=CO",
+   "cls": "カルボン酸",
+   "note": "ホルミル基（アルデヒド基）をもち還元性がある"
+  },
+  {
+   "id": "propanol-2",
+   "name": "2-プロパノール",
+   "cf": "CH3CH(OH)CH3",
+   "smiles": "CC(C)O",
+   "cls": "アルコール",
+   "note": "第二級アルコール"
+  },
+  {
+   "id": "propanol-1",
+   "name": "1-プロパノール",
+   "cf": "CH3CH2CH2OH",
+   "smiles": "CCCO",
+   "cls": "アルコール",
+   "note": "第一級アルコール"
+  },
+  {
+   "id": "butanol-2",
+   "name": "2-ブタノール",
+   "cf": "CH3CH(OH)CH2CH3",
+   "smiles": "CCC(C)O",
+   "cls": "アルコール",
+   "note": "第二級アルコール。不斉炭素原子をもつ"
+  },
+  {
+   "id": "acetone",
+   "name": "アセトン",
+   "cf": "CH3COCH3",
+   "smiles": "CC(C)=O",
+   "cls": "ケトン",
+   "note": "還元性はない"
+  },
+  {
+   "id": "calcium-acetate",
+   "name": "酢酸カルシウム",
+   "cf": "(CH3COO)2Ca",
+   "smiles": "CC(=O)[O-].CC(=O)[O-].[Ca+2]",
+   "cls": "カルボン酸塩"
+  },
+  {
+   "id": "iodoform",
+   "name": "ヨードホルム",
+   "cf": "CHI3",
+   "smiles": "IC(I)I",
+   "cls": "ハロゲン化アルキル",
+   "note": "黄色・特異臭の沈殿"
+  },
+  {
+   "id": "benzene",
+   "name": "ベンゼン",
+   "cf": "C6H6",
+   "smiles": "c1ccccc1",
+   "cls": "芳香族炭化水素",
+   "note": "付加より置換が起こりやすい"
+  },
+  {
+   "id": "cyclohexane",
+   "name": "シクロヘキサン",
+   "cf": "C6H12",
+   "smiles": "C1CCCCC1",
+   "cls": "シクロアルカン"
+  },
+  {
+   "id": "hch",
+   "name": "1,2,3,4,5,6-ヘキサクロロシクロヘキサン",
+   "cf": "C6H6Cl6",
+   "smiles": "ClC1C(Cl)C(Cl)C(Cl)C(Cl)C1Cl",
+   "cls": "ハロゲン化物",
+   "note": "光を当てて付加"
+  },
+  {
+   "id": "nitrobenzene",
+   "name": "ニトロベンゼン",
+   "cf": "C6H5NO2",
+   "smiles": "O=[N+]([O-])c1ccccc1",
+   "cls": "ニトロ化合物",
+   "note": "淡黄色の液体。水より重い"
+  },
+  {
+   "id": "anilinium-chloride",
+   "name": "アニリン塩酸塩",
+   "cf": "C6H5NH3Cl",
+   "smiles": "[NH3+]c1ccccc1.[Cl-]",
+   "cls": "アミンの塩",
+   "note": "水に溶ける"
+  },
+  {
+   "id": "aniline",
+   "name": "アニリン",
+   "cf": "C6H5NH2",
+   "smiles": "Nc1ccccc1",
+   "cls": "アミン",
+   "note": "弱塩基。さらし粉で赤紫色"
+  },
+  {
+   "id": "acetanilide",
+   "name": "アセトアニリド",
+   "cf": "C6H5NHCOCH3",
+   "smiles": "CC(=O)Nc1ccccc1",
+   "cls": "アミド",
+   "note": "解熱鎮痛剤に使われた"
+  },
+  {
+   "id": "diazonium",
+   "name": "塩化ベンゼンジアゾニウム",
+   "cf": "C6H5N2Cl",
+   "smiles": "[N+](#N)c1ccccc1.[Cl-]",
+   "cls": "ジアゾニウム塩",
+   "note": "5 ℃ 以上で分解して N₂ を出す"
+  },
+  {
+   "id": "azo",
+   "name": "p-ヒドロキシアゾベンゼン",
+   "cf": "C6H5-N=N-C6H4OH",
+   "smiles": "Oc1ccc(N=Nc2ccccc2)cc1",
+   "cls": "アゾ化合物",
+   "note": "橙赤色（アゾ染料）"
+  },
+  {
+   "id": "chlorobenzene",
+   "name": "クロロベンゼン",
+   "cf": "C6H5Cl",
+   "smiles": "Clc1ccccc1",
+   "cls": "ハロゲン化物"
+  },
+  {
+   "id": "benzenesulfonic-acid",
+   "name": "ベンゼンスルホン酸",
+   "cf": "C6H5SO3H",
+   "smiles": "O=S(=O)(O)c1ccccc1",
+   "cls": "スルホン酸",
+   "note": "強酸"
+  },
+  {
+   "id": "sodium-benzenesulfonate",
+   "name": "ベンゼンスルホン酸ナトリウム",
+   "cf": "C6H5SO3Na",
+   "smiles": "O=S(=O)([O-])c1ccccc1.[Na+]",
+   "cls": "スルホン酸塩"
+  },
+  {
+   "id": "sodium-phenoxide",
+   "name": "ナトリウムフェノキシド",
+   "cf": "C6H5ONa",
+   "smiles": "[O-]c1ccccc1.[Na+]",
+   "cls": "フェノキシド",
+   "note": "水に溶ける"
+  },
+  {
+   "id": "phenol",
+   "name": "フェノール",
+   "cf": "C6H5OH",
+   "smiles": "Oc1ccccc1",
+   "cls": "フェノール類",
+   "note": "弱酸（炭酸より弱い）。塩化鉄(III)で紫色"
+  },
+  {
+   "id": "tribromophenol",
+   "name": "2,4,6-トリブロモフェノール",
+   "cf": "C6H2Br3OH",
+   "smiles": "Oc1c(Br)cc(Br)cc1Br",
+   "cls": "フェノール類",
+   "note": "白色沈殿"
+  },
+  {
+   "id": "cumene",
+   "name": "クメン",
+   "cf": "C6H5CH(CH3)2",
+   "smiles": "CC(C)c1ccccc1",
+   "cls": "芳香族炭化水素"
+  },
+  {
+   "id": "cumene-hp",
+   "name": "クメンヒドロペルオキシド",
+   "cf": "C6H5C(CH3)2OOH",
+   "smiles": "CC(C)(OO)c1ccccc1",
+   "cls": "過酸化物"
+  },
+  {
+   "id": "sodium-salicylate",
+   "name": "サリチル酸ナトリウム",
+   "cf": "C6H4(OH)COONa",
+   "smiles": "O=C([O-])c1ccccc1O.[Na+]",
+   "cls": "カルボン酸塩"
+  },
+  {
+   "id": "salicylic-acid",
+   "name": "サリチル酸",
+   "cf": "C6H4(OH)COOH",
+   "smiles": "O=C(O)c1ccccc1O",
+   "cls": "カルボン酸",
+   "note": "フェノール性 OH とカルボキシ基をもつ"
+  },
+  {
+   "id": "aspirin",
+   "name": "アセチルサリチル酸",
+   "cf": "C6H4(OCOCH3)COOH",
+   "smiles": "CC(=O)Oc1ccccc1C(=O)O",
+   "cls": "カルボン酸",
+   "note": "解熱鎮痛剤（アスピリン）。塩化鉄(III)で呈色しない"
+  },
+  {
+   "id": "methyl-salicylate",
+   "name": "サリチル酸メチル",
+   "cf": "C6H4(OH)COOCH3",
+   "smiles": "COC(=O)c1ccccc1O",
+   "cls": "エステル",
+   "note": "消炎鎮痛剤（湿布）。塩化鉄(III)で呈色する"
+  },
+  {
+   "id": "toluene",
+   "name": "トルエン",
+   "cf": "C6H5CH3",
+   "smiles": "Cc1ccccc1",
+   "cls": "芳香族炭化水素"
+  },
+  {
+   "id": "benzoic-acid",
+   "name": "安息香酸",
+   "cf": "C6H5COOH",
+   "smiles": "O=C(O)c1ccccc1",
+   "cls": "カルボン酸"
+  },
+  {
+   "id": "o-xylene",
+   "name": "o-キシレン",
+   "cf": "C6H4(CH3)2",
+   "smiles": "Cc1ccccc1C",
+   "cls": "芳香族炭化水素"
+  },
+  {
+   "id": "phthalic-acid",
+   "name": "フタル酸",
+   "cf": "C6H4(COOH)2",
+   "smiles": "O=C(O)c1ccccc1C(=O)O",
+   "cls": "カルボン酸",
+   "note": "加熱すると分子内で脱水"
+  },
+  {
+   "id": "phthalic-anhydride",
+   "name": "無水フタル酸",
+   "cf": "C6H4(CO)2O",
+   "smiles": "O=C1OC(=O)c2ccccc21",
+   "cls": "酸無水物"
+  },
+  {
+   "id": "p-xylene",
+   "name": "p-キシレン",
+   "cf": "C6H4(CH3)2",
+   "smiles": "Cc1ccc(C)cc1",
+   "cls": "芳香族炭化水素"
+  },
+  {
+   "id": "terephthalic-acid",
+   "name": "テレフタル酸",
+   "cf": "C6H4(COOH)2",
+   "smiles": "O=C(O)c1ccc(C(=O)O)cc1",
+   "cls": "カルボン酸",
+   "note": "PET の原料。分子内で脱水しない"
+  },
+  {
+   "id": "propene",
+   "name": "プロペン（プロピレン）",
+   "cf": "CH2=CHCH3",
+   "smiles": "C=CC",
+   "cls": "アルケン"
+  },
+  {
+   "id": "o-cresol",
+   "name": "o-クレゾール",
+   "cf": "C6H4(CH3)OH",
+   "smiles": "Cc1ccccc1O",
+   "cls": "フェノール類"
+  },
+  {
+   "id": "benzaldehyde",
+   "name": "ベンズアルデヒド",
+   "cf": "C6H5CHO",
+   "smiles": "O=Cc1ccccc1",
+   "cls": "アルデヒド",
+   "note": "空気中で酸化されて安息香酸になる"
+  },
+  {
+   "id": "benzyl-alcohol",
+   "name": "ベンジルアルコール",
+   "cf": "C6H5CH2OH",
+   "smiles": "OCc1ccccc1",
+   "cls": "アルコール",
+   "note": "フェノール類ではない"
+  },
+  {
+   "id": "glucose",
+   "name": "グルコース",
+   "cf": "C6H12O6",
+   "smiles": "OC[C@H]1OC(O)[C@H](O)[C@@H](O)[C@@H]1O",
+   "cls": "単糖",
+   "note": "水溶液中で鎖状構造（ホルミル基）をとる"
+  },
+  {
+   "id": "fructose",
+   "name": "フルクトース",
+   "cf": "C6H12O6",
+   "smiles": "OC[C@@]1(O)OC[C@@H](O)[C@@H](O)[C@@H]1O",
+   "cls": "単糖",
+   "note": "ケトースだが還元性を示す"
+  },
+  {
+   "id": "sucrose",
+   "name": "スクロース",
+   "cf": "C12H22O11",
+   "smiles": "OC[C@H]1O[C@H](O[C@]2(CO)O[C@H](CO)[C@@H](O)[C@@H]2O)[C@H](O)[C@@H](O)[C@@H]1O",
+   "cls": "二糖",
+   "note": "還元性を示さない"
+  },
+  {
+   "id": "maltose",
+   "name": "マルトース",
+   "cf": "C12H22O11",
+   "smiles": "OC[C@H]1O[C@H](O[C@H]2[C@H](O)[C@@H](O)C(O)O[C@@H]2CO)[C@H](O)[C@@H](O)[C@@H]1O",
+   "cls": "二糖",
+   "note": "還元性を示す"
+  },
+  {
+   "id": "starch",
+   "name": "デンプン",
+   "cf": "(C6H10O5)_{n}",
+   "smiles": null,
+   "cls": "多糖",
+   "note": "ヨウ素デンプン反応"
+  },
+  {
+   "id": "glycine",
+   "name": "グリシン",
+   "cf": "H2NCH2COOH",
+   "smiles": "NCC(=O)O",
+   "cls": "アミノ酸",
+   "note": "不斉炭素原子をもたない"
+  },
+  {
+   "id": "phenylalanine",
+   "name": "フェニルアラニン",
+   "cf": "C6H5CH2CH(NH2)COOH",
+   "smiles": "N[C@@H](Cc1ccccc1)C(=O)O",
+   "cls": "アミノ酸",
+   "note": "ベンゼン環をもつ"
+  },
+  {
+   "id": "cysteine",
+   "name": "システイン",
+   "cf": "HSCH2CH(NH2)COOH",
+   "smiles": "N[C@@H](CS)C(=O)O",
+   "cls": "アミノ酸",
+   "note": "硫黄を含む"
+  },
+  {
+   "id": "protein",
+   "name": "タンパク質（卵白）",
+   "cf": null,
+   "smiles": null,
+   "cls": "タンパク質"
+  }
+ ],
+ "maps": {
+  "aliphatic": {
+   "name": "脂肪族化合物",
+   "pos": {
+    "cac2": [
+     0,
+     0
+    ],
+    "benzene": [
+     0,
+     1
+    ],
+    "acetylene": [
+     2,
+     0
+    ],
+    "vinyl-chloride": [
+     4,
+     0
+    ],
+    "pvc": [
+     6,
+     0
+    ],
+    "vinyl-acetate": [
+     4,
+     1
+    ],
+    "pvac": [
+     6,
+     1
+    ],
+    "ethane": [
+     0,
+     2
+    ],
+    "ethylene": [
+     2,
+     2
+    ],
+    "polyethylene": [
+     0,
+     3
+    ],
+    "dibromoethane": [
+     0,
+     4
+    ],
+    "acetaldehyde": [
+     4,
+     3
+    ],
+    "ethanol": [
+     2,
+     4
+    ],
+    "diethyl-ether": [
+     0,
+     5
+    ],
+    "sodium-ethoxide": [
+     2,
+     6
+    ],
+    "acetic-acid": [
+     6,
+     3
+    ],
+    "iodoform": [
+     4,
+     5
+    ],
+    "ethyl-acetate": [
+     4,
+     6
+    ],
+    "sodium-acetate": [
+     6,
+     6
+    ],
+    "acetic-anhydride": [
+     8,
+     3
+    ],
+    "methane": [
+     8,
+     6
+    ],
+    "chloromethane": [
+     8,
+     7
+    ],
+    "methanol": [
+     8,
+     0
+    ],
+    "formaldehyde": [
+     10,
+     0
+    ],
+    "formic-acid": [
+     10,
+     1
+    ],
+    "propanol-2": [
+     8,
+     4
+    ],
+    "acetone": [
+     6,
+     4.9
+    ],
+    "calcium-acetate": [
+     8,
+     5
+    ]
+   }
+  },
+  "aromatic": {
+   "name": "芳香族化合物",
+   "pos": {
+    "cyclohexane": [
+     0,
+     0
+    ],
+    "hch": [
+     0,
+     1
+    ],
+    "benzene": [
+     2,
+     2
+    ],
+    "nitrobenzene": [
+     2,
+     0
+    ],
+    "anilinium-chloride": [
+     4,
+     0
+    ],
+    "aniline": [
+     6,
+     0
+    ],
+    "acetanilide": [
+     8,
+     0
+    ],
+    "diazonium": [
+     6,
+     1
+    ],
+    "azo": [
+     8,
+     1
+    ],
+    "chlorobenzene": [
+     4,
+     2
+    ],
+    "phenol": [
+     6,
+     2.6
+    ],
+    "tribromophenol": [
+     8,
+     2.6
+    ],
+    "benzenesulfonic-acid": [
+     2,
+     3.6
+    ],
+    "sodium-benzenesulfonate": [
+     2,
+     5
+    ],
+    "sodium-phenoxide": [
+     4,
+     3.6
+    ],
+    "sodium-salicylate": [
+     4,
+     5
+    ],
+    "salicylic-acid": [
+     6,
+     5
+    ],
+    "aspirin": [
+     8,
+     4.4
+    ],
+    "methyl-salicylate": [
+     8,
+     5.6
+    ],
+    "cumene": [
+     0,
+     4
+    ],
+    "cumene-hp": [
+     0,
+     6
+    ],
+    "acetone": [
+     2,
+     6.5
+    ],
+    "toluene": [
+     4,
+     7
+    ],
+    "benzoic-acid": [
+     6,
+     7
+    ],
+    "o-xylene": [
+     4,
+     8
+    ],
+    "phthalic-acid": [
+     6,
+     8
+    ],
+    "phthalic-anhydride": [
+     8,
+     8
+    ],
+    "p-xylene": [
+     4,
+     9
+    ],
+    "terephthalic-acid": [
+     6,
+     9
+    ]
+   }
+  }
+ },
+ "reactions": [
+  {
+   "id": "r001",
+   "from": "cac2",
+   "to": "acetylene",
+   "reagent": "水",
+   "type": "加水分解",
+   "eq": "CaC2 + 2H2O -> Ca(OH)2 + C2H2",
+   "map": "aliphatic"
+  },
+  {
+   "id": "r002",
+   "from": "acetylene",
+   "to": "vinyl-chloride",
+   "reagent": "HCl（触媒）",
+   "type": "付加",
+   "eq": "CH#CH + HCl -> CH2=CHCl",
+   "map": "aliphatic"
+  },
+  {
+   "id": "r003",
+   "from": "vinyl-chloride",
+   "to": "pvc",
+   "reagent": "付加重合",
+   "type": "付加重合",
+   "map": "aliphatic"
+  },
+  {
+   "id": "r004",
+   "from": "acetylene",
+   "to": "vinyl-acetate",
+   "reagent": "CH₃COOH（触媒）",
+   "type": "付加",
+   "eq": "CH#CH + CH3COOH -> CH2=CHOCOCH3",
+   "map": "aliphatic"
+  },
+  {
+   "id": "r005",
+   "from": "vinyl-acetate",
+   "to": "pvac",
+   "reagent": "付加重合",
+   "type": "付加重合",
+   "map": "aliphatic"
+  },
+  {
+   "id": "r006",
+   "from": "acetylene",
+   "to": "acetaldehyde",
+   "reagent": "水（HgSO₄ 触媒）",
+   "type": "付加",
+   "eq": "CH#CH + H2O -> CH3CHO",
+   "note": "不安定なビニルアルコール CH₂=CHOH を経て異性化する",
+   "map": "aliphatic"
+  },
+  {
+   "id": "r007",
+   "from": "acetylene",
+   "to": "ethylene",
+   "reagent": "H₂（Pt・Ni 触媒）",
+   "type": "付加（還元）",
+   "eq": "CH#CH + H2 -> CH2=CH2",
+   "map": "aliphatic"
+  },
+  {
+   "id": "r008",
+   "from": "acetylene",
+   "to": "benzene",
+   "reagent": "赤熱した鉄",
+   "type": "三分子重合",
+   "eq": "3C2H2 -> C6H6",
+   "map": "both"
+  },
+  {
+   "id": "r009",
+   "from": "ethylene",
+   "to": "ethane",
+   "reagent": "H₂（Pt・Ni 触媒）",
+   "type": "付加（還元）",
+   "eq": "CH2=CH2 + H2 -> C2H6",
+   "map": "aliphatic"
+  },
+  {
+   "id": "r010",
+   "from": "ethylene",
+   "to": "polyethylene",
+   "reagent": "付加重合",
+   "type": "付加重合",
+   "map": "aliphatic"
+  },
+  {
+   "id": "r011",
+   "from": "ethylene",
+   "to": "dibromoethane",
+   "reagent": "Br₂",
+   "type": "付加",
+   "eq": "CH2=CH2 + Br2 -> CH2BrCH2Br",
+   "note": "臭素の赤褐色が消える（不飽和結合の検出）",
+   "map": "aliphatic"
+  },
+  {
+   "id": "r012",
+   "from": "ethylene",
+   "to": "ethanol",
+   "reagent": "H₂O（H₃PO₄ 触媒）",
+   "type": "付加",
+   "eq": "CH2=CH2 + H2O -> C2H5OH",
+   "note": "エタノールの工業的製法",
+   "map": "aliphatic"
+  },
+  {
+   "id": "r013",
+   "from": "ethylene",
+   "to": "acetaldehyde",
+   "reagent": "O₂（PdCl₂・CuCl₂ 触媒）",
+   "type": "酸化",
+   "eq": "2CH2=CH2 + O2 -> 2CH3CHO",
+   "note": "アセトアルデヒドの工業的製法",
+   "map": "aliphatic"
+  },
+  {
+   "id": "r014",
+   "from": "ethanol",
+   "to": "ethylene",
+   "reagent": "濃硫酸・160〜170 ℃",
+   "type": "脱水（分子内）",
+   "eq": "C2H5OH -> CH2=CH2 + H2O",
+   "map": "aliphatic"
+  },
+  {
+   "id": "r015",
+   "from": "ethanol",
+   "to": "diethyl-ether",
+   "reagent": "濃硫酸・130〜140 ℃",
+   "type": "脱水（分子間）",
+   "eq": "2C2H5OH -> C2H5OC2H5 + H2O",
+   "note": "縮合",
+   "map": "aliphatic"
+  },
+  {
+   "id": "r016",
+   "from": "ethanol",
+   "to": "sodium-ethoxide",
+   "reagent": "Na",
+   "type": "置換（H₂ 発生）",
+   "eq": "2C2H5OH + 2Na -> 2C2H5ONa + H2",
+   "note": "ヒドロキシ基の検出",
+   "map": "aliphatic"
+  },
+  {
+   "id": "r017",
+   "from": "ethanol",
+   "to": "acetaldehyde",
+   "reagent": "K₂Cr₂O₇（硫酸酸性）",
+   "type": "酸化",
+   "eq": "3C2H5OH + K2Cr2O7 + 4H2SO4 -> 3CH3CHO + Cr2(SO4)3 + K2SO4 + 7H2O",
+   "note": "第一級アルコール → アルデヒド",
+   "map": "aliphatic"
+  },
+  {
+   "id": "r018",
+   "from": "ethanol",
+   "to": "iodoform",
+   "reagent": "I₂・NaOH 水溶液",
+   "type": "ヨードホルム反応",
+   "eq": "C2H5OH + 4I2 + 6NaOH -> CHI3 + HCOONa + 5NaI + 5H2O",
+   "note": "CH₃CH(OH)− をもつ",
+   "map": "aliphatic"
+  },
+  {
+   "id": "r019",
+   "from": "acetaldehyde",
+   "to": "acetic-acid",
+   "reagent": "酸化（O₂・触媒、K₂Cr₂O₇ など）",
+   "type": "酸化",
+   "eq": "2CH3CHO + O2 -> 2CH3COOH",
+   "map": "aliphatic"
+  },
+  {
+   "id": "r020",
+   "from": "acetaldehyde",
+   "to": "iodoform",
+   "reagent": "I₂・NaOH 水溶液",
+   "type": "ヨードホルム反応",
+   "eq": "CH3CHO + 3I2 + 4NaOH -> CHI3 + HCOONa + 3NaI + 3H2O",
+   "note": "CH₃CO− をもつ",
+   "map": "aliphatic"
+  },
+  {
+   "id": "r021",
+   "from": "acetic-acid",
+   "to": "ethyl-acetate",
+   "reagent": "C₂H₅OH（濃硫酸触媒・加熱）",
+   "type": "エステル化",
+   "eq": "CH3COOH + C2H5OH <=> CH3COOC2H5 + H2O",
+   "note": "可逆反応",
+   "map": "aliphatic"
+  },
+  {
+   "id": "r022",
+   "from": "ethyl-acetate",
+   "to": "sodium-acetate",
+   "reagent": "NaOH 水溶液（加熱）",
+   "type": "けん化",
+   "eq": "CH3COOC2H5 + NaOH -> CH3COONa + C2H5OH",
+   "note": "エタノールも生じる",
+   "map": "aliphatic"
+  },
+  {
+   "id": "r023",
+   "from": "acetic-acid",
+   "to": "sodium-acetate",
+   "reagent": "NaOH",
+   "type": "中和",
+   "eq": "CH3COOH + NaOH -> CH3COONa + H2O",
+   "map": "aliphatic"
+  },
+  {
+   "id": "r024",
+   "from": "acetic-acid",
+   "to": "acetic-anhydride",
+   "reagent": "P₄O₁₀（脱水剤）",
+   "type": "脱水（分子間）",
+   "eq": "2CH3COOH -> (CH3CO)2O + H2O",
+   "map": "aliphatic"
+  },
+  {
+   "id": "r025",
+   "from": "sodium-acetate",
+   "to": "methane",
+   "reagent": "NaOH（固体）・加熱",
+   "type": "脱炭酸",
+   "eq": "CH3COONa + NaOH -> CH4 + Na2CO3",
+   "map": "aliphatic"
+  },
+  {
+   "id": "r026",
+   "from": "methane",
+   "to": "chloromethane",
+   "reagent": "Cl₂・光",
+   "type": "置換",
+   "eq": "CH4 + Cl2 -> CH3Cl + HCl",
+   "map": "aliphatic"
+  },
+  {
+   "id": "r027",
+   "from": "methanol",
+   "to": "formaldehyde",
+   "reagent": "熱した CuO",
+   "type": "酸化",
+   "eq": "CH3OH + CuO -> HCHO + Cu + H2O",
+   "map": "aliphatic"
+  },
+  {
+   "id": "r028",
+   "from": "formaldehyde",
+   "to": "formic-acid",
+   "reagent": "酸化",
+   "type": "酸化",
+   "eq": "2HCHO + O2 -> 2HCOOH",
+   "map": "aliphatic"
+  },
+  {
+   "id": "r029",
+   "from": "propanol-2",
+   "to": "acetone",
+   "reagent": "K₂Cr₂O₇（硫酸酸性）",
+   "type": "酸化",
+   "note": "第二級アルコール → ケトン",
+   "map": "aliphatic"
+  },
+  {
+   "id": "r030",
+   "from": "calcium-acetate",
+   "to": "acetone",
+   "reagent": "乾留（加熱）",
+   "type": "熱分解",
+   "eq": "(CH3COO)2Ca -> CH3COCH3 + CaCO3",
+   "map": "aliphatic"
+  },
+  {
+   "id": "r031",
+   "from": "acetone",
+   "to": "iodoform",
+   "reagent": "I₂・NaOH 水溶液",
+   "type": "ヨードホルム反応",
+   "eq": "CH3COCH3 + 3I2 + 4NaOH -> CHI3 + CH3COONa + 3NaI + 3H2O",
+   "map": "aliphatic"
+  },
+  {
+   "id": "r032",
+   "from": "benzene",
+   "to": "cyclohexane",
+   "reagent": "H₂（Pt・Ni 触媒、加圧）",
+   "type": "付加",
+   "eq": "C6H6 + 3H2 -> C6H12",
+   "map": "aromatic"
+  },
+  {
+   "id": "r033",
+   "from": "benzene",
+   "to": "hch",
+   "reagent": "Cl₂・光",
+   "type": "付加",
+   "eq": "C6H6 + 3Cl2 -> C6H6Cl6",
+   "map": "aromatic"
+  },
+  {
+   "id": "r034",
+   "from": "benzene",
+   "to": "nitrobenzene",
+   "reagent": "濃硝酸・濃硫酸（混酸）、約 60 ℃",
+   "type": "ニトロ化（置換）",
+   "eq": "C6H6 + HNO3 -> C6H5NO2 + H2O",
+   "map": "aromatic"
+  },
+  {
+   "id": "r035",
+   "from": "nitrobenzene",
+   "to": "anilinium-chloride",
+   "reagent": "Sn・濃塩酸",
+   "type": "還元",
+   "eq": "2C6H5NO2 + 3Sn + 14HCl -> 2C6H5NH3Cl + 3SnCl4 + 4H2O",
+   "map": "aromatic"
+  },
+  {
+   "id": "r036",
+   "from": "anilinium-chloride",
+   "to": "aniline",
+   "reagent": "NaOH 水溶液",
+   "type": "弱塩基の遊離",
+   "eq": "C6H5NH3Cl + NaOH -> C6H5NH2 + NaCl + H2O",
+   "map": "aromatic"
+  },
+  {
+   "id": "r037",
+   "from": "aniline",
+   "to": "acetanilide",
+   "reagent": "無水酢酸",
+   "type": "アセチル化",
+   "eq": "C6H5NH2 + (CH3CO)2O -> C6H5NHCOCH3 + CH3COOH",
+   "note": "アミド結合",
+   "map": "aromatic"
+  },
+  {
+   "id": "r038",
+   "from": "aniline",
+   "to": "diazonium",
+   "reagent": "NaNO₂・HCl、0〜5 ℃",
+   "type": "ジアゾ化",
+   "eq": "C6H5NH2 + NaNO2 + 2HCl -> C6H5N2Cl + NaCl + 2H2O",
+   "note": "氷で冷やす",
+   "map": "aromatic"
+  },
+  {
+   "id": "r039",
+   "from": "diazonium",
+   "to": "phenol",
+   "reagent": "水と加温（5 ℃ 以上）",
+   "type": "加水分解",
+   "eq": "C6H5N2Cl + H2O -> C6H5OH + N2 + HCl",
+   "note": "N₂ が発生する",
+   "map": "aromatic"
+  },
+  {
+   "id": "r040",
+   "from": "diazonium",
+   "to": "azo",
+   "reagent": "ナトリウムフェノキシド",
+   "type": "カップリング（ジアゾカップリング）",
+   "eq": "C6H5N2Cl + C6H5ONa -> C6H5N=NC6H4OH + NaCl",
+   "map": "aromatic"
+  },
+  {
+   "id": "r041",
+   "from": "benzene",
+   "to": "chlorobenzene",
+   "reagent": "Cl₂（Fe 触媒）",
+   "type": "塩素化（置換）",
+   "eq": "C6H6 + Cl2 -> C6H5Cl + HCl",
+   "map": "aromatic"
+  },
+  {
+   "id": "r042",
+   "from": "chlorobenzene",
+   "to": "sodium-phenoxide",
+   "reagent": "NaOH 水溶液・高温高圧",
+   "type": "置換",
+   "eq": "C6H5Cl + 2NaOH -> C6H5ONa + NaCl + H2O",
+   "map": "aromatic"
+  },
+  {
+   "id": "r043",
+   "from": "benzene",
+   "to": "benzenesulfonic-acid",
+   "reagent": "濃硫酸・加熱",
+   "type": "スルホン化（置換）",
+   "eq": "C6H6 + H2SO4 -> C6H5SO3H + H2O",
+   "map": "aromatic"
+  },
+  {
+   "id": "r044",
+   "from": "benzenesulfonic-acid",
+   "to": "sodium-benzenesulfonate",
+   "reagent": "NaOH",
+   "type": "中和",
+   "eq": "C6H5SO3H + NaOH -> C6H5SO3Na + H2O",
+   "map": "aromatic"
+  },
+  {
+   "id": "r045",
+   "from": "sodium-benzenesulfonate",
+   "to": "sodium-phenoxide",
+   "reagent": "NaOH（固体）・融解",
+   "type": "アルカリ融解",
+   "eq": "C6H5SO3Na + 2NaOH -> C6H5ONa + Na2SO3 + H2O",
+   "map": "aromatic"
+  },
+  {
+   "id": "r046",
+   "from": "phenol",
+   "to": "sodium-phenoxide",
+   "reagent": "NaOH 水溶液",
+   "type": "中和",
+   "eq": "C6H5OH + NaOH -> C6H5ONa + H2O",
+   "map": "aromatic"
+  },
+  {
+   "id": "r047",
+   "from": "sodium-phenoxide",
+   "to": "phenol",
+   "reagent": "CO₂ と水（または塩酸）",
+   "type": "弱酸の遊離",
+   "eq": "C6H5ONa + CO2 + H2O -> C6H5OH + NaHCO3",
+   "note": "フェノールは炭酸より弱い酸",
+   "map": "aromatic"
+  },
+  {
+   "id": "r048",
+   "from": "phenol",
+   "to": "tribromophenol",
+   "reagent": "臭素水",
+   "type": "置換",
+   "eq": "C6H5OH + 3Br2 -> C6H2Br3OH + 3HBr",
+   "note": "白色沈殿",
+   "map": "aromatic"
+  },
+  {
+   "id": "r049",
+   "from": "benzene",
+   "to": "cumene",
+   "reagent": "プロペン（触媒）",
+   "type": "付加",
+   "eq": "C6H6 + CH2=CHCH3 -> C6H5CH(CH3)2",
+   "map": "aromatic"
+  },
+  {
+   "id": "r050",
+   "from": "cumene",
+   "to": "cumene-hp",
+   "reagent": "O₂",
+   "type": "酸化",
+   "eq": "C6H5CH(CH3)2 + O2 -> C6H5C(CH3)2OOH",
+   "map": "aromatic"
+  },
+  {
+   "id": "r051",
+   "from": "cumene-hp",
+   "to": "phenol",
+   "reagent": "希硫酸",
+   "type": "分解",
+   "eq": "C6H5C(CH3)2OOH -> C6H5OH + CH3COCH3",
+   "note": "クメン法：アセトンも同時に得られる",
+   "map": "aromatic"
+  },
+  {
+   "id": "r052",
+   "from": "cumene-hp",
+   "to": "acetone",
+   "reagent": "希硫酸",
+   "type": "分解",
+   "eq": "C6H5C(CH3)2OOH -> C6H5OH + CH3COCH3",
+   "note": "クメン法",
+   "map": "aromatic"
+  },
+  {
+   "id": "r053",
+   "from": "sodium-phenoxide",
+   "to": "sodium-salicylate",
+   "reagent": "CO₂・高温高圧",
+   "type": "付加（コルベ・シュミット反応）",
+   "eq": "C6H5ONa + CO2 -> C6H4(OH)COONa",
+   "map": "aromatic"
+  },
+  {
+   "id": "r054",
+   "from": "sodium-salicylate",
+   "to": "salicylic-acid",
+   "reagent": "希硫酸（または塩酸）",
+   "type": "弱酸の遊離",
+   "eq": "C6H4(OH)COONa + HCl -> C6H4(OH)COOH + NaCl",
+   "map": "aromatic"
+  },
+  {
+   "id": "r055",
+   "from": "salicylic-acid",
+   "to": "aspirin",
+   "reagent": "無水酢酸",
+   "type": "アセチル化",
+   "eq": "C6H4(OH)COOH + (CH3CO)2O -> C6H4(OCOCH3)COOH + CH3COOH",
+   "note": "フェノール性 OH がエステルになる",
+   "map": "aromatic"
+  },
+  {
+   "id": "r056",
+   "from": "salicylic-acid",
+   "to": "methyl-salicylate",
+   "reagent": "メタノール（濃硫酸触媒）",
+   "type": "エステル化",
+   "eq": "C6H4(OH)COOH + CH3OH -> C6H4(OH)COOCH3 + H2O",
+   "note": "カルボキシ基がエステルになる",
+   "map": "aromatic"
+  },
+  {
+   "id": "r057",
+   "from": "toluene",
+   "to": "benzoic-acid",
+   "reagent": "KMnO₄（加熱）、その後に酸",
+   "type": "酸化",
+   "note": "ベンゼン環に結合した炭素は、鎖の長さによらず COOH になる",
+   "map": "aromatic"
+  },
+  {
+   "id": "r058",
+   "from": "o-xylene",
+   "to": "phthalic-acid",
+   "reagent": "KMnO₄（加熱）、その後に酸",
+   "type": "酸化",
+   "map": "aromatic"
+  },
+  {
+   "id": "r059",
+   "from": "phthalic-acid",
+   "to": "phthalic-anhydride",
+   "reagent": "加熱",
+   "type": "脱水（分子内）",
+   "eq": "C6H4(COOH)2 -> C6H4(CO)2O + H2O",
+   "map": "aromatic"
+  },
+  {
+   "id": "r060",
+   "from": "p-xylene",
+   "to": "terephthalic-acid",
+   "reagent": "KMnO₄（加熱）、その後に酸",
+   "type": "酸化",
+   "map": "aromatic"
+  }
+ ]
+}

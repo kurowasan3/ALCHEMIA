@@ -1,0 +1,70 @@
+{
+ "id": "THE-THC-004",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-10",
+ "topic": "生成エンタルピーから燃焼エンタルピー",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "生成エンタルピー（kJ/mol）をメタン −75，二酸化炭素 −394，水（液体）−286 として，メタンの燃焼エンタルピーを求めよ（生じる水は液体）．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$-891\\,\\mathrm{kJ/mol}$",
+    "grading": "約{-891|3} [kJ/mol]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{CH4 + 2O2 -> CO2 + 2H2O(l)}$．$\\Delta H=(-394+2\\times(-286))-(-75)=-891\\,\\mathrm{kJ/mol}$（O₂ は単体なので 0）．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "enthalpy"
+ ],
+ "laws": [
+  "formation-enthalpy"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "生成エンタルピー"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "laws",
+  "key": "formation-enthalpy"
+ }
+}

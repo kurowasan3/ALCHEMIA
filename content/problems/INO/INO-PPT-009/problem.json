@@ -1,0 +1,68 @@
+{
+ "id": "INO-PPT-009",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-08",
+ "topic": "酸性で硫化水素により沈殿するイオン",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次のイオンを含む水溶液を塩酸で酸性にしてから硫化水素を通じた．沈殿が生じるものをすべて選べ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$\\ce{Cu^2+}$，$\\ce{Pb^2+}$，$\\ce{Cd^2+}$",
+    "grading": "すべて選ぶ{$\\ce{Cu^2+}$|$\\ce{Zn^2+}$|$\\ce{Pb^2+}$|$\\ce{Fe^2+}$|$\\ce{Cd^2+}$|$\\ce{Ni^2+}$}=1,3,5"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "酸性では $\\ce{S^2-}$ の濃度が小さいので，溶解度積の非常に小さい硫化物（イオン化傾向が Sn 以下の金属：CuS・PbS・CdS・Ag₂S など）だけが沈殿する．ZnS・FeS・NiS は塩基性で沈殿する．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "precipitation",
+  "complex-ion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "条件判断",
+  "イオンの分離"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "ions"
+ }
+}

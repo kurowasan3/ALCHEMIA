@@ -1,0 +1,68 @@
+{
+ "id": "THE-PER-003",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-02",
+ "topic": "原子半径",
+ "course": "化学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "compare"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の元素を，原子半径の大きい順に並べよ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "K＞Na＞Mg＞Al",
+    "grading": "並べる{Na|Mg|Al|K}=4>1>2>3"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "同じ周期では右ほど原子核の正電荷が大きく，電子が強く引かれて小さくなる．同じ族では下ほど電子殻が増えて大きくなる．　K 220.0 pm，Na 180.0 pm，Mg 150.0 pm，Al 125.0 pm．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "periodicity"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "比較問題",
+  "周期性"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "elements",
+  "key": "Na"
+ }
+}

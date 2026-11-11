@@ -1,0 +1,68 @@
+{
+ "id": "INO-OXS-005",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-02",
+ "topic": "接触法（硫酸）",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "equation"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "接触法（硫酸）の反応式の空欄 ア に当てはまる化学式を答えよ．\\[\\ce{2SO2} + \\ce{O2} \\ce{<=>} 2\\boxed{\\,\\text{ア}\\,}\\]"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$\\ce{SO3}$",
+    "grading": "語{SO3|三酸化硫黄}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{2SO2 + O2 <=> 2SO3}$．V₂O₅ 触媒"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "industrial-process"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応式補完",
+  "工業的製法"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "ind-contact"
+ }
+}

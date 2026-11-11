@@ -1,0 +1,69 @@
+{
+ "id": "THE-ATM-005",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-01",
+ "topic": "ネオンと同じ電子配置のイオン",
+ "course": "化学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次のイオンのうち，ネオン Ne と同じ電子配置をもつものをすべて選べ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$\\ce{Na+}$，$\\ce{Mg^2+}$，$\\ce{F-}$，$\\ce{O^2-}$",
+    "grading": "すべて選ぶ{$\\ce{Na+}$|$\\ce{Mg^2+}$|$\\ce{Cl-}$|$\\ce{F-}$|$\\ce{K+}$|$\\ce{O^2-}$|$\\ce{S^2-}$}=1,2,4,6"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "電子の数が 10 個（K2 L8）になるイオン．Cl⁻・K⁺・S²⁻ は電子 18 個でアルゴンと同じ電子配置．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "electron-config"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "条件判断",
+  "イオン",
+  "電子配置"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "elements",
+  "key": "Ne"
+ }
+}

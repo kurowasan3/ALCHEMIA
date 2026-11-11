@@ -1,0 +1,1283 @@
+{
+ "schema": "alchemia.reactions/1",
+ "types": {
+  "redox": "酸化還元",
+  "acid-base": "中和・酸塩基",
+  "weak-acid": "弱酸の遊離",
+  "weak-base": "弱塩基の遊離",
+  "volatile": "揮発性の酸の遊離",
+  "thermal": "熱分解",
+  "dehydration": "脱水",
+  "complex": "錯イオンの生成",
+  "precip": "沈殿の生成",
+  "combination": "化合",
+  "electrolysis": "電気分解",
+  "catalytic": "触媒反応",
+  "equilibrium": "平衡",
+  "hydrolysis": "加水分解"
+ },
+ "gases": {
+  "H2": {
+   "name": "水素",
+   "color": "無色",
+   "smell": "無臭",
+   "nature": "中性",
+   "sol": "水に溶けにくい",
+   "collect": "水上置換",
+   "dry": [
+    "濃硫酸",
+    "塩化カルシウム",
+    "ソーダ石灰"
+   ],
+   "test": "マッチの火を近づけると音を立てて燃える"
+  },
+  "O2": {
+   "name": "酸素",
+   "color": "無色",
+   "smell": "無臭",
+   "nature": "中性",
+   "sol": "水に溶けにくい",
+   "collect": "水上置換",
+   "dry": [
+    "濃硫酸",
+    "塩化カルシウム",
+    "ソーダ石灰"
+   ],
+   "test": "火のついた線香を入れると激しく燃える"
+  },
+  "O3": {
+   "name": "オゾン",
+   "color": "淡青色",
+   "smell": "特異臭",
+   "nature": "中性",
+   "sol": "水に少し溶ける",
+   "collect": null,
+   "dry": [],
+   "test": "湿ったヨウ化カリウムデンプン紙を青くする（強い酸化作用）"
+  },
+  "N2": {
+   "name": "窒素",
+   "color": "無色",
+   "smell": "無臭",
+   "nature": "中性",
+   "sol": "水に溶けにくい",
+   "collect": "水上置換",
+   "dry": [
+    "濃硫酸",
+    "塩化カルシウム",
+    "ソーダ石灰"
+   ],
+   "test": ""
+  },
+  "Cl2": {
+   "name": "塩素",
+   "color": "黄緑色",
+   "smell": "刺激臭",
+   "nature": "酸性",
+   "sol": "水に溶ける",
+   "collect": "下方置換",
+   "dry": [
+    "濃硫酸",
+    "塩化カルシウム"
+   ],
+   "test": "湿ったヨウ化カリウムデンプン紙を青くする。有毒"
+  },
+  "HCl": {
+   "name": "塩化水素",
+   "color": "無色",
+   "smell": "刺激臭",
+   "nature": "酸性",
+   "sol": "水によく溶ける",
+   "collect": "下方置換",
+   "dry": [
+    "濃硫酸",
+    "塩化カルシウム"
+   ],
+   "test": "アンモニアに触れると白煙（NH₄Cl）を生じる"
+  },
+  "HF": {
+   "name": "フッ化水素",
+   "color": "無色",
+   "smell": "刺激臭",
+   "nature": "酸性（弱酸）",
+   "sol": "水によく溶ける",
+   "collect": null,
+   "dry": [],
+   "test": "ガラス（SiO₂）を溶かすのでポリエチレン容器に保存する"
+  },
+  "H2S": {
+   "name": "硫化水素",
+   "color": "無色",
+   "smell": "腐卵臭",
+   "nature": "酸性（弱酸）",
+   "sol": "水に少し溶ける",
+   "collect": "下方置換",
+   "dry": [
+    "塩化カルシウム"
+   ],
+   "test": "酢酸鉛(II)紙を黒くする（PbS）。有毒。還元性があるので濃硫酸では乾燥できない"
+  },
+  "SO2": {
+   "name": "二酸化硫黄",
+   "color": "無色",
+   "smell": "刺激臭",
+   "nature": "酸性",
+   "sol": "水に溶ける",
+   "collect": "下方置換",
+   "dry": [
+    "濃硫酸",
+    "塩化カルシウム"
+   ],
+   "test": "還元作用で漂白する。H₂S に対しては酸化剤"
+  },
+  "NH3": {
+   "name": "アンモニア",
+   "color": "無色",
+   "smell": "刺激臭",
+   "nature": "塩基性",
+   "sol": "水に非常によく溶ける",
+   "collect": "上方置換",
+   "dry": [
+    "ソーダ石灰"
+   ],
+   "test": "濃塩酸を近づけると白煙。湿った赤色リトマス紙を青くする。CaCl₂ とは CaCl₂·8NH₃ をつくるので乾燥に使えない"
+  },
+  "NO": {
+   "name": "一酸化窒素",
+   "color": "無色",
+   "smell": "無臭",
+   "nature": "中性",
+   "sol": "水に溶けにくい",
+   "collect": "水上置換",
+   "dry": [],
+   "test": "空気に触れるとすぐ赤褐色の NO₂ になる"
+  },
+  "NO2": {
+   "name": "二酸化窒素",
+   "color": "赤褐色",
+   "smell": "刺激臭",
+   "nature": "酸性",
+   "sol": "水に溶ける",
+   "collect": "下方置換",
+   "dry": [
+    "濃硫酸",
+    "塩化カルシウム"
+   ],
+   "test": "2NO₂ ⇄ N₂O₄（無色）の平衡がある"
+  },
+  "CO2": {
+   "name": "二酸化炭素",
+   "color": "無色",
+   "smell": "無臭",
+   "nature": "酸性",
+   "sol": "水に少し溶ける",
+   "collect": "下方置換",
+   "dry": [
+    "濃硫酸",
+    "塩化カルシウム"
+   ],
+   "test": "石灰水を白くにごらせる（CaCO₃）"
+  },
+  "CO": {
+   "name": "一酸化炭素",
+   "color": "無色",
+   "smell": "無臭",
+   "nature": "中性",
+   "sol": "水に溶けにくい",
+   "collect": "水上置換",
+   "dry": [
+    "濃硫酸",
+    "塩化カルシウム",
+    "ソーダ石灰"
+   ],
+   "test": "青白い炎を出して燃える。有毒（ヘモグロビンと結合）"
+  },
+  "CH4": {
+   "name": "メタン",
+   "color": "無色",
+   "smell": "無臭",
+   "nature": "中性",
+   "sol": "水に溶けにくい",
+   "collect": "水上置換",
+   "dry": [
+    "濃硫酸",
+    "塩化カルシウム",
+    "ソーダ石灰"
+   ],
+   "test": ""
+  },
+  "C2H4": {
+   "name": "エチレン",
+   "color": "無色",
+   "smell": "かすかに甘いにおい",
+   "nature": "中性",
+   "sol": "水に溶けにくい",
+   "collect": "水上置換",
+   "dry": [],
+   "test": "臭素水を脱色する（付加反応）"
+  },
+  "C2H2": {
+   "name": "アセチレン",
+   "color": "無色",
+   "smell": "無臭（不純物で特異臭）",
+   "nature": "中性",
+   "sol": "水に溶けにくい",
+   "collect": "水上置換",
+   "dry": [],
+   "test": "臭素水を脱色する。燃やすとすすを出す"
+  }
+ },
+ "reactions": [
+  {
+   "id": "gas-h2",
+   "unit": "INO-09",
+   "cat": "gas",
+   "title": "水素の製法",
+   "eq": "Zn + H2SO4 -> ZnSO4 + H2 ^",
+   "cond": "亜鉛に希硫酸（または希塩酸）",
+   "type": "redox",
+   "gas": "H2",
+   "note": "イオン化傾向が H より大きい金属と酸"
+  },
+  {
+   "id": "gas-o2-h2o2",
+   "unit": "INO-09",
+   "cat": "gas",
+   "title": "酸素の製法（過酸化水素）",
+   "eq": "2H2O2 -> 2H2O + O2 ^",
+   "cond": "酸化マンガン(IV) MnO₂ を触媒に",
+   "type": "redox",
+   "gas": "O2",
+   "note": "MnO₂ は触媒（反応の前後で変化しない）"
+  },
+  {
+   "id": "gas-o2-kclo3",
+   "unit": "INO-09",
+   "cat": "gas",
+   "title": "酸素の製法（塩素酸カリウム）",
+   "eq": "2KClO3 -> 2KCl + 3O2 ^",
+   "cond": "MnO₂ を触媒に加熱",
+   "type": "thermal",
+   "gas": "O2"
+  },
+  {
+   "id": "gas-cl2-mno2",
+   "unit": "INO-09",
+   "cat": "gas",
+   "title": "塩素の製法（酸化マンガン(IV)）",
+   "eq": "MnO2 + 4HCl -> MnCl2 + 2H2O + Cl2 ^",
+   "cond": "濃塩酸に MnO₂ を加えて加熱",
+   "type": "redox",
+   "gas": "Cl2",
+   "note": "出てくる気体は水（HCl を除く）→濃硫酸（水を除く）の順に通す。逆にすると水蒸気が残る"
+  },
+  {
+   "id": "gas-cl2-bleach",
+   "unit": "INO-09",
+   "cat": "gas",
+   "title": "塩素の製法（さらし粉）",
+   "eq": "CaCl(ClO).H2O + 2HCl -> CaCl2 + 2H2O + Cl2 ^",
+   "cond": "さらし粉に塩酸（加熱不要）",
+   "type": "redox",
+   "gas": "Cl2"
+  },
+  {
+   "id": "gas-hcl",
+   "unit": "INO-09",
+   "cat": "gas",
+   "title": "塩化水素の製法",
+   "eq": "NaCl + H2SO4 -> NaHSO4 + HCl ^",
+   "cond": "塩化ナトリウムに濃硫酸を加えて加熱",
+   "type": "volatile",
+   "gas": "HCl",
+   "note": "不揮発性の酸（濃硫酸）で揮発性の酸を追い出す"
+  },
+  {
+   "id": "gas-hf",
+   "unit": "INO-09",
+   "cat": "gas",
+   "title": "フッ化水素の製法",
+   "eq": "CaF2 + H2SO4 -> CaSO4 + 2HF ^",
+   "cond": "ホタル石に濃硫酸を加えて加熱",
+   "type": "volatile",
+   "gas": "HF"
+  },
+  {
+   "id": "gas-h2s",
+   "unit": "INO-09",
+   "cat": "gas",
+   "title": "硫化水素の製法",
+   "eq": "FeS + H2SO4 -> FeSO4 + H2S ^",
+   "cond": "硫化鉄(II)に希硫酸（または希塩酸）",
+   "type": "weak-acid",
+   "gas": "H2S",
+   "note": "弱酸の塩＋強酸 → 強酸の塩＋弱酸"
+  },
+  {
+   "id": "gas-so2-cu",
+   "unit": "INO-09",
+   "cat": "gas",
+   "title": "二酸化硫黄の製法（銅と熱濃硫酸）",
+   "eq": "Cu + 2H2SO4 -> CuSO4 + 2H2O + SO2 ^",
+   "cond": "銅に濃硫酸を加えて加熱",
+   "type": "redox",
+   "gas": "SO2",
+   "note": "熱濃硫酸は酸化力をもつ"
+  },
+  {
+   "id": "gas-so2-nahso3",
+   "unit": "INO-09",
+   "cat": "gas",
+   "title": "二酸化硫黄の製法（亜硫酸水素ナトリウム）",
+   "eq": "NaHSO3 + H2SO4 -> NaHSO4 + H2O + SO2 ^",
+   "cond": "亜硫酸水素ナトリウムに希硫酸",
+   "type": "weak-acid",
+   "gas": "SO2"
+  },
+  {
+   "id": "gas-nh3",
+   "unit": "INO-09",
+   "cat": "gas",
+   "title": "アンモニアの製法",
+   "eq": "2NH4Cl + Ca(OH)2 -> CaCl2 + 2H2O + 2NH3 ^",
+   "cond": "塩化アンモニウムと水酸化カルシウムの混合物を加熱",
+   "type": "weak-base",
+   "gas": "NH3",
+   "note": "弱塩基の塩＋強塩基 → 強塩基の塩＋弱塩基。試験管の口を少し下げる（生じた水が加熱部に流れないように）"
+  },
+  {
+   "id": "gas-no",
+   "unit": "INO-09",
+   "cat": "gas",
+   "title": "一酸化窒素の製法",
+   "eq": "3Cu + 8HNO3 -> 3Cu(NO3)2 + 4H2O + 2NO ^",
+   "cond": "銅に希硝酸",
+   "type": "redox",
+   "gas": "NO"
+  },
+  {
+   "id": "gas-no2",
+   "unit": "INO-09",
+   "cat": "gas",
+   "title": "二酸化窒素の製法",
+   "eq": "Cu + 4HNO3 -> Cu(NO3)2 + 2H2O + 2NO2 ^",
+   "cond": "銅に濃硝酸",
+   "type": "redox",
+   "gas": "NO2"
+  },
+  {
+   "id": "gas-co2",
+   "unit": "INO-09",
+   "cat": "gas",
+   "title": "二酸化炭素の製法",
+   "eq": "CaCO3 + 2HCl -> CaCl2 + H2O + CO2 ^",
+   "cond": "石灰石に希塩酸",
+   "type": "weak-acid",
+   "gas": "CO2",
+   "note": "希硫酸を使うと CaSO₄ が表面をおおって反応が止まる"
+  },
+  {
+   "id": "gas-co",
+   "unit": "INO-09",
+   "cat": "gas",
+   "title": "一酸化炭素の製法",
+   "eq": "HCOOH -> H2O + CO ^",
+   "cond": "ギ酸に濃硫酸を加えて加熱",
+   "type": "dehydration",
+   "gas": "CO",
+   "note": "濃硫酸の脱水作用"
+  },
+  {
+   "id": "gas-n2",
+   "unit": "INO-09",
+   "cat": "gas",
+   "title": "窒素の製法",
+   "eq": "NH4NO2 -> N2 ^ + 2H2O",
+   "cond": "亜硝酸アンモニウム水溶液を加熱",
+   "type": "redox",
+   "gas": "N2"
+  },
+  {
+   "id": "gas-ch4",
+   "unit": "INO-09",
+   "cat": "gas",
+   "title": "メタンの製法",
+   "eq": "CH3COONa + NaOH -> Na2CO3 + CH4 ^",
+   "cond": "酢酸ナトリウムと水酸化ナトリウム（固体）を加熱",
+   "type": "thermal",
+   "gas": "CH4"
+  },
+  {
+   "id": "gas-c2h4",
+   "unit": "INO-09",
+   "cat": "gas",
+   "title": "エチレンの製法",
+   "eq": "C2H5OH -> C2H4 ^ + H2O",
+   "cond": "エタノールに濃硫酸を加えて 160〜170 ℃",
+   "type": "dehydration",
+   "gas": "C2H4",
+   "note": "130〜140 ℃ ではジエチルエーテルができる（分子間脱水）"
+  },
+  {
+   "id": "gas-c2h2",
+   "unit": "INO-09",
+   "cat": "gas",
+   "title": "アセチレンの製法",
+   "eq": "CaC2 + 2H2O -> Ca(OH)2 + C2H2 ^",
+   "cond": "炭化カルシウム（カーバイド）に水",
+   "type": "hydrolysis",
+   "gas": "C2H2"
+  },
+  {
+   "id": "gas-o3",
+   "unit": "INO-02",
+   "cat": "gas",
+   "title": "オゾンの生成",
+   "eq": "3O2 -> 2O3",
+   "cond": "酸素中で無声放電（または紫外線）",
+   "type": "redox",
+   "gas": "O3"
+  },
+  {
+   "id": "hal-kbr-cl2",
+   "unit": "INO-01",
+   "cat": "reaction",
+   "title": "ハロゲンの酸化力（Cl₂ と KBr）",
+   "eq": "2KBr + Cl2 -> 2KCl + Br2",
+   "cond": "",
+   "type": "redox",
+   "note": "酸化力：F₂ > Cl₂ > Br₂ > I₂"
+  },
+  {
+   "id": "hal-ki-cl2",
+   "unit": "INO-01",
+   "cat": "reaction",
+   "title": "ハロゲンの酸化力（Cl₂ と KI）",
+   "eq": "2KI + Cl2 -> 2KCl + I2",
+   "cond": "",
+   "type": "redox",
+   "note": "ヨウ素が遊離して褐色になる"
+  },
+  {
+   "id": "hal-ki-br2",
+   "unit": "INO-01",
+   "cat": "reaction",
+   "title": "ハロゲンの酸化力（Br₂ と KI）",
+   "eq": "2KI + Br2 -> 2KBr + I2",
+   "cond": "",
+   "type": "redox"
+  },
+  {
+   "id": "hal-cl2-h2o",
+   "unit": "INO-01",
+   "cat": "reaction",
+   "title": "塩素と水",
+   "eq": "Cl2 + H2O <=> HCl + HClO",
+   "cond": "",
+   "type": "redox",
+   "note": "次亜塩素酸 HClO の強い酸化力で殺菌・漂白する"
+  },
+  {
+   "id": "hal-f2-h2o",
+   "unit": "INO-01",
+   "cat": "reaction",
+   "title": "フッ素と水",
+   "eq": "2F2 + 2H2O -> 4HF + O2",
+   "cond": "",
+   "type": "redox",
+   "note": "F₂ は水を酸化して O₂ を出す"
+  },
+  {
+   "id": "hal-h2-cl2",
+   "unit": "INO-01",
+   "cat": "reaction",
+   "title": "水素と塩素",
+   "eq": "H2 + Cl2 -> 2HCl",
+   "cond": "光を当てると爆発的に反応",
+   "type": "redox"
+  },
+  {
+   "id": "hal-hf-sio2",
+   "unit": "INO-01",
+   "cat": "reaction",
+   "title": "フッ化水素酸とガラス",
+   "eq": "SiO2 + 6HF -> H2SiF6 + 2H2O",
+   "cond": "フッ化水素酸",
+   "type": "acid-base",
+   "note": "ガラスを溶かす（気体の HF なら SiF₄ が生じる）"
+  },
+  {
+   "id": "hal-cl2-naoh",
+   "unit": "INO-01",
+   "cat": "reaction",
+   "title": "塩素と水酸化ナトリウム",
+   "eq": "Cl2 + 2NaOH -> NaCl + NaClO + H2O",
+   "cond": "",
+   "type": "redox",
+   "note": "次亜塩素酸ナトリウム（漂白剤）"
+  },
+  {
+   "id": "hal-agbr-light",
+   "unit": "INO-01",
+   "cat": "reaction",
+   "title": "臭化銀の感光",
+   "eq": "2AgBr -> 2Ag + Br2",
+   "cond": "光",
+   "type": "redox",
+   "note": "写真のフィルムに使われた"
+  },
+  {
+   "id": "ox-o3-ki",
+   "unit": "INO-02",
+   "cat": "reaction",
+   "title": "オゾンとヨウ化カリウム",
+   "eq": "O3 + 2KI + H2O -> O2 + I2 + 2KOH",
+   "cond": "",
+   "type": "redox",
+   "note": "オゾンの検出"
+  },
+  {
+   "id": "s-burn",
+   "unit": "INO-02",
+   "cat": "reaction",
+   "title": "硫黄の燃焼",
+   "eq": "S + O2 -> SO2",
+   "cond": "",
+   "type": "redox"
+  },
+  {
+   "id": "s-so2-h2s",
+   "unit": "INO-02",
+   "cat": "reaction",
+   "title": "二酸化硫黄と硫化水素",
+   "eq": "SO2 + 2H2S -> 3S + 2H2O",
+   "cond": "",
+   "type": "redox",
+   "note": "SO₂ が酸化剤としてはたらく"
+  },
+  {
+   "id": "s-dehydrate",
+   "unit": "INO-02",
+   "cat": "reaction",
+   "title": "濃硫酸の脱水作用（スクロース）",
+   "eq": "C12H22O11 -> 12C + 11H2O",
+   "cond": "濃硫酸",
+   "type": "dehydration",
+   "note": "黒くなる（炭化）"
+  },
+  {
+   "id": "s-fe-s",
+   "unit": "INO-02",
+   "cat": "reaction",
+   "title": "鉄と硫黄",
+   "eq": "Fe + S -> FeS",
+   "cond": "加熱",
+   "type": "redox"
+  },
+  {
+   "id": "s-so2-h2o",
+   "unit": "INO-02",
+   "cat": "reaction",
+   "title": "二酸化硫黄と水",
+   "eq": "SO2 + H2O <=> H2SO3",
+   "cond": "",
+   "type": "acid-base",
+   "note": "亜硫酸（弱酸）"
+  },
+  {
+   "id": "n-nh3-hcl",
+   "unit": "INO-03",
+   "cat": "reaction",
+   "title": "アンモニアと塩化水素",
+   "eq": "NH3 + HCl -> NH4Cl",
+   "cond": "",
+   "type": "acid-base",
+   "note": "白煙を生じる（検出）"
+  },
+  {
+   "id": "n-no-o2",
+   "unit": "INO-03",
+   "cat": "reaction",
+   "title": "一酸化窒素の酸化",
+   "eq": "2NO + O2 -> 2NO2",
+   "cond": "",
+   "type": "redox"
+  },
+  {
+   "id": "n-no2-n2o4",
+   "unit": "INO-03",
+   "cat": "reaction",
+   "title": "二酸化窒素と四酸化二窒素",
+   "eq": "2NO2 <=> N2O4",
+   "cond": "",
+   "type": "equilibrium",
+   "note": "赤褐色 ⇄ 無色。発熱反応なので冷やすと色が薄くなる"
+  },
+  {
+   "id": "n-hno3-light",
+   "unit": "INO-03",
+   "cat": "reaction",
+   "title": "硝酸の光分解",
+   "eq": "4HNO3 -> 4NO2 + O2 + 2H2O",
+   "cond": "光・熱",
+   "type": "redox",
+   "note": "褐色びんに保存する"
+  },
+  {
+   "id": "p-burn",
+   "unit": "INO-03",
+   "cat": "reaction",
+   "title": "リンの燃焼",
+   "eq": "4P + 5O2 -> P4O10",
+   "cond": "",
+   "type": "redox",
+   "note": "P₄O₁₀ は強い吸湿性（乾燥剤）"
+  },
+  {
+   "id": "p-p4o10-h2o",
+   "unit": "INO-03",
+   "cat": "reaction",
+   "title": "十酸化四リンと水",
+   "eq": "P4O10 + 6H2O -> 4H3PO4",
+   "cond": "加熱",
+   "type": "acid-base"
+  },
+  {
+   "id": "p-superphosphate",
+   "unit": "INO-03",
+   "cat": "reaction",
+   "title": "過リン酸石灰",
+   "eq": "Ca3(PO4)2 + 2H2SO4 -> Ca(H2PO4)2 + 2CaSO4",
+   "cond": "",
+   "type": "weak-acid",
+   "note": "リン酸二水素カルシウムと CaSO₄ の混合物（肥料）"
+  },
+  {
+   "id": "c-limewater",
+   "unit": "INO-04",
+   "cat": "reaction",
+   "title": "石灰水と二酸化炭素",
+   "eq": "Ca(OH)2 + CO2 -> CaCO3 v + H2O",
+   "cond": "",
+   "type": "acid-base",
+   "note": "白くにごる"
+  },
+  {
+   "id": "c-limewater-ex",
+   "unit": "INO-04",
+   "cat": "reaction",
+   "title": "石灰水に二酸化炭素を過剰に",
+   "eq": "CaCO3 + CO2 + H2O -> Ca(HCO3)2",
+   "cond": "",
+   "type": "acid-base",
+   "note": "炭酸水素カルシウムになって溶け、にごりが消える（鍾乳洞）"
+  },
+  {
+   "id": "c-co-burn",
+   "unit": "INO-04",
+   "cat": "reaction",
+   "title": "一酸化炭素の燃焼",
+   "eq": "2CO + O2 -> 2CO2",
+   "cond": "",
+   "type": "redox"
+  },
+  {
+   "id": "c-c-co2",
+   "unit": "INO-04",
+   "cat": "reaction",
+   "title": "炭素と二酸化炭素",
+   "eq": "C + CO2 -> 2CO",
+   "cond": "高温",
+   "type": "redox"
+  },
+  {
+   "id": "si-sio2-naoh",
+   "unit": "INO-04",
+   "cat": "reaction",
+   "title": "二酸化ケイ素と水酸化ナトリウム",
+   "eq": "SiO2 + 2NaOH -> Na2SiO3 + H2O",
+   "cond": "固体の NaOH と加熱して融解",
+   "type": "acid-base",
+   "note": "ケイ酸ナトリウム。水を加えて加熱すると水ガラス"
+  },
+  {
+   "id": "si-silicic",
+   "unit": "INO-04",
+   "cat": "reaction",
+   "title": "ケイ酸の生成",
+   "eq": "Na2SiO3 + 2HCl -> H2SiO3 + 2NaCl",
+   "cond": "",
+   "type": "weak-acid",
+   "note": "ケイ酸を加熱・脱水したものがシリカゲル"
+  },
+  {
+   "id": "si-reduce",
+   "unit": "INO-04",
+   "cat": "reaction",
+   "title": "ケイ素の製造",
+   "eq": "SiO2 + 2C -> Si + 2CO",
+   "cond": "電気炉で強熱",
+   "type": "redox"
+  },
+  {
+   "id": "na-h2o",
+   "unit": "INO-05",
+   "cat": "reaction",
+   "title": "ナトリウムと水",
+   "eq": "2Na + 2H2O -> 2NaOH + H2 ^",
+   "cond": "",
+   "type": "redox",
+   "note": "石油中に保存する"
+  },
+  {
+   "id": "na-o2",
+   "unit": "INO-05",
+   "cat": "reaction",
+   "title": "ナトリウムの酸化",
+   "eq": "4Na + O2 -> 2Na2O",
+   "cond": "",
+   "type": "redox"
+  },
+  {
+   "id": "na-na2o-h2o",
+   "unit": "INO-05",
+   "cat": "reaction",
+   "title": "酸化ナトリウムと水",
+   "eq": "Na2O + H2O -> 2NaOH",
+   "cond": "",
+   "type": "acid-base",
+   "note": "塩基性酸化物"
+  },
+  {
+   "id": "na-naoh-co2",
+   "unit": "INO-05",
+   "cat": "reaction",
+   "title": "水酸化ナトリウムと二酸化炭素",
+   "eq": "2NaOH + CO2 -> Na2CO3 + H2O",
+   "cond": "",
+   "type": "acid-base",
+   "note": "潮解性があり、空気中の CO₂ も吸収する"
+  },
+  {
+   "id": "na-efflorescence",
+   "unit": "INO-05",
+   "cat": "reaction",
+   "title": "炭酸ナトリウム十水和物の風解",
+   "eq": "Na2CO3.10H2O -> Na2CO3.H2O + 9H2O",
+   "cond": "空気中に放置",
+   "type": "thermal",
+   "note": "風解：結晶水の一部を失って粉末になる"
+  },
+  {
+   "id": "na-nahco3-heat",
+   "unit": "INO-05",
+   "cat": "reaction",
+   "title": "炭酸水素ナトリウムの熱分解",
+   "eq": "2NaHCO3 -> Na2CO3 + H2O + CO2",
+   "cond": "加熱",
+   "type": "thermal",
+   "note": "ベーキングパウダー"
+  },
+  {
+   "id": "na-nahco3-hcl",
+   "unit": "INO-05",
+   "cat": "reaction",
+   "title": "炭酸水素ナトリウムと塩酸",
+   "eq": "NaHCO3 + HCl -> NaCl + H2O + CO2",
+   "cond": "",
+   "type": "weak-acid"
+  },
+  {
+   "id": "ca-h2o",
+   "unit": "INO-05",
+   "cat": "reaction",
+   "title": "カルシウムと水",
+   "eq": "Ca + 2H2O -> Ca(OH)2 + H2",
+   "cond": "常温",
+   "type": "redox",
+   "note": "Be・Mg は常温の水とほとんど反応しない"
+  },
+  {
+   "id": "mg-hot-h2o",
+   "unit": "INO-05",
+   "cat": "reaction",
+   "title": "マグネシウムと熱水",
+   "eq": "Mg + 2H2O -> Mg(OH)2 + H2",
+   "cond": "熱水",
+   "type": "redox"
+  },
+  {
+   "id": "mg-co2",
+   "unit": "INO-05",
+   "cat": "reaction",
+   "title": "マグネシウムと二酸化炭素",
+   "eq": "2Mg + CO2 -> 2MgO + C",
+   "cond": "点火",
+   "type": "redox",
+   "note": "CO₂ 中でも燃える"
+  },
+  {
+   "id": "ca-caco3-heat",
+   "unit": "INO-05",
+   "cat": "reaction",
+   "title": "炭酸カルシウムの熱分解",
+   "eq": "CaCO3 -> CaO + CO2",
+   "cond": "強熱",
+   "type": "thermal",
+   "note": "生石灰をつくる"
+  },
+  {
+   "id": "ca-cao-h2o",
+   "unit": "INO-05",
+   "cat": "reaction",
+   "title": "酸化カルシウムと水",
+   "eq": "CaO + H2O -> Ca(OH)2",
+   "cond": "",
+   "type": "acid-base",
+   "note": "発熱する（消石灰）"
+  },
+  {
+   "id": "ca-gypsum",
+   "unit": "INO-05",
+   "cat": "reaction",
+   "title": "セッコウを焼く",
+   "eq": "CaSO4.2H2O -> CaSO4.1/2H2O + 3/2H2O",
+   "cond": "約 140 ℃ に加熱",
+   "type": "thermal",
+   "note": "焼きセッコウ。水を加えると固まる"
+  },
+  {
+   "id": "al-hcl",
+   "unit": "INO-06",
+   "cat": "reaction",
+   "title": "アルミニウムと塩酸",
+   "eq": "2Al + 6HCl -> 2AlCl3 + 3H2",
+   "cond": "",
+   "type": "redox",
+   "note": "濃硝酸には不動態になって溶けない"
+  },
+  {
+   "id": "al-naoh",
+   "unit": "INO-06",
+   "cat": "reaction",
+   "title": "アルミニウムと水酸化ナトリウム水溶液",
+   "eq": "2Al + 2NaOH + 6H2O -> 2Na[Al(OH)4] + 3H2",
+   "cond": "",
+   "type": "redox",
+   "note": "両性金属"
+  },
+  {
+   "id": "al-thermite",
+   "unit": "INO-06",
+   "cat": "reaction",
+   "title": "テルミット反応",
+   "eq": "2Al + Fe2O3 -> Al2O3 + 2Fe",
+   "cond": "点火",
+   "type": "redox",
+   "note": "Al の強い還元力と大きな発熱"
+  },
+  {
+   "id": "al2o3-naoh",
+   "unit": "INO-06",
+   "cat": "reaction",
+   "title": "酸化アルミニウムと水酸化ナトリウム",
+   "eq": "Al2O3 + 2NaOH + 3H2O -> 2Na[Al(OH)4]",
+   "cond": "",
+   "type": "complex",
+   "note": "両性酸化物"
+  },
+  {
+   "id": "al2o3-hcl",
+   "unit": "INO-06",
+   "cat": "reaction",
+   "title": "酸化アルミニウムと塩酸",
+   "eq": "Al2O3 + 6HCl -> 2AlCl3 + 3H2O",
+   "cond": "",
+   "type": "acid-base"
+  },
+  {
+   "id": "zn-naoh",
+   "unit": "INO-06",
+   "cat": "reaction",
+   "title": "亜鉛と水酸化ナトリウム水溶液",
+   "eq": "Zn + 2NaOH + 2H2O -> Na2[Zn(OH)4] + H2",
+   "cond": "",
+   "type": "redox",
+   "note": "両性金属"
+  },
+  {
+   "id": "zno-hcl",
+   "unit": "INO-06",
+   "cat": "reaction",
+   "title": "酸化亜鉛と塩酸",
+   "eq": "ZnO + 2HCl -> ZnCl2 + H2O",
+   "cond": "",
+   "type": "acid-base"
+  },
+  {
+   "id": "zno-naoh",
+   "unit": "INO-06",
+   "cat": "reaction",
+   "title": "酸化亜鉛と水酸化ナトリウム",
+   "eq": "ZnO + 2NaOH + H2O -> Na2[Zn(OH)4]",
+   "cond": "",
+   "type": "complex",
+   "note": "両性酸化物"
+  },
+  {
+   "id": "sn-reduce",
+   "unit": "INO-06",
+   "cat": "reaction",
+   "title": "スズ(II)イオンの還元作用",
+   "eq": "Sn^2+ -> Sn^4+ + 2e-",
+   "cond": "",
+   "type": "redox",
+   "note": "SnCl₂ は還元剤として使われる"
+  },
+  {
+   "id": "fe-hcl",
+   "unit": "INO-07",
+   "cat": "reaction",
+   "title": "鉄と塩酸",
+   "eq": "Fe + 2HCl -> FeCl2 + H2",
+   "cond": "",
+   "type": "redox",
+   "note": "Fe²⁺ になる（Fe³⁺ ではない）。濃硝酸には不動態"
+  },
+  {
+   "id": "fe-oh2-ox",
+   "unit": "INO-07",
+   "cat": "reaction",
+   "title": "水酸化鉄(II)の酸化",
+   "eq": "4Fe(OH)2 + O2 + 2H2O -> 4Fe(OH)3",
+   "cond": "空気中",
+   "type": "redox",
+   "note": "緑白色 → 赤褐色"
+  },
+  {
+   "id": "fe3-i",
+   "unit": "INO-07",
+   "cat": "reaction",
+   "title": "鉄(III)イオンとヨウ化物イオン",
+   "eq": "2Fe^3+ + 2I- -> 2Fe^2+ + I2",
+   "cond": "",
+   "type": "redox"
+  },
+  {
+   "id": "cu-o2",
+   "unit": "INO-07",
+   "cat": "reaction",
+   "title": "銅の酸化",
+   "eq": "2Cu + O2 -> 2CuO",
+   "cond": "空気中で加熱",
+   "type": "redox",
+   "note": "黒色の酸化銅(II)"
+  },
+  {
+   "id": "cu-cuo-heat",
+   "unit": "INO-07",
+   "cat": "reaction",
+   "title": "酸化銅(II)の熱分解",
+   "eq": "4CuO -> 2Cu2O + O2",
+   "cond": "1000 ℃ 以上",
+   "type": "thermal",
+   "note": "赤色の酸化銅(I)"
+  },
+  {
+   "id": "cu-oh2-heat",
+   "unit": "INO-07",
+   "cat": "reaction",
+   "title": "水酸化銅(II)の加熱",
+   "eq": "Cu(OH)2 -> CuO + H2O",
+   "cond": "加熱",
+   "type": "thermal",
+   "note": "青白色 → 黒色"
+  },
+  {
+   "id": "cu-hydrate",
+   "unit": "INO-07",
+   "cat": "reaction",
+   "title": "硫酸銅(II)五水和物の加熱",
+   "eq": "CuSO4.5H2O -> CuSO4 + 5H2O",
+   "cond": "約 150 ℃ 以上に加熱",
+   "type": "thermal",
+   "note": "青色 → 白色。白色の CuSO₄ は水の検出に使う"
+  },
+  {
+   "id": "ag-hno3",
+   "unit": "INO-07",
+   "cat": "reaction",
+   "title": "銀と希硝酸",
+   "eq": "3Ag + 4HNO3 -> 3AgNO3 + NO + 2H2O",
+   "cond": "",
+   "type": "redox"
+  },
+  {
+   "id": "cr-dichromate",
+   "unit": "INO-07",
+   "cat": "reaction",
+   "title": "クロム酸イオンと二クロム酸イオン",
+   "eq": "2CrO4^2- + 2H+ <=> Cr2O7^2- + H2O",
+   "cond": "",
+   "type": "equilibrium",
+   "note": "黄色（塩基性）⇄ 赤橙色（酸性）。酸化数は +6 のまま"
+  },
+  {
+   "id": "cr-oxidant",
+   "unit": "INO-07",
+   "cat": "reaction",
+   "title": "二クロム酸イオンの酸化作用",
+   "eq": "Cr2O7^2- + 14H+ + 6e- -> 2Cr^3+ + 7H2O",
+   "cond": "硫酸酸性",
+   "type": "redox",
+   "note": "赤橙色 → 緑色"
+  },
+  {
+   "id": "mn-oxidant",
+   "unit": "INO-07",
+   "cat": "reaction",
+   "title": "過マンガン酸イオンの酸化作用",
+   "eq": "MnO4- + 8H+ + 5e- -> Mn^2+ + 4H2O",
+   "cond": "硫酸酸性",
+   "type": "redox",
+   "note": "赤紫色 → ほぼ無色（淡桃色）"
+  },
+  {
+   "id": "mn-neutral",
+   "unit": "INO-07",
+   "cat": "reaction",
+   "title": "過マンガン酸イオン（中性・塩基性）",
+   "eq": "MnO4- + 2H2O + 3e- -> MnO2 + 4OH-",
+   "cond": "中性・塩基性",
+   "type": "redox",
+   "note": "MnO₂ の黒褐色の沈殿"
+  },
+  {
+   "id": "ind-haber",
+   "unit": "INO-03",
+   "title": "ハーバー・ボッシュ法（アンモニア）",
+   "cond": "四酸化三鉄 Fe₃O₄ を主成分とする触媒、400〜600 ℃、1×10⁷〜3×10⁷ Pa",
+   "steps": [
+    {
+     "eq": "N2 + 3H2 <=> 2NH3",
+     "note": "発熱反応。低温ほど平衡は右だが反応が遅いので、触媒を使って中程度の温度で行う"
+    }
+   ],
+   "cat": "industry"
+  },
+  {
+   "id": "ind-ostwald",
+   "unit": "INO-03",
+   "title": "オストワルト法（硝酸）",
+   "cond": "白金 Pt 触媒、約 800 ℃",
+   "steps": [
+    {
+     "eq": "4NH3 + 5O2 -> 4NO + 6H2O",
+     "note": "白金触媒"
+    },
+    {
+     "eq": "2NO + O2 -> 2NO2",
+     "note": ""
+    },
+    {
+     "eq": "3NO2 + H2O -> 2HNO3 + NO",
+     "note": "生じた NO は再び酸化して使う"
+    }
+   ],
+   "total": "NH3 + 2O2 -> HNO3 + H2O",
+   "cat": "industry"
+  },
+  {
+   "id": "ind-contact",
+   "unit": "INO-02",
+   "title": "接触法（硫酸）",
+   "cond": "酸化バナジウム(V) V₂O₅ 触媒",
+   "steps": [
+    {
+     "eq": "S + O2 -> SO2",
+     "note": ""
+    },
+    {
+     "eq": "2SO2 + O2 <=> 2SO3",
+     "note": "V₂O₅ 触媒"
+    },
+    {
+     "eq": "SO3 + H2O -> H2SO4",
+     "note": "SO₃ を濃硫酸に吸収させて発煙硫酸にし、希硫酸でうすめる（水に直接吸収させると霧になる）"
+    }
+   ],
+   "cat": "industry"
+  },
+  {
+   "id": "ind-solvay",
+   "unit": "INO-05",
+   "title": "アンモニアソーダ法（ソルベー法、炭酸ナトリウム）",
+   "cond": "",
+   "steps": [
+    {
+     "eq": "NaCl + H2O + NH3 + CO2 -> NaHCO3 + NH4Cl",
+     "note": "飽和食塩水に NH₃、ついで CO₂。溶解度の小さい NaHCO₃ が沈殿"
+    },
+    {
+     "eq": "2NaHCO3 -> Na2CO3 + H2O + CO2",
+     "note": "熱分解。CO₂ は再利用"
+    },
+    {
+     "eq": "CaCO3 -> CaO + CO2",
+     "note": ""
+    },
+    {
+     "eq": "CaO + H2O -> Ca(OH)2",
+     "note": ""
+    },
+    {
+     "eq": "Ca(OH)2 + 2NH4Cl -> CaCl2 + 2H2O + 2NH3",
+     "note": "NH₃ を回収して再利用"
+    }
+   ],
+   "total": "2NaCl + CaCO3 -> Na2CO3 + CaCl2",
+   "cat": "industry"
+  },
+  {
+   "id": "ind-naoh",
+   "unit": "INO-05",
+   "title": "イオン交換膜法（水酸化ナトリウム）",
+   "cond": "陽イオン交換膜で仕切って NaCl 水溶液を電気分解",
+   "steps": [
+    {
+     "eq": "2Cl- -> Cl2 + 2e-",
+     "note": "陽極"
+    },
+    {
+     "eq": "2H2O + 2e- -> H2 + 2OH-",
+     "note": "陰極。Na⁺ が膜を通って陰極側へ移る"
+    }
+   ],
+   "total": "2NaCl + 2H2O -> 2NaOH + H2 + Cl2",
+   "cat": "industry"
+  },
+  {
+   "id": "ind-bayer",
+   "unit": "INO-06",
+   "title": "バイヤー法（ボーキサイト → アルミナ）",
+   "cond": "",
+   "steps": [
+    {
+     "eq": "Al2O3 + 2NaOH + 3H2O -> 2Na[Al(OH)4]",
+     "note": "濃い NaOH 水溶液に溶かし、不純物（Fe₂O₃ など）を除く"
+    },
+    {
+     "eq": "Na[Al(OH)4] -> Al(OH)3 + NaOH",
+     "note": "水でうすめて Al(OH)₃ を析出させる"
+    },
+    {
+     "eq": "2Al(OH)3 -> Al2O3 + 3H2O",
+     "note": "強熱"
+    }
+   ],
+   "cat": "industry"
+  },
+  {
+   "id": "ind-hall",
+   "unit": "INO-06",
+   "title": "溶融塩電解（ホール・エルー法、アルミニウム）",
+   "cond": "氷晶石 Na₃AlF₆ を融解して Al₂O₃ を溶かし、炭素電極で電気分解",
+   "steps": [
+    {
+     "eq": "Al^3+ + 3e- -> Al",
+     "note": "陰極"
+    },
+    {
+     "eq": "C + O^2- -> CO + 2e-",
+     "note": "陽極"
+    },
+    {
+     "eq": "C + 2O^2- -> CO2 + 4e-",
+     "note": "陽極"
+    }
+   ],
+   "cat": "industry"
+  },
+  {
+   "id": "ind-iron",
+   "unit": "INO-07",
+   "title": "鉄の製錬（溶鉱炉）",
+   "cond": "鉄鉱石・コークス・石灰石を溶鉱炉に入れ、熱風を送る",
+   "steps": [
+    {
+     "eq": "C + O2 -> CO2",
+     "note": ""
+    },
+    {
+     "eq": "CO2 + C -> 2CO",
+     "note": ""
+    },
+    {
+     "eq": "3Fe2O3 + CO -> 2Fe3O4 + CO2",
+     "note": ""
+    },
+    {
+     "eq": "Fe3O4 + CO -> 3FeO + CO2",
+     "note": ""
+    },
+    {
+     "eq": "FeO + CO -> Fe + CO2",
+     "note": "銑鉄（C を約 4％ 含む）。転炉で O₂ を吹き込み C を減らすと鋼"
+    }
+   ],
+   "total": "Fe2O3 + 3CO -> 2Fe + 3CO2",
+   "cat": "industry"
+  },
+  {
+   "id": "ind-copper",
+   "unit": "INO-07",
+   "title": "銅の製錬と電解精錬",
+   "cond": "黄銅鉱 CuFeS₂ から粗銅、粗銅を陽極・純銅を陰極にして CuSO₄ 水溶液を電気分解",
+   "steps": [
+    {
+     "eq": "4CuFeS2 + 9O2 -> 2Cu2S + 2Fe2O3 + 6SO2",
+     "note": ""
+    },
+    {
+     "eq": "Cu2S + O2 -> 2Cu + SO2",
+     "note": "粗銅（純度約 99 ％）"
+    },
+    {
+     "eq": "Cu -> Cu^2+ + 2e-",
+     "note": "陽極（粗銅）。Ag・Au などは陽極泥に、Zn・Fe・Ni はイオンのまま残る"
+    },
+    {
+     "eq": "Cu^2+ + 2e- -> Cu",
+     "note": "陰極（純銅）"
+    }
+   ],
+   "cat": "industry"
+  },
+  {
+   "id": "ind-methanol",
+   "unit": "ORG-03",
+   "title": "メタノールの工業的製法",
+   "cond": "触媒（ZnO など）、高温高圧",
+   "steps": [
+    {
+     "eq": "CO + 2H2 -> CH3OH",
+     "note": ""
+    }
+   ],
+   "cat": "industry"
+  },
+  {
+   "id": "ind-phosphorus",
+   "unit": "INO-03",
+   "title": "リンの製造（黄リン）",
+   "cond": "電気炉で強熱",
+   "steps": [
+    {
+     "eq": "2Ca3(PO4)2 + 6SiO2 + 10C -> 6CaSiO3 + 10CO + P4",
+     "note": "黄リンは空気中で自然発火するので水中に保存"
+    }
+   ],
+   "cat": "industry"
+  }
+ ]
+}

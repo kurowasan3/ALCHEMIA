@@ -1,0 +1,69 @@
+{
+ "id": "INO-AMP-001",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-06",
+ "topic": "アルミニウムと水酸化ナトリウム水溶液",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "equation"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応式の空欄 ア に当てはまる化学式を答えよ．\\\\（アルミニウムと水酸化ナトリウム水溶液）\\[\\ce{2Al} + \\ce{2NaOH} + \\ce{6H2O} \\ce{->} 2\\boxed{\\,\\text{ア}\\,} + \\ce{3H2}\\]"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$\\ce{Na[Al(OH)4]}$",
+    "grading": "語{Na[Al(OH)4]|テトラヒドロキシドアルミン酸ナトリウム}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{2Al + 2NaOH + 6H2O -> 2Na[Al(OH)4] + 3H2}$．両性金属（酸化還元）"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "amphoteric"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応式補完",
+  "反応式",
+  "酸化還元"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "al-naoh"
+ }
+}

@@ -1,0 +1,104 @@
+{
+ "id": "INO-GPR-025",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-09",
+ "topic": "気体の検出",
+ "course": "化学",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の方法で確認できる気体を化学式で答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "石灰水を白くにごらせる"
+     },
+     {
+      "id": "2",
+      "tex": "濃塩酸をつけたガラス棒を近づけると白煙が生じる"
+     },
+     {
+      "id": "3",
+      "tex": "酢酸鉛(II)水溶液をしみこませたろ紙を黒くする"
+     },
+     {
+      "id": "4",
+      "tex": "黄緑色で，湿ったヨウ化カリウムデンプン紙を青くする"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{CO2}$",
+    "grading": "語{CO2|二酸化炭素}"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{NH3}$",
+    "grading": "語{NH3|アンモニア}"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{H2S}$",
+    "grading": "語{H2S|硫化水素}"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{Cl2}$",
+    "grading": "語{Cl2|塩素}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "石灰水の白濁は $\\ce{CaCO3}$，白煙は $\\ce{NH4Cl}$，黒変は $\\ce{PbS}$，ヨウ化カリウムデンプン紙の青変は $\\ce{I2}$ の遊離（$\\ce{Cl2}$ の酸化作用．$\\ce{O3}$ でも起こる）．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "gas-preparation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "気体の検出"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "gas-co2"
+ }
+}

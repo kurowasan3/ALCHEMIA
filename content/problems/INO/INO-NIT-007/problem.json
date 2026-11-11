@@ -1,0 +1,68 @@
+{
+ "id": "INO-NIT-007",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-03",
+ "topic": "オストワルト法（硝酸）",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "equation"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "オストワルト法（硝酸）の反応式の空欄 ア に当てはまる化学式を答えよ．\\[\\ce{4NH3} + \\ce{5O2} \\ce{->} 4\\boxed{\\,\\text{ア}\\,} + \\ce{6H2O}\\]"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$\\ce{NO}$",
+    "grading": "語{NO|一酸化窒素}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{4NH3 + 5O2 -> 4NO + 6H2O}$．白金触媒．全体では $\\ce{NH3 + 2O2 -> HNO3 + H2O}$"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "industrial-process"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応式補完",
+  "工業的製法"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "ind-ostwald"
+ }
+}

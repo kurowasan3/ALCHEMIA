@@ -1,0 +1,65 @@
+{
+ "id": "THE-MOL-010",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-04",
+ "topic": "空気の平均分子量",
+ "course": "化学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "空気を窒素と酸素が体積比 4 : 1 で混じった気体とみなして，平均分子量を求めよ．N = 14，O = 16 とする．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$28.8$",
+    "grading": "約{28.8|3}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "体積比＝物質量比なので，$28\\times\\frac45+32\\times\\frac15=28.8$．分子量がこれより小さい気体（NH₃ など）は空気より軽い．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "mole",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "平均分子量"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

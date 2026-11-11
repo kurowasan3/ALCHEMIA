@@ -1,0 +1,87 @@
+{
+ "id": "INO-OXS-007",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-02",
+ "topic": "二酸化硫黄のはたらき",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応で，二酸化硫黄は酸化剤と還元剤のどちらとしてはたらいているか．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{SO2 + 2H2S -> 3S + 2H2O}$"
+     },
+     {
+      "id": "2",
+      "tex": "$\\ce{SO2 + I2 + 2H2O -> H2SO4 + 2HI}$"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "酸化剤",
+    "grading": "選ぶ{酸化剤|還元剤}=1"
+   },
+   {
+    "id": "2",
+    "tex": "還元剤",
+    "grading": "選ぶ{酸化剤|還元剤}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) S の酸化数 +4 → 0 に減少（自身は還元され，H₂S を酸化）．(2) $\\ce{SO2 + I2 + 2H2O -> H2SO4 + 2HI}$ で S は +4 → +6（自身は酸化され，I₂ を還元）．SO₂ はふつう還元剤だが，H₂S のように強い還元剤に対しては酸化剤になる．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "oxygen-sulfur",
+  "redox"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "条件判断",
+  "酸化還元"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "s-so2-h2s"
+ }
+}

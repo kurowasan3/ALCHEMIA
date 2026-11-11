@@ -1,0 +1,67 @@
+{
+ "id": "THE-RDX-006",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-06",
+ "topic": "金属と酸の反応",
+ "course": "化学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の金属のうち，希塩酸に溶けて水素を発生するものをすべて選べ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "Mg，Zn，Fe",
+    "grading": "すべて選ぶ{Mg|Cu|Zn|Ag|Fe|Au}=1,3,5"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "H₂ よりイオン化傾向の大きい金属は，酸の H⁺ を還元して H₂ を出す．Cu・Ag は希塩酸には溶けないが，酸化力のある硝酸や熱濃硫酸には溶ける（H₂ ではなく NO・NO₂・SO₂ が出る）．Au は王水にだけ溶ける．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "ionization-tendency",
+  "redox"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-FE-HCL"
+ ],
+ "tags": [
+  "条件判断",
+  "イオン化傾向"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

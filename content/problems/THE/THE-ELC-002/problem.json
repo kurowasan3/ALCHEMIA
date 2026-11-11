@@ -1,0 +1,91 @@
+{
+ "id": "THE-ELC-002",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-07",
+ "topic": "鉛蓄電池の放電",
+ "course": "化学",
+ "level": 2,
+ "minutes": 8,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "鉛蓄電池を放電させ，電子 $0.20\\,\\mathrm{mol}$ が流れた．\\\\負極：$\\ce{Pb + SO4^2- -> PbSO4 + 2e-}$\\\\正極：$\\ce{PbO2 + 4H+ + SO4^2- + 2e- -> PbSO4 + 2H2O}$\\\\O = 16，S = 32 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "負極の質量の変化"
+     },
+     {
+      "id": "2",
+      "tex": "正極の質量の変化"
+     },
+     {
+      "id": "3",
+      "tex": "電解液の硫酸の濃度"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$9.6\\,\\mathrm g$ 増加",
+    "grading": "約{9.600000000000001|2} [g]"
+   },
+   {
+    "id": "2",
+    "tex": "$6.4\\,\\mathrm g$ 増加",
+    "grading": "約{6.4|2} [g]"
+   },
+   {
+    "id": "3",
+    "tex": "減少する",
+    "grading": "選ぶ{増加する|減少する|変わらない}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 電子 2 mol で Pb が PbSO₄ になり，SO₄（96）だけ増える：$96\\times\\dfrac{0.20}{2}=9.6\\,\\mathrm g$．(2) PbO₂ が PbSO₄ になり SO₂（64）だけ増える：$64\\times\\dfrac{0.20}{2}=6.4\\,\\mathrm g$．(3) 放電で $\\ce{H2SO4}$ が消費され水が生じるので，濃度は減少する．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "battery"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "鉛蓄電池"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

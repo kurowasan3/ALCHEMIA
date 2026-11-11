@@ -1,0 +1,91 @@
+{
+ "id": "INO-CSI-008",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-04",
+ "topic": "一酸化炭素と二酸化炭素",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "炭素の酸化物について答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "有毒で，還元作用をもつ酸化物"
+     },
+     {
+      "id": "2",
+      "tex": "石灰水を白くにごらせる酸化物"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の固体の名称"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "一酸化炭素",
+    "grading": "語{一酸化炭素|CO}"
+   },
+   {
+    "id": "2",
+    "tex": "二酸化炭素",
+    "grading": "語{二酸化炭素|CO2}"
+   },
+   {
+    "id": "3",
+    "tex": "ドライアイス",
+    "grading": "語{ドライアイス}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "CO は無色・無臭で有毒（血液中のヘモグロビンと強く結合）．燃えて CO₂ になり，還元剤として製錬に使われる．CO₂ は石灰水を白濁させ，固体はドライアイス（昇華する）．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "carbon-silicon"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "炭素"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

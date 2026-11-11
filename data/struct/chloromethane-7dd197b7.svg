@@ -1,0 +1,28 @@
+<svg version='1.1' baseProfile='full'
+              xmlns='http://www.w3.org/2000/svg'
+                      xml:space='preserve' viewBox='0 0 260 180'>
+<path d='M 112.1,89.8 L 134.6,89.8' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 135.5 90.2
+Q 135.5 87.3, 136.9 85.7
+Q 138.3 84.2, 141.0 84.2
+Q 143.4 84.2, 144.7 85.9
+L 143.6 86.8
+Q 142.7 85.5, 141.0 85.5
+Q 139.2 85.5, 138.2 86.8
+Q 137.3 88.0, 137.3 90.2
+Q 137.3 92.6, 138.2 93.8
+Q 139.2 95.0, 141.1 95.0
+Q 142.4 95.0, 144.0 94.2
+L 144.4 95.5
+Q 143.8 95.9, 142.9 96.1
+Q 141.9 96.4, 140.9 96.4
+Q 138.3 96.4, 136.9 94.8
+Q 135.5 93.2, 135.5 90.2
+' fill='currentColor'/>
+<path d='M 145.9 83.4
+L 147.5 83.4
+L 147.5 96.2
+L 145.9 96.2
+L 145.9 83.4
+' fill='currentColor'/>
+</svg>

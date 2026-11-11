@@ -1,0 +1,96 @@
+{
+ "id": "THE-BND-008",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-03",
+ "topic": "面心立方格子（銅）の密度",
+ "course": "化学基礎",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "銅の結晶は面心立方格子で，単位格子の一辺の長さは $0.36\\,\\mathrm{nm}$ である．Cu = 63.5，アボガドロ定数 $6.0\\times10^{23}\\,/\\mathrm{mol}$，$0.36^3=0.0467$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "単位格子に含まれる原子の数"
+     },
+     {
+      "id": "2",
+      "tex": "配位数"
+     },
+     {
+      "id": "3",
+      "tex": "銅の密度（有効数字2桁）"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "4 個",
+    "grading": "約{4|1} [個]"
+   },
+   {
+    "id": "2",
+    "tex": "12",
+    "grading": "約{12|2}"
+   },
+   {
+    "id": "3",
+    "tex": "$9.1\\,\\mathrm{g/cm^3}$",
+    "grading": "約{9.074|2} [g/cm^3]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 頂点 $\\frac18\\times8$ ＋ 面の中心 $\\frac12\\times6$ ＝ 4 個．(2) 1 つの原子に接する原子は 12 個（配位数 12）．"
+    },
+    {
+     "type": "text",
+     "tex": "(3) 単位格子の質量は $\\dfrac{63.5}{6.0\\times10^{23}}\\times4\\,\\mathrm g$，体積は $(0.36\\times10^{-7}\\,\\mathrm{cm})^3=4.67\\times10^{-23}\\,\\mathrm{cm^3}$．密度は $\\dfrac{4\\times63.5}{6.0\\times10^{23}\\times4.67\\times10^{-23}}\\fallingdotseq9.1\\,\\mathrm{g/cm^3}$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "crystal",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "単位格子"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

@@ -1,0 +1,94 @@
+{
+ "id": "THE-ELC-005",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-07",
+ "topic": "直列につないだ電解槽",
+ "course": "化学",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "硝酸銀水溶液（電解槽 A）と硫酸銅(II) 水溶液（電解槽 B）を直列につなぎ，白金電極で電気分解すると，A の陰極に銀が $1.08\\,\\mathrm g$ 析出した．Ag = 108，Cu = 63.5 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "流れた電子の物質量"
+     },
+     {
+      "id": "2",
+      "tex": "B の陰極に析出した銅の質量"
+     },
+     {
+      "id": "3",
+      "tex": "電流が $1.00\\,\\mathrm A$ だったとき，電気分解した時間（$F=9.65\\times10^{4}\\,\\mathrm{C/mol}$）"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$1.00\\times10^{-2}\\,\\mathrm{mol}$",
+    "grading": "約{0.01|3} [mol]"
+   },
+   {
+    "id": "2",
+    "tex": "$0.318\\,\\mathrm g$",
+    "grading": "約{0.3175|3} [g]"
+   },
+   {
+    "id": "3",
+    "tex": "965 秒",
+    "grading": "約{965.0|3} [s]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $\\ce{Ag+ + e- -> Ag}$ より電子は $1.08/108=0.0100\\,\\mathrm{mol}$．直列なので B にも同じ電気量が流れる．(2) Cu は $0.00500\\,\\mathrm{mol}$，$0.318\\,\\mathrm g$．(3) $t=\\dfrac{0.0100\\times9.65\\times10^4}{1.00}=965\\,\\mathrm s$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "electrolysis"
+ ],
+ "laws": [
+  "faraday"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "電気分解",
+  "直列"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

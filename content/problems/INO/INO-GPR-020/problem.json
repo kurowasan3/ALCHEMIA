@@ -1,0 +1,67 @@
+{
+ "id": "INO-GPR-020",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-09",
+ "topic": "水上置換で集める気体",
+ "course": "化学",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の気体のうち，ふつう水上置換で集めるものをすべて選べ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$\\ce{H2}$，$\\ce{O2}$，$\\ce{NO}$，$\\ce{CH4}$",
+    "grading": "すべて選ぶ{$\\ce{H2}$|$\\ce{O2}$|$\\ce{Cl2}$|$\\ce{HCl}$|$\\ce{NH3}$|$\\ce{CO2}$|$\\ce{NO}$|$\\ce{NO2}$|$\\ce{SO2}$|$\\ce{H2S}$|$\\ce{CH4}$}=1,2,7,11"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "水に溶けにくい気体は水上置換．水に溶けやすく空気より軽い（分子量 < 29）気体は上方置換（$\\ce{NH3}$ だけ），空気より重い気体は下方置換．$\\ce{NO}$ は空気中の $\\ce{O2}$ と反応するので水上置換．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "gas-preparation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "条件判断",
+  "捕集法"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions"
+ }
+}

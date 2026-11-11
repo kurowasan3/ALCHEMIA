@@ -1,0 +1,69 @@
+{
+ "id": "INO-OXS-001",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-02",
+ "topic": "オゾンとヨウ化カリウム",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "equation"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応式の空欄 ア に当てはまる化学式を答えよ．\\\\（オゾンとヨウ化カリウム）\\[\\ce{O3} + \\ce{2KI} + \\ce{H2O} \\ce{->} \\boxed{\\,\\text{ア}\\,} + \\ce{I2} + \\ce{2KOH}\\]"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$\\ce{O2}$",
+    "grading": "語{O2|酸素}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{O3 + 2KI + H2O -> O2 + I2 + 2KOH}$．オゾンの検出（酸化還元）"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "oxygen-sulfur"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応式補完",
+  "反応式",
+  "酸化還元"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "ox-o3-ki"
+ }
+}

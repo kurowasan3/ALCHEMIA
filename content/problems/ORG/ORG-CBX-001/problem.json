@@ -1,0 +1,104 @@
+{
+ "id": "ORG-CBX-001",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-04",
+ "topic": "エステルの合成と加水分解",
+ "course": "化学",
+ "level": 1,
+ "minutes": 4,
+ "format": [
+  "pathway"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応経路について，空欄に当てはまる化合物の名称（または示性式）を答えよ．また，（ア）の反応に用いる試薬・条件として適当なものを選べ．\\[\\ce{CH3COOH} \\xrightarrow{\\text{C₂H₅OH}} \\boxed{\\,\\text{A}\\,} \\xrightarrow{\\text{（ア）}} \\boxed{\\,\\text{B}\\,} \\xrightarrow{\\text{NaOH}} \\ce{CH4}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A に当てはまる化合物"
+     },
+     {
+      "id": "2",
+      "tex": "B に当てはまる化合物"
+     },
+     {
+      "id": "3",
+      "tex": "（ア）の試薬・条件"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "酢酸エチル　$\\ce{CH3COOC2H5}$",
+    "grading": "A：語{酢酸エチル|CH3COOC2H5}"
+   },
+   {
+    "id": "2",
+    "tex": "酢酸ナトリウム　$\\ce{CH3COONa}$",
+    "grading": "B：語{酢酸ナトリウム|CH3COONa}"
+   },
+   {
+    "id": "3",
+    "tex": "NaOH 水溶液（加熱）",
+    "grading": "選ぶ{NaOH 水溶液（加熱）|C₂H₅OH（濃硫酸触媒・加熱）|NaOH（固体）・加熱|P₄O₁₀（脱水剤）}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "酢酸 → 酢酸エチル：C₂H₅OH（濃硫酸触媒・加熱）（エステル化）　$\\ce{CH3COOH + C2H5OH <=> CH3COOC2H5 + H2O}$．可逆反応"
+    },
+    {
+     "type": "text",
+     "tex": "酢酸エチル → 酢酸ナトリウム：NaOH 水溶液（加熱）（けん化）　$\\ce{CH3COOC2H5 + NaOH -> CH3COONa + C2H5OH}$．エタノールも生じる"
+    },
+    {
+     "type": "text",
+     "tex": "酢酸ナトリウム → メタン：NaOH（固体）・加熱（脱炭酸）　$\\ce{CH3COONa + NaOH -> CH4 + Na2CO3}$"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "carboxylic-ester"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応経路",
+  "エステル",
+  "けん化"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "organic",
+  "key": "ethyl-acetate"
+ }
+}

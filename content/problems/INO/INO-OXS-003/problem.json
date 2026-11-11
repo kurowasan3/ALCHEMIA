@@ -1,0 +1,69 @@
+{
+ "id": "INO-OXS-003",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-02",
+ "topic": "濃硫酸の脱水作用（スクロース）",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "equation"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応式の空欄 ア に当てはまる化学式を答えよ．\\\\（濃硫酸の脱水作用（スクロース）：濃硫酸）\\[\\ce{C12H22O11} \\ce{->} 12\\boxed{\\,\\text{ア}\\,} + \\ce{11H2O}\\]"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$\\ce{C}$",
+    "grading": "語{C|炭素}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{C12H22O11 -> 12C + 11H2O}$．黒くなる（炭化）（脱水）"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "oxygen-sulfur"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応式補完",
+  "反応式",
+  "脱水"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "s-dehydrate"
+ }
+}

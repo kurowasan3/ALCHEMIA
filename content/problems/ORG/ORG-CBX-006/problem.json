@@ -1,0 +1,92 @@
+{
+ "id": "ORG-CBX-006",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-04",
+ "topic": "セッケンと合成洗剤",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "セッケンについて答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "セッケン分子の親水基と疎水基"
+     },
+     {
+      "id": "2",
+      "tex": "セッケンの水溶液の性質"
+     },
+     {
+      "id": "3",
+      "tex": "セッケンが硬水で使いにくい理由"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "親水基：−COO⁻（カルボン酸イオンの部分），疎水基：炭化水素基",
+    "grading": "親水基：語{COO-|-COO-|カルボキシ基|カルボン酸イオン} ; 疎水基：語{炭化水素基|アルキル基|炭化水素}"
+   },
+   {
+    "id": "2",
+    "tex": "弱塩基性",
+    "grading": "選ぶ{酸性|中性|弱塩基性}=3"
+   },
+   {
+    "id": "3",
+    "tex": "Ca²⁺・Mg²⁺ と水に溶けにくい塩をつくるから",
+    "grading": "選ぶ{Ca²⁺・Mg²⁺ と水に溶けにくい塩をつくるから|硬水は酸性だから|硬水ではミセルが大きくなりすぎるから}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "セッケン R−COONa は弱酸と強塩基の塩なので，水溶液は加水分解で弱塩基性．硬水中の Ca²⁺・Mg²⁺ と (R−COO)₂Ca などの沈殿をつくり，泡立ちが悪くなる．合成洗剤（R−OSO₃Na など）は強酸と強塩基の塩で中性，硬水でも使える．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "carboxylic-ester",
+  "salt-hydrolysis"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "セッケン"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

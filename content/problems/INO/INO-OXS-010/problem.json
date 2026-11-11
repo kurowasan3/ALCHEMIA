@@ -1,0 +1,69 @@
+{
+ "id": "INO-OXS-010",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-02",
+ "topic": "接触法の量的関係",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "硫黄 $32\\,\\mathrm{kg}$ がすべて硫酸になるとすると，質量パーセント濃度 98 % の濃硫酸は何 kg 得られるか．S = 32，H₂SO₄ = 98 とする．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$100\\,\\mathrm{kg}$",
+    "grading": "約{100|3} [kg]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "S 1 mol から H₂SO₄ 1 mol．$32\\,\\mathrm{kg}$ は $1.0\\times10^3\\,\\mathrm{mol}$，H₂SO₄ 98 kg．98 % の濃硫酸では $98/0.98=100\\,\\mathrm{kg}$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "industrial-process"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "工業的製法",
+  "量的関係"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "ind-contact"
+ }
+}

@@ -1,0 +1,108 @@
+{
+ "id": "ORG-ARO-011",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-05",
+ "topic": "分子式 C₇H₈O の芳香族化合物",
+ "course": "化学",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "qa",
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "分子式 $\\ce{C7H8O}$ でベンゼン環をもつ化合物について答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "異性体はいくつあるか"
+     },
+     {
+      "id": "2",
+      "tex": "金属ナトリウムと反応するが，塩化鉄(III) 水溶液で呈色しない化合物"
+     },
+     {
+      "id": "3",
+      "tex": "金属ナトリウムと反応しない化合物"
+     },
+     {
+      "id": "4",
+      "tex": "塩化鉄(III) 水溶液で呈色する化合物は何種類か"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "5 種類",
+    "grading": "約{5|1} [種類]"
+   },
+   {
+    "id": "2",
+    "tex": "ベンジルアルコール",
+    "grading": "語{ベンジルアルコール|C6H5CH2OH}"
+   },
+   {
+    "id": "3",
+    "tex": "アニソール（メチルフェニルエーテル）",
+    "grading": "語{アニソール|メチルフェニルエーテル|C6H5OCH3}"
+   },
+   {
+    "id": "4",
+    "tex": "3 種類",
+    "grading": "約{3|1} [種類]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "o-・m-・p-クレゾール（フェノール類），ベンジルアルコール，メチルフェニルエーテルの 5 種類．Na と反応するが FeCl₃ で呈色しないのはベンジルアルコール．Na と反応しないのはエーテル．FeCl₃ で呈色するのはクレゾール 3 種．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "aromatic",
+  "organic-test",
+  "organic-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "構造決定",
+  "異性体"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "tests",
+  "key": "fecl3"
+ }
+}

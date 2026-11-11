@@ -1,0 +1,86 @@
+{
+ "id": "INO-ALK-008",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-05",
+ "topic": "アルカリ金属の保存と反応",
+ "course": "化学",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ナトリウムについて答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ナトリウムを保存する液体"
+     },
+     {
+      "id": "2",
+      "tex": "ナトリウムが水と反応してできる化合物と気体"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "石油（灯油）",
+    "grading": "語{石油|灯油}"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{NaOH}$ と $\\ce{H2}$",
+    "grading": "化合物：語{NaOH|水酸化ナトリウム} ; 気体：語{H2|水素}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "空気中の酸素や水と激しく反応するので石油中に保存する．$\\ce{2Na + 2H2O -> 2NaOH + H2}$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "alkali-metals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "アルカリ金属"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "na-h2o"
+ }
+}

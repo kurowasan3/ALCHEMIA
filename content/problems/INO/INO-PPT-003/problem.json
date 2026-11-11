@@ -1,0 +1,69 @@
+{
+ "id": "INO-PPT-003",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-08",
+ "topic": "鉄(III)イオンの検出（チオシアン酸カリウム）",
+ "course": "化学",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "塩化鉄(III)水溶液にチオシアン酸カリウム水溶液を加えると，溶液は何色になるか．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "血赤色",
+    "grading": "語{血赤|血赤色|赤|赤色|濃赤色}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{Fe^3+ + SCN- -> [Fe(SCN)]^2+}$ により血赤色の溶液になる（沈殿はしない）．$\\ce{Fe^2+}$ では変化しないので，$\\ce{Fe^3+}$ の検出に使う．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "precipitation",
+  "complex-ion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "鉄イオンの検出"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "ions",
+  "key": "Fe^3+"
+ }
+}

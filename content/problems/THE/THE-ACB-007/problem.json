@@ -1,0 +1,102 @@
+{
+ "id": "THE-ACB-007",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-05",
+ "topic": "二段階の中和滴定（NaOH と Na₂CO₃ の混合物）",
+ "course": "化学基礎",
+ "level": 3,
+ "minutes": 12,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水酸化ナトリウムと炭酸ナトリウムの混合水溶液 $20.0\\,\\mathrm{mL}$ に，フェノールフタレインを加えて $0.100\\,\\mathrm{mol/L}$ 塩酸で滴定すると，$15.0\\,\\mathrm{mL}$ で赤色が消えた．続けてメチルオレンジを加えて滴定すると，さらに $5.0\\,\\mathrm{mL}$ で変色した．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "フェノールフタレインが変色するまでに，炭酸ナトリウムが起こす反応"
+     },
+     {
+      "id": "2",
+      "tex": "炭酸ナトリウムのモル濃度"
+     },
+     {
+      "id": "3",
+      "tex": "水酸化ナトリウムのモル濃度"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{Na2CO3 + HCl -> NaHCO3 + NaCl}$",
+    "grading": "選ぶ{$\\ce{Na2CO3 + HCl -> NaHCO3 + NaCl}$|$\\ce{NaHCO3 + HCl -> NaCl + H2O + CO2}$|$\\ce{Na2CO3 + 2HCl -> 2NaCl + H2O + CO2}$}=1"
+   },
+   {
+    "id": "2",
+    "tex": "$2.5\\times10^{-2}\\,\\mathrm{mol/L}$",
+    "grading": "約{0.025|2} [mol/L]"
+   },
+   {
+    "id": "3",
+    "tex": "$5.0\\times10^{-2}\\,\\mathrm{mol/L}$",
+    "grading": "約{0.050|2} [mol/L]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "第1段階（〜フェノールフタレインの変色）：$\\ce{NaOH + HCl -> NaCl + H2O}$ と $\\ce{Na2CO3 + HCl -> NaHCO3 + NaCl}$．第2段階：$\\ce{NaHCO3 + HCl -> NaCl + H2O + CO2}$．"
+    },
+    {
+     "type": "text",
+     "tex": "第2段階の HCl $0.100\\times5.0\\times10^{-3}=5.0\\times10^{-4}\\,\\mathrm{mol}$ ＝ $\\ce{Na2CO3}$ の物質量．濃度は $5.0\\times10^{-4}/0.0200=2.5\\times10^{-2}\\,\\mathrm{mol/L}$．"
+    },
+    {
+     "type": "text",
+     "tex": "第1段階の HCl $1.50\\times10^{-3}\\,\\mathrm{mol}$ ＝ NaOH ＋ Na₂CO₃ なので，NaOH は $1.0\\times10^{-3}\\,\\mathrm{mol}$，$5.0\\times10^{-2}\\,\\mathrm{mol/L}$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "acid-base",
+  "salt-hydrolysis"
+ ],
+ "laws": [
+  "neutralization"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "二段階滴定"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

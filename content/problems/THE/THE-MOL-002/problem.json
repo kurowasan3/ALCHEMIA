@@ -1,0 +1,70 @@
+{
+ "id": "THE-MOL-002",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-04",
+ "topic": "溶液のモル濃度",
+ "course": "化学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "塩化ナトリウム $5.85\\,\\mathrm g$ を水に溶かして $500\\,\\mathrm{mL}$ にした．Na = 23，Cl = 35.5 とする．この水溶液のモル濃度を求めよ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$0.200\\,\\mathrm{mol/L}$",
+    "grading": "約{0.200|3} [mol/L]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$5.85/58.5=0.100\\,\\mathrm{mol}$，$0.100/0.500=0.200\\,\\mathrm{mol/L}$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "concentration"
+ ],
+ "laws": [
+  "molarity"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "モル濃度"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "laws",
+  "key": "molarity"
+ }
+}

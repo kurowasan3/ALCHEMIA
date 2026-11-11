@@ -1,0 +1,70 @@
+{
+ "id": "THE-SOL-004",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-09",
+ "topic": "浸透圧",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "$0.010\\,\\mathrm{mol/L}$ のスクロース水溶液の 27 ℃ での浸透圧を求めよ．$R=8.3\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$ とする．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$2.5\\times10^{4}\\,\\mathrm{Pa}$",
+    "grading": "約{24900.0|2} [Pa]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\Pi=cRT=0.010\\times8.3\\times10^3\\times300=2.5\\times10^{4}\\,\\mathrm{Pa}$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "solution-colligative"
+ ],
+ "laws": [
+  "vant-hoff"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "浸透圧"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "laws",
+  "key": "vant-hoff"
+ }
+}

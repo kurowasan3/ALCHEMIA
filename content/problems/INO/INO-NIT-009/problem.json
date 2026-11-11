@@ -1,0 +1,96 @@
+{
+ "id": "INO-NIT-009",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-03",
+ "topic": "工業的製法の触媒",
+ "course": "化学",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の工業的製法で使われる主な触媒を化学式で答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ハーバー・ボッシュ法（アンモニア）"
+     },
+     {
+      "id": "2",
+      "tex": "オストワルト法（硝酸）"
+     },
+     {
+      "id": "3",
+      "tex": "接触法（硫酸）"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{Fe3O4}$",
+    "grading": "語{Fe3O4|四酸化三鉄|Fe|鉄}"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{Pt}$",
+    "grading": "語{Pt|白金}"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{V2O5}$",
+    "grading": "語{V2O5|酸化バナジウム(V)|五酸化二バナジウム}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ハーバー・ボッシュ法は四酸化三鉄 $\\ce{Fe3O4}$ を主成分とする鉄触媒，オストワルト法は白金 $\\ce{Pt}$，接触法は酸化バナジウム(V) $\\ce{V2O5}$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "industrial-process"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "触媒",
+  "工業的製法"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "ind-haber"
+ }
+}

@@ -1,0 +1,70 @@
+{
+ "id": "INO-TRN-008",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-07",
+ "topic": "水酸化鉄(II)の酸化（係数）",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "equation"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応式の係数 a，b，c，d を答えよ．係数が 1 のときも 1 と書くこと．\\\\（水酸化鉄(II)の酸化）\\[\\boxed{\\,a\\,}\\,\\ce{Fe(OH)2} + \\boxed{\\,b\\,}\\,\\ce{O2} + \\boxed{\\,c\\,}\\,\\ce{H2O} \\ce{->} \\boxed{\\,d\\,}\\,\\ce{Fe(OH)3}\\]"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "a=4，b=1，c=2，d=4",
+    "grading": "a：4 ; b：1 ; c：2 ; d：4"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{4Fe(OH)2 + O2 + 2H2O -> 4Fe(OH)3}$．緑白色 → 赤褐色．酸化剤・還元剤の半反応式をつくり，電子の数をそろえて足し合わせると係数が決まる．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "transition-metals",
+  "redox"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応式補完",
+  "反応式",
+  "係数"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "fe-oh2-ox"
+ }
+}

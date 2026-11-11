@@ -1,0 +1,70 @@
+{
+ "id": "THE-GAS-002",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-08",
+ "topic": "シャルルの法則",
+ "course": "化学",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "27 ℃ で $3.0\\,\\mathrm L$ の気体を，圧力を変えずに 127 ℃ にすると体積は何 L になるか．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$4.0\\,\\mathrm L$",
+    "grading": "約{4.0|2} [L]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "絶対温度で考える：$\\dfrac{3.0}{300}=\\dfrac{V}{400}$ より $V=4.0\\,\\mathrm L$．セルシウス温度の比（27 : 127）で計算しないこと．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "ideal-gas"
+ ],
+ "laws": [
+  "charles"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "気体の法則"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "laws",
+  "key": "charles"
+ }
+}

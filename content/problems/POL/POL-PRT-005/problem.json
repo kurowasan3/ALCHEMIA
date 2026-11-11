@@ -1,0 +1,104 @@
+{
+ "id": "POL-PRT-005",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-05",
+ "topic": "核酸の塩基",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "核酸について答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "DNA でアデニンと対をつくる塩基"
+     },
+     {
+      "id": "2",
+      "tex": "DNA でグアニンと対をつくる塩基"
+     },
+     {
+      "id": "3",
+      "tex": "RNA に含まれ，DNA に含まれない塩基"
+     },
+     {
+      "id": "4",
+      "tex": "DNA を構成する糖"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "チミン（T）",
+    "grading": "語{チミン|T}"
+   },
+   {
+    "id": "2",
+    "tex": "シトシン（C）",
+    "grading": "語{シトシン|C}"
+   },
+   {
+    "id": "3",
+    "tex": "ウラシル（U）",
+    "grading": "語{ウラシル|U}"
+   },
+   {
+    "id": "4",
+    "tex": "デオキシリボース",
+    "grading": "語{デオキシリボース}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "DNA の塩基は A・T・G・C で，A と T，G と C が水素結合で対をつくって二重らせん構造をとる．RNA では T のかわりに U．糖は DNA がデオキシリボース，RNA がリボース．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "nucleic-acid"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "核酸"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "polymers",
+  "key": "dna"
+ }
+}

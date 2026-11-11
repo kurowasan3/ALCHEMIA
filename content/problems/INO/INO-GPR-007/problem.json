@@ -1,0 +1,69 @@
+{
+ "id": "INO-GPR-007",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-09",
+ "topic": "アンモニアの製法",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "equation"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応式の空欄 ア に当てはまる化学式を答えよ．\\\\（アンモニアの製法：塩化アンモニウムと水酸化カルシウムの混合物を加熱）\\[\\ce{2NH4Cl} + \\ce{Ca(OH)2} \\ce{->} \\ce{CaCl2} + \\ce{2H2O} + 2\\boxed{\\,\\text{ア}\\,}\\]"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$\\ce{NH3}$",
+    "grading": "語{NH3|アンモニア}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{2NH4Cl + Ca(OH)2 -> CaCl2 + 2H2O + 2NH3 ^}$．弱塩基の塩＋強塩基 → 強塩基の塩＋弱塩基。試験管の口を少し下げる（生じた水が加熱部に流れないように）（弱塩基の遊離）"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "gas-preparation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応式補完",
+  "反応式",
+  "弱塩基の遊離"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "gas-nh3"
+ }
+}

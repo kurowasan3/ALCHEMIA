@@ -1,0 +1,106 @@
+{
+ "id": "INO-ALK-007",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-05",
+ "topic": "アンモニアソーダ法の量的関係",
+ "course": "化学",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc",
+  "equation"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "アンモニアソーダ法（ソルベー法）で炭酸ナトリウムをつくる．全体の反応は $\\ce{2NaCl + CaCO3 -> Na2CO3 + CaCl2}$ と表される．原子量は Na = 23，C = 12，O = 16，Cl = 35.5 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "工程の途中で，水への溶解度が小さいために沈殿として取り出される物質を答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "塩化ナトリウム $1.17\\,\\mathrm{kg}$ がすべて反応したとき，得られる炭酸ナトリウムは何 kg か．"
+     },
+     {
+      "id": "3",
+      "tex": "炭酸カルシウム $1.00\\,\\mathrm{kg}$（式量 100）と過不足なく反応する塩化ナトリウムは何 kg か．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "途中で沈殿として取り出す物質",
+    "grading": "語{NaHCO3|炭酸水素ナトリウム}"
+   },
+   {
+    "id": "2",
+    "tex": "$1.06\\,\\mathrm{kg}$",
+    "grading": "約{1.06|3} [kg]"
+   },
+   {
+    "id": "3",
+    "tex": "$1.17\\,\\mathrm{kg}$",
+    "grading": "約{1.17|3} [kg]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 飽和食塩水に $\\ce{NH3}$，$\\ce{CO2}$ を吹き込むと，溶解度の小さい $\\ce{NaHCO3}$ が沈殿する：$\\ce{NaCl + H2O + NH3 + CO2 -> NaHCO3 + NH4Cl}$．"
+    },
+    {
+     "type": "text",
+     "tex": "(2) $\\ce{NaCl}$ 1.17 kg は $1170/58.5=20.0\\,\\mathrm{mol}$．全体の式より $\\ce{Na2CO3}$ は $10.0\\,\\mathrm{mol}$，質量は $10.0\\times106=1060\\,\\mathrm g=1.06\\,\\mathrm{kg}$．"
+    },
+    {
+     "type": "text",
+     "tex": "(3) $\\ce{CaCO3}$ $1.00\\,\\mathrm{kg}$ は $1000/100=10.0\\,\\mathrm{mol}$．全体の式より $\\ce{NaCl}$ は $20.0\\,\\mathrm{mol}$ 必要で，$20.0\\times58.5=1170\\,\\mathrm g=1.17\\,\\mathrm{kg}$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "industrial-process",
+  "chemical-equation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "工業的製法",
+  "量的関係"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "ind-solvay"
+ }
+}

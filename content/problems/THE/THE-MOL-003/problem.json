@@ -1,0 +1,84 @@
+{
+ "id": "THE-MOL-003",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-04",
+ "topic": "質量パーセント濃度とモル濃度",
+ "course": "化学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "質量パーセント濃度 98 %，密度 $1.84\\,\\mathrm{g/cm^3}$ の濃硫酸について答えよ．H₂SO₄ = 98 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "モル濃度"
+     },
+     {
+      "id": "2",
+      "tex": "$1.0\\,\\mathrm{mol/L}$ の希硫酸を $500\\,\\mathrm{mL}$ つくるのに必要な濃硫酸の体積"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$18.4\\,\\mathrm{mol/L}$",
+    "grading": "約{18.4|3} [mol/L]"
+   },
+   {
+    "id": "2",
+    "tex": "$27.2\\,\\mathrm{mL}$",
+    "grading": "約{27.17|3} [mL]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 1 L（1000 cm³）の質量は 1840 g，そのうち H₂SO₄ は $1840\\times0.98=1803\\,\\mathrm g$，$1803/98=18.4\\,\\mathrm{mol}$．(2) 溶質の物質量は変わらない：$1.0\\times0.500=18.4\\times V$ より $V=27.2\\,\\mathrm{mL}$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "concentration"
+ ],
+ "laws": [
+  "molarity"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "濃度の換算"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

@@ -1,0 +1,70 @@
+{
+ "id": "THE-PER-006",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-02",
+ "topic": "同じ電子配置のイオンの大きさ",
+ "course": "化学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "compare"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次のイオンを，イオン半径の大きい順に並べよ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$\\ce{O^2-}>\\ce{F-}>\\ce{Na+}>\\ce{Mg^2+}>\\ce{Al^3+}$",
+    "grading": "並べる{$\\ce{Na+}$|$\\ce{Al^3+}$|$\\ce{O^2-}$|$\\ce{Mg^2+}$|$\\ce{F-}$}=3>5>1>4>2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "どれも電子 10 個（Ne と同じ電子配置）．原子番号が大きいほど原子核の正電荷が大きく，電子を強く引きつけるので小さい．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "periodicity"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-CATION-RADIUS"
+ ],
+ "tags": [
+  "比較問題",
+  "イオン半径"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "elements",
+  "key": "Ne"
+ }
+}

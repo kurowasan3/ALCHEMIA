@@ -1,0 +1,100 @@
+{
+ "id": "ORG-HYD-003",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-02",
+ "topic": "酢酸ビニルとポリビニルアルコール",
+ "course": "化学",
+ "level": 1,
+ "minutes": 4,
+ "format": [
+  "pathway"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応経路について，空欄に当てはまる化合物の名称（または示性式）を答えよ．\\[\\ce{CH#CH} \\xrightarrow{\\text{CH₃COOH}} \\boxed{\\,\\text{A}\\,} \\xrightarrow{\\text{付加重合}} \\boxed{\\,\\text{B}\\,}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A に当てはまる化合物"
+     },
+     {
+      "id": "2",
+      "tex": "B に当てはまる化合物"
+     },
+     {
+      "id": "3",
+      "tex": "B を水酸化ナトリウム水溶液でけん化して得られる高分子の名称を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "酢酸ビニル　$\\ce{CH2=CHOCOCH3}$",
+    "grading": "A：語{酢酸ビニル|CH2=CHOCOCH3}"
+   },
+   {
+    "id": "2",
+    "tex": "ポリ酢酸ビニル　$\\ce{[CH2-CH(OCOCH3)]_{n}}$",
+    "grading": "B：語{ポリ酢酸ビニル}"
+   },
+   {
+    "id": "3",
+    "tex": "ポリビニルアルコール",
+    "grading": "語{ポリビニルアルコール|PVA}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "アセチレン → 酢酸ビニル：CH₃COOH（触媒）（付加）　$\\ce{CH#CH + CH3COOH -> CH2=CHOCOCH3}$"
+    },
+    {
+     "type": "text",
+     "tex": "酢酸ビニル → ポリ酢酸ビニル：付加重合（付加重合）"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "hydrocarbon",
+  "addition-polymer"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応経路",
+  "ビニロン"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "organic",
+  "key": "vinyl-acetate"
+ }
+}

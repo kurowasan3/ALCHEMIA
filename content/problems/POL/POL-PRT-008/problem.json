@@ -1,0 +1,64 @@
+{
+ "id": "POL-PRT-008",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-05",
+ "topic": "ペプチドの分子量",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "グリシン（分子量 75），アラニン（89），フェニルアラニン（165）が 1 分子ずつ縮合した鎖状トリペプチドの分子量を求めよ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$293$",
+    "grading": "約{293|3}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ペプチド結合が 2 つできるので，水 2 分子（36）が取れる：$75+89+165-36=293$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "protein-amino"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "ペプチド"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

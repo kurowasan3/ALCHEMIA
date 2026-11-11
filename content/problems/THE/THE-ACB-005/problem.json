@@ -1,0 +1,109 @@
+{
+ "id": "THE-ACB-005",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-05",
+ "topic": "塩の水溶液の性質",
+ "course": "化学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の塩の水溶液の性質を選べ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{CH3COONa}$"
+     },
+     {
+      "id": "2",
+      "tex": "$\\ce{NH4Cl}$"
+     },
+     {
+      "id": "3",
+      "tex": "$\\ce{NaCl}$"
+     },
+     {
+      "id": "4",
+      "tex": "$\\ce{Na2CO3}$"
+     },
+     {
+      "id": "5",
+      "tex": "$\\ce{NaHSO4}$"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "塩基性",
+    "grading": "選ぶ{酸性|中性|塩基性}=3"
+   },
+   {
+    "id": "2",
+    "tex": "酸性",
+    "grading": "選ぶ{酸性|中性|塩基性}=1"
+   },
+   {
+    "id": "3",
+    "tex": "中性",
+    "grading": "選ぶ{酸性|中性|塩基性}=2"
+   },
+   {
+    "id": "4",
+    "tex": "塩基性",
+    "grading": "選ぶ{酸性|中性|塩基性}=3"
+   },
+   {
+    "id": "5",
+    "tex": "酸性",
+    "grading": "選ぶ{酸性|中性|塩基性}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "弱酸と強塩基の正塩（CH₃COONa・Na₂CO₃）は加水分解で塩基性，強酸と弱塩基の正塩（NH₄Cl）は酸性，強酸と強塩基の正塩（NaCl）は中性．NaHSO₄ は HSO₄⁻ が電離して H⁺ を出すので酸性（NaHCO₃ は弱塩基性）．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "salt-hydrolysis"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "条件判断",
+  "塩の加水分解"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

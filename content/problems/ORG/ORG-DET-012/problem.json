@@ -1,0 +1,69 @@
+{
+ "id": "ORG-DET-012",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-06",
+ "topic": "ナトリウムとの反応を示す化合物",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の化合物のうち，ナトリウムとの反応（金属ナトリウムを加えると水素が発生する）を示すものをすべて選べ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "酢酸，フェノール",
+    "grading": "すべて選ぶ{ホルムアルデヒド|ジエチルエーテル|アセトン|酢酸|フェノール|酢酸エチル}=4,5"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ナトリウムとの反応は「ヒドロキシ基 −OH・カルボキシ基 −COOH」に陽性．ジエチルエーテル：エーテルは OH をもたない（アルコールと区別できる）．酢酸エチル：OH をもたない．陽性：酢酸，フェノール．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "organic-test"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "条件判断",
+  "検出反応",
+  "ナトリウムとの反応"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "tests",
+  "key": "sodium"
+ }
+}

@@ -1,0 +1,96 @@
+{
+ "id": "INO-PPT-006",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-08",
+ "topic": "クロム酸イオンとの沈殿の色",
+ "course": "化学",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "クロム酸カリウム水溶液を加えたときに生じる沈殿の色を，それぞれ答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{Pb^2+}$"
+     },
+     {
+      "id": "2",
+      "tex": "$\\ce{Ag+}$"
+     },
+     {
+      "id": "3",
+      "tex": "$\\ce{Ba^2+}$"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "黄色",
+    "grading": "語{黄|黄色}"
+   },
+   {
+    "id": "2",
+    "tex": "暗赤色（赤褐色）",
+    "grading": "語{暗赤|暗赤色|赤褐色|赤褐|暗赤褐色}"
+   },
+   {
+    "id": "3",
+    "tex": "黄色",
+    "grading": "語{黄|黄色}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{Pb^2+ + CrO4^2- -> PbCrO4 v}$（黄色），$\\ce{2Ag+ + CrO4^2- -> Ag2CrO4 v}$（暗赤色），$\\ce{Ba^2+ + CrO4^2- -> BaCrO4 v}$（黄色）．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "precipitation",
+  "complex-ion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "沈殿の色"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "ions",
+  "key": "Pb^2+"
+ }
+}

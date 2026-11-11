@@ -1,0 +1,87 @@
+{
+ "id": "INO-PPT-005",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-08",
+ "topic": "亜鉛イオンと過剰のアンモニア水",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "硫酸亜鉛水溶液にアンモニア水を過剰に加えたところ，いったん生じた白色沈殿が溶けた．このとき生じた錯イオンの化学式と，その形を答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "錯イオンの化学式"
+     },
+     {
+      "id": "2",
+      "tex": "錯イオンの形"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{[Zn(NH3)4]^2+}$",
+    "grading": "語{[Zn(NH3)4]^2+|[Zn(NH3)4]2+|テトラアンミン亜鉛(II)イオン}"
+   },
+   {
+    "id": "2",
+    "tex": "正四面体形",
+    "grading": "選ぶ{直線形|正方形|正四面体形|正八面体形}=3"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{Zn(OH)2 + 4NH3 -> [Zn(NH3)4]^2+ + 2OH-}$．配位数 4 でも，$\\ce{[Cu(NH3)4]^2+}$ は正方形，$\\ce{[Zn(NH3)4]^2+}$ は正四面体形．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "precipitation",
+  "complex-ion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "錯イオンの形"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "ions",
+  "key": "Zn^2+"
+ }
+}

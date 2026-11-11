@@ -1,0 +1,65 @@
+{
+ "id": "ORG-HYD-010",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-02",
+ "topic": "結合角",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "compare"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の分子の中の結合角を，大きい順に並べよ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "アセチレンの H−C−C（180°）＞ エチレンの H−C−H（約 120°）＞ メタンの H−C−H（約 109.5°）",
+    "grading": "並べる{メタンの H−C−H|エチレンの H−C−H|アセチレンの H−C−C}=3>2>1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "アセチレンは直線形，エチレンは平面形（C=C のまわりはほぼ 120°），メタンは正四面体形（109.5°）．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "hydrocarbon",
+  "organic-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "比較問題",
+  "分子の形"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

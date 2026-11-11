@@ -1,0 +1,83 @@
+{
+ "id": "ORG-CBX-003",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-04",
+ "topic": "マレイン酸とフマル酸",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "マレイン酸とフマル酸は，分子式 $\\ce{C4H4O4}$ のシス-トランス異性体である．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "シス形はどちらか．"
+     },
+     {
+      "id": "2",
+      "tex": "シス形を加熱すると分子内で脱水して得られる化合物の名称"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "マレイン酸",
+    "grading": "選ぶ{マレイン酸|フマル酸}=1"
+   },
+   {
+    "id": "2",
+    "tex": "無水マレイン酸",
+    "grading": "語{無水マレイン酸}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "マレイン酸はシス形で，2 つの −COOH が近いため，加熱すると分子内で脱水して無水マレイン酸になる．トランス形のフマル酸は −COOH が離れていて分子内脱水しない．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "carboxylic-ester",
+  "organic-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "異性体"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

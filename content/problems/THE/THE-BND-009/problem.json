@@ -1,0 +1,83 @@
+{
+ "id": "THE-BND-009",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-03",
+ "topic": "塩化ナトリウム型の結晶",
+ "course": "化学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "塩化ナトリウムの結晶の単位格子について答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "単位格子に含まれる Na⁺ の数"
+     },
+     {
+      "id": "2",
+      "tex": "Na⁺ の配位数（最も近い Cl⁻ の数）"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "4 個",
+    "grading": "約{4|1} [個]"
+   },
+   {
+    "id": "2",
+    "tex": "6",
+    "grading": "約{6|1}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "Na⁺ は頂点と面の中心（面心立方格子と同じ配置）で 4 個，Cl⁻ は辺の中点と体の中心で $\\frac14\\times12+1=4$ 個．1 つの Na⁺ を 6 個の Cl⁻ が取り囲む（配位数 6）．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "crystal"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "単位格子",
+  "イオン結晶"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

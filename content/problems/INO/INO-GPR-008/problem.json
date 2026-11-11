@@ -1,0 +1,69 @@
+{
+ "id": "INO-GPR-008",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-09",
+ "topic": "一酸化窒素の製法",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "equation"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応式の空欄 ア に当てはまる化学式を答えよ．\\\\（一酸化窒素の製法：銅に希硝酸）\\[\\ce{3Cu} + \\ce{8HNO3} \\ce{->} \\ce{3Cu(NO3)2} + \\ce{4H2O} + 2\\boxed{\\,\\text{ア}\\,}\\]"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$\\ce{NO}$",
+    "grading": "語{NO|一酸化窒素}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{3Cu + 8HNO3 -> 3Cu(NO3)2 + 4H2O + 2NO ^}$（酸化還元）"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "gas-preparation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応式補完",
+  "反応式",
+  "酸化還元"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "gas-no"
+ }
+}

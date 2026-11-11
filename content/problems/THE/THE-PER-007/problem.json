@@ -1,0 +1,104 @@
+{
+ "id": "THE-PER-007",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-02",
+ "topic": "同族元素の名称",
+ "course": "化学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の族の元素をまとめて何というか．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "H を除く 1 族"
+     },
+     {
+      "id": "2",
+      "tex": "2 族"
+     },
+     {
+      "id": "3",
+      "tex": "17 族"
+     },
+     {
+      "id": "4",
+      "tex": "18 族"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "アルカリ金属",
+    "grading": "語{アルカリ金属}"
+   },
+   {
+    "id": "2",
+    "tex": "アルカリ土類金属",
+    "grading": "語{アルカリ土類金属}"
+   },
+   {
+    "id": "3",
+    "tex": "ハロゲン",
+    "grading": "語{ハロゲン}"
+   },
+   {
+    "id": "4",
+    "tex": "貴ガス",
+    "grading": "語{貴ガス|希ガス}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "H を除く 1 族はアルカリ金属，2 族はアルカリ土類金属，17 族はハロゲン，18 族は貴ガス．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "periodicity"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "周期表"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "elements",
+  "key": "Na"
+ }
+}

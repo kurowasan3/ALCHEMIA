@@ -1,0 +1,95 @@
+{
+ "id": "POL-RUB-004",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-03",
+ "topic": "合成ゴムの単量体",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の合成ゴムの単量体の名称を答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ブタジエンゴム"
+     },
+     {
+      "id": "2",
+      "tex": "クロロプレンゴム"
+     },
+     {
+      "id": "3",
+      "tex": "スチレン-ブタジエンゴム（SBR）"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "1,3-ブタジエン",
+    "grading": "語{1,3-ブタジエン|ブタジエン}"
+   },
+   {
+    "id": "2",
+    "tex": "クロロプレン",
+    "grading": "語{クロロプレン}"
+   },
+   {
+    "id": "3",
+    "tex": "スチレンと 1,3-ブタジエン",
+    "grading": "語{スチレンとブタジエン|スチレンと1,3-ブタジエン|スチレン,ブタジエン|ブタジエンとスチレン}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ブタジエンゴム・クロロプレンゴムは 1,4-付加で重合し，主鎖に二重結合が残る．SBR は 2 種類の単量体の共重合．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "rubber"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "ゴム"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "polymers",
+  "key": "sbr"
+ }
+}

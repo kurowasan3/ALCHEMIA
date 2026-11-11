@@ -1,0 +1,101 @@
+{
+ "id": "THE-ACB-002",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-05",
+ "topic": "強酸・強塩基の pH",
+ "course": "化学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の水溶液の pH を求めよ（25 ℃，電離度 1）．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$0.010\\,\\mathrm{mol/L}$ の塩酸"
+     },
+     {
+      "id": "2",
+      "tex": "$0.010\\,\\mathrm{mol/L}$ の水酸化ナトリウム水溶液"
+     },
+     {
+      "id": "3",
+      "tex": "pH 3 の塩酸を水で 100 倍にうすめた水溶液"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "2",
+    "grading": "約{2|1}"
+   },
+   {
+    "id": "2",
+    "tex": "12",
+    "grading": "約{12|2}"
+   },
+   {
+    "id": "3",
+    "tex": "5",
+    "grading": "約{5|1}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $[\\mathrm{H^+}]=1.0\\times10^{-2}$ → pH 2．(2) $[\\mathrm{OH^-}]=1.0\\times10^{-2}$，$[\\mathrm{H^+}]=\\dfrac{1.0\\times10^{-14}}{1.0\\times10^{-2}}=1.0\\times10^{-12}$ → pH 12．(3) $10^{-3}\\to10^{-5}$ で pH 5（さらに 1000 倍にうすめても 8 にはならず，7 に近づく）．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "acid-base",
+  "ph"
+ ],
+ "laws": [
+  "ph-def",
+  "water-ion-product"
+ ],
+ "misconceptions": [
+  "MC-PH-DILUTE"
+ ],
+ "tags": [
+  "計算",
+  "pH"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "laws",
+  "key": "ph-def"
+ }
+}

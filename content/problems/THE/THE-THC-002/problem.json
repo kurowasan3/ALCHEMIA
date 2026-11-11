@@ -1,0 +1,70 @@
+{
+ "id": "THE-THC-002",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-10",
+ "topic": "ヘスの法則（一酸化炭素の生成エンタルピー）",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の値から，一酸化炭素の生成エンタルピー（$\\ce{C(黒鉛) + 1/2O2 -> CO}$ の $\\Delta H$）を求めよ．\\\\$\\ce{C(黒鉛) + O2 -> CO2}$　$\\Delta H_1=-394\\,\\mathrm{kJ}$\\\\$\\ce{CO + 1/2O2 -> CO2}$　$\\Delta H_2=-283\\,\\mathrm{kJ}$"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$-111\\,\\mathrm{kJ/mol}$",
+    "grading": "約{-111|3} [kJ/mol]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "1 式 − 2 式：$\\Delta H=\\Delta H_1-\\Delta H_2=-394-(-283)=-111\\,\\mathrm{kJ/mol}$．CO だけを生成させるのは難しいので，直接は測れない値をヘスの法則で求める．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "enthalpy"
+ ],
+ "laws": [
+  "hess"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "ヘスの法則"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "laws",
+  "key": "hess"
+ }
+}

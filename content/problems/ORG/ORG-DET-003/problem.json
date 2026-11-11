@@ -1,0 +1,71 @@
+{
+ "id": "ORG-DET-003",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-06",
+ "topic": "ヨードホルム反応を示す化合物",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の化合物のうち，ヨードホルム反応（ヨウ素と水酸化ナトリウム水溶液を加えて温めると特異臭のある黄色沈殿（CHI₃））を示すものをすべて選べ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "2-ブタノール，アセトアルデヒド，2-プロパノール",
+    "grading": "すべて選ぶ{2-ブタノール|安息香酸|アセトアルデヒド|メタノール|酢酸エチル|2-プロパノール}=1,3,6"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ヨードホルム反応は「CH₃CO−R または CH₃CH(OH)−R（R は H または炭化水素基）の構造」に陽性．メタノール：炭素が1つで CH₃CH(OH)− がない．酢酸エチル：CH₃CO− の R が OC₂H₅ なので反応しない．陽性：2-ブタノール，アセトアルデヒド，2-プロパノール．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "organic-test"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-ESTER-IODOFORM"
+ ],
+ "tags": [
+  "条件判断",
+  "検出反応",
+  "ヨードホルム反応"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "tests",
+  "key": "iodoform"
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "id": "col-theory-calc",
+ "schema": "alchemia.collection/1",
+ "title": "理論化学の計算の基本",
+ "description": "物質量・濃度・気体・中和。計算の型をひと通り。",
+ "order": 3,
+ "items": [
+  {
+   "id": "THE-MOL-001"
+  },
+  {
+   "id": "THE-MOL-002"
+  },
+  {
+   "id": "THE-MOL-004"
+  },
+  {
+   "id": "THE-GAS-001"
+  },
+  {
+   "id": "THE-GAS-003"
+  },
+  {
+   "id": "THE-ACB-002"
+  },
+  {
+   "id": "THE-ACB-003"
+  },
+  {
+   "id": "THE-RDX-004"
+  }
+ ],
+ "visibility": "public",
+ "createdBy": "alchemia"
+}

@@ -1,0 +1,69 @@
+{
+ "id": "INO-NIT-001",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-03",
+ "topic": "アンモニアと塩化水素",
+ "course": "化学",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "equation"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応式の空欄 ア に当てはまる化学式を答えよ．\\\\（アンモニアと塩化水素）\\[\\ce{NH3} + \\ce{HCl} \\ce{->} \\boxed{\\,\\text{ア}\\,}\\]"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$\\ce{NH4Cl}$",
+    "grading": "語{NH4Cl|塩化アンモニウム}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{NH3 + HCl -> NH4Cl}$．白煙を生じる（検出）（中和・酸塩基）"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "nitrogen-phosphorus"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応式補完",
+  "反応式",
+  "中和・酸塩基"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "n-nh3-hcl"
+ }
+}

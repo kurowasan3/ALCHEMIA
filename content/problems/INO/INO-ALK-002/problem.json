@@ -1,0 +1,69 @@
+{
+ "id": "INO-ALK-002",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-05",
+ "topic": "炭酸水素ナトリウムの熱分解",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "equation"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応式の空欄 ア に当てはまる化学式を答えよ．\\\\（炭酸水素ナトリウムの熱分解：加熱）\\[\\ce{2NaHCO3} \\ce{->} \\boxed{\\,\\text{ア}\\,} + \\ce{H2O} + \\ce{CO2}\\]"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$\\ce{Na2CO3}$",
+    "grading": "語{Na2CO3|炭酸ナトリウム}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{2NaHCO3 -> Na2CO3 + H2O + CO2}$．ベーキングパウダー（熱分解）"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "alkali-metals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応式補完",
+  "反応式",
+  "熱分解"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "na-nahco3-heat"
+ }
+}

@@ -1,0 +1,83 @@
+{
+ "id": "ORG-CBX-004",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-04",
+ "topic": "乳酸と鏡像異性体",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "乳酸 $\\ce{CH3CH(OH)COOH}$ について答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "不斉炭素原子の数"
+     },
+     {
+      "id": "2",
+      "tex": "このために存在する異性体の名称"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "1 個",
+    "grading": "約{1|1} [個]"
+   },
+   {
+    "id": "2",
+    "tex": "鏡像異性体（光学異性体）",
+    "grading": "語{鏡像異性体|光学異性体}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "中央の炭素に H・CH₃・OH・COOH の 4 つの異なる原子・原子団が結合しており，不斉炭素原子である．そのため，互いに鏡に映した関係で重ね合わせられない 1 対の鏡像異性体が存在する．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "carboxylic-ester",
+  "organic-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "不斉炭素"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

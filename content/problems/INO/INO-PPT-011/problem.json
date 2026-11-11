@@ -1,0 +1,68 @@
+{
+ "id": "INO-PPT-011",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-08",
+ "topic": "硫化物の沈殿の色",
+ "course": "化学",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の硫化物のうち，黒色のものをすべて選べ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$\\ce{CuS}$，$\\ce{PbS}$，$\\ce{Ag2S}$",
+    "grading": "すべて選ぶ{$\\ce{CuS}$|$\\ce{ZnS}$|$\\ce{CdS}$|$\\ce{PbS}$|$\\ce{Ag2S}$|$\\ce{MnS}$}=1,4,5"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "硫化物の多くは黒色．例外は $\\ce{ZnS}$（白），$\\ce{CdS}$（黄），$\\ce{MnS}$（淡桃）．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "precipitation",
+  "complex-ion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "条件判断",
+  "沈殿の色"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "ions"
+ }
+}

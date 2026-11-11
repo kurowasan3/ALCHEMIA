@@ -1,0 +1,95 @@
+{
+ "id": "INO-TRN-015",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-07",
+ "topic": "溶鉱炉での鉄の還元",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "pathway"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応経路の空欄 A，B に当てはまる化学式を答えよ．\\[\\ce{Fe2O3} \\xrightarrow{\\text{CO}} \\boxed{\\,\\text{A}\\,} \\xrightarrow{\\text{CO}} \\boxed{\\,\\text{B}\\,} \\xrightarrow{\\text{CO}} \\ce{Fe}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A に当てはまる化学式"
+     },
+     {
+      "id": "2",
+      "tex": "B に当てはまる化学式"
+     },
+     {
+      "id": "3",
+      "tex": "得られた鉄（銑鉄）に含まれ，転炉で酸素を吹き込んで減らす元素"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{Fe3O4}$",
+    "grading": "語{Fe3O4}"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{FeO}$",
+    "grading": "語{FeO}"
+   },
+   {
+    "id": "3",
+    "tex": "炭素 C",
+    "grading": "語{C|炭素}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "上から順に $\\ce{3Fe2O3 + CO -> 2Fe3O4 + CO2}$，$\\ce{Fe3O4 + CO -> 3FeO + CO2}$，$\\ce{FeO + CO -> Fe + CO2}$．還元剤の CO はコークスからできる（$\\ce{C + O2 -> CO2}$，$\\ce{CO2 + C -> 2CO}$）．鉄の酸化数は +3 → +8/3 → +2 → 0．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "industrial-process"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応経路",
+  "工業的製法"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "ind-iron"
+ }
+}

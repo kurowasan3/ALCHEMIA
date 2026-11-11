@@ -1,0 +1,584 @@
+{
+ "schema": "alchemia.laws/1",
+ "laws": [
+  {
+   "id": "mass-conservation",
+   "name": "質量保存の法則",
+   "tex": "m_{\\text{反応前}}=m_{\\text{反応後}}",
+   "conditions": "化学反応の前後（原子は生じも消えもしない）",
+   "concepts": [
+    "chemical-equation"
+   ],
+   "origin": "empirical",
+   "basis": "ラボアジエ（1774年）が、密閉容器内での燃焼などの精密な質量測定から見いだした。原子説では「反応で原子の組み合わせが変わるだけ」と説明される。"
+  },
+  {
+   "id": "definite-proportions",
+   "name": "定比例の法則",
+   "tex": "\\text{化合物の成分元素の質量比は一定}",
+   "conditions": "ある化合物について（つくり方によらない）",
+   "concepts": [
+    "atomic-theory"
+   ],
+   "origin": "empirical",
+   "basis": "プルースト（1799年）。例えば水はどうつくっても H : O = 1 : 8（質量比）。"
+  },
+  {
+   "id": "multiple-proportions",
+   "name": "倍数比例の法則",
+   "tex": "\\text{一定質量の A と化合する B の質量は簡単な整数比}",
+   "conditions": "同じ2元素からなる複数の化合物（例：CO と CO₂）",
+   "concepts": [
+    "atomic-theory"
+   ],
+   "origin": "empirical",
+   "basis": "ドルトン（1803年）が原子説から予言し、実験で確かめた。CO と CO₂ では、C 12 g と化合する O が 16 g と 32 g で 1 : 2。"
+  },
+  {
+   "id": "gas-reaction",
+   "name": "気体反応の法則",
+   "tex": "V_A:V_B:V_C=\\text{簡単な整数比}",
+   "conditions": "同温・同圧で気体どうしが反応するとき",
+   "concepts": [
+    "mole"
+   ],
+   "origin": "empirical",
+   "basis": "ゲーリュサック（1808年）。原子説だけでは説明できず、アボガドロの分子説につながった。"
+  },
+  {
+   "id": "avogadro",
+   "name": "アボガドロの法則",
+   "tex": "V\\propto n\\quad(T,\\ P\\ \\text{一定})",
+   "conditions": "同温・同圧の気体（種類によらない）",
+   "concepts": [
+    "mole",
+    "ideal-gas"
+   ],
+   "origin": "fundamental",
+   "basis": "アボガドロ（1811年）が「同温・同圧・同体積の気体は同数の分子を含む」という仮説として提唱し、気体反応の法則を説明した。いまは気体の状態方程式に含まれる。"
+  },
+  {
+   "id": "mole-def",
+   "name": "物質量",
+   "tex": "n=\\dfrac{N}{N_{\\mathrm A}}=\\dfrac{m}{M}",
+   "conditions": "$N_{\\mathrm A}=6.02\\times10^{23}\\,/\\mathrm{mol}$（アボガドロ定数）、$M$ はモル質量（g/mol）",
+   "concepts": [
+    "mole"
+   ],
+   "origin": "definition"
+  },
+  {
+   "id": "molar-volume",
+   "name": "気体のモル体積",
+   "tex": "V_{\\mathrm m}=22.4\\,\\mathrm{L/mol}",
+   "conditions": "0 ℃、$1.013\\times10^{5}\\,\\mathrm{Pa}$（標準状態）の気体",
+   "concepts": [
+    "mole",
+    "ideal-gas"
+   ],
+   "origin": "derived",
+   "derivation": [
+    {
+     "tex": "気体の状態方程式 $PV=nRT$ で $n=1\\,\\mathrm{mol}$ とする。"
+    },
+    {
+     "tex": "$V=\\dfrac{RT}{P}=\\dfrac{8.31\\times10^{3}\\times273}{1.013\\times10^{5}}\\,\\mathrm L\\fallingdotseq22.4\\,\\mathrm L$（$R=8.31\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$）"
+    },
+    {
+     "tex": "気体の種類によらないのは、状態方程式に気体の種類を表す量が入っていないから（理想気体として扱える範囲）。"
+    }
+   ]
+  },
+  {
+   "id": "molarity",
+   "name": "モル濃度",
+   "tex": "c=\\dfrac{n}{V}",
+   "conditions": "$V$ は溶液の体積（L）。単位 mol/L",
+   "concepts": [
+    "concentration"
+   ],
+   "origin": "definition"
+  },
+  {
+   "id": "molality",
+   "name": "質量モル濃度",
+   "tex": "m=\\dfrac{n}{W}",
+   "conditions": "$W$ は溶媒の質量（kg）。単位 mol/kg。温度で変わらない",
+   "concepts": [
+    "concentration"
+   ],
+   "origin": "definition"
+  },
+  {
+   "id": "boyle",
+   "name": "ボイルの法則",
+   "tex": "PV=\\text{一定}",
+   "conditions": "温度・物質量が一定の気体",
+   "concepts": [
+    "ideal-gas"
+   ],
+   "origin": "empirical",
+   "basis": "ボイル（1662年）が J 字管の実験から見いだした。"
+  },
+  {
+   "id": "charles",
+   "name": "シャルルの法則",
+   "tex": "\\dfrac{V}{T}=\\text{一定}",
+   "conditions": "圧力・物質量が一定の気体。$T$ は絶対温度",
+   "concepts": [
+    "ideal-gas"
+   ],
+   "origin": "empirical",
+   "basis": "シャルル（1787年）。気体の体積は 1 ℃ 上がるごとに 0 ℃ のときの $\\frac{1}{273}$ ずつ増える。この直線を延ばすと −273 ℃ で体積 0 になり、絶対零度の考えにつながった。"
+  },
+  {
+   "id": "boyle-charles",
+   "name": "ボイル・シャルルの法則",
+   "tex": "\\dfrac{PV}{T}=\\text{一定}",
+   "conditions": "物質量が一定の気体",
+   "concepts": [
+    "ideal-gas"
+   ],
+   "origin": "derived",
+   "derivation": [
+    {
+     "tex": "状態 $(P_1,V_1,T_1)$ から、温度を $T_1$ のまま圧力だけ $P_2$ に変える（ボイルの法則）：$P_1V_1=P_2V'$"
+    },
+    {
+     "tex": "次に圧力を $P_2$ のまま温度を $T_2$ に変える（シャルルの法則）：$\\dfrac{V'}{T_1}=\\dfrac{V_2}{T_2}$"
+    },
+    {
+     "tex": "$V'$ を消去して $\\dfrac{P_1V_1}{T_1}=\\dfrac{P_2V_2}{T_2}$"
+    }
+   ]
+  },
+  {
+   "id": "ideal-gas-law",
+   "name": "気体の状態方程式",
+   "tex": "PV=nRT",
+   "conditions": "理想気体（高温・低圧ほど実在気体もよく従う）。$R=8.31\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$",
+   "concepts": [
+    "ideal-gas"
+   ],
+   "origin": "derived",
+   "derivation": [
+    {
+     "tex": "ボイル・シャルルの法則より $\\dfrac{PV}{T}$ は一定。"
+    },
+    {
+     "tex": "アボガドロの法則より、同温・同圧では $V\\propto n$ なので、この一定値は $n$ に比例する：$\\dfrac{PV}{T}=nR$"
+    },
+    {
+     "tex": "$R$ は標準状態のモル体積から $R=\\dfrac{1.013\\times10^{5}\\times22.4}{273}\\fallingdotseq8.31\\times10^{3}$"
+    }
+   ]
+  },
+  {
+   "id": "dalton-partial",
+   "name": "ドルトンの分圧の法則",
+   "tex": "P=p_A+p_B,\\quad p_A=\\dfrac{n_A}{n_A+n_B}P",
+   "conditions": "反応しない理想気体の混合物",
+   "concepts": [
+    "ideal-gas"
+   ],
+   "origin": "derived",
+   "derivation": [
+    {
+     "tex": "各成分気体が単独で同じ容器を占めたときの圧力が分圧：$p_A=\\dfrac{n_ART}{V}$、$p_B=\\dfrac{n_BRT}{V}$"
+    },
+    {
+     "tex": "混合気体全体では $P=\\dfrac{(n_A+n_B)RT}{V}=p_A+p_B$"
+    },
+    {
+     "tex": "比をとると $\\dfrac{p_A}{P}=\\dfrac{n_A}{n_A+n_B}$（モル分率）"
+    }
+   ]
+  },
+  {
+   "id": "henry",
+   "name": "ヘンリーの法則",
+   "tex": "n_{\\text{溶}}\\propto p",
+   "conditions": "溶解度の小さい気体（N₂・O₂ など）。温度一定。溶ける体積は、その圧力のもとで測れば圧力によらない",
+   "concepts": [
+    "solution-colligative"
+   ],
+   "origin": "empirical",
+   "basis": "ヘンリー（1803年）。NH₃・HCl のように水によく溶け、水と反応する気体には当てはまらない。"
+  },
+  {
+   "id": "raoult",
+   "name": "蒸気圧降下（ラウールの法則）",
+   "tex": "\\Delta p=p_0 x_{\\text{溶質}}",
+   "conditions": "不揮発性の溶質を含む希薄溶液",
+   "concepts": [
+    "solution-colligative"
+   ],
+   "origin": "empirical",
+   "basis": "ラウール（1887年）。溶媒分子の一部が溶質粒子に置きかわり、表面から蒸発する溶媒分子が減ると考えられる。"
+  },
+  {
+   "id": "bp-elevation",
+   "name": "沸点上昇",
+   "tex": "\\Delta t_b=K_b m",
+   "conditions": "不揮発性の溶質の希薄溶液。$m$ は溶質粒子の質量モル濃度（電解質は電離後の粒子数で数える）。水の $K_b=0.52\\,\\mathrm{K\\cdot kg/mol}$",
+   "concepts": [
+    "solution-colligative"
+   ],
+   "origin": "empirical",
+   "basis": "蒸気圧降下の結果、蒸気圧が外圧に等しくなるのに高い温度が必要になる。希薄溶液では降下量が質量モル濃度に比例する。"
+  },
+  {
+   "id": "fp-depression",
+   "name": "凝固点降下",
+   "tex": "\\Delta t_f=K_f m",
+   "conditions": "希薄溶液（凝固するのは溶媒だけ）。水の $K_f=1.85\\,\\mathrm{K\\cdot kg/mol}$",
+   "concepts": [
+    "solution-colligative"
+   ],
+   "origin": "empirical",
+   "basis": "溶液の凝固点は溶媒より低い。希薄溶液では降下度が溶質粒子の質量モル濃度に比例する（ラウールの実験）。"
+  },
+  {
+   "id": "vant-hoff",
+   "name": "ファントホッフの法則（浸透圧）",
+   "tex": "\\Pi V=nRT",
+   "conditions": "希薄溶液。$n$ は溶質粒子の物質量",
+   "concepts": [
+    "solution-colligative"
+   ],
+   "origin": "empirical",
+   "basis": "ファントホッフ（1886年）が、ペッファーの浸透圧の測定値が気体の状態方程式と同じ形に従うことに気づいた。"
+  },
+  {
+   "id": "hess",
+   "name": "ヘスの法則（総熱量保存の法則）",
+   "tex": "\\Delta H=\\Delta H_1+\\Delta H_2+\\cdots",
+   "conditions": "最初と最後の状態が同じなら、経路によらない",
+   "concepts": [
+    "enthalpy"
+   ],
+   "origin": "derived",
+   "derivation": [
+    {
+     "tex": "エンタルピー $H$ は物質の状態だけで決まる量（状態量）。"
+    },
+    {
+     "tex": "よって反応エンタルピー $\\Delta H=H_{\\text{後}}-H_{\\text{前}}$ は最初と最後の状態だけで決まり、途中の経路によらない。"
+    },
+    {
+     "tex": "途中で状態 1, 2, … を経るとき、$\\Delta H=(H_1-H_{\\text{前}})+(H_2-H_1)+\\cdots=\\Delta H_1+\\Delta H_2+\\cdots$"
+    }
+   ]
+  },
+  {
+   "id": "formation-enthalpy",
+   "name": "生成エンタルピーと反応エンタルピー",
+   "tex": "\\Delta H=\\sum\\Delta_f H_{\\text{生成物}}-\\sum\\Delta_f H_{\\text{反応物}}",
+   "conditions": "単体の生成エンタルピーは 0",
+   "concepts": [
+    "enthalpy"
+   ],
+   "origin": "derived",
+   "derivation": [
+    {
+     "tex": "反応物を、いったん成分元素の単体に戻す：$-\\sum\\Delta_fH_{\\text{反応物}}$"
+    },
+    {
+     "tex": "単体から生成物をつくる：$+\\sum\\Delta_fH_{\\text{生成物}}$"
+    },
+    {
+     "tex": "ヘスの法則より、直接反応したときの $\\Delta H$ はこの2段階の和"
+    }
+   ]
+  },
+  {
+   "id": "bond-energy",
+   "name": "結合エネルギーと反応エンタルピー",
+   "tex": "\\Delta H=\\sum(\\text{反応物の結合エネルギー})-\\sum(\\text{生成物の結合エネルギー})",
+   "conditions": "すべて気体の反応",
+   "concepts": [
+    "enthalpy"
+   ],
+   "origin": "derived",
+   "derivation": [
+    {
+     "tex": "反応物の結合をすべて切ってばらばらの原子にする：$+\\sum(\\text{反応物の結合エネルギー})$（吸熱）"
+    },
+    {
+     "tex": "原子から生成物の結合をつくる：$-\\sum(\\text{生成物の結合エネルギー})$（発熱）"
+    },
+    {
+     "tex": "ヘスの法則より、反応エンタルピーはこの和"
+    }
+   ]
+  },
+  {
+   "id": "rate-law",
+   "name": "反応速度式",
+   "tex": "v=k[\\mathrm A]^a[\\mathrm B]^b",
+   "conditions": "$a$・$b$ は実験で決める（反応式の係数と一致するとは限らない）。$k$ は温度で決まる",
+   "concepts": [
+    "reaction-rate"
+   ],
+   "origin": "empirical",
+   "basis": "濃度を変えて初速度を測ると、速度が濃度のべき乗に比例することがわかる。"
+  },
+  {
+   "id": "first-order",
+   "name": "一次反応の濃度変化",
+   "tex": "[\\mathrm A]=[\\mathrm A]_0e^{-kt},\\quad t_{1/2}=\\dfrac{\\log_e 2}{k}",
+   "conditions": "$v=k[\\mathrm A]$ に従う反応",
+   "concepts": [
+    "reaction-rate"
+   ],
+   "origin": "derived",
+   "derivation": [
+    {
+     "tex": "$-\\dfrac{d[\\mathrm A]}{dt}=k[\\mathrm A]$ を変数分離して $\\displaystyle\\int\\dfrac{d[\\mathrm A]}{[\\mathrm A]}=-k\\int dt$"
+    },
+    {
+     "tex": "$\\log_e\\dfrac{[\\mathrm A]}{[\\mathrm A]_0}=-kt$ より $[\\mathrm A]=[\\mathrm A]_0e^{-kt}$"
+    },
+    {
+     "tex": "$[\\mathrm A]=\\frac12[\\mathrm A]_0$ となる時間（半減期）は $t_{1/2}=\\dfrac{\\log_e2}{k}$。初めの濃度によらない"
+    }
+   ]
+  },
+  {
+   "id": "arrhenius",
+   "name": "アレニウスの式",
+   "tex": "k=Ae^{-\\frac{E_a}{RT}}",
+   "conditions": "$E_a$ は活性化エネルギー。温度が高いほど、$E_a$ が小さいほど $k$ が大きい",
+   "concepts": [
+    "reaction-rate"
+   ],
+   "origin": "empirical",
+   "basis": "アレニウス（1889年）が速度定数の温度変化の測定から。活性化エネルギー以上の運動エネルギーをもつ分子の割合が $e^{-E_a/RT}$ に比例することと対応する。"
+  },
+  {
+   "id": "equilibrium-law",
+   "name": "化学平衡の法則（質量作用の法則）",
+   "tex": "K=\\dfrac{[\\mathrm C]^c[\\mathrm D]^d}{[\\mathrm A]^a[\\mathrm B]^b}",
+   "conditions": "$a\\mathrm A+b\\mathrm B\\rightleftarrows c\\mathrm C+d\\mathrm D$ が平衡のとき。$K$ は温度だけで決まる",
+   "concepts": [
+    "chemical-equilibrium"
+   ],
+   "origin": "empirical",
+   "basis": "グルベルとワーゲ（1864年）が多くの平衡の測定から見いだした。素反応なら、正反応と逆反応の速さが等しいこと $k_1[\\mathrm A]^a[\\mathrm B]^b=k_2[\\mathrm C]^c[\\mathrm D]^d$ から $K=k_1/k_2$ と理解できる。"
+  },
+  {
+   "id": "le-chatelier",
+   "name": "ルシャトリエの原理（平衡移動の原理）",
+   "tex": "\\text{条件の変化をやわらげる向きに平衡が移動する}",
+   "conditions": "濃度・圧力・温度の変化。触媒は平衡を移動させない",
+   "concepts": [
+    "chemical-equilibrium"
+   ],
+   "origin": "empirical",
+   "basis": "ルシャトリエ（1884年）。濃度・圧力による移動は平衡定数が一定であることから説明できる。温度を変えると平衡定数そのものが変わる。"
+  },
+  {
+   "id": "kp-kc",
+   "name": "圧平衡定数と濃度平衡定数",
+   "tex": "K_p=K_c(RT)^{\\Delta n}",
+   "conditions": "$\\Delta n$ は（生成物の気体の係数の和）−（反応物の気体の係数の和）",
+   "concepts": [
+    "chemical-equilibrium"
+   ],
+   "origin": "derived",
+   "derivation": [
+    {
+     "tex": "各気体の分圧は $p_X=\\dfrac{n_X}{V}RT=[\\mathrm X]RT$"
+    },
+    {
+     "tex": "$K_p=\\dfrac{p_C^{\\,c}p_D^{\\,d}}{p_A^{\\,a}p_B^{\\,b}}$ に代入すると、$RT$ が $(c+d)-(a+b)=\\Delta n$ 乗だけ残る"
+    }
+   ]
+  },
+  {
+   "id": "water-ion-product",
+   "name": "水のイオン積",
+   "tex": "K_w=[\\mathrm{H^+}][\\mathrm{OH^-}]=1.0\\times10^{-14}\\,(\\mathrm{mol/L})^2",
+   "conditions": "25 ℃。酸・塩基の水溶液でも成り立つ（温度が上がると大きくなる）",
+   "concepts": [
+    "ph"
+   ],
+   "origin": "derived",
+   "derivation": [
+    {
+     "tex": "水の電離平衡 $\\mathrm{H_2O\\rightleftarrows H^++OH^-}$ に化学平衡の法則を用いる：$K=\\dfrac{[\\mathrm{H^+}][\\mathrm{OH^-}]}{[\\mathrm{H_2O}]}$"
+    },
+    {
+     "tex": "水の濃度 $[\\mathrm{H_2O}]$（約 55.6 mol/L）は電離してもほぼ一定とみなせるので、$K[\\mathrm{H_2O}]=K_w$ とまとめる"
+    }
+   ]
+  },
+  {
+   "id": "ph-def",
+   "name": "pH（水素イオン指数）",
+   "tex": "\\mathrm{pH}=-\\log_{10}[\\mathrm{H^+}]",
+   "conditions": "25 ℃ で中性は pH 7",
+   "concepts": [
+    "ph"
+   ],
+   "origin": "definition"
+  },
+  {
+   "id": "weak-acid-h",
+   "name": "弱酸の水素イオン濃度",
+   "tex": "[\\mathrm{H^+}]=\\sqrt{cK_a},\\quad \\alpha=\\sqrt{\\dfrac{K_a}{c}}",
+   "conditions": "電離度 $\\alpha\\ll1$ のとき（濃度が十分大きい）",
+   "concepts": [
+    "ionization-equilibrium"
+   ],
+   "origin": "derived",
+   "derivation": [
+    {
+     "tex": "$\\mathrm{HA\\rightleftarrows H^++A^-}$ の平衡で $[\\mathrm{HA}]=c(1-\\alpha)$、$[\\mathrm{H^+}]=[\\mathrm{A^-}]=c\\alpha$"
+    },
+    {
+     "tex": "$K_a=\\dfrac{(c\\alpha)^2}{c(1-\\alpha)}=\\dfrac{c\\alpha^2}{1-\\alpha}$"
+    },
+    {
+     "tex": "$\\alpha\\ll1$ なら $1-\\alpha\\fallingdotseq1$ として $K_a\\fallingdotseq c\\alpha^2$、$\\alpha=\\sqrt{K_a/c}$、$[\\mathrm{H^+}]=c\\alpha=\\sqrt{cK_a}$"
+    }
+   ]
+  },
+  {
+   "id": "buffer",
+   "name": "緩衝液の水素イオン濃度",
+   "tex": "[\\mathrm{H^+}]=K_a\\dfrac{[\\mathrm{HA}]}{[\\mathrm{A^-}]}\\fallingdotseq K_a\\dfrac{c_{\\text{酸}}}{c_{\\text{塩}}}",
+   "conditions": "弱酸とその塩の混合水溶液（どちらも十分な濃度）",
+   "concepts": [
+    "ionization-equilibrium"
+   ],
+   "origin": "derived",
+   "derivation": [
+    {
+     "tex": "$K_a=\\dfrac{[\\mathrm{H^+}][\\mathrm{A^-}]}{[\\mathrm{HA}]}$ を $[\\mathrm{H^+}]$ について解く"
+    },
+    {
+     "tex": "塩は完全に電離して $[\\mathrm{A^-}]\\fallingdotseq c_{\\text{塩}}$。$\\mathrm{A^-}$ が多いので弱酸の電離はほぼ抑えられ $[\\mathrm{HA}]\\fallingdotseq c_{\\text{酸}}$"
+    },
+    {
+     "tex": "少量の酸を加えても $\\mathrm{A^-}$ が、塩基を加えても $\\mathrm{HA}$ が反応して、比 $\\frac{[\\mathrm{HA}]}{[\\mathrm{A^-}]}$ があまり変わらない"
+    }
+   ]
+  },
+  {
+   "id": "ksp",
+   "name": "溶解度積",
+   "tex": "K_{sp}=[\\mathrm{Ag^+}][\\mathrm{Cl^-}]",
+   "conditions": "難溶性の塩の飽和水溶液（固体が共存）。イオン濃度の積が $K_{sp}$ を超えると沈殿する",
+   "concepts": [
+    "solubility-equilibrium"
+   ],
+   "origin": "derived",
+   "derivation": [
+    {
+     "tex": "$\\mathrm{AgCl(固)\\rightleftarrows Ag^++Cl^-}$ に化学平衡の法則を用いる"
+    },
+    {
+     "tex": "固体の濃度は一定とみなして平衡定数に含めると $K_{sp}=[\\mathrm{Ag^+}][\\mathrm{Cl^-}]$"
+    }
+   ]
+  },
+  {
+   "id": "faraday",
+   "name": "ファラデーの電気分解の法則",
+   "tex": "n_{e^-}=\\dfrac{Q}{F}=\\dfrac{It}{F}",
+   "conditions": "$F=9.65\\times10^{4}\\,\\mathrm{C/mol}$（ファラデー定数：電子 1 mol の電気量）",
+   "concepts": [
+    "electrolysis"
+   ],
+   "origin": "empirical",
+   "basis": "ファラデー（1833年）が、電極で変化する物質の量が流した電気量に比例することを見いだした。$F$ は電気素量とアボガドロ定数の積 $eN_{\\mathrm A}$ に等しい。"
+  },
+  {
+   "id": "neutralization",
+   "name": "中和の量的関係",
+   "tex": "a\\,c\\,V=b\\,c'\\,V'",
+   "conditions": "$a$・$b$ は酸・塩基の価数。強弱によらない",
+   "concepts": [
+    "acid-base"
+   ],
+   "origin": "derived",
+   "derivation": [
+    {
+     "tex": "酸が出す $\\mathrm{H^+}$ の物質量は $a\\times cV$、塩基が出す $\\mathrm{OH^-}$（受け取る $\\mathrm{H^+}$）の物質量は $b\\times c'V'$"
+    },
+    {
+     "tex": "中和点ではこれらが等しい（$\\mathrm{H^++OH^-\\to H_2O}$ が過不足なく起こる）"
+    }
+   ]
+  },
+  {
+   "id": "redox-amount",
+   "name": "酸化還元の量的関係",
+   "tex": "n_{e^-}(\\text{酸化剤が受け取る})=n_{e^-}(\\text{還元剤が与える})",
+   "conditions": "過不足なく反応するとき",
+   "concepts": [
+    "redox"
+   ],
+   "origin": "derived",
+   "derivation": [
+    {
+     "tex": "酸化剤・還元剤それぞれの半反応式から、1 mol あたりに授受する電子の物質量を読む"
+    },
+    {
+     "tex": "電子は反応の中で生じも消えもしないので、両者が等しい"
+    }
+   ]
+  },
+  {
+   "id": "bronsted",
+   "name": "ブレンステッド・ローリーの定義",
+   "tex": "\\text{酸}=\\mathrm{H^+}\\text{を与える物質},\\ \\text{塩基}=\\mathrm{H^+}\\text{を受け取る物質}",
+   "conditions": "水溶液でなくても使える",
+   "concepts": [
+    "acid-base"
+   ],
+   "origin": "definition"
+  },
+  {
+   "id": "arrhenius-acid",
+   "name": "アレニウスの定義",
+   "tex": "\\text{酸}=\\text{水に溶けて}\\mathrm{H^+}\\text{を生じる},\\ \\text{塩基}=\\mathrm{OH^-}\\text{を生じる}",
+   "conditions": "水溶液の中で",
+   "concepts": [
+    "acid-base"
+   ],
+   "origin": "definition"
+  },
+  {
+   "id": "oxidation-number",
+   "name": "酸化数",
+   "tex": "\\text{単体}=0,\\ \\mathrm H=+1,\\ \\mathrm O=-2,\\ \\text{化合物の総和}=0",
+   "conditions": "H は金属の水素化物では −1、O は過酸化物では −1。イオンの総和はイオンの電荷",
+   "concepts": [
+    "redox"
+   ],
+   "origin": "definition"
+  },
+  {
+   "id": "electronegativity",
+   "name": "電気陰性度と結合の極性",
+   "tex": "\\Delta\\chi\\ \\text{が大きいほど結合の極性が大きい}",
+   "conditions": "ポーリングの値。F が最大（4.0）",
+   "concepts": [
+    "chemical-bond"
+   ],
+   "origin": "definition"
+  },
+  {
+   "id": "solubility-def",
+   "name": "固体の溶解度",
+   "tex": "S=\\dfrac{\\text{溶質の質量}}{\\text{水 100 g}}",
+   "conditions": "飽和溶液。温度によって変わる。水和物は無水物の質量で表す",
+   "concepts": [
+    "concentration"
+   ],
+   "origin": "definition"
+  }
+ ]
+}

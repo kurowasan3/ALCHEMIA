@@ -1,0 +1,104 @@
+{
+ "id": "POL-RES-003",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-01",
+ "topic": "重合の種類",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の高分子ができる重合の種類を選べ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ポリスチレン"
+     },
+     {
+      "id": "2",
+      "tex": "ナイロン66"
+     },
+     {
+      "id": "3",
+      "tex": "ナイロン6"
+     },
+     {
+      "id": "4",
+      "tex": "フェノール樹脂"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "付加重合",
+    "grading": "選ぶ{付加重合|縮合重合|開環重合|付加縮合}=1"
+   },
+   {
+    "id": "2",
+    "tex": "縮合重合",
+    "grading": "選ぶ{付加重合|縮合重合|開環重合|付加縮合}=2"
+   },
+   {
+    "id": "3",
+    "tex": "開環重合",
+    "grading": "選ぶ{付加重合|縮合重合|開環重合|付加縮合}=3"
+   },
+   {
+    "id": "4",
+    "tex": "付加縮合",
+    "grading": "選ぶ{付加重合|縮合重合|開環重合|付加縮合}=4"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ポリスチレン：C=C の付加重合．ナイロン66：H₂O がとれる縮合重合．ナイロン6：ε-カプロラクタムの環が開く開環重合．フェノール樹脂：付加（HCHO の付加）と縮合をくり返す付加縮合．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "addition-polymer",
+  "condensation-polymer"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "条件判断",
+  "重合の種類"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "polymers"
+ }
+}

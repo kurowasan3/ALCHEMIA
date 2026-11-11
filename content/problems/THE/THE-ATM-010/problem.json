@@ -1,0 +1,64 @@
+{
+ "id": "THE-ATM-010",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-01",
+ "topic": "放射性同位体と半減期",
+ "course": "化学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "$^{14}\\mathrm C$ の半減期は 5730 年である．ある木片の $^{14}\\mathrm C$ の割合が，生きている木の $\\frac18$ であった．この木が枯れてから何年たったと考えられるか．有効数字2桁で答えよ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$1.7\\times10^{4}$ 年",
+    "grading": "約{17190|2} [年]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\frac18=\\left(\\frac12\\right)^3$ なので，半減期 3 回分：$5730\\times3=17190\\fallingdotseq1.7\\times10^{4}$ 年．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "atomic-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "半減期"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

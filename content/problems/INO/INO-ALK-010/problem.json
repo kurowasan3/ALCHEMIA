@@ -1,0 +1,104 @@
+{
+ "id": "INO-ALK-010",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-05",
+ "topic": "カルシウムの化合物",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "カルシウムの化合物の名称（慣用名）に当てはまる化学式を答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "生石灰"
+     },
+     {
+      "id": "2",
+      "tex": "消石灰"
+     },
+     {
+      "id": "3",
+      "tex": "セッコウ"
+     },
+     {
+      "id": "4",
+      "tex": "石灰石"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{CaO}$",
+    "grading": "語{CaO}"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{Ca(OH)2}$",
+    "grading": "語{Ca(OH)2}"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{CaSO4.2H2O}$",
+    "grading": "語{CaSO4.2H2O|CaSO4·2H2O}"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{CaCO3}$",
+    "grading": "語{CaCO3}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "生石灰 CaO（水を加えると発熱して消石灰 Ca(OH)₂），セッコウ CaSO₄·2H₂O（焼くと焼きセッコウ CaSO₄·½H₂O），石灰石・大理石 CaCO₃．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "alkali-metals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "カルシウム"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "ca-gypsum"
+ }
+}

@@ -1,0 +1,70 @@
+{
+ "id": "THE-ACB-003",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-05",
+ "topic": "中和滴定",
+ "course": "化学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "濃度未知の水酸化ナトリウム水溶液で，$0.10\\,\\mathrm{mol/L}$ の希硫酸 $10.0\\,\\mathrm{mL}$ を滴定すると，中和までに $12.5\\,\\mathrm{mL}$ を要した．水酸化ナトリウム水溶液のモル濃度を求めよ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$0.160\\,\\mathrm{mol/L}$",
+    "grading": "約{0.16|2} [mol/L]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "硫酸は 2 価：$2\\times0.10\\times\\dfrac{10.0}{1000}=1\\times c\\times\\dfrac{12.5}{1000}$ より $c=0.16\\,\\mathrm{mol/L}$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "acid-base"
+ ],
+ "laws": [
+  "neutralization"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "中和滴定"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "laws",
+  "key": "neutralization"
+ }
+}

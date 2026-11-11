@@ -1,0 +1,95 @@
+{
+ "id": "INO-OXS-008",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-02",
+ "topic": "接触法の経路",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "pathway"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応経路の空欄 A，B に当てはまる化学式を答えよ．また，（ア）に当てはまるものを選べ．\\[\\ce{S} \\xrightarrow{\\text{O₂}} \\boxed{\\,\\text{A}\\,} \\xrightarrow{\\text{（ア）}} \\boxed{\\,\\text{B}\\,} \\xrightarrow{\\text{濃硫酸に吸収させ希硫酸でうすめる}} \\ce{H2SO4}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A に当てはまる化学式"
+     },
+     {
+      "id": "2",
+      "tex": "B に当てはまる化学式"
+     },
+     {
+      "id": "3",
+      "tex": "（ア）"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{SO2}$",
+    "grading": "語{SO2}"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{SO3}$",
+    "grading": "語{SO3}"
+   },
+   {
+    "id": "3",
+    "tex": "O₂（V₂O₅ 触媒）",
+    "grading": "選ぶ{O₂（Pt 触媒）|O₂（V₂O₅ 触媒）|O₂（Fe₃O₄ 触媒）|H₂O}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{S + O2 -> SO2}$，$\\ce{2SO2 + O2 <=> 2SO3}$（V₂O₅ 触媒），$\\ce{SO3 + H2O -> H2SO4}$．SO₃ は濃硫酸に吸収させて発煙硫酸にする（水に直接吸収させると霧状になって吸収されにくい）．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "industrial-process"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応経路",
+  "工業的製法"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "ind-contact"
+ }
+}

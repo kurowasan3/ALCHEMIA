@@ -1,0 +1,72 @@
+{
+ "id": "THE-EQL-003",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "平衡定数（HI）",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "容積 1.0 L の容器に水素と ヨウ素を 1.0 mol ずつ入れ，一定温度に保つと $\\ce{H2 + I2 <=> 2HI}$ が平衡に達し，ヨウ化水素が 1.6 mol 生じた．この温度での平衡定数を求めよ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$64$",
+    "grading": "約{64|2}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "反応した H₂・I₂ は 0.80 mol ずつ．平衡時 H₂ 0.20，I₂ 0.20，HI 1.6 mol．$K=\\dfrac{1.6^2}{0.20\\times0.20}=64$（体積は約分される）．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "chemical-equilibrium"
+ ],
+ "laws": [
+  "equilibrium-law"
+ ],
+ "misconceptions": [
+  "MC-EQ-STOP"
+ ],
+ "tags": [
+  "計算",
+  "平衡定数"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "laws",
+  "key": "equilibrium-law"
+ }
+}

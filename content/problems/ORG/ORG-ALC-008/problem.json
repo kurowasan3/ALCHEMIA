@@ -1,0 +1,66 @@
+{
+ "id": "ORG-ALC-008",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-03",
+ "topic": "沸点（水素結合の影響）",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "compare"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の化合物を，沸点の高い順に並べよ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "酢酸 ＞ エタノール ＞ アセトアルデヒド ＞ エタン",
+    "grading": "並べる{エタノール|エタン|酢酸|アセトアルデヒド}=3>1>4>2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "酢酸（118 ℃）は 2 分子が水素結合で二量体をつくる．エタノール（78 ℃）も −OH で水素結合する．アセトアルデヒド（20 ℃）は極性はあるが水素結合しない．エタン（−89 ℃）は無極性．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "alcohol-carbonyl",
+  "intermolecular"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "比較問題",
+  "沸点",
+  "水素結合"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

@@ -1,0 +1,70 @@
+{
+ "id": "THE-GAS-003",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-08",
+ "topic": "気体の状態方程式",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "27 ℃，$1.0\\times10^{5}\\,\\mathrm{Pa}$ で $8.3\\,\\mathrm L$ を占める気体の物質量を求めよ．$R=8.3\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$ とする．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$0.33\\,\\mathrm{mol}$",
+    "grading": "約{0.33333333333333337|2} [mol]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$n=\\dfrac{PV}{RT}=\\dfrac{1.0\\times10^5\\times8.3}{8.3\\times10^3\\times300}=0.33\\,\\mathrm{mol}$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "ideal-gas"
+ ],
+ "laws": [
+  "ideal-gas-law"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "状態方程式"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "laws",
+  "key": "ideal-gas-law"
+ }
+}

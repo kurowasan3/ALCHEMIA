@@ -1,0 +1,70 @@
+{
+ "id": "THE-ION-007",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "塩の加水分解と pH",
+ "course": "化学",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "$0.10\\,\\mathrm{mol/L}$ 酢酸ナトリウム水溶液の pH を小数第2位まで求めよ．酢酸の $K_a=2.0\\times10^{-5}\\,\\mathrm{mol/L}$，$K_w=1.0\\times10^{-14}$，$\\log_{10}2=0.30$，$\\log_{10}5=0.70$ とする（$\\sqrt{5.0\\times10^{-11}}$ は $\\sqrt{50}\\times10^{-6}$ と考え，$\\log_{10}\\sqrt{50}=0.85$）．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$8.85$",
+    "grading": "約{8.84948500216801|3}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{CH3COO- + H2O <=> CH3COOH + OH-}$ の加水分解定数 $K_h=\\dfrac{K_w}{K_a}=5.0\\times10^{-10}$．$[\\mathrm{OH^-}]=\\sqrt{cK_h}=\\sqrt{5.0\\times10^{-11}}$，$\\mathrm{pOH}=6-0.85=5.15$，$\\mathrm{pH}=14-5.15=8.85$（弱塩基性）．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "salt-hydrolysis",
+  "ionization-equilibrium"
+ ],
+ "laws": [
+  "water-ion-product"
+ ],
+ "misconceptions": [
+  "MC-NEUTRAL-PH7"
+ ],
+ "tags": [
+  "計算",
+  "加水分解",
+  "pH"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

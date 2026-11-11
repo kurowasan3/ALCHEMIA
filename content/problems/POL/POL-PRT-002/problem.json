@@ -1,0 +1,91 @@
+{
+ "id": "POL-PRT-002",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-05",
+ "topic": "ペプチドの数",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "アミノ酸の組み合わせについて答えよ（鏡像異性体は考えない）．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "トリペプチド 1 分子に含まれるペプチド結合の数"
+     },
+     {
+      "id": "2",
+      "tex": "グリシン・アラニン・フェニルアラニンを 1 分子ずつ含む鎖状トリペプチドの種類"
+     },
+     {
+      "id": "3",
+      "tex": "グリシン 2 分子とアラニン 1 分子からなる鎖状トリペプチドの種類"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "2 個",
+    "grading": "約{2|1} [個]"
+   },
+   {
+    "id": "2",
+    "tex": "6 種類",
+    "grading": "約{6|1} [種類]"
+   },
+   {
+    "id": "3",
+    "tex": "3 種類",
+    "grading": "約{3|1} [種類]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) n 個のアミノ酸からなる鎖状ペプチドのペプチド結合は n−1 個．(2) 3 種類を 1 個ずつ並べる順番は $3!=6$ 通り（N 末端と C 末端は区別する）．(3) Gly 2 個と Ala 1 個の並べ方は Gly-Gly-Ala，Gly-Ala-Gly，Ala-Gly-Gly の 3 通り．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "protein-amino"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "ペプチド"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

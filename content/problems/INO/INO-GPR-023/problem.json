@@ -1,0 +1,68 @@
+{
+ "id": "INO-GPR-023",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-09",
+ "topic": "硫化水素の乾燥剤",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "硫化水素の乾燥に使えない乾燥剤をすべて選べ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "濃硫酸，ソーダ石灰",
+    "grading": "すべて選ぶ{濃硫酸|塩化カルシウム|ソーダ石灰}=1,3"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{H2S}$ は酸性なので塩基性のソーダ石灰と反応する．また還元性があり，酸化作用をもつ濃硫酸に酸化される（$\\ce{H2SO4 + H2S -> S + SO2 + 2H2O}$）．中性の塩化カルシウムを使う．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "gas-preparation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "条件判断",
+  "乾燥剤"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "gas-h2s"
+ }
+}

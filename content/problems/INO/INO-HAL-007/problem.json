@@ -1,0 +1,69 @@
+{
+ "id": "INO-HAL-007",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-01",
+ "topic": "ハロゲン化水素の沸点",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "compare"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ハロゲン化水素 $\\ce{HF}$，$\\ce{HCl}$，$\\ce{HBr}$，$\\ce{HI}$ を，沸点の高い順に並べよ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$\\ce{HF}>\\ce{HI}>\\ce{HBr}>\\ce{HCl}$",
+    "grading": "並べる{HCl|HBr|HI|HF}=4>3>2>1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{HF}$ は分子間に水素結合をつくるので，分子量が最も小さいのに沸点が最も高い．残りは分子量が大きいほどファンデルワールス力が強く，沸点が高い．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "halogen",
+  "intermolecular"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "比較問題",
+  "ハロゲン",
+  "沸点"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions"
+ }
+}

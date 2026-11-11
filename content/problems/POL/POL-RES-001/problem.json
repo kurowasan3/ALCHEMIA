@@ -1,0 +1,104 @@
+{
+ "id": "POL-RES-001",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-01",
+ "topic": "付加重合の単量体",
+ "course": "化学",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の高分子の単量体の名称を答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ポリエチレン"
+     },
+     {
+      "id": "2",
+      "tex": "ポリ塩化ビニル"
+     },
+     {
+      "id": "3",
+      "tex": "ポリスチレン"
+     },
+     {
+      "id": "4",
+      "tex": "ポリメタクリル酸メチル（アクリル樹脂）"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "エチレン",
+    "grading": "語{エチレン|CH2=CH2|C2H4}"
+   },
+   {
+    "id": "2",
+    "tex": "塩化ビニル",
+    "grading": "語{塩化ビニル|CH2=CHCl}"
+   },
+   {
+    "id": "3",
+    "tex": "スチレン",
+    "grading": "語{スチレン|C6H5CH=CH2|CH2=CHC6H5}"
+   },
+   {
+    "id": "4",
+    "tex": "メタクリル酸メチル",
+    "grading": "語{メタクリル酸メチル}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "いずれも炭素間の二重結合が開いて次々につながる付加重合でできる．$\\ce{CH2=CHX}$ の X が H（ポリエチレン），Cl（ポリ塩化ビニル），$\\ce{C6H5}$（ポリスチレン）．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "addition-polymer"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "単量体"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "polymers",
+  "key": "ps"
+ }
+}

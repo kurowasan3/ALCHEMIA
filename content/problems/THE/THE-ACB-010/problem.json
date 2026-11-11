@@ -1,0 +1,85 @@
+{
+ "id": "THE-ACB-010",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-05",
+ "topic": "逆滴定（アンモニアの定量）",
+ "course": "化学基礎",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "発生したアンモニアをすべて $0.10\\,\\mathrm{mol/L}$ 希硫酸 $20.0\\,\\mathrm{mL}$ に吸収させた．残った硫酸を $0.10\\,\\mathrm{mol/L}$ 水酸化ナトリウム水溶液で滴定すると $15.0\\,\\mathrm{mL}$ を要した．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "滴定に使う指示薬"
+     },
+     {
+      "id": "2",
+      "tex": "吸収させたアンモニアの物質量"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "メチルオレンジ",
+    "grading": "選ぶ{フェノールフタレイン|メチルオレンジ}=2"
+   },
+   {
+    "id": "2",
+    "tex": "$2.5\\times10^{-3}\\,\\mathrm{mol}$",
+    "grading": "約{0.0025|2} [mol]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 終点の溶液には NH₄⁺（弱塩基の塩）が含まれて弱酸性なので，酸性側に変色域があるメチルオレンジ．(2) 酸の H⁺ ＝ 塩基の受け取る H⁺：$2\\times0.10\\times\\dfrac{20.0}{1000}=n_{\\mathrm{NH_3}}+0.10\\times\\dfrac{15.0}{1000}$ より $n=2.5\\times10^{-3}\\,\\mathrm{mol}$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "acid-base",
+  "salt-hydrolysis"
+ ],
+ "laws": [
+  "neutralization"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "逆滴定"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

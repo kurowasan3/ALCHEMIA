@@ -1,0 +1,103 @@
+{
+ "id": "ORG-ARO-005",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-05",
+ "topic": "クメン法",
+ "course": "化学",
+ "level": 2,
+ "minutes": 6,
+ "format": [
+  "pathway"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応経路について，空欄に当てはまる化合物の名称（または示性式）を答えよ．\\[\\ce{C6H6} \\xrightarrow{\\text{プロペン}} \\boxed{\\,\\text{A}\\,} \\xrightarrow{\\text{O₂}} \\boxed{\\,\\text{B}\\,} \\xrightarrow{\\text{希硫酸}} \\ce{C6H5OH}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A に当てはまる化合物"
+     },
+     {
+      "id": "2",
+      "tex": "B に当てはまる化合物"
+     },
+     {
+      "id": "3",
+      "tex": "最後の分解でフェノールと同時に得られる化合物の名称を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "クメン　$\\ce{C6H5CH(CH3)2}$",
+    "grading": "A：語{クメン|C6H5CH(CH3)2}"
+   },
+   {
+    "id": "2",
+    "tex": "クメンヒドロペルオキシド　$\\ce{C6H5C(CH3)2OOH}$",
+    "grading": "B：語{クメンヒドロペルオキシド|C6H5C(CH3)2OOH}"
+   },
+   {
+    "id": "3",
+    "tex": "アセトン",
+    "grading": "語{アセトン|CH3COCH3}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ベンゼン → クメン：プロペン（触媒）（付加）　$\\ce{C6H6 + CH2=CHCH3 -> C6H5CH(CH3)2}$"
+    },
+    {
+     "type": "text",
+     "tex": "クメン → クメンヒドロペルオキシド：O₂（酸化）　$\\ce{C6H5CH(CH3)2 + O2 -> C6H5C(CH3)2OOH}$"
+    },
+    {
+     "type": "text",
+     "tex": "クメンヒドロペルオキシド → フェノール：希硫酸（分解）　$\\ce{C6H5C(CH3)2OOH -> C6H5OH + CH3COCH3}$．クメン法：アセトンも同時に得られる"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "aromatic"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応経路",
+  "クメン法"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "organic",
+  "key": "cumene"
+ }
+}

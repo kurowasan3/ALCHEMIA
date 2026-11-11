@@ -1,0 +1,88 @@
+{
+ "id": "INO-GPR-024",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-09",
+ "topic": "塩素の精製（洗気びんの順）",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "酸化マンガン(IV)に濃塩酸を加えて加熱し，発生した気体を2つの洗気びんに通して純粋な塩素を得たい．1つ目と2つ目の洗気びんに入れるものと，その役割を答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "1つ目の洗気びん"
+     },
+     {
+      "id": "2",
+      "tex": "2つ目の洗気びん"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "水（塩化水素を除く）",
+    "grading": "選ぶ{水|濃硫酸}=1"
+   },
+   {
+    "id": "2",
+    "tex": "濃硫酸（水蒸気を除く）",
+    "grading": "選ぶ{水|濃硫酸}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "発生した気体には，揮発した $\\ce{HCl}$ と水蒸気が混じっている．先に水で $\\ce{HCl}$ を吸収させ，次に濃硫酸で乾燥させる．順を逆にすると，最後に水蒸気が混じる．$\\ce{MnO2 + 4HCl -> MnCl2 + 2H2O + Cl2}$"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "gas-preparation"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-CL2-WASH-ORDER"
+ ],
+ "tags": [
+  "条件判断",
+  "気体の精製"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "gas-cl2-mno2"
+ }
+}

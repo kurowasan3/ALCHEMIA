@@ -1,0 +1,92 @@
+{
+ "id": "POL-FIB-002",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-02",
+ "topic": "ナイロン66の重合度と原料の量",
+ "course": "化学",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ナイロン66 について答えよ．原子量は H = 1.0，C = 12，N = 14，O = 16 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "平均分子量 $4.52\\times10^{4}$ のナイロン66 の平均重合度（繰り返し単位の数）を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "ナイロン66 を $1.00\\,\\mathrm{kg}$ つくるのに必要なヘキサメチレンジアミンは何 g か．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$200$",
+    "grading": "約{200|3}"
+   },
+   {
+    "id": "2",
+    "tex": "$513\\,\\mathrm g$",
+    "grading": "約{513.3|3} [g]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 繰り返し単位 $\\ce{-NH(CH2)6NH-CO(CH2)4CO-}$（$\\ce{C12H22N2O2}$）の式量は 226．$n=\\dfrac{4.52\\times10^{4}}{226}=200$．"
+    },
+    {
+     "type": "text",
+     "tex": "(2) 繰り返し単位 1 mol に，ヘキサメチレンジアミン（$\\ce{C6H16N2}$，分子量 116）1 mol が使われる．$\\dfrac{1000}{226}\\times116\\fallingdotseq513\\,\\mathrm g$（分子の両端の違いは無視できる）．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "condensation-polymer",
+  "chemical-equation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "ナイロン",
+  "重合度"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "polymers",
+  "key": "nylon66"
+ }
+}

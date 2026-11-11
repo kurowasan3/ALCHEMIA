@@ -1,0 +1,506 @@
+{
+ "schema": "alchemia.tests/1",
+ "tests": [
+  {
+   "id": "iodoform",
+   "name": "ヨードホルム反応",
+   "reagent": "ヨウ素と水酸化ナトリウム水溶液を加えて温める",
+   "obs": "特異臭のある黄色沈殿（CHI₃）",
+   "target": "CH₃CO−R または CH₃CH(OH)−R（R は H または炭化水素基）の構造",
+   "scope": [
+    "methanol",
+    "ethanol",
+    "propanol-1",
+    "propanol-2",
+    "butanol-2",
+    "formaldehyde",
+    "acetaldehyde",
+    "acetone",
+    "formic-acid",
+    "acetic-acid",
+    "ethyl-acetate",
+    "diethyl-ether",
+    "ethylene",
+    "acetylene",
+    "benzene",
+    "toluene",
+    "phenol",
+    "o-cresol",
+    "benzaldehyde",
+    "benzyl-alcohol",
+    "benzoic-acid",
+    "salicylic-acid",
+    "aspirin",
+    "methyl-salicylate",
+    "aniline",
+    "nitrobenzene"
+   ],
+   "pos": {
+    "ethanol": "",
+    "propanol-2": "",
+    "butanol-2": "",
+    "acetaldehyde": "",
+    "acetone": ""
+   },
+   "tri": {},
+   "neg_note": {
+    "acetic-acid": "CH₃CO− の R が OH なので反応しない",
+    "ethyl-acetate": "CH₃CO− の R が OC₂H₅ なので反応しない",
+    "methanol": "炭素が1つで CH₃CH(OH)− がない"
+   }
+  },
+  {
+   "id": "silver-mirror",
+   "name": "銀鏡反応",
+   "reagent": "アンモニア性硝酸銀水溶液を加えて温める",
+   "obs": "銀が析出して試験管の内壁が鏡のようになる",
+   "target": "ホルミル基（アルデヒド基）−CHO（還元性）",
+   "scope": [
+    "methanol",
+    "ethanol",
+    "propanol-1",
+    "propanol-2",
+    "butanol-2",
+    "formaldehyde",
+    "acetaldehyde",
+    "acetone",
+    "formic-acid",
+    "acetic-acid",
+    "ethyl-acetate",
+    "diethyl-ether",
+    "ethylene",
+    "acetylene",
+    "benzene",
+    "toluene",
+    "phenol",
+    "o-cresol",
+    "benzaldehyde",
+    "benzyl-alcohol",
+    "benzoic-acid",
+    "salicylic-acid",
+    "aspirin",
+    "methyl-salicylate",
+    "aniline",
+    "nitrobenzene",
+    "glucose",
+    "fructose",
+    "sucrose",
+    "maltose",
+    "starch"
+   ],
+   "pos": {
+    "formaldehyde": "",
+    "acetaldehyde": "",
+    "benzaldehyde": "",
+    "formic-acid": "ホルミル基をもつ",
+    "glucose": "",
+    "fructose": "水溶液中で還元性を示す",
+    "maltose": ""
+   },
+   "tri": {},
+   "neg_note": {
+    "acetone": "ケトンは還元性を示さない",
+    "sucrose": "還元性を示す構造が結合に使われている"
+   }
+  },
+  {
+   "id": "fehling",
+   "name": "フェーリング液の還元",
+   "reagent": "フェーリング液を加えて温める",
+   "obs": "赤色沈殿（Cu₂O）",
+   "target": "ホルミル基（アルデヒド基）−CHO（還元性）",
+   "scope": [
+    "methanol",
+    "ethanol",
+    "propanol-1",
+    "propanol-2",
+    "butanol-2",
+    "formaldehyde",
+    "acetaldehyde",
+    "acetone",
+    "formic-acid",
+    "acetic-acid",
+    "ethyl-acetate",
+    "diethyl-ether",
+    "ethylene",
+    "acetylene",
+    "benzene",
+    "toluene",
+    "phenol",
+    "o-cresol",
+    "benzaldehyde",
+    "benzyl-alcohol",
+    "benzoic-acid",
+    "salicylic-acid",
+    "aspirin",
+    "methyl-salicylate",
+    "aniline",
+    "nitrobenzene",
+    "glucose",
+    "fructose",
+    "sucrose",
+    "maltose",
+    "starch"
+   ],
+   "pos": {
+    "formaldehyde": "",
+    "acetaldehyde": "",
+    "formic-acid": "",
+    "glucose": "",
+    "fructose": "",
+    "maltose": ""
+   },
+   "tri": {
+    "benzaldehyde": "芳香族アルデヒドはフェーリング液をほとんど還元しない（銀鏡反応は示す）"
+   },
+   "neg_note": {
+    "sucrose": "還元性を示さない"
+   }
+  },
+  {
+   "id": "fecl3",
+   "name": "塩化鉄(III)水溶液による呈色",
+   "reagent": "塩化鉄(III)水溶液を加える",
+   "obs": "青〜赤紫色に呈色",
+   "target": "フェノール性ヒドロキシ基（ベンゼン環に直接結合した −OH）",
+   "scope": [
+    "methanol",
+    "ethanol",
+    "propanol-1",
+    "propanol-2",
+    "butanol-2",
+    "formaldehyde",
+    "acetaldehyde",
+    "acetone",
+    "formic-acid",
+    "acetic-acid",
+    "ethyl-acetate",
+    "diethyl-ether",
+    "ethylene",
+    "acetylene",
+    "benzene",
+    "toluene",
+    "phenol",
+    "o-cresol",
+    "benzaldehyde",
+    "benzyl-alcohol",
+    "benzoic-acid",
+    "salicylic-acid",
+    "aspirin",
+    "methyl-salicylate",
+    "aniline",
+    "nitrobenzene"
+   ],
+   "pos": {
+    "phenol": "紫色",
+    "o-cresol": "青色",
+    "salicylic-acid": "赤紫色",
+    "methyl-salicylate": "赤紫色"
+   },
+   "tri": {},
+   "neg_note": {
+    "aspirin": "フェノール性 OH がアセチル化されている",
+    "benzyl-alcohol": "OH がベンゼン環に直接結合していない"
+   }
+  },
+  {
+   "id": "nahco3",
+   "name": "炭酸水素ナトリウム水溶液との反応",
+   "reagent": "炭酸水素ナトリウム水溶液を加える",
+   "obs": "二酸化炭素が発生する",
+   "target": "カルボキシ基 −COOH（炭酸より強い酸）",
+   "scope": [
+    "methanol",
+    "ethanol",
+    "propanol-1",
+    "propanol-2",
+    "butanol-2",
+    "formaldehyde",
+    "acetaldehyde",
+    "acetone",
+    "formic-acid",
+    "acetic-acid",
+    "ethyl-acetate",
+    "diethyl-ether",
+    "ethylene",
+    "acetylene",
+    "benzene",
+    "toluene",
+    "phenol",
+    "o-cresol",
+    "benzaldehyde",
+    "benzyl-alcohol",
+    "benzoic-acid",
+    "salicylic-acid",
+    "aspirin",
+    "methyl-salicylate",
+    "aniline",
+    "nitrobenzene"
+   ],
+   "pos": {
+    "formic-acid": "",
+    "acetic-acid": "",
+    "benzoic-acid": "",
+    "salicylic-acid": "",
+    "aspirin": ""
+   },
+   "tri": {},
+   "neg_note": {
+    "phenol": "フェノールは炭酸より弱い酸",
+    "o-cresol": "フェノール類は炭酸より弱い酸",
+    "methyl-salicylate": "COOH がエステルになっている"
+   }
+  },
+  {
+   "id": "sodium",
+   "name": "ナトリウムとの反応",
+   "reagent": "金属ナトリウムを加える",
+   "obs": "水素が発生する",
+   "target": "ヒドロキシ基 −OH・カルボキシ基 −COOH",
+   "scope": [
+    "methanol",
+    "ethanol",
+    "propanol-1",
+    "propanol-2",
+    "butanol-2",
+    "formaldehyde",
+    "acetaldehyde",
+    "acetone",
+    "formic-acid",
+    "acetic-acid",
+    "ethyl-acetate",
+    "diethyl-ether",
+    "ethylene",
+    "acetylene",
+    "benzene",
+    "toluene",
+    "phenol",
+    "o-cresol",
+    "benzaldehyde",
+    "benzyl-alcohol",
+    "benzoic-acid",
+    "salicylic-acid",
+    "aspirin",
+    "methyl-salicylate",
+    "aniline",
+    "nitrobenzene"
+   ],
+   "pos": {
+    "methanol": "",
+    "ethanol": "",
+    "propanol-1": "",
+    "propanol-2": "",
+    "butanol-2": "",
+    "formic-acid": "",
+    "acetic-acid": "",
+    "phenol": "",
+    "o-cresol": "",
+    "benzyl-alcohol": "",
+    "benzoic-acid": "",
+    "salicylic-acid": "",
+    "aspirin": "",
+    "methyl-salicylate": ""
+   },
+   "tri": {},
+   "neg_note": {
+    "diethyl-ether": "エーテルは OH をもたない（アルコールと区別できる）",
+    "ethyl-acetate": "OH をもたない"
+   }
+  },
+  {
+   "id": "bromine",
+   "name": "臭素水の脱色",
+   "reagent": "臭素水を加える",
+   "obs": "臭素の赤褐色が消える",
+   "target": "炭素間の二重結合・三重結合（付加反応）",
+   "scope": [
+    "methanol",
+    "ethanol",
+    "propanol-1",
+    "propanol-2",
+    "butanol-2",
+    "formaldehyde",
+    "acetaldehyde",
+    "acetone",
+    "formic-acid",
+    "acetic-acid",
+    "ethyl-acetate",
+    "diethyl-ether",
+    "ethylene",
+    "acetylene",
+    "benzene",
+    "toluene",
+    "phenol",
+    "o-cresol",
+    "benzaldehyde",
+    "benzyl-alcohol",
+    "benzoic-acid",
+    "salicylic-acid",
+    "aspirin",
+    "methyl-salicylate",
+    "aniline",
+    "nitrobenzene",
+    "glucose",
+    "fructose"
+   ],
+   "pos": {
+    "ethylene": "付加",
+    "acetylene": "付加",
+    "phenol": "置換して白色沈殿（2,4,6-トリブロモフェノール）",
+    "o-cresol": "ベンゼン環の置換",
+    "aniline": "置換して白色沈殿（2,4,6-トリブロモアニリン）",
+    "salicylic-acid": "フェノール性 OH をもつベンゼン環が置換される"
+   },
+   "tri": {
+    "formaldehyde": "酸化されて脱色する（不飽和結合の検出には使わない）",
+    "acetaldehyde": "酸化されて脱色する（不飽和結合の検出には使わない）",
+    "formic-acid": "酸化されて脱色する",
+    "benzaldehyde": "酸化されて脱色する",
+    "glucose": "酸化されて脱色する（フルクトースとの区別に使われる）",
+    "methyl-salicylate": "フェノール性 OH をもつベンゼン環が置換される"
+   },
+   "neg_note": {
+    "benzene": "ベンゼン環は付加反応を起こしにくい",
+    "fructose": "ケトースは臭素水で酸化されにくい"
+   }
+  },
+  {
+   "id": "bleach",
+   "name": "さらし粉水溶液による呈色",
+   "reagent": "さらし粉水溶液を加える",
+   "obs": "赤紫色に呈色",
+   "target": "アニリン",
+   "scope": [
+    "methanol",
+    "ethanol",
+    "propanol-1",
+    "propanol-2",
+    "butanol-2",
+    "formaldehyde",
+    "acetaldehyde",
+    "acetone",
+    "formic-acid",
+    "acetic-acid",
+    "ethyl-acetate",
+    "diethyl-ether",
+    "ethylene",
+    "acetylene",
+    "benzene",
+    "toluene",
+    "phenol",
+    "o-cresol",
+    "benzaldehyde",
+    "benzyl-alcohol",
+    "benzoic-acid",
+    "salicylic-acid",
+    "aspirin",
+    "methyl-salicylate",
+    "aniline",
+    "nitrobenzene"
+   ],
+   "pos": {
+    "aniline": "赤紫色"
+   },
+   "tri": {},
+   "neg_note": {}
+  },
+  {
+   "id": "ninhydrin",
+   "name": "ニンヒドリン反応",
+   "reagent": "ニンヒドリン水溶液を加えて温める",
+   "obs": "赤紫〜青紫色に呈色",
+   "target": "アミノ基 −NH₂（アミノ酸・タンパク質）",
+   "scope": [
+    "glycine",
+    "phenylalanine",
+    "cysteine",
+    "protein"
+   ],
+   "pos": {
+    "glycine": "",
+    "phenylalanine": "",
+    "cysteine": "",
+    "protein": ""
+   },
+   "tri": {},
+   "neg_note": {}
+  },
+  {
+   "id": "biuret",
+   "name": "ビウレット反応",
+   "reagent": "水酸化ナトリウム水溶液を加えてから、硫酸銅(II)水溶液を少量加える",
+   "obs": "赤紫色に呈色",
+   "target": "2つ以上のペプチド結合（トリペプチド以上）",
+   "scope": [
+    "glycine",
+    "phenylalanine",
+    "cysteine",
+    "protein"
+   ],
+   "pos": {
+    "protein": ""
+   },
+   "tri": {},
+   "neg_note": {
+    "glycine": "アミノ酸はペプチド結合をもたない"
+   }
+  },
+  {
+   "id": "xanthoprotein",
+   "name": "キサントプロテイン反応",
+   "reagent": "濃硝酸を加えて加熱し、冷やしてからアンモニア水を加える",
+   "obs": "黄色（アンモニア水で橙黄色）",
+   "target": "ベンゼン環（のニトロ化）",
+   "scope": [
+    "glycine",
+    "phenylalanine",
+    "cysteine",
+    "protein"
+   ],
+   "pos": {
+    "phenylalanine": "",
+    "protein": "ベンゼン環をもつアミノ酸を含む"
+   },
+   "tri": {},
+   "neg_note": {}
+  },
+  {
+   "id": "sulfur",
+   "name": "硫黄の検出",
+   "reagent": "水酸化ナトリウムを加えて加熱し、酢酸鉛(II)水溶液を加える",
+   "obs": "黒色沈殿（PbS）",
+   "target": "硫黄 S",
+   "scope": [
+    "glycine",
+    "phenylalanine",
+    "cysteine",
+    "protein"
+   ],
+   "pos": {
+    "cysteine": "",
+    "protein": "システインなどを含む"
+   },
+   "tri": {},
+   "neg_note": {}
+  },
+  {
+   "id": "iodine-starch",
+   "name": "ヨウ素デンプン反応",
+   "reagent": "ヨウ素ヨウ化カリウム水溶液（ヨウ素液）を加える",
+   "obs": "青紫色に呈色",
+   "target": "デンプン（らせん構造）",
+   "scope": [
+    "glucose",
+    "fructose",
+    "sucrose",
+    "maltose",
+    "starch"
+   ],
+   "pos": {
+    "starch": "加熱すると色が消え、冷やすと戻る"
+   },
+   "tri": {},
+   "neg_note": {}
+  }
+ ]
+}

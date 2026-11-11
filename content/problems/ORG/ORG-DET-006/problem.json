@@ -1,0 +1,71 @@
+{
+ "id": "ORG-DET-006",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-06",
+ "topic": "フェーリング液の還元を示す化合物",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の化合物のうち，フェーリング液の還元（フェーリング液を加えて温めると赤色沈殿（Cu₂O））を示すものをすべて選べ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "ホルムアルデヒド，マルトース",
+    "grading": "すべて選ぶ{酢酸|スクロース|デンプン|ホルムアルデヒド|サリチル酸|マルトース}=4,6"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "フェーリング液の還元は「ホルミル基（アルデヒド基）−CHO（還元性）」に陽性．スクロース：還元性を示さない．陽性：ホルムアルデヒド，マルトース．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "organic-test"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-KETONE-REDUCE"
+ ],
+ "tags": [
+  "条件判断",
+  "検出反応",
+  "フェーリング液の還元"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "tests",
+  "key": "fehling"
+ }
+}

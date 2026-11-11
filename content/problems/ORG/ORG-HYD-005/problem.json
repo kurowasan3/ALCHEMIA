@@ -1,0 +1,65 @@
+{
+ "id": "ORG-HYD-005",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-02",
+ "topic": "炭素間結合の長さ",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "compare"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "炭素原子間の結合の長さを，長い順に並べよ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "エタンの C−C ＞ ベンゼンの炭素間 ＞ エチレンの C=C ＞ アセチレンの C≡C",
+    "grading": "並べる{エチレンの C=C|アセチレンの C≡C|エタンの C−C|ベンゼンの炭素間}=3>4>1>2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "結合が多重になるほど短い（C−C 0.154 nm，C=C 0.134 nm，C≡C 0.120 nm）．ベンゼンの炭素間はすべて等しく 0.140 nm（単結合と二重結合の中間）．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "hydrocarbon",
+  "aromatic"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "比較問題",
+  "結合距離"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

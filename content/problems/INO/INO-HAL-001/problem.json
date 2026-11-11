@@ -1,0 +1,69 @@
+{
+ "id": "INO-HAL-001",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-01",
+ "topic": "ハロゲンの酸化力（Cl₂ と KBr）",
+ "course": "化学",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "equation"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応式の空欄 ア に当てはまる化学式を答えよ．\\\\（ハロゲンの酸化力（Cl₂ と KBr））\\[\\ce{2KBr} + \\ce{Cl2} \\ce{->} 2\\boxed{\\,\\text{ア}\\,} + \\ce{Br2}\\]"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$\\ce{KCl}$",
+    "grading": "語{KCl|塩化カリウム}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{2KBr + Cl2 -> 2KCl + Br2}$．酸化力：F₂ > Cl₂ > Br₂ > I₂（酸化還元）"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "halogen"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応式補完",
+  "反応式",
+  "酸化還元"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "hal-kbr-cl2"
+ }
+}

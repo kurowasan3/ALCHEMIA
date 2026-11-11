@@ -1,0 +1,72 @@
+{
+ "id": "INO-PPT-012",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-08",
+ "topic": "Al³⁺ と Zn²⁺ を分ける試薬",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "$\\ce{Al^3+}$ と $\\ce{Zn^2+}$ を含む水溶液から，一方だけを沈殿として分離したい．加える試薬として最も適当なものを選べ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "アンモニア水を過剰に加える（$\\ce{Al(OH)3}$ が沈殿し，$\\ce{Zn^2+}$ は $\\ce{[Zn(NH3)4]^2+}$ として溶液に残る）",
+    "grading": "選ぶ{水酸化ナトリウム水溶液を過剰に加える|アンモニア水を過剰に加える|希塩酸を加える|希硫酸を加える}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "過剰の NaOH ではどちらも溶けてしまう（両性）．過剰のアンモニア水では Zn(OH)₂ だけがアンミン錯イオンとして溶ける．塩酸・硫酸ではどちらも沈殿しない．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "amphoteric",
+  "complex-ion",
+  "precipitation"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-ALOH3-NH3"
+ ],
+ "tags": [
+  "条件判断",
+  "イオンの分離"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "ions",
+  "key": "Zn^2+"
+ }
+}

@@ -1,0 +1,190 @@
+{
+ "schema": "alchemia.misconceptions/1",
+ "misconceptions": [
+  {
+   "id": "MC-MOLVOL-ALL",
+   "wrong": "どんな物質でも 1 mol は 22.4 L",
+   "right": "22.4 L/mol は 0 ℃・1.013×10⁵ Pa の気体だけ。液体・固体の体積は物質ごとに違う",
+   "concepts": [
+    "mole"
+   ],
+   "remedy": []
+  },
+  {
+   "id": "MC-PH-DILUTE",
+   "wrong": "酸をうすめ続けると pH はいくらでも大きくなる",
+   "right": "水の電離があるので、酸をうすめても pH は 7 に近づくだけで 7 を超えない",
+   "concepts": [
+    "ph"
+   ],
+   "remedy": []
+  },
+  {
+   "id": "MC-STRONG-CONC",
+   "wrong": "強酸とは濃い酸のこと",
+   "right": "酸の強弱は電離度（電離のしやすさ）で決まり、濃度とは別",
+   "concepts": [
+    "acid-base"
+   ],
+   "remedy": []
+  },
+  {
+   "id": "MC-NEUTRAL-PH7",
+   "wrong": "中和点はいつも pH 7",
+   "right": "中和点の pH は生じた塩の加水分解で決まる。弱酸＋強塩基なら塩基性、強酸＋弱塩基なら酸性",
+   "concepts": [
+    "acid-base",
+    "salt-hydrolysis"
+   ],
+   "remedy": []
+  },
+  {
+   "id": "MC-EQ-STOP",
+   "wrong": "平衡状態では反応が止まっている",
+   "right": "正反応と逆反応が同じ速さで起こり続けていて、見かけ上変化しない",
+   "concepts": [
+    "chemical-equilibrium"
+   ],
+   "remedy": []
+  },
+  {
+   "id": "MC-CATALYST-SHIFT",
+   "wrong": "触媒を加えると平衡が生成物側に移動する",
+   "right": "触媒は正反応・逆反応の両方を速くするだけで、平衡の位置（平衡定数）は変えない",
+   "concepts": [
+    "chemical-equilibrium",
+    "reaction-rate"
+   ],
+   "remedy": []
+  },
+  {
+   "id": "MC-K-PRESSURE",
+   "wrong": "圧力や濃度を変えると平衡定数が変わる",
+   "right": "平衡定数は温度だけで決まる。圧力・濃度を変えると、平衡定数を保つように組成が変わる",
+   "concepts": [
+    "chemical-equilibrium"
+   ],
+   "remedy": []
+  },
+  {
+   "id": "MC-DH-SIGN",
+   "wrong": "発熱反応では ΔH が正",
+   "right": "発熱反応では系のエンタルピーが減るので ΔH < 0",
+   "concepts": [
+    "enthalpy"
+   ],
+   "remedy": []
+  },
+  {
+   "id": "MC-CATION-RADIUS",
+   "wrong": "陽イオンは元の原子より大きい",
+   "right": "陽イオンは最外殻の電子を失うので元の原子より小さい。陰イオンは大きい",
+   "concepts": [
+    "periodicity"
+   ],
+   "remedy": []
+  },
+  {
+   "id": "MC-IE-MONOTONE",
+   "wrong": "同じ周期ではイオン化エネルギーは原子番号とともに必ず増える",
+   "right": "全体としては増えるが、2族→13族、15族→16族で小さくなる（電子が入る軌道・電子対の反発）",
+   "concepts": [
+    "periodicity"
+   ],
+   "remedy": []
+  },
+  {
+   "id": "MC-ELECTROLYSIS-NA",
+   "wrong": "塩化ナトリウム水溶液を電気分解すると陰極に Na が析出する",
+   "right": "Na⁺ は還元されにくいので、陰極では水が還元されて H₂ が発生する（Na は溶融塩電解で得る）",
+   "concepts": [
+    "electrolysis"
+   ],
+   "remedy": []
+  },
+  {
+   "id": "MC-FE-HCL",
+   "wrong": "鉄を塩酸に溶かすと Fe³⁺ になる",
+   "right": "塩酸の H⁺ の酸化力では Fe²⁺ までしか酸化されない",
+   "concepts": [
+    "transition-metals",
+    "redox"
+   ],
+   "remedy": []
+  },
+  {
+   "id": "MC-ALOH3-NH3",
+   "wrong": "水酸化アルミニウムは過剰のアンモニア水に溶ける",
+   "right": "Al(OH)₃ は過剰の NaOH 水溶液には溶けるが、アンモニア水には溶けない（Zn(OH)₂ は両方に溶ける）",
+   "concepts": [
+    "amphoteric",
+    "complex-ion"
+   ],
+   "remedy": []
+  },
+  {
+   "id": "MC-CL2-WASH-ORDER",
+   "wrong": "塩素は濃硫酸 → 水の順に通して精製する",
+   "right": "水（HCl を除く）→ 濃硫酸（水蒸気を除く）の順。逆だと最後に水蒸気が混じる",
+   "concepts": [
+    "gas-preparation"
+   ],
+   "remedy": []
+  },
+  {
+   "id": "MC-NH3-CACL2",
+   "wrong": "アンモニアは塩化カルシウムで乾燥する",
+   "right": "CaCl₂ は NH₃ と反応する（CaCl₂·8NH₃）。酸性の乾燥剤も不可。ソーダ石灰を使う",
+   "concepts": [
+    "gas-preparation"
+   ],
+   "remedy": []
+  },
+  {
+   "id": "MC-KETONE-REDUCE",
+   "wrong": "ケトンもアルデヒドと同じように還元性を示す",
+   "right": "ケトンはホルミル基をもたないので、銀鏡反応・フェーリング液の還元を示さない",
+   "concepts": [
+    "alcohol-carbonyl"
+   ],
+   "remedy": []
+  },
+  {
+   "id": "MC-PHENOL-NAHCO3",
+   "wrong": "フェノールは炭酸水素ナトリウム水溶液と反応して CO₂ を出す",
+   "right": "フェノールは炭酸より弱い酸なので反応しない。カルボン酸は反応する",
+   "concepts": [
+    "aromatic",
+    "organic-test"
+   ],
+   "remedy": []
+  },
+  {
+   "id": "MC-BENZENE-ADD",
+   "wrong": "ベンゼンは二重結合をもつので臭素水を脱色する",
+   "right": "ベンゼン環は安定で付加反応を起こしにくい。触媒（Fe）があると置換反応が起こる",
+   "concepts": [
+    "aromatic"
+   ],
+   "remedy": []
+  },
+  {
+   "id": "MC-SUCROSE-REDUCE",
+   "wrong": "スクロースは還元性を示す",
+   "right": "スクロースはグルコースとフルクトースの還元性を示す部分どうしで結合しているので、還元性を示さない",
+   "concepts": [
+    "saccharide"
+   ],
+   "remedy": []
+  },
+  {
+   "id": "MC-ESTER-IODOFORM",
+   "wrong": "酢酸や酢酸エチルも CH₃CO− をもつのでヨードホルム反応を示す",
+   "right": "CH₃CO−R の R が H か炭化水素基のときだけ。R が OH・OR のカルボン酸・エステルは示さない",
+   "concepts": [
+    "organic-test"
+   ],
+   "remedy": []
+  }
+ ]
+}

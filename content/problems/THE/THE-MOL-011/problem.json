@@ -1,0 +1,100 @@
+{
+ "id": "THE-MOL-011",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-04",
+ "topic": "化学の基本法則",
+ "course": "化学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の法則の名称を答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "化学反応の前後で，物質の質量の総和は変わらない"
+     },
+     {
+      "id": "2",
+      "tex": "ある化合物の成分元素の質量比は，つくり方によらず一定である"
+     },
+     {
+      "id": "3",
+      "tex": "同温・同圧で同体積の気体は，種類によらず同数の分子を含む"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "質量保存の法則",
+    "grading": "語{質量保存の法則}"
+   },
+   {
+    "id": "2",
+    "tex": "定比例の法則",
+    "grading": "語{定比例の法則}"
+   },
+   {
+    "id": "3",
+    "tex": "アボガドロの法則",
+    "grading": "語{アボガドロの法則}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) ラボアジエ，(2) プルースト，(3) アボガドロ（同温・同圧・同体積の気体は同数の分子を含む）．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "atomic-theory",
+  "mole"
+ ],
+ "laws": [
+  "mass-conservation",
+  "definite-proportions",
+  "avogadro"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "基本法則"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "laws",
+  "key": "mass-conservation"
+ }
+}

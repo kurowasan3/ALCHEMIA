@@ -1,0 +1,68 @@
+{
+ "id": "POL-RES-004",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-01",
+ "topic": "ポリスチレンの重合度",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "平均分子量 $5.20\\times10^{4}$ のポリスチレンの平均重合度を求めよ．原子量は H = 1.0，C = 12 とする．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$500$",
+    "grading": "約{500|3}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "繰り返し単位 $\\ce{-CH2-CH(C6H5)-}$（$\\ce{C8H8}$）の式量は 104．重合度は $\\dfrac{5.20\\times10^{4}}{104}=500$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "addition-polymer"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "重合度"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "polymers",
+  "key": "ps"
+ }
+}

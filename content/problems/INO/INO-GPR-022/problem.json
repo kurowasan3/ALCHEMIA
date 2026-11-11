@@ -1,0 +1,70 @@
+{
+ "id": "INO-GPR-022",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-09",
+ "topic": "アンモニアの乾燥剤",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "アンモニアの乾燥に使える乾燥剤を1つ選べ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "ソーダ石灰",
+    "grading": "選ぶ{濃硫酸|塩化カルシウム|十酸化四リン|ソーダ石灰}=4"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{NH3}$ は塩基性なので，酸性の乾燥剤（濃硫酸・十酸化四リン）とは中和反応する．塩化カルシウムは $\\ce{CaCl2.8NH3}$ をつくって吸収してしまう．塩基性のソーダ石灰（CaO と NaOH）を使う．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "gas-preparation"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-NH3-CACL2"
+ ],
+ "tags": [
+  "条件判断",
+  "乾燥剤"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "gas-nh3"
+ }
+}

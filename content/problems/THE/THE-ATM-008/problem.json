@@ -1,0 +1,64 @@
+{
+ "id": "THE-ATM-008",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-01",
+ "topic": "同素体",
+ "course": "化学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の組のうち，互いに同素体であるものをすべて選べ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "ダイヤモンドと黒鉛，O₂ と O₃，赤リンと黄リン，斜方硫黄と単斜硫黄",
+    "grading": "すべて選ぶ{ダイヤモンドと黒鉛|$^{12}\\mathrm C$ と $^{13}\\mathrm C$|酸素 O₂ とオゾン O₃|赤リンと黄リン|水 H₂O と重水 D₂O|斜方硫黄と単斜硫黄}=1,3,4,6"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "同じ元素からなる単体で性質の異なるものが同素体（S・C・O・P：「スコップ」）．$^{12}\\mathrm C$ と $^{13}\\mathrm C$ は同位体．H₂O と D₂O は同位体を含む化合物で，同素体ではない．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "atomic-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "条件判断",
+  "同素体"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

@@ -1,0 +1,66 @@
+{
+ "id": "THE-RDX-002",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-06",
+ "topic": "酸化還元反応の見分け方",
+ "course": "化学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応のうち，酸化還元反応をすべて選べ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$\\ce{Zn + 2HCl -> ZnCl2 + H2}$，$\\ce{SO2 + 2H2S -> 3S + 2H2O}$，$\\ce{Cl2 + 2KI -> 2KCl + I2}$",
+    "grading": "すべて選ぶ{$\\ce{NaOH + HCl -> NaCl + H2O}$|$\\ce{Zn + 2HCl -> ZnCl2 + H2}$|$\\ce{CaCO3 + 2HCl -> CaCl2 + H2O + CO2}$|$\\ce{SO2 + 2H2S -> 3S + 2H2O}$|$\\ce{AgNO3 + NaCl -> AgCl + NaNO3}$|$\\ce{Cl2 + 2KI -> 2KCl + I2}$}=2,4,6"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "酸化数が変化する原子があるのが酸化還元反応．単体が反応物または生成物にあれば，必ず酸化還元反応．中和・弱酸の遊離・沈殿の生成では酸化数は変わらない．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "redox"
+ ],
+ "laws": [
+  "oxidation-number"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "条件判断",
+  "酸化還元"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

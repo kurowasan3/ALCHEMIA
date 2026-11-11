@@ -1,0 +1,65 @@
+{
+ "id": "INO-ALK-012",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-05",
+ "topic": "アルカリ金属の融点",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "compare"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次のアルカリ金属を，融点の高い順に並べよ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "Li ＞ Na ＞ K",
+    "grading": "並べる{K|Li|Na}=2>3>1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "原子番号が大きいほど原子半径が大きく，金属結合（自由電子と陽イオンの引き合い）が弱くなり，融点が低い（Li 181 ℃，Na 98 ℃，K 64 ℃）．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "alkali-metals",
+  "periodicity"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "比較問題",
+  "融点"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

@@ -1,0 +1,99 @@
+{
+ "id": "ORG-HYD-008",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-02",
+ "topic": "アセチレンからエタノール",
+ "course": "化学",
+ "level": 1,
+ "minutes": 4,
+ "format": [
+  "pathway"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応経路について，空欄に当てはまる化合物の名称（または示性式）を答えよ．また，（ア）の反応に用いる試薬・条件として適当なものを選べ．\\[\\ce{CH#CH} \\xrightarrow{\\text{（ア）}} \\boxed{\\,\\text{A}\\,} \\xrightarrow{\\text{H₂O}} \\boxed{\\,\\text{B}\\,}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A に当てはまる化合物"
+     },
+     {
+      "id": "2",
+      "tex": "B に当てはまる化合物"
+     },
+     {
+      "id": "3",
+      "tex": "（ア）の試薬・条件"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "エチレン　$\\ce{CH2=CH2}$",
+    "grading": "A：語{エチレン|CH2=CH2}"
+   },
+   {
+    "id": "2",
+    "tex": "エタノール　$\\ce{C2H5OH}$",
+    "grading": "B：語{エタノール|C2H5OH}"
+   },
+   {
+    "id": "3",
+    "tex": "H₂（Pt・Ni 触媒）",
+    "grading": "選ぶ{H₂（Pt・Ni 触媒）|HCl（触媒）|水（HgSO₄ 触媒）|Br₂}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "アセチレン → エチレン：H₂（Pt・Ni 触媒）（付加（還元））　$\\ce{CH#CH + H2 -> CH2=CH2}$"
+    },
+    {
+     "type": "text",
+     "tex": "エチレン → エタノール：H₂O（H₃PO₄ 触媒）（付加）　$\\ce{CH2=CH2 + H2O -> C2H5OH}$．エタノールの工業的製法"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "hydrocarbon"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応経路",
+  "付加"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "organic",
+  "key": "ethylene"
+ }
+}

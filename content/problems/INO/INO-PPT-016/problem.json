@@ -1,0 +1,123 @@
+{
+ "id": "INO-PPT-016",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-08",
+ "topic": "6種類の陽イオンの系統分析",
+ "course": "化学",
+ "level": 3,
+ "minutes": 12,
+ "format": [
+  "condition",
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "$\\ce{Ag+}$，$\\ce{Cu^2+}$，$\\ce{Fe^3+}$，$\\ce{Zn^2+}$，$\\ce{Ba^2+}$，$\\ce{Na+}$ を含む水溶液について，次の操作を順に行った．\\\\操作1：希塩酸を加え，生じた沈殿 A をろ過した．\\\\操作2：ろ液に硫化水素を通じ，生じた沈殿 B をろ過した．\\\\操作3：ろ液を煮沸してから希硝酸を少量加え，さらにアンモニア水を過剰に加えて，生じた沈殿 C をろ過した．\\\\操作4：ろ液に硫化水素を通じ，生じた沈殿 D をろ過した．\\\\操作5：ろ液に炭酸アンモニウム水溶液を加え，生じた沈殿 E をろ過した．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "沈殿 A と B の化学式を答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "操作3 で，煮沸してから希硝酸を加えた理由を述べよ．"
+     },
+     {
+      "id": "3",
+      "tex": "沈殿 C の化学式と色を答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "沈殿 D と E の化学式を答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "最後のろ液に $\\ce{Na+}$ が含まれることを確かめる方法を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "A：$\\ce{AgCl}$，B：$\\ce{CuS}$",
+    "grading": "A：語{AgCl|塩化銀} ; B：語{CuS|硫化銅(II)}"
+   },
+   {
+    "id": "2",
+    "tex": "溶液中に残る $\\ce{H2S}$ を追い出すため（残っていると硝酸に酸化されて硫黄が析出する）．また，硫化水素で還元されて生じた $\\ce{Fe^2+}$ を，希硝酸で $\\ce{Fe^3+}$ に戻すため．",
+    "grading": "記述"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{Fe(OH)3}$（赤褐色）",
+    "grading": "化学式：語{Fe(OH)3|FeO(OH)|水酸化鉄(III)} ; 色：語{赤褐|赤褐色}"
+   },
+   {
+    "id": "4",
+    "tex": "D：$\\ce{ZnS}$，E：$\\ce{BaCO3}$",
+    "grading": "D：語{ZnS|硫化亜鉛} ; E：語{BaCO3|炭酸バリウム}"
+   },
+   {
+    "id": "5",
+    "tex": "炎色反応（黄色）",
+    "grading": "語{炎色反応}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "操作1 で $\\ce{AgCl}$（白），操作2（酸性）で $\\ce{CuS}$（黒）が沈殿する．"
+    },
+    {
+     "type": "text",
+     "tex": "操作2 で $\\ce{Fe^3+}$ は $\\ce{H2S}$ に還元されて $\\ce{Fe^2+}$ になっている（$\\ce{2Fe^3+ + H2S -> 2Fe^2+ + S + 2H+}$）．煮沸で $\\ce{H2S}$ を除いてから希硝酸で酸化し，過剰のアンモニア水で $\\ce{Fe(OH)3}$（赤褐色）を沈殿させる．$\\ce{Zn^2+}$ は $\\ce{[Zn(NH3)4]^2+}$ となって溶液に残る．"
+    },
+    {
+     "type": "text",
+     "tex": "操作4（塩基性）で $\\ce{ZnS}$（白），操作5 で $\\ce{BaCO3}$（白）．最後に残る $\\ce{Na+}$ は炎色反応（黄色）で確かめる．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "precipitation",
+  "complex-ion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "条件判断",
+  "系統分析"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "ions",
+  "label": "系統分析"
+ }
+}

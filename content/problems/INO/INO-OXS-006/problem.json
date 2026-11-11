@@ -1,0 +1,104 @@
+{
+ "id": "INO-OXS-006",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-02",
+ "topic": "濃硫酸の性質",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の現象は濃硫酸のどの性質によるか．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "スクロースにかけると黒くなる"
+     },
+     {
+      "id": "2",
+      "tex": "加熱すると銅を溶かして二酸化硫黄を発生する"
+     },
+     {
+      "id": "3",
+      "tex": "塩化ナトリウムと加熱すると塩化水素が発生する"
+     },
+     {
+      "id": "4",
+      "tex": "気体の乾燥剤に使われる"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "脱水作用",
+    "grading": "選ぶ{不揮発性|吸湿性|脱水作用|酸化作用|強酸性}=3"
+   },
+   {
+    "id": "2",
+    "tex": "酸化作用",
+    "grading": "選ぶ{不揮発性|吸湿性|脱水作用|酸化作用|強酸性}=4"
+   },
+   {
+    "id": "3",
+    "tex": "不揮発性",
+    "grading": "選ぶ{不揮発性|吸湿性|脱水作用|酸化作用|強酸性}=1"
+   },
+   {
+    "id": "4",
+    "tex": "吸湿性",
+    "grading": "選ぶ{不揮発性|吸湿性|脱水作用|酸化作用|強酸性}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 化合物中の H と O を H₂O の形で奪う（脱水作用）．(2) 熱濃硫酸の酸化作用：$\\ce{Cu + 2H2SO4 -> CuSO4 + SO2 + 2H2O}$．(3) 不揮発性の酸が揮発性の HCl を追い出す．(4) 吸湿性（乾燥剤）．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "oxygen-sulfur"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "条件判断",
+  "硫酸"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "s-dehydrate"
+ }
+}

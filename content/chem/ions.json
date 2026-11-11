@@ -1,0 +1,1291 @@
+{
+ "schema": "alchemia.ions/1",
+ "colors": {
+  "無色": null,
+  "白": "#ffffff",
+  "黒": "#1b1b1b",
+  "黄": "#f0cf2a",
+  "褐色": "#7b4a25",
+  "赤褐色": "#97401f",
+  "暗赤色": "#7d1f1a",
+  "青白": "#bcd9ef",
+  "深青": "#2342b8",
+  "緑白": "#dce9cf",
+  "緑": "#5f9e4a",
+  "淡緑": "#d8ecc4",
+  "青紫": "#5f55c4",
+  "淡桃": "#f4cdc8",
+  "血赤": "#8a0b14",
+  "濃青": "#1a2a78",
+  "青": "#3f7fd6",
+  "黄褐": "#c8902e",
+  "褐": "#8a5a2b",
+  "淡黄": "#f3e7a1"
+ },
+ "flameColors": {
+  "赤": "#e0283c",
+  "黄": "#f6c600",
+  "赤紫": "#a24bd0",
+  "橙赤": "#f26a2e",
+  "紅": "#c8102e",
+  "黄緑": "#9bc53d",
+  "青緑": "#1fa88f"
+ },
+ "cations": [
+  {
+   "id": "Ag+",
+   "name": "銀イオン",
+   "aq": "無色",
+   "flame": null,
+   "group": 1
+  },
+  {
+   "id": "Pb^2+",
+   "name": "鉛(II)イオン",
+   "aq": "無色",
+   "flame": null,
+   "group": 1
+  },
+  {
+   "id": "Cu^2+",
+   "name": "銅(II)イオン",
+   "aq": "青",
+   "flame": "青緑",
+   "group": 2
+  },
+  {
+   "id": "Cd^2+",
+   "name": "カドミウムイオン",
+   "aq": "無色",
+   "flame": null,
+   "group": 2
+  },
+  {
+   "id": "Fe^2+",
+   "name": "鉄(II)イオン",
+   "aq": "淡緑",
+   "flame": null,
+   "group": 3
+  },
+  {
+   "id": "Fe^3+",
+   "name": "鉄(III)イオン",
+   "aq": "黄褐",
+   "flame": null,
+   "group": 3
+  },
+  {
+   "id": "Al^3+",
+   "name": "アルミニウムイオン",
+   "aq": "無色",
+   "flame": null,
+   "group": 3
+  },
+  {
+   "id": "Zn^2+",
+   "name": "亜鉛イオン",
+   "aq": "無色",
+   "flame": null,
+   "group": 4
+  },
+  {
+   "id": "Mn^2+",
+   "name": "マンガン(II)イオン",
+   "aq": "淡桃",
+   "flame": null,
+   "group": 4
+  },
+  {
+   "id": "Ni^2+",
+   "name": "ニッケル(II)イオン",
+   "aq": "緑",
+   "flame": null,
+   "group": 4
+  },
+  {
+   "id": "Ca^2+",
+   "name": "カルシウムイオン",
+   "aq": "無色",
+   "flame": "橙赤",
+   "group": 5
+  },
+  {
+   "id": "Sr^2+",
+   "name": "ストロンチウムイオン",
+   "aq": "無色",
+   "flame": "紅",
+   "group": 5
+  },
+  {
+   "id": "Ba^2+",
+   "name": "バリウムイオン",
+   "aq": "無色",
+   "flame": "黄緑",
+   "group": 5
+  },
+  {
+   "id": "Mg^2+",
+   "name": "マグネシウムイオン",
+   "aq": "無色",
+   "flame": null,
+   "group": 6
+  },
+  {
+   "id": "Na+",
+   "name": "ナトリウムイオン",
+   "aq": "無色",
+   "flame": "黄",
+   "group": 6
+  },
+  {
+   "id": "K+",
+   "name": "カリウムイオン",
+   "aq": "無色",
+   "flame": "赤紫",
+   "group": 6
+  },
+  {
+   "id": "Li+",
+   "name": "リチウムイオン",
+   "aq": "無色",
+   "flame": "赤",
+   "group": 6
+  }
+ ],
+ "reagents": [
+  {
+   "id": "Cl",
+   "name": "希塩酸",
+   "ion": "Cl^-",
+   "how": "塩化物イオンを加える"
+  },
+  {
+   "id": "SO4",
+   "name": "希硫酸",
+   "ion": "SO4^2-",
+   "how": "硫酸イオンを加える"
+  },
+  {
+   "id": "CrO4",
+   "name": "クロム酸カリウム水溶液",
+   "ion": "CrO4^2-",
+   "how": "クロム酸イオンを加える"
+  },
+  {
+   "id": "CO3",
+   "name": "炭酸アンモニウム水溶液",
+   "ion": "CO3^2-",
+   "how": "炭酸イオン（アンモニウム塩）を加える"
+  },
+  {
+   "id": "H2S-a",
+   "name": "硫化水素（酸性）",
+   "ion": "H2S",
+   "how": "酸性の水溶液に硫化水素を通じる"
+  },
+  {
+   "id": "H2S-b",
+   "name": "硫化水素（中性・塩基性）",
+   "ion": "H2S",
+   "how": "中性〜塩基性の水溶液に硫化水素を通じる"
+  },
+  {
+   "id": "NaOH",
+   "name": "水酸化ナトリウム水溶液（少量）",
+   "ion": "OH^-",
+   "how": "少量加える"
+  },
+  {
+   "id": "NaOH-ex",
+   "name": "水酸化ナトリウム水溶液（過剰）",
+   "ion": "OH^-",
+   "how": "さらに過剰に加える"
+  },
+  {
+   "id": "NH3",
+   "name": "アンモニア水（少量）",
+   "ion": "NH3",
+   "how": "少量加える"
+  },
+  {
+   "id": "NH3-ex",
+   "name": "アンモニア水（過剰）",
+   "ion": "NH3",
+   "how": "さらに過剰に加える"
+  },
+  {
+   "id": "SCN",
+   "name": "チオシアン酸カリウム水溶液",
+   "ion": "SCN^-",
+   "how": ""
+  },
+  {
+   "id": "Fe(CN)6-4",
+   "name": "ヘキサシアニド鉄(II)酸カリウム水溶液",
+   "ion": "[Fe(CN)6]^4-",
+   "how": ""
+  },
+  {
+   "id": "Fe(CN)6-3",
+   "name": "ヘキサシアニド鉄(III)酸カリウム水溶液",
+   "ion": "[Fe(CN)6]^3-",
+   "how": ""
+  }
+ ],
+ "results": {
+  "Ag+": {
+   "Cl": {
+    "kind": "ppt",
+    "f": "AgCl",
+    "color": "白",
+    "eq": "Ag+ + Cl- -> AgCl v",
+    "note": "光で分解して黒くなる（感光性）。アンモニア水に溶ける",
+    "name": "塩化銀"
+   },
+   "SO4": {
+    "kind": "none"
+   },
+   "CrO4": {
+    "kind": "ppt",
+    "f": "Ag2CrO4",
+    "color": "暗赤色",
+    "eq": "2Ag+ + CrO4^2- -> Ag2CrO4 v",
+    "name": "クロム酸銀"
+   },
+   "CO3": {
+    "kind": "na"
+   },
+   "H2S-a": {
+    "kind": "ppt",
+    "f": "Ag2S",
+    "color": "黒",
+    "eq": "2Ag+ + H2S -> Ag2S v + 2H+",
+    "name": "硫化銀"
+   },
+   "H2S-b": {
+    "kind": "ppt",
+    "f": "Ag2S",
+    "color": "黒",
+    "eq": "2Ag+ + S^2- -> Ag2S v",
+    "name": "硫化銀"
+   },
+   "NaOH": {
+    "kind": "ppt",
+    "f": "Ag2O",
+    "color": "褐色",
+    "eq": "2Ag+ + 2OH- -> Ag2O v + H2O",
+    "note": "水酸化物ではなく酸化物になる",
+    "name": "酸化銀"
+   },
+   "NaOH-ex": {
+    "kind": "remain"
+   },
+   "NH3": {
+    "kind": "ppt",
+    "f": "Ag2O",
+    "color": "褐色",
+    "eq": "2Ag+ + 2OH- -> Ag2O v + H2O",
+    "name": "酸化銀"
+   },
+   "NH3-ex": {
+    "kind": "dissolve",
+    "f": "[Ag(NH3)2]+",
+    "color": "無色",
+    "eq": "Ag2O + 4NH3 + H2O -> 2[Ag(NH3)2]+ + 2OH-",
+    "note": "ジアンミン銀(I)イオン（直線形）",
+    "name": "ジアンミン銀(I)イオン"
+   },
+   "SCN": {
+    "kind": "na"
+   },
+   "Fe(CN)6-4": {
+    "kind": "na"
+   },
+   "Fe(CN)6-3": {
+    "kind": "na"
+   }
+  },
+  "Pb^2+": {
+   "Cl": {
+    "kind": "ppt",
+    "f": "PbCl2",
+    "color": "白",
+    "eq": "Pb^2+ + 2Cl- -> PbCl2 v",
+    "note": "熱水には溶ける（AgCl との分離に使う）",
+    "name": "塩化鉛(II)"
+   },
+   "SO4": {
+    "kind": "ppt",
+    "f": "PbSO4",
+    "color": "白",
+    "eq": "Pb^2+ + SO4^2- -> PbSO4 v",
+    "name": "硫酸鉛(II)"
+   },
+   "CrO4": {
+    "kind": "ppt",
+    "f": "PbCrO4",
+    "color": "黄",
+    "eq": "Pb^2+ + CrO4^2- -> PbCrO4 v",
+    "name": "クロム酸鉛(II)"
+   },
+   "CO3": {
+    "kind": "na"
+   },
+   "H2S-a": {
+    "kind": "ppt",
+    "f": "PbS",
+    "color": "黒",
+    "eq": "Pb^2+ + H2S -> PbS v + 2H+",
+    "name": "硫化鉛(II)"
+   },
+   "H2S-b": {
+    "kind": "ppt",
+    "f": "PbS",
+    "color": "黒",
+    "eq": "Pb^2+ + S^2- -> PbS v",
+    "name": "硫化鉛(II)"
+   },
+   "NaOH": {
+    "kind": "ppt",
+    "f": "Pb(OH)2",
+    "color": "白",
+    "eq": "Pb^2+ + 2OH- -> Pb(OH)2 v",
+    "name": "水酸化鉛(II)"
+   },
+   "NaOH-ex": {
+    "kind": "dissolve",
+    "f": "[Pb(OH)4]^2-",
+    "color": "無色",
+    "eq": "Pb(OH)2 + 2OH- -> [Pb(OH)4]^2-",
+    "note": "両性水酸化物",
+    "name": "テトラヒドロキシド鉛(II)酸イオン"
+   },
+   "NH3": {
+    "kind": "ppt",
+    "f": "Pb(OH)2",
+    "color": "白",
+    "eq": "Pb^2+ + 2OH- -> Pb(OH)2 v",
+    "name": "水酸化鉛(II)"
+   },
+   "NH3-ex": {
+    "kind": "remain",
+    "note": "アンミン錯イオンをつくらない"
+   },
+   "SCN": {
+    "kind": "na"
+   },
+   "Fe(CN)6-4": {
+    "kind": "na"
+   },
+   "Fe(CN)6-3": {
+    "kind": "na"
+   }
+  },
+  "Cu^2+": {
+   "Cl": {
+    "kind": "none"
+   },
+   "SO4": {
+    "kind": "none"
+   },
+   "CrO4": {
+    "kind": "na"
+   },
+   "CO3": {
+    "kind": "na"
+   },
+   "H2S-a": {
+    "kind": "ppt",
+    "f": "CuS",
+    "color": "黒",
+    "eq": "Cu^2+ + H2S -> CuS v + 2H+",
+    "name": "硫化銅(II)"
+   },
+   "H2S-b": {
+    "kind": "ppt",
+    "f": "CuS",
+    "color": "黒",
+    "eq": "Cu^2+ + S^2- -> CuS v",
+    "name": "硫化銅(II)"
+   },
+   "NaOH": {
+    "kind": "ppt",
+    "f": "Cu(OH)2",
+    "color": "青白",
+    "eq": "Cu^2+ + 2OH- -> Cu(OH)2 v",
+    "note": "加熱すると黒色の CuO になる",
+    "name": "水酸化銅(II)"
+   },
+   "NaOH-ex": {
+    "kind": "remain"
+   },
+   "NH3": {
+    "kind": "ppt",
+    "f": "Cu(OH)2",
+    "color": "青白",
+    "eq": "Cu^2+ + 2OH- -> Cu(OH)2 v",
+    "name": "水酸化銅(II)"
+   },
+   "NH3-ex": {
+    "kind": "dissolve",
+    "f": "[Cu(NH3)4]^2+",
+    "color": "深青",
+    "eq": "Cu(OH)2 + 4NH3 -> [Cu(NH3)4]^2+ + 2OH-",
+    "note": "テトラアンミン銅(II)イオン（正方形）。この溶液はシュバイツァー試薬としてセルロースを溶かす",
+    "name": "テトラアンミン銅(II)イオン"
+   },
+   "SCN": {
+    "kind": "na"
+   },
+   "Fe(CN)6-4": {
+    "kind": "na"
+   },
+   "Fe(CN)6-3": {
+    "kind": "na"
+   }
+  },
+  "Cd^2+": {
+   "Cl": {
+    "kind": "none"
+   },
+   "SO4": {
+    "kind": "none"
+   },
+   "CrO4": {
+    "kind": "na"
+   },
+   "CO3": {
+    "kind": "na"
+   },
+   "H2S-a": {
+    "kind": "ppt",
+    "f": "CdS",
+    "color": "黄",
+    "eq": "Cd^2+ + H2S -> CdS v + 2H+",
+    "note": "黄色の顔料（カドミウムイエロー）",
+    "name": "硫化カドミウム"
+   },
+   "H2S-b": {
+    "kind": "ppt",
+    "f": "CdS",
+    "color": "黄",
+    "eq": "Cd^2+ + S^2- -> CdS v",
+    "name": "硫化カドミウム"
+   },
+   "NaOH": {
+    "kind": "ppt",
+    "f": "Cd(OH)2",
+    "color": "白",
+    "eq": "Cd^2+ + 2OH- -> Cd(OH)2 v",
+    "name": "水酸化カドミウム"
+   },
+   "NaOH-ex": {
+    "kind": "remain"
+   },
+   "NH3": {
+    "kind": "ppt",
+    "f": "Cd(OH)2",
+    "color": "白",
+    "eq": "Cd^2+ + 2OH- -> Cd(OH)2 v",
+    "name": "水酸化カドミウム"
+   },
+   "NH3-ex": {
+    "kind": "dissolve",
+    "f": "[Cd(NH3)4]^2+",
+    "color": "無色",
+    "eq": "Cd(OH)2 + 4NH3 -> [Cd(NH3)4]^2+ + 2OH-",
+    "name": "テトラアンミンカドミウム(II)イオン"
+   },
+   "SCN": {
+    "kind": "na"
+   },
+   "Fe(CN)6-4": {
+    "kind": "na"
+   },
+   "Fe(CN)6-3": {
+    "kind": "na"
+   }
+  },
+  "Fe^2+": {
+   "Cl": {
+    "kind": "none"
+   },
+   "SO4": {
+    "kind": "none"
+   },
+   "CrO4": {
+    "kind": "na"
+   },
+   "CO3": {
+    "kind": "na"
+   },
+   "H2S-a": {
+    "kind": "none"
+   },
+   "H2S-b": {
+    "kind": "ppt",
+    "f": "FeS",
+    "color": "黒",
+    "eq": "Fe^2+ + S^2- -> FeS v",
+    "name": "硫化鉄(II)"
+   },
+   "NaOH": {
+    "kind": "ppt",
+    "f": "Fe(OH)2",
+    "color": "緑白",
+    "eq": "Fe^2+ + 2OH- -> Fe(OH)2 v",
+    "note": "空気中で酸化されて赤褐色になっていく",
+    "name": "水酸化鉄(II)"
+   },
+   "NaOH-ex": {
+    "kind": "remain"
+   },
+   "NH3": {
+    "kind": "ppt",
+    "f": "Fe(OH)2",
+    "color": "緑白",
+    "eq": "Fe^2+ + 2OH- -> Fe(OH)2 v",
+    "name": "水酸化鉄(II)"
+   },
+   "NH3-ex": {
+    "kind": "remain"
+   },
+   "SCN": {
+    "kind": "none"
+   },
+   "Fe(CN)6-4": {
+    "kind": "ppt",
+    "color": "青白",
+    "note": "青白色の沈殿（空気中で青くなっていく）"
+   },
+   "Fe(CN)6-3": {
+    "kind": "ppt",
+    "color": "濃青",
+    "note": "濃青色の沈殿（ターンブルブルー）。Fe²⁺ の検出"
+   }
+  },
+  "Fe^3+": {
+   "Cl": {
+    "kind": "none"
+   },
+   "SO4": {
+    "kind": "none"
+   },
+   "CrO4": {
+    "kind": "na"
+   },
+   "CO3": {
+    "kind": "na"
+   },
+   "H2S-a": {
+    "kind": "ppt",
+    "f": "S",
+    "color": "白",
+    "eq": "2Fe^3+ + H2S -> 2Fe^2+ + S v + 2H+",
+    "note": "H₂S に還元されて Fe²⁺ になり、硫黄が析出して白くにごる（硫化鉄は沈殿しない）",
+    "name": "硫黄（白濁）"
+   },
+   "H2S-b": {
+    "kind": "ppt",
+    "f": "FeS",
+    "color": "黒",
+    "eq": "2Fe^3+ + 3S^2- -> 2FeS v + S v",
+    "note": "Fe²⁺ に還元されて FeS が沈殿する",
+    "name": "硫化鉄(II)"
+   },
+   "NaOH": {
+    "kind": "ppt",
+    "f": "Fe(OH)3",
+    "color": "赤褐色",
+    "eq": "Fe^3+ + 3OH- -> Fe(OH)3 v",
+    "note": "水酸化鉄(III)。実際の組成は一定でなく FeO(OH) とも書く",
+    "name": "水酸化鉄(III)"
+   },
+   "NaOH-ex": {
+    "kind": "remain"
+   },
+   "NH3": {
+    "kind": "ppt",
+    "f": "Fe(OH)3",
+    "color": "赤褐色",
+    "eq": "Fe^3+ + 3OH- -> Fe(OH)3 v",
+    "name": "水酸化鉄(III)"
+   },
+   "NH3-ex": {
+    "kind": "remain"
+   },
+   "SCN": {
+    "kind": "solution",
+    "f": "[Fe(SCN)]^2+",
+    "color": "血赤",
+    "eq": "Fe^3+ + SCN- -> [Fe(SCN)]^2+",
+    "note": "血赤色の溶液になる。Fe³⁺ の検出",
+    "name": "チオシアン酸鉄(III)イオン"
+   },
+   "Fe(CN)6-4": {
+    "kind": "ppt",
+    "color": "濃青",
+    "note": "濃青色の沈殿（紺青・プルシアンブルー）。Fe³⁺ の検出"
+   },
+   "Fe(CN)6-3": {
+    "kind": "solution",
+    "color": "褐",
+    "note": "褐色の溶液になる（沈殿しない）"
+   }
+  },
+  "Al^3+": {
+   "Cl": {
+    "kind": "none"
+   },
+   "SO4": {
+    "kind": "none"
+   },
+   "CrO4": {
+    "kind": "na"
+   },
+   "CO3": {
+    "kind": "na"
+   },
+   "H2S-a": {
+    "kind": "none"
+   },
+   "H2S-b": {
+    "kind": "ppt",
+    "f": "Al(OH)3",
+    "color": "白",
+    "eq": "Al^3+ + 3OH- -> Al(OH)3 v",
+    "note": "硫化物ではなく水酸化物が沈殿する",
+    "name": "水酸化アルミニウム"
+   },
+   "NaOH": {
+    "kind": "ppt",
+    "f": "Al(OH)3",
+    "color": "白",
+    "eq": "Al^3+ + 3OH- -> Al(OH)3 v",
+    "note": "ゲル状の沈殿",
+    "name": "水酸化アルミニウム"
+   },
+   "NaOH-ex": {
+    "kind": "dissolve",
+    "f": "[Al(OH)4]-",
+    "color": "無色",
+    "eq": "Al(OH)3 + OH- -> [Al(OH)4]-",
+    "note": "両性水酸化物",
+    "name": "テトラヒドロキシドアルミン酸イオン"
+   },
+   "NH3": {
+    "kind": "ppt",
+    "f": "Al(OH)3",
+    "color": "白",
+    "eq": "Al^3+ + 3OH- -> Al(OH)3 v",
+    "name": "水酸化アルミニウム"
+   },
+   "NH3-ex": {
+    "kind": "remain",
+    "note": "アンミン錯イオンをつくらない"
+   },
+   "SCN": {
+    "kind": "na"
+   },
+   "Fe(CN)6-4": {
+    "kind": "na"
+   },
+   "Fe(CN)6-3": {
+    "kind": "na"
+   }
+  },
+  "Zn^2+": {
+   "Cl": {
+    "kind": "none"
+   },
+   "SO4": {
+    "kind": "none"
+   },
+   "CrO4": {
+    "kind": "na"
+   },
+   "CO3": {
+    "kind": "na"
+   },
+   "H2S-a": {
+    "kind": "none"
+   },
+   "H2S-b": {
+    "kind": "ppt",
+    "f": "ZnS",
+    "color": "白",
+    "eq": "Zn^2+ + S^2- -> ZnS v",
+    "note": "白色の硫化物は ZnS だけ",
+    "name": "硫化亜鉛"
+   },
+   "NaOH": {
+    "kind": "ppt",
+    "f": "Zn(OH)2",
+    "color": "白",
+    "eq": "Zn^2+ + 2OH- -> Zn(OH)2 v",
+    "name": "水酸化亜鉛"
+   },
+   "NaOH-ex": {
+    "kind": "dissolve",
+    "f": "[Zn(OH)4]^2-",
+    "color": "無色",
+    "eq": "Zn(OH)2 + 2OH- -> [Zn(OH)4]^2-",
+    "note": "両性水酸化物",
+    "name": "テトラヒドロキシド亜鉛(II)酸イオン"
+   },
+   "NH3": {
+    "kind": "ppt",
+    "f": "Zn(OH)2",
+    "color": "白",
+    "eq": "Zn^2+ + 2OH- -> Zn(OH)2 v",
+    "name": "水酸化亜鉛"
+   },
+   "NH3-ex": {
+    "kind": "dissolve",
+    "f": "[Zn(NH3)4]^2+",
+    "color": "無色",
+    "eq": "Zn(OH)2 + 4NH3 -> [Zn(NH3)4]^2+ + 2OH-",
+    "note": "正四面体形",
+    "name": "テトラアンミン亜鉛(II)イオン"
+   },
+   "SCN": {
+    "kind": "na"
+   },
+   "Fe(CN)6-4": {
+    "kind": "na"
+   },
+   "Fe(CN)6-3": {
+    "kind": "na"
+   }
+  },
+  "Mn^2+": {
+   "Cl": {
+    "kind": "none"
+   },
+   "SO4": {
+    "kind": "none"
+   },
+   "CrO4": {
+    "kind": "na"
+   },
+   "CO3": {
+    "kind": "na"
+   },
+   "H2S-a": {
+    "kind": "none"
+   },
+   "H2S-b": {
+    "kind": "ppt",
+    "f": "MnS",
+    "color": "淡桃",
+    "eq": "Mn^2+ + S^2- -> MnS v",
+    "name": "硫化マンガン(II)"
+   },
+   "NaOH": {
+    "kind": "ppt",
+    "f": "Mn(OH)2",
+    "color": "淡桃",
+    "eq": "Mn^2+ + 2OH- -> Mn(OH)2 v",
+    "note": "空気中で酸化されて褐色になる",
+    "name": "水酸化マンガン(II)"
+   },
+   "NaOH-ex": {
+    "kind": "remain"
+   },
+   "NH3": {
+    "kind": "ppt",
+    "f": "Mn(OH)2",
+    "color": "淡桃",
+    "eq": "Mn^2+ + 2OH- -> Mn(OH)2 v",
+    "name": "水酸化マンガン(II)"
+   },
+   "NH3-ex": {
+    "kind": "remain"
+   },
+   "SCN": {
+    "kind": "na"
+   },
+   "Fe(CN)6-4": {
+    "kind": "na"
+   },
+   "Fe(CN)6-3": {
+    "kind": "na"
+   }
+  },
+  "Ni^2+": {
+   "Cl": {
+    "kind": "none"
+   },
+   "SO4": {
+    "kind": "none"
+   },
+   "CrO4": {
+    "kind": "na"
+   },
+   "CO3": {
+    "kind": "na"
+   },
+   "H2S-a": {
+    "kind": "none"
+   },
+   "H2S-b": {
+    "kind": "ppt",
+    "f": "NiS",
+    "color": "黒",
+    "eq": "Ni^2+ + S^2- -> NiS v",
+    "name": "硫化ニッケル(II)"
+   },
+   "NaOH": {
+    "kind": "ppt",
+    "f": "Ni(OH)2",
+    "color": "緑",
+    "eq": "Ni^2+ + 2OH- -> Ni(OH)2 v",
+    "name": "水酸化ニッケル(II)"
+   },
+   "NaOH-ex": {
+    "kind": "remain"
+   },
+   "NH3": {
+    "kind": "ppt",
+    "f": "Ni(OH)2",
+    "color": "緑",
+    "eq": "Ni^2+ + 2OH- -> Ni(OH)2 v",
+    "name": "水酸化ニッケル(II)"
+   },
+   "NH3-ex": {
+    "kind": "dissolve",
+    "f": "[Ni(NH3)6]^2+",
+    "color": "青紫",
+    "eq": "Ni(OH)2 + 6NH3 -> [Ni(NH3)6]^2+ + 2OH-",
+    "note": "正八面体形",
+    "name": "ヘキサアンミンニッケル(II)イオン"
+   },
+   "SCN": {
+    "kind": "na"
+   },
+   "Fe(CN)6-4": {
+    "kind": "na"
+   },
+   "Fe(CN)6-3": {
+    "kind": "na"
+   }
+  },
+  "Ca^2+": {
+   "Cl": {
+    "kind": "none"
+   },
+   "SO4": {
+    "kind": "ppt",
+    "f": "CaSO4",
+    "color": "白",
+    "eq": "Ca^2+ + SO4^2- -> CaSO4 v",
+    "note": "水にやや溶けにくい",
+    "name": "硫酸カルシウム"
+   },
+   "CrO4": {
+    "kind": "none"
+   },
+   "CO3": {
+    "kind": "ppt",
+    "f": "CaCO3",
+    "color": "白",
+    "eq": "Ca^2+ + CO3^2- -> CaCO3 v",
+    "name": "炭酸カルシウム"
+   },
+   "H2S-a": {
+    "kind": "none"
+   },
+   "H2S-b": {
+    "kind": "none"
+   },
+   "NaOH": {
+    "kind": "none"
+   },
+   "NaOH-ex": {
+    "kind": "na"
+   },
+   "NH3": {
+    "kind": "none"
+   },
+   "NH3-ex": {
+    "kind": "na"
+   },
+   "SCN": {
+    "kind": "na"
+   },
+   "Fe(CN)6-4": {
+    "kind": "na"
+   },
+   "Fe(CN)6-3": {
+    "kind": "na"
+   }
+  },
+  "Sr^2+": {
+   "Cl": {
+    "kind": "none"
+   },
+   "SO4": {
+    "kind": "ppt",
+    "f": "SrSO4",
+    "color": "白",
+    "eq": "Sr^2+ + SO4^2- -> SrSO4 v",
+    "name": "硫酸ストロンチウム"
+   },
+   "CrO4": {
+    "kind": "none"
+   },
+   "CO3": {
+    "kind": "ppt",
+    "f": "SrCO3",
+    "color": "白",
+    "eq": "Sr^2+ + CO3^2- -> SrCO3 v",
+    "name": "炭酸ストロンチウム"
+   },
+   "H2S-a": {
+    "kind": "none"
+   },
+   "H2S-b": {
+    "kind": "none"
+   },
+   "NaOH": {
+    "kind": "none"
+   },
+   "NaOH-ex": {
+    "kind": "na"
+   },
+   "NH3": {
+    "kind": "none"
+   },
+   "NH3-ex": {
+    "kind": "na"
+   },
+   "SCN": {
+    "kind": "na"
+   },
+   "Fe(CN)6-4": {
+    "kind": "na"
+   },
+   "Fe(CN)6-3": {
+    "kind": "na"
+   }
+  },
+  "Ba^2+": {
+   "Cl": {
+    "kind": "none"
+   },
+   "SO4": {
+    "kind": "ppt",
+    "f": "BaSO4",
+    "color": "白",
+    "eq": "Ba^2+ + SO4^2- -> BaSO4 v",
+    "note": "X線の造影剤に使う",
+    "name": "硫酸バリウム"
+   },
+   "CrO4": {
+    "kind": "ppt",
+    "f": "BaCrO4",
+    "color": "黄",
+    "eq": "Ba^2+ + CrO4^2- -> BaCrO4 v",
+    "name": "クロム酸バリウム"
+   },
+   "CO3": {
+    "kind": "ppt",
+    "f": "BaCO3",
+    "color": "白",
+    "eq": "Ba^2+ + CO3^2- -> BaCO3 v",
+    "name": "炭酸バリウム"
+   },
+   "H2S-a": {
+    "kind": "none"
+   },
+   "H2S-b": {
+    "kind": "none"
+   },
+   "NaOH": {
+    "kind": "none"
+   },
+   "NaOH-ex": {
+    "kind": "na"
+   },
+   "NH3": {
+    "kind": "none"
+   },
+   "NH3-ex": {
+    "kind": "na"
+   },
+   "SCN": {
+    "kind": "na"
+   },
+   "Fe(CN)6-4": {
+    "kind": "na"
+   },
+   "Fe(CN)6-3": {
+    "kind": "na"
+   }
+  },
+  "Mg^2+": {
+   "Cl": {
+    "kind": "none"
+   },
+   "SO4": {
+    "kind": "none"
+   },
+   "CrO4": {
+    "kind": "none"
+   },
+   "CO3": {
+    "kind": "none",
+    "note": "アンモニウム塩が共存すると沈殿しない（系統分析では第6属に残る）"
+   },
+   "H2S-a": {
+    "kind": "none"
+   },
+   "H2S-b": {
+    "kind": "none"
+   },
+   "NaOH": {
+    "kind": "ppt",
+    "f": "Mg(OH)2",
+    "color": "白",
+    "eq": "Mg^2+ + 2OH- -> Mg(OH)2 v",
+    "name": "水酸化マグネシウム"
+   },
+   "NaOH-ex": {
+    "kind": "remain"
+   },
+   "NH3": {
+    "kind": "ppt",
+    "f": "Mg(OH)2",
+    "color": "白",
+    "eq": "Mg^2+ + 2OH- -> Mg(OH)2 v",
+    "note": "NH₄Cl を共存させると沈殿しない",
+    "name": "水酸化マグネシウム"
+   },
+   "NH3-ex": {
+    "kind": "remain"
+   },
+   "SCN": {
+    "kind": "na"
+   },
+   "Fe(CN)6-4": {
+    "kind": "na"
+   },
+   "Fe(CN)6-3": {
+    "kind": "na"
+   }
+  },
+  "Na+": {
+   "Cl": {
+    "kind": "none"
+   },
+   "SO4": {
+    "kind": "none"
+   },
+   "CrO4": {
+    "kind": "none"
+   },
+   "CO3": {
+    "kind": "none"
+   },
+   "H2S-a": {
+    "kind": "none"
+   },
+   "H2S-b": {
+    "kind": "none"
+   },
+   "NaOH": {
+    "kind": "none"
+   },
+   "NaOH-ex": {
+    "kind": "na"
+   },
+   "NH3": {
+    "kind": "none"
+   },
+   "NH3-ex": {
+    "kind": "na"
+   },
+   "SCN": {
+    "kind": "na"
+   },
+   "Fe(CN)6-4": {
+    "kind": "na"
+   },
+   "Fe(CN)6-3": {
+    "kind": "na"
+   }
+  },
+  "K+": {
+   "Cl": {
+    "kind": "none"
+   },
+   "SO4": {
+    "kind": "none"
+   },
+   "CrO4": {
+    "kind": "none"
+   },
+   "CO3": {
+    "kind": "none"
+   },
+   "H2S-a": {
+    "kind": "none"
+   },
+   "H2S-b": {
+    "kind": "none"
+   },
+   "NaOH": {
+    "kind": "none"
+   },
+   "NaOH-ex": {
+    "kind": "na"
+   },
+   "NH3": {
+    "kind": "none"
+   },
+   "NH3-ex": {
+    "kind": "na"
+   },
+   "SCN": {
+    "kind": "na"
+   },
+   "Fe(CN)6-4": {
+    "kind": "na"
+   },
+   "Fe(CN)6-3": {
+    "kind": "na"
+   }
+  },
+  "Li+": {
+   "Cl": {
+    "kind": "none"
+   },
+   "SO4": {
+    "kind": "none"
+   },
+   "CrO4": {
+    "kind": "none"
+   },
+   "CO3": {
+    "kind": "none"
+   },
+   "H2S-a": {
+    "kind": "none"
+   },
+   "H2S-b": {
+    "kind": "none"
+   },
+   "NaOH": {
+    "kind": "none"
+   },
+   "NaOH-ex": {
+    "kind": "na"
+   },
+   "NH3": {
+    "kind": "none"
+   },
+   "NH3-ex": {
+    "kind": "na"
+   },
+   "SCN": {
+    "kind": "na"
+   },
+   "Fe(CN)6-4": {
+    "kind": "na"
+   },
+   "Fe(CN)6-3": {
+    "kind": "na"
+   }
+  }
+ },
+ "systematic": [
+  {
+   "step": 1,
+   "group": "第1属",
+   "reagent": "希塩酸を加える",
+   "ppt": [
+    "AgCl",
+    "PbCl2"
+   ],
+   "ions": [
+    "Ag+",
+    "Pb^2+"
+   ],
+   "note": "塩化物が沈殿する。PbCl₂ は熱水に溶けるので、熱水を加えて AgCl と分ける"
+  },
+  {
+   "step": 2,
+   "group": "第2属",
+   "reagent": "酸性のまま硫化水素を通じる",
+   "ppt": [
+    "CuS",
+    "CdS"
+   ],
+   "ions": [
+    "Cu^2+",
+    "Cd^2+"
+   ],
+   "note": "イオン化傾向の小さい金属（Sn より小さい）の硫化物は酸性でも沈殿する"
+  },
+  {
+   "step": 3,
+   "group": "第3属",
+   "reagent": "煮沸して H₂S を追い出し、希硝酸で Fe²⁺ を Fe³⁺ に酸化してから、NH₄Cl と過剰のアンモニア水を加える",
+   "ppt": [
+    "Fe(OH)3",
+    "Al(OH)3"
+   ],
+   "ions": [
+    "Fe^2+",
+    "Fe^3+",
+    "Al^3+"
+   ],
+   "note": "煮沸は H₂S が硝酸で酸化されて S が出るのを防ぐため。Fe(OH)₂ のままだと沈殿しきらないので Fe³⁺ にしておく"
+  },
+  {
+   "step": 4,
+   "group": "第4属",
+   "reagent": "塩基性で硫化水素を通じる",
+   "ppt": [
+    "ZnS",
+    "MnS",
+    "NiS"
+   ],
+   "ions": [
+    "Zn^2+",
+    "Mn^2+",
+    "Ni^2+"
+   ],
+   "note": "中程度のイオン化傾向の金属の硫化物は、S²⁻ の濃度が大きい塩基性で沈殿する"
+  },
+  {
+   "step": 5,
+   "group": "第5属",
+   "reagent": "炭酸アンモニウム水溶液を加える",
+   "ppt": [
+    "CaCO3",
+    "SrCO3",
+    "BaCO3"
+   ],
+   "ions": [
+    "Ca^2+",
+    "Sr^2+",
+    "Ba^2+"
+   ],
+   "note": "アルカリ土類金属（Be・Mg を除く）の炭酸塩"
+  },
+  {
+   "step": 6,
+   "group": "第6属",
+   "reagent": "ろ液に残る（炎色反応などで確かめる）",
+   "ppt": [],
+   "ions": [
+    "Mg^2+",
+    "Na+",
+    "K+",
+    "Li+"
+   ],
+   "note": "Na⁺・K⁺・Li⁺ は炎色反応で見分ける"
+  }
+ ]
+}

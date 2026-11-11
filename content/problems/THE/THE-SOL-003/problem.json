@@ -1,0 +1,72 @@
+{
+ "id": "THE-SOL-003",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-09",
+ "topic": "凝固点降下と分子量",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある非電解質 $1.80\\,\\mathrm g$ を水 $100\\,\\mathrm g$ に溶かすと，凝固点が $0.185\\,\\mathrm K$ 下がった．水のモル凝固点降下を $1.85\\,\\mathrm{K\\cdot kg/mol}$ とする．この物質の分子量を求めよ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$180$",
+    "grading": "約{180.0|3}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$m=\\dfrac{0.185}{1.85}=0.100\\,\\mathrm{mol/kg}$．水 0.100 kg 中に $0.0100\\,\\mathrm{mol}$．$M=\\dfrac{1.80}{0.0100}=180$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "solution-colligative"
+ ],
+ "laws": [
+  "fp-depression",
+  "molality"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "凝固点降下",
+  "分子量の測定"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "laws",
+  "key": "fp-depression"
+ }
+}

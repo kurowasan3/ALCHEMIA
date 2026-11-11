@@ -1,0 +1,88 @@
+{
+ "id": "THE-ION-003",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "溶解度積と溶解度",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "塩化銀の溶解度積を $K_{sp}=1.8\\times10^{-10}\\,(\\mathrm{mol/L})^2$，$\\sqrt{1.8}=1.34$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "純水に対する塩化銀の溶解度（mol/L）"
+     },
+     {
+      "id": "2",
+      "tex": "$0.10\\,\\mathrm{mol/L}$ 塩化ナトリウム水溶液に対する溶解度（mol/L）"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$1.3\\times10^{-5}\\,\\mathrm{mol/L}$",
+    "grading": "約{1.3416407864998738e-05|2} [mol/L]"
+   },
+   {
+    "id": "2",
+    "tex": "$1.8\\times10^{-9}\\,\\mathrm{mol/L}$",
+    "grading": "約{1.8e-9|2} [mol/L]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 溶けた AgCl を s mol/L とすると $[\\mathrm{Ag^+}]=[\\mathrm{Cl^-}]=s$，$s^2=1.8\\times10^{-10}$ より $s=1.34\\times10^{-5}$．(2) $[\\mathrm{Cl^-}]=0.10$ なので $[\\mathrm{Ag^+}]=\\dfrac{1.8\\times10^{-10}}{0.10}=1.8\\times10^{-9}$．共通イオン効果で溶解度が非常に小さくなる．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "solubility-equilibrium"
+ ],
+ "laws": [
+  "ksp"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "溶解度積"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "laws",
+  "key": "ksp"
+ }
+}

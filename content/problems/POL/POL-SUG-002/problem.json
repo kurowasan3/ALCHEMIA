@@ -1,0 +1,92 @@
+{
+ "id": "POL-SUG-002",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-04",
+ "topic": "二糖・多糖の加水分解と酵素",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の加水分解ではたらく酵素の名称と，生じる糖を答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "デンプン → 二糖"
+     },
+     {
+      "id": "2",
+      "tex": "マルトース → 単糖"
+     },
+     {
+      "id": "3",
+      "tex": "スクロース → 単糖"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "アミラーゼ／マルトース",
+    "grading": "酵素：語{アミラーゼ} ; 糖：語{マルトース|麦芽糖}"
+   },
+   {
+    "id": "2",
+    "tex": "マルターゼ／グルコース",
+    "grading": "酵素：語{マルターゼ} ; 糖：語{グルコース|ブドウ糖}"
+   },
+   {
+    "id": "3",
+    "tex": "インベルターゼ（スクラーゼ）／グルコースとフルクトース（転化糖）",
+    "grading": "酵素：語{インベルターゼ|スクラーゼ} ; 糖：語{転化糖|グルコースとフルクトース|フルクトースとグルコース}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "デンプン →（アミラーゼ）→ マルトース →（マルターゼ）→ グルコース．スクロース →（インベルターゼ）→ グルコース＋フルクトース（等量の混合物を転化糖という）．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "saccharide"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "糖",
+  "酵素"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

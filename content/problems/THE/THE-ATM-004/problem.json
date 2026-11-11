@@ -1,0 +1,104 @@
+{
+ "id": "THE-ATM-004",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-01",
+ "topic": "価電子の数",
+ "course": "化学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の原子の価電子の数を答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "窒素 N"
+     },
+     {
+      "id": "2",
+      "tex": "酸素 O"
+     },
+     {
+      "id": "3",
+      "tex": "マグネシウム Mg"
+     },
+     {
+      "id": "4",
+      "tex": "アルゴン Ar"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "5 個",
+    "grading": "約{5|1} [個]"
+   },
+   {
+    "id": "2",
+    "tex": "6 個",
+    "grading": "約{6|1} [個]"
+   },
+   {
+    "id": "3",
+    "tex": "2 個",
+    "grading": "約{2|1} [個]"
+   },
+   {
+    "id": "4",
+    "tex": "0 個",
+    "grading": "約{0|1} [個]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "典型元素の価電子の数は族番号の一の位（1〜2 族はそのまま，13〜17 族は族−10）．貴ガスは閉殻で安定なので 0 とする．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "electron-config"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "価電子"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "elements",
+  "key": "N"
+ }
+}

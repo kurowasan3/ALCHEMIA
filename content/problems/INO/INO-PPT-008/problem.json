@@ -1,0 +1,68 @@
+{
+ "id": "INO-PPT-008",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-08",
+ "topic": "過剰のアンモニア水に溶ける沈殿",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次のイオンを含む水溶液にアンモニア水を加えると，いずれも沈殿が生じる．さらに過剰に加えたとき沈殿が溶けるものをすべて選べ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$\\ce{Ag+}$，$\\ce{Cu^2+}$，$\\ce{Zn^2+}$，$\\ce{Ni^2+}$",
+    "grading": "すべて選ぶ{$\\ce{Ag+}$|$\\ce{Cu^2+}$|$\\ce{Zn^2+}$|$\\ce{Al^3+}$|$\\ce{Fe^3+}$|$\\ce{Ni^2+}$}=1,2,3,6"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "アンミン錯イオンをつくるのは Ag⁺（$\\ce{[Ag(NH3)2]+}$）・Cu²⁺（$\\ce{[Cu(NH3)4]^2+}$）・Zn²⁺（$\\ce{[Zn(NH3)4]^2+}$）・Ni²⁺（$\\ce{[Ni(NH3)6]^2+}$）．Al(OH)₃・Fe(OH)₃ は溶けない．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "precipitation",
+  "complex-ion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "条件判断",
+  "イオンの分離"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "ions"
+ }
+}

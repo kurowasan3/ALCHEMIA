@@ -1,0 +1,65 @@
+{
+ "id": "THE-SOL-008",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-09",
+ "topic": "凝析させる力の大きいイオン",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水酸化鉄(III) のコロイド（正に帯電）を凝析させるのに，同じ濃度で最も効果の大きいものを選べ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$\\ce{Na3PO4}$（$\\ce{PO4^3-}$）",
+    "grading": "選ぶ{$\\ce{NaCl}$|$\\ce{Na2SO4}$|$\\ce{Na3PO4}$|$\\ce{CaCl2}$}=3"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "コロイド粒子と反対符号で，価数の大きいイオンほど凝析させる力が大きい．正のコロイドには陰イオン：$\\ce{PO4^3-}>\\ce{SO4^2-}>\\ce{Cl-}$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "colloid"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "条件判断",
+  "コロイド",
+  "凝析"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

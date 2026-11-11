@@ -1,0 +1,102 @@
+{
+ "id": "THE-THC-006",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-10",
+ "topic": "発熱反応と吸熱反応",
+ "course": "化学",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の変化の $\\Delta H$ の符号を選べ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "メタンの燃焼"
+     },
+     {
+      "id": "2",
+      "tex": "水の蒸発"
+     },
+     {
+      "id": "3",
+      "tex": "水素分子 H₂ を原子 2H にする"
+     },
+     {
+      "id": "4",
+      "tex": "塩酸と水酸化ナトリウム水溶液の中和"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "負（発熱）",
+    "grading": "選ぶ{正（ΔH > 0）|負（ΔH < 0）}=2"
+   },
+   {
+    "id": "2",
+    "tex": "正（吸熱）",
+    "grading": "選ぶ{正（ΔH > 0）|負（ΔH < 0）}=1"
+   },
+   {
+    "id": "3",
+    "tex": "正（吸熱）",
+    "grading": "選ぶ{正（ΔH > 0）|負（ΔH < 0）}=1"
+   },
+   {
+    "id": "4",
+    "tex": "負（発熱）",
+    "grading": "選ぶ{正（ΔH > 0）|負（ΔH < 0）}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "発熱では系のエンタルピーが減るので ΔH < 0．燃焼・中和は発熱．蒸発・融解，結合を切る変化は吸熱．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "enthalpy"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-DH-SIGN"
+ ],
+ "tags": [
+  "条件判断",
+  "発熱・吸熱"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

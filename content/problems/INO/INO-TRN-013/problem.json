@@ -1,0 +1,107 @@
+{
+ "id": "INO-TRN-013",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-07",
+ "topic": "酸化数の比較（遷移元素）",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "compare"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の物質の下線の元素（Mn・Cr）の酸化数を答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{KMnO4}$ の Mn"
+     },
+     {
+      "id": "2",
+      "tex": "$\\ce{MnO2}$ の Mn"
+     },
+     {
+      "id": "3",
+      "tex": "$\\ce{K2Cr2O7}$ の Cr"
+     },
+     {
+      "id": "4",
+      "tex": "$\\ce{Cr2(SO4)3}$ の Cr"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "+7",
+    "grading": "約{7|1}"
+   },
+   {
+    "id": "2",
+    "tex": "+4",
+    "grading": "約{4|1}"
+   },
+   {
+    "id": "3",
+    "tex": "+6",
+    "grading": "約{6|1}"
+   },
+   {
+    "id": "4",
+    "tex": "+3",
+    "grading": "約{3|1}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $x+4\\times(-2)=-1$ より $+7$．(2) $+4$．(3) $2x+7\\times(-2)=-2$ より $+6$．(4) $+3$．$\\ce{MnO4-}$（赤紫）→$\\ce{Mn^2+}$（ほぼ無色），$\\ce{Cr2O7^2-}$（赤橙）→$\\ce{Cr^3+}$（緑）の色の変化は，酸化剤としてはたらいたしるし．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "transition-metals",
+  "redox"
+ ],
+ "laws": [
+  "oxidation-number"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "比較問題",
+  "酸化数"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "mn-oxidant"
+ }
+}

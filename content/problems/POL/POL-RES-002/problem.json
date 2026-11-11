@@ -1,0 +1,68 @@
+{
+ "id": "POL-RES-002",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-01",
+ "topic": "熱硬化性樹脂",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の合成樹脂のうち，熱硬化性樹脂をすべて選べ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "フェノール樹脂，尿素樹脂，メラミン樹脂",
+    "grading": "すべて選ぶ{ポリエチレン|フェノール樹脂|ポリ塩化ビニル|尿素樹脂|ポリスチレン|メラミン樹脂}=2,4,6"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "付加縮合で立体網目状の構造をつくる樹脂は，加熱しても軟らかくならない（熱硬化性）．鎖状の高分子（ポリエチレンなど）は加熱すると軟らかくなる（熱可塑性）．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "condensation-polymer"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "条件判断",
+  "熱硬化性樹脂"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "polymers",
+  "key": "phenol-resin"
+ }
+}

@@ -1,0 +1,66 @@
+{
+ "id": "THE-GAS-004",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-08",
+ "topic": "気体の分子量の測定",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある気体 $1.0\\,\\mathrm g$ は，27 ℃，$1.0\\times10^{5}\\,\\mathrm{Pa}$ で $0.83\\,\\mathrm L$ を占めた．この気体の分子量を求めよ．$R=8.3\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$ とする．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$30$",
+    "grading": "約{30.0|2}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$PV=\\dfrac{w}{M}RT$ より $M=\\dfrac{wRT}{PV}=\\dfrac{1.0\\times8.3\\times10^3\\times300}{1.0\\times10^5\\times0.83}=30$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "ideal-gas"
+ ],
+ "laws": [
+  "ideal-gas-law"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "分子量の測定"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

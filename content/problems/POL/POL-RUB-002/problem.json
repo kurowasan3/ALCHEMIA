@@ -1,0 +1,105 @@
+{
+ "id": "POL-RUB-002",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-03",
+ "topic": "陽イオン交換樹脂",
+ "course": "化学",
+ "level": 2,
+ "minutes": 8,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "陽イオン交換樹脂（R−SO₃H）を詰めた管に，$0.10\\,\\mathrm{mol/L}$ の塩化ナトリウム水溶液 $10.0\\,\\mathrm{mL}$ を流し，さらに純水で十分に洗い流した．流出液をすべて集めた．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "流出液に含まれる溶質の名称"
+     },
+     {
+      "id": "2",
+      "tex": "流出液を中和するのに必要な $0.10\\,\\mathrm{mol/L}$ 水酸化ナトリウム水溶液は何 mL か．"
+     },
+     {
+      "id": "3",
+      "tex": "使用後の樹脂をもとにもどす（再生する）方法"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "塩化水素（塩酸）",
+    "grading": "語{塩化水素|塩酸|HCl}"
+   },
+   {
+    "id": "2",
+    "tex": "$10.0\\,\\mathrm{mL}$",
+    "grading": "約{10.0|3} [mL]"
+   },
+   {
+    "id": "3",
+    "tex": "濃い塩酸（強酸の水溶液）を流す",
+    "grading": "選ぶ{濃い塩酸を流す|濃い水酸化ナトリウム水溶液を流す|純水を流す|加熱する}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $\\ce{R-SO3H + Na+ -> R-SO3Na + H+}$ により，$\\ce{Na+}$ が $\\ce{H+}$ と交換されて流出液は塩酸になる．"
+    },
+    {
+     "type": "text",
+     "tex": "(2) $\\ce{H+}$ は $0.10\\times\\dfrac{10.0}{1000}=1.0\\times10^{-3}\\,\\mathrm{mol}$．これを中和する $0.10\\,\\mathrm{mol/L}$ の NaOH は $10.0\\,\\mathrm{mL}$．"
+    },
+    {
+     "type": "text",
+     "tex": "(3) 逆向きの反応 $\\ce{R-SO3Na + H+ -> R-SO3H + Na+}$ を起こさせるため，$\\ce{H+}$ を多く含む強酸を流す．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "functional-polymer",
+  "acid-base"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "イオン交換樹脂"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "polymers",
+  "key": "cation-exchange"
+ }
+}

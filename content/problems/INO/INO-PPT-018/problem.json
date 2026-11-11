@@ -1,0 +1,104 @@
+{
+ "id": "INO-PPT-018",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-08",
+ "topic": "炎色反応の色",
+ "course": "化学",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の元素の炎色反応の色を答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "Na"
+     },
+     {
+      "id": "2",
+      "tex": "K"
+     },
+     {
+      "id": "3",
+      "tex": "Ca"
+     },
+     {
+      "id": "4",
+      "tex": "Cu"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "黄色",
+    "grading": "語{黄|黄色}"
+   },
+   {
+    "id": "2",
+    "tex": "赤紫色",
+    "grading": "語{赤紫|赤紫色|紫|紫色}"
+   },
+   {
+    "id": "3",
+    "tex": "橙赤色",
+    "grading": "語{橙赤|橙赤色|橙|橙色}"
+   },
+   {
+    "id": "4",
+    "tex": "青緑色",
+    "grading": "語{青緑|青緑色|緑|緑色}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "Li 赤，Na 黄，K 赤紫，Cu 青緑，Ca 橙赤，Sr 紅，Ba 黄緑．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "alkali-metals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "炎色反応"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "ions",
+  "label": "炎色反応"
+ }
+}

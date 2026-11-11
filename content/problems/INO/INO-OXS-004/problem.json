@@ -1,0 +1,70 @@
+{
+ "id": "INO-OXS-004",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-02",
+ "topic": "オゾンとヨウ化カリウム（係数）",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "equation"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応式の係数 a，b，c，d，e，f を答えよ．係数が 1 のときも 1 と書くこと．\\\\（オゾンとヨウ化カリウム）\\[\\boxed{\\,a\\,}\\,\\ce{O3} + \\boxed{\\,b\\,}\\,\\ce{KI} + \\boxed{\\,c\\,}\\,\\ce{H2O} \\ce{->} \\boxed{\\,d\\,}\\,\\ce{O2} + \\boxed{\\,e\\,}\\,\\ce{I2} + \\boxed{\\,f\\,}\\,\\ce{KOH}\\]"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "a=1，b=2，c=1，d=1，e=1，f=2",
+    "grading": "a：1 ; b：2 ; c：1 ; d：1 ; e：1 ; f：2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{O3 + 2KI + H2O -> O2 + I2 + 2KOH}$．オゾンの検出．酸化剤・還元剤の半反応式をつくり，電子の数をそろえて足し合わせると係数が決まる．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "oxygen-sulfur",
+  "redox"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応式補完",
+  "反応式",
+  "係数"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "ox-o3-ki"
+ }
+}

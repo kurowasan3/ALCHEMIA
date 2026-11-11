@@ -1,0 +1,95 @@
+{
+ "id": "THE-ATM-003",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-01",
+ "topic": "電子殻への電子の入り方",
+ "course": "化学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の原子の電子配置を，K 殻・L 殻・M 殻・N 殻の電子の数で答えよ（例：K2 L8 M1）．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "窒素 N（原子番号 7）"
+     },
+     {
+      "id": "2",
+      "tex": "マグネシウム Mg（原子番号 12）"
+     },
+     {
+      "id": "3",
+      "tex": "アルゴン Ar（原子番号 18）"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "K2 L5",
+    "grading": "語{K2L5|2,5}"
+   },
+   {
+    "id": "2",
+    "tex": "K2 L8 M2",
+    "grading": "語{K2L8M2|2,8,2}"
+   },
+   {
+    "id": "3",
+    "tex": "K2 L8 M8",
+    "grading": "語{K2L8M8|2,8,8}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "内側の電子殻から順に入る（K 殻 2 個，L 殻 8 個まで）．M 殻は 18 個まで入れるが，K・Ca では 4s（N 殻）に先に入る．N：K2 L5　Mg：K2 L8 M2　Ar：K2 L8 M8"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "electron-config"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "電子配置"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "elements",
+  "key": "N"
+ }
+}

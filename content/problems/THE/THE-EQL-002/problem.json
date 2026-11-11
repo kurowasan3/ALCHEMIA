@@ -1,0 +1,118 @@
+{
+ "id": "THE-EQL-002",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "ハーバー・ボッシュ法と平衡移動",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "$\\ce{N2 + 3H2 <=> 2NH3}$（$\\Delta H=-92\\,\\mathrm{kJ}$）が平衡状態にある．次の操作をしたとき，平衡はどちらに移動するか．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "圧力を上げる"
+     },
+     {
+      "id": "2",
+      "tex": "温度を上げる"
+     },
+     {
+      "id": "3",
+      "tex": "触媒を加える"
+     },
+     {
+      "id": "4",
+      "tex": "窒素を加える"
+     },
+     {
+      "id": "5",
+      "tex": "全圧を一定に保ってアルゴンを加える"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "右",
+    "grading": "選ぶ{右（NH₃ が増える）|左（NH₃ が減る）|移動しない}=1"
+   },
+   {
+    "id": "2",
+    "tex": "左",
+    "grading": "選ぶ{右（NH₃ が増える）|左（NH₃ が減る）|移動しない}=2"
+   },
+   {
+    "id": "3",
+    "tex": "移動しない",
+    "grading": "選ぶ{右（NH₃ が増える）|左（NH₃ が減る）|移動しない}=3"
+   },
+   {
+    "id": "4",
+    "tex": "右",
+    "grading": "選ぶ{右（NH₃ が増える）|左（NH₃ が減る）|移動しない}=1"
+   },
+   {
+    "id": "5",
+    "tex": "左",
+    "grading": "選ぶ{右（NH₃ が増える）|左（NH₃ が減る）|移動しない}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 圧力を上げると気体の分子の数が減る右へ（4 → 2）．(2) 温度を上げると吸熱の向き（左）へ．(3) 触媒は平衡を移動させない（平衡に早く達するだけ）．(4) N₂ を加えると N₂ を減らす右へ．(5) 全圧を一定に保って Ar を加えると体積が増え，各成分の分圧が下がる（圧力を下げたのと同じ）ので，分子の数が増える左へ移動する（体積一定で加えたときは分圧が変わらず，移動しない）．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "chemical-equilibrium"
+ ],
+ "laws": [
+  "le-chatelier"
+ ],
+ "misconceptions": [
+  "MC-CATALYST-SHIFT",
+  "MC-K-PRESSURE"
+ ],
+ "tags": [
+  "条件判断",
+  "平衡移動"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "laws",
+  "key": "le-chatelier"
+ }
+}

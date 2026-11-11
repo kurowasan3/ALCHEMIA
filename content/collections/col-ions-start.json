@@ -1,0 +1,35 @@
+{
+ "id": "col-ions-start",
+ "schema": "alchemia.collection/1",
+ "title": "無機のはじめ：沈殿と錯イオン",
+ "description": "金属イオンに試薬を加えたら何が起こる？ 沈殿の色・過剰で溶けるか・錯イオンを確かめる。",
+ "order": 1,
+ "items": [
+  {
+   "id": "INO-PPT-001"
+  },
+  {
+   "id": "INO-PPT-002"
+  },
+  {
+   "id": "INO-PPT-004"
+  },
+  {
+   "id": "INO-PPT-007"
+  },
+  {
+   "id": "INO-PPT-008"
+  },
+  {
+   "id": "INO-PPT-005"
+  },
+  {
+   "id": "INO-PPT-013"
+  },
+  {
+   "id": "INO-PPT-017"
+  }
+ ],
+ "visibility": "public",
+ "createdBy": "alchemia"
+}

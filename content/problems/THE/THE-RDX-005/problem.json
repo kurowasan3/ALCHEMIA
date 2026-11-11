@@ -1,0 +1,64 @@
+{
+ "id": "THE-RDX-005",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-06",
+ "topic": "金属のイオン化傾向",
+ "course": "化学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "compare"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の金属を，イオン化傾向の大きい順に並べよ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "Zn ＞ Fe ＞ Cu ＞ Ag",
+    "grading": "並べる{Cu|Ag|Zn|Fe}=3>4>1>2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "イオン化列：Li K Ca Na Mg Al Zn Fe Ni Sn Pb (H₂) Cu Hg Ag Pt Au（「リッチに貸そうかな，まあ当てにすんな，ひどすぎる借金」）．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "ionization-tendency"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "比較問題",
+  "イオン化傾向"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

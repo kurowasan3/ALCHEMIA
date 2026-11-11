@@ -1,0 +1,69 @@
+{
+ "id": "INO-TRN-002",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-07",
+ "topic": "水酸化鉄(II)の酸化",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "equation"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応式の空欄 ア に当てはまる化学式を答えよ．\\\\（水酸化鉄(II)の酸化：空気中）\\[\\ce{4Fe(OH)2} + \\ce{O2} + \\ce{2H2O} \\ce{->} 4\\boxed{\\,\\text{ア}\\,}\\]"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$\\ce{Fe(OH)3}$",
+    "grading": "語{Fe(OH)3|水酸化鉄(III)}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{4Fe(OH)2 + O2 + 2H2O -> 4Fe(OH)3}$．緑白色 → 赤褐色（酸化還元）"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "transition-metals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応式補完",
+  "反応式",
+  "酸化還元"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "fe-oh2-ox"
+ }
+}

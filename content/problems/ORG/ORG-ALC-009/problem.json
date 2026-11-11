@@ -1,0 +1,103 @@
+{
+ "id": "ORG-ALC-009",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-03",
+ "topic": "分子式 C₃H₈O の異性体",
+ "course": "化学",
+ "level": 2,
+ "minutes": 8,
+ "format": [
+  "qa",
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "分子式 $\\ce{C3H8O}$ の化合物 A・B・C がある．A・B は金属ナトリウムと反応したが，C は反応しなかった．A を酸化するとアルデヒドを経てカルボン酸に，B を酸化するとケトンになった．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A の名称"
+     },
+     {
+      "id": "2",
+      "tex": "B の名称"
+     },
+     {
+      "id": "3",
+      "tex": "C の名称"
+     },
+     {
+      "id": "4",
+      "tex": "ヨードホルム反応を示すのはどれか"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "1-プロパノール",
+    "grading": "語{1-プロパノール|CH3CH2CH2OH}"
+   },
+   {
+    "id": "2",
+    "tex": "2-プロパノール",
+    "grading": "語{2-プロパノール|CH3CH(OH)CH3}"
+   },
+   {
+    "id": "3",
+    "tex": "エチルメチルエーテル",
+    "grading": "語{エチルメチルエーテル|メチルエチルエーテル|CH3OC2H5|CH3OCH2CH3}"
+   },
+   {
+    "id": "4",
+    "tex": "B",
+    "grading": "選ぶ{A|B|C}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "Na と反応するのはアルコール（A・B），しないのはエーテル（C）．第一級アルコール（1-プロパノール）はアルデヒド → カルボン酸，第二級（2-プロパノール）はケトン（アセトン）．ヨードホルム反応を示すのは CH₃CH(OH)− をもつ B．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "alcohol-carbonyl",
+  "organic-test"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "構造決定",
+  "異性体"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

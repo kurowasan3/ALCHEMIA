@@ -1,0 +1,105 @@
+{
+ "id": "POL-FIB-005",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-02",
+ "topic": "繊維の分類",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の繊維を分類せよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "アクリル繊維"
+     },
+     {
+      "id": "2",
+      "tex": "ビスコースレーヨン"
+     },
+     {
+      "id": "3",
+      "tex": "アセテート"
+     },
+     {
+      "id": "4",
+      "tex": "絹"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "合成繊維",
+    "grading": "選ぶ{天然繊維|再生繊維|半合成繊維|合成繊維}=4"
+   },
+   {
+    "id": "2",
+    "tex": "再生繊維",
+    "grading": "選ぶ{天然繊維|再生繊維|半合成繊維|合成繊維}=2"
+   },
+   {
+    "id": "3",
+    "tex": "半合成繊維",
+    "grading": "選ぶ{天然繊維|再生繊維|半合成繊維|合成繊維}=3"
+   },
+   {
+    "id": "4",
+    "tex": "天然繊維",
+    "grading": "選ぶ{天然繊維|再生繊維|半合成繊維|合成繊維}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "アクリル繊維は合成繊維．レーヨンはセルロースを溶かして再び繊維にした再生繊維．アセテートはセルロースの OH の一部をアセチル化した半合成繊維．絹はタンパク質の天然繊維．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "condensation-polymer",
+  "saccharide"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "条件判断",
+  "繊維"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "polymers",
+  "key": "rayon"
+ }
+}

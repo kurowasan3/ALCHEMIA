@@ -1,0 +1,91 @@
+{
+ "id": "THE-BND-010",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-03",
+ "topic": "体心立方格子",
+ "course": "化学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ナトリウムの結晶は体心立方格子である．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "単位格子に含まれる原子の数"
+     },
+     {
+      "id": "2",
+      "tex": "配位数"
+     },
+     {
+      "id": "3",
+      "tex": "充塡率（%，整数で）"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "2 個",
+    "grading": "約{2|1} [個]"
+   },
+   {
+    "id": "2",
+    "tex": "8",
+    "grading": "約{8|1}"
+   },
+   {
+    "id": "3",
+    "tex": "約 68 %",
+    "grading": "約{68|2} [%]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "頂点 $\\frac18\\times8$ ＋ 中心 1 ＝ 2 個．配位数 8．充塡率は約 68 %（面心立方格子・六方最密構造は約 74 %）．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "crystal"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "単位格子"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

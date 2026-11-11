@@ -1,0 +1,84 @@
+{
+ "id": "THE-RDX-009",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-06",
+ "topic": "二クロム酸カリウムによる鉄(II)イオンの定量",
+ "course": "化学基礎",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "硫酸鉄(II)水溶液 $25.0\\,\\mathrm{mL}$ を硫酸酸性にし，$0.0200\\,\\mathrm{mol/L}$ 二クロム酸カリウム水溶液で滴定すると，$12.5\\,\\mathrm{mL}$ で終点に達した．\\\\$\\ce{Cr2O7^2- + 14H+ + 6e- -> 2Cr^3+ + 7H2O}$，$\\ce{Fe^2+ -> Fe^3+ + e-}$"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "全体のイオン反応式"
+     },
+     {
+      "id": "2",
+      "tex": "硫酸鉄(II) 水溶液のモル濃度"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{Cr2O7^2- + 6Fe^2+ + 14H+ -> 2Cr^3+ + 6Fe^3+ + 7H2O}$",
+    "grading": "選ぶ{$\\ce{Cr2O7^2- + 6Fe^2+ + 14H+ -> 2Cr^3+ + 6Fe^3+ + 7H2O}$|$\\ce{Cr2O7^2- + 3Fe^2+ + 14H+ -> 2Cr^3+ + 3Fe^3+ + 7H2O}$|$\\ce{Cr2O7^2- + 2Fe^2+ + 14H+ -> 2Cr^3+ + 2Fe^3+ + 7H2O}$}=1"
+   },
+   {
+    "id": "2",
+    "tex": "$0.0600\\,\\mathrm{mol/L}$",
+    "grading": "約{0.06|3} [mol/L]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 電子 6 個をそろえるので Fe²⁺ は 6 倍．(2) $\\ce{Cr2O7^2-}$ は $0.0200\\times0.0125=2.50\\times10^{-4}\\,\\mathrm{mol}$，Fe²⁺ はその 6 倍の $1.50\\times10^{-3}\\,\\mathrm{mol}$．$1.50\\times10^{-3}/0.0250=0.0600\\,\\mathrm{mol/L}$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "redox"
+ ],
+ "laws": [
+  "redox-amount"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "酸化還元滴定"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

@@ -1,0 +1,100 @@
+{
+ "id": "THE-ELC-008",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-07",
+ "topic": "電池の用語",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の用語を答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "電池から電流を取り出すこと"
+     },
+     {
+      "id": "2",
+      "tex": "外部の電源で，放電と逆向きの反応を起こすこと"
+     },
+     {
+      "id": "3",
+      "tex": "充電してくり返し使える電池"
+     },
+     {
+      "id": "4",
+      "tex": "充電できない電池"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "放電",
+    "grading": "語{放電}"
+   },
+   {
+    "id": "2",
+    "tex": "充電",
+    "grading": "語{充電}"
+   },
+   {
+    "id": "3",
+    "tex": "二次電池（蓄電池）",
+    "grading": "語{二次電池|蓄電池}"
+   },
+   {
+    "id": "4",
+    "tex": "一次電池",
+    "grading": "語{一次電池}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "放電の逆向きの反応を外部電源で起こすのが充電．充電できる電池（鉛蓄電池・リチウムイオン電池）が二次電池，できない電池（マンガン乾電池など）が一次電池．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "battery"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "電池"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

@@ -1,0 +1,99 @@
+{
+ "id": "ORG-ALC-002",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-03",
+ "topic": "メタノールの酸化",
+ "course": "化学",
+ "level": 1,
+ "minutes": 4,
+ "format": [
+  "pathway"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応経路について，空欄に当てはまる化合物の名称（または示性式）を答えよ．\\[\\ce{CH3OH} \\xrightarrow{\\text{熱した CuO}} \\boxed{\\,\\text{A}\\,} \\xrightarrow{\\text{酸化}} \\boxed{\\,\\text{B}\\,}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A に当てはまる化合物"
+     },
+     {
+      "id": "2",
+      "tex": "B に当てはまる化合物"
+     },
+     {
+      "id": "3",
+      "tex": "A と B のうち，銀鏡反応を示すものをすべて選べ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "ホルムアルデヒド　$\\ce{HCHO}$",
+    "grading": "A：語{ホルムアルデヒド|HCHO}"
+   },
+   {
+    "id": "2",
+    "tex": "ギ酸　$\\ce{HCOOH}$",
+    "grading": "B：語{ギ酸|HCOOH}"
+   },
+   {
+    "id": "3",
+    "tex": "A（ホルムアルデヒド）と B（ギ酸）の両方",
+    "grading": "すべて選ぶ{A|B}=1,2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "メタノール → ホルムアルデヒド：熱した CuO（酸化）　$\\ce{CH3OH + CuO -> HCHO + Cu + H2O}$"
+    },
+    {
+     "type": "text",
+     "tex": "ホルムアルデヒド → ギ酸：酸化（酸化）　$\\ce{2HCHO + O2 -> 2HCOOH}$"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "alcohol-carbonyl"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応経路",
+  "酸化"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "organic",
+  "key": "formaldehyde"
+ }
+}

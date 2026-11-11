@@ -1,0 +1,68 @@
+{
+ "id": "INO-PPT-007",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-08",
+ "topic": "過剰の水酸化ナトリウム水溶液に溶ける水酸化物",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次のイオンを含む水溶液に水酸化ナトリウム水溶液を加えると，いずれも沈殿が生じる．さらに過剰に加えたとき沈殿が溶けるものをすべて選べ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$\\ce{Al^3+}$，$\\ce{Zn^2+}$，$\\ce{Pb^2+}$",
+    "grading": "すべて選ぶ{$\\ce{Al^3+}$|$\\ce{Zn^2+}$|$\\ce{Cu^2+}$|$\\ce{Fe^3+}$|$\\ce{Pb^2+}$|$\\ce{Mg^2+}$}=1,2,5"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "過剰の NaOH で溶けるのは両性元素（Al・Zn・Sn・Pb：「ああすんなり」）の水酸化物で，$\\ce{[Al(OH)4]-}$・$\\ce{[Zn(OH)4]^2-}$・$\\ce{[Pb(OH)4]^2-}$ になる．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "precipitation",
+  "complex-ion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "条件判断",
+  "イオンの分離"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "ions"
+ }
+}

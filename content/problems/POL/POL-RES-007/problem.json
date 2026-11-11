@@ -1,0 +1,87 @@
+{
+ "id": "POL-RES-007",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-01",
+ "topic": "PET の重合度と結合の数",
+ "course": "化学",
+ "level": 3,
+ "minutes": 8,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "平均分子量 $1.92\\times10^{4}$ のポリエチレンテレフタラートについて答えよ．繰り返し単位 $\\ce{-OCH2CH2O-CO-C6H4-CO-}$ の式量は 192 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "平均重合度"
+     },
+     {
+      "id": "2",
+      "tex": "1 分子に含まれるエステル結合のおよその数"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$100$",
+    "grading": "約{100|3}"
+   },
+   {
+    "id": "2",
+    "tex": "約 200 個",
+    "grading": "約{200|2} [個]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $1.92\\times10^4/192=100$．(2) 繰り返し単位 1 つにエステル結合が 2 個（両端の違いは無視）なので約 200 個．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "condensation-polymer"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "PET",
+  "重合度"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "polymers",
+  "key": "pet"
+ }
+}

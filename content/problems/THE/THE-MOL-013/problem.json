@@ -1,0 +1,84 @@
+{
+ "id": "THE-MOL-013",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-04",
+ "topic": "混合気体の燃焼",
+ "course": "化学基礎",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "メタンとエタンの混合気体 $0.30\\,\\mathrm{mol}$ を完全燃焼させると，二酸化炭素が $0.40\\,\\mathrm{mol}$ 生じた．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "混合気体中のメタンとエタンの物質量"
+     },
+     {
+      "id": "2",
+      "tex": "燃焼に必要な酸素の物質量"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "メタン 0.20 mol，エタン 0.10 mol",
+    "grading": "メタン：約{0.20|2} [mol] ; エタン：約{0.10|2} [mol]"
+   },
+   {
+    "id": "2",
+    "tex": "$0.75\\,\\mathrm{mol}$",
+    "grading": "約{0.75|2} [mol]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) メタン x，エタン y mol：$x+y=0.30$，$x+2y=0.40$（C の数）より $x=0.20$，$y=0.10$．(2) $\\ce{CH4 + 2O2 -> CO2 + 2H2O}$，$\\ce{2C2H6 + 7O2 -> 4CO2 + 6H2O}$ より $2\\times0.20+3.5\\times0.10=0.75\\,\\mathrm{mol}$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "chemical-equation",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "混合物",
+  "量的関係"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

@@ -1,0 +1,95 @@
+{
+ "id": "INO-NIT-011",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-03",
+ "topic": "オストワルト法の経路",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "pathway"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応経路の空欄 A，B に当てはまる化学式を答えよ．また，（ア）に当てはまるものを選べ．\\[\\ce{NH3} \\xrightarrow{\\text{（ア）}} \\boxed{\\,\\text{A}\\,} \\xrightarrow{\\text{O₂}} \\boxed{\\,\\text{B}\\,} \\xrightarrow{\\text{H₂O}} \\ce{HNO3}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A に当てはまる化学式"
+     },
+     {
+      "id": "2",
+      "tex": "B に当てはまる化学式"
+     },
+     {
+      "id": "3",
+      "tex": "（ア）"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{NO}$",
+    "grading": "語{NO}"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{NO2}$",
+    "grading": "語{NO2}"
+   },
+   {
+    "id": "3",
+    "tex": "O₂（Pt 触媒）",
+    "grading": "選ぶ{O₂（Pt 触媒）|H₂（Fe₃O₄ 触媒）|O₂（V₂O₅ 触媒）|H₂O}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{4NH3 + 5O2 -> 4NO + 6H2O}$（Pt 触媒，約 800 ℃），$\\ce{2NO + O2 -> 2NO2}$，$\\ce{3NO2 + H2O -> 2HNO3 + NO}$．全体で $\\ce{NH3 + 2O2 -> HNO3 + H2O}$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "industrial-process"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応経路",
+  "工業的製法"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "ind-ostwald"
+ }
+}

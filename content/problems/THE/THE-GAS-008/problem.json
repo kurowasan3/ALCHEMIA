@@ -1,0 +1,91 @@
+{
+ "id": "THE-GAS-008",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-08",
+ "topic": "絶対温度",
+ "course": "化学",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の温度を絶対温度（K）で答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "0 ℃"
+     },
+     {
+      "id": "2",
+      "tex": "27 ℃"
+     },
+     {
+      "id": "3",
+      "tex": "−100 ℃"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "273 K",
+    "grading": "約{273|3} [K]"
+   },
+   {
+    "id": "2",
+    "tex": "300 K",
+    "grading": "約{300|3} [K]"
+   },
+   {
+    "id": "3",
+    "tex": "173 K",
+    "grading": "約{173|3} [K]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$T\\,[\\mathrm K]=t\\,[^\\circ\\mathrm C]+273$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "絶対温度"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

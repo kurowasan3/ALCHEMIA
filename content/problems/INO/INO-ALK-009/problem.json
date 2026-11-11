@@ -1,0 +1,65 @@
+{
+ "id": "INO-ALK-009",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-05",
+ "topic": "アルカリ土類金属と水の反応",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "compare"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の金属を，水との反応の激しい順に並べよ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "Ba ＞ Ca ＞ Mg",
+    "grading": "並べる{Mg|Ca|Ba}=3>2>1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "同族では原子番号が大きいほどイオン化エネルギーが小さく，陽イオンになりやすい．Ca・Sr・Ba は常温の水と反応するが，Mg は熱水と反応する．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "alkali-metals",
+  "periodicity"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "比較問題",
+  "アルカリ土類金属"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

@@ -1,0 +1,95 @@
+{
+ "id": "POL-RES-005",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-01",
+ "topic": "フェノール樹脂の中間体",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "フェノールとホルムアルデヒドからフェノール樹脂をつくるときの中間体の名称を答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "酸を触媒にしたときの中間体"
+     },
+     {
+      "id": "2",
+      "tex": "塩基を触媒にしたときの中間体"
+     },
+     {
+      "id": "3",
+      "tex": "(1) を立体網目構造にするために加えるもの"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "ノボラック",
+    "grading": "語{ノボラック}"
+   },
+   {
+    "id": "2",
+    "tex": "レゾール",
+    "grading": "語{レゾール}"
+   },
+   {
+    "id": "3",
+    "tex": "硬化剤",
+    "grading": "語{硬化剤}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "酸触媒ではノボラック（固体），塩基触媒ではレゾール（液体）ができる．ノボラックは硬化剤を加えて，レゾールはそのまま加熱すると，立体網目構造のフェノール樹脂になる．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "condensation-polymer"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "フェノール樹脂"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "polymers",
+  "key": "phenol-resin"
+ }
+}

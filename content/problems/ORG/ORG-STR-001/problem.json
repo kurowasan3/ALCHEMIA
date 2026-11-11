@@ -1,0 +1,118 @@
+{
+ "id": "ORG-STR-001",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-01",
+ "topic": "官能基の名称",
+ "course": "化学",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の官能基の名称を答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$-\\mathrm{OH}$"
+     },
+     {
+      "id": "2",
+      "tex": "$-\\mathrm{CHO}$"
+     },
+     {
+      "id": "3",
+      "tex": "$-\\mathrm{COOH}$"
+     },
+     {
+      "id": "4",
+      "tex": "$>\\mathrm{C=O}$"
+     },
+     {
+      "id": "5",
+      "tex": "$-\\mathrm{NO_2}$"
+     },
+     {
+      "id": "6",
+      "tex": "$-\\mathrm{NH_2}$"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "ヒドロキシ基",
+    "grading": "語{ヒドロキシ基|水酸基}"
+   },
+   {
+    "id": "2",
+    "tex": "ホルミル基（アルデヒド基）",
+    "grading": "語{ホルミル基|アルデヒド基}"
+   },
+   {
+    "id": "3",
+    "tex": "カルボキシ基",
+    "grading": "語{カルボキシ基|カルボキシル基}"
+   },
+   {
+    "id": "4",
+    "tex": "カルボニル基（ケトン基）",
+    "grading": "語{カルボニル基|ケトン基}"
+   },
+   {
+    "id": "5",
+    "tex": "ニトロ基",
+    "grading": "語{ニトロ基}"
+   },
+   {
+    "id": "6",
+    "tex": "アミノ基",
+    "grading": "語{アミノ基}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "−OH ヒドロキシ基（アルコール・フェノール類），−CHO ホルミル基（アルデヒド），−COOH カルボキシ基（カルボン酸），>C=O カルボニル基（ケトン），−NO₂ ニトロ基，−NH₂ アミノ基（アミン）．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "organic-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "官能基"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

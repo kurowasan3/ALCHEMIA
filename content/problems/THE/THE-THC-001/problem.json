@@ -1,0 +1,66 @@
+{
+ "id": "THE-THC-001",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-10",
+ "topic": "燃焼エンタルピーと発熱量",
+ "course": "化学",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "黒鉛の燃焼エンタルピーは $-394\\,\\mathrm{kJ/mol}$ である．黒鉛 $6.0\\,\\mathrm g$ を完全燃焼させたときに発生する熱量を求めよ．C = 12 とする．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$197\\,\\mathrm{kJ}$",
+    "grading": "約{197|3} [kJ]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{C(黒鉛) + O2 -> CO2}$ $\\Delta H=-394\\,\\mathrm{kJ}$．$6.0/12=0.50\\,\\mathrm{mol}$ なので $394\\times0.50=197\\,\\mathrm{kJ}$ の発熱．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "enthalpy"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-DH-SIGN"
+ ],
+ "tags": [
+  "計算",
+  "反応エンタルピー"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

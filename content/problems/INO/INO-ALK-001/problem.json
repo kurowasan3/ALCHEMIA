@@ -1,0 +1,69 @@
+{
+ "id": "INO-ALK-001",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-05",
+ "topic": "ナトリウムと水",
+ "course": "化学",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "equation"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応式の空欄 ア に当てはまる化学式を答えよ．\\\\（ナトリウムと水）\\[\\ce{2Na} + \\ce{2H2O} \\ce{->} 2\\boxed{\\,\\text{ア}\\,} + \\ce{H2}\\]"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$\\ce{NaOH}$",
+    "grading": "語{NaOH|水酸化ナトリウム}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{2Na + 2H2O -> 2NaOH + H2 ^}$．石油中に保存する（酸化還元）"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "alkali-metals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応式補完",
+  "反応式",
+  "酸化還元"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "na-h2o"
+ }
+}

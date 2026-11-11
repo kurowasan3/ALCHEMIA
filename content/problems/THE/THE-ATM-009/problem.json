@@ -1,0 +1,69 @@
+{
+ "id": "THE-ATM-009",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-01",
+ "topic": "原子量と同位体の存在比",
+ "course": "化学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "塩素には $^{35}\\mathrm{Cl}$（相対質量 34.97，存在比 75.77 %）と $^{37}\\mathrm{Cl}$（相対質量 36.97，存在比 24.23 %）がある．塩素の原子量を小数第1位まで求めよ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$35.5$",
+    "grading": "約{35.4546|3}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "原子量は同位体の相対質量の平均：$34.97\\times0.7577+36.97\\times0.2423=35.45\\fallingdotseq35.5$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "atomic-structure",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "原子量"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "elements",
+  "key": "Cl"
+ }
+}

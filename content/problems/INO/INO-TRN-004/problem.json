@@ -1,0 +1,69 @@
+{
+ "id": "INO-TRN-004",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-07",
+ "topic": "硫酸銅(II)五水和物の加熱",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "equation"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応式の空欄 ア に当てはまる化学式を答えよ．\\\\（硫酸銅(II)五水和物の加熱：約 150 ℃ 以上に加熱）\\[\\ce{CuSO4.5H2O} \\ce{->} \\boxed{\\,\\text{ア}\\,} + \\ce{5H2O}\\]"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$\\ce{CuSO4}$",
+    "grading": "語{CuSO4|硫酸銅(II)}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{CuSO4.5H2O -> CuSO4 + 5H2O}$．青色 → 白色。白色の CuSO₄ は水の検出に使う（熱分解）"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "transition-metals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応式補完",
+  "反応式",
+  "熱分解"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "cu-hydrate"
+ }
+}

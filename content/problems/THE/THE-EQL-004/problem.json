@@ -1,0 +1,66 @@
+{
+ "id": "THE-EQL-004",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "平衡定数から平衡時の量を求める",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "前問と同じ温度（$K=64$）で，容積 1.0 L の容器にヨウ化水素だけを 2.0 mol 入れた．平衡に達したときの水素の物質量を求めよ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$0.20\\,\\mathrm{mol}$",
+    "grading": "約{0.20|2} [mol]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "水素が x mol 生じるとすると，I₂ も x mol，HI は $2.0-2x$ mol．$\\dfrac{(2.0-2x)^2}{x^2}=64$ より $\\dfrac{2.0-2x}{x}=8$，$x=0.20$．逆向きから始めても同じ平衡に達する．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "chemical-equilibrium"
+ ],
+ "laws": [
+  "equilibrium-law"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "平衡定数"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

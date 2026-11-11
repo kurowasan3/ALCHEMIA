@@ -1,0 +1,220 @@
+{
+ "schema": "alchemia.taxonomy/1",
+ "fields": [
+  {
+   "key": "THE",
+   "name": "理論化学",
+   "order": 1
+  },
+  {
+   "key": "INO",
+   "name": "無機化学",
+   "order": 2
+  },
+  {
+   "key": "ORG",
+   "name": "有機化学",
+   "order": 3
+  },
+  {
+   "key": "POL",
+   "name": "高分子化合物",
+   "order": 4
+  }
+ ],
+ "units": [
+  {
+   "key": "THE-01",
+   "field": "THE",
+   "name": "原子の構造と電子配置",
+   "order": 101
+  },
+  {
+   "key": "THE-02",
+   "field": "THE",
+   "name": "元素の周期表と周期性",
+   "order": 102
+  },
+  {
+   "key": "THE-03",
+   "field": "THE",
+   "name": "化学結合と結晶",
+   "order": 103
+  },
+  {
+   "key": "THE-04",
+   "field": "THE",
+   "name": "物質量と化学反応式",
+   "order": 104
+  },
+  {
+   "key": "THE-05",
+   "field": "THE",
+   "name": "酸と塩基",
+   "order": 105
+  },
+  {
+   "key": "THE-06",
+   "field": "THE",
+   "name": "酸化還元反応",
+   "order": 106
+  },
+  {
+   "key": "THE-07",
+   "field": "THE",
+   "name": "電池と電気分解",
+   "order": 107
+  },
+  {
+   "key": "THE-08",
+   "field": "THE",
+   "name": "気体の性質",
+   "order": 108
+  },
+  {
+   "key": "THE-09",
+   "field": "THE",
+   "name": "溶液の性質",
+   "order": 109
+  },
+  {
+   "key": "THE-10",
+   "field": "THE",
+   "name": "化学反応とエネルギー",
+   "order": 110
+  },
+  {
+   "key": "THE-11",
+   "field": "THE",
+   "name": "反応速度と化学平衡",
+   "order": 111
+  },
+  {
+   "key": "THE-12",
+   "field": "THE",
+   "name": "電離平衡と溶解平衡",
+   "order": 112
+  },
+  {
+   "key": "INO-01",
+   "field": "INO",
+   "name": "ハロゲン・貴ガス・水素",
+   "order": 201
+  },
+  {
+   "key": "INO-02",
+   "field": "INO",
+   "name": "酸素・硫黄",
+   "order": 202
+  },
+  {
+   "key": "INO-03",
+   "field": "INO",
+   "name": "窒素・リン",
+   "order": 203
+  },
+  {
+   "key": "INO-04",
+   "field": "INO",
+   "name": "炭素・ケイ素",
+   "order": 204
+  },
+  {
+   "key": "INO-05",
+   "field": "INO",
+   "name": "アルカリ金属・アルカリ土類金属",
+   "order": 205
+  },
+  {
+   "key": "INO-06",
+   "field": "INO",
+   "name": "アルミニウム・亜鉛・スズ・鉛",
+   "order": 206
+  },
+  {
+   "key": "INO-07",
+   "field": "INO",
+   "name": "遷移元素（鉄・銅・銀・クロム・マンガン）",
+   "order": 207
+  },
+  {
+   "key": "INO-08",
+   "field": "INO",
+   "name": "金属イオンの沈殿・錯イオン・系統分析",
+   "order": 208
+  },
+  {
+   "key": "INO-09",
+   "field": "INO",
+   "name": "気体の製法と性質",
+   "order": 209
+  },
+  {
+   "key": "ORG-01",
+   "field": "ORG",
+   "name": "有機化合物の構造と元素分析",
+   "order": 301
+  },
+  {
+   "key": "ORG-02",
+   "field": "ORG",
+   "name": "脂肪族炭化水素",
+   "order": 302
+  },
+  {
+   "key": "ORG-03",
+   "field": "ORG",
+   "name": "アルコール・アルデヒド・ケトン",
+   "order": 303
+  },
+  {
+   "key": "ORG-04",
+   "field": "ORG",
+   "name": "カルボン酸・エステル・油脂",
+   "order": 304
+  },
+  {
+   "key": "ORG-05",
+   "field": "ORG",
+   "name": "芳香族化合物",
+   "order": 305
+  },
+  {
+   "key": "ORG-06",
+   "field": "ORG",
+   "name": "有機化合物の検出反応と分離",
+   "order": 306
+  },
+  {
+   "key": "POL-01",
+   "field": "POL",
+   "name": "高分子の基礎と合成樹脂",
+   "order": 401
+  },
+  {
+   "key": "POL-02",
+   "field": "POL",
+   "name": "合成繊維",
+   "order": 402
+  },
+  {
+   "key": "POL-03",
+   "field": "POL",
+   "name": "ゴム・機能性高分子",
+   "order": 403
+  },
+  {
+   "key": "POL-04",
+   "field": "POL",
+   "name": "糖類",
+   "order": 404
+  },
+  {
+   "key": "POL-05",
+   "field": "POL",
+   "name": "アミノ酸・タンパク質・核酸",
+   "order": 405
+  }
+ ],
+ "retired": []
+}

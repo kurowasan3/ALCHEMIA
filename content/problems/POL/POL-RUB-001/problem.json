@@ -1,0 +1,95 @@
+{
+ "id": "POL-RUB-001",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-03",
+ "topic": "天然ゴムと加硫",
+ "course": "化学",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "天然ゴムについて答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "単量体の名称"
+     },
+     {
+      "id": "2",
+      "tex": "二重結合のまわりの構造"
+     },
+     {
+      "id": "3",
+      "tex": "弾性や強度を高めるために行う操作"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "イソプレン",
+    "grading": "語{イソプレン|2-メチル-1,3-ブタジエン}"
+   },
+   {
+    "id": "2",
+    "tex": "シス形",
+    "grading": "選ぶ{シス形|トランス形}=1"
+   },
+   {
+    "id": "3",
+    "tex": "加硫（硫黄を加えて加熱する）",
+    "grading": "語{加硫}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "天然ゴムはポリイソプレンで，二重結合がシス形のため分子が折れ曲がり，弾性を示す．硫黄を加えて加熱する（加硫）と，分子間に硫黄の橋かけ（架橋）ができ，弾性・強度が増す．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "rubber"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "ゴム"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "polymers",
+  "key": "natural-rubber"
+ }
+}

@@ -1,0 +1,69 @@
+{
+ "id": "THE-ATM-006",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-01",
+ "topic": "電子配置（副殻まで）：鉄",
+ "course": "化学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "鉄原子 Fe（原子番号 26）の電子配置を，副殻（s・p・d）まで答えよ（例：1s2 2s2 …）．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$1s^2\\,2s^2\\,2p^6\\,3s^2\\,3p^6\\,3d^6\\,4s^2$",
+    "grading": "語{1s2 2s2 2p6 3s2 3p6 3d6 4s2|1s2 2s2 2p6 3s2 3p6 4s2 3d6|[Ar]3d64s2|[Ar]4s23d6}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "電子はエネルギーの低い軌道から 1s, 2s, 2p, 3s, 3p, 4s, 3d … の順に入る．Fe は 4s に 2 個入ったあと 3d に 6 個．M 殻（3s・3p・3d）は 14 個，N 殻は 2 個．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "electron-config"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "電子配置",
+  "遷移元素"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "elements",
+  "key": "Fe"
+ }
+}

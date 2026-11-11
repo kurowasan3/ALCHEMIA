@@ -1,0 +1,69 @@
+{
+ "id": "ORG-DET-009",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-06",
+ "topic": "塩化鉄(III)水溶液による呈色を示す化合物",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の化合物のうち，塩化鉄(III)水溶液による呈色（塩化鉄(III)水溶液を加えると青〜赤紫色に呈色）を示すものをすべて選べ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "サリチル酸メチル，サリチル酸，o-クレゾール",
+    "grading": "すべて選ぶ{サリチル酸メチル|ベンジルアルコール|アセトン|エタノール|サリチル酸|o-クレゾール}=1,5,6"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "塩化鉄(III)水溶液による呈色は「フェノール性ヒドロキシ基（ベンゼン環に直接結合した −OH）」に陽性．ベンジルアルコール：OH がベンゼン環に直接結合していない．陽性：サリチル酸メチル，サリチル酸，o-クレゾール．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "organic-test"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "条件判断",
+  "検出反応",
+  "塩化鉄(III)水溶液による呈色"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "tests",
+  "key": "fecl3"
+ }
+}

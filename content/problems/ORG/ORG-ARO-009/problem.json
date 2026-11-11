@@ -1,0 +1,112 @@
+{
+ "id": "ORG-ARO-009",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-05",
+ "topic": "アニリンとアセトアニリド",
+ "course": "化学",
+ "level": 1,
+ "minutes": 4,
+ "format": [
+  "pathway"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応経路について，空欄に当てはまる化合物の名称（または示性式）を答えよ．また，（ア）の反応に用いる試薬・条件として適当なものを選べ．\\[\\ce{C6H5NO2} \\xrightarrow{\\text{Sn・濃塩酸}} \\ce{C6H5NH3Cl} \\xrightarrow{\\text{NaOH 水溶液}} \\boxed{\\,\\text{A}\\,} \\xrightarrow{\\text{（ア）}} \\boxed{\\,\\text{B}\\,}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A に当てはまる化合物"
+     },
+     {
+      "id": "2",
+      "tex": "B に当てはまる化合物"
+     },
+     {
+      "id": "3",
+      "tex": "（ア）の試薬・条件"
+     },
+     {
+      "id": "4",
+      "tex": "B に含まれる，アミノ基とカルボキシ基から水がとれてできる結合の名称"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "アニリン　$\\ce{C6H5NH2}$",
+    "grading": "A：語{アニリン|C6H5NH2}"
+   },
+   {
+    "id": "2",
+    "tex": "アセトアニリド　$\\ce{C6H5NHCOCH3}$",
+    "grading": "B：語{アセトアニリド|C6H5NHCOCH3}"
+   },
+   {
+    "id": "3",
+    "tex": "無水酢酸",
+    "grading": "選ぶ{無水酢酸|NaNO₂・HCl、0〜5 ℃|さらし粉|NaOH 水溶液}=1"
+   },
+   {
+    "id": "4",
+    "tex": "アミド結合",
+    "grading": "語{アミド結合}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ニトロベンゼン → アニリン塩酸塩：Sn・濃塩酸（還元）　$\\ce{2C6H5NO2 + 3Sn + 14HCl -> 2C6H5NH3Cl + 3SnCl4 + 4H2O}$"
+    },
+    {
+     "type": "text",
+     "tex": "アニリン塩酸塩 → アニリン：NaOH 水溶液（弱塩基の遊離）　$\\ce{C6H5NH3Cl + NaOH -> C6H5NH2 + NaCl + H2O}$"
+    },
+    {
+     "type": "text",
+     "tex": "アニリン → アセトアニリド：無水酢酸（アセチル化）　$\\ce{C6H5NH2 + (CH3CO)2O -> C6H5NHCOCH3 + CH3COOH}$．アミド結合"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "aromatic"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応経路",
+  "アミド"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "organic",
+  "key": "aniline"
+ }
+}

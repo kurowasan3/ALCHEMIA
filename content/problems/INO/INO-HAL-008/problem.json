@@ -1,0 +1,68 @@
+{
+ "id": "INO-HAL-008",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-01",
+ "topic": "ハロゲン化水素酸の酸の強さ",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "compare"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ハロゲン化水素の水溶液 $\\ce{HF}$，$\\ce{HCl}$，$\\ce{HBr}$，$\\ce{HI}$ を，酸として強い順に並べよ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$\\ce{HI}>\\ce{HBr}>\\ce{HCl}>\\ce{HF}$",
+    "grading": "並べる{HF|HCl|HBr|HI}=4>3>2>1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "原子が大きいほど H−X 結合が弱く，H⁺ を出しやすい．フッ化水素酸は弱酸（ほかは強酸）．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "halogen",
+  "acid-base"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-STRONG-CONC"
+ ],
+ "tags": [
+  "比較問題",
+  "ハロゲン",
+  "酸の強さ"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

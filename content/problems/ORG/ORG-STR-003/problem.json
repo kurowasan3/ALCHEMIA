@@ -1,0 +1,92 @@
+{
+ "id": "ORG-STR-003",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-01",
+ "topic": "分子式 C₄H₁₀O の異性体",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "分子式 $\\ce{C4H10O}$ で表される化合物について答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "アルコールの構造異性体は何種類か"
+     },
+     {
+      "id": "2",
+      "tex": "エーテルの構造異性体は何種類か"
+     },
+     {
+      "id": "3",
+      "tex": "不斉炭素原子をもつ化合物の名称"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "4 種類",
+    "grading": "約{4|1}"
+   },
+   {
+    "id": "2",
+    "tex": "3 種類",
+    "grading": "約{3|1}"
+   },
+   {
+    "id": "3",
+    "tex": "2-ブタノール",
+    "grading": "語{2-ブタノール|CH3CH(OH)CH2CH3}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "アルコール：1-ブタノール，2-ブタノール，2-メチル-1-プロパノール，2-メチル-2-プロパノールの 4 種類．エーテル：ジエチルエーテル，メチルプロピルエーテル，メチルイソプロピルエーテルの 3 種類．不斉炭素原子をもつのは 2-ブタノール（OH が結合した C に H・CH₃・C₂H₅・OH の 4 つの異なる原子・原子団）．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "organic-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "異性体",
+  "不斉炭素"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

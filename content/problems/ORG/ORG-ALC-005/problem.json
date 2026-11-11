@@ -1,0 +1,95 @@
+{
+ "id": "ORG-ALC-005",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-03",
+ "topic": "アルコールの級数と酸化生成物",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次のアルコールを硫酸酸性の二クロム酸カリウム水溶液で酸化したときの変化として適当なものを選べ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "1-プロパノール"
+     },
+     {
+      "id": "2",
+      "tex": "2-プロパノール"
+     },
+     {
+      "id": "3",
+      "tex": "2-メチル-2-プロパノール"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "アルデヒドを経てカルボン酸になる",
+    "grading": "選ぶ{アルデヒドを経てカルボン酸になる|ケトンになる|酸化されにくい}=1"
+   },
+   {
+    "id": "2",
+    "tex": "ケトンになる",
+    "grading": "選ぶ{アルデヒドを経てカルボン酸になる|ケトンになる|酸化されにくい}=2"
+   },
+   {
+    "id": "3",
+    "tex": "酸化されにくい",
+    "grading": "選ぶ{アルデヒドを経てカルボン酸になる|ケトンになる|酸化されにくい}=3"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "−OH が結合した炭素に結合している炭素の数で級数が決まる．第一級（1-プロパノール）→ アルデヒド → カルボン酸，第二級（2-プロパノール）→ ケトン（アセトン），第三級（2-メチル-2-プロパノール）は酸化されにくい．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "alcohol-carbonyl"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "条件判断",
+  "アルコールの級数"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "organic",
+  "key": "propanol-2"
+ }
+}

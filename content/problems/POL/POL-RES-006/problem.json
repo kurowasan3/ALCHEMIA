@@ -1,0 +1,82 @@
+{
+ "id": "POL-RES-006",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-01",
+ "topic": "高分子の性質",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "合成高分子について答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "融点について正しいもの"
+     },
+     {
+      "id": "2",
+      "tex": "分子量の表し方"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "一定の融点を示さない（軟化点を示す）",
+    "grading": "選ぶ{一定の融点を示す|一定の融点を示さない}=2"
+   },
+   {
+    "id": "2",
+    "tex": "平均分子量",
+    "grading": "語{平均分子量}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "合成高分子は重合度の異なる分子の集まりなので，分子量は平均値（平均分子量）で表し，一定の融点を示さず，加熱するとある温度範囲で軟らかくなる（軟化点）．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "addition-polymer"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "高分子の性質"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

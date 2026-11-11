@@ -1,0 +1,69 @@
+{
+ "id": "ORG-DET-015",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-06",
+ "topic": "臭素水の脱色を示す化合物",
+ "course": "化学",
+ "level": 3,
+ "minutes": 8,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の化合物のうち，臭素水の脱色（臭素水を加えると臭素の赤褐色が消える）を示すものをすべて選べ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "アセチレン，サリチル酸，アニリン",
+    "grading": "すべて選ぶ{フルクトース|トルエン|アセチレン|サリチル酸|アニリン|アセトン}=3,4,5"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "臭素水の脱色は「炭素間の二重結合・三重結合（付加反応）」に陽性．フルクトース：ケトースは臭素水で酸化されにくい．陽性：アセチレン，サリチル酸，アニリン．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "organic-test"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "条件判断",
+  "検出反応",
+  "臭素水の脱色"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "tests",
+  "key": "bromine"
+ }
+}

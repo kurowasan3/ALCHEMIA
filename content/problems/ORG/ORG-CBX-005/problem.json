@@ -1,0 +1,88 @@
+{
+ "id": "ORG-CBX-005",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-04",
+ "topic": "油脂のけん化と付加するヨウ素",
+ "course": "化学",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある油脂（トリグリセリド）$1.00\\,\\mathrm g$ を完全にけん化するのに，水酸化カリウム $192\\,\\mathrm{mg}$ を要した．また，この油脂 $100\\,\\mathrm g$ に付加するヨウ素は $86.6\\,\\mathrm g$ であった．式量は KOH = 56，原子量は I = 127 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "この油脂の分子量を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "この油脂 1 分子に含まれる炭素間二重結合の数を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$875$",
+    "grading": "約{875|3}"
+   },
+   {
+    "id": "2",
+    "tex": "3 個",
+    "grading": "約{3|1} [個]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 油脂 1 mol のけん化に KOH 3 mol が必要．KOH は $0.192/56=3.43\\times10^{-3}\\,\\mathrm{mol}$ なので，油脂は $1.143\\times10^{-3}\\,\\mathrm{mol}$．分子量は $1.00/(1.143\\times10^{-3})\\fallingdotseq875$．"
+    },
+    {
+     "type": "text",
+     "tex": "(2) 油脂 100 g は $100/875=0.1143\\,\\mathrm{mol}$．$\\ce{I2}$ は $86.6/254=0.341\\,\\mathrm{mol}$．$0.341/0.1143\\fallingdotseq3$ より，油脂 1 分子に $\\ce{C=C}$ は 3 個．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "carboxylic-ester"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "油脂",
+  "けん化価",
+  "ヨウ素価"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

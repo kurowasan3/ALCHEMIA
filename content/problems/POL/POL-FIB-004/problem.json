@@ -1,0 +1,90 @@
+{
+ "id": "POL-FIB-004",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-02",
+ "topic": "ビニロンのアセタール化",
+ "course": "化学",
+ "level": 3,
+ "minutes": 12,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ポリビニルアルコール $100\\,\\mathrm g$ のヒドロキシ基の $40\\,\\%$ をホルムアルデヒドでアセタール化して，ビニロンをつくった．原子量は H = 1.0，C = 12，O = 16 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "アセタール化を行う目的を述べよ．"
+     },
+     {
+      "id": "2",
+      "tex": "得られるビニロンは何 g か．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "水に溶けにくくするため（残った OH で適度な吸湿性）",
+    "grading": "記述"
+   },
+   {
+    "id": "2",
+    "tex": "$105\\,\\mathrm g$",
+    "grading": "約{105.5|3} [g]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) PVA は OH が多く水に溶けるので，一部の OH を $\\ce{-O-CH2-O-}$ に変えて水に溶けないようにする．残った OH のために，木綿に似た吸湿性をもつ．"
+    },
+    {
+     "type": "text",
+     "tex": "(2) 繰り返し単位 $\\ce{-CH2-CH(OH)-}$ の式量は 44 なので，OH は $100/44=2.273\\,\\mathrm{mol}$．その 40 % の OH 2 個と HCHO 1 分子から $\\ce{H2O}$ がとれて $\\ce{-CH2-}$ の橋ができ，橋 1 つで質量は $30-18=12\\,\\mathrm g$ ずつ増える．橋は $\\dfrac{2.273\\times0.40}{2}\\,\\mathrm{mol}$ なので，$100+0.4545\\times12\\fallingdotseq105\\,\\mathrm g$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "condensation-polymer"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "ビニロン"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "polymers",
+  "key": "vinylon"
+ }
+}

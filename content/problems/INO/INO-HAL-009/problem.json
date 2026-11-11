@@ -1,0 +1,100 @@
+{
+ "id": "INO-HAL-009",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-01",
+ "topic": "ハロゲン単体の色と状態",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "常温・常圧でのハロゲン単体の色を答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{F2}$"
+     },
+     {
+      "id": "2",
+      "tex": "$\\ce{Cl2}$"
+     },
+     {
+      "id": "3",
+      "tex": "$\\ce{Br2}$"
+     },
+     {
+      "id": "4",
+      "tex": "$\\ce{I2}$"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "淡黄色",
+    "grading": "語{淡黄|淡黄色}"
+   },
+   {
+    "id": "2",
+    "tex": "黄緑色",
+    "grading": "語{黄緑|黄緑色}"
+   },
+   {
+    "id": "3",
+    "tex": "赤褐色",
+    "grading": "語{赤褐|赤褐色}"
+   },
+   {
+    "id": "4",
+    "tex": "黒紫色",
+    "grading": "語{黒紫|黒紫色|紫黒色}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{F2}$ 淡黄色の気体，$\\ce{Cl2}$ 黄緑色の気体，$\\ce{Br2}$ 赤褐色の液体，$\\ce{I2}$ 黒紫色の固体（昇華性）．分子量が大きいほど分子間力が強く，気体→液体→固体になる．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "halogen"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "ハロゲン"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

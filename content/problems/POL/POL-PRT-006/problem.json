@@ -1,0 +1,86 @@
+{
+ "id": "POL-PRT-006",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-05",
+ "topic": "DNA の塩基の割合",
+ "course": "化学",
+ "level": 3,
+ "minutes": 8,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある生物の 2 本鎖 DNA に含まれる塩基の数の割合を調べると，アデニン（A）が $30\\,\\%$ であった．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "チミン（T）の割合"
+     },
+     {
+      "id": "2",
+      "tex": "グアニン（G）の割合"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$30\\,\\%$",
+    "grading": "約{30|2} [%]"
+   },
+   {
+    "id": "2",
+    "tex": "$20\\,\\%$",
+    "grading": "約{20|2} [%]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "2 本鎖では A と T，G と C が対をつくるので A = T，G = C．T は 30 %，G = C = (100 − 30 × 2) / 2 = 20 %．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "nucleic-acid"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "核酸"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "polymers",
+  "key": "dna"
+ }
+}

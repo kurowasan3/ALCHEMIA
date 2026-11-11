@@ -1,0 +1,100 @@
+{
+ "id": "THE-BND-004",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-03",
+ "topic": "分子の形",
+ "course": "化学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の分子の形を答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{CH4}$"
+     },
+     {
+      "id": "2",
+      "tex": "$\\ce{NH3}$"
+     },
+     {
+      "id": "3",
+      "tex": "$\\ce{H2O}$"
+     },
+     {
+      "id": "4",
+      "tex": "$\\ce{CO2}$"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "正四面体形",
+    "grading": "選ぶ{直線形|折れ線形|三角錐形|正四面体形}=4"
+   },
+   {
+    "id": "2",
+    "tex": "三角錐形",
+    "grading": "選ぶ{直線形|折れ線形|三角錐形|正四面体形}=3"
+   },
+   {
+    "id": "3",
+    "tex": "折れ線形",
+    "grading": "選ぶ{直線形|折れ線形|三角錐形|正四面体形}=2"
+   },
+   {
+    "id": "4",
+    "tex": "直線形",
+    "grading": "選ぶ{直線形|折れ線形|三角錐形|正四面体形}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "中心原子のまわりの電子対（共有電子対と非共有電子対）が互いに反発して，できるだけ離れる．CH₄ は 4 組とも共有で正四面体形．NH₃ は非共有電子対 1 組で三角錐形，H₂O は 2 組で折れ線形．CO₂ は二重結合 2 つで直線形．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "chemical-bond"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "分子の形"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

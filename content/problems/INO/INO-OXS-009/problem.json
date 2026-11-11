@@ -1,0 +1,67 @@
+{
+ "id": "INO-OXS-009",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-02",
+ "topic": "硫黄の酸化数",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "compare"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "下線の硫黄原子の酸化数が大きい順に並べよ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$\\ce{H2SO4}$（+6）＞ $\\ce{SO2}$（+4）＞ $\\ce{S}$（0）＞ $\\ce{H2S}$（−2）",
+    "grading": "並べる{$\\ce{S}$|$\\ce{H2S}$|$\\ce{H2SO4}$|$\\ce{SO2}$}=3>4>1>2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "H₂S は −2，単体の S は 0，SO₂ は +4，H₂SO₄ は +6．SO₂ は中間の酸化数なので，酸化剤にも還元剤にもなる．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "oxygen-sulfur",
+  "redox"
+ ],
+ "laws": [
+  "oxidation-number"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "比較問題",
+  "酸化数"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

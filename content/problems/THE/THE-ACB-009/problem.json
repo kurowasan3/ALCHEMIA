@@ -1,0 +1,100 @@
+{
+ "id": "THE-ACB-009",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-05",
+ "topic": "酸・塩基の価数",
+ "course": "化学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の酸・塩基の価数を答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{H2SO4}$"
+     },
+     {
+      "id": "2",
+      "tex": "$\\ce{H3PO4}$"
+     },
+     {
+      "id": "3",
+      "tex": "$\\ce{CH3COOH}$"
+     },
+     {
+      "id": "4",
+      "tex": "$\\ce{Ca(OH)2}$"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "2 価",
+    "grading": "約{2|1} [価]"
+   },
+   {
+    "id": "2",
+    "tex": "3 価",
+    "grading": "約{3|1} [価]"
+   },
+   {
+    "id": "3",
+    "tex": "1 価",
+    "grading": "約{1|1} [価]"
+   },
+   {
+    "id": "4",
+    "tex": "2 価",
+    "grading": "約{2|1} [価]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "1 分子（1 組成式）から出せる H⁺（受け取れる H⁺）の数．酢酸 CH₃COOH の H のうち H⁺ になるのはカルボキシ基の 1 個だけ．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "acid-base"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "価数"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

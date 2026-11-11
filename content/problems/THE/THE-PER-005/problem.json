@@ -1,0 +1,70 @@
+{
+ "id": "THE-PER-005",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-02",
+ "topic": "第2周期のイオン化エネルギー",
+ "course": "化学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "compare"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の元素を，第1イオン化エネルギーの大きい順に並べよ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "Ne＞F＞N＞O",
+    "grading": "並べる{N|O|F|Ne}=4>3>1>2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "O では 2p 軌道の 1 つに電子が 2 個入り，電子どうしの反発で取り去りやすいので，N より小さい．　Ne 2081 kJ/mol，F 1681 kJ/mol，N 1402 kJ/mol，O 1314 kJ/mol．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "periodicity"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-IE-MONOTONE"
+ ],
+ "tags": [
+  "比較問題",
+  "周期性"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "elements",
+  "key": "N"
+ }
+}

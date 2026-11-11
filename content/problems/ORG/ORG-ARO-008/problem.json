@@ -1,0 +1,95 @@
+{
+ "id": "ORG-ARO-008",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-05",
+ "topic": "ベンゼンの置換反応",
+ "course": "化学",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ベンゼンに次の操作をしたときに得られる主な生成物の名称を答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "濃硝酸と濃硫酸の混合物（混酸）を加えて約 60 ℃ に温める"
+     },
+     {
+      "id": "2",
+      "tex": "鉄粉（または塩化鉄(III)）を触媒として塩素を通じる"
+     },
+     {
+      "id": "3",
+      "tex": "濃硫酸を加えて加熱する"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "ニトロベンゼン",
+    "grading": "語{ニトロベンゼン|C6H5NO2}"
+   },
+   {
+    "id": "2",
+    "tex": "クロロベンゼン",
+    "grading": "語{クロロベンゼン|C6H5Cl}"
+   },
+   {
+    "id": "3",
+    "tex": "ベンゼンスルホン酸",
+    "grading": "語{ベンゼンスルホン酸|C6H5SO3H}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) ニトロ化 $\\ce{C6H6 + HNO3 -> C6H5NO2 + H2O}$　(2) 塩素化 $\\ce{C6H6 + Cl2 -> C6H5Cl + HCl}$　(3) スルホン化 $\\ce{C6H6 + H2SO4 -> C6H5SO3H + H2O}$"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "aromatic"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "置換反応"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "organic",
+  "key": "benzene"
+ }
+}

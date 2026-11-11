@@ -1,0 +1,88 @@
+{
+ "id": "THE-EQL-005",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "初速度から反応速度式を決める",
+ "course": "化学",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "$\\mathrm{A + 2B \\to C}$ の初速度を，A・B の初濃度を変えて測定した．\\\\実験1：[A] = 0.10，[B] = 0.10 mol/L → $v=2.0\\times10^{-4}$\\\\実験2：[A] = 0.20，[B] = 0.10 mol/L → $v=4.0\\times10^{-4}$\\\\実験3：[A] = 0.10，[B] = 0.20 mol/L → $v=8.0\\times10^{-4}$（$v$ の単位は mol/(L·s)）"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$v=k[\\mathrm A]^a[\\mathrm B]^b$ とするとき，a，b を答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "速度定数 k を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "a = 1，b = 2",
+    "grading": "a：1 ; b：2"
+   },
+   {
+    "id": "2",
+    "tex": "$0.20\\,\\mathrm{L^2/(mol^2\\cdot s)}$",
+    "grading": "約{0.20|2}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 実験1→2：[A] 2 倍で $v$ 2 倍 → a = 1．実験1→3：[B] 2 倍で $v$ 4 倍 → b = 2．$v=k[\\mathrm A][\\mathrm B]^2$（反応式の係数から決めるのではなく，実験で決める）．(2) $k=\\dfrac{2.0\\times10^{-4}}{0.10\\times0.10^2}=0.20$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "reaction-rate"
+ ],
+ "laws": [
+  "rate-law"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "反応速度式"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "laws",
+  "key": "rate-law"
+ }
+}

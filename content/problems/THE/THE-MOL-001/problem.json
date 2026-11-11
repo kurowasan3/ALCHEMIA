@@ -1,0 +1,101 @@
+{
+ "id": "THE-MOL-001",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-04",
+ "topic": "物質量と分子の数",
+ "course": "化学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "二酸化炭素 $4.4\\,\\mathrm g$ について答えよ．C = 12，O = 16，アボガドロ定数 $6.0\\times10^{23}\\,/\\mathrm{mol}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "物質量"
+     },
+     {
+      "id": "2",
+      "tex": "分子の数"
+     },
+     {
+      "id": "3",
+      "tex": "標準状態（0 ℃，$1.013\\times10^5\\,\\mathrm{Pa}$）での体積"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$0.10\\,\\mathrm{mol}$",
+    "grading": "約{0.10|2} [mol]"
+   },
+   {
+    "id": "2",
+    "tex": "$6.0\\times10^{22}$ 個",
+    "grading": "約{6.0e22|2} [個]"
+   },
+   {
+    "id": "3",
+    "tex": "$2.24\\,\\mathrm L$",
+    "grading": "約{2.24|3} [L]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $\\ce{CO2}$ のモル質量 44 g/mol，$4.4/44=0.10\\,\\mathrm{mol}$．(2) $0.10\\times6.0\\times10^{23}=6.0\\times10^{22}$．(3) $0.10\\times22.4=2.24\\,\\mathrm L$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "mole",
+  "chemical-equation"
+ ],
+ "laws": [
+  "mole-def",
+  "molar-volume"
+ ],
+ "misconceptions": [
+  "MC-MOLVOL-ALL"
+ ],
+ "tags": [
+  "計算",
+  "物質量"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "laws",
+  "key": "mole-def"
+ }
+}

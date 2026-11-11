@@ -1,0 +1,66 @@
+{
+ "id": "THE-ION-008",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "溶解度積と溶けやすさ",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "compare"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "25 ℃ の溶解度積は AgCl $1.8\\times10^{-10}$，AgBr $5.2\\times10^{-13}$，AgI $8.3\\times10^{-17}$（いずれも (mol/L)²）である．水に溶けやすい順に並べよ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "AgCl ＞ AgBr ＞ AgI",
+    "grading": "並べる{AgI|AgCl|AgBr}=2>3>1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "同じ組成（1 : 1）の塩なので，溶解度 $s=\\sqrt{K_{sp}}$ は $K_{sp}$ が大きいほど大きい．AgCl はアンモニア水に溶けるが，AgI はほとんど溶けない．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "solubility-equilibrium"
+ ],
+ "laws": [
+  "ksp"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "比較問題",
+  "溶解度積"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

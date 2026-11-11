@@ -1,0 +1,119 @@
+{
+ "id": "THE-BND-001",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-03",
+ "topic": "結晶の種類",
+ "course": "化学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の物質の結晶の種類を選べ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "塩化ナトリウム"
+     },
+     {
+      "id": "2",
+      "tex": "銅"
+     },
+     {
+      "id": "3",
+      "tex": "ドライアイス（CO₂）"
+     },
+     {
+      "id": "4",
+      "tex": "ダイヤモンド"
+     },
+     {
+      "id": "5",
+      "tex": "二酸化ケイ素"
+     },
+     {
+      "id": "6",
+      "tex": "ヨウ素"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "イオン結晶",
+    "grading": "選ぶ{イオン結晶|分子結晶|共有結合の結晶|金属結晶}=1"
+   },
+   {
+    "id": "2",
+    "tex": "金属結晶",
+    "grading": "選ぶ{イオン結晶|分子結晶|共有結合の結晶|金属結晶}=4"
+   },
+   {
+    "id": "3",
+    "tex": "分子結晶",
+    "grading": "選ぶ{イオン結晶|分子結晶|共有結合の結晶|金属結晶}=2"
+   },
+   {
+    "id": "4",
+    "tex": "共有結合の結晶",
+    "grading": "選ぶ{イオン結晶|分子結晶|共有結合の結晶|金属結晶}=3"
+   },
+   {
+    "id": "5",
+    "tex": "共有結合の結晶",
+    "grading": "選ぶ{イオン結晶|分子結晶|共有結合の結晶|金属結晶}=3"
+   },
+   {
+    "id": "6",
+    "tex": "分子結晶",
+    "grading": "選ぶ{イオン結晶|分子結晶|共有結合の結晶|金属結晶}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "金属元素と非金属元素 → イオン結晶，金属元素だけ → 金属結晶，非金属元素だけ → ふつうは分子結晶．ただし C（ダイヤモンド）・Si・SiO₂ は原子が共有結合で次々につながった共有結合の結晶．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "chemical-bond",
+  "crystal"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "条件判断",
+  "結晶"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

@@ -1,0 +1,64 @@
+{
+ "id": "THE-GAS-007",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-08",
+ "topic": "理想気体に近づく条件",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "実在気体が理想気体に近いふるまいをするのはどのようなときか．正しいものをすべて選べ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "高温，低圧",
+    "grading": "すべて選ぶ{高温|低温|高圧|低圧}=1,4"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "理想気体は分子自身の体積と分子間力を無視した気体．高温では分子間力の影響が，低圧では分子の体積の影響が小さくなる．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "条件判断",
+  "実在気体"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

@@ -1,0 +1,98 @@
+{
+ "id": "THE-ELC-009",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-07",
+ "topic": "イオン交換膜法",
+ "course": "化学",
+ "level": 2,
+ "minutes": 8,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "陽イオン交換膜で仕切った電解槽で，塩化ナトリウム水溶液を $10.0\\,\\mathrm A$ で 965 秒間電気分解した．$F=9.65\\times10^{4}\\,\\mathrm{C/mol}$，NaOH = 40 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "陽イオン交換膜を通って移動するイオン"
+     },
+     {
+      "id": "2",
+      "tex": "陰極側に生じる水酸化ナトリウムの質量"
+     },
+     {
+      "id": "3",
+      "tex": "陽極で発生する気体の標準状態での体積"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{Na+}$",
+    "grading": "語{Na+|ナトリウムイオン}"
+   },
+   {
+    "id": "2",
+    "tex": "$4.0\\,\\mathrm g$",
+    "grading": "約{4.0|2} [g]"
+   },
+   {
+    "id": "3",
+    "tex": "$1.12\\,\\mathrm L$",
+    "grading": "約{1.1199999999999999|3} [L]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 陰極側で OH⁻ が生じ，陽極側から Na⁺ が膜を通って移動するので，陰極側に NaOH ができる．(2) 電子は $10.0\\times965/96500=0.100\\,\\mathrm{mol}$．NaOH も 0.100 mol，4.0 g．(3) 陽極 $\\ce{2Cl- -> Cl2 + 2e-}$ より Cl₂ は 0.0500 mol，標準状態で 1.12 L．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "electrolysis"
+ ],
+ "laws": [
+  "faraday"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "電気分解",
+  "工業的製法"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "ind-naoh"
+ }
+}

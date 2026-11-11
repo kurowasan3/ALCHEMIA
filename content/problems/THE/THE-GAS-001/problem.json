@@ -1,0 +1,70 @@
+{
+ "id": "THE-GAS-001",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-08",
+ "topic": "ボイルの法則",
+ "course": "化学",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "$1.0\\times10^{5}\\,\\mathrm{Pa}$ で $2.0\\,\\mathrm L$ の気体を，温度を変えずに $4.0\\times10^{5}\\,\\mathrm{Pa}$ にすると体積は何 L になるか．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$0.50\\,\\mathrm L$",
+    "grading": "約{0.50|2} [L]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$P_1V_1=P_2V_2$：$1.0\\times10^5\\times2.0=4.0\\times10^5\\times V$ より $V=0.50\\,\\mathrm L$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "ideal-gas"
+ ],
+ "laws": [
+  "boyle"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "気体の法則"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "laws",
+  "key": "boyle"
+ }
+}

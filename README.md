@@ -1,0 +1,102 @@
+# ALCHEMIA 高校化学
+
+<img src="icons/icon-192.png" width="96" alt="ALCHEMIA のアイコン：三角フラスコとベンゼン環">
+
+反応表・反応経路の地図・周期表と問題演習で、つながりから覚える高校化学アプリ（試作版 v0.1）。
+[CELESTIA](https://github.com/kurowasan3/CELESTIA)（高校物理）と同じ仕組み（復習・自動採点・同期・オフライン・問題管理表からの取り込み）で、シミュレーションの代わりに「図鑑」を持っています。
+iPhone・iPad・PC のブラウザで動き、ホーム画面に追加するとアプリとして使えます（PWA）。
+
+## いまできること
+
+- **図鑑（7ページ）**：覚えたことを、操作して確かめる場所。解いた問題の「図鑑で確かめる」から、その内容のページが開く
+  - **沈殿・錯イオン・呈色反応**：17イオン × 13試薬の反応表（沈殿の色の見本・化学式・反応式。かくして覚えるモードあり）／試験管（少量 → さらに過剰）／系統分析（混ぜるイオンを選んで6段階をたどる）／炎色反応
+  - **無機化学の製法・反応式**：気体の製法 20（捕集法・乾燥剤・性質）、工業的製法 11（段階ごとの式と全体の式）、元素ごとの反応 63。右辺をかくして思い出す
+  - **有機化学の反応経路**：脂肪族・芳香族の地図（化合物 70、反応 60）。化合物をタップすると構造式と出入りする反応、「経路さがし」で2つを選ぶとつなぐ反応を順に表示
+  - **有機化合物の検出反応**：13の反応ごとに陽性・陰性（理由つき）、化合物 × 反応の表
+  - **高分子の構造・製法・性質**：36種。単量体と繰り返し単位の構造式、重合の種類、結合、熱的性質、繰り返し単位の式量
+  - **理論化学の定義・法則**：41件（定義・実験から得た法則・導出できる法則）。導出は1段ずつ開く（「法則」タブ）
+  - **元素の周期性・電子配置**：118元素の周期表を、分類・電気陰性度・イオン化エネルギー・原子半径などで塗り分け。電子配置（殻・副殻・軌道の箱）、イオン化エネルギーのグラフ
+- **5つの出題形式（＋計算）を入力して自動採点**：ホームの「形式ごとに演習」から選べる
+  - 一問一答（語句・化学式。全角半角・ひらがなカタカナ・下付き文字の違いを吸収。化学式は入力中に下付き・上付きで表示）
+  - 反応式補完（係数・化学式の空欄）
+  - 比較問題（タップして並べかえ）
+  - 条件判断（1つ選ぶ・すべて選ぶ）
+  - 反応経路（経路の空欄の物質と試薬）
+  - 計算（有効数字の桁数で判定。`1.2×10^-3`・`1.2e-3` も読める）
+- **問題 333問**：全32単元・基礎〜国公立2次（基礎 62・標準 151・入試基礎 89・国公立2次 31）。難関・最難関は問題管理表から取り込む前提
+- **全分野からランダム／形式ごと／単元ごと／復習／検索／問題セット（3つ）**、自信度、定着度、ライト・ダーク、アカウントと同期、オフライン（CELESTIA と同じ）
+- マスコット：サラマンダーの「ラヴォ」（錬金術の火の精。名前はラボアジエから）
+
+## データの正しさを守る仕組み
+
+図鑑のデータと問題は、次の検査を通らないとビルドが失敗します（`node tests/run.mjs`）。
+
+- **反応式のつり合い**：図鑑のすべての反応式と、問題文・解説・答えの `\ce{…}` の完全な反応式について、原子の数と電荷がつり合っているか（`tools/chemlib.py`）
+- **構造式と式の一致**：有機化合物の示性式・高分子の繰り返し単位の式が、SMILES から数えた原子の数と一致するか（RDKit があるとき）
+- **図鑑の参照**：反応表のすべてのイオン × 試薬がそろっているか、経路の化合物・検出反応の化合物が存在するか
+- **答えの整合**：すべての「入力用の答え」が読め、正解を入れると正解になり、選びすぎ・逆順では正解にならないか
+- 反応表の陽性・陰性や、条件判断・比較の正解の多くは、図鑑のデータから自動で決めている（図鑑と問題が食い違わない）
+
+## フォルダ
+
+```
+content/                 正規データ（マスター。ここを編集する）
+  taxonomy.json          分野（理論・無機・有機・高分子）・単元 32（ID 固定）
+  concepts.json  laws.json  misconceptions.json  tags.json  collections/
+  chem/                  図鑑のデータ
+    ions.json            陽イオン × 試薬の結果（沈殿・溶ける・溶けない・溶液の色）、系統分析、炎色反応
+    reactions.json       気体の製法・工業的製法・元素の反応（反応式・条件・反応の型）、気体の性質
+    organic.json         有機化合物（示性式・SMILES）、反応（試薬・反応の種類・反応式）、地図の位置
+    tests.json           検出反応（対象・陽性・△・陰性の理由）
+    polymers.json        高分子（単量体・重合・繰り返し単位・結合・性質）
+    elements.json        元素（mendeleev から作成。高校で使う原子量 exam つき）
+    struct/              構造式の SVG（tools/structgen.py が SMILES から作る）
+  problems/<分野>/<問題ID>/problem.json
+data/                    アプリ用（生成物。tools/build_data.py が作る。手で編集しない）
+js/                      アプリ（app.js・zukan.js（図鑑）・catalog.js・answer.js（採点）・parser.js・sync.js …）
+tools/                   変換・検査（chemlib.py：化学式と反応式／structgen.py：構造式／import_items.py：問題管理表の取り込み）
+tests/                   検査（node tests/run.mjs）
+docs/data-spec.md        データ仕様
+supabase/schema.sql      同期用の表（Supabase の SQL Editor で1回実行）
+```
+
+## 問題を追加・修正する
+
+```sh
+pip3 install jsonschema rdkit        # rdkit は構造式を作るときだけ
+python3 tools/structgen.py           # 図の "smiles" や図鑑の SMILES から構造式の SVG を作る
+python3 tools/build_data.py          # content/ → data/
+node tests/run.mjs                   # 検査（全部 ✓ になればOK。--e2e でブラウザの通し操作も）
+python3 tools/validate_content.py --write-golden   # 新しい問題ID を台帳に足す（問題を足したとき）
+```
+
+- `content/problems/<分野>/<新しい問題ID>/problem.json` を既存の問題をまねて作る（形と「入力用の答え」の書式は [docs/data-spec.md](docs/data-spec.md)）
+- 問題ID は変えない・消さない。出さない問題は `quality.status` を `hidden` に
+- 解いたあとに図鑑を開かせたいときは `"zukan": {"page": "ions", "key": "Cu^2+"}` のように書く
+
+## 問題管理表からの取り込み（難関・最難関）
+
+CELESTIA と同じ形式（1問1フォルダの `item.json`・`problem.svg`・`solution.svg`）で作った問題を取り込める。
+
+```
+python3 tools/import_items.py <content フォルダ> --sheet ALCHEMIA問題管理表.xlsx --verify <verify フォルダ>
+python3 tools/build_data.py && python3 tools/validate_content.py --write-golden && node tests/run.mjs --e2e
+```
+
+- 問題ID は item.json の id をそのまま使う（同じ ID は上書き）。単元は単元名で決まる（`taxonomy.json` の名前。よくある略し方は `ALIASES` で吸収）
+- 難易度 1〜5 → 基礎・標準・国公立2次・難関・最難関
+- item.json に `"format": "pathway"` のように書くと、その出題形式に入る（qa・equation・compare・condition・pathway・calc・structure。無ければ記述）
+- 入力採点はしない（自己採点）。自動採点にしたい小問は、取り込んだあと `answer.parts[].grading` を書き足す
+- 問題 ID の分野の3文字は THE（理論）・INO（無機）・ORG（有機）・POL（高分子）
+
+## アカウントと同期（Supabase）
+
+- Supabase プロジェクトは **Lemma・CELESTIA と共通**（`js/config.js` の値も同じ）。記録は別の表 `alchemia_state`
+- 準備：`supabase/schema.sql` を SQL Editor で1回実行（表を1つ足すだけ）
+- 端末の保存キーは `alchemia.v1`・`alchemia.auth`、キャッシュ名は `alchemia-` で始まる（同じドメインの Lemma・ぶつりば・CELESTIA と混ざらない・消し合わない）
+
+## GitHub Pages で公開する
+
+リポジトリ（例：`kurowasan3/ALCHEMIA`、Public）の直下にこのフォルダの中身を置き、Settings → Pages で `main` / `/ (root)` を選ぶ。
+
+- 更新したときは `sw.js` の `VERSION`、各 JS の `FILE_VERSION`、`css/style.css` の `--alchemia-version` を同じ値に上げる

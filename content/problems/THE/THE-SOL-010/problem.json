@@ -1,0 +1,86 @@
+{
+ "id": "THE-SOL-010",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-09",
+ "topic": "ベンゼン中の酢酸（会合）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "酢酸 $0.60\\,\\mathrm g$ をベンゼン $50\\,\\mathrm g$ に溶かすと，凝固点が $0.512\\,\\mathrm K$ 下がった．ベンゼンのモル凝固点降下は $5.12\\,\\mathrm{K\\cdot kg/mol}$，酢酸の分子量は 60 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "測定値から求めた見かけの分子量"
+     },
+     {
+      "id": "2",
+      "tex": "そうなる理由"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$120$",
+    "grading": "約{120|3}"
+   },
+   {
+    "id": "2",
+    "tex": "2 分子が水素結合で会合している（二量体）",
+    "grading": "選ぶ{電離している|2 分子が水素結合で会合している|ベンゼンと反応している}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $m=0.512/5.12=0.100\\,\\mathrm{mol/kg}$，ベンゼン 0.050 kg 中に $5.00\\times10^{-3}\\,\\mathrm{mol}$ の粒子．見かけの分子量 $0.60/(5.00\\times10^{-3})=120$．(2) 本当の分子量 60 の 2 倍なので，2 分子が −COOH どうしの水素結合で二量体になり，粒子の数が半分になっている．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "solution-colligative",
+  "intermolecular"
+ ],
+ "laws": [
+  "fp-depression"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "会合",
+  "凝固点降下"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

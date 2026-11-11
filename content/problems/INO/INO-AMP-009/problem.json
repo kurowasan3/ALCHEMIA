@@ -1,0 +1,98 @@
+{
+ "id": "INO-AMP-009",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-06",
+ "topic": "アルミニウムの製錬",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "アルミニウムの製錬について答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "原料の鉱石"
+     },
+     {
+      "id": "2",
+      "tex": "酸化アルミニウムの融点を下げるために加える物質"
+     },
+     {
+      "id": "3",
+      "tex": "この電気分解の方法の名前"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "ボーキサイト",
+    "grading": "語{ボーキサイト}"
+   },
+   {
+    "id": "2",
+    "tex": "氷晶石（$\\ce{Na3AlF6}$）",
+    "grading": "語{氷晶石|Na3AlF6}"
+   },
+   {
+    "id": "3",
+    "tex": "溶融塩電解（融解塩電解）",
+    "grading": "語{溶融塩電解|融解塩電解|溶融塩電解法|融解塩電解法}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ボーキサイトから酸化アルミニウム（アルミナ）をつくり，氷晶石を融解したものに溶かして，炭素電極で電気分解する（ホール・エルー法）．Al はイオン化傾向が大きく，水溶液の電気分解では得られない．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "amphoteric",
+  "electrolysis",
+  "industrial-process"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "アルミニウム",
+  "工業的製法"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "ind-hall"
+ }
+}

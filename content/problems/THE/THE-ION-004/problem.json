@@ -1,0 +1,85 @@
+{
+ "id": "THE-ION-004",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "沈殿が生じるかの判断",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "$2.0\\times10^{-4}\\,\\mathrm{mol/L}$ 硝酸銀水溶液と $2.0\\times10^{-4}\\,\\mathrm{mol/L}$ 塩化ナトリウム水溶液を同体積ずつ混合した．AgCl の $K_{sp}=1.8\\times10^{-10}\\,(\\mathrm{mol/L})^2$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "混合直後の $[\\mathrm{Ag^+}][\\mathrm{Cl^-}]$ の値"
+     },
+     {
+      "id": "2",
+      "tex": "沈殿が生じるか"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$1.0\\times10^{-8}\\,(\\mathrm{mol/L})^2$",
+    "grading": "約{1.0e-8|2}"
+   },
+   {
+    "id": "2",
+    "tex": "沈殿が生じる",
+    "grading": "選ぶ{沈殿が生じる|沈殿は生じない}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "混合で濃度は半分：$[\\mathrm{Ag^+}]=[\\mathrm{Cl^-}]=1.0\\times10^{-4}$．積は $1.0\\times10^{-8}>K_{sp}$ なので，積が $K_{sp}$ になるまで AgCl が沈殿する．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "solubility-equilibrium",
+  "precipitation"
+ ],
+ "laws": [
+  "ksp"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "条件判断",
+  "溶解度積"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

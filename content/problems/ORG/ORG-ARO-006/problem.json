@@ -1,0 +1,121 @@
+{
+ "id": "ORG-ARO-006",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-05",
+ "topic": "サリチル酸とその誘導体",
+ "course": "化学",
+ "level": 2,
+ "minutes": 6,
+ "format": [
+  "pathway"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応経路について，空欄に当てはまる化合物の名称（または示性式）を答えよ．また，（ア）の反応に用いる試薬・条件として適当なものを選べ．\\[\\ce{C6H5ONa} \\xrightarrow{\\text{（ア）}} \\ce{C6H4(OH)COONa} \\xrightarrow{\\text{希硫酸}} \\boxed{\\,\\text{A}\\,} \\xrightarrow{\\text{無水酢酸}} \\boxed{\\,\\text{B}\\,}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A に当てはまる化合物"
+     },
+     {
+      "id": "2",
+      "tex": "B に当てはまる化合物"
+     },
+     {
+      "id": "3",
+      "tex": "（ア）の試薬・条件"
+     },
+     {
+      "id": "4",
+      "tex": "サリチル酸にメタノールと濃硫酸を加えて加熱したときに得られる化合物の名称を答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "B と，(5) の化合物のうち，塩化鉄(III)水溶液で呈色するものを選べ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "サリチル酸　$\\ce{C6H4(OH)COOH}$",
+    "grading": "A：語{サリチル酸|C6H4(OH)COOH}"
+   },
+   {
+    "id": "2",
+    "tex": "アセチルサリチル酸　$\\ce{C6H4(OCOCH3)COOH}$",
+    "grading": "B：語{アセチルサリチル酸|C6H4(OCOCH3)COOH}"
+   },
+   {
+    "id": "3",
+    "tex": "CO₂・高温高圧",
+    "grading": "選ぶ{CO₂・高温高圧|CO₂ と水（または塩酸）|NaOH 水溶液|メタノール（濃硫酸触媒）}=1"
+   },
+   {
+    "id": "4",
+    "tex": "サリチル酸メチル",
+    "grading": "語{サリチル酸メチル|C6H4(OH)COOCH3}"
+   },
+   {
+    "id": "5",
+    "tex": "サリチル酸メチル（フェノール性 OH が残っている）",
+    "grading": "選ぶ{アセチルサリチル酸（B）|サリチル酸メチル|どちらも呈色する|どちらも呈色しない}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ナトリウムフェノキシド → サリチル酸ナトリウム：CO₂・高温高圧（付加（コルベ・シュミット反応））　$\\ce{C6H5ONa + CO2 -> C6H4(OH)COONa}$"
+    },
+    {
+     "type": "text",
+     "tex": "サリチル酸ナトリウム → サリチル酸：希硫酸（または塩酸）（弱酸の遊離）　$\\ce{C6H4(OH)COONa + HCl -> C6H4(OH)COOH + NaCl}$"
+    },
+    {
+     "type": "text",
+     "tex": "サリチル酸 → アセチルサリチル酸：無水酢酸（アセチル化）　$\\ce{C6H4(OH)COOH + (CH3CO)2O -> C6H4(OCOCH3)COOH + CH3COOH}$．フェノール性 OH がエステルになる"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "aromatic"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応経路",
+  "サリチル酸"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "organic",
+  "key": "salicylic-acid"
+ }
+}

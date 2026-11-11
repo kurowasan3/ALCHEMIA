@@ -1,0 +1,65 @@
+{
+ "id": "ORG-HYD-006",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-02",
+ "topic": "幾何異性体（シス-トランス異性体）をもつ化合物",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次のうち，シス-トランス異性体が存在するものをすべて選べ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "2-ブテン，1,2-ジクロロエチレン",
+    "grading": "すべて選ぶ{1-ブテン|2-ブテン|2-メチルプロペン|1,2-ジクロロエチレン|1,1-ジクロロエチレン}=2,4"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "二重結合のそれぞれの炭素に，異なる 2 つの原子・原子団が結合しているときに存在する．1-ブテン・2-メチルプロペン・1,1-ジクロロエチレンは，一方の炭素に同じ原子（H・CH₃・Cl）が 2 つ結合している．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "organic-structure",
+  "hydrocarbon"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "条件判断",
+  "異性体"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

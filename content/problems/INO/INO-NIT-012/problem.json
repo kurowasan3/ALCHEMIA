@@ -1,0 +1,70 @@
+{
+ "id": "INO-NIT-012",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-03",
+ "topic": "オストワルト法の量的関係",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "オストワルト法で，アンモニア $1.7\\,\\mathrm t$ がすべて硝酸になるとすると，硝酸は何 t 得られるか．H = 1.0，N = 14，O = 16 とする．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$6.3\\,\\mathrm t$",
+    "grading": "約{6.3|2} [t]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "全体の反応 $\\ce{NH3 + 2O2 -> HNO3 + H2O}$ より，NH₃ 1 mol から HNO₃ 1 mol．NH₃ $1.7\\times10^6/17=1.0\\times10^5\\,\\mathrm{mol}$，HNO₃ $1.0\\times10^5\\times63\\,\\mathrm g=6.3\\,\\mathrm t$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "industrial-process",
+  "chemical-equation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "工業的製法",
+  "量的関係"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "ind-ostwald"
+ }
+}

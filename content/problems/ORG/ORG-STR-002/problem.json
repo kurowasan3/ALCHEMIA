@@ -1,0 +1,91 @@
+{
+ "id": "ORG-STR-002",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-01",
+ "topic": "構造異性体の数（アルカン）",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "分子式が次のアルカンの構造異性体の数を答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{C4H10}$"
+     },
+     {
+      "id": "2",
+      "tex": "$\\ce{C5H12}$"
+     },
+     {
+      "id": "3",
+      "tex": "$\\ce{C6H14}$"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "2 種類",
+    "grading": "約{2|1}"
+   },
+   {
+    "id": "2",
+    "tex": "3 種類",
+    "grading": "約{3|1}"
+   },
+   {
+    "id": "3",
+    "tex": "5 種類",
+    "grading": "約{5|1}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{C4H10}$：ブタン・2-メチルプロパン．$\\ce{C5H12}$：ペンタン・2-メチルブタン・2,2-ジメチルプロパン．$\\ce{C6H14}$：ヘキサン・2-メチルペンタン・3-メチルペンタン・2,2-ジメチルブタン・2,3-ジメチルブタン．主鎖の長さを1つずつ短くして，枝の位置を重複なく数える．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "organic-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "異性体"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

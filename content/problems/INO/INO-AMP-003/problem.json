@@ -1,0 +1,69 @@
+{
+ "id": "INO-AMP-003",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-06",
+ "topic": "亜鉛と水酸化ナトリウム水溶液",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "equation"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応式の空欄 ア に当てはまる化学式を答えよ．\\\\（亜鉛と水酸化ナトリウム水溶液）\\[\\ce{Zn} + \\ce{2NaOH} + \\ce{2H2O} \\ce{->} \\boxed{\\,\\text{ア}\\,} + \\ce{H2}\\]"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$\\ce{Na2[Zn(OH)4]}$",
+    "grading": "語{Na2[Zn(OH)4]|テトラヒドロキシド亜鉛(II)酸ナトリウム}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{Zn + 2NaOH + 2H2O -> Na2[Zn(OH)4] + H2}$．両性金属（酸化還元）"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "amphoteric"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応式補完",
+  "反応式",
+  "酸化還元"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "zn-naoh"
+ }
+}

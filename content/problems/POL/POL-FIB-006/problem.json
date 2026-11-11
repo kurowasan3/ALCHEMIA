@@ -1,0 +1,92 @@
+{
+ "id": "POL-FIB-006",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-02",
+ "topic": "合成繊維の結合と性質",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の合成繊維について，主鎖の結合を選べ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "アラミド繊維"
+     },
+     {
+      "id": "2",
+      "tex": "ポリエチレンテレフタラート"
+     },
+     {
+      "id": "3",
+      "tex": "アクリル繊維"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "アミド結合",
+    "grading": "選ぶ{アミド結合|エステル結合|炭素どうしの単結合のみ}=1"
+   },
+   {
+    "id": "2",
+    "tex": "エステル結合",
+    "grading": "選ぶ{アミド結合|エステル結合|炭素どうしの単結合のみ}=2"
+   },
+   {
+    "id": "3",
+    "tex": "炭素どうしの単結合のみ",
+    "grading": "選ぶ{アミド結合|エステル結合|炭素どうしの単結合のみ}=3"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ナイロン・アラミドはポリアミド，PET はポリエステル．アクリル繊維は付加重合なので主鎖は C−C だけ．アミド結合どうしは水素結合で引き合い，強い繊維になる．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "condensation-polymer",
+  "addition-polymer"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "条件判断",
+  "繊維"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

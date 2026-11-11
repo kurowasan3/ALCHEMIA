@@ -1,0 +1,138 @@
+{
+ "id": "ORG-ARO-010",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-05",
+ "topic": "ベンゼンからアセチルサリチル酸の合成",
+ "course": "化学",
+ "level": 3,
+ "minutes": 6,
+ "format": [
+  "pathway"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応経路について，空欄に当てはまる化合物の名称（または示性式）を答えよ．また，（ア）の反応に用いる試薬・条件として適当なものを選べ．\\[\\ce{C6H6} \\xrightarrow{\\text{Cl₂}} \\boxed{\\,\\text{A}\\,} \\xrightarrow{\\text{NaOH 水溶液・高温高圧}} \\boxed{\\,\\text{B}\\,} \\xrightarrow{\\text{（ア）}} \\ce{C6H4(OH)COONa} \\xrightarrow{\\text{希硫酸}} \\boxed{\\,\\text{C}\\,} \\xrightarrow{\\text{無水酢酸}} \\ce{C6H4(OCOCH3)COOH}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A に当てはまる化合物"
+     },
+     {
+      "id": "2",
+      "tex": "B に当てはまる化合物"
+     },
+     {
+      "id": "3",
+      "tex": "C に当てはまる化合物"
+     },
+     {
+      "id": "4",
+      "tex": "（ア）の試薬・条件"
+     },
+     {
+      "id": "5",
+      "tex": "C からアセチルサリチル酸をつくる反応で，C のどの官能基が反応するか．"
+     },
+     {
+      "id": "6",
+      "tex": "アセチルサリチル酸 $1.80\\,\\mathrm g$（分子量 180）を得るのに必要な C（分子量 138）は少なくとも何 g か．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "クロロベンゼン　$\\ce{C6H5Cl}$",
+    "grading": "A：語{クロロベンゼン|C6H5Cl}"
+   },
+   {
+    "id": "2",
+    "tex": "ナトリウムフェノキシド　$\\ce{C6H5ONa}$",
+    "grading": "B：語{ナトリウムフェノキシド|C6H5ONa}"
+   },
+   {
+    "id": "3",
+    "tex": "サリチル酸　$\\ce{C6H4(OH)COOH}$",
+    "grading": "C：語{サリチル酸|C6H4(OH)COOH}"
+   },
+   {
+    "id": "4",
+    "tex": "CO₂・高温高圧",
+    "grading": "選ぶ{CO₂・高温高圧|CO₂ と水（または塩酸）|NaOH（固体）・融解|無水酢酸}=1"
+   },
+   {
+    "id": "5",
+    "tex": "ヒドロキシ基（フェノール性 OH）",
+    "grading": "選ぶ{カルボキシ基|ヒドロキシ基|ベンゼン環}=2"
+   },
+   {
+    "id": "6",
+    "tex": "$1.38\\,\\mathrm g$",
+    "grading": "約{1.38|3} [g]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ベンゼン → クロロベンゼン：Cl₂（Fe 触媒）（塩素化（置換））　$\\ce{C6H6 + Cl2 -> C6H5Cl + HCl}$"
+    },
+    {
+     "type": "text",
+     "tex": "クロロベンゼン → ナトリウムフェノキシド：NaOH 水溶液・高温高圧（置換）　$\\ce{C6H5Cl + 2NaOH -> C6H5ONa + NaCl + H2O}$"
+    },
+    {
+     "type": "text",
+     "tex": "ナトリウムフェノキシド → サリチル酸ナトリウム：CO₂・高温高圧（付加（コルベ・シュミット反応））　$\\ce{C6H5ONa + CO2 -> C6H4(OH)COONa}$"
+    },
+    {
+     "type": "text",
+     "tex": "サリチル酸ナトリウム → サリチル酸：希硫酸（または塩酸）（弱酸の遊離）　$\\ce{C6H4(OH)COONa + HCl -> C6H4(OH)COOH + NaCl}$"
+    },
+    {
+     "type": "text",
+     "tex": "サリチル酸 → アセチルサリチル酸：無水酢酸（アセチル化）　$\\ce{C6H4(OH)COOH + (CH3CO)2O -> C6H4(OCOCH3)COOH + CH3COOH}$．フェノール性 OH がエステルになる"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "aromatic"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応経路",
+  "合成経路"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "organic",
+  "key": "chlorobenzene"
+ }
+}

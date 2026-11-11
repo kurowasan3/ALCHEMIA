@@ -1,0 +1,69 @@
+{
+ "id": "INO-AMP-002",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-06",
+ "topic": "テルミット反応",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "equation"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応式の空欄 ア に当てはまる化学式を答えよ．\\\\（テルミット反応：点火）\\[\\ce{2Al} + \\ce{Fe2O3} \\ce{->} \\boxed{\\,\\text{ア}\\,} + \\ce{2Fe}\\]"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$\\ce{Al2O3}$",
+    "grading": "語{Al2O3|酸化アルミニウム}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{2Al + Fe2O3 -> Al2O3 + 2Fe}$．Al の強い還元力と大きな発熱（酸化還元）"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "amphoteric"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応式補完",
+  "反応式",
+  "酸化還元"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "al-thermite"
+ }
+}

@@ -1,0 +1,91 @@
+{
+ "id": "THE-THC-007",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-10",
+ "topic": "化学反応と光",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の現象の名称・反応を答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "植物が光エネルギーを使って，二酸化炭素と水からグルコースをつくる反応"
+     },
+     {
+      "id": "2",
+      "tex": "ルミノール反応のように，反応で光が出る現象"
+     },
+     {
+      "id": "3",
+      "tex": "(1) の反応は発熱反応か吸熱反応か"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "光合成",
+    "grading": "語{光合成}"
+   },
+   {
+    "id": "2",
+    "tex": "化学発光",
+    "grading": "語{化学発光}"
+   },
+   {
+    "id": "3",
+    "tex": "吸熱反応",
+    "grading": "選ぶ{発熱反応|吸熱反応}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "光合成は光エネルギーを吸収して $\\ce{6CO2 + 6H2O -> C6H12O6 + 6O2}$ を起こす吸熱反応．ルミノール反応のように，化学反応のエネルギーが光として放出されるのが化学発光．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "enthalpy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "光とエネルギー"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

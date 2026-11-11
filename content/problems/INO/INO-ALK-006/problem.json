@@ -1,0 +1,68 @@
+{
+ "id": "INO-ALK-006",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-05",
+ "topic": "アンモニアソーダ法（ソルベー法、炭酸ナトリウム）",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "equation"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "アンモニアソーダ法（ソルベー法、炭酸ナトリウム）の反応式の空欄 ア に当てはまる化学式を答えよ．\\[\\ce{Ca(OH)2} + \\ce{2NH4Cl} \\ce{->} \\boxed{\\,\\text{ア}\\,} + \\ce{2H2O} + \\ce{2NH3}\\]"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$\\ce{CaCl2}$",
+    "grading": "語{CaCl2|塩化カルシウム}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{Ca(OH)2 + 2NH4Cl -> CaCl2 + 2H2O + 2NH3}$．NH₃ を回収して再利用．全体では $\\ce{2NaCl + CaCO3 -> Na2CO3 + CaCl2}$"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "industrial-process"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応式補完",
+  "工業的製法"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "ind-solvay"
+ }
+}

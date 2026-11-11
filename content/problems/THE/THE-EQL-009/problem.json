@@ -1,0 +1,86 @@
+{
+ "id": "THE-EQL-009",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "エステル化の平衡",
+ "course": "化学",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "酢酸 1.0 mol とエタノール 1.0 mol を混ぜて，濃硫酸を少量加えて一定温度に保つと，$\\ce{CH3COOH + C2H5OH <=> CH3COOC2H5 + H2O}$ が平衡に達した．この温度での平衡定数は $K=4.0$ である．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "平衡時の酢酸エチルの物質量"
+     },
+     {
+      "id": "2",
+      "tex": "はじめのエタノールを 2.0 mol にすると，平衡時の酢酸エチルはどうなるか"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$0.67\\,\\mathrm{mol}$",
+    "grading": "約{0.6666666666666666|2} [mol]"
+   },
+   {
+    "id": "2",
+    "tex": "増える",
+    "grading": "選ぶ{増える|減る|変わらない}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) エステルが x mol 生じるとすると $\\dfrac{x^2}{(1.0-x)^2}=4.0$，$\\dfrac{x}{1.0-x}=2.0$ より $x=\\frac23\\fallingdotseq0.67$．(2) エタノールを増やすと，それを減らす右向きに平衡が移動し，エステルが増える（K は変わらない）．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "chemical-equilibrium",
+  "carboxylic-ester"
+ ],
+ "laws": [
+  "equilibrium-law",
+  "le-chatelier"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "平衡定数"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

@@ -1,0 +1,95 @@
+{
+ "id": "POL-RUB-003",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-03",
+ "topic": "機能性高分子",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の性質をもつ高分子の名称を，選択肢から選べ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "微生物によって分解される（生分解性）"
+     },
+     {
+      "id": "2",
+      "tex": "自身の質量の数百倍の水を吸収する"
+     },
+     {
+      "id": "3",
+      "tex": "ヨウ素などを加えると金属のように電気を通す"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "ポリ乳酸",
+    "grading": "選ぶ{ポリ乳酸|ポリアクリル酸ナトリウム|ポリアセチレン|ポリテトラフルオロエチレン}=1"
+   },
+   {
+    "id": "2",
+    "tex": "ポリアクリル酸ナトリウム",
+    "grading": "選ぶ{ポリ乳酸|ポリアクリル酸ナトリウム|ポリアセチレン|ポリテトラフルオロエチレン}=2"
+   },
+   {
+    "id": "3",
+    "tex": "ポリアセチレン",
+    "grading": "選ぶ{ポリ乳酸|ポリアクリル酸ナトリウム|ポリアセチレン|ポリテトラフルオロエチレン}=3"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ポリ乳酸は微生物や体内で加水分解される（生分解性）．ポリアクリル酸ナトリウムは網目の中に多量の水を吸う（吸水性）．ポリアセチレンにヨウ素などを加えると電気を通す（導電性：白川英樹）．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "functional-polymer"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "機能性高分子"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "polymers",
+  "key": "pla"
+ }
+}

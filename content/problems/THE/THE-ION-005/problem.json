@@ -1,0 +1,68 @@
+{
+ "id": "THE-ION-005",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "アンモニア水の pH",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "$0.10\\,\\mathrm{mol/L}$ アンモニア水の pH を求めよ．アンモニアの電離定数 $K_b=1.0\\times10^{-5}\\,\\mathrm{mol/L}$，$K_w=1.0\\times10^{-14}\\,(\\mathrm{mol/L})^2$ とする．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "11",
+    "grading": "約{11|2}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$[\\mathrm{OH^-}]=\\sqrt{cK_b}=\\sqrt{1.0\\times10^{-6}}=1.0\\times10^{-3}$，$[\\mathrm{H^+}]=\\dfrac{K_w}{[\\mathrm{OH^-}]}=1.0\\times10^{-11}$ → pH 11．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "ionization-equilibrium"
+ ],
+ "laws": [
+  "weak-acid-h",
+  "water-ion-product"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "電離平衡",
+  "pH"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

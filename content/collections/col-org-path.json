@@ -1,0 +1,32 @@
+{
+ "id": "col-org-path",
+ "schema": "alchemia.collection/1",
+ "title": "有機の反応経路をたどる",
+ "description": "脂肪族から芳香族へ。物質と試薬を経路でつなぐ。",
+ "order": 2,
+ "items": [
+  {
+   "id": "ORG-HYD-001"
+  },
+  {
+   "id": "ORG-ALC-001"
+  },
+  {
+   "id": "ORG-CBX-001"
+  },
+  {
+   "id": "ORG-ARO-001"
+  },
+  {
+   "id": "ORG-ARO-002"
+  },
+  {
+   "id": "ORG-ARO-006"
+  },
+  {
+   "id": "ORG-DET-001"
+  }
+ ],
+ "visibility": "public",
+ "createdBy": "alchemia"
+}

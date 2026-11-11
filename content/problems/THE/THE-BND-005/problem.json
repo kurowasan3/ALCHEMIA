@@ -1,0 +1,91 @@
+{
+ "id": "THE-BND-005",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-03",
+ "topic": "電子対の数",
+ "course": "化学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の分子について答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "アンモニア分子の非共有電子対の数"
+     },
+     {
+      "id": "2",
+      "tex": "水分子の非共有電子対の数"
+     },
+     {
+      "id": "3",
+      "tex": "窒素分子の共有電子対の数"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "1 組",
+    "grading": "約{1|1} [組]"
+   },
+   {
+    "id": "2",
+    "tex": "2 組",
+    "grading": "約{2|1} [組]"
+   },
+   {
+    "id": "3",
+    "tex": "3 組",
+    "grading": "約{3|1} [組]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "NH₃：N の価電子 5 個のうち 3 個を H との共有に使い，残り 2 個が非共有電子対 1 組．H₂O：O の 6 個のうち 2 個を共有，非共有電子対 2 組．N₂：N≡N の三重結合で共有電子対 3 組．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "chemical-bond"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "電子式"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

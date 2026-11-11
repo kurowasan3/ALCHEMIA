@@ -1,0 +1,110 @@
+{
+ "id": "ORG-HYD-002",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-02",
+ "topic": "アセチレンの付加反応",
+ "course": "化学",
+ "level": 1,
+ "minutes": 4,
+ "format": [
+  "pathway"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応経路について，空欄に当てはまる化合物の名称（または示性式）を答えよ．また，（ア）の反応に用いる試薬・条件として適当なものを選べ．\\[\\ce{CH#CH} \\xrightarrow{\\text{（ア）}} \\boxed{\\,\\text{A}\\,} \\xrightarrow{\\text{酸化}} \\boxed{\\,\\text{B}\\,}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A に当てはまる化合物"
+     },
+     {
+      "id": "2",
+      "tex": "B に当てはまる化合物"
+     },
+     {
+      "id": "3",
+      "tex": "（ア）の試薬・条件"
+     },
+     {
+      "id": "4",
+      "tex": "アセチレンに水が付加すると，はじめに不安定な化合物が生じ，すぐに A に変わる．この不安定な化合物の名称を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "アセトアルデヒド　$\\ce{CH3CHO}$",
+    "grading": "A：語{アセトアルデヒド|CH3CHO}"
+   },
+   {
+    "id": "2",
+    "tex": "酢酸　$\\ce{CH3COOH}$",
+    "grading": "B：語{酢酸|CH3COOH}"
+   },
+   {
+    "id": "3",
+    "tex": "水（HgSO₄ 触媒）",
+    "grading": "選ぶ{水（HgSO₄ 触媒）|H₂（Pt・Ni 触媒）|HCl（触媒）|Br₂}=1"
+   },
+   {
+    "id": "4",
+    "tex": "ビニルアルコール",
+    "grading": "語{ビニルアルコール|CH2=CHOH}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "アセチレン → アセトアルデヒド：水（HgSO₄ 触媒）（付加）　$\\ce{CH#CH + H2O -> CH3CHO}$．不安定なビニルアルコール CH₂=CHOH を経て異性化する"
+    },
+    {
+     "type": "text",
+     "tex": "アセトアルデヒド → 酢酸：酸化（O₂・触媒、K₂Cr₂O₇ など）（酸化）　$\\ce{2CH3CHO + O2 -> 2CH3COOH}$"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "hydrocarbon",
+  "alcohol-carbonyl"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応経路",
+  "アセチレン",
+  "付加"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "organic",
+  "key": "acetaldehyde"
+ }
+}

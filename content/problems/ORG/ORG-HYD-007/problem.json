@@ -1,0 +1,88 @@
+{
+ "id": "ORG-HYD-007",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-02",
+ "topic": "アルケンへの臭素の付加",
+ "course": "化学",
+ "level": 2,
+ "minutes": 7,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "あるアルケン $2.80\\,\\mathrm g$ に臭素を完全に付加させると，生成物は $10.8\\,\\mathrm g$ になった．原子量は H = 1.0，C = 12，Br = 80 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "アルケンの分子量を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "分子式を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$56$",
+    "grading": "約{56|2}"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{C4H8}$",
+    "grading": "語{C4H8}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 付加した $\\ce{Br2}$ は $10.8-2.80=8.00\\,\\mathrm g$，$8.00/160=0.0500\\,\\mathrm{mol}$．アルケン 1 mol に $\\ce{Br2}$ 1 mol が付加するので，アルケンも 0.0500 mol．分子量は $2.80/0.0500=56$．"
+    },
+    {
+     "type": "text",
+     "tex": "(2) $\\mathrm{C_nH_{2n}}$ で $14n=56$ より $n=4$．$\\ce{C4H8}$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "hydrocarbon",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "付加反応",
+  "分子式の決定"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

@@ -1,0 +1,95 @@
+{
+ "id": "POL-FIB-001",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-02",
+ "topic": "ナイロン66の単量体と結合",
+ "course": "化学",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ナイロン66 について答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ジアミンの単量体"
+     },
+     {
+      "id": "2",
+      "tex": "ジカルボン酸の単量体"
+     },
+     {
+      "id": "3",
+      "tex": "単量体どうしをつなぐ結合"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "ヘキサメチレンジアミン",
+    "grading": "語{ヘキサメチレンジアミン|H2N(CH2)6NH2|1,6-ヘキサンジアミン}"
+   },
+   {
+    "id": "2",
+    "tex": "アジピン酸",
+    "grading": "語{アジピン酸|HOOC(CH2)4COOH}"
+   },
+   {
+    "id": "3",
+    "tex": "アミド結合",
+    "grading": "語{アミド結合|ペプチド結合}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$n\\,\\ce{H2N(CH2)6NH2} + n\\,\\ce{HOOC(CH2)4COOH}$ から水がとれて縮合重合し，アミド結合 −CO−NH− でつながる（ポリアミド）．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "condensation-polymer"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "ナイロン"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "polymers",
+  "key": "nylon66"
+ }
+}

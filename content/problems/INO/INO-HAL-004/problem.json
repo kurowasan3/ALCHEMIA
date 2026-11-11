@@ -1,0 +1,69 @@
+{
+ "id": "INO-HAL-004",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-01",
+ "topic": "フッ化水素酸とガラス",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "equation"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応式の空欄 ア に当てはまる化学式を答えよ．\\\\（フッ化水素酸とガラス：フッ化水素酸）\\[\\ce{SiO2} + \\ce{6HF} \\ce{->} \\boxed{\\,\\text{ア}\\,} + \\ce{2H2O}\\]"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$\\ce{H2SiF6}$",
+    "grading": "語{H2SiF6|ヘキサフルオロケイ酸}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{SiO2 + 6HF -> H2SiF6 + 2H2O}$．ガラスを溶かす（気体の HF なら SiF₄ が生じる）（中和・酸塩基）"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "halogen"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応式補完",
+  "反応式",
+  "中和・酸塩基"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "hal-hf-sio2"
+ }
+}

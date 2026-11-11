@@ -1,0 +1,73 @@
+{
+ "id": "THE-ION-006",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "硫化物の沈殿と pH",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "硫化水素の電離 $\\ce{H2S <=> 2H+ + S^2-}$ について，正しいものを選べ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "塩基性にすると $\\ce{S^2-}$ の濃度が大きくなり，溶解度積の比較的大きい硫化物（ZnS など）も沈殿する",
+    "grading": "選ぶ{酸性にすると S²⁻ の濃度が大きくなる|塩基性にすると S²⁻ の濃度が大きくなり，ZnS なども沈殿する|pH によって S²⁻ の濃度は変わらない}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "酸性では H⁺ が多く，平衡が左に移動して $[\\mathrm{S^{2-}}]$ が非常に小さい．このため，溶解度積の極めて小さい CuS・PbS などしか沈殿しない．塩基性では $[\\mathrm{S^{2-}}]$ が大きくなり，ZnS・FeS・NiS・MnS も沈殿する（系統分析の第2属と第4属の違い）．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "solubility-equilibrium",
+  "precipitation"
+ ],
+ "laws": [
+  "ksp",
+  "le-chatelier"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "条件判断",
+  "系統分析",
+  "溶解度積"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "ions",
+  "label": "系統分析"
+ }
+}

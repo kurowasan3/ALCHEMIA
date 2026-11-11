@@ -1,0 +1,95 @@
+{
+ "id": "POL-SUG-005",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-04",
+ "topic": "デンプン・グリコーゲン・セルロース",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の多糖について答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "アミロースのヨウ素デンプン反応の色"
+     },
+     {
+      "id": "2",
+      "tex": "アミロペクチンのヨウ素デンプン反応の色"
+     },
+     {
+      "id": "3",
+      "tex": "セルロースを構成する単糖"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "濃青色",
+    "grading": "語{濃青|濃青色|青紫|青紫色|青}"
+   },
+   {
+    "id": "2",
+    "tex": "赤紫色",
+    "grading": "語{赤紫|赤紫色}"
+   },
+   {
+    "id": "3",
+    "tex": "β-グルコース",
+    "grading": "語{β-グルコース|βグルコース}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "アミロース（直鎖・らせん）は濃青色，枝分かれの多いアミロペクチンは赤紫色，さらに枝分かれの多いグリコーゲンは赤褐色．セルロースは β-グルコースが β-1,4 結合でまっすぐつながり，ヨウ素デンプン反応を示さない．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "saccharide"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "多糖"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "polymers",
+  "key": "amylose"
+ }
+}

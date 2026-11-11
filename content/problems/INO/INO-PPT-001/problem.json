@@ -1,0 +1,95 @@
+{
+ "id": "INO-PPT-001",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-08",
+ "topic": "銅(II)イオンと過剰のアンモニア水（錯イオン）",
+ "course": "化学",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "硫酸銅(II)水溶液にアンモニア水を少しずつ加えると，はじめ青白色の沈殿が生じ，さらに過剰に加えると沈殿が溶けて深青色の溶液になった．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "はじめに生じた沈殿の化学式を答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "深青色の溶液に含まれる錯イオンの化学式と名称を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{Cu(OH)2}$",
+    "grading": "語{Cu(OH)2|水酸化銅(II)}"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{[Cu(NH3)4]^2+}$（テトラアンミン銅(II)イオン）",
+    "grading": "化学式：語{[Cu(NH3)4]^2+|[Cu(NH3)4]2+} ; 名称：語{テトラアンミン銅(II)イオン}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "少量のアンモニア水では電離で生じた $\\ce{OH-}$ により $\\ce{Cu^2+ + 2OH- -> Cu(OH)2}$ の青白色の沈殿が生じる．"
+    },
+    {
+     "type": "text",
+     "tex": "過剰にすると $\\ce{NH3}$ が配位して溶ける：$\\ce{Cu(OH)2 + 4NH3 -> [Cu(NH3)4]^2+ + 2OH-}$．配位数 4 で正方形．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "precipitation",
+  "complex-ion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "錯イオン",
+  "アンモニア水"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "idea": {
+  "tex": "「少量で水酸化物の沈殿 → 過剰の NH₃ でアンミン錯イオン」になるのは Ag⁺・Cu²⁺・Zn²⁺・Ni²⁺（と Cd²⁺）．"
+ },
+ "zukan": {
+  "page": "ions",
+  "key": "Cu^2+"
+ }
+}

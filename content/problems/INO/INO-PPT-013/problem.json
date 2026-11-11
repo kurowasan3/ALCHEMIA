@@ -1,0 +1,69 @@
+{
+ "id": "INO-PPT-013",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-08",
+ "topic": "AgCl と PbCl₂ を分ける操作",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "$\\ce{Ag+}$ と $\\ce{Pb^2+}$ を含む水溶液に希塩酸を加えて生じた沈殿を，2つの物質に分けたい．最も適当な操作を選べ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "熱湯を加える（$\\ce{PbCl2}$ だけが溶ける）",
+    "grading": "選ぶ{熱湯を加える|希硝酸を加える|硫化水素を通じる|水酸化ナトリウム水溶液を少量加える}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{PbCl2}$ は熱水に溶けるが，$\\ce{AgCl}$ は溶けない．ろ液に $\\ce{K2CrO4}$ を加えると黄色の $\\ce{PbCrO4}$ が沈殿し，$\\ce{Pb^2+}$ を確認できる．残った $\\ce{AgCl}$ はアンモニア水に溶ける．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "precipitation",
+  "complex-ion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "条件判断",
+  "系統分析"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "ions",
+  "key": "Pb^2+"
+ }
+}

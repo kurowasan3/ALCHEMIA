@@ -1,0 +1,71 @@
+{
+ "id": "ORG-DET-010",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-06",
+ "topic": "炭酸水素ナトリウム水溶液との反応を示す化合物",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の化合物のうち，炭酸水素ナトリウム水溶液との反応（炭酸水素ナトリウム水溶液を加えると二酸化炭素が発生する）を示すものをすべて選べ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "アセチルサリチル酸，酢酸",
+    "grading": "すべて選ぶ{o-クレゾール|アセチルサリチル酸|1-プロパノール|酢酸|フェノール|2-ブタノール}=2,4"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "炭酸水素ナトリウム水溶液との反応は「カルボキシ基 −COOH（炭酸より強い酸）」に陽性．o-クレゾール：フェノール類は炭酸より弱い酸．フェノール：フェノールは炭酸より弱い酸．陽性：アセチルサリチル酸，酢酸．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "organic-test"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-PHENOL-NAHCO3"
+ ],
+ "tags": [
+  "条件判断",
+  "検出反応",
+  "炭酸水素ナトリウム水溶液との反応"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "tests",
+  "key": "nahco3"
+ }
+}

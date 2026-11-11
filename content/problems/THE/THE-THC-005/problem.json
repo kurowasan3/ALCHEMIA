@@ -1,0 +1,65 @@
+{
+ "id": "THE-THC-005",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-10",
+ "topic": "中和エンタルピーの測定",
+ "course": "化学",
+ "level": 2,
+ "minutes": 8,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "$1.0\\,\\mathrm{mol/L}$ 塩酸 $50\\,\\mathrm{mL}$ と $1.0\\,\\mathrm{mol/L}$ 水酸化ナトリウム水溶液 $50\\,\\mathrm{mL}$ を混合すると，温度が $6.7\\,\\mathrm K$ 上がった．水溶液の質量を 100 g，比熱を $4.2\\,\\mathrm{J/(g\\cdot K)}$ とし，中和エンタルピーを求めよ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$-56\\,\\mathrm{kJ/mol}$",
+    "grading": "約{-56.28|2} [kJ/mol]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "発生した熱 $q=100\\times4.2\\times6.7=2814\\,\\mathrm J$．水 $0.050\\,\\mathrm{mol}$ が生じたので，1 mol あたり $56\\,\\mathrm{kJ}$ の発熱．$\\Delta H\\fallingdotseq-56\\,\\mathrm{kJ/mol}$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "enthalpy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "中和エンタルピー",
+  "熱量"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

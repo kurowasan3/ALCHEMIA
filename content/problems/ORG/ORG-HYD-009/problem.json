@@ -1,0 +1,108 @@
+{
+ "id": "ORG-HYD-009",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-02",
+ "topic": "酢酸ナトリウムからクロロメタン",
+ "course": "化学",
+ "level": 1,
+ "minutes": 4,
+ "format": [
+  "pathway"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応経路について，空欄に当てはまる化合物の名称（または示性式）を答えよ．また，（ア）の反応に用いる試薬・条件として適当なものを選べ．\\[\\ce{CH3COONa} \\xrightarrow{\\text{NaOH}} \\boxed{\\,\\text{A}\\,} \\xrightarrow{\\text{（ア）}} \\boxed{\\,\\text{B}\\,}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A に当てはまる化合物"
+     },
+     {
+      "id": "2",
+      "tex": "B に当てはまる化合物"
+     },
+     {
+      "id": "3",
+      "tex": "（ア）の試薬・条件"
+     },
+     {
+      "id": "4",
+      "tex": "クロロメタンの塩素化がさらに進んで生じる，分子中に塩素原子を 4 個もつ化合物の名称"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "メタン　$\\ce{CH4}$",
+    "grading": "A：語{メタン|CH4}"
+   },
+   {
+    "id": "2",
+    "tex": "クロロメタン　$\\ce{CH3Cl}$",
+    "grading": "B：語{クロロメタン|CH3Cl}"
+   },
+   {
+    "id": "3",
+    "tex": "Cl₂・光",
+    "grading": "選ぶ{Cl₂・光|Cl₂（Fe 触媒）|HCl|NaCl}=1"
+   },
+   {
+    "id": "4",
+    "tex": "四塩化炭素（テトラクロロメタン）",
+    "grading": "語{四塩化炭素|テトラクロロメタン|CCl4}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "酢酸ナトリウム → メタン：NaOH（固体）・加熱（脱炭酸）　$\\ce{CH3COONa + NaOH -> CH4 + Na2CO3}$"
+    },
+    {
+     "type": "text",
+     "tex": "メタン → クロロメタン：Cl₂・光（置換）　$\\ce{CH4 + Cl2 -> CH3Cl + HCl}$"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "hydrocarbon"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応経路",
+  "置換"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "organic",
+  "key": "methane"
+ }
+}

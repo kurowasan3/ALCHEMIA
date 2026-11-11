@@ -1,0 +1,67 @@
+{
+ "id": "THE-ACB-006",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-05",
+ "topic": "弱酸の pH（電離度から）",
+ "course": "化学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "$0.10\\,\\mathrm{mol/L}$ の酢酸水溶液の電離度を 0.010 として，pH を求めよ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "3",
+    "grading": "約{3|1}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$[\\mathrm{H^+}]=c\\alpha=0.10\\times0.010=1.0\\times10^{-3}\\,\\mathrm{mol/L}$ → pH 3．同じ濃度の塩酸（pH 1）より大きい．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "ph"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-STRONG-CONC"
+ ],
+ "tags": [
+  "計算",
+  "pH",
+  "電離度"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

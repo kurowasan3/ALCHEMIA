@@ -1,0 +1,31 @@
+<svg version='1.1' baseProfile='full'
+              xmlns='http://www.w3.org/2000/svg'
+                      xml:space='preserve' viewBox='0 0 260 180'>
+<path d='M 150.5,141.9 L 150.6,113.9' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 150.6,113.9 L 126.3,99.8' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 126.3,99.8 L 102.1,113.8' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 126.3,99.8 L 126.4,71.8' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 126.4,71.8 L 126.4,50.7' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 122.2,71.8 L 122.2,50.7' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 130.6,71.8 L 130.6,50.7' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 150.6,115.3 L 150.6,113.9 L 149.4,113.2' style='fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 126.4,73.2 L 126.4,71.8 L 126.4,70.8' style='fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M164.509,141.913 C164.511,140.863 163.111,140.86 163.109,141.91 C163.107,142.96 161.707,142.957 161.709,141.907 C161.711,140.857 160.311,140.854 160.309,141.904 C160.307,142.954 158.907,142.952 158.909,141.902 C158.911,140.852 157.511,140.849 157.509,141.899 C157.507,142.949 156.107,142.946 156.109,141.896 C156.111,140.846 154.711,140.843 154.709,141.893 C154.707,142.943 153.307,142.94 153.309,141.89 C153.311,140.84 151.911,140.838 151.909,141.888 C151.907,142.938 150.507,142.935 150.509,141.885 C150.511,140.835 149.111,140.832 149.109,141.882 C149.107,142.932 147.707,142.929 147.709,141.879 C147.711,140.829 146.311,140.826 146.309,141.876 C146.307,142.926 144.907,142.924 144.909,141.874 C144.911,140.824 143.511,140.821 143.509,141.871 C143.507,142.921 142.107,142.918 142.109,141.868 C142.111,140.818 140.711,140.815 140.709,141.865 C140.707,142.915 139.307,142.912 139.309,141.862 C139.311,140.812 137.911,140.81 137.909,141.86 C137.907,142.91 136.507,142.907 136.509,141.857' style='fill:none;stroke:#7F7F7F;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M109.046,125.927 C109.956,125.404 109.259,124.19 108.348,124.713 C107.438,125.237 106.74,124.023 107.65,123.5 C108.561,122.976 107.863,121.763 106.953,122.286 C106.042,122.809 105.345,121.595 106.255,121.072 C107.165,120.549 106.468,119.335 105.557,119.858 C104.647,120.382 103.949,119.168 104.86,118.645 C105.77,118.121 105.072,116.908 104.162,117.431 C103.252,117.954 102.554,116.74 103.464,116.217 C104.374,115.694 103.677,114.48 102.766,115.003 C101.856,115.527 101.158,114.313 102.069,113.79 C102.979,113.266 102.281,112.053 101.371,112.576 C100.461,113.099 99.7629,111.885 100.673,111.362 C101.584,110.839 100.886,109.625 99.9755,110.148 C99.0651,110.672 98.3674,109.458 99.2777,108.935 C100.188,108.411 99.4903,107.198 98.58,107.721 C97.6697,108.244 96.972,107.03 97.8823,106.507 C98.7926,105.984 98.0949,104.77 97.1846,105.293 C96.2742,105.817 95.5765,104.603 96.4868,104.08 C97.3971,103.556 96.6994,102.343 95.7891,102.866 C94.8788,103.389 94.1811,102.175 95.0914,101.652' style='fill:none;stroke:#7F7F7F;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 123.8 37.9
+L 127.7 44.2
+Q 128.1 44.8, 128.7 45.9
+Q 129.4 47.1, 129.4 47.1
+L 129.4 37.9
+L 131.0 37.9
+L 131.0 49.8
+L 129.3 49.8
+L 125.2 42.9
+Q 124.7 42.1, 124.1 41.2
+Q 123.6 40.2, 123.5 40.0
+L 123.5 49.8
+L 121.9 49.8
+L 121.9 37.9
+L 123.8 37.9
+' fill='currentColor'/>
+</svg>

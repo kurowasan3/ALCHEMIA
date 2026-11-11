@@ -1,0 +1,70 @@
+{
+ "id": "INO-GPR-016",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-09",
+ "topic": "一酸化窒素の製法（係数）",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "equation"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応式の係数 a，b，c，d，e を答えよ．係数が 1 のときも 1 と書くこと．\\\\（一酸化窒素の製法）\\[\\boxed{\\,a\\,}\\,\\ce{Cu} + \\boxed{\\,b\\,}\\,\\ce{HNO3} \\ce{->} \\boxed{\\,c\\,}\\,\\ce{Cu(NO3)2} + \\boxed{\\,d\\,}\\,\\ce{H2O} + \\boxed{\\,e\\,}\\,\\ce{NO}\\]"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "a=3，b=8，c=3，d=4，e=2",
+    "grading": "a：3 ; b：8 ; c：3 ; d：4 ; e：2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{3Cu + 8HNO3 -> 3Cu(NO3)2 + 4H2O + 2NO ^}$．酸化剤・還元剤の半反応式をつくり，電子の数をそろえて足し合わせると係数が決まる．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "gas-preparation",
+  "redox"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応式補完",
+  "反応式",
+  "係数"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "gas-no"
+ }
+}

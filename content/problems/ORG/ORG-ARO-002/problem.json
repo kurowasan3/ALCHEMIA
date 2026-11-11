@@ -1,0 +1,109 @@
+{
+ "id": "ORG-ARO-002",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-05",
+ "topic": "アニリンからフェノール・アゾ染料",
+ "course": "化学",
+ "level": 2,
+ "minutes": 6,
+ "format": [
+  "pathway"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応経路について，空欄に当てはまる化合物の名称（または示性式）を答えよ．また，（ア）の反応に用いる試薬・条件として適当なものを選べ．\\[\\ce{C6H5NH2} \\xrightarrow{\\text{（ア）}} \\boxed{\\,\\text{A}\\,} \\xrightarrow{\\text{ナトリウムフェノキシド}} \\boxed{\\,\\text{B}\\,}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A に当てはまる化合物"
+     },
+     {
+      "id": "2",
+      "tex": "B に当てはまる化合物"
+     },
+     {
+      "id": "3",
+      "tex": "（ア）の試薬・条件"
+     },
+     {
+      "id": "4",
+      "tex": "ジアゾ化を氷で冷やしながら行う理由を，次から選べ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "塩化ベンゼンジアゾニウム　$\\ce{C6H5N2Cl}$",
+    "grading": "A：語{塩化ベンゼンジアゾニウム|C6H5N2Cl}"
+   },
+   {
+    "id": "2",
+    "tex": "p-ヒドロキシアゾベンゼン　$\\ce{C6H5-N=N-C6H4OH}$",
+    "grading": "B：語{p-ヒドロキシアゾベンゼン|C6H5-N=N-C6H4OH}"
+   },
+   {
+    "id": "3",
+    "tex": "NaNO₂・HCl、0〜5 ℃",
+    "grading": "選ぶ{NaNO₂・HCl、0〜5 ℃|無水酢酸|さらし粉|Sn・濃塩酸}=1"
+   },
+   {
+    "id": "4",
+    "tex": "塩化ベンゼンジアゾニウムは 5 ℃ 以上で分解して N₂ を出し，フェノールになるため",
+    "grading": "選ぶ{反応が発熱で爆発しやすいため|塩化ベンゼンジアゾニウムが温度が上がると分解してフェノールになるため|アニリンが揮発しやすいため|亜硝酸ナトリウムが分解して酸素を出すため}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "アニリン → 塩化ベンゼンジアゾニウム：NaNO₂・HCl、0〜5 ℃（ジアゾ化）　$\\ce{C6H5NH2 + NaNO2 + 2HCl -> C6H5N2Cl + NaCl + 2H2O}$．氷で冷やす"
+    },
+    {
+     "type": "text",
+     "tex": "塩化ベンゼンジアゾニウム → p-ヒドロキシアゾベンゼン：ナトリウムフェノキシド（カップリング（ジアゾカップリング））　$\\ce{C6H5N2Cl + C6H5ONa -> C6H5N=NC6H4OH + NaCl}$"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "aromatic"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応経路",
+  "ジアゾ化",
+  "カップリング"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "organic",
+  "key": "diazonium"
+ }
+}

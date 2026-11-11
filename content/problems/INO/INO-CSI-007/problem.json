@@ -1,0 +1,92 @@
+{
+ "id": "INO-CSI-007",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-04",
+ "topic": "炭素の同素体",
+ "course": "化学",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の性質をもつ炭素の同素体を選べ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "電気をよく通し，薄くはがれやすい"
+     },
+     {
+      "id": "2",
+      "tex": "非常に硬く，電気を通さない"
+     },
+     {
+      "id": "3",
+      "tex": "サッカーボール状の分子からなる"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "黒鉛",
+    "grading": "選ぶ{ダイヤモンド|黒鉛|フラーレン}=2"
+   },
+   {
+    "id": "2",
+    "tex": "ダイヤモンド",
+    "grading": "選ぶ{ダイヤモンド|黒鉛|フラーレン}=1"
+   },
+   {
+    "id": "3",
+    "tex": "フラーレン",
+    "grading": "選ぶ{ダイヤモンド|黒鉛|フラーレン}=3"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "黒鉛は平面の層状構造で，各 C の価電子 1 個が層に沿って動けるので電気を通す．ダイヤモンドは正四面体の立体網目構造で非常に硬く，電気を通さない．フラーレン（C₆₀ など）は球状の分子．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "carbon-silicon",
+  "crystal"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "条件判断",
+  "同素体"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

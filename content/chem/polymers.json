@@ -1,0 +1,669 @@
+{
+ "schema": "alchemia.polymers/1",
+ "polymers": [
+  {
+   "id": "pe",
+   "unit": "POL-01",
+   "name": "ポリエチレン",
+   "cls": "合成樹脂",
+   "monomers": [
+    {
+     "name": "エチレン",
+     "smiles": "C=C"
+    }
+   ],
+   "poly": "付加重合",
+   "abbr": "PE",
+   "repeat": "*CC*",
+   "rf": "C2H4",
+   "heat": "熱可塑性",
+   "props": "低密度（高圧法、枝分かれが多く柔らかい・透明）と高密度（チーグラー触媒の低圧法、枝分かれが少なく硬い）がある",
+   "uses": "袋・容器"
+  },
+  {
+   "id": "pp",
+   "unit": "POL-01",
+   "name": "ポリプロピレン",
+   "cls": "合成樹脂",
+   "monomers": [
+    {
+     "name": "プロペン",
+     "smiles": "C=CC"
+    }
+   ],
+   "poly": "付加重合",
+   "abbr": "PP",
+   "repeat": "*CC(*)C",
+   "rf": "C3H6",
+   "heat": "熱可塑性",
+   "props": "耐熱性がやや高い",
+   "uses": "容器・繊維"
+  },
+  {
+   "id": "pvc",
+   "unit": "POL-01",
+   "name": "ポリ塩化ビニル",
+   "cls": "合成樹脂",
+   "monomers": [
+    {
+     "name": "塩化ビニル",
+     "smiles": "C=CCl"
+    }
+   ],
+   "poly": "付加重合",
+   "abbr": "PVC",
+   "repeat": "*CC(*)Cl",
+   "rf": "C2H3Cl",
+   "heat": "熱可塑性",
+   "props": "燃えにくい。燃やすと塩化水素が出る",
+   "uses": "水道管・ホース"
+  },
+  {
+   "id": "ps",
+   "unit": "POL-01",
+   "name": "ポリスチレン",
+   "cls": "合成樹脂",
+   "monomers": [
+    {
+     "name": "スチレン",
+     "smiles": "C=Cc1ccccc1"
+    }
+   ],
+   "poly": "付加重合",
+   "abbr": "PS",
+   "repeat": "*CC(*)c1ccccc1",
+   "rf": "C8H8",
+   "heat": "熱可塑性",
+   "props": "透明で硬い。発泡させると断熱材（発泡ポリスチレン）",
+   "uses": "容器・断熱材"
+  },
+  {
+   "id": "pvac",
+   "unit": "POL-01",
+   "name": "ポリ酢酸ビニル",
+   "cls": "合成樹脂",
+   "monomers": [
+    {
+     "name": "酢酸ビニル",
+     "smiles": "C=COC(C)=O"
+    }
+   ],
+   "poly": "付加重合",
+   "abbr": "PVAc",
+   "repeat": "*CC(*)OC(C)=O",
+   "rf": "C4H6O2",
+   "bond": "エステル結合（側鎖）",
+   "heat": "熱可塑性",
+   "props": "軟化点が低い。けん化するとポリビニルアルコール",
+   "uses": "接着剤・チューインガムのベース"
+  },
+  {
+   "id": "pmma",
+   "unit": "POL-01",
+   "name": "ポリメタクリル酸メチル",
+   "cls": "合成樹脂",
+   "monomers": [
+    {
+     "name": "メタクリル酸メチル",
+     "smiles": "C=C(C)C(=O)OC"
+    }
+   ],
+   "poly": "付加重合",
+   "abbr": "PMMA",
+   "repeat": "*CC(*)(C)C(=O)OC",
+   "rf": "C5H8O2",
+   "heat": "熱可塑性",
+   "props": "透明度が高い（有機ガラス・アクリル樹脂）",
+   "uses": "水槽・レンズ・風防"
+  },
+  {
+   "id": "ptfe",
+   "unit": "POL-01",
+   "name": "ポリテトラフルオロエチレン",
+   "cls": "合成樹脂",
+   "monomers": [
+    {
+     "name": "テトラフルオロエチレン",
+     "smiles": "FC(F)=C(F)F"
+    }
+   ],
+   "poly": "付加重合",
+   "abbr": "PTFE",
+   "repeat": "*C(F)(F)C(*)(F)F",
+   "rf": "C2F4",
+   "heat": "熱可塑性",
+   "props": "耐熱性・耐薬品性が高く、摩擦が小さい（テフロン）",
+   "uses": "フライパンの表面加工"
+  },
+  {
+   "id": "phenol-resin",
+   "unit": "POL-01",
+   "name": "フェノール樹脂",
+   "cls": "合成樹脂",
+   "monomers": [
+    {
+     "name": "フェノール",
+     "smiles": "Oc1ccccc1"
+    },
+    {
+     "name": "ホルムアルデヒド",
+     "smiles": "C=O"
+    }
+   ],
+   "poly": "付加縮合",
+   "heat": "熱硬化性",
+   "props": "酸触媒でノボラック、塩基触媒でレゾールを経て、加熱で立体網目構造になる（ベークライト）",
+   "uses": "電気部品・食器"
+  },
+  {
+   "id": "urea-resin",
+   "unit": "POL-01",
+   "name": "尿素樹脂",
+   "cls": "合成樹脂",
+   "monomers": [
+    {
+     "name": "尿素",
+     "smiles": "NC(N)=O"
+    },
+    {
+     "name": "ホルムアルデヒド",
+     "smiles": "C=O"
+    }
+   ],
+   "poly": "付加縮合",
+   "heat": "熱硬化性",
+   "props": "無色で着色しやすい",
+   "uses": "電気器具・ボタン"
+  },
+  {
+   "id": "melamine-resin",
+   "unit": "POL-01",
+   "name": "メラミン樹脂",
+   "cls": "合成樹脂",
+   "monomers": [
+    {
+     "name": "メラミン",
+     "smiles": "Nc1nc(N)nc(N)n1"
+    },
+    {
+     "name": "ホルムアルデヒド",
+     "smiles": "C=O"
+    }
+   ],
+   "poly": "付加縮合",
+   "heat": "熱硬化性",
+   "props": "硬く、耐熱性・耐水性がよい",
+   "uses": "食器・化粧板"
+  },
+  {
+   "id": "pet",
+   "unit": "POL-02",
+   "name": "ポリエチレンテレフタラート",
+   "cls": "合成繊維",
+   "monomers": [
+    {
+     "name": "エチレングリコール",
+     "smiles": "OCCO"
+    },
+    {
+     "name": "テレフタル酸",
+     "smiles": "O=C(O)c1ccc(C(=O)O)cc1"
+    }
+   ],
+   "poly": "縮合重合",
+   "abbr": "PET",
+   "repeat": "*OCCOC(=O)c1ccc(C(*)=O)cc1",
+   "rf": "C10H8O4",
+   "bond": "エステル結合",
+   "heat": "熱可塑性",
+   "props": "ポリエステル。しわになりにくく、乾きやすい",
+   "uses": "衣料・ペットボトル"
+  },
+  {
+   "id": "nylon66",
+   "unit": "POL-02",
+   "name": "ナイロン66",
+   "cls": "合成繊維",
+   "monomers": [
+    {
+     "name": "ヘキサメチレンジアミン",
+     "smiles": "NCCCCCCN"
+    },
+    {
+     "name": "アジピン酸",
+     "smiles": "O=C(O)CCCCC(=O)O"
+    }
+   ],
+   "poly": "縮合重合",
+   "repeat": "*NCCCCCCNC(=O)CCCCC(*)=O",
+   "rf": "C12H22N2O2",
+   "bond": "アミド結合",
+   "heat": "熱可塑性",
+   "props": "ポリアミド。カロザースが開発した最初の合成繊維。強度が大きく摩擦に強い",
+   "uses": "ストッキング・ロープ"
+  },
+  {
+   "id": "nylon6",
+   "unit": "POL-02",
+   "name": "ナイロン6",
+   "cls": "合成繊維",
+   "monomers": [
+    {
+     "name": "ε-カプロラクタム",
+     "smiles": "O=C1CCCCCN1"
+    }
+   ],
+   "poly": "開環重合",
+   "repeat": "*NCCCCCC(*)=O",
+   "rf": "C6H11NO",
+   "bond": "アミド結合",
+   "heat": "熱可塑性",
+   "props": "日本で開発された。少量の水を加えて加熱し、環を開いて重合させる",
+   "uses": "衣料・ロープ"
+  },
+  {
+   "id": "aramid",
+   "unit": "POL-02",
+   "name": "ポリ-p-フェニレンテレフタルアミド（アラミド繊維）",
+   "cls": "合成繊維",
+   "monomers": [
+    {
+     "name": "p-フェニレンジアミン",
+     "smiles": "Nc1ccc(N)cc1"
+    },
+    {
+     "name": "テレフタル酸ジクロリド",
+     "smiles": "O=C(Cl)c1ccc(C(=O)Cl)cc1"
+    }
+   ],
+   "poly": "縮合重合",
+   "repeat": "*Nc1ccc(NC(=O)c2ccc(C(*)=O)cc2)cc1",
+   "rf": "C14H10N2O2",
+   "bond": "アミド結合",
+   "props": "芳香族ポリアミド。非常に強く、耐熱性が高い（HCl が脱離）",
+   "uses": "防弾チョッキ・消防服"
+  },
+  {
+   "id": "acrylic",
+   "unit": "POL-02",
+   "name": "ポリアクリロニトリル（アクリル繊維）",
+   "cls": "合成繊維",
+   "monomers": [
+    {
+     "name": "アクリロニトリル",
+     "smiles": "C=CC#N"
+    }
+   ],
+   "poly": "付加重合",
+   "abbr": "PAN",
+   "repeat": "*CC(*)C#N",
+   "rf": "C3H3N",
+   "props": "羊毛に似た感触。高温で処理すると炭素繊維になる",
+   "uses": "セーター・毛布"
+  },
+  {
+   "id": "pva",
+   "unit": "POL-02",
+   "name": "ポリビニルアルコール",
+   "cls": "合成繊維",
+   "monomers": [
+    {
+     "name": "（ポリ酢酸ビニルのけん化で得る）",
+     "smiles": null
+    }
+   ],
+   "poly": "けん化",
+   "abbr": "PVA",
+   "repeat": "*CC(*)O",
+   "rf": "C2H4O",
+   "props": "ビニルアルコールは不安定で単量体として使えないので、ポリ酢酸ビニルをけん化してつくる。水に溶ける",
+   "uses": "洗濯のり・ビニロンの原料"
+  },
+  {
+   "id": "vinylon",
+   "unit": "POL-02",
+   "name": "ビニロン",
+   "cls": "合成繊維",
+   "monomers": [
+    {
+     "name": "ポリビニルアルコール＋ホルムアルデヒド",
+     "smiles": null
+    }
+   ],
+   "poly": "アセタール化",
+   "props": "日本で開発された。PVA のヒドロキシ基の一部（30〜40 ％）をホルムアルデヒドでアセタール化して水に溶けなくする。残った OH で適度な吸湿性",
+   "uses": "作業着・ロープ"
+  },
+  {
+   "id": "natural-rubber",
+   "unit": "POL-03",
+   "name": "天然ゴム（ポリイソプレン）",
+   "cls": "ゴム",
+   "monomers": [
+    {
+     "name": "イソプレン",
+     "smiles": "C=CC(C)=C"
+    }
+   ],
+   "poly": "付加重合（1,4-付加）",
+   "repeat": "*C/C=C(/C)C*",
+   "rf": "C5H8",
+   "props": "シス形の二重結合が分子を折れ曲がらせ、弾性を生む。硫黄を加えて加熱（加硫）すると架橋されて弾性・強度が増す。多量の硫黄でエボナイト",
+   "uses": "タイヤ・ゴム手袋"
+  },
+  {
+   "id": "br",
+   "unit": "POL-03",
+   "name": "ブタジエンゴム",
+   "cls": "ゴム",
+   "monomers": [
+    {
+     "name": "1,3-ブタジエン",
+     "smiles": "C=CC=C"
+    }
+   ],
+   "poly": "付加重合（1,4-付加）",
+   "abbr": "BR",
+   "repeat": "*CC=CC*",
+   "rf": "C4H6",
+   "props": "合成ゴム",
+   "uses": "タイヤ"
+  },
+  {
+   "id": "cr",
+   "unit": "POL-03",
+   "name": "クロロプレンゴム",
+   "cls": "ゴム",
+   "monomers": [
+    {
+     "name": "クロロプレン",
+     "smiles": "C=CC(Cl)=C"
+    }
+   ],
+   "poly": "付加重合（1,4-付加）",
+   "abbr": "CR",
+   "repeat": "*CC=C(Cl)C*",
+   "rf": "C4H5Cl",
+   "props": "耐候性・耐油性がよい",
+   "uses": "ウェットスーツ・ベルト"
+  },
+  {
+   "id": "sbr",
+   "unit": "POL-03",
+   "name": "スチレン-ブタジエンゴム",
+   "cls": "ゴム",
+   "monomers": [
+    {
+     "name": "スチレン",
+     "smiles": "C=Cc1ccccc1"
+    },
+    {
+     "name": "1,3-ブタジエン",
+     "smiles": "C=CC=C"
+    }
+   ],
+   "poly": "共重合",
+   "abbr": "SBR",
+   "props": "耐摩耗性がよい。合成ゴムで最も多く生産",
+   "uses": "タイヤ"
+  },
+  {
+   "id": "nbr",
+   "unit": "POL-03",
+   "name": "アクリロニトリル-ブタジエンゴム",
+   "cls": "ゴム",
+   "monomers": [
+    {
+     "name": "アクリロニトリル",
+     "smiles": "C=CC#N"
+    },
+    {
+     "name": "1,3-ブタジエン",
+     "smiles": "C=CC=C"
+    }
+   ],
+   "poly": "共重合",
+   "abbr": "NBR",
+   "props": "耐油性がよい",
+   "uses": "石油ホース"
+  },
+  {
+   "id": "cation-exchange",
+   "unit": "POL-03",
+   "name": "陽イオン交換樹脂",
+   "cls": "機能性高分子",
+   "monomers": [
+    {
+     "name": "スチレン",
+     "smiles": "C=Cc1ccccc1"
+    },
+    {
+     "name": "p-ジビニルベンゼン",
+     "smiles": "C=Cc1ccc(C=C)cc1"
+    }
+   ],
+   "poly": "共重合 → スルホン化",
+   "props": "スルホ基 −SO₃H の H⁺ を、水溶液中の陽イオンと交換する。R−SO₃H + Na⁺ → R−SO₃Na + H⁺。強酸の水溶液を流すと再生できる",
+   "uses": "純水の製造"
+  },
+  {
+   "id": "anion-exchange",
+   "unit": "POL-03",
+   "name": "陰イオン交換樹脂",
+   "cls": "機能性高分子",
+   "monomers": [
+    {
+     "name": "スチレン",
+     "smiles": "C=Cc1ccccc1"
+    },
+    {
+     "name": "p-ジビニルベンゼン",
+     "smiles": "C=Cc1ccc(C=C)cc1"
+    }
+   ],
+   "poly": "共重合 → 官能基の導入",
+   "props": "−CH₂N⁺(CH₃)₃OH⁻ の OH⁻ を、水溶液中の陰イオンと交換する",
+   "uses": "純水の製造（陽イオン交換樹脂と組み合わせる）"
+  },
+  {
+   "id": "spa",
+   "unit": "POL-03",
+   "name": "ポリアクリル酸ナトリウム（吸水性高分子）",
+   "cls": "機能性高分子",
+   "monomers": [
+    {
+     "name": "アクリル酸ナトリウム",
+     "smiles": "C=CC(=O)[O-].[Na+]"
+    }
+   ],
+   "poly": "付加重合（架橋）",
+   "repeat": "*CC(*)C(=O)[O-].[Na+]",
+   "rf": "C3H3O2Na",
+   "props": "網目の中の −COO⁻ どうしの反発と、内外のイオン濃度の差（浸透圧）で多量の水を吸う",
+   "uses": "紙おむつ・保水剤"
+  },
+  {
+   "id": "pla",
+   "unit": "POL-03",
+   "name": "ポリ乳酸",
+   "cls": "機能性高分子",
+   "monomers": [
+    {
+     "name": "乳酸",
+     "smiles": "CC(O)C(=O)O"
+    }
+   ],
+   "poly": "縮合重合",
+   "abbr": "PLA",
+   "repeat": "*OC(C)C(*)=O",
+   "rf": "C3H4O2",
+   "bond": "エステル結合",
+   "props": "微生物によって分解される（生分解性高分子）",
+   "uses": "縫合糸・包装材"
+  },
+  {
+   "id": "polyacetylene",
+   "unit": "POL-03",
+   "name": "ポリアセチレン",
+   "cls": "機能性高分子",
+   "monomers": [
+    {
+     "name": "アセチレン",
+     "smiles": "C#C"
+    }
+   ],
+   "poly": "付加重合",
+   "repeat": "*C=C*",
+   "rf": "C2H2",
+   "props": "ヨウ素などを加えると電気を通す（導電性高分子、白川英樹）",
+   "uses": "電池の電極"
+  },
+  {
+   "id": "amylose",
+   "unit": "POL-04",
+   "name": "アミロース",
+   "cls": "天然高分子（糖）",
+   "monomers": [
+    {
+     "name": "α-グルコース",
+     "smiles": null
+    }
+   ],
+   "poly": "縮合重合（脱水縮合）",
+   "rf": "C6H10O5",
+   "bond": "α-1,4-グリコシド結合",
+   "props": "らせん構造。温水に溶ける。ヨウ素デンプン反応で濃青色",
+   "uses": "デンプンの成分（約 20〜25 ％）"
+  },
+  {
+   "id": "amylopectin",
+   "unit": "POL-04",
+   "name": "アミロペクチン",
+   "cls": "天然高分子（糖）",
+   "monomers": [
+    {
+     "name": "α-グルコース",
+     "smiles": null
+    }
+   ],
+   "poly": "縮合重合（脱水縮合）",
+   "rf": "C6H10O5",
+   "bond": "α-1,4 と α-1,6-グリコシド結合",
+   "props": "枝分かれ構造。温水に溶けにくい。ヨウ素デンプン反応で赤紫色",
+   "uses": "デンプンの成分（約 75〜80 ％）。もち米はほぼアミロペクチン"
+  },
+  {
+   "id": "glycogen",
+   "unit": "POL-04",
+   "name": "グリコーゲン",
+   "cls": "天然高分子（糖）",
+   "monomers": [
+    {
+     "name": "α-グルコース",
+     "smiles": null
+    }
+   ],
+   "poly": "縮合重合（脱水縮合）",
+   "rf": "C6H10O5",
+   "bond": "α-1,4 と α-1,6-グリコシド結合",
+   "props": "アミロペクチンより枝分かれが多い。ヨウ素デンプン反応で赤褐色",
+   "uses": "動物の肝臓・筋肉にたくわえられる"
+  },
+  {
+   "id": "cellulose",
+   "unit": "POL-04",
+   "name": "セルロース",
+   "cls": "天然高分子（糖）",
+   "monomers": [
+    {
+     "name": "β-グルコース",
+     "smiles": null
+    }
+   ],
+   "poly": "縮合重合（脱水縮合）",
+   "rf": "C6H10O5",
+   "bond": "β-1,4-グリコシド結合",
+   "props": "直線状の分子が水素結合で束になり、強い繊維になる。熱水にも溶けない。ヨウ素デンプン反応を示さない",
+   "uses": "植物の細胞壁・紙・綿"
+  },
+  {
+   "id": "acetate",
+   "unit": "POL-04",
+   "name": "アセテート（ジアセチルセルロース）",
+   "cls": "半合成繊維",
+   "monomers": [
+    {
+     "name": "セルロース＋無水酢酸",
+     "smiles": null
+    }
+   ],
+   "poly": "アセチル化（半合成）",
+   "bond": "エステル結合",
+   "props": "トリアセチルセルロースを部分的に加水分解してアセトンに溶かし、紡糸する",
+   "uses": "衣料"
+  },
+  {
+   "id": "rayon",
+   "unit": "POL-04",
+   "name": "レーヨン（ビスコースレーヨン・銅アンモニアレーヨン）",
+   "cls": "再生繊維",
+   "monomers": [
+    {
+     "name": "セルロース",
+     "smiles": null
+    }
+   ],
+   "poly": "再生",
+   "props": "セルロースを一度溶かし（NaOH と CS₂、またはシュバイツァー試薬）、繊維として再生したもの（再生繊維）",
+   "uses": "衣料・セロハン"
+  },
+  {
+   "id": "protein",
+   "unit": "POL-05",
+   "name": "タンパク質",
+   "cls": "天然高分子（タンパク質）",
+   "monomers": [
+    {
+     "name": "α-アミノ酸（約 20 種類）",
+     "smiles": null
+    }
+   ],
+   "poly": "縮合重合（脱水縮合）",
+   "bond": "ペプチド結合（アミド結合）",
+   "props": "一次構造（アミノ酸の配列）、二次構造（α-ヘリックス・β-シート：水素結合）、三次・四次構造。熱・酸・重金属イオンなどで変性する",
+   "uses": "酵素・筋肉・羊毛・絹"
+  },
+  {
+   "id": "dna",
+   "unit": "POL-05",
+   "name": "DNA（デオキシリボ核酸）",
+   "cls": "天然高分子（核酸）",
+   "monomers": [
+    {
+     "name": "ヌクレオチド（リン酸・デオキシリボース・塩基）",
+     "smiles": null
+    }
+   ],
+   "poly": "縮合重合（脱水縮合）",
+   "bond": "リン酸エステル結合",
+   "props": "塩基は A・T・G・C。A と T、G と C が水素結合で対をつくり二重らせん",
+   "uses": "遺伝情報の保存"
+  },
+  {
+   "id": "rna",
+   "unit": "POL-05",
+   "name": "RNA（リボ核酸）",
+   "cls": "天然高分子（核酸）",
+   "monomers": [
+    {
+     "name": "ヌクレオチド（リン酸・リボース・塩基）",
+     "smiles": null
+    }
+   ],
+   "poly": "縮合重合（脱水縮合）",
+   "bond": "リン酸エステル結合",
+   "props": "塩基は A・U・G・C。ふつう1本鎖",
+   "uses": "タンパク質の合成"
+  }
+ ]
+}

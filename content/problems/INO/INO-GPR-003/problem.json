@@ -1,0 +1,69 @@
+{
+ "id": "INO-GPR-003",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-09",
+ "topic": "塩素の製法（酸化マンガン(IV)）",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "equation"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応式の空欄 ア に当てはまる化学式を答えよ．\\\\（塩素の製法（酸化マンガン(IV)）：濃塩酸に MnO₂ を加えて加熱）\\[\\ce{MnO2} + \\ce{4HCl} \\ce{->} \\ce{MnCl2} + \\ce{2H2O} + \\boxed{\\,\\text{ア}\\,}\\]"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$\\ce{Cl2}$",
+    "grading": "語{Cl2|塩素}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{MnO2 + 4HCl -> MnCl2 + 2H2O + Cl2 ^}$．出てくる気体は水（HCl を除く）→濃硫酸（水を除く）の順に通す。逆にすると水蒸気が残る（酸化還元）"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "gas-preparation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応式補完",
+  "反応式",
+  "酸化還元"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "gas-cl2-mno2"
+ }
+}

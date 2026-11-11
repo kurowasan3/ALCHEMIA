@@ -1,0 +1,66 @@
+{
+ "id": "THE-THC-008",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-10",
+ "topic": "エタノールの燃焼エンタルピー",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "生成エンタルピー（kJ/mol）をエタノール（液）−277，二酸化炭素 −394，水（液）−286 として，エタノールの燃焼エンタルピーを求めよ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$-1369\\,\\mathrm{kJ/mol}$",
+    "grading": "約{-1369|4} [kJ/mol]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{C2H5OH + 3O2 -> 2CO2 + 3H2O}$．$\\Delta H=\\{2\\times(-394)+3\\times(-286)\\}-(-277)=-1369\\,\\mathrm{kJ/mol}$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "enthalpy"
+ ],
+ "laws": [
+  "formation-enthalpy"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "生成エンタルピー"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

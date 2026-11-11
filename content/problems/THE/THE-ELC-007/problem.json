@@ -1,0 +1,66 @@
+{
+ "id": "THE-ELC-007",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-07",
+ "topic": "電池の起電力",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "compare"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の金属の組み合わせで電池をつくる．起電力の大きい順に並べよ（電解液は同じ条件とする）．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "Mg−Cu ＞ Zn−Cu ＞ Fe−Cu",
+    "grading": "並べる{Zn と Cu|Fe と Cu|Mg と Cu}=3>1>2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "イオン化傾向の差が大きい組み合わせほど起電力が大きい．イオン化列 Mg ＞ Zn ＞ Fe ＞ Cu．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "battery",
+  "ionization-tendency"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "比較問題",
+  "電池",
+  "イオン化傾向"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

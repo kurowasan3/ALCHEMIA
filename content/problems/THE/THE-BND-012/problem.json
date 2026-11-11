@@ -1,0 +1,64 @@
+{
+ "id": "THE-BND-012",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-03",
+ "topic": "面心立方格子の原子半径",
+ "course": "化学基礎",
+ "level": 3,
+ "minutes": 8,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "面心立方格子をとる金属の単位格子の一辺が $0.36\\,\\mathrm{nm}$ のとき，原子半径を求めよ．$\\sqrt2=1.41$ とする．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$0.13\\,\\mathrm{nm}$",
+    "grading": "約{0.12727922061357855|2} [nm]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "面心立方格子では面の対角線上で原子が接する：$4r=\\sqrt2\\,a$．$r=\\dfrac{1.41\\times0.36}{4}\\fallingdotseq0.13\\,\\mathrm{nm}$．（体心立方格子なら体の対角線 $4r=\\sqrt3\\,a$．）"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "crystal"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "単位格子"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

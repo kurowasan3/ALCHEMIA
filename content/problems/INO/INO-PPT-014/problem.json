@@ -1,0 +1,87 @@
+{
+ "id": "INO-PPT-014",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-08",
+ "topic": "鉄(II)イオンと鉄(III)イオンの検出",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の試薬を加えて，濃青色の沈殿が生じるイオンを選べ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ヘキサシアニド鉄(III)酸カリウム $\\ce{K3[Fe(CN)6]}$ 水溶液"
+     },
+     {
+      "id": "2",
+      "tex": "ヘキサシアニド鉄(II)酸カリウム $\\ce{K4[Fe(CN)6]}$ 水溶液"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{Fe^2+}$",
+    "grading": "選ぶ{$\\ce{Fe^2+}$|$\\ce{Fe^3+}$|どちらも生じない}=1"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{Fe^3+}$",
+    "grading": "選ぶ{$\\ce{Fe^2+}$|$\\ce{Fe^3+}$|どちらも生じない}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ヘキサシアニド鉄(III)酸カリウム $\\ce{K3[Fe(CN)6]}$ は $\\ce{Fe^2+}$ と，ヘキサシアニド鉄(II)酸カリウム $\\ce{K4[Fe(CN)6]}$ は $\\ce{Fe^3+}$ と濃青色沈殿をつくる（価数が「入れかわる」組み合わせ）．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "precipitation",
+  "complex-ion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "条件判断",
+  "鉄イオンの検出"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "ions",
+  "key": "Fe^2+"
+ }
+}

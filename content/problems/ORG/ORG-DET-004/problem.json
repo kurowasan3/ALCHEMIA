@@ -1,0 +1,71 @@
+{
+ "id": "ORG-DET-004",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-06",
+ "topic": "銀鏡反応を示す化合物",
+ "course": "化学",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の化合物のうち，銀鏡反応（アンモニア性硝酸銀水溶液を加えて温めると銀が析出して試験管の内壁が鏡のようになる）を示すものをすべて選べ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "グルコース，ベンズアルデヒド",
+    "grading": "すべて選ぶ{グルコース|アセトン|ベンズアルデヒド|サリチル酸|スクロース|ジエチルエーテル}=1,3"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "銀鏡反応は「ホルミル基（アルデヒド基）−CHO（還元性）」に陽性．アセトン：ケトンは還元性を示さない．スクロース：還元性を示す構造が結合に使われている．陽性：グルコース，ベンズアルデヒド．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "organic-test"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-KETONE-REDUCE"
+ ],
+ "tags": [
+  "条件判断",
+  "検出反応",
+  "銀鏡反応"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "tests",
+  "key": "silver-mirror"
+ }
+}

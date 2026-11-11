@@ -1,0 +1,69 @@
+{
+ "id": "INO-GPR-018",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-09",
+ "topic": "アンモニアの製法（係数）",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "equation"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応式の係数 a，b，c，d，e を答えよ．係数が 1 のときも 1 と書くこと．\\\\（アンモニアの製法）\\[\\boxed{\\,a\\,}\\,\\ce{NH4Cl} + \\boxed{\\,b\\,}\\,\\ce{Ca(OH)2} \\ce{->} \\boxed{\\,c\\,}\\,\\ce{CaCl2} + \\boxed{\\,d\\,}\\,\\ce{H2O} + \\boxed{\\,e\\,}\\,\\ce{NH3}\\]"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "a=2，b=1，c=1，d=2，e=2",
+    "grading": "a：2 ; b：1 ; c：1 ; d：2 ; e：2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{2NH4Cl + Ca(OH)2 -> CaCl2 + 2H2O + 2NH3 ^}$．弱塩基の塩＋強塩基 → 強塩基の塩＋弱塩基。試験管の口を少し下げる（生じた水が加熱部に流れないように）"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "gas-preparation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応式補完",
+  "反応式",
+  "係数"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "gas-nh3"
+ }
+}

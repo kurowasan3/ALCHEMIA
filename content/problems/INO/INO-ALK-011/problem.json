@@ -1,0 +1,104 @@
+{
+ "id": "INO-ALK-011",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-05",
+ "topic": "アンモニアソーダ法の経路",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "pathway"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応経路の空欄 A，B に当てはまる化学式を答えよ．また，（ア）に当てはまるものを選べ．\\[\\ce{NaCl} \\xrightarrow{\\text{NH₃，CO₂ を吹き込む}} \\boxed{\\,\\text{A}\\,} \\xrightarrow{\\text{（ア）}} \\boxed{\\,\\text{B}\\,}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A に当てはまる化学式"
+     },
+     {
+      "id": "2",
+      "tex": "B に当てはまる化学式"
+     },
+     {
+      "id": "3",
+      "tex": "（ア）"
+     },
+     {
+      "id": "4",
+      "tex": "同時に生じる塩化アンモニウムから $\\ce{NH3}$ を回収するために加える物質"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{NaHCO3}$",
+    "grading": "語{NaHCO3}"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{Na2CO3}$",
+    "grading": "語{Na2CO3}"
+   },
+   {
+    "id": "3",
+    "tex": "加熱",
+    "grading": "選ぶ{加熱|電気分解|水に溶かす|CO₂ を通じる}=1"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{Ca(OH)2}$",
+    "grading": "語{Ca(OH)2|水酸化カルシウム|消石灰}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{NaCl + H2O + NH3 + CO2 -> NaHCO3 + NH4Cl}$（溶解度の小さい NaHCO₃ が沈殿），$\\ce{2NaHCO3 -> Na2CO3 + H2O + CO2}$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "industrial-process"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応経路",
+  "工業的製法"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "ind-solvay"
+ }
+}

@@ -1,0 +1,70 @@
+{
+ "id": "THE-PER-004",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-02",
+ "topic": "貴ガスのイオン化エネルギー",
+ "course": "化学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "compare"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の元素を，第1イオン化エネルギーの大きい順に並べよ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "He＞Ne＞Ar＞Kr",
+    "grading": "並べる{He|Ne|Ar|Kr}=1>2>3>4"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "同じ族では，下ほど最外殻が原子核から遠く，電子を取り去りやすい．　He 2372 kJ/mol，Ne 2081 kJ/mol，Ar 1521 kJ/mol，Kr 1351 kJ/mol．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "periodicity"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-IE-MONOTONE"
+ ],
+ "tags": [
+  "比較問題",
+  "周期性"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "elements",
+  "key": "He"
+ }
+}

@@ -1,0 +1,65 @@
+{
+ "id": "THE-BND-002",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-03",
+ "topic": "16族の水素化合物の沸点",
+ "course": "化学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "compare"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の化合物を，沸点の高い順に並べよ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$\\ce{H2O}>\\ce{H2Te}>\\ce{H2Se}>\\ce{H2S}$",
+    "grading": "並べる{H2S|H2Se|H2Te|H2O}=4>3>2>1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "分子量が大きいほどファンデルワールス力が強く沸点が高いが，$\\ce{H2O}$ は分子間に水素結合をつくるので，分子量が小さいのに最も高い．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "intermolecular"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "比較問題",
+  "水素結合",
+  "沸点"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

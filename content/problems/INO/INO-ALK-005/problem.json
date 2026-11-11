@@ -1,0 +1,68 @@
+{
+ "id": "INO-ALK-005",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-05",
+ "topic": "アンモニアソーダ法（ソルベー法、炭酸ナトリウム）",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "equation"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "アンモニアソーダ法（ソルベー法、炭酸ナトリウム）の反応式の空欄 ア に当てはまる化学式を答えよ．\\[\\ce{NaCl} + \\ce{H2O} + \\ce{NH3} + \\ce{CO2} \\ce{->} \\boxed{\\,\\text{ア}\\,} + \\ce{NH4Cl}\\]"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$\\ce{NaHCO3}$",
+    "grading": "語{NaHCO3|炭酸水素ナトリウム}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{NaCl + H2O + NH3 + CO2 -> NaHCO3 + NH4Cl}$．飽和食塩水に NH₃、ついで CO₂。溶解度の小さい NaHCO₃ が沈殿．全体では $\\ce{2NaCl + CaCO3 -> Na2CO3 + CaCl2}$"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "industrial-process"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応式補完",
+  "工業的製法"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "ind-solvay"
+ }
+}

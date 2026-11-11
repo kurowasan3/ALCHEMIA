@@ -1,0 +1,70 @@
+{
+ "id": "THE-PER-001",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-02",
+ "topic": "第3周期のイオン化エネルギー",
+ "course": "化学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "compare"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の元素を，第1イオン化エネルギーの大きい順に並べよ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "Si＞Mg＞Al＞Na",
+    "grading": "並べる{Na|Mg|Al|Si}=4>2>3>1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "周期の右ほど大きくなるのが基本だが，Mg（3s²）→ Al（3p¹）では，エネルギーの高い 3p 軌道の電子を取り去るので小さくなる．　Si 787 kJ/mol，Mg 738 kJ/mol，Al 578 kJ/mol，Na 496 kJ/mol．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "periodicity"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-IE-MONOTONE"
+ ],
+ "tags": [
+  "比較問題",
+  "周期性"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "elements",
+  "key": "Na"
+ }
+}

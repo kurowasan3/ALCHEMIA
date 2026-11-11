@@ -1,0 +1,115 @@
+{
+ "id": "THE-RDX-001",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-06",
+ "topic": "酸化数",
+ "course": "化学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "下線の原子の酸化数を答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{H2SO4}$ の S"
+     },
+     {
+      "id": "2",
+      "tex": "$\\ce{HNO3}$ の N"
+     },
+     {
+      "id": "3",
+      "tex": "$\\ce{NH3}$ の N"
+     },
+     {
+      "id": "4",
+      "tex": "$\\ce{H2O2}$ の O"
+     },
+     {
+      "id": "5",
+      "tex": "$\\ce{MnO4-}$ の Mn"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "+6",
+    "grading": "約{6|1}"
+   },
+   {
+    "id": "2",
+    "tex": "+5",
+    "grading": "約{5|1}"
+   },
+   {
+    "id": "3",
+    "tex": "-3",
+    "grading": "約{-3|1}"
+   },
+   {
+    "id": "4",
+    "tex": "-1",
+    "grading": "約{-1|1}"
+   },
+   {
+    "id": "5",
+    "tex": "+7",
+    "grading": "約{7|1}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "H は +1，O は −2，化合物全体は 0，イオンはその電荷．(1) $2+x-8=0$，(2) $1+x-6=0$，(3) $x+3=0$，(4) 過酸化物の O は −1，(5) $x-8=-1$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "redox"
+ ],
+ "laws": [
+  "oxidation-number"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "酸化数"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "laws",
+  "key": "oxidation-number"
+ }
+}

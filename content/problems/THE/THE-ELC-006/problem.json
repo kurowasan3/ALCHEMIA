@@ -1,0 +1,91 @@
+{
+ "id": "THE-ELC-006",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-07",
+ "topic": "燃料電池",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "リン酸を電解液とする水素−酸素燃料電池について答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "負極の反応"
+     },
+     {
+      "id": "2",
+      "tex": "正極の反応"
+     },
+     {
+      "id": "3",
+      "tex": "全体で生じる物質"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{H2 -> 2H+ + 2e-}$",
+    "grading": "選ぶ{$\\ce{H2 -> 2H+ + 2e-}$|$\\ce{O2 + 4H+ + 4e- -> 2H2O}$|$\\ce{2H2O -> O2 + 4H+ + 4e-}$}=1"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{O2 + 4H+ + 4e- -> 2H2O}$",
+    "grading": "選ぶ{$\\ce{H2 -> 2H+ + 2e-}$|$\\ce{O2 + 4H+ + 4e- -> 2H2O}$|$\\ce{2H2O -> O2 + 4H+ + 4e-}$}=2"
+   },
+   {
+    "id": "3",
+    "tex": "水",
+    "grading": "語{水|H2O}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "負極で H₂ が酸化され，正極で O₂ が還元される．全体は $\\ce{2H2 + O2 -> 2H2O}$ で，生じるのは水だけ．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "battery"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "燃料電池"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

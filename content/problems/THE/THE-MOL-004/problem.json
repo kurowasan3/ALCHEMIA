@@ -1,0 +1,94 @@
+{
+ "id": "THE-MOL-004",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-04",
+ "topic": "メタンの燃焼と量的関係",
+ "course": "化学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "メタン $1.6\\,\\mathrm g$ を完全燃焼させた．H = 1.0，C = 12，O = 16 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "生じる二酸化炭素の質量"
+     },
+     {
+      "id": "2",
+      "tex": "必要な酸素の質量"
+     },
+     {
+      "id": "3",
+      "tex": "生じる水の質量"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$4.4\\,\\mathrm g$",
+    "grading": "約{4.4|2} [g]"
+   },
+   {
+    "id": "2",
+    "tex": "$6.4\\,\\mathrm g$",
+    "grading": "約{6.4|2} [g]"
+   },
+   {
+    "id": "3",
+    "tex": "$3.6\\,\\mathrm g$",
+    "grading": "約{3.6|2} [g]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{CH4 + 2O2 -> CO2 + 2H2O}$．CH₄ は $1.6/16=0.10\\,\\mathrm{mol}$．CO₂ 0.10 mol＝4.4 g，O₂ 0.20 mol＝6.4 g，H₂O 0.20 mol＝3.6 g．質量保存：1.6＋6.4＝4.4＋3.6．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "mole",
+  "chemical-equation"
+ ],
+ "laws": [
+  "mass-conservation"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "量的関係"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

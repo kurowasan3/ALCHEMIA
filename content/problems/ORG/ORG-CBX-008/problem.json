@@ -1,0 +1,93 @@
+{
+ "id": "ORG-CBX-008",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-04",
+ "topic": "エステルの構造決定",
+ "course": "化学",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "qa",
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "分子式 $\\ce{C4H8O2}$ のエステル A を加水分解すると，カルボン酸 B とアルコール C が得られた．B は銀鏡反応を示し，C はヨードホルム反応を示した．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "B の名称"
+     },
+     {
+      "id": "2",
+      "tex": "C の名称"
+     },
+     {
+      "id": "3",
+      "tex": "A の示性式"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "ギ酸",
+    "grading": "語{ギ酸|HCOOH}"
+   },
+   {
+    "id": "2",
+    "tex": "2-プロパノール",
+    "grading": "語{2-プロパノール|CH3CH(OH)CH3}"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{HCOOCH(CH3)2}$",
+    "grading": "語{HCOOCH(CH3)2|ギ酸イソプロピル|ギ酸1-メチルエチル}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "銀鏡反応を示すカルボン酸はホルミル基をもつギ酸 HCOOH だけ．C は C 原子 3 個のアルコール（$\\ce{C4H8O2}+\\ce{H2O}-\\ce{HCOOH}=\\ce{C3H8O}$）で，ヨードホルム反応を示すので CH₃CH(OH)− をもつ 2-プロパノール．A は $\\ce{HCOOCH(CH3)2}$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "carboxylic-ester",
+  "organic-test"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "構造決定"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

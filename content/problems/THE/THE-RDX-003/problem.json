@@ -1,0 +1,66 @@
+{
+ "id": "THE-RDX-003",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-06",
+ "topic": "半反応式から反応式をつくる（KMnO₄ と H₂O₂）",
+ "course": "化学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "equation"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "硫酸酸性で過マンガン酸カリウムと過酸化水素は次のように反応する．係数 a，b，c，d，e，f を答えよ．\\\\酸化剤：$\\ce{MnO4- + 8H+ + 5e- -> Mn^2+ + 4H2O}$\\\\還元剤：$\\ce{H2O2 -> O2 + 2H+ + 2e-}$\\[\\boxed{\\,a\\,}\\,\\ce{MnO4-} + \\boxed{\\,b\\,}\\,\\ce{H2O2} + \\boxed{\\,c\\,}\\,\\ce{H+} \\ce{->} \\boxed{\\,d\\,}\\,\\ce{Mn^2+} + \\boxed{\\,e\\,}\\,\\ce{O2} + \\boxed{\\,f\\,}\\,\\ce{H2O}\\]"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "a=2，b=5，c=6，d=2，e=5，f=8",
+    "grading": "a：2 ; b：5 ; c：6 ; d：2 ; e：5 ; f：8"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "電子の数を 10 にそろえる：酸化剤の式を 2 倍，還元剤の式を 5 倍して足すと，$\\ce{2MnO4- + 5H2O2 + 6H+ -> 2Mn^2+ + 5O2 + 8H2O}$．H⁺ は 16−10=6 個が残る．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "redox"
+ ],
+ "laws": [
+  "redox-amount"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "反応式補完",
+  "半反応式"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

@@ -1,0 +1,100 @@
+{
+ "id": "ORG-ALC-003",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-03",
+ "topic": "第二級アルコールの酸化とヨードホルム反応",
+ "course": "化学",
+ "level": 2,
+ "minutes": 6,
+ "format": [
+  "pathway"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応経路について，空欄に当てはまる化合物の名称（または示性式）を答えよ．\\[\\ce{CH3CH(OH)CH3} \\xrightarrow{\\text{K₂Cr₂O₇}} \\boxed{\\,\\text{A}\\,} \\xrightarrow{\\text{I₂・NaOH 水溶液}} \\boxed{\\,\\text{B}\\,}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A に当てはまる化合物"
+     },
+     {
+      "id": "2",
+      "tex": "B に当てはまる化合物"
+     },
+     {
+      "id": "3",
+      "tex": "B の色を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "アセトン　$\\ce{CH3COCH3}$",
+    "grading": "A：語{アセトン|CH3COCH3}"
+   },
+   {
+    "id": "2",
+    "tex": "ヨードホルム　$\\ce{CHI3}$",
+    "grading": "B：語{ヨードホルム|CHI3}"
+   },
+   {
+    "id": "3",
+    "tex": "黄色",
+    "grading": "語{黄|黄色}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "2-プロパノール → アセトン：K₂Cr₂O₇（硫酸酸性）（酸化）．第二級アルコール → ケトン"
+    },
+    {
+     "type": "text",
+     "tex": "アセトン → ヨードホルム：I₂・NaOH 水溶液（ヨードホルム反応）　$\\ce{CH3COCH3 + 3I2 + 4NaOH -> CHI3 + CH3COONa + 3NaI + 3H2O}$"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "alcohol-carbonyl",
+  "organic-test"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応経路",
+  "ヨードホルム反応"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "organic",
+  "key": "acetone"
+ }
+}

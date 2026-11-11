@@ -1,0 +1,65 @@
+{
+ "id": "THE-BND-003",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-03",
+ "topic": "極性分子",
+ "course": "化学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の分子のうち，極性分子をすべて選べ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$\\ce{H2O}$，$\\ce{NH3}$，$\\ce{HCl}$",
+    "grading": "すべて選ぶ{$\\ce{H2O}$|$\\ce{CO2}$|$\\ce{NH3}$|$\\ce{CH4}$|$\\ce{HCl}$|$\\ce{CCl4}$}=1,3,5"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "結合に極性があっても，分子の形が対称（CO₂ 直線形，CH₄・CCl₄ 正四面体形）だと極性が打ち消し合って無極性分子になる．H₂O（折れ線形）・NH₃（三角錐形）は打ち消されない．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "intermolecular",
+  "chemical-bond"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "条件判断",
+  "極性"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

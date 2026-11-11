@@ -1,0 +1,67 @@
+{
+ "id": "THE-SOL-005",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-09",
+ "topic": "再結晶（溶解度）",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "硝酸カリウムの溶解度（水 100 g に溶ける質量）は 60 ℃ で 109 g，20 ℃ で 32 g である．60 ℃ の飽和水溶液 $209\\,\\mathrm g$ を 20 ℃ に冷やすと，何 g の結晶が析出するか．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$77\\,\\mathrm g$",
+    "grading": "約{77|2} [g]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "飽和水溶液 209 g は水 100 g ＋ KNO₃ 109 g．20 ℃ では 32 g しか溶けないので，$109-32=77\\,\\mathrm g$ が析出する．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "concentration"
+ ],
+ "laws": [
+  "solubility-def"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "溶解度",
+  "再結晶"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

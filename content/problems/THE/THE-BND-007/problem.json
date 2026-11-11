@@ -1,0 +1,64 @@
+{
+ "id": "THE-BND-007",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-03",
+ "topic": "結晶の融点",
+ "course": "化学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "compare"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の物質を，融点の高い順に並べよ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "ダイヤモンド ＞ 塩化ナトリウム ＞ ナトリウム ＞ 氷",
+    "grading": "並べる{氷|ナトリウム|塩化ナトリウム|ダイヤモンド}=4>3>2>1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "共有結合の結晶（ダイヤモンド 約 3550 ℃）＞ イオン結晶（NaCl 801 ℃）＞ この金属（Na 98 ℃）＞ 分子結晶（氷 0 ℃）．金属結晶の融点は金属によって大きく違う（W は 3400 ℃ 以上）．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "crystal"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "比較問題",
+  "融点"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

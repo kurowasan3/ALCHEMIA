@@ -1,0 +1,104 @@
+{
+ "id": "INO-PPT-015",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-08",
+ "topic": "錯イオンの形",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の錯イオンの形を答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{[Ag(NH3)2]+}$"
+     },
+     {
+      "id": "2",
+      "tex": "$\\ce{[Cu(NH3)4]^2+}$"
+     },
+     {
+      "id": "3",
+      "tex": "$\\ce{[Zn(NH3)4]^2+}$"
+     },
+     {
+      "id": "4",
+      "tex": "$\\ce{[Fe(CN)6]^3-}$"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "直線形",
+    "grading": "選ぶ{直線形|正方形|正四面体形|正八面体形}=1"
+   },
+   {
+    "id": "2",
+    "tex": "正方形",
+    "grading": "選ぶ{直線形|正方形|正四面体形|正八面体形}=2"
+   },
+   {
+    "id": "3",
+    "tex": "正四面体形",
+    "grading": "選ぶ{直線形|正方形|正四面体形|正八面体形}=3"
+   },
+   {
+    "id": "4",
+    "tex": "正八面体形",
+    "grading": "選ぶ{直線形|正方形|正四面体形|正八面体形}=4"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "配位数 2 は直線形，配位数 6 は正八面体形．配位数 4 は $\\ce{Cu^2+}$ の錯イオンが正方形，$\\ce{Zn^2+}$ の錯イオンが正四面体形．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "precipitation",
+  "complex-ion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "錯イオンの形"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "ions"
+ }
+}

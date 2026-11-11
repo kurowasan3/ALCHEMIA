@@ -1,0 +1,70 @@
+{
+ "id": "INO-GPR-015",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-09",
+ "topic": "塩素の製法（酸化マンガン(IV)）（係数）",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "equation"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応式の係数 a，b，c，d，e を答えよ．係数が 1 のときも 1 と書くこと．\\\\（塩素の製法（酸化マンガン(IV)））\\[\\boxed{\\,a\\,}\\,\\ce{MnO2} + \\boxed{\\,b\\,}\\,\\ce{HCl} \\ce{->} \\boxed{\\,c\\,}\\,\\ce{MnCl2} + \\boxed{\\,d\\,}\\,\\ce{H2O} + \\boxed{\\,e\\,}\\,\\ce{Cl2}\\]"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "a=1，b=4，c=1，d=2，e=1",
+    "grading": "a：1 ; b：4 ; c：1 ; d：2 ; e：1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{MnO2 + 4HCl -> MnCl2 + 2H2O + Cl2 ^}$．出てくる気体は水（HCl を除く）→濃硫酸（水を除く）の順に通す。逆にすると水蒸気が残る．酸化剤・還元剤の半反応式をつくり，電子の数をそろえて足し合わせると係数が決まる．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "gas-preparation",
+  "redox"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応式補完",
+  "反応式",
+  "係数"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "gas-cl2-mno2"
+ }
+}

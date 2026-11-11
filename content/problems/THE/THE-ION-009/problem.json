@@ -1,0 +1,84 @@
+{
+ "id": "THE-ION-009",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "緩衝液に塩基を加える",
+ "course": "化学",
+ "level": 3,
+ "minutes": 12,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "酢酸 0.10 mol と酢酸ナトリウム 0.10 mol を含む水溶液 1.0 L に，水酸化ナトリウム 0.050 mol を加えた（体積変化は無視）．$K_a=2.0\\times10^{-5}\\,\\mathrm{mol/L}$，$\\log_{10}2=0.30$，$\\log_{10}3=0.48$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "加えたあとの酢酸と酢酸イオンの物質量"
+     },
+     {
+      "id": "2",
+      "tex": "加えたあとの pH（小数第2位まで）"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "酢酸 0.050 mol，酢酸イオン 0.15 mol",
+    "grading": "酢酸：約{0.050|2} [mol] ; 酢酸イオン：約{0.15|2} [mol]"
+   },
+   {
+    "id": "2",
+    "tex": "5.18",
+    "grading": "約{5.18|3}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $\\ce{CH3COOH + OH- -> CH3COO- + H2O}$ で酢酸 0.050 mol が反応．(2) $[\\mathrm{H^+}]=2.0\\times10^{-5}\\times\\dfrac{0.050}{0.15}=\\dfrac23\\times10^{-5}$．pH $=5-\\log_{10}\\dfrac23=5-(0.30-0.48)=5.18$．はじめ（pH 4.70）から 0.48 しか変わらない．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "ionization-equilibrium"
+ ],
+ "laws": [
+  "buffer"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "緩衝液"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

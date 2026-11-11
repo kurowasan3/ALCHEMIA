@@ -1,0 +1,71 @@
+{
+ "id": "ORG-CBX-002",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-04",
+ "topic": "酸の強さ",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "compare"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の物質を，酸として強い順に並べよ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "塩酸 ＞ 酢酸 ＞ 炭酸 ＞ フェノール",
+    "grading": "並べる{フェノール|酢酸|炭酸（CO₂ の水溶液）|塩酸}=4>2>3>1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "この順のため，酢酸ナトリウムに塩酸を加えると酢酸が，炭酸水素ナトリウムに酢酸を加えると CO₂ が，ナトリウムフェノキシドに CO₂ を通じるとフェノールが遊離する（弱酸の遊離）．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "carboxylic-ester",
+  "acid-base"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-PHENOL-NAHCO3"
+ ],
+ "tags": [
+  "比較問題",
+  "酸の強さ"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "tests",
+  "key": "nahco3"
+ }
+}

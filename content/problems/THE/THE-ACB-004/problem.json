@@ -1,0 +1,94 @@
+{
+ "id": "THE-ACB-004",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-05",
+ "topic": "指示薬の選び方",
+ "course": "化学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の中和滴定に適した指示薬を選べ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "酢酸を水酸化ナトリウム水溶液で滴定"
+     },
+     {
+      "id": "2",
+      "tex": "アンモニア水を塩酸で滴定"
+     },
+     {
+      "id": "3",
+      "tex": "塩酸を水酸化ナトリウム水溶液で滴定"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "フェノールフタレイン",
+    "grading": "選ぶ{フェノールフタレイン|メチルオレンジ|どちらでもよい}=1"
+   },
+   {
+    "id": "2",
+    "tex": "メチルオレンジ",
+    "grading": "選ぶ{フェノールフタレイン|メチルオレンジ|どちらでもよい}=2"
+   },
+   {
+    "id": "3",
+    "tex": "どちらでもよい",
+    "grading": "選ぶ{フェノールフタレイン|メチルオレンジ|どちらでもよい}=3"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "中和点の pH が変色域に入る指示薬を選ぶ．弱酸＋強塩基では中和点が塩基性（変色域 8.0〜9.8 のフェノールフタレイン），強酸＋弱塩基では酸性（3.1〜4.4 のメチルオレンジ），強酸＋強塩基では pH が大きく跳ぶのでどちらも使える．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "acid-base",
+  "salt-hydrolysis"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-NEUTRAL-PH7"
+ ],
+ "tags": [
+  "条件判断",
+  "指示薬"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

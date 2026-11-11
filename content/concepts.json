@@ -1,0 +1,523 @@
+{
+ "schema": "alchemia.concepts/1",
+ "concepts": [
+  {
+   "id": "atomic-structure",
+   "name": "原子の構造と同位体",
+   "field": "THE",
+   "requires": [],
+   "laws": []
+  },
+  {
+   "id": "electron-config",
+   "name": "電子配置と価電子",
+   "field": "THE",
+   "requires": [
+    "atomic-structure"
+   ],
+   "laws": []
+  },
+  {
+   "id": "periodicity",
+   "name": "元素の周期性（イオン化エネルギー・電子親和力・原子半径）",
+   "field": "THE",
+   "requires": [
+    "electron-config"
+   ],
+   "laws": [
+    "electronegativity"
+   ]
+  },
+  {
+   "id": "chemical-bond",
+   "name": "化学結合（イオン結合・共有結合・金属結合）",
+   "field": "THE",
+   "requires": [
+    "electron-config"
+   ],
+   "laws": [
+    "electronegativity"
+   ]
+  },
+  {
+   "id": "intermolecular",
+   "name": "分子間力・水素結合と分子の極性",
+   "field": "THE",
+   "requires": [
+    "chemical-bond"
+   ],
+   "laws": []
+  },
+  {
+   "id": "crystal",
+   "name": "結晶の構造（単位格子）",
+   "field": "THE",
+   "requires": [
+    "chemical-bond"
+   ],
+   "laws": []
+  },
+  {
+   "id": "atomic-theory",
+   "name": "原子説と化学の基本法則",
+   "field": "THE",
+   "requires": [],
+   "laws": [
+    "definite-proportions",
+    "multiple-proportions"
+   ]
+  },
+  {
+   "id": "mole",
+   "name": "物質量（mol）",
+   "field": "THE",
+   "requires": [
+    "atomic-structure"
+   ],
+   "laws": [
+    "mole-def",
+    "avogadro",
+    "molar-volume",
+    "gas-reaction"
+   ]
+  },
+  {
+   "id": "chemical-equation",
+   "name": "化学反応式と量的関係",
+   "field": "THE",
+   "requires": [
+    "mole"
+   ],
+   "laws": [
+    "mass-conservation"
+   ]
+  },
+  {
+   "id": "concentration",
+   "name": "溶液の濃度",
+   "field": "THE",
+   "requires": [
+    "mole"
+   ],
+   "laws": [
+    "molarity",
+    "molality",
+    "solubility-def"
+   ]
+  },
+  {
+   "id": "acid-base",
+   "name": "酸・塩基と中和",
+   "field": "THE",
+   "requires": [
+    "concentration"
+   ],
+   "laws": [
+    "bronsted",
+    "arrhenius-acid",
+    "neutralization"
+   ]
+  },
+  {
+   "id": "ph",
+   "name": "水素イオン濃度と pH",
+   "field": "THE",
+   "requires": [
+    "acid-base"
+   ],
+   "laws": [
+    "ph-def",
+    "water-ion-product"
+   ]
+  },
+  {
+   "id": "salt-hydrolysis",
+   "name": "塩の性質（加水分解）",
+   "field": "THE",
+   "requires": [
+    "acid-base"
+   ],
+   "laws": []
+  },
+  {
+   "id": "redox",
+   "name": "酸化と還元・酸化数",
+   "field": "THE",
+   "requires": [
+    "electron-config"
+   ],
+   "laws": [
+    "oxidation-number",
+    "redox-amount"
+   ]
+  },
+  {
+   "id": "ionization-tendency",
+   "name": "金属のイオン化傾向",
+   "field": "THE",
+   "requires": [
+    "redox"
+   ],
+   "laws": []
+  },
+  {
+   "id": "battery",
+   "name": "電池",
+   "field": "THE",
+   "requires": [
+    "redox",
+    "ionization-tendency"
+   ],
+   "laws": []
+  },
+  {
+   "id": "electrolysis",
+   "name": "電気分解",
+   "field": "THE",
+   "requires": [
+    "redox"
+   ],
+   "laws": [
+    "faraday"
+   ]
+  },
+  {
+   "id": "ideal-gas",
+   "name": "気体の法則",
+   "field": "THE",
+   "requires": [
+    "mole"
+   ],
+   "laws": [
+    "boyle",
+    "charles",
+    "boyle-charles",
+    "ideal-gas-law",
+    "dalton-partial"
+   ]
+  },
+  {
+   "id": "vapor-pressure",
+   "name": "蒸気圧と状態変化",
+   "field": "THE",
+   "requires": [
+    "ideal-gas",
+    "intermolecular"
+   ],
+   "laws": []
+  },
+  {
+   "id": "solution-colligative",
+   "name": "希薄溶液の性質（束一的性質）",
+   "field": "THE",
+   "requires": [
+    "concentration",
+    "vapor-pressure"
+   ],
+   "laws": [
+    "raoult",
+    "bp-elevation",
+    "fp-depression",
+    "vant-hoff",
+    "henry"
+   ]
+  },
+  {
+   "id": "colloid",
+   "name": "コロイド",
+   "field": "THE",
+   "requires": [],
+   "laws": []
+  },
+  {
+   "id": "enthalpy",
+   "name": "反応エンタルピーとヘスの法則",
+   "field": "THE",
+   "requires": [
+    "chemical-equation"
+   ],
+   "laws": [
+    "hess",
+    "formation-enthalpy",
+    "bond-energy"
+   ]
+  },
+  {
+   "id": "reaction-rate",
+   "name": "反応速度と活性化エネルギー",
+   "field": "THE",
+   "requires": [
+    "concentration"
+   ],
+   "laws": [
+    "rate-law",
+    "first-order",
+    "arrhenius"
+   ]
+  },
+  {
+   "id": "chemical-equilibrium",
+   "name": "化学平衡と平衡移動",
+   "field": "THE",
+   "requires": [
+    "reaction-rate"
+   ],
+   "laws": [
+    "equilibrium-law",
+    "le-chatelier",
+    "kp-kc"
+   ]
+  },
+  {
+   "id": "ionization-equilibrium",
+   "name": "電離平衡と緩衝液",
+   "field": "THE",
+   "requires": [
+    "chemical-equilibrium",
+    "ph"
+   ],
+   "laws": [
+    "weak-acid-h",
+    "buffer"
+   ]
+  },
+  {
+   "id": "solubility-equilibrium",
+   "name": "溶解平衡と溶解度積",
+   "field": "THE",
+   "requires": [
+    "chemical-equilibrium"
+   ],
+   "laws": [
+    "ksp"
+   ]
+  },
+  {
+   "id": "halogen",
+   "name": "ハロゲンの性質",
+   "field": "INO",
+   "requires": [
+    "redox"
+   ],
+   "laws": []
+  },
+  {
+   "id": "oxygen-sulfur",
+   "name": "酸素・硫黄の化合物",
+   "field": "INO",
+   "requires": [
+    "redox",
+    "acid-base"
+   ],
+   "laws": []
+  },
+  {
+   "id": "nitrogen-phosphorus",
+   "name": "窒素・リンの化合物",
+   "field": "INO",
+   "requires": [
+    "redox"
+   ],
+   "laws": []
+  },
+  {
+   "id": "carbon-silicon",
+   "name": "炭素・ケイ素の化合物",
+   "field": "INO",
+   "requires": [],
+   "laws": []
+  },
+  {
+   "id": "alkali-metals",
+   "name": "アルカリ金属・アルカリ土類金属",
+   "field": "INO",
+   "requires": [
+    "ionization-tendency"
+   ],
+   "laws": []
+  },
+  {
+   "id": "amphoteric",
+   "name": "両性元素（Al・Zn・Sn・Pb）",
+   "field": "INO",
+   "requires": [
+    "acid-base"
+   ],
+   "laws": []
+  },
+  {
+   "id": "transition-metals",
+   "name": "遷移元素の性質",
+   "field": "INO",
+   "requires": [
+    "electron-config"
+   ],
+   "laws": []
+  },
+  {
+   "id": "complex-ion",
+   "name": "錯イオン",
+   "field": "INO",
+   "requires": [
+    "transition-metals"
+   ],
+   "laws": []
+  },
+  {
+   "id": "precipitation",
+   "name": "沈殿反応と系統分析",
+   "field": "INO",
+   "requires": [
+    "solubility-equilibrium"
+   ],
+   "laws": []
+  },
+  {
+   "id": "gas-preparation",
+   "name": "気体の製法と捕集・乾燥",
+   "field": "INO",
+   "requires": [
+    "acid-base",
+    "redox"
+   ],
+   "laws": []
+  },
+  {
+   "id": "industrial-process",
+   "name": "工業的製法",
+   "field": "INO",
+   "requires": [
+    "chemical-equilibrium"
+   ],
+   "laws": []
+  },
+  {
+   "id": "organic-structure",
+   "name": "有機化合物の構造と異性体",
+   "field": "ORG",
+   "requires": [
+    "chemical-bond"
+   ],
+   "laws": []
+  },
+  {
+   "id": "elemental-analysis",
+   "name": "元素分析と組成式",
+   "field": "ORG",
+   "requires": [
+    "mole"
+   ],
+   "laws": []
+  },
+  {
+   "id": "hydrocarbon",
+   "name": "炭化水素（付加・置換）",
+   "field": "ORG",
+   "requires": [
+    "organic-structure"
+   ],
+   "laws": []
+  },
+  {
+   "id": "alcohol-carbonyl",
+   "name": "アルコール・アルデヒド・ケトン",
+   "field": "ORG",
+   "requires": [
+    "hydrocarbon",
+    "redox"
+   ],
+   "laws": []
+  },
+  {
+   "id": "carboxylic-ester",
+   "name": "カルボン酸・エステル・油脂",
+   "field": "ORG",
+   "requires": [
+    "alcohol-carbonyl"
+   ],
+   "laws": []
+  },
+  {
+   "id": "aromatic",
+   "name": "芳香族化合物",
+   "field": "ORG",
+   "requires": [
+    "hydrocarbon"
+   ],
+   "laws": []
+  },
+  {
+   "id": "organic-test",
+   "name": "検出反応と分離",
+   "field": "ORG",
+   "requires": [
+    "alcohol-carbonyl",
+    "aromatic"
+   ],
+   "laws": []
+  },
+  {
+   "id": "addition-polymer",
+   "name": "付加重合",
+   "field": "POL",
+   "requires": [
+    "hydrocarbon"
+   ],
+   "laws": []
+  },
+  {
+   "id": "condensation-polymer",
+   "name": "縮合重合・開環重合",
+   "field": "POL",
+   "requires": [
+    "carboxylic-ester"
+   ],
+   "laws": []
+  },
+  {
+   "id": "rubber",
+   "name": "ゴム",
+   "field": "POL",
+   "requires": [
+    "addition-polymer"
+   ],
+   "laws": []
+  },
+  {
+   "id": "functional-polymer",
+   "name": "機能性高分子",
+   "field": "POL",
+   "requires": [
+    "addition-polymer"
+   ],
+   "laws": []
+  },
+  {
+   "id": "saccharide",
+   "name": "糖類",
+   "field": "POL",
+   "requires": [
+    "alcohol-carbonyl"
+   ],
+   "laws": []
+  },
+  {
+   "id": "protein-amino",
+   "name": "アミノ酸・タンパク質",
+   "field": "POL",
+   "requires": [
+    "carboxylic-ester"
+   ],
+   "laws": []
+  },
+  {
+   "id": "nucleic-acid",
+   "name": "核酸",
+   "field": "POL",
+   "requires": [
+    "saccharide"
+   ],
+   "laws": []
+  }
+ ]
+}

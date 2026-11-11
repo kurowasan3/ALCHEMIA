@@ -1,0 +1,65 @@
+{
+ "id": "POL-SUG-006",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-04",
+ "topic": "グルコースの構造",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水溶液中のグルコースについて，正しいものをすべて選べ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "α 形・β 形・鎖状構造の3つが平衡状態にあり，鎖状構造がホルミル基をもつので還元性を示す",
+    "grading": "すべて選ぶ{α-グルコースと β-グルコースと鎖状構造が平衡状態にある|鎖状構造はホルミル基をもつ|β-グルコースだけが還元性を示す|環状構造は六員環である|1分子中の不斉炭素原子は鎖状構造で4個である}=1,2,4,5"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "環状構造（六員環）の 1 位の OH の向きで α 形・β 形がある．水溶液中では環が開いた鎖状構造を経て互いに移り変わり，平衡になる．鎖状構造の −CHO が還元性を示す．鎖状構造の不斉炭素原子は C2〜C5 の 4 個．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "saccharide"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "条件判断",
+  "糖",
+  "構造"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

@@ -1,0 +1,100 @@
+{
+ "id": "THE-GAS-006",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-08",
+ "topic": "飽和蒸気圧と凝縮",
+ "course": "化学",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "容積 $10\\,\\mathrm L$ の容器に水 $0.10\\,\\mathrm{mol}$ を入れて 27 ℃ に保った．27 ℃ の水の飽和蒸気圧は $3.6\\times10^{3}\\,\\mathrm{Pa}$，$R=8.3\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$ とし，液体の体積は無視する．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "すべて気体であると仮定したときの圧力"
+     },
+     {
+      "id": "2",
+      "tex": "実際の容器内のようす"
+     },
+     {
+      "id": "3",
+      "tex": "気体として存在する水の物質量"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$2.5\\times10^{4}\\,\\mathrm{Pa}$",
+    "grading": "約{24900.0|2} [Pa]"
+   },
+   {
+    "id": "2",
+    "tex": "液体が存在する",
+    "grading": "選ぶ{すべて気体になっている|液体が存在する}=2"
+   },
+   {
+    "id": "3",
+    "tex": "$0.014\\,\\mathrm{mol}$",
+    "grading": "約{0.014457831325301205|2} [mol]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $P=\\dfrac{nRT}{V}=\\dfrac{0.10\\times8.3\\times10^3\\times300}{10}=2.5\\times10^{4}\\,\\mathrm{Pa}$．"
+    },
+    {
+     "type": "text",
+     "tex": "(2) (1) の値は飽和蒸気圧より大きく，そんな圧力の水蒸気は存在できない．一部が凝縮して液体があり，水蒸気の圧力は飽和蒸気圧 $3.6\\times10^3\\,\\mathrm{Pa}$ になる．"
+    },
+    {
+     "type": "text",
+     "tex": "(3) 気体の水は $\\dfrac{3.6\\times10^3\\times10}{8.3\\times10^3\\times300}=0.0145\\,\\mathrm{mol}$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "vapor-pressure",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "蒸気圧"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

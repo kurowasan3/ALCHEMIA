@@ -1,0 +1,70 @@
+{
+ "id": "POL-RUB-005",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-03",
+ "topic": "SBR の組成（臭素の付加）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 12,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "スチレン-ブタジエンゴム（SBR）$10.0\\,\\mathrm g$ に臭素を付加させると，$18.0\\,\\mathrm g$ の臭素が付加した．ブタジエンの部分には 1,4-付加で生じた C=C が 1 つずつあり，スチレンの部分には付加しないとする．スチレン 1 に対するブタジエンの物質量の比 x を整数で求めよ．H = 1.0，C = 12，Br = 80．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "スチレン : ブタジエン ＝ 1 : 3",
+    "grading": "約{2.9808917197452227|1}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "組成をスチレン 1 : ブタジエン x とすると，その単位の式量は $104+54x$，付加する Br₂ は x mol．$\\dfrac{10.0}{104+54x}\\times x\\times160=18.0$ より $628x=1872$，$x\\fallingdotseq3$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "rubber",
+  "addition-polymer"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "共重合",
+  "臭素の付加"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "polymers",
+  "key": "sbr"
+ }
+}

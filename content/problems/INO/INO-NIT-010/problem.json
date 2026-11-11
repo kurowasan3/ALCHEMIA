@@ -1,0 +1,87 @@
+{
+ "id": "INO-NIT-010",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-03",
+ "topic": "硝酸の性質",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "硝酸について答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "濃硝酸を保存する容器"
+     },
+     {
+      "id": "2",
+      "tex": "濃硝酸に溶けない金属をすべて選べ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "褐色びん（光で分解するため）",
+    "grading": "語{褐色びん|褐色ビン|褐色の瓶|褐色瓶}"
+   },
+   {
+    "id": "2",
+    "tex": "Al・Fe・Ni（不動態）",
+    "grading": "すべて選ぶ{Al|Cu|Fe|Ag|Ni|Zn}=1,3,5"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $\\ce{4HNO3 -> 4NO2 + O2 + 2H2O}$ のように光や熱で分解するので，褐色びんに入れて冷暗所に保存する．(2) Al・Fe・Ni は濃硝酸中で表面に緻密な酸化被膜ができ（不動態），内部が溶けない．Cu・Ag は濃硝酸に溶けて $\\ce{NO2}$ を出す．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "nitrogen-phosphorus"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "硝酸",
+  "不動態"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "n-hno3-light"
+ }
+}

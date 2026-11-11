@@ -1,0 +1,66 @@
+{
+ "id": "INO-AMP-010",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-06",
+ "topic": "イオン化傾向（Al・Zn・Fe・Sn・Pb）",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "compare"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の金属を，イオン化傾向の大きい順に並べよ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "Al ＞ Zn ＞ Fe ＞ Sn ＞ Pb",
+    "grading": "並べる{Fe|Pb|Al|Sn|Zn}=3>5>1>4>2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "イオン化列 … Mg Al Zn Fe Ni Sn Pb (H₂) Cu …．トタン（Zn めっき）は傷ついても Zn が先に酸化されて Fe を守り，ブリキ（Sn めっき）は傷つくと Fe が先にさびる．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "ionization-tendency",
+  "amphoteric"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "比較問題",
+  "イオン化傾向",
+  "めっき"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

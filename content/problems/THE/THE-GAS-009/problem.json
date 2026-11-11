@@ -1,0 +1,88 @@
+{
+ "id": "THE-GAS-009",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-08",
+ "topic": "気体の反応と圧力の変化",
+ "course": "化学",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "容積 $8.3\\,\\mathrm L$ の容器に水素 $0.20\\,\\mathrm{mol}$ と酸素 $0.050\\,\\mathrm{mol}$ を入れ，点火して完全に反応させたあと 127 ℃ に保った．生じた水はすべて気体であるとする．$R=8.3\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "反応後の各気体の物質量"
+     },
+     {
+      "id": "2",
+      "tex": "127 ℃ での全圧"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "水素 0.10 mol，水 0.10 mol",
+    "grading": "水素：約{0.10|2} [mol] ; 水：約{0.10|2} [mol]"
+   },
+   {
+    "id": "2",
+    "tex": "$8.0\\times10^{4}\\,\\mathrm{Pa}$",
+    "grading": "約{80000.0|2} [Pa]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $\\ce{2H2 + O2 -> 2H2O}$．O₂ 0.050 mol がすべて反応し，H₂ 0.10 mol が使われ，H₂O 0.10 mol が生じる．残る H₂ は 0.10 mol．"
+    },
+    {
+     "type": "text",
+     "tex": "(2) 気体の合計 0.20 mol．$P=\\dfrac{0.20\\times8.3\\times10^3\\times400}{8.3}=8.0\\times10^{4}\\,\\mathrm{Pa}$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "ideal-gas"
+ ],
+ "laws": [
+  "ideal-gas-law"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "気体の反応"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

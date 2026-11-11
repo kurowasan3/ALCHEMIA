@@ -1,0 +1,89 @@
+{
+ "id": "INO-TRN-014",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-07",
+ "topic": "銅の電解精錬",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "粗銅を陽極，純銅を陰極にして，硫酸銅(II)水溶液を電気分解した．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "陽極の下にたまる沈殿の名前"
+     },
+     {
+      "id": "2",
+      "tex": "その沈殿に含まれる金属をすべて選べ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "陽極泥",
+    "grading": "語{陽極泥}"
+   },
+   {
+    "id": "2",
+    "tex": "Ag，Au",
+    "grading": "すべて選ぶ{Ag|Au|Zn|Fe|Ni}=1,2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "陽極では Cu と，Cu よりイオン化傾向の大きい Zn・Fe・Ni がイオンとして溶け出す．イオン化傾向の小さい Ag・Au は溶けずに陽極の下にたまる（陽極泥）．陰極では Cu²⁺ だけが還元されて純銅が析出する．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "transition-metals",
+  "electrolysis",
+  "ionization-tendency"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "銅",
+  "電気分解"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "ind-copper"
+ }
+}

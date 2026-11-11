@@ -1,0 +1,97 @@
+{
+ "id": "THE-ION-001",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "酢酸の電離平衡",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "$0.040\\,\\mathrm{mol/L}$ の酢酸水溶液について，酢酸の電離定数を $K_a=2.5\\times10^{-5}\\,\\mathrm{mol/L}$ とする（電離度は 1 より十分小さい）．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "水素イオン濃度"
+     },
+     {
+      "id": "2",
+      "tex": "pH"
+     },
+     {
+      "id": "3",
+      "tex": "電離度"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$1.0\\times10^{-3}\\,\\mathrm{mol/L}$",
+    "grading": "約{1.0e-3|2} [mol/L]"
+   },
+   {
+    "id": "2",
+    "tex": "3.0",
+    "grading": "約{3.0|2}"
+   },
+   {
+    "id": "3",
+    "tex": "0.025",
+    "grading": "約{0.025|2}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $[\\mathrm{H^+}]=\\sqrt{cK_a}=\\sqrt{0.040\\times2.5\\times10^{-5}}=\\sqrt{1.0\\times10^{-6}}=1.0\\times10^{-3}$．(2) pH 3.0．(3) $\\alpha=\\dfrac{[\\mathrm{H^+}]}{c}=\\dfrac{1.0\\times10^{-3}}{0.040}=0.025$（$\\sqrt{K_a/c}$ でも同じ）．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "ionization-equilibrium"
+ ],
+ "laws": [
+  "weak-acid-h"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "電離平衡"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "laws",
+  "key": "weak-acid-h"
+ }
+}

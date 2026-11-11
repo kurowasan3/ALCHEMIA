@@ -1,0 +1,108 @@
+{
+ "id": "ORG-ARO-004",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-05",
+ "topic": "クロロベンゼンを経るフェノールの製法",
+ "course": "化学",
+ "level": 1,
+ "minutes": 4,
+ "format": [
+  "pathway"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応経路について，空欄に当てはまる化合物の名称（または示性式）を答えよ．また，（ア）の反応に用いる試薬・条件として適当なものを選べ．\\[\\ce{C6H6} \\xrightarrow{\\text{（ア）}} \\boxed{\\,\\text{A}\\,} \\xrightarrow{\\text{NaOH 水溶液・高温高圧}} \\boxed{\\,\\text{B}\\,} \\xrightarrow{\\text{CO₂ と水}} \\ce{C6H5OH}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A に当てはまる化合物"
+     },
+     {
+      "id": "2",
+      "tex": "B に当てはまる化合物"
+     },
+     {
+      "id": "3",
+      "tex": "（ア）の試薬・条件"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "クロロベンゼン　$\\ce{C6H5Cl}$",
+    "grading": "A：語{クロロベンゼン|C6H5Cl}"
+   },
+   {
+    "id": "2",
+    "tex": "ナトリウムフェノキシド　$\\ce{C6H5ONa}$",
+    "grading": "B：語{ナトリウムフェノキシド|C6H5ONa}"
+   },
+   {
+    "id": "3",
+    "tex": "Cl₂（Fe 触媒）",
+    "grading": "選ぶ{Cl₂（Fe 触媒）|Cl₂・光|濃硫酸・加熱|HCl}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ベンゼン → クロロベンゼン：Cl₂（Fe 触媒）（塩素化（置換））　$\\ce{C6H6 + Cl2 -> C6H5Cl + HCl}$"
+    },
+    {
+     "type": "text",
+     "tex": "クロロベンゼン → ナトリウムフェノキシド：NaOH 水溶液・高温高圧（置換）　$\\ce{C6H5Cl + 2NaOH -> C6H5ONa + NaCl + H2O}$"
+    },
+    {
+     "type": "text",
+     "tex": "ナトリウムフェノキシド → フェノール：CO₂ と水（または塩酸）（弱酸の遊離）　$\\ce{C6H5ONa + CO2 + H2O -> C6H5OH + NaHCO3}$．フェノールは炭酸より弱い酸"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "aromatic"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-BENZENE-ADD"
+ ],
+ "tags": [
+  "反応経路",
+  "フェノールの製法"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "idea": {
+  "tex": "Fe（FeCl₃）触媒では置換反応（クロロベンゼン）．光を当てると付加反応（ヘキサクロロシクロヘキサン）．"
+ },
+ "zukan": {
+  "page": "organic",
+  "key": "chlorobenzene"
+ }
+}

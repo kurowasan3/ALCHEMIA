@@ -1,0 +1,65 @@
+{
+ "id": "POL-SUG-004",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-04",
+ "topic": "デンプンの加水分解",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "デンプン $81.0\\,\\mathrm g$ を完全に加水分解すると，グルコースは何 g 得られるか．原子量は H = 1.0，C = 12，O = 16 とする．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$90\\,\\mathrm g$",
+    "grading": "約{90|3} [g]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{(C6H10O5)_{n} + nH2O -> nC6H12O6}$．繰り返し単位 $\\ce{C6H10O5}$（162）1 mol からグルコース（180）1 mol．$\\dfrac{81.0}{162}\\times180=90\\,\\mathrm g$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "saccharide"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "糖",
+  "加水分解"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

@@ -1,0 +1,88 @@
+{
+ "id": "THE-EQL-008",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "色の変化から反応エンタルピーを考える",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "$\\ce{2NO2 <=> N2O4}$ の平衡にある混合気体（赤褐色）を冷やすと，色がうすくなった．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "冷やしたとき平衡が移動した向き"
+     },
+     {
+      "id": "2",
+      "tex": "右向きの反応は発熱反応か吸熱反応か"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "右（N₂O₄ が増える向き）",
+    "grading": "選ぶ{右|左}=1"
+   },
+   {
+    "id": "2",
+    "tex": "発熱反応",
+    "grading": "選ぶ{発熱反応|吸熱反応}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "色がうすくなった＝赤褐色の NO₂ が減って無色の N₂O₄ が増えた（右へ移動）．温度を下げると発熱の向きに移動するので，右向き（N₂O₄ の生成）は発熱反応．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "chemical-equilibrium"
+ ],
+ "laws": [
+  "le-chatelier"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "条件判断",
+  "平衡移動"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "n-no2-n2o4"
+ }
+}

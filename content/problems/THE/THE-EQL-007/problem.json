@@ -1,0 +1,92 @@
+{
+ "id": "THE-EQL-007",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "圧平衡定数（N₂O₄ の解離）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "$\\ce{N2O4 <=> 2NO2}$ について，ある温度・全圧 $1.0\\times10^{5}\\,\\mathrm{Pa}$ で $\\ce{N2O4}$ の解離度が 0.20 であった．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "はじめ N₂O₄ が 1 mol あったとして，平衡時の各物質の物質量"
+     },
+     {
+      "id": "2",
+      "tex": "圧平衡定数 $K_p$"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{N2O4}$ 0.80 mol，$\\ce{NO2}$ 0.40 mol",
+    "grading": "N2O4：約{0.80|2} [mol] ; NO2：約{0.40|2} [mol]"
+   },
+   {
+    "id": "2",
+    "tex": "$1.7\\times10^{4}\\,\\mathrm{Pa}$",
+    "grading": "約{16666.66666666667|2} [Pa]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) N₂O₄ 1 mol のうち 0.20 mol が解離して NO₂ 0.40 mol．合計 1.20 mol．"
+    },
+    {
+     "type": "text",
+     "tex": "(2) 分圧 $p_{\\mathrm{N_2O_4}}=\\dfrac{0.80}{1.20}P$，$p_{\\mathrm{NO_2}}=\\dfrac{0.40}{1.20}P$．$K_p=\\dfrac{p_{\\mathrm{NO_2}}^2}{p_{\\mathrm{N_2O_4}}}=\\dfrac{4\\alpha^2}{1-\\alpha^2}P=\\dfrac{4\\times0.040}{0.96}\\times1.0\\times10^5\\fallingdotseq1.7\\times10^{4}\\,\\mathrm{Pa}$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "chemical-equilibrium"
+ ],
+ "laws": [
+  "kp-kc"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "圧平衡定数"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "laws",
+  "key": "kp-kc"
+ }
+}

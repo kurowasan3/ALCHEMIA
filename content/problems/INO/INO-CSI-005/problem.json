@@ -1,0 +1,95 @@
+{
+ "id": "INO-CSI-005",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-04",
+ "topic": "ケイ素と二酸化ケイ素",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ケイ素の化合物について答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ケイ酸ナトリウムに水を加えて加熱して得られる，粘性の大きい液体"
+     },
+     {
+      "id": "2",
+      "tex": "ケイ酸を加熱・乾燥して得られる乾燥剤"
+     },
+     {
+      "id": "3",
+      "tex": "ガラスを溶かすので，ポリエチレンの容器に保存する酸"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "水ガラス",
+    "grading": "語{水ガラス}"
+   },
+   {
+    "id": "2",
+    "tex": "シリカゲル",
+    "grading": "語{シリカゲル}"
+   },
+   {
+    "id": "3",
+    "tex": "フッ化水素酸",
+    "grading": "語{フッ化水素酸|フッ化水素|HF}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ケイ酸ナトリウムに水を加えて加熱すると水ガラス．これに塩酸を加えて得たケイ酸を加熱・乾燥するとシリカゲル（多孔質で表面に OH が多く，乾燥剤）．ガラスの主成分 $\\ce{SiO2}$ はフッ化水素酸に溶ける：$\\ce{SiO2 + 6HF -> H2SiF6 + 2H2O}$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "carbon-silicon"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "ケイ素"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "si-silicic"
+ }
+}

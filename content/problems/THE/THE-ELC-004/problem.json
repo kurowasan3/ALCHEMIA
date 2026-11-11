@@ -1,0 +1,98 @@
+{
+ "id": "THE-ELC-004",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-07",
+ "topic": "ファラデーの法則（硫酸銅(II)の電気分解）",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "白金電極で硫酸銅(II) 水溶液を $2.00\\,\\mathrm A$ で 965 秒間電気分解した．$F=9.65\\times10^{4}\\,\\mathrm{C/mol}$，Cu = 63.5 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "流れた電子の物質量"
+     },
+     {
+      "id": "2",
+      "tex": "陰極に析出した銅の質量"
+     },
+     {
+      "id": "3",
+      "tex": "陽極で発生した気体の標準状態での体積"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$2.00\\times10^{-2}\\,\\mathrm{mol}$",
+    "grading": "約{0.02|3} [mol]"
+   },
+   {
+    "id": "2",
+    "tex": "$0.635\\,\\mathrm g$",
+    "grading": "約{0.635|3} [g]"
+   },
+   {
+    "id": "3",
+    "tex": "$112\\,\\mathrm{mL}$",
+    "grading": "約{111.99999999999999|3} [mL]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $Q=It=2.00\\times965=1930\\,\\mathrm C$，$1930/96500=0.0200\\,\\mathrm{mol}$．(2) $\\ce{Cu^2+ + 2e- -> Cu}$ より Cu は $0.0100\\,\\mathrm{mol}$，$0.635\\,\\mathrm g$．(3) 陽極 $\\ce{2H2O -> O2 + 4H+ + 4e-}$ より O₂ は $0.00500\\,\\mathrm{mol}$，$0.00500\\times22.4\\times1000=112\\,\\mathrm{mL}$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "electrolysis"
+ ],
+ "laws": [
+  "faraday"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "電気分解",
+  "ファラデー"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "laws",
+  "key": "faraday"
+ }
+}

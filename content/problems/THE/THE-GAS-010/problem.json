@@ -1,0 +1,71 @@
+{
+ "id": "THE-GAS-010",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-08",
+ "topic": "同温・同圧での気体の密度",
+ "course": "化学",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "compare"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "同温・同圧で，次の気体を密度の大きい順に並べよ．H = 1.0，C = 12，N = 14，O = 16．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$\\ce{CO2}>\\ce{O2}>\\ce{N2}>\\ce{NH3}>\\ce{H2}$",
+    "grading": "並べる{N2|H2|CO2|NH3|O2}=3>5>1>4>2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "同温・同圧では，同じ体積に同じ数の分子が含まれる（アボガドロの法則）ので，密度は分子量に比例する：CO₂ 44，O₂ 32，N₂ 28，NH₃ 17，H₂ 2．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "ideal-gas",
+  "mole"
+ ],
+ "laws": [
+  "avogadro"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "比較問題",
+  "気体の密度"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "laws",
+  "key": "avogadro"
+ }
+}

@@ -1,0 +1,64 @@
+{
+ "id": "ORG-STR-005",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-01",
+ "topic": "元素分析の吸収管の順",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "元素分析で燃焼後の気体を 2 本の吸収管に通す．1 本目に塩化カルシウム，2 本目にソーダ石灰を入れる理由として正しいものを選べ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "ソーダ石灰は CO₂ と H₂O の両方を吸収するので，先に塩化カルシウムで H₂O だけを吸収させる",
+    "grading": "選ぶ{塩化カルシウムは CO₂ だけを吸収するから|ソーダ石灰は CO₂ と H₂O の両方を吸収するので，先に H₂O だけを除くため|ソーダ石灰は高温で分解するから|順番はどちらでもよい}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "塩化カルシウム（中性）は水だけを吸収する．ソーダ石灰（塩基性）は水と二酸化炭素の両方を吸収するので，先に通すと水と CO₂ の質量を区別できない．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "elemental-analysis"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "条件判断",
+  "元素分析"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

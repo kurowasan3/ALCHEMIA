@@ -1,0 +1,87 @@
+{
+ "id": "POL-SUG-007",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-04",
+ "topic": "トリアセチルセルロース",
+ "course": "化学",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "セルロース $16.2\\,\\mathrm g$ のヒドロキシ基をすべてアセチル化して，トリアセチルセルロース $[\\ce{C6H7O2(OCOCH3)3}]_n$ をつくった．H = 1.0，C = 12，O = 16．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "得られるトリアセチルセルロースの質量"
+     },
+     {
+      "id": "2",
+      "tex": "必要な無水酢酸（分子量 102）の質量"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$28.8\\,\\mathrm g$",
+    "grading": "約{28.8|3} [g]"
+   },
+   {
+    "id": "2",
+    "tex": "$30.6\\,\\mathrm g$",
+    "grading": "約{30.6|3} [g]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 繰り返し単位 $\\ce{C6H10O5}$（162）は OH を 3 個もち，すべてアセチル化すると $\\ce{C6H7O2(OCOCH3)3}$（288）．$16.2/162=0.100\\,\\mathrm{mol}$ なので $28.8\\,\\mathrm g$．(2) OH 1 個に無水酢酸 1 分子（102）：$0.300\\times102=30.6\\,\\mathrm g$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "saccharide"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "セルロース",
+  "アセテート"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "polymers",
+  "key": "acetate"
+ }
+}

@@ -1,0 +1,100 @@
+{
+ "id": "THE-ELC-001",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-07",
+ "topic": "ダニエル電池",
+ "course": "化学",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ダニエル電池 $(-)\\ \\mathrm{Zn}\\,|\\,\\mathrm{ZnSO_4aq}\\,|\\,\\mathrm{CuSO_4aq}\\,|\\,\\mathrm{Cu}\\ (+)$ について答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "負極"
+     },
+     {
+      "id": "2",
+      "tex": "負極の反応"
+     },
+     {
+      "id": "3",
+      "tex": "正極の反応"
+     },
+     {
+      "id": "4",
+      "tex": "電子が導線を流れる向き"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "亜鉛（Zn）",
+    "grading": "選ぶ{亜鉛|銅}=1"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{Zn -> Zn^2+ + 2e-}$",
+    "grading": "選ぶ{$\\ce{Zn -> Zn^2+ + 2e-}$|$\\ce{Cu^2+ + 2e- -> Cu}$|$\\ce{2H+ + 2e- -> H2}$}=1"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{Cu^2+ + 2e- -> Cu}$",
+    "grading": "選ぶ{$\\ce{Zn -> Zn^2+ + 2e-}$|$\\ce{Cu^2+ + 2e- -> Cu}$|$\\ce{2H+ + 2e- -> H2}$}=2"
+   },
+   {
+    "id": "4",
+    "tex": "亜鉛板から銅板",
+    "grading": "選ぶ{亜鉛板から銅板|銅板から亜鉛板}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "イオン化傾向の大きい Zn が負極で酸化され，電子は導線を通って正極の Cu 板へ流れ，Cu²⁺ が還元されて Cu が析出する（電流の向きは逆の銅板 → 亜鉛板）．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "battery"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "電池"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

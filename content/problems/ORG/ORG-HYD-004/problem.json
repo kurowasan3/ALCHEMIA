@@ -1,0 +1,91 @@
+{
+ "id": "ORG-HYD-004",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-02",
+ "topic": "炭化水素の一般式",
+ "course": "化学",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の炭化水素の一般式を，炭素数 n を用いて答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "アルカン"
+     },
+     {
+      "id": "2",
+      "tex": "アルケン"
+     },
+     {
+      "id": "3",
+      "tex": "アルキン"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{C_nH_{2n+2}}$",
+    "grading": "語{CnH2n+2}"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{C_nH_{2n}}$",
+    "grading": "語{CnH2n}"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{C_nH_{2n-2}}$",
+    "grading": "語{CnH2n-2}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "アルカン（単結合のみ・鎖式）$\\mathrm{C_nH_{2n+2}}$，アルケン（二重結合 1 つ）と シクロアルカン $\\mathrm{C_nH_{2n}}$，アルキン（三重結合 1 つ）$\\mathrm{C_nH_{2n-2}}$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "hydrocarbon"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "一般式"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

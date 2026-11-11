@@ -1,0 +1,86 @@
+{
+ "id": "THE-PER-009",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-02",
+ "topic": "陽性・陰性の強さ",
+ "course": "化学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "周期表で，次の性質が最も強い元素がある位置を選べ（貴ガスは除く）．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "陽イオンへのなりやすさ（金属性）"
+     },
+     {
+      "id": "2",
+      "tex": "電気陰性度"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "左下",
+    "grading": "選ぶ{左上|左下|右上|右下}=2"
+   },
+   {
+    "id": "2",
+    "tex": "右上",
+    "grading": "選ぶ{左上|左下|右上|右下}=3"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "左下ほどイオン化エネルギーが小さく陽イオンになりやすい（金属性が強い）．右上ほど電気陰性度が大きく陰イオンになりやすい（非金属性が強い）．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "periodicity"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "条件判断",
+  "周期性"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "elements",
+  "key": "Cs"
+ }
+}

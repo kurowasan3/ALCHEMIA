@@ -1,0 +1,104 @@
+{
+ "id": "INO-TRN-012",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-07",
+ "topic": "鉄の酸化数と化合物の色",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の鉄の化合物（またはイオン）の色を答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{Fe^2+}$ の水溶液"
+     },
+     {
+      "id": "2",
+      "tex": "$\\ce{Fe^3+}$ の水溶液"
+     },
+     {
+      "id": "3",
+      "tex": "水酸化鉄(II)"
+     },
+     {
+      "id": "4",
+      "tex": "水酸化鉄(III)"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "淡緑色",
+    "grading": "語{淡緑|淡緑色}"
+   },
+   {
+    "id": "2",
+    "tex": "黄褐色",
+    "grading": "語{黄褐|黄褐色}"
+   },
+   {
+    "id": "3",
+    "tex": "緑白色",
+    "grading": "語{緑白|緑白色}"
+   },
+   {
+    "id": "4",
+    "tex": "赤褐色",
+    "grading": "語{赤褐|赤褐色}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "Fe²⁺ は淡緑色，Fe³⁺ は黄褐色．水酸化鉄(II) は緑白色で，空気中で酸化されて赤褐色の水酸化鉄(III) になる．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "transition-metals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "鉄"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "ions",
+  "key": "Fe^2+"
+ }
+}

@@ -1,0 +1,75 @@
+<svg version='1.1' baseProfile='full'
+              xmlns='http://www.w3.org/2000/svg'
+                      xml:space='preserve' viewBox='0 0 260 180'>
+<path d='M 160.1,86.5 L 142.2,96.8' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 142.2,96.8 L 118.0,82.8' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 118.0,82.8 L 100.1,93.1' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 143.1,96.3 L 142.2,96.8 L 141.0,96.1' style='fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 119.2,83.5 L 118.0,82.8 L 117.1,83.3' style='fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 161.0 82.9
+Q 161.0 80.0, 162.4 78.4
+Q 163.8 76.8, 166.5 76.8
+Q 169.1 76.8, 170.5 78.4
+Q 171.9 80.0, 171.9 82.9
+Q 171.9 85.8, 170.5 87.4
+Q 169.1 89.0, 166.5 89.0
+Q 163.9 89.0, 162.4 87.4
+Q 161.0 85.8, 161.0 82.9
+M 166.5 87.7
+Q 168.3 87.7, 169.3 86.5
+Q 170.3 85.3, 170.3 82.9
+Q 170.3 80.5, 169.3 79.4
+Q 168.3 78.2, 166.5 78.2
+Q 164.7 78.2, 163.7 79.3
+Q 162.7 80.5, 162.7 82.9
+Q 162.7 85.3, 163.7 86.5
+Q 164.7 87.7, 166.5 87.7
+' fill='currentColor'/>
+<path d='M 173.8 77.0
+L 175.4 77.0
+L 175.4 82.0
+L 181.5 82.0
+L 181.5 77.0
+L 183.1 77.0
+L 183.1 88.9
+L 181.5 88.9
+L 181.5 83.4
+L 175.4 83.4
+L 175.4 88.9
+L 173.8 88.9
+L 173.8 77.0
+' fill='currentColor'/>
+<path d='M 76.5 90.9
+L 78.1 90.9
+L 78.1 96.0
+L 84.2 96.0
+L 84.2 90.9
+L 85.8 90.9
+L 85.8 102.8
+L 84.2 102.8
+L 84.2 97.3
+L 78.1 97.3
+L 78.1 102.8
+L 76.5 102.8
+L 76.5 90.9
+' fill='currentColor'/>
+<path d='M 88.3 96.8
+Q 88.3 94.0, 89.7 92.4
+Q 91.1 90.8, 93.7 90.8
+Q 96.4 90.8, 97.8 92.4
+Q 99.2 94.0, 99.2 96.8
+Q 99.2 99.7, 97.7 101.3
+Q 96.3 103.0, 93.7 103.0
+Q 91.1 103.0, 89.7 101.3
+Q 88.3 99.7, 88.3 96.8
+M 93.7 101.6
+Q 95.5 101.6, 96.5 100.4
+Q 97.5 99.2, 97.5 96.8
+Q 97.5 94.5, 96.5 93.3
+Q 95.5 92.1, 93.7 92.1
+Q 91.9 92.1, 90.9 93.3
+Q 89.9 94.5, 89.9 96.8
+Q 89.9 99.2, 90.9 100.4
+Q 91.9 101.6, 93.7 101.6
+' fill='currentColor'/>
+</svg>

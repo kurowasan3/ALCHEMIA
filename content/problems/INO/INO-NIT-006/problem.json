@@ -1,0 +1,70 @@
+{
+ "id": "INO-NIT-006",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-03",
+ "topic": "硝酸の光分解（係数）",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "equation"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応式の係数 a，b，c，d を答えよ．係数が 1 のときも 1 と書くこと．\\\\（硝酸の光分解）\\[\\boxed{\\,a\\,}\\,\\ce{HNO3} \\ce{->} \\boxed{\\,b\\,}\\,\\ce{NO2} + \\boxed{\\,c\\,}\\,\\ce{O2} + \\boxed{\\,d\\,}\\,\\ce{H2O}\\]"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "a=4，b=4，c=1，d=2",
+    "grading": "a：4 ; b：4 ; c：1 ; d：2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{4HNO3 -> 4NO2 + O2 + 2H2O}$．褐色びんに保存する．酸化剤・還元剤の半反応式をつくり，電子の数をそろえて足し合わせると係数が決まる．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "nitrogen-phosphorus",
+  "redox"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応式補完",
+  "反応式",
+  "係数"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "n-hno3-light"
+ }
+}

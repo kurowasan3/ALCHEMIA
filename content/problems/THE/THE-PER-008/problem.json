@@ -1,0 +1,69 @@
+{
+ "id": "THE-PER-008",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-02",
+ "topic": "遷移元素",
+ "course": "化学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の元素のうち，遷移元素をすべて選べ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "Fe，Cu，Mn，Cr",
+    "grading": "すべて選ぶ{Fe|Ca|Cu|Al|Mn|Cr|S}=1,3,5,6"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "遷移元素は 3〜12 族．典型元素と違い，同じ周期の隣どうしで性質が似ている．多くは複数の酸化数をとり，有色のイオン・化合物をつくる．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "periodicity",
+  "transition-metals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "条件判断",
+  "遷移元素"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "elements",
+  "key": "Mn"
+ }
+}

@@ -1,0 +1,66 @@
+{
+ "id": "THE-SOL-009",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-09",
+ "topic": "浸透圧の比較",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "compare"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "同じ温度で，次の $0.10\\,\\mathrm{mol/L}$ 水溶液を浸透圧の大きい順に並べよ（電解質は完全に電離する）．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "塩化カルシウム ＞ 塩化ナトリウム ＞ スクロース",
+    "grading": "並べる{スクロース|塩化カルシウム|塩化ナトリウム}=2>3>1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "浸透圧 $\\Pi=cRT$ の c は溶質粒子のモル濃度：スクロース 0.10，NaCl 0.20，CaCl₂ 0.30 mol/L．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "solution-colligative"
+ ],
+ "laws": [
+  "vant-hoff"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "比較問題",
+  "浸透圧"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

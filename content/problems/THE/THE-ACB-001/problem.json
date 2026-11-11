@@ -1,0 +1,88 @@
+{
+ "id": "THE-ACB-001",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-05",
+ "topic": "ブレンステッド・ローリーの酸・塩基",
+ "course": "化学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応で，下線を引いた分子（水）は酸・塩基のどちらとしてはたらいているか．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{NH3 + H2O <=> NH4+ + OH-}$ の $\\ce{H2O}$"
+     },
+     {
+      "id": "2",
+      "tex": "$\\ce{HCl + H2O -> H3O+ + Cl-}$ の $\\ce{H2O}$"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "酸",
+    "grading": "選ぶ{酸|塩基}=1"
+   },
+   {
+    "id": "2",
+    "tex": "塩基",
+    "grading": "選ぶ{酸|塩基}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) H₂O は NH₃ に H⁺ を与えている → 酸．(2) H₂O は HCl から H⁺ を受け取っている → 塩基．水は相手によって酸にも塩基にもなる．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "acid-base"
+ ],
+ "laws": [
+  "bronsted"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "条件判断",
+  "酸・塩基の定義"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "laws",
+  "key": "bronsted"
+ }
+}

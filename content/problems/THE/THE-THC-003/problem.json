@@ -1,0 +1,70 @@
+{
+ "id": "THE-THC-003",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-10",
+ "topic": "結合エネルギーから反応エンタルピー",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "結合エネルギー（kJ/mol）を H−H 436，Cl−Cl 243，H−Cl 432 として，$\\ce{H2 + Cl2 -> 2HCl}$ の反応エンタルピーを求めよ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$-185\\,\\mathrm{kJ}$",
+    "grading": "約{-185|3} [kJ]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "切る結合 $436+243=679$（吸収），できる結合 $2\\times432=864$（放出）．$\\Delta H=679-864=-185\\,\\mathrm{kJ}$（発熱）．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "enthalpy"
+ ],
+ "laws": [
+  "bond-energy"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "結合エネルギー"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "laws",
+  "key": "bond-energy"
+ }
+}

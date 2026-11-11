@@ -1,0 +1,95 @@
+{
+ "id": "ORG-HYD-001",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-02",
+ "topic": "カーバイドからポリ塩化ビニル",
+ "course": "化学",
+ "level": 0,
+ "minutes": 4,
+ "format": [
+  "pathway"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応経路について，空欄に当てはまる化合物の名称（または示性式）を答えよ．\\[\\ce{CaC2} \\xrightarrow{\\text{水}} \\boxed{\\,\\text{A}\\,} \\xrightarrow{\\text{HCl}} \\boxed{\\,\\text{B}\\,} \\xrightarrow{\\text{付加重合}} \\ce{[CH2-CHCl]_{n}}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A に当てはまる化合物"
+     },
+     {
+      "id": "2",
+      "tex": "B に当てはまる化合物"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "アセチレン　$\\ce{CH#CH}$",
+    "grading": "A：語{アセチレン|CH#CH}"
+   },
+   {
+    "id": "2",
+    "tex": "塩化ビニル　$\\ce{CH2=CHCl}$",
+    "grading": "B：語{塩化ビニル|CH2=CHCl}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "炭化カルシウム → アセチレン：水（加水分解）　$\\ce{CaC2 + 2H2O -> Ca(OH)2 + C2H2}$"
+    },
+    {
+     "type": "text",
+     "tex": "アセチレン → 塩化ビニル：HCl（触媒）（付加）　$\\ce{CH#CH + HCl -> CH2=CHCl}$"
+    },
+    {
+     "type": "text",
+     "tex": "塩化ビニル → ポリ塩化ビニル：付加重合（付加重合）"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "hydrocarbon",
+  "addition-polymer"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応経路",
+  "アセチレン"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "organic",
+  "key": "acetylene"
+ }
+}

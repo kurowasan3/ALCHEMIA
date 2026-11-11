@@ -1,0 +1,68 @@
+{
+ "id": "INO-PPT-010",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-08",
+ "topic": "硫酸イオンと白色沈殿をつくるイオン",
+ "course": "化学",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次のイオンを含む水溶液に希硫酸を加えたとき，白色沈殿が生じるものをすべて選べ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$\\ce{Ba^2+}$，$\\ce{Ca^2+}$，$\\ce{Pb^2+}$",
+    "grading": "すべて選ぶ{$\\ce{Ba^2+}$|$\\ce{Ca^2+}$|$\\ce{Pb^2+}$|$\\ce{Cu^2+}$|$\\ce{Mg^2+}$|$\\ce{Zn^2+}$}=1,2,3"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "硫酸塩が沈殿するのは $\\ce{BaSO4}$・$\\ce{CaSO4}$・$\\ce{PbSO4}$（と $\\ce{SrSO4}$）．いずれも白色．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "precipitation",
+  "complex-ion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "条件判断",
+  "イオンの分離"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "ions"
+ }
+}

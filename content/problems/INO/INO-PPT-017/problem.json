@@ -1,0 +1,69 @@
+{
+ "id": "INO-PPT-017",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-08",
+ "topic": "系統分析：塩基性で硫化物として沈殿するイオン",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "金属イオンの系統分析で，「酸性では硫化水素で沈殿しないが，塩基性にして硫化水素を通じると沈殿する」イオンを，次からすべて選べ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$\\ce{Zn^2+}$，$\\ce{Mn^2+}$，$\\ce{Ni^2+}$",
+    "grading": "すべて選ぶ{$\\ce{Zn^2+}$|$\\ce{Cu^2+}$|$\\ce{Mn^2+}$|$\\ce{Ca^2+}$|$\\ce{Ni^2+}$|$\\ce{Ag+}$}=1,3,5"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "第4属（$\\ce{ZnS}$ 白・$\\ce{MnS}$ 淡桃・$\\ce{NiS}$ 黒）．$\\ce{Cu^2+}$・$\\ce{Ag+}$ は酸性でも沈殿し，$\\ce{Ca^2+}$ は硫化物をつくらない．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "precipitation",
+  "complex-ion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "条件判断",
+  "系統分析"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "ions",
+  "label": "系統分析"
+ }
+}

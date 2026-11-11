@@ -1,0 +1,69 @@
+{
+ "id": "POL-PRT-004",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-05",
+ "topic": "タンパク質の変性",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "タンパク質が変性する原因となるものをすべて選べ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "加熱，強酸，重金属イオン，有機溶媒（エタノール）",
+    "grading": "すべて選ぶ{加熱|強酸を加える|重金属イオン（Cu²⁺ など）を加える|エタノールを加える|少量の水でうすめる}=1,2,3,4"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "変性は，水素結合などでつくられた立体構造（二次〜四次構造）がこわれること．一次構造（アミノ酸の配列）は変わらない．うすめても変性しない．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "protein-amino"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "条件判断",
+  "タンパク質",
+  "変性"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "polymers",
+  "key": "protein"
+ }
+}

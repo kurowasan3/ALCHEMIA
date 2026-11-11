@@ -1,0 +1,66 @@
+{
+ "id": "THE-EQL-001",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "反応速度を大きくする条件",
+ "course": "化学",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "反応速度を大きくする操作をすべて選べ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "温度を上げる，反応物の濃度を大きくする，触媒を加える，固体を細かく砕く",
+    "grading": "すべて選ぶ{温度を上げる|反応物の濃度を大きくする|触媒を加える|固体の反応物を細かく砕く|生成物を取り除く}=1,2,3,4"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "温度を上げると活性化エネルギーを超える分子の割合が増え，濃度・表面積を大きくすると衝突の回数が増える．触媒は活性化エネルギーの小さい経路をつくる．生成物を除いても正反応の速さ自体は変わらない（平衡は移動する）．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "reaction-rate"
+ ],
+ "laws": [
+  "arrhenius"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "条件判断",
+  "反応速度"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

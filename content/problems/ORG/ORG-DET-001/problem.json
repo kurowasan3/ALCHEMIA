@@ -1,0 +1,130 @@
+{
+ "id": "ORG-DET-001",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-06",
+ "topic": "芳香族化合物の分離",
+ "course": "化学",
+ "level": 3,
+ "minutes": 12,
+ "format": [
+  "condition",
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "アニリン，フェノール，安息香酸，トルエンを含むジエチルエーテル溶液がある．これを分液漏斗に入れ，次の操作を順に行った．\\\\操作1：希塩酸を加えて振り混ぜ，水層 A とエーテル層に分けた．\\\\操作2：エーテル層に炭酸水素ナトリウム水溶液を加えて振り混ぜ，水層 B とエーテル層に分けた．\\\\操作3：エーテル層に水酸化ナトリウム水溶液を加えて振り混ぜ，水層 C とエーテル層 D に分けた．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "水層 A に移った化合物"
+     },
+     {
+      "id": "2",
+      "tex": "水層 B に移った化合物"
+     },
+     {
+      "id": "3",
+      "tex": "水層 C に移った化合物"
+     },
+     {
+      "id": "4",
+      "tex": "エーテル層 D に残った化合物"
+     },
+     {
+      "id": "5",
+      "tex": "水層 C からもとの化合物を遊離させる操作"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "アニリン（アニリン塩酸塩として）",
+    "grading": "語{アニリン|アニリン塩酸塩|C6H5NH3Cl|C6H5NH2}"
+   },
+   {
+    "id": "2",
+    "tex": "安息香酸（安息香酸ナトリウムとして）",
+    "grading": "語{安息香酸|安息香酸ナトリウム|C6H5COONa|C6H5COOH}"
+   },
+   {
+    "id": "3",
+    "tex": "フェノール（ナトリウムフェノキシドとして）",
+    "grading": "語{フェノール|ナトリウムフェノキシド|C6H5ONa|C6H5OH}"
+   },
+   {
+    "id": "4",
+    "tex": "トルエン",
+    "grading": "語{トルエン|C6H5CH3}"
+   },
+   {
+    "id": "5",
+    "tex": "水層 C に二酸化炭素を十分に通じる（または塩酸を加える）",
+    "grading": "選ぶ{二酸化炭素を十分に通じる|水酸化ナトリウムをさらに加える|炭酸水素ナトリウムを加える|水を加えて加熱する}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "操作1：塩基のアニリンが塩酸と塩をつくって水層 A へ（$\\ce{C6H5NH2 + HCl -> C6H5NH3Cl}$）．"
+    },
+    {
+     "type": "text",
+     "tex": "操作2：炭酸より強い酸の安息香酸だけが $\\ce{NaHCO3}$ と反応して水層 B へ（$\\ce{C6H5COOH + NaHCO3 -> C6H5COONa + H2O + CO2}$）．フェノールは炭酸より弱いので反応しない．"
+    },
+    {
+     "type": "text",
+     "tex": "操作3：フェノールが NaOH と中和して水層 C へ．中性のトルエンはエーテル層 D に残る．"
+    },
+    {
+     "type": "text",
+     "tex": "(5) フェノールは炭酸より弱い酸なので，$\\ce{C6H5ONa + CO2 + H2O -> C6H5OH + NaHCO3}$ で遊離する．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "organic-test",
+  "aromatic",
+  "acid-base"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-PHENOL-NAHCO3"
+ ],
+ "tags": [
+  "条件判断",
+  "分離"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "organic",
+  "key": "phenol"
+ }
+}

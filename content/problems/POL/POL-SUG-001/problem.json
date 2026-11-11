@@ -1,0 +1,72 @@
+{
+ "id": "POL-SUG-001",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-04",
+ "topic": "還元性を示す糖",
+ "course": "化学",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の糖のうち，フェーリング液を還元するものをすべて選べ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "グルコース，フルクトース，マルトース",
+    "grading": "すべて選ぶ{グルコース|フルクトース|スクロース|マルトース|デンプン}=1,2,4"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "単糖はすべて還元性を示す（フルクトースもケトースだが示す）．二糖ではマルトース・ラクトースは示すが，スクロースは還元性を示す部分どうしで結合しているので示さない．デンプンは示さない．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "saccharide",
+  "organic-test"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-SUCROSE-REDUCE"
+ ],
+ "tags": [
+  "条件判断",
+  "糖",
+  "還元性"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "tests",
+  "key": "fehling"
+ }
+}

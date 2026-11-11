@@ -1,0 +1,93 @@
+{
+ "id": "THE-ELC-003",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-07",
+ "topic": "水溶液の電気分解の生成物",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の水溶液を電気分解したとき，陽極・陰極で生じる物質を選べ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "塩化ナトリウム水溶液（炭素電極）"
+     },
+     {
+      "id": "2",
+      "tex": "硫酸銅(II) 水溶液（白金電極）"
+     },
+     {
+      "id": "3",
+      "tex": "水酸化ナトリウム水溶液（白金電極）"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "陽極 Cl₂，陰極 H₂",
+    "grading": "陽極：選ぶ{H2|O2|Cl2|Cu|Na}=3 ; 陰極：選ぶ{H2|O2|Cl2|Cu|Na}=1"
+   },
+   {
+    "id": "2",
+    "tex": "陽極 O₂，陰極 Cu",
+    "grading": "陽極：選ぶ{H2|O2|Cl2|Cu|Na}=2 ; 陰極：選ぶ{H2|O2|Cl2|Cu|Na}=4"
+   },
+   {
+    "id": "3",
+    "tex": "陽極 O₂，陰極 H₂",
+    "grading": "陽極：選ぶ{H2|O2|Cl2|Cu|Na}=2 ; 陰極：選ぶ{H2|O2|Cl2|Cu|Na}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "陰極：イオン化傾向の小さい Cu²⁺・Ag⁺ は金属が析出．Na⁺ などは還元されにくいので水（塩基性なら H₂O，酸性なら H⁺）が還元されて H₂．陽極（Pt・C）：Cl⁻ は Cl₂，SO₄²⁻・NO₃⁻ は酸化されにくいので水（または OH⁻）が酸化されて O₂．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "electrolysis"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-ELECTROLYSIS-NA"
+ ],
+ "tags": [
+  "条件判断",
+  "電気分解"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

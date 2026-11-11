@@ -1,0 +1,93 @@
+{
+ "id": "INO-PPT-004",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-08",
+ "topic": "アルミニウムイオンと水酸化ナトリウム（両性水酸化物）",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "硫酸アルミニウム水溶液に水酸化ナトリウム水溶液を少しずつ加えた．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "はじめに生じる沈殿の化学式を答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "さらに過剰に加えると沈殿は溶けた．このとき生じたイオンの化学式を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{Al(OH)3}$（白色）",
+    "grading": "語{Al(OH)3|水酸化アルミニウム}"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{[Al(OH)4]-}$",
+    "grading": "語{[Al(OH)4]-|テトラヒドロキシドアルミン酸イオン}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "少量：$\\ce{Al^3+ + 3OH- -> Al(OH)3 v}$（白色ゲル状）．"
+    },
+    {
+     "type": "text",
+     "tex": "過剰：$\\ce{Al(OH)3 + OH- -> [Al(OH)4]-}$．$\\ce{Al(OH)3}$ は酸にも強塩基にも溶ける両性水酸化物．ただし過剰のアンモニア水には溶けない．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "amphoteric",
+  "complex-ion"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-ALOH3-NH3"
+ ],
+ "tags": [
+  "一問一答",
+  "両性元素"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "ions",
+  "key": "Al^3+"
+ }
+}

@@ -1,0 +1,68 @@
+{
+ "id": "INO-TRN-010",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-07",
+ "topic": "鉄の製錬（溶鉱炉）",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "equation"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "鉄の製錬（溶鉱炉）の反応式の空欄 ア に当てはまる化学式を答えよ．\\[\\ce{FeO} + \\ce{CO} \\ce{->} \\boxed{\\,\\text{ア}\\,} + \\ce{CO2}\\]"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$\\ce{Fe}$",
+    "grading": "語{Fe|鉄}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{FeO + CO -> Fe + CO2}$．銑鉄（C を約 4％ 含む）。転炉で O₂ を吹き込み C を減らすと鋼．全体では $\\ce{Fe2O3 + 3CO -> 2Fe + 3CO2}$"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "industrial-process"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応式補完",
+  "工業的製法"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "reactions",
+  "key": "ind-iron"
+ }
+}

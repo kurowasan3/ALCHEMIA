@@ -1,0 +1,104 @@
+{
+ "id": "ORG-DET-016",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-06",
+ "topic": "検出反応の名称",
+ "course": "化学",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応・操作の名称を答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ヨウ素と水酸化ナトリウム水溶液を加えて温めると，特異臭のある黄色沈殿が生じる"
+     },
+     {
+      "id": "2",
+      "tex": "アンモニア性硝酸銀水溶液を加えて温めると，試験管の内壁に銀が析出する"
+     },
+     {
+      "id": "3",
+      "tex": "濃硝酸を加えて加熱すると黄色になり，冷やしてアンモニア水を加えると橙黄色になる"
+     },
+     {
+      "id": "4",
+      "tex": "水酸化ナトリウム水溶液と少量の硫酸銅(II)水溶液を加えると赤紫色になる"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "ヨードホルム反応",
+    "grading": "語{ヨードホルム反応}"
+   },
+   {
+    "id": "2",
+    "tex": "銀鏡反応",
+    "grading": "語{銀鏡反応}"
+   },
+   {
+    "id": "3",
+    "tex": "キサントプロテイン反応",
+    "grading": "語{キサントプロテイン反応}"
+   },
+   {
+    "id": "4",
+    "tex": "ビウレット反応",
+    "grading": "語{ビウレット反応}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) CH₃CO− または CH₃CH(OH)−．(2) ホルミル基の還元性．(3) ベンゼン環のニトロ化．(4) 2 つ以上のペプチド結合（Cu²⁺ との錯イオン）．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "organic-test",
+  "protein-amino"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "検出反応"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "tests"
+ }
+}

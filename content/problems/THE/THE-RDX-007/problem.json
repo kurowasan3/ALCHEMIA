@@ -1,0 +1,83 @@
+{
+ "id": "THE-RDX-007",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-06",
+ "topic": "金属樹",
+ "course": "化学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "硝酸銀水溶液に銅線を入れると，銅線の表面に銀が析出し，水溶液は青くなった．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "このときの反応をイオン反応式で表したもの"
+     },
+     {
+      "id": "2",
+      "tex": "還元剤としてはたらいたもの"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{Cu + 2Ag+ -> Cu^2+ + 2Ag}$",
+    "grading": "選ぶ{$\\ce{Cu + 2Ag+ -> Cu^2+ + 2Ag}$|$\\ce{Cu^2+ + 2Ag -> Cu + 2Ag+}$|$\\ce{Cu + Ag+ -> Cu+ + Ag}$}=1"
+   },
+   {
+    "id": "2",
+    "tex": "銅（Cu）",
+    "grading": "選ぶ{銅|銀イオン|硝酸イオン}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "イオン化傾向は Cu > Ag なので，Cu が電子を失って Cu²⁺（青）になり，Ag⁺ が電子を受け取って Ag が析出する（銀樹）．還元剤は電子を与えた Cu．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "ionization-tendency",
+  "redox"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "イオン化傾向"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

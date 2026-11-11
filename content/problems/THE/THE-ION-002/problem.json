@@ -1,0 +1,88 @@
+{
+ "id": "THE-ION-002",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "緩衝液の pH",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "$0.10\\,\\mathrm{mol/L}$ 酢酸と $0.10\\,\\mathrm{mol/L}$ 酢酸ナトリウムを含む水溶液がある．$K_a=2.0\\times10^{-5}\\,\\mathrm{mol/L}$，$\\log_{10}2=0.30$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "この水溶液の pH"
+     },
+     {
+      "id": "2",
+      "tex": "少量の塩酸を加えても pH があまり変わらない理由"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "4.7",
+    "grading": "約{4.7|2}"
+   },
+   {
+    "id": "2",
+    "tex": "酢酸イオンが H⁺ と結合して酢酸になるから",
+    "grading": "選ぶ{酢酸イオンが H⁺ と結合して酢酸になるから|酢酸が H⁺ を出すから|水が H⁺ を吸収するから}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $[\\mathrm{H^+}]=K_a\\dfrac{[\\mathrm{CH_3COOH}]}{[\\mathrm{CH_3COO^-}]}=2.0\\times10^{-5}$，pH $=5-0.30=4.7$．(2) 加えた H⁺ は多量にある $\\ce{CH3COO-}$ と $\\ce{CH3COO- + H+ -> CH3COOH}$ のように反応するので，[H⁺] はほとんど変わらない．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "ionization-equilibrium"
+ ],
+ "laws": [
+  "buffer"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "緩衝液"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "laws",
+  "key": "buffer"
+ }
+}

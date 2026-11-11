@@ -1,0 +1,110 @@
+{
+ "id": "THE-ACB-008",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-05",
+ "topic": "酸化物の分類",
+ "course": "化学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の酸化物を分類せよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{CO2}$"
+     },
+     {
+      "id": "2",
+      "tex": "$\\ce{Na2O}$"
+     },
+     {
+      "id": "3",
+      "tex": "$\\ce{Al2O3}$"
+     },
+     {
+      "id": "4",
+      "tex": "$\\ce{SO3}$"
+     },
+     {
+      "id": "5",
+      "tex": "$\\ce{CaO}$"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "酸性酸化物",
+    "grading": "選ぶ{酸性酸化物|塩基性酸化物|両性酸化物}=1"
+   },
+   {
+    "id": "2",
+    "tex": "塩基性酸化物",
+    "grading": "選ぶ{酸性酸化物|塩基性酸化物|両性酸化物}=2"
+   },
+   {
+    "id": "3",
+    "tex": "両性酸化物",
+    "grading": "選ぶ{酸性酸化物|塩基性酸化物|両性酸化物}=3"
+   },
+   {
+    "id": "4",
+    "tex": "酸性酸化物",
+    "grading": "選ぶ{酸性酸化物|塩基性酸化物|両性酸化物}=1"
+   },
+   {
+    "id": "5",
+    "tex": "塩基性酸化物",
+    "grading": "選ぶ{酸性酸化物|塩基性酸化物|両性酸化物}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "非金属の酸化物の多くは酸性酸化物（水と反応して酸，塩基と中和），金属の酸化物は塩基性酸化物．Al・Zn などの両性元素の酸化物は酸にも強塩基にも溶ける両性酸化物．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "acid-base",
+  "amphoteric"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "条件判断",
+  "酸化物"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

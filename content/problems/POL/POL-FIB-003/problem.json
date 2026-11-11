@@ -1,0 +1,87 @@
+{
+ "id": "POL-FIB-003",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-02",
+ "topic": "ナイロン6とPET",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の合成繊維の原料（単量体）の名称を答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ナイロン6"
+     },
+     {
+      "id": "2",
+      "tex": "ポリエチレンテレフタラート"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "ε-カプロラクタム",
+    "grading": "語{ε-カプロラクタム|カプロラクタム}"
+   },
+   {
+    "id": "2",
+    "tex": "エチレングリコールとテレフタル酸",
+    "grading": "ジオール：語{エチレングリコール|1,2-エタンジオール} ; ジカルボン酸：語{テレフタル酸}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ナイロン6 は環状のアミド ε-カプロラクタムの開環重合．ポリエチレンテレフタラート（PET）はエチレングリコールとテレフタル酸の縮合重合で，エステル結合でつながる．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "condensation-polymer"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "ナイロン",
+  "PET"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "polymers",
+  "key": "pet"
+ }
+}

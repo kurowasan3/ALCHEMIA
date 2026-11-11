@@ -1,0 +1,70 @@
+{
+ "id": "THE-GAS-005",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-08",
+ "topic": "分圧の法則",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "窒素 $0.20\\,\\mathrm{mol}$ と酸素 $0.050\\,\\mathrm{mol}$ の混合気体の全圧が $1.0\\times10^{5}\\,\\mathrm{Pa}$ であった．酸素の分圧を求めよ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$2.0\\times10^{4}\\,\\mathrm{Pa}$",
+    "grading": "約{2.0e4|2} [Pa]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "分圧＝全圧×モル分率：$1.0\\times10^5\\times\\dfrac{0.050}{0.250}=2.0\\times10^{4}\\,\\mathrm{Pa}$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "ideal-gas"
+ ],
+ "laws": [
+  "dalton-partial"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "分圧"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "laws",
+  "key": "dalton-partial"
+ }
+}

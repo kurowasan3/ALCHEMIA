@@ -1,0 +1,96 @@
+{
+ "id": "THE-ATM-007",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-01",
+ "topic": "クロムと銅の電子配置",
+ "course": "化学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "クロム Cr と銅 Cu の電子配置は，順に入れていく規則から予想されるものとは異なる．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "Cr の 4s 軌道の電子の数"
+     },
+     {
+      "id": "2",
+      "tex": "Cu の 4s 軌道の電子の数"
+     },
+     {
+      "id": "3",
+      "tex": "このようになる理由"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "1 個",
+    "grading": "約{1|1} [個]"
+   },
+   {
+    "id": "2",
+    "tex": "1 個",
+    "grading": "約{1|1} [個]"
+   },
+   {
+    "id": "3",
+    "tex": "3d 軌道が半分（Cr）・すべて（Cu）満たされると安定になるから",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "Cr：[Ar] 3d⁵ 4s¹（予想は 3d⁴ 4s²），Cu：[Ar] 3d¹⁰ 4s¹（予想は 3d⁹ 4s²）．3d 軌道が半分または完全にうまった状態は特に安定なので，4s の電子が 1 つ 3d に移る．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "electron-config"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一問一答",
+  "電子配置",
+  "例外"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "elements",
+  "key": "Cr"
+ }
+}

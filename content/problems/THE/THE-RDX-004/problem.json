@@ -1,0 +1,84 @@
+{
+ "id": "THE-RDX-004",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-06",
+ "topic": "酸化還元滴定（KMnO₄）",
+ "course": "化学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "濃度未知の過酸化水素水 $10.0\\,\\mathrm{mL}$ を硫酸酸性にし，$0.020\\,\\mathrm{mol/L}$ の過マンガン酸カリウム水溶液で滴定すると，$16.0\\,\\mathrm{mL}$ で終点に達した．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "終点はどのように判断するか．"
+     },
+     {
+      "id": "2",
+      "tex": "過酸化水素水のモル濃度を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "赤紫色が消えなくなったとき",
+    "grading": "選ぶ{赤紫色が消えなくなったとき|溶液が無色になったとき|褐色の沈殿が生じたとき}=1"
+   },
+   {
+    "id": "2",
+    "tex": "$0.080\\,\\mathrm{mol/L}$",
+    "grading": "約{0.08|2} [mol/L]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $\\ce{MnO4-}$（赤紫）は反応すると $\\ce{Mn^2+}$（ほぼ無色）になる．H₂O₂ がなくなると赤紫色が残るので，指示薬は不要．(2) 授受する電子の物質量が等しい：$0.020\\times\\dfrac{16.0}{1000}\\times5=c\\times\\dfrac{10.0}{1000}\\times2$ より $c=0.080\\,\\mathrm{mol/L}$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "redox"
+ ],
+ "laws": [
+  "redox-amount"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "酸化還元滴定"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ }
+}

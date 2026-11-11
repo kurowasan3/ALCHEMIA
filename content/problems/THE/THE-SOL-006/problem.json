@@ -1,0 +1,88 @@
+{
+ "id": "THE-SOL-006",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-09",
+ "topic": "ヘンリーの法則",
+ "course": "化学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "20 ℃ で，酸素は圧力 $1.0\\times10^{5}\\,\\mathrm{Pa}$ のとき水 1 L に $1.4\\times10^{-3}\\,\\mathrm{mol}$ 溶ける．20 ℃，酸素の圧力 $5.0\\times10^{5}\\,\\mathrm{Pa}$ のとき，"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "水 1 L に溶ける酸素の物質量"
+     },
+     {
+      "id": "2",
+      "tex": "溶けた酸素の体積を，そのときの圧力（$5.0\\times10^5\\,\\mathrm{Pa}$）のもとで測ると"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$7.0\\times10^{-3}\\,\\mathrm{mol}$",
+    "grading": "約{0.007|2} [mol]"
+   },
+   {
+    "id": "2",
+    "tex": "$1.0\\times10^{5}$ Pa のときと同じ体積",
+    "grading": "選ぶ{5 倍になる|同じ|5 分の 1 になる}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 溶ける物質量は圧力に比例して 5 倍．(2) 溶けた気体をその圧力のもとで測った体積は，圧力が 5 倍だと 1/5 に縮むので，結局同じになる．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "solution-colligative"
+ ],
+ "laws": [
+  "henry"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "ヘンリーの法則"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "laws",
+  "key": "henry"
+ }
+}

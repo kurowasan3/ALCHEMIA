@@ -1,0 +1,88 @@
+{
+ "id": "THE-SOL-001",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-09",
+ "topic": "沸点上昇",
+ "course": "化学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水の沸点上昇の比例定数（モル沸点上昇）を $0.52\\,\\mathrm{K\\cdot kg/mol}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$0.10\\,\\mathrm{mol/kg}$ のグルコース水溶液の沸点上昇度"
+     },
+     {
+      "id": "2",
+      "tex": "$0.10\\,\\mathrm{mol/kg}$ の塩化ナトリウム水溶液の沸点上昇度（完全に電離する）"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$0.052\\,\\mathrm K$",
+    "grading": "約{0.052|2} [K]"
+   },
+   {
+    "id": "2",
+    "tex": "$0.104\\,\\mathrm K$",
+    "grading": "約{0.104|3} [K]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $\\Delta t=K_bm=0.52\\times0.10=0.052\\,\\mathrm K$．(2) NaCl は $\\ce{Na+}$ と $\\ce{Cl-}$ に電離して粒子が 2 倍：$0.52\\times0.20=0.104\\,\\mathrm K$．"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "solution-colligative"
+ ],
+ "laws": [
+  "bp-elevation"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "計算",
+  "沸点上昇"
+ ],
+ "provenance": {
+  "created": "2026-11-11",
+  "method": "ALCHEMIA 図鑑データから作成（Claude）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "chemistry": true
+  }
+ },
+ "zukan": {
+  "page": "laws",
+  "key": "bp-elevation"
+ }
+}

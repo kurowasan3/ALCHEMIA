@@ -4,13 +4,13 @@
 //   ログインしなければ何も送らない（今まで通り端末の中だけ）。
 import { SUPABASE_URL, SUPABASE_KEY } from './config.js';
 
-export const FILE_VERSION = '0.1.0';
+export const FILE_VERSION = '0.2.0';
 const AUTH_KEY = 'alchemia.auth';   // Lemma（lemma.auth）とは別に持つ（同じドメインでトークンの更新がぶつからないように）
 export const enabled = () => !!(SUPABASE_URL && SUPABASE_KEY);
 
 // ---------------------------------------------------------------- 記録の合わせ方（端末どうしで食い違ったとき）
 // 設定のように「最後に変えた方」を採るもの
-export const LWW_KEYS = ['settings', 'practice', 'zukanPrefs'];
+export const LWW_KEYS = ['settings', 'practice', 'zukanPrefs', 'cardPrefs'];
 const entryKey = (l) => `${l.p}|${l.t}`;
 const nkeys = (o) => Object.keys(o || {}).length;
 
@@ -31,6 +31,8 @@ export function mergeState(L, R) {
   // 復習状態：問題ごとに、最後に解いた方
   const newer = (a, b) => { const o = { ...(b || {}) }; for (const [k, v] of Object.entries(a || {})) if (!o[k] || (v && v.last >= o[k].last)) o[k] = v; return o; };
   out.pstat = newer(L.pstat, R.pstat);
+  // 暗記カード：カードごとに、最後に答えた方
+  if (L.cards || R.cards) out.cards = newer(L.cards, R.cards);
   // 解いた問題：最後に解いた時刻は新しい方、回数は多い方（記録の数より少なくはしない）
   const count = {};
   for (const l of out.log) count[l.p] = (count[l.p] || 0) + 1;

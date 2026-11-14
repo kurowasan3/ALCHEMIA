@@ -9,7 +9,7 @@
 // データは data/zukan.json（tools/build_data.py が content/chem/ から作る）。構造式は data/struct/*.svg
 import { sanitizeSVG } from './problem/figures.js';
 
-export const FILE_VERSION = '0.1.0';
+export const FILE_VERSION = '0.2.0';
 
 let Z = null, C = null;   // 図鑑のデータ、アプリから渡される道具（esc・math・toast・prefs・save・problemsFor・openIds）
 const $ = (s, el = document) => el.querySelector(s);
@@ -23,7 +23,7 @@ export const PAGES = [
   { id: 'organic', name: '有機化学の反応経路', desc: '脂肪族・芳香族の反応の地図。2つの化合物を選ぶと経路をさがす', icon: 'map' },
   { id: 'tests', name: '有機化合物の検出反応', desc: 'ヨードホルム・銀鏡・塩化鉄(III)…。化合物ごとに陽性・陰性を一覧', icon: 'drop' },
   { id: 'polymers', name: '高分子の構造・製法・性質', desc: '単量体と繰り返し単位、重合の種類、結合、性質と用途', icon: 'chain' },
-  { id: 'laws', name: '理論化学の定義・法則', desc: '定義・実験から得た法則・導出できる法則（導出を1段ずつ）', icon: 'law', href: '#concepts' },
+  { id: 'laws', name: '理論化学の定義・法則', desc: '定義・実験から得た法則・導出できる法則（導出を1段ずつ）', icon: 'law', href: '#deck=laws' },
   { id: 'elements', name: '元素の周期性・電子配置', desc: '周期表を電気陰性度・イオン化エネルギーなどで塗り分け、電子配置を表示', icon: 'table' },
 ];
 const ICONS = {

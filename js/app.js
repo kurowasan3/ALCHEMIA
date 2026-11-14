@@ -14,7 +14,7 @@ import {
   subjectsWithFields, pool, pickPractice, pickReview, dueEntries, nextReviewTime, loadKnowledge, loadZukan,
 } from './catalog.js';
 
-const VERSION = '0.1.0';
+const VERSION = '0.2.0';
 const KEY = 'alchemia.v1';   // 同じドメインの Lemma（lemma.v2）・ぶつりば（lemma-physics.v1）・CELESTIA（celestia.v1）と混ざらない名前
 let sync = null, syncApplying = false, syncStatus = null;   // アカウントと同期（initSync で用意）
 const $ = (sel, el = document) => el.querySelector(sel);
@@ -30,6 +30,8 @@ function freshState() {
     schema: 1,
     streak: { last: null, count: 0 },
     zukanPrefs: {},                     // 図鑑で最後に開いたページ・表示の切り替え
+    cards: {},                          // 暗記カードの記録 { カードID: { box, due, last, n } }
+    cardPrefs: {},                      // 暗記カードの表示（裏から出す など）
   };
 }
 let state = load();
@@ -43,7 +45,7 @@ function load() {
 // 設定・選んだ分野などが変わった時刻（端末どうしで食い違ったら新しい方を採る）
 let lwwSig = null;
 function save() {
-  const sig = JSON.stringify([state.settings, state.practice, state.zukanPrefs]);
+  const sig = JSON.stringify([state.settings, state.practice, state.zukanPrefs, state.cardPrefs]);
   if (lwwSig !== null && sig !== lwwSig) state.settingsAt = Date.now();
   lwwSig = sig;
   try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) { /* 保存できない環境 */ }
@@ -193,7 +195,7 @@ function route() {
     if (tab === 'set') openCollection(arg); else openIds(arg.split(',').map(x => x.trim()).filter(Boolean));
     return;
   }
-  const tabOf = { practice: 'today', search: 'today', concept: 'concepts', law: 'concepts' };
+  const tabOf = { practice: 'today', search: 'today', concept: 'cards', concepts: 'cards', law: 'cards', deck: 'cards', study: 'cards' };
   $$('.tabbar a').forEach(a => a.classList.toggle('on', a.dataset.tab === (tabOf[tab] || tab)));
   document.body.dataset.tab = tab;
   clearGraphs();
@@ -201,6 +203,7 @@ function route() {
   window.scrollTo(0, 0);
   $('#mascot')?.classList.remove('talk'); // 画面を移ったら吹き出しは閉じる
   if (tab === 'zukan') return renderZukanTab(arg);
+  if (tab === 'cards' || tab === 'deck' || tab === 'study') return renderCardsTab(tab, arg);
   if (tab === 'concepts' || tab === 'concept') { if (tab === 'concept') history.replaceState(null, '', '#concepts'); return renderConcepts(); }
   if (tab === 'law') return renderLaw(arg);
   if (tab === 'map') return renderMap();
@@ -255,6 +258,7 @@ function renderToday() {
         <input type="search" id="sq" placeholder="問題を探す（例：錯イオン、アンモニアソーダ法、ヨードホルム）" enterkeyhint="search" autocomplete="off">
         <button class="btn" type="submit">検索</button>
       </form>
+      <div id="cardsT"></div>
       <div id="sets"></div>
       <h2>形式ごとに演習</h2>
       <div class="fmt-grid">${FORMATS.map(fm => {
@@ -303,6 +307,7 @@ function renderToday() {
   $('#pick').addEventListener('click', () => { location.hash = '#practice'; });
   $('#sform').addEventListener('submit', (ev) => { ev.preventDefault(); const q = $('#sq').value.trim(); if (q) location.hash = '#search=' + encodeURIComponent(q); });
   drawSets();
+  cardsTeaser($('#cardsT'));
   $('#review')?.addEventListener('click', () => {
     const st = pickReview(state, { size: pr.size });
     if (st.length) startSession(st, { review: true, size: pr.size });
@@ -1048,7 +1053,33 @@ async function renderZukanTab(arg) {
   } catch (e) { view.innerHTML = `<p class="muted">図鑑を読めませんでした（${esc(e.message)}）。</p>`; }
 }
 
-// ---------- 法則の一覧（「概念」タブ）：分野ごとに法則だけを並べる ----------
+// ---------- 暗記カード（js/cards.js）----------
+let cardsData = null;
+async function loadCards() {
+  if (!cardsData) cardsData = fetch('data/cards.json').then(r => { if (!r.ok) throw new Error(`data/cards.json を読めません（${r.status}）`); return r.json(); }).catch(err => { cardsData = null; throw err; });
+  return cardsData;
+}
+async function renderCardsTab(tab, arg) {
+  view.innerHTML = '<p class="muted" style="padding:40px 4px">カードを読み込んでいます…</p>';
+  try {
+    const [M, D] = await Promise.all([import('./cards.js'), loadCards()]);
+    if (M.FILE_VERSION !== VERSION) showBanner(`<b>古いファイルが混ざっています（v${VERSION}）</b>js/cards.js が更新されていません。`);
+    if (!state.cards) state.cards = {};
+    M.renderCards(view, D, tab, arg, { esc, math, state, save, play, prefs: state.cardPrefs || (state.cardPrefs = {}) });
+  } catch (e) { view.innerHTML = `<p class="muted">暗記カードを読めませんでした（${esc(e.message)}）。</p>`; }
+}
+// 今日の画面に、暗記カードの今日の復習の枚数を出す
+async function cardsTeaser(host) {
+  if (!host) return;
+  try {
+    const [M, D] = await Promise.all([import('./cards.js'), loadCards()]);
+    const n = M.dueCount(D, state), total = D.decks.reduce((a, d) => a + d.cards.length, 0);
+    const learned = Object.values(state.cards || {}).filter(r => r.box >= 3).length;
+    host.innerHTML = `<a class="cards-teaser" href="${n ? '#study=all' : '#cards'}"><b>暗記カード</b><span>${n ? `今日の復習 ${n}枚` : `覚えた ${learned} / ${total}枚`}</span><i>›</i></a>`;
+  } catch { host.remove(); }
+}
+
+// ---------- 法則の一覧（暗記カードの「定義・法則」から開く）：分野ごとに法則だけを並べる ----------
 async function renderConcepts() {
   view.innerHTML = '<p class="muted" style="padding:40px 4px">読み込んでいます…</p>';
   let K;

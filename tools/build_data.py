@@ -7,6 +7,7 @@
   data/index.json        一覧（単元・問題の要約）。format = "alchemia.data/1"
   data/f-<単元ID>.json    本文（問題文・答え・解説の HTML と、図の情報）
   data/knowledge.json    概念・法則・誤概念
+  data/cards.json        暗記カード（tools/build_cards.py）
   data/zukan.json        図鑑（イオン・製法・有機化合物と反応・検出反応・高分子・元素）。構造式の SVG は data/struct/
   data/search.json       検索用の索引
   data/collections.json  問題セット
@@ -27,6 +28,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from content_lib import CONTENT, ROOT, load_chem, load_knowledge, load_problems, read  # noqa: E402
 from latex_html import WARN, render  # noqa: E402
 import tags as TG  # noqa: E402
+from build_cards import build_cards  # noqa: E402
 
 FORMAT = 'alchemia.data/1'
 LEVELS = {0: '基礎', 1: '標準', 2: '入試基礎', 3: '国公立2次', 4: '難関', 5: '最難関'}
@@ -87,6 +89,7 @@ def data_version(content, problem_dirs):
     h = hashlib.sha256()
     files = [content / n for n in ('taxonomy.json', 'concepts.json', 'laws.json', 'misconceptions.json', 'tags.json')]
     files += sorted((content / 'chem').rglob('*.*'))
+    files += sorted((content / 'cards').glob('*.json')) if (content / 'cards').exists() else []
     files += sorted((content / 'collections').glob('*.json')) if (content / 'collections').exists() else []
     for d in problem_dirs:
         files += sorted(p for p in d.iterdir() if p.is_file() and not p.name.endswith('.fig.json'))
@@ -205,6 +208,8 @@ def build(content=CONTENT, out=ROOT / 'data'):
                  'misconceptions': K['misconceptions']}
     dump(out / 'knowledge.json', knowledge)
     build_zukan(content, out, version)
+    decks = build_cards(content)
+    dump(out / 'cards.json', {'dataVersion': version, 'decks': decks})
     dump(out / 'search.json', {'dataVersion': version, 'items': search})
     ids = {e['id'] for e in index}
     cols = []

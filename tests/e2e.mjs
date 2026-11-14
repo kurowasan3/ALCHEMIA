@@ -73,7 +73,7 @@ try {
     const page = await newPage();
     await page.goto(U + '#today'); await page.waitForTimeout(1200);
     const tabs = await page.locator('.tabbar a span').allInnerTexts();
-    ok(tabs.join() === '今日,図鑑,法則,定着度,設定', `タブが化学版の構成 ${tabs}`);
+    ok(tabs.join() === '今日,図鑑,暗記,定着度,設定', `タブが化学版の構成 ${tabs}`);
     ok(await page.locator('#lv button').count() === 6, '難易度ボタンが6つ');
     ok(await page.locator('.fmt-card').count() === 6 && await page.locator('.fmt-card:disabled').count() === 0, '「形式ごとに演習」に6つの形式があり、すべて問題がある');
     ok(await page.locator('.banner').count() === 0, '起動時に警告が出ない');
@@ -220,6 +220,34 @@ try {
     ok((await page.locator('#view').innerText()).includes('定着度'), '定着度画面');
     ok(page.errors.length === 0, `ページのエラーなし ${page.errors}`);
   }
+  // 3'. 暗記カード
+  {
+    const page = await newPage();
+    await page.goto(U + '#cards'); await page.waitForTimeout(1200);
+    ok(await page.locator('.deck-card').count() >= 15, `暗記：デッキが並ぶ（${await page.locator('.deck-card').count()}）`);
+    await page.goto(U + '#study=flame'); await page.waitForTimeout(1000);
+    ok(await page.locator('#grade').isHidden(), '暗記：答えを見るまで評価ボタンは出ない');
+    await page.click('#flash'); await page.waitForTimeout(200);
+    ok(await page.locator('.fback').isVisible() && await page.locator('#grade button').count() === 3, '暗記：タップで裏が出て、3つの評価ボタン');
+    await page.click('#grade .g-again'); await page.waitForTimeout(200);
+    for (let i = 0; i < 8; i++) { if (!(await page.locator('#flash').count())) break; await page.click('#flash'); await page.click('#grade .g-good'); await page.waitForTimeout(120); }
+    ok((await page.locator('#view').innerText()).includes('おつかれさま'), '暗記：「もう一度」のカードももう一度出て、最後まで学習できる');
+    const st = await LS(page);
+    const ks = Object.keys(st.cards || {}).filter(k => k.startsWith('flame/'));
+    ok(ks.length === 7 && ks.every(k => st.cards[k].box === 1 && st.cards[k].due > Date.now()), '暗記：記録がカードごとに残り、次は1日後');
+    await page.goto(U + '#deck=flame'); await page.waitForTimeout(800);
+    ok(await page.locator('.ctag.mid').count() === 7, '暗記：デッキの一覧で「学習中」になる');
+    await page.goto(U + '#deck=laws'); await page.waitForTimeout(800);
+    await page.locator('.card-row summary').first().click(); await page.locator('.card-row .linkbtn').first().click(); await page.waitForTimeout(1000);
+    ok(page.url().includes('#law=') && await page.locator('.law-page').count() === 1, '暗記：「定義・法則」のカードから導出・根拠のページへ');
+    await page.goto(U + '#cards'); await page.waitForTimeout(600);
+    await page.check('#crev');
+    await page.goto(U + '#study=constants'); await page.waitForTimeout(800);
+    ok((await page.locator('.fface').innerText()).includes('10'), '暗記：裏から出す（値 → 名前）');
+    await page.goto(U + '#today'); await page.waitForTimeout(1200);
+    ok(await page.locator('.cards-teaser').count() === 1, '今日の画面に暗記カードの入口');
+    ok(page.errors.length === 0, `ページのエラーなし ${page.errors}`);
+  }
   // 4. 学習記録のある端末：CSV・続きに記録
   {
     const page = await newPage({ state: fixture });
@@ -277,7 +305,7 @@ try {
     await page.locator('.onode[data-c="ethanol"]').click(); await page.waitForTimeout(800);
     const v = JSON.parse(fs.readFileSync(path.join(root, 'data/index.json'), 'utf8')).dataVersion;
     const keys = await page.evaluate(async () => caches.keys());
-    ok(keys.includes('alchemia-data-' + v) && keys.includes('alchemia-v0.1.0'), `コード用とデータ用のキャッシュ ${keys}`);
+    ok(keys.includes('alchemia-data-' + v) && keys.includes('alchemia-v0.2.0'), `コード用とデータ用のキャッシュ ${keys}`);
     ok(keys.includes('lemma-v0.9.0') && keys.includes('celestia-v0.5.0'), '同じドメインの他のアプリのキャッシュを消さない');
     await page.context().setOffline(true);
     await page.goto(U + '#today'); await page.waitForTimeout(1200);

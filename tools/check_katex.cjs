@@ -67,6 +67,19 @@ if (fs.existsSync(kp)) {
     }
   }
 }
+// 暗記カード（cards.json）の表と裏
+const cp = path.join(dir, 'cards.json');
+if (fs.existsSync(cp)) {
+  for (const d of JSON.parse(fs.readFileSync(cp, 'utf8')).decks) for (const c of d.cards) for (const [k, html] of [['表', c.f], ['裏', c.b]]) {
+    const segs = [];
+    html.replace(/\$([^$]+)\$/g, (_, m) => { segs.push(m); return ' '; });
+    for (const m of segs) {
+      total++;
+      try { katex.renderToString(m, { throwOnError: true, strict: false }); }
+      catch (e) { bad.push([`card:${c.id}`, k, e.message.replace(/^KaTeX parse error: /, '').slice(0, 120), m.slice(0, 100)]); }
+    }
+  }
+}
 console.log(`数式 ${total}個を検査、描画できないもの ${bad.length}個`);
 for (const b of bad.slice(0, 80)) console.log(b.join(' | '));
 process.exitCode = bad.length ? 1 : 0;

@@ -125,5 +125,13 @@ const base = JSON.parse(fs.readFileSync(path.join(root, 'tests/fixtures/state-v1
   ok(!mem.has('alchemia.auth'), '退会後はログイン情報も消える');
 }
 
+// 暗記カード：カードごとに、最後に答えた方
+{
+  const L = { ...clone(base), cards: { 'flame/Na+': { box: 2, due: 5, last: 300, n: 2 }, 'laws/boyle': { box: 1, due: 1, last: 100, n: 1 } } };
+  const R = { ...clone(base), cards: { 'flame/Na+': { box: 1, due: 2, last: 200, n: 1 }, 'laws/boyle': { box: 3, due: 9, last: 400, n: 3 }, 'misc/MC-EQ-STOP': { box: 1, due: 1, last: 50, n: 1 } } };
+  const M = S.mergeState(L, R);
+  ok(M.cards['flame/Na+'].box === 2 && M.cards['laws/boyle'].box === 3 && M.cards['misc/MC-EQ-STOP'], '暗記カードの記録は、カードごとに新しい方・片方にしかないものも残す');
+}
+
 console.log(`sync.test: ${pass} 件 OK${fail ? `、${fail} 件失敗` : ''}`);
 process.exitCode = fail ? 1 : 0;

@@ -1,0 +1,23 @@
+{
+ "schema": "alchemia.cards/1",
+ "id": "constants",
+ "name": "覚える定数・値",
+ "field": "THE",
+ "desc": "計算でよく使う定数と値",
+ "cards": [
+  {"id": "avogadro", "f": "アボガドロ定数", "b": "$N_{\\mathrm A}=6.02\\times10^{23}\\,/\\mathrm{mol}$"},
+  {"id": "molar-volume", "f": "標準状態（0 ℃，$1.013\\times10^5$ Pa）の気体のモル体積", "b": "$22.4\\,\\mathrm{L/mol}$", "n": "気体だけ。液体・固体には使えない"},
+  {"id": "gas-constant", "f": "気体定数 $R$", "b": "$8.31\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$<br>$=8.31\\,\\mathrm{J/(K\\cdot mol)}$"},
+  {"id": "faraday", "f": "ファラデー定数 $F$", "b": "$9.65\\times10^{4}\\,\\mathrm{C/mol}$", "n": "電子 1 mol の電気量"},
+  {"id": "kw", "f": "25 ℃ の水のイオン積 $K_w$", "b": "$1.0\\times10^{-14}\\,(\\mathrm{mol/L})^2$"},
+  {"id": "atm", "f": "1 atm（大気圧）", "b": "$1.013\\times10^{5}\\,\\mathrm{Pa}=760\\,\\mathrm{mmHg}$"},
+  {"id": "abs-zero", "f": "0 ℃ を絶対温度で", "b": "$273\\,\\mathrm K$（$T=t+273$）"},
+  {"id": "kb-water", "f": "水のモル沸点上昇 $K_b$", "b": "$0.52\\,\\mathrm{K\\cdot kg/mol}$"},
+  {"id": "kf-water", "f": "水のモル凝固点降下 $K_f$", "b": "$1.85\\,\\mathrm{K\\cdot kg/mol}$"},
+  {"id": "water-c", "f": "水の比熱", "b": "$4.2\\,\\mathrm{J/(g\\cdot K)}$"},
+  {"id": "air-m", "f": "空気の平均分子量", "b": "約 $28.8$（$\\ce{N2}:\\ce{O2}=4:1$）"},
+  {"id": "phenolphthalein", "f": "フェノールフタレインの変色域", "b": "pH 8.0〜9.8（無色 → 赤）"},
+  {"id": "methyl-orange", "f": "メチルオレンジの変色域", "b": "pH 3.1〜4.4（赤 → 黄）"},
+  {"id": "ionization-series", "f": "金属のイオン化列", "b": "Li K Ca Na Mg Al Zn Fe Ni Sn Pb (H₂) Cu Hg Ag Pt Au"}
+ ]
+}

@@ -1,0 +1,124 @@
+{
+ "id": "INO-AMP-011",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-06",
+ "topic": "アルミニウムの融解塩電解の量的関係",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "アルミニウムは，酸化アルミニウムを融解した氷晶石 $\\ce{Na3AlF6}$ に溶かし，炭素電極を用いて融解塩電解してつくられる．陰極では $\\ce{Al^3+}$ が還元され，陽極では電極の炭素が $\\ce{O^2-}$ と反応して一酸化炭素と二酸化炭素が生じる．C = 12，O = 16，Al = 27，$F=9.65\\times10^{4}\\,\\mathrm{C/mol}$，標準状態の気体のモル体積を $22.4\\,\\mathrm{L/mol}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "氷晶石を用いる理由を簡潔に答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "塩化アルミニウム水溶液を白金電極で電気分解しても，陰極にアルミニウムは得られない．陰極で生じる物質と，その理由を答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "ある時間の電気分解で，陽極から標準状態で $448\\,\\mathrm{L}$ の気体が発生し，その物質量の比は $\\ce{CO}:\\ce{CO2}=1:3$ であった．陰極で生じたアルミニウムは何 g か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) で消費された陽極の炭素は何 g か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "(3) の電気分解は $100\\,\\mathrm{A}$ の電流で 20.0 時間行ったものである．流れた電気量のうち，アルミニウムの生成に使われた割合（電流効率）は何 % か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "6",
+      "tex": "同じ質量のアルミニウムをつくるとき，陽極の気体がすべて $\\ce{CO2}$ であったとすると，消費される炭素の質量は (4) と比べて増えるか減るか．また，その質量は何 g か．有効数字2桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "酸化アルミニウムの融点を下げ，より低い温度で融解させるため"
+   },
+   {
+    "id": "2",
+    "tex": "水素．Al はイオン化傾向が大きく，$\\ce{Al^3+}$ より水のほうが還元されやすいから．"
+   },
+   {
+    "id": "3",
+    "tex": "$6.3\\times10^{2}\\,\\mathrm{g}$"
+   },
+   {
+    "id": "4",
+    "tex": "$2.4\\times10^{2}\\,\\mathrm{g}$"
+   },
+   {
+    "id": "5",
+    "tex": "$94\\,\\%$"
+   },
+   {
+    "id": "6",
+    "tex": "減る，$2.1\\times10^{2}\\,\\mathrm{g}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 酸化アルミニウムの融点は約 2000 ℃ と高いが，融解した氷晶石に溶かすと約 1000 ℃ で電気分解できる．\n\n\\textbf{(2)} 水溶液では $\\ce{2H2O + 2e- -> H2 + 2OH-}$ が優先して起こり，\\textbf{水素}が発生する．\n\n\\textbf{(3)} 陽極：$\\ce{C + O^2- -> CO + 2e-}$，$\\ce{C + 2O^2- -> CO2 + 4e-}$．気体は $448/22.4=20.0\\,\\mathrm{mol}$ で，$\\ce{CO}$ $5.00\\,\\mathrm{mol}$，$\\ce{CO2}$ $15.0\\,\\mathrm{mol}$．電子は $5.00\\times2+15.0\\times4=70.0\\,\\mathrm{mol}$．陰極 $\\ce{Al^3+ + 3e- -> Al}$ より Al は $70.0/3\\,\\mathrm{mol}$，$\\dfrac{70.0}{3}\\times27=630\\approx\\boldsymbol{6.3\\times10^{2}\\,\\mathrm{g}}$．\n\n\\textbf{(4)} 気体 1 mol に C が 1 mol 含まれるので，C は $20.0\\,\\mathrm{mol}$，$\\boldsymbol{2.4\\times10^{2}\\,\\mathrm{g}}$．\n\n\\textbf{(5)} 流れた電子は $\\dfrac{100\\times20.0\\times3600}{9.65\\times10^4}=74.6\\,\\mathrm{mol}$．効率 $\\dfrac{70.0}{74.6}\\times100=93.8\\approx\\boldsymbol{94\\,\\%}$．\n\n\\textbf{(6)} 同じ Al（電子 $70.0\\,\\mathrm{mol}$）を $\\ce{CO2}$ だけでまかなうと，C は $70.0/4=17.5\\,\\mathrm{mol}$ で $210\\,\\mathrm{g}$．C 1 mol あたり受け渡す電子が CO（2 mol）より $\\ce{CO2}$（4 mol）のほうが多いので，炭素の消費は\\textbf{減る}（$\\boldsymbol{2.1\\times10^{2}\\,\\mathrm{g}}$）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "融解塩電解の陽極で生じる CO と CO2 の比から電子の物質量を求め，Al の生成量・炭素電極の消費量・電流効率を計算する．陽極生成物の違いで炭素の消費量が変わることを比較する．"
+ },
+ "concepts": [
+  "amphoteric",
+  "carbon-silicon",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "融解塩電解",
+  "アルミニウム",
+  "氷晶石",
+  "電流効率"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

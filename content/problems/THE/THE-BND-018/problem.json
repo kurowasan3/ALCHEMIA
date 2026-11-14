@@ -1,0 +1,109 @@
+{
+ "id": "THE-BND-018",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-03",
+ "topic": "結晶形の変化（面心立方⇄体心立方）と密度",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "カルシウムの結晶は，常温では面心立方格子であるが，約 $440\\,^\\circ\\mathrm C$ 以上では体心立方格子に変わる．どちらの結晶でも原子の半径 $r$ は変わらず，最も近い原子どうしは互いに接しているものとする．$\\pi=3.14$，$\\sqrt2=1.41$，$\\sqrt3=1.73$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "面心立方格子の単位格子の一辺の長さ $a_{\\mathrm f}$，体心立方格子の単位格子の一辺の長さ $a_{\\mathrm b}$ を，それぞれ $r$ を用いて表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "面心立方格子と体心立方格子の充填率（単位格子の体積に占める原子の体積の割合）をそれぞれ求め，整数の％で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "面心立方格子から体心立方格子に変化すると，結晶の密度は何倍になるか．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "一定量のカルシウムを加熱して面心立方格子から体心立方格子に変化させるとき，結晶の体積は増えるか減るか．(3)の結果を用いて答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$a_{\\mathrm f}=2\\sqrt2\\,r$，$a_{\\mathrm b}=\\dfrac{4}{\\sqrt3}\\,r$"
+   },
+   {
+    "id": "2",
+    "tex": "面心立方格子 74 %，体心立方格子 68 %"
+   },
+   {
+    "id": "3",
+    "tex": "0.92 倍"
+   },
+   {
+    "id": "4",
+    "tex": "増える（約 1.1 倍になる）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 面心立方格子では面の対角線上で原子が接するので $\\sqrt2\\,a_{\\mathrm f}=4r$，$\\boldsymbol{a_{\\mathrm f}=2\\sqrt2\\,r}$．体心立方格子では立方体の対角線上で接するので $\\sqrt3\\,a_{\\mathrm b}=4r$，$\\boldsymbol{a_{\\mathrm b}=\\tfrac{4}{\\sqrt3}r}$．\n\n(2) 単位格子中の原子は面心立方格子 4 個，体心立方格子 2 個．\n\\[\\text{面心立方：}\\ \\frac{4\\times\\frac43\\pi r^3}{(2\\sqrt2\\,r)^3}=\\frac{\\sqrt2\\,\\pi}{6}=\\frac{1.41\\times3.14}{6}\\fallingdotseq0.738\\quad\\Rightarrow\\ \\boldsymbol{74\\,\\%}\\]\n\\[\\text{体心立方：}\\ \\frac{2\\times\\frac43\\pi r^3}{\\left(\\frac{4}{\\sqrt3}r\\right)^3}=\\frac{\\sqrt3\\,\\pi}{8}=\\frac{1.73\\times3.14}{8}\\fallingdotseq0.679\\quad\\Rightarrow\\ \\boldsymbol{68\\,\\%}\\]\n\n(3) 原子1個の質量と体積は変わらないので，密度は充填率に比例する．\n\\[\\frac{\\sqrt3\\pi/8}{\\sqrt2\\pi/6}=\\frac{3\\sqrt3}{4\\sqrt2}=\\frac{3\\times1.73}{4\\times1.41}\\fallingdotseq\\boldsymbol{0.92}\\ \\text{倍}\\]\n\n(4) 質量一定で密度が 0.92 倍になるので，体積は $1/0.92\\fallingdotseq1.1$ 倍に$\\boldsymbol{\\text{増える}}$．すき間の多い体心立方格子に変わるためである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "原子半径が同じまま結晶格子が面心立方から体心立方に変わると，密度の比は充填率の比で決まり，体積は増える．単位格子の一辺と原子半径の関係から充填率を導いて比べる．"
+ },
+ "concepts": [
+  "chemical-bond",
+  "crystal"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "面心立方格子",
+  "体心立方格子",
+  "充填率",
+  "密度",
+  "同素変態",
+  "比較問題"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

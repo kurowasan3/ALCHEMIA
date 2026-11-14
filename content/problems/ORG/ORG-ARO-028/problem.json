@@ -1,0 +1,124 @@
+{
+ "id": "ORG-ARO-028",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-05",
+ "topic": "オゾン分解から逆にたどるアルコールの構造",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "structure",
+  "pathway"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "炭素–炭素二重結合をもつ化合物をオゾンと反応させると，二重結合が切れて，それぞれの炭素がカルボニル基 $\\ce{C=O}$ になる（オゾン分解）．\n\\[\\ce{\\text{R}^1\\text{R}^2C=CR^3\\text{R}^4 -> \\text{R}^1\\text{R}^2C=O + O=CR^3\\text{R}^4}\\]\nベンゼン環はこの条件では反応しない．\\\\\nベンゼンの一置換体であるアルコール A（分子式 $\\ce{C10H14O}$）は不斉炭素原子を1つもつ．A に濃硫酸を加えて加熱すると，脱水して化合物 B（$\\ce{C10H12}$）だけが生じた．B をオゾン分解すると化合物 C（$\\ce{C7H6O}$）と D（$\\ce{C3H6O}$）が得られた．C は銀鏡反応を示すがヨードホルム反応は示さず，D は銀鏡反応を示さないがヨードホルム反応を示した．ただし，脱水反応で炭素骨格の組みかえは起こらないものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "C と D の示性式を書け．"
+     },
+     {
+      "id": "2",
+      "tex": "B の示性式を書け．また，B にシス-トランス異性体が存在するかどうか答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "脱水によって B を生じうるアルコール（分子式 $\\ce{C10H14O}$）は2種類ある．その2つの示性式を書き，A がどちらかを理由とともに答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) で A でなかったほうのアルコールを脱水すると，B のほかに B の構造異性体 E も生じうる．E をオゾン分解して得られる2つの化合物の示性式を書け．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：オゾン分解から逆にたどるアルコールの構造",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "C：$\\ce{C6H5CHO}$，D：$\\ce{CH3COCH3}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{C6H5CH=C(CH3)2}$；存在しない"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{C6H5CH(OH)CH(CH3)2}$ と $\\ce{C6H5CH2C(OH)(CH3)2}$；A は $\\ce{C6H5CH(OH)CH(CH3)2}$（OH の結合した炭素に $\\ce{C6H5-}$，$\\ce{-H}$，$\\ce{-OH}$，$\\ce{-CH(CH3)2}$ の4つの異なる原子・原子団がつき不斉炭素になるが，もう一方は同じ $\\ce{-CH3}$ を2つもち不斉炭素がないため）"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{C6H5CH2COCH3}$ と $\\ce{HCHO}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} C（$\\ce{C7H6O}$）は銀鏡陽性の芳香族アルデヒド：ベンズアルデヒド $\\ce{C6H5CHO}$．D（$\\ce{C3H6O}$）は還元性がなくヨードホルム陽性：アセトン $\\ce{CH3COCH3}$．\n\\textbf{(2)} 2つのカルボニル炭素をつなぎ直すと B $=\\boldsymbol{\\ce{C6H5CH=C(CH3)2}}$．二重結合の一方の炭素に同じ $\\ce{CH3}$ が2つついているので，シス-トランス異性体は\\textbf{存在しない}．\n\\textbf{(3)} B の二重結合のどちらかの炭素に OH があったはず：\n(ア) $\\ce{C6H5CH(OH)CH(CH3)2}$，(イ) $\\ce{C6H5CH2C(OH)(CH3)2}$．\n不斉炭素をもつのは (ア) だけなので A は (ア)．(ア) では OH の隣で H をもつ炭素は $\\ce{-CH(CH3)2}$ の1つだけなので，脱水生成物は B だけ，という記述とも合う．\n\\textbf{(4)} (イ) は OH のついた炭素の隣に H をもつ炭素が2種類（$\\ce{C6H5CH2-}$ と $\\ce{-CH3}$）あるので，B のほかに E $=\\ce{C6H5CH2C(CH3)=CH2}$ も生じうる．オゾン分解すると $\\boldsymbol{\\ce{C6H5CH2COCH3}}$ と $\\boldsymbol{\\ce{HCHO}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "オゾン分解の生成物（2つのカルボニル化合物）をつなぎ直してアルケンを決め，さらに脱水前のアルコールの候補を逆にたどる．候補は不斉炭素の有無や脱水生成物の種類の数で絞り込む．"
+ },
+ "concepts": [
+  "aromatic",
+  "oxygen-sulfur",
+  "carbon-silicon"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "オゾン分解",
+  "脱水",
+  "アルケン",
+  "不斉炭素",
+  "銀鏡反応",
+  "ヨードホルム反応"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

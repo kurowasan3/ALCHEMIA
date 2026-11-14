@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 330">
+<rect x="10" y="125" width="92" height="40" fill="none" stroke="currentColor" stroke-width="1.4"/><text x="56.0" y="150.0" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">混合物</text>
+<polyline points="102,145 130,145" fill="none" stroke="currentColor" stroke-width="1.4"/>
+<polyline points="130,45 130,225" fill="none" stroke="currentColor" stroke-width="1.4"/>
+<text x="136" y="140" text-anchor="start" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">操作1</text>
+<polyline points="130,45 180,45" fill="none" stroke="currentColor" stroke-width="1.4"/>
+<rect x="180" y="27" width="110" height="36" fill="none" stroke="currentColor" stroke-width="1.4"/><text x="235.0" y="50.0" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">水層 W1</text>
+<polyline points="130,225 180,225" fill="none" stroke="currentColor" stroke-width="1.4"/>
+<rect x="180" y="207" width="110" height="36" fill="none" stroke="currentColor" stroke-width="1.4"/><text x="235.0" y="230.0" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">エーテル層</text>
+<polyline points="290,225 318,225" fill="none" stroke="currentColor" stroke-width="1.4"/>
+<polyline points="318,125 318,265" fill="none" stroke="currentColor" stroke-width="1.4"/>
+<text x="324" y="220" text-anchor="start" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">操作2</text>
+<polyline points="318,125 368,125" fill="none" stroke="currentColor" stroke-width="1.4"/>
+<rect x="368" y="107" width="110" height="36" fill="none" stroke="currentColor" stroke-width="1.4"/><text x="423.0" y="130.0" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">水層 W2</text>
+<polyline points="318,265 368,265" fill="none" stroke="currentColor" stroke-width="1.4"/>
+<rect x="368" y="247" width="110" height="36" fill="none" stroke="currentColor" stroke-width="1.4"/><text x="423.0" y="270.0" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">エーテル層 E2</text>
+<polyline points="478,125 506,125" fill="none" stroke="currentColor" stroke-width="1.4"/>
+<polyline points="506,85 506,155" fill="none" stroke="currentColor" stroke-width="1.4"/>
+<text x="510" y="120" text-anchor="start" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">操作3</text>
+<polyline points="506,85 540,85" fill="none" stroke="currentColor" stroke-width="1.4"/>
+<rect x="540" y="67" width="112" height="36" fill="none" stroke="currentColor" stroke-width="1.4"/><text x="596.0" y="90.0" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">エーテル層 E3</text>
+<polyline points="506,155 540,155" fill="none" stroke="currentColor" stroke-width="1.4"/>
+<rect x="540" y="137" width="112" height="36" fill="none" stroke="currentColor" stroke-width="1.4"/><text x="596.0" y="160.0" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">水層 W3</text>
+<polyline points="478,265 506,265" fill="none" stroke="currentColor" stroke-width="1.4"/>
+<polyline points="506,225 506,300" fill="none" stroke="currentColor" stroke-width="1.4"/>
+<text x="510" y="275" text-anchor="start" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">操作4</text>
+<polyline points="506,225 540,225" fill="none" stroke="currentColor" stroke-width="1.4"/>
+<rect x="540" y="207" width="112" height="36" fill="none" stroke="currentColor" stroke-width="1.4"/><text x="596.0" y="230.0" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">水層 W4</text>
+<polyline points="506,300 540,300" fill="none" stroke="currentColor" stroke-width="1.4"/>
+<rect x="540" y="282" width="112" height="36" fill="none" stroke="currentColor" stroke-width="1.4"/><text x="596.0" y="305.0" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">エーテル層 E4</text>
+</svg>

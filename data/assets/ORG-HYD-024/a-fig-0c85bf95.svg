@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 425">
+<text x="20" y="28" font-family="Noto Sans CJK JP, sans-serif" font-size="15" text-anchor="start" fill="currentColor" font-weight="bold">R の生成物</text>
+<g transform="translate(0,40)">
+<path d='M 60.3,78.9 L 60.4,50.9' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 60.4,50.9 L 84.6,36.9' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 84.6,36.9 L 108.9,50.9' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 108.9,50.9 L 108.8,78.9' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 108.8,78.9 L 84.6,92.9' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 84.6,92.9 L 60.3,78.9' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 60.3,77.5 L 60.3,78.9 L 61.6,79.6' style='fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 60.4,52.3 L 60.4,50.9 L 61.6,50.2' style='fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 83.4,37.6 L 84.6,36.9 L 85.8,37.6' style='fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 107.6,50.2 L 108.9,50.9 L 108.9,52.3' style='fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 108.8,77.5 L 108.8,78.9 L 107.6,79.6' style='fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 85.8,92.2 L 84.6,92.9 L 83.4,92.2' style='fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+</g>
+<text x="85" y="180" font-family="Noto Sans CJK JP, sans-serif" font-size="13" text-anchor="middle" fill="currentColor">シクロヘキサン</text>
+<text x="85" y="198" font-family="Noto Sans CJK JP, sans-serif" font-size="13" text-anchor="middle" fill="currentColor">C₆H₁₂（H₂ 3 分子）</text>
+<g transform="translate(180,40)">
+<path d='M 50.3,88.7 L 74.6,74.7' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 74.6,74.7 L 100.1,86.1' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 100.1,86.1 L 118.9,65.4' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 118.9,65.4 L 104.9,41.1' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 104.9,41.1 L 77.5,46.9' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 77.5,46.9 L 74.6,74.7' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 98.9,85.6 L 100.1,86.1 L 101.1,85.1' style='fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 118.0,66.4 L 118.9,65.4 L 118.2,64.1' style='fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 105.6,42.3 L 104.9,41.1 L 103.6,41.4' style='fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 78.9,46.6 L 77.5,46.9 L 77.4,48.3' style='fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+</g>
+<text x="265" y="180" font-family="Noto Sans CJK JP, sans-serif" font-size="13" text-anchor="middle" fill="currentColor">メチルシクロペンタン</text>
+<text x="265" y="198" font-family="Noto Sans CJK JP, sans-serif" font-size="13" text-anchor="middle" fill="currentColor">C₆H₁₂（H₂ 3 分子）</text>
+<line x1="413" y1="117" x2="429" y2="91" stroke="currentColor" stroke-width="1.6"/>
+<line x1="429" y1="91" x2="461" y2="91" stroke="currentColor" stroke-width="1.6"/>
+<line x1="461" y1="91" x2="477" y2="117" stroke="currentColor" stroke-width="1.6"/>
+<line x1="413" y1="117" x2="445" y2="147" stroke="currentColor" stroke-width="1.6"/>
+<line x1="445" y1="147" x2="477" y2="117" stroke="currentColor" stroke-width="1.6"/>
+<line x1="413" y1="117" x2="445" y2="125" stroke="currentColor" stroke-width="1.6" stroke-dasharray="5,4"/>
+<line x1="445" y1="125" x2="477" y2="117" stroke="currentColor" stroke-width="1.6" stroke-dasharray="5,4"/>
+<text x="445" y="180" font-family="Noto Sans CJK JP, sans-serif" font-size="13" text-anchor="middle" fill="currentColor">ビシクロ[2.1.1]ヘキサン</text>
+<text x="445" y="198" font-family="Noto Sans CJK JP, sans-serif" font-size="13" text-anchor="middle" fill="currentColor">C₆H₁₀（H₂ 2 分子）</text>
+<text x="20" y="248" font-family="Noto Sans CJK JP, sans-serif" font-size="15" text-anchor="start" fill="currentColor" font-weight="bold">S の生成物</text>
+<g transform="translate(0,255)">
+<path d='M 145.2,52.7 L 121.0,66.6' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 121.0,66.6 L 96.7,52.6' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 96.7,52.6 L 72.5,66.6' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 72.5,66.6 L 48.2,52.6' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 48.2,52.6 L 24.0,66.5' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 122.2,65.9 L 121.0,66.6 L 119.8,65.9' style='fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 97.9,53.3 L 96.7,52.6 L 95.5,53.3' style='fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 73.7,65.9 L 72.5,66.6 L 71.3,65.9' style='fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 49.4,53.3 L 48.2,52.6 L 47.0,53.3' style='fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+</g>
+<text x="85" y="385" font-family="Noto Sans CJK JP, sans-serif" font-size="13" text-anchor="middle" fill="currentColor">ヘキサン</text>
+<g transform="translate(180,255)">
+<path d='M 36.1,80.6 L 60.3,66.6' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 60.3,66.6 L 84.6,80.6' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 84.6,80.6 L 108.8,66.6' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 108.8,66.6 L 133.1,80.5' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 108.8,66.6 L 108.8,38.6' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 59.1,67.3 L 60.3,66.6 L 61.6,67.3' style='fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 83.4,79.9 L 84.6,80.6 L 85.8,79.9' style='fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+</g>
+<text x="265" y="385" font-family="Noto Sans CJK JP, sans-serif" font-size="13" text-anchor="middle" fill="currentColor">2-メチルペンタン</text>
+<g transform="translate(360,255)">
+<path d='M 96.7,24.6 L 96.7,52.6' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 96.7,52.6 L 121.0,66.5' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 96.7,52.6 L 72.5,66.6' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 72.5,66.6 L 72.5,94.6' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 72.5,66.6 L 48.2,52.7' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+</g>
+<text x="445" y="385" font-family="Noto Sans CJK JP, sans-serif" font-size="13" text-anchor="middle" fill="currentColor">2,3-ジメチルブタン</text>
+<text x="270" y="412" font-family="Noto Sans CJK JP, sans-serif" font-size="13" text-anchor="middle" fill="currentColor">S の生成物はいずれも C₆H₁₄（H₂ 4 分子）</text>
+</svg>

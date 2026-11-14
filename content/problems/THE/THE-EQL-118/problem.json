@@ -1,0 +1,110 @@
+{
+ "id": "THE-EQL-118",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "逐次酸化の中間体（アルデヒド）を蒸留で取り出す速さの競合と収率",
+ "course": "化学",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "第一級アルコール A を酸化剤の溶液中で加熱すると，アルデヒド B を経てカルボン酸 C になる（A → B → C）．酸化剤の濃度はほぼ一定とみなせるものとし，A，B の物質量を $n_{\\mathrm{A}}$，$n_{\\mathrm{B}}$ とすると，各段階の反応の速さは\n\\[ v_1=k_1 n_{\\mathrm{A}}\\quad(\\mathrm{A}\\to\\mathrm{B}),\\qquad v_2=k_2 n_{\\mathrm{B}}\\quad(\\mathrm{B}\\to\\mathrm{C}) \\]\nで表される．$k_1$，$k_2$ は酸化剤の濃度に比例する．B は沸点が低いので，反応液を B の沸点より高く A の沸点より低い温度に保つと，B は速さ $v_{\\mathrm{d}}=k_{\\mathrm{d}}n_{\\mathrm{B}}$ で蒸気となって反応液から出ていき，冷却されて集められる（集められた B は酸化されない）．A は蒸発しないものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A $n_0$ [mol] から反応を始め，A がすべてなくなるまで続けた．集められる B の物質量を $n_0$，$k_2$，$k_{\\mathrm{d}}$ で表せ．また $k_2=2.0\\times10^{-2}\\,\\mathrm{s^{-1}}$，$k_{\\mathrm{d}}=6.0\\times10^{-2}\\,\\mathrm{s^{-1}}$ のとき，A に対する B の収率 [%] を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "B を取り出さずに還流させた（$k_{\\mathrm{d}}=0$）場合，反応液中の B は\n\\[ \\frac{n_{\\mathrm{B}}}{n_0}=\\frac{k_1}{k_2-k_1}\\left(e^{-k_1t}-e^{-k_2t}\\right) \\]\nのように時間 $t$ とともに変化する．$k_1=1.0\\times10^{-2}\\,\\mathrm{s^{-1}}$，$k_2=2.0\\times10^{-2}\\,\\mathrm{s^{-1}}$ のとき，$n_{\\mathrm{B}}/n_0$ の最大値 [%] と，それに達する時刻 [s] を有効数字 2 桁で求めよ（$\\log_e 2=0.693$）．"
+     },
+     {
+      "id": "3",
+      "tex": "(1) の条件から，酸化剤の濃度だけを半分にした．収率 [%] を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(1) の条件から反応液の温度を上げると，$k_2$ は 3.0 倍，$k_{\\mathrm{d}}$ は 1.5 倍になった．収率 [%] を有効数字 2 桁で求め，温度を上げることが B を得るのに有利かどうかを判断せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\dfrac{k_{\\mathrm{d}}}{k_2+k_{\\mathrm{d}}}n_0$，75 %"
+   },
+   {
+    "id": "2",
+    "tex": "最大値 25 %，$t=69\\,\\mathrm{s}$"
+   },
+   {
+    "id": "3",
+    "tex": "86 %"
+   },
+   {
+    "id": "4",
+    "tex": "60 %．収率が下がるので有利ではない"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} A から生じた B の 1 分子 1 分子は，反応液の中にいる間，「酸化されて C になる」か「蒸気となって出ていく」かのどちらかで消える．どの瞬間も 2 つの行き先の速さの比は $v_2:v_{\\mathrm{d}}=k_2n_{\\mathrm{B}}:k_{\\mathrm{d}}n_{\\mathrm{B}}=k_2:k_{\\mathrm{d}}$ で，$n_{\\mathrm{B}}$ によらず一定である．A がすべて B に変わるので，生じた B の総量 $n_0$ がこの比で分けられ\n\\[ \\text{集められる B}=\\boldsymbol{\\frac{k_{\\mathrm{d}}}{k_2+k_{\\mathrm{d}}}n_0} \\]\n（式で書くと，$\\dfrac{dn_{\\mathrm{B}}}{dt}=k_1n_{\\mathrm{A}}-(k_2+k_{\\mathrm{d}})n_{\\mathrm{B}}$ を $0$ から $\\infty$ まで積分して $\\int n_{\\mathrm{B}}\\,dt=\\dfrac{n_0}{k_2+k_{\\mathrm{d}}}$，集められる量は $k_{\\mathrm{d}}\\int n_{\\mathrm{B}}\\,dt$．）$k_1$ にはよらない．数値を入れると $\\dfrac{6.0}{2.0+6.0}=0.75$，$\\boldsymbol{75\\,\\%}$．\n\n\\textbf{(2)} $\\dfrac{d}{dt}\\left(e^{-k_1t}-e^{-k_2t}\\right)=0$ より $k_1e^{-k_1t}=k_2e^{-k_2t}$，\n\\[ t_{\\max}=\\frac{\\log_e(k_2/k_1)}{k_2-k_1}=\\frac{0.693}{1.0\\times10^{-2}}=69.3\\ \\text{s}\\approx\\boldsymbol{69\\,\\mathrm{s}} \\]\nこのとき $e^{-k_1t}=e^{-0.693}=\\dfrac12$，$e^{-k_2t}=\\dfrac14$ だから\n\\[ \\frac{n_{\\mathrm{B}}}{n_0}=\\frac{1.0}{2.0-1.0}\\left(\\frac12-\\frac14\\right)=0.25\\quad\\Longrightarrow\\quad\\boldsymbol{25\\,\\%} \\]\n還流では，ちょうどよい時刻に反応を止めても 25 % しか得られず，止めるのが遅れるとさらに減る．取り出しながら行う (1) の方法（75 %）がはるかに有利である．\n\n\\textbf{(3)} $k_2$ は酸化剤の濃度に比例するので $1.0\\times10^{-2}\\,\\mathrm{s^{-1}}$ になり，$k_{\\mathrm{d}}$ は変わらない．\n\\[ \\frac{6.0}{1.0+6.0}=0.857\\quad\\Longrightarrow\\quad\\boldsymbol{86\\,\\%} \\]\n反応は遅くなるが，B が反応液にいる間に酸化される割合が減る．酸化剤を少しずつ加えて濃度を低く保つ操作が有利なのはこのためである．\n\n\\textbf{(4)} $k_2=6.0\\times10^{-2}$，$k_{\\mathrm{d}}=9.0\\times10^{-2}$ となり\n\\[ \\frac{9.0}{6.0+9.0}=0.60\\quad\\Longrightarrow\\quad\\boldsymbol{60\\,\\%} \\]\n蒸発は速くなるが，B の酸化がそれ以上に速くなるので収率は下がる．温度を上げることは\\textbf{有利ではない}．収率を決めるのは各速さの大きさではなく，B の 2 つの行き先の速度定数の比 $k_{\\mathrm{d}}/k_2$ である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "逐次反応 A→B→C の中間体 B を一次の速さで系外へ取り出すとき，B は各瞬間に酸化と取り出しの 2 つの経路へ速度定数の比で分かれるので，取り出される割合は kd/(k2+kd) となり k1 にも時間にもよらない．取り出さない場合の中間体の極大（25 %）と比べ，酸化剤濃度を下げると比が改善し，温度を上げても k2 の増え方が大きければ逆に不利になることを判断する．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "alcohol-carbonyl",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "逐次反応",
+  "反応速度",
+  "中間体",
+  "蒸留",
+  "収率",
+  "アルデヒド"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

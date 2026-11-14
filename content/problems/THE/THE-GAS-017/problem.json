@@ -1,0 +1,107 @@
+{
+ "id": "THE-GAS-017",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-08",
+ "topic": "コックでつないだ容器の混合と燃焼後の圧力",
+ "course": "化学",
+ "level": 1,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "容積 $3.0\\,\\mathrm L$ の容器 A と容積 $5.0\\,\\mathrm L$ の容器 B が，コックのついた細い管でつながれている．コックを閉じた状態で，A には物質量比 $1:1$ のメタンとアルゴンの混合気体を 27 ℃，$1.0\\times10^{5}\\,\\mathrm{Pa}$ で，B には物質量比 $3:1$ の酸素とアルゴンの混合気体を 27 ℃ で封入した．次に 27 ℃ のままコックを開いて十分に混合させると，全圧は $2.5\\times10^{5}\\,\\mathrm{Pa}$ になった．管の容積は無視し，気体はすべて理想気体とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "コックを開く前の B 内の圧力は何 Pa か．"
+     },
+     {
+      "id": "2",
+      "tex": "コックを開いた後（27 ℃）のアルゴンの分圧は何 Pa か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "コックを開いたまま全体を 227 ℃ にし，メタンを完全燃焼させた．燃焼後の 227 ℃ における全圧は何 Pa か．有効数字2桁で答え，燃焼の前後（同じ 227 ℃）で全圧がどうなるかも理由とともに述べよ．生じた水はすべて気体とする．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の燃焼後，227 ℃ における酸素の分圧は何 Pa か．有効数字2桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$3.4\\times10^{5}\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "2",
+    "tex": "$7.2\\times10^{4}\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "3",
+    "tex": "$4.2\\times10^{5}\\,\\mathrm{Pa}$．燃焼の前後で全圧は変わらない（$\\ce{CH4 + 2O2 -> CO2 + 2H2O}$ では気体の物質量が 3 から 3 で変化しないから）．"
+   },
+   {
+    "id": "4",
+    "tex": "$2.0\\times10^{5}\\,\\mathrm{Pa}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "同温では，物質量は「圧力×体積」に比例する．27 ℃ での $PV$（単位 $\\mathrm{Pa\\cdot L}$）で考える．\n\n\\textbf{(1)}　混合前後で物質量の合計は変わらないので\n\\[1.0\\times10^{5}\\times3.0+P_\\mathrm B\\times5.0=2.5\\times10^{5}\\times8.0\\]\n$P_\\mathrm B=\\boldsymbol{3.4\\times10^{5}\\,\\mathrm{Pa}}$．\n\n\\textbf{(2)}　アルゴンの $PV$ は，A から $0.50\\times1.0\\times10^{5}\\times3.0=1.5\\times10^{5}$，B から $\\dfrac14\\times3.4\\times10^{5}\\times5.0=4.25\\times10^{5}$．合計 $5.75\\times10^{5}$ を $8.0\\,\\mathrm L$ に広げて $\\dfrac{5.75\\times10^{5}}{8.0}=7.19\\times10^{4}\\approx\\boldsymbol{7.2\\times10^{4}\\,\\mathrm{Pa}}$．\n\n\\textbf{(3)}　\\[\\ce{CH4 + 2O2 -> CO2 + 2H2O}\\]\n水が気体なら，反応した気体 3 mol から気体 3 mol が生じるので，総物質量は燃焼の前後で\\textbf{変わらない}．したがって全圧は温度だけで決まり\n\\[2.5\\times10^{5}\\times\\dfrac{500}{300}=4.17\\times10^{5}\\approx\\boldsymbol{4.2\\times10^{5}\\,\\mathrm{Pa}}\\]\n\n\\textbf{(4)}　27 ℃ 換算の $PV$ で，メタンは $1.5\\times10^{5}$，酸素は $\\dfrac34\\times3.4\\times10^{5}\\times5.0=12.75\\times10^{5}$．酸素はメタンの 2 倍 $3.0\\times10^{5}$ だけ消費され，$9.75\\times10^{5}$ 残る．227 ℃，$8.0\\,\\mathrm L$ での分圧は\n\\[\\dfrac{9.75\\times10^{5}}{8.0}\\times\\dfrac{500}{300}=2.03\\times10^{5}\\approx\\boldsymbol{2.0\\times10^{5}\\,\\mathrm{Pa}}\\]\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "コックでつないだ容器の混合では物質量（同温なら圧力×体積）の和が保存されることを使い，混合後の圧力から混合前の未知の圧力を逆算する．燃焼で気体の物質量が変わるかどうかを反応式から判断して燃焼後の全圧・分圧を求める．"
+ },
+ "concepts": [
+  "ideal-gas",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "分圧の法則",
+  "混合気体",
+  "ボイル・シャルルの法則",
+  "燃焼"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

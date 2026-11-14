@@ -1,0 +1,109 @@
+{
+ "id": "THE-ION-049",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "弱酸を弱塩基で滴定するときの中和の不完全さと滴定曲線",
+ "course": "化学",
+ "level": 4,
+ "minutes": 35,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "$0.100\\,\\mathrm{mol/L}$ のギ酸水溶液 $20.0\\,\\mathrm{mL}$ を，$0.100\\,\\mathrm{mol/L}$ のアンモニア水で滴定する．ギ酸の電離定数を $K_a=2.0\\times10^{-4}\\,\\mathrm{mol/L}$，アンモニアの電離定数を $K_b=2.0\\times10^{-5}\\,\\mathrm{mol/L}$，水のイオン積を $K_w=1.0\\times10^{-14}\\,(\\mathrm{mol/L})^2$ とし，$\\sqrt{10}=3.16$，$\\log_{10}2=0.30$，$\\log_{10}2.4=0.38$ を用いよ．溶液の体積は混合した液の体積の和とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "中和反応 $\\ce{HCOOH + NH3 <=> HCOO- + NH4+}$ の平衡定数 $K$ を $K_a$，$K_b$，$K_w$ で表し，値を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "中和点（アンモニア水 $20.0\\,\\mathrm{mL}$）で，反応せずに残っているギ酸は，はじめのギ酸の何\\%か．有効数字2桁で求めよ．また，中和点の $[\\ce{H+}]$ が $\\sqrt{\\dfrac{K_aK_w}{K_b}}$ で表され，濃度によらないことを示し，pH を小数第2位まで求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "アンモニア水を $19.8\\,\\mathrm{mL}$ および $20.2\\,\\mathrm{mL}$ 加えたときの pH を小数第1位まで求めよ．また，変色域が pH $6.0$〜$7.0$ の指示薬を用いると，色の変化はアンモニア水の滴下量がおよそ何 mL から何 mL の間で起こるか．水酸化ナトリウム水溶液で滴定する場合（$20.2\\,\\mathrm{mL}$ で pH $10.7$）と比べて，この滴定の特徴を述べよ．"
+     },
+     {
+      "id": "4",
+      "tex": "ギ酸の代わりに酢酸（$K_a=2.0\\times10^{-5}\\,\\mathrm{mol/L}$）を同じ濃度・体積で用いた．アンモニア水 $19.8\\,\\mathrm{mL}$ を加えた溶液について，「過剰の酢酸 $0.020\\times10^{-3}\\,\\mathrm{mol}$ と酢酸イオンの緩衝液」とみなすと pH は $6.70$ となる．しかしこの近似は成り立たない．その理由を，中和点で反応せずに残る酸の割合と比べて述べ，反応せずに残るアンモニアの濃度を $y$ として $[\\ce{H+}]$ を有効数字2桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$K=\\dfrac{K_aK_b}{K_w}=4.0\\times10^{5}$"
+   },
+   {
+    "id": "2",
+    "tex": "$0.16\\,\\%$，pH $6.50$"
+   },
+   {
+    "id": "3",
+    "tex": "$19.8\\,\\mathrm{mL}$：$5.7$，$20.2\\,\\mathrm{mL}$：$7.3$．約 $19.9\\,\\mathrm{mL}$ から $20.1\\,\\mathrm{mL}$ の間．中和点前後の pH の変化（跳躍）が小さく，変色域の狭い指示薬を中和点の pH にぴったり合わせないと終点が定まらない"
+   },
+   {
+    "id": "4",
+    "tex": "酢酸では $K=4.0\\times10^{4}$ と小さく，中和点でも酸の $0.50\\,\\%$ が反応せずに残る．これが過剰の酢酸（$1\\,\\%$）と同程度なので，反応が完全に進んだとみなせない．$[\\ce{H+}]=2.4\\times10^{-7}\\,\\mathrm{mol/L}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　\\[ K=\\dfrac{[\\ce{HCOO-}][\\ce{NH4+}]}{[\\ce{HCOOH}][\\ce{NH3}]}=\\dfrac{[\\ce{HCOO-}][\\ce{H+}]}{[\\ce{HCOOH}]}\\cdot\\dfrac{[\\ce{NH4+}][\\ce{OH-}]}{[\\ce{NH3}]}\\cdot\\dfrac{1}{[\\ce{H+}][\\ce{OH-}]}=\\dfrac{K_aK_b}{K_w} \\]\n$=\\dfrac{2.0\\times10^{-4}\\times2.0\\times10^{-5}}{1.0\\times10^{-14}}=\\boldsymbol{4.0\\times10^{5}}$．強酸と強塩基の中和（$K=1/K_w=10^{14}$）に比べて桁違いに小さい．\n\n\\textbf{(2)}　中和点では，ギ酸・アンモニアとも全濃度 $C=\\dfrac{2.00}{40.0}=0.0500\\,\\mathrm{mol/L}$．反応せずに残る量を $z$ とすると $[\\ce{HCOOH}]=[\\ce{NH3}]=z$，$[\\ce{HCOO-}]=[\\ce{NH4+}]=C-z$ なので\n\\[ \\dfrac{(C-z)^2}{z^2}=K \\quad\\Longrightarrow\\quad \\dfrac{z}{C}=\\dfrac{1}{1+\\sqrt K}=\\dfrac{1}{1+632}=1.6\\times10^{-3} \\]\nすなわち $\\boldsymbol{0.16\\,\\%}$（$\\sqrt{4.0\\times10^5}=200\\sqrt{10}=632$）．このとき\n\\[ [\\ce{H+}]=K_a\\dfrac{[\\ce{HCOOH}]}{[\\ce{HCOO-}]}=\\dfrac{K_a}{\\sqrt K}=K_a\\sqrt{\\dfrac{K_w}{K_aK_b}}=\\sqrt{\\dfrac{K_aK_w}{K_b}} \\]\nで $C$ を含まない．値は $\\sqrt{1.0\\times10^{-13}}=3.16\\times10^{-7}$，$\\mathrm{pH}=7-\\dfrac12=\\boldsymbol{6.50}$．（$[\\ce{H+}]$ や $[\\ce{OH-}]$ は $z=7.9\\times10^{-5}\\,\\mathrm{mol/L}$ に比べて十分小さく，電荷のつり合いで無視してよい．）\n\n\\textbf{(3)}　$19.8\\,\\mathrm{mL}$：過剰のギ酸 $0.020\\times10^{-3}\\,\\mathrm{mol}$ とギ酸イオン $1.98\\times10^{-3}\\,\\mathrm{mol}$ の緩衝液．$[\\ce{H+}]=2.0\\times10^{-4}\\times\\dfrac{0.020}{1.98}=2.0\\times10^{-6}$，$\\mathrm{pH}=6-0.30=\\boldsymbol{5.7}$．\\\\\n$20.2\\,\\mathrm{mL}$：過剰のアンモニア $0.020\\times10^{-3}\\,\\mathrm{mol}$ と $\\ce{NH4+}$ $2.00\\times10^{-3}\\,\\mathrm{mol}$ の緩衝液．$[\\ce{OH-}]=2.0\\times10^{-5}\\times\\dfrac{0.020}{2.00}=2.0\\times10^{-7}$，$\\mathrm{pOH}=6.70$，$\\mathrm{pH}=\\boldsymbol{7.3}$．\\\\\n（ギ酸では中和点で残る酸が $0.16\\,\\%$ と，過剰分 $1\\,\\%$ より十分小さいので，この近似は使える．）\n\n変色域の両端では：pH $6.0$ で $\\dfrac{[\\ce{HCOOH}]}{[\\ce{HCOO-}]}=\\dfrac{1.0\\times10^{-6}}{2.0\\times10^{-4}}=0.005$，中和されたギ酸は $\\dfrac{1}{1.005}$ で滴下量は約 $\\boldsymbol{19.9\\,\\mathrm{mL}}$．pH $7.0$ で $\\dfrac{[\\ce{NH3}]}{[\\ce{NH4+}]}=\\dfrac{K_w/K_b}{[\\ce{H+}]}=\\dfrac{5.0\\times10^{-10}}{1.0\\times10^{-7}}=0.005$，アンモニアは $0.5\\,\\%$ 過剰で滴下量は約 $\\boldsymbol{20.1\\,\\mathrm{mL}}$．\n\n水酸化ナトリウムで滴定すると，中和点の前後 $\\pm0.2\\,\\mathrm{mL}$ で pH は $5.7$ から $10.7$ まで約 $5$ 変わるが，アンモニア水では $5.7$ から $7.3$ まで $1.6$ しか変わらない．中和点を過ぎても弱塩基の緩衝作用で pH が上がりにくいためで，跳躍がきわめて小さいので，変色域の狭い指示薬を中和点の pH（$6.50$）にぴったり合わせなければ終点が定まらない．\n\n\\textbf{(4)}　酢酸では $K=\\dfrac{2.0\\times10^{-5}\\times2.0\\times10^{-5}}{1.0\\times10^{-14}}=4.0\\times10^{4}$，$\\sqrt K=200$．中和点でも $\\dfrac{1}{1+200}=0.50\\,\\%$ が反応せずに残る．$19.8\\,\\mathrm{mL}$ での過剰の酢酸は $1\\,\\%$ なので，これと同程度の未反応分を無視できず，「加えたアンモニアはすべて反応した」とする緩衝液の近似は成り立たない．\n\n$V=39.8\\,\\mathrm{mL}$ で，過剰の酢酸 $e=\\dfrac{0.020}{39.8}=5.0\\times10^{-4}$，$[\\ce{CH3COO-}]\\fallingdotseq[\\ce{NH4+}]\\fallingdotseq C=\\dfrac{1.98}{39.8}=0.0497\\,\\mathrm{mol/L}$．未反応のアンモニアを $y$ とすると，未反応の酢酸は $e+y$ で\n\\[ K=\\dfrac{C^2}{(e+y)y}=4.0\\times10^{4} \\quad\\Longrightarrow\\quad y^2+ey-\\dfrac{C^2}{K}=0,\\quad y^2+5.0\\times10^{-4}y-6.2\\times10^{-8}=0 \\]\n$y=\\dfrac{-5.0\\times10^{-4}+\\sqrt{2.5\\times10^{-7}+2.5\\times10^{-7}}}{2}=1.0\\times10^{-4}\\,\\mathrm{mol/L}$（$\\sqrt{5.0\\times10^{-7}}=7.07\\times10^{-4}$）．したがって $[\\ce{CH3COOH}]=e+y=6.0\\times10^{-4}$ で\n\\[ [\\ce{H+}]=K_a\\dfrac{[\\ce{CH3COOH}]}{[\\ce{CH3COO-}]}=2.0\\times10^{-5}\\times\\dfrac{6.0\\times10^{-4}}{0.0497}=\\boldsymbol{2.4\\times10^{-7}\\,\\mathrm{mol/L}} \\]\npH は $7-0.38=6.62$ で，近似値 $6.70$ より低い（反応しきれない酸が残る分だけ酸性側にずれる）．中和点の pH は $7.00$ なので，中和点の $1\\,\\%$ 手前でも pH は $0.4$ しか違わず，指示薬で終点を決めることはできない．弱酸と弱塩基の組み合わせが中和滴定に使われないのはこのためである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "弱酸と弱塩基の中和は平衡定数 K=KₐK_b/K_w が有限なので中和点でも 1/(1+√K) が反応せずに残り，中和点の [H⁺]=√(KₐK_w/K_b) は濃度によらない．滴定曲線の跳躍は小さく，K が小さいと中和点の手前でも「加えた塩基はすべて反応した」とする緩衝液の近似が破れるので，未反応分を含めた平衡で pH を求め直す必要がある．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "concentration",
+  "ph"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "弱酸と弱塩基",
+  "中和の平衡定数",
+  "滴定曲線",
+  "近似の破れ",
+  "指示薬"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

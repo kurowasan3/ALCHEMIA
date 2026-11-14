@@ -1,0 +1,139 @@
+{
+ "id": "ORG-STR-008",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-01",
+ "topic": "分子式 C₄H₈O₂ の異性体から条件に合うものを選ぶ",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "structure",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "分子式 $\\ce{C4H8O2}$ で表される化合物には多くの異性体がある．次の (1)〜(6) の条件に合うものを1つずつ選び，示性式で答えよ．ただし，二重結合の炭素原子にヒドロキシ基が結合した構造（エノール），1つの炭素原子にヒドロキシ基と別の酸素原子が単結合で結合した構造，酸素原子どうしが結合した構造をもつものは考えない．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "炭素鎖に枝分かれをもつカルボン酸．"
+     },
+     {
+      "id": "2",
+      "tex": "エステルのうち，加水分解で得られるカルボン酸は銀鏡反応を示さず，アルコールはヨードホルム反応を示すもの．"
+     },
+     {
+      "id": "3",
+      "tex": "エステルのうち，加水分解で得られるカルボン酸が銀鏡反応を示し，アルコールが第二級アルコールであるもの．"
+     },
+     {
+      "id": "4",
+      "tex": "鎖式で，ヒドロキシ基とホルミル基（アルデヒド基）を1つずつもち，不斉炭素原子をもち，ヨードホルム反応を示すもの．"
+     },
+     {
+      "id": "5",
+      "tex": "鎖式で，ヒドロキシ基とホルミル基を1つずつもち，炭素鎖に枝分かれをもつが不斉炭素原子をもたないもの．"
+     },
+     {
+      "id": "6",
+      "tex": "鎖式で，ヒドロキシ基を2個もち，シス-トランス異性体が存在するもの（トランス形であることがわかるように答えよ）．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：分子式 C₄H₈O₂ の異性体から条件に合うものを選ぶ",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{(CH3)2CHCOOH}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{CH3COOCH2CH3}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{HCOOCH(CH3)2}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{CH3CH(OH)CH2CHO}$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\ce{(CH3)2C(OH)CHO}$"
+   },
+   {
+    "id": "6",
+    "tex": "$\\ce{HOCH2CH=CHCH2OH}$（トランス形：2つの $\\ce{CH2OH}$ が二重結合の反対側にある）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "$\\ce{C4H8O2}$ の不飽和度は1で，$\\ce{C=O}$ か $\\ce{C=C}$ か環のどれか1つをもつ．構造式は解答図．\n\n\\textbf{(1)} カルボン酸は $\\ce{CH3CH2CH2COOH}$ と $\\ce{(CH3)2CHCOOH}$ の2種．枝分かれは \\textbf{2-メチルプロパン酸}．\n\n\\textbf{(2)(3) エステルは加水分解生成物で見分ける} $\\ce{C4H8O2}$ のエステルは\n\\begin{itemize}\n\\item $\\ce{HCOOCH2CH2CH3}$ → ギ酸＋1-プロパノール\n\\item $\\ce{HCOOCH(CH3)2}$ → ギ酸＋2-プロパノール\n\\item $\\ce{CH3COOCH2CH3}$ → 酢酸＋エタノール\n\\item $\\ce{CH3CH2COOCH3}$ → プロピオン酸＋メタノール\n\\end{itemize}\n(2) 銀鏡反応を示さない酸（酢酸・プロピオン酸）で，アルコールがヨードホルム反応を示す（エタノールは $\\ce{CH3CH2OH}$ が $\\mathrm{CH_{3}CH(OH)-}$ の R=H にあたる）のは \\textbf{酢酸エチル}．メタノールは示さない．\n(3) ギ酸（ホルミル基をもつ）のエステルで，アルコールが第二級なのは \\textbf{ギ酸イソプロピル} $\\ce{HCOOCH(CH3)2}$．\n\n\\textbf{(4)(5) ヒドロキシアルデヒド} 鎖式で OH と CHO を1つずつもつのは5種：\n$\\ce{HOCH2CH2CH2CHO}$，$\\ce{CH3C^{*}H(OH)CH2CHO}$，$\\ce{CH3CH2C^{*}H(OH)CHO}$，$\\ce{HOCH2C^{*}H(CH3)CHO}$，$\\ce{(CH3)2C(OH)CHO}$．\n(4) 不斉炭素をもち，ヨードホルム反応に必要な $\\mathrm{CH_{3}CH(OH)-}$ をもつのは $\\ce{CH3CH(OH)CH2CHO}$ だけ．\n(5) 枝分かれをもつのは最後の2つで，不斉炭素をもたないのは C2 に $\\ce{CH3}$ が2つ結合した $\\ce{(CH3)2C(OH)CHO}$．\n\n\\textbf{(6)} 鎖式で OH を2個もつと残りの不飽和は $\\ce{C=C}$．候補は $\\ce{HOCH2CH=CHCH2OH}$，$\\ce{CH2=CHCH(OH)CH2OH}$，$\\ce{CH2=C(CH2OH)2}$（エノールは除く）．シス-トランス異性体があるのは，二重結合の両端の炭素にそれぞれ異なる2つの原子・原子団がつく $\\ce{HOCH2CH=CHCH2OH}$ だけで，トランス形は2つの $\\ce{CH2OH}$ が反対側にある．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "同じ分子式の異性体を官能基の種類（カルボン酸・エステル・ヒドロキシアルデヒド・ジオール）で分類し，加水分解生成物の検出反応，不斉炭素の有無，枝分かれ，シス-トランス異性の条件を組み合わせて1つに絞り込む．"
+ },
+ "concepts": [
+  "organic-structure",
+  "carbon-silicon",
+  "alcohol-carbonyl"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "異性体",
+  "エステル",
+  "不斉炭素原子",
+  "シス-トランス異性体",
+  "ヨードホルム反応"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

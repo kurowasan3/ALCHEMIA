@@ -1,0 +1,108 @@
+{
+ "id": "THE-THC-033",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-10",
+ "topic": "原料による合成ガスの H₂/CO 比とメタノール合成の経路の比較",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "メタノールは，一酸化炭素と水素の混合気体（合成ガス）から $\\ce{CO + 2H2 -> CH3OH}$ の反応でつくられる．合成ガスの原料と反応は次のとおりである（物質はすべて気体，黒鉛だけは固体）．\n\\[\\begin{aligned}\n&\\text{(a)}\\ \\ce{C(黒鉛) + H2O -> CO + H2} && \\Delta H=+131\\,\\mathrm{kJ}\\\\\n&\\text{(b)}\\ \\ce{CH4 + H2O -> CO + 3H2} && \\Delta H=+206\\,\\mathrm{kJ}\\\\\n&\\text{(c)}\\ \\ce{CO + 2H2 -> CH3OH} && \\Delta H=-91\\,\\mathrm{kJ}\\\\\n&\\text{(d)}\\ \\ce{CO + H2O -> CO2 + H2} && \\Delta H=-41\\,\\mathrm{kJ}\n\\end{aligned}\\]\n原子量は H = 1.0，C = 12，O = 16 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "反応 (a) だけで得た合成ガスと，反応 (b) だけで得た合成ガスを，それぞれ (c) でメタノールにする．どちらの場合も，CO と $\\ce{H2}$ のうち余るのはどちらか．また，ガスに含まれる CO 1 mol あたり何 mol 余るか．"
+     },
+     {
+      "id": "2",
+      "tex": "反応 (a) で得た合成ガスの CO の一部を (d) で $\\ce{CO2}$ に変えて $\\ce{H2}$ と CO の物質量の比を $2:1$ にし，$\\ce{CO2}$ を除いてから全部をメタノールにした．黒鉛 $1.2\\,\\mathrm{kg}$ から得られるメタノールは何 kg か．有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(d) を使わずに，黒鉛からの合成ガス (a) とメタンからの合成ガス (b) を混ぜて，過不足なくメタノールにしたい．原料の黒鉛とメタンの物質量の比を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(2) の方法と (3) の方法について，原料（黒鉛・メタン・水）からメタノール 2 mol をつくる全体の反応式と反応エンタルピーをそれぞれ求めよ．また，熱の出入りと $\\ce{CO2}$ の排出の点で，どちらの方法が有利か答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "(a)：CO が 0.50 mol 余る．(b)：$\\ce{H2}$ が 1.0 mol 余る．"
+   },
+   {
+    "id": "2",
+    "tex": "$2.1\\,\\mathrm{kg}$"
+   },
+   {
+    "id": "3",
+    "tex": "黒鉛：メタン ＝ 1：1"
+   },
+   {
+    "id": "4",
+    "tex": "シフト反応を使う方法：$\\ce{3C + 4H2O -> 2CH3OH + CO2}$，$\\Delta H=+170\\,\\mathrm{kJ}$．2つの合成ガスを混ぜる方法：$\\ce{C + CH4 + 2H2O -> 2CH3OH}$，$\\Delta H=+155\\,\\mathrm{kJ}$．混ぜる方法のほうが外から与える熱が少なく，$\\ce{CO2}$ も出さないので有利．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　(c) では CO と $\\ce{H2}$ が $1:2$ で反応する．(a) のガスは $\\ce{H2}:\\ce{CO}=1:1$ で $\\ce{H2}$ が足りず，CO 1 mol のうち 0.50 mol しか反応しないので $\\boldsymbol{\\text{CO が 0.50 mol}}$ 余る．(b) のガスは $3:1$ なので，CO 1 mol と反応する $\\ce{H2}$ は 2 mol で，$\\boldsymbol{\\ce{H2}\\text{ が 1.0 mol}}$ 余る．つまり，炭素だけの原料は水素が不足し，水素の多いメタンは水素が余る．\n\n\\textbf{(2)}　黒鉛 3 mol から (a) で $\\ce{3CO + 3H2}$．このうち CO 1 mol を (d) で変えると $\\ce{2CO + 4H2 + CO2}$ となり，ちょうど $2:1$．よって黒鉛 3 mol からメタノール 2 mol．\n\\[\\frac{1.2\\times10^{3}}{12}\\times\\frac{2}{3}\\times32=2.13\\times10^{3}\\,\\mathrm{g}\\fallingdotseq \\boldsymbol{2.1\\,\\mathrm{kg}}\\]\n炭素の $\\frac{1}{3}$ は $\\ce{CO2}$ として捨てられることになる．\n\n\\textbf{(3)}　黒鉛 $x$ mol，メタン $y$ mol とすると，CO は $x+y$，$\\ce{H2}$ は $x+3y$ mol．$x+3y=2(x+y)$ より $x=y$，つまり $\\boldsymbol{1:1}$．\n\n\\textbf{(4)}　(2) の方法：(a)$\\times3$＋(d)＋(c)$\\times2$ より\n\\[\\ce{3C + 4H2O -> 2CH3OH + CO2}\\quad \\Delta H=3\\times131+(-41)+2\\times(-91)=\\boldsymbol{+170\\,\\mathrm{kJ}}\\]\n(3) の方法：(a)＋(b)＋(c)$\\times2$ より\n\\[\\ce{C + CH4 + 2H2O -> 2CH3OH}\\quad \\Delta H=131+206+2\\times(-91)=\\boldsymbol{+155\\,\\mathrm{kJ}}\\]\nどちらも全体として吸熱で，外から熱を与える必要がある（実際の工場では燃料の燃焼でまかなう）．(3) の方法は吸熱量が小さく，原料の炭素がすべてメタノールに入り $\\ce{CO2}$ を出さない．(2) の方法では水素の不足を水（(d) の反応）から補うかわりに，その分の炭素が $\\ce{CO2}$ になる．水素の多い原料と少ない原料を組み合わせるほうが有利である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "メタノール合成には H₂ と CO が 2:1 で必要で，炭素（石炭）からの合成ガスは水素不足，メタンからの合成ガスは水素過剰になる．水素不足をシフト反応で補うと炭素の一部が CO₂ として失われるが，水素の多い原料と少ない原料を混ぜれば過不足なく反応し，ヘスの法則で全体の反応エンタルピーを比べると有利さがわかる．"
+ },
+ "concepts": [
+  "enthalpy",
+  "carbon-silicon"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ヘスの法則",
+  "合成ガス",
+  "メタノール",
+  "量的関係",
+  "シフト反応"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

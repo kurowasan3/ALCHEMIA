@@ -1,0 +1,108 @@
+{
+ "id": "THE-SOL-036",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-09",
+ "topic": "理想溶液の気液平衡：沸き始めと気化し終わりの圧力・てこの関係",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ベンゼン（A）とトルエン（B）の混合液体は理想溶液で，各成分の蒸気の分圧はラウールの法則 $p_{\\mathrm A}=x_{\\mathrm A}P_{\\mathrm A}^{\\circ}$，$p_{\\mathrm B}=x_{\\mathrm B}P_{\\mathrm B}^{\\circ}$（$x$ は液体中のモル分率，$P^{\\circ}$ は純物質の蒸気圧）に従う．$90$ ℃ で $P_{\\mathrm A}^{\\circ}=1.36\\times10^{5}\\,\\mathrm{Pa}$，$P_{\\mathrm B}^{\\circ}=5.40\\times10^{4}\\,\\mathrm{Pa}$ である．\nなめらかに動くピストン付きの容器に，ベンゼン $0.400\\,\\mathrm{mol}$ とトルエン $0.600\\,\\mathrm{mol}$ だけを入れ（空気は含まない），$90$ ℃ に保ったまま，十分に高い圧力から外圧をゆっくり下げていく．容器内は常に気液平衡にあるとし，液体の体積は無視する．$R=8.3\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "気体が生じ始める圧力と，そのとき生じる気体中のベンゼンのモル分率を有効数字3桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "圧力を下げていくと，やがて液体がすべて気体になる．液体の最後の1滴が消える圧力と，その1滴の中のベンゼンのモル分率を有効数字3桁で求めよ．また，気化が進む間に液体の組成がどちら向きに変化するか，理由とともに答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "圧力が $8.00\\times10^{4}\\,\\mathrm{Pa}$ のとき，液体と気体それぞれの中のベンゼンのモル分率，液体と気体の物質量，気体の体積〔L〕を有効数字3桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "容器の体積を $50.0\\,\\mathrm L$ にしたとき，容器内に液体は残っているか．判断の根拠を示し，そのときの圧力を有効数字2桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$8.68\\times10^{4}\\,\\mathrm{Pa}$，$0.627$"
+   },
+   {
+    "id": "2",
+    "tex": "$7.12\\times10^{4}\\,\\mathrm{Pa}$，$0.209$．蒸発しやすいベンゼンが気体に多く移るので，残る液体はトルエンに富む向き（ベンゼンのモル分率が $0.400$ から $0.209$ へ減る向き）に変化する．"
+   },
+   {
+    "id": "3",
+    "tex": "液体 $0.317$，気体 $0.539$．液体 $0.626\\,\\mathrm{mol}$，気体 $0.374\\,\\mathrm{mol}$，気体の体積 $14.1\\,\\mathrm L$"
+   },
+   {
+    "id": "4",
+    "tex": "残っていない．すべて気体と仮定すると圧力は $6.0\\times10^{4}\\,\\mathrm{Pa}$ で，液体が消える圧力 $7.12\\times10^{4}\\,\\mathrm{Pa}$ より低いので，この圧力では液体は存在できず，仮定と矛盾しない．圧力は $6.0\\times10^{4}\\,\\mathrm{Pa}$．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$P=p_{\\mathrm A}+p_{\\mathrm B}$，気体中のベンゼンのモル分率は $y_{\\mathrm A}=\\dfrac{p_{\\mathrm A}}{P}$（ドルトンの分圧の法則）．\n\\textbf{(1)} 気体が生じ始めるとき，液体の組成はもとの $x_{\\mathrm A}=0.400$ のまま（気体はまだ無視できる量）．\n\\[ P=0.400\\times1.36\\times10^{5}+0.600\\times5.40\\times10^{4}=5.44\\times10^{4}+3.24\\times10^{4}=\\boldsymbol{8.68\\times10^{4}\\,\\mathrm{Pa}} \\]\n\\[ y_{\\mathrm A}=\\frac{5.44\\times10^{4}}{8.68\\times10^{4}}=\\boldsymbol{0.627} \\]\n\\textbf{(2)} 最後の1滴が消えるとき，気体の組成がもとの組成 $y_{\\mathrm A}=0.400$ になっている．$x_{\\mathrm A}=\\dfrac{y_{\\mathrm A}P}{P_{\\mathrm A}^{\\circ}}$，$x_{\\mathrm B}=\\dfrac{y_{\\mathrm B}P}{P_{\\mathrm B}^{\\circ}}$ で $x_{\\mathrm A}+x_{\\mathrm B}=1$ より\n\\[ \\frac{1}{P}=\\frac{0.400}{1.36\\times10^{5}}+\\frac{0.600}{5.40\\times10^{4}}=1.405\\times10^{-5}\\ \\Rightarrow\\ P=\\boldsymbol{7.12\\times10^{4}\\,\\mathrm{Pa}} \\]\n\\[ x_{\\mathrm A}=\\frac{0.400\\times7.12\\times10^{4}}{1.36\\times10^{5}}=\\boldsymbol{0.209} \\]\n気体は常に液体よりベンゼンに富む（$P_{\\mathrm A}^{\\circ}>P_{\\mathrm B}^{\\circ}$）ので，気化が進むとベンゼンが優先的に液体から抜け，液体はトルエンに富んでいく．そのため気化は一定の圧力では起こらず，$8.68\\times10^{4}$ から $7.12\\times10^{4}\\,\\mathrm{Pa}$ まで圧力を下げる間に進む．\n\\textbf{(3)} $P=x_{\\mathrm A}P_{\\mathrm A}^{\\circ}+(1-x_{\\mathrm A})P_{\\mathrm B}^{\\circ}=8.00\\times10^{4}$ より\n\\[ x_{\\mathrm A}=\\frac{8.00-5.40}{13.6-5.40}=\\boldsymbol{0.317},\\qquad y_{\\mathrm A}=\\frac{0.317\\times1.36\\times10^{5}}{8.00\\times10^{4}}=\\boldsymbol{0.539} \\]\n液体を $L\\,\\mathrm{mol}$，気体を $V\\,\\mathrm{mol}$ とすると，$L+V=1.00$，ベンゼンの収支 $0.317L+0.539V=0.400$ より\n\\[ V=\\frac{0.400-0.317}{0.539-0.317}=\\boldsymbol{0.374\\,\\mathrm{mol}},\\qquad L=\\boldsymbol{0.626\\,\\mathrm{mol}} \\]\n気体の体積は $\\dfrac{0.374\\times8.3\\times10^{3}\\times363}{8.00\\times10^{4}}=\\boldsymbol{14.1\\,\\mathrm L}$．\n（$8.00\\times10^{4}$ は (1) と (2) の圧力の間にあるので，液体と気体が共存するという前提と合っている．）\n\\textbf{(4)} すべて気体と仮定すると $P=\\dfrac{1.00\\times8.3\\times10^{3}\\times363}{50.0}=6.03\\times10^{4}\\,\\mathrm{Pa}$．もとの組成の気体が凝縮し始める圧力は (2) の $7.12\\times10^{4}\\,\\mathrm{Pa}$ であり，これより低い圧力では液体は存在できない．仮定と矛盾しないので，\\textbf{液体は残っておらず}，圧力は $\\boldsymbol{6.0\\times10^{4}\\,\\mathrm{Pa}}$．\n（もし仮定した圧力が $7.12\\times10^{4}\\,\\mathrm{Pa}$ を超えていれば，液体が共存しており，(3) のように組成と物質収支を連立して求め直す必要がある．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "2成分の理想溶液を閉じた系で気化させると，気化し始めは液体がもとの組成，気化し終わりは気体がもとの組成になるので，気化は一定の圧力ではなく圧力の範囲で進む．その間の任意の圧力ではラウールの法則で両相の組成が決まり，物質収支（てこの関係）で両相の量が決まる．全部気体と仮定した結果を気化し終わりの圧力と比べて液体の有無を判断する．"
+ },
+ "concepts": [
+  "solution-colligative",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ラウールの法則",
+  "気液平衡",
+  "理想溶液",
+  "物質収支",
+  "場合分け"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

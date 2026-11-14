@@ -1,0 +1,109 @@
+{
+ "id": "THE-SOL-049",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-09",
+ "topic": "ヘンリーの法則を体積で表すときの測る圧力",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "0 ℃ で，圧力 $1.0\\times10^{5}\\,\\mathrm{Pa}$ の窒素 $\\ce{N2}$ に接している水 1.00 L には，0 ℃，$1.0\\times10^{5}\\,\\mathrm{Pa}$ で測って $0.0235\\,\\mathrm{L}$ の $\\ce{N2}$ が溶ける．同じ条件で酸素 $\\ce{O2}$ は $0.0489\\,\\mathrm{L}$ 溶ける．気体は理想気体とし，ヘンリーの法則が成り立つものとする．水の蒸気圧と，気体の溶解による水の体積変化は無視する．気体定数は $R = 8.31\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$，0 ℃ = 273 K とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "0 ℃ で，圧力 $3.0\\times10^{5}\\,\\mathrm{Pa}$ の $\\ce{N2}$ に接している水 2.00 L に溶けている $\\ce{N2}$ の物質量を，有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) で溶けている $\\ce{N2}$ の体積を，(a) 0 ℃，$3.0\\times10^{5}\\,\\mathrm{Pa}$ で測った場合，(b) 0 ℃，$1.0\\times10^{5}\\,\\mathrm{Pa}$ で測った場合について，それぞれ有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "物質量の比が $\\ce{N2} : \\ce{O2} = 4 : 1$ の混合気体が，0 ℃，全圧 $5.0\\times10^{5}\\,\\mathrm{Pa}$ で水 1.00 L に接している．溶けている $\\ce{N2}$ と $\\ce{O2}$ の体積を，それぞれ 0 ℃，$5.0\\times10^{5}\\,\\mathrm{Pa}$ で測った値として有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) で混合気体の組成を変えずに全圧を $1.0\\times10^{6}\\,\\mathrm{Pa}$ にした．溶けている $\\ce{N2}$ の体積を 0 ℃，$1.0\\times10^{6}\\,\\mathrm{Pa}$ で測ると，(3) の値の何倍になるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$6.2\\times10^{-3}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "2",
+    "tex": "(a) $4.7\\times10^{-2}\\,\\mathrm{L}$，(b) $0.14\\,\\mathrm{L}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{N2}$ $1.9\\times10^{-2}\\,\\mathrm{L}$，$\\ce{O2}$ $9.8\\times10^{-3}\\,\\mathrm{L}$"
+   },
+   {
+    "id": "4",
+    "tex": "1 倍（変わらない）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　溶ける物質量は気体の分圧に比例する．体積で表すときは「どの圧力で測った体積か」で値が変わる．接している気体自身の分圧で測れば，分圧が $k$ 倍になっても物質量 $k$ 倍・測る圧力 $k$ 倍で体積は変わらない．\n\n(1) $1.0\\times10^{5}\\,\\mathrm{Pa}$ で水 1.00 L に溶ける $\\ce{N2}$ の物質量は\n\\[ n_0 = \\dfrac{1.0\\times10^{5} \\times 0.0235}{8.31\\times10^{3} \\times 273} = 1.04\\times10^{-3}\\,\\mathrm{mol} \\]\n圧力 3.0 倍，水 2.00 倍なので $n = 1.04\\times10^{-3} \\times 3.0 \\times 2.00 = 6.2\\times10^{-3}$，$\\boldsymbol{6.2\\times10^{-3}\\,\\mathrm{mol}}$．\n\n(2) (a) 物質量が 6.0 倍で，測る圧力が 3.0 倍なので，体積は $0.0235 \\times 6.0 \\div 3.0 = 0.0470$，$\\boldsymbol{4.7\\times10^{-2}\\,\\mathrm{L}}$（水 1 L あたりでは $1.0\\times10^{5}\\,\\mathrm{Pa}$ のときと同じ 0.0235 L）．\n(b) $0.0235 \\times 6.0 = 0.141$，$\\boldsymbol{0.14\\,\\mathrm{L}}$（物質量に比例）．\n\n(3) 分圧は $\\ce{N2}$ $4.0\\times10^{5}\\,\\mathrm{Pa}$，$\\ce{O2}$ $1.0\\times10^{5}\\,\\mathrm{Pa}$．溶ける物質量はそれぞれ $1.0\\times10^{5}\\,\\mathrm{Pa}$ のときの 4.0 倍，1.0 倍．これを分圧ではなく全圧 $5.0\\times10^{5}\\,\\mathrm{Pa}$ で測るので\n\\[ \\ce{N2}:\\ 0.0235 \\times \\dfrac{4.0}{5.0} = 0.0188 \\fallingdotseq \\boldsymbol{1.9\\times10^{-2}\\,\\mathrm{L}} \\qquad \\ce{O2}:\\ 0.0489 \\times \\dfrac{1.0}{5.0} = 0.00978 \\fallingdotseq \\boldsymbol{9.8\\times10^{-3}\\,\\mathrm{L}} \\]\n「その圧力で測れば体積は一定」をそのまま使って 0.0235 L としてはいけない．一定になるのは，その気体自身の分圧で測ったときである．\n\n(4) 組成が同じなので $\\ce{N2}$ の分圧も 2 倍になり，溶ける物質量は 2 倍．測る圧力も 2 倍なので，体積は $\\boldsymbol{1\\ \\text{倍}}$（$1.9\\times10^{-2}\\,\\mathrm{L}$ のまま）である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ヘンリーの法則で溶ける物質量は分圧に比例するので，溶けた気体の体積は，その気体自身の分圧で測れば圧力によらず一定，一定の圧力で測れば分圧に比例する．混合気体では全圧で測ると分圧と全圧の比だけ小さくなる．"
+ },
+ "concepts": [
+  "solution-colligative",
+  "mole",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ヘンリーの法則",
+  "気体の溶解度",
+  "分圧",
+  "体積の換算",
+  "混合気体"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

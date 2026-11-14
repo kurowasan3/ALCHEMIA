@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 280" width="520" height="280">
+  <g fill="none" stroke="currentColor" stroke-width="2" font-family="Noto Sans CJK JP, sans-serif">
+    <!-- 容器I（定積） -->
+    <rect x="40" y="150" width="130" height="90" rx="6"/>
+    <!-- 連結管とコック -->
+    <line x1="170" y1="190" x2="290" y2="190"/>
+    <line x1="170" y1="200" x2="290" y2="200"/>
+    <circle cx="230" cy="195" r="11" fill="none"/>
+    <line x1="230" y1="182" x2="230" y2="208"/>
+    <!-- 容器II（シリンダー） -->
+    <line x1="290" y1="20" x2="290" y2="190"/>
+    <line x1="290" y1="200" x2="290" y2="240"/>
+    <line x1="400" y1="20" x2="400" y2="240"/>
+    <line x1="290" y1="240" x2="400" y2="240"/>
+    <!-- ピストン -->
+    <rect x="291" y="96" width="108" height="12" fill="currentColor" fill-opacity="0.25"/>
+    <!-- 外圧の矢印 -->
+    <line x1="345" y1="40" x2="345" y2="88"/>
+    <polyline points="338,78 345,90 352,78"/>
+  </g>
+  <g font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">
+    <text x="62" y="190">容器 I</text>
+    <text x="62" y="212">容積 2.0 L</text>
+    <text x="62" y="232" font-size="13">（体積一定）</text>
+    <text x="300" y="165">容器 II</text>
+    <text x="410" y="107">ピストン</text>
+    <text x="410" y="50" font-size="13">外圧（一定）</text>
+    <text x="410" y="68" font-size="13">1.0×10<tspan baseline-shift="super" font-size="10">5</tspan> Pa</text>
+    <text x="210" y="230">コック</text>
+  </g>
+</svg>

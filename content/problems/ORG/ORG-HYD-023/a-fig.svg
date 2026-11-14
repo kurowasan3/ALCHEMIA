@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 532" width="680" height="532">
+<text x="10" y="20" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">(a) P（メソ体）：Br と Br が反対向き</text>
+<line x1="170.0" y1="151.0" x2="170.0" y2="187.0" stroke="#c0392b" stroke-width="2"/>
+<text x="170.0" y="208.0" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#c0392b">Br</text>
+<line x1="147.5" y1="112.0" x2="116.3" y2="94.0" stroke="currentColor" stroke-width="2"/>
+<text x="102.5" y="91.0" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">CH<tspan baseline-shift="sub" font-size="10">3</tspan></text>
+<line x1="192.5" y1="112.0" x2="223.7" y2="94.0" stroke="currentColor" stroke-width="2"/>
+<text x="237.5" y="91.0" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">H</text>
+<circle cx="170.0" cy="125" r="26" fill="none" stroke="currentColor" stroke-width="2"/>
+<line x1="170.0" y1="125" x2="170.0" y2="63.0" stroke="#c0392b" stroke-width="2"/>
+<text x="170.0" y="52.0" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#c0392b">Br</text>
+<line x1="170.0" y1="125" x2="223.7" y2="156.0" stroke="currentColor" stroke-width="2"/>
+<text x="237.5" y="169.0" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">CH<tspan baseline-shift="sub" font-size="10">3</tspan></text>
+<line x1="170.0" y1="125" x2="116.3" y2="156.0" stroke="currentColor" stroke-width="2"/>
+<text x="102.5" y="169.0" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">H</text>
+<text x="170.0" y="232" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">CH<tspan baseline-shift="sub" font-size="10">3</tspan> どうし 180° → トランス-2-ブテン</text>
+<text x="350" y="20" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">(b) Q（ラセミ体の一方）：Br と Br が反対向き</text>
+<line x1="510.0" y1="151.0" x2="510.0" y2="187.0" stroke="#c0392b" stroke-width="2"/>
+<text x="510.0" y="208.0" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#c0392b">Br</text>
+<line x1="532.5" y1="112.0" x2="563.7" y2="94.0" stroke="currentColor" stroke-width="2"/>
+<text x="577.5" y="91.0" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">CH<tspan baseline-shift="sub" font-size="10">3</tspan></text>
+<line x1="487.5" y1="112.0" x2="456.3" y2="94.0" stroke="currentColor" stroke-width="2"/>
+<text x="442.5" y="91.0" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">H</text>
+<circle cx="510.0" cy="125" r="26" fill="none" stroke="currentColor" stroke-width="2"/>
+<line x1="510.0" y1="125" x2="510.0" y2="63.0" stroke="#c0392b" stroke-width="2"/>
+<text x="510.0" y="52.0" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#c0392b">Br</text>
+<line x1="510.0" y1="125" x2="563.7" y2="156.0" stroke="currentColor" stroke-width="2"/>
+<text x="577.5" y="169.0" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">CH<tspan baseline-shift="sub" font-size="10">3</tspan></text>
+<line x1="510.0" y1="125" x2="456.3" y2="156.0" stroke="currentColor" stroke-width="2"/>
+<text x="442.5" y="169.0" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">H</text>
+<text x="510.0" y="232" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">CH<tspan baseline-shift="sub" font-size="10">3</tspan> どうし 60° → シス-2-ブテン</text>
+<text x="10" y="270" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">(c) P：手前の H と奥の Br が反対向き</text>
+<line x1="192.5" y1="362.0" x2="223.7" y2="344.0" stroke="#c0392b" stroke-width="2"/>
+<text x="237.5" y="341.0" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#c0392b">Br</text>
+<line x1="170.0" y1="401.0" x2="170.0" y2="437.0" stroke="currentColor" stroke-width="2"/>
+<text x="170.0" y="458.0" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">CH<tspan baseline-shift="sub" font-size="10">3</tspan></text>
+<line x1="147.5" y1="362.0" x2="116.3" y2="344.0" stroke="currentColor" stroke-width="2"/>
+<text x="102.5" y="341.0" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">H</text>
+<circle cx="170.0" cy="375" r="26" fill="none" stroke="currentColor" stroke-width="2"/>
+<line x1="170.0" y1="375" x2="170.0" y2="313.0" stroke="currentColor" stroke-width="2"/>
+<text x="170.0" y="302.0" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">Br</text>
+<line x1="170.0" y1="375" x2="223.7" y2="406.0" stroke="currentColor" stroke-width="2"/>
+<text x="237.5" y="419.0" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">CH<tspan baseline-shift="sub" font-size="10">3</tspan></text>
+<line x1="170.0" y1="375" x2="116.3" y2="406.0" stroke="#c0392b" stroke-width="2"/>
+<text x="102.5" y="419.0" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#c0392b">H</text>
+<text x="170.0" y="482" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">CH<tspan baseline-shift="sub" font-size="10">3</tspan> どうし 60° → CH<tspan baseline-shift="sub" font-size="10">3</tspan> が同じ側</text>
+<text x="350" y="270" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">(d) Q：手前の H と奥の Br が反対向き</text>
+<line x1="532.5" y1="362.0" x2="563.7" y2="344.0" stroke="#c0392b" stroke-width="2"/>
+<text x="577.5" y="341.0" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#c0392b">Br</text>
+<line x1="487.5" y1="362.0" x2="456.3" y2="344.0" stroke="currentColor" stroke-width="2"/>
+<text x="442.5" y="341.0" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">CH<tspan baseline-shift="sub" font-size="10">3</tspan></text>
+<line x1="510.0" y1="401.0" x2="510.0" y2="437.0" stroke="currentColor" stroke-width="2"/>
+<text x="510.0" y="458.0" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">H</text>
+<circle cx="510.0" cy="375" r="26" fill="none" stroke="currentColor" stroke-width="2"/>
+<line x1="510.0" y1="375" x2="510.0" y2="313.0" stroke="currentColor" stroke-width="2"/>
+<text x="510.0" y="302.0" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">Br</text>
+<line x1="510.0" y1="375" x2="563.7" y2="406.0" stroke="currentColor" stroke-width="2"/>
+<text x="577.5" y="419.0" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">CH<tspan baseline-shift="sub" font-size="10">3</tspan></text>
+<line x1="510.0" y1="375" x2="456.3" y2="406.0" stroke="#c0392b" stroke-width="2"/>
+<text x="442.5" y="419.0" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#c0392b">H</text>
+<text x="510.0" y="482" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">CH<tspan baseline-shift="sub" font-size="10">3</tspan> どうし 180° → CH<tspan baseline-shift="sub" font-size="10">3</tspan> が反対側</text>
+<text x="10" y="520" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="currentColor">C2–C3 結合の軸方向から見た図（中心から出る線：手前の C2，円から出る線：奥の C3）．赤は脱離する原子．</text>
+</svg>

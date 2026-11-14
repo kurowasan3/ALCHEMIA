@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 300" width="440" height="300" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="none" stroke="currentColor">
+  <line x1="40" y1="290" x2="40" y2="20" stroke-width="1.5"/>
+  <path d="M35 28 L40 18 L45 28" stroke-width="1.5"/>
+  <g fill="currentColor" stroke="none"><text x="6" y="150" font-size="13">エ</text><text x="6" y="166" font-size="13">ネ</text><text x="6" y="182" font-size="13">ル</text><text x="6" y="198" font-size="13">ギ</text><text x="6" y="214" font-size="13">ー</text></g>
+  <!-- 準位 -->
+  <line x1="90" y1="50" x2="260" y2="50" stroke-width="2"/>
+  <line x1="90" y1="170" x2="260" y2="170" stroke-width="2"/>
+  <line x1="90" y1="215" x2="260" y2="215" stroke-width="2"/>
+  <line x1="280" y1="270" x2="420" y2="270" stroke-width="2"/>
+  <line x1="260" y1="215" x2="420" y2="215" stroke-dasharray="4 3" opacity="0.5"/>
+  <g fill="currentColor" stroke="none">
+    <text x="96" y="42">2H(気) ＋ 2Br(気)</text>
+    <text x="150" y="162">H<tspan baseline-shift="sub" font-size="10">2</tspan>(気) ＋ Br<tspan baseline-shift="sub" font-size="10">2</tspan>(気)</text>
+    <text x="150" y="236">H<tspan baseline-shift="sub" font-size="10">2</tspan>(気) ＋ Br<tspan baseline-shift="sub" font-size="10">2</tspan>(液)</text>
+    <text x="300" y="290">2HBr(気)</text>
+    <text x="48" y="219">0</text>
+    <text x="118" y="115">629</text>
+    <text x="118" y="198">31</text>
+    <text x="356" y="248">72</text>
+  </g>
+  <!-- 矢印 -->
+  <line x1="110" y1="168" x2="110" y2="54" stroke-width="1.5"/>
+  <path d="M105 62 L110 52 L115 62" stroke-width="1.5"/>
+  <line x1="110" y1="213" x2="110" y2="174" stroke-width="1.5"/>
+  <path d="M105 182 L110 172 L115 182" stroke-width="1.5"/>
+  <line x1="345" y1="217" x2="345" y2="266" stroke-width="1.5"/>
+  <path d="M340 258 L345 268 L350 258" stroke-width="1.5"/>
+  <g fill="currentColor" stroke="none"><text x="300" y="130" font-size="12">（単位 kJ，縦軸は</text><text x="300" y="146" font-size="12">　正確な比率ではない）</text></g>
+</svg>

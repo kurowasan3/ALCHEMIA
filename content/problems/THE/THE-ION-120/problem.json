@@ -1,0 +1,110 @@
+{
+ "id": "THE-ION-120",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "半導体の電子・正孔の生成平衡（イオン積）とドナー・アクセプター添加によるキャリア濃度の温度変化",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "純粋なケイ素の結晶では，熱によって共有結合から一部の電子が離れ，結晶中を動ける電子と，電子が抜けた孔（正孔．正電荷をもつ粒子のように動く）が対になって生じる．これは水の電離 $\\ce{H2O <=> H+ + OH-}$ と同じ形の平衡とみなすことができ，単位体積あたりの電子の数 $n$ と正孔の数 $p$（数濃度，単位 $\\mathrm{cm^{-3}}$）の積は，温度が決まれば不純物の有無によらず一定である．\n\\[np=n_{\\mathrm i}^{\\,2}\\]\nここで $n_{\\mathrm i}$ は純粋な結晶での $n$（$=p$）の値で，$300\\,\\mathrm{K}$ では $n_{\\mathrm i}=1.0\\times10^{10}\\,\\mathrm{cm^{-3}}$ である．$n_{\\mathrm i}^{\\,2}$ は温度 $T$ とともに\n\\[n_{\\mathrm i}^{\\,2}=C\\exp\\!\\left(-\\frac{E_{\\mathrm g}}{k_{\\mathrm B}T}\\right)\\]\nのように変わるものとする（$C$ は定数，$E_{\\mathrm g}=1.12\\,\\mathrm{eV}$，$k_{\\mathrm B}=8.62\\times10^{-5}\\,\\mathrm{eV/K}$）．\n結晶に 15 族のリンを数濃度 $N_{\\mathrm D}$ で加えると，リン原子はすべて電子を 1 個放出して動けない陽イオンになる．13 族のホウ素を数濃度 $N_{\\mathrm A}$ で加えると，ホウ素原子はすべて電子を 1 個受け取って動けない陰イオンになり，そのぶん正孔が生じる．結晶全体はつねに電気的に中性である．電気伝導率は $n+p$ に比例するとみなす（電子と正孔の動きやすさは等しいとする）．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "リンだけを加えた結晶について，$n$，$p$，$N_{\\mathrm D}$ の間に成り立つ電気的中性の条件を式で書け．$300\\,\\mathrm{K}$，$N_{\\mathrm D}=1.0\\times10^{15}\\,\\mathrm{cm^{-3}}$ のときの $n$ と $p$ を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$300\\,\\mathrm{K}$ で，リンの数濃度が $N_{\\mathrm D}=1.0\\times10^{10}\\,\\mathrm{cm^{-3}}$ ときわめて小さいとき，$n$ と $p$ を有効数字 2 桁で求めよ．また，このとき $n\\fallingdotseq N_{\\mathrm D}$ と近似できない理由を述べよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$N_{\\mathrm D}=1.0\\times10^{15}\\,\\mathrm{cm^{-3}}$ の結晶を加熱していく．$p$ が $N_{\\mathrm D}$ の $10\\,\\%$ に達すると $n\\fallingdotseq N_{\\mathrm D}$ とはみなせなくなるとする．その温度を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$N_{\\mathrm D}=1.0\\times10^{15}\\,\\mathrm{cm^{-3}}$ の結晶に，さらにホウ素を加える（$300\\,\\mathrm{K}$）．(a) $N_{\\mathrm A}=0.90\\times10^{15}\\,\\mathrm{cm^{-3}}$ のときの $n$，$p$ と，電気伝導率がホウ素を加える前の何倍になるか，(b) $N_{\\mathrm A}=1.0\\times10^{15}\\,\\mathrm{cm^{-3}}$ のときの $n$，$p$ と，電気伝導率がホウ素を加える前の何倍になるか，(c) $N_{\\mathrm A}=1.1\\times10^{15}\\,\\mathrm{cm^{-3}}$ のとき，電気を主に運ぶのは電子と正孔のどちらか，をそれぞれ答えよ（数値は有効数字 2 桁）．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$n=p+N_{\\mathrm D}$．$n=1.0\\times10^{15}\\,\\mathrm{cm^{-3}}$，$p=1.0\\times10^{5}\\,\\mathrm{cm^{-3}}$"
+   },
+   {
+    "id": "2",
+    "tex": "$n=1.6\\times10^{10}\\,\\mathrm{cm^{-3}}$，$p=6.2\\times10^{9}\\,\\mathrm{cm^{-3}}$．熱による電子・正孔の生成（$n_{\\mathrm i}=1.0\\times10^{10}$）がリン由来の電子と同程度で無視できず，また $p$ が $n_{\\mathrm i}$ より大きく減らないから．"
+   },
+   {
+    "id": "3",
+    "tex": "$5.8\\times10^{2}\\,\\mathrm{K}$"
+   },
+   {
+    "id": "4",
+    "tex": "(a) $n=1.0\\times10^{14}\\,\\mathrm{cm^{-3}}$，$p=1.0\\times10^{6}\\,\\mathrm{cm^{-3}}$，$0.10$ 倍　(b) $n=p=1.0\\times10^{10}\\,\\mathrm{cm^{-3}}$，$2.0\\times10^{-5}$ 倍　(c) 正孔（$p=1.0\\times10^{14}\\,\\mathrm{cm^{-3}}$ の p 型）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　電子と正孔の生成は水の電離と同じ形の平衡で，$np=n_{\\mathrm i}^{\\,2}$ が「水のイオン積」，電気的中性の条件が「電荷のつり合い」にあたる．リンは強酸（全部が電離して電子を出す），ホウ素は強塩基のように，正孔をつくる側の担い手と考えればよい．\n\n\\textbf{(1)}　正電荷は正孔とリンの陽イオン，負電荷は電子なので\n\\[\\boldsymbol{n=p+N_{\\mathrm D}}\\]\n$p=n_{\\mathrm i}^{\\,2}/n$ を代入すると $n^2-N_{\\mathrm D}n-n_{\\mathrm i}^{\\,2}=0$．$N_{\\mathrm D}=1.0\\times10^{15}\\gg n_{\\mathrm i}$ なので $n\\fallingdotseq N_{\\mathrm D}=\\boldsymbol{1.0\\times10^{15}\\,\\mathrm{cm^{-3}}}$，\n\\[p=\\frac{n_{\\mathrm i}^{\\,2}}{n}=\\frac{(1.0\\times10^{10})^2}{1.0\\times10^{15}}=\\boldsymbol{1.0\\times10^{5}\\,\\mathrm{cm^{-3}}}\\]\n正孔は純粋な結晶の $10^{-5}$ 倍に減る（酸を加えると $\\ce{OH-}$ が減るのと同じ）．\n\n\\textbf{(2)}　二次方程式をそのまま解く．\n\\[n=\\frac{N_{\\mathrm D}}{2}+\\sqrt{\\frac{N_{\\mathrm D}^{\\,2}}{4}+n_{\\mathrm i}^{\\,2}}=(0.50+\\sqrt{0.25+1.0})\\times10^{10}=\\boldsymbol{1.6\\times10^{10}\\,\\mathrm{cm^{-3}}}\\]\n\\[p=n-N_{\\mathrm D}=\\boldsymbol{6.2\\times10^{9}\\,\\mathrm{cm^{-3}}}\\]\n$n\\fallingdotseq N_{\\mathrm D}$ とおくと $1.0\\times10^{10}$ となり大きく外れる．加えたリンから出る電子が，熱で生じる電子 $n_{\\mathrm i}$ と同程度しかないため，結晶自身の「電離」を無視できない（$10^{-8}\\,\\mathrm{mol/L}$ の塩酸の pH を求めるときに水の電離を無視できないのと同じ）．\n\n\\textbf{(3)}　$p=0.10N_{\\mathrm D}$ のとき $n=1.10N_{\\mathrm D}$ なので\n\\[n_{\\mathrm i}^{\\,2}(T)=np=0.11N_{\\mathrm D}^{\\,2}=1.1\\times10^{29}\\,\\mathrm{cm^{-6}}\\]\n$300\\,\\mathrm{K}$ の値との比をとると $C$ が消える．\n\\[\\frac{n_{\\mathrm i}^{\\,2}(T)}{n_{\\mathrm i}^{\\,2}(300)}=\\exp\\!\\left\\{\\frac{E_{\\mathrm g}}{k_{\\mathrm B}}\\left(\\frac{1}{300}-\\frac1T\\right)\\right\\}=\\frac{1.1\\times10^{29}}{1.0\\times10^{20}}=1.1\\times10^{9}\\]\n$E_{\\mathrm g}/k_{\\mathrm B}=1.12/(8.62\\times10^{-5})=1.30\\times10^{4}\\,\\mathrm K$，$\\ln(1.1\\times10^9)=20.8$ より\n\\[\\frac1T=\\frac1{300}-\\frac{20.8}{1.30\\times10^{4}}=3.33\\times10^{-3}-1.60\\times10^{-3}=1.73\\times10^{-3}\\,\\mathrm{K^{-1}}\\]\n$T=\\boldsymbol{5.8\\times10^{2}\\,\\mathrm K}$．$n_{\\mathrm i}^{\\,2}$ は温度に対して指数関数的に増えるので，室温では $10^{10}$ 倍も余裕があった近似が，温度が 2 倍程度になるだけで破れる．これより高温では，熱で生じる電子・正孔が主になり，リンを加えた効果が薄れていく．\n\n\\textbf{(4)}　中性の条件は $n+N_{\\mathrm A}=p+N_{\\mathrm D}$，すなわち $n-p=N_{\\mathrm D}-N_{\\mathrm A}$ となり，ホウ素はリンの電子を「中和」する．\n(a) $N_{\\mathrm D}-N_{\\mathrm A}=1.0\\times10^{14}\\gg n_{\\mathrm i}$ なので $n=\\boldsymbol{1.0\\times10^{14}\\,\\mathrm{cm^{-3}}}$，$p=n_{\\mathrm i}^{\\,2}/n=\\boldsymbol{1.0\\times10^{6}\\,\\mathrm{cm^{-3}}}$．電気伝導率は $(n+p)$ の比で $1.0\\times10^{14}/1.0\\times10^{15}=\\boldsymbol{0.10}$ 倍．加えた不純物の総量は増えたのに，電気を運ぶ粒子は減る．\n(b) $n-p=0$ なので $n=p=n_{\\mathrm i}=\\boldsymbol{1.0\\times10^{10}\\,\\mathrm{cm^{-3}}}$（中和点で $[\\ce{H+}]=[\\ce{OH-}]$ になるのと同じ）．電気伝導率は $2.0\\times10^{10}/1.0\\times10^{15}=\\boldsymbol{2.0\\times10^{-5}}$ 倍で，純粋なケイ素と同じ値に戻る．\n(c) $p-n=N_{\\mathrm A}-N_{\\mathrm D}=1.0\\times10^{14}$ なので $p\\fallingdotseq1.0\\times10^{14}$，$n=1.0\\times10^{6}$．電気を主に運ぶのは $\\boldsymbol{\\text{正孔}}$ で，結晶は p 型になる（中和点を越えて塩基が過剰になったのと同じ）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "半導体の電子と正孔の生成を水の電離と同じ平衡（np が一定のイオン積）とみなし，ドナー・アクセプターを強酸・強塩基のように扱って電気的中性の条件と連立すると，キャリア濃度が求まる．添加量が小さいときや高温で np が指数関数的に増えるときは n≒N_D の近似が破れ，ドナーとアクセプターが等量なら中和点のように純粋な結晶と同じ濃度に戻る．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "crystal",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "半導体",
+  "イオン積",
+  "電気的中性",
+  "近似の妥当性",
+  "温度変化",
+  "中和"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

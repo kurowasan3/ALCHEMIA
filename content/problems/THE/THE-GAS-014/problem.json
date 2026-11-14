@@ -1,0 +1,122 @@
+{
+ "id": "THE-GAS-014",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-08",
+ "topic": "水銀柱を用いた蒸気圧の測定と液体の消失",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，一端を閉じた断面積 $2.0\\,\\mathrm{cm^2}$ のガラス管に水銀を満たして水銀だめの中で倒立させ，管の閉じた端が水銀だめの水銀面から $80.0\\,\\mathrm{cm}$ の高さになるように固定した．はじめ外圧は $1.0\\times10^{5}\\,\\mathrm{Pa}$ で，管内の水銀柱の高さ $h$ は $76.0\\,\\mathrm{cm}$ であった．次に，揮発性の液体 X を合計 $1.0\\times10^{-3}\\,\\mathrm{mol}$ 管の下端から注入した．温度は 27 ℃ で一定，27 ℃ における X の飽和蒸気圧は $228\\,\\mathrm{mmHg}$ とする．$760\\,\\mathrm{mmHg}=1.0\\times10^{5}\\,\\mathrm{Pa}$，$R=8.3\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$ とし，水銀だめの水銀面の高さは変わらないものとする．液体 X の体積と，X の水銀への溶解は無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "十分に時間がたつと，水銀面の上に液体 X が少し残っていた．このときの $h$ は何 cm か．"
+     },
+     {
+      "id": "2",
+      "tex": "装置全体を圧力を調節できる容器に移し，外圧を少しずつ下げていくと，ある外圧で液体 X がちょうどなくなった．このときの外圧は何 Pa か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "さらに外圧を下げていくと，管内の水銀面が水銀だめの水銀面と一致した．このときの外圧は何 Pa か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(1) の状態（外圧 $1.0\\times10^{5}\\,\\mathrm{Pa}$）にもどし，管をさらに沈めて閉じた端の高さを $70.0\\,\\mathrm{cm}$ にした．$h$ は (1) と比べてどうなるか．理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：水銀柱を用いた蒸気圧の測定と液体の消失",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$53.2\\,\\mathrm{cm}$"
+   },
+   {
+    "id": "2",
+    "tex": "$8.1\\times10^{4}\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "3",
+    "tex": "$1.6\\times10^{4}\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "4",
+    "tex": "変わらない（$53.2\\,\\mathrm{cm}$ のまま）．液体 X が残っている限り管内の X の圧力は飽和蒸気圧で一定であり，空間が狭くなった分は蒸気が凝縮するだけだから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "外圧は「管内の気体の圧力＋水銀柱 $h$ の圧力」とつり合う．$228\\,\\mathrm{mmHg}=3.0\\times10^{4}\\,\\mathrm{Pa}$．\n\n\\textbf{(1)}　液体が残っているので管内の X の圧力は飽和蒸気圧 $228\\,\\mathrm{mmHg}$．$h=760-228=532\\,\\mathrm{mm}=\\boldsymbol{53.2\\,\\mathrm{cm}}$．\n（確認：空間は $(80.0-53.2)\\times2.0=53.6\\,\\mathrm{cm^3}$ で，ここに入る蒸気は $\\dfrac{3.0\\times10^{4}\\times0.0536}{8.3\\times10^{3}\\times300}=6.5\\times10^{-4}\\,\\mathrm{mol}<1.0\\times10^{-3}\\,\\mathrm{mol}$．確かに液体が残る．）\n\n\\textbf{(2)}　外圧を下げると $h$ が下がって空間が広がり，液体が蒸発していく．液体がちょうどなくなったとき，X $1.0\\times10^{-3}\\,\\mathrm{mol}$ がすべて気体で圧力は $3.0\\times10^{4}\\,\\mathrm{Pa}$ だから，その体積は\n\\[V=\\dfrac{1.0\\times10^{-3}\\times8.3\\times10^{3}\\times300}{3.0\\times10^{4}}=0.083\\,\\mathrm L=83\\,\\mathrm{cm^3}\\]\n空間の長さは $\\dfrac{83}{2.0}=41.5\\,\\mathrm{cm}$，$h=80.0-41.5=38.5\\,\\mathrm{cm}$．外圧は $385+228=613\\,\\mathrm{mmHg}=\\dfrac{613}{760}\\times1.0\\times10^{5}=\\boldsymbol{8.1\\times10^{4}\\,\\mathrm{Pa}}$．\n\n\\textbf{(3)}　この後は液体がないので X は飽和していない気体としてふるまう（ボイルの法則）．$h=0$ のとき体積は $80.0\\times2.0=160\\,\\mathrm{cm^3}$ で\n\\[P=\\dfrac{1.0\\times10^{-3}\\times8.3\\times10^{3}\\times300}{0.160}=1.56\\times10^{4}\\,\\mathrm{Pa}\\]\n$h=0$ なので外圧はこれに等しく $\\boldsymbol{1.6\\times10^{4}\\,\\mathrm{Pa}}$（飽和蒸気圧より低いので凝縮は起こらない）．\n\n\\textbf{(4)}　空間の長さは $70.0-53.2=16.8\\,\\mathrm{cm}$ に減るが，液体 X が残っている間は管内の圧力は飽和蒸気圧 $228\\,\\mathrm{mmHg}$ のままで，余分な蒸気が凝縮するだけである．外圧も変わらないので $h$ は\\textbf{変わらない}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "液体が共存する間は蒸気の圧力が飽和蒸気圧で一定（体積を変えても凝縮・蒸発が起こるだけ）であり，液体が消えた後はボイルの法則に従うことを，水銀柱の高さと外圧のつり合いで扱う．液体が消える外圧を物質量から逆算する．"
+ },
+ "concepts": [
+  "ideal-gas",
+  "mole",
+  "vapor-pressure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "蒸気圧",
+  "水銀柱",
+  "ボイルの法則",
+  "気液平衡"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

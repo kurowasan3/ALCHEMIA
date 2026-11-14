@@ -1,0 +1,108 @@
+{
+ "id": "THE-GAS-042",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-08",
+ "topic": "液体の気圧計の高さと蒸気圧・密度の効果",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "一端を閉じた十分に長いガラス管に液体を満たし，同じ液体の液だめの中で倒立させると，管の上部に空間ができて液柱が静止する（液体の気圧計）．25 ℃，大気圧 $760\\,\\mathrm{mmHg}$ で次の液体を使う場合を考える．密度は水銀 $13.6$，水 $1.00$，エタノール $0.79$，塩化ナトリウム水溶液（質量モル濃度 $1.00\\,\\mathrm{mol/kg}$）$1.04\\,\\mathrm{g/cm^3}$，25 ℃ の飽和蒸気圧は水 $23.8\\,\\mathrm{mmHg}$，エタノール $59.0\\,\\mathrm{mmHg}$ とし，水銀の蒸気圧は無視する．$\\ce{H2O}=18$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "水を使った気圧計の液柱の高さ（mm）を，水の蒸気圧を無視した場合と考慮した場合について有効数字 3 桁で求めよ．また，両者の差（mm）を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "エタノールを使った気圧計の液柱の高さ（mm）を，蒸気圧を考慮して有効数字 3 桁で求めよ．水の場合 ((1) の考慮した値) より高いか低いかを答え，その主な理由を述べよ．"
+     },
+     {
+      "id": "3",
+      "tex": "水の代わりに $1.00\\,\\mathrm{mol/kg}$ の塩化ナトリウム水溶液（完全に電離する）を使った．溶液の蒸気圧をラウールの法則（溶媒の蒸気圧は溶媒のモル分率に比例）で求め，液柱の高さ（mm）を有効数字 3 桁で求めよ．また，純粋な水の場合 ((1) の考慮した値) と比べて高いか低いかを答え，蒸気圧の変化と密度の変化のどちらの効果が大きいかを，それぞれによる高さの変化（mm）を示して答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "密度 $0.80\\,\\mathrm{g/cm^3}$ の未知の液体を使ったところ，液柱の高さは $11.5\\,\\mathrm m$ であった．この液体の 25 ℃ での蒸気圧（mmHg）を整数で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "無視：$1.03\\times10^{4}\\,\\mathrm{mm}$，考慮：$1.00\\times10^{4}\\,\\mathrm{mm}$，差 $324\\,\\mathrm{mm}$"
+   },
+   {
+    "id": "2",
+    "tex": "$1.21\\times10^{4}\\,\\mathrm{mm}$．水より高い．蒸気圧による低下（約 $1.0\\times10^{3}\\,\\mathrm{mm}$）より，密度が小さいことによる増加の効果の方が大きいから"
+   },
+   {
+    "id": "3",
+    "tex": "$9.64\\times10^{3}\\,\\mathrm{mm}$．低い．蒸気圧の降下による増加は約 $11\\,\\mathrm{mm}$ にすぎず，密度の増加による減少（約 $3.9\\times10^{2}\\,\\mathrm{mm}$）の効果の方が大きい"
+   },
+   {
+    "id": "4",
+    "tex": "$84\\,\\mathrm{mmHg}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　液柱の上の空間には液体の蒸気（飽和蒸気圧 $p_{\\mathrm v}$）があるので，液柱の底での圧力のつり合いは\n\\[ (\\text{大気圧})=p_{\\mathrm v}+(\\text{液柱の圧力}) \\]\n液柱の圧力は高さ×密度に比例するので，水銀柱に換算すると，密度 $\\rho$ の液柱の高さは\n\\[ h=(760-p_{\\mathrm v})\\times\\dfrac{13.6}{\\rho}\\ [\\mathrm{mm}]\\quad(p_{\\mathrm v}\\text{ は mmHg}) \\]\n\n\\textbf{(1)} 無視：$760\\times13.6=10336\\,\\mathrm{mm}$，すなわち $\\boldsymbol{1.03\\times10^{4}\\,\\mathrm{mm}}$．\n考慮：$(760-23.8)\\times13.6=10012\\,\\mathrm{mm}$，すなわち $\\boldsymbol{1.00\\times10^{4}\\,\\mathrm{mm}}$．\n差は $23.8\\times13.6=\\boldsymbol{324\\,\\mathrm{mm}}$ で，水銀柱では $23.8\\,\\mathrm{mm}$ の低下が，密度の比 13.6 倍に拡大されて現れる．\n\n\\textbf{(2)} $h=(760-59.0)\\times\\dfrac{13.6}{0.79}=12068\\,\\mathrm{mm}$，すなわち $\\boldsymbol{1.21\\times10^{4}\\,\\mathrm{mm}}$ で，水より $\\boldsymbol{\\text{高い}}$．\nエタノールは蒸気圧が大きく，蒸気圧による低下は $59.0\\times13.6/0.79\\approx1.0\\times10^{3}\\,\\mathrm{mm}$ と水の約 3 倍になるが，密度が小さいため同じ圧力を支えるのに必要な液柱がもともと $1/0.79$ 倍高く，こちらの効果が上回る．\n\n\\textbf{(3)} 溶液 1 kg あたり水 $1000/18=55.6\\,\\mathrm{mol}$，溶質粒子は $\\ce{Na+}$ と $\\ce{Cl-}$ で $2.00\\,\\mathrm{mol}$．\n\\[ x_{\\text{水}}=\\dfrac{55.6}{55.6+2.00}=0.965,\\qquad p_{\\mathrm v}=23.8\\times0.965=22.97\\,\\mathrm{mmHg} \\]\n\\[ h=(760-22.97)\\times\\dfrac{13.6}{1.04}=9638\\,\\mathrm{mm} \\]\nすなわち $\\boldsymbol{9.64\\times10^{3}\\,\\mathrm{mm}}$ で，純粋な水より $\\boldsymbol{\\text{低い}}$．\n蒸気圧の降下（$0.83\\,\\mathrm{mmHg}$）だけなら高さは $0.83\\times13.6\\approx\\boldsymbol{11\\,\\mathrm{mm}}$ 高くなるが，密度が 1.04 倍になると $10023\\times(1/1.04-1)\\approx\\boldsymbol{-3.9\\times10^{2}\\,\\mathrm{mm}}$ 低くなる．$\\boldsymbol{\\text{密度の効果の方が大きい}}$．\n\n\\textbf{(4)} $11.5\\,\\mathrm m=11500\\,\\mathrm{mm}$ の液柱の圧力を水銀柱に換算すると $11500\\times\\dfrac{0.80}{13.6}=676.5\\,\\mathrm{mmHg}$．\n\\[ p_{\\mathrm v}=760-676.5=83.5 \\]\nよって $\\boldsymbol{84\\,\\mathrm{mmHg}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "液体の気圧計では，大気圧が「液柱の上の空間の飽和蒸気圧＋液柱の圧力」とつり合い，液柱の高さは（大気圧−蒸気圧）を密度で割ったものに比例する．液体を替えたときの高さの変化を，蒸気圧の効果と密度の効果に分けて大きさを比べ，逆に液柱の高さから蒸気圧を求める．"
+ },
+ "concepts": [
+  "ideal-gas",
+  "vapor-pressure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "飽和蒸気圧",
+  "気圧計",
+  "液柱",
+  "密度",
+  "蒸気圧降下"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

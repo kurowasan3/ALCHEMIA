@@ -1,0 +1,101 @@
+{
+ "id": "INO-ALK-021",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-05",
+ "topic": "超酸化カリウムによる酸素の供給（呼吸との収支）と水素化ナトリウムの反応",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "equation",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "カリウムを十分な酸素中で燃焼させると超酸化カリウム $\\ce{KO2}$ が得られる．$\\ce{KO2}$ は超酸化物イオン $\\ce{O2-}$ を含み，二酸化炭素と反応して炭酸カリウムと酸素を生じるので，外気を遮断した呼吸用マスクの酸素源に用いられる．また，ナトリウムを水素とともに加熱すると水素化ナトリウム $\\ce{NaH}$ が得られる．原子量は C = 12，O = 16，K = 39.1 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{KO2}$ と $\\ce{CO2}$ の反応の化学反応式を書け．また，$\\ce{O2-}$ 1 個に含まれる電子の総数を答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "ある人は，酸素 $1.00\\,\\mathrm{mol}$ を消費するごとに二酸化炭素を $0.80\\,\\mathrm{mol}$ 吐き出す．吐き出した $\\ce{CO2}$ をすべてマスク内の $\\ce{KO2}$ が吸収するとき，(a) このとき発生する $\\ce{O2}$ は何 mol か，(b) 消費される $\\ce{KO2}$ は何 g か（有効数字 2 桁），(c) 外気を遮断したマスク内の酸素の量は，呼吸を続けると増えるか減るか，それぞれ答えよ．水蒸気との反応は考えない．"
+     },
+     {
+      "id": "3",
+      "tex": "水素化ナトリウムと水の反応の化学反応式を書け．また，この反応で酸化剤としてはたらいているのは，$\\ce{NaH}$ と $\\ce{H2O}$ のどちらか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{4KO2 + 2CO2 -> 2K2CO3 + 3O2}$，17 個"
+   },
+   {
+    "id": "2",
+    "tex": "(a) $1.20\\,\\mathrm{mol}$　(b) $1.1\\times10^{2}\\,\\mathrm g$　(c) 増える"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{NaH + H2O -> NaOH + H2}$，$\\ce{H2O}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　$\\ce{KO2}$ 中の O の酸化数は $-\\tfrac12$ で，$\\ce{CO2}$ と反応すると一部が $-2$（炭酸イオン），一部が $0$（$\\ce{O2}$）になる自己酸化還元である．$\\ce{NaH}$ の H は陰イオン $\\ce{H-}$（酸化数 $-1$）で，水の H（$+1$）と出会うと $\\ce{H2}$ になる．\n\n\\textbf{(1)} $\\ce{4KO2 + 2CO2 -> 2K2CO3 + 3O2}$．\n$\\ce{O2-}$ の電子は O 原子 2 個分の $8\\times2=16$ 個に 1 個加わって $\\boldsymbol{17}$ 個（奇数なので不対電子をもつ）．\n\n\\textbf{(2)} 反応式より $\\ce{CO2}$ 2 mol で $\\ce{O2}$ 3 mol を生じ，$\\ce{KO2}$ 4 mol を消費する．\n(a) $\\ce{O2}$：$0.80\\times\\dfrac32=\\boldsymbol{1.20\\,\\mathrm{mol}}$．\n(b) $\\ce{KO2}$：$0.80\\times2=1.60\\,\\mathrm{mol}$，$\\ce{KO2}=71.1$ より $1.60\\times71.1=113.8\\,\\mathrm g$ → $\\boldsymbol{1.1\\times10^{2}\\,\\mathrm g}$．\n(c) 消費した $\\ce{O2}$ $1.00\\,\\mathrm{mol}$ に対して $1.20\\,\\mathrm{mol}$ が補われるので，酸素は $\\boldsymbol{\\text{増える}}$．吐き出す $\\ce{CO2}$ の量（$\\ce{O2}$ の 0.80 倍）の 1.5 倍の $\\ce{O2}$ が出るので，$\\ce{CO2}/\\ce{O2}$ の比が $2/3$ より大きければ酸素は増える．\n\n\\textbf{(3)} $\\ce{NaH + H2O -> NaOH + H2}$．\n$\\ce{NaH}$ の H は $-1\\to0$（酸化された＝還元剤），$\\ce{H2O}$ の H の一部は $+1\\to0$（還元された）．酸化剤は $\\boldsymbol{\\ce{H2O}}$．Na のほうが陽性が強く，電子を失って $\\ce{Na+}$ になっているので，水素は陰イオン $\\ce{H-}$ として存在する．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "超酸化物イオン O2⁻（O の酸化数 −1/2）は CO2 と反応して炭酸塩と O2 に分かれる自己酸化還元をし，CO2 2 mol あたり O2 3 mol を出すので，呼吸の CO2/O2 比が 2/3 より大きければ閉じた系の酸素は増える．アルカリ金属の水素化物の H は H⁻ で，水の H⁺ と反応して H2 を生じ，水が酸化剤となる．"
+ },
+ "concepts": [
+  "alkali-metals",
+  "oxygen-sulfur",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "超酸化カリウム",
+  "酸素マスク",
+  "自己酸化還元",
+  "水素化ナトリウム",
+  "酸化数"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

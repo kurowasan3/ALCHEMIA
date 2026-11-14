@@ -1,0 +1,100 @@
+{
+ "id": "THE-BND-048",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-03",
+ "topic": "結晶構造の違う金属の原子半径と密度の順序",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "compare",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の表は 4 種類の金属の結晶についてまとめたものである．結晶中の原子は球とみなし，最も近い原子どうしは接しているものとする．$\\sqrt{2} = 1.41$，$\\sqrt{3} = 1.73$，アボガドロ定数 $6.0\\times10^{23}\\,/\\mathrm{mol}$ とする．\n\\[ \\begin{array}{c|c|c|c|c} \\text{金属} & \\text{結晶構造} & \\text{原子量} & \\text{単位格子の 1 辺〔nm〕} & \\text{単位格子の体積〔cm}^3\\text{〕} \\\\ \\hline \\text{リチウム} & \\text{体心立方格子} & 6.9 & 0.351 & 4.32\\times10^{-23} \\\\ \\text{ニッケル} & \\text{面心立方格子} & 58.7 & 0.352 & 4.36\\times10^{-23} \\\\ \\text{バリウム} & \\text{体心立方格子} & 137.3 & 0.502 & 1.27\\times10^{-22} \\\\ \\text{銀} & \\text{面心立方格子} & 107.9 & 0.409 & 6.84\\times10^{-23} \\end{array} \\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "リチウムとニッケルは単位格子の 1 辺の長さがほぼ等しい．原子半径はどちらが大きいか．理由を述べ，原子半径の比（リチウム／ニッケル）を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "4 種類の金属を原子半径の大きい順に並べよ．"
+     },
+     {
+      "id": "3",
+      "tex": "4 種類の金属を密度の大きい順に並べよ．また，リチウムの密度〔$\\mathrm{g/cm^3}$〕を有効数字 2 桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "リチウム．体心立方格子では原子が体対角線上で接し（$4r = \\sqrt{3}a$），面心立方格子では面の対角線上で接する（$4r = \\sqrt{2}a$）ので，$a$ が同じなら体心立方格子の方が原子半径が大きい．比は 1.2"
+   },
+   {
+    "id": "2",
+    "tex": "バリウム ＞ リチウム ＞ 銀 ＞ ニッケル"
+   },
+   {
+    "id": "3",
+    "tex": "銀 ＞ ニッケル ＞ バリウム ＞ リチウム，リチウムの密度 $0.53\\,\\mathrm{g/cm^3}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　原子半径と単位格子の 1 辺の関係は結晶構造で変わる（体心立方格子 $r = \\dfrac{\\sqrt{3}}{4}a$，面心立方格子 $r = \\dfrac{\\sqrt{2}}{4}a$）．密度は（単位格子中の原子の数 × 原子 1 個の質量）÷ 単位格子の体積で，単位格子中の原子の数は体心立方格子 2 個，面心立方格子 4 個である．\n\n(1) 体心立方格子では原子は体対角線（長さ $\\sqrt{3}a$）上で接するので $r = \\dfrac{\\sqrt{3}}{4}a$，面心立方格子では面の対角線（長さ $\\sqrt{2}a$）上で接するので $r = \\dfrac{\\sqrt{2}}{4}a$．\n\\[ \\dfrac{r_{\\mathrm{Li}}}{r_{\\mathrm{Ni}}} = \\dfrac{1.73 \\times 0.351}{1.41 \\times 0.352} = 1.22 \\fallingdotseq \\boldsymbol{1.2} \\]\n1 辺がほぼ同じでも，体心立方格子の$\\boldsymbol{\\text{リチウム}}$の方が原子半径が大きい．面心立方格子の方が同じ体積に多くの原子（4 個と 2 個）を詰めているので，1 個 1 個は小さくなければならない．\n\n(2) 各原子半径〔nm〕は\n\\[ \\mathrm{Li}:\\ \\dfrac{1.73\\times0.351}{4} = 0.152,\\quad \\mathrm{Ni}:\\ \\dfrac{1.41\\times0.352}{4} = 0.124,\\quad \\mathrm{Ba}:\\ \\dfrac{1.73\\times0.502}{4} = 0.217,\\quad \\mathrm{Ag}:\\ \\dfrac{1.41\\times0.409}{4} = 0.144 \\]\nよって $\\boldsymbol{\\text{バリウム ＞ リチウム ＞ 銀 ＞ ニッケル}}$．1 辺の長さの順（Ba ＞ Ag ＞ Ni ＞ Li）とは一致しない．\n\n(3) 密度 $d = \\dfrac{(\\text{原子の数}) \\times (\\text{原子量})}{6.0\\times10^{23} \\times (\\text{体積})}$ より\n\\[ \\mathrm{Li}:\\ \\dfrac{2\\times6.9}{6.0\\times10^{23}\\times4.32\\times10^{-23}} = 0.532,\\qquad \\mathrm{Ni}:\\ \\dfrac{4\\times58.7}{6.0\\times10^{23}\\times4.36\\times10^{-23}} = 8.98 \\]\n\\[ \\mathrm{Ba}:\\ \\dfrac{2\\times137.3}{6.0\\times10^{23}\\times1.27\\times10^{-22}} = 3.60,\\qquad \\mathrm{Ag}:\\ \\dfrac{4\\times107.9}{6.0\\times10^{23}\\times6.84\\times10^{-23}} = 10.5 \\]\nよって $\\boldsymbol{\\text{銀 ＞ ニッケル ＞ バリウム ＞ リチウム}}$，リチウムは $\\boldsymbol{0.53\\,\\mathrm{g/cm^3}}$（水より小さい）．原子量が最大のバリウムの密度が銀・ニッケルより小さいのは，原子が大きく，しかも単位格子あたり 2 個しか入らないためである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "原子半径と単位格子の 1 辺の関係は結晶構造によって異なる（体心 √3a/4，面心 √2a/4）ので，1 辺が同じでも構造が違えば原子半径は異なる．密度は原子量だけでなく，単位格子中の原子の数と体積で決まるので，原子量の順と密度の順は一致しない．"
+ },
+ "concepts": [
+  "chemical-bond",
+  "crystal"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "体心立方格子",
+  "面心立方格子",
+  "原子半径",
+  "密度",
+  "比較問題"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 390" width="600" height="390">
+<g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M70,30 L70,330 L560,330"/></g>
+<line x1="70.0" y1="330" x2="70.0" y2="335" stroke="currentColor"/>
+<text x="70.0" y="352" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">0</text>
+<line x1="192.5" y1="330" x2="192.5" y2="335" stroke="currentColor"/>
+<text x="192.5" y="352" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">10</text>
+<line x1="315.0" y1="330" x2="315.0" y2="335" stroke="currentColor"/>
+<text x="315.0" y="352" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">20</text>
+<line x1="437.5" y1="330" x2="437.5" y2="335" stroke="currentColor"/>
+<text x="437.5" y="352" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">30</text>
+<line x1="560.0" y1="330" x2="560.0" y2="335" stroke="currentColor"/>
+<text x="560.0" y="352" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">40</text>
+<line x1="65" y1="302.7" x2="70" y2="302.7" stroke="currentColor"/>
+<text x="61" y="306.7" font-size="13" text-anchor="end" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">0.6</text>
+<line x1="65" y1="248.2" x2="70" y2="248.2" stroke="currentColor"/>
+<text x="61" y="252.2" font-size="13" text-anchor="end" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">0.8</text>
+<line x1="65" y1="193.6" x2="70" y2="193.6" stroke="currentColor"/>
+<text x="61" y="197.6" font-size="13" text-anchor="end" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">1.0</text>
+<line x1="65" y1="139.1" x2="70" y2="139.1" stroke="currentColor"/>
+<text x="61" y="143.1" font-size="13" text-anchor="end" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">1.2</text>
+<line x1="65" y1="84.5" x2="70" y2="84.5" stroke="currentColor"/>
+<text x="61" y="88.5" font-size="13" text-anchor="end" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">1.4</text>
+<line x1="65" y1="30.0" x2="70" y2="30.0" stroke="currentColor"/>
+<text x="61" y="34.0" font-size="13" text-anchor="end" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">1.6</text>
+<text x="315.0" y="375" font-size="14" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">Ce⁴⁺ 水溶液の滴下量〔mL〕</text>
+<text x="22" y="180.0" font-size="14" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif" transform="rotate(-90 22 180.0)">電位 E〔V〕</text>
+<line x1="70" y1="177.3" x2="560" y2="177.3" stroke="currentColor" stroke-dasharray="5 4" opacity="0.5"/>
+<text x="556" y="172.3" font-size="13" text-anchor="end" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">指示薬 P 1.06 V</text>
+<line x1="70" y1="259.1" x2="560" y2="259.1" stroke="currentColor" stroke-dasharray="5 4" opacity="0.5"/>
+<text x="556" y="254.1" font-size="13" text-anchor="end" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">指示薬 Q 0.76 V</text>
+<line x1="315.0" y1="330" x2="315.0" y2="30" stroke="currentColor" stroke-dasharray="3 4" opacity="0.5"/>
+<path d="M72.5,313.0 L74.9,308.1 L77.3,305.2 L79.8,303.1 L82.2,301.5 L84.7,300.1 L87.2,299.0 L89.6,298.0 L92.0,297.1 L94.5,296.3 L97.0,295.5 L99.4,294.8 L101.8,294.2 L104.3,293.6 L106.8,293.0 L109.2,292.5 L111.7,292.0 L114.1,291.5 L116.6,291.0 L119.0,290.6 L121.5,290.2 L123.9,289.8 L126.4,289.4 L128.8,289.0 L131.2,288.6 L133.7,288.2 L136.2,287.9 L138.6,287.5 L141.1,287.2 L143.5,286.8 L145.9,286.5 L148.4,286.2 L150.9,285.9 L153.3,285.5 L155.8,285.2 L158.2,284.9 L160.7,284.6 L163.1,284.3 L165.6,284.0 L168.0,283.7 L170.5,283.5 L172.9,283.2 L175.3,282.9 L177.8,282.6 L180.2,282.3 L182.7,282.0 L185.2,281.7 L187.6,281.5 L190.1,281.2 L192.5,280.9 L195.0,280.6 L197.4,280.3 L199.9,280.1 L202.3,279.8 L204.8,279.5 L207.2,279.2 L209.7,278.9 L212.1,278.7 L214.6,278.4 L217.0,278.1 L219.5,277.8 L221.9,277.5 L224.4,277.2 L226.8,276.9 L229.2,276.6 L231.7,276.3 L234.2,276.0 L236.6,275.6 L239.1,275.3 L241.5,275.0 L244.0,274.7 L246.4,274.3 L248.9,274.0 L251.3,273.6 L253.8,273.2 L256.2,272.9 L258.6,272.5 L261.1,272.1 L263.6,271.7 L266.0,271.2 L268.4,270.8 L270.9,270.3 L273.4,269.8 L275.8,269.3 L278.2,268.8 L280.7,268.2 L283.2,267.6 L285.6,267.0 L288.1,266.3 L290.5,265.6 L292.9,264.7 L295.4,263.8 L297.9,262.8 L300.3,261.7 L302.8,260.3 L305.2,258.7 L307.7,256.6 L310.1,253.7 L311.3,251.7 L312.6,248.8 L313.8,243.9 L314.4,239.1 L314.8,232.6 L314.9,227.8 L314.9,223.0 L315.0,177.3 L315.1,131.6 L315.1,126.8 L315.2,121.9 L315.6,115.5 L316.2,110.7 L317.4,105.8 L318.7,103.0 L319.9,101.0 L322.3,98.1 L324.8,96.1 L327.2,94.6 L329.7,93.3 L332.1,92.2 L334.6,91.3 L337.0,90.5 L339.5,89.7 L341.9,89.1 L344.4,88.5 L346.8,87.9 L349.3,87.4 L351.8,86.9 L354.2,86.4 L356.6,86.0 L359.1,85.6 L361.5,85.2 L364.0,84.9 L366.4,84.5 L368.9,84.2 L371.3,83.9 L373.8,83.6 L376.2,83.3 L378.7,83.0 L381.1,82.8 L383.6,82.5 L386.0,82.3 L388.5,82.0 L390.9,81.8 L393.4,81.6 L395.8,81.4 L398.3,81.2 L400.8,81.0 L403.2,80.8 L405.6,80.6 L408.1,80.4 L410.5,80.2 L413.0,80.0 L415.4,79.9 L417.9,79.7 L420.4,79.5 L422.8,79.4 L425.2,79.2 L427.7,79.1 L430.1,78.9 L432.6,78.8 L435.0,78.6 L437.5,78.5 L439.9,78.3 L442.4,78.2 L444.9,78.1 L447.3,77.9 L449.8,77.8 L452.2,77.7 L454.6,77.6 L457.1,77.4 L459.5,77.3 L462.0,77.2 L464.5,77.1 L466.9,77.0 L469.4,76.9 L471.8,76.8 L474.2,76.6 L476.7,76.5 L479.1,76.4 L481.6,76.3 L484.1,76.2 L486.5,76.1 L488.9,76.0 L491.4,75.9 L493.9,75.8 L496.3,75.7 L498.8,75.6 L501.2,75.6 L503.6,75.5 L506.1,75.4 L508.6,75.3 L511.0,75.2 L513.5,75.1 L515.9,75.0 L518.3,74.9 L520.8,74.9 L523.2,74.8 L525.7,74.7 L528.1,74.6 L530.6,74.5 L533.0,74.5 L535.5,74.4 L538.0,74.3 L540.4,74.2 L542.8,74.1 L545.3,74.1 L547.8,74.0 L550.2,73.9 L552.6,73.8 L555.1,73.8 L557.5,73.7 L560.0,73.6" fill="none" stroke="#1f5fbf" stroke-width="2.2"/>
+<circle cx="192.5" cy="280.9" r="4" fill="#c0392b"/>
+<text x="192.5" y="304.9" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">半分の点 0.68 V（= E°(Fe)）</text>
+<circle cx="315.0" cy="177.3" r="4" fill="#c0392b"/>
+<text x="323.0" y="169.3" font-size="13" text-anchor="start" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">当量点 1.06 V</text>
+<circle cx="560.0" cy="73.6" r="4" fill="#c0392b"/>
+<text x="556.0" y="95.6" font-size="13" text-anchor="end" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">2倍の点 1.44 V（= E°(Ce)）</text>
+</svg>

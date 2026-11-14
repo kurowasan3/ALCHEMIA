@@ -1,0 +1,101 @@
+{
+ "id": "ORG-DET-032",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-06",
+ "topic": "α-ヒドロキシケトンがフェーリング液を還元する条件（エンジオールの生成）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "condition",
+  "structure"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ケトンは一般にフェーリング液を還元しないが，フルクトースのようにカルボニル基の隣の炭素にヒドロキシ基をもつケトン（α-ヒドロキシケトン）は還元する．これは，塩基性の水溶液中で次のように二重結合の両端の炭素に OH が 1 つずつ付いた化合物（エンジオール）に変わり，エンジオールがきわめて酸化されやすいためと考えられる（$\\ce{R}$，$\\ce{R'}$ は炭化水素基または H）．\n\\[ \\ce{R-CO-CH(OH)-R' <=>[\\text{}] R-C(OH)=C(OH)-R'} \\]\nこの変化では，OH が付いた炭素の H が，カルボニル基の O に移る．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ヒドロキシアセトン $\\ce{CH3COCH2OH}$ から生じるエンジオールの示性式を書け．また，このエンジオールは，逆向きの変化で H が別の炭素に移るとヒドロキシアセトンとは異なる化合物になる．その化合物の示性式と，それがフェーリング液を還元するかどうかを答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "次の (a)〜(f) のうち，塩基性でエンジオールを生じることができ，フェーリング液を還元すると考えられるものをすべて選べ．\n(a) $\\ce{CH3COCH(OH)CH3}$　(b) $\\ce{CH3COC(CH3)2OH}$　(c) $\\ce{CH3COCH2CH3}$　(d) $\\ce{CH3COCH2CH2OH}$　(e) $\\ce{HOCH2COCH2OH}$　(f) $\\ce{C6H5COCH(OH)C6H5}$"
+     },
+     {
+      "id": "3",
+      "tex": "(2) で選ばなかったもののうち，分子内に OH をもつものについて，エンジオールを生じない理由をそれぞれ述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "エンジオール：$\\ce{CH3C(OH)=CHOH}$．生じる化合物：$\\ce{CH3CH(OH)CHO}$（アルデヒドなのでフェーリング液を還元する）"
+   },
+   {
+    "id": "2",
+    "tex": "(a)，(e)，(f)"
+   },
+   {
+    "id": "3",
+    "tex": "(b)：OH が付いた炭素に H がないので，H を移してエンジオールをつくれない．(d)：OH がカルボニル基の隣の炭素ではなく 1 つ離れた炭素に付いているので，C=C の両端に OH が 1 つずつ付いた構造にならない"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\ce{CH3-CO-CH2OH}$ の $\\ce{CH2OH}$ の H がカルボニル基の O に移ると $\\boldsymbol{\\ce{CH3C(OH)=CHOH}}$．逆向きに，左の炭素の OH の H が右の炭素へ移ると，右の炭素が $\\ce{C=O}$（末端なので $\\ce{-CHO}$）になり，左の炭素は $\\ce{CH(OH)}$ となって $\\boldsymbol{\\ce{CH3CH(OH)CHO}}$（2-ヒドロキシプロパナール）が生じる．ホルミル基をもつのでフェーリング液を\\textbf{還元する}．（グルコースとフルクトースが塩基性で移り変わるのと同じ仕組みである．）\n\n\\textbf{(2)} エンジオールをつくる条件は「カルボニル基の隣の炭素に OH があり，その炭素に H もある」こと．\n(a) $\\ce{CH3CO-\\underline{CH}(OH)CH3}$：条件を満たす（エンジオール $\\ce{CH3C(OH)=C(OH)CH3}$）．\n(b) OH の付いた炭素は $\\ce{C(CH3)2OH}$ で H がない．\n(c) OH がない（ふつうのケトン）．\n(d) OH は 1 つ離れた炭素（β 位）にある．\n(e) $\\ce{CH2OH}$ が条件を満たす（三炭糖のケトース）．\n(f) $\\ce{CH(OH)}$ が条件を満たす．\nよって $\\boldsymbol{\\text{(a)，(e)，(f)}}$．\n\n\\textbf{(3)} (b) は OH の付いた炭素に移すべき H がない．(d) は H を移してできるのは $\\ce{CH3C(OH)=CHCH2OH}$ のように OH が C=C の一方にしか付かない構造で，エンジオールにはならない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ケトンでも，カルボニル基の隣の炭素に OH と H がともにある α-ヒドロキシケトンは，塩基性でエンジオールに変わり酸化されやすいのでフェーリング液を還元する．OH の付いた炭素に H がない場合や OH が隣の炭素にない場合はエンジオールをつくれず還元しない．"
+ },
+ "concepts": [
+  "organic-test",
+  "nitrogen-phosphorus",
+  "alcohol-carbonyl"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "フェーリング液",
+  "α-ヒドロキシケトン",
+  "エンジオール",
+  "フルクトース",
+  "還元性"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

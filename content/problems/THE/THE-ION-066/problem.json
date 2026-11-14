@@ -1,0 +1,109 @@
+{
+ "id": "THE-ION-066",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "フッ化水素酸の電離と二フッ化水素イオンの生成の連立平衡",
+ "course": "化学",
+ "level": 4,
+ "minutes": 35,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "フッ化水素 HF は水溶液中で弱酸としてはたらくが，生じた $\\ce{F-}$ はさらに HF 分子と結合して二フッ化水素イオン $\\ce{HF2-}$ をつくる．$25$ ℃ で次の2つの平衡が同時に成り立つ．\n\\[\\ce{HF <=> H+ + F-}\\qquad K_{\\mathrm a}=\\frac{[\\ce{H+}][\\ce{F-}]}{[\\ce{HF}]}=7.0\\times10^{-4}\\,\\mathrm{mol/L}\\]\n\\[\\ce{HF + F- <=> HF2-}\\qquad K_2=\\frac{[\\ce{HF2-}]}{[\\ce{HF}][\\ce{F-}]}\\]\n水の電離による $\\ce{H+}$，$\\ce{OH-}$ は無視できるものとし，HF の全濃度（$\\ce{HF}$，$\\ce{F-}$，$\\ce{HF2-}$ に含まれる F 原子の合計の濃度）を $C$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{HF2-}$ の生成を無視したとき，$C=1.00\\,\\mathrm{mol/L}$ の水溶液の $[\\ce{H+}]$ を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "実際に $C=1.00\\,\\mathrm{mol/L}$ の水溶液の $[\\ce{H+}]$ を測定すると $5.40\\times10^{-2}\\,\\mathrm{mol/L}$ であった．このときの $[\\ce{HF}]$，$[\\ce{F-}]$，$[\\ce{HF2-}]$ と $K_2$ をそれぞれ有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) で求めた $K_2$ を用いる．$[\\ce{HF2-}]$ が $[\\ce{F-}]$ の $5\\,\\%$ 以下となり，$\\ce{HF2-}$ の生成を無視してよいのは，$C$ がおよそ何 $\\mathrm{mol/L}$ 以下のときか．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$C=1.00\\,\\mathrm{mol/L}$ の水溶液を水で10倍に薄めて $C=0.100\\,\\mathrm{mol/L}$ にした．(2) の $K_2$ を用いて $[\\ce{H+}]$ を有効数字2桁で求め，薄める前の何分の1になったか答えよ．また，$\\ce{HF2-}$ の生成を無視した場合の変化と比べ，違いが生じる理由を説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$2.6\\times10^{-2}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "2",
+    "tex": "$[\\ce{HF}]=0.90\\,\\mathrm{mol/L}$，$[\\ce{F-}]=1.2\\times10^{-2}\\,\\mathrm{mol/L}$，$[\\ce{HF2-}]=4.2\\times10^{-2}\\,\\mathrm{mol/L}$，$K_2=4.0\\,\\mathrm{L/mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "$1.6\\times10^{-2}\\,\\mathrm{mol/L}$ 以下"
+   },
+   {
+    "id": "4",
+    "tex": "$[\\ce{H+}]=9.2\\times10^{-3}\\,\\mathrm{mol/L}$，約 $1/5.9$．$\\ce{HF2-}$ を無視すると約 $1/3.3$ にしかならない．薄めると $[\\ce{HF}]$ が小さくなり，$\\ce{F-}$ を $\\ce{HF2-}$ として取り込んで HF の電離を右へ進めていたはたらきが弱まるため，ふつうの弱酸より大きく $[\\ce{H+}]$ が下がる．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{関係式の準備}\n$h=[\\ce{H+}]$，$a=[\\ce{HF}]$ とおく．$[\\ce{F-}]=K_{\\mathrm a}a/h$，$[\\ce{HF2-}]=K_2a[\\ce{F-}]$．電荷のつり合い $h=[\\ce{F-}]+[\\ce{HF2-}]$ に代入すると\n\\[h=\\frac{K_{\\mathrm a}a}{h}(1+K_2a)\\quad\\Longrightarrow\\quad h^2=K_{\\mathrm a}\\,a\\,(1+K_2a)\\]\nF 原子の保存は $C=a+[\\ce{F-}]+2[\\ce{HF2-}]$（$\\ce{HF2-}$ は F を2個含む）．\n\n\\textbf{(1) $\\ce{HF2-}$ を無視}\n$h^2=K_{\\mathrm a}(C-h)$ を解くと $h=2.61\\times10^{-2}$，すなわち $\\boldsymbol{2.6\\times10^{-2}\\,\\mathrm{mol/L}}$（電離度は約 $2.6\\,\\%$ で，$C-h\\approx C$ としても同じ値）．\n\n\\textbf{(2) 測定値から $K_2$ を求める}\n未知数は $a$，$[\\ce{F-}]$，$[\\ce{HF2-}]$ の3つで，$K_{\\mathrm a}$ の式・電荷のつり合い・F の保存の3式があるので，$K_2$ を使わずに決まる．$[\\ce{F-}]=K_{\\mathrm a}a/h$，$[\\ce{HF2-}]=h-K_{\\mathrm a}a/h$ を F の保存に入れると\n\\[C=a+\\frac{K_{\\mathrm a}a}{h}+2\\left(h-\\frac{K_{\\mathrm a}a}{h}\\right)\\quad\\Longrightarrow\\quad a=\\frac{C-2h}{1-K_{\\mathrm a}/h}\\]\n$h=0.0540$，$K_{\\mathrm a}/h=0.01296$ より $a=\\dfrac{1.00-0.108}{0.98704}=0.904$．\n\\[[\\ce{F-}]=\\frac{7.0\\times10^{-4}\\times0.904}{0.0540}=1.17\\times10^{-2},\\qquad[\\ce{HF2-}]=0.0540-0.0117=4.23\\times10^{-2}\\]\n\\[K_2=\\frac{4.23\\times10^{-2}}{0.904\\times1.17\\times10^{-2}}=\\boldsymbol{4.0\\,\\mathrm{L/mol}}\\]\n$[\\ce{HF}]=\\boldsymbol{0.90}$，$[\\ce{F-}]=\\boldsymbol{1.2\\times10^{-2}}$，$[\\ce{HF2-}]=\\boldsymbol{4.2\\times10^{-2}}\\,\\mathrm{mol/L}$．生じた陰イオンの約 $78\\,\\%$ が $\\ce{HF2-}$ であり，(1) の値の約2倍の $\\ce{H+}$ が生じている．\n\n\\textbf{(3) $\\ce{HF2-}$ を無視できる範囲}\n$[\\ce{HF2-}]/[\\ce{F-}]=K_2a\\le0.05$ より $a\\le0.0125\\,\\mathrm{mol/L}$．ここで「$a\\approx C$」としてはいけない．この濃度域では HF の電離度が大きいからである．境界 $a=0.0125$ のとき $h=[\\ce{F-}]+[\\ce{HF2-}]=1.05[\\ce{F-}]$ なので\n\\[h\\cdot\\frac{h}{1.05}=K_{\\mathrm a}a\\ \\Longrightarrow\\ [\\ce{F-}]=\\sqrt{\\frac{7.0\\times10^{-4}\\times0.0125}{1.05}}=2.89\\times10^{-3}\\]\n\\[C=a+[\\ce{F-}]+2\\times0.05[\\ce{F-}]=0.0125+0.00289+0.00029=0.0157\\]\nよって $C\\le\\boldsymbol{1.6\\times10^{-2}\\,\\mathrm{mol/L}}$ 程度．（$a=C$ とすると $1.3\\times10^{-2}$ となり誤る．）\n\n\\textbf{(4) 10倍に薄めたとき}\n$h^2=K_{\\mathrm a}a(1+K_2a)$ と F の保存を，$a$ を順に改めながら解く．\n\\begin{itemize}\n\\item $a=0.100$ とおく：$h=\\sqrt{7.0\\times10^{-4}\\times0.100\\times1.40}=9.90\\times10^{-3}$，$[\\ce{F-}]=7.07\\times10^{-3}$，$[\\ce{HF2-}]=2.83\\times10^{-3}$，$a=0.100-0.00707-0.00566=0.0873$\n\\item $a=0.0873$：$h=9.08\\times10^{-3}$，$[\\ce{F-}]=6.73\\times10^{-3}$，$[\\ce{HF2-}]=2.35\\times10^{-3}$，$a=0.0886$\n\\item $a=0.0886$：$h=9.16\\times10^{-3}$，以後ほぼ変わらない（$a=0.0885$）．\n\\end{itemize}\nよって $[\\ce{H+}]=\\boldsymbol{9.2\\times10^{-3}\\,\\mathrm{mol/L}}$，$0.0540/0.00916=5.9$ より約 $\\boldsymbol{1/5.9}$．\n\n$\\ce{HF2-}$ を無視すると $h^2=K_{\\mathrm a}(C-h)$ から $C=0.100$ で $h=8.02\\times10^{-3}$，$0.0261/0.00802=3.3$ で約 $1/3.3$（ふつうの弱酸ではほぼ $1/\\sqrt{10}$）にとどまる．$h^2=K_{\\mathrm a}a(1+K_2a)$ のうち因子 $(1+K_2a)$ は，$\\ce{HF2-}$ の生成が $\\ce{F-}$ を取り除いて HF の電離を右に進める効果を表す．この因子は $1.00\\,\\mathrm{mol/L}$ では約 $4.6$ だが，薄めると約 $1.35$ に下がるので，$[\\ce{H+}]$ の減り方が大きくなる．逆にいえば，フッ化水素酸は濃いほど「見かけ上強い酸」としてふるまう．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "HF の電離と HF + F⁻ ⇄ HF₂⁻ が連立すると，電荷のつり合いから [H⁺]² = Ka[HF](1 + K₂[HF]) となり，濃い溶液ほど F⁻ が取り込まれて見かけ上強い酸になる．測定した [H⁺] と電荷・物質の保存から K₂ を逆算し，HF₂⁻ を無視できる濃度の上限では電離度が大きく [HF] ≈ C の近似が使えないことを見抜いて境界を求める．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "concentration",
+  "ph"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "フッ化水素酸",
+  "二フッ化水素イオン",
+  "連立平衡",
+  "近似の妥当性",
+  "電荷のつり合い"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

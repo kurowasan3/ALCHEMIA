@@ -1,0 +1,124 @@
+{
+ "id": "ORG-CBX-054",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-04",
+ "topic": "けん化生成物から決める不飽和ジカルボン酸ジエステルの構造",
+ "course": "化学",
+ "level": 3,
+ "minutes": 20,
+ "format": [
+  "structure",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "化合物 A と B は，炭素・水素・酸素からなる分子式 $\\ce{C10H16O4}$ のエステルである．原子量は H = 1.0，C = 12，O = 16 とする．\\\\\n(a) A，B をそれぞれ水酸化ナトリウム水溶液で完全にけん化して中和すると，A 1 mol からはジカルボン酸 X とアルコール P，Q が 1 mol ずつ，B 1 mol からはジカルボン酸 Y とアルコール P，R が 1 mol ずつ得られた．\\\\\n(b) X と Y はどちらも分子式 $\\ce{C4H4O4}$ で，互いに幾何異性体である．X は加熱すると分子内で脱水して酸無水物になるが，Y は同じ条件では酸無水物にならない．\\\\\n(c) P はグルコースのアルコール発酵で得られる．\\\\\n(d) Q 14.8 mg を完全燃焼させると，二酸化炭素 35.2 mg と水 18.0 mg が生じた．Q の分子量は 100 以下である．R は Q と同じ分子式をもつ．\\\\\n(e) 硫酸酸性の二クロム酸カリウム水溶液で酸化すると，Q はケトンになるが，R は酸化されにくい．\\\\\n(f) A は不斉炭素原子をもつが，B はもたない．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "Q の分子式を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "X と Y の名称を答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "Q と R の示性式を答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "A と B の構造を，幾何異性がわかるように示性式と「シス形・トランス形」の語で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：けん化生成物から決める不飽和ジカルボン酸ジエステルの構造",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{C4H10O}$"
+   },
+   {
+    "id": "2",
+    "tex": "X：マレイン酸，Y：フマル酸"
+   },
+   {
+    "id": "3",
+    "tex": "Q：$\\ce{CH3CH(OH)CH2CH3}$（2-ブタノール），R：$\\ce{(CH3)3COH}$（2-メチル-2-プロパノール）"
+   },
+   {
+    "id": "4",
+    "tex": "A：$\\ce{C2H5OOC-CH=CH-COOCH(CH3)CH2CH3}$（シス形），B：$\\ce{C2H5OOC-CH=CH-COOC(CH3)3}$（トランス形）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} C：$35.2\\times\\dfrac{12}{44}=9.6\\,\\mathrm{mg}$，H：$18.0\\times\\dfrac{2.0}{18}=2.0\\,\\mathrm{mg}$，O：$14.8-9.6-2.0=3.2\\,\\mathrm{mg}$．\n物質量比は $\\mathrm{C}:\\mathrm{H}:\\mathrm{O}=\\dfrac{9.6}{12}:\\dfrac{2.0}{1.0}:\\dfrac{3.2}{16}=0.80:2.0:0.20=4:10:1$．組成式 $\\ce{C4H10O}$（式量 74）で，分子量 100 以下だから分子式も $\\boldsymbol{\\ce{C4H10O}}$．\n\n\\textbf{(2)} $\\ce{C4H4O4}$ の幾何異性体は $\\ce{HOOC-CH=CH-COOH}$ のシス形とトランス形．2つのカルボキシ基が同じ側にあるシス形だけが分子内で脱水できるので，X は$\\boldsymbol{\\text{マレイン酸}}$，Y は$\\boldsymbol{\\text{フマル酸}}$．\n\n\\textbf{(3)} $\\ce{C4H10O}$ のアルコールは 1-ブタノール，2-ブタノール，2-メチル-1-プロパノール，2-メチル-2-プロパノールの4つ．酸化してケトンになるのは第二級アルコールの 2-ブタノールだけなので Q は $\\boldsymbol{\\ce{CH3CH(OH)CH2CH3}}$．酸化されにくいのは第三級アルコールなので R は $\\boldsymbol{\\ce{(CH3)3COH}}$．\n\n\\textbf{(4)} P はエタノール．分子式を確かめると，ジエステル $\\ce{R^1OOC-CH=CH-COOR^2}$ は $\\ce{C4H2O4}$ に $\\ce{R^1}$，$\\ce{R^2}$ を加えた形で，$\\ce{C2H5}$ と $\\ce{C4H9}$ なら $\\ce{C10H16O4}$ となり一致する．\n\nA はマレイン酸のエチル・2-ブチルエステルで，$\\ce{-CH(CH3)CH2CH3}$ の炭素が不斉炭素である（(f) と合う）．\nB はフマル酸のエチル・$tert$-ブチルエステルで，不斉炭素をもたない（(f) と合う）．\n\\[\\text{A：}\\ \\boldsymbol{\\ce{C2H5OOC-CH=CH-COOCH(CH3)CH2CH3}}\\ \\text{（シス形）}\\qquad \\text{B：}\\ \\boldsymbol{\\ce{C2H5OOC-CH=CH-COOC(CH3)3}}\\ \\text{（トランス形）}\\]\n構造式は解答図のとおり．なお，A のアルコール部分が 2-ブタノールであることは (e) からも (f) からも決まり，両者が矛盾しないことが確認できる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ジエステルのけん化生成物を，酸側は分子内脱水の可否でシス・トランスを，アルコール側は燃焼分析・酸化のされ方（第二級・第三級）・不斉炭素の有無で決めて組み立てる．"
+ },
+ "concepts": [
+  "carboxylic-ester",
+  "carbon-silicon",
+  "organic-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "エステル",
+  "けん化",
+  "マレイン酸",
+  "フマル酸",
+  "アルコールの酸化",
+  "元素分析"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,117 @@
+{
+ "id": "ORG-STR-025",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-01",
+ "topic": "エステルの分子式から酸部分の不飽和度を求め C=C と環を区別する",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "structure"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "1 価カルボン酸とエタノールからできたエステル P，Q は，どちらも分子式 $\\ce{C6H10O2}$ である．P は臭素水を脱色したが，Q は脱色しなかった．また，2 価カルボン酸の 2 つのカルボキシ基をどちらもエタノールでエステルにした化合物 R の分子式は $\\ce{C8H14O4}$ であった．\n炭素・水素・酸素からなる化合物 $\\ce{C_nH_mO_k}$ の不飽和度は $\\dfrac{2n+2-m}{2}$ で求められ，C=C，C=O，環 1 つにつき 1 ずつ数える．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "P（Q）と R の不飽和度をそれぞれ求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "P，Q をつくるのに用いたカルボン酸の分子式を答えよ．また，その不飽和度のうち 1 つはカルボキシ基の C=O である．残りの部分について，P の酸と Q の酸ではどのような違いがあるか．"
+     },
+     {
+      "id": "3",
+      "tex": "P の酸として考えられる構造は何通りあるか．また，Q の酸の構造（示性式）を答えよ．ただし，シス-トランス異性体は区別して数える．"
+     },
+     {
+      "id": "4",
+      "tex": "R をつくるのに用いた 2 価カルボン酸として考えられるものの示性式をすべて答えよ．R の不飽和度がすべてどの結合で使われているかに注目すること．"
+     },
+     {
+      "id": "5",
+      "tex": "P に触媒を用いて水素を付加させると，炭素鎖に枝分かれのないエステルが得られた．また，P の酸にはシス-トランス異性体が存在しない．P の示性式を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "P・Q：2　R：2"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{C4H6O2}$．P の酸は残りの不飽和度 1 が炭素間二重結合 C=C，Q の酸は環である．"
+   },
+   {
+    "id": "3",
+    "tex": "P の酸：4 通り　Q の酸：$\\ce{C3H5COOH}$（シクロプロパンカルボン酸）"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{HOOC(CH2)2COOH}$，$\\ce{HOOCCH(CH3)COOH}$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\ce{CH2=CHCH2COOC2H5}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\ce{C6H10O2}$：$\\dfrac{2\\times6+2-10}{2}=\\boldsymbol{2}$．$\\ce{C8H14O4}$：$\\dfrac{2\\times8+2-14}{2}=\\boldsymbol{2}$．\n\n\\textbf{(2) 酸部分の分子式}\nエステル ＝ 酸 ＋ エタノール − 水 なので，酸 ＝ $\\ce{C6H10O2}$ − $\\ce{C2H6O}$ ＋ $\\ce{H2O}$ ＝ $\\boldsymbol{\\ce{C4H6O2}}$（不飽和度 2）．\nエステル化では C=C や環の数は変わらないので，酸の不飽和度もエステルと同じ 2 で，そのうち 1 はカルボキシ基（エステルではエステル結合）の C=O である．残りの 1 は，臭素水を脱色する P では \\textbf{C=C}，脱色しない Q では\\textbf{環}である．\n\n\\textbf{(3)} $\\ce{C4H6O2}$ の酸は，$-\\mathrm{COOH}$ に不飽和度 1 の $\\ce{C3H5}-$ 基がついたもの．\nC=C をもつもの：\n\\begin{itemize}\n\\item $\\ce{CH2=CHCH2COOH}$\n\\item $\\ce{CH3CH=CHCOOH}$（シス形・トランス形の 2 つ）\n\\item $\\ce{CH2=C(CH3)COOH}$\n\\end{itemize}\nよって P の酸は $\\boldsymbol{4}$ 通り．環をもつものは 3 個の炭素で三員環をつくった $\\boldsymbol{\\ce{C3H5COOH}}$（シクロプロパンカルボン酸）だけである．\n\n\\textbf{(4)} R の酸は $\\ce{C8H14O4}$ − $2\\ce{C2H6O}$ ＋ $2\\ce{H2O}$ ＝ $\\ce{C4H6O4}$（不飽和度 2）．カルボキシ基 2 つの C=O で不飽和度 2 をすべて使っているので，残りの部分は C=C も環ももたない飽和の鎖である．$\\ce{C2H4}$ の部分に $-\\mathrm{COOH}$ が 2 つつく位置は，別々の炭素か同じ炭素かの 2 通り：\n\\[\\boldsymbol{\\ce{HOOC(CH2)2COOH}}\\ \\text{（コハク酸）},\\qquad \\boldsymbol{\\ce{HOOCCH(CH3)COOH}}\\ \\text{（メチルマロン酸）}\\]\nR は臭素水を調べるまでもなく，脱色しないことがわかる．\n\n\\textbf{(5)} 水素付加で枝分かれのない酪酸エチル $\\ce{CH3CH2CH2COOC2H5}$ になるのは，$\\ce{CH2=CHCH2COOH}$ と $\\ce{CH3CH=CHCOOH}$ のエステル．このうちシス-トランス異性体がないのは前者なので，P は $\\boldsymbol{\\ce{CH2=CHCH2COOC2H5}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "エステルの分子式から「酸＝エステル−アルコール＋水」で酸部分の分子式を出し，不飽和度のうちエステル（カルボキシ基）の C=O の分を差し引いた残りが C=C か環かを臭素水の脱色で判断して異性体を数える．ジエステルでは2つの C=O が不飽和度をすべて使うので，残りは飽和と決まる．"
+ },
+ "concepts": [
+  "organic-structure",
+  "halogen",
+  "alcohol-carbonyl"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "不飽和度",
+  "エステル",
+  "臭素水",
+  "シス-トランス異性体",
+  "異性体の数"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,117 @@
+{
+ "id": "INO-NIT-030",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-03",
+ "topic": "放電による空気中の窒素の酸化（NO が再生する循環の正味の反応）と残る気体",
+ "course": "化学",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "equation",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水を入れた密閉容器の中で空気に電気火花をくり返しとばすと，次の反応が起こる．\n\\[ \\ce{N2 + O2 -> 2NO} \\quad (\\text{a}), \\qquad \\ce{2NO + O2 -> 2NO2} \\quad (\\text{b}), \\qquad \\ce{3NO2 + H2O -> 2HNO3 + NO} \\quad (\\text{c}) \\]\n(c) で生じた $\\ce{NO}$ は再び (b) に使われ，生じた $\\ce{HNO3}$ はすべて水に溶ける．十分に火花をとばしたあとの気体には $\\ce{NO}$，$\\ce{NO2}$ は残らないものとする．\n\n空気は体積で $\\ce{N2}$ $78.0\\,\\%$，$\\ce{O2}$ $21.0\\,\\%$，$\\ce{Ar}$ $1.0\\,\\%$ からなるとする．気体の体積はすべて $0\\,^\\circ\\mathrm{C}$，$1.013\\times10^{5}\\,\\mathrm{Pa}$ に換算した値で表し，そのモル体積を $22.4\\,\\mathrm{L/mol}$ とする．水蒸気と，$\\ce{N2}$・$\\ce{O2}$・$\\ce{Ar}$ の水への溶解は無視し，水の体積は変わらないものとする．$\\log_{10}2 = 0.30$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "(a)～(c) から $\\ce{NO}$ と $\\ce{NO2}$ を消去して，正味の反応式を 1 つの式で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "空気 $100\\,\\mathrm{mL}$ と水 $150\\,\\mathrm{mL}$ を入れた容器で，体積が変化しなくなるまで火花をとばした．残った気体の体積と組成，体積の減少の割合 [\\%] を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の後の水の pH を小数第1位まで求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "空気 $100\\,\\mathrm{mL}$ 中の $\\ce{N2}$ をすべて反応させるには，少なくとも何 mL の $\\ce{O2}$ を加えておく必要があるか．また，$\\ce{O2}$ を $200\\,\\mathrm{mL}$ 加えて十分に反応させたのち，残った気体から $\\ce{O2}$ だけを吸収剤で除くと，何 mL の気体が残るか．この気体は何か．"
+     },
+     {
+      "id": "5",
+      "tex": "かりに (c) の代わりに，$\\ce{NO2}$ が $\\ce{2NO2 + H2O -> HNO3 + HNO2}$ のように $\\ce{NO}$ を再生せずに吸収されるとすると，(2) と同じ操作での体積の減少は (2) より大きいか小さいか．減少量 [mL] を求めて答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{2N2 + 5O2 + 2H2O -> 4HNO3}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{N2}$ $69.6\\,\\mathrm{mL}$ と $\\ce{Ar}$ $1.0\\,\\mathrm{mL}$ の計 $70.6\\,\\mathrm{mL}$，減少の割合 $29.4\\,\\%$"
+   },
+   {
+    "id": "3",
+    "tex": "pH 2.3"
+   },
+   {
+    "id": "4",
+    "tex": "$174\\,\\mathrm{mL}$．残る気体は $1.0\\,\\mathrm{mL}$ で，アルゴン（貴ガス）"
+   },
+   {
+    "id": "5",
+    "tex": "大きい．減少量 $31.5\\,\\mathrm{mL}$（(2) は $29.4\\,\\mathrm{mL}$）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 循環を消去する}　(c) で $\\ce{NO}$ が戻るので，$\\ce{NO}$ と $\\ce{NO2}$ が打ち消されるように係数を選ぶ．(a)$\\times2$＋(b)$\\times3$＋(c)$\\times2$ をつくると\n\\[ \\ce{2N2 + 2O2 -> 4NO}, \\quad \\ce{6NO + 3O2 -> 6NO2}, \\quad \\ce{6NO2 + 2H2O -> 4HNO3 + 2NO} \\]\nの和で，左辺の $\\ce{6NO}$ と右辺の $\\ce{4NO + 2NO}$，$\\ce{6NO2}$ どうしが消えて\n\\[ \\boldsymbol{\\ce{2N2 + 5O2 + 2H2O -> 4HNO3}} \\]\n（N の酸化数は $0 \\to +5$ で，N 1 個あたり O が $\\dfrac52$ 個必要であることとも合う．）\n\n\\textbf{(2) どちらが先に尽きるか}　$\\ce{N2} : \\ce{O2} = 2 : 5$ で反応する．$\\ce{O2}$ $21.0\\,\\mathrm{mL}$ と反応する $\\ce{N2}$ は $21.0\\times\\dfrac25 = 8.4\\,\\mathrm{mL}$ で，$\\ce{N2}$（$78.0\\,\\mathrm{mL}$）は十分にあるから $\\ce{O2}$ が先に尽きる．残る気体は $\\ce{N2}$ $78.0 - 8.4 = \\boldsymbol{69.6\\,\\mathrm{mL}}$ と $\\ce{Ar}$ $\\boldsymbol{1.0\\,\\mathrm{mL}}$ の計 $\\boldsymbol{70.6\\,\\mathrm{mL}}$ で，減少の割合は $\\dfrac{21.0 + 8.4}{100}\\times100 = \\boldsymbol{29.4\\,\\%}$．\n\n\\textbf{(3)}　生じる $\\ce{HNO3}$ は $\\ce{O2}$ の $\\dfrac45$ 倍：\n\\[ n(\\ce{HNO3}) = \\frac{21.0\\times10^{-3}}{22.4}\\times\\frac45 = 7.50\\times10^{-4}\\,\\mathrm{mol}, \\qquad [\\ce{H+}] = \\frac{7.50\\times10^{-4}}{0.150} = 5.0\\times10^{-3}\\,\\mathrm{mol/L} \\]\n$\\mathrm{pH} = 3 - \\log_{10}5 = 3 - (1 - 0.30) = \\boldsymbol{2.3}$（強酸として完全に電離）．\n\n\\textbf{(4) 酸素を補う}　$\\ce{N2}$ $78.0\\,\\mathrm{mL}$ に必要な $\\ce{O2}$ は $78.0\\times\\dfrac52 = 195\\,\\mathrm{mL}$．空気にはすでに $21.0\\,\\mathrm{mL}$ あるので，少なくとも $195 - 21.0 = \\boldsymbol{174\\,\\mathrm{mL}}$ 加える．\n\n$\\ce{O2}$ を $200\\,\\mathrm{mL}$ 加えると $\\ce{O2}$ は計 $221\\,\\mathrm{mL}$ で過剰となり，$\\ce{N2}$ はすべて反応して $\\ce{O2}$ が $221 - 195 = 26\\,\\mathrm{mL}$ 残る．これを除くと，(a)～(c) のどの反応にも加わらない $\\boldsymbol{1.0\\,\\mathrm{mL}}$ の気体が残る．これは空気の約 $1\\,\\%$ を占める\\textbf{アルゴン}（貴ガス）である．窒素も酸素も反応しつくしたのに反応しない気体が少し残ることから，空気に未知の成分が含まれることが分かる．\n\n\\textbf{(5) 再生しない場合}　(a)$\\times1$＋(b)$\\times1$ で $\\ce{N2 + 2O2 -> 2NO2}$ となり，$\\ce{NO2}$ はすべて吸収される．$\\ce{N2} : \\ce{O2} = 1 : 2$ なので $\\ce{O2}$ $21.0\\,\\mathrm{mL}$ が $\\ce{N2}$ $10.5\\,\\mathrm{mL}$ と反応し，減少量は $21.0 + 10.5 = \\boldsymbol{31.5\\,\\mathrm{mL}}$ で，(2) の $29.4\\,\\mathrm{mL}$ より\\textbf{大きい}．$\\ce{HNO2}$（N の酸化数 $+3$）が生じる分だけ，N 1 個あたりに必要な $\\ce{O2}$ が少なく，同じ $\\ce{O2}$ でより多くの $\\ce{N2}$ が消えるためである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "NO が再生される循環反応は，中間体（NO・NO₂）が打ち消されるように係数を組み合わせて正味の反応式（2N₂＋5O₂＋2H₂O→4HNO₃）にまとめ，N₂ と O₂ のどちらが先に尽きるかで残る気体と生じる酸の量を決める．O₂ を補って N₂ を使い切ると反応しない気体（貴ガス）が残ることや，吸収の仕方（NO を再生するか）で量的関係が変わることを比べる．"
+ },
+ "concepts": [
+  "nitrogen-phosphorus",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "窒素酸化物",
+  "硝酸",
+  "放電",
+  "過不足",
+  "正味の反応式",
+  "アルゴン"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

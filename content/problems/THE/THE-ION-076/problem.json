@@ -1,0 +1,118 @@
+{
+ "id": "THE-ION-076",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "強酸と弱酸（硫化水素）の寄与が同程度のときの水素イオン濃度と硫化物の沈殿",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "25 ℃ で，$1.0\\times10^{5}\\,\\mathrm{Pa}$ の硫化水素を通じ続けた水溶液では，溶液中のイオンの量によらず $[\\ce{H2S}]=0.10\\,\\mathrm{mol/L}$ に保たれるものとする．硫化水素の電離定数を $K_1=1.0\\times10^{-7}\\,\\mathrm{mol/L}$，$K_2=1.0\\times10^{-14}\\,\\mathrm{mol/L}$ とし，$\\ce{HS-}$ のさらなる電離による $\\ce{H+}$ と水の電離は無視してよい．塩化水素は完全に電離する．$\\sqrt5=2.24$，$\\sqrt{3}=1.73$ とする．\n濃度 $c\\,(\\mathrm{mol/L})$ の塩酸に硫化水素を飽和させた．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$[\\ce{H+}]=h$ として，$h$ が満たす式を $c$ と $K_1[\\ce{H2S}]$ を用いて表し，$h$ を $c$ の式で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "$c=0$，$1.0\\times10^{-4}$，$1.0\\times10^{-2}\\,\\mathrm{mol/L}$ のそれぞれについて $h$ を有効数字2桁で求めよ．また $c=1.0\\times10^{-4}\\,\\mathrm{mol/L}$ のとき，「塩酸の $\\ce{H+}$ と，純水に飽和させたときの $\\ce{H+}$ の和」として求めた値はどれだけずれるか．"
+     },
+     {
+      "id": "3",
+      "tex": "「$h\\fallingdotseq c$（硫化水素の電離を無視）」が誤差 1 % 以内で成り立つのは，$c$ がおよそいくら以上のときか．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "2 価の金属イオン $\\ce{M^2+}$ を $1.0\\times10^{-2}\\,\\mathrm{mol/L}$ 含み，$c=1.0\\times10^{-4}\\,\\mathrm{mol/L}$ の塩酸を含む水溶液に硫化水素を飽和させた．$\\ce{MS}$ の溶解度積を $3.0\\times10^{-17}\\,(\\mathrm{mol/L})^2$ として，$\\ce{MS}$ の沈殿が生じはじめるかどうかを判断せよ．また，(2) の「和」の近似を用いるとどう判断を誤るかを述べよ．"
+     },
+     {
+      "id": "5",
+      "tex": "(4) で，$\\ce{MS}$ の沈殿が生じはじめる上限の塩酸の濃度 $c$ を有効数字2桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$h^2-ch-K_1[\\ce{H2S}]=0$，$h=\\dfrac{c+\\sqrt{c^2+4K_1[\\ce{H2S}]}}{2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$c=0$：$1.0\\times10^{-4}$，$c=1.0\\times10^{-4}$：$1.6\\times10^{-4}$，$c=1.0\\times10^{-2}$：$1.0\\times10^{-2}\\,\\mathrm{mol/L}$；和の近似では $2.0\\times10^{-4}$ となり約 24 % 大きすぎる．"
+   },
+   {
+    "id": "3",
+    "tex": "$c\\geqq9.9\\times10^{-4}\\,\\mathrm{mol/L}$（約 $1.0\\times10^{-3}$）"
+   },
+   {
+    "id": "4",
+    "tex": "沈殿が生じはじめる（イオン積 $3.8\\times10^{-17}$ ＞ $K_\\mathrm{sp}$）．和の近似では $h=2.0\\times10^{-4}$ でイオン積 $2.5\\times10^{-17}$ となり，沈殿しないと誤って判断する．"
+   },
+   {
+    "id": "5",
+    "tex": "$1.3\\times10^{-4}\\,\\mathrm{mol/L}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　電荷のつり合いは $[\\ce{H+}]=[\\ce{Cl-}]+[\\ce{HS-}]$（$\\ce{S^2-}$，$\\ce{OH-}$ は無視）．$[\\ce{HS-}]=\\dfrac{K_1[\\ce{H2S}]}{h}$ を代入して\n\\[ h=c+\\dfrac{K_1[\\ce{H2S}]}{h}\\ \\Rightarrow\\ \\boldsymbol{h^2-ch-K_1[\\ce{H2S}]=0},\\qquad h=\\dfrac{c+\\sqrt{c^2+4K_1[\\ce{H2S}]}}{2} \\]\nここで $K_1[\\ce{H2S}]=1.0\\times10^{-8}\\,(\\mathrm{mol/L})^2$ は塩酸の有無によらず一定である（$[\\ce{H2S}]$ が一定に保たれるため）．\n\n\\textbf{(2)}　$c=0$：$h=\\sqrt{1.0\\times10^{-8}}=\\boldsymbol{1.0\\times10^{-4}}$．\n$c=1.0\\times10^{-4}$：$h=\\dfrac{1.0\\times10^{-4}+\\sqrt{5.0\\times10^{-8}}}{2}=\\dfrac{(1+2.24)\\times10^{-4}}{2}=\\boldsymbol{1.6\\times10^{-4}}\\,\\mathrm{mol/L}$．\n$c=1.0\\times10^{-2}$：$\\sqrt{c^2+4\\times10^{-8}}\\fallingdotseq c$ なので $h\\fallingdotseq\\boldsymbol{1.0\\times10^{-2}}$．\n和の近似 $1.0\\times10^{-4}+1.0\\times10^{-4}=2.0\\times10^{-4}$ は，$\\dfrac{2.0}{1.62}=1.24$ で約 24 % 大きすぎる．塩酸の $\\ce{H+}$ によって硫化水素の電離が抑えられ（共通イオン効果），$[\\ce{HS-}]$ は $1.0\\times10^{-4}$ から $\\dfrac{1.0\\times10^{-8}}{1.62\\times10^{-4}}=0.62\\times10^{-4}$ に減っているからである．両者の寄与が同程度のときは，どちらか一方だけで近似することも，単純に足すこともできず，2 次方程式を解く必要がある．\n\n\\textbf{(3)}　$h\\fallingdotseq c$ の誤差は $\\dfrac{h-c}{h}=\\dfrac{[\\ce{HS-}]}{h}=\\dfrac{K_1[\\ce{H2S}]}{h^2}$．これが $0.01$ 以下となる条件は $h^2\\geqq1.0\\times10^{-6}$，すなわち $h\\geqq1.0\\times10^{-3}$．このとき $c=h-\\dfrac{1.0\\times10^{-8}}{h}=1.0\\times10^{-3}-1.0\\times10^{-5}=\\boldsymbol{9.9\\times10^{-4}\\,\\mathrm{mol/L}}$．$c$ が約 $10^{-3}\\,\\mathrm{mol/L}$ 以上なら硫化水素の電離を無視できる．\n\n\\textbf{(4)}　$K_1K_2=\\dfrac{[\\ce{H+}]^2[\\ce{S^2-}]}{[\\ce{H2S}]}$ より $[\\ce{S^2-}]=\\dfrac{1.0\\times10^{-21}\\times0.10}{h^2}=\\dfrac{1.0\\times10^{-22}}{h^2}$．\n$h=1.62\\times10^{-4}$（$h^2=\\dfrac{(3.24)^2}{4}\\times10^{-8}=2.62\\times10^{-8}$）のとき\n\\[ [\\ce{M^2+}][\\ce{S^2-}]=1.0\\times10^{-2}\\times\\dfrac{1.0\\times10^{-22}}{2.62\\times10^{-8}}=3.8\\times10^{-17}>K_\\mathrm{sp} \\]\nなので$\\boldsymbol{\\text{沈殿が生じはじめる}}$．和の近似 $h=2.0\\times10^{-4}$ を使うとイオン積は $\\dfrac{1.0\\times10^{-24}}{4.0\\times10^{-8}}=2.5\\times10^{-17}<K_\\mathrm{sp}$ となり，「沈殿しない」と誤った判断になる．イオン積は $h^2$ に反比例するので，$h$ の 24 % のずれが約 1.5 倍のずれになって効いてくる．\n（沈殿が進むと $\\ce{M^2+ + H2S ->[\\text{}] MS + 2H+}$ で $\\ce{H+}$ が増えるが，ここで問うているのは沈殿が生じはじめるかどうかである．）\n\n\\textbf{(5)}　沈殿が生じはじめる条件は $\\dfrac{1.0\\times10^{-24}}{h^2}>3.0\\times10^{-17}$，すなわち $h^2<\\dfrac{1}{3}\\times10^{-7}$，$h<\\dfrac{1}{\\sqrt3}\\times10^{-3.5}$．$h^2=3.33\\times10^{-8}$ より $h=1.83\\times10^{-4}$．この $h$ を与える $c$ は (1) の式から\n\\[ c=h-\\dfrac{K_1[\\ce{H2S}]}{h}=1.83\\times10^{-4}-\\dfrac{1.0\\times10^{-8}}{1.83\\times10^{-4}}=(1.83-0.55)\\times10^{-4}=\\boldsymbol{1.3\\times10^{-4}\\,\\mathrm{mol/L}} \\]\n和の近似（$c=h-1.0\\times10^{-4}$）では $0.83\\times10^{-4}$ となり，許される塩酸の濃度を 3 割以上小さく見積もってしまう．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "強酸と弱酸（飽和した H₂S）が共存する溶液の [H⁺] は電荷のつり合い h＝c＋K₁[H₂S]/h で決まり，両者の寄与が同程度の範囲では一方だけの近似も単純な和も使えない．[S²⁻] が [H⁺]² に反比例するため，この [H⁺] のずれが硫化物の沈殿の判断や沈殿が始まる塩酸濃度の上限を大きく左右する．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "precipitation",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "硫化水素",
+  "強酸と弱酸の混合",
+  "電荷のつり合い",
+  "近似の妥当性",
+  "硫化物の沈殿",
+  "溶解度積"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

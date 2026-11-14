@@ -1,0 +1,131 @@
+{
+ "id": "THE-EQL-094",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "成分だけを通す膜でつないだ平衡混合気体の出し入れと濃度平衡定数",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，体積一定の反応箱の中で，温度 $T$ において $\\ce{N2O4 <=> 2NO2}$ の平衡が成り立っている．反応箱には $\\ce{N2O4}$ だけを通す膜 P と $\\ce{NO2}$ だけを通す膜 Q があり，それぞれピストンつきのシリンダー P，Q とつながっている．膜の両側で同じ気体の分圧（すなわちモル濃度）が等しくなるまで，その気体だけがすみやかに移動する．全体は温度 $T$ に保たれ，気体は理想気体とする．温度 $T$ での濃度平衡定数は $K_{\\mathrm c}=\\dfrac{[\\ce{NO2}]^2}{[\\ce{N2O4}]}=0.40\\,\\mathrm{mol/L}$ である．\nはじめ，シリンダー P には $\\ce{N2O4}$ が $0.50\\,\\mathrm{mol}$，体積 $5.0\\,\\mathrm{L}$ で入っていて反応箱と膜を通してつり合っており，シリンダー Q の体積は $0$ である．\n操作1：ピストンを押し込み，シリンダー P の $\\ce{N2O4}$ をすべて反応箱に入れる（反応は遅く，押し込んだ直後は平衡ではない）．\n操作2：十分に時間がたって平衡に達したのち，シリンダー Q のピストンをきわめてゆっくり引き，反応箱を常に平衡に保ったまま $\\ce{NO2}$ をちょうど $1.0\\,\\mathrm{mol}$ シリンダー Q に取り込む．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "はじめの状態での反応箱内の $[\\ce{N2O4}]$ と $[\\ce{NO2}]$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "操作1のあと平衡に達するまでに，反応は右向き・左向きのどちらに進むか．"
+     },
+     {
+      "id": "3",
+      "tex": "操作2が終わったときの反応箱内の平衡混合気体は，はじめの状態と比べてどうなっているか．次の (a)〜(c) から選べ．\\\\\n(a) $\\ce{NO2}$ の割合が大きくなっている　(b) はじめと同じ組成・濃度である　(c) $\\ce{N2O4}$ の割合が大きくなっている"
+     },
+     {
+      "id": "4",
+      "tex": "操作2が終わったときのシリンダー Q の体積を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "はじめのシリンダー P が $\\ce{N2O4}$ $0.50\\,\\mathrm{mol}$ を体積 $20\\,\\mathrm{L}$ で含んでいた（反応箱もそれとつり合う平衡状態にあった）とすると，同じ操作の後のシリンダー Q の体積はいくらになるか．有効数字2桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：成分だけを通す膜でつないだ平衡混合気体の出し入れと濃度平衡定数",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$[\\ce{N2O4}]=0.10\\,\\mathrm{mol/L}$，$[\\ce{NO2}]=0.20\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "2",
+    "tex": "右向き"
+   },
+   {
+    "id": "3",
+    "tex": "(b)"
+   },
+   {
+    "id": "4",
+    "tex": "$5.0\\,\\mathrm{L}$"
+   },
+   {
+    "id": "5",
+    "tex": "$10\\,\\mathrm{L}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　膜でつながった気体は，膜の両側でモル濃度（分圧）が等しい．だから，純粋な気体が入ったシリンダーの濃度が，そのまま反応箱の平衡混合気体中の濃度を表す．\n\n\\textbf{(1)}　シリンダー P の濃度 $0.50/5.0=0.10\\,\\mathrm{mol/L}$ が反応箱の $[\\ce{N2O4}]$ に等しい．$[\\ce{NO2}]=\\sqrt{K_{\\mathrm c}[\\ce{N2O4}]}=\\sqrt{0.40\\times0.10}=\\boldsymbol{0.20\\,\\mathrm{mol/L}}$．\n\n\\textbf{(2)}　反応箱に $\\ce{N2O4}$ が加わって $[\\ce{N2O4}]$ が増えたので，$\\dfrac{[\\ce{NO2}]^2}{[\\ce{N2O4}]}<K_{\\mathrm c}$ となり，これを解消する\\textbf{右向き}に進む（ルシャトリエの原理）．\n\n\\textbf{(3)}　加えたのは $\\ce{N2O4}$ $0.50\\,\\mathrm{mol}$（N 原子 $1.0\\,\\mathrm{mol}$，O 原子 $2.0\\,\\mathrm{mol}$），取り出したのは $\\ce{NO2}$ $1.0\\,\\mathrm{mol}$（N $1.0\\,\\mathrm{mol}$，O $2.0\\,\\mathrm{mol}$）なので，反応箱の中の原子の量ははじめと同じにもどる．体積・温度も同じだから，平衡状態はただ1つに決まり，はじめと\\textbf{同じ}になる → $\\boldsymbol{\\text{(b)}}$．\nつまりこの一連の操作は，「平衡にある濃度の $\\ce{N2O4}$ $0.50\\,\\mathrm{mol}$ を，平衡にある濃度の $\\ce{NO2}$ $1.0\\,\\mathrm{mol}$ に変えた」ことにあたる．\n\n\\textbf{(4)}　操作2の終わりの反応箱ははじめと同じなので $[\\ce{NO2}]=0.20\\,\\mathrm{mol/L}$．シリンダー Q の濃度も同じだから $V_{\\mathrm Q}=\\dfrac{1.0}{0.20}=\\boldsymbol{5.0\\,\\mathrm{L}}$．\n\n\\textbf{(5)}　$[\\ce{N2O4}]=0.50/20=0.025\\,\\mathrm{mol/L}$，$[\\ce{NO2}]=\\sqrt{0.40\\times0.025}=0.10\\,\\mathrm{mol/L}$．よって $V_{\\mathrm Q}=1.0/0.10=\\boldsymbol{10\\,\\mathrm{L}}$．\n一般に $V_{\\mathrm Q}=\\dfrac{n_{\\ce{NO2}}}{\\sqrt{K_{\\mathrm c}\\,n_{\\ce{N2O4}}/V_{\\mathrm P}}}$ で，$V_{\\mathrm Q}^2/V_{\\mathrm P}$ が $K_{\\mathrm c}$ で決まる．$V_{\\mathrm P}$ を 4 倍にしても $V_{\\mathrm Q}$ は 2 倍にしかならないのは，係数の違い（$\\ce{NO2}$ の濃度が 2 乗で効く）による．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "膜で成分ごとにつながった純気体の濃度は平衡混合気体中のその成分の濃度に等しく，そこから濃度平衡定数が体積で表される．加えた原子の量と取り出した原子の量が等しければ，反応箱の平衡状態は元にもどる．取り出す側の体積は係数のちがいのため供給側の体積の平方根に比例する．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "nitrogen-phosphorus",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "化学平衡",
+  "濃度平衡定数",
+  "半透膜",
+  "ルシャトリエの原理",
+  "四酸化二窒素"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

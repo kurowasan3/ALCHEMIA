@@ -1,0 +1,117 @@
+{
+ "id": "POL-PRT-065",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-05",
+ "topic": "燃焼の CO₂・H₂O の比から構成アミノ酸を決めるジペプチド",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "structure"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の 7 種類のアミノ酸のうち，異なる 2 種類が 1 分子ずつ縮合したジペプチド P がある．\n\\[ \\begin{array}{llll}\n\\text{グリシン}\\ \\ce{C2H5NO2} & \\text{セリン}\\ \\ce{C3H7NO3} & \\text{システイン}\\ \\ce{C3H7NO2S} & \\text{バリン}\\ \\ce{C5H11NO2} \\\\\n\\text{グルタミン酸}\\ \\ce{C5H9NO4} & \\text{リシン}\\ \\ce{C6H14N2O2} & \\text{チロシン}\\ \\ce{C9H11NO3} &\n\\end{array} \\]\nP $40.8\\,\\mathrm{mg}$ を完全燃焼させると，二酸化炭素 $61.6\\,\\mathrm{mg}$ と水 $21.6\\,\\mathrm{mg}$ が得られた．原子量は $\\ce{H}=1.0$，$\\ce{C}=12$，$\\ce{N}=14$，$\\ce{O}=16$，$\\ce{S}=32$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "P に含まれる炭素原子と水素原子の数の比を，最も簡単な整数比で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "P を構成する 2 種類のアミノ酸の名称を答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "P の分子式と分子量を答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "P として考えられるアミノ酸の配列（結合の順序）は何通りあるか．ただし立体異性体は区別しない．"
+     },
+     {
+      "id": "5",
+      "tex": "P を構成する 2 種類のアミノ酸のうち，不斉炭素原子をもつものの名称を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{C}:\\ce{H} = 7:12$"
+   },
+   {
+    "id": "2",
+    "tex": "グリシン，グルタミン酸"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{C7H12N2O5}$，204"
+   },
+   {
+    "id": "4",
+    "tex": "2 通り"
+   },
+   {
+    "id": "5",
+    "tex": "グルタミン酸"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $\\ce{C}$：$\\dfrac{61.6}{44} = 1.40\\,\\mathrm{mmol}$，$\\ce{H}$：$\\dfrac{21.6}{18}\\times2 = 2.40\\,\\mathrm{mmol}$．$\\ce{C}:\\ce{H} = 1.40:2.40 = \\boldsymbol{7:12}$．\n\n(2) ジペプチドの分子式は，2 つのアミノ酸の分子式の和から $\\ce{H2O}$ を引いたものである．C と H の数を調べると\n\\[ \\begin{array}{lll}\n\\text{グリシン＋グルタミン酸}：\\ce{C7H12} & \\text{グリシン＋セリン}：\\ce{C5H10} & \\text{バリン＋グルタミン酸}：\\ce{C10H18}\\\\\n\\text{リシン＋グルタミン酸}：\\ce{C11H21} & \\text{チロシン＋グリシン}：\\ce{C11H14} & \\cdots\n\\end{array} \\]\nとなり，$7:12$ になるのは \\textbf{グリシンとグルタミン酸} の組合せだけである．酸性アミノ酸のグルタミン酸は，カルボキシ基が 2 つあるので H の割合が小さく，グリシンと組むと $\\ce{C}:\\ce{H}$ が $1:2$ より小さくなる（中性アミノ酸どうしでは $1:2$ になる）．\n\n(3) $\\ce{C2H5NO2} + \\ce{C5H9NO4} - \\ce{H2O} = \\boldsymbol{\\ce{C7H12N2O5}}$，分子量 $\\boldsymbol{204}$．\n確認：$40.8\\,\\mathrm{mg}$ は $0.200\\,\\mathrm{mmol}$ で，C は $0.200\\times7 = 1.40\\,\\mathrm{mmol}$，H は $0.200\\times12 = 2.40\\,\\mathrm{mmol}$ となり測定値と一致する．\n\n(4) グリシンのカルボキシ基とグルタミン酸のアミノ基が結合したもの（Gly–Glu）と，その逆（Glu–Gly）の $\\boldsymbol{2}$ 通り．（グルタミン酸の側鎖のカルボキシ基でアミド結合をつくる場合は考えない．）\n\n(5) グリシンは α 炭素に H が 2 個結合しているので不斉炭素原子をもたない．$\\boldsymbol{\\text{グルタミン酸}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ジペプチドの分子式は2つのアミノ酸の分子式の和から H₂O を引いたものなので，燃焼の CO₂ と H₂O から C と H の数の比を求め，候補の組合せの中から一致するものを選ぶ．酸性アミノ酸は H の割合が小さいことに注目し，配列の数と不斉炭素原子の有無も判断する．"
+ },
+ "concepts": [
+  "protein-amino",
+  "organic-structure",
+  "elemental-analysis"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ジペプチド",
+  "元素分析",
+  "グルタミン酸",
+  "グリシン",
+  "アミノ酸配列"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 670 390" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">
+  <defs>
+    <marker id="q-ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"/>
+    </marker>
+  </defs>
+  <g stroke="currentColor" fill="none" stroke-width="1.5">
+    <rect x="200" y="12" width="240" height="44" rx="8"/>
+    <line x1="320" y1="56" x2="320" y2="120"/>
+    <line x1="170" y1="120" x2="470" y2="120"/>
+    <line x1="170" y1="120" x2="170" y2="150" marker-end="url(#q-ah)"/>
+    <line x1="470" y1="120" x2="470" y2="150" marker-end="url(#q-ah)"/>
+    <rect x="110" y="152" width="120" height="36"/>
+    <rect x="410" y="152" width="120" height="36" rx="18"/>
+    <line x1="170" y1="188" x2="170" y2="250"/>
+    <line x1="80" y1="250" x2="260" y2="250"/>
+    <line x1="80" y1="250" x2="80" y2="280" marker-end="url(#q-ah)"/>
+    <line x1="260" y1="250" x2="260" y2="280" marker-end="url(#q-ah)"/>
+    <rect x="10" y="282" width="140" height="36"/>
+    <rect x="190" y="282" width="140" height="36" rx="18"/>
+    <line x1="470" y1="188" x2="470" y2="280" marker-end="url(#q-ah)"/>
+    <rect x="415" y="282" width="110" height="36"/>
+  </g>
+  <text x="320" y="31" text-anchor="middle">溶液 S（Fe<tspan baseline-shift="super" font-size="10">3+</tspan>，Cr<tspan baseline-shift="super" font-size="10">3+</tspan>，Ni<tspan baseline-shift="super" font-size="10">2+</tspan>）</text>
+  <text x="320" y="48" text-anchor="middle" font-size="12">ステンレス鋼を溶かしたもの</text>
+  <text x="330" y="82">操作1：過剰の NaOH 水溶液と</text>
+  <text x="330" y="100">H<tspan baseline-shift="sub" font-size="10">2</tspan>O<tspan baseline-shift="sub" font-size="10">2</tspan> 水を加えて加熱</text>
+  <text x="170" y="175" text-anchor="middle">沈殿 P</text>
+  <text x="470" y="175" text-anchor="middle">ろ液 Q（黄色）</text>
+  <text x="180" y="215">操作2：過剰のアンモニア水</text>
+  <text x="80" y="305" text-anchor="middle">沈殿 R（赤褐色）</text>
+  <text x="260" y="305" text-anchor="middle">ろ液 T（青紫色）</text>
+  <text x="480" y="215">操作3：酢酸で酸性にして</text>
+  <text x="480" y="233">酢酸鉛(II) 水溶液</text>
+  <text x="470" y="305" text-anchor="middle">沈殿 U（黄色）</text>
+  <text x="320" y="370" text-anchor="middle" font-size="12" opacity="0.8">四角：沈殿　　角の丸い四角：溶液</text>
+</svg>

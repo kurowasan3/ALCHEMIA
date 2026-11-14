@@ -1,0 +1,108 @@
+{
+ "id": "POL-PRT-054",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-05",
+ "topic": "塩基の相補性による DNA の塩基組成と平均式量・塩基の数",
+ "course": "化学",
+ "level": 1,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "2本鎖 DNA では，アデニン（A）とチミン（T），グアニン（G）とシトシン（C）がそれぞれ塩基対をつくる．DNA のヌクレオチド単位の式量は，含む塩基によって次の値とする．\n\\[\\text{A}：313\\qquad \\text{G}：329\\qquad \\text{C}：289\\qquad \\text{T}：304\\]\nアボガドロ定数は $6.0\\times10^{23}\\,\\mathrm{/mol}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ある生物の2本鎖 DNA では，全塩基に対する G の数の割合が 30 % であった．A，T，C の割合をそれぞれ答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) の DNA のヌクレオチド単位の式量の平均値を有効数字3桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(1) の生物の細胞1個に含まれる DNA の質量が $6.18\\times10^{-12}\\,\\mathrm g$ のとき，細胞1個の DNA に含まれる G の数を有効数字3桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "あるウイルスの DNA の塩基組成は，A 25 %，T 33 %，G 24 %，C 18 % であった．このことから，このウイルスの DNA についてどのように判断できるか．次の (ア)〜(ウ) から1つ選べ．\\\\\n(ア) 2本鎖 DNA である　(イ) 1本鎖 DNA である　(ウ) RNA である"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "A：20 %，T：20 %，C：30 %"
+   },
+   {
+    "id": "2",
+    "tex": "309"
+   },
+   {
+    "id": "3",
+    "tex": "$3.60\\times10^{9}$ 個"
+   },
+   {
+    "id": "4",
+    "tex": "(イ)"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 2本鎖では G と C，A と T が同数ずつある．C は G と同じ $\\boldsymbol{30\\,\\%}$，残り $100-60=40\\,\\%$ を A と T が等分して $\\boldsymbol{20\\,\\%}$ ずつ．\n\n\\textbf{(2)}\n\\[0.20\\times313+0.20\\times304+0.30\\times329+0.30\\times289=62.6+60.8+98.7+86.7=308.8\\fallingdotseq\\boldsymbol{309}\\]\n\n\\textbf{(3)} ヌクレオチド単位の物質量は $\\dfrac{6.18\\times10^{-12}}{308.8}=2.001\\times10^{-14}\\,\\mathrm{mol}$，個数は $2.001\\times10^{-14}\\times6.0\\times10^{23}=1.20\\times10^{10}$ 個．G はその 30 % なので $1.20\\times10^{10}\\times0.30=\\boldsymbol{3.60\\times10^{9}}$ 個．\n\n\\textbf{(4)} 2本鎖なら A = T，G = C となるはずだが，A ≠ T，G ≠ C なので相補的な鎖がない．T を含むので RNA（T のかわりに U をもつ）ではなく，$\\boldsymbol{\\text{(イ)}}$ 1本鎖 DNA と判断できる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "2本鎖 DNA では塩基の相補性から A=T，G=C となるので，1つの塩基の割合から組成全体と平均式量が決まり，質量から塩基の数が求まる．相補性が成り立たない組成は1本鎖であることを示す．"
+ },
+ "concepts": [
+  "protein-amino",
+  "nucleic-acid"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "DNA",
+  "塩基対",
+  "相補性",
+  "塩基組成",
+  "平均式量"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,118 @@
+{
+ "id": "THE-EQL-036",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "酢酸蒸気の二量体化と見かけの分子量（デュマ法の異常値から圧平衡定数）",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "酢酸は気体の状態でも，2分子が水素結合で結びついた二量体をつくり，次の平衡が成り立つ．\n\\[\\ce{2CH3COOH(g) <=> (CH3COOH)2(g)}\\qquad K_p=\\dfrac{p_{\\text{D}}}{p_{\\text{M}}^{\\,2}}\\]\n（$p_{\\text{M}}$：単量体の分圧，$p_{\\text{D}}$：二量体の分圧）\n\n内容積 $830\\,\\mathrm{mL}$ のフラスコに液体の酢酸を入れ，$400\\,\\mathrm K$，$1.0\\times10^{5}\\,\\mathrm{Pa}$ の外気につながる小孔をつけて加熱し，液体がすべて蒸発して余分な蒸気が追い出されたのち，孔を閉じて冷却した．フラスコ内に残った酢酸の質量は $2.40\\,\\mathrm g$ であった（この値は空気の浮力などを補正したものとする）．気体はすべて理想気体とし，酢酸の分子量を 60，$R=8.3\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "400 K のフラスコ内の蒸気を1種類の分子からなる気体とみなしたときの「見かけの分子量」を求めよ．また，その値が 60 と異なる理由を述べよ．"
+     },
+     {
+      "id": "2",
+      "tex": "400 K，$1.0\\times10^{5}\\,\\mathrm{Pa}$ での単量体と二量体の分圧を求め，$K_p$ を単位とともに有効数字2桁で求めよ．また，蒸気中の酢酸分子（単量体に換算）のうち何 % が二量体になっているか．"
+     },
+     {
+      "id": "3",
+      "tex": "同じ 400 K で，フラスコ内の蒸気の全圧が $2.0\\times10^{4}\\,\\mathrm{Pa}$ になるようにして同じ実験をすると，見かけの分子量はいくらになると予想されるか．整数で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "400 K で見かけの分子量が 63 以下（真の値との差が 5 % 以内）になるようにするには，蒸気の全圧を何 Pa 以下にすればよいか．有効数字2桁で答えよ．また，圧力を下げると見かけの分子量が真の値に近づく理由を述べよ．"
+     },
+     {
+      "id": "5",
+      "tex": "450 K，$1.0\\times10^{5}\\,\\mathrm{Pa}$ で同様に測定すると，見かけの分子量は 70 であった．450 K での $K_p$ を有効数字2桁で求め，二量体の生成が発熱反応か吸熱反応かを，理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "96．蒸気中で酢酸の一部が二量体（分子量 120）になっていて，同じ圧力・体積に含まれる「粒子」の数が単量体だけの場合より少ないから"
+   },
+   {
+    "id": "2",
+    "tex": "$p_{\\text{M}}=4.0\\times10^{4}\\,\\mathrm{Pa}$，$p_{\\text{D}}=6.0\\times10^{4}\\,\\mathrm{Pa}$，$K_p=3.8\\times10^{-5}\\,\\mathrm{Pa^{-1}}$，75 %"
+   },
+   {
+    "id": "3",
+    "tex": "80"
+   },
+   {
+    "id": "4",
+    "tex": "$1.5\\times10^{3}\\,\\mathrm{Pa}$ 以下．圧力を下げると，分子の数が増える向き（二量体が単量体に分かれる向き）に平衡が移動し，二量体の割合が小さくなるから"
+   },
+   {
+    "id": "5",
+    "tex": "$K_p=2.4\\times10^{-6}\\,\\mathrm{Pa^{-1}}$．温度を上げると $K_p$ が小さくなる（二量体が減る）ので，二量体の生成は発熱反応（水素結合ができるときにエネルギーを放出する）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　蒸気の粒子の物質量は\n\\[n=\\dfrac{PV}{RT}=\\dfrac{1.0\\times10^{5}\\times0.830}{8.3\\times10^{3}\\times400}=2.50\\times10^{-2}\\,\\mathrm{mol}\\]\n見かけの分子量は $\\dfrac{2.40}{2.50\\times10^{-2}}=\\boldsymbol{96}$．二量体（分子量 120）が混じっているので，質量に対して粒子数が少なく，60 より大きく出る．\n\n\\textbf{(2)}　$p_{\\text{M}}+p_{\\text{D}}=1.0\\times10^{5}$．見かけの分子量は単量体単位の総数と粒子数の比で決まり\n\\[96=60\\times\\dfrac{p_{\\text{M}}+2p_{\\text{D}}}{p_{\\text{M}}+p_{\\text{D}}}\\quad\\Longrightarrow\\quad 1.6\\,(p_{\\text{M}}+p_{\\text{D}})=p_{\\text{M}}+2p_{\\text{D}}\\quad\\Longrightarrow\\quad p_{\\text{M}}=\\dfrac23\\,p_{\\text{D}}\\]\nよって $\\boldsymbol{p_{\\text{M}}=4.0\\times10^{4}\\,\\mathrm{Pa}}$，$\\boldsymbol{p_{\\text{D}}=6.0\\times10^{4}\\,\\mathrm{Pa}}$．\n\\[K_p=\\dfrac{6.0\\times10^{4}}{(4.0\\times10^{4})^{2}}=3.75\\times10^{-5}\\approx\\boldsymbol{3.8\\times10^{-5}\\,\\mathrm{Pa^{-1}}}\\]\n単量体単位で数えると，二量体中の分子は $2\\times6.0=12$，単量体は $4.0$（いずれも $\\times10^{4}$ に比例）なので，$\\dfrac{12}{16}\\times100=\\boldsymbol{75\\,\\%}$ が二量体になっている．\n\n\\textbf{(3)}　$p_{\\text{M}}+K_pp_{\\text{M}}^{\\,2}=2.0\\times10^{4}$ より\n\\[3.75\\times10^{-5}p_{\\text{M}}^{\\,2}+p_{\\text{M}}-2.0\\times10^{4}=0,\\quad p_{\\text{M}}=\\dfrac{-1+\\sqrt{1+4\\times3.75\\times10^{-5}\\times2.0\\times10^{4}}}{2\\times3.75\\times10^{-5}}=\\dfrac{-1+2}{7.5\\times10^{-5}}=1.33\\times10^{4}\\,\\mathrm{Pa}\\]\n$p_{\\text{D}}=0.67\\times10^{4}\\,\\mathrm{Pa}$．見かけの分子量は $60\\times\\dfrac{1.33+2\\times0.67}{2.0}=\\boldsymbol{80}$．\n\n\\textbf{(4)}　見かけの分子量は $60\\left(1+\\dfrac{p_{\\text{D}}}{P}\\right)$（$P$ は全圧）と書けるので，63 以下 $\\Longleftrightarrow$ 二量体のモル分率 $\\dfrac{p_{\\text{D}}}{P}\\le0.050$．境界では $p_{\\text{D}}=0.050P$，$p_{\\text{M}}=0.95P$ で\n\\[K_p=\\dfrac{0.050P}{(0.95P)^{2}}\\quad\\Longrightarrow\\quad P=\\dfrac{0.050}{0.9025\\times3.75\\times10^{-5}}=1.48\\times10^{3}\\]\nよって全圧を $\\boldsymbol{1.5\\times10^{3}\\,\\mathrm{Pa}}$ 以下にすればよい．$\\dfrac{p_{\\text{D}}}{p_{\\text{M}}}=K_pp_{\\text{M}}$ なので，分圧が小さいほど二量体の割合が小さくなる（気体の分子数が増える向きへの平衡移動）．通常のデュマ法（大気圧）では，会合する物質の分子量は正しく求まらない．\n\n\\textbf{(5)}　$70\\,(p_{\\text{M}}+p_{\\text{D}})=60\\,(p_{\\text{M}}+2p_{\\text{D}})$ より $p_{\\text{M}}=5p_{\\text{D}}$．$p_{\\text{D}}=1.67\\times10^{4}$，$p_{\\text{M}}=8.33\\times10^{4}\\,\\mathrm{Pa}$．\n\\[K_p=\\dfrac{1.67\\times10^{4}}{(8.33\\times10^{4})^{2}}=\\boldsymbol{2.4\\times10^{-6}\\,\\mathrm{Pa^{-1}}}\\]\n温度を上げると $K_p$ が小さくなり平衡が左（単量体の側）へ移動するので，右向き（二量体の生成）は\\textbf{発熱反応}である．二量体の生成では2本の水素結合ができ，結合ができるときにはエネルギーが放出されることと合う．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "会合平衡にある蒸気では，見かけの分子量が単量体単位の数と粒子数の比で決まることから分圧と圧平衡定数を逆算する．全圧を変えたときの会合度の変化を平衡定数から予測し，分子量測定が正しくなる圧力の条件や，温度変化から会合の発熱・吸熱を判断する．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "intermolecular",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "会合",
+  "二量体",
+  "見かけの分子量",
+  "圧平衡定数",
+  "デュマ法",
+  "水素結合"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

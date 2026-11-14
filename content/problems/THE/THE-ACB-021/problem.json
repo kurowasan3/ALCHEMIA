@@ -1,0 +1,101 @@
+{
+ "id": "THE-ACB-021",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-05",
+ "topic": "塩酸とリン酸の混合溶液の滴定で見える段と見えない段",
+ "course": "化学",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "塩酸とリン酸を含む混合水溶液 $20.0\\,\\mathrm{mL}$ を $0.100\\,\\mathrm{mol/L}$ 水酸化ナトリウム水溶液で滴定し，pH を測定した．pH の急な変化（跳躍）は，滴下量 $18.0\\,\\mathrm{mL}$（pH 約 4.7）と $26.0\\,\\mathrm{mL}$（pH 約 9.7）の2か所に見られ，それ以上加えても3つ目の跳躍は見られなかった．リン酸の電離定数を $K_1=7.0\\times10^{-3}$，$K_2=6.3\\times10^{-8}$，$K_3=4.5\\times10^{-13}$（単位はいずれも $\\mathrm{mol/L}$），$K_w=1.0\\times10^{-14}\\,(\\mathrm{mol/L})^2$ とする．必要なら $\\sqrt{7.96}=2.82$ を用いよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "2つの跳躍までにそれぞれ起こる中和反応をイオン反応式で示し，混合水溶液中の塩酸とリン酸のモル濃度を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "塩酸がちょうど中和される滴下量（$10.0\\,\\mathrm{mL}$）では pH の跳躍が見られない．この点の溶液（リン酸 $0.80\\,\\mathrm{mmol}$ を含む $30.0\\,\\mathrm{mL}$）で，リン酸の何 % が $\\ce{H2PO4-}$ になっているかを $K_1$ だけを考えて有効数字2桁で求め，跳躍が見られない理由を説明せよ．"
+     },
+     {
+      "id": "3",
+      "tex": "2つ目の跳躍の直後（$26.0\\,\\mathrm{mL}$）に塩化カルシウム水溶液を十分に加えると，リン酸カルシウムが沈殿して溶液は酸性になった．この変化をイオン反応式で表せ．さらに水酸化ナトリウム水溶液で滴定を続けると，フェノールフタレインが赤くなるまでに何 mL を要するか．リン酸カルシウムは完全に沈殿し，水酸化カルシウムは沈殿しないものとする．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "1つ目：$\\ce{H+ + OH- -> H2O}$ と $\\ce{H3PO4 + OH- -> H2PO4- + H2O}$，2つ目：$\\ce{H2PO4- + OH- -> HPO4^2- + H2O}$；塩酸 $0.050\\,\\mathrm{mol/L}$，リン酸 $0.040\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "2",
+    "tex": "$40\\,\\%$；リン酸の第1段の電離がかなり進んでいて，塩酸の中和が終わる前から $\\ce{H3PO4}$ も中和され，両者が区別されずに連続して中和されるから"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{3Ca^2+ + 2HPO4^2- -> Ca3(PO4)2 + 2H+}$；$8.0\\,\\mathrm{mL}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 1つ目の跳躍までに，塩酸の中和 $\\ce{H+ + OH- -> H2O}$ とリン酸の第1段 $\\ce{H3PO4 + OH- -> H2PO4- + H2O}$ が，2つ目の跳躍までに第2段 $\\ce{H2PO4- + OH- -> HPO4^2- + H2O}$ が起こる（1つ目の跳躍の pH 約 4.7 は $\\ce{H2PO4-}$ の溶液の pH $\\fallingdotseq\\tfrac12(\\mathrm{p}K_1+\\mathrm{p}K_2)$，2つ目の約 9.7 は $\\ce{HPO4^2-}$ の溶液の pH $\\fallingdotseq\\tfrac12(\\mathrm{p}K_2+\\mathrm{p}K_3)$ にあたる）．塩酸を $a\\,\\mathrm{mmol}$，リン酸を $b\\,\\mathrm{mmol}$ とすると\n\\[ a+b=0.100\\times18.0=1.80,\\qquad b=0.100\\times(26.0-18.0)=0.80 \\]\nよって $a=1.00\\,\\mathrm{mmol}$．塩酸 $\\boldsymbol{0.050\\,\\mathrm{mol/L}}$，リン酸 $\\boldsymbol{0.040\\,\\mathrm{mol/L}}$．\n\n\\textbf{(2)} $C=\\dfrac{0.80}{30.0}=0.0267\\,\\mathrm{mol/L}$ のリン酸水溶液（$\\ce{NaCl}$ は影響しない）と同じ．$[\\ce{H+}]=[\\ce{H2PO4-}]=x$ として\n\\[ \\dfrac{x^2}{0.0267-x}=7.0\\times10^{-3}\\ \\Rightarrow\\ x^2+7.0\\times10^{-3}x-1.87\\times10^{-4}=0\\ \\Rightarrow\\ x=\\dfrac{-7.0\\times10^{-3}+\\sqrt{7.96\\times10^{-4}}}{2}=1.06\\times10^{-2}\\,\\mathrm{mol/L} \\]\n割合は $\\dfrac{1.06\\times10^{-2}}{0.0267}\\fallingdotseq\\boldsymbol{40\\,\\%}$（$K_1$ が大きいので電離度を 1 に比べて無視できない）．塩酸がなくなる前からリン酸の第1段も相当に電離（中和）されているので，「塩酸の終点」で $\\ce{H+}$ が急になくなることはなく，塩酸と第1段は一続きに中和される．\n\n\\textbf{(3)} 3つ目の跳躍が見られないのは，$K_3$ がきわめて小さく，第3中和点でも $\\ce{PO4^3-}$ の大部分が $\\ce{PO4^3- + H2O -> HPO4^2- + OH-}$ で $\\ce{HPO4^2-}$ に戻っていて，中和が完結しないためである．$\\ce{Ca3(PO4)2}$ がきわめて溶けにくいので，$\\ce{PO4^3-}$ が沈殿として取り去られ，$\\ce{HPO4^2-}$ が $\\ce{H+}$ を放出する方向に平衡が移る．\n\\[ \\ce{3Ca^2+ + 2HPO4^2- -> Ca3(PO4)2 + 2H+} \\]\n$\\ce{HPO4^2-}$ $0.80\\,\\mathrm{mmol}$ から $\\ce{H+}$ $0.80\\,\\mathrm{mmol}$ が生じるので，これを中和するのに\n\\[ \\dfrac{0.80\\,\\mathrm{mmol}}{0.100\\,\\mathrm{mol/L}}=\\boldsymbol{8.0\\,\\mathrm{mL}} \\]\nを要する．沈殿をつくって加水分解の逆戻りを防ぐと，見えなかった第3段の $\\ce{H+}$ も滴定できる（合計の滴下量 $34.0\\,\\mathrm{mL}$ は $a+3b$ に一致する）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "強酸と多価の弱酸の混合物の滴定では，Ka の大きい第1段は強酸の中和が終わる前から進むので強酸と区別されず，跳躍から得られるのは（強酸＋第1段）と第2段の量である．跳躍の現れない第3段も，Ca2+ を加えて Ca3(PO4)2 として沈殿させると HPO4^2- が H+ を放出するので滴定できる．"
+ },
+ "concepts": [
+  "acid-base",
+  "precipitation",
+  "nitrogen-phosphorus"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "リン酸",
+  "多段階の中和",
+  "滴定曲線",
+  "加水分解",
+  "リン酸カルシウム"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

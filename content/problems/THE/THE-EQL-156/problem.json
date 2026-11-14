@@ -1,0 +1,118 @@
+{
+ "id": "THE-EQL-156",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "ギブズエネルギーによるエチレン水和の向き・平衡転化率と水の凝縮の判定",
+ "course": "化学",
+ "level": 4,
+ "minutes": 35,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "一定の温度・圧力のもとで反応が自発的に進む向きは，反応のギブズエネルギー変化 $\\Delta G$ の符号で判断できる（$\\Delta G<0$ なら正反応の向きに進み，$\\Delta G=0$ で平衡）．気体の反応では，標準圧力 $P^\\circ=0.10\\,\\mathrm{MPa}$ を基準として次の関係が成り立つ．\n\\[\n\\Delta G^\\circ=\\Delta H^\\circ-T\\Delta S^\\circ,\\qquad \\Delta G^\\circ=-2.303RT\\log_{10}K,\\qquad \\Delta G=\\Delta G^\\circ+2.303RT\\log_{10}Q\n\\]\nここで $K$ は平衡定数，$Q$ は各気体の分圧を $P^\\circ$ で割った値を平衡定数と同じ形に組んだ量（反応商）である．\n\nエチレンの気相での水和 $\\ce{C2H4(g) + H2O(g) <=> C2H5OH(g)}$ について，$\\Delta H^\\circ=-45.6\\,\\mathrm{kJ/mol}$，$\\Delta S^\\circ=-126\\,\\mathrm{J/(K\\cdot mol)}$ とし，これらは温度によらないとする．気体はすべて理想気体とみなす．\n（$R=8.31\\,\\mathrm{J/(K\\cdot mol)}$，$\\log_{10}2=0.301$，$\\log_{10}3=0.477$，$10^{0.575}=3.76$，$10^{0.454}=2.84$．水の飽和蒸気圧：$473\\,\\mathrm K$ で $1.55\\,\\mathrm{MPa}$，$573\\,\\mathrm K$ で $8.59\\,\\mathrm{MPa}$．エタノールの飽和蒸気圧：$473\\,\\mathrm K$ で $3.0\\,\\mathrm{MPa}$）"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$K=1$ となる温度を有効数字 3 桁で求めよ．また，これより高温では $K$ は 1 より大きいか小さいかを答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$573\\,\\mathrm K$ での $K$ を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$573\\,\\mathrm K$ で，分圧が $\\ce{C2H4}$ $3.0\\,\\mathrm{MPa}$，$\\ce{H2O}$ $3.0\\,\\mathrm{MPa}$，$\\ce{C2H5OH}$ $0.050\\,\\mathrm{MPa}$ の混合気体をつくった．$\\Delta G$ を有効数字 2 桁で求め，反応がどちらの向きに進むかを答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\ce{C2H4}$ と $\\ce{H2O}$ を物質量比 $1:1$ で混合し，$573\\,\\mathrm K$，全圧 $6.0\\,\\mathrm{MPa}$ 一定に保って平衡に達させた．エチレンの転化率（反応したエチレンの割合）を有効数字 2 桁で求めよ．また，この条件で水が凝縮しないことを確かめよ．"
+     },
+     {
+      "id": "5",
+      "tex": "$K$ を大きくするため，温度を $473\\,\\mathrm K$ に下げ，全圧 $6.0\\,\\mathrm{MPa}$ のまま (4) と同じ原料を使うことにした．$473\\,\\mathrm K$ での $K$ を求め，すべて気体のまま平衡に達したと仮定して転化率と水の分圧を求めよ．この仮定が成り立つかどうかを判断せよ．さらに，$473\\,\\mathrm K$ で反応の最初から最後まで水が凝縮しないための全圧の上限と，その全圧での平衡転化率を，それぞれ有効数字 2 桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$362\\,\\mathrm K$．これより高温では $K<1$．"
+   },
+   {
+    "id": "2",
+    "tex": "$3.8\\times10^{-3}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\Delta G=-9.1\\,\\mathrm{kJ/mol}$．エタノールが生成する向き（正反応の向き）に進む．"
+   },
+   {
+    "id": "4",
+    "tex": "$9.7\\,\\%$．平衡時の水の分圧 $2.8\\,\\mathrm{MPa}$（最初でも $3.0\\,\\mathrm{MPa}$）は飽和蒸気圧 $8.59\\,\\mathrm{MPa}$ より小さいので凝縮しない．"
+   },
+   {
+    "id": "5",
+    "tex": "$K=2.8\\times10^{-2}$．転化率 $39\\,\\%$，水の分圧 $2.3\\,\\mathrm{MPa}$．飽和蒸気圧 $1.55\\,\\mathrm{MPa}$ を超えるので水が凝縮し，仮定は成り立たない．全圧の上限 $3.1\\,\\mathrm{MPa}$，そのときの転化率 $27\\,\\%$．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}\\quad $\\Delta G^\\circ=0$（$K=1$）となるのは $T=\\dfrac{\\Delta H^\\circ}{\\Delta S^\\circ}=\\dfrac{-45.6\\times10^3}{-126}=\\boldsymbol{362\\,\\mathrm K}$．$\\Delta S^\\circ<0$ なので，温度が上がると $-T\\Delta S^\\circ$（正）が大きくなり $\\Delta G^\\circ>0$，すなわち $\\boldsymbol{K<1}$ になる．（発熱反応なので高温ほど $K$ が小さいことと一致する．）\n\n\\textbf{(2)}\\quad $\\Delta G^\\circ=-45.6\\times10^3+573\\times126=2.66\\times10^4\\,\\mathrm{J/mol}$．\n\\[\n\\log_{10}K=-\\frac{2.66\\times10^4}{2.303\\times8.31\\times573}=-2.425\\quad\\Longrightarrow\\quad K=10^{0.575}\\times10^{-3}=\\boldsymbol{3.8\\times10^{-3}}\n\\]\n\n\\textbf{(3)}\\quad \n$Q=\\dfrac{0.050/0.10}{(3.0/0.10)(3.0/0.10)}=\\dfrac{0.50}{900}=\\dfrac1{1800}$，$\\log_{10}Q=-(\\log_{10}2+2\\log_{10}3+2)=-3.255$．\n\\[\n\\Delta G=2.66\\times10^4+2.303\\times8.31\\times573\\times(-3.255)=2.66\\times10^4-3.57\\times10^4=\\boldsymbol{-9.1\\,\\mathrm{kJ/mol}}\n\\]\n$\\Delta G<0$（$Q<K$）なので\\textbf{エタノールが生成する向き}に進む．$\\Delta G^\\circ>0$ でも，生成物が少なければ正反応は進む．\n\n\\textbf{(4)}\\quad 最初 $\\ce{C2H4}$，$\\ce{H2O}$ 各 1 mol とし，$x$ mol 反応したとすると全物質量 $2-x$．全圧 $P=6.0\\,\\mathrm{MPa}$（$P/P^\\circ=60$）で\n\\[\nK=\\frac{\\dfrac{x}{2-x}\\cdot60}{\\left(\\dfrac{1-x}{2-x}\\cdot60\\right)^2}\n\\quad\\Longrightarrow\\quad \\frac{x(2-x)}{(1-x)^2}=60K=0.225\n\\]\n$x(2-x)=1-(1-x)^2$ なので $\\dfrac1{(1-x)^2}=1.225$，$1-x=0.9035$，$x=0.097$，転化率 $\\boldsymbol{9.7\\,\\%}$．\n水の分圧は $6.0\\times\\dfrac{0.903}{1.903}=2.8\\,\\mathrm{MPa}$．水の分圧が最も大きいのは反応前（$3.0\\,\\mathrm{MPa}$）だが，それでも $573\\,\\mathrm K$ の飽和蒸気圧 $8.59\\,\\mathrm{MPa}$ より小さいので，水は凝縮せず，気相反応として扱ってよい．エタノールの臨界温度（約 $514\\,\\mathrm K$）より高温なのでエタノールも凝縮しない．\n\n\\textbf{(5)}\\quad $\\Delta G^\\circ=-45.6\\times10^3+473\\times126=1.40\\times10^4\\,\\mathrm{J/mol}$，$\\log_{10}K=-\\dfrac{1.40\\times10^4}{2.303\\times8.31\\times473}=-1.546$，$K=10^{0.454}\\times10^{-2}=\\boldsymbol{2.8\\times10^{-2}}$（573 K の約 7.6 倍）．\n\nすべて気体として：$\\dfrac1{(1-x)^2}=1+60K=2.70$，$1-x=0.608$，$x=0.39$（\\textbf{39 \\%}）．水の分圧は $6.0\\times\\dfrac{0.608}{1.608}=\\boldsymbol{2.3\\,\\mathrm{MPa}}$ で，$473\\,\\mathrm K$ の飽和蒸気圧 $1.55\\,\\mathrm{MPa}$ を超える（反応前の $3.0\\,\\mathrm{MPa}$ ではなおさら）．実際には水が凝縮して液体が生じるので，「すべて気体」の仮定は\\textbf{成り立たない}．（エタノールの分圧 $6.0\\times0.392/1.608=1.5\\,\\mathrm{MPa}$ は $3.0\\,\\mathrm{MPa}$ 未満で凝縮しない．）\n\n\\textbf{凝縮しない全圧の上限}\\quad 水の分圧 $\\dfrac{1-x}{2-x}P$ は $x$ が大きいほど小さい（$\\dfrac{1-x}{2-x}=1-\\dfrac{1}{2-x}$ は $x$ の減少関数）ので，最大になるのは反応前の $P/2$ である．$P/2\\le1.55$ より全圧の上限は $\\boldsymbol{3.1\\,\\mathrm{MPa}}$．このとき $P/P^\\circ=31$，$\\dfrac1{(1-x)^2}=1+31\\times0.0284=1.88$，$1-x=0.729$，$x=0.27$（$\\boldsymbol{27\\,\\%}$）．水の分圧は平衡時 $3.1\\times0.729/1.729=1.3\\,\\mathrm{MPa}$ で，確かに凝縮しない．\n\n低温にすると $K$ は大きくなるが，気相反応のまま行える圧力が制限される．それでも計算上は 573 K・6.0 MPa（9.7 \\%）より転化率が高いが，低温では触媒上の反応速度が遅いため，工業的には 1 回の通過での転化率が低くても高温で行い，未反応の原料を循環させる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ΔG°=ΔH°−TΔS° から K=1 の温度と各温度の K を求め，反応商 Q と K の比較（ΔG の符号）で反応の向きを判断する．全圧一定の平衡転化率を求めたうえで，その平衡組成の水の分圧を飽和蒸気圧と比べて気相の仮定が成り立つかを判定し，凝縮しない全圧の上限（分圧が最大になるのは反応前）を決める．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "ideal-gas",
+  "vapor-pressure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ギブズエネルギー",
+  "平衡定数",
+  "反応商",
+  "エチレンの水和",
+  "飽和蒸気圧",
+  "転化率"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

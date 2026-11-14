@@ -1,0 +1,109 @@
+{
+ "id": "THE-BND-026",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-03",
+ "topic": "混合原子価の酸化物と電気的中性",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "鉄の酸化物には，$\\ce{Fe^2+}$ と $\\ce{Fe^3+}$ が共存するものがある．$\\ce{O}=16$，$\\ce{Fe}=56$，アボガドロ定数 $6.0\\times10^{23}\\,/\\mathrm{mol}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "四酸化三鉄 $\\ce{Fe3O4}$ に含まれる $\\ce{Fe^2+}$ と $\\ce{Fe^3+}$ の物質量の比を，最も簡単な整数比で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "酸化鉄(II) の結晶は塩化ナトリウム型であるが，実際には一部の $\\ce{Fe}$ の位置が空いており，組成が $\\ce{Fe_{0.94}O}$ となっている．結晶全体が電気的に中性であるためには，鉄の一部が $\\ce{Fe^3+}$ になっている必要がある．鉄全体のうち $\\ce{Fe^3+}$ の割合は何 % か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2)の結晶の単位格子は一辺 $0.430\\,\\mathrm{nm}$ の立方体で，$\\ce{O^2-}$ は面心立方格子の位置をすべて占めている．単位格子あたりの鉄の空位（$\\ce{Fe}$ が欠けている位置）は平均何個か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(2)の結晶の密度は何 $\\mathrm{g/cm^3}$ か．$0.430^3=0.0795$ として有効数字2桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{Fe^2+}:\\ce{Fe^3+}=1:2$"
+   },
+   {
+    "id": "2",
+    "tex": "13 %"
+   },
+   {
+    "id": "3",
+    "tex": "0.24 個"
+   },
+   {
+    "id": "4",
+    "tex": "$5.8\\,\\mathrm{g/cm^3}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $\\ce{Fe^2+}$ を $x$ 個，$\\ce{Fe^3+}$ を $3-x$ 個とすると，正電荷の合計 $2x+3(3-x)$ が $\\ce{O^2-}$ 4個の負電荷 8 に等しい．$9-x=8$ より $x=1$．よって $\\boldsymbol{1:2}$．\n\n(2) $\\ce{O}$ 1 個あたり $\\ce{Fe^3+}$ を $y$ 個，$\\ce{Fe^2+}$ を $0.94-y$ 個とすると\n\\[3y+2(0.94-y)=2\\quad\\Rightarrow\\quad y=0.12\\]\n割合は $\\dfrac{0.12}{0.94}\\times100\\fallingdotseq\\boldsymbol{13\\,\\%}$．（$\\ce{Fe^3+}$ 2個ができるごとに $\\ce{Fe}$ の位置が1つ空く．）\n\n(3) 単位格子中の $\\ce{O^2-}$ は 4 個なので，$\\ce{Fe}$ の位置も 4 個．実際の $\\ce{Fe}$ は $4\\times0.94=3.76$ 個なので，空位は $4-3.76=\\boldsymbol{0.24}$ 個．\n\n(4) 単位格子の質量は $\\dfrac{4\\times(0.94\\times56+16)}{6.0\\times10^{23}}=\\dfrac{274.6}{6.0\\times10^{23}}\\,\\mathrm g$．\n\\[d=\\frac{274.6}{6.0\\times10^{23}\\times0.0795\\times10^{-21}}\\fallingdotseq\\boldsymbol{5.8\\,\\mathrm{g/cm^3}}\\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "陽イオンの価数が混在する酸化物や不定比化合物では，結晶全体の電気的中性（正電荷の和＝負電荷の和）から各価数のイオンの割合が決まる．欠けた位置の数は組成と単位格子中の陰イオン数から求める．"
+ },
+ "concepts": [
+  "chemical-bond",
+  "transition-metals",
+  "crystal"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電気的中性",
+  "不定比化合物",
+  "四酸化三鉄",
+  "単位格子",
+  "密度"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

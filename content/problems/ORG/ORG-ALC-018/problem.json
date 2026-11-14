@@ -1,0 +1,117 @@
+{
+ "id": "ORG-ALC-018",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-03",
+ "topic": "エステルとグリニャール試薬の反応による構造決定と逆合成",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "structure",
+  "pathway"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "グリニャール試薬 $\\ce{RMgBr}$ について，次の反応が知られている（いずれも反応後に水で処理した生成物で表す．$\\ce{R'}$，$\\ce{R''}$ は炭化水素基または H）．\n(a) アルデヒド・ケトン $\\ce{R'R''C=O}$ と 1 分子が反応し，$\\ce{R'R''C(OH)R}$ を生じる．\\\\\n(b) エステル $\\ce{R'COOR''}$ とは 2 分子が反応し，アルコール $\\ce{R'C(OH)R2}$（R を 2 個もつ）と $\\ce{R''OH}$ を生じる．\\\\\n(c) 水と反応して炭化水素 $\\ce{RH}$ を生じる．\n\n分子式 $\\ce{C6H12O2}$ の鎖式のエステル E $11.6\\,\\mathrm{g}$ を乾燥したエーテルに溶かし，$\\ce{CH3MgBr}$ $0.500\\,\\mathrm{mol}$ を含む溶液を加えて反応を完結させた．その後，水を加えたところ気体が発生し，アルコール F と G が得られた．\n・F は硫酸酸性の二クロム酸カリウム水溶液で酸化されなかった．F に濃硫酸を加えて加熱し分子内で脱水すると，2 種類のアルケンが生じ，いずれにもシス-トランス異性体はなかった．\\\\\n・G はヨードホルム反応を示し，二クロム酸カリウムで酸化するとケトンになった．\n\n原子量は H = 1.0，C = 12，O = 16，標準状態の気体のモル体積は $22.4\\,\\mathrm{L/mol}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "G として考えられるアルコールを炭素数 5 以下ですべて挙げ，エステル E の分子式を用いてそれぞれに対応する E を示せ．"
+     },
+     {
+      "id": "2",
+      "tex": "F の条件を用いて E，F，G を決定し，示性式で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "水を加えたときに発生した気体の名称と，その体積（標準状態）を有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "F を反応 (a) でつくるときのカルボニル化合物とグリニャール試薬の組み合わせをすべて示せ．また，F を反応 (b) で $\\ce{CH3MgBr}$ からつくるとき，E 以外に原料として使えるエステルの条件を述べよ．"
+     },
+     {
+      "id": "5",
+      "tex": "G を反応 (b) で $\\ce{CH3MgBr}$ からつくることはできるか．できるならどのようなエステルを用いればよいか答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{CH3CH(OH)CH3}$：E は $\\ce{CH3CH2COOCH(CH3)2}$　$\\ce{CH3CH(OH)CH2CH3}$：E は $\\ce{CH3COOCH(CH3)CH2CH3}$　$\\ce{CH3CH(OH)CH2CH2CH3}$，$\\ce{CH3CH(OH)CH(CH3)2}$：E はそれぞれのギ酸エステル $\\ce{HCOOCH(CH3)CH2CH2CH3}$，$\\ce{HCOOCH(CH3)CH(CH3)2}$"
+   },
+   {
+    "id": "2",
+    "tex": "E：$\\ce{CH3CH2COOCH(CH3)2}$，F：$\\ce{(CH3)2C(OH)CH2CH3}$，G：$\\ce{CH3CH(OH)CH3}$"
+   },
+   {
+    "id": "3",
+    "tex": "メタン，$6.72\\,\\mathrm{L}$"
+   },
+   {
+    "id": "4",
+    "tex": "(a)：アセトン $\\ce{CH3COCH3}$ と $\\ce{C2H5MgBr}$，2-ブタノン $\\ce{CH3COCH2CH3}$ と $\\ce{CH3MgBr}$ の 2 通り．(b)：プロピオン酸 $\\ce{CH3CH2COOH}$ のエステルであれば，アルコール部分は何でもよい"
+   },
+   {
+    "id": "5",
+    "tex": "できる．ギ酸エステル $\\ce{HCOOR''}$ を用いる（$\\ce{HCOOR'' + 2CH3MgBr}$ から $\\ce{(CH3)2CHOH}$ が生じる）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) G の候補}　ヨードホルム反応を示し酸化でケトンになるので，G は $\\ce{CH3CH(OH)-}$ をもつ第二級アルコール．E は $\\ce{C6H12O2}$ なので，アルコール部分の炭素数は 1〜5．\n\\begin{itemize}\n\\item $\\ce{C3}$：$\\ce{CH3CH(OH)CH3}$ → 酸部分は $\\ce{C3}$：$\\ce{CH3CH2COOCH(CH3)2}$\n\\item $\\ce{C4}$：$\\ce{CH3CH(OH)CH2CH3}$ → 酸部分は $\\ce{C2}$：$\\ce{CH3COOCH(CH3)CH2CH3}$\n\\item $\\ce{C5}$：$\\ce{CH3CH(OH)CH2CH2CH3}$，$\\ce{CH3CH(OH)CH(CH3)2}$ → 酸部分は $\\ce{C1}$（ギ酸エステル）\n\\end{itemize}\n（エタノールもヨードホルム反応を示すが，酸化するとアルデヒドになるので除く．）\n\n\\textbf{(2) F による決定}　反応 (b) で F は $\\ce{R'C(OH)(CH3)2}$．\n\\begin{itemize}\n\\item ギ酸エステル（$\\ce{R'}$＝H）→ $\\ce{(CH3)2CHOH}$．これは第二級で酸化されるので，F の条件に反する．\n\\item 酢酸エステル → $\\ce{(CH3)3COH}$．第三級だが，脱水で生じるアルケンは $\\ce{CH2=C(CH3)2}$ の 1 種類だけ．\n\\item プロピオン酸エステル → $\\ce{(CH3)2C(OH)CH2CH3}$（2-メチル-2-ブタノール）．第三級で酸化されない．脱水すると $\\ce{CH2=C(CH3)CH2CH3}$ と $\\ce{(CH3)2C=CHCH3}$ の 2 種類で，どちらも二重結合の一方の炭素に同じ基（H 2 個または $\\ce{CH3}$ 2 個）がつくのでシス-トランス異性体はない．条件に合う．\n\\end{itemize}\nよって E は $\\boldsymbol{\\ce{CH3CH2COOCH(CH3)2}}$，F は $\\boldsymbol{\\ce{(CH3)2C(OH)CH2CH3}}$，G は $\\boldsymbol{\\ce{CH3CH(OH)CH3}}$．\n\n\\textbf{(3) 気体の量}　E の分子量は 116 なので E は $\\dfrac{11.6}{116}=0.100\\,\\mathrm{mol}$．反応 (b) で $\\ce{CH3MgBr}$ は $0.200\\,\\mathrm{mol}$ 消費され，$0.500-0.200=0.300\\,\\mathrm{mol}$ が残る．水を加えると反応 (c) で $\\ce{CH3MgBr + H2O -> CH4 + MgBr(OH)}$ が起こり，\\textbf{メタン}が $0.300\\,\\mathrm{mol}$ 発生する．\n\\[ 0.300\\times22.4=\\boldsymbol{6.72\\,\\mathrm{L}} \\]\n（F と G は反応液中ではマグネシウムと結合した形で，水を加えると OH の形になる．このとき気体は出ない．）\n\n\\textbf{(4)} F の OH の炭素には $\\ce{CH3}$，$\\ce{CH3}$，$\\ce{C2H5}$ が結合している．反応 (a) ではこのうち 1 つをグリニャール試薬から入れる．\n\\begin{itemize}\n\\item $\\ce{C2H5}$ を入れる：$\\ce{CH3COCH3}$ と $\\ce{C2H5MgBr}$\n\\item $\\ce{CH3}$ を入れる：$\\ce{CH3COCH2CH3}$ と $\\ce{CH3MgBr}$（2 個の $\\ce{CH3}$ は同じなので 1 通り）\n\\end{itemize}\nの $\\boldsymbol{2}$ 通り．反応 (b) では，グリニャール試薬由来の同じ基 2 個（$\\ce{CH3}$ 2 個）と，エステルの酸部分の $\\ce{R'}$（$\\ce{C2H5}$）で F ができる．アルコール部分 $\\ce{R''}$ は $\\ce{R''OH}$ として外れるだけなので，\\textbf{プロピオン酸のエステルなら何でもよい}．\n\n\\textbf{(5)} G の OH の炭素には $\\ce{CH3}$ 2 個と H が結合している．(b) で $\\ce{CH3}$ 2 個をグリニャール試薬から入れると，$\\ce{R'}$ は H，すなわち\\textbf{ギ酸エステル} $\\ce{HCOOR''}$ を用いればよい．ギ酸エステルからは第二級アルコール，それ以外のエステルからは第三級アルコールが得られる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "エステルにはグリニャール試薬が 2 分子付加し，酸部分から OH の炭素と同じ基 2 個をもつアルコール（ギ酸エステルなら第二級，それ以外は第三級）が，アルコール部分はそのまま外れる．生成アルコールの性質（酸化・ヨードホルム反応・脱水で生じるアルケンの数）からエステルを絞り込み，過剰な試薬が水で炭化水素になる量的関係と，目的のアルコールを (a)(b) 二つの経路から逆にたどる．"
+ },
+ "concepts": [
+  "alcohol-carbonyl",
+  "hydrocarbon",
+  "carboxylic-ester"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "グリニャール試薬",
+  "エステル",
+  "第三級アルコール",
+  "逆合成",
+  "脱水"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

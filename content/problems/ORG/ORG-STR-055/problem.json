@@ -1,0 +1,108 @@
+{
+ "id": "ORG-STR-055",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-01",
+ "topic": "C₄H₁₁N のアミンの異性体とアミドをつくれるかどうか・不斉炭素による構造決定",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "structure",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "分子式 $\\ce{C4H11N}$ で表される鎖式の化合物は，すべて窒素原子に非共有電子対をもつアミンであり，窒素原子に結合した炭素原子の数によって第一級（$\\ce{R-NH2}$）・第二級（$\\ce{R-NH-R'}$）・第三級アミンに分類される．アミンは無水酢酸と反応してアミドになるが，この反応では窒素原子に結合した水素原子がアセチル基に置き換わる．立体異性体は区別しないものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{C4H11N}$ の構造異性体は全部で何種類あるか．また，第一級・第二級・第三級アミンはそれぞれ何種類か．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) の異性体のうち，無水酢酸と反応してアミドをつくらないものを示性式ですべて答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(1) の異性体のうち，不斉炭素原子をもつものを示性式ですべて答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "ある $\\ce{C4H11N}$ の化合物 D は無水酢酸と反応してアミド E を生じ，不斉炭素原子をもたない．また，D の炭素原子に結合した水素原子 1 個を塩素原子に置き換えた化合物は 2 種類しかない．D と E の示性式を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "全部で 8 種類（第一級 4 種類，第二級 3 種類，第三級 1 種類）"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{CH3CH2N(CH3)2}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{CH3CH2CH(NH2)CH3}$"
+   },
+   {
+    "id": "4",
+    "tex": "D：$\\ce{(C2H5)2NH}$，E：$\\ce{CH3CON(C2H5)2}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} N を含む 5 原子の骨格の作り方で数える．\n・第一級（$\\ce{C4H9-NH2}$，ブチル基 4 種）：$\\ce{CH3CH2CH2CH2NH2}$，$\\ce{CH3CH2CH(NH2)CH3}$，$\\ce{(CH3)2CHCH2NH2}$，$\\ce{(CH3)3CNH2}$ の 4 種類\n・第二級（C の数の分け方 1+3，2+2）：$\\ce{CH3NHCH2CH2CH3}$，$\\ce{CH3NHCH(CH3)2}$，$\\ce{CH3CH2NHCH2CH3}$ の 3 種類\n・第三級（1+1+2）：$\\ce{(CH3)2NCH2CH3}$ の 1 種類\n合計 \\textbf{8} 種類．\n\n\\textbf{(2)} アミド化では N–H の H がアセチル基に置き換わるので，N–H をもたない第三級アミンは反応しない：$\\ce{CH3CH2N(CH3)2}$．\n\n\\textbf{(3)} 不斉炭素原子をもつのは，H，$\\ce{NH2}$，$\\ce{CH3}$，$\\ce{C2H5}$ が結合した炭素をもつ $\\ce{CH3CH2CH(NH2)CH3}$（2-ブタンアミン）だけ．$\\ce{CH3NHCH(CH3)2}$ の CH は $\\ce{CH3}$ を 2 つもつので不斉炭素ではない．\n\n\\textbf{(4)} アミドをつくるので第一級か第二級（7 種類），不斉炭素がないので 2-ブタンアミンを除く 6 種類．このうち C に結合した H の種類（対称性で等価なものをまとめた数）は\n$\\ce{CH3CH2CH2CH2NH2}$：4，$\\ce{(CH3)2CHCH2NH2}$：3，$\\ce{(CH3)3CNH2}$：1，$\\ce{CH3NHCH2CH2CH3}$：4，$\\ce{CH3NHCH(CH3)2}$：3，$\\ce{CH3CH2NHCH2CH3}$：2．\n一置換体が 2 種類になるのはジエチルアミンだけなので，D は $\\ce{(C2H5)2NH}$，E は $\\ce{CH3CON(C2H5)2}$（N,N-ジエチルアセトアミド）．\n\\[ \\ce{(C2H5)2NH + (CH3CO)2O -> CH3CON(C2H5)2 + CH3COOH} \\]\nD は塩基なので塩酸と塩 $\\ce{(C2H5)2NH2Cl}$ をつくって水に溶ける．E は N–H をもたず，塩基性もほとんど示さない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "C₄H₁₁N の鎖式異性体は N に結合する炭素の数で第一級4・第二級3・第三級1に整理でき，アミド化は N–H をもつ第一級・第二級でしか起こらない．アミド化の可否，不斉炭素の有無，C–H の等価な組の数を順に条件として使うと構造が1つに決まる．"
+ },
+ "concepts": [
+  "organic-structure",
+  "carbon-silicon"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "アミン",
+  "第一級・第二級・第三級",
+  "アミド化",
+  "不斉炭素原子",
+  "異性体"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

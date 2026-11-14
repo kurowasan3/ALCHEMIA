@@ -1,0 +1,124 @@
+{
+ "id": "ORG-ARO-020",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-05",
+ "topic": "アミノ基とカルボキシ基をもつ芳香族化合物（アントラニル酸）",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "condition",
+  "pathway"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "$o$-アミノ安息香酸 $\\ce{C6H4(NH2)COOH}$（化合物 X）について，次の問いに答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "X は希塩酸にも水酸化ナトリウム水溶液にも溶ける．それぞれで起こる反応を化学反応式で示せ．"
+     },
+     {
+      "id": "2",
+      "tex": "X に無水酢酸を作用させると化合物 Y が得られた．Y は水酸化ナトリウム水溶液には溶けるが，希塩酸にはほとんど溶けなかった．Y の示性式を書き，希塩酸に溶けなくなった理由を説明せよ．"
+     },
+     {
+      "id": "3",
+      "tex": "X を希塩酸に溶かして氷で冷やしながら亜硝酸ナトリウム水溶液を加えると，化合物 Z の水溶液が得られた．この液を (a) 冷やしたままナトリウムフェノキシドの水溶液に加えた場合と，(b) 室温以上に温めた場合とで，それぞれ何が起こるか．(b) で生じる芳香族化合物の名称も答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "X，Y および (3)(b) で生じた芳香族化合物のうち，塩化鉄(III) 水溶液で紫色に呈色するものを選べ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：アミノ基とカルボキシ基をもつ芳香族化合物（アントラニル酸）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "希塩酸：$\\ce{C6H4(NH2)COOH + HCl -> C6H4(NH3Cl)COOH}$，水酸化ナトリウム：$\\ce{C6H4(NH2)COOH + NaOH -> C6H4(NH2)COONa + H2O}$"
+   },
+   {
+    "id": "2",
+    "tex": "Y：$\\ce{C6H4(NHCOCH3)COOH}$．アミノ基がアセチル化されてアミド結合になり，窒素の塩基性がほとんど失われたため（塩をつくれるのはカルボキシ基だけになった）．"
+   },
+   {
+    "id": "3",
+    "tex": "(a) ジアゾカップリングが起こり，橙〜赤色のアゾ化合物が生じる．(b) ジアゾニウム塩が分解して窒素が発生し，サリチル酸が生じる．"
+   },
+   {
+    "id": "4",
+    "tex": "サリチル酸のみ"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} X は塩基性のアミノ基と酸性のカルボキシ基をもつので，酸とも塩基とも塩をつくる（両性）．\n\\[\\ce{C6H4(NH2)COOH + HCl -> C6H4(NH3Cl)COOH}\\qquad \\ce{C6H4(NH2)COOH + NaOH -> C6H4(NH2)COONa + H2O}\\]\n\\textbf{(2)} $\\ce{C6H4(NH2)COOH + (CH3CO)2O -> C6H4(NHCOCH3)COOH + CH3COOH}$．アミド $\\ce{-NHCO-}$ の窒素の非共有電子対はカルボニル基に引きつけられ，$\\ce{H+}$ を受け取らない．よって Y は酸としてだけはたらき，\\textbf{塩基には溶けるが酸には溶けない}．\n\\textbf{(3)} ジアゾ化：$\\ce{C6H4(NH2)COOH + NaNO2 + 2HCl -> C6H4(N2Cl)COOH + NaCl + 2H2O}$．ジアゾニウム塩は低温でのみ安定で，(a) 冷やしたまま塩基性のフェノキシドに加えるとカップリングしてアゾ化合物（$\\ce{-N=N-}$）ができる．(b) 温めると $\\ce{C6H4(N2Cl)COOH + H2O -> C6H4(OH)COOH + N2 + HCl}$ と分解し，\\textbf{サリチル酸}になる．同じ Z でも温度という条件で生成物が変わる．\n\\textbf{(4)} 塩化鉄(III) で呈色するのはベンゼン環に直接 $\\ce{-OH}$ が結合したフェノール類．X（$\\ce{-NH2}$）・Y（アミド）は呈色せず，\\textbf{サリチル酸}だけが赤紫〜紫色を示す．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "アミノ基とカルボキシ基を同時にもつ芳香族化合物は酸にも塩基にも溶ける．アセチル化でアミノ基の塩基性が消え，ジアゾ化後は低温ならカップリング，温めるとフェノール類に変わる．"
+ },
+ "concepts": [
+  "aromatic",
+  "amphoteric",
+  "transition-metals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "両性",
+  "アセチル化",
+  "ジアゾ化",
+  "ジアゾカップリング",
+  "サリチル酸",
+  "塩化鉄(III)"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

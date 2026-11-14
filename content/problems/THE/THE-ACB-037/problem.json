@@ -1,0 +1,118 @@
+{
+ "id": "THE-ACB-037",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-05",
+ "topic": "濃い塩酸の pH（負の値）と強塩基を加え続けたときの pH の上限",
+ "course": "化学",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "$2.0\\,\\mathrm{mol/L}$ の塩酸 $10.0\\,\\mathrm{mL}$ に，$0.50\\,\\mathrm{mol/L}$ の水酸化ナトリウム水溶液を少しずつ加えながら $25\\,^\\circ\\mathrm{C}$ で pH を測定した．強酸・強塩基は完全に電離し，水のイオン積は $1.0\\times10^{-14}\\,(\\mathrm{mol/L})^2$，$\\log_{10}2=0.30$ とする．溶液の体積は混合前の体積の和とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "水酸化ナトリウム水溶液を加える前の pH を小数第 2 位まで求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "水酸化ナトリウム水溶液を $30.0\\,\\mathrm{mL}$ 加えたときの pH を小数第 2 位まで求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "中和点までに加える水酸化ナトリウム水溶液は何 mL か．"
+     },
+     {
+      "id": "4",
+      "tex": "中和点を過ぎてさらに大量に加え続けると，pH はある値に限りなく近づく．その値を小数第 2 位まで求めよ．また，pH がその値を超えることはあるか．"
+     },
+     {
+      "id": "5",
+      "tex": "加える水酸化ナトリウム水溶液を $1.0\\,\\mathrm{mol/L}$ のものに替えると，中和点までの体積と (4) の値はそれぞれどうなるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$-0.30$"
+   },
+   {
+    "id": "2",
+    "tex": "$0.90$"
+   },
+   {
+    "id": "3",
+    "tex": "$40.0\\,\\mathrm{mL}$"
+   },
+   {
+    "id": "4",
+    "tex": "$13.70$，超えることはない"
+   },
+   {
+    "id": "5",
+    "tex": "体積は $20.0\\,\\mathrm{mL}$（半分）になり，近づく値は $14.00$ になる"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $[\\ce{H+}]=2.0\\,\\mathrm{mol/L}$ なので $\\mathrm{pH}=-\\log_{10}2.0=\\boldsymbol{-0.30}$．$[\\ce{H+}]$ が $1\\,\\mathrm{mol/L}$ より大きいと pH は負になる．\n\n\\textbf{(2)} $\\ce{H+}$ $20\\,\\mathrm{mmol}$ のうち $\\ce{OH-}$ $15\\,\\mathrm{mmol}$ が中和し，残り $5\\,\\mathrm{mmol}$ が $40.0\\,\\mathrm{mL}$ 中にある．$[\\ce{H+}]=0.125=\\dfrac{1}{8}\\,\\mathrm{mol/L}$，$\\mathrm{pH}=3\\log_{10}2=\\boldsymbol{0.90}$．\n\n\\textbf{(3)} $\\dfrac{20\\,\\mathrm{mmol}}{0.50\\,\\mathrm{mol/L}}=\\boldsymbol{40.0\\,\\mathrm{mL}}$．\n\n\\textbf{(4)} $V\\,\\mathrm{mL}$ 加えたとき（$V>40$），$[\\ce{OH-}]=\\dfrac{0.50V-20}{10.0+V}$．$V$ を大きくすると $0.50\\,\\mathrm{mol/L}$ に近づくが，最初の塩酸で中和された分と体積の分だけ必ず $0.50$ より小さい．よって pH は $14+\\log_{10}0.50=\\boldsymbol{13.70}$ に限りなく近づくが，\\textbf{超えることはない}．加える溶液そのものの pH が上限になる．\n\n\\textbf{(5)} 中和点の体積は $\\dfrac{20}{1.0}=\\boldsymbol{20.0\\,\\mathrm{mL}}$ と半分になり，近づく値は $1.0\\,\\mathrm{mol/L}$ の NaOH 水溶液の pH の $\\boldsymbol{14.00}$ になる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "水素イオン濃度が 1 mol/L を超える濃い強酸では pH が負になる．強塩基を加え続けても混合液の [OH⁻] は加える溶液の濃度を超えないので，滴定曲線の終わりの pH は加える塩基の水溶液の pH に近づくだけで超えない．"
+ },
+ "concepts": [
+  "acid-base",
+  "alkali-metals",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "pH",
+  "強酸",
+  "中和滴定",
+  "滴定曲線",
+  "負の pH",
+  "水酸化ナトリウム"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

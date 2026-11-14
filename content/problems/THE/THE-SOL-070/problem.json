@@ -1,0 +1,109 @@
+{
+ "id": "THE-SOL-070",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-09",
+ "topic": "NaOH と NaCl の混合水溶液の蒸発濃縮（どちらが先に飽和するか）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "隔膜法による食塩水の電気分解では，陰極室から NaOH と NaCl をともに含む水溶液が得られる．この水溶液 $1000\\,\\mathrm{g}$（NaCl $15.0\\,\\%$，NaOH $10.0\\,\\%$，いずれも質量パーセント濃度）を $25\\,^\\circ\\mathrm{C}$ に保ったまま水を蒸発させて濃縮した．$25\\,^\\circ\\mathrm{C}$ での溶解度（水 $100\\,\\mathrm{g}$ に溶ける質量）は NaCl $35.9\\,\\mathrm{g}$，NaOH $114\\,\\mathrm{g}$ で，混合溶液でもそれぞれ変わらないものとする．析出する固体は無水の NaCl だけとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "水を蒸発させていくと，NaCl と NaOH のどちらが先に飽和するか．また，それは水を何 g 蒸発させたときか．有効数字 3 桁で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "NaOH がちょうど飽和するまで水を蒸発させた．蒸発させた水と，析出した NaCl はそれぞれ何 g か．有効数字 3 桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の後の溶液の NaOH の質量パーセント濃度を有効数字 3 桁で求めよ．また，この溶液に溶けている溶質のうち NaOH が占める質量の割合（NaOH の純度）を有効数字 3 桁の百分率で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "イオン交換膜法では，陰極室から NaCl をほとんど含まない NaOH 水溶液が得られる．その理由を，膜を通過できるイオンにもとづいて説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "NaCl が先に飽和する．水を $332\\,\\mathrm{g}$ 蒸発させたとき"
+   },
+   {
+    "id": "2",
+    "tex": "水 $662\\,\\mathrm{g}$，NaCl $119\\,\\mathrm{g}$"
+   },
+   {
+    "id": "3",
+    "tex": "$45.6\\,\\%$，純度 $76.1\\,\\%$"
+   },
+   {
+    "id": "4",
+    "tex": "陽イオン交換膜は $\\ce{Na+}$ だけを陽極室から陰極室へ通し，$\\ce{Cl-}$ を通さないので，陰極室には NaOH だけがたまるから"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "はじめの水溶液：NaCl $150\\,\\mathrm{g}$，NaOH $100\\,\\mathrm{g}$，水 $750\\,\\mathrm{g}$．\n\n\\textbf{(1)} それぞれが飽和するときの水の量は\nNaCl：$150\\times\\dfrac{100}{35.9} = 417.8\\,\\mathrm{g}$，NaOH：$100\\times\\dfrac{100}{114} = 87.72\\,\\mathrm{g}$．\n水が減っていくと先に $417.8\\,\\mathrm{g}$ に達するので，$\\boldsymbol{\\text{NaCl が先に飽和}}$する．そのとき蒸発させた水は $750-417.8 = \\boldsymbol{332\\,\\mathrm{g}}$．以後は水を減らすほど NaCl が析出する．\n\n\\textbf{(2)} NaOH が飽和するとき水は $87.72\\,\\mathrm{g}$．蒸発させた水 $= 750-87.72 = \\boldsymbol{662\\,\\mathrm{g}}$．\nこのとき溶けていられる NaCl は $87.72\\times\\dfrac{35.9}{100} = 31.49\\,\\mathrm{g}$ なので，析出量 $= 150-31.49 = \\boldsymbol{119\\,\\mathrm{g}}$．\n\n\\textbf{(3)} 溶液は NaOH $100\\,\\mathrm{g}$，NaCl $31.49\\,\\mathrm{g}$，水 $87.72\\,\\mathrm{g}$（計 $219.2\\,\\mathrm{g}$）．\nNaOH の濃度 $= \\dfrac{100}{219.2}\\times100 = \\boldsymbol{45.6\\,\\%}$，純度 $= \\dfrac{100}{100+31.49}\\times100 = \\boldsymbol{76.1\\,\\%}$．\n濃縮すると NaCl の大部分は析出して除けるが，飽和量の NaCl は溶液に残る．\n\n\\textbf{(4)} 陽極室では $\\ce{2Cl- -> Cl2 + 2e-}$，陰極室では $\\ce{2H2O + 2e- -> H2 + 2OH-}$ が起こる．陽イオン交換膜は陽イオンの $\\ce{Na+}$ だけを陰極室へ通し，陰イオンの $\\ce{Cl-}$ は通さない．このため陰極室の溶液には $\\ce{Na+}$ と $\\ce{OH-}$ だけが増え，\\textbf{NaCl をほとんど含まない NaOH 水溶液}になる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "2種類の溶質を含む水溶液を濃縮すると，溶質ごとに「飽和するときの水の量」が決まり，それが大きい方から先に析出が始まる．一方が飽和に達した時点では，もう一方は残った水に溶けられる量だけが溶液に残り，残りは析出するので，溶液中の溶質の組成（純度）が変わる．"
+ },
+ "concepts": [
+  "solution-colligative",
+  "alkali-metals",
+  "functional-polymer"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "溶解度",
+  "蒸発濃縮",
+  "析出",
+  "水酸化ナトリウム",
+  "イオン交換膜法"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

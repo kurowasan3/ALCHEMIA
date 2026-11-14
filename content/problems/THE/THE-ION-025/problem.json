@@ -1,0 +1,100 @@
+{
+ "id": "THE-ION-025",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "中和点が未知の滴定データから電離定数を決める",
+ "course": "化学",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "濃度不明の1価の弱酸 HA の水溶液 $20.0\\,\\mathrm{mL}$ に，$25\\,{}^\\circ\\mathrm{C}$ で $0.100\\,\\mathrm{mol/L}$ 水酸化ナトリウム水溶液を滴下しながら，水素イオン濃度を測定した．滴下量が $4.00\\,\\mathrm{mL}$ のとき $[\\ce{H+}]=6.0\\times10^{-5}\\,\\mathrm{mol/L}$，$12.00\\,\\mathrm{mL}$ のとき $[\\ce{H+}]=6.7\\times10^{-6}\\,\\mathrm{mol/L}$ であった．中和点に達する前に測定を終えたため，中和点の滴下量 $V_e$ は分かっていない．\n\nHA の電離定数を $K_a=\\dfrac{[\\ce{H+}][\\ce{A-}]}{[\\ce{HA}]}$ とする．混合による体積の変化はなく，水のイオン積は $1.0\\times10^{-14}\\,(\\mathrm{mol/L})^2$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "滴下量 $v\\,\\mathrm{mL}$（$0<v<V_e$）の溶液では，多くの場合 $[\\ce{H+}]=K_a\\dfrac{V_e-v}{v}$ と近似できる．この近似が成り立つための条件を述べよ．"
+     },
+     {
+      "id": "2",
+      "tex": "2つの測定値から $V_e$ と $K_a$ を求め，さらにもとの HA 水溶液の濃度を求めよ．$V_e$ は有効数字3桁，他は有効数字2桁で答えよ．また，2つの測定点で (1) の近似が成り立っていることを確かめよ．"
+     },
+     {
+      "id": "3",
+      "tex": "滴下量 $0.40\\,\\mathrm{mL}$ のときの $[\\ce{H+}]$ を，(1) の近似式で計算した値と，より正確に計算した値で，それぞれ有効数字2桁で求めよ．また，両者が大きく異なる理由を説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "溶液中の $[\\ce{H+}]$（および $[\\ce{OH-}]$）が，加えた $\\ce{Na+}$ による $\\ce{A-}$ の濃度や残っている HA の濃度に比べて十分小さいこと"
+   },
+   {
+    "id": "2",
+    "tex": "$V_e=16.0\\,\\mathrm{mL}$，$K_a=2.0\\times10^{-5}\\,\\mathrm{mol/L}$，HA の濃度 $8.0\\times10^{-2}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "3",
+    "tex": "近似式：$7.8\\times10^{-4}\\,\\mathrm{mol/L}$，正確な値：$5.9\\times10^{-4}\\,\\mathrm{mol/L}$；滴下量が少なく $\\ce{A-}$ の量が小さいため，HA の電離で生じる $\\ce{H+}$（と同量の $\\ce{A-}$）が無視できないから"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　HA のはじめの物質量を $n$，加えた NaOH を $n_b$ とする．電荷のつり合いは $[\\ce{Na+}]+[\\ce{H+}]=[\\ce{A-}]+[\\ce{OH-}]$．$[\\ce{H+}]$，$[\\ce{OH-}]$ が $[\\ce{Na+}]$ より十分小さければ $[\\ce{A-}]\\approx[\\ce{Na+}]$，$[\\ce{HA}]\\approx\\dfrac{n-n_b}{V}$ で\n\\[ [\\ce{H+}]=K_a\\frac{[\\ce{HA}]}{[\\ce{A-}]}\\approx K_a\\frac{n-n_b}{n_b}=K_a\\frac{V_e-v}{v} \\]\n（$n=0.100V_e$，$n_b=0.100v$ を用いた）．したがって条件は，$\\boldsymbol{[\\ce{H+}]\\ (\\text{と}\\ [\\ce{OH-}])\\ \\text{が}\\ [\\ce{A-}]\\ \\text{や}\\ [\\ce{HA}]\\ \\text{に比べて十分小さい}}$ こと．これは滴定の初めのごく少量の滴下域と中和点の近くで破れる．\n\n\\textbf{(2)}　2点の式の比をとると $K_a$ が消える．\n\\[ \\frac{6.0\\times10^{-5}}{6.7\\times10^{-6}}=\\frac{(V_e-4.00)/4.00}{(V_e-12.00)/12.00}=\\frac{3(V_e-4.00)}{V_e-12.00} \\]\n左辺 $=8.96$ より $3V_e-12.0=8.96V_e-107.5$，$V_e=\\boldsymbol{16.0\\,\\mathrm{mL}}$．\n\\[ K_a=6.0\\times10^{-5}\\times\\frac{4.00}{16.0-4.00}=\\boldsymbol{2.0\\times10^{-5}\\,\\mathrm{mol/L}} \\]\nHA の濃度は $\\dfrac{0.100\\times16.0}{20.0}=\\boldsymbol{8.0\\times10^{-2}\\,\\mathrm{mol/L}}$．\n\n確認：$v=4.00$ で $[\\ce{A-}]\\approx\\dfrac{0.100\\times4.00}{24.0}=1.7\\times10^{-2}$，$[\\ce{HA}]\\approx5.0\\times10^{-2}$ に対し $[\\ce{H+}]=6.0\\times10^{-5}$ は 0.4 % 以下．$v=12.00$ でも $[\\ce{H+}]$ は $[\\ce{A-}]=3.75\\times10^{-2}$ の $10^{-4}$ 倍程度．$[\\ce{OH-}]\\leqq1.5\\times10^{-9}$ も無視できる．近似は成り立っている．\n\n\\textbf{(3)}　近似式：$[\\ce{H+}]=2.0\\times10^{-5}\\times\\dfrac{16.0-0.40}{0.40}=\\boldsymbol{7.8\\times10^{-4}\\,\\mathrm{mol/L}}$．\n\n正確な計算：体積 $20.4\\,\\mathrm{mL}$ で，$[\\ce{Na+}]=\\dfrac{0.100\\times0.40}{20.4}=1.96\\times10^{-3}$，HA の総濃度 $\\dfrac{0.100\\times16.0}{20.4}=7.84\\times10^{-2}$．$[\\ce{H+}]=h$ とすると（$[\\ce{OH-}]$ は無視できる）\n\\[ [\\ce{A-}]=1.96\\times10^{-3}+h,\\qquad [\\ce{HA}]=7.84\\times10^{-2}-1.96\\times10^{-3}-h=7.65\\times10^{-2}-h \\]\n\\[ \\frac{h(1.96\\times10^{-3}+h)}{7.65\\times10^{-2}-h}=2.0\\times10^{-5} \\ \\Longrightarrow\\ h^{2}+1.98\\times10^{-3}h-1.53\\times10^{-6}=0 \\]\n\\[ h=\\frac{-1.98\\times10^{-3}+\\sqrt{(1.98\\times10^{-3})^{2}+4\\times1.53\\times10^{-6}}}{2}=\\boldsymbol{5.9\\times10^{-4}\\,\\mathrm{mol/L}} \\]\n理由：滴下量が少ないと $\\ce{Na+}$ に由来する $\\ce{A-}$ は $1.96\\times10^{-3}\\,\\mathrm{mol/L}$ しかなく，HA 自身の電離で生じる $\\ce{H+}$（約 $6\\times10^{-4}$）と同じ $\\ce{A-}$ が無視できない．$[\\ce{A-}]$ が約 1.3 倍になる分，$[\\ce{H+}]$ は近似値より小さくなる．このような点のデータを近似式で処理すると $K_a$ を誤る．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "弱酸の滴定の緩衝域では [H⁺]=K_a(V_e−v)/v と書けるので，中和点を測らなくても2点の測定値の比から V_e と K_a を同時に決められる．この近似は [H⁺] が [A⁻] に比べて小さいときだけ成り立ち，滴下量が少ない点では HA 自身の電離を入れた2次方程式が必要になる．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "acid-base"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "弱酸の滴定",
+  "電離定数",
+  "緩衝液",
+  "近似の妥当性",
+  "中和点"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

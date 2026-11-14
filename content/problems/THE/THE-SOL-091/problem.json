@@ -1,0 +1,109 @@
+{
+ "id": "THE-SOL-091",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-09",
+ "topic": "浸透圧から沸点上昇・凝固点降下を予測する（希薄水溶液の濃度の読みかえ）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある非電解質の希薄水溶液の $27\\,^\\circ\\mathrm{C}$ での浸透圧を測ると $2.49\\times10^{5}\\,\\mathrm{Pa}$ であった．気体定数は $8.31\\times10^{3}\\,\\mathrm{Pa\\cdot L/(mol\\cdot K)}$，水のモル沸点上昇は $0.52\\,\\mathrm{K\\cdot kg/mol}$，モル凝固点降下は $1.86\\,\\mathrm{K\\cdot kg/mol}$ とする．この溶液は十分に希薄で，溶液 $1\\,\\mathrm{L}$ には水がほぼ $1\\,\\mathrm{kg}$ 含まれるとみなしてよい．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "この溶液のモル濃度を有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "この溶液の沸点上昇度と凝固点降下度を，それぞれ有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "同じ温度で同じ浸透圧を示す塩化ナトリウム水溶液（完全に電離する）のモル濃度を求めよ．また，その水溶液の凝固点降下度は (2) の値と比べて大きいか，小さいか，等しいか．"
+     },
+     {
+      "id": "4",
+      "tex": "分子量 $5.0\\times10^{4}$ のタンパク質を $1.0\\,\\mathrm{g/L}$ 含む水溶液について，$27\\,^\\circ\\mathrm{C}$ での浸透圧（有効数字 2 桁）と凝固点降下度（有効数字 2 桁）を求め，分子量の測定に向いているのはどちらの方法かを答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$0.100\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "2",
+    "tex": "沸点上昇度 $0.052\\,\\mathrm{K}$，凝固点降下度 $0.19\\,\\mathrm{K}$"
+   },
+   {
+    "id": "3",
+    "tex": "$0.0500\\,\\mathrm{mol/L}$，等しい"
+   },
+   {
+    "id": "4",
+    "tex": "浸透圧 $50\\,\\mathrm{Pa}$，凝固点降下度 $3.7\\times10^{-5}\\,\\mathrm{K}$，浸透圧の測定"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\Pi=cRT$ より $c=\\dfrac{2.49\\times10^{5}}{8.31\\times10^{3}\\times300}=\\boldsymbol{0.100\\,\\mathrm{mol/L}}$．\n\n\\textbf{(2)} 溶液 $1\\,\\mathrm{L}$ に水がほぼ $1\\,\\mathrm{kg}$ なので，質量モル濃度もほぼ $0.100\\,\\mathrm{mol/kg}$ である．\n\\\\沸点上昇度 $\\Delta T_\\mathrm{b}=0.52\\times0.100=\\boldsymbol{0.052\\,\\mathrm{K}}$，凝固点降下度 $\\Delta T_\\mathrm{f}=1.86\\times0.100=0.186\\approx\\boldsymbol{0.19\\,\\mathrm{K}}$．\n浸透圧はモル濃度（溶液の体積基準），沸点上昇・凝固点降下は質量モル濃度（溶媒の質量基準）に比例するが，希薄水溶液では両者がほぼ等しいので互いに換算できる．\n\n\\textbf{(3)} 浸透圧は溶質粒子の濃度で決まる．NaCl は $\\ce{Na+}$ と $\\ce{Cl-}$ に電離して粒子が 2 倍になるので，$\\boldsymbol{0.0500\\,\\mathrm{mol/L}}$．凝固点降下度も粒子の濃度（$0.100\\,\\mathrm{mol/kg}$）で決まるので\\textbf{等しい}．\n\n\\textbf{(4)} $c=\\dfrac{1.0}{5.0\\times10^{4}}=2.0\\times10^{-5}\\,\\mathrm{mol/L}$．\n\\\\$\\Pi=2.0\\times10^{-5}\\times8.31\\times10^{3}\\times300\\approx\\boldsymbol{50\\,\\mathrm{Pa}}$（水柱にして約 5 mm で測定できる）．\n\\\\$\\Delta T_\\mathrm{f}=1.86\\times2.0\\times10^{-5}=\\boldsymbol{3.7\\times10^{-5}\\,\\mathrm{K}}$（温度計で測れないほど小さい）．\nよって高分子の分子量の測定には\\textbf{浸透圧}が向いている．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "浸透圧はモル濃度，沸点上昇・凝固点降下は質量モル濃度に比例するが，希薄水溶液では両者がほぼ等しいので，浸透圧の測定値から沸点上昇度・凝固点降下度を予測できる．どれも溶質粒子の数で決まるので電解質では粒子数で比べ，分子量が大きい溶質では浸透圧だけが測れる大きさになる．"
+ },
+ "concepts": [
+  "solution-colligative",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "浸透圧",
+  "沸点上昇",
+  "凝固点降下",
+  "質量モル濃度",
+  "モル濃度",
+  "高分子の分子量"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

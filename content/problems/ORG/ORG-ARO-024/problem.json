@@ -1,0 +1,123 @@
+{
+ "id": "ORG-ARO-024",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-05",
+ "topic": "エステルの加水分解生成物と立体異性体の数",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "structure"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "炭素・水素・酸素からなる芳香族エステル A は，元素分析値（質量百分率）が C $76.5\\,\\%$，H $7.8\\,\\%$ で，分子量は $204$ である．A を水酸化カリウム水溶液で加水分解したのちジエチルエーテルを加えて分離すると，エーテル層からは分子式 $\\ce{C4H10O}$ の化合物 B が得られ，水層を希塩酸で酸性にすると化合物 C が析出した．B を二クロム酸カリウムの硫酸酸性溶液で酸化すると化合物 D が得られ，B と D はいずれもヨードホルム反応を示した．C はベンゼンの一置換体で，臭素水を脱色し，シス-トランス異性体が存在する．原子量は H $=1.0$，C $=12$，O $=16$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A の分子式を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "B，C，D の示性式を書け．"
+     },
+     {
+      "id": "3",
+      "tex": "A には立体異性体（シス-トランス異性体と鏡像異性体）が全部で何種類考えられるか．"
+     },
+     {
+      "id": "4",
+      "tex": "A の炭素–炭素二重結合に臭素を付加させた化合物には，立体異性体が最大で何種類考えられるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：エステルの加水分解生成物と立体異性体の数",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{C13H16O2}$"
+   },
+   {
+    "id": "2",
+    "tex": "B：$\\ce{CH3CH(OH)CH2CH3}$，C：$\\ce{C6H5CH=CHCOOH}$，D：$\\ce{CH3COCH2CH3}$"
+   },
+   {
+    "id": "3",
+    "tex": "4 種類"
+   },
+   {
+    "id": "4",
+    "tex": "8 種類"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} O は $100-76.5-7.8=15.7\\,\\%$．$\\mathrm{C:H:O}=\\dfrac{76.5}{12}:\\dfrac{7.8}{1.0}:\\dfrac{15.7}{16}=6.38:7.8:0.981\\approx 6.5:8:1=13:16:2$．$\\ce{C13H16O2}=204$ と一致するので分子式は $\\boldsymbol{\\ce{C13H16O2}}$．\n\\textbf{(2)} B（$\\ce{C4H10O}$）は酸化されてケトン D になる第二級アルコールで，$\\ce{CH3CH(OH)-}$ をもつ：\\textbf{2-ブタノール} $\\ce{CH3CH(OH)CH2CH3}$，D は\\textbf{2-ブタノン} $\\ce{CH3COCH2CH3}$（どちらもヨードホルム反応陽性）．C は $\\ce{C13H16O2 + H2O}$ から $\\ce{C4H10O}$ を除いた $\\ce{C9H8O2}$．一置換ベンゼンで $\\ce{C=C}$ とシス-トランス異性をもつカルボン酸は\\textbf{ケイ皮酸} $\\ce{C6H5CH=CHCOOH}$．\n\\textbf{(3)} A $=\\ce{C6H5CH=CHCOOCH(CH3)CH2CH3}$．立体の要素は「$\\ce{C=C}$ のシス/トランス」と「アルコール部分の不斉炭素1個」の2つで，$2\\times2=\\boldsymbol{4}$ 種類．\n\\textbf{(4)} 臭素付加で $\\ce{C6H5CHBr-CHBr-COO-}$ となり，二重結合（シス-トランス）は消えるが不斉炭素が2個増えて計3個．分子に対称性がないのでメソ体はなく，最大 $2^{3}=\\boldsymbol{8}$ 種類．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "エステルを加水分解し，アルコール部分（ヨードホルム反応・酸化）とカルボン酸部分（臭素の付加・シス-トランス異性）を別々に決める．立体異性体の数は不斉炭素とシス-トランスの要素の数から 2ⁿ で数え，付加反応で要素の数が変わる．"
+ },
+ "concepts": [
+  "aromatic",
+  "halogen",
+  "organic-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "エステル",
+  "加水分解",
+  "ヨードホルム反応",
+  "ケイ皮酸",
+  "立体異性体",
+  "不斉炭素"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

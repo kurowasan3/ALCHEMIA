@@ -1,0 +1,109 @@
+{
+ "id": "INO-TRN-045",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-07",
+ "topic": "ヘモグロビンが運ぶ酸素の量と血液に溶けた酸素の比較",
+ "course": "化学",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "赤血球中のヘモグロビン（分子量 $6.45\\times10^{4}$）は 1 分子中に鉄(II) イオンを含むヘムを 4 個もち，ヘム 1 個に $\\ce{O2}$ 1 分子が結合する．すべてのヘムのうち $\\ce{O2}$ が結合しているものの割合を酸素飽和度という．血液 1 L 中のヘモグロビンを $150\\,\\mathrm{g}$ とし，$37^\\circ\\mathrm{C}$ での酸素分圧と酸素飽和度の関係を次のとおりとする．\n\\[\\begin{array}{c|ccc} & \\text{肺} & \\text{安静時の組織} & \\text{運動中の筋肉} \\\\ \\hline \\ce{O2}\\text{ の分圧}[\\mathrm{kPa}] & 13 & 5.3 & 2.7 \\\\ \\text{酸素飽和度} & 0.97 & 0.70 & 0.30 \\end{array}\\]\nまた，ヘモグロビンと結合せずに血液に溶けている $\\ce{O2}$ はヘンリーの法則に従い，その濃度は $\\ce{O2}$ の分圧 1 Pa あたり $1.0\\times10^{-8}\\,\\mathrm{mol/L}$ とする．血液が肺で平衡に達したのち組織に運ばれ，そこでも平衡に達するものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "肺を出た血液 1 L 中でヘモグロビンに結合している $\\ce{O2}$ の物質量 $[\\mathrm{mol}]$ を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "血液 1 L が安静時の組織および運動中の筋肉でヘモグロビンから放出する $\\ce{O2}$ の物質量 $[\\mathrm{mol}]$ を，それぞれ有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "安静時の組織で，血液 1 L に溶けていた $\\ce{O2}$ が放出される量 $[\\mathrm{mol}]$ を有効数字2桁で求め，(2) のヘモグロビンからの放出量はその約何倍か，整数で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "血液 1 L 中のヘモグロビンが $100\\,\\mathrm{g}$ に減ったとき（酸素解離の関係は変わらないとする），安静時の組織で血液 1 L が放出する $\\ce{O2}$（ヘモグロビンからの分）は，(2) の何倍になるか．有効数字2桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$9.0\\times10^{-3}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "2",
+    "tex": "安静時 $2.5\\times10^{-3}\\,\\mathrm{mol}$，運動中 $6.2\\times10^{-3}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "$7.7\\times10^{-5}\\,\\mathrm{mol}$，約 $33$ 倍"
+   },
+   {
+    "id": "4",
+    "tex": "$0.67$ 倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　ヘモグロビンの物質量 × 4 がヘム（$\\ce{O2}$ の結合場所）の物質量で，結合している $\\ce{O2}$ はそれに酸素飽和度をかけたもの．放出量は肺と組織の飽和度の差で決まる．\n\n\\textbf{(1)}　ヘモグロビン $\\dfrac{150}{6.45\\times10^{4}}=2.33\\times10^{-3}\\,\\mathrm{mol}$，ヘム $4\\times2.33\\times10^{-3}=9.30\\times10^{-3}\\,\\mathrm{mol}$．結合している $\\ce{O2}$ は $9.30\\times10^{-3}\\times0.97=\\boldsymbol{9.0\\times10^{-3}\\,\\mathrm{mol}}$．\n\n\\textbf{(2)}　安静時：$9.30\\times10^{-3}\\times(0.97-0.70)=\\boldsymbol{2.5\\times10^{-3}\\,\\mathrm{mol}}$．\n運動中：$9.30\\times10^{-3}\\times(0.97-0.30)=\\boldsymbol{6.2\\times10^{-3}\\,\\mathrm{mol}}$．\n分圧が下がるほど多く放出し，運動中は安静時の約 2.5 倍を筋肉に渡す．\n\n\\textbf{(3)}　溶けている $\\ce{O2}$ は肺で $1.0\\times10^{-8}\\times1.3\\times10^{4}=1.3\\times10^{-4}\\,\\mathrm{mol}$，組織で $1.0\\times10^{-8}\\times5.3\\times10^{3}=5.3\\times10^{-5}\\,\\mathrm{mol}$．放出量は $\\boldsymbol{7.7\\times10^{-5}\\,\\mathrm{mol}}$．\nヘモグロビンからの放出量との比は $\\dfrac{2.51\\times10^{-3}}{7.7\\times10^{-5}}\\approx\\boldsymbol{33}$ 倍．水に溶けるだけでは必要な酸素をとても運べず，ヘモグロビンが運搬の主役である．\n\n\\textbf{(4)}　放出量はヘムの物質量（ヘモグロビンの量）に比例するので $\\dfrac{100}{150}=\\boldsymbol{0.67}$ 倍．（貧血で同じ量の酸素を届けるには，心拍数を上げて血流量を増やす必要がある．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ヘモグロビン 1 分子に鉄(II) を含むヘムが 4 個あり，結合する O₂ の量は「ヘモグロビンの物質量×4×酸素飽和度」で，組織に渡す量は肺と組織の飽和度の差で決まる．ヘンリーの法則で溶けている O₂ の放出量と比べると数十倍で，O₂ 運搬はヘモグロビンが担う．"
+ },
+ "concepts": [
+  "transition-metals",
+  "oxygen-sulfur",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ヘモグロビン",
+  "ヘム",
+  "酸素飽和度",
+  "ヘンリーの法則",
+  "物質量"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

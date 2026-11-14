@@ -1,0 +1,115 @@
+{
+ "id": "ORG-ARO-013",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-05",
+ "topic": "芳香族エステル C₉H₁₀O₂ の加水分解生成物による判別",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "structure",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "分子式 $\\ce{C9H10O2}$ で表され，ベンゼンの一置換体であるエステル A，B，C，D がある．それぞれを加水分解して，次の結果を得た．\\\\\n・A からは，銀鏡反応を示す酸性の物質 E と，ヨードホルム反応を示す中性の物質 F が得られた．\\\\\n・B からは化合物 G と H が得られた．G，H はどちらも水酸化ナトリウム水溶液に塩をつくって溶けたが，炭酸水素ナトリウム水溶液と反応して気体を発生したのは H だけであった．G に塩化鉄(III) 水溶液を加えると紫色を呈した．\\\\\n・C からは，銀鏡反応を示さない酸性の物質 I と，中性の物質 J が得られた．J を過マンガン酸カリウムで十分に酸化すると安息香酸が得られた．\\\\\n・D からは，安息香酸と，ヨードホルム反応を示す化合物 K が得られた．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A，B，C，D の構造を示性式で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "ベンゼンの一置換体で分子式 $\\ce{C9H10O2}$ のエステルは，A〜D を含めて全部で何種類あるか（鏡像異性体は区別しない）．"
+     },
+     {
+      "id": "3",
+      "tex": "A〜D のうち，不斉炭素原子をもつものを選べ．また，(2) のエステルのうち A〜D 以外のものを 1 つ選び，その加水分解生成物の名称を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：芳香族エステル C₉H₁₀O₂ の加水分解生成物による判別",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "A：$\\ce{HCOOCH(CH3)C6H5}$，B：$\\ce{CH3CH2COOC6H5}$，C：$\\ce{CH3COOCH2C6H5}$，D：$\\ce{C6H5COOCH2CH3}$"
+   },
+   {
+    "id": "2",
+    "tex": "$6$ 種類"
+   },
+   {
+    "id": "3",
+    "tex": "A．（例）$\\ce{C6H5CH2COOCH3}$：フェニル酢酸とメタノール（$\\ce{HCOOCH2CH2C6H5}$ ならギ酸と 2-フェニルエタノール）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 一置換体なので，ベンゼン環には置換基が 1 つだけ．\\\\\n・A：酸性で銀鏡反応を示す E はホルミル基をもつギ酸．F は $\\ce{C9H10O2} + \\ce{H2O} - \\ce{HCOOH} = \\ce{C8H10O}$ のアルコールで，ヨードホルム反応を示すので $\\ce{CH3CH(OH)-}$ をもつ 1-フェニルエタノール $\\ce{C6H5CH(OH)CH3}$．A は $\\boldsymbol{\\ce{HCOOCH(CH3)C6H5}}$．\\\\\n・B：G は塩化鉄(III) で呈色し $\\ce{NaHCO3}$ と反応しないのでフェノール，H は $\\ce{NaHCO3}$ と反応するカルボン酸で，$\\ce{C9H10O2} + \\ce{H2O} - \\ce{C6H5OH} = \\ce{C3H6O2}$ よりプロピオン酸．B は $\\boldsymbol{\\ce{CH3CH2COOC6H5}}$（プロピオン酸フェニル）．\\\\\n・C：酸化で安息香酸になる中性の J はベンゼン環をもつアルコール．I はベンゼン環をもたないカルボン酸で，銀鏡反応を示さないのでギ酸ではない．よって I は酢酸，J はベンジルアルコール $\\ce{C6H5CH2OH}$．C は $\\boldsymbol{\\ce{CH3COOCH2C6H5}}$（酢酸ベンジル）．\\\\\n・D：安息香酸 $\\ce{C7H6O2}$ を除くと K は $\\ce{C2H6O}$ のエタノール（ヨードホルム反応を示す）．D は $\\boldsymbol{\\ce{C6H5COOCH2CH3}}$（安息香酸エチル）．\\\\\n\\textbf{(2)} 置換基 $\\ce{C3H5O2}$ の中にエステル結合 $\\ce{-COO-}$ を置く方法を数える．\\\\\nベンゼン環側が酸：$\\ce{C6H5COOC2H5}$，$\\ce{C6H5CH2COOCH3}$\\\\\nベンゼン環側がアルコール・フェノール：$\\ce{C2H5COOC6H5}$，$\\ce{CH3COOCH2C6H5}$，$\\ce{HCOOCH2CH2C6H5}$，$\\ce{HCOOCH(CH3)C6H5}$\\\\\nの計 $\\boldsymbol{6}$ 種類．\\\\\n\\textbf{(3)} A の $\\ce{CH}$ には $\\ce{H, CH3, C6H5, OCHO}$ が結合しており不斉炭素原子（答え \\textbf{A}）．残りの 2 種類は，フェニル酢酸メチル（加水分解でフェニル酢酸とメタノール）とギ酸 2-フェニルエチル（ギ酸と 2-フェニルエタノール）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "エステルの加水分解生成物を，銀鏡反応（ギ酸）・NaHCO₃ との反応（カルボン酸かフェノールか）・FeCl₃ 呈色・ヨードホルム反応・側鎖の酸化で判別して，エステル結合の位置と向きを決める．"
+ },
+ "concepts": [
+  "aromatic",
+  "organic-structure",
+  "carboxylic-ester"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "エステル",
+  "加水分解",
+  "構造決定",
+  "芳香族",
+  "異性体の数"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

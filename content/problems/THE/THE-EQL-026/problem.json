@@ -1,0 +1,100 @@
+{
+ "id": "THE-EQL-026",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "濃度平衡定数と圧平衡定数の関係",
+ "course": "化学",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "真空にした体積 $5.0\\,\\mathrm L$ の容器に三酸化硫黄だけを入れて $1000\\,\\mathrm K$ に保つと，$\\ce{2SO3(g) <=> 2SO2(g) + O2(g)}$ の平衡に達し，$[\\ce{SO3}]=0.020\\,\\mathrm{mol/L}$，$[\\ce{O2}]=0.010\\,\\mathrm{mol/L}$ であった．$R=8.3\\times10^3\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "初めに入れた三酸化硫黄は何 mol か．"
+     },
+     {
+      "id": "2",
+      "tex": "この温度での濃度平衡定数 $K_c$ と圧平衡定数 $K_p$ を，単位とともに有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "次の (a)〜(c) の平衡について，$K_p$ を $K_c$，$R$，$T$ を用いて表せ．また，$K_p$ と $K_c$ の値が単位も含めて一致するものを選べ．\\\\ (a) $\\ce{H2(g) + I2(g) <=> 2HI(g)}$　(b) $\\ce{N2(g) + 3H2(g) <=> 2NH3(g)}$　(c) $\\ce{C(s) + CO2(g) <=> 2CO(g)}$"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$0.20\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "2",
+    "tex": "$K_c=1.0\\times10^{-2}\\,\\mathrm{mol/L}$，$K_p=8.3\\times10^4\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "3",
+    "tex": "(a) $K_p=K_c$　(b) $K_p=K_c(RT)^{-2}$　(c) $K_p=K_cRT$，一致するのは (a)"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\ce{O2}$ $0.010\\,\\mathrm{mol/L}$ が生じたので，$\\ce{SO2}$ は $0.020\\,\\mathrm{mol/L}$ 生じ，$\\ce{SO3}$ は $0.020\\,\\mathrm{mol/L}$ 減った．初めは $0.040\\,\\mathrm{mol/L}\\times5.0\\,\\mathrm L=\\boldsymbol{0.20\\,\\mathrm{mol}}$．\\\\\n\\textbf{(2)} \\[ K_c=\\dfrac{[\\ce{SO2}]^2[\\ce{O2}]}{[\\ce{SO3}]^2}=\\dfrac{0.020^2\\times0.010}{0.020^2}=\\boldsymbol{1.0\\times10^{-2}\\,\\mathrm{mol/L}} \\]\n分圧は $p=cRT$（$c$：モル濃度）なので，$K_p=K_c(RT)^{\\Delta n}$（$\\Delta n$：気体の係数の増加量）．ここでは $\\Delta n=3-2=1$：\n\\[ K_p=K_cRT=1.0\\times10^{-2}\\times8.3\\times10^3\\times1000=\\boldsymbol{8.3\\times10^4\\,\\mathrm{Pa}} \\]\n\\textbf{(3)} (a) $\\Delta n=2-2=0$ で $\\boldsymbol{K_p=K_c}$（どちらも単位なし）．(b) $\\Delta n=2-4=-2$ で $\\boldsymbol{K_p=K_c(RT)^{-2}}$．(c) 固体の C は数えず $\\Delta n=2-1=1$ で $\\boldsymbol{K_p=K_cRT}$．値と単位が一致するのは \\textbf{(a)}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "分圧と濃度の関係 p=cRT から K_p=K_c(RT)^Δn を導き，気体の係数の増減（固体は数えない）で両者の関係が決まることを，複数の反応で比較する．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "concentration",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "圧平衡定数",
+  "濃度平衡定数",
+  "解離平衡",
+  "気体の係数"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,110 @@
+{
+ "id": "THE-ION-077",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "硬水中のセッケンを守るキレート剤（ビルダー）の強さと必要量",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "セッケンを硬水で使うと，セッケンの陰イオン $\\ce{A-}$ がカルシウムイオンと難溶性の塩 $\\ce{CaA2}$ をつくって失われる．これを防ぐために，洗剤にはカルシウムイオンと水溶性の錯体をつくる物質（キレート剤）がビルダーとして加えられる．\n次のモデルで考える．\n・$\\ce{CaA2}$ の溶解度積：$K_{\\mathrm{sp}} = [\\ce{Ca^2+}][\\ce{A-}]^2 = 4.0\\times10^{-13}\\,(\\mathrm{mol/L})^3$\n・キレート剤 L は $\\ce{Ca^2+}$ と $1:1$ の錯体 CaL をつくる：$\\ce{Ca^2+} + \\mathrm{L} \\rightleftarrows \\mathrm{CaL}$，$K = \\dfrac{[\\mathrm{CaL}]}{[\\ce{Ca^2+}][\\mathrm{L}]}$．弱いキレート剤 $\\mathrm{L_1}$ では $K_1 = 1.0\\times10^{3}\\,\\mathrm{L/mol}$，強いキレート剤 $\\mathrm{L_2}$ では $K_2 = 1.0\\times10^{10}\\,\\mathrm{L/mol}$ とする．\n・洗浄液はカルシウムを全濃度 $1.0\\times10^{-3}\\,\\mathrm{mol/L}$ 含む硬水に，セッケン NaA を全濃度 $5.0\\times10^{-3}\\,\\mathrm{mol/L}$ となるよう溶かしたものとする．液は十分塩基性に保たれ，$\\ce{A-}$ の加水分解や L の電離平衡は考えなくてよい．$\\ce{A-}$ は $\\ce{Ca^2+}$ 以外とは反応せず，溶液の体積変化は無視する．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "キレート剤を加えないとき，沈殿が生じることを示し，溶液中に残る $\\ce{A-}$ の濃度と，失われるセッケンの割合（％）を求めよ（有効数字 2 桁）．"
+     },
+     {
+      "id": "2",
+      "tex": "セッケンを 1 分子も失わない（$\\ce{CaA2}$ が沈殿しない）ために必要なキレート剤の全濃度の最小値を，$\\mathrm{L_1}$ と $\\mathrm{L_2}$ のそれぞれについて求め，$\\mathrm{L_1}$ が実用になるかを判断せよ（有効数字 2 桁）．"
+     },
+     {
+      "id": "3",
+      "tex": "弱いキレート剤 $\\mathrm{L_1}$ を，実用上の上限として全濃度 $0.10\\,\\mathrm{mol/L}$ 加えた．失われるセッケンの濃度を求めよ（有効数字 2 桁）．どのような近似を用いたかも示し，その近似が成り立つことを確かめよ．"
+     },
+     {
+      "id": "4",
+      "tex": "強いキレート剤 $\\mathrm{L_2}$ を，カルシウムの半分の量（全濃度 $5.0\\times10^{-4}\\,\\mathrm{mol/L}$）だけ加えた．失われるセッケンの濃度と割合を求めよ（有効数字 2 桁）．(3) の結果と比べ，キレート剤の必要量が何によって決まるかを述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "はじめのイオン積 $1.0\\times10^{-3}\\times(5.0\\times10^{-3})^2 = 2.5\\times10^{-8} > K_{\\mathrm{sp}}$ なので沈殿する．$[\\ce{A-}] = 3.0\\times10^{-3}\\,\\mathrm{mol/L}$，失われる割合 $40\\,\\%$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\mathrm{L_1}$：$62\\,\\mathrm{mol/L}$（実現不可能なので実用にならない）　$\\mathrm{L_2}$：$1.0\\times10^{-3}\\,\\mathrm{mol/L}$（カルシウムとほぼ当量）"
+   },
+   {
+    "id": "3",
+    "tex": "$2.0\\times10^{-3}\\,\\mathrm{mol/L}$（約 40 %．加えないときとほとんど変わらない）．近似：$[\\mathrm{L_1}] \\fallingdotseq 0.10\\,\\mathrm{mol/L}$，$\\ce{Ca}$ はほぼすべて沈殿し $[\\ce{A-}] \\fallingdotseq 3.0\\times10^{-3}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "4",
+    "tex": "$1.0\\times10^{-3}\\,\\mathrm{mol/L}$（20 %）．強いキレート剤では加えた分だけ $\\ce{Ca^2+}$ を化学量論的に捕まえるので，必要量はカルシウムの物質量（当量）で決まる．弱いキレート剤では平衡で決まり，許される $[\\ce{Ca^2+}]$ が極めて小さいため当量よりはるかに多く必要になる．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　イオン積 $1.0\\times10^{-3}\\times(5.0\\times10^{-3})^2 = 2.5\\times10^{-8}$ は $K_{\\mathrm{sp}}$ の約 $6\\times10^{4}$ 倍なので，$\\ce{CaA2}$ が沈殿する．$K_{\\mathrm{sp}}$ が極めて小さいので，まず Ca がほぼすべて沈殿すると仮定すると $[\\ce{A-}] = 5.0\\times10^{-3} - 2\\times1.0\\times10^{-3} = 3.0\\times10^{-3}\\,\\mathrm{mol/L}$．このとき\n\\[ [\\ce{Ca^2+}] = \\frac{4.0\\times10^{-13}}{(3.0\\times10^{-3})^2} = 4.4\\times10^{-8}\\,\\mathrm{mol/L} \\]\nで $1.0\\times10^{-3}$ に比べ無視でき，仮定は正しい．失われるのは $2.0\\times10^{-3}\\,\\mathrm{mol/L}$ で，割合は $\\boldsymbol{40\\,\\%}$，残る $[\\ce{A-}] = \\boldsymbol{3.0\\times10^{-3}\\,\\mathrm{mol/L}}$．\n\n\\textbf{(2)}　セッケンをまったく失わないなら $[\\ce{A-}] = 5.0\\times10^{-3}\\,\\mathrm{mol/L}$ のままで，沈殿しない条件は\n\\[ [\\ce{Ca^2+}] \\le \\frac{4.0\\times10^{-13}}{(5.0\\times10^{-3})^2} = 1.6\\times10^{-8}\\,\\mathrm{mol/L}. \\]\nカルシウムのほとんど（$1.0\\times10^{-3} - 1.6\\times10^{-8} \\fallingdotseq 1.0\\times10^{-3}\\,\\mathrm{mol/L}$）を CaL にしなければならないので，必要な遊離の L は\n\\[ [\\mathrm{L}] = \\frac{[\\mathrm{CaL}]}{K[\\ce{Ca^2+}]} = \\frac{1.0\\times10^{-3}}{K\\times1.6\\times10^{-8}}. \\]\n$\\mathrm{L_1}$：$[\\mathrm{L_1}] = (1.0\\times10^{-3} - 1.6\\times10^{-8})/(1.0\\times10^{3}\\times1.6\\times10^{-8}) = 62.49\\cdots\\,\\mathrm{mol/L}$．全濃度はこれに CaL の $0.001$ を足しても $\\boldsymbol{62\\,\\mathrm{mol/L}}$ で，水溶液としてあり得ない濃度だから\\textbf{実用にならない}．\n$\\mathrm{L_2}$：$[\\mathrm{L_2}] = 1.0\\times10^{-3}/(1.0\\times10^{10}\\times1.6\\times10^{-8}) = 6.3\\times10^{-6}\\,\\mathrm{mol/L}$．全濃度は $1.0\\times10^{-3} + 6.3\\times10^{-6} \\fallingdotseq \\boldsymbol{1.0\\times10^{-3}\\,\\mathrm{mol/L}}$ で，\\textbf{カルシウムとほぼ当量}でよい．\n\n\\textbf{(3)}　沈殿した Ca を $s$ とすると，Ca の収支は $1.0\\times10^{-3} - s = [\\ce{Ca^2+}] + [\\mathrm{CaL}] = [\\ce{Ca^2+}](1 + K_1[\\mathrm{L_1}])$．\n\\textbf{近似}：CaL は多くても $1.0\\times10^{-3}\\,\\mathrm{mol/L}$ で，L の全濃度 $0.10$ の 1 % 以下だから $[\\mathrm{L_1}] \\fallingdotseq 0.10\\,\\mathrm{mol/L}$．すると $1 + K_1[\\mathrm{L_1}] = 101$．\nさらに，ほぼすべての Ca が沈殿すると仮定すると $[\\ce{A-}] \\fallingdotseq 3.0\\times10^{-3}$，$[\\ce{Ca^2+}] = 4.4\\times10^{-8}$，溶液中の Ca は $101\\times4.4\\times10^{-8} = 4.5\\times10^{-6}\\,\\mathrm{mol/L}$ にすぎない．$s = 1.0\\times10^{-3} - 4.5\\times10^{-6} \\fallingdotseq 9.96\\times10^{-4}$ で，仮定（ほぼすべて沈殿，$[\\ce{A-}] \\fallingdotseq 3.0\\times10^{-3}$）と矛盾しない．また CaL $\\fallingdotseq 4.4\\times10^{-6} \\ll 0.10$ で最初の近似も成り立つ．\n失われるセッケンは $2s \\fallingdotseq \\boldsymbol{2.0\\times10^{-3}\\,\\mathrm{mol/L}}$（約 40 %）で，\\textbf{弱いキレート剤を多量に入れてもほとんど効果がない}．\n\n\\textbf{(4)}　$K_2$ が非常に大きいので，L₂ はほぼすべて CaL₂ になる（$[\\mathrm{CaL_2}] \\fallingdotseq 5.0\\times10^{-4}$）．残りの $5.0\\times10^{-4}\\,\\mathrm{mol/L}$ の Ca は L₂ に捕まらず，(1) と同様にほぼすべて沈殿する．\n確認：沈殿後 $[\\ce{A-}] = 5.0\\times10^{-3} - 2\\times5.0\\times10^{-4} = 4.0\\times10^{-3}$，$[\\ce{Ca^2+}] = 4.0\\times10^{-13}/(4.0\\times10^{-3})^2 = 2.5\\times10^{-8}$，遊離の $[\\mathrm{L_2}] = 5.0\\times10^{-4}/(1.0\\times10^{10}\\times2.5\\times10^{-8}) = 2.0\\times10^{-6}$ で，L₂ の全量の 0.4 % にすぎず「ほぼすべて CaL₂」と矛盾しない．\n失われるセッケンは $2\\times5.0\\times10^{-4} = \\boldsymbol{1.0\\times10^{-3}\\,\\mathrm{mol/L}}$（$\\boldsymbol{20\\,\\%}$）．\n\\textbf{まとめ}：強いキレート剤は加えた量だけ $\\ce{Ca^2+}$ を化学量論的に捕まえるので，必要量はカルシウムの量（当量）で決まり，足りない分だけセッケンが失われる．弱いキレート剤では平衡で決まり，沈殿を防ぐには $[\\ce{Ca^2+}]$ を $K_{\\mathrm{sp}}/[\\ce{A-}]^2$ という極めて小さい値まで下げる必要があるので，必要量は $1/(K[\\ce{Ca^2+}])$ に比例して桁違いに大きくなる．ビルダーに多座のキレート剤（生成定数の大きいもの）が使われるのはこのためである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "難溶性塩の沈殿とキレート剤による錯形成が Ca²⁺ を取り合うとき，沈殿を防ぐには遊離の Ca²⁺ を Ksp/[A⁻]² 以下に下げる必要がある．生成定数が十分大きいキレート剤では必要量がカルシウムとの当量（化学量論）で決まり，小さいキレート剤では平衡で決まって非現実的な量になる．近似（遊離の配位子濃度一定・ほぼ全量沈殿）の妥当性を確かめながら場合分けする．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "complex-ion",
+  "precipitation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "セッケン",
+  "硬水",
+  "キレート剤",
+  "溶解度積",
+  "錯形成平衡",
+  "近似の妥当性"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

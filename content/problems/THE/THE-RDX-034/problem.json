@@ -1,0 +1,109 @@
+{
+ "id": "THE-RDX-034",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-06",
+ "topic": "沈殿生成による電極電位の低下と銀のハロゲン化水素酸への溶解",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "銀はイオン化傾向が水素より小さく，ふつうは酸に溶けて水素を発生しない．しかし，相手の陰イオンが $\\ce{Ag+}$ と沈殿をつくると事情が変わる．次のモデルで考える（25 ℃）．\n・電極 $\\ce{Ag+ + e- <=> Ag}$ の電位：$E_{\\mathrm{Ag}}=0.80+0.059\\log_{10}[\\ce{Ag+}]$（V）\\\\\n・電極 $\\ce{2H+ + 2e- <=> H2}$ の電位（$\\ce{H2}$ の分圧 $1.0\\times10^5\\,\\mathrm{Pa}$）：$E_{\\mathrm{H}}=0.059\\log_{10}[\\ce{H+}]$（V）\\\\\n・$E_{\\mathrm{Ag}}<E_{\\mathrm{H}}$ のとき，銀は電子を出して溶け（ハロゲン化銀の沈殿になり），$\\ce{H+}$ が還元されて $\\ce{H2}$ が発生する．$E_{\\mathrm{Ag}}>E_{\\mathrm{H}}$ なら反応は起こらない．\\\\\n・溶解度積（$\\mathrm{(mol/L)^2}$）：AgCl $1.8\\times10^{-10}$，AgBr $5.2\\times10^{-13}$，AgI $8.3\\times10^{-17}$．$\\log_{10}1.8=0.26$，$\\log_{10}5.2=0.72$，$\\log_{10}8.3=0.92$．\\\\\n銀の表面はつねにそのハロゲン化銀の固体と接しており，ハロゲン化物イオンの濃度は加えた酸・塩の濃度に等しいとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$1.0\\,\\mathrm{mol/L}$ の塩酸，臭化水素酸，ヨウ化水素酸のそれぞれに銀を入れたときの $E_{\\mathrm{Ag}}$ を小数第 2 位まで求め，水素を発生して銀が溶けるものをすべて選べ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) で反応が起こる場合の化学反応式を書け．"
+     },
+     {
+      "id": "3",
+      "tex": "臭化水素酸の濃度を $c$（$[\\ce{H+}]=[\\ce{Br-}]=c$）としたとき，銀が水素を発生して溶けるための $c$ の条件を求め，$c$ の下限を有効数字 1 桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$1.0\\,\\mathrm{mol/L}$ のヨウ化カリウム水溶液（pH 7.0）に銀を入れた場合，水素は発生するか．理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "塩酸 $0.23\\,\\mathrm{V}$，臭化水素酸 $0.08\\,\\mathrm{V}$，ヨウ化水素酸 $-0.15\\,\\mathrm{V}$；溶けるのはヨウ化水素酸のみ"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{2Ag + 2HI -> 2AgI + H2}$"
+   },
+   {
+    "id": "3",
+    "tex": "$0.0755-0.059\\log_{10}c<0.059\\log_{10}c$ すなわち $\\log_{10}c>0.64$，$c>4\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "4",
+    "tex": "発生しない（$E_{\\mathrm{H}}=-0.41\\,\\mathrm{V}$ が $E_{\\mathrm{Ag}}=-0.15\\,\\mathrm{V}$ より低いため）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　ハロゲン化銀が共存するので $[\\ce{Ag+}]=\\dfrac{K_{sp}}{[\\ce{X-}]}=K_{sp}$（$[\\ce{X-}]=1.0$）．\n塩酸：$\\log K_{sp}=-9.74$，$E_{\\mathrm{Ag}}=0.80-0.059\\times9.74=\\boldsymbol{0.23\\,\\mathrm{V}}$．\n臭化水素酸：$\\log K_{sp}=-12.28$，$E_{\\mathrm{Ag}}=0.80-0.059\\times12.28=\\boldsymbol{0.08\\,\\mathrm{V}}$．\nヨウ化水素酸：$\\log K_{sp}=-16.08$，$E_{\\mathrm{Ag}}=0.80-0.059\\times16.08=\\boldsymbol{-0.15\\,\\mathrm{V}}$．\n$[\\ce{H+}]=1.0$ では $E_{\\mathrm{H}}=0$ なので，$E_{\\mathrm{Ag}}<0$ となる\\textbf{ヨウ化水素酸だけ}で銀が溶ける．沈殿が $[\\ce{Ag+}]$ を極端に小さくするほど，銀は電子を出しやすく（還元剤として強く）なる．\n\n\\textbf{(2)}　負極側 $\\ce{Ag + I- -> AgI + e-}$，正極側 $\\ce{2H+ + 2e- -> H2}$ を合わせて $\\boldsymbol{\\ce{2Ag + 2HI -> 2AgI + H2}}$．\n\n\\textbf{(3)}　$E_{\\mathrm{Ag}}=0.80+0.059\\log\\dfrac{K_{sp}}{c}=0.0755-0.059\\log c$，$E_{\\mathrm{H}}=0.059\\log c$．\n条件 $E_{\\mathrm{Ag}}<E_{\\mathrm{H}}$ より $0.0755<0.118\\log c$，$\\log c>0.64$，$c>10^{0.64}\\fallingdotseq4.4$．よって下限は $\\boldsymbol{4\\,\\mathrm{mol/L}}$．\n濃度を上げると $[\\ce{Br-}]$ の増加で $E_{\\mathrm{Ag}}$ が下がり，同時に $[\\ce{H+}]$ の増加で $E_{\\mathrm{H}}$ が上がるので，2 つの効果が合わさって（傾きが $2\\times0.059$）条件を満たすようになる（実際の濃い溶液ではイオンどうしの相互作用で値はずれるが，この傾向は正しい）．\n\n\\textbf{(4)}　$E_{\\mathrm{Ag}}$ は (1) と同じ $-0.15\\,\\mathrm{V}$ だが，$[\\ce{H+}]=1.0\\times10^{-7}$ なので $E_{\\mathrm{H}}=0.059\\times(-7.0)=-0.41\\,\\mathrm{V}$．$E_{\\mathrm{Ag}}>E_{\\mathrm{H}}$ なので\\textbf{水素は発生しない}．銀を溶かすには「$\\ce{Ag+}$ を沈殿で取り除く陰イオン」と「電子を受け取る十分な $\\ce{H+}$」の両方が必要である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "沈殿生成で [Ag⁺] が極端に小さくなると銀の電極電位が下がり，イオン化傾向が水素より小さい銀でも溶解度積の非常に小さい AgI をつくる HI には水素を発生して溶ける．ハロゲン化物イオンと H⁺ の濃度は電位を互いに逆向きに動かすので，溶けるかどうかの境界の濃度が計算でき，H⁺ が足りなければ（中性の KI）溶けない．"
+ },
+ "concepts": [
+  "redox",
+  "precipitation",
+  "halogen"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電極電位",
+  "溶解度積",
+  "ハロゲン化銀",
+  "イオン化傾向",
+  "条件判断"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

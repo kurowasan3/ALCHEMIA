@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 310" width="520" height="310">
+<line x1="80" y1="250" x2="470" y2="250" stroke="currentColor" stroke-width="1.5"/>
+<line x1="80" y1="250" x2="80" y2="40" stroke="currentColor" stroke-width="1.5"/>
+<line x1="156.0" y1="250" x2="156.0" y2="255" stroke="currentColor"/>
+<text x="156.0" y="270" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">0.005</text>
+<line x1="232.0" y1="250" x2="232.0" y2="255" stroke="currentColor"/>
+<text x="232.0" y="270" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">0.010</text>
+<line x1="308.0" y1="250" x2="308.0" y2="255" stroke="currentColor"/>
+<text x="308.0" y="270" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">0.015</text>
+<line x1="384.0" y1="250" x2="384.0" y2="255" stroke="currentColor"/>
+<text x="384.0" y="270" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">0.020</text>
+<line x1="460.0" y1="250" x2="460.0" y2="255" stroke="currentColor"/>
+<text x="460.0" y="270" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">0.025</text>
+<line x1="75" y1="166.7" x2="80" y2="166.7" stroke="currentColor"/>
+<text x="71" y="170.7" font-size="13" text-anchor="end" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">0.50</text>
+<line x1="75" y1="83.3" x2="80" y2="83.3" stroke="currentColor"/>
+<text x="71" y="87.3" font-size="13" text-anchor="end" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">1.00</text>
+<text x="71" y="254" font-size="13" text-anchor="end" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">0</text>
+<polyline points="80.0,250.0 232.0,83.3 384.0,250.0 460.0,250.0" fill="none" stroke="#1f5fbf" stroke-width="2.5"/>
+<line x1="80" y1="133.3" x2="277.6" y2="133.3" stroke="currentColor" stroke-dasharray="5,4" opacity="0.5"/>
+<line x1="186.4" y1="133.3" x2="186.4" y2="250" stroke="currentColor" stroke-dasharray="5,4" opacity="0.5"/>
+<circle cx="186.4" cy="133.3" r="4" fill="#c0392b"/>
+<line x1="277.6" y1="133.3" x2="277.6" y2="250" stroke="currentColor" stroke-dasharray="5,4" opacity="0.5"/>
+<circle cx="277.6" cy="133.3" r="4" fill="#c0392b"/>
+<text x="71" y="137.3" font-size="13" text-anchor="end" fill="#c0392b" font-family="Noto Sans CJK JP, sans-serif">0.70</text>
+<text x="186.4" y="123.3" font-size="13" text-anchor="middle" fill="#c0392b" font-family="Noto Sans CJK JP, sans-serif">A</text>
+<text x="277.6" y="123.3" font-size="13" text-anchor="middle" fill="#c0392b" font-family="Noto Sans CJK JP, sans-serif">B</text>
+<text x="133.2" y="91.7" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">Ca(OH)<tspan baseline-shift="sub" font-size="10">2</tspan> が残る</text>
+<text x="361.2" y="91.7" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">Ca(HCO<tspan baseline-shift="sub" font-size="10">3</tspan>)<tspan baseline-shift="sub" font-size="10">2</tspan> が生成</text>
+<text x="270.0" y="295" font-size="14" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">吸収された CO<tspan baseline-shift="sub" font-size="10">2</tspan> の物質量〔mol〕</text>
+<text x="22" y="150.0" font-size="14" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif" transform="rotate(-90 22 150.0)">CaCO<tspan baseline-shift="sub" font-size="10">3</tspan> の質量〔g〕</text>
+</svg>

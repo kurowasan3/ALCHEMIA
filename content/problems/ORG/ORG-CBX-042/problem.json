@@ -1,0 +1,109 @@
+{
+ "id": "ORG-CBX-042",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-04",
+ "topic": "ジオールのモノエステルの位置異性体と酸化による不斉炭素の消失・保持",
+ "course": "化学",
+ "level": 3,
+ "minutes": 12,
+ "format": [
+  "structure",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "1,2-プロパンジオール $\\ce{CH3CH(OH)CH2OH}$ の 2 個のヒドロキシ基のうち 1 個だけを酢酸とエステルにした化合物には，構造異性体 P と Q（いずれも分子式 $\\ce{C5H10O3}$）がある．P と Q をそれぞれ硫酸酸性の二クロム酸カリウム水溶液でおだやかに酸化したところ（エステル結合は変化しないものとする），P からは銀鏡反応を示さない化合物 P$'$ が，Q からは銀鏡反応を示す化合物 Q$'$ が得られた．原子量は H = 1.0，C = 12，O = 16 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "P と Q の示性式を答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "P，Q，P$'$，Q$'$ のうち，不斉炭素原子をもつものをすべて選べ．"
+     },
+     {
+      "id": "3",
+      "tex": "P と Q をそれぞれ十分な量の無水酢酸と反応させて，残っているヒドロキシ基をすべてアセチル化した．P から得られる化合物と Q から得られる化合物は，同じ物質か異なる物質か（鏡像異性体は区別しない）．理由とともに答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "P $1.18\\,\\mathrm g$ を完全にけん化するのに必要な $0.500\\,\\mathrm{mol/L}$ 水酸化ナトリウム水溶液は何 mL か．有効数字 3 桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "P：$\\ce{CH3COOCH2CH(OH)CH3}$　Q：$\\ce{CH3CH(OCOCH3)CH2OH}$"
+   },
+   {
+    "id": "2",
+    "tex": "P，Q，Q$'$"
+   },
+   {
+    "id": "3",
+    "tex": "同じ物質．どちらも 2 個のヒドロキシ基がともにアセチル化された $\\ce{CH3CH(OCOCH3)CH2OCOCH3}$ になり，どちらの OH が先にエステルになっていたかの違いが消えるから．"
+   },
+   {
+    "id": "4",
+    "tex": "$20.0\\,\\mathrm{mL}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　1,2-プロパンジオールには第一級の OH（$\\ce{-CH2OH}$）と第二級の OH（$\\ce{>CH-OH}$）がある．どちらがエステルになるかで 2 種類のモノエステルができ，残った OH の級数で酸化生成物が決まる．\n・第一級の OH がエステルになると，第二級の OH が残る：$\\ce{CH3COOCH2CH(OH)CH3}$．酸化するとケトン $\\ce{CH3COOCH2COCH3}$ になり，銀鏡反応を示さない．これが $\\boldsymbol{\\text{P}}$．\n・第二級の OH がエステルになると，第一級の OH が残る：$\\ce{CH3CH(OCOCH3)CH2OH}$．酸化するとアルデヒド $\\ce{CH3CH(OCOCH3)CHO}$ になり，銀鏡反応を示す．これが $\\boldsymbol{\\text{Q}}$．\n\n\\textbf{(2)}　中央の炭素（もとの 1,2-プロパンジオールの 2 位）に着目する．\n・P：$\\ce{CH3}$，H，OH，$\\ce{CH2OCOCH3}$ の 4 種が結合 → 不斉炭素あり．\n・Q：$\\ce{CH3}$，H，$\\ce{OCOCH3}$，$\\ce{CH2OH}$ → 不斉炭素あり．\n・P$'$：中央の炭素が $\\ce{C=O}$ になり，結合する原子・原子団は 3 つだけ → 不斉炭素なし（酸化で不斉が消える）．\n・Q$'$：$\\ce{CH3}$，H，$\\ce{OCOCH3}$，$\\ce{CHO}$ → 不斉炭素あり（酸化されたのは末端の炭素なので不斉は残る）．\nよって $\\boldsymbol{\\text{P，Q，Q}'}$．\n\n\\textbf{(3)}　P も Q も，残った OH がアセチル化されると $\\ce{CH3CH(OCOCH3)CH2OCOCH3}$（分子式 $\\ce{C7H12O4}$）になる．P と Q の違いは「どちらの OH がエステルか」だけなので，両方をエステルにすると区別がなくなり，$\\boldsymbol{\\text{同じ物質}}$になる．\n\n\\textbf{(4)}　$\\ce{C5H10O3}=118$ より P は $1.18/118=1.00\\times10^{-2}\\,\\mathrm{mol}$．エステル結合は 1 個なので NaOH も $1.00\\times10^{-2}\\,\\mathrm{mol}$ 必要：\n\\[\\ce{CH3COOCH2CH(OH)CH3 + NaOH -> CH3COONa + CH3CH(OH)CH2OH}\\]\n\\[\\frac{1.00\\times10^{-2}}{0.500}\\times10^{3}=\\boldsymbol{20.0\\,\\mathrm{mL}}\\]\nなお，けん化すると P からも Q からも同じ 1,2-プロパンジオールと酢酸ナトリウムが生じるので，けん化に要する量では P と Q は区別できず，残った OH の酸化で区別する．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ジオールの一方の OH だけをエステルにした位置異性体は，残った OH の級数（第一級ならアルデヒド，第二級ならケトン）を酸化生成物で見分けて決める．不斉炭素の OH が酸化されると不斉が消え，末端が酸化されるときは残る．両方の OH をエステルにする・けん化するなど，位置の違いが消える操作では区別できない．"
+ },
+ "concepts": [
+  "carboxylic-ester",
+  "carbon-silicon",
+  "organic-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "エステル",
+  "位置異性体",
+  "アルコールの酸化",
+  "不斉炭素",
+  "けん化"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

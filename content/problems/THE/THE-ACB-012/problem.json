@@ -1,0 +1,101 @@
+{
+ "id": "THE-ACB-012",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-05",
+ "topic": "混合・希釈した水溶液の pH",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "強酸・強塩基の電離度は 1，水溶液の温度は $25\\,{}^\\circ\\mathrm C$，水のイオン積は $1.0\\times10^{-14}\\,(\\mathrm{mol/L})^2$ とし，$\\log_{10}2=0.30$ とする．混合による体積変化は無視する．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "pH 1.0 の塩酸と pH 3.0 の塩酸を同じ体積ずつ混合した水溶液の pH を小数第1位まで求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$0.10\\,\\mathrm{mol/L}$ の塩酸 $20.0\\,\\mathrm{mL}$ に，$0.10\\,\\mathrm{mol/L}$ の水酸化ナトリウム水溶液を何 mL 加えると pH がちょうど 12.0 になるか．小数第1位まで求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "pH 3.0 の塩酸と，pH 3.0 の酢酸水溶液を，それぞれ純水で 10 倍に薄めた．薄めた後の pH は，それぞれ（ちょうど 4.0／3.0 より大きく 4.0 より小さい／4.0 より大きい）のどれか．理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "1.3"
+   },
+   {
+    "id": "2",
+    "tex": "$24.4\\,\\mathrm{mL}$"
+   },
+   {
+    "id": "3",
+    "tex": "塩酸：ちょうど 4.0，酢酸水溶液：3.0 より大きく 4.0 より小さい（薄めると酢酸の電離度が大きくなり，$[\\ce{H+}]$ が $\\dfrac{1}{10}$ までは下がらないから）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} pH の平均（2.0）にはならない．$[\\ce{H+}]$ で考えると，体積 $V$ ずつ混ぜて\n\\[ [\\ce{H+}]=\\dfrac{1.0\\times10^{-1}V+1.0\\times10^{-3}V}{2V}=5.05\\times10^{-2}\\fallingdotseq5.0\\times10^{-2}\\,\\mathrm{mol/L} \\]\n$\\mathrm{pH}=-\\log_{10}(5.0\\times10^{-2})=2-\\log_{10}5=2-0.70=\\boldsymbol{1.3}$（$\\log_{10}5=1-\\log_{10}2$）．\\\\\n\\textbf{(2)} pH 12.0 では $[\\ce{OH-}]=1.0\\times10^{-2}\\,\\mathrm{mol/L}$．加えた量を $x$ mL とすると，過剰な $\\ce{OH-}$ は $0.10(x-20.0)$ mmol で\n\\[ \\dfrac{0.10(x-20.0)}{20.0+x}=1.0\\times10^{-2}\\quad\\Rightarrow\\quad 0.09x=2.2,\\ \\ x=\\boldsymbol{24.4\\,\\mathrm{mL}} \\]\n\\textbf{(3)} 塩酸は完全電離なので $[\\ce{H+}]$ はちょうど $\\dfrac{1}{10}$ になり，pH は\\textbf{ちょうど 4.0}．酢酸は弱酸で，薄めると電離平衡 $\\ce{CH3COOH <=> CH3COO- + H+}$ が右へ移動して電離度が大きくなるため，$[\\ce{H+}]$ は $\\dfrac{1}{10}$ までは減らない．よって pH は \\textbf{3.0 より大きく 4.0 より小さい}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "pH は対数なので，混合後の pH は pH の平均ではなく水素イオンの物質量から求める．過剰の塩基の濃度から必要な滴下量を逆算し，強酸と弱酸では希釈による pH 変化が異なることを比較する．"
+ },
+ "concepts": [
+  "acid-base",
+  "mole",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "pH",
+  "混合溶液",
+  "希釈",
+  "弱酸の電離度",
+  "逆算"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

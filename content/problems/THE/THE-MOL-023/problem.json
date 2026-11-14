@@ -1,0 +1,98 @@
+{
+ "id": "THE-MOL-023",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-04",
+ "topic": "単分子膜による分子の大きさとアボガドロ定数",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "パルミチン酸 $\\ce{C15H31COOH}$（分子量 256）$0.0128\\,\\mathrm g$ をヘキサンに溶かして $100\\,\\mathrm{mL}$ とした．この溶液 $0.20\\,\\mathrm{mL}$ を水面に静かに滴下すると，ヘキサンはすべて蒸発し，パルミチン酸分子は親水性の $\\ce{-COOH}$ を水側に，疎水性の炭化水素基を空気側に向けてすき間なく一層に並んだ単分子膜をつくった．膜の面積は $126\\,\\mathrm{cm^2}$ であった．アボガドロ定数を $6.0\\times10^{23}\\,/\\mathrm{mol}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "滴下したパルミチン酸の物質量は何 mol か．"
+     },
+     {
+      "id": "2",
+      "tex": "パルミチン酸 1 分子が水面上で占める面積は何 $\\mathrm{nm^2}$ か．有効数字2桁で答えよ（$1\\,\\mathrm{nm}=10^{-7}\\,\\mathrm{cm}$）．"
+     },
+     {
+      "id": "3",
+      "tex": "1 分子の占める面積を (2) の値として，この実験からアボガドロ定数を求めることもできる．ある生徒が溶液を多く滴下しすぎたため，パルミチン酸の一部が単分子膜にならずに小さな油滴として水面に残った．この生徒が膜の面積と滴下量から求めたアボガドロ定数は，真の値より大きくなるか，小さくなるか．理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$1.0\\times10^{-7}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "2",
+    "tex": "$0.21\\,\\mathrm{nm^2}$"
+   },
+   {
+    "id": "3",
+    "tex": "小さくなる（膜の面積が滴下量に比べて小さく測定され，膜中の分子数を少なく見積もるため）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　溶液全体のパルミチン酸は $\\dfrac{0.0128}{256}=5.0\\times10^{-5}\\,\\mathrm{mol}$．そのうち $\\dfrac{0.20}{100}$ を滴下したので $\\boldsymbol{1.0\\times10^{-7}\\,\\mathrm{mol}}$．\n\n\\textbf{(2)}　分子数は $1.0\\times10^{-7}\\times6.0\\times10^{23}=6.0\\times10^{16}$ 個．$1\\,\\mathrm{nm^2}=10^{-14}\\,\\mathrm{cm^2}$ なので\n\\[\\dfrac{126\\,\\mathrm{cm^2}}{6.0\\times10^{16}}=2.1\\times10^{-15}\\,\\mathrm{cm^2}=\\boldsymbol{0.21\\,\\mathrm{nm^2}}\\]\n\n\\textbf{(3)}　求めるアボガドロ定数は\n\\[N_\\mathrm A=\\dfrac{\\text{膜中の分子数}}{\\text{滴下した物質量}}=\\dfrac{(\\text{膜の面積})/(1\\text{分子の面積})}{\\text{滴下した物質量}}\\]\n油滴に残った分子は膜の面積に寄与しないので，膜の面積は滴下した全分子が並んだ場合より小さい．分母（滴下量）は変わらず分子が小さくなるので，$N_\\mathrm A$ は真の値より\\textbf{小さく}なる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "単分子膜の面積と1分子の占有面積から分子数を数え，物質量と結びつけてアボガドロ定数や分子の大きさを求める．実験操作の失敗が面積の測定値を通して結果をどちらにずらすかを判断する．"
+ },
+ "concepts": [
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "物質量",
+  "アボガドロ定数",
+  "単分子膜",
+  "誤差の向き"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "id": "THE-BND-020",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-03",
+ "topic": "塩化ナトリウム型結晶の格子と密度の比較",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "塩化カリウム $\\ce{KCl}$ と塩化ナトリウム $\\ce{NaCl}$ は同じ結晶構造（塩化ナトリウム型）をとる．イオンを球とみなし，陽イオンと陰イオンは互いに接しているものとする．イオン半径は $\\ce{K+}$ $0.133\\,\\mathrm{nm}$，$\\ce{Na+}$ $0.101\\,\\mathrm{nm}$，$\\ce{Cl-}$ $0.181\\,\\mathrm{nm}$，式量は $\\ce{KCl}=74.5$，$\\ce{NaCl}=58.5$，アボガドロ定数は $6.0\\times10^{23}\\,/\\mathrm{mol}$，$\\sqrt2=1.41$，$0.628^3=0.248$，$0.564^3=0.179$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{KCl}$ の単位格子の一辺の長さは何 $\\mathrm{nm}$ か．有効数字3桁で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "1個の $\\ce{K+}$ に最も近い $\\ce{K+}$ は何個あるか．また，その中心間距離は何 $\\mathrm{nm}$ か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\ce{KCl}$ の結晶の密度は何 $\\mathrm{g/cm^3}$ か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\ce{NaCl}$ の結晶の密度を有効数字2桁で求めよ．また，$\\ce{KCl}$ は $\\ce{NaCl}$ より式量が大きいのに密度が小さい．その理由を，式量の比と単位格子の体積の比を比べて説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$0.628\\,\\mathrm{nm}$"
+   },
+   {
+    "id": "2",
+    "tex": "12 個，$0.44\\,\\mathrm{nm}$"
+   },
+   {
+    "id": "3",
+    "tex": "$2.0\\,\\mathrm{g/cm^3}$"
+   },
+   {
+    "id": "4",
+    "tex": "$2.2\\,\\mathrm{g/cm^3}$．式量の比 $\\ce{KCl}/\\ce{NaCl}$ は約 1.27 倍だが，単位格子の体積の比は約 1.39 倍で，体積の増え方のほうが大きいから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 単位格子の一辺上に $\\ce{Cl-}$–$\\ce{K+}$–$\\ce{Cl-}$ と並んで接するので $a=2(0.133+0.181)=\\boldsymbol{0.628\\,\\mathrm{nm}}$．\n\n(2) $\\ce{K+}$ だけを見ると面心立方格子になっているので，最も近い $\\ce{K+}$ は $\\boldsymbol{\\text{12}}$ 個．距離は面の対角線の半分で $\\dfrac{\\sqrt2}{2}a=\\dfrac{1.41\\times0.628}{2}\\fallingdotseq0.443\\fallingdotseq\\boldsymbol{0.44\\,\\mathrm{nm}}$．\n\n(3) 単位格子に $\\ce{KCl}$ が 4 組含まれる．$a^3=(0.628\\times10^{-7}\\,\\mathrm{cm})^3=0.248\\times10^{-21}\\,\\mathrm{cm^3}$ より\n\\[d=\\frac{4\\times74.5}{6.0\\times10^{23}\\times0.248\\times10^{-21}}\\fallingdotseq\\boldsymbol{2.0\\,\\mathrm{g/cm^3}}\\]\n\n(4) $\\ce{NaCl}$ は $a=2(0.101+0.181)=0.564\\,\\mathrm{nm}$ で\n\\[d=\\frac{4\\times58.5}{6.0\\times10^{23}\\times0.179\\times10^{-21}}\\fallingdotseq\\boldsymbol{2.2\\,\\mathrm{g/cm^3}}\\]\n質量の比は $74.5/58.5\\fallingdotseq1.27$，体積の比は $0.248/0.179\\fallingdotseq1.39$．イオン半径の差は一辺の長さの3乗で体積に効くので，体積の増え方が質量の増え方を上回り，$\\ce{KCl}$ のほうが密度が小さくなる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "同じ結晶構造の化合物どうしでは，陽イオン・陰イオンの半径の和から格子定数が決まり，密度の大小は式量の比と格子体積（一辺の3乗）の比の競合で決まる．"
+ },
+ "concepts": [
+  "chemical-bond",
+  "alkali-metals",
+  "crystal"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "塩化ナトリウム型",
+  "単位格子",
+  "イオン半径",
+  "密度",
+  "比較問題"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

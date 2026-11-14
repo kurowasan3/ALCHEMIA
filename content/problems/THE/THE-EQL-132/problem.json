@@ -1,0 +1,118 @@
+{
+ "id": "THE-EQL-132",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "酸素が過剰か不足かを全圧から判定する NO の酸化と NO₂ の二量化平衡",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "三酸化二窒素 $\\ce{N2O3}$ は $277\\,\\mathrm{K}$ 以上で次のように完全に分解し，逆反応は起こらない．\n\\[ \\ce{N2O3 -> NO + NO2} \\]\n$\\ce{NO}$ は $\\ce{O2}$ とすみやかに完全に反応し（$\\ce{2NO + O2 -> 2NO2}$），どちらか一方がなくなるまで進む．$\\ce{NO2}$ は $\\ce{2NO2 <=> N2O4}$ の平衡にすみやかに達し，$300\\,\\mathrm{K}$ での平衡定数は $K = \\dfrac{[\\ce{N2O4}]}{[\\ce{NO2}]^2} = 1.0\\times10^{2}\\,\\mathrm{L/mol}$ である．$\\ce{O2}$ は $\\ce{NO2}$・$\\ce{N2O4}$ とは反応せず，$\\ce{NO}$ は $\\ce{N2O4}$ とは反応しないものとする．\n\n容積 $1.00\\,\\mathrm{L}$ の真空容器に $\\ce{N2O3}$ を $a\\,[\\mathrm{mol}]$ 入れて完全に分解させたのち，$\\ce{O2}$ を $5.00\\times10^{-3}\\,\\mathrm{mol}$ 加え，$300\\,\\mathrm{K}$ に保ったところ，全圧は $3.09\\times10^{4}\\,\\mathrm{Pa}$ であった．気体はすべて理想気体とし，$R = 8.31\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "加えた $\\ce{O2}$ で $\\ce{NO}$ がちょうどなくなるのは，$a$ がいくらのときか．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) の場合（$\\ce{O2}$ も $\\ce{NO}$ も残らない場合）の $300\\,\\mathrm{K}$ での全圧を有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "容器内の気体の物質量の合計は，$\\ce{O2}$ が残る場合も $\\ce{NO}$ が残る場合も，$a$ が大きいほど大きい．このことと (2) の結果から，測定後の容器に残っていたのは $\\ce{O2}$ と $\\ce{NO}$ のどちらか．理由とともに答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$a$ を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "容器内に残った気体（$\\ce{O2}$ または $\\ce{NO}$）の分圧を有効数字 2 桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$a = 1.00\\times10^{-2}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "2",
+    "tex": "$3.47\\times10^{4}\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{O2}$．全圧は $a$ とともに単調に増え，測定値 $3.09\\times10^{4}\\,\\mathrm{Pa}$ は境界の $3.47\\times10^{4}\\,\\mathrm{Pa}$ より小さいので $a < 1.00\\times10^{-2}\\,\\mathrm{mol}$，すなわち $\\ce{O2}$ が過剰だったから．"
+   },
+   {
+    "id": "4",
+    "tex": "$a = 8.0\\times10^{-3}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\ce{O2}$ の分圧 $2.5\\times10^{3}\\,\\mathrm{Pa}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{物質収支の立て方} $\\ce{N2O3}$ $a$ mol から $\\ce{NO}$ と $\\ce{NO2}$ が $a$ mol ずつ生じる．加えた $\\ce{O2}$ を $b = 5.00\\times10^{-3}\\,\\mathrm{mol}$ とする．容積が $1.00\\,\\mathrm{L}$ なので物質量とモル濃度の数値は等しい．平衡の $\\ce{NO2}$ を $x$，$\\ce{N2O4}$ を $y$ とすると $y = Kx^2$ である．\n\n\\textbf{(1)} $\\ce{2NO + O2 -> 2NO2}$ より $\\ce{NO}$ $a$ mol には $\\ce{O2}$ $a/2$ mol が必要．$a/2 = b$ より $a = \\boldsymbol{1.00\\times10^{-2}\\,\\mathrm{mol}}$．\n\n\\textbf{(2)} このとき窒素はすべて $\\ce{NO2}$・$\\ce{N2O4}$ になり，窒素原子は $2a = 2.00\\times10^{-2}\\,\\mathrm{mol}$．$x + 2Kx^2 = 2.00\\times10^{-2}$，すなわち $200x^2 + x - 0.0200 = 0$ を解くと\n\\[ x = \\frac{-1 + \\sqrt{1 + 16.0}}{400} = 7.81\\times10^{-3},\\qquad y = 100x^2 = 6.10\\times10^{-3} \\]\n気体の合計 $1.39\\times10^{-2}\\,\\mathrm{mol}$ より $P = 1.39\\times10^{-2}\\times8.31\\times10^{3}\\times300 = \\boldsymbol{3.47\\times10^{4}\\,\\mathrm{Pa}}$．\n\n\\textbf{(3)} $\\ce{NO2}$・$\\ce{N2O4}$ 系の気体の物質量は $x + y = N - y$（$N$ はこの系の窒素原子）で，$N$ が 1 増えると $y$ の増え方は $1/2$ 未満なので $x + y$ は $N$ とともに増える．\n\\begin{itemize}\n\\item $\\ce{O2}$ が残る（$a<2b$）とき：$N = 2a$，残る $\\ce{O2}$ は $b - a/2$．合計 $= (x+y) + b - a/2$ で，$x+y$ は $a$ 1 あたり 1 以上増え，$\\ce{O2}$ は $1/2$ しか減らないので増加．\n\\item $\\ce{NO}$ が残る（$a>2b$）とき：$N = a + 2b$，残る $\\ce{NO}$ は $a - 2b$ で，どちらも $a$ とともに増える．\n\\end{itemize}\n合計は $a$ の増加関数で，$a = 2b$ で連続につながるので，全圧から $a$ はただ 1 つに決まる．測定値 $3.09\\times10^{4}\\,\\mathrm{Pa}$ は (2) の境界値より小さいので $a < 2b$．残っていたのは \\textbf{$\\ce{O2}$} である．\n\n\\textbf{(4)} 気体の合計は $\\dfrac{3.09\\times10^{4}}{8.31\\times10^{3}\\times300} = 1.240\\times10^{-2}\\,\\mathrm{mol}$．$\\ce{O2}$ が残る場合の式\n\\[ x + 2Kx^2 = 2a,\\qquad x + Kx^2 + b - \\frac{a}{2} = 1.240\\times10^{-2} \\]\nから $a$ を消去すると $x + Kx^2 - \\dfrac{x + 2Kx^2}{4} = 1.240\\times10^{-2} - 5.00\\times10^{-3}$，すなわち\n\\[ 50x^2 + 0.75x - 7.40\\times10^{-3} = 0,\\qquad x = \\frac{-0.75 + \\sqrt{0.5625 + 1.480}}{100} = 6.79\\times10^{-3} \\]\n$y = 100x^2 = 4.61\\times10^{-3}$ なので $a = \\dfrac{x + 2y}{2} = \\boldsymbol{8.0\\times10^{-3}\\,\\mathrm{mol}}$（$a < 1.00\\times10^{-2}$ で仮定と矛盾しない）．\n\n\\textbf{(5)} 残った $\\ce{O2}$ は $b - a/2 = 5.00\\times10^{-3} - 4.0\\times10^{-3} = 1.0\\times10^{-3}\\,\\mathrm{mol}$．分圧は $1.0\\times10^{-3}\\times8.31\\times10^{3}\\times300 = \\boldsymbol{2.5\\times10^{3}\\,\\mathrm{Pa}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "限られた量の O₂ で NO を酸化し，生じた NO₂ が二量化平衡をとる系では，O₂ が残るか NO が残るかで物質収支の式が変わる．気体の総物質量が a の単調増加関数であることを示し，O₂ と NO がちょうど反応しきる境界での全圧と測定値を比べて場合を確定してから，平衡と収支を連立して逆算する．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "oxygen-sulfur",
+  "nitrogen-phosphorus"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "三酸化二窒素",
+  "一酸化窒素の酸化",
+  "二量化平衡",
+  "場合分け",
+  "過不足",
+  "全圧"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

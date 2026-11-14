@@ -1,0 +1,110 @@
+{
+ "id": "THE-ION-021",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "pH による硫化物の分別沈殿",
+ "course": "化学",
+ "level": 3,
+ "minutes": 18,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "硫化水素は水溶液中で $\\ce{H2S <=> 2H+ + S^2-}$ のように電離し，その平衡定数は $\\dfrac{[\\ce{H+}]^2[\\ce{S^2-}]}{[\\ce{H2S}]}=1.0\\times10^{-21}\\,(\\mathrm{mol/L})^2$ とする．硫化水素を十分に通じた水溶液では，pH によらず $[\\ce{H2S}]=0.10\\,\\mathrm{mol/L}$ とする．溶解度積は $\\ce{CuS}$：$1.0\\times10^{-30}\\,(\\mathrm{mol/L})^2$，$\\ce{ZnS}$：$2.0\\times10^{-18}\\,(\\mathrm{mol/L})^2$ とし，$\\log_{10}2=0.30$ とする．pH の調整による体積変化は無視する．\\\\\n$\\ce{Cu^2+}$ と $\\ce{Zn^2+}$ をそれぞれ $0.010\\,\\mathrm{mol/L}$ 含む水溶液に，pH を一定に保ちながら硫化水素を十分に通じる．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "pH 1.0 に保ったとき，沈殿するのは $\\ce{CuS}$ と $\\ce{ZnS}$ のどちらか．また，沈殿せずに残る $\\ce{Cu^2+}$ のモル濃度を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$\\ce{ZnS}$ を沈殿させずに $\\ce{CuS}$ だけを沈殿させるには，pH をいくらより小さくすればよいか．小数第2位まで求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) で求めた pH のとき，溶液中に残る $\\ce{Cu^2+}$ のモル濃度を求め，$\\ce{Cu^2+}$ と $\\ce{Zn^2+}$ が分離できているといえるか答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "pH 7.0 に保って硫化水素を通じると，$\\ce{ZnS}$ は沈殿するか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{CuS}$；$1.0\\times10^{-10}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "2",
+    "tex": "3.15"
+   },
+   {
+    "id": "3",
+    "tex": "$5.0\\times10^{-15}\\,\\mathrm{mol/L}$；$\\ce{Cu^2+}$ はほぼ完全に沈殿しているので分離できている"
+   },
+   {
+    "id": "4",
+    "tex": "沈殿する"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "硫化水素の飽和水溶液では\n\\[ [\\ce{S^2-}]=\\dfrac{1.0\\times10^{-21}\\times0.10}{[\\ce{H+}]^2}=\\dfrac{1.0\\times10^{-22}}{[\\ce{H+}]^2} \\]\nで，酸性が強いほど $[\\ce{S^2-}]$ は小さくなる．\n\n\\textbf{(1)} pH 1.0 では $[\\ce{S^2-}]=\\dfrac{1.0\\times10^{-22}}{(1.0\\times10^{-1})^2}=1.0\\times10^{-20}\\,\\mathrm{mol/L}$．\n\\[ [\\ce{Cu^2+}][\\ce{S^2-}]=1.0\\times10^{-22}>K_{sp}(\\ce{CuS}),\\qquad [\\ce{Zn^2+}][\\ce{S^2-}]=1.0\\times10^{-22}<K_{sp}(\\ce{ZnS}) \\]\nよって沈殿するのは $\\ce{CuS}$ だけ．残る $\\ce{Cu^2+}$ は\n\\[ [\\ce{Cu^2+}]=\\dfrac{1.0\\times10^{-30}}{1.0\\times10^{-20}}=\\boldsymbol{1.0\\times10^{-10}\\,\\mathrm{mol/L}} \\]\n\n\\textbf{(2)} $\\ce{ZnS}$ が沈殿しない条件は $0.010\\times[\\ce{S^2-}]<2.0\\times10^{-18}$，すなわち $[\\ce{S^2-}]<2.0\\times10^{-16}$．\n\\[ [\\ce{H+}]^2>\\dfrac{1.0\\times10^{-22}}{2.0\\times10^{-16}}=5.0\\times10^{-7},\\qquad \\mathrm{pH}<-\\tfrac12\\log_{10}(5.0\\times10^{-7})=\\tfrac12(7-0.70)=\\boldsymbol{3.15} \\]\n\n\\textbf{(3)} pH 3.15 では $[\\ce{S^2-}]=2.0\\times10^{-16}\\,\\mathrm{mol/L}$ なので\n\\[ [\\ce{Cu^2+}]=\\dfrac{1.0\\times10^{-30}}{2.0\\times10^{-16}}=\\boldsymbol{5.0\\times10^{-15}\\,\\mathrm{mol/L}} \\]\nもとの $0.010\\,\\mathrm{mol/L}$ に比べて無視できるほど小さく，$\\ce{Cu^2+}$ は沈殿し $\\ce{Zn^2+}$ は溶液に残るので，\\textbf{分離できている}．\n\n\\textbf{(4)} pH 7.0 では $[\\ce{S^2-}]=\\dfrac{1.0\\times10^{-22}}{1.0\\times10^{-14}}=1.0\\times10^{-8}\\,\\mathrm{mol/L}$，$[\\ce{Zn^2+}][\\ce{S^2-}]=1.0\\times10^{-10}>K_{sp}(\\ce{ZnS})$ なので \\textbf{沈殿する}．系統分析で $\\ce{Zn^2+}$ を中性〜塩基性で硫化物として沈殿させるのはこのためである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "硫化水素の飽和水溶液では [S2-] が [H+]^2 に反比例するので，pH を調節すると溶解度積の小さい硫化物だけを沈殿させられる．溶解度積の大きい硫化物が沈殿しはじめない上限の pH を求め，そのとき先に沈殿する金属イオンがほぼ残っていないことで分離の可否を判断する．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "precipitation",
+  "organic-test"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "溶解度積",
+  "硫化物",
+  "分別沈殿",
+  "硫化水素",
+  "pH",
+  "系統分析"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

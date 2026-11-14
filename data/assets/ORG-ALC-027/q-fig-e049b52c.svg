@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 150" font-family="Noto Sans CJK JP, sans-serif" font-size="16" fill="currentColor">
+<text x="120" y="38" text-anchor="middle">O</text>
+<line x1="112" y1="42" x2="82" y2="82" stroke="currentColor" stroke-width="1.6"/>
+<line x1="128" y1="42" x2="158" y2="82" stroke="currentColor" stroke-width="1.6"/>
+<line x1="96" y1="96" x2="144" y2="96" stroke="currentColor" stroke-width="1.6"/>
+<text x="74" y="102" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="10">2</tspan></text>
+<text x="168" y="102" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="10">2</tspan></text>
+<text x="120" y="138" text-anchor="middle" font-size="14">エチレンオキシド（C<tspan baseline-shift="sub" font-size="10">2</tspan>H<tspan baseline-shift="sub" font-size="10">4</tspan>O）</text>
+</svg>

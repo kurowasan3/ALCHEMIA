@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 300" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="none" stroke="currentColor">
+  <!-- 電源 -->
+  <line x1="245" y1="30" x2="245" y2="54" stroke-width="2"/>
+  <line x1="262" y1="22" x2="262" y2="62" stroke-width="2"/>
+  <text x="228" y="24" fill="currentColor" stroke="none" font-size="13">−</text>
+  <text x="270" y="24" fill="currentColor" stroke="none" font-size="13">＋</text>
+  <polyline points="245,42 110,42 110,150" stroke-width="1.5"/>
+  <polyline points="262,42 410,42 410,150" stroke-width="1.5"/>
+  <!-- ビーカー -->
+  <path d="M40 110 V270 H200 V110" stroke-width="2"/>
+  <path d="M320 110 V270 H480 V110" stroke-width="2"/>
+  <line x1="40" y1="140" x2="200" y2="140" stroke-width="1" stroke-dasharray="5 4" opacity="0.5"/>
+  <line x1="320" y1="140" x2="480" y2="140" stroke-width="1" stroke-dasharray="5 4" opacity="0.5"/>
+  <!-- 電極 -->
+  <rect x="100" y="150" width="20" height="90" stroke-width="1.5"/>
+  <rect x="400" y="150" width="20" height="90" stroke-width="1.5"/>
+  <text x="96" y="262" fill="currentColor" stroke="none" font-size="13">Pt</text>
+  <text x="396" y="262" fill="currentColor" stroke="none" font-size="13">Pt</text>
+  <!-- 塩橋 -->
+  <path d="M170 220 V95 Q170 70 195 70 H325 Q350 70 350 95 V220" stroke-width="16" opacity="0.25"/>
+  <path d="M170 220 V95 Q170 70 195 70 H325 Q350 70 350 95 V220" stroke-width="1.5"/>
+  <text x="205" y="108" fill="currentColor" stroke="none" font-size="13">塩橋（Na<tspan baseline-shift="sub" font-size="10">2</tspan>SO<tspan baseline-shift="sub" font-size="10">4</tspan>）</text>
+  <text x="62" y="292" fill="currentColor" stroke="none">陰極室</text>
+  <text x="342" y="292" fill="currentColor" stroke="none">陽極室</text>
+  <text x="44" y="200" fill="currentColor" stroke="none" font-size="13">CuSO<tspan baseline-shift="sub" font-size="10">4</tspan></text>
+  <text x="430" y="200" fill="currentColor" stroke="none" font-size="13">NaOH</text>
+</svg>

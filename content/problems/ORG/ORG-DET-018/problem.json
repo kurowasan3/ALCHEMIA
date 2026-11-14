@@ -1,0 +1,133 @@
+{
+ "id": "ORG-DET-018",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-06",
+ "topic": "同じ置換基をもつ3化合物の性質の比較",
+ "course": "化学",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "condition",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "メチル基 $\\mathrm{CH_3-}$，フェニル基 $\\mathrm{C_6H_5-}$，水素原子 $\\mathrm{H-}$ のそれぞれに，次のア〜キの原子または原子団 $\\mathrm{-X}$ を結合させて，$\\mathrm{CH_3-X}$，$\\mathrm{C_6H_5-X}$，$\\mathrm{H-X}$ の3つの化合物を1組つくる．\n\\[\\text{ア}\\ \\mathrm{-OH}\\quad \\text{イ}\\ \\mathrm{-CHO}\\quad \\text{ウ}\\ \\mathrm{-COOH}\\quad \\text{エ}\\ \\mathrm{-NH_2}\\quad \\text{オ}\\ \\mathrm{-Cl}\\quad \\text{カ}\\ \\mathrm{-CH=CH_2}\\quad \\text{キ}\\ \\mathrm{-CH_3}\\]\n次の (1)〜(7) にあてはまる $\\mathrm{-X}$ を，ア〜キからすべて選べ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "3つとも金属ナトリウムと反応して水素を発生する．"
+     },
+     {
+      "id": "2",
+      "tex": "3つとも銀鏡反応を示す．"
+     },
+     {
+      "id": "3",
+      "tex": "3つのうち1つだけが銀鏡反応を示す．"
+     },
+     {
+      "id": "4",
+      "tex": "3つとも炭酸水素ナトリウム水溶液に気体を発生しながら溶ける．"
+     },
+     {
+      "id": "5",
+      "tex": "3つのうち1つだけが塩化鉄(III)水溶液で呈色する．"
+     },
+     {
+      "id": "6",
+      "tex": "3つとも塩酸と反応して塩をつくる．"
+     },
+     {
+      "id": "7",
+      "tex": "3つとも付加重合して高分子化合物になる．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "ア，ウ"
+   },
+   {
+    "id": "2",
+    "tex": "イ"
+   },
+   {
+    "id": "3",
+    "tex": "ウ"
+   },
+   {
+    "id": "4",
+    "tex": "ウ"
+   },
+   {
+    "id": "5",
+    "tex": "ア"
+   },
+   {
+    "id": "6",
+    "tex": "エ"
+   },
+   {
+    "id": "7",
+    "tex": "カ"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "各組の3化合物は次のとおり．\n\\begin{itemize}\n\\item ア：$\\ce{CH3OH}$（メタノール），$\\ce{C6H5OH}$（フェノール），$\\ce{H2O}$（水）\n\\item イ：$\\ce{CH3CHO}$，$\\ce{C6H5CHO}$（ベンズアルデヒド），$\\ce{HCHO}$\n\\item ウ：$\\ce{CH3COOH}$，$\\ce{C6H5COOH}$（安息香酸），$\\ce{HCOOH}$（ギ酸）\n\\item エ：$\\ce{CH3NH2}$（メチルアミン），$\\ce{C6H5NH2}$（アニリン），$\\ce{NH3}$\n\\item オ：$\\ce{CH3Cl}$，$\\ce{C6H5Cl}$，$\\ce{HCl}$\n\\item カ：$\\ce{CH3CH=CH2}$（プロペン），$\\ce{C6H5CH=CH2}$（スチレン），$\\ce{CH2=CH2}$\n\\item キ：$\\ce{CH3CH3}$，$\\ce{C6H5CH3}$（トルエン），$\\ce{CH4}$\n\\end{itemize}\n\\textbf{(1)} $\\mathrm{-OH}$ をもつもの（アルコール・フェノール・水）と $\\mathrm{-COOH}$ をもつもの（カルボン酸）は Na と反応して $\\ce{H2}$ を出す．\\textbf{ア，ウ}．\n\n\\textbf{(2)(3) 同じ X でも結果が分かれる例} イはどれもホルミル基（アルデヒド基）をもち，3つとも銀鏡反応を示す．ウではギ酸 $\\ce{HCOOH}$ だけが分子内にホルミル基 $\\mathrm{H-CO-}$ をもつので，\\textbf{1つだけ}銀鏡反応を示す．\n\n\\textbf{(4)} 炭酸より強い酸であるカルボン酸だけが $\\ce{NaHCO3}$ と反応して $\\ce{CO2}$ を出す．\\textbf{ウ}．（フェノールは炭酸より弱い酸なので，アは当てはまらない．）\n\n\\textbf{(5)} ベンゼン環に直接 $\\mathrm{-OH}$ が結合したフェノールだけが呈色する．\\textbf{ア}．\n\n\\textbf{(6)} アミン・アンモニアは塩基で，$\\ce{CH3NH2 + HCl -> CH3NH3Cl}$ のように塩をつくる．\\textbf{エ}．\n\n\\textbf{(7)} $\\ce{C=C}$ をもつプロペン・スチレン・エチレンはそれぞれポリプロピレン・ポリスチレン・ポリエチレンになる．\\textbf{カ}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "同じ官能基 −X を，メチル基・フェニル基・水素原子につけた3化合物で性質を比べ，官能基が決める性質（Na との反応・NaHCO₃ との反応・塩の生成・付加重合）と，結合相手で変わる性質（ギ酸だけの還元性，フェノールだけの FeCl₃ 呈色）を区別する．"
+ },
+ "concepts": [
+  "organic-test",
+  "transition-metals",
+  "hydrocarbon"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "官能基",
+  "銀鏡反応",
+  "塩化鉄(III)の呈色",
+  "ギ酸",
+  "フェノール"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

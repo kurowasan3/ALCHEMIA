@@ -1,0 +1,109 @@
+{
+ "id": "ORG-STR-057",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-01",
+ "topic": "C₅H₁₁NO₂ のアミノ酸の異性体と，カルボキシ基を除いたときの不斉炭素",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "structure",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "分子式 $\\ce{C5H11NO2}$ で表され，環構造をもたず，アミノ基 $\\ce{-NH2}$ とカルボキシ基 $\\ce{-COOH}$ を 1 個ずつもつ化合物（アミノ基は炭素原子に結合している）を考える．カルボキシ基の炭素原子が結合している炭素原子を $\\alpha$ 位，その隣の炭素原子を $\\beta$ 位，さらに隣を $\\gamma$ 位とよび，$\\alpha$ 位にアミノ基をもつものを $\\alpha$-アミノ酸とする．(1) では立体異性体は区別しない．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "条件を満たす化合物の構造異性体は全部で何種類あるか．"
+     },
+     {
+      "id": "2",
+      "tex": "このうち $\\alpha$-アミノ酸をすべて示性式で示せ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の各化合物について，カルボキシ基を水素原子に置き換えた化合物（アミン）を考える．置き換えた後も不斉炭素原子をもつ化合物を与えるものを (2) の中から選び，示性式で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "次の (a)〜(c) をすべて満たすアミノ酸 X の示性式を答えよ．\\\\\n(a) $\\beta$ 位にアミノ基をもつ．\\quad (b) 不斉炭素原子をもつ．\\quad (c) カルボキシ基を水素原子に置き換えた化合物は不斉炭素原子をもたない．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "12 種類"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{CH3CH2CH2CH(NH2)COOH}$，$\\ce{(CH3)2CHCH(NH2)COOH}$，$\\ce{CH3CH2C(CH3)(NH2)COOH}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{CH3CH2C(CH3)(NH2)COOH}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{CH3CH2CH(CH2NH2)COOH}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\ce{-COOH}$ を除いた部分は $\\ce{C4H9-}$ なので，炭素骨格は $\\ce{C4H9-COOH}$ の 4 種類（ペンタン酸・2-メチルブタン酸・3-メチルブタン酸・2,2-ジメチルプロパン酸）．$\\ce{-COOH}$ 以外の炭素の H を $\\ce{-NH2}$ に置き換える位置を，等価な位置をまとめて数える．\n\\[ \\ce{CH3CH2CH2CH2COOH}:4,\\quad \\ce{CH3CH2CH(CH3)COOH}:4,\\quad \\ce{(CH3)2CHCH2COOH}:3,\\quad \\ce{(CH3)3CCOOH}:1 \\]\n（3-メチルブタン酸の 2 個の $\\ce{CH3}$，2,2-ジメチルプロパン酸の 3 個の $\\ce{CH3}$ はそれぞれ等価）．合計 $\\boldsymbol{12}$ 種類．\n\n\\textbf{(2)} カルボキシ基が結合した炭素に H が残っている骨格だけが $\\alpha$ 位に $\\ce{-NH2}$ をもてる（2,2-ジメチルプロパン酸は不可）．ペンタン酸・2-メチルブタン酸・3-メチルブタン酸から 1 種類ずつで，$\\ce{CH3CH2CH2CH(NH2)COOH}$，$\\ce{CH3CH2C(CH3)(NH2)COOH}$，$\\ce{(CH3)2CHCH(NH2)COOH}$（バリン）の 3 種類．どれも $\\alpha$ 炭素が不斉炭素である．\n\n\\textbf{(3)} $\\alpha$ 炭素に結合する 4 つの原子・原子団のうち $\\ce{-COOH}$ が $\\ce{-H}$ に変わる．もとから $\\alpha$ 炭素に H があると H が 2 個になり不斉が消える（$\\ce{CH3CH2CH2CH2NH2}$，$\\ce{(CH3)2CHCH2NH2}$）．$\\alpha$ 炭素に H がない $\\ce{CH3CH2C(CH3)(NH2)COOH}$ だけは，$\\ce{CH3CH2CH(CH3)NH2}$（$\\ce{-H},\\ \\ce{-CH3},\\ \\ce{-C2H5},\\ \\ce{-NH2}$）となり不斉炭素が残る．答えは $\\boldsymbol{\\ce{CH3CH2C(CH3)(NH2)COOH}}$．\n\n\\textbf{(4)} $\\beta$ 位に $\\ce{-NH2}$ をもつ $\\ce{C5H11NO2}$ は次の 5 種類．\n\\[ \\ce{CH3CH2CH(NH2)CH2COOH},\\ \\ce{(CH3)2C(NH2)CH2COOH},\\ \\ce{(CH3)2C(CH2NH2)COOH},\\ \\ce{CH3CH(NH2)CH(CH3)COOH},\\ \\ce{CH3CH2CH(CH2NH2)COOH} \\]\n(b) より不斉炭素のない $\\ce{(CH3)2C(NH2)CH2COOH}$ と $\\ce{(CH3)2C(CH2NH2)COOH}$ を除く．\n(c) を調べる．$\\ce{CH3CH2CH(NH2)CH2COOH}$ → $\\ce{CH3CH2CH(NH2)CH3}$（不斉炭素あり），$\\ce{CH3CH(NH2)CH(CH3)COOH}$ → $\\ce{CH3CH(NH2)CH2CH3}$（不斉炭素あり）で不適．$\\ce{CH3CH2CH(CH2NH2)COOH}$ の不斉炭素は $\\ce{-COOH}$ が結合した炭素で，H を 1 個もつので，置き換えると $\\ce{CH3CH2CH2CH2NH2}$ となり不斉炭素が消える．よって X は $\\boldsymbol{\\ce{CH3CH2CH(CH2NH2)COOH}}$．\n\n\\textbf{ポイント}　$\\ce{-COOH}$ を $\\ce{-H}$ に置き換えて不斉が消えるのは，不斉炭素がカルボキシ基の結合した炭素で，しかもその炭素が H をもつ場合である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "アミノ酸の異性体は C₄H₉–COOH の骨格ごとに等価な位置をまとめて −NH₂ の位置を数える．−COOH を −H に置き換えたとき不斉炭素が消えるのは，不斉炭素が −COOH の結合した炭素でありもともと H を1個もつ場合だけで，H をもたない α 炭素や別の位置の不斉炭素では不斉が残る．"
+ },
+ "concepts": [
+  "organic-structure",
+  "protein-amino"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "アミノ酸",
+  "異性体の数",
+  "不斉炭素",
+  "α-アミノ酸",
+  "β-アミノ酸",
+  "脱炭酸"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

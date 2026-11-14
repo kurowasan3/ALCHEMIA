@@ -1,0 +1,117 @@
+{
+ "id": "THE-SOL-093",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-09",
+ "topic": "溶媒で変わる粒子数（ベンゼン中の二量体と水中の電離）と電離定数",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "1 価の弱酸 HA は，ベンゼン中では電離せず，すべての分子が水素結合によって二量体 $\\ce{(HA)2}$ になる．一方，水中では二量体をつくらず，一部が $\\ce{HA <=>[\\text{}] H+ + A-}$ のように電離する．ベンゼンと水のモル凝固点降下をそれぞれ $5.12\\,\\mathrm{K\\cdot kg/mol}$，$1.85\\,\\mathrm{K\\cdot kg/mol}$ とし，溶液はすべて希薄溶液としてふるまうものとする．\n\n［実験1］ベンゼン $50.0\\,\\mathrm{g}$ に HA $1.89\\,\\mathrm{g}$ を溶かすと，凝固点が $1.024\\,\\mathrm{K}$ 下がった．\n［実験2］水 $100\\,\\mathrm{g}$ に HA $0.945\\,\\mathrm{g}$ を溶かすと，凝固点が $0.207\\,\\mathrm{K}$ 下がった．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "HA の分子量を有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "実験2の溶液中の HA の電離度を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "実験2の溶液の質量モル濃度とモル濃度は等しいとみなして，HA の電離定数 $K_{\\mathrm{a}}$ を有効数字 2 桁で求めよ（凝固点付近の値とする）．"
+     },
+     {
+      "id": "4",
+      "tex": "実験1で，二量体ができることに気づかず「HA は単量体として溶けている」として分子量を計算すると，いくらになるか．有効数字 3 桁で答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "実験2の溶液を水で 10 倍に薄めると，凝固点降下度は $0.207\\,\\mathrm{K}$ の $\\dfrac{1}{10}$ より大きいか，小さいか，等しいか．理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "94.5"
+   },
+   {
+    "id": "2",
+    "tex": "0.12"
+   },
+   {
+    "id": "3",
+    "tex": "$1.6\\times10^{-3}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "4",
+    "tex": "189"
+   },
+   {
+    "id": "5",
+    "tex": "大きい．薄めると電離度が大きくなり，HA 1 mol あたりの溶質粒子の数が増えるから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 実験1の溶質粒子（二量体）の質量モル濃度は $\\dfrac{1.024}{5.12}=0.200\\,\\mathrm{mol/kg}$．ベンゼン $0.0500\\,\\mathrm{kg}$ 中の二量体は $0.200\\times0.0500=1.00\\times10^{-2}\\,\\mathrm{mol}$ で，HA の単位としてはその 2 倍の $2.00\\times10^{-2}\\,\\mathrm{mol}$．\n\\[ M=\\frac{1.89}{2.00\\times10^{-2}}=\\boldsymbol{94.5} \\]\n\n\\textbf{(2)} 実験2の HA は $\\dfrac{0.945}{94.5}=1.00\\times10^{-2}\\,\\mathrm{mol}$ で，質量モル濃度 $m=0.100\\,\\mathrm{mol/kg}$．電離度を $\\alpha$ とすると，溶質粒子は $\\ce{HA}$：$m(1-\\alpha)$，$\\ce{H+}$：$m\\alpha$，$\\ce{A-}$：$m\\alpha$ で合計 $m(1+\\alpha)$．\n\\[ 0.207=1.85\\times0.100\\times(1+\\alpha)\\quad\\Longrightarrow\\quad1+\\alpha=1.119,\\ \\ \\alpha=\\boldsymbol{0.12} \\]\n\n\\textbf{(3)} $C=0.100\\,\\mathrm{mol/L}$ として\n\\[ K_{\\mathrm{a}}=\\frac{C\\alpha^2}{1-\\alpha}=\\frac{0.100\\times0.119^2}{1-0.119}=\\boldsymbol{1.6\\times10^{-3}\\,\\mathrm{mol/L}} \\]\n（$\\alpha$ が 0.1 程度あるので，$1-\\alpha\\approx1$ と近似すると約 $12\\,\\%$ 小さく見積もってしまう．）\n\n\\textbf{(4)} 単量体とすると粒子の物質量は $1.00\\times10^{-2}\\,\\mathrm{mol}$ となり，$M'=\\dfrac{1.89}{1.00\\times10^{-2}}=\\boldsymbol{189}$．粒子の数が半分なので見かけの分子量は真の値の 2 倍になる．\n\n\\textbf{(5)} 弱酸は薄めるほど電離度が大きくなる（$K_{\\mathrm{a}}$ を用いて $C=0.0100\\,\\mathrm{mol/L}$ で計算すると $\\alpha\\approx0.33$）．凝固点降下度は $K_{\\mathrm{f}}m(1+\\alpha)$ で，$m$ は $\\dfrac{1}{10}$ になるが $1+\\alpha$ は $1.12$ から約 $1.33$ に増えるので，$\\Delta T\\approx1.85\\times0.0100\\times1.33=0.025\\,\\mathrm{K}$ となり，$0.0207\\,\\mathrm{K}$ より\\textbf{大きい}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "凝固点降下は溶質粒子の数で決まるので，同じ物質でも，二量体をつくる溶媒では粒子数が半分に，電離する溶媒では (1+α) 倍になる．二量体化した溶液から真の分子量を，電離する溶液から電離度と電離定数を求め，希釈すると電離度が増えて粒子数が単純な比例より多くなることを判断する．"
+ },
+ "concepts": [
+  "solution-colligative",
+  "aromatic",
+  "ionization-equilibrium"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "凝固点降下",
+  "二量体",
+  "電離度",
+  "電離定数",
+  "見かけの分子量"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

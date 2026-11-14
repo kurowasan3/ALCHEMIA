@@ -1,0 +1,101 @@
+{
+ "id": "THE-RDX-035",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-06",
+ "topic": "二酸化硫黄水溶液のヨウ素による酸化と，終点の pH から求める滴下量",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "equation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "二酸化硫黄を溶かした水溶液 $50.0\\,\\mathrm{mL}$ に，$5.0\\times10^{-4}\\,\\mathrm{mol/L}$ のヨウ素溶液（ヨウ化カリウムを含む）を少しずつ加えた．はじめは加えたヨウ素の色がすぐに消えたが，$y\\,\\mathrm{mL}$ 加えたところで色が消えずに残るようになった．このとき溶液の pH は $3.0$ であった．\n\n溶液中の硫酸とヨウ化水素は完全に電離しているとみなし，二酸化硫黄が酸化される前の亜硫酸の電離，および空気による酸化は考えなくてよい．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "二酸化硫黄とヨウ素の反応を化学反応式で書け．また，この反応で二酸化硫黄はどのようにはたらいているか．硫黄原子の酸化数の変化を示して答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$y$ の値と，はじめの水溶液中の二酸化硫黄のモル濃度を，それぞれ有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "同じ二酸化硫黄水溶液 $50.0\\,\\mathrm{mL}$ を，ヨウ素の代わりに少量の過酸化水素水（体積は無視できる）で完全に酸化した．反応式と，反応後の溶液の pH を答えよ．また，その pH が (2) の終点の pH と比べてどうなるか，理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{SO2 + I2 + 2H2O -> H2SO4 + 2HI}$，還元剤としてはたらく（S の酸化数 $+4\\to+6$）"
+   },
+   {
+    "id": "2",
+    "tex": "$y=50$，$5.0\\times10^{-4}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{SO2 + H2O2 -> H2SO4}$，pH $3.0$．$\\ce{SO2}$ 1 mol あたりの $\\ce{H+}$ は半分（4 mol → 2 mol）になるが，溶液の体積も半分（$100\\,\\mathrm{mL}\\to50.0\\,\\mathrm{mL}$）なので，$[\\ce{H+}]$ は同じになる．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　$\\ce{SO2 + I2 + 2H2O -> H2SO4 + 2HI}$．S の酸化数は $\\ce{SO2}$ の $+4$ から $\\ce{H2SO4}$ の $+6$ に増えるので，二酸化硫黄は\\textbf{還元剤}としてはたらき，ヨウ素は $0\\to-1$ に還元される．$\\ce{SO2}$ が残っている間は加えた $\\ce{I2}$ がすぐに $\\ce{I-}$ に変わるので色が消え，$\\ce{SO2}$ がなくなると $\\ce{I2}$ の色が残る（ここが終点）．\n\n\\textbf{(2)}　反応式から，$\\ce{I2}$ 1 mol あたり $\\ce{H2SO4}$ 1 mol と $\\ce{HI}$ 2 mol，つまり $\\ce{H+}$ が 4 mol 生じる．終点での体積は $(50.0+y)\\,\\mathrm{mL}$ なので\n\\[ \\frac{4\\times5.0\\times10^{-4}\\times y}{50.0+y}=1.0\\times10^{-3} \\quad\\Longrightarrow\\quad 2.0y=50.0+y,\\quad \\boldsymbol{y=50} \\]\n反応した $\\ce{I2}$ は $5.0\\times10^{-4}\\times\\dfrac{50}{1000}=2.5\\times10^{-5}\\,\\mathrm{mol}$ で，これが $\\ce{SO2}$ の物質量に等しい．濃度は $\\dfrac{2.5\\times10^{-5}}{0.0500}=\\boldsymbol{5.0\\times10^{-4}\\,\\mathrm{mol/L}}$．\n\n\\textbf{(3)}　$\\ce{SO2 + H2O2 -> H2SO4}$．$\\ce{H+}$ は $\\ce{SO2}$ 1 mol あたり 2 mol で，$2\\times2.5\\times10^{-5}=5.0\\times10^{-5}\\,\\mathrm{mol}$．体積は $50.0\\,\\mathrm{mL}$ のままなので $[\\ce{H+}]=1.0\\times10^{-3}\\,\\mathrm{mol/L}$，\\textbf{pH $3.0$} で，ヨウ素で酸化した終点と\\textbf{同じ}になる．ヨウ素では $\\ce{HI}$ の分だけ $\\ce{H+}$ が 2 倍生じるが，同じ体積の滴定液で薄まるため，この条件では濃度が一致する．\n\n（注）実際には $\\ce{HSO4-}$ の電離は pH 3 で約 9 割しか進まないので $\\ce{H+}$ は少し少なくなるが，有効数字 2 桁の答えには大きく影響しない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "SO2 を I2 で酸化すると H2SO4 と 2HI が生じ，I2 1 mol あたり H+ が 4 mol 生じるので，滴定液による希釈を含めて終点の pH から滴下量と SO2 の量を逆算できる．H2O2 で酸化すると H+ は SO2 1 mol あたり 2 mol に減るが，希釈がないため条件しだいで同じ pH になる．"
+ },
+ "concepts": [
+  "redox",
+  "halogen",
+  "oxygen-sulfur"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "二酸化硫黄",
+  "ヨウ素",
+  "酸化還元滴定",
+  "pH",
+  "過酸化水素"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

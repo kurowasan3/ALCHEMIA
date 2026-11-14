@@ -1,0 +1,129 @@
+{
+ "id": "THE-ATM-019",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-01",
+ "topic": "元素と単体の使い分け",
+ "course": "化学",
+ "level": 0,
+ "minutes": 5,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "同じ名称が，物質の成分（元素）を指す場合と，実際の物質（単体）を指す場合がある．次の文の下線部が元素を指すか単体を指すかをそれぞれ答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "水を電気分解すると，陰極から\\underline{水素}が発生する．"
+     },
+     {
+      "id": "2",
+      "tex": "骨や歯には\\underline{カルシウム}が多く含まれている．"
+     },
+     {
+      "id": "3",
+      "tex": "\\underline{カルシウム}は常温の水と反応して水素を発生する．"
+     },
+     {
+      "id": "4",
+      "tex": "地殻に含まれる元素のうち，質量で最も多いのは\\underline{酸素}である．"
+     },
+     {
+      "id": "5",
+      "tex": "\\underline{酸素}とオゾンは互いに同素体である．"
+     },
+     {
+      "id": "6",
+      "tex": "乾燥空気の体積の約 78 % は\\underline{窒素}である．"
+     },
+     {
+      "id": "7",
+      "tex": "アンモニアは\\underline{窒素}を含む化合物である．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "単体"
+   },
+   {
+    "id": "2",
+    "tex": "元素"
+   },
+   {
+    "id": "3",
+    "tex": "単体"
+   },
+   {
+    "id": "4",
+    "tex": "元素"
+   },
+   {
+    "id": "5",
+    "tex": "単体"
+   },
+   {
+    "id": "6",
+    "tex": "単体"
+   },
+   {
+    "id": "7",
+    "tex": "元素"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{見分け方}　その名前の物質そのもの（取り出して性質を調べられる物質）を指していれば単体，化合物などの成分として「含まれる」ものを指していれば元素．\n\n(1) 発生する気体の $\\ce{H2}$ そのもの → $\\boldsymbol{\\text{単体}}$．\n(2) 骨・歯にはリン酸カルシウムなどの化合物として含まれ，金属カルシウムがあるわけではない → $\\boldsymbol{\\text{元素}}$．\n(3) 水と反応するのは金属のカルシウムそのもの（$\\ce{Ca + 2H2O -> Ca(OH)2 + H2}$） → $\\boldsymbol{\\text{単体}}$．(2)と同じ名称でも指すものが違う．\n(4) 地殻の酸素はケイ酸塩などの化合物の成分 → $\\boldsymbol{\\text{元素}}$．\n(5) 同素体は同じ元素からなる単体どうしの関係なので，ここでの酸素は $\\ce{O2}$ → $\\boldsymbol{\\text{単体}}$．\n(6) 空気中の窒素は $\\ce{N2}$ 分子として存在する → $\\boldsymbol{\\text{単体}}$．\n(7) アンモニア $\\ce{NH3}$ の成分 → $\\boldsymbol{\\text{元素}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "同じ名称でも，実際に存在する物質そのもの（性質を示し，取り出せるもの）なら単体，化合物の成分として含まれるものなら元素を指す．同素体の関係は単体どうしの関係である．"
+ },
+ "concepts": [
+  "electron-config"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "元素",
+  "単体",
+  "同素体",
+  "物質の構成"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

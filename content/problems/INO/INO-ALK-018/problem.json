@@ -1,0 +1,101 @@
+{
+ "id": "INO-ALK-018",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-05",
+ "topic": "アンモニアソーダ法の気体を吹き込む順序と析出する塩の選ばれ方",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "condition",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "アンモニアソーダ法では，飽和食塩水にまずアンモニアを十分に吸収させ，そのあとで二酸化炭素を吹き込むと，炭酸水素ナトリウムが沈殿する．$20$ ℃，$1.013\\times10^{5}\\,\\mathrm{Pa}$ で水 $1\\,\\mathrm{mL}$ に溶ける気体の体積は，アンモニアが約 $700\\,\\mathrm{mL}$，二酸化炭素が約 $0.9\\,\\mathrm{mL}$ である．また，$20$ ℃ の水 $100\\,\\mathrm g$ に溶ける塩の質量〔g〕と式量は次の表のとおりである．\n\\[\\begin{array}{l|cccccc} & \\ce{NaCl} & \\ce{NH4Cl} & \\ce{NaHCO3} & \\ce{NH4HCO3} & \\ce{KCl} & \\ce{KHCO3}\\\\ \\hline \\text{溶解度} & 35.9 & 37.2 & 9.6 & 21.7 & 34.2 & 33.7\\\\ \\text{式量} & 58.5 & 53.5 & 84.0 & 79.0 & 74.6 & 100.1\\end{array}\\]\n陽イオン2種類と陰イオン2種類が共存する溶液からは，それらの組み合わせでできる4種類の塩のうち，水 $100\\,\\mathrm g$ に溶ける\\textbf{物質量}が最も小さい塩が析出するものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "二酸化炭素より先にアンモニアを吸収させる理由を，溶液中で起こる反応のイオン反応式を示して説明せよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$\\ce{Na+}$，$\\ce{NH4+}$，$\\ce{Cl-}$，$\\ce{HCO3-}$ が共存する溶液から析出する塩を，4種類の塩の溶解度を物質量（有効数字2桁）で比べて答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "飽和食塩水の代わりに塩化カリウムの飽和水溶液を用いて同じ操作を行った．析出すると考えられる塩を答え，この方法で炭酸カリウムを製造できるかどうかを判断せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{CO2}$ は水に溶けにくいが，先に $\\ce{NH3}$ を溶かして塩基性にしておくと $\\ce{NH3 + CO2 + H2O -> NH4+ + HCO3-}$ の反応で $\\ce{CO2}$ が $\\ce{HCO3-}$ として多量に吸収される．逆の順では $\\ce{CO2}$ がほとんど溶けず，$\\ce{HCO3-}$ の濃度が上がらないので $\\ce{NaHCO3}$ が沈殿しない．"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{NaHCO3}$（$0.11\\,\\mathrm{mol}$；$\\ce{NH4HCO3}$ $0.27\\,\\mathrm{mol}$，$\\ce{NaCl}$ $0.61\\,\\mathrm{mol}$，$\\ce{NH4Cl}$ $0.70\\,\\mathrm{mol}$ より小さい）"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{NH4HCO3}$ が析出すると考えられる．$\\ce{KHCO3}$ は析出しないので，この方法では炭酸カリウムを製造できない．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 吹き込む順序}\n$\\ce{CO2}$ は水 $1\\,\\mathrm{mL}$ に約 $0.9\\,\\mathrm{mL}$ しか溶けない．これは $\\ce{CO2}$ が水と反応して生じる炭酸が弱酸で，中性の水中ではほとんど電離しないためである．先に $\\ce{NH3}$（水に非常によく溶ける）を溶かしておくと，塩基が $\\ce{H+}$ を受け取るので\n\\[\\ce{NH3 + CO2 + H2O -> NH4+ + HCO3-}\\]\nが進み，$\\ce{CO2}$ が $\\ce{HCO3-}$ として次々に吸収される．これにより $\\ce{HCO3-}$ の濃度が高まり，\n\\[\\ce{NaCl + NH3 + CO2 + H2O -> NaHCO3 + NH4Cl}\\]\nのように $\\ce{NaHCO3}$ が沈殿する．$\\ce{CO2}$ を先に吹き込んでも，溶ける量がわずかなので反応はほとんど進まない．\n\n\\textbf{(2) 析出する塩}\n水 $100\\,\\mathrm g$ に溶ける物質量 ＝ 溶解度 ÷ 式量 で比べる．\n\\begin{itemize}\n\\item $\\ce{NaCl}$：$35.9/58.5=0.61\\,\\mathrm{mol}$\n\\item $\\ce{NH4Cl}$：$37.2/53.5=0.70\\,\\mathrm{mol}$\n\\item $\\ce{NaHCO3}$：$9.6/84.0=0.11\\,\\mathrm{mol}$\n\\item $\\ce{NH4HCO3}$：$21.7/79.0=0.27\\,\\mathrm{mol}$\n\\end{itemize}\n最小の \\textbf{$\\ce{NaHCO3}$} が析出する．溶液中の $\\ce{NH4+}$ と $\\ce{Cl-}$ は $\\ce{NH4Cl}$ として溶液に残り，のちに $\\ce{Ca(OH)2}$ と反応させてアンモニアを回収する．\n\n\\textbf{(3) 塩化カリウムを用いた場合}\n$\\ce{K+}$，$\\ce{NH4+}$，$\\ce{Cl-}$，$\\ce{HCO3-}$ の組み合わせで比べる．\n\\begin{itemize}\n\\item $\\ce{KCl}$：$34.2/74.6=0.46\\,\\mathrm{mol}$\n\\item $\\ce{KHCO3}$：$33.7/100.1=0.34\\,\\mathrm{mol}$\n\\item $\\ce{NH4HCO3}$：$0.27\\,\\mathrm{mol}$\n\\item $\\ce{NH4Cl}$：$0.70\\,\\mathrm{mol}$\n\\end{itemize}\n最小は \\textbf{$\\ce{NH4HCO3}$} であり，$\\ce{KHCO3}$ は溶けやすくて析出しない．炭酸カリウムは $\\ce{KHCO3}$ を取り出して加熱する（$\\ce{2KHCO3 -> K2CO3 + H2O + CO2}$）ことでしか得られないので，\\textbf{この方法では製造できない}．アンモニアソーダ法が成り立つのは，ナトリウムの炭酸水素塩がとくに溶けにくいという性質に支えられているからである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "CO₂ は中性の水にはほとんど溶けないが，先に NH₃ で塩基性にすると HCO₃⁻ として吸収される．2種の陽イオンと2種の陰イオンが共存するとき析出するのは物質量で最も溶けにくい組み合わせの塩であり，Na では NaHCO₃ だが，K では KHCO₃ が溶けやすく NH₄HCO₃ の方が先に析出するので，同じ方法で炭酸カリウムはつくれない．"
+ },
+ "concepts": [
+  "alkali-metals",
+  "nitrogen-phosphorus",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "アンモニアソーダ法",
+  "炭酸水素ナトリウム",
+  "溶解度",
+  "気体の溶解",
+  "炭酸カリウム"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

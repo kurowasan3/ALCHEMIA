@@ -1,0 +1,120 @@
+{
+ "id": "THE-SOL-017",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-09",
+ "topic": "U字管の浸透圧と希釈による液面差",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，断面積 $1.0\\,\\mathrm{cm^2}$ の U 字管の中央を半透膜（水分子だけを通す）で仕切り，左側に水 $50\\,\\mathrm{mL}$，右側にグルコース水溶液 $50\\,\\mathrm{mL}$ を入れた．右側に質量の無視できるなめらかなピストンを置き，その上に $11\\,\\mathrm g$ のおもりをのせると，左右の液面の高さがつり合った．温度は $27$ ℃ で一定とし，気体定数 $R=8.3\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$，重力加速度 $9.8\\,\\mathrm{m/s^2}$，水と水溶液の密度はいずれも $1.0\\,\\mathrm{g/cm^3}$，グルコースの分子量を 180 とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "この水溶液の浸透圧は何 Pa か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "水溶液 $50\\,\\mathrm{mL}$ に含まれるグルコースは何 mg か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "おもりとピストンを取り除いて放置すると，右側の液面が上がって止まった．このときの左右の液面差 $h$ は何 cm か．水の移動による水溶液の希釈を考えて答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) で希釈を無視して（濃度ははじめのままとして）計算すると，$h$ は何 cm と見積もられるか．また，実際の $h$ がそれより小さくなる理由を簡潔に述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：U字管の浸透圧と希釈による液面差",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$1.1\\times10^{3}\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "2",
+    "tex": "$3.9\\,\\mathrm{mg}$"
+   },
+   {
+    "id": "3",
+    "tex": "$10\\,\\mathrm{cm}$"
+   },
+   {
+    "id": "4",
+    "tex": "$11\\,\\mathrm{cm}$．水が右へ移動すると水溶液が薄まり，浸透圧が小さくなるため．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} おもりが液面に及ぼす圧力が浸透圧とつり合う．\n\\[ \\Pi_0=\\frac{11\\times10^{-3}\\,\\mathrm{kg}\\times9.8\\,\\mathrm{m/s^2}}{1.0\\times10^{-4}\\,\\mathrm{m^2}}=1078\\,\\mathrm{Pa}\\fallingdotseq\\boldsymbol{1.1\\times10^{3}\\,\\mathrm{Pa}} \\]\n\\textbf{(2)} $\\Pi V=nRT$ より $n=\\dfrac{1078\\times0.050}{8.3\\times10^{3}\\times300}=2.16\\times10^{-5}\\,\\mathrm{mol}$．質量は $2.16\\times10^{-5}\\times180=3.9\\times10^{-3}\\,\\mathrm g=\\boldsymbol{3.9\\,\\mathrm{mg}}$．\n\\textbf{(3)} 右の液面が $x\\,\\mathrm{cm}$ 上がると左は $x\\,\\mathrm{cm}$ 下がるので $h=2x$．水溶液の体積は $50+1.0\\times x=50+\\tfrac{h}{2}\\,(\\mathrm{mL})$ に増える．\n液柱 $1\\,\\mathrm{cm}$ の圧力は $1.0\\times10^{3}\\times9.8\\times0.01=98\\,\\mathrm{Pa}$．薄まった水溶液の浸透圧と液面差の圧力がつり合うので\n\\[ 98h=1078\\times\\frac{50}{50+\\tfrac{h}{2}} \\quad\\Rightarrow\\quad h^2+100h-1100=0 \\quad\\Rightarrow\\quad h=\\boldsymbol{10\\,\\mathrm{cm}} \\]\n\\textbf{(4)} 濃度を変えないとすると $98h=1078$ より $h=\\boldsymbol{11\\,\\mathrm{cm}}$．実際は水が半透膜を通って右へ移ることで水溶液が薄まり，浸透圧がはじめより小さくなるので，つり合う液面差も小さくなる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "おもりで液面をそろえたときはおもりの圧力が浸透圧に等しい．おもりを外すと溶媒が移動して溶液が希釈されるため，液面差は「希釈後の浸透圧＝液柱の圧力」で決まり，希釈を無視した見積もりより小さくなる．"
+ },
+ "concepts": [
+  "solution-colligative"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "浸透圧",
+  "ファントホッフの法則",
+  "液柱の圧力",
+  "希釈"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

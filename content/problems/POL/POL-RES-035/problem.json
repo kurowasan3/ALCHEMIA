@@ -1,0 +1,116 @@
+{
+ "id": "POL-RES-035",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-01",
+ "topic": "結合の向きに相関がある高分子鎖の広がり（有限の鎖長の補正と棒から糸まりへの移り変わり）",
+ "course": "化学",
+ "level": 4,
+ "minutes": 35,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "希薄溶液中の高分子鎖を，長さ $b$ の結合ベクトル $\\vec r_1,\\vec r_2,\\dots,\\vec r_N$ をつないだ鎖とみなす．末端間ベクトルは $\\vec R=\\sum_{n=1}^{N}\\vec r_n$ で，その2乗の平均 $\\langle R^2\\rangle=\\langle\\vec R\\cdot\\vec R\\rangle$ を鎖の広がりの目安とする（$\\langle\\ \\rangle$ は多数の鎖についての平均）．\n隣り合う結合ベクトルのなす角が一定で，それ以外は自由に回転できる鎖では，$l$ 個離れた結合ベクトルの内積の平均が\n\\[\\langle\\vec r_n\\cdot\\vec r_{n+l}\\rangle=b^{2}a^{l}\\qquad(0<a<1,\\ a\\ \\text{は隣り合う結合ベクトルのなす角の余弦})\\]\nとなることが知られている．必要なら $\\displaystyle\\sum_{k=1}^{m}a^{k}=\\frac{a(1-a^{m})}{1-a}$ を用いてよい．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\langle R^2\\rangle=Nb^{2}\\left[\\dfrac{1+a}{1-a}-\\dfrac{2a(1-a^{N})}{N(1-a)^{2}}\\right]$ となることを示せ．"
+     },
+     {
+      "id": "2",
+      "tex": "$C_N=\\dfrac{\\langle R^2\\rangle}{Nb^{2}}$ を特性比とよび，$N\\to\\infty$ の極限を $C_\\infty$ とする．炭素の結合角が $109.5^\\circ$（隣り合う結合ベクトルのなす角は $70.5^\\circ$，$a=\\dfrac13$）の鎖について $C_\\infty$ を求めよ．また，$C_N$ が $C_\\infty$ の $90\\,\\%$ 以上になる最小の $N$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "非常に曲がりにくい鎖のモデルとして $a=0.98$ とする．$N=5$ と $N=5000$ のときの $\\sqrt{\\langle R^2\\rangle}/b$ を有効数字3桁で求め，それぞれ「まっすぐな棒（$\\sqrt{\\langle R^2\\rangle}=Nb$）」と「$\\sqrt{\\langle R^2\\rangle}=b\\sqrt{C_\\infty N}$」のどちらに近いか答えよ．さらに，$\\log\\sqrt{\\langle R^2\\rangle}$ を $\\log N$ に対してプロットしたとき，$N$ が小さい範囲と大きい範囲での傾きはそれぞれいくらに近づくか．移り変わりがおよそどの程度の $N$ で起こるかを $a$ を用いて表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "ある高分子（$b=0.150\\,\\mathrm{nm}$，$N=2.00\\times10^{4}$）について $\\sqrt{\\langle R^2\\rangle}=63.6\\,\\mathrm{nm}$ が得られた．この鎖をこのモデルで表すとき，$a$ を有効数字2桁で求めよ．また，(1) の式の第2項を無視してよいことを確かめよ．"
+     },
+     {
+      "id": "5",
+      "tex": "実際のポリエチレンの $C_\\infty$ は約 7 で，(2) の値より大きい．$\\ce{C-C}$ 結合のまわりの回転では，トランス形のほうがゴーシュ形より安定である．このことから $C_\\infty$ が大きくなる理由を説明し，溶液の温度を下げると $C_\\infty$ はどう変化すると予想されるか答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "解説のとおり（$\\langle R^2\\rangle=Nb^2+2\\sum_{n=1}^{N-1}\\sum_{l=1}^{N-n}b^2a^l$ を等比数列の和で整理する）"
+   },
+   {
+    "id": "2",
+    "tex": "$C_\\infty=2$，$N=8$"
+   },
+   {
+    "id": "3",
+    "tex": "$N=5$：$4.92$（棒の $5$ に近い），$N=5000$：$700$（$\\sqrt{C_\\infty N}=704$ に近い）．傾きは $N$ が小さい範囲で $1$，大きい範囲で $\\dfrac12$ に近づき，移り変わりは $N\\approx\\dfrac{1}{1-a}$（$=50$）程度"
+   },
+   {
+    "id": "4",
+    "tex": "$a=0.80$．第2項は $2a/\\{N(1-a)^2\\}=2.0\\times10^{-3}$ で，第1項 $9.0$ に比べて無視できる"
+   },
+   {
+    "id": "5",
+    "tex": "トランス形が多いと鎖がジグザグに伸びた形が続きやすく，結合の向きの相関が自由回転より強くなるので $C_\\infty$ が大きくなる．温度を下げるとエネルギーの低いトランス形の割合が増えるので，$C_\\infty$ は大きくなる"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\langle R^2\\rangle=\\sum_n\\sum_m\\langle\\vec r_n\\cdot\\vec r_m\\rangle$ のうち $n=m$ の項は $Nb^2$．$n\\neq m$ の項は $m=n+l$（$l\\ge1$）と $m=n-l$ の2通りが同じ値なので\n\\[\\langle R^2\\rangle=Nb^2+2b^2\\sum_{n=1}^{N-1}\\sum_{l=1}^{N-n}a^{l}=Nb^2+2b^2\\sum_{n=1}^{N-1}\\frac{a(1-a^{N-n})}{1-a}\\]\n$k=N-n$ とおくと $k$ は $1$ から $N-1$ まで動くので\n\\[\\sum_{n=1}^{N-1}(1-a^{N-n})=(N-1)-\\frac{a(1-a^{N-1})}{1-a}\\]\nよって\n\\[\\frac{\\langle R^2\\rangle}{b^2}=N+\\frac{2a(N-1)}{1-a}-\\frac{2a^2(1-a^{N-1})}{(1-a)^2}\\]\n右辺を $N\\dfrac{1+a}{1-a}=N+\\dfrac{2aN}{1-a}$ と比べると，差は\n\\[-\\frac{2a}{1-a}-\\frac{2a^2-2a^{N+1}}{(1-a)^2}=\\frac{-2a+2a^2-2a^2+2a^{N+1}}{(1-a)^2}=-\\frac{2a(1-a^{N})}{(1-a)^2}\\]\nとなり，与式 $\\langle R^2\\rangle=Nb^2\\left[\\dfrac{1+a}{1-a}-\\dfrac{2a(1-a^N)}{N(1-a)^2}\\right]$ が成り立つ．\n\n\\textbf{(2)} $C_\\infty=\\dfrac{1+a}{1-a}=\\dfrac{4/3}{2/3}=\\boldsymbol{2}$．\n$C_N=2-\\dfrac{2\\cdot\\frac13(1-3^{-N})}{N\\cdot\\frac49}=2-\\dfrac{1.5(1-3^{-N})}{N}$．$C_N\\ge1.8$ となる条件は $\\dfrac{1.5(1-3^{-N})}{N}\\le0.2$，すなわち $N\\ge7.5(1-3^{-N})$．\n$N=7$：$7.5(1-3^{-7})=7.497>7$ で不成立（$C_7=1.786$），$N=8$：$7.499<8$ で成立（$C_8=1.813$）．よって $\\boldsymbol{N=8}$．相関が $a^{l}$ で急速に消えるので，わずか数個の結合で広がりはほぼ極限の値に達する．\n\n\\textbf{(3)} $a=0.98$ では $C_\\infty=\\dfrac{1.98}{0.02}=99$，$\\dfrac{2a}{(1-a)^2}=4900$．\n$N=5$：$\\dfrac{\\langle R^2\\rangle}{b^2}=5\\times99-4900(1-0.98^{5})=24.21$，$\\sqrt{\\ }=\\boldsymbol{4.92}$ で，棒の値 $5$ に近い．\n$N=5000$：$0.98^{5000}\\fallingdotseq0$ なので $\\dfrac{\\langle R^2\\rangle}{b^2}=495000-4900=490100$，$\\sqrt{\\ }=\\boldsymbol{700}$ で，$\\sqrt{99\\times5000}=704$ に近い．\n$N\\ll\\dfrac{1}{1-a}$ では $a^{l}\\fallingdotseq1$ で結合の向きがほぼそろったままなので $\\langle R^2\\rangle\\fallingdotseq N^2b^2$，傾きは $\\boldsymbol{1}$．$N\\gg\\dfrac{1}{1-a}$ では第2項が一定値 $\\dfrac{2a}{(1-a)^2}$ にとどまり，$N$ に比例する第1項が支配して $\\langle R^2\\rangle\\fallingdotseq C_\\infty Nb^2$，傾きは $\\boldsymbol{1/2}$．相関が消える目安は $a^{l}$ が小さくなる $l\\approx\\dfrac{1}{1-a}$ なので，移り変わりは $\\boldsymbol{N\\approx1/(1-a)=50}$ 程度で起こる（実際に $N=5\\to10$ の傾きは $0.98$，$N=5000\\to10000$ では $0.50$）．\n\n\\textbf{(4)} $C=\\dfrac{\\langle R^2\\rangle}{Nb^2}=\\dfrac{63.6^2}{2.00\\times10^{4}\\times0.150^2}=8.99$．$N$ が大きいので $C\\fallingdotseq C_\\infty=\\dfrac{1+a}{1-a}=9.0$ とすると $a=\\dfrac{9.0-1}{9.0+1}=\\boldsymbol{0.80}$（隣り合う結合ベクトルのなす角は約 $37^\\circ$）．\n確認：第2項は $\\dfrac{2a(1-a^N)}{N(1-a)^2}=\\dfrac{1.6}{2.00\\times10^{4}\\times0.040}=2.0\\times10^{-3}$ で，第1項 $9.0$ の $0.02\\,\\%$ にすぎないので無視してよい（$N\\gg1/(1-a)=5$ の範囲にある）．\n\n\\textbf{(5)} 自由回転では結合のまわりのどの向きも同じ確率なので $\\langle\\vec r_n\\cdot\\vec r_{n+2}\\rangle$ などが小さくなるが，トランス形が多いと鎖は平面ジグザグに伸びた形を長く続けるので，離れた結合どうしの向きの相関が強くなり，鎖が広がって $C_\\infty$ が大きくなる（すべてトランスなら伸びきった鎖になる）．温度を下げるとエネルギーの低いトランス形の割合が増えるので，$C_\\infty$ は\\textbf{大きくなる}と予想される．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "結合の向きの相関が距離とともに a^l で減る鎖では，等比数列の和から末端間距離の2乗が N に比例する主要項と一定の補正項の和になり，相関の届く長さ 1/(1−a) より短い鎖は棒のように R∝N，長い鎖は糸まりのように R∝N^{1/2} にふるまう．測定した広がりから相関の強さを逆に決めるときは，補正項が無視できる鎖長かを確かめる．"
+ },
+ "concepts": [
+  "addition-polymer"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "高分子鎖",
+  "末端間距離",
+  "特性比",
+  "自由回転鎖",
+  "等比数列",
+  "立体配座"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,118 @@
+{
+ "id": "INO-NIT-029",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-03",
+ "topic": "二リン酸ナトリウムによる硬水の軟化とリンの排水基準",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "リン酸水素二ナトリウム $\\ce{Na2HPO4}$ を強く加熱すると，2 分子の間で縮合が起こり，二リン酸ナトリウム（ピロリン酸ナトリウム）$\\ce{Na4P2O7}$ が得られる．二リン酸イオン $\\ce{P2O7^4-}$ は水中の $\\ce{Ca^2+}$・$\\ce{Mg^2+}$ と結びついて難溶性の $\\ce{Ca2P2O7}$・$\\ce{Mg2P2O7}$ をつくるので，硬水の軟化（$\\ce{Ca^2+}$・$\\ce{Mg^2+}$ の除去）に使える．以下では，沈殿の生成は完全に進み，$\\ce{P2O7^4-}$ は $\\ce{Ca^2+}$ と $\\ce{Mg^2+}$ を区別せずに結びつくものとする．\n\n水の硬度は，水に含まれる $\\ce{Ca^2+}$ と $\\ce{Mg^2+}$ の物質量の合計を，同じ物質量の $\\ce{CaCO3}$ の質量（$\\mathrm{mg/L}$）に換算して表す．ある水 1 L には $\\ce{Ca^2+}$ が $32.0\\,\\mathrm{mg}$，$\\ce{Mg^2+}$ が $9.72\\,\\mathrm{mg}$ 含まれている．また，この水を使ったあと排水するときのリンの濃度は，リン原子の質量に換算して $16\\,\\mathrm{mg/L}$ 以下にしなければならないとする．\n（原子量：$\\mathrm{C}=12$，$\\mathrm{O}=16$，$\\mathrm{Na}=23$，$\\mathrm{Mg}=24.3$，$\\mathrm{P}=31$，$\\mathrm{Ca}=40$）"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{Na2HPO4}$ から $\\ce{Na4P2O7}$ が生じる反応の化学反応式を書け．"
+     },
+     {
+      "id": "2",
+      "tex": "この水の硬度を整数で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "この水 $50.0\\,\\mathrm{L}$ に，リンの濃度が基準の上限になるまで $\\ce{Na4P2O7}$ を溶かすとき，溶かす $\\ce{Na4P2O7}$ の質量を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) のとき，$\\ce{Ca^2+}$・$\\ce{Mg^2+}$ はすべて除かれるか．除かれない場合は，沈殿を除いたあとの水の硬度を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "リンの基準を守ったまま $\\ce{Na4P2O7}$ だけで $\\ce{Ca^2+}$・$\\ce{Mg^2+}$ を完全に除けるのは，硬度がいくら以下の水か．有効数字 2 桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{2Na2HPO4 -> Na4P2O7 + H2O}$"
+   },
+   {
+    "id": "2",
+    "tex": "$120\\,\\mathrm{mg/L}$"
+   },
+   {
+    "id": "3",
+    "tex": "$3.4\\,\\mathrm{g}$"
+   },
+   {
+    "id": "4",
+    "tex": "すべては除かれない．$68\\,\\mathrm{mg/L}$"
+   },
+   {
+    "id": "5",
+    "tex": "$52\\,\\mathrm{mg/L}$ 以下"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}\\quad 2 個の $\\ce{HPO4^2-}$ の OH どうしから水 1 分子がとれて，P–O–P の結合ができる：$\\ce{2Na2HPO4 -> Na4P2O7 + H2O}$．\n\n\\textbf{(2) 硬度}\\quad 1 L あたり $\\ce{Ca^2+}$：$\\dfrac{32.0}{40}=0.800\\,\\mathrm{mmol}$，$\\ce{Mg^2+}$：$\\dfrac{9.72}{24.3}=0.400\\,\\mathrm{mmol}$．合計 $1.20\\,\\mathrm{mmol}$ を $\\ce{CaCO3}$（式量 100）に換算して $\\boldsymbol{120}\\,\\mathrm{mg/L}$．$\\ce{Mg^2+}$ も $\\ce{CaCO3}$ に換算して加える点に注意する．\n\n\\textbf{(3) リンの上限から決まる塩の量}\\quad 50.0 L に許される P は $16\\times50.0=800\\,\\mathrm{mg}$，すなわち $\\dfrac{0.800}{31}=2.58\\times10^{-2}\\,\\mathrm{mol}$．$\\ce{Na4P2O7}$（式量 266）1 mol は P を 2 mol 含むので\n\\[\n\\ce{Na4P2O7}=\\frac{2.58\\times10^{-2}}{2}\\times266=3.43\\approx\\boldsymbol{3.4}\\,\\mathrm{g}\n\\]\n\n\\textbf{(4) どちらが不足するか}\\quad 沈殿の反応は $\\ce{2Ca^2+ + P2O7^4- -> Ca2P2O7}$，$\\ce{2Mg^2+ + P2O7^4- -> Mg2P2O7}$ で，$\\ce{P2O7^4-}$ 1 mol が 2 価の陽イオン 2 mol を除く．\n除ける陽イオン：$2\\times\\dfrac{2.58\\times10^{-2}}{2}=2.58\\times10^{-2}\\,\\mathrm{mol}$（P の物質量に等しい），水に含まれる陽イオン：$1.20\\times10^{-3}\\times50.0=6.00\\times10^{-2}\\,\\mathrm{mol}$．陽イオンのほうが多く，$\\ce{P2O7^4-}$ が不足するので\\textbf{すべては除かれない}．残る陽イオンは $6.00\\times10^{-2}-2.58\\times10^{-2}=3.42\\times10^{-2}\\,\\mathrm{mol}$ で，1 L あたり $6.84\\times10^{-4}\\,\\mathrm{mol}$，硬度は $\\boldsymbol{68}\\,\\mathrm{mg/L}$（約 43\\% しか除けない）．\n\n\\textbf{(5) 基準と軟化が両立する条件}\\quad 完全に除くには，2 価の陽イオンと同じ物質量の P が必要である（P 2 個で陽イオン 2 個）．P が $16\\,\\mathrm{mg/L}=\\dfrac{16}{31}=0.516\\,\\mathrm{mmol/L}$ までなので，除ける陽イオンも $0.516\\,\\mathrm{mmol/L}$ まで．これを $\\ce{CaCO3}$ に換算して $0.516\\times100=51.6\\approx\\boldsymbol{52}\\,\\mathrm{mg/L}$ 以下．この水（120 mg/L）を完全に軟化するには P が $1.20\\times31=37.2\\,\\mathrm{mg/L}$ 必要で，基準を大きく超えてしまう．リンを含む洗剤の助剤が使われなくなったのは，河川や湖の富栄養化を防ぐためである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "縮合リン酸塩による硬水の軟化では，P2O7^4- 1 個が 2 価の陽イオン 2 個を除くので，除ける陽イオンの物質量は加えた P の物質量に等しい．リンの排水基準（P の質量換算）から加えられる塩の上限が決まり，それが硬度（Ca と Mg の合計の CaCO3 換算）に足りるかで完全に軟化できるかを判断する．"
+ },
+ "concepts": [
+  "nitrogen-phosphorus",
+  "alkali-metals",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "二リン酸ナトリウム",
+  "縮合リン酸",
+  "硬度",
+  "CaCO3換算",
+  "過不足",
+  "排水基準"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

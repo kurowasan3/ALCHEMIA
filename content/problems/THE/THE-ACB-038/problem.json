@@ -1,0 +1,117 @@
+{
+ "id": "THE-ACB-038",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-05",
+ "topic": "二段階の中和滴定の滴下量の大小から決める炭酸ナトリウム混合物の組成",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "炭酸ナトリウムに，水酸化ナトリウムまたは炭酸水素ナトリウムのどちらか一方だけが混ざった水溶液 P，Q がある．それぞれ $20.0\\,\\mathrm{mL}$ をとり，フェノールフタレインを加えて $0.100\\,\\mathrm{mol/L}$ 塩酸で滴定したところ，変色するまでに $V_1\\,[\\mathrm{mL}]$ を要した．続けてメチルオレンジを加えて滴定すると，さらに $V_2\\,[\\mathrm{mL}]$ で変色した．\n\\[ \\text{P：}V_1=12.0,\\ V_2=8.0\\qquad \\text{Q：}V_1=6.0,\\ V_2=15.0 \\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "炭酸ナトリウムが塩酸と反応して，フェノールフタレインの変色点までに起こる反応と，その後メチルオレンジの変色点までに起こる反応の反応式をそれぞれ書け．"
+     },
+     {
+      "id": "2",
+      "tex": "P に混ざっている物質は水酸化ナトリウムと炭酸水素ナトリウムのどちらか．また，P 中の各成分の濃度 $[\\mathrm{mol/L}]$ を有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "Q についても (2) と同様に答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "別の水溶液で，(i) $V_1=V_2$ となった場合，(ii) $V_1=0$ となった場合，それぞれ溶液中の溶質は何か．"
+     },
+     {
+      "id": "5",
+      "tex": "水酸化ナトリウムと炭酸水素ナトリウムの両方が多量に含まれる水溶液は存在しない．その理由を反応式を用いて示せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{Na2CO3 + HCl -> NaHCO3 + NaCl}$，$\\ce{NaHCO3 + HCl -> NaCl + H2O + CO2}$"
+   },
+   {
+    "id": "2",
+    "tex": "水酸化ナトリウム；$\\ce{Na2CO3}$ $4.00\\times10^{-2}\\,\\mathrm{mol/L}$，$\\ce{NaOH}$ $2.00\\times10^{-2}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "3",
+    "tex": "炭酸水素ナトリウム；$\\ce{Na2CO3}$ $3.00\\times10^{-2}\\,\\mathrm{mol/L}$，$\\ce{NaHCO3}$ $4.50\\times10^{-2}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "4",
+    "tex": "(i) $\\ce{Na2CO3}$ のみ，(ii) $\\ce{NaHCO3}$ のみ"
+   },
+   {
+    "id": "5",
+    "tex": "$\\ce{NaOH + NaHCO3 -> Na2CO3 + H2O}$ が起こり，どちらか少ないほうがなくなるから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　フェノールフタレインの変色（pH 約 8）までに $\\ce{CO3^2-}$ が $\\ce{HCO3-}$ になる：$\\ce{Na2CO3 + HCl -> NaHCO3 + NaCl}$．メチルオレンジの変色（pH 約 4）までに $\\ce{HCO3-}$ が $\\ce{CO2}$ になる：$\\ce{NaHCO3 + HCl -> NaCl + H2O + CO2}$．\n\n\\textbf{考え方}　$\\ce{Na2CO3}$ を $a$，第 2 成分を $b$（いずれも mmol）とする．$\\ce{Na2CO3}$ は第 1 段・第 2 段で $a$ ずつ HCl を消費する．\n\\begin{itemize}\n\\item $\\ce{NaOH}$ が混ざっていれば第 1 段だけで中和されるので $V_1$ 側に $b$ が加わる：$V_1>V_2$．\n\\item $\\ce{NaHCO3}$ が混ざっていれば第 2 段だけで反応するので $V_2$ 側に $b$ が加わる：$V_1<V_2$．\n\\end{itemize}\n\n\\textbf{(2)}　P は $V_1>V_2$ なので \\textbf{水酸化ナトリウム}．HCl は $0.100\\,\\mathrm{mmol/mL}$．$a=0.100\\times8.0=0.80\\,\\mathrm{mmol}$，$b=0.100\\times(12.0-8.0)=0.40\\,\\mathrm{mmol}$．\n\\[ [\\ce{Na2CO3}]=\\frac{0.80}{20.0}=\\boldsymbol{4.00\\times10^{-2}\\,\\mathrm{mol/L}},\\quad [\\ce{NaOH}]=\\frac{0.40}{20.0}=\\boldsymbol{2.00\\times10^{-2}\\,\\mathrm{mol/L}} \\]\n\n\\textbf{(3)}　Q は $V_1<V_2$ なので \\textbf{炭酸水素ナトリウム}．$a=0.100\\times6.0=0.60\\,\\mathrm{mmol}$，$b=0.100\\times(15.0-6.0)=0.90\\,\\mathrm{mmol}$．\n\\[ [\\ce{Na2CO3}]=\\boldsymbol{3.00\\times10^{-2}\\,\\mathrm{mol/L}},\\quad [\\ce{NaHCO3}]=\\boldsymbol{4.50\\times10^{-2}\\,\\mathrm{mol/L}} \\]\n\n\\textbf{(4)}　(i) $b=0$ なので $\\ce{Na2CO3}$ のみ．(ii) 第 1 段で反応するもの（$\\ce{NaOH}$・$\\ce{Na2CO3}$）がないので $\\ce{NaHCO3}$ のみ．\n\n\\textbf{(5)}　$\\ce{HCO3-}$ は酸として $\\ce{OH-}$ と中和する：$\\ce{NaOH + NaHCO3 -> Na2CO3 + H2O}$．そのため両者を混ぜるとどちらか少ないほうがなくなり，炭酸ナトリウムに NaOH または $\\ce{NaHCO3}$ の一方だけが残る．この問題で「どちらか一方だけが混ざっている」としたのはこのためである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "二段階の中和滴定では Na₂CO₃ が第 1 段・第 2 段で同じ量の酸を消費するので，第 1 段と第 2 段の滴下量の大小で混ざっている物質（NaOH なら V₁＞V₂，NaHCO₃ なら V₁＜V₂）が判定でき，差から量が求まる．NaOH と NaHCO₃ は中和して Na₂CO₃ になるので共存しない．"
+ },
+ "concepts": [
+  "acid-base",
+  "alkali-metals",
+  "aromatic"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "二段階滴定",
+  "炭酸ナトリウム",
+  "炭酸水素ナトリウム",
+  "フェノールフタレイン",
+  "メチルオレンジ"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

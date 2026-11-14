@@ -1,0 +1,110 @@
+{
+ "id": "ORG-ARO-088",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-05",
+ "topic": "ベンゼン・プロペン・エチレンからのアセトアミノフェンの合成経路と原料・副生成物の量",
+ "course": "化学",
+ "level": 3,
+ "minutes": 18,
+ "format": [
+  "pathway",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "解熱鎮痛薬のアセトアミノフェン $\\ce{HO-C6H4-NHCOCH3}$（$p$-置換体，分子量 151）を次の経路で合成する．\n\\[\\text{ベンゼン} \\xrightarrow[\\text{触媒}]{\\text{プロペン}} \\boxed{\\,\\text{A}\\,} \\xrightarrow{\\ce{O2}} \\text{A のヒドロペルオキシド} \\xrightarrow{\\text{希硫酸}} \\boxed{\\,\\text{B}\\,} + \\boxed{\\,\\text{C}\\,}\\]\n\\[\\boxed{\\,\\text{B}\\,} \\xrightarrow{\\text{希硝酸}} \\boxed{\\,\\text{D}\\,}\\ (p\\text{-体}) \\xrightarrow[\\text{2) NaOH 水溶液で中和}]{\\text{1) スズと塩酸}} \\boxed{\\,\\text{E}\\,} \\xrightarrow{\\boxed{\\,\\text{F}\\,}} \\text{アセトアミノフェン} + \\ce{CH3COOH}\\]\n\\[\\text{エチレン} \\xrightarrow[\\ce{PdCl2},\\ \\ce{CuCl2}]{\\ce{O2}} \\boxed{\\,\\text{G}\\,} \\xrightarrow{\\text{酸化}} \\ce{CH3COOH} \\xrightarrow{\\text{脱水}} \\boxed{\\,\\text{F}\\,}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A〜G の名称を答えよ．ただし C は芳香族化合物ではない．"
+     },
+     {
+      "id": "2",
+      "tex": "E と F からアセトアミノフェンが生じる反応の化学反応式を，示性式を用いて書け．"
+     },
+     {
+      "id": "3",
+      "tex": "D をつくる工程では，$p$-体のほかに異性体の $o$-体も生じる．D を還元するとき，生成物をいったん塩酸塩として得てから NaOH 水溶液で中和するのはなぜか．最も適切なものを選べ．\\\\\n(ア) スズと塩酸による還元では，生じたアミノ基が塩酸と塩をつくっているので，塩基で遊離させる必要があるから．\\\\\n(イ) NaOH によってニトロ基が還元されるから．\\\\\n(ウ) NaOH によって $o$-体だけが沈殿して分離できるから．"
+     },
+     {
+      "id": "4",
+      "tex": "ニトロ化で生じる D のうち $p$-体の割合は物質量で $50\\,\\%$，ほかの工程の収率はすべて $100\\,\\%$ とする．アセトアミノフェン $151\\,\\mathrm{g}$ を得るのに必要なベンゼンとエチレンの質量，および同時に生じる C の質量を，それぞれ有効数字 3 桁で求めよ．原子量は $\\ce{H}=1.0$，$\\ce{C}=12$，$\\ce{O}=16$ とする．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "A：クメン，B：フェノール，C：アセトン，D：$p$-ニトロフェノール，E：$p$-アミノフェノール，F：無水酢酸，G：アセトアルデヒド"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{HOC6H4NH2 + (CH3CO)2O -> HOC6H4NHCOCH3 + CH3COOH}$"
+   },
+   {
+    "id": "3",
+    "tex": "(ア)"
+   },
+   {
+    "id": "4",
+    "tex": "ベンゼン $156\\,\\mathrm{g}$，エチレン $56.0\\,\\mathrm{g}$，C（アセトン）$116\\,\\mathrm{g}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} ベンゼンとプロペンの付加でクメン（A），その酸化・分解（クメン法）でフェノール（B）とアセトン（C）が生じる．フェノールのニトロ化で $p$-ニトロフェノール（D），スズと塩酸で還元して $p$-アミノフェノール（E）．アミノ基をアセチル化する試薬は無水酢酸（F）で，酢酸 2 分子の脱水でつくる．エチレンの $\\ce{PdCl2}$・$\\ce{CuCl2}$ 触媒による酸化（ヘキスト・ワッカー法）でアセトアルデヒド（G），さらに酸化して酢酸になる．\n\n\\textbf{(2)} \\[\\ce{HOC6H4NH2 + (CH3CO)2O -> HOC6H4NHCOCH3 + CH3COOH}\\]\nアミド結合（$\\ce{-NH-CO-}$）ができる．\n\n\\textbf{(3)} スズと塩酸の還元では，塩酸中で生じたアミンは $\\ce{HO-C6H4-NH3+Cl-}$（塩酸塩）になっている．アミノ基をアセチル化するには遊離のアミンにする必要があるので，塩基で中和する．\\textbf{(ア)}．（NaOH が過剰だとフェノール性 OH も塩になるので，中和の加減が大切である．）\n\n\\textbf{(4)} アセトアミノフェン $1.00\\,\\mathrm{mol}$ には E が $1.00\\,\\mathrm{mol}$，$p$-D が $1.00\\,\\mathrm{mol}$ 必要で，$p$-体の割合が 50 \\% なのでニトロ化するフェノールは $2.00\\,\\mathrm{mol}$．クメン法ではベンゼン 1 mol からフェノールとアセトンが 1 mol ずつ生じるので，ベンゼン（分子量 78）$2.00\\,\\mathrm{mol} = \\boldsymbol{156\\,\\mathrm{g}}$，アセトン（分子量 58）$2.00\\,\\mathrm{mol} = \\boldsymbol{116\\,\\mathrm{g}}$．\n無水酢酸 $1.00\\,\\mathrm{mol}$ には酢酸 $2.00\\,\\mathrm{mol}$ が必要で，エチレン 1 mol から酢酸 1 mol ができるので，エチレン（分子量 28）$2.00\\,\\mathrm{mol} = \\boldsymbol{56.0\\,\\mathrm{g}}$．なお，アセチル化で酢酸 $1.00\\,\\mathrm{mol}$ が副生する（無水酢酸の半分は生成物に入らない）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "クメン法（フェノール＋アセトン）→ニトロ化（o/p 異性体）→スズと塩酸による還元と塩基での遊離→無水酢酸によるアミノ基のアセチル化という芳香族の経路と，エチレン→アセトアルデヒド→酢酸→無水酢酸の経路を組み合わせ，異性体の割合・副生成物・無水酢酸1分子に酢酸2分子が必要なことを含めて原料の量を逆算する．"
+ },
+ "concepts": [
+  "aromatic",
+  "organic-structure",
+  "alcohol-carbonyl"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "アセトアミノフェン",
+  "クメン法",
+  "ニトロ化",
+  "アセチル化",
+  "無水酢酸",
+  "物質収支"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

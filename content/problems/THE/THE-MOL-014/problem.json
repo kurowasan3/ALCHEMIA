@@ -1,0 +1,130 @@
+{
+ "id": "THE-MOL-014",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-04",
+ "topic": "物質量の基準を変えたときに変わる量・変わらない量",
+ "course": "化学",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "現在，原子量は $^{12}\\mathrm C$ の相対質量を 12 として定められ，アボガドロ定数は $6.0\\times10^{23}\\,/\\mathrm{mol}$ である．いま，原子量の基準はそのままにして，「$1\\,\\mathrm{mol}$ を，$^{12}\\mathrm C$ $24\\,\\mathrm g$ に含まれる原子の数と同じ数の粒子の集団」と定義し直したとする．このとき，次の(1)〜(7)の値は現在の値の何倍になるか．変わらないものは 1 倍と答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "アボガドロ定数"
+     },
+     {
+      "id": "2",
+      "tex": "二酸化炭素の分子量"
+     },
+     {
+      "id": "3",
+      "tex": "二酸化炭素のモル質量（$\\mathrm{g/mol}$）"
+     },
+     {
+      "id": "4",
+      "tex": "二酸化炭素 $44\\,\\mathrm g$ の物質量"
+     },
+     {
+      "id": "5",
+      "tex": "標準状態（$0\\,^\\circ\\mathrm C$，$1.013\\times10^5\\,\\mathrm{Pa}$）における気体 $1\\,\\mathrm{mol}$ の体積"
+     },
+     {
+      "id": "6",
+      "tex": "標準状態における酸素の密度（$\\mathrm{g/L}$）"
+     },
+     {
+      "id": "7",
+      "tex": "二酸化炭素 $44\\,\\mathrm g$ に含まれる分子の数"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "2 倍"
+   },
+   {
+    "id": "2",
+    "tex": "1 倍"
+   },
+   {
+    "id": "3",
+    "tex": "2 倍"
+   },
+   {
+    "id": "4",
+    "tex": "$\\dfrac12$ 倍"
+   },
+   {
+    "id": "5",
+    "tex": "2 倍"
+   },
+   {
+    "id": "6",
+    "tex": "1 倍"
+   },
+   {
+    "id": "7",
+    "tex": "1 倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　「1 mol に含まれる粒子の数」だけが変わる．原子量・分子量（相対質量）と，実際の物の質量・体積・粒子の数などの物理的な量は，定義をどう決めても変わらない．\n\n(1) $^{12}\\mathrm C$ $24\\,\\mathrm g$ には $12\\,\\mathrm g$ の2倍の数の原子がある．よって $\\boldsymbol{\\text{2}}$ 倍（$1.2\\times10^{24}\\,/\\mathrm{mol}$）．\n\n(2) 原子量の基準は変えていないので $\\ce{CO2}=44$ のまま．$\\boldsymbol{\\text{1}}$ 倍．\n\n(3) 1 mol の粒子数が2倍になるので，1 mol の質量も2倍の $88\\,\\mathrm{g/mol}$．$\\boldsymbol{\\text{2}}$ 倍．\n\n(4) $44\\,\\mathrm g\\div88\\,\\mathrm{g/mol}=0.5\\,\\mathrm{mol}$．\\textbf{$\\tfrac12$} 倍．\n\n(5) 同温・同圧で同じ体積の気体には同数の分子が含まれる（アボガドロの法則）．1 mol の分子数が2倍なので体積も2倍の $44.8\\,\\mathrm L$．$\\boldsymbol{\\text{2}}$ 倍．\n\n(6) 密度は「実際の質量 ÷ 実際の体積」で，定義に関係しない．$\\dfrac{64\\,\\mathrm g}{44.8\\,\\mathrm L}=\\dfrac{32\\,\\mathrm g}{22.4\\,\\mathrm L}$ で $\\boldsymbol{\\text{1}}$ 倍．\n\n(7) $44\\,\\mathrm g$ の $\\ce{CO2}$ に含まれる分子の数は実在の数で，$0.5\\,\\mathrm{mol}\\times1.2\\times10^{24}=6.0\\times10^{23}$ と変わらない．$\\boldsymbol{\\text{1}}$ 倍．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "物質量の定義（1 mol の粒子数）を変えると，アボガドロ定数・モル質量・モル体積・物質量は変わるが，相対質量（原子量・分子量）と，実際の質量・体積・密度・粒子数は変わらない．定義に依存する量と物理的な量を区別する．"
+ },
+ "concepts": [
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "物質量",
+  "アボガドロ定数",
+  "モル質量",
+  "モル体積",
+  "条件判断"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

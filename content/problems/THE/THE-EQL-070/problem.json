@@ -1,0 +1,109 @@
+{
+ "id": "THE-EQL-070",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "一方を大過剰にする方法（擬一次反応）による反応次数の決定と適用条件",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "溶液中の反応 $\\mathrm{A + 2B \\longrightarrow C}$ の反応速度 $v=-\\dfrac{d[\\mathrm{A}]}{dt}$ が $v=k[\\mathrm{A}]^a[\\mathrm{B}]^b$（$a$，$b$ は整数）で表されるとして，一定温度で次の実験を行った．いずれの実験でも B を A よりはるかに多く入れ，A の濃度の時間変化を測ったところ，A の濃度は一定時間ごとに一定の割合で減少し，A が半分になるまでの時間（半減期）は表のようになった．\n\\[\n\\begin{array}{c|ccc}\n & [\\mathrm{A}]_0\\ [\\mathrm{mol/L}] & [\\mathrm{B}]_0\\ [\\mathrm{mol/L}] & \\text{A の半減期 [s]} \\\\ \\hline\n\\text{実験1} & 1.0\\times10^{-3} & 0.10 & 50 \\\\\n\\text{実験2} & 1.0\\times10^{-3} & 0.20 & 12.5 \\\\\n\\text{実験3} & 5.0\\times10^{-4} & 0.10 & 50\n\\end{array}\n\\]\n一次反応 $v=k'[\\mathrm{A}]$ の半減期は $\\dfrac{\\log_e2}{k'}$ である．$\\log_e2=0.693$，$\\sqrt{0.95}=0.975$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "B を大過剰にすると，反応全体を通して A についての一次反応（$v=k'[\\mathrm{A}]$）とみなせる．その理由を述べ，$k'$ を $k$，$[\\mathrm{B}]_0$，$b$ を用いて表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "実験1〜3 から $a$ と $b$ を決めよ．また $k$ を単位とともに有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$[\\mathrm{A}]_0=1.0\\times10^{-3}\\,\\mathrm{mol/L}$ のとき，A がすべて反応するまでの間 $[\\mathrm{B}]$ の減少による速度の低下を $5\\,\\%$ 以内におさえるには，$[\\mathrm{B}]_0$ を少なくとも何 mol/L にする必要があるか．有効数字2桁で答えよ．また，実験1〜3 がこの条件を満たしているか判断せよ．"
+     },
+     {
+      "id": "4",
+      "tex": "次に，A と B を化学量論比（$[\\mathrm{A}]_0=0.010\\,\\mathrm{mol/L}$，$[\\mathrm{B}]_0=0.020\\,\\mathrm{mol/L}$）で混合した．(i) 反応開始直後の速度を有効数字2桁で求めよ．(ii) A が半分反応した時点の速度は (i) の何倍か．(iii) このときの反応は A について見かけ上何次の反応になるか．また，A・B をともに 2 倍の濃度にして化学量論比で混合すると，A の半減期は何倍になるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "B が大過剰なので，A がすべて反応しても $[\\mathrm{B}]$ はほとんど $[\\mathrm{B}]_0$ のままで，$k[\\mathrm{B}]^b$ が一定とみなせるから．$k'=k[\\mathrm{B}]_0^{\\,b}$"
+   },
+   {
+    "id": "2",
+    "tex": "$a=1$，$b=2$，$k=1.4\\,\\mathrm{L^2/(mol^2\\cdot s)}$"
+   },
+   {
+    "id": "3",
+    "tex": "$0.079\\,\\mathrm{mol/L}$．実験1〜3 はいずれも満たしている．"
+   },
+   {
+    "id": "4",
+    "tex": "(i) $5.5\\times10^{-6}\\,\\mathrm{mol/(L\\cdot s)}$　(ii) $\\dfrac18$ 倍　(iii) 3 次．半減期は $\\dfrac14$ 倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　A が $1.0\\times10^{-3}\\,\\mathrm{mol/L}$ すべて反応しても B は $2.0\\times10^{-3}\\,\\mathrm{mol/L}$ しか減らず，$[\\mathrm{B}]_0=0.10\\,\\mathrm{mol/L}$ の $2\\,\\%$ にすぎない．よって $k[\\mathrm{B}]^b\\fallingdotseq k[\\mathrm{B}]_0^{\\,b}$ は一定で，$a=1$ なら $v=k'[\\mathrm{A}]$，$\\boldsymbol{k'=k[\\mathrm{B}]_0^{\\,b}}$ の一次反応（擬一次反応）になる．\n\n\\textbf{(2)}　「一定時間ごとに一定の割合で減る」（半減期が反応の途中で変わらない）ことから，A について一次，$a=1$．実験1 と 実験3 で $[\\mathrm{A}]_0$ を半分にしても半減期が同じことも，A について一次であることを示す（二次なら半減期は 2 倍になる）．$\\boldsymbol{a=1}$．\n実験1→2 で $[\\mathrm{B}]_0$ が 2 倍になると半減期が $\\dfrac14$，すなわち $k'$ が 4 倍になったので $2^b=4$，$\\boldsymbol{b=2}$．\n実験1：$k'=\\dfrac{0.693}{50}=1.386\\times10^{-2}\\,/\\mathrm{s}$，\n\\[ k=\\frac{k'}{[\\mathrm{B}]_0^{\\,2}}=\\frac{1.386\\times10^{-2}}{(0.10)^2}=1.39\\fallingdotseq\\boldsymbol{1.4\\,\\mathrm{L^2/(mol^2\\cdot s)}} \\]\n\n\\textbf{(3)}　速度が最も下がるのは A が使い尽くされたときで，そのとき $[\\mathrm{B}]=[\\mathrm{B}]_0-2[\\mathrm{A}]_0$．$b=2$ なので\n\\[ \\left(\\frac{[\\mathrm{B}]_0-2[\\mathrm{A}]_0}{[\\mathrm{B}]_0}\\right)^2\\ge0.95 \\quad\\Rightarrow\\quad 1-\\frac{2[\\mathrm{A}]_0}{[\\mathrm{B}]_0}\\ge0.975 \\quad\\Rightarrow\\quad [\\mathrm{B}]_0\\ge\\frac{2[\\mathrm{A}]_0}{0.025}=80[\\mathrm{A}]_0 \\]\n$\\sqrt{0.95}=0.9747$ を使うと $[\\mathrm{B}]_0\\ge79[\\mathrm{A}]_0=\\boldsymbol{0.079\\,\\mathrm{mol/L}}$．B の次数が大きいほど，また B の係数が大きいほど，必要な過剰の程度は大きくなる．\n実験1・2・3 の $[\\mathrm{B}]_0/[\\mathrm{A}]_0$ はそれぞれ 100，200，200 で，いずれも約 80 以上なので$\\boldsymbol{\\text{満たしている}}$．（半減期の測定では A が半分になるまでしか見ないので，実際の誤差はさらに小さい．）\n\n\\textbf{(4)}　(i) $v=k[\\mathrm{A}][\\mathrm{B}]^2=1.386\\times0.010\\times(0.020)^2=5.5\\times10^{-6}\\,\\mathrm{mol/(L\\cdot s)}$．\n(ii) A と B は $1:2$ で減るので，化学量論比で混合すると常に $[\\mathrm{B}]=2[\\mathrm{A}]$．A が半分になると $[\\mathrm{A}]$ も $[\\mathrm{B}]$ も半分で，$v$ は $\\dfrac12\\times\\left(\\dfrac12\\right)^2=\\boldsymbol{\\dfrac18}$ 倍．\n(iii) $v=k[\\mathrm{A}](2[\\mathrm{A}])^2=4k[\\mathrm{A}]^3$ なので，A について見かけ上 $\\boldsymbol{3}$ 次．このとき $\\dfrac{1}{[\\mathrm{A}]^2}-\\dfrac{1}{[\\mathrm{A}]_0^{\\,2}}=8kt$ が成り立ち，半減期は $\\dfrac{3}{8k[\\mathrm{A}]_0^{\\,2}}$ と $[\\mathrm{A}]_0^{\\,2}$ に反比例する．濃度を 2 倍にすると半減期は $\\boldsymbol{\\dfrac14}$ 倍．\n同じ反応でも，混合比によって見かけの次数が 1 次（B 大過剰）にも 3 次（化学量論比）にもなる．次数を決めるには，一方を大過剰にして他方の次数を分けて調べる必要がある．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "一方の反応物を大過剰にすると，その濃度がほぼ一定になって擬一次反応となり，擬一次速度定数の過剰成分濃度への依存から過剰成分の次数を，半減期が初濃度によらないことから他方の次数を分けて決められる．近似が成り立つための過剰の程度を，係数と次数から定量的に判断し，化学量論比で混ぜると見かけの次数が変わることを比べる．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "concentration",
+  "reaction-rate"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応速度",
+  "反応次数",
+  "擬一次反応",
+  "半減期",
+  "孤立法"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "id": "INO-PPT-043",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-08",
+ "topic": "クラウンエーテルをめぐる K⁺ と Na⁺ の競合（選択性と共存イオンの量）",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "環状のポリエーテルであるクラウンエーテル A は，メタノール中でアルカリ金属イオン $\\ce{M+}$ を環の中に取り込んで 1:1 の錯イオン $\\mathrm{AM^+}$ をつくる．\n\\[\\mathrm{A}+\\ce{M+}\\rightleftarrows\\mathrm{AM^+}\\qquad K_\\mathrm{M}=\\frac{[\\mathrm{AM^+}]}{[\\mathrm A][\\ce{M+}]}\\]\nある温度で $K_\\mathrm{K}=1.0\\times10^{6}\\,\\mathrm{L/mol}$（$\\ce{K+}$），$K_\\mathrm{Na}=1.0\\times10^{4}\\,\\mathrm{L/mol}$（$\\ce{Na+}$）とする．A は $\\ce{K+}$ と $\\ce{Na+}$ 以外とは反応せず，陰イオンの影響や体積変化は考えない．濃度はすべてメタノール溶液中のモル濃度 [mol/L] である．必要なら $\\sqrt{4.004\\times10^{-9}}=6.33\\times10^{-5}$，$\\sqrt{4.996}=2.235$ を用いよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A の全濃度 $1.00\\times10^{-3}$，$\\ce{K+}$ の全濃度 $1.00\\times10^{-3}$ の溶液（$\\ce{Na+}$ なし）で，$\\ce{K+}$ のうち錯イオンになっている割合（\\%）を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) の溶液に，$\\ce{Na+}$ の全濃度が $0.100$ になるように塩を加えた．$\\ce{Na+}$ と結合する A は $\\ce{Na+}$ の全量に比べて十分少ないとして（この近似が成り立つことも確かめよ），$\\ce{K+}$ のうち錯イオンになっている割合（\\%）を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の溶液では，$\\mathrm{AK^+}$ と $\\mathrm{ANa^+}$ のどちらが多いか．$[\\mathrm{AK^+}]/[\\mathrm{ANa^+}]$ を有効数字 2 桁で求めて答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\ce{K+}$ の全濃度 $1.00\\times10^{-3}$，$\\ce{Na+}$ の全濃度 $0.100$ の溶液で，$\\ce{K+}$ の $90\\,\\%$ を錯イオンにするには，A の全濃度をいくらにすればよいか．$\\mathrm{ANa^+}$ の生成による $\\ce{Na+}$ の減少も考慮して，有効数字 2 桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$97\\,\\%$"
+   },
+   {
+    "id": "2",
+    "tex": "$38\\,\\%$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\mathrm{ANa^+}$ が多い，$[\\mathrm{AK^+}]/[\\mathrm{ANa^+}]=0.62$"
+   },
+   {
+    "id": "4",
+    "tex": "$9.2\\times10^{-3}\\,\\mathrm{mol/L}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　錯形成の選択性は平衡定数の比だけでは決まらず，「平衡定数 × 遊離イオンの濃度」の比で決まる．A が足りないときは，大量の $\\ce{Na+}$ が A を奪い合い，$K_\\mathrm K$ が 100 倍大きい $\\ce{K+}$ でも錯イオンになりにくくなる．\n\n\\textbf{(1)} 遊離の $\\ce{K+}$ を $u$ とすると，$[\\mathrm{AK^+}]=1.00\\times10^{-3}-u$，$[\\mathrm A]=u$（A と $\\ce{K+}$ が同量なので）．\n\\[\\frac{1.00\\times10^{-3}-u}{u^2}=1.0\\times10^{6}\\quad\\Rightarrow\\quad u^2+1.0\\times10^{-6}u-1.0\\times10^{-9}=0\\]\n$u=\\dfrac{-1.0\\times10^{-6}+\\sqrt{4.004\\times10^{-9}}}{2}=3.1\\times10^{-5}$．錯イオンの割合は $1-0.031=0.969$ → $\\boldsymbol{97\\,\\%}$．\n（「ほぼ全部反応」とみなすのは妥当だが，遊離の $\\ce{K+}$ は $3\\,\\%$ 残る．）\n\n\\textbf{(2)} 遊離の A を $c$，遊離の $\\ce{K+}$ を $u$ とする．$[\\ce{Na+}]\\approx0.100$ とおくと $[\\mathrm{ANa^+}]=K_\\mathrm{Na}\\times0.100\\times c=1.0\\times10^{3}c$．\nA の保存：$c+(1.00\\times10^{-3}-u)+1.0\\times10^{3}c=1.00\\times10^{-3}$ より $c=\\dfrac{u}{1001}$．\n$\\ce{K+}$ の平衡：$1.00\\times10^{-3}-u=K_\\mathrm K\\,u\\,c=\\dfrac{1.0\\times10^{6}}{1001}u^2$ より\n\\[999u^2+u-1.00\\times10^{-3}=0,\\quad u=\\frac{-1+\\sqrt{4.996}}{1998}=6.18\\times10^{-4}\\]\n錯イオンの割合は $(1.00-0.618)\\times100=\\boldsymbol{38\\,\\%}$．\n近似の確認：$[\\mathrm{ANa^+}]=1.0\\times10^{3}\\times\\dfrac{6.18\\times10^{-4}}{1001}=6.2\\times10^{-4}$ で，$\\ce{Na+}$ $0.100$ の $0.6\\,\\%$ にすぎないので $[\\ce{Na+}]\\approx0.100$ は妥当．\n\n\\textbf{(3)} $[\\mathrm{AK^+}]=3.82\\times10^{-4}$，$[\\mathrm{ANa^+}]=6.17\\times10^{-4}$ より $\\boldsymbol{\\mathrm{ANa^+}}$ が多く，比は $\\boldsymbol{0.62}$．\n一般に $\\dfrac{[\\mathrm{AK^+}]}{[\\mathrm{ANa^+}]}=\\dfrac{K_\\mathrm K[\\ce{K+}]}{K_\\mathrm{Na}[\\ce{Na+}]}=100\\times\\dfrac{6.18\\times10^{-4}}{0.100}=0.62$ で，遊離イオンの濃度比が 160 倍あれば平衡定数の 100 倍の差は逆転する．\n\n\\textbf{(4)} $[\\mathrm{AK^+}]=9.0\\times10^{-4}$，$[\\ce{K+}]=1.0\\times10^{-4}$ より $[\\mathrm A]=\\dfrac{9.0\\times10^{-4}}{1.0\\times10^{6}\\times1.0\\times10^{-4}}=9.0\\times10^{-6}$．\n$[\\mathrm{ANa^+}]=z$ とすると，遊離の $\\ce{Na+}$ は $0.100-z$ なので $z=K_\\mathrm{Na}(0.100-z)[\\mathrm A]=1.0\\times10^{4}\\times9.0\\times10^{-6}\\times(0.100-z)=0.090(0.100-z)$．よって $z=\\dfrac{0.0090}{1.090}=8.26\\times10^{-3}$．\nA の全濃度 $=9.0\\times10^{-6}+9.0\\times10^{-4}+8.26\\times10^{-3}=\\boldsymbol{9.2\\times10^{-3}\\,\\mathrm{mol/L}}$．\nここでは $\\mathrm{ANa^+}$ が $\\ce{Na+}$ の約 $8\\,\\%$ に達するので，$[\\ce{Na+}]=0.100$ のままとすると $z=9.0\\times10^{-3}$，全濃度 $9.9\\times10^{-3}$ と過大に見積もってしまう．A の大部分は $\\ce{Na+}$ に使われ，$\\ce{K+}$ の量の 9 倍以上の A が必要になる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "1 種類の配位子を 2 種類の陽イオンが奪い合うとき，どちらが錯イオンになるかは平衡定数だけでなく『平衡定数 × 遊離イオンの濃度』の比で決まり，配位子が不足すると大量に共存するイオンが選択性を逆転させる．配位子の保存と各平衡を連立して解き，共存イオンの減少を無視できるかどうかを結合量から判断する．"
+ },
+ "concepts": [
+  "precipitation",
+  "complex-ion",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "クラウンエーテル",
+  "錯形成平衡",
+  "競合",
+  "選択性",
+  "近似の妥当性"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

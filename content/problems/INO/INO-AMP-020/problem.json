@@ -1,0 +1,110 @@
+{
+ "id": "INO-AMP-020",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-06",
+ "topic": "アルミニウムからのミョウバンの合成（量的関係と途中で現れて消える沈殿）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "アルミニウムの粉末 $2.70\\,\\mathrm{g}$ を $1.50\\,\\mathrm{mol/L}$ の水酸化カリウム水溶液 $100\\,\\mathrm{mL}$ に溶かした．この溶液に $3.00\\,\\mathrm{mol/L}$ の希硫酸を少しずつ加えていくと，途中で白色の沈殿が生じ，さらに加えると沈殿は消えた．沈殿が消えた溶液を冷却して，ミョウバン $\\ce{AlK(SO4)2*12H2O}$ の結晶を得た．原子量は $\\ce{H}=1.0$，$\\ce{O}=16$，$\\ce{Al}=27$，$\\ce{S}=32$，$\\ce{K}=39$ とし，$0\\,^\\circ\\mathrm{C}$，$1.013\\times10^{5}\\,\\mathrm{Pa}$ の気体のモル体積を $22.4\\,\\mathrm{L/mol}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "アルミニウムが水酸化カリウム水溶液に溶ける反応を化学反応式で表し，発生した気体の体積（$0\\,^\\circ\\mathrm{C}$，$1.013\\times10^{5}\\,\\mathrm{Pa}$）を有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "希硫酸を加えたとき，白色沈殿が生じはじめるのは何 mL を加えた後か．また，沈殿が完全に消えるのは何 mL を加えたときか．それぞれ有効数字 3 桁で求め，沈殿が生じる反応と消える反応をイオン反応式で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "得られるミョウバンの質量の最大値を有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "ミョウバンの水溶液は酸性・中性・塩基性のいずれを示すか．水溶液中でのアルミニウムイオンの状態にふれて答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{2Al + 2KOH + 6H2O -> 2K[Al(OH)4] + 3H2}$，$3.36\\,\\mathrm{L}$"
+   },
+   {
+    "id": "2",
+    "tex": "$8.33\\,\\mathrm{mL}$ を加えた後，$75.0\\,\\mathrm{mL}$．生じる反応 $\\ce{[Al(OH)4]- + H+ -> Al(OH)3 + H2O}$，消える反応 $\\ce{Al(OH)3 + 3H+ -> Al^3+ + 3H2O}$"
+   },
+   {
+    "id": "3",
+    "tex": "$47.4\\,\\mathrm{g}$"
+   },
+   {
+    "id": "4",
+    "tex": "酸性．$\\ce{Al^3+}$ は 6 個の水分子が八面体形に配位した $\\ce{[Al(H2O)6]^3+}$ として存在し，その一部が $\\ce{H+}$ を放出する（加水分解する）から．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $\\ce{Al}$ は $\\dfrac{2.70}{27} = 0.100\\,\\mathrm{mol}$，$\\ce{KOH}$ は $1.50\\times0.100 = 0.150\\,\\mathrm{mol}$．$\\boldsymbol{\\ce{2Al + 2KOH + 6H2O -> 2K[Al(OH)4] + 3H2}}$ より，$\\ce{Al}$ はすべて溶けて $\\ce{H2}$ $0.150\\,\\mathrm{mol}$，$0.150\\times22.4 = \\boldsymbol{3.36\\,\\mathrm{L}}$．$\\ce{KOH}$ は $0.150 - 0.100 = 0.050\\,\\mathrm{mol}$ 残る．\n\n(2) 加えた $\\ce{H+}$ は次の順に使われる（硫酸 1 mol は $\\ce{H+}$ 2 mol）．\n・残った $\\ce{OH-}$ の中和：$\\ce{H+}$ $0.050\\,\\mathrm{mol}$（硫酸 $0.025\\,\\mathrm{mol}$）．この間は沈殿しない．\n\n・$\\ce{[Al(OH)4]- + H+ -> Al(OH)3 + H2O}$：$\\ce{H+}$ $0.100\\,\\mathrm{mol}$．白色沈殿が生じる．\n\n・$\\ce{Al(OH)3 + 3H+ -> Al^3+ + 3H2O}$：$\\ce{H+}$ $0.300\\,\\mathrm{mol}$．沈殿が溶ける．\n沈殿が生じはじめるのは硫酸 $0.025\\,\\mathrm{mol}$，$\\dfrac{0.025}{3.00} = 8.33\\times10^{-3}\\,\\mathrm{L} = \\boldsymbol{8.33\\,\\mathrm{mL}}$ の後．完全に消えるのは $\\ce{H+}$ の合計 $0.450\\,\\mathrm{mol}$（硫酸 $0.225\\,\\mathrm{mol}$），$\\dfrac{0.225}{3.00} = \\boldsymbol{75.0\\,\\mathrm{mL}}$．両性水酸化物の $\\ce{Al(OH)3}$ は，塩基性側では $\\ce{[Al(OH)4]-}$，酸性側では $\\ce{Al^3+}$ として溶けるので，中間の pH でだけ沈殿する．\n\n(3) 溶液中には $\\ce{K+}$ $0.150\\,\\mathrm{mol}$，$\\ce{Al^3+}$ $0.100\\,\\mathrm{mol}$，$\\ce{SO4^2-}$ $0.225\\,\\mathrm{mol}$ がある．ミョウバンは $\\ce{K}:\\ce{Al}:\\ce{SO4} = 1:1:2$ なので $\\ce{Al}$ が最も不足し，最大 $0.100\\,\\mathrm{mol}$．式量 $27 + 39 + 2\\times96 + 12\\times18 = 474$ より $0.100\\times474 = \\boldsymbol{47.4\\,\\mathrm{g}}$．\n\n(4) \\textbf{酸性}．水溶液中の $\\ce{Al^3+}$ は $\\ce{[Al(H2O)6]^3+}$（正八面体形）として存在し，電荷の大きい小さなイオンに配位した水分子が $\\ce{H+}$ を放出しやすい：$\\ce{[Al(H2O)6]^3+ <=> [Al(OH)(H2O)5]^2+ + H+}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "両性の水酸化物を含む系に酸を加えると，H⁺ は過剰な OH⁻ の中和→[Al(OH)₄]⁻ から Al(OH)₃ の沈殿→Al(OH)₃ の溶解の順に使われるので，沈殿が現れる・消える点を H⁺ の物質量の積み上げで求める．複塩の組成比と各イオンの物質量から不足するイオンを決めて収量の上限を求め，[Al(H₂O)₆]³⁺ の加水分解で水溶液が酸性になることを判断する．"
+ },
+ "concepts": [
+  "amphoteric",
+  "precipitation",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ミョウバン",
+  "両性水酸化物",
+  "アルミニウム",
+  "複塩",
+  "加水分解",
+  "量的関係"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

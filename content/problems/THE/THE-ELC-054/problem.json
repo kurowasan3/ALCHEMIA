@@ -1,0 +1,109 @@
+{
+ "id": "THE-ELC-054",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-07",
+ "topic": "金属1 kgを電気分解で得るための電気量と電力量の比較（アルミニウム・マグネシウム・銅）",
+ "course": "化学",
+ "level": 1,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "金属の製錬・精錬には電気分解が用いられる．アルミニウムは酸化アルミニウムの融解塩電解（陰極：$\\ce{Al^3+ + 3e- -> Al}$），マグネシウムは塩化マグネシウムの融解塩電解（陰極：$\\ce{Mg^2+ + 2e- -> Mg}$），銅は硫酸銅(II) 水溶液を用いた電解精錬（陰極：$\\ce{Cu^2+ + 2e- -> Cu}$）で得られる．電解に必要な電圧を，それぞれ $4.2\\,\\mathrm V$，$5.0\\,\\mathrm V$，$0.25\\,\\mathrm V$ とし，流れた電流はすべて金属の析出に使われるものとする．原子量は Mg = 24.3，Al = 27.0，Cu = 63.5，ファラデー定数は $9.65\\times10^{4}\\,\\mathrm{C/mol}$，$1\\,\\mathrm{kWh} = 3.6\\times10^{6}\\,\\mathrm J$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "各金属 $1.00\\,\\mathrm{kg}$ を得るのに必要な電気量（C）を，それぞれ有効数字3桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "各金属 $1.00\\,\\mathrm{kg}$ を得るのに必要な電力量（kWh）を，それぞれ有効数字2桁で求め，大きい順に並べよ．"
+     },
+     {
+      "id": "3",
+      "tex": "1 kg あたりの電力量はアルミニウムのほうが銅の約何倍か（整数で）．また，その倍率を「電気量の比」と「電圧の比」に分けて，それぞれの値を示せ．"
+     },
+     {
+      "id": "4",
+      "tex": "1 kg あたりに必要な電気量はアルミニウムのほうがマグネシウムより大きい．この理由を，イオンの価数と原子量を用いて説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "Al：$1.07\\times10^{7}\\,\\mathrm C$，Mg：$7.94\\times10^{6}\\,\\mathrm C$，Cu：$3.04\\times10^{6}\\,\\mathrm C$"
+   },
+   {
+    "id": "2",
+    "tex": "Al：$13\\,\\mathrm{kWh}$，Mg：$11\\,\\mathrm{kWh}$，Cu：$0.21\\,\\mathrm{kWh}$，Al ＞ Mg ＞ Cu"
+   },
+   {
+    "id": "3",
+    "tex": "約 59 倍．電気量の比 約 3.5 倍 × 電圧の比 約 17 倍"
+   },
+   {
+    "id": "4",
+    "tex": "1 kg あたりの電子の物質量は（価数）÷（原子量）×1000 に比例し，Al は $3/27.0$，Mg は $2/24.3$ で，Al のほうが原子量の割に価数が大きいため"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 電気量 $= \\dfrac{1000}{\\text{原子量}}\\times\\text{価数}\\times F$．\n\\[\\text{Al}：\\frac{1000}{27.0}\\times3\\times9.65\\times10^{4} = \\boldsymbol{1.07\\times10^{7}\\,\\mathrm C}\\qquad \\text{Mg}：\\frac{1000}{24.3}\\times2\\times9.65\\times10^{4} = \\boldsymbol{7.94\\times10^{6}\\,\\mathrm C}\\]\n\\[\\text{Cu}：\\frac{1000}{63.5}\\times2\\times9.65\\times10^{4} = \\boldsymbol{3.04\\times10^{6}\\,\\mathrm C}\\]\n\n\\textbf{(2)} 電力量 = 電気量 × 電圧．\n\\[\\text{Al}：\\frac{1.072\\times10^{7}\\times4.2}{3.6\\times10^{6}} = 12.5 \\fallingdotseq \\boldsymbol{13\\,\\mathrm{kWh}}\\qquad \\text{Mg}：\\frac{7.94\\times10^{6}\\times5.0}{3.6\\times10^{6}} = \\boldsymbol{11\\,\\mathrm{kWh}}\\qquad \\text{Cu}：\\frac{3.04\\times10^{6}\\times0.25}{3.6\\times10^{6}} = \\boldsymbol{0.21\\,\\mathrm{kWh}}\\]\nよって $\\boldsymbol{\\text{Al > Mg > Cu}}$．Mg は電圧が高いが，1 kg あたりの電気量が小さいので Al より少し小さい．\n\n\\textbf{(3)} $\\dfrac{12.5}{0.211} \\fallingdotseq \\boldsymbol{59}$ 倍．電気量の比 $\\dfrac{1.07\\times10^{7}}{3.04\\times10^{6}} = 3.5$ 倍（Al は価数が大きく原子量が小さい），電圧の比 $\\dfrac{4.2}{0.25} = 17$ 倍（融解塩電解では化合物を分解するのに大きな電圧が必要だが，電解精錬は陽極で溶けた銅を陰極に移すだけなので小さな電圧ですむ）．$3.5\\times17 \\fallingdotseq 59$．\n\n\\textbf{(4)} 1 kg あたりの電子の物質量は $\\dfrac{1000}{\\text{原子量}}\\times\\text{価数}$ で，Al：$\\dfrac{3}{27.0}\\times1000 = 111\\,\\mathrm{mol}$，Mg：$\\dfrac{2}{24.3}\\times1000 = 82.3\\,\\mathrm{mol}$．原子量はほぼ同じなのに Al は価数が3で大きいので，同じ質量を得るのにより多くの電子が要る．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "電気分解で金属1 kgを得る電気量は（1000/原子量）×価数×F，電力量はそれに電圧をかけたもの．金属ごとの差は「価数/原子量」と「必要な電圧」（融解塩電解と電解精錬の違い）の積に分けて比較できる．"
+ },
+ "concepts": [
+  "electrolysis",
+  "amphoteric",
+  "transition-metals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電気分解",
+  "ファラデーの法則",
+  "融解塩電解",
+  "電解精錬",
+  "電力量"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

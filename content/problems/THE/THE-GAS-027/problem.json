@@ -1,0 +1,117 @@
+{
+ "id": "THE-GAS-027",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-08",
+ "topic": "空気と揮発性物質の等温圧縮データから飽和蒸気圧と物質量を決める",
+ "course": "化学",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "なめらかに動くピストン付きの容器に，空気と揮発性の物質 X を入れて 27 ℃ に保ち，容器の内容積 $V$ を変えて全圧 $P$ を測定したところ，次の結果を得た．空気と X の物質量はいずれも不明であり，空気は X の液体に溶けず，液体の X の体積は無視できる．気体はすべて理想気体とし，$R=8.3\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$ とする．\n\\[\\begin{array}{c|cccc} V\\,[\\mathrm L] & 1.00 & 1.50 & 3.00 & 5.00\\\\ \\hline P\\,[\\mathrm{Pa}] & 1.098\\times10^{5} & 9.320\\times10^{4} & 5.810\\times10^{4} & 3.486\\times10^{4}\\end{array}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "4つの測定のそれぞれについて，容器内に X の液体が存在するかどうかを，理由とともに判定せよ．"
+     },
+     {
+      "id": "2",
+      "tex": "27 ℃ における X の飽和蒸気圧と，容器内の空気および X の物質量を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "内容積 $5.00\\,\\mathrm L$ からゆっくり圧縮していくとき，X の液体が生じ始める内容積と，そのときの全圧を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "内容積 $2.00\\,\\mathrm L$ のとき，容器内に X の液体は存在するか．存在するならその物質量を有効数字2桁で求め，全圧も求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "仮に $V=1.00\\,\\mathrm L$ と $1.50\\,\\mathrm L$ の2つの測定値しか得られていなかったとすると，飽和蒸気圧・空気の物質量・X の物質量のうち，決められないものはどれか．理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$1.00\\,\\mathrm L$ と $1.50\\,\\mathrm L$ では液体あり，$3.00\\,\\mathrm L$ と $5.00\\,\\mathrm L$ では液体なし．$PV$ が $3.00\\,\\mathrm L$ と $5.00\\,\\mathrm L$ で等しく（$1.743\\times10^{5}\\,\\mathrm{Pa\\cdot L}$）ボイルの法則に従うが，$1.50\\,\\mathrm L$ と $1.00\\,\\mathrm L$ ではそれより小さく，気体の物質量が減っている（X の一部が凝縮している）から"
+   },
+   {
+    "id": "2",
+    "tex": "飽和蒸気圧 $6.0\\times10^{4}\\,\\mathrm{Pa}$，空気 $2.0\\times10^{-2}\\,\\mathrm{mol}$，X $5.0\\times10^{-2}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "$2.1\\,\\mathrm L$，$8.4\\times10^{4}\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "4",
+    "tex": "存在する．$1.8\\times10^{-3}\\,\\mathrm{mol}$，全圧 $8.5\\times10^{4}\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "5",
+    "tex": "X の物質量．液体が存在する間は X の分圧が飽和蒸気圧に固定され，全圧は X の全物質量によらないから"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$RT=8.3\\times10^{3}\\times300=2.49\\times10^{6}\\,\\mathrm{Pa\\cdot L/mol}$．\n\n\\textbf{(1)}　液体がなければ気体の物質量は一定なので $PV$ は一定（ボイルの法則）．液体があると X の一部が凝縮して気体の物質量が減り，$PV$ はその分小さくなる．各測定の $PV$ は\n\\[1.00\\,\\mathrm L:\\ 1.098\\times10^{5},\\quad 1.50\\,\\mathrm L:\\ 1.398\\times10^{5},\\quad 3.00\\,\\mathrm L:\\ 1.743\\times10^{5},\\quad 5.00\\,\\mathrm L:\\ 1.743\\times10^{5}\\ (\\mathrm{Pa\\cdot L})\\]\n$3.00\\,\\mathrm L$ と $5.00\\,\\mathrm L$ は $PV$ が等しい．両方に液体があるとすると $P=\\dfrac{n_{\\text{空気}}RT}{V}+p_{\\text{s}}$ から $PV=n_{\\text{空気}}RT+p_{\\text{s}}V$ は $V$ によって変わるはずなので，両方とも\\textbf{液体なし}（すべて気体）．$1.50\\,\\mathrm L$ と $1.00\\,\\mathrm L$ の $PV$ はこれより小さいので気体の一部が凝縮しており，\\textbf{液体あり}．\n\n\\textbf{(2)}　液体がある2点では $P=\\dfrac{A}{V}+p_{\\text{s}}$（$A=n_{\\text{空気}}RT$）が成り立つ．\n\\[1.098\\times10^{5}=A+p_{\\text{s}},\\qquad 9.320\\times10^{4}=\\dfrac{A}{1.50}+p_{\\text{s}}\\]\n辺々引いて $\\dfrac{A}{3}=1.66\\times10^{4}$，$A=4.98\\times10^{4}\\,\\mathrm{Pa\\cdot L}$，$p_{\\text{s}}=\\boldsymbol{6.0\\times10^{4}\\,\\mathrm{Pa}}$．\n$n_{\\text{空気}}=\\dfrac{4.98\\times10^{4}}{2.49\\times10^{6}}=\\boldsymbol{2.0\\times10^{-2}\\,\\mathrm{mol}}$．\n液体がない2点から全物質量は $\\dfrac{1.743\\times10^{5}}{2.49\\times10^{6}}=7.00\\times10^{-2}\\,\\mathrm{mol}$．よって X は $\\boldsymbol{5.0\\times10^{-2}\\,\\mathrm{mol}}$．\n\n\\textbf{(3)}　液体が生じ始めるのは，X がすべて気体のままで分圧が飽和蒸気圧に達したとき．\n\\[V^{*}=\\dfrac{n_{\\text{X}}RT}{p_{\\text{s}}}=\\dfrac{5.0\\times10^{-2}\\times2.49\\times10^{6}}{6.0\\times10^{4}}=2.075\\approx\\boldsymbol{2.1\\,\\mathrm L},\\qquad P^{*}=\\dfrac{1.743\\times10^{5}}{2.075}=\\boldsymbol{8.4\\times10^{4}\\,\\mathrm{Pa}}\\]\n\n\\textbf{(4)}　$2.00\\,\\mathrm L<V^{*}$ なので\\textbf{液体が存在する}（$V^{*}$ に近いので量はわずか）．気体の X は $\\dfrac{6.0\\times10^{4}\\times2.00}{2.49\\times10^{6}}=4.82\\times10^{-2}\\,\\mathrm{mol}$ なので，液体は\n\\[5.0\\times10^{-2}-4.82\\times10^{-2}=\\boldsymbol{1.8\\times10^{-3}\\,\\mathrm{mol}}\\]\n全圧は $\\dfrac{4.98\\times10^{4}}{2.00}+6.0\\times10^{4}=8.49\\times10^{4}\\approx\\boldsymbol{8.5\\times10^{4}\\,\\mathrm{Pa}}$．\n\n\\textbf{(5)}　液体が存在する間は X の分圧が $p_{\\text{s}}$ に固定されるので，全圧 $P=\\dfrac{n_{\\text{空気}}RT}{V}+p_{\\text{s}}$ に X の物質量は現れない．したがって液体がある2点からは $p_{\\text{s}}$ と空気の物質量は決まるが，\\textbf{X の物質量は決められない}（液体の量がいくらでも同じ測定値になる）．X の物質量を決めるには，液体がなくなった状態の測定が少なくとも1つ必要である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "空気と揮発性物質を含む容器の等温圧縮データについて，PV が一定かどうかで液体の有無を自分で判定し，液体がある区間（P = n空気RT/V + 飽和蒸気圧）と液体がない区間（ボイルの法則）の式を使い分けて，飽和蒸気圧と各成分の物質量を逆算する．液体がある区間の測定だけでは揮発性物質の量が決まらないことを見抜く．"
+ },
+ "concepts": [
+  "ideal-gas",
+  "mole",
+  "vapor-pressure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "飽和蒸気圧",
+  "凝縮",
+  "ボイルの法則",
+  "データの解析",
+  "場合分け"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

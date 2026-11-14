@@ -1,0 +1,101 @@
+{
+ "id": "THE-MOL-027",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-04",
+ "topic": "塩の陰イオンを置き換えたときの質量変化と当量",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "原子量 $X$ が未知で，$n$ 価の陽イオンになる金属元素 M がある．M の塩化物 $4.75\\,\\mathrm{g}$ をすべて硫酸塩に変えたところ，$6.00\\,\\mathrm{g}$ になった．M はどの塩の中でも $n$ 価の陽イオンとして存在する．原子量は C＝12，O＝16，S＝32，Cl＝35.5，Ag＝108，標準状態の気体のモル体積は $22.4\\,\\mathrm{L/mol}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\dfrac{X}{n}$ の値を有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "M の炭酸塩 $4.20\\,\\mathrm{g}$ を強熱すると，すべて M の酸化物と二酸化炭素になった．生じた二酸化炭素の標準状態での体積と，残った酸化物の質量を，それぞれ有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "次の (a)〜(d) のうち，$X$ と $n$ が別々には分からなくても，$\\dfrac{X}{n}$ の値だけで求められるものをすべて選べ．\n(a) 塩化物 $4.75\\,\\mathrm{g}$ に含まれる M の質量\n(b) 塩化物 $4.75\\,\\mathrm{g}$ に含まれる M の原子の物質量\n(c) 塩化物 $4.75\\,\\mathrm{g}$ を水に溶かし，硝酸銀水溶液を十分に加えたときに生じる塩化銀の質量\n(d) M の塩化物の式量"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "12.0"
+   },
+   {
+    "id": "2",
+    "tex": "二酸化炭素 $1.12\\,\\mathrm{L}$，酸化物 $2.00\\,\\mathrm{g}$"
+   },
+   {
+    "id": "3",
+    "tex": "(a)，(c)"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方：陽イオンの正電荷 1 mol あたりで考える}\nM の $n$ 価の陽イオン 1 mol は正電荷 $n$ mol をもつ．どの塩でも，正電荷 1 mol あたりには M が $\\dfrac{X}{n}\\,\\mathrm{g}$ と，負電荷 1 mol 分の陰イオンが含まれる．\n\\[\n\\begin{array}{c|c}\n\\text{塩} & \\text{正電荷 1 mol あたりの質量 [g]} \\\\ \\hline\n\\text{塩化物（} \\ce{Cl-} \\text{ 1 mol）} & \\frac{X}{n}+35.5 \\\\\n\\text{硫酸塩（} \\ce{SO4^2-} \\text{ 1/2 mol）} & \\frac{X}{n}+48.0 \\\\\n\\text{炭酸塩（} \\ce{CO3^2-} \\text{ 1/2 mol）} & \\frac{X}{n}+30.0 \\\\\n\\text{酸化物（} \\ce{O^2-} \\text{ 1/2 mol）} & \\frac{X}{n}+8.0\n\\end{array}\n\\]\n塩を別の塩に変えても M の量（正電荷の量）は変わらないので，質量の比はこの表の値の比になる．\n\n\\textbf{(1)} $E=\\dfrac{X}{n}$ とおくと\n\\[ \\frac{E+48.0}{E+35.5}=\\frac{6.00}{4.75} \\qquad 4.75(E+48.0)=6.00(E+35.5) \\]\n$228-213=1.25E$ より $E=\\boldsymbol{12.0}$．（このとき塩化物 $4.75\\,\\mathrm g$ は正電荷 $\\dfrac{4.75}{47.5}=0.100\\,\\mathrm{mol}$ 分．）\n\n\\textbf{(2)} 炭酸塩の正電荷 1 mol あたりの質量は $12.0+30.0=42.0\\,\\mathrm{g}$ なので，$4.20\\,\\mathrm g$ は正電荷 $0.100\\,\\mathrm{mol}$ 分で，$\\ce{CO3^2-}$ は $0.0500\\,\\mathrm{mol}$．炭酸イオン 1 個から $\\ce{CO2}$ 1 分子が出て $\\ce{O^2-}$ が残るので，\n\\[ \\ce{CO2}：0.0500\\times22.4=\\boldsymbol{1.12\\,\\mathrm{L}},\\qquad \\text{酸化物}：0.100\\times(12.0+8.0)=\\boldsymbol{2.00\\,\\mathrm{g}} \\]\n$n$ が分からなくても答えが決まることに注意する．（実際は $n=2$，$X=24$ の Mg で，$\\ce{MgCO3 -> MgO + CO2}$ である．）\n\n\\textbf{(3)} $\\dfrac{X}{n}$ だけで決まるのは，正電荷の物質量（$0.100\\,\\mathrm{mol}$）から直接計算できる量である．\n(a) M の質量 $=0.100\\times12.0=1.20\\,\\mathrm g$ → 決まる．\n(b) M 原子の物質量 $=\\dfrac{0.100}{n}\\,\\mathrm{mol}$ → $n$ が必要．\n(c) $\\ce{Cl-}$ は $0.100\\,\\mathrm{mol}$ なので $\\ce{AgCl}$ は $0.100\\times143.5=14.35\\,\\mathrm g$ → 決まる．\n(d) 塩化物の式量 $=X+35.5n=n(E+35.5)$ → $n$ が必要．\nよって $\\boldsymbol{\\text{(a)，(c)}}$．原子の数や式量のように「1 粒子あたり」の量には価数が必要だが，質量・気体の体積・沈殿の量のような「電荷のつり合いで決まる量」は $\\dfrac{X}{n}$ だけで決まる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "金属の塩を別の塩に変えても陽イオンの正電荷の物質量は変わらないので，正電荷 1 mol あたりの質量（原子量/価数 ＋ 陰イオンの質量）の比から X/n が求まる．気体の発生量・沈殿量・質量のように電荷のつり合いで決まる量は X/n だけで決まり，原子の物質量や式量には価数 n が別に必要になる．"
+ },
+ "concepts": [
+  "mole",
+  "precipitation",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "物質量",
+  "化学反応式",
+  "当量",
+  "差量",
+  "金属の塩"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "id": "ORG-STR-019",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-01",
+ "topic": "二糖のエステルの分子式とエステル結合の数",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "structure"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "二糖（分子式 $\\ce{C12H22O11}$）のヒドロキシ基のいくつかが，1 種類の鎖式の飽和モノカルボン酸（カルボキシ基以外に官能基をもたない）とエステル結合をつくった化合物 E がある．E は C，H，O だけからなり，分子量は 600 以下である．E $51.0\\,\\mathrm{mg}$ を完全燃焼させると，二酸化炭素 $96.8\\,\\mathrm{mg}$ と水 $34.2\\,\\mathrm{mg}$ が得られた．原子量は H = 1.0，C = 12，O = 16 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "E の組成式と分子式を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "E 1 分子に含まれるエステル結合の数と，エステルをつくっているカルボン酸の分子式を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "このカルボン酸には不斉炭素原子がある．カルボン酸の示性式を答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "不斉炭素原子をもつという条件がなければ，(2) の分子式をもつ鎖式の飽和モノカルボン酸は何種類考えられるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "組成式 $\\ce{C22H38O13}$，分子式 $\\ce{C22H38O13}$"
+   },
+   {
+    "id": "2",
+    "tex": "エステル結合 2 個，$\\ce{C5H10O2}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{CH3CH2CH(CH3)COOH}$"
+   },
+   {
+    "id": "4",
+    "tex": "4 種類"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　エステル E は「二糖 ＋ カルボン酸 $k$ 分子 − 水 $k$ 分子」．差し引きで考えると，O 原子はエステル結合 1 つにつき 1 個ずつ増える（酸の O 2 個が入り，水の O 1 個が出る）．\n\n(1) C：$96.8 \\times \\dfrac{12}{44} = 26.4\\,\\mathrm{mg}$，H：$34.2 \\times \\dfrac{2.0}{18} = 3.80\\,\\mathrm{mg}$，O：$51.0 - 26.4 - 3.80 = 20.8\\,\\mathrm{mg}$．\n\\[ \\mathrm{C : H : O} = \\frac{26.4}{12} : \\frac{3.80}{1.0} : \\frac{20.8}{16} = 2.20 : 3.80 : 1.30 = 22 : 38 : 13 \\]\n組成式は $\\boldsymbol{\\ce{C22H38O13}}$（式量 510）．分子量は $510n \\le 600$ より $n = 1$ で，分子式も $\\boldsymbol{\\ce{C22H38O13}}$．\n\n(2) カルボン酸を $\\ce{C_mH_{2m}O2}$，エステル結合の数を $k$ とすると\n\\[ \\ce{C12H22O11} + k\\,\\ce{C_mH_{2m}O2} - k\\,\\ce{H2O} = \\ce{C22H38O13} \\]\nO について $11 + 2k - k = 13$ より $k = \\boldsymbol{2}$．C について $12 + 2m = 22$ より $m = 5$．H も $22 + 2\\times10 - 2\\times2 = 38$ で一致する．カルボン酸は $\\boldsymbol{\\ce{C5H10O2}}$．\n\n(3) $\\ce{C5H10O2}$ のカルボン酸は $\\ce{C4H9-COOH}$．$\\ce{C4H9-}$ 基のうち，$-\\ce{COOH}$ のつく炭素に H，$\\ce{CH3}$，$\\ce{C2H5}$，$\\ce{COOH}$ の 4 つの異なる基が結合するのは $\\boldsymbol{\\ce{CH3CH2CH(CH3)COOH}}$（2-メチルブタン酸）だけである．\n\n(4) $\\ce{C4H9-}$ 基は 4 種類あるので，$\\ce{CH3CH2CH2CH2COOH}$，$\\ce{CH3CH2CH(CH3)COOH}$，$\\ce{(CH3)2CHCH2COOH}$，$\\ce{(CH3)3CCOOH}$ の $\\boldsymbol{4}$ 種類．このうち不斉炭素原子をもつのは 1 つだけなので，(3) の条件で一つに決まる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "エステルは「アルコール成分＋酸 k 分子−水 k 分子」なので，分子式の差し引きからエステル結合の数と酸の分子式が決まる（O はエステル結合 1 つにつき 1 個増える）．酸の候補は不斉炭素の有無で 1 つに絞る．"
+ },
+ "concepts": [
+  "organic-structure",
+  "carbon-silicon",
+  "elemental-analysis"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "元素分析",
+  "分子式",
+  "エステル",
+  "二糖",
+  "不斉炭素原子"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

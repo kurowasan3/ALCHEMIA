@@ -1,0 +1,109 @@
+{
+ "id": "THE-ELC-055",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-07",
+ "topic": "酸化銀電池の電極反応と放電による電極・電解液の変化",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "equation",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "酸化銀電池は，正極に酸化銀 $\\ce{Ag2O}$，負極に亜鉛 Zn，電解液に濃い水酸化カリウム水溶液を用いる．放電すると，正極では $\\ce{Ag2O}$ が銀に変わり，負極では亜鉛が酸化されて生じた $\\ce{Zn(OH)2}$ が濃い塩基にただちに溶けて $\\ce{[Zn(OH)4]^2-}$ になる．原子量は O $=16.0$，Zn $=65.4$，ファラデー定数は $9.65\\times10^{4}\\,\\mathrm{C/mol}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "正極と負極で起こる反応を，電子 $\\ce{e-}$ を含むイオン反応式で書け（負極は $\\ce{[Zn(OH)4]^2-}$ が生じるまでを 1 つの式にまとめよ）．また，電池全体の反応式を書け．"
+     },
+     {
+      "id": "2",
+      "tex": "$0.20\\,\\mathrm{mA}$ の一定電流で $200$ 時間放電した．流れた電気量は何 C か．また，正極の質量と負極の亜鉛の質量はそれぞれ何 mg 変化するか（増加か減少かも答えよ）．有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の放電で，電解液中の $\\ce{OH-}$ の物質量は何 mol 増加または減少するか．有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "鉛蓄電池では，放電すると正極・負極の質量がどちらも増加する．酸化銀電池で正極の質量の変化の向きが鉛蓄電池と異なる理由を，電極で生じる物質にもとづいて簡潔に述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "正極：$\\ce{Ag2O + H2O + 2e- -> 2Ag + 2OH-}$，負極：$\\ce{Zn + 4OH- -> [Zn(OH)4]^2- + 2e-}$，全体：$\\ce{Ag2O + Zn + H2O + 2OH- -> 2Ag + [Zn(OH)4]^2-}$"
+   },
+   {
+    "id": "2",
+    "tex": "$1.4\\times10^{2}\\,\\mathrm{C}$（$144\\,\\mathrm{C}$），正極 $12\\,\\mathrm{mg}$ 減少，亜鉛 $49\\,\\mathrm{mg}$ 減少"
+   },
+   {
+    "id": "3",
+    "tex": "$1.5\\times10^{-3}\\,\\mathrm{mol}$ 減少"
+   },
+   {
+    "id": "4",
+    "tex": "鉛蓄電池では両極に水に溶けない $\\ce{PbSO4}$ が付着して質量が増えるが，酸化銀電池の正極では $\\ce{Ag2O}$ の O が $\\ce{OH-}$ として電解液に出ていき，銀だけが残るため質量が減る"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 正極：$\\ce{Ag}$ は $+1\\to0$．$\\ce{Ag2O}$ 1 つで電子 2 個を受け取り，O は水と結びついて $\\ce{OH-}$ になる．\n\\[ \\ce{Ag2O + H2O + 2e- -> 2Ag + 2OH-} \\]\n負極：$\\ce{Zn + 2OH- -> Zn(OH)2 + 2e-}$，続いて $\\ce{Zn(OH)2 + 2OH- -> [Zn(OH)4]^2-}$ なので，まとめて\n\\[ \\ce{Zn + 4OH- -> [Zn(OH)4]^2- + 2e-} \\]\n両式を足して電子を消すと\n\\[ \\ce{Ag2O + Zn + H2O + 2OH- -> 2Ag + [Zn(OH)4]^2-} \\]\n\n\\textbf{(2)} $Q=0.20\\times10^{-3}\\times200\\times3600=144\\,\\mathrm{C}=\\boldsymbol{1.4\\times10^{2}\\,\\mathrm{C}}$．電子は $144/(9.65\\times10^{4})=1.49\\times10^{-3}\\,\\mathrm{mol}$．\n\n正極：電子 2 mol で $\\ce{Ag2O}$ 1 mol が $\\ce{2Ag}$ になり O 1 mol（16.0 g）が失われる．$\\dfrac{1.49\\times10^{-3}}{2}\\times16.0=1.19\\times10^{-2}\\,\\mathrm{g}$，$\\boldsymbol{12\\,\\mathrm{mg}}$ \\textbf{減少}．\n\n負極：Zn は電子 2 mol で 1 mol 溶け出す．$\\dfrac{1.49\\times10^{-3}}{2}\\times65.4=4.88\\times10^{-2}\\,\\mathrm{g}$，$\\boldsymbol{49\\,\\mathrm{mg}}$ \\textbf{減少}．\n\n\\textbf{(3)} 全体の反応式で，電子 2 mol あたり $\\ce{OH-}$ 2 mol が消費される（正極で 2 mol 生じ，負極で 4 mol 使われる）．よって電子と同じ $\\boldsymbol{1.5\\times10^{-3}\\,\\mathrm{mol}}$ \\textbf{減少}する．電解液に濃い KOH を用いるのは，この消費と亜鉛酸イオンの生成に十分な $\\ce{OH-}$ を確保するためでもある．\n\n\\textbf{(4)} 鉛蓄電池では，正極 $\\ce{PbO2}$・負極 $\\ce{Pb}$ がともに難溶性の $\\ce{PbSO4}$ になって電極に残るため，$\\ce{SO4}$ の分だけ両極とも増える．酸化銀電池の正極では生成物の $\\ce{OH-}$ が電解液に溶け出し，電極には $\\ce{Ag}$ しか残らないので\\textbf{質量が減る}．負極の亜鉛も可溶性の $\\ce{[Zn(OH)4]^2-}$ になって溶け出すので減る．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "酸化銀電池では正極の Ag₂O が Ag と OH⁻ に，負極の Zn が可溶性の [Zn(OH)₄]²⁻ になる．半反応式から全体の反応で OH⁻ が消費されることを導き，電気量から両極の質量変化（どちらも減少）と OH⁻ の減少量を求め，生成物が電極に残る鉛蓄電池との違いを比べる．"
+ },
+ "concepts": [
+  "electrolysis",
+  "amphoteric",
+  "battery"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "酸化銀電池",
+  "電極反応",
+  "亜鉛酸イオン",
+  "ファラデーの法則",
+  "鉛蓄電池"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

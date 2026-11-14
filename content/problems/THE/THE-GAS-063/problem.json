@@ -1,0 +1,110 @@
+{
+ "id": "THE-GAS-063",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-08",
+ "topic": "可動隔壁をはずしたときの体積比から決める燃焼したアルケンの分子式",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "体積 $10.0\\,\\mathrm{L}$ ずつの A 室と B 室が，固定した隔壁で仕切られた容器がある．隔壁は固定をはずすと気体を通さずになめらかに動く．A 室には気体のアルケン $\\ce{C_nH_{2n}}$ $0.020\\,\\mathrm{mol}$ と酸素 $0.200\\,\\mathrm{mol}$，B 室には窒素 $0.200\\,\\mathrm{mol}$ が入っており，容器全体は常に $400\\,\\mathrm{K}$ に保たれている．隔壁を固定したまま A 室でアルケンを完全燃焼させたのち，隔壁の固定をはずしたところ，A 室と B 室の体積の比は $6:5$ になった．気体はすべて理想気体とし，気体定数は $R=8.31\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$，$400\\,\\mathrm{K}$ における水の飽和蒸気圧は $2.5\\times10^{5}\\,\\mathrm{Pa}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "アルケン $\\ce{C_nH_{2n}}$ 1 mol が完全燃焼すると，気体の物質量は何 mol 変化するか．$n$ を用いて表せ（増加を正とする）．"
+     },
+     {
+      "id": "2",
+      "tex": "アルケンの分子式を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "隔壁の固定をはずしたあとの容器内の圧力を有効数字3桁で求めよ．また，このとき A 室の水がすべて気体であることを確かめよ．"
+     },
+     {
+      "id": "4",
+      "tex": "アルケンのかわりに，同じ炭素数のアルカン $0.020\\,\\mathrm{mol}$ を用いて同じ操作をすると，A 室と B 室の体積の比はいくらになるか．最も簡単な整数比で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\dfrac{n}{2}-1\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{C4H8}$"
+   },
+   {
+    "id": "3",
+    "tex": "$7.31\\times10^{4}\\,\\mathrm{Pa}$（水の分圧 $2.44\\times10^{4}\\,\\mathrm{Pa}$ は飽和蒸気圧より小さいので凝縮しない）"
+   },
+   {
+    "id": "4",
+    "tex": "$5:4$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　$\\ce{C_nH_{2n}} + \\dfrac{3n}{2}\\ce{O2} \\longrightarrow n\\ce{CO2} + n\\ce{H2O}$ より，気体は $1+\\dfrac{3n}{2}$ mol が $2n$ mol になる．変化量は $2n-\\left(1+\\dfrac{3n}{2}\\right)=\\boldsymbol{\\dfrac{n}{2}-1}$ mol．\n\n\\textbf{(2)}　隔壁が動くと両室の圧力が等しくなり，温度も等しいので，体積の比＝物質量の比になる．B 室は $0.200$ mol のままなので，A 室の燃焼後の物質量は $0.200\\times\\dfrac{6}{5}=0.240$ mol．燃焼前は $0.220$ mol だから増加は $0.020$ mol で，アルケン 1 mol あたり $1$ mol 増えた．\n\\[ \\frac{n}{2}-1=1 \\quad\\Rightarrow\\quad n=4 \\]\n分子式は $\\boldsymbol{\\ce{C4H8}}$．必要な酸素は $0.020\\times6=0.120$ mol で $0.200$ mol より少なく，完全燃焼できる（$\\ce{C4H8 + 6O2 -> 4CO2 + 4H2O}$）．\n\n\\textbf{(3)}　全体の物質量 $0.240+0.200=0.440$ mol が体積 $20.0\\,\\mathrm{L}$ を占めるので\n\\[ P=\\frac{0.440\\times8.31\\times10^{3}\\times400}{20.0}=\\boldsymbol{7.31\\times10^{4}\\,\\mathrm{Pa}} \\]\nA 室の水は $0.080$ mol で，A 室の $0.240$ mol のうち $\\dfrac13$ なので分圧は $7.31\\times10^{4}\\times\\dfrac13=2.44\\times10^{4}\\,\\mathrm{Pa}$．これは飽和蒸気圧 $2.5\\times10^{5}\\,\\mathrm{Pa}$ より小さいので水はすべて気体である（体積比を物質量の比とみなした (2) の前提が正しい）．\n\n\\textbf{(4)}　ブタン $\\ce{2C4H10 + 13O2 -> 8CO2 + 10H2O}$ では，1 mol あたり $4+5-1-6.5=1.5$ mol 増える（一般に $\\ce{C_nH_{2n+2}}$ では $\\dfrac{n-1}{2}$ mol）．燃焼前の A 室は $0.220$ mol，燃焼後は $0.220+0.020\\times1.5=0.250$ mol（必要な酸素は $0.130$ mol で足りる）．体積比は $0.250:0.200=\\boldsymbol{5:4}$ で，H の多いアルカンのほうが A 室は大きくなる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "温度が等しく可動隔壁で圧力がそろうと体積の比は物質量の比になるので，燃焼前後の物質量の増加（CnH2n では 1 mol あたり n/2−1）から炭素数を逆算する．同じ炭素数でもアルカンは H が多い分だけ気体の増加が大きく，体積比が変わる．水が気体のままかは分圧と飽和蒸気圧の比較で確かめる．"
+ },
+ "concepts": [
+  "ideal-gas",
+  "hydrocarbon",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "可動隔壁",
+  "燃焼",
+  "物質量の変化",
+  "分子式の決定",
+  "アルケン",
+  "理想気体"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,114 @@
+{
+ "id": "THE-ELC-016",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-07",
+ "topic": "溶ける陽極と陰極での水素発生の競合",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "電解槽 A（硫酸銅(II) 水溶液，陽極は銅板，陰極は白金板）と電解槽 B（硫酸亜鉛水溶液，陽極は白金板，陰極は鉄板）を直列につなぎ，一定の電流で電気分解した．電解後，A の陰極の質量は $0.635\\,\\mathrm{g}$，B の陰極の質量は $0.327\\,\\mathrm{g}$ 増加していた．また，B の陰極では亜鉛の析出とともに気体の発生も見られた．Cu = 63.5，Zn = 65.4，標準状態の気体のモル体積を $22.4\\,\\mathrm{L/mol}$ とし，発生した気体は水に溶けないものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A の陽極で起こる反応を電子 $\\mathrm{e^-}$ を含むイオン反応式で書け．また，A の陽極の質量は何 g 増加または減少したか．"
+     },
+     {
+      "id": "2",
+      "tex": "流れた電子の物質量は何 mol か．有効数字3桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "B の陰極を流れた電気量のうち，亜鉛の析出に使われた割合は何 % か．有効数字3桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "B の両極で発生した気体の体積の合計は，標準状態で何 mL か．有効数字3桁で答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "A の陽極を白金板に替えて同じ電気分解を行うと，A の陽極で生じる物質は何か．また，A の水溶液の pH は電解前と比べて「大きくなる」「小さくなる」「変わらない」のどれか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{Cu -> Cu^2+ + 2e-}$，$0.635\\,\\mathrm{g}$ 減少"
+   },
+   {
+    "id": "2",
+    "tex": "$2.00\\times10^{-2}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "$50.0\\,\\%$"
+   },
+   {
+    "id": "4",
+    "tex": "$224\\,\\mathrm{mL}$"
+   },
+   {
+    "id": "5",
+    "tex": "酸素，小さくなる"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 陽極が銅のときは，水や $\\ce{SO4^2-}$ より先に電極の銅が酸化されて溶け出す：$\\ce{Cu -> Cu^2+ + 2e-}$．陽極では気体は発生しない．流れた電子は (2) の $2.00\\times10^{-2}\\,\\mathrm{mol}$ なので，溶けた Cu は $1.00\\times10^{-2}\\,\\mathrm{mol}$，すなわち $\\boldsymbol{0.635\\,\\mathrm{g}}$ 減少（陰極の増加量と等しい）．\n\n\\textbf{(2)} A の陰極 $\\ce{Cu^2+ + 2e- -> Cu}$ より，$\\dfrac{0.635}{63.5}\\times2=\\boldsymbol{2.00\\times10^{-2}\\,\\mathrm{mol}}$．直列なので B にも同じ電子が流れる．\n\n\\textbf{(3)} B の陰極で析出した Zn は $0.327/65.4=5.00\\times10^{-3}\\,\\mathrm{mol}$，使われた電子は $1.00\\times10^{-2}\\,\\mathrm{mol}$．割合は $\\dfrac{1.00\\times10^{-2}}{2.00\\times10^{-2}}\\times100=\\boldsymbol{50.0\\,\\%}$．残りの電子は水の還元 $\\ce{2H2O + 2e- -> H2 + 2OH-}$ に使われた．\n\n\\textbf{(4)} 陰極の $\\ce{H2}$：$1.00\\times10^{-2}/2=5.00\\times10^{-3}\\,\\mathrm{mol}$．陽極（白金）では $\\ce{2H2O -> O2 + 4H+ + 4e-}$ で $\\ce{O2}$ $2.00\\times10^{-2}/4=5.00\\times10^{-3}\\,\\mathrm{mol}$．合計 $1.00\\times10^{-2}\\,\\mathrm{mol}$ で $\\boldsymbol{224\\,\\mathrm{mL}}$．\n\n\\textbf{(5)} 白金は溶けないので，水が酸化されて\\textbf{酸素}が発生し，$\\ce{H+}$ が生じる．陰極では $\\ce{Cu^2+}$ が減るだけなので，全体として $\\ce{CuSO4}$ が $\\ce{H2SO4}$ に変わり，pH は\\textbf{小さくなる}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "陽極が溶ける金属か不溶性電極かで陽極反応が変わること，イオン化傾向の大きい金属イオンの電解では金属析出と水素発生が競合し，析出量と全電気量の差から副反応の量を求めること．"
+ },
+ "concepts": [
+  "electrolysis"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電気分解",
+  "直列接続",
+  "電流効率",
+  "電極の種類"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,131 @@
+{
+ "id": "THE-EQL-085",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "わずかしか進まない解離平衡と生成物の添加（近似の場合分けと圧力依存のべき）",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある高温 $T$（約 1150 K）で，水蒸気の熱分解 $\\ce{2H2O <=> 2H2 + O2}$ の圧平衡定数は\n\\[ K_\\mathrm{p}=\\dfrac{p_{\\ce{H2}}^{\\,2}\\,p_{\\ce{O2}}}{p_{\\ce{H2O}}^{\\,2}}=4.0\\times10^{-13}\\,\\mathrm{Pa} \\]\nである．気体はすべて理想気体とし，容器の容積と温度は一定とする．必要なら $\\sqrt[3]{2}=1.26$，$\\sqrt{2}=1.41$ を用いよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "容器に水蒸気だけを入れ，温度 $T$ で分解前の分圧が $1.0\\times10^{5}\\,\\mathrm{Pa}$ になるようにした．平衡での $\\ce{H2}$ の分圧を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) と同じ量の水蒸気に，さらに $\\ce{O2}$ を加え，温度 $T$ で分解前の $\\ce{O2}$ の分圧を $1.0\\times10^{3}\\,\\mathrm{Pa}$ とした．平衡での $\\ce{H2}$ の分圧を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(1)，(2) のそれぞれについて，気体の物質量はそのままで容器の容積を 2 倍にした（温度 $T$）．水蒸気のうち分解したものの割合（分解率）は，それぞれ何倍になるか．有効数字3桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(2) で加える $\\ce{O2}$ を，分解前の分圧が $0.10\\,\\mathrm{Pa}$ になる量にした．平衡での $\\ce{H2}$ の分圧を有効数字2桁で求めよ．また，(1) と (2) で用いた近似を当てはめるとどのような値が得られ，どの程度ずれるかを述べよ．"
+     },
+     {
+      "id": "5",
+      "tex": "加える $\\ce{O2}$ の分解前の分圧を $p_\\mathrm{a}$ として，$p_\\mathrm{a}$ を $10^{-3}\\,\\mathrm{Pa}$ から $10^{3}\\,\\mathrm{Pa}$ まで変えたとき，平衡での $\\ce{H2}$ の分圧 $p_{\\ce{H2}}$ が $p_\\mathrm{a}$ にどのように依存するかを，$p_\\mathrm{a}$ が小さい領域と大きい領域に分けて答えよ．両者の境目の目安となる $p_\\mathrm{a}$ の値も示せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：わずかしか進まない解離平衡と生成物の添加（近似の場合分けと圧力依存のべき）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$0.20\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "2",
+    "tex": "$2.0\\times10^{-3}\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "3",
+    "tex": "水蒸気だけの場合 1.26 倍，$\\ce{O2}$ を十分加えた場合 1.41 倍"
+   },
+   {
+    "id": "4",
+    "tex": "$0.15\\,\\mathrm{Pa}$；加えた $\\ce{O2}$ を無視する近似でも，分解で生じる $\\ce{O2}$ を無視する近似でも $0.20\\,\\mathrm{Pa}$ となり，3 割ほど大きすぎる．"
+   },
+   {
+    "id": "5",
+    "tex": "$p_\\mathrm{a}$ が小さい領域では $p_{\\ce{H2}}\\fallingdotseq0.20\\,\\mathrm{Pa}$ で $p_\\mathrm{a}$ によらず，大きい領域では $p_{\\ce{H2}}=\\sqrt{K_\\mathrm{p}}\\,p_{\\ce{H2O}}/\\sqrt{p_\\mathrm{a}}$ と $p_\\mathrm{a}$ の平方根に反比例する．境目は，分解で自然に生じる $\\ce{O2}$ の分圧と同程度の $p_\\mathrm{a}\\approx0.1\\,\\mathrm{Pa}$．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　分解する $\\ce{H2O}$ の分圧を $2y$ とすると，$p_{\\ce{H2}}=2y$，$p_{\\ce{O2}}=y$，$p_{\\ce{H2O}}=1.0\\times10^{5}-2y$．$K_\\mathrm{p}$ がきわめて小さいので $2y\\ll1.0\\times10^{5}$ と仮定して $p_{\\ce{H2O}}\\fallingdotseq1.0\\times10^{5}$ とおく．\n\\[ \\dfrac{(2y)^2y}{(1.0\\times10^{5})^2}=4.0\\times10^{-13}\\ \\Rightarrow\\ 4y^3=4.0\\times10^{-3}\\ \\Rightarrow\\ y=0.10\\,\\mathrm{Pa} \\]\n$p_{\\ce{H2}}=2y=\\boldsymbol{0.20\\,\\mathrm{Pa}}$．分解率は $2\\times10^{-6}$ で，仮定は妥当．\n\n\\textbf{(2)}　加えた $\\ce{O2}$（$1.0\\times10^{3}\\,\\mathrm{Pa}$）は，分解で生じる $\\ce{O2}$（(1) から高々 $0.1\\,\\mathrm{Pa}$ 程度で，$\\ce{O2}$ を加えた (2) では分解が抑えられてさらに小さくなる）より圧倒的に多いので，$p_{\\ce{O2}}\\fallingdotseq1.0\\times10^{3}$ としてよい．\n\\[ p_{\\ce{H2}}^{\\,2}=\\dfrac{K_\\mathrm{p}\\,p_{\\ce{H2O}}^{\\,2}}{p_{\\ce{O2}}}=\\dfrac{4.0\\times10^{-13}\\times10^{10}}{1.0\\times10^{3}}=4.0\\times10^{-6}\\ \\Rightarrow\\ p_{\\ce{H2}}=\\boldsymbol{2.0\\times10^{-3}\\,\\mathrm{Pa}} \\]\nこのとき生じた $\\ce{O2}$ は $1.0\\times10^{-3}\\,\\mathrm{Pa}$ で，加えた量の $10^{-6}$ にすぎず，近似は妥当．$\\ce{O2}$ を加えると分解は $\\dfrac{1}{100}$ に抑えられる．\n\n\\textbf{(3)}　容積 2 倍で，すべての気体の分圧（変化前）は半分になる．\n(1) の場合：$4y^3=K_\\mathrm{p}p_{\\ce{H2O}}^{\\,2}$ より $y\\propto p_{\\ce{H2O}}^{2/3}$，分解率 $\\dfrac{2y}{p_{\\ce{H2O}}}\\propto p_{\\ce{H2O}}^{-1/3}$．$p_{\\ce{H2O}}$ が $\\dfrac12$ になると分解率は $2^{1/3}=\\boldsymbol{1.26}$ 倍．\n(2) の場合：$\\dfrac{p_{\\ce{H2}}}{p_{\\ce{H2O}}}=\\sqrt{\\dfrac{K_\\mathrm{p}}{p_{\\ce{O2}}}}$ で，分解率は $p_{\\ce{O2}}^{-1/2}$ に比例する．$p_{\\ce{O2}}$ が $\\dfrac12$ になると分解率は $\\sqrt2=\\boldsymbol{1.41}$ 倍．\nどちらも「分子の数が増える向きに移動する」点は同じだが，$\\ce{O2}$ が自分で生じた分だけのときは $\\ce{O2}$ も一緒に増えて移動を打ち消すため，効き方（べき）が小さくなる．\n\n\\textbf{(4)}　分解で生じる $\\ce{O2}$ を $y$ とすると $p_{\\ce{O2}}=0.10+y$，$p_{\\ce{H2}}=2y$ で\n\\[ (2y)^2(0.10+y)=4.0\\times10^{-3}\\ \\Rightarrow\\ y^3+0.10y^2-1.0\\times10^{-3}=0 \\]\n$f(y)=y^3+0.10y^2-1.0\\times10^{-3}$ とおくと $f(0.075)=-1.5\\times10^{-5}<0$，$f(0.076)=+1.7\\times10^{-5}>0$ なので $y\\fallingdotseq0.0755$，$p_{\\ce{H2}}=2y\\fallingdotseq\\boldsymbol{0.15\\,\\mathrm{Pa}}$．\n加えた $\\ce{O2}$ を無視すると (1) と同じ $0.20\\,\\mathrm{Pa}$，生じる $\\ce{O2}$ を無視すると $p_{\\ce{H2}}^{\\,2}=4.0\\times10^{-3}\\times4/0.10$ より $0.20\\,\\mathrm{Pa}$ となり，どちらの近似も約 $33\\,\\%$ 大きすぎる．2 つの $\\ce{O2}$ の起源が同程度のときは，どちらも無視できない．\n\n\\textbf{(5)}　$p_\\mathrm{a}\\ll0.1\\,\\mathrm{Pa}$ では加えた $\\ce{O2}$ が分解で生じる $\\ce{O2}$（約 $0.1\\,\\mathrm{Pa}$）に比べて無視でき，$p_{\\ce{H2}}\\fallingdotseq0.20\\,\\mathrm{Pa}$ で一定（$10^{-3}\\,\\mathrm{Pa}$ で $0.199$，$10^{-2}\\,\\mathrm{Pa}$ で $0.19$）．$p_\\mathrm{a}\\gg0.1\\,\\mathrm{Pa}$ では $p_{\\ce{O2}}\\fallingdotseq p_\\mathrm{a}$ として $p_{\\ce{H2}}=\\sqrt{K_\\mathrm{p}/p_\\mathrm{a}}\\;p_{\\ce{H2O}}\\propto p_\\mathrm{a}^{-1/2}$（$10\\,\\mathrm{Pa}$ で $0.020$，$10^{3}\\,\\mathrm{Pa}$ で $0.0020\\,\\mathrm{Pa}$）．両対数グラフでは傾き 0 の直線と傾き $-\\dfrac12$ の直線になり，その交点 $p_\\mathrm{a}=0.10\\,\\mathrm{Pa}$（自然に生じる $\\ce{O2}$ の分圧 $y_0$）付近が境目になる（解答図）．どちらの近似を使うかは，「加えた量」と「反応で自然に生じる量」の大小で決まる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "平衡定数がきわめて小さい解離では，生じる成分を外から加えるかどうかで近似の立て方が変わり，加えない場合は自分で生じた O₂ も増減するので分解の程度は圧力の −1/3 乗，十分加えた場合は加えた O₂ の分圧の −1/2 乗に比例する．加えた量が自然に生じる量と同程度のときはどちらの近似も使えず，連立した三次方程式を解く必要がある．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "圧平衡定数",
+  "解離平衡",
+  "近似の妥当性",
+  "共通成分の添加",
+  "水の熱分解",
+  "場合分け"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

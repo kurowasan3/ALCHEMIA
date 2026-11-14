@@ -1,0 +1,101 @@
+{
+ "id": "THE-SOL-047",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-09",
+ "topic": "析出した結晶の質量から元の溶液の濃度を逆算する",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "濃度のわからない水酸化カリウム水溶液 $100\\,\\mathrm{mL}$ に，ちょうど中和するまで塩化水素を吹き込んだ（$\\ce{KOH + HCl -> KCl + H2O}$）．この水溶液を加熱して水を蒸発させ，水溶液の質量を $60.0\\,\\mathrm{g}$ にした．これを $20$ ℃ まで冷却して十分に時間がたつと，塩化カリウムの結晶が $1.20\\,\\mathrm{g}$ 析出した．塩化カリウムの溶解度（水 $100\\,\\mathrm{g}$ に溶ける質量〔g〕）は下の表のとおりとし，原子量は K = 39.0，Cl = 35.5 とする．\n\\[\\begin{array}{c|cccc}\n\\text{温度〔℃〕} & 20 & 40 & 60 & 80\\\\ \\hline\n\\text{溶解度} & 34.2 & 40.1 & 45.8 & 51.3\n\\end{array}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "冷却する前の水溶液 $60.0\\,\\mathrm{g}$ に含まれる水の質量は何 g か．有効数字 3 桁で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "もとの水酸化カリウム水溶液のモル濃度は何 $\\mathrm{mol/L}$ か．有効数字 3 桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "冷却の途中で結晶が析出し始めた温度は何 ℃ か．表の隣り合う温度の間では溶解度が温度に比例して変わるものとして，整数で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$43.8\\,\\mathrm{g}$"
+   },
+   {
+    "id": "2",
+    "tex": "$2.17\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "3",
+    "tex": "$29$ ℃"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 冷却後の飽和溶液に注目する}\n冷却前の水の質量を $w\\,\\mathrm{g}$，KCl の質量を $s\\,\\mathrm{g}$ とする．析出したのは KCl だけ（結晶水を含まない）なので，水の質量は冷却の前後で変わらない．\n\\[s+w=60.0\\]\n20 ℃ で残った溶液は飽和しているので\n\\[\\frac{s-1.20}{w}=\\frac{34.2}{100}\\]\n2 式から $s=0.342w+1.20$，$1.342w=58.8$，\n\\[w=\\boldsymbol{43.8\\,\\mathrm{g}}\\qquad(s=16.18\\,\\mathrm{g})\\]\n\n\\textbf{(2) もとの濃度}\nKCl の物質量は，中和した KOH の物質量に等しい（蒸発させても KCl は失われない）．\n\\[n=\\frac{16.18}{74.5}=0.2172\\,\\mathrm{mol}\\qquad c=\\frac{0.2172}{0.100}=\\boldsymbol{2.17\\,\\mathrm{mol/L}}\\]\n中和で生じた水や，蒸発させた水の量は，最後の溶液の質量を測っているので知る必要がない．\n\n\\textbf{(3) 析出が始まる温度}\n冷却前の溶液で，水 $100\\,\\mathrm{g}$ あたりの KCl は\n\\[\\frac{16.18}{43.82}\\times100=36.9\\,\\mathrm{g}\\]\nこれは 20 ℃（34.2）と 40 ℃（40.1）の溶解度の間にあるので，40 ℃ では未飽和，20 ℃ に下げる途中で飽和に達する．比例で求めると\n\\[t=20+\\frac{36.9-34.2}{40.1-34.2}\\times20=29.3\\ \\Longrightarrow\\ \\boldsymbol{29}\\ ℃\\]\nこれより高い温度では結晶は出ず，これより下げると結晶が出始める．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "析出量から元の溶質量を逆算するときは，冷却後に残る溶液が飽和していることと，水の質量が冷却の前後で変わらないことの 2 式で溶質と水の質量を同時に求める．求めた溶質の量と水の量の比を溶解度表と比べれば，結晶が出始める温度もわかる．"
+ },
+ "concepts": [
+  "solution-colligative",
+  "crystal",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "溶解度",
+  "再結晶",
+  "中和",
+  "モル濃度",
+  "飽和溶液"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

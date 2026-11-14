@@ -1,0 +1,124 @@
+{
+ "id": "POL-PRT-038",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-05",
+ "topic": "元素分析によるペプチドの組成の候補の網羅と検出反応による絞り込み",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "structure",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "鎖状のペプチド Q（分子量 500 以下）を完全に加水分解すると，3 種類のアミノ酸が物質量比 $1:1:1$ で得られた．構成アミノ酸は次の表のいずれかである．\n\\[\\begin{array}{llll}\n\\text{Gly}\\ \\ce{C2H5NO2} & \\text{Ala}\\ \\ce{C3H7NO2} & \\text{Ser}\\ \\ce{C3H7NO3} & \\text{Cys}\\ \\ce{C3H7NO2S} \\\\\n\\text{Val}\\ \\ce{C5H11NO2} & \\text{Leu}\\ \\ce{C6H13NO2} & \\text{Met}\\ \\ce{C5H11NO2S} & \\text{Phe}\\ \\ce{C9H11NO2} \\\\\n\\text{Tyr}\\ \\ce{C9H11NO3} & \\text{Asp}\\ \\ce{C4H7NO4} & \\text{Glu}\\ \\ce{C5H9NO4} & \\text{Lys}\\ \\ce{C6H14N2O2}\n\\end{array}\\]\nQ の元素分析の結果は，質量百分率で C 53.3 %，H 6.5 %，N 11.0 %，O 20.9 %，S 8.4 % であった．原子量は H = 1.0，C = 12，N = 14，O = 16，S = 32 とする．なお，メチオニン（Met）の側鎖は $\\ce{-CH2-CH2-S-CH3}$，システイン（Cys）の側鎖は $\\ce{-CH2-SH}$ である．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "Q の組成式と分子式を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "構成アミノ酸 3 種類の分子式の和を求め，表の中から考えられるアミノ酸の組み合わせをすべて挙げよ．"
+     },
+     {
+      "id": "3",
+      "tex": "Q はキサントプロテイン反応を示した．また，Q の水溶液に少量のヨウ素溶液を加えると褐色が消え，分子量 764 の化合物が生じた．2 つの結果のそれぞれによって (2) の組み合わせのうちどれが除かれるかを答えて Q の構成アミノ酸を決め，ヨウ素との反応を Q を R–SH と表した反応式で示せ．"
+     },
+     {
+      "id": "4",
+      "tex": "Q の C 末端のアミノ酸は Val であり，Q を部分的に加水分解して得られたジペプチドの 1 つは Cys と Val からなっていた．Q のアミノ酸配列を N 末端から略号で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：元素分析によるペプチドの組成の候補の網羅と検出反応による絞り込み",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "組成式・分子式とも $\\ce{C17H25N3O5S}$（分子量 383）"
+   },
+   {
+    "id": "2",
+    "tex": "和は $\\ce{C17H29N3O7S}$．組み合わせは {Cys, Tyr, Val}，{Met, Ala, Tyr}，{Met, Phe, Ser} の 3 通り"
+   },
+   {
+    "id": "3",
+    "tex": "キサントプロテイン反応ではどれも除かれない（3 通りとも Tyr か Phe を含む）．ヨウ素との反応で {Met, Ala, Tyr} と {Met, Phe, Ser} が除かれ，構成アミノ酸は Cys，Tyr，Val．$\\ce{2R-SH + I2 ->[\\text{}] R-S-S-R + 2HI}$"
+   },
+   {
+    "id": "4",
+    "tex": "Tyr-Cys-Val"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　物質量の比は\n\\[\\mathrm{C}:\\mathrm{H}:\\mathrm{N}:\\mathrm{O}:\\mathrm{S}=\\dfrac{53.3}{12}:\\dfrac{6.5}{1.0}:\\dfrac{11.0}{14}:\\dfrac{20.9}{16}:\\dfrac{8.4}{32}=4.44:6.5:0.786:1.31:0.263\\]\nS を 1 とすると $16.9:24.8:2.99:4.97:1$ なので組成式は $\\ce{C17H25N3O5S}$（式量 383）．分子量が 500 以下なので分子式も $\\boldsymbol{\\ce{C17H25N3O5S}}$（分子量 383）．\n\n\\textbf{(2)}　トリペプチドはアミノ酸 3 分子から $\\ce{H2O}$ 2 分子が取れてできるので，3 種類の分子式の和は $\\ce{C17H25N3O5S}+2\\ce{H2O}=\\boldsymbol{\\ce{C17H29N3O7S}}$．\n・S は 1 個なので，S を含むアミノ酸（Cys または Met）がちょうど 1 つ．\n・N が 3 個なので Lys（N 2 個）は含まれない．残り 2 つで O が 5 個になるには，O が 2 個と 3 個の組（O 4 個の Asp・Glu と組む O 1 個のアミノ酸はない）．よって残りの一方は Ser か Tyr．\n　Cys のとき，残り 2 つの和は $\\ce{C14H22N2O5}$：Ser（$\\ce{C3H7}$）なら相手は $\\ce{C11H15NO2}$ でなし．Tyr（$\\ce{C9H11}$）なら相手は $\\ce{C5H11NO2}$ で Val（Met は S を含むので不可）．\n　Met のとき，残り 2 つの和は $\\ce{C12H18N2O5}$：Ser なら相手は $\\ce{C9H11NO2}$ で Phe．Tyr なら相手は $\\ce{C3H7NO2}$ で Ala（Cys は S を含むので不可）．\nしたがって $\\boldsymbol{\\{\\text{Cys, Tyr, Val}\\},\\ \\{\\text{Met, Ala, Tyr}\\},\\ \\{\\text{Met, Phe, Ser}\\}}$ の 3 通りで，元素分析だけでは区別できない（どれも同じ分子式）．\n\n\\textbf{(3)}　キサントプロテイン反応はベンゼン環のニトロ化による呈色で，Tyr・Phe のどちらでも陽性になる．3 通りとも Tyr か Phe を含むので，この結果では$\\boldsymbol{\\text{どれも除かれない}}$（陽性の結果が情報をもたない例）．ヨウ素の褐色が消えて分子量 $764=2\\times383-2$ の化合物が生じたのは，2 分子の $\\ce{-SH}$ が酸化されてジスルフィド結合でつながった（H 2 個を失った）ためで，$\\ce{-SH}$ をもつ Cys が必要．Met の S は 2 つの炭素と結合していて H をもたないのでこの反応は起こらない．したがって Met を含む {Met, Ala, Tyr} と {Met, Phe, Ser} が除かれ，構成アミノ酸は $\\boldsymbol{\\text{Cys，Tyr，Val}}$．反応は $\\ce{2R-SH + I2 ->[\\text{}] R-S-S-R + 2HI}$（R–SH は Q）．\n\n\\textbf{(4)}　C 末端が Val．Cys と Val からなるジペプチドが得られたので Cys と Val は隣り合い，Cys は Val の N 側にある．残る Tyr が N 末端で，$\\boldsymbol{\\text{Tyr-Cys-Val}}$（解答図）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "元素分析から求めたペプチドの分子式に（残基数−1）分子の水を足すと構成アミノ酸の分子式の和になり，S・N・O の数の条件から候補を系統的に網羅すると，同じ分子式になる組み合わせが複数残る．元素分析では区別できないこれらを，官能基の反応で絞り込むが，候補すべてに共通する官能基の検出反応（キサントプロテイン反応）は情報にならず，候補を分ける反応（SH の酸化による二量化）を見きわめて一意に決める．"
+ },
+ "concepts": [
+  "protein-amino",
+  "elemental-analysis",
+  "organic-test"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ペプチド",
+  "元素分析",
+  "構成アミノ酸",
+  "システイン",
+  "ジスルフィド結合",
+  "構造決定"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

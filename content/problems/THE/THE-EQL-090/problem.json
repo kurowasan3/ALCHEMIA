@@ -1,0 +1,109 @@
+{
+ "id": "THE-EQL-090",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "二酸化窒素の光分解とオゾンの光定常状態（生成と消滅の速さのつり合い）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "日中の都市の大気では，次の 3 つの反応が同時に起こっている．\n\\[ \\text{(i)}\\ \\ce{NO2 ->[\\text{光}] NO + O} \\qquad \\text{(ii)}\\ \\ce{O + O2 -> O3} \\qquad \\text{(iii)}\\ \\ce{NO + O3 -> NO2 + O2} \\]\n(i) の速さは $v_{1}=k_{1}[\\ce{NO2}]$，(iii) の速さは $v_{3}=k_{3}[\\ce{NO}][\\ce{O3}]$ で表される．(ii) は非常に速く，(i) で生じた $\\ce{O}$ はすべてただちに $\\ce{O3}$ になるものとする．大気中には，これら以外に $\\ce{O3}$ を生成・消費する反応はないものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{O3}$ の濃度が時間によって変わらない状態（定常状態）では，$v_{1}$ と $v_{3}$ の間にどのような関係があるか．また，そのときの $[\\ce{O3}]$ を $k_{1}$，$k_{3}$，$[\\ce{NO2}]$，$[\\ce{NO}]$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "$k_{1}=8.0\\times10^{-3}\\,\\mathrm{s^{-1}}$，$k_{3}=1.2\\times10^{7}\\,\\mathrm{L/(mol\\cdot s)}$，$[\\ce{NO2}]=2.0\\times10^{-9}\\,\\mathrm{mol/L}$，$[\\ce{NO}]=1.0\\times10^{-9}\\,\\mathrm{mol/L}$ のとき，定常状態の $[\\ce{O3}]$ を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(i)〜(iii) の 3 つの反応をまとめると，全体として何が起こっていることになるか．次の (a)〜(c) から選べ．\\quad (a) $\\ce{NO2}$ が $\\ce{O3}$ に変わり続ける　(b) 物質の正味の変化はない　(c) $\\ce{O2}$ が $\\ce{O3}$ に変わり続ける"
+     },
+     {
+      "id": "4",
+      "tex": "次の (a)，(b) の場合，$\\ce{O3}$ の濃度はどうなるか．\\quad (a) 自動車の排ガスで $\\ce{NO}$ が加わり，$[\\ce{NO2}]$ が同じまま $[\\ce{NO}]$ が 2 倍になった（新しい定常状態での値を (2) と比べよ）．\\quad (b) 日没後，光が当たらなくなった．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$v_{1}=v_{3}$，$[\\ce{O3}]=\\dfrac{k_{1}[\\ce{NO2}]}{k_{3}[\\ce{NO}]}$"
+   },
+   {
+    "id": "2",
+    "tex": "$1.3\\times10^{-9}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "3",
+    "tex": "(b)"
+   },
+   {
+    "id": "4",
+    "tex": "(a) $\\dfrac12$ 倍（$6.7\\times10^{-10}\\,\\mathrm{mol/L}$）に減る．(b) (iii) だけが進み，$\\ce{O3}$ は $\\ce{NO}$ と反応して減り続ける．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　(ii) が速いので，$\\ce{O3}$ の生成の速さは (i) の速さ $v_{1}$ に等しい．$\\ce{O3}$ は (iii) で速さ $v_{3}$ で消費される．濃度が変わらないのは生成と消費がつり合うときで $\\boldsymbol{v_{1}=v_{3}}$．\n\\[ k_{1}[\\ce{NO2}]=k_{3}[\\ce{NO}][\\ce{O3}] \\quad\\Longrightarrow\\quad [\\ce{O3}]=\\frac{k_{1}[\\ce{NO2}]}{k_{3}[\\ce{NO}]} \\]\n\n\\textbf{(2)}\n\\[ [\\ce{O3}]=\\frac{8.0\\times10^{-3}\\times2.0\\times10^{-9}}{1.2\\times10^{7}\\times1.0\\times10^{-9}}\\fallingdotseq\\boldsymbol{1.3\\times10^{-9}\\,\\mathrm{mol/L}} \\]\nこのとき $v_{1}=v_{3}=1.6\\times10^{-11}\\,\\mathrm{mol/(L\\cdot s)}$ で，$\\ce{O3}$ は絶えずつくられ，絶えず壊されている．\n\n\\textbf{(3)}　(i)＋(ii)＋(iii) を足すと，両辺の $\\ce{NO2}$，$\\ce{NO}$，$\\ce{O}$，$\\ce{O2}$，$\\ce{O3}$ がすべて打ち消し合う．光のエネルギーを使って物質が循環しているだけで，\\textbf{正味の変化はない (b)}．このため，この 3 つの反応だけでは $\\ce{O3}$ はたまっていかない（$\\ce{O3}$ が増えるには，$\\ce{O3}$ を使わずに $\\ce{NO}$ を $\\ce{NO2}$ に戻す別の反応が必要である）．\n\n\\textbf{(4)}　(a) $[\\ce{O3}]$ は $[\\ce{NO}]$ に反比例するので $\\dfrac12$ 倍の $6.7\\times10^{-10}\\,\\mathrm{mol/L}$ に\\textbf{減る}．$\\ce{NO}$ は (iii) で $\\ce{O3}$ を消費するからである．\n(b) $k_{1}=0$ となり (i) が止まる．$\\ce{O3}$ は生成されず (iii) で $\\ce{NO}$ と反応して\\textbf{減り続ける}（$\\ce{NO}$ が残っている限り）．このとき $\\ce{O3}$ が半分になるまでの時間の目安は $\\dfrac{1}{k_{3}[\\ce{NO}]}\\approx80\\,\\mathrm{s}$ 程度で，非常に速い．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "生成と消滅が同時に進む物質の濃度は，両者の速さが等しい定常状態で一定になり，速度式を等しいとおけば濃度が他の物質の濃度比で表される．光で回る NO2–NO–O3 の循環は正味の変化を生まず，O3 は NO に反比例するので NO を加えると減り，光がなくなると消費だけが残る．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "oxygen-sulfur",
+  "nitrogen-phosphorus"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "定常状態",
+  "反応速度式",
+  "光化学反応",
+  "オゾン",
+  "窒素酸化物"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

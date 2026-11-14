@@ -1,0 +1,117 @@
+{
+ "id": "THE-EQL-114",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "表面で溶ける球の半径の減り方と水素の発生速度の時間変化（縮む球のモデル）",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "鉄球を大過剰の希硫酸に入れると，$\\ce{Fe + H2SO4 -> FeSO4 + H2}$ により鉄は表面から溶ける．希硫酸の濃度と温度は一定とみなし，鉄が溶ける速さ（単位時間に溶ける鉄の物質量）は鉄球の表面積 $S$ に比例して $kS$（$k$ は定数）で表されるものとする．鉄球は溶けても球形を保ち，鉄のモル質量を $M$，密度を $\\rho$ とする．時刻 0 での半径を $r_0$，鉄球がすべて溶けきる時刻を $\\tau$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "鉄球の半径 $r$ は時間とともにどのように変化するか．$r$ を $r_0$，$t$，$\\tau$ で表せ．また，$\\tau$ を $r_0$，$k$，$M$，$\\rho$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "はじめの鉄の物質量を $n_0$，はじめの水素の発生速度を $v_0$ とすると，$\\tau$ は $\\dfrac{n_0}{v_0}$ の何倍か．"
+     },
+     {
+      "id": "3",
+      "tex": "鉄の半分が溶けるのは $t=\\tau$ の何倍の時刻か．また，そのときの水素の発生速度は $v_0$ の何倍か．$0.5^{1/3}=0.794$ を用い，それぞれ有効数字3桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "質量 $0.280\\,\\mathrm g$ の鉄球 1 個を入れると，はじめの水素の発生速度は $1.00\\times10^{-6}\\,\\mathrm{mol/s}$ であった．この鉄球が溶けきるまでの時間 [s] を有効数字3桁で求めよ．また，同じ質量の鉄を半径が $\\dfrac{1}{10}$ の球 1000 個にして入れたときの，溶けきるまでの時間 [s] を有効数字3桁で求めよ．原子量は Fe＝56 とする．"
+     },
+     {
+      "id": "5",
+      "tex": "半径 $r_0$ の鉄球 1 個と半径 $\\dfrac{r_0}{2}$ の鉄球 1 個を同時に入れた．小さい球が溶けきった時点で，2 個の鉄球のはじめの鉄の合計のうち何％が溶けているか．有効数字3桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$r=r_0\\left(1-\\dfrac{t}{\\tau}\\right)$，$\\tau=\\dfrac{\\rho r_0}{kM}$"
+   },
+   {
+    "id": "2",
+    "tex": "3 倍"
+   },
+   {
+    "id": "3",
+    "tex": "$0.206$ 倍，$0.630$ 倍"
+   },
+   {
+    "id": "4",
+    "tex": "$1.50\\times10^{4}\\,\\mathrm s$，$1.50\\times10^{3}\\,\\mathrm s$"
+   },
+   {
+    "id": "5",
+    "tex": "$88.9\\,\\%$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　球の鉄の物質量は $n=\\dfrac{\\rho}{M}\\cdot\\dfrac43\\pi r^3$．微小時間 $\\Delta t$ に半径が $\\Delta r$ 減ると，失われる鉄は表面の薄い殻の分 $\\dfrac{\\rho}{M}\\cdot4\\pi r^2\\,|\\Delta r|$ で，これが $k\\cdot4\\pi r^2\\,\\Delta t$ に等しい．$4\\pi r^2$ が両辺で消えて\n\\[ \\frac{|\\Delta r|}{\\Delta t}=\\frac{kM}{\\rho}\\ (\\text{一定}) \\]\n半径は一定の速さで減るので $\\boldsymbol{r=r_0\\left(1-\\dfrac{t}{\\tau}\\right)}$，$\\boldsymbol{\\tau=\\dfrac{\\rho r_0}{kM}}$．（表面積も体積も変わるのに，半径の減る速さは大きさによらない．）\n\n\\textbf{(2)}　$n_0=\\dfrac{\\rho}{M}\\cdot\\dfrac43\\pi r_0^3$，$v_0=k\\cdot4\\pi r_0^2$ なので $\\dfrac{n_0}{v_0}=\\dfrac{\\rho r_0}{3kM}=\\dfrac{\\tau}{3}$．$\\tau$ は $\\boldsymbol 3$ 倍．速さが落ちていくので，はじめの速さが続くと考えた時間の 3 倍かかる．\n\n\\textbf{(3)}　残っている割合は $\\left(\\dfrac{r}{r_0}\\right)^3=\\left(1-\\dfrac t\\tau\\right)^3$．これが $0.5$ になるのは $1-\\dfrac t\\tau=0.794$，$\\dfrac t\\tau=\\boldsymbol{0.206}$．発生速度は表面積に比例するので $\\left(1-\\dfrac t\\tau\\right)^2=0.794^2=\\boldsymbol{0.630}$ 倍．時間の約 2 割で半分が溶け，残りの半分に 8 割の時間がかかる．\n\n\\textbf{(4)}　$n_0=\\dfrac{0.280}{56}=5.00\\times10^{-3}\\,\\mathrm{mol}$．(2) より $\\tau=\\dfrac{3n_0}{v_0}=\\dfrac{3\\times5.00\\times10^{-3}}{1.00\\times10^{-6}}=\\boldsymbol{1.50\\times10^{4}\\,\\mathrm s}$．\n半径 $\\dfrac1{10}$ の球では (1) より $\\tau$ は半径に比例するので $\\boldsymbol{1.50\\times10^{3}\\,\\mathrm s}$．（1000 個の表面積の合計は $1000\\times\\dfrac{1}{100}=10$ 倍で，はじめの速さも 10 倍．）\n\n\\textbf{(5)}　半径の減る速さは共通なので，小さい球は $t=\\dfrac\\tau2$ で溶けきり，そのとき大きい球の半径は $\\dfrac{r_0}{2}$．大きい球の鉄を 8，小さい球を 1 とすると，大きい球は $8\\times\\left(1-\\dfrac18\\right)=7$ 溶けている．溶けた割合は $\\dfrac{7+1}{8+1}\\times100=\\boldsymbol{88.9\\,\\%}$．\n\n\\textbf{前提の確認}　この結果は，酸が大過剰で濃度が一定（$k$ が一定）とみなせる場合に限る．酸が不足して濃度が下がると $k$ が小さくなり，溶けきる時間はさらに長くなる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "固体が表面から一定の面積あたりの速さで反応するとき，体積の減り方を表面の殻で考えると半径は大きさによらず一定の速さで減る（縮む球のモデル）．そこから残量は (1−t/τ)³，速さは (1−t/τ)² で変わり，溶けきる時間は初速で割った時間の 3 倍・半径に比例すること，大きさの違う粒が混ざると小さい粒が先に消えることが導ける．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "transition-metals",
+  "oxygen-sulfur"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応速度",
+  "表面積",
+  "縮む球のモデル",
+  "鉄と希硫酸",
+  "粒子の大きさ"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

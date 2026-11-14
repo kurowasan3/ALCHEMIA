@@ -1,0 +1,110 @@
+{
+ "id": "THE-ION-094",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "微量の二酸化硫黄と二酸化炭素が同時に溶け込む雨の pH（開いた系の気液平衡と電離平衡の連成）",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "大気中の二酸化炭素（分圧 $40\\,\\mathrm{Pa}$）と二酸化硫黄（分圧 $1.0\\times10^{-3}\\,\\mathrm{Pa}$）の両方と平衡にある雨滴を考える．大気の分圧は一定に保たれる（雨滴の量は大気に比べて十分少ない）．溶けた分子の濃度はそれぞれの分圧に比例し，\n\\[ [\\ce{H2CO3}]=3.0\\times10^{-7}\\,p_{\\ce{CO2}},\\qquad [\\ce{SO2}]=1.2\\times10^{-5}\\,p_{\\ce{SO2}} \\]\n（濃度は mol/L，分圧は Pa）で表される．電離定数は次のとおりとする．\n\\[ \\ce{H2CO3 <=> H+ + HCO3-}\\ \\ K_{\\mathrm c}=4.5\\times10^{-7}\\,\\mathrm{mol/L},\\qquad \\ce{SO2 + H2O <=> H+ + HSO3-}\\ \\ K_{\\mathrm s1}=1.5\\times10^{-2}\\,\\mathrm{mol/L} \\]\n$\\ce{HSO3-}$ の電離定数は $K_{\\mathrm s2}=6.0\\times10^{-8}\\,\\mathrm{mol/L}$，$\\ce{HCO3-}$ の電離と水の電離は無視してよい．必要なら $\\sqrt{1.854}=1.362$，$\\log_{10}1.362=0.134$ を用いよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "この雨滴の pH を小数第1位まで求めよ．また，$\\ce{HSO3-}$ の電離（$K_{\\mathrm s2}$）を無視してよいことを，$\\dfrac{[\\ce{SO3^2-}]}{[\\ce{HSO3-}]}$ の値（有効数字2桁）で示せ．"
+     },
+     {
+      "id": "2",
+      "tex": "この雨滴中の $\\dfrac{[\\ce{HSO3-}]}{[\\ce{HCO3-}]}$ を有効数字2桁で求めよ．二酸化硫黄の分圧は二酸化炭素の $\\dfrac{1}{40000}$ にすぎないのに，pH を主に決めているのはどちらか．"
+     },
+     {
+      "id": "3",
+      "tex": "雨滴に溶けている硫黄の全濃度 $[\\ce{SO2}]+[\\ce{HSO3-}]$ を有効数字2桁で求めよ．また，同じ大気の中で，硝酸がすでに溶けていて pH が $3.0$ に保たれている雨滴では，硫黄の全濃度はいくらか（有効数字2桁）．"
+     },
+     {
+      "id": "4",
+      "tex": "硝酸を含まない雨滴の pH が $4.0$ になるのは，二酸化硫黄の分圧が何 Pa のときか．二酸化炭素の分圧は $40\\,\\mathrm{Pa}$ のままとし，有効数字2桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "pH 4.9，$\\dfrac{[\\ce{SO3^2-}]}{[\\ce{HSO3-}]}=4.4\\times10^{-3}$"
+   },
+   {
+    "id": "2",
+    "tex": "33，二酸化硫黄"
+   },
+   {
+    "id": "3",
+    "tex": "$1.3\\times10^{-5}\\,\\mathrm{mol/L}$，pH 3.0 では $1.9\\times10^{-7}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "4",
+    "tex": "$5.6\\times10^{-2}\\,\\mathrm{Pa}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{溶けている分子の濃度}　大気と接しているので，雨滴の pH に関係なく\n$[\\ce{H2CO3}]=3.0\\times10^{-7}\\times40=1.2\\times10^{-5}$，$[\\ce{SO2}]=1.2\\times10^{-5}\\times1.0\\times10^{-3}=1.2\\times10^{-8}\\,\\mathrm{mol/L}$ に固定される（開いた系）．\n\n\\textbf{(1)}　電荷のつり合い $[\\ce{H+}]=[\\ce{HSO3-}]+2[\\ce{SO3^2-}]+[\\ce{HCO3-}]$ で，まず $\\ce{SO3^2-}$ を無視すると\n\\[ [\\ce{H+}]=\\frac{K_{\\mathrm s1}[\\ce{SO2}]}{[\\ce{H+}]}+\\frac{K_{\\mathrm c}[\\ce{H2CO3}]}{[\\ce{H+}]}\\quad\\Rightarrow\\quad[\\ce{H+}]^2=1.8\\times10^{-10}+5.4\\times10^{-12}=1.854\\times10^{-10} \\]\n$[\\ce{H+}]=1.362\\times10^{-5}$，$\\mathrm{pH}=5-0.134=4.87\\fallingdotseq\\boldsymbol{4.9}$．\n確認：$\\dfrac{[\\ce{SO3^2-}]}{[\\ce{HSO3-}]}=\\dfrac{K_{\\mathrm s2}}{[\\ce{H+}]}=\\dfrac{6.0\\times10^{-8}}{1.362\\times10^{-5}}=\\boldsymbol{4.4\\times10^{-3}}$ で，$2[\\ce{SO3^2-}]$ は $[\\ce{HSO3-}]$ の 1 \\% 未満なので無視してよい．水の電離（$[\\ce{OH-}]\\sim10^{-9}$）も無視できる．\n\n\\textbf{(2)}　$\\dfrac{[\\ce{HSO3-}]}{[\\ce{HCO3-}]}=\\dfrac{K_{\\mathrm s1}[\\ce{SO2}]}{K_{\\mathrm c}[\\ce{H2CO3}]}=\\dfrac{1.8\\times10^{-10}}{5.4\\times10^{-12}}\\fallingdotseq\\boldsymbol{33}$．pH を主に決めているのは\\textbf{二酸化硫黄}．\n開いた系では各成分の寄与は「溶けやすさ×分圧×電離定数」の積で決まり，pH によらない．$\\ce{SO2}$ は分圧が $\\frac1{40000}$ でも，溶けやすさが 40 倍，電離定数が約 33000 倍なので，寄与は $\\ce{CO2}$ の約 33 倍になる．\n\n\\textbf{(3)}　$[\\ce{SO2}]+[\\ce{HSO3-}]=[\\ce{SO2}]\\left(1+\\dfrac{K_{\\mathrm s1}}{[\\ce{H+}]}\\right)$．\npH 4.87 では $1.2\\times10^{-8}\\times\\left(1+\\dfrac{1.5\\times10^{-2}}{1.362\\times10^{-5}}\\right)=1.2\\times10^{-8}\\times1102=\\boldsymbol{1.3\\times10^{-5}\\,\\mathrm{mol/L}}$．\npH 3.0 では $1.2\\times10^{-8}\\times(1+15)=\\boldsymbol{1.9\\times10^{-7}\\,\\mathrm{mol/L}}$ で，約 $\\frac{1}{70}$ に減る．すでに酸性の雨滴では $\\ce{HSO3-}$ の形で取り込める量が減るので，二酸化硫黄は溶け込みにくくなる（溶け込みが自分自身で抑えられる）．\n\n\\textbf{(4)}　$[\\ce{H+}]=1.0\\times10^{-4}$ で $[\\ce{H+}]^2=K_{\\mathrm s1}\\times1.2\\times10^{-5}\\,p_{\\ce{SO2}}+5.4\\times10^{-12}$ より\n\\[ p_{\\ce{SO2}}=\\frac{1.0\\times10^{-8}-5.4\\times10^{-12}}{1.8\\times10^{-7}}=\\boldsymbol{5.6\\times10^{-2}\\,\\mathrm{Pa}} \\]\nこのときも $\\dfrac{K_{\\mathrm s2}}{[\\ce{H+}]}=6\\times10^{-4}$ で $\\ce{SO3^2-}$ は無視できる．$[\\ce{H+}]^2$ が分圧に比例するので，pH を 1 下げるには分圧を約 100 倍にする必要がある．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "気体と接した開いた系では溶けた分子の濃度が分圧で固定されるので，電荷のつり合いは [H⁺]²=Σ（溶けやすさ×分圧×電離定数）となり，各気体の寄与の比は pH によらない．電離定数の大きい SO₂ は微量でも CO₂ より pH を強く支配し，すでに酸性の液滴では HSO₃⁻ として取り込める量が減って溶け込みが抑えられる．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "oxygen-sulfur",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "酸性雨",
+  "ヘンリーの法則",
+  "二酸化硫黄",
+  "炭酸",
+  "開いた系",
+  "電荷のつり合い"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

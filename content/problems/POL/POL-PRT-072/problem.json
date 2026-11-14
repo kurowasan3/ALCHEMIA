@@ -1,0 +1,135 @@
+{
+ "id": "POL-PRT-072",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-05",
+ "topic": "ジニトロフルオロベンゼンによる遊離アミノ基の標識と N 末端の決定",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "structure",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図の化合物 1-フルオロ-2,4-ジニトロベンゼン（以下 FDNB，分子式 $\\ce{C6H3FN2O4}$）は，ペプチド結合（アミド結合）になっていない遊離のアミノ基とだけ次のように反応し，F 原子がアミノ基の N に置きかわった化合物（ジニトロフェニル化合物，以下 DNP 化合物）を生じる．ここで Ar は 2,4-ジニトロフェニル基 $\\ce{C6H3(NO2)2-}$，R は任意の原子団である．\n\\[ \\ce{Ar-F + H2N-R ->[\\text{}] Ar-NH-R + HF} \\]\n生じた Ar–N 結合は，ペプチド結合を完全に加水分解する条件でも切れない．アミノ酸は，グリシン（Gly）$\\ce{H2N-CH2-COOH}$，アラニン（Ala）$\\ce{H2N-CH(CH3)-COOH}$，側鎖にもアミノ基をもつリシン（Lys）$\\ce{H2N-CH(COOH)-(CH2)4-NH2}$ である．原子量は $\\mathrm{H}=1.0$，$\\mathrm{C}=12$，$\\mathrm{N}=14$，$\\mathrm{O}=16$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "トリペプチド Gly–Lys–Ala（左が N 末端）を十分量の FDNB と反応させたのち，ペプチド結合を完全に加水分解した．DNP 基が結合した状態で得られるアミノ酸をすべて挙げ，それぞれ何個の DNP 基をもつか答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "Lys・Ala・Gly を1個ずつ含むトリペプチド X を (1) と同じように処理すると，DNP 基を 2 個もつ化合物が 1 種類と，DNP 基をもたないアミノ酸 2 種類が得られた．X として考えられるアミノ酸配列をすべて答えよ（N 末端側から書け）．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) で得られた DNP 基を 2 個もつ化合物の分子量を整数で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "Lys を 1 個含み，ほかに Lys を含まない 5 個のアミノ酸からなるペプチド Z を同じように処理すると，DNP 基をもつ化合物は「側鎖のアミノ基だけに DNP 基をもつ Lys」1 種類だけであった．Z の構造について考えられることを次から1つ選べ．\\\\\n(ア) N 末端が Lys である鎖状ペプチド　(イ) N 末端が Lys 以外の鎖状ペプチド　(ウ) 遊離のアミノ基を主鎖にもたない環状ペプチド"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：ジニトロフルオロベンゼンによる遊離アミノ基の標識と N 末端の決定",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：ジニトロフルオロベンゼンによる遊離アミノ基の標識と N 末端の決定",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "Gly（DNP 基 1 個），Lys（DNP 基 1 個）"
+   },
+   {
+    "id": "2",
+    "tex": "Lys–Ala–Gly，Lys–Gly–Ala"
+   },
+   {
+    "id": "3",
+    "tex": "$478$"
+   },
+   {
+    "id": "4",
+    "tex": "(ウ)"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　FDNB はアミド結合に使われていない $\\ce{-NH2}$ をすべて標識する．主鎖の遊離アミノ基は N 末端の 1 個だけだが，Lys は側鎖にも $\\ce{-NH2}$ をもつので，ペプチドのどこにあっても側鎖が標識される．加水分解後に「どのアミノ酸の，どのアミノ基に DNP 基がついているか」を見る．\n\n\\textbf{(1)}　N 末端の Gly の主鎖アミノ基が標識され（DNP 基 1 個），Lys は主鎖のアミノ基がペプチド結合に使われているが側鎖のアミノ基が標識される（DNP 基 1 個）．Ala のアミノ基はペプチド結合に使われているので標識されない．答え：$\\boldsymbol{\\text{Gly（1個），Lys（1個）}}$．\n\n\\textbf{(2)}　DNP 基 2 個をもつアミノ酸は，主鎖と側鎖の両方のアミノ基が遊離していた Lys しかありえない．したがって Lys が N 末端で，Ala・Gly は標識されない．残り 2 個の並びはこの実験では区別できないので，$\\boldsymbol{\\text{Lys–Ala–Gly と Lys–Gly–Ala}}$．（Lys が N 末端でなければ，N 末端のアミノ酸と Lys の側鎖で DNP 基 1 個の化合物が 2 種類できる．）\n\n\\textbf{(3)}　Lys $\\ce{C6H14N2O2}$ の 2 個の N 上の H がそれぞれ Ar $\\ce{C6H3N2O4}$ に置きかわるので，分子式は $\\ce{C6H12N2O2}$ に Ar 2 個を加えた $\\ce{C18H18N6O10}$．分子量は $12\\times18+1.0\\times18+14\\times6+16\\times10=\\boldsymbol{478}$．（各 DNP 化により分子量は $186-20=166$ 増える：$146+2\\times166=478$．）\n\n\\textbf{(4)}　鎖状ペプチドなら N 末端の主鎖アミノ基が必ず標識され，N 末端が Lys なら DNP 基 2 個の Lys が，それ以外なら N 末端のアミノ酸の DNP 化合物が生じるはずである．側鎖だけが標識された Lys しか得られないのは，主鎖に遊離のアミノ基がない場合で，\\textbf{(ウ)} 環状ペプチドと考えられる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "FDNB はアミド結合になっていない遊離のアミノ基をすべて標識し，その結合は加水分解で切れないので，加水分解後の DNP 化合物から N 末端がわかる．リシンは側鎖のアミノ基も標識されるため，DNP 基の数（1個か2個か）で N 末端かどうかを判断し，主鎖の標識がなければ環状ペプチドと推定できる．"
+ },
+ "concepts": [
+  "protein-amino",
+  "aromatic"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ペプチド",
+  "N末端",
+  "リシン",
+  "アミノ基の標識",
+  "環状ペプチド"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

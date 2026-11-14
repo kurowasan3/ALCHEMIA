@@ -1,0 +1,109 @@
+{
+ "id": "THE-ELC-025",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-07",
+ "topic": "チタンの製錬（クロール法）と溶融塩電解の電気量",
+ "course": "化学",
+ "level": 3,
+ "minutes": 18,
+ "format": [
+  "calc",
+  "pathway"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "チタンは，酸化チタン(IV) を炭素で直接還元すると炭化物ができてしまうので，次の工程でつくられる．\\\\\n工程 1：酸化チタン(IV) を炭素とともに加熱しながら塩素と反応させ，塩化チタン(IV) $\\ce{TiCl4}$ と一酸化炭素にする．\\\\\n工程 2：$\\ce{TiCl4}$ をマグネシウムで還元してチタンを得る．\\\\\n工程 3：工程 2 で生じた塩化マグネシウムを溶融塩電解して，マグネシウムと塩素を回収し，それぞれ工程 2・工程 1 で再び使う．\\\\\n原子量は O = 16，Ti = 48，ファラデー定数を $9.65\\times10^4\\,\\mathrm{C/mol}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "工程 1〜3 の変化を，それぞれ化学反応式で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "マグネシウムと塩素がすべて回収・再利用されるとすると，工程 1〜3 をまとめた全体の変化はどのような化学反応式で表されるか．"
+     },
+     {
+      "id": "3",
+      "tex": "酸化チタン(IV) を質量で $80.0\\,\\%$ 含む鉱石 $1.00\\,\\mathrm t$ から得られるチタンは何 t か．有効数字 3 桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) のチタンをつくるのに必要なマグネシウムを，工程 3 の電気分解ですべてまかなうとする．電流効率を $75.0\\,\\%$，電圧を $6.00\\,\\mathrm V$ とすると，必要な電気エネルギーは何 J か．有効数字 2 桁で答えよ．ただし，$1\\,\\mathrm J=1\\,\\mathrm{C\\cdot V}$ とする．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "工程 1：$\\ce{TiO2 + 2C + 2Cl2 -> TiCl4 + 2CO}$　工程 2：$\\ce{TiCl4 + 2Mg -> Ti + 2MgCl2}$　工程 3：$\\ce{MgCl2 -> Mg + Cl2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{TiO2 + 2C -> Ti + 2CO}$"
+   },
+   {
+    "id": "3",
+    "tex": "$0.480\\,\\mathrm t$"
+   },
+   {
+    "id": "4",
+    "tex": "$3.1\\times10^{10}\\,\\mathrm J$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}\n\\[ \\ce{TiO2 + 2C + 2Cl2 -> TiCl4 + 2CO} \\]\n\\[ \\ce{TiCl4 + 2Mg -> Ti + 2MgCl2} \\]\n\\[ \\ce{MgCl2 -> Mg + Cl2}\\quad(\\text{陰極：}\\ce{Mg^2+ + 2e- -> Mg},\\ \\text{陽極：}\\ce{2Cl- -> Cl2 + 2e-}) \\]\n\n\\textbf{(2)} 工程 3 を 2 倍して 3 式を足すと，$\\ce{Cl2}$，$\\ce{TiCl4}$，$\\ce{Mg}$，$\\ce{MgCl2}$ が消え\n\\[ \\ce{TiO2 + 2C -> Ti + 2CO} \\]\nとなる．全体では炭素で酸化チタンを還元したのと同じだが，塩化物とマグネシウムを経由することで炭化物の生成を避けている．\n\n\\textbf{(3)} $\\ce{TiO2}$（式量 80）は $\\dfrac{1.00\\times10^6\\times0.800}{80}=1.00\\times10^4\\,\\mathrm{mol}$．Ti も $1.00\\times10^4\\,\\mathrm{mol}$ で\n\\[ 1.00\\times10^4\\times48=4.80\\times10^5\\,\\mathrm g=\\boldsymbol{0.480\\,\\mathrm t} \\]\n\n\\textbf{(4)} Ti 1 mol に $\\ce{Mg}$ 2 mol が必要で，$\\ce{Mg^2+ + 2e- -> Mg}$ より電子は 4 mol．電子は $4.00\\times10^4\\,\\mathrm{mol}$，必要な電気量は\n\\[ \\frac{4.00\\times10^4\\times9.65\\times10^4}{0.750}=5.146\\cdots\\times10^9\\,\\mathrm C \\]\n電気エネルギーは\n\\[ 5.146\\times10^9\\times6.00=3.08\\cdots\\times10^{10}\\approx\\boldsymbol{3.1\\times10^{10}\\,\\mathrm J} \\]\n（Ti の酸化数 $+4\\to0$ より，Ti 1 mol あたり電子 4 mol と考えてもよい．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "クロール法では TiO₂ を塩化物にしてから Mg で還元し，MgCl₂ を溶融塩電解して Mg と Cl₂ を再利用する．循環する物質を消去すると全体は TiO₂ + 2C → Ti + 2CO となり，必要な電気量は Ti の酸化数の変化（4 電子）で決まる．"
+ },
+ "concepts": [
+  "electrolysis",
+  "redox"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "チタン",
+  "クロール法",
+  "溶融塩電解",
+  "ファラデーの法則",
+  "電気エネルギー",
+  "反応経路"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

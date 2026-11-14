@@ -1,0 +1,131 @@
+{
+ "id": "THE-EQL-088",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "金属酸化物を使う2段階の水の熱化学分解サイクル（圧平衡定数の温度変化）",
+ "course": "化学",
+ "level": 4,
+ "minutes": 35,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水を直接熱分解するには非常な高温が必要なので，ある金属 M の酸化物 $\\ce{MO2}$ と $\\ce{MO}$（いずれも固体）を使って，次の 2 つの反応をくり返し水を分解する方法を考える．\n\\[\\text{(b)}\\quad \\ce{2MO2(s) <=>[\\text{}] 2MO(s) + O2(g)}\\qquad\\text{（高温で行う）}\\]\n\\[\\text{(c)}\\quad \\ce{MO(s) + H2O(g) <=>[\\text{}] MO2(s) + H2(g)}\\qquad\\text{（低温で行う）}\\]\n比較のため，水の直接分解を (a) とする．\n\\[\\text{(a)}\\quad \\ce{2H2O(g) <=> 2H2(g) + O2(g)}\\]\n圧平衡定数 $K_p$（分圧の単位は atm）の常用対数は，いずれの反応でも $\\log K_p=\\dfrac{C_1}{T}+C_2$（$T$ は絶対温度，$C_1$，$C_2$ は反応ごとの定数）に従い，$C_1=-\\dfrac{\\Delta H}{2.30R}$（$\\Delta H$ は書かれた反応式どおりに反応したときの反応エンタルピー，$R=8.31\\,\\mathrm{J/(K\\cdot mol)}$）とする．(a) と (b) について次の式が得られている．\n\\[\\text{(a)}\\ \\log K_{\\mathrm a}=-\\frac{2.50\\times10^{4}}{T}+4.50\\qquad \\text{(b)}\\ \\log K_{\\mathrm b}=-\\frac{3.10\\times10^{4}}{T}+15.5\\]\n気体はすべて理想気体とし，固体は純物質として存在する．必要なら $\\sqrt{10}=3.16$ を用いよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "反応 (b)，(c) の圧平衡定数 $K_{\\mathrm b}$，$K_{\\mathrm c}$ を分圧を用いて表せ．また，(a)〜(c) の関係を使って，$\\log K_{\\mathrm c}$ を $T$ の式で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "反応 (a)，(b)，(c) の $\\Delta H$ をそれぞれ有効数字2桁で求めよ．また，(c) を低温で行う理由を $\\Delta H$ と関係づけて説明せよ．"
+     },
+     {
+      "id": "3",
+      "tex": "反応 (b) で酸素の平衡分圧が $1\\,\\mathrm{atm}$ に達する温度と，(a) の $K_{\\mathrm a}$ が 1 になる温度をそれぞれ有効数字2桁で求めよ．また，(b) の温度 $T$ で水を直接熱分解した場合の $K_{\\mathrm a}$ の値を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "500 K で，十分な量の $\\ce{MO}$ の上に水蒸気だけを流して (c) を平衡に到達させた．出てくる気体（$\\ce{H2}$ と $\\ce{H2O}$）中の $\\ce{H2}$ のモル分率を有効数字2桁で求めよ．また，この値は全圧を変えると変わるか．"
+     },
+     {
+      "id": "5",
+      "tex": "高温側の反応 (b) をもっと低い 1500 K で行えるように，$\\Delta H_{\\mathrm b}$ は変えずに $C_2$ だけが異なる酸化物 $\\ce{MO2}$ に取りかえたい．(b) の $K_{\\mathrm b}=1$ が 1500 K となるために必要な $C_2$ の値を求めよ．このとき，(c) の $K_{\\mathrm c}$ が 1 になる温度は何 K になるか（有効数字2桁）．この結果から，2 つの段階の温度の間にどのような関係があるといえるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：金属酸化物を使う2段階の水の熱化学分解サイクル（圧平衡定数の温度変化）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$K_{\\mathrm b}=p_{\\ce{O2}}$，$K_{\\mathrm c}=\\dfrac{p_{\\ce{H2}}}{p_{\\ce{H2O}}}$．(a)＝(b)＋2×(c) より $\\log K_{\\mathrm c}=\\dfrac{3.00\\times10^{3}}{T}-5.50$．"
+   },
+   {
+    "id": "2",
+    "tex": "$\\Delta H_{\\mathrm a}=4.8\\times10^{2}\\,\\mathrm{kJ}$，$\\Delta H_{\\mathrm b}=5.9\\times10^{2}\\,\\mathrm{kJ}$，$\\Delta H_{\\mathrm c}=-57\\,\\mathrm{kJ}$．(c) は発熱反応なので温度が低いほど $K_{\\mathrm c}$ が大きく，平衡が右（$\\ce{H2}$ の生成）に偏るから．"
+   },
+   {
+    "id": "3",
+    "tex": "(b)：$2.0\\times10^{3}\\,\\mathrm K$，(a)：$5.6\\times10^{3}\\,\\mathrm K$．2000 K での $K_{\\mathrm a}=1.0\\times10^{-8}$．"
+   },
+   {
+    "id": "4",
+    "tex": "0.76．$K_{\\mathrm c}$ は分圧の比だけで決まり（反応の前後で気体の分子数が等しい），全圧を変えても変わらない．"
+   },
+   {
+    "id": "5",
+    "tex": "$C_2=20.7$（約 21）．$K_{\\mathrm c}=1$ となる温度は $3.7\\times10^{2}\\,\\mathrm K$．高温側の温度を下げると低温側の温度も下がる（2 つの段階の $C_2$ の和が水の分解で決まっているので，一方を得するともう一方が損をする）．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　固体は純物質で，平衡定数の式には入らない．よって $K_{\\mathrm b}=p_{\\ce{O2}}$，$K_{\\mathrm c}=\\dfrac{p_{\\ce{H2}}}{p_{\\ce{H2O}}}$．\n(b)＋2×(c) を計算すると $\\ce{MO2}$，$\\ce{MO}$ が消えて (a) になるので $K_{\\mathrm a}=K_{\\mathrm b}K_{\\mathrm c}^{\\,2}$，すなわち $\\log K_{\\mathrm c}=\\dfrac{1}{2}(\\log K_{\\mathrm a}-\\log K_{\\mathrm b})$．\n\\[\\log K_{\\mathrm c}=\\frac{1}{2}\\left(\\frac{-2.50\\times10^{4}+3.10\\times10^{4}}{T}+4.50-15.5\\right)=\\boldsymbol{\\frac{3.00\\times10^{3}}{T}-5.50}\\]\n（(a)〜(c) の $\\log K_p$ と $1/T$ の関係を解答図に示す．）\n\n\\textbf{(2)}　$\\Delta H=-2.30R\\,C_1$ で，$2.30\\times8.31=19.1\\,\\mathrm{J/(K\\cdot mol)}$．\n$\\Delta H_{\\mathrm a}=19.1\\times2.50\\times10^{4}\\,\\mathrm J=4.78\\times10^{5}\\,\\mathrm J$ より $\\boldsymbol{4.8\\times10^{2}\\,\\mathrm{kJ}}$（水蒸気 2 mol の分解．実際の値 $2\\times242=484\\,\\mathrm{kJ}$ に近い）．\n$\\Delta H_{\\mathrm b}=19.1\\times3.10\\times10^{4}\\,\\mathrm J=5.93\\times10^{5}\\,\\mathrm J$ より $\\boldsymbol{5.9\\times10^{2}\\,\\mathrm{kJ}}$．\n$\\Delta H_{\\mathrm c}=-19.1\\times3.00\\times10^{3}\\,\\mathrm J=-5.7\\times10^{4}\\,\\mathrm J$ より $\\boldsymbol{-57\\,\\mathrm{kJ}}$（発熱）．\n（ヘスの法則 $\\Delta H_{\\mathrm b}+2\\Delta H_{\\mathrm c}=\\Delta H_{\\mathrm a}$ を満たす．）\n$C_1>0$（発熱）の反応では $1/T$ が大きい（低温）ほど $\\log K$ が大きいので，(c) は\\textbf{低温ほど平衡が $\\ce{H2}$ の生成側に偏る}．逆に (b) は大きな吸熱反応なので高温で行う．水の分解に必要な $4.8\\times10^{2}\\,\\mathrm{kJ}$ より多い $5.9\\times10^{2}\\,\\mathrm{kJ}$ を高温で (b) に注ぎ込み，その差の分を (c) で低温で放出するしくみになっている．\n\n\\textbf{(3)}　(b)：$p_{\\ce{O2}}=1\\,\\mathrm{atm}$ は $K_{\\mathrm b}=1$，$\\log K_{\\mathrm b}=0$ より $T=\\dfrac{3.10\\times10^{4}}{15.5}=\\boldsymbol{2.0\\times10^{3}\\,\\mathrm K}$．\n(a)：$T=\\dfrac{2.50\\times10^{4}}{4.50}=5.56\\times10^{3}$ より $\\boldsymbol{5.6\\times10^{3}\\,\\mathrm K}$．\n2000 K での (a) は $\\log K_{\\mathrm a}=-12.5+4.50=-8.0$ より $\\boldsymbol{K_{\\mathrm a}=1.0\\times10^{-8}}$ で，直接分解はほとんど進まない．\n(b) は $\\Delta H$ が (a) より大きいのに低い温度で $K=1$ になる．$K=1$ となる温度は $-C_1/C_2$ で決まり，(b) は $C_2$（気体 $\\ce{O2}$ が固体から生じることによる大きな値）が大きいからである．\n\n\\textbf{(4)}　500 K で $\\log K_{\\mathrm c}=6.00-5.50=0.50$，$K_{\\mathrm c}=\\sqrt{10}=3.16$．$\\ce{H2}$ のモル分率を $x$ とすると $\\dfrac{p_{\\ce{H2}}}{p_{\\ce{H2O}}}=\\dfrac{x}{1-x}=3.16$ より $x=\\dfrac{3.16}{4.16}=0.760$，$\\boldsymbol{0.76}$．\n$\\ce{MO}$ が十分にある限り固体の量は関係せず，$K_{\\mathrm c}$ は分圧の比なので，\\textbf{全圧を変えてもモル分率は変わらない}（気体の分子数が両辺で 1 ずつ）．なお 600 K では $\\log K_{\\mathrm c}=-0.50$ で $x=0.24$ に下がる．\n\n\\textbf{(5)}　$\\log K_{\\mathrm b}=0$ が $T=1500\\,\\mathrm K$ となるには $C_2=\\dfrac{3.10\\times10^{4}}{1500}=\\boldsymbol{20.7}$．\n(a)＝(b)＋2×(c) は $C_2$ についても成り立つ（$C_{2,\\mathrm a}=C_{2,\\mathrm b}+2C_{2,\\mathrm c}$）ので，$C_{2,\\mathrm c}=\\dfrac{4.50-20.7}{2}=-8.08$．$C_{1,\\mathrm c}$ は $\\Delta H_{\\mathrm b}$ が変わらないので $3.00\\times10^{3}$ のまま．$K_{\\mathrm c}=1$ となるのは\n\\[T=\\frac{3.00\\times10^{3}}{8.08}=371\\,\\mathrm K\\]\nより $\\boldsymbol{3.7\\times10^{2}\\,\\mathrm K}$（もとは $3000/5.50=545\\,\\mathrm K$）．\n2 つの段階の $C_1$，$C_2$ の和はどちらも水の分解 (a) で決まっているので，(b) を低温で進むようにする（$C_{2,\\mathrm b}$ を大きくする）と，(c) の $C_2$ がその分小さくなり，(c) はより低い温度でしか右に進まなくなる．低温では反応速度が小さくなるので，\\textbf{高温側の温度を下げると低温側の温度も下がる}という両立しない関係がある．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "固体を含む平衡では気体の分圧だけで圧平衡定数が決まり，水の分解を高温の吸熱段階と低温の発熱段階に分けると，log K の 1/T に対する直線の傾き（ΔH）と切片の和が水の分解の値に固定される．そのため片方の段階の温度を下げると，もう一方の段階が進む温度も下がるという制約が生じる．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "ideal-gas",
+  "enthalpy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "圧平衡定数",
+  "熱化学サイクル",
+  "水素製造",
+  "ヘスの法則",
+  "平衡定数の温度変化"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

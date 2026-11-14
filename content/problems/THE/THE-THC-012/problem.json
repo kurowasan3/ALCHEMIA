@@ -1,0 +1,100 @@
+{
+ "id": "THE-THC-012",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-10",
+ "topic": "密閉容器での燃焼と水の凝縮を考えた発熱量",
+ "course": "化学",
+ "level": 3,
+ "minutes": 18,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "容積 $8.3\\,\\mathrm L$ の密閉容器に，$27$ ℃ でメタンと酸素の混合気体を入れたところ，圧力は $1.2\\times10^{4}\\,\\mathrm{Pa}$ であった．これを点火してメタンを完全燃焼させ，$27$ ℃ に戻したところ，容器内の圧力は $9.6\\times10^{3}\\,\\mathrm{Pa}$ になった．$27$ ℃ での水の飽和蒸気圧は $3.6\\times10^{3}\\,\\mathrm{Pa}$，気体定数は $R=8.3\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$，水の蒸発エンタルピーは $+44\\,\\mathrm{kJ/mol}$ とし，\n\\[ \\ce{CH4(気) + 2O2(気) -> CO2(気) + 2H2O(液)}\\quad \\Delta H=-890\\,\\mathrm{kJ} \\]\nとする．液体の水の体積と，液体の水への気体の溶解は無視する．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "生じた水がすべて水蒸気のままだと仮定すると，燃焼後の圧力は燃焼前と比べてどうなるはずか．このことから，燃焼後の容器内に液体の水が存在すると判断できる理由を述べよ．"
+     },
+     {
+      "id": "2",
+      "tex": "はじめの混合気体中のメタンの物質量を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "燃焼後に $27$ ℃ に戻るまでに，この反応で発生した熱量は何 kJ か．生じた水のうち水蒸気として残った分を考慮し，有効数字2桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "反応の前後で気体の物質量の合計は変わらない（$1+2=1+2$）ので，圧力は $1.2\\times10^{4}\\,\\mathrm{Pa}$ のまま変わらないはず．実際は $9.6\\times10^{3}\\,\\mathrm{Pa}$ に下がったので，水の一部が凝縮して液体になっている．"
+   },
+   {
+    "id": "2",
+    "tex": "$1.0\\times10^{-2}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "$8.4\\,\\mathrm{kJ}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\ce{CH4 + 2O2 -> CO2 + 2H2O}$ で水がすべて気体なら，気体は $3\\,\\mathrm{mol}\\to3\\,\\mathrm{mol}$ で変わらず，同温・同体積では圧力も $1.2\\times10^{4}\\,\\mathrm{Pa}$ のままのはず．圧力が下がったのは，水蒸気の一部が凝縮して液体になったからである（このとき水蒸気の分圧は飽和蒸気圧に等しい）．\n\\textbf{(2)} 圧力 $p$ の気体の物質量は $\\dfrac{p\\times8.3}{8.3\\times10^{3}\\times300}=\\dfrac{p}{3.0\\times10^{5}}\\,\\mathrm{mol}$．\nはじめ：メタン $a$，酸素 $b$ として $a+b=\\dfrac{1.2\\times10^{4}}{3.0\\times10^{5}}=0.040\\,\\mathrm{mol}$．\n燃焼後の水以外の気体は $\\ce{CO2}$ $a$ と $\\ce{O2}$ $b-2a$ の計 $b-a$ で，その分圧は全圧から水蒸気の分圧（飽和蒸気圧）を引いた $9.6\\times10^{3}-3.6\\times10^{3}=6.0\\times10^{3}\\,\\mathrm{Pa}$．よって $b-a=0.020\\,\\mathrm{mol}$．\n連立して $a=\\boldsymbol{1.0\\times10^{-2}\\,\\mathrm{mol}}$（$b=0.030\\,\\mathrm{mol}$ で，酸素は十分ある）．\n\\textbf{(3)} 生じた水は $0.020\\,\\mathrm{mol}$．そのうち水蒸気は $\\dfrac{3.6\\times10^{3}}{3.0\\times10^{5}}=0.012\\,\\mathrm{mol}$，液体は $0.008\\,\\mathrm{mol}$ で，確かに液体が存在する．\nすべて液体の水になる場合の発熱 $890\\times0.010=8.90\\,\\mathrm{kJ}$ から，水蒸気のまま残った分の蒸発エンタルピーを引いて\n\\[ 8.90-44\\times0.012=8.37\\fallingdotseq\\boldsymbol{8.4\\,\\mathrm{kJ}} \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "燃焼後の圧力を，すべて水蒸気と仮定した値と比べることで水の凝縮を判断し，凝縮しているときは水蒸気の分圧を飽和蒸気圧として残りの気体の量を求める．発熱量は，水蒸気のまま残った分だけ蒸発エンタルピーを差し引いて求める．"
+ },
+ "concepts": [
+  "enthalpy",
+  "ideal-gas",
+  "vapor-pressure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "燃焼エンタルピー",
+  "飽和蒸気圧",
+  "蒸発エンタルピー",
+  "気体の状態方程式"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

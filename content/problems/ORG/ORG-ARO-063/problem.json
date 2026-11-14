@@ -1,0 +1,124 @@
+{
+ "id": "ORG-ARO-063",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-05",
+ "topic": "ジアゾカップリングの速さの pH 依存性（反応できる形の割合）",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "塩化ベンゼンジアゾニウムとフェノールのカップリング $\\ce{C6H5N2+ + C6H5O- -> C6H5N=NC6H4OH}$ は，ジアゾニウムイオン $\\ce{C6H5N2+}$ とフェノキシドイオン $\\ce{C6H5O-}$ の間で起こり，その速さは\n\\[v = k[\\ce{C6H5N2+}][\\ce{C6H5O-}]\\]\nで表される（$k$ は定数）．分子のフェノールは反応しない．また，ジアゾニウムイオンは塩基性で $\\ce{C6H5N2+ + OH- <=> C6H5N2OH}$ により反応しない形に変わる．この平衡を $\\ce{H+}$ を使って書き直し，\n\\[K_\\mathrm{x} = \\frac{[\\ce{C6H5N2OH}][\\ce{H+}]}{[\\ce{C6H5N2+}]}\\]\nと定義する．フェノールの電離定数は $K_\\mathrm{a} = 1.0\\times10^{-10}\\,\\mathrm{mol/L}$ である．ジアゾニウム塩の全濃度を $C_\\mathrm{D}$，フェノールの全濃度を $C_\\mathrm{P}$ とし，pH は緩衝液で一定に保つ．$\\sqrt{10} = 3.16$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$[\\ce{H+}] = h$ として，$v$ を $k$，$C_\\mathrm{D}$，$C_\\mathrm{P}$，$h$，$K_\\mathrm{a}$，$K_\\mathrm{x}$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "同じ $C_\\mathrm{D}$，$C_\\mathrm{P}$ で実験したところ，pH 8.0 と pH 11.0 で反応の速さが等しかった．$K_\\mathrm{x}$ の値と，速さが最大になる pH を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の最大の速さは，$C_\\mathrm{D}$ と $C_\\mathrm{P}$ がすべて反応できる形であると仮定したときの速さ $kC_\\mathrm{D}C_\\mathrm{P}$ の何 % か．また，pH 13.0 での速さは最大の速さの何倍か．それぞれ有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "フェノールの代わりに $N,N$-ジメチルアニリン $\\ce{C6H5N(CH3)2}$ とカップリングさせる．反応するのは分子形のアミンで，その共役酸 $\\ce{C6H5NH(CH3)2+}$ の電離定数は $1.0\\times10^{-5}\\,\\mathrm{mol/L}$ である．ジアゾニウムイオンについては (2) の $K_\\mathrm{x}$ を用いる．速さが最大になる pH と，(3) と同じ意味の割合（%，有効数字 2 桁）を求めよ．さらに，フェノールでは (3) の割合が小さくなってしまう理由を，2 つの電離定数の大小から説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：ジアゾカップリングの速さの pH 依存性（反応できる形の割合）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$v = kC_\\mathrm{D}C_\\mathrm{P}\\dfrac{hK_\\mathrm{a}}{(h+K_\\mathrm{x})(h+K_\\mathrm{a})}$"
+   },
+   {
+    "id": "2",
+    "tex": "$K_\\mathrm{x} = 1.0\\times10^{-9}\\,\\mathrm{mol/L}$，最大になる pH は $9.5$"
+   },
+   {
+    "id": "3",
+    "tex": "$5.8\\,\\%$，$1.7\\times10^{-3}$ 倍"
+   },
+   {
+    "id": "4",
+    "tex": "pH $7.0$，$98\\,\\%$．フェノールでは $K_\\mathrm{a} < K_\\mathrm{x}$（$\\mathrm{p}K_\\mathrm{a} = 10 > \\mathrm{p}K_\\mathrm{x} = 9$）なので，フェノキシドが多くなる pH ではジアゾニウムイオンの大部分が反応しない形に変わっていて，両方の反応できる形が同時に多く存在する pH がない．ジメチルアニリンでは共役酸の電離定数が $K_\\mathrm{x}$ より十分大きいので，pH 6〜8 付近で両方がほぼ反応できる形になる．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 反応できる形の割合}　ジアゾニウムのうち $\\ce{C6H5N2+}$ の割合は\n\\[\\frac{[\\ce{C6H5N2+}]}{C_\\mathrm{D}} = \\frac{1}{1+K_\\mathrm{x}/h} = \\frac{h}{h+K_\\mathrm{x}}\\]\nフェノールのうち $\\ce{C6H5O-}$ の割合は\n\\[\\frac{[\\ce{C6H5O-}]}{C_\\mathrm{P}} = \\frac{K_\\mathrm{a}/h}{1+K_\\mathrm{a}/h} = \\frac{K_\\mathrm{a}}{h+K_\\mathrm{a}}\\]\nよって $\\boldsymbol{v = kC_\\mathrm{D}C_\\mathrm{P}\\,\\dfrac{hK_\\mathrm{a}}{(h+K_\\mathrm{x})(h+K_\\mathrm{a})}}$．pH を上げると前者は減り，後者は増える．\n\n\\textbf{(2) 最大の条件と $K_\\mathrm{x}$}　$v$ の逆数は\n\\[\\frac{kC_\\mathrm{D}C_\\mathrm{P}}{v} = \\frac{(h+K_\\mathrm{x})(h+K_\\mathrm{a})}{hK_\\mathrm{a}} = \\frac{1}{K_\\mathrm{a}}\\left(h + \\frac{K_\\mathrm{a}K_\\mathrm{x}}{h}\\right) + \\frac{K_\\mathrm{a}+K_\\mathrm{x}}{K_\\mathrm{a}}\\]\n$h + K_\\mathrm{a}K_\\mathrm{x}/h$ は $h_1$ と $h_2 = K_\\mathrm{a}K_\\mathrm{x}/h_1$ で同じ値をとるので，異なる 2 つの pH で速さが等しければ $h_1h_2 = K_\\mathrm{a}K_\\mathrm{x}$．\n\\[K_\\mathrm{x} = \\frac{10^{-8.0}\\times10^{-11.0}}{1.0\\times10^{-10}} = \\boldsymbol{1.0\\times10^{-9}\\,\\mathrm{mol/L}}\\]\n相加平均と相乗平均の関係から $h + K_\\mathrm{a}K_\\mathrm{x}/h$ は $h = \\sqrt{K_\\mathrm{a}K_\\mathrm{x}}$ で最小，すなわち $v$ が最大になる．\n\\[\\mathrm{pH} = \\tfrac12(\\mathrm{p}K_\\mathrm{a} + \\mathrm{p}K_\\mathrm{x}) = \\tfrac12(10.0 + 9.0) = \\boldsymbol{9.5}\\]\n（pH 8.0 と 11.0 はこの値から左右に 1.5 ずつ離れており，対称になっている．）\n\n\\textbf{(3) 最大の速さの大きさ}　$h = \\sqrt{K_\\mathrm{a}K_\\mathrm{x}}$ を代入すると\n\\[\\frac{v_\\mathrm{max}}{kC_\\mathrm{D}C_\\mathrm{P}} = \\frac{1}{\\left(1+\\sqrt{K_\\mathrm{x}/K_\\mathrm{a}}\\right)^2} = \\frac{1}{(1+3.16)^2} = 0.058\\]\nすなわち $\\boldsymbol{5.8\\,\\%}$．pH 13.0（$h = 1.0\\times10^{-13}$）では\n\\[\\frac{hK_\\mathrm{a}}{(h+K_\\mathrm{x})(h+K_\\mathrm{a})} = \\frac{10^{-23}}{(1.0001\\times10^{-9})(1.001\\times10^{-10})} = 1.0\\times10^{-4}\\]\nで，最大の $1.0\\times10^{-4}/0.0577 = \\boldsymbol{1.7\\times10^{-3}}$ 倍．強い塩基性ではフェノキシドは 100 % でも，ジアゾニウムイオンがほとんど反応しない形になるため，かえって遅くなる．\n\n\\textbf{(4) アミンとのカップリング}　分子形アミンの割合は，共役酸の電離定数 $K_\\mathrm{b}' = 1.0\\times10^{-5}$ を使って $K_\\mathrm{b}'/(h+K_\\mathrm{b}')$ となり，フェノールと同じ形の式になる．したがって最大は\n\\[\\mathrm{pH} = \\tfrac12(5.0 + 9.0) = \\boldsymbol{7.0},\\qquad \\frac{1}{\\left(1+\\sqrt{10^{-9}/10^{-5}}\\right)^2} = \\frac{1}{(1.01)^2} = 0.98 \\;\\Rightarrow\\; \\boldsymbol{98\\,\\%}\\]\n\\textbf{割合の大小の理由}　反応できる形は，ジアゾニウムでは $h > K_\\mathrm{x}$（pH ＜ 9）の側，カップリング相手では $h < K$（pH ＞ p$K$）の側で多い．アミンでは p$K$ = 5 ＜ p$K_\\mathrm{x}$ = 9 なので，pH 5〜9 の間に両方が多数を占める範囲があり，ほぼ全量が反応できる．フェノールでは p$K_\\mathrm{a}$ = 10 ＞ p$K_\\mathrm{x}$ = 9 で，2 つの「多い範囲」が重ならない．このため最適な pH でも両方の割合が約 24 % ずつにしかならず（$1/(1+\\sqrt{10}) = 0.24$），積は 5.8 % にとどまる．アミンとのカップリングを弱酸性〜中性，フェノールとのカップリングを弱塩基性で行う理由もここにある．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "カップリングは反応できる2つの形（ジアゾニウムイオンとフェノキシドイオン）の濃度の積に比例し，pH を上げると一方は減り他方は増えるので，速さは pH=(pKa+pKx)/2 で最大になり，その前後で対称に下がる．2つの pH で速さが等しいことから未知の電離定数を逆に決め，相手の pK と pKx の大小で，最適条件でも反応できる形が少ない場合（フェノール）とほぼ全量が反応できる場合（アミン）を区別する．"
+ },
+ "concepts": [
+  "aromatic",
+  "nitrogen-phosphorus",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ジアゾカップリング",
+  "pH",
+  "反応速度",
+  "電離平衡",
+  "フェノキシド",
+  "ジアゾニウム塩"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

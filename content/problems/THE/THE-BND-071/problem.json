@@ -1,0 +1,107 @@
+{
+ "id": "THE-BND-071",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-03",
+ "topic": "等電子の関係による多原子イオンの形の推定",
+ "course": "化学",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "compare",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "構成する原子の数が同じで，価電子の総数（多原子イオンでは電荷の分を加減した数）も等しい分子やイオンどうしは，電子式の形がよく似ており，形も同じになることが多い．このような関係を「等電子」という．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "次のイオンの価電子の総数をそれぞれ答えよ．\\\\\n（a）$\\ce{NO2+}$　（b）$\\ce{N3-}$（アジ化物イオン）　（c）$\\ce{NO2-}$　（d）$\\ce{NO3-}$　（e）$\\ce{H3O+}$　（f）$\\ce{NH2-}$"
+     },
+     {
+      "id": "2",
+      "tex": "(1) の（a）〜（f）と等電子の分子を，次からそれぞれ 1 つずつ選べ（同じものを何度選んでもよい）．\\\\\n$\\ce{CO2}$，$\\ce{O3}$，$\\ce{BF3}$，$\\ce{NH3}$，$\\ce{H2O}$，$\\ce{CH4}$"
+     },
+     {
+      "id": "3",
+      "tex": "（a）〜（f）の形を，次からそれぞれ選べ．\\\\\n（ア）直線形　（イ）折れ線形　（ウ）正三角形（平面三角形）　（エ）三角錐形　（オ）正四面体形"
+     },
+     {
+      "id": "4",
+      "tex": "窒素原子を中心とする（a）$\\ce{NO2+}$ と（c）$\\ce{NO2-}$ のうち，中心原子に非共有電子対があるのはどちらか．また，O–N–O の結合角が大きいのはどちらか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "（a）16　（b）16　（c）18　（d）24　（e）8　（f）8"
+   },
+   {
+    "id": "2",
+    "tex": "（a）$\\ce{CO2}$　（b）$\\ce{CO2}$　（c）$\\ce{O3}$　（d）$\\ce{BF3}$　（e）$\\ce{NH3}$　（f）$\\ce{H2O}$"
+   },
+   {
+    "id": "3",
+    "tex": "（a）（ア）　（b）（ア）　（c）（イ）　（d）（ウ）　（e）（エ）　（f）（イ）"
+   },
+   {
+    "id": "4",
+    "tex": "非共有電子対があるもの：$\\ce{NO2-}$，結合角が大きいもの：$\\ce{NO2+}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　価電子は H 1，B 3，C 4，N 5，O 6，F 7．陽イオンは電荷の数だけ引き，陰イオンは加える．\n（a）$5+6\\times2-1=\\boldsymbol{16}$　（b）$5\\times3+1=\\boldsymbol{16}$　（c）$5+12+1=\\boldsymbol{18}$　（d）$5+18+1=\\boldsymbol{24}$　（e）$6+3-1=\\boldsymbol{8}$　（f）$5+2+1=\\boldsymbol{8}$\n\n\\textbf{(2)}　原子数と価電子数で照合する．$\\ce{CO2}$（3 原子，16），$\\ce{O3}$（3 原子，18），$\\ce{BF3}$（4 原子，24），$\\ce{NH3}$（4 原子，8），$\\ce{H2O}$（3 原子，8），$\\ce{CH4}$（5 原子，8）．\nよって（a）（b）は $\\boldsymbol{\\ce{CO2}}$，（c）は $\\boldsymbol{\\ce{O3}}$，（d）は $\\boldsymbol{\\ce{BF3}}$，（e）は $\\boldsymbol{\\ce{NH3}}$，（f）は $\\boldsymbol{\\ce{H2O}}$．（$\\ce{NH4+}$ なら $\\ce{CH4}$ と等電子である．）\n\n\\textbf{(3)}　等電子の分子と同じ形になる．中心原子のまわりの「結合の方向（二重結合も 1 方向）＋非共有電子対」の数で考えると，\n\\begin{itemize}\n\\item （a）（b）：2 方向，非共有電子対なし → \\textbf{直線形}（$\\ce{O=C=O}$ と同じ）\n\\item （c）：結合 2 方向＋非共有電子対 1 → \\textbf{折れ線形}（$\\ce{O3}$ と同じ）\n\\item （d）：3 方向，非共有電子対なし → \\textbf{正三角形}（$\\ce{BF3}$ と同じ）\n\\item （e）：結合 3＋非共有電子対 1 → \\textbf{三角錐形}（$\\ce{NH3}$ と同じ）\n\\item （f）：結合 2＋非共有電子対 2 → \\textbf{折れ線形}（$\\ce{H2O}$ と同じ）\n\\end{itemize}\n\n\\textbf{(4)}　$\\ce{NO2+}$ は 16 電子で $\\ce{CO2}$ と同じく N に非共有電子対がなく直線形（180°）．$\\ce{NO2-}$ は電子が 2 個多く，それが N 上の非共有電子対になるので折れ線形になる．よって非共有電子対があるのは $\\boldsymbol{\\ce{NO2-}}$，結合角が大きいのは $\\boldsymbol{\\ce{NO2+}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "原子数と価電子の総数（イオンは電荷で加減）が等しい分子・イオンは電子式が同じ形になるので，よく知られた分子（CO2・O3・BF3・NH3・H2O）に対応させて多原子イオンの形を決める．同じ原子の組でも電子が 2 個増えると中心原子に非共有電子対ができ，直線形が折れ線形に変わる．"
+ },
+ "concepts": [
+  "chemical-bond"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "等電子",
+  "電子式",
+  "分子の形",
+  "非共有電子対",
+  "多原子イオン"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,116 @@
+{
+ "id": "THE-EQL-021",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "固体を含む平衡と固体の量の条件",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "容積を自由に変えられる容器に黒鉛 $1.20\\,\\mathrm g$ と二酸化炭素 $0.100\\,\\mathrm{mol}$ を入れ，$1000\\,\\mathrm K$，$1.0\\times10^5\\,\\mathrm{Pa}$ に保つと，次の反応が平衡に達し，気体の全体積は $13.6\\,\\mathrm L$ になった．\n\\[ \\ce{C(s) + CO2(g) <=> 2CO(g)} \\]\n$R=8.3\\times10^3\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$，原子量 C=12 とし，固体の体積は無視する．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "圧平衡定数 $K_p$ を，$\\ce{CO2}$，$\\ce{CO}$ の分圧 $p_{\\ce{CO2}}$，$p_{\\ce{CO}}$ を用いて表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "平衡時の $\\ce{CO2}$ と $\\ce{CO}$ の物質量を有効数字3桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$K_p$ と濃度平衡定数 $K_c$ を，単位とともに有効数字2桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "平衡状態で次の操作をすると，平衡はどうなるか．（右へ移動／左へ移動／移動しない）\\\\ (a) 温度・圧力一定で黒鉛を少量加える　(b) 温度一定で圧縮して全圧を高くする"
+     },
+     {
+      "id": "5",
+      "tex": "黒鉛を $0.36\\,\\mathrm g$ にして，ほかは同じ条件で実験した．このとき平衡状態に達するか．また，最終的に生じる $\\ce{CO}$ の物質量を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$K_p=\\dfrac{p_{\\ce{CO}}^2}{p_{\\ce{CO2}}}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{CO2}$ $0.0361\\,\\mathrm{mol}$，$\\ce{CO}$ $0.128\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "$K_p=2.8\\times10^5\\,\\mathrm{Pa}$，$K_c=3.3\\times10^{-2}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "4",
+    "tex": "(a) 移動しない　(b) 左へ移動"
+   },
+   {
+    "id": "5",
+    "tex": "達しない（黒鉛がすべて反応してしまう），$\\ce{CO}$ $0.060\\,\\mathrm{mol}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 固体の黒鉛は濃度（分圧）が一定とみなせ，平衡定数の式に含めない：$\\boldsymbol{K_p=\\dfrac{p_{\\ce{CO}}^2}{p_{\\ce{CO2}}}}$．\\\\\n\\textbf{(2)} 気体の全物質量 $n=\\dfrac{1.0\\times10^5\\times13.6}{8.3\\times10^3\\times1000}=0.1639\\,\\mathrm{mol}$．反応した $\\ce{CO2}$ を $x$ mol とすると $\\ce{CO2}$ $0.100-x$，$\\ce{CO}$ $2x$，合計 $0.100+x$ より $x=0.0639$．\\\\\n$\\ce{CO2}$ $\\boldsymbol{0.0361\\,\\mathrm{mol}}$，$\\ce{CO}$ $\\boldsymbol{0.128\\,\\mathrm{mol}}$（黒鉛は $0.100\\,\\mathrm{mol}$ 中 $0.064\\,\\mathrm{mol}$ が反応し，残っている）．\\\\\n\\textbf{(3)} $p_{\\ce{CO}}=\\dfrac{0.128}{0.164}\\times1.0\\times10^5=7.79\\times10^4$，$p_{\\ce{CO2}}=2.20\\times10^4\\,\\mathrm{Pa}$．\n\\[ K_p=\\dfrac{(7.79\\times10^4)^2}{2.20\\times10^4}\\fallingdotseq\\boldsymbol{2.8\\times10^5\\,\\mathrm{Pa}},\\qquad K_c=\\dfrac{K_p}{RT}=\\dfrac{2.76\\times10^5}{8.3\\times10^6}\\fallingdotseq\\boldsymbol{3.3\\times10^{-2}\\,\\mathrm{mol/L}} \\]\n\\textbf{(4)} (a) 固体は平衡定数に含まれないので，加えても\\textbf{移動しない}．(b) 気体分子数の減る\\textbf{左へ移動}．\\\\\n\\textbf{(5)} 黒鉛は $0.030\\,\\mathrm{mol}$．すべて反応しても $\\ce{CO}$ $0.060$，$\\ce{CO2}$ $0.070\\,\\mathrm{mol}$ で，\n\\[ \\dfrac{p_{\\ce{CO}}^2}{p_{\\ce{CO2}}}=\\dfrac{(0.462\\times10^5)^2}{0.538\\times10^5}=4.0\\times10^4\\,\\mathrm{Pa}<K_p \\]\nとなり，まだ右へ進もうとする状態で黒鉛がなくなる．固体が残らないので\\textbf{平衡には達せず}，$\\ce{CO}$ は $\\boldsymbol{0.060\\,\\mathrm{mol}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "固体を含む平衡では固体を平衡定数に含めず，固体を加えても平衡は移動しない．ただし固体が反応で使い尽くされると平衡は成立しないので，固体の量が十分かを平衡定数と比べて判断する．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "固体を含む平衡",
+  "圧平衡定数",
+  "濃度平衡定数",
+  "ブードワ反応",
+  "平衡が成立する条件"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

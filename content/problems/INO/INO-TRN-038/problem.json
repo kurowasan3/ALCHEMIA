@@ -1,0 +1,110 @@
+{
+ "id": "INO-TRN-038",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-07",
+ "topic": "黄銅鉱からの粗銅の製造（全体の反応式・酸素・ケイ砂・副生する硫酸の量）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "equation",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "黄銅鉱 $\\ce{CuFeS2}$ から粗銅をつくる工程は，次の 2 段階の反応で表される．\n\\[ \\ce{2CuFeS2 + 4O2 -> Cu2S + 2FeO + 3SO2} \\qquad \\ce{Cu2S + O2 -> 2Cu + SO2} \\]\n生じた $\\ce{FeO}$ はケイ砂 $\\ce{SiO2}$ と反応させてスラグ $\\ce{FeSiO3}$ として除き，$\\ce{SO2}$ はすべて回収して硫酸の原料にする．原子量は H$=1.0$，O$=16$，Si$=28$，S$=32$，Cu$=64$ とし，$0\\,^\\circ\\mathrm{C}$，$1.013\\times10^{5}\\,\\mathrm{Pa}$ の気体のモル体積を $22.4\\,\\mathrm{L/mol}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "2 つの反応式をまとめ，$\\ce{CuFeS2}$ から $\\ce{Cu}$，$\\ce{FeO}$，$\\ce{SO2}$ が生じる 1 つの反応式にせよ．"
+     },
+     {
+      "id": "2",
+      "tex": "粗銅（銅のみとする）$128\\,\\mathrm{kg}$ を得るのに必要な酸素の体積は，$0\\,^\\circ\\mathrm{C}$，$1.013\\times10^{5}\\,\\mathrm{Pa}$ で何 $\\mathrm{m^3}$ か．有効数字 3 桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) のとき，生じた $\\ce{FeO}$ をすべてスラグにするのに必要なケイ砂（$\\ce{SiO2}$ のみとする）は何 kg か．有効数字 3 桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(2) のとき回収した $\\ce{SO2}$ をすべて硫酸にすると，質量パーセント濃度 $98.0\\,\\%$ の濃硫酸は何 kg 得られるか．有効数字 3 桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{2CuFeS2 + 5O2 -> 2Cu + 2FeO + 4SO2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$112\\,\\mathrm{m^3}$"
+   },
+   {
+    "id": "3",
+    "tex": "$120\\,\\mathrm{kg}$"
+   },
+   {
+    "id": "4",
+    "tex": "$400\\,\\mathrm{kg}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 2 つの式を足して $\\ce{Cu2S}$ を消すと $\\boldsymbol{\\ce{2CuFeS2 + 5O2 -> 2Cu + 2FeO + 4SO2}}$．\n\n\\textbf{(2)} 銅は $\\dfrac{128\\times10^{3}}{64}=2000\\,\\mathrm{mol}$．(1) より Cu 2 mol あたり $\\ce{O2}$ 5 mol なので $\\ce{O2}$ は $5000\\,\\mathrm{mol}$，$5000\\times22.4=1.12\\times10^{5}\\,\\mathrm L=\\boldsymbol{112\\,\\mathrm{m^3}}$．\n\n\\textbf{(3)} $\\ce{FeO + SiO2 -> FeSiO3}$ で，$\\ce{FeO}$ は Cu と同じ $2000\\,\\mathrm{mol}$．$\\ce{SiO2}$（式量 60）$2000\\,\\mathrm{mol}$ は $\\boldsymbol{120\\,\\mathrm{kg}}$．\n\n\\textbf{(4)} $\\ce{SO2}$ は Cu 2 mol あたり 4 mol で $4000\\,\\mathrm{mol}$．S 原子は保存されるので，接触法（$\\ce{2SO2 + O2 -> 2SO3}$，$\\ce{SO3 + H2O -> H2SO4}$）で $\\ce{H2SO4}$ $4000\\,\\mathrm{mol}$ $=392\\,\\mathrm{kg}$ が得られ，$98.0\\,\\%$ 濃硫酸としては $\\dfrac{392}{0.980}=\\boldsymbol{400\\,\\mathrm{kg}}$．得られる銅の約 3 倍の質量の濃硫酸が副生する．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "多段階の製錬反応を中間生成物（Cu₂S）が消えるようにまとめ，Cu と O₂・FeO（スラグに要する SiO₂）・SO₂（硫黄の保存から得られる硫酸）の量的関係を 1 本の式で扱う．"
+ },
+ "concepts": [
+  "transition-metals",
+  "oxygen-sulfur",
+  "industrial-process"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "黄銅鉱",
+  "銅の製錬",
+  "スラグ",
+  "接触法",
+  "量的関係",
+  "反応式のまとめ"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

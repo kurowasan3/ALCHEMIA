@@ -1,0 +1,110 @@
+{
+ "id": "THE-RDX-040",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-06",
+ "topic": "金銀合金からの金の回収（還元剤の量と電気分解の電気量の対応）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "equation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "金と銀からなる合金 $250.0\\,\\mathrm{mg}$ を王水に入れたところ，合金はすべて反応し，銀はすべて塩化銀 $\\ce{AgCl}$ の沈殿 $66.4\\,\\mathrm{mg}$ になり，金はすべて $\\ce{[AuCl4]-}$ として溶液中に残った．沈殿をろ過で除いた溶液から，次の方法で金を回収する．\n【方法1】硫酸鉄(II) $\\ce{FeSO4}$ を加えて，$\\ce{[AuCl4]-}$ を金の単体に還元する．$\\ce{Fe^2+}$ は $\\ce{Fe^3+}$ になる．\n【方法2】シュウ酸 $\\ce{H2C2O4}$ を加えて還元する．シュウ酸は $\\ce{CO2}$ になる．\n【方法3】白金電極を用いて一定電流で電気分解し，陰極に金を析出させる．\n原子量は Cl 35.5，Ag 107.9，Au 197.0，ファラデー定数は $9.65\\times10^{4}\\,\\mathrm{C/mol}$ とする．どの方法でも，金を含むイオンの還元だけが起こるものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "合金中の銀の質量パーセントを有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "方法1 と方法2 のイオン反応式をそれぞれ書け（$\\ce{[AuCl4]-}$ を用い，生じる $\\ce{Cl-}$ も書くこと）．"
+     },
+     {
+      "id": "3",
+      "tex": "方法1 で必要な $\\ce{FeSO4}$，方法2 で必要な $\\ce{H2C2O4}$ はそれぞれ最低何 mol か．また，方法3 で $0.500\\,\\mathrm{A}$ の電流を流すとき，金をすべて析出させるのに最低何秒かかるか．それぞれ有効数字 3 桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "別の溶かし方をしたところ，同じ量の金が半分は $\\ce{[AuCl4]-}$（金の酸化数 $+3$），半分は $\\ce{[AuCl2]-}$（$+1$）として溶けた．このとき方法1 で必要な $\\ce{FeSO4}$ の量と，方法3 で必要な時間は，(3) の何倍になるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$20.0\\,\\%$"
+   },
+   {
+    "id": "2",
+    "tex": "方法1：$\\ce{[AuCl4]- + 3Fe^2+ -> Au + 3Fe^3+ + 4Cl-}$，方法2：$\\ce{2[AuCl4]- + 3H2C2O4 -> 2Au + 6CO2 + 6H+ + 8Cl-}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{FeSO4}$ $3.05\\times10^{-3}\\,\\mathrm{mol}$，$\\ce{H2C2O4}$ $1.52\\times10^{-3}\\,\\mathrm{mol}$，$588$ 秒"
+   },
+   {
+    "id": "4",
+    "tex": "どちらも $\\dfrac{2}{3}$ 倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\ce{AgCl}=143.4$．銀は $66.4\\times\\dfrac{107.9}{143.4}=49.96\\,\\mathrm{mg}$ で，$\\dfrac{49.96}{250.0}\\times100=\\boldsymbol{20.0\\,\\%}$．\n\n\\textbf{(2)} 半反応式は $\\ce{[AuCl4]- + 3e- -> Au + 4Cl-}$，$\\ce{Fe^2+ -> Fe^3+ + e-}$，$\\ce{H2C2O4 -> 2CO2 + 2H+ + 2e-}$．電子の数をそろえて\n\\[ \\ce{[AuCl4]- + 3Fe^2+ -> Au + 3Fe^3+ + 4Cl-} \\qquad \\ce{2[AuCl4]- + 3H2C2O4 -> 2Au + 6CO2 + 6H+ + 8Cl-} \\]\n\n\\textbf{(3)} 金は $250.0-49.96=200.0\\,\\mathrm{mg}$，$\\dfrac{200.0\\times10^{-3}}{197.0}=1.015\\times10^{-3}\\,\\mathrm{mol}$．必要な電子は $3\\times1.015\\times10^{-3}=3.046\\times10^{-3}\\,\\mathrm{mol}$．\n$\\ce{FeSO4}$（1 mol で電子 1 mol）：$\\boldsymbol{3.05\\times10^{-3}\\,\\mathrm{mol}}$．\n$\\ce{H2C2O4}$（1 mol で電子 2 mol）：$\\boldsymbol{1.52\\times10^{-3}\\,\\mathrm{mol}}$．\n方法3：$t=\\dfrac{3.046\\times10^{-3}\\times9.65\\times10^{4}}{0.500}=\\boldsymbol{588\\,\\text{秒}}$．\n還元剤が渡す電子も電極から流れ込む電子も，金 1 原子あたり 3 個で同じである．\n\n\\textbf{(4)} 金 1 mol あたりの電子は $\\dfrac12\\times3+\\dfrac12\\times1=2\\,\\mathrm{mol}$ になり，(3) の 3 mol の $\\boldsymbol{2/3}$ \\textbf{倍}．必要な電子の量に比例するので，$\\ce{FeSO4}$ の量も電気分解の時間もともに $2/3$ 倍になる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "金属イオンを単体に還元するのに必要な電子の数は金属の酸化数だけで決まるので，還元剤の量（還元剤 1 mol が出す電子数で割る）と電気分解の電気量はどちらも同じ電子の物質量から求まる．酸化数の異なるイオンが混ざると，必要量は電子数の平均で変わる．"
+ },
+ "concepts": [
+  "redox",
+  "mole",
+  "electrolysis"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "金",
+  "王水",
+  "還元剤",
+  "電気分解",
+  "電子の物質量",
+  "酸化数"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

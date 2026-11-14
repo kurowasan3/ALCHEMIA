@@ -1,0 +1,122 @@
+{
+ "id": "THE-GAS-051",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-08",
+ "topic": "2種の単分子膜で仕切り板をはさんだときのつり合い（排除面積をもつ2次元の状態方程式）",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水面に広がった直鎖状カルボン酸の単分子膜は，水面上を動き回る「2次元の気体」のようにふるまい，膜が単位長さの仕切りを押す力（表面圧 $\\varPi$，単位 $\\mathrm{N/m}$）を示す．1分子が占める面積を $A$（$\\mathrm{m^2}$）とすると，ある温度で表面圧は次の式で表されるものとする（$b$ は分子1個が水面で占める面積で，物質によって異なる）．\n\\[\\varPi\\,(A - b) = c,\\qquad c = 4.0\\times10^{-21}\\,\\mathrm{N\\cdot m}\\]\n図のように，縦 $0.20\\,\\mathrm m$，横 $0.60\\,\\mathrm m$ の容器の水面を，左右に自由に動く仕切り板で2つに分けた．板を容器の中央（左端から $0.30\\,\\mathrm m$）に固定し，左側に化合物 X の分子 $1.2\\times10^{17}$ 個（$b_{\\mathrm X} = 2.0\\times10^{-19}\\,\\mathrm{m^2}$），右側に化合物 Y の分子 $1.0\\times10^{17}$ 個（$b_{\\mathrm Y} = 2.5\\times10^{-19}\\,\\mathrm{m^2}$）をそれぞれの水面全体に単分子膜として広げた．板の厚さと膜のもれは無視する．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "板を固定した状態での左右の表面圧をそれぞれ有効数字2桁で求め，板の固定をはずすと板は左右どちらに動くか答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "板が静止したときの，左端から板までの距離 $x$（m）を有効数字3桁で求めよ．また，板ははじめの位置から何 cm 動いたか，有効数字2桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "板が静止したときの表面圧を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "仮に X，Y とも $b = 0$（分子が面積を占めない2次元の理想気体）であったとすると，板が静止する位置 $x$ は何 m になるか．有効数字3桁で求め，(2) の結果との違いが生じる理由を説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：2種の単分子膜で仕切り板をはさんだときのつり合い（排除面積をもつ2次元の状態方程式）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "左（X）：$1.3\\times10^{-2}\\,\\mathrm{N/m}$，右（Y）：$1.1\\times10^{-2}\\,\\mathrm{N/m}$，板は右（Y の側）へ動く"
+   },
+   {
+    "id": "2",
+    "tex": "$x = 0.314\\,\\mathrm m$，右へ $1.4\\,\\mathrm{cm}$"
+   },
+   {
+    "id": "3",
+    "tex": "$1.2\\times10^{-2}\\,\\mathrm{N/m}$"
+   },
+   {
+    "id": "4",
+    "tex": "$x = 0.327\\,\\mathrm m$．理想気体では1分子あたりの面積 $A$ が等しくなる位置で止まるが，実際は分子が自由に動ける面積 $A-b$ が等しくなる位置で止まる．$b$ の大きい Y は同じ $A-b$ を得るのにより広い面積が必要なので，板は理想気体の場合ほど右へは動かない"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 板が中央のとき，左右の面積はともに $0.30\\times0.20 = 0.060\\,\\mathrm{m^2}$．\n\\[A_{\\mathrm X} = \\frac{0.060}{1.2\\times10^{17}} = 5.0\\times10^{-19}\\,\\mathrm{m^2},\\quad \\varPi_{\\mathrm X} = \\frac{4.0\\times10^{-21}}{(5.0-2.0)\\times10^{-19}} = 1.33\\times10^{-2} \\fallingdotseq \\boldsymbol{1.3\\times10^{-2}\\,\\mathrm{N/m}}\\]\n\\[A_{\\mathrm Y} = \\frac{0.060}{1.0\\times10^{17}} = 6.0\\times10^{-19}\\,\\mathrm{m^2},\\quad \\varPi_{\\mathrm Y} = \\frac{4.0\\times10^{-21}}{(6.0-2.5)\\times10^{-19}} = 1.14\\times10^{-2} \\fallingdotseq \\boldsymbol{1.1\\times10^{-2}\\,\\mathrm{N/m}}\\]\n左から押す力のほうが大きいので，板は$\\boldsymbol{\\text{右}}$へ動く．\n\n\\textbf{(2)} 板が静止するのは両側の表面圧が等しいとき（ピストンをはさんだ2つの気体と同じ）．$c$ が共通なので $\\varPi_{\\mathrm X} = \\varPi_{\\mathrm Y}$ は $A_{\\mathrm X} - b_{\\mathrm X} = A_{\\mathrm Y} - b_{\\mathrm Y}$ と同じである．\n\\[\\frac{0.20x}{1.2\\times10^{17}} - 2.0\\times10^{-19} = \\frac{0.20(0.60-x)}{1.0\\times10^{17}} - 2.5\\times10^{-19}\\]\n両辺を $10^{-19}$ で割ると $16.67x - 2.0 = 12.0 - 20.0x - 2.5$，$36.67x = 11.5$ より $\\boldsymbol{x = 0.314\\,\\mathrm m}$．はじめ $0.300\\,\\mathrm m$ だったので，右へ $0.0136\\,\\mathrm m \\fallingdotseq \\boldsymbol{1.4\\,\\mathrm{cm}}$ 動いた．\n\n\\textbf{(3)} $A_{\\mathrm X} = \\dfrac{0.20\\times0.3136}{1.2\\times10^{17}} = 5.23\\times10^{-19}\\,\\mathrm{m^2}$，$\\varPi = \\dfrac{4.0\\times10^{-21}}{3.23\\times10^{-19}} = 1.24\\times10^{-2} \\fallingdotseq \\boldsymbol{1.2\\times10^{-2}\\,\\mathrm{N/m}}$．（右側も $A_{\\mathrm Y} - b_{\\mathrm Y} = 3.23\\times10^{-19}$ で同じ値になる．）\n\n\\textbf{(4)} $b = 0$ なら $A_{\\mathrm X} = A_{\\mathrm Y}$，すなわち面積が分子数に比例して分けられる．\n\\[x = 0.60\\times\\frac{1.2}{1.2+1.0} = 0.327\\,\\mathrm m\\]\n（このとき表面圧は $7.3\\times10^{-3}\\,\\mathrm{N/m}$ で，(3) より小さい．）実際の膜では分子自身が面積を占めるので，動き回れる面積は $A - b$ であり，これが等しくなる位置で止まる．Y は $b$ が大きいので，X と同じ $A-b$ を確保するのにより広い面積を必要とし，板を押し返す．そのため板は理想気体の場合（$\\boldsymbol{0.327\\,\\mathrm m}$）ほど右へ動かず $0.314\\,\\mathrm m$ で止まる．分子の体積を考えた実在気体の状態方程式 $P(V-nb)=nRT$ と同じ考え方である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "動く仕切り板の静止条件は両側の表面圧が等しいことで，分子が占める面積 b を考えた2次元の状態方程式 Π(A−b)=c では「自由に動ける面積 A−b が等しい」位置で板が止まる．b=0 の理想的な場合（面積が分子数に比例）と比べ，b の大きい側が板を押し返す．"
+ },
+ "concepts": [
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "単分子膜",
+  "表面圧",
+  "状態方程式",
+  "排除体積",
+  "つり合い",
+  "ピストン"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

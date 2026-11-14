@@ -1,0 +1,131 @@
+{
+ "id": "THE-BND-028",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-03",
+ "topic": "ペロブスカイト型結晶のイオンの接触条件",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "チタン酸ストロンチウムの結晶の単位格子は図のような立方体で，チタンのイオン（$\\ce{Ti^4+}$）が各頂点に，酸化物イオン（$\\ce{O^2-}$）が各辺の中点に，ストロンチウムのイオン（$\\ce{Sr^2+}$）が立方体の中心にある．イオンを球とみなす．イオン半径は $\\ce{Ti^4+}$ $0.061\\,\\mathrm{nm}$，$\\ce{O^2-}$ $0.140\\,\\mathrm{nm}$，$\\ce{Sr^2+}$ $0.140\\,\\mathrm{nm}$，$\\ce{Ba^2+}$ $0.161\\,\\mathrm{nm}$，$\\sqrt2=1.41$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "単位格子中の各イオンの数を求め，この物質の組成式を答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "1個の $\\ce{Ti^4+}$ に最も近い $\\ce{O^2-}$ の数，1個の $\\ce{Sr^2+}$ に最も近い $\\ce{O^2-}$ の数をそれぞれ答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\ce{Ti^4+}$ と $\\ce{O^2-}$ が接しているとして，単位格子の一辺の長さを有効数字3桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3)の格子で，立方体の中心のすき間に入ることのできる陽イオンの半径の最大値は何 $\\mathrm{nm}$ か．有効数字3桁で答えよ．また，$\\ce{Sr^2+}$ はこのすき間に収まるか．"
+     },
+     {
+      "id": "5",
+      "tex": "$\\ce{Sr^2+}$ を $\\ce{Ba^2+}$ に置き換えた結晶（チタン酸バリウム）では，単位格子の一辺の長さはどのイオンどうしの接触で決まるか．また，その長さを有効数字3桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：ペロブスカイト型結晶のイオンの接触条件",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{Ti^4+}$ 1 個，$\\ce{O^2-}$ 3 個，$\\ce{Sr^2+}$ 1 個．組成式 $\\ce{SrTiO3}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{Ti^4+}$：6，$\\ce{Sr^2+}$：12"
+   },
+   {
+    "id": "3",
+    "tex": "$0.402\\,\\mathrm{nm}$"
+   },
+   {
+    "id": "4",
+    "tex": "$0.145\\,\\mathrm{nm}$．収まる（$0.140<0.145$）．"
+   },
+   {
+    "id": "5",
+    "tex": "$\\ce{Ba^2+}$ と $\\ce{O^2-}$ の接触で決まり，$0.424\\,\\mathrm{nm}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 頂点の $\\ce{Ti^4+}$：$\\tfrac18\\times8=1$，辺の中点の $\\ce{O^2-}$：$\\tfrac14\\times12=3$，中心の $\\ce{Sr^2+}$：1．組成式は $\\ce{SrTiO3}$（電荷 $+2+4-6=0$）．\n\n(2) 頂点の $\\ce{Ti^4+}$ は，その頂点に集まる6本の辺の中点の $\\ce{O^2-}$ に囲まれ $\\boldsymbol{\\text{6}}$．中心の $\\ce{Sr^2+}$ は12本の辺の中点すべてから等距離で $\\boldsymbol{\\text{12}}$．\n\n(3) 辺の上で $\\ce{Ti^4+}$–$\\ce{O^2-}$–$\\ce{Ti^4+}$ と並んで接するので $a=2(0.061+0.140)=\\boldsymbol{0.402\\,\\mathrm{nm}}$．\n\n(4) 中心から辺の中点までの距離は $\\dfrac{\\sqrt2}{2}a=\\dfrac{0.402}{1.41}\\fallingdotseq0.2851\\,\\mathrm{nm}$．ここから $\\ce{O^2-}$ の半径を引くと\n\\[r_{\\max}=0.2851-0.140\\fallingdotseq\\boldsymbol{0.145\\,\\mathrm{nm}}\\]\n$\\ce{Sr^2+}$（$0.140\\,\\mathrm{nm}$）はこれより小さいので$\\boldsymbol{\\text{収まる}}$．\n\n(5) $\\ce{Ba^2+}$（$0.161\\,\\mathrm{nm}$）は $0.145\\,\\mathrm{nm}$ より大きく，(3) の格子には入りきらない．このため格子は広がり，一辺の長さは \\textbf{$\\ce{Ba^2+}$ と $\\ce{O^2-}$ の接触}で決まる：\n\\[\\frac{\\sqrt2}{2}a=0.161+0.140\\quad\\Rightarrow\\quad a=1.41\\times0.301\\fallingdotseq\\boldsymbol{0.424\\,\\mathrm{nm}}\\]\nこのとき $\\ce{Ti^4+}$ と $\\ce{O^2-}$ は接しておらず，$\\ce{Ti^4+}$ はすき間の中でわずかに動ける．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ペロブスカイト型結晶では，B 陽イオン–O の接触で格子が決まると中心のすき間に入れる A 陽イオンの大きさに上限があり，それを超える大きな陽イオンでは A–O の接触が格子の大きさを決めるようにかわる．どのイオンどうしが接しているかを条件で判断する．"
+ },
+ "concepts": [
+  "chemical-bond",
+  "complex-ion",
+  "crystal"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ペロブスカイト型",
+  "イオン半径",
+  "配位数",
+  "単位格子",
+  "条件判断"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

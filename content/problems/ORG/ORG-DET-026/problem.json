@@ -1,0 +1,109 @@
+{
+ "id": "ORG-DET-026",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-06",
+ "topic": "ヨードホルム反応の量的関係（ヨウ素の消費量による構造の判別）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "equation",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ヨードホルム反応では，$\\ce{CH3CO-}$ の構造をもつ化合物がヨウ素と水酸化ナトリウムによって次のように反応し，ヨードホルム $\\ce{CHI3}$ の黄色沈殿を生じる．\n\\[ \\ce{RCOCH3} + \\boxed{\\,\\text{a}\\,}\\ce{I2} + \\boxed{\\,\\text{b}\\,}\\ce{NaOH} \\ce{->} \\ce{RCOONa} + \\ce{CHI3} + \\boxed{\\,\\text{c}\\,}\\ce{NaI} + \\boxed{\\,\\text{d}\\,}\\ce{H2O} \\]\n$\\ce{CH3CH(OH)-}$ の構造をもつアルコールも，まずヨウ素によって $\\ce{CH3CO-}$ をもつ化合物に酸化されてから同様に反応する．原子量は H = 1.0，C = 12，O = 16，I = 127 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "係数 a〜d を答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "2-プロパノールがヨウ素と水酸化ナトリウムによってアセトンに酸化される反応の化学反応式を書け（ヨウ素は $\\ce{NaI}$ になる）．また，2-プロパノール 1 mol が完全にヨードホルム反応するときに消費される $\\ce{I2}$ と $\\ce{NaOH}$ はそれぞれ何 mol か．"
+     },
+     {
+      "id": "3",
+      "tex": "分子式 $\\ce{C5H12O}$ のアルコール X と，分子式 $\\ce{C5H10O}$ のケトン Y がある．それぞれ $1.00\\times10^{-2}\\,\\mathrm{mol}$ を十分な量のヨウ素と水酸化ナトリウムで反応させると，どちらからも $\\ce{CHI3}$ が $3.94\\,\\mathrm{g}$ 生じた．消費された $\\ce{I2}$ の質量は X と Y のどちらが何 g 多いか．有効数字 3 桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "分子式 $\\ce{C6H10O2}$ の直鎖状の化合物 Z はカルボニル基を 2 個もち，金属ナトリウムとは反応せず，銀鏡反応も示さない．Z $1.14\\,\\mathrm{g}$ を十分な量のヨウ素と水酸化ナトリウムで反応させると $\\ce{I2}$ が $15.2\\,\\mathrm{g}$ 消費され，$\\ce{CHI3}$ が $7.88\\,\\mathrm{g}$ 生じた．Z の示性式と，反応後の溶液を酸性にして得られるカルボン酸の名称を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "a：3，b：4，c：3，d：3"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{CH3CH(OH)CH3 + I2 + 2NaOH -> CH3COCH3 + 2NaI + 2H2O}$．$\\ce{I2}$：4 mol，$\\ce{NaOH}$：6 mol"
+   },
+   {
+    "id": "3",
+    "tex": "X のほうが $2.54\\,\\mathrm{g}$ 多い"
+   },
+   {
+    "id": "4",
+    "tex": "Z：$\\ce{CH3COCH2CH2COCH3}$，カルボン酸：コハク酸"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\ce{CH3}$ の H 3 個が I に置換される（$\\ce{I2}$ 3 分子のうち I 3 個が入り，残り 3 個は $\\ce{NaI}$ になる）．その後 $\\ce{RCO-CI3}$ が $\\ce{OH-}$ で切れて $\\ce{RCOO-}$ と $\\ce{CHI3}$ になる．原子の数を合わせると\n\\[ \\ce{RCOCH3 + 3I2 + 4NaOH ->[\\text{}] RCOONa + CHI3 + 3NaI + 3H2O} \\]\na＝3，b＝4，c＝3，d＝3．（アセトン $\\ce{CH3COCH3}$ でも $\\ce{CH3COCH3 + 3I2 + 4NaOH -> CH3COONa + CHI3 + 3NaI + 3H2O}$ とつり合う．）\n\n\\textbf{(2)} アルコールの酸化では C–H と O–H の H 2 個が除かれ，I 2 個が $\\ce{NaI}$ になる．\n\\[ \\ce{CH3CH(OH)CH3 + I2 + 2NaOH -> CH3COCH3 + 2NaI + 2H2O} \\]\n生じたアセトンがさらに (1) の反応をするので，合計 $\\ce{I2}$：$1+3=\\boldsymbol{4\\,\\mathrm{mol}}$，$\\ce{NaOH}$：$2+4=\\boldsymbol{6\\,\\mathrm{mol}}$．\n\n\\textbf{(3)} $\\ce{CHI3}$（式量 394）$3.94\\,\\mathrm g$ は $1.00\\times10^{-2}\\,\\mathrm{mol}$ で，X，Y とも 1 分子から 1 分子の $\\ce{CHI3}$ が生じた．\n\\begin{itemize}\n\\item X は $\\ce{CH3CH(OH)-}$ をもつ第二級アルコール（2-ペンタノールまたは 3-メチル-2-ブタノール）：$\\ce{I2}$ は 1 mol あたり 4 mol．\n\\item Y は $\\ce{CH3CO-}$ をもつケトン（2-ペンタノンまたは 3-メチル-2-ブタノン）：$\\ce{I2}$ は 1 mol あたり 3 mol．\n\\end{itemize}\n差は $\\ce{I2}$ $1.00\\times10^{-2}\\,\\mathrm{mol}$，すなわち $1.00\\times10^{-2}\\times254=\\boldsymbol{2.54\\,\\mathrm g}$ だけ X のほうが多い．同じ量の $\\ce{CHI3}$ を生じても，アルコールは酸化の分だけヨウ素を余分に消費する．\n\n\\textbf{(4)} Z（分子量 114）は $\\dfrac{1.14}{114}=1.00\\times10^{-2}\\,\\mathrm{mol}$．$\\ce{I2}$ は $\\dfrac{15.2}{254}=5.98\\times10^{-2}\\fallingdotseq6.0\\times10^{-2}\\,\\mathrm{mol}$，$\\ce{CHI3}$ は $\\dfrac{7.88}{394}=2.00\\times10^{-2}\\,\\mathrm{mol}$．\n\\begin{itemize}\n\\item $\\ce{CHI3}$ が Z の 2 倍 → $\\ce{CH3CO-}$ が 2 個．\n\\item $\\ce{I2}$ が $\\ce{CHI3}$ 1 mol あたり 3 mol → どちらもケトン形（アルコールの酸化は含まない）．Na と反応しないこととも一致．\n\\end{itemize}\n直鎖の $\\ce{C6H10O2}$ で両端が $\\ce{CH3CO-}$ なので，Z は $\\boldsymbol{\\ce{CH3COCH2CH2COCH3}}$（2,5-ヘキサンジオン）．両端の $\\ce{CH3}$ がそれぞれ $\\ce{CHI3}$ として外れ，残りは $\\ce{NaOOCCH2CH2COONa}$ となる．酸性にすると $\\ce{HOOCCH2CH2COOH}$，すなわち\\textbf{コハク酸}が得られる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ヨードホルム反応では CH3CO- 1 個あたり I2 3 分子が消費され CHI3 1 分子が生じるが，CH3CH(OH)- のアルコールは先にヨウ素で酸化されるので I2 を 1 分子余分に消費する．CHI3 と I2 の物質量の比から，反応部位の数とケトンかアルコールかを判別し，生じるカルボン酸塩（炭素数が 1 減る）を導く．"
+ },
+ "concepts": [
+  "organic-test",
+  "halogen",
+  "alcohol-carbonyl"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ヨードホルム反応",
+  "係数",
+  "量的関係",
+  "メチルケトン",
+  "ジケトン"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

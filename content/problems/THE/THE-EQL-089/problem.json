@@ -1,0 +1,109 @@
+{
+ "id": "THE-EQL-089",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "同位体の無作為分配と HI 生成平衡の連成（質量スペクトルからの組成決定）",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "容積一定の容器にヨウ化水素 $\\ce{HI}$ $2.0\\,\\mathrm{mol}$ と重水素 $\\ce{D2}$ $0.50\\,\\mathrm{mol}$ を入れて温度 $T$ に保ったところ，やがて次の平衡が成り立った（H と D を区別せずに書いている）．\n\\[\\ce{H2 + I2 <=> 2HI}\\]\nH と D の反応性は同じとみなせる．そのため平衡状態では，水素型の分子（$\\ce{H2}$，$\\ce{HD}$，$\\ce{D2}$）の中でもヨウ化水素型の分子（$\\ce{HI}$，$\\ce{DI}$）の中でも，H 原子と D 原子は容器全体での原子数の比のとおりに無作為に分配されているとしてよい．\n平衡状態の気体の質量スペクトルを測定したところ，ピークの高さ（分子の数に比例する）は，$\\ce{HD}$（質量 3）と $\\ce{I2}$（質量 254）で $4:3$ であった．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "容器全体の水素原子のうち H 原子の割合 $p$ を求めよ．また，水素型の分子の総物質量を $n_{\\mathrm{h}}$ としたとき，平衡状態の $\\ce{HD}$ の物質量を $n_{\\mathrm{h}}$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "平衡状態の $\\ce{I2}$ の物質量を $y$ として，$n_{\\mathrm{h}}$ とヨウ化水素型の分子の総物質量 $n_{\\mathrm{x}}$ を $y$ で表せ．次に，ピークの比から $y$ を求め，平衡状態の $\\ce{H2}$，$\\ce{HD}$，$\\ce{D2}$，$\\ce{HI}$，$\\ce{DI}$，$\\ce{I2}$ の物質量を有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "温度 $T$ における平衡定数 $K=\\dfrac{[\\ce{HI}]^2}{[\\ce{H2}][\\ce{I2}]}$ を (2) の個々の分子の物質量から求めよ．また，同じ値が $\\dfrac{n_{\\mathrm{x}}^2}{n_{\\mathrm{h}}\\,y}$ でも得られる理由を述べよ．"
+     },
+     {
+      "id": "4",
+      "tex": "同じ平衡混合物について $K'=\\dfrac{[\\ce{HI}][\\ce{DI}]}{[\\ce{HD}][\\ce{I2}]}$ を計算し，$K$ との関係を答えよ．また，その関係が成り立つ理由を，分子のでき方の数（場合の数）に着目して説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$p=\\dfrac{2}{3}$，$\\ce{HD}=\\dfrac{4}{9}n_{\\mathrm{h}}$"
+   },
+   {
+    "id": "2",
+    "tex": "$n_{\\mathrm{h}}=0.50+y$，$n_{\\mathrm{x}}=2.0-2y$，$y=0.25\\,\\mathrm{mol}$；$\\ce{H2}$ $0.33\\,\\mathrm{mol}$，$\\ce{HD}$ $0.33\\,\\mathrm{mol}$，$\\ce{D2}$ $0.083\\,\\mathrm{mol}$，$\\ce{HI}$ $1.0\\,\\mathrm{mol}$，$\\ce{DI}$ $0.50\\,\\mathrm{mol}$，$\\ce{I2}$ $0.25\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "$K=12$；$[\\ce{HI}]=pn_{\\mathrm{x}}/V$，$[\\ce{H2}]=p^2n_{\\mathrm{h}}/V$ なので $p^2$ が約分されて消えるから"
+   },
+   {
+    "id": "4",
+    "tex": "$K'=6.0=\\dfrac{K}{2}$；HD は H と D の並べ方が 2 通りあるので無作為な分配で因子 2 だけ多く生じ（$2p(1-p)$），水素原子 1 個のヨウ化水素型の分子にはこの因子がないため"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　H 原子は $\\ce{HI}$ 由来の $2.0\\,\\mathrm{mol}$，D 原子は $\\ce{D2}$ 由来の $1.0\\,\\mathrm{mol}$ なので $p=\\dfrac{2.0}{3.0}=\\boldsymbol{\\dfrac{2}{3}}$．\n水素型の分子のうち HD の割合は $2p(1-p)=2\\cdot\\dfrac23\\cdot\\dfrac13=\\dfrac49$ なので $\\ce{HD}=\\boldsymbol{\\dfrac49 n_{\\mathrm{h}}}$．\n\n\\textbf{(2)}　I 原子の保存：$2.0=n_{\\mathrm{x}}+2y$ より $n_{\\mathrm{x}}=2.0-2y$．水素原子（H＋D）の保存：$2.0+1.0=n_{\\mathrm{x}}+2n_{\\mathrm{h}}$ より $n_{\\mathrm{h}}=\\dfrac{3.0-(2.0-2y)}{2}=0.50+y$．\nピークの比から\n\\[\\frac{\\frac49(0.50+y)}{y}=\\frac43\\quad\\Longrightarrow\\quad 0.50+y=3y,\\quad y=\\boldsymbol{0.25\\,\\mathrm{mol}}\\]\n（$y$ について 1 次式なので解は 1 つに決まる）．よって $n_{\\mathrm{h}}=0.75$，$n_{\\mathrm{x}}=1.5$ で，\n$\\ce{H2}=0.75\\times\\frac49=\\boldsymbol{0.33}$，$\\ce{HD}=0.75\\times\\frac49=\\boldsymbol{0.33}$，$\\ce{D2}=0.75\\times\\frac19=\\boldsymbol{0.083}$，$\\ce{HI}=1.5\\times\\frac23=\\boldsymbol{1.0}$，$\\ce{DI}=1.5\\times\\frac13=\\boldsymbol{0.50}$，$\\ce{I2}=\\boldsymbol{0.25}$（単位 mol）．\n\n\\textbf{(3)}　体積 $V$ は約分されるので物質量で計算してよい．\n\\[K=\\frac{1.0^2}{\\frac13\\times0.25}=\\boldsymbol{12}\\]\n$[\\ce{HI}]=\\dfrac{p\\,n_{\\mathrm{x}}}{V}$，$[\\ce{H2}]=\\dfrac{p^2n_{\\mathrm{h}}}{V}$ を代入すると $K=\\dfrac{p^2n_{\\mathrm{x}}^2}{p^2n_{\\mathrm{h}}y}=\\dfrac{n_{\\mathrm{x}}^2}{n_{\\mathrm{h}}y}=\\dfrac{1.5^2}{0.75\\times0.25}=12$ となり，同位体を区別しない「まとめた量」でも同じ $K$ が得られる．D について $\\dfrac{[\\ce{DI}]^2}{[\\ce{D2}][\\ce{I2}]}=\\dfrac{0.50^2}{\\frac1{12}\\times0.25}=12$ も成り立つ．\n\n\\textbf{(4)}　$K'=\\dfrac{1.0\\times0.50}{\\frac13\\times0.25}=\\boldsymbol{6.0}$ で $\\boldsymbol{K'=K/2}$．\n一般に $K'=\\dfrac{p n_{\\mathrm{x}}\\cdot(1-p)n_{\\mathrm{x}}}{2p(1-p)n_{\\mathrm{h}}\\cdot y}=\\dfrac12\\cdot\\dfrac{n_{\\mathrm{x}}^2}{n_{\\mathrm{h}}y}=\\dfrac K2$．\n$\\ce{H2}$ や $\\ce{D2}$ は同じ原子の組で 1 通りにしかできないが，HD は「1 つ目が H で 2 つ目が D」「1 つ目が D で 2 つ目が H」の 2 通りででき，無作為な分配では $p^2$ 型の分子に比べて因子 2 の分だけ多く生じる（$2p(1-p)$ の 2）．ヨウ化水素型の分子は水素原子を 1 個しかもたないのでこの因子がない．そのため，反応性が同じでも HD を反応物に含む平衡定数は $K$ の $\\frac12$ になる（同じ理由で $\\ce{H2 + D2 <=>[\\text{}] 2HD}$ の平衡定数は 4 になる）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "化学的性質が同じ同位体は，平衡では水素型分子にもヨウ化水素型分子にも同じ比で無作為に分配されるので，原子の保存と分配の確率を組み合わせると，1 本のピーク比から HI 生成平衡の進み具合と全成分が決まる．同位体をまとめた量でも同じ平衡定数が成り立ち，HD を含む平衡定数には場合の数による因子 1/2 が現れる．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "electron-config"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "同位体",
+  "ヨウ化水素",
+  "平衡定数",
+  "質量スペクトル",
+  "場合の数",
+  "連成平衡"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

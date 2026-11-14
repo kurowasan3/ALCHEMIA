@@ -1,0 +1,118 @@
+{
+ "id": "THE-EQL-133",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "黒鉛と二酸化炭素の平衡で固体が使い切られる場合と圧縮による炭素の再析出",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ピストン付きの容器に二酸化炭素 $0.200\\,\\mathrm{mol}$ と黒鉛を入れ，温度を $T$ に保つ．黒鉛（固体）と気体の間では次の可逆反応が起こり，温度 $T$ での圧平衡定数は $K_{\\mathrm{p}} = \\dfrac{p_{\\ce{CO}}^{2}}{p_{\\ce{CO2}}} = 4.0\\times10^{5}\\,\\mathrm{Pa}$ である．\n\\[ \\ce{C + CO2 <=> 2CO} \\]\nはじめの容積を $V_0$ とし，容積 $V_0$，温度 $T$ では気体 $0.100\\,\\mathrm{mol}$ の圧力が $1.00\\times10^{5}\\,\\mathrm{Pa}$ になるものとする．気体は理想気体とし，固体の体積は無視する．原子量は $\\ce{C}=12$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "容積を $V_0$ に固定したまま十分に時間をおいたとき，平衡状態に達し，しかも黒鉛が残るためには，はじめに入れる黒鉛は少なくとも何 g 必要か．有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "容積 $V_0$ のもとで，はじめに入れる黒鉛の質量を $w\\,[\\mathrm{g}]$ として，十分に時間がたった後の気体の全圧を $w$ の関数として，$w$ の範囲で場合分けして示せ（単位は Pa）．"
+     },
+     {
+      "id": "3",
+      "tex": "$w = 0.72\\,\\mathrm{g}$ のとき，十分に時間がたった後の $\\ce{CO2}$ と $\\ce{CO}$ の分圧を有効数字 2 桁で求めよ．また，この状態は平衡状態といえるか．理由とともに答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の状態から，温度 $T$ のままピストンを押して容積をゆっくり小さくしていくと，ある容積を境に容器内に固体が現れはじめる．現れる固体は何か．また，その容積は $V_0$ の何倍か．有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "(3) の状態から，温度 $T$ のまま容積を $\\dfrac{V_0}{8}$ にして十分に時間をおいた．容器内にある固体の質量を有効数字 2 桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$1.2\\,\\mathrm{g}$"
+   },
+   {
+    "id": "2",
+    "tex": "$0 \\leqq w \\leqq 1.2$ のとき全圧 $= \\left(2.00 + \\dfrac{w}{1.2}\\right)\\times10^{5}\\,\\mathrm{Pa}$，$w \\geqq 1.2$ のとき全圧 $= 3.0\\times10^{5}\\,\\mathrm{Pa}$（一定）"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{CO2}$：$1.4\\times10^{5}\\,\\mathrm{Pa}$，$\\ce{CO}$：$1.2\\times10^{5}\\,\\mathrm{Pa}$．平衡状態ではない．黒鉛がすべて反応して無くなり，$\\dfrac{p_{\\ce{CO}}^{2}}{p_{\\ce{CO2}}} = 1.0\\times10^{5}\\,\\mathrm{Pa}$ が $K_{\\mathrm{p}}$ より小さいまま反応が止まっているから．"
+   },
+   {
+    "id": "4",
+    "tex": "黒鉛（炭素），$0.26$ 倍"
+   },
+   {
+    "id": "5",
+    "tex": "$0.19\\,\\mathrm{g}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方} 固体の黒鉛は $K_{\\mathrm{p}}$ の式に入らないので，黒鉛が\\textbf{残っている}ときだけ $\\dfrac{p_{\\ce{CO}}^{2}}{p_{\\ce{CO2}}} = K_{\\mathrm{p}}$ が成り立つ．黒鉛が使い切られれば，その比は $K_{\\mathrm{p}}$ より小さいまま止まる．逆に，気体だけの状態で比が $K_{\\mathrm{p}}$ を超えると，逆反応 $\\ce{2CO -> C + CO2}$ が起こり黒鉛が析出する．圧力は「$0.100\\,\\mathrm{mol} \\leftrightarrow 1.00\\times10^{5}\\,\\mathrm{Pa}$（容積 $V_0$）」で物質量に換算する．\n\n\\textbf{(1)} 黒鉛が十分にあるとき，$\\ce{CO2}$ が $y\\,[10^{5}\\,\\mathrm{Pa}]$ 反応したとすると $p_{\\ce{CO2}} = 2.00 - y$，$p_{\\ce{CO}} = 2y$．\n\\[ \\frac{(2y)^{2}}{2.00 - y} = 4.0 \\quad\\Rightarrow\\quad y^{2} + y - 2 = 0 \\quad\\Rightarrow\\quad y = 1.0 \\]\n反応した $\\ce{CO2}$ は $0.100\\,\\mathrm{mol}$，消費される黒鉛も $0.100\\,\\mathrm{mol} = \\boldsymbol{1.2\\,\\mathrm{g}}$．これより少なければ平衡に達する前に黒鉛が無くなる．\n\n\\textbf{(2)} $w \\leqq 1.2$ では黒鉛 $\\dfrac{w}{12}\\,\\mathrm{mol}$ がすべて反応し，気体は正味 $\\dfrac{w}{12}\\,\\mathrm{mol}$ 増える（$\\ce{CO2}$ 1 個が $\\ce{CO}$ 2 個になる）．$\\dfrac{w}{12}\\,\\mathrm{mol}$ は $\\dfrac{w}{1.2}\\times10^{5}\\,\\mathrm{Pa}$ にあたるので全圧は $\\left(2.00 + \\dfrac{w}{1.2}\\right)\\times10^{5}\\,\\mathrm{Pa}$．$w \\geqq 1.2$ では (1) の平衡状態になり，余った黒鉛は気体に影響しないので全圧は $(1.0 + 2.0)\\times10^{5} = 3.0\\times10^{5}\\,\\mathrm{Pa}$ で一定．グラフは $w = 1.2$ で折れ曲がる．\n\n\\textbf{(3)} 黒鉛 $0.060\\,\\mathrm{mol}$ がすべて反応し，$\\ce{CO2}$ は $0.140\\,\\mathrm{mol}$，$\\ce{CO}$ は $0.120\\,\\mathrm{mol}$．よって $p_{\\ce{CO2}} = \\boldsymbol{1.4\\times10^{5}\\,\\mathrm{Pa}}$，$p_{\\ce{CO}} = \\boldsymbol{1.2\\times10^{5}\\,\\mathrm{Pa}}$．\n\\[ Q = \\frac{(1.2\\times10^{5})^{2}}{1.4\\times10^{5}} = 1.03\\times10^{5}\\,\\mathrm{Pa} < K_{\\mathrm{p}} \\]\n正反応がまだ進もうとするのに黒鉛が無いので反応が止まっている．\\textbf{平衡状態ではない}（固体が無いので「平衡」の条件式が成り立たない）．\n\n\\textbf{(4)} 気体の物質量を変えずに容積を $\\dfrac{1}{k}$ 倍にすると，各分圧は $k$ 倍になり $Q$ も $k$ 倍になる（分子が 2 乗，分母が 1 乗）．$Q$ が $K_{\\mathrm{p}}$ に達すると逆反応 $\\ce{2CO -> C + CO2}$ が起こり\\textbf{黒鉛（炭素）}が析出しはじめる．\n\\[ k\\times1.03\\times10^{5} = 4.0\\times10^{5} \\quad\\Rightarrow\\quad k = 3.89,\\qquad \\frac{V}{V_0} = \\frac{1}{k} = 0.257 \\approx \\boldsymbol{0.26} \\]\n\\textbf{(5)} 容積 $\\dfrac{V_0}{8}$ では $0.100\\,\\mathrm{mol}$ が $8.00\\times10^{5}\\,\\mathrm{Pa}$ にあたる．析出直前の分圧は $p_{\\ce{CO2}} = 11.2$，$p_{\\ce{CO}} = 9.6$（$10^{5}\\,\\mathrm{Pa}$ 単位）で，$Q = 8.2 > 4.0$ なので逆反応が進む．$\\ce{CO2}$ が $z$ 増えるとすると\n\\[ \\frac{(9.6 - 2z)^{2}}{11.2 + z} = 4.0 \\quad\\Rightarrow\\quad z = 1.27 \\]\n（もう一方の根は $\\ce{CO}$ の分圧が負になるので不適）．析出した炭素は $\\ce{CO2}$ の増加分と同じ物質量で，$1.27\\times10^{5}\\,\\mathrm{Pa}$ は容積 $\\dfrac{V_0}{8}$ で $\\dfrac{1.27}{8}\\times0.100 = 0.0159\\,\\mathrm{mol}$．質量は $0.0159\\times12 = 0.190 \\approx \\boldsymbol{0.19\\,\\mathrm{g}}$．\nこのとき黒鉛が存在するので，平衡の式が再び成り立っている．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "固体を含む平衡では固体が残っているときだけ Kp の式が成り立つので，固体の量が足りなければ Q<Kp のまま反応が止まり全圧は固体の量に比例して増える（折れ線になる）．その気体を圧縮すると Q が容積に反比例して増え，Kp を超えた点から逆反応で固体が再び析出する．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "carbon-silicon",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ブードア平衡",
+  "固体を含む平衡",
+  "場合分け",
+  "反応商",
+  "圧縮",
+  "固体の析出"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

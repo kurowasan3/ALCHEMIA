@@ -1,0 +1,109 @@
+{
+ "id": "THE-ION-062",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "異なる弱酸どうしのプロトン移動平衡と濃度による近似の切りかえ",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "25 ℃ で，フッ化水素 $\\ce{HF}$ の電離定数を $K_1=7.2\\times10^{-4}\\,\\mathrm{mol/L}$，酢酸の電離定数を $K_2=1.8\\times10^{-5}\\,\\mathrm{mol/L}$ とする．次の 2 つの水溶液をつくった．\n水溶液 X：$0.20\\,\\mathrm{mol/L}$ の $\\ce{HF}$ 水溶液 $100\\,\\mathrm{mL}$ と $0.20\\,\\mathrm{mol/L}$ の酢酸ナトリウム水溶液 $100\\,\\mathrm{mL}$ を混合した．\n水溶液 Y：$0.20\\,\\mathrm{mol/L}$ の酢酸水溶液 $100\\,\\mathrm{mL}$ と $0.20\\,\\mathrm{mol/L}$ のフッ化ナトリウム水溶液 $100\\,\\mathrm{mL}$ を混合した．\n必要なら $\\sqrt{40}=6.32$，$\\log_{10}1.14=0.057$，$\\sqrt{75.2}=8.67$，$\\log_{10}3.44=0.537$ を用いよ．水のイオン積は $1.0\\times10^{-14}\\,\\mathrm{mol^2/L^2}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "X では，$\\ce{HF}$ から $\\ce{CH3COO-}$ へ $\\ce{H+}$ が移る反応 $\\ce{HF + CH3COO- <=> F- + CH3COOH}$ が起こる．この反応の平衡定数 $K$ を $K_1$，$K_2$ で表し，値を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "X で (1) の反応だけを考え（$\\ce{HF}$・酢酸がそれぞれ水に $\\ce{H+}$ を放出する電離や，水の電離による物質量の変化は無視する），$\\ce{CH3COOH}$ に変わった $\\ce{CH3COO-}$ の割合を有効数字 2 桁で求めよ．さらに $[\\ce{H+}]$ を求め，pH を小数第 1 位まで求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "Y の pH を小数第 1 位まで求めよ．また，X と Y の pH の関係を，理由とともに説明せよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(2) の方法によると，X の pH は $\\sqrt{K_1K_2}$ で決まり濃度によらないことになる．しかし X を純水で 1000 倍にうすめると（$\\ce{HF}$ と酢酸ナトリウムがそれぞれ $1.0\\times10^{-4}\\,\\mathrm{mol/L}$），この結論は成り立たない．その理由を述べよ．また，この水溶液では $\\ce{HF}$ がほぼ完全に電離していると近似して pH を小数第 1 位まで求め，その近似が妥当であることを確かめよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$K=\\dfrac{K_1}{K_2}=40$"
+   },
+   {
+    "id": "2",
+    "tex": "86 %，$[\\ce{H+}]=1.1\\times10^{-4}\\,\\mathrm{mol/L}$，pH 3.9"
+   },
+   {
+    "id": "3",
+    "tex": "pH 3.9．X と Y は混合後の成分（$\\ce{Na+}$，F の総量，酢酸の総量）がまったく同じなので，どちら側から混合しても同じ平衡状態に達し，pH は等しい．"
+   },
+   {
+    "id": "4",
+    "tex": "うすい溶液では $[\\ce{H+}]$ が $\\ce{CH3COO-}$ などの濃度に比べて無視できなくなり，(1) の反応だけでは $\\ce{H+}$ の収支を表せないから．pH 4.5（$\\ce{HF}$ のうち電離していないのは約 4 % で，近似は妥当）．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $K=\\dfrac{[\\ce{F-}][\\ce{CH3COOH}]}{[\\ce{HF}][\\ce{CH3COO-}]}$ の分子と分母に $[\\ce{H+}]$ を掛けると\n\\[ K=\\frac{[\\ce{H+}][\\ce{F-}]}{[\\ce{HF}]}\\times\\frac{[\\ce{CH3COOH}]}{[\\ce{H+}][\\ce{CH3COO-}]}=\\boldsymbol{\\frac{K_1}{K_2}}=\\frac{7.2\\times10^{-4}}{1.8\\times10^{-5}}=\\boldsymbol{40} \\]\n強い酸（HF）から弱い酸の共役塩基（$\\ce{CH3COO-}$）への $\\ce{H+}$ の移動は右に偏るが，$K$ は有限なので完全には進まない．\n\n\\textbf{(2)} 混合後は $\\ce{HF}$，$\\ce{CH3COO-}$ とも $C=0.10\\,\\mathrm{mol/L}$．$\\ce{CH3COOH}$ に変わった量を $x$ とすると\n\\[ \\frac{x^2}{(C-x)^2}=40\\quad\\Rightarrow\\quad\\frac{x}{C-x}=\\sqrt{40}=6.32 \\]\n$\\dfrac{x}{C}=\\dfrac{6.32}{7.32}=0.863$ より，$\\boldsymbol{86\\,\\%}$．\n酢酸の電離平衡から\n\\[ [\\ce{H+}]=K_2\\frac{[\\ce{CH3COOH}]}{[\\ce{CH3COO-}]}=K_2\\times6.32=1.14\\times10^{-4}\\fallingdotseq\\boldsymbol{1.1\\times10^{-4}\\,\\mathrm{mol/L}} \\]\npH $=4-0.057=3.94\\fallingdotseq\\boldsymbol{3.9}$．\n一般に，2 つの濃度が等しいとき $\\dfrac{x}{C-x}=\\sqrt{\\dfrac{K_1}{K_2}}$ なので $[\\ce{H+}]=K_2\\sqrt{\\dfrac{K_1}{K_2}}=\\sqrt{K_1K_2}$ となり，$C$ によらない．\n（近似の確認：$[\\ce{H+}]=1.1\\times10^{-4}$ は，(1) の反応で決まる $[\\ce{CH3COO-}]=0.0137\\,\\mathrm{mol/L}$ や $[\\ce{HF}]$ に比べて 1 % 以下なので，$\\ce{H+}$ の放出による物質量の変化を無視してよい．）\n\n\\textbf{(3)} Y では $\\ce{CH3COOH + F- <=> CH3COO- + HF}$ が起こり，平衡定数は $\\dfrac{1}{40}$．$\\ce{HF}$ になった量を $y$ とすると $\\dfrac{y}{C-y}=\\dfrac{1}{6.32}$ より $y=0.137C$．\nこのとき $[\\ce{CH3COOH}]=0.863C$，$[\\ce{CH3COO-}]=0.137C$ で，X の平衡組成と完全に一致する．したがって pH も $\\boldsymbol{3.9}$．\nX と Y は，混合後に含まれる $\\ce{Na+}$，フッ素の総量，酢酸（分子とイオンの合計）の総量，水素の総量がすべて等しい．平衡状態は成分の総量と温度だけで決まるので，「HF と酢酸イオン」から出発しても「酢酸とフッ化物イオン」から出発しても，同じ平衡状態に達する．\n\n\\textbf{(4)} \\textbf{(2) が成り立たない理由}：(2) では $\\ce{H+}$ の量が $\\ce{CH3COO-}$ などに比べて無視できるとした．しかし $C=1.0\\times10^{-4}\\,\\mathrm{mol/L}$ では，(2) の方法による $[\\ce{H+}]=1.1\\times10^{-4}\\,\\mathrm{mol/L}$ がそもそも $C$ 程度になり，$[\\ce{CH3COO-}]=0.137C$ よりずっと大きいので矛盾する．うすい溶液では，$\\ce{HF}$ が水に $\\ce{H+}$ を放出して電離する反応が無視できなくなる．\n\n\\textbf{HF がほぼ完全に電離していると近似する}：$[\\ce{F-}]\\fallingdotseq C$．電荷のつり合い $[\\ce{Na+}]+[\\ce{H+}]=[\\ce{F-}]+[\\ce{CH3COO-}]+[\\ce{OH-}]$ で $[\\ce{Na+}]=C$，$[\\ce{OH-}]$ は無視すると\n\\[ [\\ce{H+}]=[\\ce{CH3COO-}]=\\frac{K_2C}{[\\ce{H+}]+K_2} \\]\n（酢酸の総濃度 $C$ のうち，電離平衡で $\\ce{CH3COO-}$ として残る分）．$h=[\\ce{H+}]$ として $h^2+K_2h-K_2C=0$．\n\\[ h=\\frac{-1.8\\times10^{-5}+\\sqrt{(1.8\\times10^{-5})^2+4\\times1.8\\times10^{-5}\\times1.0\\times10^{-4}}}{2}=\\frac{(-1.80+8.67)\\times10^{-5}}{2}=3.44\\times10^{-5}\\,\\mathrm{mol/L} \\]\npH $=5-0.537=4.46\\fallingdotseq\\boldsymbol{4.5}$．\n\\textbf{近似の確認}：電離していない HF の割合は $\\dfrac{[\\ce{HF}]}{C}\\fallingdotseq\\dfrac{h}{h+K_1}=\\dfrac{3.44\\times10^{-5}}{3.44\\times10^{-5}+7.2\\times10^{-4}}=0.046$ で約 4 %．ほぼ完全に電離しているとした近似は妥当である．また $[\\ce{OH-}]\\approx3\\times10^{-10}\\,\\mathrm{mol/L}$ で無視できる．\nこのように，濃い溶液では「$\\ce{H+}$ の移動の平衡（pH は $\\sqrt{K_1K_2}$ で一定）」，うすい溶液では「強めの酸 HF は完全電離，弱い酢酸だけが平衡」という別の近似が成り立ち，うすめるほど pH は 7 に向かって上がる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "弱酸と別の弱酸の共役塩基を混ぜると，H⁺ の移動の平衡（K＝K₁/K₂）が成り立ち，等濃度なら [H⁺]＝√(K₁K₂) で濃度によらない．成分の総量が同じならどちらの組み合わせから混ぜても同じ平衡状態になる．ただしこの近似は [H⁺] が各成分の濃度より十分小さいときだけで，うすい溶液では強めの酸が完全電離するという別の近似に切りかわる．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電離平衡",
+  "プロトン移動",
+  "共役酸塩基対",
+  "近似の妥当性",
+  "フッ化水素",
+  "酢酸"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

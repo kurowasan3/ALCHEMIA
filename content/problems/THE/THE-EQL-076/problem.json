@@ -1,0 +1,118 @@
+{
+ "id": "THE-EQL-076",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "酵素反応での基質の消費の時間経過（0 次から 1 次への移行）",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "酵素 E が基質 S を生成物 P に変える反応の速さ $v$ が，基質の濃度 $[\\mathrm S]$ を用いて\n\\[v=-\\frac{d[\\mathrm S]}{dt}=\\frac{V[\\mathrm S]}{K_{m}+[\\mathrm S]}\\qquad\\cdots\\text{①}\\]\nと表されるとする．$V$（最大速度）と $K_{m}$ は定数で，$V$ は酵素の濃度に比例し，$K_{m}$ は酵素の濃度によらない．はじめの基質の濃度を $[\\mathrm S]_0$ とすると，式①から時刻 $t$ における $[\\mathrm S]$ は次の関係を満たす．\n\\[t=\\frac{[\\mathrm S]_0-[\\mathrm S]}{V}+\\frac{K_{m}}{V}\\log_e\\frac{[\\mathrm S]_0}{[\\mathrm S]}\\qquad\\cdots\\text{②}\\]\n以下では $V=0.10\\,\\mathrm{mmol/(L\\cdot s)}$，$K_{m}=2.0\\,\\mathrm{mmol/L}$ とし，$\\log_e 2=0.693$，$\\log_e 10=2.303$ を用いよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$[\\mathrm S]\\gg K_m$ のとき，および $[\\mathrm S]\\ll K_m$ のとき，式①はそれぞれ何次反応の式に近似できるか．また，それぞれの近似式が成り立つとき，式②の右辺のどちらの項が支配的になるかを説明せよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$[\\mathrm S]_0=20\\,\\mathrm{mmol/L}$ から反応を始めた．$[\\mathrm S]$ が $2.0\\,\\mathrm{mmol/L}$ になるまでは $[\\mathrm S]\\gg K_m$ の近似が，$2.0\\,\\mathrm{mmol/L}$ から $0.20\\,\\mathrm{mmol/L}$ になるまでは $[\\mathrm S]\\ll K_m$ の近似が成り立つと仮定して，$[\\mathrm S]$ が $0.20\\,\\mathrm{mmol/L}$ になるまでの時間を求めよ．有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "式②を用いて (2) の時間を正確に求め，有効数字 2 桁で答えよ．また，(2) の近似で求めた 2 つの区間の時間は，それぞれ真の値より長いか短いか．理由とともに答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "酵素の濃度だけを 2 倍にした場合と，$[\\mathrm S]_0$ だけを 2 倍（$40\\,\\mathrm{mmol/L}$）にした場合のそれぞれについて，$[\\mathrm S]$ が $0.20\\,\\mathrm{mmol/L}$ になるまでの時間を式②で求め，有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "$V$ と $K_m$ が未知の別の酵素で，基質が半分になるまでの時間（半減期）$t_{1/2}$ を測ると，$[\\mathrm S]_0=2.0\\,\\mathrm{mmol/L}$ のとき $9.5\\,\\mathrm s$，$[\\mathrm S]_0=10\\,\\mathrm{mmol/L}$ のとき $25.5\\,\\mathrm s$ であった．式②を用いて $V$ と $K_m$ を求め，有効数字 2 桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$[\\mathrm S]\\gg K_m$ では $v\\fallingdotseq V$ の 0 次反応で，式②の第 1 項（濃度の差に比例する項）が支配的．$[\\mathrm S]\\ll K_m$ では $v\\fallingdotseq (V/K_m)[\\mathrm S]$ の 1 次反応で，第 2 項（濃度の比の対数の項）が支配的．"
+   },
+   {
+    "id": "2",
+    "tex": "$2.3\\times10^{2}\\,\\mathrm s$"
+   },
+   {
+    "id": "3",
+    "tex": "$2.9\\times10^{2}\\,\\mathrm s$．どちらの区間も近似の時間は真の値より短い．0 次の区間では実際の速さは $V$ より小さく，1 次の区間では実際の速さは $(V/K_m)[\\mathrm S]$ より小さいので，近似は速さを大きく見積もっているから．"
+   },
+   {
+    "id": "4",
+    "tex": "酵素 2 倍：$1.5\\times10^{2}\\,\\mathrm s$，$[\\mathrm S]_0$ 2 倍：$5.0\\times10^{2}\\,\\mathrm s$"
+   },
+   {
+    "id": "5",
+    "tex": "$V=0.25\\,\\mathrm{mmol/(L\\cdot s)}$，$K_m=2.0\\,\\mathrm{mmol/L}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 2 つの極限}\n$[\\mathrm S]\\gg K_m$ では分母が $[\\mathrm S]$ とみなせて $v\\fallingdotseq V$（一定）となり，\\textbf{0 次反応}である．酵素がほぼすべて基質と結合して飽和している状態にあたる．このとき $[\\mathrm S]$ は時間に比例して減り，式②では第 1 項 $([\\mathrm S]_0-[\\mathrm S])/V$ が主になる．\n$[\\mathrm S]\\ll K_m$ では分母が $K_m$ とみなせて $v\\fallingdotseq (V/K_m)[\\mathrm S]$ となり，速度定数 $V/K_m$ の\\textbf{1 次反応}である．このとき $[\\mathrm S]$ は指数関数的に減り，式②では第 2 項 $(K_m/V)\\log_e([\\mathrm S]_0/[\\mathrm S])$ が主になる（濃度の差は $K_m$ に比べて小さいので第 1 項は小さい）．\n\n\\textbf{(2) 近似を 2 段に分けると}\n0 次の区間（$20\\to2.0$）：$\\dfrac{20-2.0}{0.10}=180\\,\\mathrm s$\n1 次の区間（$2.0\\to0.20$）：速度定数 $V/K_m=0.050\\,\\mathrm{s^{-1}}$ より $\\dfrac{\\log_e 10}{0.050}=46.1\\,\\mathrm s$\n合計 $226\\,\\mathrm s\\fallingdotseq\\boldsymbol{2.3\\times10^{2}}\\,\\mathrm s$\n\n\\textbf{(3) 式②による正確な値}\n\\[t=\\frac{20-0.20}{0.10}+\\frac{2.0}{0.10}\\log_e100=198+20\\times4.606=290\\,\\mathrm s\\fallingdotseq\\boldsymbol{2.9\\times10^{2}}\\,\\mathrm s\\]\n区間ごとに式②で計算すると，$20\\to2.0$ は $180+20\\times2.303=226\\,\\mathrm s$（近似 $180\\,\\mathrm s$），$2.0\\to0.20$ は $18+46.1=64\\,\\mathrm s$（近似 $46\\,\\mathrm s$）．\n式①の真の速さは常に $V$ より小さく，また常に $(V/K_m)[\\mathrm S]$ より小さい（$\\dfrac{V[\\mathrm S]}{K_m+[\\mathrm S]}<V$，$<\\dfrac{V[\\mathrm S]}{K_m}$）．近似はどちらの区間でも速さを過大に見積もるので，\\textbf{どちらの近似時間も真の値より短い}．とくに境目の $[\\mathrm S]=K_m$ 付近では，真の速さはどちらの近似の半分しかなく，ずれが大きい．\n\n\\textbf{(4) 条件を変えたとき}\n酵素 2 倍：$V$ だけが 2 倍（$0.20$）になる．式②の両項とも $1/V$ に比例するので時間はちょうど半分．\n\\[t=\\frac{290}{2}=145\\fallingdotseq\\boldsymbol{1.5\\times10^{2}}\\,\\mathrm s\\]\n$[\\mathrm S]_0$ 2 倍：\n\\[t=\\frac{40-0.20}{0.10}+20\\log_e200=398+20\\times(2\\times2.303+0.693)=398+106=504\\fallingdotseq\\boldsymbol{5.0\\times10^{2}}\\,\\mathrm s\\]\n0 次の区間（第 1 項）は $[\\mathrm S]_0$ に比例して延びるが，第 2 項は $\\log_e 2$ の分しか延びない．1 次反応なら初濃度を 2 倍にしても延びる時間は半減期 1 回分だけであり，0 次反応なら時間はほぼ 2 倍になる．この酵素反応はその中間の振る舞いをする．\n\n\\textbf{(5) 半減期から $V$ と $K_m$ を決める}\n式②で $[\\mathrm S]=[\\mathrm S]_0/2$ とおくと\n\\[t_{1/2}=\\frac{[\\mathrm S]_0}{2V}+\\frac{K_m\\log_e2}{V}\\]\n$t_{1/2}$ は $[\\mathrm S]_0$ の 1 次式で，傾きが $1/(2V)$，切片が $K_m\\log_e2/V$ である．\n\\[\\frac{1}{2V}=\\frac{25.5-9.5}{10-2.0}=2.0\\,\\mathrm{s\\cdot L/mmol}\\quad\\to\\quad V=\\boldsymbol{0.25}\\,\\mathrm{mmol/(L\\cdot s)}\\]\n切片は $9.5-2.0\\times2.0=5.5\\,\\mathrm s$ なので\n\\[K_m=\\frac{5.5\\times V}{\\log_e2}=\\frac{5.5\\times0.25}{0.693}=1.98\\fallingdotseq\\boldsymbol{2.0}\\,\\mathrm{mmol/L}\\]\n1 次反応なら半減期は初濃度によらず一定，0 次反応なら初濃度に比例する．酵素反応の半減期はその両方の和の形になり，初濃度に対する直線の傾きから $V$，切片から $K_m$ が決まる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "酵素反応の速さの式は，基質が多いと 0 次（濃度が時間に比例して減る），少ないと 1 次（指数関数的に減る）に近づく．与えた積分形を使い，2 つの近似をつないだ見積もりが常に時間を短く見積もること，酵素量と初濃度の変化が反応時間に与える影響の違い，半減期の初濃度依存（直線の傾きと切片）から最大速度と K_m を逆に決めることを示す．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "protein-amino",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "酵素反応",
+  "反応速度式",
+  "0次反応",
+  "1次反応",
+  "半減期",
+  "近似"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

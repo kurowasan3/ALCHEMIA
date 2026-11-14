@@ -1,0 +1,108 @@
+{
+ "id": "THE-GAS-070",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-08",
+ "topic": "下向きのシリンダーにおもりをつるしたピストンとボイルの法則",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "内側の断面積が $2.00\\,\\mathrm{cm^2}$，内容積が $50.0\\,\\mathrm{cm^3}$ のシリンダーを，開いた口を真下に向けて固定した．質量のわからないピストンで空気を閉じこめ，ピストンの下面のフックにおもりをつり下げる．ピストンはなめらかに動き，気体はもれず，温度は $27\\,^\\circ\\mathrm{C}$ で一定とする．大気圧は $1.00\\times10^{5}\\,\\mathrm{Pa}$，重力加速度は $9.80\\,\\mathrm{m/s^2}$，気体定数は $8.31\\,\\mathrm{Pa\\,m^3/(K\\,mol)}$ とし，ピストンの厚さは考えない．\n\nおもりが $0.300\\,\\mathrm{kg}$ のとき閉じこめた空気の体積は $20.0\\,\\mathrm{cm^3}$，$0.800\\,\\mathrm{kg}$ のとき $29.6\\,\\mathrm{cm^3}$ であった．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ピストンの質量を $M$（kg），おもりの質量を $m$（kg）として，閉じこめた空気の圧力 $P$（Pa）を表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "ピストンの質量 $M$ を有効数字 2 桁で求めよ．また，閉じこめた空気の物質量を有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "おもりを重くしていくと，ある質量を超えたところでピストンがシリンダーから抜け落ちる．つり下げられるおもりの最大の質量を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "同じ空気を閉じこめたままシリンダーの口を真上に向けて固定し直し，ピストンの上に $0.300\\,\\mathrm{kg}$ のおもりをのせた．空気の体積は何 $\\mathrm{cm^3}$ になるか．有効数字 2 桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$P=1.00\\times10^{5}-\\dfrac{(M+m)\\times9.80}{2.00\\times10^{-4}}$"
+   },
+   {
+    "id": "2",
+    "tex": "$M=0.20\\,\\mathrm{kg}$，$6.06\\times10^{-4}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "$1.2\\,\\mathrm{kg}$"
+   },
+   {
+    "id": "4",
+    "tex": "$12\\,\\mathrm{cm^3}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 力のつり合い}　ピストンには，下から大気が押す力 $P_0S$，上から閉じこめた空気が押す力 $PS$，下向きにピストンとおもりの重さ $(M+m)g$ がはたらく．$P_0S=PS+(M+m)g$ より\n\\[ P=P_0-\\dfrac{(M+m)g}{S}=\\boldsymbol{1.00\\times10^{5}-\\dfrac{(M+m)\\times9.80}{2.00\\times10^{-4}}} \\]\n（$\\dfrac{g}{S}=4.90\\times10^{4}\\,\\mathrm{Pa/kg}$）．口が下向きなので，重りをつるすほど内部の圧力は大気圧より小さくなる．\n\n\\textbf{(2)}　温度一定なのでボイルの法則 $P_1V_1=P_2V_2$ が成り立つ．\n\\[ \\{1.00\\times10^{5}-4.90\\times10^{4}(M+0.300)\\}\\times20.0=\\{1.00\\times10^{5}-4.90\\times10^{4}(M+0.800)\\}\\times29.6 \\]\nこれを解くと $M=0.199\\approx\\boldsymbol{0.20\\,\\mathrm{kg}}$．このとき $P_1=1.00\\times10^{5}-4.90\\times10^{4}\\times0.50=7.55\\times10^{4}\\,\\mathrm{Pa}$ で，\n\\[ n=\\dfrac{P_1V_1}{RT}=\\dfrac{7.55\\times10^{4}\\times20.0\\times10^{-6}}{8.31\\times300}=\\boldsymbol{6.06\\times10^{-4}\\,\\mathrm{mol}} \\]\n\n\\textbf{(3)}　空気の体積はシリンダーの内容積 $50.0\\,\\mathrm{cm^3}$ までしか広がれない．そのときの圧力は\n\\[ P=\\dfrac{P_1V_1}{50.0}=\\dfrac{7.55\\times10^{4}\\times20.0}{50.0}=3.02\\times10^{4}\\,\\mathrm{Pa} \\]\n(1) の式で $3.02\\times10^{4}=1.00\\times10^{5}-4.90\\times10^{4}(0.20+m)$ より $m=1.22\\approx\\boldsymbol{1.2\\,\\mathrm{kg}}$．これより重いと，体積が $50.0\\,\\mathrm{cm^3}$ になっても力がつり合わず，ピストンは抜け落ちる．\n\n\\textbf{(4)}　口が上向きでは，ピストンとおもりの重さが空気を押し縮める向きにはたらくので\n\\[ P=P_0+\\dfrac{(M+m)g}{S}=1.00\\times10^{5}+4.90\\times10^{4}\\times0.50=1.245\\times10^{5}\\,\\mathrm{Pa} \\]\n\\[ V=\\dfrac{7.55\\times10^{4}\\times20.0}{1.245\\times10^{5}}=12.1\\approx\\boldsymbol{12\\,\\mathrm{cm^3}} \\]\n同じおもりでも，口の向きで重さが「引く」向きか「押す」向きかが変わり，体積は $20.0\\,\\mathrm{cm^3}$ と約 $12\\,\\mathrm{cm^3}$ で大きく違う．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "口を下に向けたシリンダーでは，ピストンとおもりの重さが内部の気体を引き伸ばす向きにはたらき，内部の圧力は大気圧から重さの分だけ小さくなる．2 組の測定値とボイルの法則から未知のピストンの質量と気体の量を逆算し，容積の限界から抜け落ちる条件を判断する．"
+ },
+ "concepts": [
+  "ideal-gas",
+  "nitrogen-phosphorus"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ボイルの法則",
+  "力のつり合い",
+  "ピストン",
+  "大気圧",
+  "気体の状態方程式"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

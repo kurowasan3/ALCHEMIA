@@ -1,0 +1,109 @@
+{
+ "id": "ORG-CBX-013",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-04",
+ "topic": "ヒドロキシ酸の不斉炭素と環状エステル",
+ "course": "化学",
+ "level": 3,
+ "minutes": 12,
+ "format": [
+  "condition",
+  "structure"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "分子式 $\\ce{C4H8O3}$ で表される次のヒドロキシ酸（ア）〜（オ）について，あとの問いに答えよ．\\\\\n（ア）$\\ce{HOCH2CH2CH2COOH}$　（イ）$\\ce{CH3CH(OH)CH2COOH}$　（ウ）$\\ce{CH3CH2CH(OH)COOH}$\\\\\n（エ）$\\ce{HOCH2CH(CH3)COOH}$　（オ）$\\ce{(CH3)2C(OH)COOH}$\\\\\nなお，同一分子中のヒドロキシ基とカルボキシ基の間で脱水してエステル結合をつくり，環状化合物ができる反応を分子内エステル化という．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "不斉炭素原子をもつものをすべて選べ．"
+     },
+     {
+      "id": "2",
+      "tex": "カルボキシ基をヒドロキシ基まで還元して $\\ce{-CH2OH}$ に変えると，不斉炭素原子がなくなるものを選べ．"
+     },
+     {
+      "id": "3",
+      "tex": "分子内エステル化によって五員環の化合物を生じるものを選び，生じる環状エステルの分子式を答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "乳酸 $\\ce{CH3CH(OH)COOH}$ の 2 分子が，互いのヒドロキシ基とカルボキシ基の間で 2 つのエステル結合をつくると環状化合物ができる．この化合物の分子式と，環をつくる原子の数（何員環か）を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "（イ），（ウ），（エ）"
+   },
+   {
+    "id": "2",
+    "tex": "（エ）"
+   },
+   {
+    "id": "3",
+    "tex": "（ア），$\\ce{C4H6O2}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{C6H8O4}$，六員環"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 4 つの異なる原子・原子団が結合した炭素を探す．（イ）の $\\ce{CH(OH)}$ は $\\ce{H, OH, CH3, CH2COOH}$，（ウ）の $\\ce{CH(OH)}$ は $\\ce{H, OH, C2H5, COOH}$，（エ）の $\\ce{CH}$ は $\\ce{H, CH3, CH2OH, COOH}$ が結合しており，いずれも不斉炭素原子．（ア）には枝がなく，（オ）は $\\ce{CH3}$ が 2 つ結合しているので不斉炭素原子をもたない．答え \\textbf{（イ），（ウ），（エ）}．\\\\\n\\textbf{(2)} 還元後は（イ）$\\ce{CH3CH(OH)CH2CH2OH}$，（ウ）$\\ce{CH3CH2CH(OH)CH2OH}$，（エ）$\\ce{HOCH2CH(CH3)CH2OH}$．（エ）では $\\ce{-COOH}$ が $\\ce{-CH2OH}$ になり，中央の炭素に同じ $\\ce{-CH2OH}$ が 2 つ結合するので不斉炭素ではなくなる．（イ），（ウ）は還元後も不斉炭素原子が残る．答え \\textbf{（エ）}．\\\\\n\\textbf{(3)} 環の員数は，ヒドロキシ基の O からカルボキシ基の C までの原子の数．（ア）：O，C4，C3，C2，C1 で 5 個 → 五員環．（イ）は四員環，（ウ）・（オ）は三員環，（エ）は四員環になる．\n\\[\\ce{HOCH2CH2CH2COOH -> C4H6O2 + H2O}\\]\n答え \\textbf{（ア）}，分子式 $\\boldsymbol{\\ce{C4H6O2}}$（γ-ブチロラクトン）．\\\\\n\\textbf{(4)} 2 分子から水 2 分子がとれる：$\\ce{2C3H6O3 -> C6H8O4 + 2H2O}$．環は O–C(=O)–C–O–C(=O)–C の 6 原子からなるので \\textbf{六員環}（ラクチド．ポリ乳酸の原料）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ヒドロキシ酸の不斉炭素の有無，−COOH を −CH₂OH に還元すると同じ置換基が 2 つになって不斉が消える場合があること，分子内エステル化でできる環の員数は OH の O から COOH の C までの原子数で決まること．"
+ },
+ "concepts": [
+  "carboxylic-ester",
+  "carbon-silicon",
+  "organic-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ヒドロキシ酸",
+  "不斉炭素",
+  "環状エステル",
+  "分子内エステル化",
+  "ラクチド"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

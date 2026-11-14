@@ -1,0 +1,109 @@
+{
+ "id": "THE-THC-055",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-10",
+ "topic": "酸素不足の燃焼と追加の酸素による再燃焼（気体の物質量と発熱量から黒鉛の量を決める）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "圧力を一定に保つ容器に，物質量のわからない黒鉛と酸素 $3.00\\,\\mathrm{mol}$ を入れて燃焼させた（燃焼ア）．燃焼後，容器には黒鉛が残っており，気体は一酸化炭素と二酸化炭素だけで，その物質量の比は $2:1$ であった．次に，この容器に酸素を追加して再び燃焼させた（燃焼イ）．燃焼後，黒鉛はなくなり，気体は二酸化炭素と酸素だけで，その物質量の和は燃焼ア後の気体の物質量の $3.00$ 倍であった．また，燃焼イの発熱量は $2425\\,\\mathrm{kJ}$ であった．黒鉛の燃焼エンタルピーは $-394\\,\\mathrm{kJ/mol}$，一酸化炭素の燃焼エンタルピーは $-283\\,\\mathrm{kJ/mol}$ とし，温度は燃焼の前後で同じとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "燃焼ア後の一酸化炭素と二酸化炭素の物質量，および燃焼アの発熱量を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "燃焼イで追加した酸素の物質量を求めよ．また，燃焼イの後の気体の物質量の和が，燃焼ア後に残っていた黒鉛の量によらない理由を説明せよ．"
+     },
+     {
+      "id": "3",
+      "tex": "燃焼ア後に残っていた黒鉛の物質量と，はじめに入れた黒鉛の物質量を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "燃焼アとイの発熱量の和と，はじめの黒鉛を一度に完全燃焼させたときの発熱量をそれぞれ求め，比べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "CO：$3.00\\,\\mathrm{mol}$，$\\ce{CO2}$：$1.50\\,\\mathrm{mol}$，発熱量 $924\\,\\mathrm{kJ}$"
+   },
+   {
+    "id": "2",
+    "tex": "$10.5\\,\\mathrm{mol}$，黒鉛 1 mol は $\\ce{O2}$ 1 mol を消費して $\\ce{CO2}$ 1 mol を生じ，気体の物質量を変えないから"
+   },
+   {
+    "id": "3",
+    "tex": "残っていた黒鉛 $4.00\\,\\mathrm{mol}$，はじめの黒鉛 $8.50\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "4",
+    "tex": "どちらも $3.35\\times10^{3}\\,\\mathrm{kJ}$ で等しい"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　CO を $2u$，$\\ce{CO2}$ を $u\\,\\mathrm{mol}$ とする．$\\ce{2C + O2 -> 2CO}$，$\\ce{C + O2 -> CO2}$ より，消費された $\\ce{O2}$ は $u+u=2u=3.00$（黒鉛が残っているので $\\ce{O2}$ はすべて使われた）．よって CO $\\boldsymbol{3.00\\,\\mathrm{mol}}$，$\\ce{CO2}$ $\\boldsymbol{1.50\\,\\mathrm{mol}}$．\n\\\\黒鉛から CO ができる反応のエンタルピーは $-394-(-283)=-111\\,\\mathrm{kJ/mol}$ なので\n\\[ Q_{\\text{ア}}=3.00\\times111+1.50\\times394=\\boldsymbol{924\\,\\mathrm{kJ}} \\]\n\n\\textbf{(2)}　燃焼イでは $\\ce{2CO + O2 -> 2CO2}$ と $\\ce{C + O2 -> CO2}$ が起こる．追加した $\\ce{O2}$ を $y$，残っていた黒鉛を $r\\,\\mathrm{mol}$ とすると，燃焼イ後は\n\\[ \\ce{CO2}：1.50+3.00+r,\\qquad \\ce{O2}：y-1.50-r \\]\nで，和は $3.00+y$ となり $r$ を含まない．黒鉛（固体）1 mol は気体の $\\ce{O2}$ 1 mol を気体の $\\ce{CO2}$ 1 mol に置きかえるだけで，気体の物質量を変えないからである．\n\\[ 3.00+y=3.00\\times4.50\\quad\\Rightarrow\\quad y=\\boldsymbol{10.5\\,\\mathrm{mol}} \\]\n（CO の燃焼は気体を減らす：CO 3.00 mol と $\\ce{O2}$ 1.50 mol から $\\ce{CO2}$ 3.00 mol．）\n\n\\textbf{(3)}　気体の量からは $r$ が決まらないので，発熱量を使う．\n\\[ Q_{\\text{イ}}=3.00\\times283+394\\,r=2425\\quad\\Rightarrow\\quad r=\\boldsymbol{4.00\\,\\mathrm{mol}} \\]\nはじめの黒鉛は，燃焼アで CO・$\\ce{CO2}$ になった $4.50\\,\\mathrm{mol}$ と残りの $4.00\\,\\mathrm{mol}$ で $\\boldsymbol{8.50\\,\\mathrm{mol}}$．\n\n\\textbf{(4)}　$Q_{\\text{ア}}+Q_{\\text{イ}}=924+2425=3349\\,\\mathrm{kJ}$，一度に完全燃焼させると $8.50\\times394=3349\\,\\mathrm{kJ}$．どちらも $\\boldsymbol{3.35\\times10^{3}\\,\\mathrm{kJ}}$ で $\\boldsymbol{\\text{等しい}}$．最初の物質（黒鉛と酸素）と最後の物質（$\\ce{CO2}$）が同じなので，途中で CO を経由しても発熱量の合計は変わらない（ヘスの法則）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "酸素不足の燃焼では O の収支と CO・CO2 の比から生成物の量が決まる．固体の黒鉛は燃えて気体の物質量を変えない（O2 1 mol→CO2 1 mol）ので，追加燃焼後の気体の量からは追加した酸素の量しかわからず，残っていた黒鉛の量は発熱量から決める．段階に分けた燃焼の発熱量の合計は一度に完全燃焼させたときと等しい．"
+ },
+ "concepts": [
+  "enthalpy",
+  "oxygen-sulfur",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "不完全燃焼",
+  "一酸化炭素",
+  "ヘスの法則",
+  "燃焼エンタルピー",
+  "物質量"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

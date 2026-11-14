@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 170" font-family="Noto Sans CJK JP, sans-serif" font-size="14">
+  <rect x="20" y="20" width="360" height="110" fill="none" stroke="currentColor" stroke-width="4"/>
+  <rect x="194" y="22" width="12" height="106" fill="currentColor" opacity="0.35" stroke="currentColor" stroke-width="1"/>
+  <g fill="currentColor" text-anchor="middle">
+    <text x="107" y="55" font-size="16">部屋 A</text>
+    <text x="107" y="80">N<tspan baseline-shift="sub" font-size="10">2</tspan>O<tspan baseline-shift="sub" font-size="10">4</tspan> 0.60 mol</text>
+    <text x="107" y="104">3.0 L（初め）</text>
+    <text x="293" y="55" font-size="16">部屋 B</text>
+    <text x="293" y="80">NO<tspan baseline-shift="sub" font-size="10">2</tspan> 0.30 mol</text>
+    <text x="293" y="104">3.0 L（初め）</text>
+    <text x="200" y="155">移動できる壁（初めは中央に固定）</text>
+  </g>
+  <line x1="200" y1="128" x2="200" y2="140" stroke="currentColor" stroke-dasharray="3 2" opacity="0.5"/>
+</svg>

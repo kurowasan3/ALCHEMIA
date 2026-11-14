@@ -1,0 +1,109 @@
+{
+ "id": "POL-PRT-044",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-05",
+ "topic": "塩析の溶解度モデルによるタンパク質の分別沈殿と希釈の効果",
+ "course": "化学",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "タンパク質の水溶液に多量の硫酸アンモニウムを加えると，タンパク質が沈殿する（塩析）．塩濃度の高い範囲では，タンパク質の溶解度 $S$（$\\mathrm{g/L}$）と硫酸アンモニウムの濃度 $c$（$\\mathrm{mol/L}$）の間に，次の関係が近似的に成り立つものとする．\n\\[\\log_{10}S=\\beta-Kc\\]\n$\\beta$，$K$ はタンパク質ごとに決まる正の定数で，タンパク質 X は $\\beta=4.0$，$K=2.0$，タンパク質 Y は $\\beta=4.5$，$K=1.5$ である．X と Y の溶解度は互いに影響しないとし，固体の硫酸アンモニウムを加えても溶液の体積は変わらないものとする．また，硫酸アンモニウムの飽和濃度は約 $4\\,\\mathrm{mol/L}$ である．\nX と Y をそれぞれ $10.0\\,\\mathrm{g/L}$ ずつ含む混合水溶液がある．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "この溶液に硫酸アンモニウムを少しずつ加えていくとき，X と Y が沈殿し始める $c$ を，それぞれ小数第 2 位まで求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "Y をまったく沈殿させずに X の $90\\,\\%$ 以上を沈殿させるための $c$ の範囲を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "Y をまったく沈殿させずに X の $99\\,\\%$ 以上を沈殿させることは，この溶液のままではできないことを示せ．次に，あらかじめ溶液を水で $d$ 倍に薄めてから硫酸アンモニウムを加えると，この条件を満たす $c$ が存在するようになる．$d$ の最小値と，そのときの $c$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) で薄めると条件を満たせるようになったのは，X と Y の $K$ の大小がどうなっているためか．もし X の $K$ が Y の $K$ より小さかったら，薄めることは分離に有利か不利か．理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "X：$c=1.50\\,\\mathrm{mol/L}$，Y：$c=2.33\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "2",
+    "tex": "$2.00\\,\\mathrm{mol/L}\\leqq c\\leqq2.33\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "3",
+    "tex": "X の $99\\,\\%$ 以上の沈殿には $c\\geqq2.50\\,\\mathrm{mol/L}$ が必要だが，Y が沈殿しない条件は $c\\leqq2.33\\,\\mathrm{mol/L}$ なので両立しない．$d$ の最小値は $10$，そのとき $c=3.0\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "4",
+    "tex": "X の $K$ が Y の $K$ より大きい（X の溶解度のほうが塩濃度で急に下がる）ため．X の $K$ が小さければ，薄めると両立する $c$ の範囲がかえって狭くなるので不利（濃縮したほうが有利）．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　タンパク質の濃度を $C_0$ とすると，$S<C_0$ になったときに初めて沈殿し，溶液に残る量は $S$ である．沈殿する割合は $1-S/C_0$．\n\n\\textbf{(1)}　沈殿し始めるのは $S=10.0$，すなわち $\\log_{10}S=1$ のとき．\n\\[\\text{X}:\\ 4.0-2.0c=1\\ \\Rightarrow\\ c=\\boldsymbol{1.50\\,\\mathrm{mol/L}},\\qquad \\text{Y}:\\ 4.5-1.5c=1\\ \\Rightarrow\\ c=\\boldsymbol{2.33\\,\\mathrm{mol/L}}\\]\n\n\\textbf{(2)}　X の $90\\,\\%$ 以上が沈殿するには $S_{\\mathrm X}\\leqq1.0$：$4.0-2.0c\\leqq0$ より $c\\geqq2.00$．Y が沈殿しないには $S_{\\mathrm Y}\\geqq10.0$：$c\\leqq2.33$．よって $\\boldsymbol{2.00\\leqq c\\leqq2.33}$（$\\mathrm{mol/L}$）．\n\n\\textbf{(3)}　$99\\,\\%$ 以上なら $S_{\\mathrm X}\\leqq0.10$：$4.0-2.0c\\leqq-1$ より $c\\geqq2.50$．これは Y の条件 $c\\leqq2.33$ と両立しない．\n$d$ 倍に薄めると両方の濃度が $10.0/d$ になる．$L=\\log_{10}d$ とおくと\n\\[\\text{X}:\\ S_{\\mathrm X}\\leqq\\frac{0.01\\times10.0}{d}\\ \\Rightarrow\\ 4.0-2.0c\\leqq-1-L\\ \\Rightarrow\\ c\\geqq\\frac{5+L}{2.0}\\]\n\\[\\text{Y}:\\ S_{\\mathrm Y}\\geqq\\frac{10.0}{d}\\ \\Rightarrow\\ 4.5-1.5c\\geqq1-L\\ \\Rightarrow\\ c\\leqq\\frac{3.5+L}{1.5}\\]\n両立する条件は $\\dfrac{5+L}{2.0}\\leqq\\dfrac{3.5+L}{1.5}$，すなわち $7.5+1.5L\\leqq7.0+2.0L$ より $L\\geqq1$．よって $d$ の最小値は $\\boldsymbol{10}$ で，そのとき両方の境界が一致して $c=\\dfrac{5+1}{2.0}=\\boldsymbol{3.0\\,\\mathrm{mol/L}}$（飽和濃度 $4\\,\\mathrm{mol/L}$ より小さいので実現できる）．\n\n\\textbf{(4)}　$d$ 倍に薄めると，X に必要な $c$ の下限は $L/K_{\\mathrm X}$ だけ上がり，Y が沈殿しない $c$ の上限は $L/K_{\\mathrm Y}$ だけ上がる．両立する範囲の幅は\n\\[L\\left(\\frac{1}{K_{\\mathrm Y}}-\\frac{1}{K_{\\mathrm X}}\\right)\\]\nだけ変わり，$K_{\\mathrm X}>K_{\\mathrm Y}$ のとき広がる．今回は $K_{\\mathrm X}=2.0>K_{\\mathrm Y}=1.5$ なので，薄めて塩濃度を上げる操作が有利になった．\n逆に $K_{\\mathrm X}<K_{\\mathrm Y}$ なら，薄めると範囲が狭くなるので$\\boldsymbol{\\text{不利}}$であり，むしろ濃縮したほうが分離しやすい．つまり，「目的のタンパク質の溶解度が塩濃度に対してより敏感か」で希釈の効果の向きが決まる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "塩析では溶液に残る量が溶解度で決まり，沈殿の割合は初濃度との比で決まる．回収率の条件と夾雑タンパク質を沈殿させない条件を不等式で連立し，希釈すると両者の境界が log d / K ずつ動くので，K（塩濃度への敏感さ）の大小で希釈が分離に有利か不利かが決まることを判断する．"
+ },
+ "concepts": [
+  "protein-amino",
+  "precipitation",
+  "oxygen-sulfur"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "塩析",
+  "硫酸アンモニウム",
+  "溶解度",
+  "分別沈殿",
+  "タンパク質の精製"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

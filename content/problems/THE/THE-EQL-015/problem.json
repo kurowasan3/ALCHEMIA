@@ -1,0 +1,107 @@
+{
+ "id": "THE-EQL-015",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "二次反応の半減期と一次反応との比較",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "二酸化窒素の熱分解 $\\ce{2NO2 -> 2NO + O2}$ では，$\\ce{NO2}$ の減少速度 $v$ が $v=k[\\ce{NO2}]^2$ と表される（二次反応，逆反応は無視する）．$\\ce{NO2}$ の初濃度を $C_0$，時間 $t$ 後の濃度を $C$ とすると，次式が成り立つ．\n\\[ \\dfrac{1}{C}=\\dfrac{1}{C_0}+kt \\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "濃度が $C_0$ の半分になるまでの時間（半減期）$t_{1/2}$ を $k$，$C_0$ で表せ．また，初濃度を2倍にすると半減期は何倍になるか．"
+     },
+     {
+      "id": "2",
+      "tex": "ある初濃度で実験したところ，半減期は $50\\,\\mathrm{s}$ であった．濃度が $\\dfrac{C_0}{4}$ になるのは反応開始から何秒後か．"
+     },
+     {
+      "id": "3",
+      "tex": "最初の半減期が同じ $50\\,\\mathrm{s}$ である一次反応では，濃度が $\\dfrac{C_0}{4}$ になるのは何秒後か．また，(2) の二次反応と比べてどちらが長いか．"
+     },
+     {
+      "id": "4",
+      "tex": "別の二次反応 $\\mathrm{2A \\to B}$（A の減少速度 $=k'[\\mathrm{A}]^2$）で，A の $25\\,\\%$ が分解するのに $60\\,\\mathrm{s}$ かかった．A の $50\\,\\%$ が分解するのは反応開始から何秒後か．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$t_{1/2}=\\dfrac{1}{kC_0}$，$\\dfrac{1}{2}$ 倍"
+   },
+   {
+    "id": "2",
+    "tex": "$150\\,\\mathrm{s}$"
+   },
+   {
+    "id": "3",
+    "tex": "$100\\,\\mathrm{s}$，二次反応の方が長い"
+   },
+   {
+    "id": "4",
+    "tex": "$180\\,\\mathrm{s}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $C=\\dfrac{C_0}{2}$ を代入すると $\\dfrac{2}{C_0}=\\dfrac{1}{C_0}+kt_{1/2}$ より $\\boldsymbol{t_{1/2}=\\dfrac{1}{kC_0}}$．一次反応と違って半減期は初濃度に反比例し，初濃度を2倍にすると $\\boldsymbol{\\dfrac12}$ 倍になる．\\\\\n\\textbf{(2)} $\\dfrac{1}{kC_0}=50\\,\\mathrm{s}$．$C=\\dfrac{C_0}{4}$ では $\\dfrac{4}{C_0}=\\dfrac{1}{C_0}+kt$ より $t=\\dfrac{3}{kC_0}=\\boldsymbol{150\\,\\mathrm{s}}$．（2回目の半減期は濃度が半分になった分だけ長く $100\\,\\mathrm{s}$ になる．）\\\\\n\\textbf{(3)} 一次反応の半減期は濃度によらず一定なので，$\\dfrac{C_0}{4}$ までは半減期2回分で $\\boldsymbol{100\\,\\mathrm{s}}$．二次反応は濃度が下がるほど速さが急に落ちる（$v\\propto C^2$）ので，\\textbf{二次反応の方が長い}．\\\\\n\\textbf{(4)} $25\\,\\%$ 分解で $C=0.75C_0$：$\\dfrac{1}{0.75C_0}-\\dfrac{1}{C_0}=\\dfrac{1}{3C_0}=k'\\times60$ より $k'C_0=\\dfrac{1}{180}\\,/\\mathrm{s}$．$50\\,\\%$ 分解は $\\dfrac{1}{k'C_0}=\\boldsymbol{180\\,\\mathrm{s}}$ 後．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "二次反応では 1/C が時間に比例して増え，半減期が初濃度に反比例する．同じ最初の半減期をもつ一次反応と比べると，濃度が下がるほど二次反応は遅くなる．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "二次反応",
+  "半減期",
+  "積分形",
+  "一次反応との比較"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

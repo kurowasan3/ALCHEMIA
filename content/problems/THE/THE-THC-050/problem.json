@@ -1,0 +1,110 @@
+{
+ "id": "THE-THC-050",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-10",
+ "topic": "多段階の中和の発熱量と混合の順序（終状態だけで決まる熱量）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "リン酸 $\\ce{H3PO4}$ を水酸化ナトリウムで中和するとき，次の 3 段階の反応がこの順に完全に進むものとし，各段階で $1\\,\\mathrm{mol}$ の $\\ce{OH-}$ が反応するときの発熱量は濃度によらず一定とする．\n\\[\\ce{H3PO4 + OH- -> H2PO4- + H2O}\\quad(\\text{発熱量 } q_1)\\]\n\\[\\ce{H2PO4- + OH- -> HPO4^2- + H2O}\\quad(\\text{発熱量 } q_2)\\]\n\\[\\ce{HPO4^2- + OH- -> PO4^3- + H2O}\\quad(\\text{発熱量 } q_3)\\]\n\\textbf{実験 1}　断熱容器に $0.10\\,\\mathrm{mol/L}$ のリン酸 $50\\,\\mathrm{mL}$ を入れ，同じ温度の $0.10\\,\\mathrm{mol/L}$ 水酸化ナトリウム水溶液を加えた．水酸化ナトリウム水溶液を $50\\,\\mathrm{mL}$ 加えた時点で温度は最初より $0.74\\,\\mathrm{K}$，$100\\,\\mathrm{mL}$ 加えた時点で $0.92\\,\\mathrm{K}$ 高かった．\\\\\n\\textbf{実験 2}　逆に，断熱容器に $0.10\\,\\mathrm{mol/L}$ 水酸化ナトリウム水溶液 $100\\,\\mathrm{mL}$ を入れ，同じ温度の $0.10\\,\\mathrm{mol/L}$ リン酸を加えた．\\\\\n溶液の密度はすべて $1.0\\,\\mathrm{g/mL}$，比熱は $4.2\\,\\mathrm{J/(g\\cdot K)}$ とし，容器の熱容量や熱の出入りは無視する．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "実験 1 の結果から $q_1$，$q_2$ はそれぞれ何 $\\mathrm{kJ/mol}$ か．有効数字 2 けたで答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "実験 2 でリン酸を $50\\,\\mathrm{mL}$ 加えた時点の温度上昇は何 $\\mathrm{K}$ か．加え始めは $\\ce{OH-}$ が過剰で $\\ce{PO4^3-}$ まで反応が進むことに注意して，有効数字 2 けたで答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "実験 2 でリン酸を $100\\,\\mathrm{mL}$ 加えた時点の温度上昇は何 $\\mathrm{K}$ か．有効数字 2 けたで答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "実験 2 でリン酸を $25\\,\\mathrm{mL}$ 加えた時点の温度上昇を求めるには，実験 1 の結果のほかに何がわかればよいか．次から 1 つ選べ．\\quad (ア) 何も必要ない　(イ) $q_3$ の値　(ウ) リン酸の第 1 段階の電離定数　(エ) 水のイオン積"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$q_1=62\\,\\mathrm{kJ/mol}$，$q_2=54\\,\\mathrm{kJ/mol}$"
+   },
+   {
+    "id": "2",
+    "tex": "$0.92\\,\\mathrm{K}$"
+   },
+   {
+    "id": "3",
+    "tex": "$0.74\\,\\mathrm{K}$"
+   },
+   {
+    "id": "4",
+    "tex": "イ"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　実験 1 で $50\\,\\mathrm{mL}$ 加えた時点（$\\ce{H3PO4}$ と $\\ce{OH-}$ が $5.0\\times10^{-3}\\,\\mathrm{mol}$ ずつ）は第 1 段階だけが完了している．発熱量は $100\\,\\mathrm{g}\\times4.2\\times0.74=311\\,\\mathrm{J}$ なので\n\\[q_1=\\dfrac{0.311\\,\\mathrm{kJ}}{5.0\\times10^{-3}\\,\\mathrm{mol}}\\fallingdotseq\\boldsymbol{62\\,\\mathrm{kJ/mol}}\\]\n$100\\,\\mathrm{mL}$ 加えた時点では第 2 段階まで完了し，全発熱量は $150\\times4.2\\times0.92=580\\,\\mathrm{J}$．第 2 段階の分は $580-311=269\\,\\mathrm{J}$ だから $q_2=0.269/(5.0\\times10^{-3})\\fallingdotseq\\boldsymbol{54\\,\\mathrm{kJ/mol}}$．\\\\\n\\textbf{(2)}　加え始めは $\\ce{OH-}$ が過剰なので，加えたリン酸は $\\ce{PO4^3-}$ まで中和される．しかしリン酸をさらに加えると，生じた $\\ce{PO4^3-}$ は後から来た $\\ce{H3PO4}$ と反応して（例 $\\ce{PO4^3- + H3PO4 -> HPO4^2- + H2PO4-}$），最終的に溶液の組成は「$\\ce{H3PO4}$ $5.0\\times10^{-3}\\,\\mathrm{mol}$ と $\\ce{OH-}$ $1.0\\times10^{-2}\\,\\mathrm{mol}$ を混ぜたもの」，すなわち $\\ce{HPO4^2-}$ $5.0\\times10^{-3}\\,\\mathrm{mol}$ を含む $150\\,\\mathrm{mL}$ の溶液になる．これは実験 1 で $100\\,\\mathrm{mL}$ 加えた時点とまったく同じ状態である．\\\\\n発熱量（エンタルピー変化）は始めと終わりの状態だけで決まり，途中でどの物質を経由したかによらない（ヘスの法則）．途中で $\\ce{PO4^3-}$ ができるときに余分に出た熱 $q_3$ の分は，$\\ce{PO4^3-}$ が $\\ce{HPO4^2-}$ に戻るときに吸収されて差し引きゼロになる．したがって発熱量は $5.0\\times10^{-3}\\times(q_1+q_2)=580\\,\\mathrm{J}$，溶液の質量も $150\\,\\mathrm{g}$ で同じなので温度上昇は $\\boldsymbol{0.92\\,\\mathrm{K}}$．\\\\\n\\textbf{(3)}　$\\ce{H3PO4}$ と $\\ce{OH-}$ が $1.0\\times10^{-2}\\,\\mathrm{mol}$ ずつで，終状態は $\\ce{H2PO4-}$ $1.0\\times10^{-2}\\,\\mathrm{mol}$ を含む $200\\,\\mathrm{g}$ の溶液．発熱量は $1.0\\times10^{-2}\\times62.2\\,\\mathrm{kJ/mol}=0.622\\,\\mathrm{kJ}$ で，\n\\[\\Delta T=\\dfrac{622\\,\\mathrm{J}}{200\\,\\mathrm{g}\\times4.2\\,\\mathrm{J/(g\\cdot K)}}\\fallingdotseq\\boldsymbol{0.74\\,\\mathrm{K}}\\]\n（実験 1 の $50\\,\\mathrm{mL}$ の時点と物質の比も濃度も同じなので，同じ温度上昇になる．）\\\\\n\\textbf{(4)}　$\\ce{H3PO4}$ $2.5\\times10^{-3}\\,\\mathrm{mol}$ に $\\ce{OH-}$ $1.0\\times10^{-2}\\,\\mathrm{mol}$ が作用すると，$\\ce{PO4^3-}$ が $2.5\\times10^{-3}\\,\\mathrm{mol}$ でき $\\ce{OH-}$ が $2.5\\times10^{-3}\\,\\mathrm{mol}$ 余る．この終状態は実験 1 のどの時点（$\\ce{PO4^3-}$ は生じない）とも違い，発熱量は $2.5\\times10^{-3}\\times(q_1+q_2+q_3)$ となるので，$q_3$ が必要である．答えは $\\boldsymbol{\\text{イ}}$．\\\\\n\\textbf{ポイント}　混ぜる順序が違っても，最後の組成が同じなら発熱量は同じ．順序の違いが効くのは，最後の組成そのものが変わる場合（気体が逃げる，沈殿が除かれる，など）だけである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "多段階の中和では途中で生成する化学種が混合の順序で変わるが，発熱量は始めと終わりの状態だけで決まる（ヘスの法則）．逆の順序で混ぜても最終組成が順方向の実験のある時点と一致すればその発熱量をそのまま使え，一致しない場合だけ新しいデータ（別の段階の反応熱）が必要になる．"
+ },
+ "concepts": [
+  "enthalpy",
+  "nitrogen-phosphorus",
+  "acid-base"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ヘスの法則",
+  "中和熱",
+  "リン酸",
+  "多段階の中和",
+  "混合の順序",
+  "熱量計算"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

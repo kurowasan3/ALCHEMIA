@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 260" width="520" height="260">
+<polygon points="60,80 180,80 230,30 110,30" fill="#1f5fbf" fill-opacity="0.35" stroke="none"/>
+<line x1="60" y1="80" x2="180" y2="80" stroke="currentColor" stroke-width="1.6"/>
+<line x1="180" y1="80" x2="180" y2="200" stroke="currentColor" stroke-width="1.6"/>
+<line x1="180" y1="200" x2="60" y2="200" stroke="currentColor" stroke-width="1.6"/>
+<line x1="60" y1="200" x2="60" y2="80" stroke="currentColor" stroke-width="1.6"/>
+<line x1="60" y1="80" x2="110" y2="30" stroke="currentColor" stroke-width="1.6"/>
+<line x1="110" y1="30" x2="230" y2="30" stroke="currentColor" stroke-width="1.6"/>
+<line x1="230" y1="30" x2="180" y2="80" stroke="currentColor" stroke-width="1.6"/>
+<line x1="230" y1="30" x2="230" y2="150" stroke="currentColor" stroke-width="1.6"/>
+<line x1="230" y1="150" x2="180" y2="200" stroke="currentColor" stroke-width="1.6"/>
+<line x1="110" y1="30" x2="110" y2="150" stroke="currentColor" stroke-width="1.6" stroke-dasharray="5 4" opacity="0.5"/>
+<line x1="110" y1="150" x2="60" y2="200" stroke="currentColor" stroke-width="1.6" stroke-dasharray="5 4" opacity="0.5"/>
+<line x1="110" y1="150" x2="230" y2="150" stroke="currentColor" stroke-width="1.6" stroke-dasharray="5 4" opacity="0.5"/>
+<text x="44" y="214" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">E</text>
+<text x="186" y="214" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">F</text>
+<text x="186" y="96" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">B</text>
+<text x="44" y="76" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">A</text>
+<text x="94" y="164" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">H</text>
+<text x="236" y="164" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">G</text>
+<text x="236" y="26" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">C</text>
+<text x="94" y="26" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">D</text>
+<text x="110" y="245" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="currentColor">(a) 面 ABCD</text>
+<polygon points="320,80 490,30 440,200" fill="#c0392b" fill-opacity="0.35" stroke="#c0392b" stroke-width="1.4"/>
+<line x1="320" y1="80" x2="440" y2="80" stroke="currentColor" stroke-width="1.6"/>
+<line x1="440" y1="80" x2="440" y2="200" stroke="currentColor" stroke-width="1.6"/>
+<line x1="440" y1="200" x2="320" y2="200" stroke="currentColor" stroke-width="1.6"/>
+<line x1="320" y1="200" x2="320" y2="80" stroke="currentColor" stroke-width="1.6"/>
+<line x1="320" y1="80" x2="370" y2="30" stroke="currentColor" stroke-width="1.6"/>
+<line x1="370" y1="30" x2="490" y2="30" stroke="currentColor" stroke-width="1.6"/>
+<line x1="490" y1="30" x2="440" y2="80" stroke="currentColor" stroke-width="1.6"/>
+<line x1="490" y1="30" x2="490" y2="150" stroke="currentColor" stroke-width="1.6"/>
+<line x1="490" y1="150" x2="440" y2="200" stroke="currentColor" stroke-width="1.6"/>
+<line x1="370" y1="30" x2="370" y2="150" stroke="currentColor" stroke-width="1.6" stroke-dasharray="5 4" opacity="0.5"/>
+<line x1="370" y1="150" x2="320" y2="200" stroke="currentColor" stroke-width="1.6" stroke-dasharray="5 4" opacity="0.5"/>
+<line x1="370" y1="150" x2="490" y2="150" stroke="currentColor" stroke-width="1.6" stroke-dasharray="5 4" opacity="0.5"/>
+<text x="304" y="214" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">E</text>
+<text x="446" y="214" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">F</text>
+<text x="446" y="96" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">B</text>
+<text x="304" y="76" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">A</text>
+<text x="354" y="164" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">H</text>
+<text x="496" y="164" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">G</text>
+<text x="496" y="26" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">C</text>
+<text x="354" y="26" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">D</text>
+<text x="370" y="245" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="currentColor">(b) 面 ACF</text>
+</svg>

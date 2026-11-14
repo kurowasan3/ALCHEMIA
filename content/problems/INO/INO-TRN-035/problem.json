@@ -1,0 +1,117 @@
+{
+ "id": "INO-TRN-035",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-07",
+ "topic": "ヨウ素滴定による酸化銅(II)・酸化銅(I) 混合物の組成分析",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "銅の粉末を空気中で加熱すると，ある温度から質量が増えて一定になり，さらに高温にすると質量が減り始めた．減り始めたところで急冷して得た固体 A は，酸化銅(II) と酸化銅(I) の混合物であった．\nA $0.310\\,\\mathrm g$ に十分な量のヨウ化カリウム水溶液と塩酸を加えると，A はすべて白色のヨウ化銅(I) $\\ce{CuI}$ に変わり，溶液は褐色になった．このとき，酸化銅(II) と酸化銅(I) はそれぞれ次のように反応する．\n\\[\\ce{2CuO + 4H+ + 4I- -> 2CuI + I2 + 2H2O}\\qquad \\ce{Cu2O + 2H+ + 2I- -> 2CuI + H2O}\\]\n生じたヨウ素を $0.100\\,\\mathrm{mol/L}$ のチオ硫酸ナトリウム水溶液で滴定すると（$\\ce{I2 + 2S2O3^2- -> 2I- + S4O6^2-}$），$30.0\\,\\mathrm{mL}$ で終点に達した．原子量は O = 16.0，Cu = 63.5 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "高温で質量が減り始めた理由を化学反応式で示せ．"
+     },
+     {
+      "id": "2",
+      "tex": "酸化銅(I) からヨウ素が生じない理由として正しいものを選べ．\\\\\n(a) 酸化銅(I) は塩酸に溶けないから　(b) 銅の酸化数がすでに +1 で，$\\ce{CuI}$ になるときに電子を受け取らないから　(c) 生じたヨウ素が酸化銅(I) にすぐ還元されるから"
+     },
+     {
+      "id": "3",
+      "tex": "A に含まれる酸化銅(II) と酸化銅(I) の物質量，および A 中の銅の質量パーセントを有効数字3桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "A の中の銅原子のうち，酸化銅(I) になっていたものは何 % か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "塩酸の代わりに硝酸を用いて同じ実験を行うと，滴定値は 30.0 mL より大きくなるか，小さくなるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{4CuO -> 2Cu2O + O2}$"
+   },
+   {
+    "id": "2",
+    "tex": "(b)"
+   },
+   {
+    "id": "3",
+    "tex": "酸化銅(II) $3.00\\times10^{-3}\\,\\mathrm{mol}$，酸化銅(I) $5.00\\times10^{-4}\\,\\mathrm{mol}$，銅 $81.9\\,\\%$"
+   },
+   {
+    "id": "4",
+    "tex": "$25\\,\\%$"
+   },
+   {
+    "id": "5",
+    "tex": "大きくなる"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　はじめは $\\ce{2Cu + O2 -> 2CuO}$ で質量が増え，すべて CuO になると一定になる．高温では CuO が酸素を放出して $\\ce{Cu2O}$ になるので質量が減る：$\\boldsymbol{\\ce{4CuO -> 2Cu2O + O2}}$．\n\n\\textbf{(2)}　$\\ce{Cu^2+}$ は $\\ce{I-}$ から電子を 1 個受け取って $\\ce{CuI}$（Cu は +1）になり，そのとき $\\ce{I-}$ が $\\ce{I2}$ に酸化される．$\\ce{Cu2O}$ の Cu ははじめから +1 なので酸化還元が起こらず，$\\ce{I2}$ は生じない → $\\boldsymbol{\\text{(b)}}$．したがって生じた $\\ce{I2}$ は A 中の Cu(II) だけを表す．\n\n\\textbf{(3)}　$\\ce{S2O3^2-}$：$0.100\\times0.0300=3.00\\times10^{-3}\\,\\mathrm{mol}$，$\\ce{I2}$ はその半分 $1.50\\times10^{-3}\\,\\mathrm{mol}$．$\\ce{CuO}:\\ce{I2}=2:1$ より $\\ce{CuO}=\\boldsymbol{3.00\\times10^{-3}\\,\\mathrm{mol}}$（結局 $\\ce{CuO}$ と $\\ce{S2O3^2-}$ は 1:1）．\n$\\ce{CuO}$（式量 79.5）の質量 $0.2385\\,\\mathrm g$，残り $0.310-0.2385=0.0715\\,\\mathrm g$ が $\\ce{Cu2O}$（143.0）で $\\boldsymbol{5.00\\times10^{-4}\\,\\mathrm{mol}}$．\n銅は $3.00\\times10^{-3}+2\\times5.00\\times10^{-4}=4.00\\times10^{-3}\\,\\mathrm{mol}$，$0.254\\,\\mathrm g$．$\\dfrac{0.254}{0.310}\\times100=\\boldsymbol{81.9\\,\\%}$．\n（質量だけ，あるいは滴定値だけでは 2 成分の組成は決まらない．Cu(II) だけを数える滴定と全体の質量を組み合わせて決まる．）\n\n\\textbf{(4)}　$\\dfrac{1.00\\times10^{-3}}{4.00\\times10^{-3}}\\times100=\\boldsymbol{25\\,\\%}$．\n\n\\textbf{(5)}　硝酸は酸化剤なので $\\ce{I-}$ を酸化して余分な $\\ce{I2}$ をつくる．滴定値は\\textbf{大きくなり}，CuO を多く見積もってしまう．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "Cu²⁺ は I⁻ を酸化して CuI と I₂ を生じるが，Cu(I) の化合物は CuI になっても I₂ を生じないので，ヨウ素滴定は混合物中の Cu(II) だけを数える．これと全体の質量を連立すると酸化銅(II)・酸化銅(I) 混合物の組成と銅の含有率が決まる．"
+ },
+ "concepts": [
+  "transition-metals",
+  "halogen",
+  "redox"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ヨウ素滴定",
+  "酸化銅",
+  "ヨウ化銅(I)",
+  "酸化数",
+  "組成分析"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

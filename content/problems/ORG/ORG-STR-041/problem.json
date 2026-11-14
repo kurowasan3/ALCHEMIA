@@ -1,0 +1,109 @@
+{
+ "id": "ORG-STR-041",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-01",
+ "topic": "ショウノウを溶媒とする凝固点降下と分子式の決定（溶媒による測定精度の比較）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "炭素・水素・酸素からなる化合物 X の元素分析の結果は，質量百分率で C $79.2\\,\\%$，H $5.7\\,\\%$ であった．X $0.0636\\,\\mathrm{g}$ をショウノウ $10.0\\,\\mathrm{g}$ に溶かして凝固点を測ると，純粋なショウノウより $1.20\\,\\mathrm{K}$ 低かった．モル凝固点降下はショウノウ $40\\,\\mathrm{K\\cdot kg/mol}$，ベンゼン $5.12\\,\\mathrm{K\\cdot kg/mol}$，原子量は H = 1.0，C = 12，O = 16 とする．X は溶媒中で電離・会合しないものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "X の組成式を答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "X の分子量を有効数字3桁で求め，分子式を答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "同じ X $0.0636\\,\\mathrm{g}$ をベンゼン $10.0\\,\\mathrm{g}$ に溶かした場合，凝固点降下度は何 K になると予想されるか．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "凝固点降下度の測定値には $\\pm 0.10\\,\\mathrm{K}$ の誤差が含まれうるとする．ショウノウを用いた測定とベンゼンを用いた測定のそれぞれについて，X の分子式が1つに決まるかどうかを判定せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{C7H6O}$"
+   },
+   {
+    "id": "2",
+    "tex": "分子量 $212$，分子式 $\\ce{C14H12O2}$"
+   },
+   {
+    "id": "3",
+    "tex": "$0.15\\,\\mathrm{K}$"
+   },
+   {
+    "id": "4",
+    "tex": "ショウノウでは分子式が1つに決まる（$\\ce{C14H12O2}$）が，ベンゼンでは決まらない"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 組成式} \nO は $100-79.2-5.7=15.1\\,\\%$．物質量の比は\n\\[ \\mathrm{C:H:O}=\\dfrac{79.2}{12}:\\dfrac{5.7}{1.0}:\\dfrac{15.1}{16}=6.60:5.7:0.944\\fallingdotseq 7:6:1 \\]\nよって組成式は $\\boldsymbol{\\ce{C7H6O}}$（式量 $106$）．\n\n\\textbf{(2) 分子量} \n$\\Delta t = K_f\\cdot\\dfrac{w/M}{W}$ より\n\\[ M=\\dfrac{K_f\\,w}{\\Delta t\\,W}=\\dfrac{40\\times0.0636}{1.20\\times0.0100}=\\boldsymbol{212} \\]\n$106n=212$ より $n=2$，分子式は $\\boldsymbol{\\ce{C14H12O2}}$．\n\n\\textbf{(3) ベンゼンの場合} \nX は $0.0636/212=3.00\\times10^{-4}\\,\\mathrm{mol}$，質量モル濃度は $3.00\\times10^{-2}\\,\\mathrm{mol/kg}$ なので\n\\[ \\Delta t=5.12\\times3.00\\times10^{-2}=0.1536\\fallingdotseq\\boldsymbol{0.15\\,\\mathrm{K}} \\]\n同じ溶液濃度でも，モル凝固点降下がショウノウの約 $1/8$ なので降下度も約 $1/8$ になる．\n\n\\textbf{(4) 誤差の影響} \n分子量は $M=\\dfrac{K_f w}{W}\\cdot\\dfrac{1}{\\Delta t}$ で，$\\Delta t$ に反比例する．候補の分子量は $106n$（$106,\\ 212,\\ 318,\\ 424,\\ \\dots$）である．\n\\begin{itemize}\n\\item ショウノウ：$\\Delta t=1.10\\sim1.30\\,\\mathrm{K}$ なら $M=\\dfrac{254.4}{\\Delta t}\\fallingdotseq196\\sim231$．この範囲に入る $106n$ は $212$ だけなので，\\textbf{分子式は1つに決まる}．\n\\item ベンゼン：真の値 $0.154\\,\\mathrm{K}$ に対して $\\Delta t=0.054\\sim0.254\\,\\mathrm{K}$ となりうるので $M=\\dfrac{32.6}{\\Delta t}\\fallingdotseq128\\sim6.1\\times10^{2}$．$212,318,424,530$ がすべて入るので\\textbf{分子式は決まらない}．\n\\end{itemize}\n同じ温度の測定誤差でも，降下度そのものが小さいと相対誤差が大きくなる（ショウノウ約 $8\\,\\%$，ベンゼン約 $65\\,\\%$）．モル凝固点降下の大きいショウノウは，少量の試料で大きな降下度が得られるので，有機化合物の分子量測定に向いている．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "凝固点降下から求める分子量は降下度に反比例するので，同じ温度の測定誤差でも降下度が小さいほど分子量の誤差が大きい．モル凝固点降下の大きい溶媒（ショウノウ）を使うと，組成式の整数倍の候補を1つに絞れる．"
+ },
+ "concepts": [
+  "organic-structure",
+  "elemental-analysis",
+  "solution-colligative"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "凝固点降下",
+  "ショウノウ",
+  "分子量測定",
+  "組成式",
+  "測定誤差"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

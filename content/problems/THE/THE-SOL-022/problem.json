@@ -1,0 +1,99 @@
+{
+ "id": "THE-SOL-022",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-09",
+ "topic": "ラウールの法則と蒸気を通じた溶媒の移動",
+ "course": "化学",
+ "level": 1,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水 $90.0\\,\\mathrm g$ に尿素 $\\ce{CO(NH2)2}$ $3.00\\,\\mathrm g$ を溶かした溶液を A，水 $90.0\\,\\mathrm g$ に塩化ナトリウム $0.0500\\,\\mathrm{mol}$ を溶かした溶液を B とする．塩化ナトリウムは完全に電離し，溶液上の水の蒸気圧は，純水の蒸気圧に溶液中の水のモル分率（溶質粒子にはイオンも1個ずつ数える）をかけた値になる（ラウールの法則）．$25$ ℃ における水の飽和蒸気圧は $3.17\\times10^{3}\\,\\mathrm{Pa}$，分子量は $\\ce{H2O}=18.0$，$\\ce{CO(NH2)2}=60.0$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A，B それぞれについて，水のモル分率と $25$ ℃ での蒸気圧を有効数字3桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "A と B を別々のフラスコに入れ，内部を真空にした連結管でつないで $25$ ℃ に保つと，水はどちらからどちらへ移動するか．また，B の塩化ナトリウムを同じ物質量のグルコースに替えた場合はどうなるか．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) で A と B をつないだ場合，水の移動が止まるまでに移動する水は何 g か．有効数字3桁で答えよ．ただし，気相に存在する水の量は無視できるものとする．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "A：モル分率 $0.990$，蒸気圧 $3.14\\times10^{3}\\,\\mathrm{Pa}$，B：モル分率 $0.980$，蒸気圧 $3.11\\times10^{3}\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "2",
+    "tex": "蒸気圧の高い A から低い B へ移動する．グルコースに替えると溶質粒子の物質量が A と等しくなり蒸気圧も等しいので，水は移動しない．"
+   },
+   {
+    "id": "3",
+    "tex": "$30.0\\,\\mathrm g$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 水はどちらも $90.0/18.0=5.00\\,\\mathrm{mol}$．A の溶質は尿素 $3.00/60.0=0.0500\\,\\mathrm{mol}$（非電解質）．B は $\\ce{NaCl -> Na+ + Cl-}$ により溶質粒子が $0.100\\,\\mathrm{mol}$．\n\\[ x_\\mathrm A=\\frac{5.00}{5.05}=\\boldsymbol{0.990},\\quad P_\\mathrm A=3.17\\times10^{3}\\times0.9901=\\boldsymbol{3.14\\times10^{3}\\,\\mathrm{Pa}} \\]\n\\[ x_\\mathrm B=\\frac{5.00}{5.10}=\\boldsymbol{0.980},\\quad P_\\mathrm B=3.17\\times10^{3}\\times0.9804=\\boldsymbol{3.11\\times10^{3}\\,\\mathrm{Pa}} \\]\n\\textbf{(2)} 水蒸気は蒸気圧の高い側から低い側へ移って凝縮するので，\\textbf{A から B} へ移動する．グルコース（非電解質）$0.0500\\,\\mathrm{mol}$ に替えると，B の溶質粒子も $0.0500\\,\\mathrm{mol}$ となって A と同じモル分率・蒸気圧になり，水は\\textbf{移動しない}．\n\\textbf{(3)} 移動する水を $y\\,\\mathrm{mol}$ とすると，両方の水のモル分率（＝蒸気圧）が等しくなったところで止まる．溶質粒子の割合が等しければよいので\n\\[ \\frac{0.0500}{5.00-y}=\\frac{0.100}{5.00+y} \\quad\\Rightarrow\\quad y=1.667\\,\\mathrm{mol} \\]\n質量は $1.667\\times18.0=\\boldsymbol{30.0\\,\\mathrm g}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "溶液上の溶媒の蒸気圧は溶媒のモル分率に比例し，電解質ではイオンの数で粒子を数える．蒸気を共有する2つの溶液では蒸気圧の高い方から低い方へ溶媒が移り，両者の溶媒のモル分率が等しくなると止まる．"
+ },
+ "concepts": [
+  "solution-colligative",
+  "vapor-pressure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ラウールの法則",
+  "蒸気圧降下",
+  "モル分率",
+  "電解質"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

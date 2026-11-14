@@ -1,0 +1,108 @@
+{
+ "id": "THE-ACB-017",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-05",
+ "topic": "実験結果から酸化物を決める",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "condition",
+  "qa"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "5 種類の白色または黒色の粉末 A〜E は，$\\ce{CaO}$，$\\ce{Al2O3}$，$\\ce{SiO2}$，$\\ce{CuO}$，$\\ce{P4O10}$ のいずれかである．それぞれについて次の実験を行った．\\\\\n実験 1：水に加えると，D と E は発熱しながら溶け，D の水溶液は酸性，E の水溶液は塩基性を示した．A，B，C は水に溶けなかった．\\\\\n実験 2：A，B，C を希塩酸に加えると，A は溶けて青色の水溶液に，B は溶けて無色の水溶液になった．C は溶けなかった．\\\\\n実験 3：A，B，C を水酸化ナトリウム水溶液に加えると，B だけが溶けた．C は水酸化ナトリウムとともに高温で融解すると反応した．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A〜E の化学式を答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "A〜E を，酸性酸化物・塩基性酸化物・両性酸化物に分類せよ．"
+     },
+     {
+      "id": "3",
+      "tex": "B が水酸化ナトリウム水溶液に溶ける変化を化学反応式で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "D の水溶液と E の水溶液を混ぜると白色沈殿が生じた．この沈殿の化学式を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "A $\\ce{CuO}$，B $\\ce{Al2O3}$，C $\\ce{SiO2}$，D $\\ce{P4O10}$，E $\\ce{CaO}$"
+   },
+   {
+    "id": "2",
+    "tex": "酸性酸化物：C，D　塩基性酸化物：A，E　両性酸化物：B"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{Al2O3 + 2NaOH + 3H2O -> 2Na[Al(OH)4]}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{Ca3(PO4)2}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 水と反応して溶けるのは $\\ce{P4O10}$（酸性：$\\ce{P4O10 + 6H2O -> 4H3PO4}$）と $\\ce{CaO}$（塩基性：$\\ce{CaO + H2O -> Ca(OH)2}$）．よって D は $\\ce{P4O10}$，E は $\\ce{CaO}$．\n\n水に溶けない 3 つのうち，希塩酸に溶けて青色になるのは $\\ce{CuO}$（$\\ce{CuO + 2HCl -> CuCl2 + H2O}$，$\\ce{Cu^2+}$ の青色）で A．酸にも塩基にも溶ける B は両性酸化物の $\\ce{Al2O3}$．酸に溶けず，塩基と高温で反応する C は $\\ce{SiO2}$（$\\ce{SiO2 + 2NaOH -> Na2SiO3 + H2O}$）．\n\n\\textbf{(2)} 塩基と反応する C，D は\\textbf{酸性酸化物}，酸と反応する A，E は\\textbf{塩基性酸化物}，両方と反応する B は\\textbf{両性酸化物}．非金属の酸化物は酸性，典型金属・遷移金属の多くの酸化物は塩基性で，Al・Zn などの酸化物が両性になる．\n\n\\textbf{(3)}\n\\[ \\ce{Al2O3 + 2NaOH + 3H2O -> 2Na[Al(OH)4]} \\]\n\n\\textbf{(4)} D の水溶液はリン酸，E の水溶液は水酸化カルシウム．中和して水に溶けにくいリン酸カルシウムが沈殿する．\n\\[ \\ce{2H3PO4 + 3Ca(OH)2 -> Ca3(PO4)2 + 6H2O} \\]\n沈殿は $\\boldsymbol{\\mathrm{Ca_3(PO_4)_2}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "酸化物が水・酸・塩基のどれと反応するかの組み合わせから，酸性・塩基性・両性を判定して物質を逆に決める（SiO₂ は水にも酸にも溶けず塩基と高温で反応，Al₂O₃ は酸にも塩基にも溶ける）．"
+ },
+ "concepts": [
+  "acid-base",
+  "amphoteric"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "酸化物",
+  "酸性酸化物",
+  "塩基性酸化物",
+  "両性酸化物",
+  "物質の決定"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,101 @@
+{
+ "id": "THE-RDX-013",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-06",
+ "topic": "ヨウ素滴定による二酸化硫黄と硫化水素の同時定量",
+ "course": "化学",
+ "level": 3,
+ "minutes": 20,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "二酸化硫黄と硫化水素を含む気体を，$0.0500\\,\\mathrm{mol/L}$ のヨウ素溶液（ヨウ化カリウムを含む）$500\\,\\mathrm{mL}$ にゆっくり通し，両方の気体を完全に吸収させた．このとき二酸化硫黄は硫酸に，硫化水素は硫黄に酸化された．生じた硫黄をろ過して除き，ろ液を $500\\,\\mathrm{mL}$ として，次の実験を行った．\\\\\n（実験1）ろ液 $50.0\\,\\mathrm{mL}$ をデンプンを指示薬として $0.100\\,\\mathrm{mol/L}$ チオ硫酸ナトリウム水溶液で滴定すると，$30.0\\,\\mathrm{mL}$ を要した．ヨウ素とチオ硫酸ナトリウムは $\\ce{I2 + 2Na2S2O3 -> 2NaI + Na2S4O6}$ のように反応する．\\\\\n（実験2）別のろ液 $50.0\\,\\mathrm{mL}$ に塩化バリウム水溶液を十分に加えると，硫酸バリウムの沈殿が $0.0932\\,\\mathrm g$ 得られた．\\\\\n原子量は O = 16，S = 32，Ba = 137 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ヨウ素と二酸化硫黄，ヨウ素と硫化水素の反応を，それぞれ化学反応式で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "吸収された二酸化硫黄と硫化水素の物質量をそれぞれ有効数字2桁で求め，その体積比（同温・同圧）を簡単な整数比で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "同じ物質量の二酸化硫黄と硫化水素について，消費するヨウ素の物質量と，吸収液中に生じる $\\ce{H+}$ の物質量をそれぞれ比べよ．また，実験1だけでは2つの気体の量を決められない理由を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{SO2 + I2 + 2H2O -> H2SO4 + 2HI}$，$\\ce{H2S + I2 -> S + 2HI}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{SO2}$：$4.0\\times10^{-3}\\,\\mathrm{mol}$，$\\ce{H2S}$：$6.0\\times10^{-3}\\,\\mathrm{mol}$，$\\ce{SO2}:\\ce{H2S}=2:3$"
+   },
+   {
+    "id": "3",
+    "tex": "ヨウ素はどちらも 1 mol あたり 1 mol で等しい；$\\ce{H+}$ は $\\ce{SO2}$ が 4 mol，$\\ce{H2S}$ が 2 mol で $\\ce{SO2}$ の方が多い．実験1でわかるのは消費されたヨウ素の総量（2つの気体の物質量の和）だけだから"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\ce{SO2 + I2 + 2H2O -> H2SO4 + 2HI}$（S：$+4\\to+6$），$\\ce{H2S + I2 -> S + 2HI}$（S：$-2\\to0$）．どちらも気体 1 mol がヨウ素 1 mol と反応する．\n\n\\textbf{(2)} 実験2より，$50.0\\,\\mathrm{mL}$ 中の硫酸は $\\ce{BaSO4}$（式量 233）として $\\dfrac{0.0932}{233}=4.00\\times10^{-4}\\,\\mathrm{mol}$．全体では10倍で\n\\[ n(\\ce{SO2})=\\boldsymbol{4.0\\times10^{-3}\\,\\mathrm{mol}} \\]\n実験1より，$50.0\\,\\mathrm{mL}$ 中に残っていたヨウ素は $\\dfrac12\\times0.100\\times\\dfrac{30.0}{1000}=1.50\\times10^{-3}\\,\\mathrm{mol}$，全体で $1.50\\times10^{-2}\\,\\mathrm{mol}$．はじめのヨウ素は $0.0500\\times0.500=2.50\\times10^{-2}\\,\\mathrm{mol}$ なので，消費されたのは $1.00\\times10^{-2}\\,\\mathrm{mol}$．\n\\[ n(\\ce{SO2})+n(\\ce{H2S})=1.00\\times10^{-2}\\quad\\Rightarrow\\quad n(\\ce{H2S})=\\boldsymbol{6.0\\times10^{-3}\\,\\mathrm{mol}} \\]\n体積比は物質量比に等しく $\\ce{SO2}:\\ce{H2S}=\\boldsymbol{2:3}$．\n\n\\textbf{(3)} 消費するヨウ素はどちらも気体 1 mol あたり 1 mol で \\textbf{等しい}．生じる $\\ce{H+}$ は，$\\ce{SO2}$ 1 mol から $\\ce{H2SO4}$ 1 mol と $\\ce{HI}$ 2 mol で 4 mol，$\\ce{H2S}$ 1 mol からは $\\ce{HI}$ 2 mol で 2 mol．\\\\\n実験1で求まるのは「消費されたヨウ素＝2つの気体の物質量の和」だけで，未知数が2つあるので，硫酸イオンの量（実験2）のような，もう1つの独立な情報が必要になる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "2種類の還元剤が同じ酸化剤（ヨウ素）を消費する場合，残った酸化剤の逆滴定からは還元剤の総量しかわからないので，一方だけに由来する生成物（硫酸イオン）を別に定量して連立させる．"
+ },
+ "concepts": [
+  "redox",
+  "halogen",
+  "oxygen-sulfur"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "酸化還元滴定",
+  "ヨウ素滴定",
+  "チオ硫酸ナトリウム",
+  "二酸化硫黄",
+  "硫化水素"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

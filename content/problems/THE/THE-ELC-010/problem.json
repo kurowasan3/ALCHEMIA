@@ -1,0 +1,101 @@
+{
+ "id": "THE-ELC-010",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-07",
+ "topic": "起電力の加法性と濃淡電池",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "compare",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "4種類の2価の金属 A，B，C，D について，それぞれの金属を同じ金属のイオンを $1\\,\\mathrm{mol/L}$ 含む水溶液に浸し，素焼き板で仕切ってダニエル型の電池をつくった．負極・正極と起電力は次のとおりであった．\n\\[ \\text{電池 (i)}：(-)\\,\\mathrm{A}\\,|\\,\\mathrm{B}\\,(+)\\ \\ 0.78\\,\\mathrm V,\\qquad \\text{電池 (ii)}：(-)\\,\\mathrm{C}\\,|\\,\\mathrm{A}\\,(+)\\ \\ 0.50\\,\\mathrm V,\\qquad \\text{電池 (iii)}：(-)\\,\\mathrm{A}\\,|\\,\\mathrm{D}\\,(+)\\ \\ 1.24\\,\\mathrm V \\]\n起電力は，2つの電極の組み合わせごとに加え合わせたり差し引いたりできるものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A〜D をイオン化傾向の大きい順に並べよ．"
+     },
+     {
+      "id": "2",
+      "tex": "C と D，B と D の組み合わせで同様の電池をつくった．それぞれ負極になる金属と起電力を答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "両側とも金属 A を電極とし，一方を $\\ce{\\text{A}^2+}$ $0.010\\,\\mathrm{mol/L}$，他方を $\\ce{\\text{A}^2+}$ $1\\,\\mathrm{mol/L}$ の水溶液にした電池をつくった．負極になるのはどちら側の電極か．また，放電を続けると両側の $\\ce{\\text{A}^2+}$ の濃度と起電力はどう変化するか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "C，A，B，D"
+   },
+   {
+    "id": "2",
+    "tex": "C と D：C が負極，$1.74\\,\\mathrm V$；B と D：B が負極，$0.46\\,\\mathrm V$"
+   },
+   {
+    "id": "3",
+    "tex": "$0.010\\,\\mathrm{mol/L}$ 側の電極が負極．うすい側の濃度は大きく，濃い側の濃度は小さくなって両者が近づき，起電力はしだいに小さくなって最後は 0 になる"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} ダニエル型電池では，イオン化傾向の大きい金属が電子を放出して負極になる．(i) より A > B，(ii) より C > A，(iii) より A > D．起電力は (iii) の方が (i) より大きいので，D は B よりさらにイオン化傾向が小さい．よって \\textbf{C > A > B > D}．\n\n\\textbf{(2)} 各金属の「電子の出しやすさ」の差が起電力なので，差を足し引きする．\n\\[ \\mathrm{C}\\,|\\,\\mathrm{D}：0.50+1.24=\\boldsymbol{1.74\\,\\mathrm V}\\ （\\text{C が負極}） \\]\n\\[ \\mathrm{B}\\,|\\,\\mathrm{D}：1.24-0.78=\\boldsymbol{0.46\\,\\mathrm V}\\ （\\text{B が負極}） \\]\n\n\\textbf{(3)} $\\ce{\\text{A} <=> \\text{A}^2+ + 2e-}$ において，$\\ce{\\text{A}^2+}$ がうすい側では金属が溶け出しやすく（平衡が右へ），濃い側では $\\ce{\\text{A}^2+}$ が析出しやすい．よって $\\boldsymbol{0.010\\,\\mathrm{mol/L}}$ \\textbf{側が負極}（$\\ce{\\text{A} -> \\text{A}^2+ + 2e-}$），濃い側が正極（$\\ce{\\text{A}^2+ + 2e- -> \\text{A}}$）となる．放電を続けるとうすい側の $\\ce{\\text{A}^2+}$ は増え，濃い側は減るので濃度の差が小さくなり，\\textbf{起電力はしだいに小さくなって，濃度が等しくなると 0} になる．このような電池を濃淡電池という．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ダニエル型電池の起電力は2つの電極の電子の出しやすさの差なので，共通の電極をもつ電池の起電力を足し引きして別の組み合わせの起電力やイオン化傾向の順を求められる．同じ金属でもイオン濃度が異なれば電池（濃淡電池）になり，うすい側が負極で，濃度が等しくなると起電力は 0 になる．"
+ },
+ "concepts": [
+  "electrolysis",
+  "concentration",
+  "battery"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電池",
+  "起電力",
+  "イオン化傾向",
+  "濃淡電池",
+  "ダニエル電池"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

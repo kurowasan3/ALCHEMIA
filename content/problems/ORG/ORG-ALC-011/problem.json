@@ -1,0 +1,109 @@
+{
+ "id": "ORG-ALC-011",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-03",
+ "topic": "C₅H₁₂O のアルコールの酸化と不斉炭素原子のゆくえ",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "condition",
+  "structure"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "分子式 $\\ce{C5H12O}$ で表されるアルコールは8種類ある（立体異性体は区別しない）．これらについて次の問いに答えよ．酸化は，硫酸酸性の二クロム酸カリウム水溶液を用いておだやかに行うものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "8種類のうち，不斉炭素原子をもつものをすべて示性式で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) のアルコールをそれぞれ酸化して得られる化合物の示性式を答え，その化合物が不斉炭素原子をもつかどうかを答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "8種類のうち，この条件で酸化されないものの示性式を答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "アルコール P は不斉炭素原子をもち，ヨードホルム反応を示す．また，P を濃硫酸で脱水して得られるアルケンに水素を付加すると，炭素鎖に枝分かれをもつアルカンが得られる．P の示性式を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{CH3CH(OH)CH2CH2CH3}$，$\\ce{HOCH2CH(CH3)CH2CH3}$，$\\ce{CH3CH(OH)CH(CH3)2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{CH3CH(OH)CH2CH2CH3}$ → $\\ce{CH3COCH2CH2CH3}$（不斉炭素原子をもたない），$\\ce{HOCH2CH(CH3)CH2CH3}$ → $\\ce{OHCCH(CH3)CH2CH3}$（不斉炭素原子をもつ），$\\ce{CH3CH(OH)CH(CH3)2}$ → $\\ce{CH3COCH(CH3)2}$（不斉炭素原子をもたない）"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{(CH3)2C(OH)CH2CH3}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{CH3CH(OH)CH(CH3)2}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\ce{C5H12O}$ のアルコール8種のうち，4種の異なる原子・原子団が結合した炭素をもつのは\n\\begin{itemize}\n\\item 2-ペンタノール $\\ce{CH3C^{*}H(OH)CH2CH2CH3}$（OH のついた炭素が不斉）\n\\item 2-メチル-1-ブタノール $\\ce{HOCH2C^{*}H(CH3)CH2CH3}$（OH のついていない炭素が不斉）\n\\item 3-メチル-2-ブタノール $\\ce{CH3C^{*}H(OH)CH(CH3)2}$（OH のついた炭素が不斉）\n\\end{itemize}\n（3-ペンタノールは C3 に $\\ce{C2H5}$ が2つ，3-メチル-1-ブタノールは C3 に $\\ce{CH3}$ が2つで，不斉炭素をもたない．）\n\n\\textbf{(2) 不斉炭素はどこにあるか} 酸化で変化するのは OH のついた炭素だけで，$\\mathrm{>CH-OH}$ が $\\mathrm{>C=O}$ になると，その炭素は H を失い二重結合をもつので不斉炭素ではなくなる．\n\\begin{itemize}\n\\item 第二級の 2-ペンタノール，3-メチル-2-ブタノールは，不斉炭素そのものが酸化されてケトン（2-ペンタノン，3-メチル-2-ブタノン）になり，\\textbf{不斉炭素は消える}．\n\\item 第一級の 2-メチル-1-ブタノールでは，酸化されるのは $\\mathrm{-CH_{2}OH}$ で，不斉炭素（C2）は変化しない．アルデヒド $\\ce{OHC-C^{*}H(CH3)CH2CH3}$（2-メチルブタナール）は\\textbf{不斉炭素をもつ}．\n\\end{itemize}\n\n\\textbf{(3)} OH のついた炭素に H がない第三級アルコール，2-メチル-2-ブタノール $\\boldsymbol{\\ce{(CH3)2C(OH)CH2CH3}}$．\n\n\\textbf{(4) 条件をしぼる} ヨードホルム反応を示すのは $\\mathrm{CH_{3}CH(OH)-}$ をもつ 2-ペンタノールと 3-メチル-2-ブタノール（どちらも不斉炭素あり）．脱水・水素付加しても炭素骨格は変わらず，2-ペンタノールはペンタン（枝分かれなし），3-メチル-2-ブタノールは 2-メチルブタン（枝分かれあり）になる．よって P は $\\boldsymbol{\\ce{CH3CH(OH)CH(CH3)2}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "アルコールを酸化すると OH のついた炭素だけが C=O に変わるので，不斉炭素がその炭素なら消え（第二級アルコール→ケトン），別の炭素なら残る（2-メチル-1-ブタノール→キラルなアルデヒド）．不斉炭素の位置・アルコールの級数・ヨードホルム反応・炭素骨格を組み合わせて構造を決める．"
+ },
+ "concepts": [
+  "alcohol-carbonyl",
+  "carbon-silicon",
+  "organic-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "アルコールの酸化",
+  "不斉炭素原子",
+  "第三級アルコール",
+  "ヨードホルム反応",
+  "構造決定"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

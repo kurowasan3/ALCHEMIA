@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 295" width="440" height="295">
+<text x="210" y="22" text-anchor="middle" font-size="15" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">TiB₂ の単位格子（平面図）</text>
+<polygon points="60.0,143.2 204.0,60.0 348.0,143.2 204.0,226.4" fill="none" stroke="currentColor" stroke-width="2"/>
+<circle cx="60.0" cy="143.2" r="9" fill="currentColor"/>
+<circle cx="204.0" cy="60.0" r="9" fill="currentColor"/>
+<circle cx="348.0" cy="143.2" r="9" fill="currentColor"/>
+<circle cx="204.0" cy="226.4" r="9" fill="currentColor"/>
+<text x="30.0" y="91.6" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">a = 0.3029 nm</text>
+<text x="288.0" y="97.6" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">a = 0.3029 nm</text>
+<text x="76.0" y="148.2" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">60°</text>
+<text x="190.0" y="86.0" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">120°</text>
+<circle cx="300" cy="240" r="7" fill="currentColor"/><text x="314" y="245" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">Ti</text>
+<text x="20" y="285" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">高さ c = 0.3228 nm の柱の 8 頂点に Ti（真上から見た図）</text>
+</svg>

@@ -1,0 +1,110 @@
+{
+ "id": "INO-PPT-040",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-08",
+ "topic": "アンモニア水と水酸化ナトリウム水溶液の使い分けによる Al・Fe・Zn の分離と重量分析",
+ "course": "化学",
+ "level": 3,
+ "minutes": 20,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "$\\ce{Al^3+}$，$\\ce{Fe^3+}$，$\\ce{Zn^2+}$ を含む酸性の水溶液 $200\\,\\mathrm{mL}$ を2等分して，溶液 (A)，(B) とした．\n・溶液 (A) に過剰のアンモニア水を加え，生じた沈殿 P をろ過して取り出した．\\\\\n・溶液 (B) に過剰の水酸化ナトリウム水溶液を加え，生じた沈殿 Q をろ過して取り出した．\\\\\nP，Q をそれぞれ強熱して酸化物にしたところ，質量は P からのものが $0.364\\,\\mathrm g$，Q からのものが $0.160\\,\\mathrm g$ であった．原子量は O = 16，Al = 27，Fe = 56 とし，沈殿は完全に生じ，ろ過・強熱による損失はないものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "沈殿 P，Q に含まれる化合物をそれぞれ化学式で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "溶液 (A) のろ液と溶液 (B) のろ液に含まれる金属を含むイオンを，それぞれ化学式で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "もとの水溶液中の $\\ce{Fe^3+}$ と $\\ce{Al^3+}$ のモル濃度をそれぞれ有効数字3桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "溶液 (A) のろ液に含まれる亜鉛の量を沈殿として確かめたい．次の操作のうち適切なものを1つ選べ．\\\\\n（ア）さらにアンモニア水を加える　（イ）硫化水素を通じる　（ウ）塩化ナトリウム水溶液を加える"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "P：$\\ce{Al(OH)3}$ と $\\ce{Fe(OH)3}$，Q：$\\ce{Fe(OH)3}$"
+   },
+   {
+    "id": "2",
+    "tex": "(A)：$\\ce{[Zn(NH3)4]^2+}$，(B)：$\\ce{[Al(OH)4]-}$ と $\\ce{[Zn(OH)4]^2-}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{Fe^3+}$：$2.00\\times10^{-2}\\,\\mathrm{mol/L}$，$\\ce{Al^3+}$：$4.00\\times10^{-2}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "4",
+    "tex": "（イ）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)(2)} \nアンモニア水では $\\ce{Al^3+}$，$\\ce{Fe^3+}$ は水酸化物として沈殿するが，$\\ce{Al(OH)3}$ は過剰のアンモニア水には溶けない．$\\ce{Zn^2+}$ はいったん $\\ce{Zn(OH)2}$ となるが，過剰のアンモニア水でテトラアンミン亜鉛(II) イオンとなって溶ける．\n\\[\\ce{Al^3+ + 3NH3 + 3H2O -> Al(OH)3 + 3NH4+}\\qquad \\ce{Zn^2+ + 4NH3 -> [Zn(NH3)4]^2+}\\]\n水酸化ナトリウム水溶液では，両性の Al と Zn がヒドロキシド錯イオンとなって溶け，$\\ce{Fe(OH)3}$ だけが残る．\n\\[\\ce{Al^3+ + 4OH- -> [Al(OH)4]-}\\qquad \\ce{Zn^2+ + 4OH- -> [Zn(OH)4]^2-}\\qquad \\ce{Fe^3+ + 3OH- -> Fe(OH)3}\\]\nよって P は $\\boldsymbol{\\ce{Al(OH)3},\\ \\ce{Fe(OH)3}}$，Q は $\\boldsymbol{\\ce{Fe(OH)3}}$．(A) のろ液には $\\boldsymbol{\\ce{[Zn(NH3)4]^2+}}$，(B) のろ液には $\\boldsymbol{\\ce{[Al(OH)4]-},\\ \\ce{[Zn(OH)4]^2-}}$．2つの試薬の「溶かすもの」の違い（アンモニア水は Zn だけ，NaOH は Al と Zn）を組み合わせると，Al と Fe を別々に定量できる．\n\n\\textbf{(3)} 強熱すると $\\ce{2Fe(OH)3 -> Fe2O3 + 3H2O}$，$\\ce{2Al(OH)3 -> Al2O3 + 3H2O}$．\nQ からの $\\ce{Fe2O3}$（式量 160）は $\\dfrac{0.160}{160} = 1.00\\times10^{-3}\\,\\mathrm{mol}$ で，Fe は $2.00\\times10^{-3}\\,\\mathrm{mol}$．\nP からの酸化物のうち $\\ce{Al2O3}$（式量 102）は $0.364 - 0.160 = 0.204\\,\\mathrm g$（(A) と (B) は同じ量の Fe を含む）で $2.00\\times10^{-3}\\,\\mathrm{mol}$，Al は $4.00\\times10^{-3}\\,\\mathrm{mol}$．\nどちらも $100\\,\\mathrm{mL}$ 中の量で，もとの水溶液の濃度も同じなので\n\\[[\\ce{Fe^3+}] = \\frac{2.00\\times10^{-3}}{0.100} = \\boldsymbol{2.00\\times10^{-2}\\,\\mathrm{mol/L}},\\qquad [\\ce{Al^3+}] = \\frac{4.00\\times10^{-3}}{0.100} = \\boldsymbol{4.00\\times10^{-2}\\,\\mathrm{mol/L}}\\]\n\n\\textbf{(4)} 塩基性のアンミン錯イオンの溶液に $\\ce{H2S}$ を通じると，白色の $\\ce{ZnS}$ が沈殿する．アンモニア水をさらに加えても錯イオンのままで，$\\ce{Cl-}$ では沈殿しない．よって $\\boldsymbol{\\text{（イ）}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "アンモニア水過剰では Zn だけがアンミン錯イオンとして溶け，水酸化ナトリウム過剰では両性の Al と Zn が溶けて Fe(OH)3 だけが残る．2種類の沈殿を強熱した酸化物の質量差から，Al と Fe をそれぞれ定量できる．"
+ },
+ "concepts": [
+  "precipitation",
+  "complex-ion",
+  "amphoteric"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "系統分析",
+  "両性水酸化物",
+  "錯イオン",
+  "重量分析",
+  "アンミン錯体",
+  "酸化物"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

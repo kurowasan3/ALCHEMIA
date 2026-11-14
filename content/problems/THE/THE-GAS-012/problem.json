@@ -1,0 +1,122 @@
+{
+ "id": "THE-GAS-012",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-08",
+ "topic": "等温線（圧力－モル体積図）と気液共存",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図は，アンモニアを 20 ℃ に保ってピストンで圧縮したときの，圧力とモル体積（1 mol あたりの体積）の関係を模式的に示したものである．点 Q（モル体積 $2.5\\,\\mathrm{L/mol}$）から点 R（モル体積 $0.028\\,\\mathrm{L/mol}$）までは圧力が $8.6\\times10^{5}\\,\\mathrm{Pa}$ で一定である．原子量は $\\mathrm H=1.0$，$\\mathrm N=14$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "区間 PQ，QR，RS で，容器内のアンモニアはそれぞれどのような状態にあるか．"
+     },
+     {
+      "id": "2",
+      "tex": "20 ℃ における液体のアンモニアの密度は何 $\\mathrm{g/cm^3}$ か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "20 ℃ で，容積 $2.0\\,\\mathrm L$ の容器にアンモニア $2.0\\,\\mathrm{mol}$ を封入した．容器内の液体のアンモニアは何 g か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "アンモニアの臨界温度は 132 ℃ である．(a) 40 ℃ の等温線の水平部分は，20 ℃ のものと比べて圧力と長さがそれぞれどうなるか．(b) 150 ℃ でいくら圧縮しても液体が現れない理由を，等温線の形にふれて説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：等温線（圧力－モル体積図）と気液共存",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "PQ：気体のみ，QR：気体と液体が共存，RS：液体のみ"
+   },
+   {
+    "id": "2",
+    "tex": "$0.61\\,\\mathrm{g/cm^3}$"
+   },
+   {
+    "id": "3",
+    "tex": "21 g"
+   },
+   {
+    "id": "4",
+    "tex": "(a) 圧力は高くなり，水平部分は短くなる．(b) 臨界温度より高いと等温線に水平部分（気液共存の区間）がなく，気体と液体の区別がない状態（超臨界状態）になるから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　PQ では圧縮に伴い圧力が上がる気体のみ．点 Q で飽和蒸気圧（$8.6\\times10^{5}\\,\\mathrm{Pa}$）に達して凝縮が始まり，QR では圧力が一定のまま凝縮が進む（\\textbf{気液共存}）．点 R ですべて液体になり，RS は\\textbf{液体のみ}（ほとんど縮まないので急に立ち上がる）．\n\n\\textbf{(2)}　点 R は液体だけの状態で，$\\ce{NH3}=17$ より $\\dfrac{17\\,\\mathrm g}{0.028\\,\\mathrm L}=607\\,\\mathrm{g/L}=\\boldsymbol{0.61\\,\\mathrm{g/cm^3}}$．\n\n\\textbf{(3)}　平均のモル体積は $\\dfrac{2.0}{2.0}=1.0\\,\\mathrm{L/mol}$ で Q と R の間にあるので気液共存．気体を $n_\\mathrm g$，液体を $n_\\mathrm l\\,(\\mathrm{mol})$ とすると，気体は Q の，液体は R のモル体積をもつから\n\\[n_\\mathrm g+n_\\mathrm l=2.0,\\qquad 2.5\\,n_\\mathrm g+0.028\\,n_\\mathrm l=2.0\\]\nこれを解いて $n_\\mathrm g=0.786\\,\\mathrm{mol}$，$n_\\mathrm l=1.21\\,\\mathrm{mol}$．液体は $1.21\\times17=20.6\\approx\\boldsymbol{21\\,\\mathrm g}$．\n\n\\textbf{(4)}　(a) 温度が高いほど飽和蒸気圧は高いので水平部分の圧力は\\textbf{高く}なる．また気体のモル体積は小さく，液体は熱膨張でわずかに大きくなるので，水平部分は\\textbf{短く}なる（臨界温度で長さ 0 になる）．\n(b) 臨界温度より高い温度では等温線に水平部分が現れず，圧縮しても気体と液体の共存状態を経ない．密度が連続的に大きくなるだけで，気体と液体の区別がつかない超臨界状態になる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "圧力－モル体積の等温線の水平部分が気液共存（圧力＝飽和蒸気圧）であることを読み取り，両端のモル体積を使って共存状態での液体と気体の量を連立方程式で求める．温度を上げると水平部分が高く短くなり臨界温度で消えることを判断する．"
+ },
+ "concepts": [
+  "ideal-gas",
+  "vapor-pressure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "状態変化",
+  "等温線",
+  "気液平衡",
+  "臨界点",
+  "蒸気圧"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

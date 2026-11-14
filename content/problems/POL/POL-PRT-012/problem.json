@@ -1,0 +1,109 @@
+{
+ "id": "POL-PRT-012",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-05",
+ "topic": "ジペプチドの立体異性体と加水分解物の旋光性",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "qa",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "アラニンには鏡像異性体（D 体と L 体）がある．ラセミ体のアラニン（D 体と L 体の等量混合物）と，L 体だけからなるフェニルアラニン（L-フェニルアラニン）を混合し，人工的に縮合させて鎖状のジペプチドをつくった．アミノ酸の配列順序の違い，および D 体・L 体の違いはすべて区別し，同じアミノ酸どうしのジペプチドも含めるものとする．なお，反応中にアミノ酸の立体配置は変わらないものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "生じうるジペプチドは全部で何種類か．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) のジペプチドのうち，互いに鏡像異性体の関係にあるものの組は何組あるか．"
+     },
+     {
+      "id": "3",
+      "tex": "(1) のジペプチドをそれぞれ別々に完全に加水分解したとき，得られる水溶液が旋光性を示さないものは何種類か．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) で答えたジペプチドそのものの水溶液は旋光性を示すか．理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "9 種類"
+   },
+   {
+    "id": "2",
+    "tex": "2 組"
+   },
+   {
+    "id": "3",
+    "tex": "2 種類"
+   },
+   {
+    "id": "4",
+    "tex": "示す．D-アラニンと L-アラニンからなるジペプチドは，配列に向き（N 末端と C 末端）があるので，鏡像（L-Ala-D-Ala と D-Ala-L-Ala の関係）と重ね合わせることができない不斉な分子だから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "以下，D-アラニン＝D-Ala，L-アラニン＝L-Ala，L-フェニルアラニン＝L-Phe と書き，左を N 末端とする．\n\n(1)　材料は D-Ala，L-Ala，L-Phe の 3 種類．N 末端・C 末端それぞれに 3 通りずつ選べるので $3\\times3=\\boldsymbol{9}$ 種類．\n\n(2)　鏡像異性体は，すべての不斉炭素の D/L を入れかえたもの．L-Phe の鏡像（D-Phe）は材料にないので，Phe を含む 5 種類には鏡像の相手がない．アラニンだけの 4 種類では\n\\[ \\text{D-Ala-D-Ala と L-Ala-L-Ala},\\qquad \\text{D-Ala-L-Ala と L-Ala-D-Ala} \\]\nの $\\boldsymbol{2}$ 組．\n\n(3)　加水分解液が旋光性を示さないのは，D 体と L 体が等量のラセミ体になるときだけ．D-Ala-L-Ala と L-Ala-D-Ala の $\\boldsymbol{2}$ 種類（それぞれ D-Ala と L-Ala が 1:1）．D-Ala-D-Ala などは一方の鏡像異性体だけ，Phe を含むものは L-Phe が残るので旋光性を示す．\n\n(4)　D-Ala-L-Ala の鏡像は L-Ala-D-Ala であり，N 末端と C 末端は区別されるので両者は別の化合物である．すなわち D-Ala-L-Ala 自身は分子内に対称性がなく鏡像と重ならないので，$\\boldsymbol{\\text{旋光性を示す}}$．加水分解して生じる 2 つのアミノ酸がラセミ体になることと，もとの分子が旋光性をもつことは別である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "鏡像異性体が一方しかないアミノ酸を含むジペプチドには鏡像の相手が存在しない．ジペプチドは配列に向きがあるので D-L 型も不斉で旋光性を示すが，加水分解するとラセミ体になって旋光性を失う．"
+ },
+ "concepts": [
+  "protein-amino",
+  "organic-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "鏡像異性体",
+  "ジペプチド",
+  "ラセミ体",
+  "旋光性",
+  "アラニン",
+  "立体異性体"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

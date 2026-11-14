@@ -1,0 +1,109 @@
+{
+ "id": "THE-ION-092",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "金属水酸化物の溶解度と pH の関係（直線の傾きと価数）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "金属イオン $\\ce{M^{n+}}$ を含む水溶液の pH を上げていくと，水酸化物 $\\ce{M(OH)_n}$ が沈殿する．沈殿が存在するとき，溶液中の $[\\ce{M^{n+}}]$ は溶解度積 $K_{\\mathrm{sp}}=[\\ce{M^{n+}}][\\ce{OH-}]^n$ で決まる．水のイオン積は $K_w=1.0\\times10^{-14}\\,(\\mathrm{mol/L})^2$ とし，錯イオンの生成は考えない．溶解度積は次の値とする（単位省略）．\n\\[\\ce{Mg(OH)2}：1.0\\times10^{-11}\\qquad \\ce{Fe(OH)2}：1.0\\times10^{-15}\\qquad \\ce{Fe(OH)3}：1.0\\times10^{-38}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "沈殿が存在するとき，$\\log_{10}[\\ce{M^{n+}}]$ を $n$，$\\log_{10}K_{\\mathrm{sp}}$，pH を用いて表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "$\\ce{Mg^2+}$，$\\ce{Fe^2+}$，$\\ce{Fe^3+}$ をそれぞれ $1.0\\times10^{-2}\\,\\mathrm{mol/L}$ 含む水溶液がある．それぞれの水酸化物が沈殿し始める pH を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "沈殿が存在する範囲で pH を 1 大きくしたとき，イオンの濃度が $\\dfrac{1}{1000}$ になるのは $\\ce{Mg^2+}$，$\\ce{Fe^2+}$，$\\ce{Fe^3+}$ のどれか．"
+     },
+     {
+      "id": "4",
+      "tex": "ある金属イオン X の水酸化物について，沈殿が存在するときの $[\\ce{X}]$ を測ったところ，pH 4.0 で $1.0\\times10^{-3}\\,\\mathrm{mol/L}$，pH 5.0 で $1.0\\times10^{-6}\\,\\mathrm{mol/L}$ であった．X の価数と水酸化物の溶解度積を求めよ．また，X として最も適当なものを $\\ce{Al^3+}$，$\\ce{Zn^2+}$，$\\ce{Cu^2+}$ から選べ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\log_{10}[\\ce{M^{n+}}]=\\log_{10}K_{\\mathrm{sp}}+14n-n\\,\\mathrm{pH}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{Mg^2+}$：9.5，$\\ce{Fe^2+}$：7.5，$\\ce{Fe^3+}$：2.0"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{Fe^3+}$"
+   },
+   {
+    "id": "4",
+    "tex": "3 価，$1.0\\times10^{-33}$，$\\ce{Al^3+}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $[\\ce{OH-}]=\\dfrac{K_w}{[\\ce{H+}]}$ より $\\log_{10}[\\ce{OH-}]=-14+\\mathrm{pH}$．$[\\ce{M^{n+}}]=\\dfrac{K_{\\mathrm{sp}}}{[\\ce{OH-}]^n}$ の対数をとって\n\\[\\boldsymbol{\\log_{10}[\\ce{M^{n+}}]=\\log_{10}K_{\\mathrm{sp}}+14n-n\\,\\mathrm{pH}}\\]\n$\\log_{10}[\\ce{M^{n+}}]$ と pH のグラフは傾き $-n$ の直線になり，傾きの大きさが価数を表す．\n\n\\textbf{(2)} $\\log_{10}[\\ce{M^{n+}}]=-2.0$ を代入して pH を求める．\n\\[\\ce{Mg^2+}:\\ -2=-11+28-2\\,\\mathrm{pH}\\Rightarrow \\boldsymbol{\\mathrm{pH}=9.5}\\qquad \\ce{Fe^2+}:\\ -2=-15+28-2\\,\\mathrm{pH}\\Rightarrow \\boldsymbol{\\mathrm{pH}=7.5}\\]\n\\[\\ce{Fe^3+}:\\ -2=-38+42-3\\,\\mathrm{pH}\\Rightarrow \\boldsymbol{\\mathrm{pH}=2.0}\\]\n\n\\textbf{(3)} pH が 1 増えると $\\log_{10}[\\ce{M^{n+}}]$ は $n$ だけ減るので，$\\dfrac{1}{1000}$ になるのは $n=3$ の $\\boldsymbol{\\ce{Fe^3+}}$．2価のイオンでは $\\dfrac{1}{100}$ である．\n\n\\textbf{(4)} pH が 1 増えて濃度が $10^{-3}$ 倍になったので傾きは $-3$，$\\boldsymbol{3\\ \\text{価}}$．pH 4.0 の値を (1) の式に代入すると $-3.0=\\log_{10}K_{\\mathrm{sp}}+42-12$ より $\\log_{10}K_{\\mathrm{sp}}=-33$，$K_{\\mathrm{sp}}=\\boldsymbol{1.0\\times10^{-33}}$．3価のイオンは $\\boldsymbol{\\ce{Al^3+}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "水酸化物の沈殿と共存する金属イオンの濃度の対数は pH の一次式で，傾きの大きさが価数，切片が溶解度積を表す．沈殿し始める pH の計算と，2点の測定値から価数と溶解度積を逆に決めることができる．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "precipitation",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "溶解度積",
+  "水酸化物",
+  "pH",
+  "沈殿",
+  "価数"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

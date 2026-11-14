@@ -1,0 +1,144 @@
+{
+ "id": "THE-ELC-015",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-07",
+ "topic": "並列につないだ電解槽と電流の分かれ方",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，硝酸銀水溶液に2枚の銀板を浸した電解槽 I と，硫酸ナトリウム水溶液に2枚の白金板を浸した電解槽 II を並列につなぎ，可変抵抗 $R$ と電流計を通して直流電源に接続した．電流計の値が $0.500\\,\\mathrm{A}$ で一定になるように $R$ を調節しながら 32 分 10 秒間電気分解したところ，電解槽 I の陰極の質量が $0.648\\,\\mathrm{g}$ 増加した．Ag = 108，ファラデー定数 $F=9.65\\times10^{4}\\,\\mathrm{C/mol}$，標準状態の気体のモル体積を $22.4\\,\\mathrm{L/mol}$ とし，発生した気体は水に溶けないものとする．\n\n(4)〜(7) では，電源の電圧と $R$ の値を一定に保ったまま，示した操作を1つだけ行う．各電解槽は流れる電流に比例した電圧がかかる抵抗とみなしてよい．このとき，電解槽 I の陰極に単位時間あたりに析出する銀の質量は，操作前と比べて「増加」「減少」「変化なし」のどれになるか答えよ．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "回路全体を流れた電気量は何 C か．有効数字3桁で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "電解槽 II を流れた電気量は何 C か．有効数字3桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "電解槽 II の両極で発生した気体の体積の合計は，標準状態で何 mL か．有効数字3桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "電解槽 II の水溶液を，より濃い硫酸ナトリウム水溶液に替える．"
+     },
+     {
+      "id": "5",
+      "tex": "電解槽 I の2枚の銀板の間隔を狭くする．"
+     },
+     {
+      "id": "6",
+      "tex": "電解槽 II から白金板を1枚取り出す．"
+     },
+     {
+      "id": "7",
+      "tex": "可変抵抗 $R$ の値を大きくする．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：並列につないだ電解槽と電流の分かれ方",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$965\\,\\mathrm{C}$"
+   },
+   {
+    "id": "2",
+    "tex": "$386\\,\\mathrm{C}$"
+   },
+   {
+    "id": "3",
+    "tex": "$67.2\\,\\mathrm{mL}$"
+   },
+   {
+    "id": "4",
+    "tex": "減少"
+   },
+   {
+    "id": "5",
+    "tex": "増加"
+   },
+   {
+    "id": "6",
+    "tex": "増加"
+   },
+   {
+    "id": "7",
+    "tex": "減少"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $Q=0.500\\times(32\\times60+10)=0.500\\times1930=\\boldsymbol{965\\,\\mathrm{C}}$（電子 $1.00\\times10^{-2}\\,\\mathrm{mol}$）．\n\n\\textbf{(2)} 並列接続では，回路全体の電気量が2つの電解槽に分かれて流れる（直列のように同じ電気量が流れるのではない）．電解槽 I の陰極では $\\ce{Ag+ + e- -> Ag}$ なので，I を流れた電子は $0.648/108=6.00\\times10^{-3}\\,\\mathrm{mol}$，電気量は $579\\,\\mathrm{C}$．よって II は $965-579=\\boldsymbol{386\\,\\mathrm{C}}$（電子 $4.00\\times10^{-3}\\,\\mathrm{mol}$）．\n\n\\textbf{(3)} II は水の電気分解になる．陰極 $\\ce{2H2O + 2e- -> H2 + 2OH-}$ で $\\ce{H2}$ $2.00\\times10^{-3}\\,\\mathrm{mol}$，陽極 $\\ce{2H2O -> O2 + 4H+ + 4e-}$ で $\\ce{O2}$ $1.00\\times10^{-3}\\,\\mathrm{mol}$．合計 $3.00\\times10^{-3}\\,\\mathrm{mol}$ で $\\boldsymbol{67.2\\,\\mathrm{mL}}$．\n\n\\textbf{(4)〜(7)} 電源電圧を $V$，電解槽 I・II の抵抗を $R_\\text{I}$，$R_\\text{II}$ とすると，I を流れる電流は\n\\[I_\\text{I}=\\dfrac{V}{R+R_\\text{I}+\\dfrac{R\\,R_\\text{I}}{R_\\text{II}}}\\]\n(4) 濃い水溶液はイオンが多く $R_\\text{II}$ が小さくなる → 分母が大きくなり $I_\\text{I}$ は\\textbf{減少}（II に電流をとられ，並列部分の電圧も下がる）．\n(5) 極板の間隔を狭くすると $R_\\text{I}$ が小さくなる → 分母が小さくなり\\textbf{増加}．\n(6) II の回路が切れる（$R_\\text{II}\\to\\infty$）→ 電流はすべて I を流れ，\\textbf{増加}．\n(7) $R$ が大きくなると分母が大きくなり\\textbf{減少}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "並列につないだ電解槽では全電気量が各槽に分配されるので，一方の析出量から他方の電気量を差し引きで求める．さらに各槽の抵抗の変化が電流の分配をどう変えるかを判断する．"
+ },
+ "concepts": [
+  "electrolysis"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電気分解",
+  "並列接続",
+  "ファラデーの法則",
+  "電流の分配"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

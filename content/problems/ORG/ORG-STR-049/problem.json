@@ -1,0 +1,109 @@
+{
+ "id": "ORG-STR-049",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-01",
+ "topic": "混合比によらず一定になる燃焼生成物から成分の分子式を決める",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の6種類の気体の炭化水素がある．\n\\[\\ce{CH4},\\ \\ \\ce{C2H4},\\ \\ \\ce{C2H6},\\ \\ \\ce{C3H6},\\ \\ \\ce{C3H8},\\ \\ \\ce{C4H10}\\]\nこのうち2種類を混ぜた混合気体を，酸素を十分に加えて完全燃焼させる．気体の体積はすべて同温・同圧で測り，生じた水も同温・同圧の気体（水蒸気）として体積で表す．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ある2種類（混合気体 P）では，混合の割合をどのように変えても，混合気体 $10\\,\\mathrm{mL}$ の燃焼で生じる二酸化炭素はつねに $30\\,\\mathrm{mL}$ であった．P の成分を化学式で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "混合気体 P $10\\,\\mathrm{mL}$ の燃焼で水蒸気が $36\\,\\mathrm{mL}$ 生じた．各成分の体積を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2)の混合気体 P $10\\,\\mathrm{mL}$ を完全燃焼させるのに必要な酸素と，ニッケル触媒で完全に水素付加させるのに必要な水素の体積を，それぞれ求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "別の2種類（混合気体 Q）では，混合の割合を変えると生じる二酸化炭素の体積は変わるが，混合気体 $10\\,\\mathrm{mL}$ から生じる水蒸気の体積はつねに一定であった．Q の成分の組み合わせとして考えられるものをすべて答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{C3H6}$ と $\\ce{C3H8}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{C3H6}$ $4\\,\\mathrm{mL}$，$\\ce{C3H8}$ $6\\,\\mathrm{mL}$"
+   },
+   {
+    "id": "3",
+    "tex": "酸素 $48\\,\\mathrm{mL}$，水素 $4\\,\\mathrm{mL}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{CH4}$ と $\\ce{C2H4}$，$\\ce{C2H6}$ と $\\ce{C3H6}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　同温・同圧では体積は物質量に比例する．$\\ce{C_mH_n}$ $1$ 体積から $\\ce{CO2}$ は $m$ 体積，$\\ce{H2O}$ は $\\frac{n}{2}$ 体積生じる．混合気体の体積 $V=V_1+V_2$ が一定で $\\ce{CO2}$ が $m_1V_1+m_2V_2=m_1V+(m_2-m_1)V_2$ なので，割合（$V_2$）によらず一定になるのは $m_1=m_2$ のとき，すなわち炭素数が等しいときに限る．\n\n(1) $10\\,\\mathrm{mL}$ から $30\\,\\mathrm{mL}$ なので炭素数はどちらも 3．$\\boldsymbol{\\ce{C3H6}\\text{ と }\\ce{C3H8}}$．\n\n(2) $\\ce{C3H6}$ を $a$，$\\ce{C3H8}$ を $b\\,\\mathrm{mL}$ とすると $a+b=10$，$3a+4b=36$．よって $\\boldsymbol{a=4\\,\\mathrm{mL}}$，$\\boldsymbol{b=6\\,\\mathrm{mL}}$．\n\n(3) $\\ce{2C3H6 + 9O2 -> 6CO2 + 6H2O}$，$\\ce{C3H8 + 5O2 -> 3CO2 + 4H2O}$ より，酸素は $4\\times\\frac{9}{2}+6\\times5=\\boldsymbol{48\\,\\mathrm{mL}}$．（検算：$\\ce{CO2}$ $30$ と $\\ce{H2O}$ $36$ に含まれる O 原子は $60+36=96$ 個分で，$\\ce{O2}$ $48$ 体積と一致．）水素は C=C をもつ $\\ce{C3H6}$ だけに付加し（$\\ce{C3H6 + H2 -> C3H8}$），$\\boldsymbol{4\\,\\mathrm{mL}}$．\n\n(4) 同じ考え方で，水蒸気の体積が割合によらないのは H の数が等しいとき．H 数は $\\ce{CH4}$ 4，$\\ce{C2H4}$ 4，$\\ce{C2H6}$ 6，$\\ce{C3H6}$ 6，$\\ce{C3H8}$ 8，$\\ce{C4H10}$ 10 なので，$\\boldsymbol{\\ce{CH4}\\text{ と }\\ce{C2H4}}$，$\\boldsymbol{\\ce{C2H6}\\text{ と }\\ce{C3H6}}$ の2組．どちらも炭素数が異なるので $\\ce{CO2}$ の体積は割合で変わり，条件に合う．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "混合気体の体積が一定のとき，燃焼生成物の量が混合の割合によらないのは，その生成物に入る原子の数（CO₂ なら C，H₂O なら H）が両成分で等しいときに限る．これで成分の候補を絞り，もう一方の生成物量から組成を連立方程式で求める．"
+ },
+ "concepts": [
+  "organic-structure",
+  "hydrocarbon",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "混合気体",
+  "完全燃焼",
+  "体積比",
+  "分子式の決定",
+  "水素付加"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

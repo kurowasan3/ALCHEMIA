@@ -1,0 +1,117 @@
+{
+ "id": "THE-MOL-046",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-04",
+ "topic": "酸化コバルトの混合物の組成と LiCoO₂ の合成に必要な原料・酸素の量（酸化数との関係）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "酸化コバルト(II) $\\ce{CoO}$ と四酸化三コバルト $\\ce{Co3O4}$ の混合物 Y $5.115\\,\\mathrm{g}$ を窒素中で強熱したところ，$\\ce{Co3O4}$ だけが $\\ce{2Co3O4 -> 6CoO + O2}$ のように分解してすべて $\\ce{CoO}$ になり，質量が $0.240\\,\\mathrm{g}$ 減少した．次に，Y と同じ組成の混合物を炭酸リチウムと混ぜて酸素中で加熱し，リチウムイオン電池の正極材料 $\\ce{LiCoO2}$ をつくる．反応は次の 2 つである．\n\\[ \\ce{4CoO + 2Li2CO3 + O2 -> 4LiCoO2 + 2CO2} \\qquad \\ce{4Co3O4 + 6Li2CO3 + O2 -> 12LiCoO2 + 6CO2} \\]\n原子量は $\\ce{Li}=7.0$，$\\ce{C}=12$，$\\ce{O}=16$，$\\ce{Co}=59$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "Y に含まれる $\\ce{CoO}$ と $\\ce{Co3O4}$ の物質量の比（$\\ce{CoO}:\\ce{Co3O4} = \\square : 1$）を有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "Y $5.115\\,\\mathrm{g}$ をすべて $\\ce{LiCoO2}$ にすると何 g 得られるか．有効数字 3 桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) に必要な炭酸リチウムは何 g か．有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(2) で消費される酸素は何 mol か．有効数字 3 桁で答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "コバルト 1 mol を $\\ce{LiCoO2}$ にするのに必要な酸素の量は，$\\ce{CoO}$ から始めると $\\ce{Co3O4}$ から始めたときの何倍か．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$1.33:1$"
+   },
+   {
+    "id": "2",
+    "tex": "$6.37\\,\\mathrm{g}$"
+   },
+   {
+    "id": "3",
+    "tex": "$2.4\\,\\mathrm{g}$"
+   },
+   {
+    "id": "4",
+    "tex": "$8.75\\times10^{-3}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "5",
+    "tex": "3 倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "式量は $\\ce{CoO} = 75$，$\\ce{Co3O4} = 241$，$\\ce{LiCoO2} = 98$，$\\ce{Li2CO3} = 74$．\n\n(1) $\\ce{CoO}$ を $x$，$\\ce{Co3O4}$ を $y$（mol）とする．$\\ce{Co3O4}$ 1 mol から $\\ce{O}$ 原子 1 mol（$16\\,\\mathrm{g}$）が抜けるので\n\\[ 75x + 241y = 5.115,\\qquad 16y = 0.240 \\]\n$y = 0.0150$，$x = \\dfrac{5.115 - 3.615}{75} = 0.0200$．$x:y = \\boldsymbol{1.33:1}$．\n\n(2) コバルトの物質量は $x + 3y = 0.0650\\,\\mathrm{mol}$．$\\ce{LiCoO2}$ も $0.0650\\,\\mathrm{mol}$ で，$0.0650\\times98 = \\boldsymbol{6.37\\,\\mathrm{g}}$．\n\n(3) $\\ce{LiCoO2}$ の Li は Co と同じ物質量なので，$\\ce{Li2CO3}$ は $\\dfrac{0.0650}{2} = 0.0325\\,\\mathrm{mol}$，$0.0325\\times74 = 2.405 \\to \\boldsymbol{2.4\\,\\mathrm{g}}$．\n\n(4) 反応式より，$\\ce{O2}$ は $\\ce{CoO}$ の $\\dfrac{1}{4}$，$\\ce{Co3O4}$ の $\\dfrac{1}{4}$：$\\dfrac{0.0200}{4} + \\dfrac{0.0150}{4} = \\boldsymbol{8.75\\times10^{-3}\\,\\mathrm{mol}}$．\n\n(5) Co 1 mol あたり，$\\ce{CoO}$ からは $\\dfrac{1}{4}\\,\\mathrm{mol}$，$\\ce{Co3O4}$（Co 3 個）からは $\\dfrac{1}{4}\\times\\dfrac{1}{3} = \\dfrac{1}{12}\\,\\mathrm{mol}$ なので $\\boldsymbol{3}$ 倍．\n酸化数で考えると，$\\ce{LiCoO2}$ の Co は $+3$．$\\ce{CoO}$ の Co（$+2$）は 1 個あたり電子 1 個を失うが，$\\ce{Co3O4}$ の Co は平均 $+\\dfrac{8}{3}$ なので 1 個あたり $\\dfrac{1}{3}$ 個しか失わない．$\\ce{O2}$ は 1 分子で電子 4 個を受け取るので，必要な $\\ce{O2}$ は Co が失う電子の量に比例し，3 倍になる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "Co₃O₄ は CoO より O 原子を Co₃ あたり1個多く含むので，強熱による質量減少から Co₃O₄ の量が決まり，混合物の組成が求まる．LiCoO₂ への変化ではコバルトの量だけで生成物と Li 原料の量が決まり，必要な酸素の量はコバルトの酸化数の変化（CoO は +2→+3，Co₃O₄ は平均 +8/3→+3）に比例することを判断する．"
+ },
+ "concepts": [
+  "mole",
+  "oxygen-sulfur",
+  "redox"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "酸化コバルト",
+  "混合物の組成",
+  "質量減少",
+  "リチウムイオン電池",
+  "酸化数"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

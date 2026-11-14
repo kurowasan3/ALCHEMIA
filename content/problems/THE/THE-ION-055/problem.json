@@ -1,0 +1,109 @@
+{
+ "id": "THE-ION-055",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "強酸と弱酸の塩の混合溶液の水素イオン濃度（量の大小による場合分け）",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "compare",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の水溶液 A〜E は，いずれも 2 種類の液を $10\\,\\mathrm{mL}$ ずつ混合してつくった．酢酸の電離定数を $K_a=2.0\\times10^{-5}\\,\\mathrm{mol/L}$ とし，塩酸と酢酸ナトリウムは水中で完全に電離するものとする．\nA：$0.10\\,\\mathrm{mol/L}$ 塩酸＋純水\nB：$0.10\\,\\mathrm{mol/L}$ 塩酸＋$0.10\\,\\mathrm{mol/L}$ 酢酸ナトリウム水溶液\nC：$0.30\\,\\mathrm{mol/L}$ 塩酸＋$0.10\\,\\mathrm{mol/L}$ 酢酸ナトリウム水溶液\nD：$0.10\\,\\mathrm{mol/L}$ 塩酸＋$0.20\\,\\mathrm{mol/L}$ 酢酸ナトリウム水溶液\nE：$0.10\\,\\mathrm{mol/L}$ 酢酸水溶液＋純水"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "塩酸と酢酸ナトリウム水溶液を混合したときに起こる反応を，イオン反応式で書け．"
+     },
+     {
+      "id": "2",
+      "tex": "B，C，D のそれぞれについて，混合後の水素イオン濃度を主に決めているものを次の (ア)〜(ウ) から選べ．(ア) 反応せずに残った塩酸　(イ) 生じた酢酸の電離だけ　(ウ) 酢酸と酢酸イオンがともに多量にある緩衝液"
+     },
+     {
+      "id": "3",
+      "tex": "A〜E の $[\\ce{H+}]$ をそれぞれ有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "A〜E を $[\\ce{H+}]$ の大きい順に並べよ（等しいものは $=$ で結べ）．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{H+ + CH3COO- -> CH3COOH}$"
+   },
+   {
+    "id": "2",
+    "tex": "B：(イ)，C：(ア)，D：(ウ)"
+   },
+   {
+    "id": "3",
+    "tex": "A $5.0\\times10^{-2}$，B $1.0\\times10^{-3}$，C $1.0\\times10^{-1}$，D $2.0\\times10^{-5}$，E $1.0\\times10^{-3}$（単位はいずれも mol/L）"
+   },
+   {
+    "id": "4",
+    "tex": "C ＞ A ＞ B ＝ E ＞ D"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 酢酸は弱酸なので，強酸の $\\ce{H+}$ は酢酸イオンと結びついて酢酸分子になる（弱酸の遊離）．\n\\[ \\boldsymbol{\\ce{H+ + CH3COO- -> CH3COOH}} \\]\n\n\\textbf{(2)} 混合後（体積 $20\\,\\mathrm{mL}$）の量で場合分けする．$\\ce{HCl}$ と $\\ce{CH3COONa}$ の物質量を比べると\nB：$\\ce{HCl}$ $1.0\\,\\mathrm{mmol}$，$\\ce{CH3COO-}$ $1.0\\,\\mathrm{mmol}$ → ちょうど反応し，酢酸 $1.0\\,\\mathrm{mmol}$ だけが残る：$\\boldsymbol{(イ)}$\nC：$\\ce{HCl}$ $3.0\\,\\mathrm{mmol}$，$\\ce{CH3COO-}$ $1.0\\,\\mathrm{mmol}$ → 塩酸が $2.0\\,\\mathrm{mmol}$ 余る：$\\boldsymbol{(ア)}$\nD：$\\ce{HCl}$ $1.0\\,\\mathrm{mmol}$，$\\ce{CH3COO-}$ $2.0\\,\\mathrm{mmol}$ → 酢酸 $1.0\\,\\mathrm{mmol}$ と酢酸イオン $1.0\\,\\mathrm{mmol}$：$\\boldsymbol{(ウ)}$\n\n\\textbf{(3)}\nA：$[\\ce{H+}]=0.10\\times\\dfrac{10}{20}=\\boldsymbol{5.0\\times10^{-2}\\,\\mathrm{mol/L}}$\nB：酢酸 $0.050\\,\\mathrm{mol/L}$ の水溶液と同じ．$[\\ce{H+}]=\\sqrt{K_aC}=\\sqrt{2.0\\times10^{-5}\\times0.050}=\\boldsymbol{1.0\\times10^{-3}\\,\\mathrm{mol/L}}$\nC：余った塩酸は $\\dfrac{2.0\\,\\mathrm{mmol}}{20\\,\\mathrm{mL}}=0.10\\,\\mathrm{mol/L}$．酢酸（$0.050\\,\\mathrm{mol/L}$）の電離は強酸の $\\ce{H+}$ に抑えられ，$[\\ce{CH3COO-}]=\\dfrac{K_a\\times0.050}{0.10}=1.0\\times10^{-5}\\,\\mathrm{mol/L}$ にすぎないので無視できる．$[\\ce{H+}]=\\boldsymbol{1.0\\times10^{-1}\\,\\mathrm{mol/L}}$\nD：$[\\ce{CH3COOH}]=[\\ce{CH3COO-}]=0.050\\,\\mathrm{mol/L}$ なので $[\\ce{H+}]=K_a\\dfrac{[\\ce{CH3COOH}]}{[\\ce{CH3COO-}]}=\\boldsymbol{2.0\\times10^{-5}\\,\\mathrm{mol/L}}$\nE：酢酸 $0.050\\,\\mathrm{mol/L}$ なので B と同じ $\\boldsymbol{1.0\\times10^{-3}\\,\\mathrm{mol/L}}$\n\n\\textbf{(4)} $\\boldsymbol{\\text{C}>\\text{A}>\\text{B}=\\text{E}>\\text{D}}$．\nC は塩酸の濃度が A より高く，酢酸ナトリウムに一部を奪われても A より多くの $\\ce{H+}$ が残る．B は塩酸を含むのに，ちょうど同じ量の酢酸イオンに $\\ce{H+}$ を奪われるので，酢酸だけの E と同じになる．D は酢酸イオンが過剰で緩衝液となり，最も小さい．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "強酸と弱酸の塩を混ぜると弱酸が遊離するので，強酸と塩の物質量の大小によって「強酸が残る」「弱酸だけになる」「弱酸と共役塩基の緩衝液になる」の3つに場合分けして [H⁺] を求める．強酸を含む混合液でも，同量の塩と反応すれば弱酸だけの溶液と同じ [H⁺] になる．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "mole",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "弱酸の遊離",
+  "緩衝液",
+  "水素イオン濃度",
+  "混合水溶液",
+  "場合分け"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

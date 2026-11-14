@@ -1,0 +1,117 @@
+{
+ "id": "THE-RDX-044",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-06",
+ "topic": "黄鉄鉱の二硫化物イオンの不均化と塩化鉄(III)による銅の溶解",
+ "course": "化学",
+ "level": 1,
+ "minutes": 15,
+ "format": [
+  "equation",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "黄鉄鉱 $\\ce{FeS2}$ は鉄(II) イオン $\\ce{Fe^2+}$ と二硫化物イオン $\\ce{S2^2-}$（2つの S 原子が共有結合でつながったイオン）からなるイオン結晶である．原子量は Cu = 64 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{FeS2}$ 中の Fe と S の酸化数をそれぞれ答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$\\ce{FeS2}$ を希硫酸とともに加熱すると，硫化水素と硫黄の単体が生じ，鉄は硫酸鉄(II) になる．この反応の化学反応式を書け．また，この反応で酸化数が変化する元素について，反応前後の酸化数をすべて答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "次の (ア)〜(ウ) のうち，酸化還元反応であるものをすべて選べ．\\\\\n(ア) $\\ce{FeS + H2SO4 -> FeSO4 + H2S}$　(イ) (2) の反応　(ウ) $\\ce{Cu + 2FeCl3 -> CuCl2 + 2FeCl2}$"
+     },
+     {
+      "id": "4",
+      "tex": "銅は塩酸には溶けないが，塩化鉄(III) 水溶液には溶ける．この反応をイオン反応式で書き，酸化剤としてはたらいているイオンを答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "銅 3.2 g を塩化鉄(III) 水溶液で完全に溶かすのに必要な $\\ce{FeCl3}$ は何 mol か．有効数字2桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "Fe：$+2$，S：$-1$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{FeS2 + H2SO4 -> FeSO4 + H2S + S}$．S：$-1$ から $-2$（$\\ce{H2S}$）と $0$（$\\ce{S}$）"
+   },
+   {
+    "id": "3",
+    "tex": "(イ)，(ウ)"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{Cu + 2Fe^3+ -> Cu^2+ + 2Fe^2+}$，酸化剤は $\\ce{Fe^3+}$"
+   },
+   {
+    "id": "5",
+    "tex": "$0.10\\,\\mathrm{mol}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\ce{Fe^2+}$ なので Fe は $\\boldsymbol{+2}$．$\\ce{S2^2-}$ の2つの S は同じなので，S は $\\boldsymbol{-1}$ ずつ．\n\n\\textbf{(2)} $\\ce{S2^2-}$ の2つの S のうち，一方は $\\ce{H2S}$（$-2$）に還元され，もう一方は $\\ce{S}$（$0$）に酸化される．同じ元素の原子の一部が酸化され，残りが還元される\\textbf{不均化}である．\n\\[\\boldsymbol{\\ce{FeS2 + H2SO4 -> FeSO4 + H2S + S}}\\]\nFe（$+2$）や硫酸の S（$+6$）の酸化数は変わらない．\n\n\\textbf{(3)} (ア) は S が $-2$ のまま $\\ce{H2S}$ になる弱酸の遊離で，酸化数の変化がない．(イ) は (2) のとおり S の酸化数が変わる．(ウ) は Cu が $0\\to+2$，Fe が $+3\\to+2$ と変わる．答えは $\\boldsymbol{\\text{(イ)，(ウ)}}$．同じ「硫化鉄＋希硫酸」でも，$\\ce{FeS}$ と $\\ce{FeS2}$ では S の酸化数の違いにより反応の種類が異なる．\n\n\\textbf{(4)}\n\\[\\boldsymbol{\\ce{Cu + 2Fe^3+ -> Cu^2+ + 2Fe^2+}}\\]\n銅はイオン化傾向が水素より小さく，$\\ce{H+}$ には酸化されないが，$\\ce{Fe^3+}$ は $\\ce{H+}$ より強い酸化剤で銅を $\\ce{Cu^2+}$ に酸化できる．酸化剤は $\\boldsymbol{\\ce{Fe^3+}}$（自身は $\\ce{Fe^2+}$ に還元される）．\n\n\\textbf{(5)} $\\ce{Cu}$ $\\dfrac{3.2}{64}=0.050\\,\\mathrm{mol}$ に対して $\\ce{Fe^3+}$ は2倍必要なので，$\\ce{FeCl3}$ は $\\boldsymbol{0.10\\,\\mathrm{mol}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "二硫化物イオン中の S は −1 なので，FeS2 と酸の反応では S が −2 と 0 に不均化する（FeS と酸の反応は酸化還元ではない）．Fe³⁺ は H⁺ より強い酸化剤で，塩酸に溶けない銅を溶かす．"
+ },
+ "concepts": [
+  "redox",
+  "transition-metals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "黄鉄鉱",
+  "酸化数",
+  "不均化",
+  "塩化鉄(III)",
+  "銅",
+  "エッチング"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

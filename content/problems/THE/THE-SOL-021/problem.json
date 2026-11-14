@@ -1,0 +1,100 @@
+{
+ "id": "THE-SOL-021",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-09",
+ "topic": "2種類の塩の混合水溶液からの析出",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "硝酸カリウム $202\\,\\mathrm g$ と塩化ナトリウム $117\\,\\mathrm g$ を水 $500\\,\\mathrm g$ に加え，加熱して完全に溶かした（溶液 P）．$20$ ℃ における各塩の溶解度（水 $100\\,\\mathrm g$ に溶ける質量）は下の通りである．式量は $\\ce{KNO3}=101$，$\\ce{NaCl}=58.5$，$\\ce{KCl}=74.5$，$\\ce{NaNO3}=85$ とし，水溶液中では各イオンの組合せごとに溶解度が独立に成り立つものとして考えよ．\n\\[ \\begin{array}{c|cccc} \\text{塩} & \\ce{KCl} & \\ce{KNO3} & \\ce{NaCl} & \\ce{NaNO3} \\\\ \\hline \\text{溶解度}\\ (\\mathrm g/100\\,\\mathrm g\\ \\text{水}) & 34.0 & 32.0 & 36.0 & 88.0 \\end{array} \\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "溶液 P を $20$ ℃ に冷却すると結晶が析出した．析出する塩の化学式と質量を有効数字3桁で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "溶液 P の代わりに，硝酸ナトリウム $170\\,\\mathrm g$ と塩化カリウム $149\\,\\mathrm g$ を水 $500\\,\\mathrm g$ に溶かした溶液を $20$ ℃ に冷却した．析出する塩とその質量は (1) と比べてどうなるか．理由とともに答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "溶液 P を $20$ ℃ に冷却しても結晶が析出しないようにするには，少なくとも何 g の水を追加しておけばよいか．有効数字3桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{KNO3}$，$42.0\\,\\mathrm g$"
+   },
+   {
+    "id": "2",
+    "tex": "前問と同じく $\\ce{KNO3}$ が $42.0\\,\\mathrm g$ 析出する．どちらの溶液も $\\ce{K+}$，$\\ce{Na+}$，$\\ce{Cl-}$，$\\ce{NO3-}$ を $2.00\\,\\mathrm{mol}$ ずつ含む同じ溶液だから．"
+   },
+   {
+    "id": "3",
+    "tex": "$131\\,\\mathrm g$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\ce{KNO3}$ $202\\,\\mathrm g=2.00\\,\\mathrm{mol}$，$\\ce{NaCl}$ $117\\,\\mathrm g=2.00\\,\\mathrm{mol}$．溶液中には $\\ce{K+}$，$\\ce{Na+}$，$\\ce{Cl-}$，$\\ce{NO3-}$ が $2.00\\,\\mathrm{mol}$ ずつある．4 通りの組合せについて，$2.00\\,\\mathrm{mol}$ 分の質量と水 $500\\,\\mathrm g$ に溶ける最大量を比べる．\n\\[ \\begin{array}{c|cccc} & \\ce{KCl} & \\ce{KNO3} & \\ce{NaCl} & \\ce{NaNO3} \\\\ \\hline 2.00\\,\\mathrm{mol}\\ \\text{の質量} & 149 & 202 & 117 & 170 \\\\ \\text{溶ける最大量} & 170 & 160 & 180 & 440 \\end{array} \\]\n溶ける最大量をこえるのは $\\ce{KNO3}$ だけなので，析出するのは $\\ce{KNO3}$ で，$202-160=\\boldsymbol{42.0\\,\\mathrm g}$．\n\\textbf{(2)} $\\ce{NaNO3}$ $170\\,\\mathrm g$ と $\\ce{KCl}$ $149\\,\\mathrm g$ もそれぞれ $2.00\\,\\mathrm{mol}$ で，溶かしてしまえば4種のイオンが $2.00\\,\\mathrm{mol}$ ずつの，溶液 P と同じ溶液になる．したがって結果も同じで，$\\ce{KNO3}$ が $\\boldsymbol{42.0\\,\\mathrm g}$ 析出する．どの塩を溶かしたかではなく，溶液中のイオンの組合せのうち最も溶けにくいものが析出する．\n\\textbf{(3)} $\\ce{KNO3}$ $202\\,\\mathrm g$ を溶かしておくのに必要な水は $202\\times\\dfrac{100}{32.0}=631\\,\\mathrm g$．このとき他の組合せはすべて溶けている．追加する水は $631-500=\\boldsymbol{131\\,\\mathrm g}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "複数の塩を溶かした水溶液では陽イオンと陰イオンのすべての組合せを考え，溶解度をこえる組合せの塩が析出する．溶かした塩の種類ではなく溶液中のイオンの量で結果が決まる．"
+ },
+ "concepts": [
+  "solution-colligative",
+  "nitrogen-phosphorus",
+  "crystal"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "溶解度",
+  "再結晶",
+  "イオンの組合せ",
+  "硝酸カリウム"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

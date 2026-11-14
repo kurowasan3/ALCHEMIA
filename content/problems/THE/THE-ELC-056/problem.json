@@ -1,0 +1,117 @@
+{
+ "id": "THE-ELC-056",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-07",
+ "topic": "Al 置換正極の取り出せる Li の上限と単位質量あたりの電気量",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "リチウムイオン電池の正極に用いるコバルト酸リチウム $\\ce{LiCoO2}$ は，充電によって $\\ce{Li+}$ が引き抜かれ $\\ce{Li_{1-x}CoO2}$ となる．\n\\[\\ce{LiCoO2 -> Li_{1-x}CoO2 + $x$Li+ + $x$e-}\\]\nこのとき，結晶全体の電荷を保つように Co の酸化数が増える．Co の一部を Al に置き換えた $\\ce{LiCo_{1-y}Al_yO2}$ でも同じように Li が引き抜かれるが，Al の酸化数は $+3$ のまま変わらない．また，Co の酸化数は $+4$ までしか増えないものとする．原子量は Li $=6.9$，O $=16.0$，Al $=27.0$，Co $=58.9$，ファラデー定数は $9.65\\times10^{4}\\,\\mathrm{C/mol}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{Li_{1-x}CoO2}$ 中の Co の（平均の）酸化数を $x$ を用いて表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "$\\ce{LiCo_{0.80}Al_{0.20}O2}$ で，Co の酸化数の上限から決まる $x$ の最大値を答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "Co の酸化数の上限だけを考えたとき，充電で取り出せる電気量は正極材料 $1\\,\\mathrm{g}$ あたり最大何 C か．$\\ce{LiCoO2}$ と $\\ce{LiCo_{0.80}Al_{0.20}O2}$ のそれぞれについて有効数字 3 桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "実際には，どちらの材料も $x$ が $0.50$ をこえると結晶構造がくずれるので，$x \\leqq 0.50$ の範囲で使う．この条件のもとで正極材料 $1\\,\\mathrm{g}$ あたりの電気量をそれぞれ有効数字 3 桁で求め，どちらが大きいかを答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "$\\ce{LiCo_{1-y}Al_yO2}$ を $x = 0.50$ まで充電できるための $y$ の上限を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$+3+x$"
+   },
+   {
+    "id": "2",
+    "tex": "$0.80$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{LiCoO2}$：$987\\,\\mathrm{C}$，$\\ce{LiCo_{0.80}Al_{0.20}O2}$：$844\\,\\mathrm{C}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{LiCoO2}$：$493\\,\\mathrm{C}$，$\\ce{LiCo_{0.80}Al_{0.20}O2}$：$528\\,\\mathrm{C}$．Al で置き換えた方が大きい"
+   },
+   {
+    "id": "5",
+    "tex": "$0.50$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} Li は $+1$，O は $-2$ なので，Co の酸化数を $n$ とすると $(1-x) + n - 4 = 0$ より $\\boldsymbol{n = 3+x}$．Li が 1 個抜けるごとに Co が電子を 1 個失う（$\\ce{Co^3+}$ が $\\ce{Co^4+}$ になる）．\n\n\\textbf{(2)} Al は $+3$ のままで電子を出さないので，電子を出せるのは Co だけで，Co 1 個につき最大 1 個（$+3 \\to +4$）．$\\ce{LiCo_{0.80}Al_{0.20}O2}$ の式量あたり Co は $0.80$ 個なので $\\boldsymbol{x \\leqq 0.80}$．\n\n\\textbf{(3)} 式量は\n$\\ce{LiCoO2}$：$6.9 + 58.9 + 32.0 = 97.8$，\n$\\ce{LiCo_{0.80}Al_{0.20}O2}$：$6.9 + 0.80\\times58.9 + 0.20\\times27.0 + 32.0 = 91.42$．\n1 g あたりの電気量は $x \\times 9.65\\times10^{4} / (\\text{式量})$ なので\n$\\ce{LiCoO2}$（$x=1$）：$9.65\\times10^{4}/97.8 = \\boldsymbol{987\\,\\mathrm{C}}$，\n$\\ce{LiCo_{0.80}Al_{0.20}O2}$（$x=0.80$）：$0.80\\times9.65\\times10^{4}/91.42 = \\boldsymbol{844\\,\\mathrm{C}}$．\nこの条件では，電子を出さない Al が入った分だけ容量が小さい．\n\n\\textbf{(4)} どちらも $x = 0.50$（Al 置換体でも $0.50 \\leqq 0.80$ なので Co の上限には達しない）．\n$\\ce{LiCoO2}$：$0.50\\times9.65\\times10^{4}/97.8 = \\boldsymbol{493\\,\\mathrm{C}}$，\n$\\ce{LiCo_{0.80}Al_{0.20}O2}$：$0.50\\times9.65\\times10^{4}/91.42 = \\boldsymbol{528\\,\\mathrm{C}}$．\n取り出せる Li の数が同じなら，式量の小さい（Co より軽い Al を含む）\\textbf{Al 置換体の方が大きい}．(3) と大小が逆になるのは，容量を決めている条件（Co の酸化数か，結晶構造か）が違うからである．\n\n\\textbf{(5)} $x = 0.50$ まで充電するには Co が $0.50$ 個以上必要なので $1 - y \\geqq 0.50$，$\\boldsymbol{y \\leqq 0.50}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "リチウムイオン電池の正極から取り出せる Li の量は，電子を出せる金属（Co³⁺→Co⁴⁺）の数と結晶構造が保てる範囲のうち厳しい方で決まる．酸化されない Al で置き換えると前者は減るが式量も減るので，どちらの条件が効くかで単位質量あたりの容量の大小が逆転する．"
+ },
+ "concepts": [
+  "electrolysis",
+  "crystal",
+  "redox"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "リチウムイオン電池",
+  "正極",
+  "酸化数",
+  "電気量",
+  "コバルト酸リチウム"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

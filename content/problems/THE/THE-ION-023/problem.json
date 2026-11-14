@@ -1,0 +1,102 @@
+{
+ "id": "THE-ION-023",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "グリシンと水酸化ナトリウムによる緩衝液",
+ "course": "化学",
+ "level": 3,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "equation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "グリシンの双性イオンを $\\mathrm{G^{\\pm}}$（$\\ce{H3N\\text{+}CH2COO-}$），陰イオンを $\\mathrm{G^-}$（$\\ce{H2NCH2COO-}$）と表す．$\\mathrm{G^{\\pm}} \\rightleftarrows \\mathrm{G^-}+\\mathrm{H^+}$ の電離定数は $K_2=2.5\\times10^{-10}\\,\\mathrm{mol/L}$ である．$\\log_{10}2=0.30$，$\\log_{10}3=0.48$，$\\log_{10}7=0.85$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "グリシン（双性イオン）と水酸化物イオンの反応をイオン反応式で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "グリシン $1.0\\times10^{-2}\\,\\mathrm{mol}$ を含む水溶液に水酸化ナトリウム $4.0\\times10^{-3}\\,\\mathrm{mol}$ を加え，水で $100\\,\\mathrm{mL}$ にした．この溶液の pH を小数第 1 位まで求めよ．加えた $\\ce{OH-}$ はすべて (1) の反応に使われたものとする．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の溶液に塩化水素 $1.0\\times10^{-3}\\,\\mathrm{mol}$ を加えた（体積変化は無視する）．加えた $\\ce{H+}$ はすべて $\\mathrm{G^-}$ と反応するものとして，pH を小数第 1 位まで求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{H3N\\text{+}CH2COO- + OH- -> H2NCH2COO- + H2O}$"
+   },
+   {
+    "id": "2",
+    "tex": "9.4"
+   },
+   {
+    "id": "3",
+    "tex": "9.2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1)　双性イオンの $\\ce{-NH3+}$ が $\\ce{H+}$ を $\\ce{OH-}$ に渡す：\n\\[ \\boldsymbol{\\ce{H3N\\text{+}CH2COO- + OH- -> H2NCH2COO- + H2O}} \\]\n\n(2)　反応後，$\\mathrm{G^-}$ は $4.0\\times10^{-3}\\,\\mathrm{mol}$，残った $\\mathrm{G^{\\pm}}$ は $1.0\\times10^{-2}-4.0\\times10^{-3}=6.0\\times10^{-3}\\,\\mathrm{mol}$．同じ溶液中なので濃度比は物質量比に等しく，$K_2=\\dfrac{[\\mathrm{G^-}][\\mathrm{H^+}]}{[\\mathrm{G^{\\pm}}]}$ より\n\\[ [\\mathrm{H^+}]=K_2\\times\\frac{[\\mathrm{G^{\\pm}}]}{[\\mathrm{G^-}]}=2.5\\times10^{-10}\\times\\frac{6.0}{4.0}=3.75\\times10^{-10}\\,\\mathrm{mol/L} \\]\n$\\mathrm{pH}=-\\log_{10}(2.5\\times10^{-10})+\\log_{10}\\dfrac{4.0}{6.0}=9.60+(0.30-0.48)=9.42$　→　$\\boldsymbol{9.4}$．\\\\\n（$\\log_{10}2.5=1-2\\times0.30=0.40$ より $-\\log_{10}K_2=9.60$．）\n\n(3)　$\\ce{H+}$ $1.0\\times10^{-3}\\,\\mathrm{mol}$ が $\\mathrm{G^-}$ と反応して $\\mathrm{G^{\\pm}}$ にもどるので，$\\mathrm{G^-}$ は $3.0\\times10^{-3}\\,\\mathrm{mol}$，$\\mathrm{G^{\\pm}}$ は $7.0\\times10^{-3}\\,\\mathrm{mol}$．\n\\[ \\mathrm{pH}=9.60+\\log_{10}\\frac{3.0}{7.0}=9.60+0.48-0.85=9.23\\quad\\to\\quad\\boldsymbol{9.2} \\]\n強酸を加えても pH の変化は 0.2 程度にとどまり，$\\mathrm{G^{\\pm}}$ と $\\mathrm{G^-}$ の混合液が緩衝液としてはたらくことがわかる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "グリシンに強塩基を一部加えると双性イオンと陰イオンの混合液となり，弱酸とその塩の緩衝液と同じく pH＝pK₂＋log([G⁻]/[G±]) で pH が決まる．酸を加えても陰イオンが受け止めるため pH の変化は小さい．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "alkali-metals",
+  "protein-amino"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "緩衝液",
+  "グリシン",
+  "双性イオン",
+  "電離定数",
+  "pH",
+  "アミノ酸"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "id": "THE-SOL-037",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-09",
+ "topic": "三ヨウ化物イオンの生成を伴う分配平衡",
+ "course": "化学",
+ "level": 5,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ヨウ素 $\\ce{I2}$ は四塩化炭素（$\\ce{CCl4}$）によく溶け，水には溶けにくい．$\\ce{CCl4}$ 層と水層が接しているとき，$\\ce{I2}$ について分配平衡が成り立ち，分配係数 $K_D=\\dfrac{[\\ce{I2}]_{\\ce{CCl4}}}{[\\ce{I2}]_{\\text{水}}}$ は温度一定で一定である．また，水層にヨウ化物イオンがあると\n\\[ \\ce{I2 + I- <=> I3-} \\qquad K=\\frac{[\\ce{I3-}]}{[\\ce{I2}][\\ce{I-}]} \\]\nの平衡が水層だけで成り立つ．$\\ce{CCl4}$ 層には $\\ce{I2}$ だけが存在し，水と $\\ce{CCl4}$ は混じり合わず，振り混ぜても各層の体積は変わらないものとする．温度はすべて $25\\,{}^\\circ\\mathrm{C}$ である．\n\n実験1：$\\ce{I2}$ を $2.58\\times10^{-2}\\,\\mathrm{mol/L}$ 含む $\\ce{CCl4}$ 溶液 $100\\,\\mathrm{mL}$ を純水 $100\\,\\mathrm{mL}$ とよく振り混ぜたところ，水層の $\\ce{I2}$ の濃度は $3.0\\times10^{-4}\\,\\mathrm{mol/L}$ になった．\n\n実験2：$\\ce{I2}$ を $3.10\\times10^{-3}\\,\\mathrm{mol/L}$ 含む $\\ce{CCl4}$ 溶液 $100\\,\\mathrm{mL}$ を $0.100\\,\\mathrm{mol/L}$ ヨウ化カリウム水溶液 $100\\,\\mathrm{mL}$ とよく振り混ぜたところ，$\\ce{CCl4}$ 層の $\\ce{I2}$ の濃度は $1.70\\times10^{-3}\\,\\mathrm{mol/L}$ になった．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "分配係数 $K_D$ を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "平衡定数 $K$ を単位をつけて有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "水層に含まれるヨウ素の総濃度（$[\\ce{I2}]+[\\ce{I3-}]$）と $\\ce{CCl4}$ 層の $\\ce{I2}$ の濃度の比 $D$ を，$K_D$，$K$ と平衡時の $[\\ce{I-}]$ で表せ．また，等体積の $\\ce{CCl4}$ 層と水層を1回振り混ぜるだけで，$\\ce{CCl4}$ 層のヨウ素の $99\\,\\%$ 以上を水層に移すことはできるか．ヨウ化カリウム水溶液の濃度は高々 $6\\,\\mathrm{mol/L}$ 程度であることをふまえて判断せよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\ce{I2}$ を $1.00\\times10^{-2}\\,\\mathrm{mol/L}$ 含む $\\ce{CCl4}$ 溶液 $100\\,\\mathrm{mL}$ を，ヨウ化カリウム水溶液 $1.00\\,\\mathrm{L}$ と1回振り混ぜて，ヨウ素の $99\\,\\%$ 以上を水層に移したい．ヨウ化カリウム水溶液の濃度は少なくとも何 mol/L 必要か．有効数字2桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$85$"
+   },
+   {
+    "id": "2",
+    "tex": "$7.0\\times10^{2}\\,\\mathrm{L/mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "$D=\\dfrac{1+K[\\ce{I-}]}{K_D}$；できない（$[\\ce{I-}]$ が約 $12\\,\\mathrm{mol/L}$ 以上必要になるため）"
+   },
+   {
+    "id": "4",
+    "tex": "$1.2\\,\\mathrm{mol/L}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　実験1では水層は $\\ce{I2}$ だけ．$\\ce{CCl4}$ 層に残る濃度は（体積が等しいので）$2.58\\times10^{-2}-3.0\\times10^{-4}=2.55\\times10^{-2}\\,\\mathrm{mol/L}$．\n\\[ K_D=\\frac{2.55\\times10^{-2}}{3.0\\times10^{-4}}=\\boldsymbol{85} \\]\n\n\\textbf{(2)}　実験2：体積が等しいので，水層に移ったヨウ素の総濃度は $3.10\\times10^{-3}-1.70\\times10^{-3}=1.40\\times10^{-3}\\,\\mathrm{mol/L}$．分配平衡は水層の $\\ce{I2}$（$\\ce{I3-}$ ではない）について成り立つので\n\\[ [\\ce{I2}]_{\\text{水}}=\\frac{1.70\\times10^{-3}}{85}=2.0\\times10^{-5},\\quad [\\ce{I3-}]=1.40\\times10^{-3}-2.0\\times10^{-5}=1.38\\times10^{-3} \\]\n$\\ce{I3-}$ 1 個ができると $\\ce{I-}$ が 1 個減るので $[\\ce{I-}]=0.100-1.38\\times10^{-3}=0.0986\\,\\mathrm{mol/L}$．\n\\[ K=\\frac{1.38\\times10^{-3}}{2.0\\times10^{-5}\\times0.0986}=\\boldsymbol{7.0\\times10^{2}\\,\\mathrm{L/mol}} \\]\n\n\\textbf{(3)}　$[\\ce{I2}]_{\\text{水}}=\\dfrac{[\\ce{I2}]_{\\ce{CCl4}}}{K_D}$，$[\\ce{I3-}]=K[\\ce{I2}]_{\\text{水}}[\\ce{I-}]$ より\n\\[ D=\\frac{[\\ce{I2}]_{\\text{水}}(1+K[\\ce{I-}])}{[\\ce{I2}]_{\\ce{CCl4}}}=\\boldsymbol{\\frac{1+K[\\ce{I-}]}{K_D}} \\]\n等体積で 99 % 以上を水層に移すには，水層の量が $\\ce{CCl4}$ 層の 99 倍以上，すなわち $D\\geqq99$ が必要．\n\\[ 1+700[\\ce{I-}]\\geqq99\\times85=8415 \\ \\Longrightarrow\\ [\\ce{I-}]\\geqq12\\,\\mathrm{mol/L} \\]\n平衡時に残る $\\ce{I-}$ だけで約 12 mol/L 必要であり，6 mol/L 程度が上限のヨウ化カリウム水溶液では実現できない．よって $\\boldsymbol{\\text{できない}}$．（$\\ce{I3-}$ の生成で $\\ce{CCl4}$ からの「逆抽出」は進むが，$K_D$ が大きいので等体積1回では限界がある．）\n\n\\textbf{(4)}　水層の体積が 10 倍になるので，99 % 以上を移す条件は $D\\times\\dfrac{1.00}{0.100}\\geqq99$，$D\\geqq9.9$．\n\\[ 1+700[\\ce{I-}]\\geqq9.9\\times85=841.5 \\ \\Longrightarrow\\ [\\ce{I-}]\\geqq1.20\\,\\mathrm{mol/L} \\]\nこれは平衡時の濃度．$\\ce{I3-}$ の生成で使われる $\\ce{I-}$ は，ヨウ素全体 $1.00\\times10^{-3}\\,\\mathrm{mol}$ がすべて $\\ce{I3-}$ になったとしても $1.00\\times10^{-3}\\,\\mathrm{mol}$（1.00 L 中で $1.0\\times10^{-3}\\,\\mathrm{mol/L}$）で，1.20 mol/L に比べて無視できる（0.1 % 未満）．よって初めの濃度も $\\boldsymbol{1.2\\,\\mathrm{mol/L}}$ でよい．\n\n（(2) では $\\ce{I-}$ の減少（約 1.4 %）を考慮したが，(4) では $\\ce{I-}$ が大過剰なので無視できる．近似の可否はこのように相対的な大きさで判断する．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "分配平衡は水層の I₂ についてだけ成り立ち，水層に I⁻ があると I₃⁻ の生成で見かけの分配比が (1+K[I⁻])/K_D に変わる．抽出実験の結果から錯形成の平衡定数を逆算し，目標の抽出率に必要な I⁻ 濃度を求めて実現できるかを判断する．"
+ },
+ "concepts": [
+  "solution-colligative",
+  "concentration",
+  "chemical-equilibrium"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "分配平衡",
+  "分配係数",
+  "三ヨウ化物イオン",
+  "抽出",
+  "錯形成平衡"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

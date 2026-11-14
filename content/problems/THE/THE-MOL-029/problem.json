@@ -1,0 +1,108 @@
+{
+ "id": "THE-MOL-029",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-04",
+ "topic": "濃度の異なる溶液の混合による濃度の調製（内分の関係）",
+ "course": "化学",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "塩化ナトリウム水溶液 A（$0.20\\,\\mathrm{mol/L}$）と B（$1.00\\,\\mathrm{mol/L}$）がある．(1)，(2) では，混合後の水溶液の体積は混合前の体積の和に等しいものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A と B を混ぜて $0.50\\,\\mathrm{mol/L}$ の水溶液を $400\\,\\mathrm{mL}$ つくりたい．A と B はそれぞれ何 mL 必要か．"
+     },
+     {
+      "id": "2",
+      "tex": "A，B と水のうち 2 つを混ぜて $0.10\\,\\mathrm{mol/L}$ の水溶液を $400\\,\\mathrm{mL}$ つくりたい．どれとどれを何 mL ずつ混ぜればよいか．また，A と B だけを混ぜてつくれる水溶液の濃度 $c$ の範囲を答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "質量パーセント濃度 10 % の塩化ナトリウム水溶液 X と 30 % の水溶液 Y を混ぜて，25 % の水溶液を $200\\,\\mathrm{g}$ つくりたい．X と Y はそれぞれ何 g 必要か．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の計算は (1) と違って，混合による体積の変化についての仮定がなくても正確に成り立つ．その理由を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "A $250\\,\\mathrm{mL}$，B $150\\,\\mathrm{mL}$"
+   },
+   {
+    "id": "2",
+    "tex": "A $200\\,\\mathrm{mL}$ と水 $200\\,\\mathrm{mL}$．A と B だけでは $0.20\\,\\mathrm{mol/L}<c<1.00\\,\\mathrm{mol/L}$ の範囲しかつくれない．"
+   },
+   {
+    "id": "3",
+    "tex": "X $50\\,\\mathrm{g}$，Y $150\\,\\mathrm{g}$"
+   },
+   {
+    "id": "4",
+    "tex": "質量パーセント濃度は溶液と溶質の質量で決まり，混合の前後で質量はそれぞれ保存される（足し算が成り立つ）から．モル濃度は溶液の体積を使うが，混合後の体積は混合前の体積の和になるとは限らない．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 溶質の物質量の保存}\nA を $x\\,\\mathrm{L}$ 使うと B は $(0.400-x)\\,\\mathrm{L}$．NaCl の物質量は混合の前後で変わらないので\n\\[0.20x+1.00(0.400-x)=0.50\\times0.400\\]\n\\[0.80x=0.20\\quad\\Longrightarrow\\quad x=0.250\\,\\mathrm{L}\\]\nA $\\boldsymbol{250\\,\\mathrm{mL}}$，B $\\boldsymbol{150\\,\\mathrm{mL}}$．\n体積比は $V_\\mathrm{A}:V_\\mathrm{B}=(1.00-0.50):(0.50-0.20)=5:3$ と表せる．目標の濃度が近い方の溶液を多く使う（てこの関係，内分の関係）．\n\n\\textbf{(2) 目標が範囲外のとき}\n混合液の濃度は，混ぜた溶液の濃度の間（重みつき平均）にしかならない．A と B だけなら $0.20<c<1.00$．$0.10\\,\\mathrm{mol/L}$ は A より薄いので，A を水（$0\\,\\mathrm{mol/L}$）で薄める．\n\\[0.20x=0.10\\times0.400\\quad\\Longrightarrow\\quad x=0.200\\,\\mathrm{L}\\]\nA $\\boldsymbol{200\\,\\mathrm{mL}}$ と水 $\\boldsymbol{200\\,\\mathrm{mL}}$．（B と水では A を使うより多くの水が要るが，それでもつくれる：B $40\\,\\mathrm{mL}$ と水 $360\\,\\mathrm{mL}$．どちらも正解としてよい．）\n\n\\textbf{(3) 質量パーセント濃度の場合}\nX を $y\\,\\mathrm{g}$ とすると Y は $(200-y)\\,\\mathrm{g}$．溶質の質量の保存より\n\\[0.10y+0.30(200-y)=0.25\\times200\\quad\\Longrightarrow\\quad 0.20y=10\\quad\\Longrightarrow\\quad y=50\\,\\mathrm{g}\\]\nX $\\boldsymbol{50\\,\\mathrm{g}}$，Y $\\boldsymbol{150\\,\\mathrm{g}}$（質量比 $(30-25):(25-10)=1:3$）．\n\n\\textbf{(4) 仮定の要不要}\n質量パーセント濃度の計算に使う「溶質の質量」も「溶液の質量」も，混合の前後でそれぞれ和が保たれる（質量保存）．一方，モル濃度の計算に使う「溶液の体積」は，混合で分子の詰まり方が変わるため，一般には和にならない（例：水とエタノールを混ぜると体積は和より小さくなる）．薄い水溶液どうしでは体積の和にほぼ等しいので，(1) ではそれを仮定した．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "濃度の異なる溶液の混合では溶質の量が保存され，混合液の濃度は元の濃度の重みつき平均（内分点）になるので，使う量の比は目標濃度からの差の逆比になり，範囲外の濃度は水（濃度 0）を相手にしないとつくれない．質量パーセント濃度の混合は質量の加成性で厳密に成り立つが，モル濃度の混合は体積の加成性の仮定が必要である．"
+ },
+ "concepts": [
+  "mole",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "モル濃度",
+  "質量パーセント濃度",
+  "溶液の混合",
+  "希釈",
+  "体積の加成性"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

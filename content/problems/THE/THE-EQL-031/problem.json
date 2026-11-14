@@ -1,0 +1,109 @@
+{
+ "id": "THE-EQL-031",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "固体の熱分解平衡と分解を防ぐ条件",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "炭酸水素ナトリウムは加熱すると次のように分解し，密閉容器中では平衡に達する．\n\\[ \\ce{2NaHCO3(s) <=> Na2CO3(s) + CO2(g) + H2O(g)} \\]\nある温度 $T$ における圧平衡定数は $K_p=1.6\\times10^9\\,\\mathrm{Pa^2}$ である．以下，温度は $T$ に保つ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$K_p$ を $\\ce{CO2}$，$\\ce{H2O}$ の分圧 $p_{\\ce{CO2}}$，$p_{\\ce{H2O}}$ を用いて表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "真空にした密閉容器に十分な量の炭酸水素ナトリウムだけを入れて温度 $T$ に保った．平衡時の全圧を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "炭酸水素ナトリウムの上に，二酸化炭素と水蒸気だけからなる全圧 $1.0\\times10^5\\,\\mathrm{Pa}$ の混合気体を流し続ける．炭酸水素ナトリウムが分解しないための水蒸気の分圧の範囲を，有効数字2桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の代わりに，$1.0\\times10^5\\,\\mathrm{Pa}$ の純粋な二酸化炭素を流し続けると，炭酸水素ナトリウムは分解するか．理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$K_p=p_{\\ce{CO2}}\\,p_{\\ce{H2O}}$"
+   },
+   {
+    "id": "2",
+    "tex": "$8.0\\times10^4\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "3",
+    "tex": "$2.0\\times10^4\\,\\mathrm{Pa}$ 以上 $8.0\\times10^4\\,\\mathrm{Pa}$ 以下"
+   },
+   {
+    "id": "4",
+    "tex": "分解する（水蒸気の分圧が 0 で，$p_{\\ce{CO2}}\\,p_{\\ce{H2O}}$ が $K_p$ より小さいから）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 固体（$\\ce{NaHCO3}$，$\\ce{Na2CO3}$）は平衡定数に含めない：$\\boldsymbol{K_p=p_{\\ce{CO2}}\\,p_{\\ce{H2O}}}$．\\\\\n\\textbf{(2)} 分解で $\\ce{CO2}$ と $\\ce{H2O}$ は等量ずつ生じるので $p_{\\ce{CO2}}=p_{\\ce{H2O}}=p$，$p^2=1.6\\times10^9$ より $p=4.0\\times10^4\\,\\mathrm{Pa}$．全圧 $\\boldsymbol{8.0\\times10^4\\,\\mathrm{Pa}}$．\\\\\n\\textbf{(3)} 気体側で $p_{\\ce{CO2}}p_{\\ce{H2O}}\\geqq K_p$ なら，分解の向き（右）には進まない．$p_{\\ce{H2O}}=x$，$p_{\\ce{CO2}}=1.0\\times10^5-x$ として\n\\[ x(1.0\\times10^5-x)\\geqq1.6\\times10^9\\ \\Leftrightarrow\\ x^2-1.0\\times10^5x+1.6\\times10^9\\leqq0\\ \\Leftrightarrow\\ 2.0\\times10^4\\leqq x\\leqq8.0\\times10^4 \\]\n水蒸気の分圧は $\\boldsymbol{2.0\\times10^4\\,\\mathrm{Pa}}$ 以上 $\\boldsymbol{8.0\\times10^4\\,\\mathrm{Pa}}$ 以下．\\\\\n\\textbf{(4)} $p_{\\ce{H2O}}=0$ なので $p_{\\ce{CO2}}p_{\\ce{H2O}}=0<K_p$ となり，平衡は右へ進む（生じた水蒸気も流されて除かれ続ける）．二酸化炭素をいくら濃くしても，水蒸気がなければ\\textbf{分解する}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "生成物の両方が気体で反応物・生成物が固体の分解平衡では，K_p が2つの分圧の積になる．気相の分圧の積が K_p 以上なら分解は進まないので，一方の気体だけを多くしても他方がなければ分解を防げない．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "alkali-metals",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "固体を含む平衡",
+  "圧平衡定数",
+  "解離圧",
+  "炭酸水素ナトリウム",
+  "平衡が成立する条件"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

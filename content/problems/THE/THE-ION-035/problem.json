@@ -1,0 +1,110 @@
+{
+ "id": "THE-ION-035",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "炭酸カルシウムの溶解と二酸化炭素の分圧（鍾乳洞）",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "鍾乳洞のでき方や石灰水の白濁が消える現象を，複数の平衡を連立させて定量的に考える．$25\\,^\\circ\\mathrm{C}$ で次のデータを用いる．\\\\\n・二酸化炭素の溶解（ヘンリーの法則）：分圧 $P$ の $\\ce{CO2}$ と接する水中の $[\\ce{CO2}]$（$\\ce{H2CO3}$ を含めた濃度）は $[\\ce{CO2}]=3.0\\times10^{-2}\\times\\dfrac{P}{1.0\\times10^{5}\\,\\mathrm{Pa}}\\ \\mathrm{mol/L}$ \\\\\n・$\\ce{CO2 + H2O <=> H+ + HCO3-}$　$K_1=\\dfrac{[\\ce{H+}][\\ce{HCO3-}]}{[\\ce{CO2}]}=4.0\\times10^{-7}\\,\\mathrm{mol/L}$ \\\\\n・$\\ce{HCO3- <=> H+ + CO3^2-}$　$K_2=5.0\\times10^{-11}\\,\\mathrm{mol/L}$ \\\\\n・$\\ce{CaCO3}$ の溶解度積 $K_{\\mathrm{sp}}=[\\ce{Ca^2+}][\\ce{CO3^2-}]=5.0\\times10^{-9}\\,(\\mathrm{mol/L})^2$ \\\\\n・水のイオン積 $K_{\\mathrm w}=1.0\\times10^{-14}\\,(\\mathrm{mol/L})^2$，式量 $\\ce{CaCO3}=100$ \\\\\n・必要なら $\\sqrt[3]{6}=1.82$，$\\sqrt[3]{120}=4.93$，$\\sqrt[3]{300}=6.69$，$\\log_{10}2=0.30$，$\\log_{10}3=0.48$ を用いよ．\\\\\n以下，液中の陽イオンは $\\ce{Ca^2+}$ と $\\ce{H+}$ だけとし，固体の $\\ce{CaCO3}$ と気相の $\\ce{CO2}$（分圧一定）の両方と平衡にある水を考える．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "反応 $\\ce{CaCO3 + CO2 + H2O <=> Ca^2+ + 2HCO3-}$ の平衡定数 $K=\\dfrac{[\\ce{Ca^2+}][\\ce{HCO3-}]^2}{[\\ce{CO2}]}$ を $K_1$，$K_2$，$K_{\\mathrm{sp}}$ で表し，値を求めよ．また，$[\\ce{HCO3-}]=2[\\ce{Ca^2+}]$ と近似できるとき，$\\ce{CaCO3}$ の溶解度 $s$（$=[\\ce{Ca^2+}]$）は $\\ce{CO2}$ の分圧 $P$ の何乗に比例するか．"
+     },
+     {
+      "id": "2",
+      "tex": "$P=1.0\\times10^{5}\\,\\mathrm{Pa}$ のときの $s$ を有効数字 2 桁で求めよ．さらに，このときの pH を小数第 1 位まで求め，(1) の近似（$[\\ce{HCO3-}]=2[\\ce{Ca^2+}]$）が成り立っていることを，$[\\ce{CO3^2-}]$ と $[\\ce{H+}]$ を $[\\ce{HCO3-}]$ と比べて確かめよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$1.0\\times10^{-2}\\,\\mathrm{mol/L}$ の石灰水（水酸化カルシウム水溶液）に $\\ce{CO2}$ を通じると白濁し，さらに $P=1.0\\times10^{5}\\,\\mathrm{Pa}$ の $\\ce{CO2}$ を十分長く通じ続けて平衡に達させた．白濁は完全に消えるか．消えない場合は，はじめのカルシウムの何 \\% が沈殿として残るかを有効数字 2 桁で答えよ．体積変化は無視する．"
+     },
+     {
+      "id": "4",
+      "tex": "土壌中の空気（$\\ce{CO2}$ 分圧 $2.0\\times10^{3}\\,\\mathrm{Pa}$）と平衡にある地下水が石灰岩を溶かして飽和したのち，鍾乳洞の空気（$\\ce{CO2}$ 分圧 $40\\,\\mathrm{Pa}$）と平衡になるまで $\\ce{CO2}$ を放出した．地下水 $1.0\\,\\mathrm{L}$ あたり析出する $\\ce{CaCO3}$ は何 g か．有効数字 2 桁で答えよ．また，鍾乳洞内の水でも (1) の近似が成り立つか，$[\\ce{CO3^2-}]/[\\ce{HCO3-}]$ と $[\\ce{OH-}]/[\\ce{HCO3-}]$ を見積もって判定せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$K=\\dfrac{K_{\\mathrm{sp}}K_1}{K_2}=4.0\\times10^{-5}\\,(\\mathrm{mol/L})^2$，$s$ は $P^{1/3}$（分圧の $\\tfrac13$ 乗）に比例する．"
+   },
+   {
+    "id": "2",
+    "tex": "$s=6.7\\times10^{-3}\\,\\mathrm{mol/L}$，pH $=6.0$（$6.05$）．$[\\ce{CO3^2-}]/[\\ce{HCO3-}]\\approx6\\times10^{-5}$，$[\\ce{H+}]/[\\ce{HCO3-}]\\approx7\\times10^{-5}$ でともに無視でき，近似は成り立つ．"
+   },
+   {
+    "id": "3",
+    "tex": "完全には消えない．約 $33\\,\\%$ が $\\ce{CaCO3}$ として残る．"
+   },
+   {
+    "id": "4",
+    "tex": "$0.13\\,\\mathrm{g}$．洞内の水は pH $\\approx8.3$ で $[\\ce{CO3^2-}]/[\\ce{HCO3-}]\\approx1\\times10^{-2}$，$[\\ce{OH-}]/[\\ce{HCO3-}]\\approx2\\times10^{-3}$ なので近似は成り立つ（誤差 1 \\% 程度）．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 平衡の組み合わせ}　求める反応は\n\\[ \\ce{CaCO3 <=> Ca^2+ + CO3^2-}\\quad(K_{\\mathrm{sp}}),\\qquad \\ce{CO2 + H2O <=> H+ + HCO3-}\\quad(K_1),\\qquad \\ce{H+ + CO3^2- <=> HCO3-}\\quad(1/K_2) \\]\nの和なので，平衡定数は積になる．\n\\[ K=\\frac{[\\ce{Ca^2+}][\\ce{HCO3-}]^2}{[\\ce{CO2}]}=K_{\\mathrm{sp}}\\cdot K_1\\cdot\\frac{1}{K_2}=\\frac{5.0\\times10^{-9}\\times4.0\\times10^{-7}}{5.0\\times10^{-11}}=\\boldsymbol{4.0\\times10^{-5}\\,(\\mathrm{mol/L})^2} \\]\n電荷のつり合い $2[\\ce{Ca^2+}]+[\\ce{H+}]=[\\ce{HCO3-}]+2[\\ce{CO3^2-}]+[\\ce{OH-}]$ で $[\\ce{H+}]$，$[\\ce{CO3^2-}]$，$[\\ce{OH-}]$ が小さければ $[\\ce{HCO3-}]=2s$．よって $4s^3=K[\\ce{CO2}]$，$[\\ce{CO2}]\\propto P$ だから $s\\propto P^{1/3}$（\\textbf{$\\tfrac13$ 乗}）．$\\ce{CO2}$ の圧力を 8 倍にしても溶解度は 2 倍にしかならない．\n\n\\textbf{(2)} $[\\ce{CO2}]=3.0\\times10^{-2}\\,\\mathrm{mol/L}$ なので\n\\[ s^3=\\frac{4.0\\times10^{-5}\\times3.0\\times10^{-2}}{4}=3.0\\times10^{-7}=300\\times10^{-9},\\qquad s=6.69\\times10^{-3}\\approx\\boldsymbol{6.7\\times10^{-3}\\,\\mathrm{mol/L}} \\]\n$[\\ce{HCO3-}]=2s=1.34\\times10^{-2}\\,\\mathrm{mol/L}$，$K_1$ の式から\n\\[ [\\ce{H+}]=\\frac{K_1[\\ce{CO2}]}{[\\ce{HCO3-}]}=\\frac{4.0\\times10^{-7}\\times3.0\\times10^{-2}}{1.34\\times10^{-2}}=9.0\\times10^{-7}\\,\\mathrm{mol/L},\\qquad \\mathrm{pH}=7-2\\log_{10}3=\\boldsymbol{6.0}\\ (6.05) \\]\n確認：$[\\ce{CO3^2-}]/[\\ce{HCO3-}]=K_2/[\\ce{H+}]=5.6\\times10^{-5}$，$[\\ce{H+}]/[\\ce{HCO3-}]=6.7\\times10^{-5}$，$[\\ce{OH-}]$ はさらに小さい．いずれも 1 に比べて無視でき，近似は妥当．（$[\\ce{CO3^2-}]=K_2[\\ce{HCO3-}]/[\\ce{H+}]=7.5\\times10^{-7}$ と求めると $[\\ce{Ca^2+}][\\ce{CO3^2-}]=5.0\\times10^{-9}=K_{\\mathrm{sp}}$ となり，検算できる．）\n\n\\textbf{(3) 条件判断}　$\\ce{CO2}$ を通じ続けると $\\ce{OH-}$ はすべて $\\ce{HCO3-}$ などに変わり，液は $\\ce{Ca^2+}$ と $\\ce{HCO3-}$ だけを主に含む．これは (2) と同じ状況で，溶けていられる $\\ce{Ca^2+}$ は最大 $6.69\\times10^{-3}\\,\\mathrm{mol/L}$．はじめの $1.0\\times10^{-2}\\,\\mathrm{mol/L}$ はこれより多いので\\textbf{白濁は完全には消えない}．残る割合は\n\\[ \\frac{1.0\\times10^{-2}-6.69\\times10^{-3}}{1.0\\times10^{-2}}=0.33\\to\\boldsymbol{33\\,\\%} \\]\n（白濁が完全に消えるのは，石灰水の濃度が約 $6.7\\times10^{-3}\\,\\mathrm{mol/L}$ 以下のときに限られる．）\n\n\\textbf{(4) 鍾乳洞}　土壌中：$[\\ce{CO2}]=3.0\\times10^{-2}\\times0.020=6.0\\times10^{-4}$，$s^3=\\dfrac{4.0\\times10^{-5}\\times6.0\\times10^{-4}}{4}=6.0\\times10^{-9}$，$s_1=1.82\\times10^{-3}\\,\\mathrm{mol/L}$．\\\\\n洞内：$[\\ce{CO2}]=3.0\\times10^{-2}\\times4.0\\times10^{-4}=1.2\\times10^{-5}$，$s^3=1.2\\times10^{-10}=120\\times10^{-12}$，$s_2=4.93\\times10^{-4}\\,\\mathrm{mol/L}$．\\\\\n析出量 $(1.82\\times10^{-3}-4.93\\times10^{-4})\\times100=0.133\\to\\boldsymbol{0.13\\,\\mathrm{g}}$．\\\\\n近似の確認：$[\\ce{HCO3-}]=9.9\\times10^{-4}$，$[\\ce{H+}]=\\dfrac{4.0\\times10^{-7}\\times1.2\\times10^{-5}}{9.9\\times10^{-4}}=4.9\\times10^{-9}$（pH $\\approx8.3$）．$[\\ce{CO3^2-}]/[\\ce{HCO3-}]=K_2/[\\ce{H+}]=1.0\\times10^{-2}$，$[\\ce{OH-}]=2.0\\times10^{-6}$ で $[\\ce{OH-}]/[\\ce{HCO3-}]=2\\times10^{-3}$．無視した項は 1 \\% 程度なので，有効数字 2 桁の範囲で近似は成り立つ．$\\ce{CO2}$ の分圧が下がるほど pH が上がり $\\ce{CO3^2-}$ の割合が増えるので，さらに分圧が低い条件ではこの近似が破れていくことに注意する．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "CaCO₃ の溶解は，溶解平衡・CO₂ の溶解（ヘンリー）・炭酸の二段電離の連立で決まり，全体の平衡定数は Ksp·K₁/K₂ になる．電荷のつり合いから溶解度は CO₂ 分圧の 1/3 乗に比例し，分圧の変化で溶解・析出の量と，石灰水の白濁が消えるかどうかが決まる．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "precipitation",
+  "carbon-silicon"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "溶解度積",
+  "ヘンリーの法則",
+  "炭酸",
+  "連立平衡",
+  "鍾乳洞",
+  "近似の妥当性"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

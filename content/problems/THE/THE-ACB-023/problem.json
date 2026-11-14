@@ -1,0 +1,110 @@
+{
+ "id": "THE-ACB-023",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-05",
+ "topic": "指示薬が変色した時点の中和率と指示薬の選択",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "弱酸を強塩基で（または弱塩基を強酸で）滴定するとき，指示薬が変色した時点でどれだけ中和が進んでいるかは，電離定数の式から見積もることができる．$0.10\\,\\mathrm{mol/L}$ の酢酸水溶液 $20.0\\,\\mathrm{mL}$ を $0.10\\,\\mathrm{mol/L}$ の水酸化ナトリウム水溶液で滴定する．酢酸の電離定数を $K_a=2.0\\times10^{-5}\\,\\mathrm{mol/L}$，水のイオン積を $K_w=1.0\\times10^{-14}\\,(\\mathrm{mol/L})^2$，$\\log_{10}2=0.30$，$10^{-0.4}=0.40$ とする．滴定の途中では，溶液中の $\\ce{H+}$・$\\ce{OH-}$ の量は酸・塩基とその塩の量に比べて無視できるものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "誤って指示薬にメチルオレンジを用い，溶液の pH が $4.4$ になったところで変色したとみなした．このときまでに加えた水酸化ナトリウム水溶液の体積は何 mL か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "中和点の pH を小数第1位まで求め，フェノールフタレイン（変色域 pH $8.0$〜$9.8$）がこの滴定に適していることを確かめよ．"
+     },
+     {
+      "id": "3",
+      "tex": "次に，$0.10\\,\\mathrm{mol/L}$ のアンモニア水 $20.0\\,\\mathrm{mL}$ を $0.10\\,\\mathrm{mol/L}$ の塩酸で滴定し，指示薬にフェノールフタレインを用いて，pH が $8.0$ になって赤色が消えたところを終点とした．アンモニアの電離定数を $K_b=2.0\\times10^{-5}\\,\\mathrm{mol/L}$ とすると，終点までに加えた塩酸は中和に必要な量の何\\%か．整数で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "一般に，1価の弱酸 HA を強塩基で滴定するとき，指示薬が変色する pH が $\\mathrm{p}K_a\\,(=-\\log_{10}K_a)$ より $3$ だけ大きいとすると，変色した時点で中和された HA の割合は何\\%か．有効数字3桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$6.7\\,\\mathrm{mL}$"
+   },
+   {
+    "id": "2",
+    "tex": "pH $8.7$．変色域 $8.0$〜$9.8$ の中にあるので適している"
+   },
+   {
+    "id": "3",
+    "tex": "$95\\,\\%$"
+   },
+   {
+    "id": "4",
+    "tex": "$99.9\\,\\%$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　滴定の途中の溶液は弱酸とその塩（または弱塩基とその塩）の混合溶液なので，電離定数の式\n\\[ K_a=\\dfrac{[\\ce{H+}][\\ce{CH3COO-}]}{[\\ce{CH3COOH}]} \\quad\\Longrightarrow\\quad \\dfrac{[\\ce{CH3COO-}]}{[\\ce{CH3COOH}]}=\\dfrac{K_a}{[\\ce{H+}]} \\]\nから，ある pH での「中和された量：残っている量」の比が決まる．\n\n\\textbf{(1)}　pH $4.4$ では $[\\ce{H+}]=10^{-4.4}=10^{-4}\\times10^{-0.4}=4.0\\times10^{-5}\\,\\mathrm{mol/L}$．\n\\[ \\dfrac{[\\ce{CH3COO-}]}{[\\ce{CH3COOH}]}=\\dfrac{2.0\\times10^{-5}}{4.0\\times10^{-5}}=0.50 \\]\n中和された酢酸は全体の $\\dfrac{0.50}{1+0.50}=\\dfrac13$ にすぎない．$\\ce{CH3COOH + NaOH -> CH3COONa + H2O}$ より，必要量 $20.0\\,\\mathrm{mL}$ の $\\dfrac13$ で\n\\[ \\boldsymbol{6.7\\,\\mathrm{mL}} \\]\nで変色してしまう（中和点のずっと手前）．\n\n\\textbf{(2)}　中和点では $\\ce{CH3COONa}$ が $\\dfrac{0.10\\times20.0}{40.0}=0.050\\,\\mathrm{mol/L}$．$\\ce{CH3COO- + H2O <=> CH3COOH + OH-}$ の定数は $K_w/K_a=5.0\\times10^{-10}\\,\\mathrm{mol/L}$ なので\n\\[ [\\ce{OH-}]=\\sqrt{\\dfrac{K_w}{K_a}\\times0.050}=\\sqrt{2.5\\times10^{-11}}=5.0\\times10^{-6}\\,\\mathrm{mol/L} \\]\n$\\mathrm{pOH}=6-\\log_{10}5.0=6-0.70=5.30$，$\\mathrm{pH}=\\boldsymbol{8.7}$．これはフェノールフタレインの変色域の中にあるので適している．\n\n\\textbf{(3)}　$\\ce{NH4+ <=> NH3 + H+}$ の電離定数は $K_w/K_b=5.0\\times10^{-10}\\,\\mathrm{mol/L}$．pH $8.0$ では\n\\[ \\dfrac{[\\ce{NH3}]}{[\\ce{NH4+}]}=\\dfrac{5.0\\times10^{-10}}{1.0\\times10^{-8}}=0.050 \\]\n中和された割合は $\\dfrac{1}{1+0.050}=0.952$ で，加えた塩酸は必要量の $\\boldsymbol{95\\,\\%}$．中和点（pH は約 $5.3$）よりかなり手前で赤色が消えてしまい，$5\\,\\%$ も少なく見積もる．弱塩基の滴定には，酸性側に変色域をもつメチルオレンジが適する．\n\n\\textbf{(4)}　$\\mathrm{pH}=\\mathrm{p}K_a+3$ では $[\\ce{H+}]=K_a\\times10^{-3}$ なので\n\\[ \\dfrac{[\\ce{A-}]}{[\\ce{HA}]}=\\dfrac{K_a}{[\\ce{H+}]}=10^{3},\\qquad \\dfrac{10^3}{1+10^3}=0.999 \\]\nすなわち $\\boldsymbol{99.9\\,\\%}$ が中和されている．変色 pH が $\\mathrm{p}K_a$ に近いほど中和が途中で終点となり，(1) のように $\\mathrm{p}K_a$ より小さい pH で変色する指示薬では半分も中和されないうちに終点となる．指示薬の「変色域が中和点の pH を含む」という選び方の根拠は，このように中和率で確かめられる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "指示薬が変色する pH での中和率は電離定数の式から [A⁻]/[HA]=Kₐ/[H⁺] として求まり，変色 pH が pKₐ より十分大きくないと中和点のずっと手前で終点になる．弱酸・弱塩基それぞれについて，誤った指示薬を使ったときの誤差を中和率で評価する．"
+ },
+ "concepts": [
+  "acid-base",
+  "ph",
+  "ionization-equilibrium"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "指示薬",
+  "中和滴定",
+  "電離定数",
+  "中和率",
+  "弱酸",
+  "弱塩基"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,118 @@
+{
+ "id": "INO-TRN-039",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-07",
+ "topic": "銅・酸化銅(I)・酸化銅(II) の混合物の加熱による質量変化（銅と酸素の物質量比だけで決まる量）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "銅の酸化物には酸化銅(I) $\\ce{Cu2O}$ と酸化銅(II) $\\ce{CuO}$ があり，空気中で約 $1000\\,^\\circ\\mathrm{C}$ より高い温度では $\\ce{Cu2O}$ が，低い温度では $\\ce{CuO}$ が安定である．銅 $\\ce{Cu}$，$\\ce{Cu2O}$，$\\ce{CuO}$ が均一に混ざった粉末 P がある．P の一部を空気中 $900\\,^\\circ\\mathrm{C}$ で加熱してすべて $\\ce{CuO}$ にしたところ，質量が $16.0\\,\\%$ 増加した．原子量は O$=16$，Cu$=64$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "P に含まれる O 原子と Cu 原子の物質量の比 $\\dfrac{n_{\\rm O}}{n_{\\rm Cu}}$ を有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "P の一部を空気中 $1100\\,^\\circ\\mathrm{C}$ で加熱してすべて $\\ce{Cu2O}$ にすると，質量は何 \\% 増加するか．有効数字 3 桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "P の一部を水素気流中で加熱してすべて $\\ce{Cu}$ にすると，質量は何 \\% 減少するか．有効数字 3 桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "以上の実験結果だけから，P 中の $\\ce{Cu}$，$\\ce{Cu2O}$，$\\ce{CuO}$ の物質量の比は 1 通りに決まるか．"
+     },
+     {
+      "id": "5",
+      "tex": "P が $\\ce{Cu}$ を含まず，$\\ce{Cu2O}$ と $\\ce{CuO}$ だけからなるという可能性はあるか．(1) の結果をもとに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$0.310$"
+   },
+   {
+    "id": "2",
+    "tex": "$4.40\\,\\%$"
+   },
+   {
+    "id": "3",
+    "tex": "$7.20\\,\\%$"
+   },
+   {
+    "id": "4",
+    "tex": "決まらない"
+   },
+   {
+    "id": "5",
+    "tex": "ない"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} P 中の Cu を $n_{\\rm Cu}$，O を $n_{\\rm O}$ とすると，P の質量は $64n_{\\rm Cu}+16n_{\\rm O}$．すべて $\\ce{CuO}$ にすると $80n_{\\rm Cu}$ なので\n\\[ 80n_{\\rm Cu}=1.160\\,(64n_{\\rm Cu}+16n_{\\rm O}) \\]\nP の質量は Cu 1 mol あたり $\\dfrac{80}{1.160}=68.97\\,\\mathrm g$，$\\dfrac{n_{\\rm O}}{n_{\\rm Cu}}=\\dfrac{68.97-64}{16}=\\boldsymbol{0.310}$．\n\n\\textbf{(2)} $\\ce{Cu2O}$ では Cu 1 mol あたり $72\\,\\mathrm g$．$\\dfrac{72}{68.97}=1.0440$ より $\\boldsymbol{4.40\\,\\%}$ 増加．\n\n\\textbf{(3)} Cu だけにすると Cu 1 mol あたり $64\\,\\mathrm g$．$\\dfrac{64}{68.97}=0.9280$ より $\\boldsymbol{7.20\\,\\%}$ 減少．\n\n\\textbf{(4)} 加熱後の質量は Cu の物質量だけで決まり，加熱前の質量は Cu と O の物質量で決まるので，実験からわかるのは $n_{\\rm O}/n_{\\rm Cu}$ だけである．たとえば Cu 1 mol あたり O が 0.310 mol になる組合せは $\\ce{Cu}$ と $\\ce{CuO}$ だけでも，$\\ce{Cu}$ と $\\ce{Cu2O}$ と $\\ce{CuO}$ でも無数にあり，比は\\textbf{決まらない}．(2)・(3) は (1) から計算できるので新しい情報を与えない．\n\n\\textbf{(5)} $\\ce{Cu2O}$ の $n_{\\rm O}/n_{\\rm Cu}$ は $0.5$，$\\ce{CuO}$ は $1$ で，その混合物では必ず $0.5$ 以上になる．(1) の $0.310$ は $0.5$ より小さいので，酸素を含まない $\\ce{Cu}$ が必ず含まれており，その可能性は\\textbf{ない}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "銅と酸化物の混合物を一定の酸化物に変える加熱の質量変化は，Cu と O の物質量比だけで決まるので，1 つの加熱データから別の条件での質量変化を予測できるが，各成分の割合までは決まらない．平均の O/Cu 比が成分の範囲に入るかどうかで，含まれる成分を限定できる．"
+ },
+ "concepts": [
+  "transition-metals",
+  "oxygen-sulfur",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "酸化銅(I)",
+  "酸化銅(II)",
+  "質量変化",
+  "物質量比",
+  "混合物",
+  "加熱"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

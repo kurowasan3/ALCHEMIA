@@ -1,0 +1,118 @@
+{
+ "id": "ORG-STR-036",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-01",
+ "topic": "官能基と構造から決まる性質の共通点（仲間はずれの判定）",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "condition",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の①〜⑤の各組の 5 つの化合物のうち 4 つは，下の (a)〜(g) の性質のうち 1 つを共通にもち，残りの 1 つはその性質をもたない．各組について，共通の性質を記号で答え，その性質をもたない化合物の名称と示性式を答えよ．\\\\\n① 乳酸，アラニン，2-ブタノール，2-クロロブタン，グリシン\\\\\n② スチレン，酢酸ビニル，アクリル酸メチル，プロペン，エチレングリコール\\\\\n③ シュウ酸，マレイン酸，フタル酸，アジピン酸，乳酸\\\\\n④ エタノール，アセトン，2-プロパノール，アセトアルデヒド，1-プロパノール\\\\\n⑤ ホルムアルデヒド，ギ酸，グルコース，アセトアルデヒド，アセトン\\\\\n性質：(a) 鏡像異性体が存在する　(b) 付加重合の単量体になる　(c) 2 価の酸である　(d) ヨードホルム反応を示す　(e) 銀鏡反応を示す　(f) エステルである　(g) アミノ酸である"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "①の組について答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "②の組について答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "③の組について答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "④の組について答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "⑤の組について答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "(a)，グリシン $\\ce{H2NCH2COOH}$"
+   },
+   {
+    "id": "2",
+    "tex": "(b)，エチレングリコール $\\ce{HOCH2CH2OH}$"
+   },
+   {
+    "id": "3",
+    "tex": "(c)，乳酸 $\\ce{CH3CH(OH)COOH}$"
+   },
+   {
+    "id": "4",
+    "tex": "(d)，1-プロパノール $\\ce{CH3CH2CH2OH}$"
+   },
+   {
+    "id": "5",
+    "tex": "(e)，アセトン $\\ce{CH3COCH3}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　乳酸 $\\ce{CH3C^{*}H(OH)COOH}$，アラニン $\\ce{CH3C^{*}H(NH2)COOH}$，2-ブタノール $\\ce{CH3C^{*}H(OH)CH2CH3}$，2-クロロブタン $\\ce{CH3C^{*}HClCH2CH3}$ はいずれも不斉炭素原子（*）をもち，鏡像異性体が存在する．グリシン $\\ce{H2NCH2COOH}$ の中央の炭素には H が 2 つついているので不斉炭素原子ではない．共通の性質は $\\boldsymbol{\\text{(a)}}$，もたないのは$\\boldsymbol{\\text{グリシン}}$．同じアミノ酸でもアラニンとグリシンで分かれ，「アミノ酸 (g)」は 2 つにしか当てはまらない．\n\n\\textbf{(2)}　スチレン $\\ce{CH2=CHC6H5}$，酢酸ビニル $\\ce{CH2=CHOCOCH3}$，アクリル酸メチル $\\ce{CH2=CHCOOCH3}$，プロペン $\\ce{CH2=CHCH3}$ はどれも $\\ce{C=C}$ をもち付加重合する．エチレングリコール $\\ce{HOCH2CH2OH}$ は $\\ce{C=C}$ をもたず，ジカルボン酸と\\textbf{縮合}重合する単量体である．答えは $\\boldsymbol{\\text{(b)}}$，$\\boldsymbol{\\text{エチレングリコール}}$．\n\n\\textbf{(3)}　シュウ酸 $\\ce{(COOH)2}$，マレイン酸 $\\ce{HOOCCH=CHCOOH}$，フタル酸 $\\ce{C6H4(COOH)2}$，アジピン酸 $\\ce{HOOC(CH2)4COOH}$ はカルボキシ基を 2 つもつ 2 価の酸．乳酸は −OH を 2 つもつが，電離するのはカルボキシ基の H だけなので 1 価の酸である．答えは $\\boldsymbol{\\text{(c)}}$，$\\boldsymbol{\\text{乳酸}}$．\n\n\\textbf{(4)}　ヨードホルム反応は $\\ce{CH3CO}-$ または $\\ce{CH3CH(OH)}-$ の構造（結合する残りは H か炭素）をもつ化合物が示す．エタノール $\\ce{CH3CH2OH}$，2-プロパノール $\\ce{CH3CH(OH)CH3}$，アセトアルデヒド $\\ce{CH3CHO}$，アセトン $\\ce{CH3COCH3}$ は当てはまる．1-プロパノール $\\ce{CH3CH2CH2OH}$ は −OH の炭素の隣が $\\ce{CH2}$ なので反応しない．答えは $\\boldsymbol{\\text{(d)}}$，$\\boldsymbol{\\text{1-プロパノール}}$．\n\n\\textbf{(5)}　ホルムアルデヒド $\\ce{HCHO}$，ギ酸 $\\ce{HCOOH}$（ホルミル基をもつ），グルコース（水溶液中で鎖状構造のホルミル基が還元性を示す），アセトアルデヒド $\\ce{CH3CHO}$ は銀鏡反応を示す．アセトン $\\ce{CH3COCH3}$ はケトンで還元性がない．答えは $\\boldsymbol{\\text{(e)}}$，$\\boldsymbol{\\text{アセトン}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "性質（鏡像異性体の有無・付加重合・酸の価数・ヨードホルム反応・銀鏡反応）は特定の構造（不斉炭素原子，C=C，電離するカルボキシ基の数，CH₃CO−／CH₃CH(OH)−，ホルミル基）で決まるので，構造を書いて共通点と例外を判定する．−OH の数と酸の価数は一致しない．"
+ },
+ "concepts": [
+  "organic-structure",
+  "hydrocarbon",
+  "organic-test"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "不斉炭素原子",
+  "付加重合",
+  "ヨードホルム反応",
+  "銀鏡反応",
+  "2価の酸",
+  "官能基"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "id": "ORG-HYD-021",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-02",
+ "topic": "カルボン酸ナトリウムの脱炭酸によるアルカンの生成と原料の逆推定",
+ "course": "化学",
+ "level": 1,
+ "minutes": 15,
+ "format": [
+  "equation",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "酢酸ナトリウムに水酸化ナトリウム（ソーダ石灰）を加えて加熱するとメタンが発生する．\n\\[\\ce{CH3COONa + NaOH -> CH4 + Na2CO3}\\]\nこの反応では，カルボキシ基（$\\ce{-COONa}$）が炭酸ナトリウムとして外れ，そのあとに水素原子がつく．他のカルボン酸のナトリウム塩 $\\ce{R-COONa}$ でも同様に $\\ce{R-H}$ が生じるものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "プロピオン酸ナトリウム $\\ce{CH3CH2COONa}$ で起こる反応を化学反応式で書け．"
+     },
+     {
+      "id": "2",
+      "tex": "加熱するとプロパンを生じる，分子式 $\\ce{C4H7O2Na}$ のカルボン酸ナトリウム塩をすべて示性式で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "安息香酸ナトリウム $\\ce{C6H5COONa}$，2,2-ジメチルプロパン酸ナトリウム $\\ce{(CH3)3CCOONa}$ から生じる化合物の名称をそれぞれ答えよ．また，安息香酸ナトリウムの反応を化学反応式で書け．"
+     },
+     {
+      "id": "4",
+      "tex": "2-メチルブタン $\\ce{(CH3)2CHCH2CH3}$ を生じるカルボン酸ナトリウム塩（カルボキシ基を 1 つもつ鎖式のもの）は何種類あるか．すべて示性式で答え，その数が 2-メチルブタンのどのような性質と一致するかを述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{CH3CH2COONa + NaOH -> CH3CH3 + Na2CO3}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{CH3CH2CH2COONa}$，$\\ce{(CH3)2CHCOONa}$"
+   },
+   {
+    "id": "3",
+    "tex": "安息香酸ナトリウム：ベンゼン，2,2-ジメチルプロパン酸ナトリウム：2-メチルプロパン．$\\ce{C6H5COONa + NaOH -> C6H6 + Na2CO3}$"
+   },
+   {
+    "id": "4",
+    "tex": "4 種類．$\\ce{(CH3)2CHCH2CH2COONa}$，$\\ce{CH3CH2CH(CH3)CH2COONa}$，$\\ce{(CH3)2CHCH(CH3)COONa}$，$\\ce{CH3CH2C(CH3)2COONa}$．2-メチルブタンの互いに等価でない水素原子の種類の数（一塩素置換体の構造異性体の数）と一致する"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{反応の見方}　$\\ce{R-COONa}$ の $\\ce{R-C}$ 結合が切れて $\\ce{-COONa}$ が NaOH と $\\ce{Na2CO3}$ になり，R に H がつく．生成物の炭素数は 1 つ減る．逆に言えば，原料は「生成物 R–H の H 1 個を $\\ce{-COONa}$ に置きかえたもの」である．\n\n\\textbf{(1)} $\\ce{CH3CH2COONa + NaOH -> CH3CH3 + Na2CO3}$（エタンが生じる）．\n\n\\textbf{(2)} プロパン $\\ce{CH3CH2CH3}$ の H には，端の C の H と中央の C の H の 2 種類がある．それぞれを $\\ce{-COONa}$ に置きかえると $\\boldsymbol{\\ce{CH3CH2CH2COONa}}$（酪酸ナトリウム）と $\\boldsymbol{\\ce{(CH3)2CHCOONa}}$（2-メチルプロパン酸ナトリウム）．どちらも $\\ce{C4H7O2Na}$ である．\n\n\\textbf{(3)} $\\ce{C6H5COONa + NaOH -> C6H6 + Na2CO3}$ で\\textbf{ベンゼン}．$\\ce{(CH3)3C-COONa}$ からは $\\ce{(CH3)3CH}$，すなわち\\textbf{2-メチルプロパン}（イソブタン）．\n\n\\textbf{(4)} 2-メチルブタン $\\ce{\\overset{a}{C}H3-\\overset{b}{C}H(\\overset{a}{C}H3)-\\overset{c}{C}H2-\\overset{d}{C}H3}$ の H は a（2 つのメチル基，等価），b，c，d の 4 種類．それぞれを $\\ce{-COONa}$ に置きかえて\na：$\\ce{CH3CH2CH(CH3)CH2COONa}$，b：$\\ce{CH3CH2C(CH3)2COONa}$，c：$\\ce{(CH3)2CHCH(CH3)COONa}$，d：$\\ce{(CH3)2CHCH2CH2COONa}$ の $\\boldsymbol{4}$ \\textbf{種類}．\nこの数は\\textbf{等価でない水素原子の種類の数}，つまり 2-メチルブタンの一塩素置換体の構造異性体の数（4）と一致する．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "カルボン酸ナトリウムを NaOH と加熱すると −COONa が Na₂CO₃ として外れ R–H が生じる（炭素数が 1 減る）．逆に，あるアルカンを与える原料は，そのアルカンの等価でない H を −COONa に置きかえたものなので，原料の種類は一置換体の数と一致する．"
+ },
+ "concepts": [
+  "hydrocarbon",
+  "alkali-metals",
+  "organic-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "脱炭酸",
+  "アルカンの製法",
+  "カルボン酸ナトリウム",
+  "構造異性体",
+  "等価な水素"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

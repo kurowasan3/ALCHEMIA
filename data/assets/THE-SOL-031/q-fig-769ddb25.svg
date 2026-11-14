@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 290" width="520" height="290">
+  <g fill="none" stroke="currentColor" stroke-width="2">
+    <path d="M40 40 V240 H480 V40"/>
+  </g>
+  <line x1="260" y1="40" x2="260" y2="240" stroke="currentColor" stroke-width="2.5" stroke-dasharray="6 5"/>
+  <rect x="42" y="66" width="215" height="8" fill="currentColor"/>
+  <line x1="150" y1="66" x2="150" y2="30" stroke="currentColor" stroke-width="2"/>
+  <line x1="263" y1="70" x2="478" y2="70" stroke="currentColor" stroke-dasharray="4 4" opacity="0.5"/>
+  <g stroke="currentColor" stroke-width="1.8" fill="currentColor">
+    <line x1="200" y1="20" x2="200" y2="52"/>
+    <polygon points="200,60 194,46 206,46"/>
+  </g>
+  <g font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="currentColor" text-anchor="middle">
+    <text x="232" y="30" text-anchor="start" font-size="14">加圧（Π）</text>
+    <text x="150" y="110">Na<tspan baseline-shift="sub" font-size="10">10</tspan>Q 50.0 g</text>
+    <text x="150" y="137">Q<tspan baseline-shift="super" font-size="10">10−</tspan>：1.00×10<tspan baseline-shift="super" font-size="10">−3</tspan> mol/L</text>
+    <text x="150" y="164">Na<tspan baseline-shift="super" font-size="10">+</tspan>：1.00×10<tspan baseline-shift="super" font-size="10">−2</tspan> mol/L</text>
+    <text x="150" y="225">I 室（1.00 L）</text>
+    <text x="370" y="125">純水（1）または</text>
+    <text x="370" y="152">NaCl 水溶液（2）</text>
+    <text x="370" y="225">II 室（1.00 L）</text>
+    <text x="260" y="272">半透膜（H<tspan baseline-shift="sub" font-size="10">2</tspan>O・Na<tspan baseline-shift="super" font-size="10">+</tspan>・Cl<tspan baseline-shift="super" font-size="10">−</tspan> は通す，Q<tspan baseline-shift="super" font-size="10">10−</tspan> は通さない）</text>
+  </g>
+</svg>

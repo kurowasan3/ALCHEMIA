@@ -1,0 +1,109 @@
+{
+ "id": "THE-GAS-050",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-08",
+ "topic": "海中に放出した二酸化炭素の密度と液体になる水深（蒸気圧と臨界温度）",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "工場から回収した二酸化炭素 $\\ce{CO2}$ をパイプで海中に送り，ある水深で放出することを考える．海面の圧力は $1.00 \\times 10^{5}\\,\\mathrm{Pa}$ で，水深が $1\\,\\mathrm{m}$ 増すごとに圧力は $1.00 \\times 10^{4}\\,\\mathrm{Pa}$ 増加する．海水温は水深によらず $10\\,^\\circ\\mathrm{C}$ とし，放出された $\\ce{CO2}$ の温度・圧力は周囲の海水と等しく，$\\ce{CO2}$ の海水への溶解は無視する．\n$10\\,^\\circ\\mathrm{C}$ における $\\ce{CO2}$ の蒸気圧は $4.50 \\times 10^{6}\\,\\mathrm{Pa}$，$\\ce{CO2}$ の臨界温度は $31\\,^\\circ\\mathrm{C}$ である．原子量は $\\ce{C}=12.0$，$\\ce{O}=16.0$，気体定数は $R = 8.31 \\times 10^{3}\\,\\mathrm{Pa \\cdot L/(K \\cdot mol)}$ とし，気体の $\\ce{CO2}$ は理想気体とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "水深 $20.0\\,\\mathrm{m}$ で放出された気体の $\\ce{CO2}$ の密度は何 $\\mathrm{g/L}$ か，有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "水深 $20.0\\,\\mathrm{m}$ で放出された $\\ce{CO2}$ の気泡が，溶けずに海面まで上昇したとする．海面での気泡の体積は放出時の何倍か．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\ce{CO2}$ が液体として放出される最も浅い水深は何 m か，有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "海水温が $35\\,^\\circ\\mathrm{C}$ の海で同じことを行うと，十分に深い水深で放出すれば $\\ce{CO2}$ は液体になるか．「なる」「ならない」で答え，理由を簡潔に述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$5.6\\,\\mathrm{g/L}$"
+   },
+   {
+    "id": "2",
+    "tex": "3.00 倍"
+   },
+   {
+    "id": "3",
+    "tex": "$4.4 \\times 10^{2}\\,\\mathrm{m}$"
+   },
+   {
+    "id": "4",
+    "tex": "ならない（臨界温度より高い温度では，どれだけ圧力を高くしても液体にならないから）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　水深 $h\\,[\\mathrm{m}]$ の圧力は $P = 1.00 \\times 10^{5} + 1.00 \\times 10^{4} h$．$h = 20.0$ では $P = 3.00 \\times 10^{5}\\,\\mathrm{Pa}$．理想気体の密度は $\\rho = \\dfrac{PM}{RT}$ なので\n\\[\\rho = \\dfrac{3.00 \\times 10^{5} \\times 44.0}{8.31 \\times 10^{3} \\times 283} = 5.61 \\fallingdotseq \\boldsymbol{5.6\\,\\mathrm{g/L}}\\]\n\n\\textbf{(2)}　物質量と温度が一定なので，体積は圧力に反比例する（ボイルの法則）．$\\dfrac{3.00 \\times 10^{5}}{1.00 \\times 10^{5}} = \\boldsymbol{3.00}$ 倍．\n\n\\textbf{(3)}　温度 $10\\,^\\circ\\mathrm{C}$ で周囲の圧力が $\\ce{CO2}$ の蒸気圧 $4.50 \\times 10^{6}\\,\\mathrm{Pa}$ 以上になれば，$\\ce{CO2}$ は液体として存在する．\n\\[1.00 \\times 10^{5} + 1.00 \\times 10^{4} h = 4.50 \\times 10^{6} \\quad \\Longrightarrow \\quad h = 440 \\fallingdotseq \\boldsymbol{4.4 \\times 10^{2}\\,\\mathrm{m}}\\]\n\n\\textbf{(4)}　$35\\,^\\circ\\mathrm{C}$ は臨界温度 $31\\,^\\circ\\mathrm{C}$ より高い．臨界温度より高い温度では気体と液体の区別がなくなり（超臨界流体），圧力を高くしても気体から液体への凝縮は起こらないので，$\\boldsymbol{\\text{ならない}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "水深とともに増す圧力で気体の密度は圧力に比例して増え，周囲の圧力がその温度の蒸気圧を超えた深さから CO₂ は液体として存在する．臨界温度より高い温度では，どれだけ深くても液体にはならない．"
+ },
+ "concepts": [
+  "ideal-gas",
+  "carbon-silicon",
+  "vapor-pressure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "気体の密度",
+  "蒸気圧",
+  "臨界温度",
+  "ボイルの法則",
+  "二酸化炭素"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

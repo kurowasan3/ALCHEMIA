@@ -1,0 +1,131 @@
+{
+ "id": "THE-PER-010",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-02",
+ "topic": "周期表の位置と単体の性質",
+ "course": "化学",
+ "level": 1,
+ "minutes": 8,
+ "format": [
+  "condition",
+  "qa"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図は，長周期型周期表の第1周期から第5周期までの概略である．図中のア〜オは，それぞれ1つの元素の位置を示している．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ア〜オのうち，単体が常温・常圧で気体であるもの，液体であるものをそれぞれ記号で選べ．"
+     },
+     {
+      "id": "2",
+      "tex": "ア〜オのうち，単体が塩酸にも水酸化ナトリウム水溶液にも溶けて水素を発生するものを記号で選び，その元素記号を答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "ア〜オのうち，第1イオン化エネルギーが最も大きいものを記号で選べ．"
+     },
+     {
+      "id": "4",
+      "tex": "ア〜オのうち，遷移元素であり，その2価の陽イオンを含む硫酸塩の水溶液が青色を示すものを記号で選び，その元素記号を答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "第1〜第5周期の元素のうち，単体が常温・常圧で液体であるものは何種類あるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：周期表の位置と単体の性質",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "気体：ウ　液体：イ"
+   },
+   {
+    "id": "2",
+    "tex": "ア，$\\ce{Al}$"
+   },
+   {
+    "id": "3",
+    "tex": "ウ"
+   },
+   {
+    "id": "4",
+    "tex": "オ，$\\ce{Cu}$"
+   },
+   {
+    "id": "5",
+    "tex": "1 種類"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{位置の読み取り}　ア＝第3周期13族（$\\ce{Al}$），イ＝第4周期17族（$\\ce{Br}$），ウ＝第2周期15族（$\\ce{N}$），エ＝第5周期17族（$\\ce{I}$），オ＝第4周期11族（$\\ce{Cu}$）．\n\n(1) $\\ce{N2}$ は気体，$\\ce{Br2}$ は液体，$\\ce{I2}$ は固体（昇華性），$\\ce{Al}$・$\\ce{Cu}$ は固体．同じ17族でも分子量が大きくなるほど分子間力が強くなり，気体（$\\ce{F2}$, $\\ce{Cl2}$）→液体（$\\ce{Br2}$）→固体（$\\ce{I2}$）と変わる．よって気体は $\\boldsymbol{\\text{ウ}}$，液体は $\\boldsymbol{\\text{イ}}$．\n\n(2) 両性元素の $\\ce{Al}$：$\\ce{2Al + 6HCl -> 2AlCl3 + 3H2}$，$\\ce{2Al + 2NaOH + 6H2O -> 2Na[Al(OH)4] + 3H2}$．答えは $\\boldsymbol{\\text{ア}}$．\n\n(3) 第1イオン化エネルギーは同じ周期では右ほど，同じ族では上ほど大きい．第2周期15族の窒素（$1402\\,\\mathrm{kJ/mol}$）が最大で，$\\ce{Br}$（$1140$），$\\ce{I}$（$1008$），$\\ce{Cu}$（$745$），$\\ce{Al}$（$578$）の順．答えは $\\boldsymbol{\\text{ウ}}$．\n\n(4) $\\ce{CuSO4}$ 水溶液は $\\ce{[Cu(H2O)4]^2+}$ による青色．答えは $\\boldsymbol{\\text{オ}}$．\n\n(5) 常温で液体の単体は臭素と水銀だけであり，水銀は第6周期なので，第5周期までは $\\ce{Br2}$ の $\\boldsymbol{\\text{1}}$ 種類のみ．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "周期表上の位置（周期と族）から元素を特定し，単体の状態・両性・イオン化エネルギー・水溶液の色を判断する．常温で液体の単体が臭素と水銀に限られることなど，位置と性質の対応を逆向きに使う．"
+ },
+ "concepts": [
+  "periodicity",
+  "amphoteric",
+  "transition-metals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "周期表",
+  "単体の状態",
+  "両性元素",
+  "イオン化エネルギー",
+  "遷移元素"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

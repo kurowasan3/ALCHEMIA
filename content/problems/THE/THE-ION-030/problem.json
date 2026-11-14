@@ -1,0 +1,109 @@
+{
+ "id": "THE-ION-030",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "強酸中での硫酸バリウムの溶解度と重量分析",
+ "course": "化学",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "compare",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "硫酸イオンを $\\ce{BaSO4}$ として沈殿させ，その質量から定量する（重量分析）．このとき溶液は塩酸で酸性にしておく．次の値を用いよ（25 ℃）．\n\\[ K_{sp}(\\ce{BaSO4})=1.0\\times10^{-10}\\,(\\mathrm{mol/L})^2,\\qquad \\ce{HSO4- <=> H+ + SO4^2-}\\ \\ K_2=1.0\\times10^{-2}\\,\\mathrm{mol/L} \\]\n\\[ K_{sp}(\\ce{BaCO3})=5.0\\times10^{-9}\\,(\\mathrm{mol/L})^2,\\qquad \\text{炭酸の電離定数}\\ K_1'=4.0\\times10^{-7},\\ K_2'=5.0\\times10^{-11}\\,\\mathrm{mol/L} \\]\n式量は $\\ce{BaSO4}=233$，$\\sqrt{1.1}=1.05$ とし，溶液中の $[\\ce{H+}]$ は加えた塩酸の濃度で一定とみなしてよい．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "純水に対する $\\ce{BaSO4}$ の溶解度（mol/L）を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$\\ce{BaSO4}$ が強酸に溶ける反応 $\\ce{BaSO4 + H+ <=> Ba^2+ + HSO4-}$ の平衡定数を求めよ．また，$1.0\\,\\mathrm{mol/L}$ 塩酸に対する $\\ce{BaSO4}$ の溶解度を有効数字2桁で求め，純水の場合の何倍か答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$0.10\\,\\mathrm{mol/L}$ 塩酸の酸性で沈殿をつくり，沈殿生成後の溶液 $200\\,\\mathrm{mL}$ に $\\ce{Ba^2+}$ が $1.0\\times10^{-2}\\,\\mathrm{mol/L}$ 過剰に残るようにした．溶けずに失われる $\\ce{BaSO4}$ は何 mg か．また，$\\ce{Ba^2+}$ をちょうど当量だけ加えた場合（過剰なし）に失われる量を求め，両者を比べよ．いずれも有効数字2桁とする．"
+     },
+     {
+      "id": "4",
+      "tex": "炭酸イオンが共存する試料でも，酸性にすれば $\\ce{BaCO3}$ は沈殿しない．$\\ce{BaCO3 + 2H+ <=> Ba^2+ + H2CO3}$ の平衡定数を求め，(2) の平衡定数と比べて，酸性にしても $\\ce{BaSO4}$ の定量が成り立つ理由を説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$1.0\\times10^{-5}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "2",
+    "tex": "$1.0\\times10^{-8}$；$1.0\\times10^{-4}\\,\\mathrm{mol/L}$，約 10 倍"
+   },
+   {
+    "id": "3",
+    "tex": "過剰の $\\ce{Ba^2+}$ があるとき $5.1\\times10^{-3}\\,\\mathrm{mg}$（無視できる）；当量のとき $1.5\\,\\mathrm{mg}$ で，過剰の $\\ce{Ba^2+}$ により損失は約 300 分の 1 になる"
+   },
+   {
+    "id": "4",
+    "tex": "$2.5\\times10^{8}$；$\\ce{BaCO3}$ の溶解の平衡定数はきわめて大きく完全に溶けるが，$\\ce{BaSO4}$ は $1.0\\times10^{-8}$ と小さく，$\\ce{HSO4-}$ が比較的強い酸で $\\ce{SO4^2-}$ が $\\ce{H+}$ と結合しにくいため，酸性でもほとんど溶けないから"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $s^2=1.0\\times10^{-10}$ より $s=\\boldsymbol{1.0\\times10^{-5}\\,\\mathrm{mol/L}}$（$\\ce{SO4^2-}$ の加水分解の定数は $K_w/K_2=10^{-12}$ で，純水中では無視できる）．\n\n\\textbf{(2)} \\[ K=\\dfrac{[\\ce{Ba^2+}][\\ce{HSO4-}]}{[\\ce{H+}]}=[\\ce{Ba^2+}][\\ce{SO4^2-}]\\times\\dfrac{[\\ce{HSO4-}]}{[\\ce{H+}][\\ce{SO4^2-}]}=\\dfrac{K_{sp}}{K_2}=\\boldsymbol{1.0\\times10^{-8}} \\]\n溶けた $\\ce{BaSO4}$ を $s$ とすると $[\\ce{Ba^2+}]=s=[\\ce{SO4^2-}]+[\\ce{HSO4-}]=[\\ce{SO4^2-}]\\left(1+\\dfrac{[\\ce{H+}]}{K_2}\\right)$ なので\n\\[ K_{sp}=s\\times\\dfrac{s}{1+[\\ce{H+}]/K_2}\\quad\\Rightarrow\\quad s=\\sqrt{K_{sp}\\left(1+\\dfrac{[\\ce{H+}]}{K_2}\\right)}=\\sqrt{1.0\\times10^{-10}\\times101}=\\boldsymbol{1.0\\times10^{-4}\\,\\mathrm{mol/L}} \\]\n純水の約 \\textbf{10 倍}．溶けた硫酸イオンの約 99 % が $\\ce{HSO4-}$ になっている（$s$ は $[\\ce{H+}]$ に比べて小さく，$[\\ce{H+}]$ 一定の仮定も妥当）．\n\n\\textbf{(3)} 過剰の $\\ce{Ba^2+}$（$1.0\\times10^{-2}\\,\\mathrm{mol/L}$）があるとき，溶液中の硫酸の全濃度は\n\\[ [\\ce{SO4^2-}]+[\\ce{HSO4-}]=\\dfrac{K_{sp}}{[\\ce{Ba^2+}]}\\left(1+\\dfrac{0.10}{K_2}\\right)=1.0\\times10^{-8}\\times11=1.1\\times10^{-7}\\,\\mathrm{mol/L} \\]\n失われる質量は $1.1\\times10^{-7}\\times0.200\\times233=5.1\\times10^{-6}\\,\\mathrm g=\\boldsymbol{5.1\\times10^{-3}\\,\\mathrm{mg}}$ で，無視できる．\n当量の場合は $s=\\sqrt{1.0\\times10^{-10}\\times11}=1.05\\times10^{-5}\\times\\sqrt{10}\\fallingdotseq3.3\\times10^{-5}\\,\\mathrm{mol/L}$，失われる質量は $3.3\\times10^{-5}\\times0.200\\times233=1.5\\times10^{-3}\\,\\mathrm g$，すなわち $\\boldsymbol{1.5\\,\\mathrm{mg}}$．過剰の $\\ce{Ba^2+}$ の共通イオン効果で損失は約 300 分の 1 に抑えられる．\n\n\\textbf{(4)} \\[ K=\\dfrac{[\\ce{Ba^2+}][\\ce{H2CO3}]}{[\\ce{H+}]^2}=\\dfrac{K_{sp}(\\ce{BaCO3})}{K_1'K_2'}=\\dfrac{5.0\\times10^{-9}}{4.0\\times10^{-7}\\times5.0\\times10^{-11}}=\\boldsymbol{2.5\\times10^{8}} \\]\nきわめて大きいので，酸性では $\\ce{BaCO3}$ は沈殿できない（$\\ce{H2CO3}$ は $\\ce{CO2}$ として抜ける）．一方 $\\ce{BaSO4}$ の溶解の平衡定数は $1.0\\times10^{-8}$ で，$\\ce{H+}$ を加えても溶解度は (2)(3) のようにわずかしか増えない．炭酸は弱い酸なので $\\ce{CO3^2-}$ は $\\ce{H+}$ と強く結合するが，$\\ce{HSO4-}$ は $K_2$ の大きい比較的強い酸なので $\\ce{SO4^2-}$ は $\\ce{H+}$ と結合しにくい．この違いのため，酸性にすると妨害する炭酸塩（やリン酸塩）だけを溶かしたまま $\\ce{BaSO4}$ を沈殿させられる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "硫酸の第2段の電離平衡があるため，強酸中では SO4^2- の一部が HSO4- になり BaSO4 の溶解度は √(Ksp(1+[H+]/K2)) に増える．弱酸の塩（BaCO3）は酸で完全に溶けるが BaSO4 はわずかしか溶けないこと，過剰の Ba2+ で損失を抑えられることを，平衡定数で比べて重量分析の条件を判断する．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "precipitation",
+  "oxygen-sulfur"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "溶解度積",
+  "硫酸バリウム",
+  "硫酸の電離平衡",
+  "共通イオン効果",
+  "重量分析"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

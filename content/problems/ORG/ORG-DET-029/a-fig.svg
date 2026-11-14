@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400">
+<line x1="67" y1="163.625" x2="163" y2="74.5" stroke="currentColor" stroke-width="1.5"/>
+<text x="115.0" y="113.0625" font-family="Noto Sans CJK JP, sans-serif" font-size="17" font-weight="bold" fill="#1f5fbf" text-anchor="middle">−</text>
+<line x1="67" y1="163.625" x2="163" y2="252.75" stroke="currentColor" stroke-width="1.5"/>
+<text x="115.0" y="222.1875" font-family="Noto Sans CJK JP, sans-serif" font-size="17" font-weight="bold" fill="#c0392b" text-anchor="middle">＋</text>
+<line x1="197" y1="74.5" x2="532" y2="40" stroke="currentColor" stroke-width="1.5"/>
+<text x="364.5" y="51.25" font-family="Noto Sans CJK JP, sans-serif" font-size="17" font-weight="bold" fill="#1f5fbf" text-anchor="middle">−</text>
+<line x1="197" y1="74.5" x2="293" y2="109.0" stroke="currentColor" stroke-width="1.5"/>
+<text x="245.0" y="105.75" font-family="Noto Sans CJK JP, sans-serif" font-size="17" font-weight="bold" fill="#c0392b" text-anchor="middle">＋</text>
+<line x1="327" y1="109.0" x2="532" y2="86" stroke="currentColor" stroke-width="1.5"/>
+<text x="429.5" y="91.5" font-family="Noto Sans CJK JP, sans-serif" font-size="17" font-weight="bold" fill="#c0392b" text-anchor="middle">＋</text>
+<line x1="327" y1="109.0" x2="532" y2="132" stroke="currentColor" stroke-width="1.5"/>
+<text x="429.5" y="134.5" font-family="Noto Sans CJK JP, sans-serif" font-size="17" font-weight="bold" fill="#1f5fbf" text-anchor="middle">−</text>
+<line x1="197" y1="252.75" x2="293" y2="201.0" stroke="currentColor" stroke-width="1.5"/>
+<text x="245.0" y="220.875" font-family="Noto Sans CJK JP, sans-serif" font-size="17" font-weight="bold" fill="#c0392b" text-anchor="middle">＋</text>
+<line x1="197" y1="252.75" x2="293" y2="304.5" stroke="currentColor" stroke-width="1.5"/>
+<text x="245.0" y="292.625" font-family="Noto Sans CJK JP, sans-serif" font-size="17" font-weight="bold" fill="#1f5fbf" text-anchor="middle">−</text>
+<line x1="327" y1="201.0" x2="532" y2="178" stroke="currentColor" stroke-width="1.5"/>
+<text x="429.5" y="183.5" font-family="Noto Sans CJK JP, sans-serif" font-size="17" font-weight="bold" fill="#c0392b" text-anchor="middle">＋</text>
+<line x1="327" y1="201.0" x2="532" y2="224" stroke="currentColor" stroke-width="1.5"/>
+<text x="429.5" y="226.5" font-family="Noto Sans CJK JP, sans-serif" font-size="17" font-weight="bold" fill="#1f5fbf" text-anchor="middle">−</text>
+<line x1="327" y1="304.5" x2="532" y2="270" stroke="currentColor" stroke-width="1.5"/>
+<text x="429.5" y="281.25" font-family="Noto Sans CJK JP, sans-serif" font-size="17" font-weight="bold" fill="#c0392b" text-anchor="middle">＋</text>
+<line x1="327" y1="304.5" x2="423" y2="339.0" stroke="currentColor" stroke-width="1.5"/>
+<text x="375.0" y="335.75" font-family="Noto Sans CJK JP, sans-serif" font-size="17" font-weight="bold" fill="#1f5fbf" text-anchor="middle">−</text>
+<line x1="457" y1="339.0" x2="532" y2="316" stroke="currentColor" stroke-width="1.5"/>
+<text x="494.5" y="321.5" font-family="Noto Sans CJK JP, sans-serif" font-size="17" font-weight="bold" fill="#c0392b" text-anchor="middle">＋</text>
+<line x1="457" y1="339.0" x2="532" y2="362" stroke="currentColor" stroke-width="1.5"/>
+<text x="494.5" y="364.5" font-family="Noto Sans CJK JP, sans-serif" font-size="17" font-weight="bold" fill="#1f5fbf" text-anchor="middle">−</text>
+<circle cx="50" cy="163.625" r="17" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<text x="50" y="168.625" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="currentColor" text-anchor="middle">Ⅰ</text>
+<circle cx="180" cy="74.5" r="17" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<text x="180" y="79.5" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="currentColor" text-anchor="middle">Ⅳ</text>
+<circle cx="310" cy="109.0" r="17" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<text x="310" y="114.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="currentColor" text-anchor="middle">Ⅲ</text>
+<circle cx="180" cy="252.75" r="17" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<text x="180" y="257.75" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="currentColor" text-anchor="middle">Ⅱ</text>
+<circle cx="310" cy="201.0" r="17" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<text x="310" y="206.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="currentColor" text-anchor="middle">Ⅲ</text>
+<circle cx="310" cy="304.5" r="17" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<text x="310" y="309.5" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="currentColor" text-anchor="middle">Ⅳ</text>
+<circle cx="440" cy="339.0" r="17" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<text x="440" y="344.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="currentColor" text-anchor="middle">Ⅴ</text>
+<text x="540" y="45" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">ジエチルエーテル</text>
+<text x="540" y="91" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">アセトアルデヒド</text>
+<text x="540" y="137" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">アセトン</text>
+<text x="540" y="183" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">ギ酸</text>
+<text x="540" y="229" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">酢酸</text>
+<text x="540" y="275" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">エタノール</text>
+<text x="540" y="321" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">フェノール</text>
+<text x="540" y="367" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">メタノール</text>
+<text x="50" y="392" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="currentColor" opacity="0.6" text-anchor="middle">1回目</text>
+<text x="180" y="392" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="currentColor" opacity="0.6" text-anchor="middle">2回目</text>
+<text x="310" y="392" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="currentColor" opacity="0.6" text-anchor="middle">3回目</text>
+<text x="440" y="392" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="currentColor" opacity="0.6" text-anchor="middle">4回目</text>
+<text x="600" y="392" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="currentColor" opacity="0.6">＋陽性　−陰性</text>
+</svg>

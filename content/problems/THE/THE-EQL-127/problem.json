@@ -1,0 +1,118 @@
+{
+ "id": "THE-EQL-127",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "速度定数の比で決まる平衡定数と窒素原子の保存（N₂O₅ の分解と NO₂ の二量化）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "五酸化二窒素 $\\ce{N2O5}$ を加熱すると，次の反応で完全に分解し，逆反応は起こらない．\n\\[ \\ce{2N2O5 -> 4NO2 + O2} \\]\n生じた $\\ce{NO2}$ は，次の反応ですみやかに $\\ce{N2O4}$ との平衡に達する．\n\\[ \\ce{2NO2 <=> N2O4} \\]\n$300\\,\\mathrm{K}$ で，この正反応の速さは $v_1 = k_1[\\ce{NO2}]^2$，逆反応の速さは $v_2 = k_2[\\ce{N2O4}]$ で表され，$k_1 = 4.0\\times10^{8}\\,\\mathrm{L/(mol\\cdot s)}$，$k_2 = 2.5\\times10^{6}\\,\\mathrm{/s}$ である．\n\n容積 $4.00\\,\\mathrm{L}$ の真空容器に $\\ce{N2O5}$ を入れて完全に分解させたのち，容器を $300\\,\\mathrm{K}$ に保ったところ，$\\ce{NO2}$ のモル濃度は $\\ce{N2O4}$ のモル濃度の $2.50$ 倍であった．$\\ce{O2}$ は他の物質と反応しないものとし，気体はすべて理想気体とする．気体定数は $R = 8.31\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$300\\,\\mathrm{K}$ における $\\ce{2NO2 <=> N2O4}$ の平衡定数 $K$ を単位とともに求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "平衡における $[\\ce{NO2}]$ と $[\\ce{N2O4}]$ を，それぞれ有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "はじめに入れた $\\ce{N2O5}$ の物質量を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "容器内の全圧を有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "温度を $300\\,\\mathrm{K}$ に保ったまま容器の容積を $2.00\\,\\mathrm{L}$ にすると，平衡における $[\\ce{NO2}]/[\\ce{N2O4}]$ の値は $2.50$ より大きくなるか，小さくなるか，変わらないか．理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$K = 1.6\\times10^{2}\\,\\mathrm{L/mol}$"
+   },
+   {
+    "id": "2",
+    "tex": "$[\\ce{NO2}] = 2.5\\times10^{-3}\\,\\mathrm{mol/L}$，$[\\ce{N2O4}] = 1.0\\times10^{-3}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "3",
+    "tex": "$9.0\\times10^{-3}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "4",
+    "tex": "$1.15\\times10^{4}\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "5",
+    "tex": "小さくなる．$[\\ce{NO2}]/[\\ce{N2O4}] = 1/(K[\\ce{NO2}])$ で，圧縮すると $[\\ce{NO2}]$ が大きくなるから（約 $1.6$ になる）．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 平衡では正反応と逆反応の速さが等しいので $k_1[\\ce{NO2}]^2 = k_2[\\ce{N2O4}]$．\n\\[ K = \\frac{[\\ce{N2O4}]}{[\\ce{NO2}]^2} = \\frac{k_1}{k_2} = \\frac{4.0\\times10^{8}}{2.5\\times10^{6}} = \\boldsymbol{1.6\\times10^{2}\\,\\mathrm{L/mol}} \\]\n\n\\textbf{(2)} $[\\ce{NO2}] = 2.50[\\ce{N2O4}]$ を $[\\ce{N2O4}] = K[\\ce{NO2}]^2$ に代入すると $[\\ce{NO2}] = 2.50K[\\ce{NO2}]^2$，よって\n\\[ [\\ce{NO2}] = \\frac{1}{2.50\\times160} = \\boldsymbol{2.5\\times10^{-3}\\,\\mathrm{mol/L}},\\qquad [\\ce{N2O4}] = \\frac{2.5\\times10^{-3}}{2.50} = \\boldsymbol{1.0\\times10^{-3}\\,\\mathrm{mol/L}} \\]\n\n\\textbf{(3)} 窒素原子は分解でも二量化でも保存される．容器内の窒素原子は\n\\[ 4.00\\times(2.5\\times10^{-3} + 2\\times1.0\\times10^{-3}) = 1.8\\times10^{-2}\\,\\mathrm{mol} \\]\n$\\ce{N2O5}$ 1 分子は N を 2 個含むので，$\\ce{N2O5}$ は $\\boldsymbol{9.0\\times10^{-3}\\,\\mathrm{mol}}$．\n\n\\textbf{(4)} 反応式より $\\ce{O2}$ は $\\ce{N2O5}$ の半分で $4.5\\times10^{-3}\\,\\mathrm{mol}$．$\\ce{NO2}$ は $1.0\\times10^{-2}\\,\\mathrm{mol}$，$\\ce{N2O4}$ は $4.0\\times10^{-3}\\,\\mathrm{mol}$ なので，気体の合計は $1.85\\times10^{-2}\\,\\mathrm{mol}$．\n\\[ P = \\frac{1.85\\times10^{-2}\\times8.31\\times10^{3}\\times300}{4.00} = \\boldsymbol{1.15\\times10^{4}\\,\\mathrm{Pa}} \\]\n\n\\textbf{(5)} $K = [\\ce{N2O4}]/[\\ce{NO2}]^2$ を変形すると\n\\[ \\frac{[\\ce{NO2}]}{[\\ce{N2O4}]} = \\frac{1}{K[\\ce{NO2}]} \\]\n$K$ は温度だけで決まる．容積を半分にすると濃度が大きくなり，平衡が分子数の減る向き（$\\ce{N2O4}$ 側）に移動しても $[\\ce{NO2}]$ はもとより大きい．したがって比は\\textbf{小さくなる}．実際，窒素原子 $9.0\\times10^{-3}\\,\\mathrm{mol/L}$ について $[\\ce{NO2}] + 2K[\\ce{NO2}]^2 = 9.0\\times10^{-3}$ を解くと $[\\ce{NO2}] \\fallingdotseq 3.97\\times10^{-3}\\,\\mathrm{mol/L}$，比は約 $1.6$ になる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "正逆の反応がそれぞれ1段階で起こるとき平衡定数は速度定数の比 k₁/k₂ になり，濃度比と組み合わせて平衡濃度が決まる．分解・二量化を通じて窒素原子の総量は保存されるので，平衡組成から分解前の物質量を逆算できる．濃度比 [NO₂]/[N₂O₄]=1/(K[NO₂]) は圧縮で小さくなる．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "nitrogen-phosphorus",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "平衡定数",
+  "速度定数",
+  "四酸化二窒素",
+  "五酸化二窒素",
+  "原子の保存",
+  "ルシャトリエの原理"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

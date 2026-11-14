@@ -1,0 +1,108 @@
+{
+ "id": "POL-PRT-056",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-05",
+ "topic": "ペプチドの電離する基の数と pH による電荷・滴定量",
+ "course": "化学",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "6 個のアミノ酸からなる鎖状のペプチド Q の配列は，N 末端から\n\\[ \\text{Lys–Ala–Asp–Gly–Lys–Glu} \\]\nである．Lys の側鎖は $-\\ce{(CH2)4-NH2}$，Asp の側鎖は $-\\ce{CH2-COOH}$，Glu の側鎖は $-\\ce{(CH2)2-COOH}$，Ala・Gly の側鎖は電離しない．\nここでは簡単のため，pH 1.0 ではすべてのカルボキシ基が電離せずすべてのアミノ基が $-\\ce{NH3+}$ に，pH 13.0 ではすべてのカルボキシ基が $-\\ce{COO-}$ にすべてのアミノ基が $-\\ce{NH2}$ に，pH 7.0 ではすべてのカルボキシ基が $-\\ce{COO-}$ にすべてのアミノ基が $-\\ce{NH3+}$ になっているとみなす．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "Q の側鎖に含まれるアミノ基とカルボキシ基はそれぞれ何個か．"
+     },
+     {
+      "id": "2",
+      "tex": "pH 1.0 と pH 13.0 における Q 1 分子の電荷をそれぞれ答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "pH 1.0 の Q の水溶液（Q を $1.0\\,\\mathrm{mmol}$ 含む）を水酸化ナトリウム水溶液で滴定して pH 13.0 にした．Q との反応に使われた $\\ce{NaOH}$ は何 mmol か．"
+     },
+     {
+      "id": "4",
+      "tex": "pH 7.0 で電気泳動を行うと，Q はどのようにふるまうか．次から選べ．また，Q の Asp を Asn（側鎖 $-\\ce{CH2-CONH2}$，電離しない）に置き換えたペプチド Q$'$ についても選べ．\\\\\n（ア）陽極側へ移動する　（イ）陰極側へ移動する　（ウ）ほとんど移動しない"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "アミノ基 2 個，カルボキシ基 2 個"
+   },
+   {
+    "id": "2",
+    "tex": "pH 1.0：$+3$，pH 13.0：$-3$"
+   },
+   {
+    "id": "3",
+    "tex": "$6.0\\,\\mathrm{mmol}$"
+   },
+   {
+    "id": "4",
+    "tex": "Q：（ウ），Q$'$：（イ）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　ペプチド結合（$-\\ce{CO-NH}-$）になったアミノ基・カルボキシ基は電離しない．電離する基は，N 末端の $\\alpha$-アミノ基，C 末端の $\\alpha$-カルボキシ基，および側鎖の酸性・塩基性の基だけである．\n\n\\textbf{(1)}　側鎖のアミノ基は Lys 2 個分で $\\boldsymbol{2}$ \\textbf{個}，側鎖のカルボキシ基は Asp と Glu で $\\boldsymbol{2}$ \\textbf{個}．\n\n\\textbf{(2)}　電離する基は，アミノ基が N 末端 1＋Lys 側鎖 2＝3 個，カルボキシ基が C 末端 1＋側鎖 2＝3 個．\npH 1.0 ではアミノ基 3 個が $-\\ce{NH3+}$，カルボキシ基は電離しないので $\\boldsymbol{+3}$．\npH 13.0 ではカルボキシ基 3 個が $-\\ce{COO-}$，アミノ基は電荷をもたないので $\\boldsymbol{-3}$．\n\n\\textbf{(3)}　pH 1.0 の形は $-\\ce{COOH}$ 3 個と $-\\ce{NH3+}$ 3 個，合計 6 個の電離できる $\\ce{H+}$ をもち，pH 13.0 ではそれがすべて失われる．Q 1 分子あたり $\\ce{OH-}$ 6 個と反応するので，$1.0\\times6=\\boldsymbol{6.0\\,\\mathrm{mmol}}$．（電荷の変化 $+3\\to-3$ が 6 であることとも一致する．）\n\n\\textbf{(4)}　pH 7.0 では $-\\ce{NH3+}$ 3 個（$+3$）と $-\\ce{COO-}$ 3 個（$-3$）で，Q 全体の電荷は 0．よって \\textbf{（ウ）}ほとんど移動しない．\nQ$'$ では Asp の $-\\ce{COO-}$ がなくなるので $+3-2=+1$ となり，\\textbf{（イ）}陰極側へ移動する．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ペプチドで電離するのは両末端の α-アミノ基・α-カルボキシ基と側鎖の酸性・塩基性の基だけである．その数から強酸性・強塩基性での電荷，滴定で反応する OH- の数（電離できる H+ の数），中性付近での電荷と電気泳動の向きを決める．"
+ },
+ "concepts": [
+  "protein-amino",
+  "ph"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ペプチド",
+  "電荷",
+  "電離する基",
+  "滴定",
+  "電気泳動"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

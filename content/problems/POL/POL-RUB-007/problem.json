@@ -1,0 +1,110 @@
+{
+ "id": "POL-RUB-007",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-03",
+ "topic": "アセチレンからクロロプレンゴムへの経路と付加重合の様式",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "pathway",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "クロロプレンゴムは，次の経路でアセチレンからつくられる．\n\\[ \\ce{CH#CH} \\xrightarrow{\\text{2 分子が付加（触媒）}} \\boxed{\\,\\text{A}\\,} \\xrightarrow{\\ce{HCl}\\text{ を付加}} \\boxed{\\,\\text{B}\\,}\\ (\\text{クロロプレン}) \\xrightarrow{\\text{付加重合}} \\text{クロロプレンゴム} \\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A と B の示性式と，A・B ができる反応の化学反応式（分子式で書く）をそれぞれ答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "B が 1,4-付加で重合したときの繰り返し単位を示性式で答えよ．また，クロロプレンゴム $177\\,\\mathrm g$ をつくるのに必要なアセチレンは標準状態で何 L か．反応はすべて完全に進み，気体は標準状態で $22.4\\,\\mathrm{L/mol}$ とする．原子量は H = 1.0，C = 12，Cl = 35.5 とする．"
+     },
+     {
+      "id": "3",
+      "tex": "1,3-ブタジエン $\\ce{CH2=CH-CH=CH2}$ を付加重合させると，二重結合の 1 つだけが反応する 1,2-付加の単位と，両端の炭素が結合する 1,4-付加の単位ができる．それぞれの繰り返し単位を示性式で答え，主鎖に二重結合が残るのはどちらか答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) のうち，ゴム弾性を生むのはどのような構造か．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "A：$\\ce{CH2=CH-C#CH}$，$\\ce{2C2H2 -> C4H4}$；B：$\\ce{CH2=CCl-CH=CH2}$，$\\ce{C4H4 + HCl -> C4H5Cl}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{-[CH2-CCl=CH-CH2]-}$，$89.6\\,\\mathrm L$"
+   },
+   {
+    "id": "3",
+    "tex": "1,2-付加：$\\ce{-[CH2-CH(CH=CH2)]-}$，1,4-付加：$\\ce{-[CH2-CH=CH-CH2]-}$．主鎖に二重結合が残るのは 1,4-付加．"
+   },
+   {
+    "id": "4",
+    "tex": "1,4-付加でできた，主鎖の二重結合がシス形の構造．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} アセチレン 2 分子が付加すると $\\boldsymbol{\\ce{CH2=CH-C#CH}}$（ビニルアセチレン）：$\\ce{2C2H2 -> C4H4}$．その三重結合に HCl が付加すると，Cl が 2 位の炭素についた $\\boldsymbol{\\ce{CH2=CCl-CH=CH2}}$（クロロプレン）：$\\ce{C4H4 + HCl -> C4H5Cl}$．\\\\\n\\textbf{(2)} 1,4-付加では両端の炭素が結合し，中央に新しい二重結合ができる：$\\boldsymbol{\\ce{-[CH2-CCl=CH-CH2]-}}$（式量 $12\\times4 + 1.0\\times5 + 35.5 = 88.5$）．\\\\\n繰り返し単位は $\\dfrac{177}{88.5} = 2.00\\,\\mathrm{mol}$．単位 1 つにアセチレン 2 分子が必要なので $4.00\\,\\mathrm{mol}$，$4.00\\times22.4 = \\boldsymbol{89.6\\,\\mathrm L}$．\\\\\n\\textbf{(3)} 1,2-付加：$\\ce{-[CH2-CH(CH=CH2)]-}$（二重結合は側鎖のビニル基に残る）．1,4-付加：$\\ce{-[CH2-CH=CH-CH2]-}$（二重結合が主鎖に残る）．主鎖に二重結合が残るのは $\\boldsymbol{\\text{1,4-付加}}$．\\\\\n\\textbf{(4)} 1,4-付加の単位の主鎖の二重結合にはシス形とトランス形がある．$\\boldsymbol{\\text{シス形}}$ では分子鎖が折れ曲がって丸まり，引っ張ると伸び，離すと戻る（ゴム弾性）．天然ゴムもシス形のポリイソプレンである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "アセチレンの二量化と HCl の付加でクロロプレンをつくる経路を反応式で追い，繰り返し単位とアセチレンの物質量の関係を数える．ジエンの 1,2-付加と 1,4-付加で二重結合の位置（側鎖か主鎖か）が変わり，シス形の 1,4-単位がゴム弾性を生むことを判断する．"
+ },
+ "concepts": [
+  "rubber",
+  "hydrocarbon",
+  "addition-polymer"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "クロロプレンゴム",
+  "アセチレン",
+  "1",
+  "4-付加",
+  "付加重合",
+  "ゴム弾性"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

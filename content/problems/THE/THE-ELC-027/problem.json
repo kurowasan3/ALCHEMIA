@@ -1,0 +1,117 @@
+{
+ "id": "THE-ELC-027",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-07",
+ "topic": "隔膜のない食塩水の電解と次亜塩素酸の電離平衡",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "塩化ナトリウム水溶液を隔膜を使わずに電気分解すると，漂白・殺菌に使われる次亜塩素酸ナトリウム水溶液をその場でつくることができる．\n\n$1.00\\,\\mathrm{mol/L}$ の塩化ナトリウム水溶液 $1.00\\,\\mathrm{L}$ を隔膜のない電解槽に入れ，白金電極を用いてよくかき混ぜながら $2.00\\,\\mathrm{A}$ の電流を $4825$ 秒間流した．陽極で生じた塩素は，陰極で生じた水酸化物イオンとすみやかに反応して次亜塩素酸イオンになり，気体としては出ていかないものとする．次亜塩素酸イオンは電極で反応しないものとし，溶液の体積は変化しないとする．\n\nファラデー定数 $F=9.65\\times10^{4}\\,\\mathrm{C/mol}$，次亜塩素酸の電離定数 $K_\\mathrm{a}=3.0\\times10^{-8}\\,\\mathrm{mol/L}$，水のイオン積 $K_\\mathrm{w}=1.0\\times10^{-14}\\,(\\mathrm{mol/L})^2$，$\\log_{10}2=0.30$，$\\log_{10}3=0.48$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "陽極の反応，陰極の反応，塩素と水酸化物イオンの反応をまとめて，電解槽全体で起こる変化を1つのイオン反応式で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "電解後の溶液中の次亜塩素酸イオンのモル濃度と，電解槽から出ていった気体の物質量を，それぞれ有効数字3桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "電解後の溶液の pH を小数第1位まで求めよ．計算で用いた近似が成り立つことも確かめよ．"
+     },
+     {
+      "id": "4",
+      "tex": "同じ電気量を，陽イオン交換膜で陽極室と陰極室（各 $0.500\\,\\mathrm{L}$）に仕切った電解槽で流した場合，電解後の陰極室の pH を小数第1位まで求めよ．また，隔膜の有無で pH が大きく違う理由を，(1) の式をもとに説明せよ．"
+     },
+     {
+      "id": "5",
+      "tex": "(2) の溶液に塩酸を加えて pH を $7.0$ にした．溶液中の次亜塩素酸 $\\ce{HClO}$ の物質量を有効数字2桁で求めよ．また，さらに塩酸を加えて強い酸性にすると気体が発生する．このときの反応をイオン反応式で表せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{Cl- + H2O -> ClO- + H2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$[\\ce{ClO-}]=5.00\\times10^{-2}\\,\\mathrm{mol/L}$，気体（$\\ce{H2}$）$5.00\\times10^{-2}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "pH $10.1$（$[\\ce{OH-}]\\approx1.3\\times10^{-4}\\,\\mathrm{mol/L}$ は $0.0500\\,\\mathrm{mol/L}$ の約 $0.3\\,\\%$ で，電離する割合が小さいという近似が成り立つ）"
+   },
+   {
+    "id": "4",
+    "tex": "pH $13.3$．隔膜がないと陰極の $\\ce{OH-}$ が陽極の $\\ce{Cl2}$ にちょうど $2:1$ で消費され，全体で $\\ce{OH-}$ が増えない（$\\ce{ClO-}$ の加水分解だけで弱塩基性）が，隔膜があると $\\ce{OH-}$ が陰極室にそのままたまるから"
+   },
+   {
+    "id": "5",
+    "tex": "$3.8\\times10^{-2}\\,\\mathrm{mol}$，$\\ce{HClO + H+ + Cl- -> Cl2 + H2O}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 全体の反応}　陽極：$\\ce{2Cl- -> Cl2 + 2e-}$，陰極：$\\ce{2H2O + 2e- -> H2 + 2OH-}$．陰極で生じた $\\ce{OH-}$ が塩素と反応する：$\\ce{Cl2 + 2OH- -> Cl- + ClO- + H2O}$．\n3式を足すと，電子 $2\\,\\mathrm{mol}$ あたり $\\ce{Cl2}$ $1\\,\\mathrm{mol}$ と $\\ce{OH-}$ $2\\,\\mathrm{mol}$ がちょうど過不足なく生じて消えるので\n\\[\\ce{Cl- + H2O -> ClO- + H2}\\]\nとなる．\\textbf{電子 $2\\,\\mathrm{mol}$ で $\\ce{ClO-}$ と $\\ce{H2}$ が $1\\,\\mathrm{mol}$ ずつでき，$\\ce{OH-}$ は正味では生じない}ことが要点である．\n\n\\textbf{(2)} 電子：$\\dfrac{2.00\\times4825}{9.65\\times10^{4}}=0.100\\,\\mathrm{mol}$．(1) より $\\ce{ClO-}$ は $0.0500\\,\\mathrm{mol}$，溶液 $1.00\\,\\mathrm{L}$ なので $\\boldsymbol{5.00\\times10^{-2}\\,\\mathrm{mol/L}}$．出ていく気体は陰極の $\\ce{H2}$ だけで $\\boldsymbol{5.00\\times10^{-2}\\,\\mathrm{mol}}$．\n\n\\textbf{(3) pH}　溶液は $\\ce{ClO-}$（弱塩基）と $\\ce{Na+}$，$\\ce{Cl-}$ を含む．$\\ce{ClO- + H2O <=> HClO + OH-}$ の\n\\[K_\\mathrm{b}=\\frac{K_\\mathrm{w}}{K_\\mathrm{a}}=\\frac{1.0\\times10^{-14}}{3.0\\times10^{-8}}=\\frac{1}{3}\\times10^{-6}\\,\\mathrm{mol/L}\\]\n加水分解する割合が小さいとすると $[\\ce{OH-}]^2=cK_\\mathrm{b}=0.0500\\times\\tfrac13\\times10^{-6}=\\tfrac16\\times10^{-7}$．\n$\\log_{10}[\\ce{OH-}]^2=-7-(0.30+0.48)=-7.78$ より $\\mathrm{pOH}=3.89$，$\\mathrm{pH}=\\boldsymbol{10.1}$．\n\n近似の確認：$[\\ce{OH-}]=10^{-3.89}\\approx1.3\\times10^{-4}\\,\\mathrm{mol/L}$ は $0.0500\\,\\mathrm{mol/L}$ の約 $0.26\\,\\%$ なので，加水分解した割合を $1$ に対して無視してよい．また水の電離による $\\ce{OH-}$（$10^{-7}$ 以下）も無視できる．\n\n\\textbf{(4) 隔膜がある場合}　陽イオン交換膜があると，陽極の $\\ce{Cl2}$ は陰極室の $\\ce{OH-}$ と出会わない．陰極室では電子 $0.100\\,\\mathrm{mol}$ に対して $\\ce{OH-}$ が $0.100\\,\\mathrm{mol}$ 生じ，電荷のつり合いは陽極室から移ってくる $\\ce{Na+}$ が保つ．$[\\ce{OH-}]=\\dfrac{0.100}{0.500}=0.200\\,\\mathrm{mol/L}$，$\\mathrm{pOH}=1-0.30=0.70$，$\\mathrm{pH}=\\boldsymbol{13.3}$．\n隔膜がない場合は (1) のように，生じた $\\ce{OH-}$ が塩素にすべて使われて正味の $\\ce{OH-}$ は残らず，弱塩基 $\\ce{ClO-}$ の加水分解だけで pH が決まるので約 $10$ にとどまる．同じ電気量でも pH が $3$ 以上違うのはこのためである．\n\n\\textbf{(5)} pH $7.0$ では $\\dfrac{[\\ce{ClO-}]}{[\\ce{HClO}]}=\\dfrac{K_\\mathrm{a}}{[\\ce{H+}]}=\\dfrac{3.0\\times10^{-8}}{1.0\\times10^{-7}}=0.30$．\n$n(\\ce{HClO})=0.0500\\times\\dfrac{1}{1+0.30}=0.0385\\,\\mathrm{mol}\\approx\\boldsymbol{3.8\\times10^{-2}\\,\\mathrm{mol}}$．\nさらに強い酸性にすると，$\\ce{HClO}$ が $\\ce{Cl-}$ を酸化して塩素が発生する（$\\ce{Cl2 + H2O <=> HCl + HClO}$ の逆向き）：\n\\[\\ce{HClO + H+ + Cl- -> Cl2 + H2O}\\]\n次亜塩素酸塩の漂白剤を酸性の洗剤と混ぜてはいけないのはこのためである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "隔膜のない食塩水の電解では陽極の Cl₂ と陰極の OH⁻ が 1:2 でちょうど打ち消し合い，全体は Cl⁻ + H₂O → ClO⁻ + H₂ となって OH⁻ が正味で生じない．そのため pH は弱塩基 ClO⁻ の加水分解で決まり，隔膜で分けた場合（NaOH がたまる）と大きく異なる．pH による HClO/ClO⁻ の割合と，強酸性での Cl₂ 発生までを電離平衡でつなぐ．"
+ },
+ "concepts": [
+  "electrolysis",
+  "halogen",
+  "alkali-metals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電気分解",
+  "次亜塩素酸ナトリウム",
+  "隔膜",
+  "弱塩基のpH",
+  "電離平衡"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

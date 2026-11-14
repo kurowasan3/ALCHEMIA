@@ -1,0 +1,109 @@
+{
+ "id": "THE-EQL-044",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "融解塩電解の陽極気体と CO₂ + C ⇄ 2CO の平衡",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "アルミニウムの融解塩電解では，陰極で $\\ce{Al^3+ + 3e- -> Al}$ が起こり，黒鉛の陽極では酸化物イオンが酸化されて生じた酸素が黒鉛と反応して，$\\ce{CO}$ と $\\ce{CO2}$ の混合気体が発生する．陽極の付近には高温の黒鉛が十分にあり，陽極から出る気体は次の平衡に達しているとみなす．\n\\[\\ce{CO2 + C <=> 2CO}\\qquad K_\\mathrm{p}=\\frac{p_{\\ce{CO}}^{\\,2}}{p_{\\ce{CO2}}}\\]\n陽極から出る気体は $\\ce{CO}$ と $\\ce{CO2}$ だけで，その全圧を $P$ とする．電流はすべてアルミニウムの析出に使われ，黒鉛は陽極での反応だけで消費されるものとする．原子量は $\\mathrm{C}=12$，$\\mathrm{Al}=27$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "陽極から出る気体中の $\\ce{CO}$ のモル分率を $y$ とする．$\\ce{Al}$ $1\\,\\mathrm{mol}$ が生成するときに消費される黒鉛の物質量を $y$ を用いて表せ．また，その値がとりうる範囲を答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "温度 $T_1$ で $K_\\mathrm{p}=5.0\\times10^{4}\\,\\mathrm{Pa}$，$P=1.0\\times10^{5}\\,\\mathrm{Pa}$ のとき，$y$ を求めよ．また，$\\ce{Al}$ $54\\,\\mathrm{kg}$ を得るときに消費される黒鉛の質量〔kg〕を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "温度 $T_1$ のまま，陽極の気体の全圧を $P=2.0\\times10^{5}\\,\\mathrm{Pa}$ にして運転した．$y$ と，$\\ce{Al}$ $1\\,\\mathrm{mol}$ あたりの黒鉛の消費量〔mol〕を有効数字2桁で求めよ．また，(2) と比べて消費量が増えるか減るかを，平衡の移動にもとづいて説明せよ．"
+     },
+     {
+      "id": "4",
+      "tex": "別の温度 $T_2$（$P=1.0\\times10^{5}\\,\\mathrm{Pa}$）で運転したところ，$\\ce{Al}$ $1.00\\,\\mathrm{kg}$ あたり黒鉛が $0.370\\,\\mathrm{kg}$ 消費された．$T_2$ における $K_\\mathrm{p}$ を有効数字2桁で求めよ．また，$\\ce{CO2 + C -> 2CO}$ が吸熱反応であることを用いて，$T_2$ は $T_1$ より高いか低いかを判定せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\dfrac{3}{2(2-y)}\\,\\mathrm{mol}$，$0.75\\,\\mathrm{mol}$（$y=0$，すべて $\\ce{CO2}$）から $1.5\\,\\mathrm{mol}$（$y=1$，すべて $\\ce{CO}$）の間"
+   },
+   {
+    "id": "2",
+    "tex": "$y=0.50$，$24\\,\\mathrm{kg}$"
+   },
+   {
+    "id": "3",
+    "tex": "$y=0.39$，$0.93\\,\\mathrm{mol}$．減る．全圧を上げると気体の分子数が減る向き（$\\ce{2CO -> CO2 + C}$）に平衡が移動して $\\ce{CO2}$ の割合が増え，炭素1原子が運ぶ酸素原子が多くなるから"
+   },
+   {
+    "id": "4",
+    "tex": "$K_\\mathrm{p}=4.9\\times10^{3}\\,\\mathrm{Pa}$，$T_2$ は $T_1$ より低い"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 陽極から出る気体を $n\\,\\mathrm{mol}$ とすると，$\\ce{CO}$ $yn$，$\\ce{CO2}$ $(1-y)n$．\n消費された黒鉛は C 原子の保存より $yn+(1-y)n=n\\,\\mathrm{mol}$．運び出された酸素原子は $yn+2(1-y)n=(2-y)n\\,\\mathrm{mol}$ で，酸化物イオン $\\ce{O^2-}$ 1個が酸化されるとき電子 2 個を出すから，電子は $2(2-y)n\\,\\mathrm{mol}$，生成する $\\ce{Al}$ は $\\dfrac{2(2-y)n}{3}\\,\\mathrm{mol}$．\nよって $\\ce{Al}$ $1\\,\\mathrm{mol}$ あたりの黒鉛は $\\dfrac{n}{2(2-y)n/3}=\\boldsymbol{\\dfrac{3}{2(2-y)}\\,\\mathrm{mol}}$．\n$y=0$（すべて $\\ce{CO2}$）で $0.75\\,\\mathrm{mol}$，$y=1$（すべて $\\ce{CO}$）で $1.5\\,\\mathrm{mol}$ であり，この間の値をとる．\n\n\\textbf{(2)} $p_{\\ce{CO}}=yP$，$p_{\\ce{CO2}}=(1-y)P$ より $K_\\mathrm{p}=\\dfrac{y^2P}{1-y}$．\n$\\dfrac{y^2}{1-y}=\\dfrac{5.0\\times10^{4}}{1.0\\times10^{5}}=0.50$ → $2y^2+y-1=0$ → $(2y-1)(y+1)=0$，$0<y<1$ より $\\boldsymbol{y=0.50}$．\n黒鉛は $\\ce{Al}$ $1\\,\\mathrm{mol}$ あたり $\\dfrac{3}{2\\times1.5}=1.0\\,\\mathrm{mol}$．$\\ce{Al}$ $54\\,\\mathrm{kg}$ は $2.0\\times10^{3}\\,\\mathrm{mol}$ なので，黒鉛 $2.0\\times10^{3}\\,\\mathrm{mol}$，$2.0\\times10^{3}\\times12\\,\\mathrm{g}=\\boldsymbol{24\\,\\mathrm{kg}}$．\n\n\\textbf{(3)} $\\dfrac{y^2}{1-y}=\\dfrac{5.0\\times10^{4}}{2.0\\times10^{5}}=0.25$ → $4y^2+y-1=0$ → $y=\\dfrac{-1+\\sqrt{17}}{8}=0.390\\approx\\boldsymbol{0.39}$．\n黒鉛：$\\dfrac{3}{2(2-0.390)}=0.932\\approx\\boldsymbol{0.93\\,\\mathrm{mol}}$（(2) の $1.0\\,\\mathrm{mol}$ より\\textbf{減る}）．\n$\\ce{CO2 + C <=> 2CO}$ は右向きに気体の物質量が増える反応なので，全圧を上げると左向きに移動し $\\ce{CO2}$ の割合が増える．$\\ce{CO2}$ では炭素1原子あたり酸素2原子を運び出せるので，同じ電気量（同じ量の酸素）に対して消費される黒鉛が少なくなる．\n\n\\textbf{(4)} 黒鉛と $\\ce{Al}$ の物質量の比：$\\dfrac{370/12}{1000/27}=0.8325$．\n$\\dfrac{3}{2(2-y)}=0.8325$ → $2-y=1.802$ → $y=0.198$．\n$K_\\mathrm{p}=\\dfrac{y^2P}{1-y}=\\dfrac{0.198^2\\times1.0\\times10^{5}}{0.802}=\\boldsymbol{4.9\\times10^{3}\\,\\mathrm{Pa}}$．\n$K_\\mathrm{p}$ は $T_1$ の $5.0\\times10^{4}\\,\\mathrm{Pa}$ より小さい．吸熱反応の平衡定数は温度が低いほど小さいので，$T_2$ は $T_1$ より\\textbf{低い}．（温度が低いほど $\\ce{CO2}$ が多くなり，黒鉛の消費が少なくなる．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "アルミニウムの融解塩電解で陽極の気体組成（CO と CO₂ の比）を与えるのではなく，CO₂ + C ⇄ 2CO の平衡で決まるとして扱う．電子・酸素原子・炭素原子の保存から Al あたりの黒鉛消費量を CO のモル分率の関数として導き，全圧や温度を変えたときの消費量の変化を予測し，逆に消費量の実測値から Kp と温度の高低を決める．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "amphoteric",
+  "oxygen-sulfur"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "融解塩電解",
+  "アルミニウム",
+  "圧平衡定数",
+  "ルシャトリエの原理",
+  "物質収支"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "id": "ORG-HYD-012",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-02",
+ "topic": "アルカンの光塩素化で生じる一置換体の数と不斉炭素",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "structure",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "アルカンに光を当てながら塩素を反応させると，水素原子が塩素原子に置き換わる．ここでは，水素原子1個が置き換わった一塩素置換体だけを考える．分子式 $\\ce{C6H14}$ のアルカンには5種類の構造異性体がある．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{C6H14}$ のアルカン X の一塩素置換体には，構造異性体が2種類しかない．X の名称を答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "X の2種類の一塩素置換体の示性式を答え，不斉炭素原子をもつものを示せ．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\ce{C6H14}$ のアルカンのうち，一塩素置換体の構造異性体が4種類であるものの名称を答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) のアルカンの4種類の一塩素置換体について，それぞれがもつ不斉炭素原子の数を答えよ．また，鏡像異性体を区別すると，一塩素置換体は全部で何種類になるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "2,3-ジメチルブタン"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{ClCH2CH(CH3)CH(CH3)2}$（不斉炭素原子をもつ），$\\ce{(CH3)2CClCH(CH3)2}$（もたない）"
+   },
+   {
+    "id": "3",
+    "tex": "3-メチルペンタン"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{ClCH2CH2CH(CH3)CH2CH3}$：1個，$\\ce{CH3CHClCH(CH3)CH2CH3}$：2個，$\\ce{(CH3CH2)2CClCH3}$：0個，$\\ce{(CH3CH2)2CHCH2Cl}$：0個．全部で8種類．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方} 一塩素置換体の構造異性体の数は，分子の中で\\textbf{区別できる水素原子（等価でない炭素についた水素）の種類}の数に等しい．\n\n\\textbf{(1)} $\\ce{C6H14}$ の5種の異性体について数えると，ヘキサン3，2-メチルペンタン5，3-メチルペンタン4，2,2-ジメチルブタン3，2,3-ジメチルブタン2．2種類だけなのは，4つのメチル基がすべて等価で，2つの CH も等価な \\textbf{2,3-ジメチルブタン} $\\ce{(CH3)2CHCH(CH3)2}$．\n\n\\textbf{(2)}\n\\begin{itemize}\n\\item メチル基の H を置換：$\\ce{ClCH2C^{*}H(CH3)CH(CH3)2}$．C2 に $\\ce{H}$，$\\ce{CH3}$，$\\ce{CH2Cl}$，$\\ce{CH(CH3)2}$ の4種が結合し，\\textbf{不斉炭素原子をもつ}．\n\\item CH の H を置換：$\\ce{(CH3)2CClCH(CH3)2}$．C2 に $\\ce{CH3}$ が2つ結合しているので，不斉炭素原子をもたない．\n\\end{itemize}\n\n\\textbf{(3)} \\textbf{3-メチルペンタン} $\\ce{CH3CH2CH(CH3)CH2CH3}$（区別できる H は，末端の $\\ce{CH3}$，$\\ce{CH2}$，中央の CH，枝の $\\ce{CH3}$ の4種）．\n\n\\textbf{(4) 立体異性体まで数えると}\n\\begin{itemize}\n\\item $\\ce{ClCH2CH2C^{*}H(CH3)CH2CH3}$：不斉炭素1個 → 鏡像異性体2種\n\\item $\\ce{CH3C^{*}HClC^{*}H(CH3)CH2CH3}$：不斉炭素2個 → 立体異性体 $2^2=4$ 種（左右が異なるのでメソ体はない）\n\\item $\\ce{(CH3CH2)2CClCH3}$：中央の炭素に $\\ce{C2H5}$ が2つ → 0個，1種\n\\item $\\ce{(CH3CH2)2CHCH2Cl}$：中央の炭素に $\\ce{C2H5}$ が2つ → 0個，1種\n\\end{itemize}\n合計 $2+4+1+1=\\boldsymbol{8}$ 種類．構造異性体の数（4）が少なくても，不斉炭素をもつと立体異性体の数は大きく増える．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "アルカンの一塩素置換体の構造異性体の数は，分子内の等価でない水素の種類の数で決まる．これを使って炭素骨格を逆に決め，さらに生成物ごとの不斉炭素の数から鏡像異性体を含めた総数を数える．"
+ },
+ "concepts": [
+  "hydrocarbon",
+  "halogen",
+  "carbon-silicon"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "アルカン",
+  "置換反応",
+  "一塩素置換体",
+  "不斉炭素原子",
+  "立体異性体"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

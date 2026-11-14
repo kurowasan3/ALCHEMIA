@@ -1,0 +1,100 @@
+{
+ "id": "THE-EQL-028",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "速度定数の温度変化から平衡と活性化エネルギーを考える",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "気体の反応 $\\mathrm{A+B \\rightleftarrows 2C}$ について，C の生成速度は $V_f=k_f[\\mathrm A][\\mathrm B]$，C の分解速度は $V_r=k_r[\\mathrm C]^2$ で表される．温度 $T_1$，$T_2$（$T_1<T_2$）で，反応開始直後の速度を測定したところ，次の結果を得た．\n\\[\\begin{array}{c|c|c|c} & \\text{温度} & \\text{初めの濃度 (mol/L)} & \\text{初速度 (mol/(L·min))} \\\\ \\hline \\text{C の生成} & T_1 & [\\mathrm A]=0.50,\\ [\\mathrm B]=0.40 & V_f=4.0\\times10^{-3} \\\\ & T_2 & [\\mathrm A]=0.50,\\ [\\mathrm B]=0.40 & V_f=1.2\\times10^{-2} \\\\ \\hline \\text{C の分解} & T_1 & [\\mathrm C]=0.20 & V_r=8.0\\times10^{-5} \\\\ & T_2 & [\\mathrm C]=0.20 & V_r=4.8\\times10^{-4} \\end{array}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$T_1$，$T_2$ における $k_f$，$k_r$ をそれぞれ求めよ（単位は省略してよい）．"
+     },
+     {
+      "id": "2",
+      "tex": "$T_1$，$T_2$ における平衡定数 $K=\\dfrac{[\\mathrm C]^2}{[\\mathrm A][\\mathrm B]}$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "次の記述のうち，正しいものをすべて選べ．\\\\ (a) 温度を上げると平衡は右へ移動する．\\\\ (b) 右向きの反応は発熱反応である．\\\\ (c) 右向きの反応の触媒は，左向きの反応の触媒にもなる．\\\\ (d) 右向きの反応の活性化エネルギーは，左向きの反応の活性化エネルギーより大きい．\\\\ (e) 温度一定で圧縮すると平衡は右へ移動する．\\\\ (f) 平衡定数が $20$ になる温度は $T_1$ より低い．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$T_1$：$k_f=2.0\\times10^{-2}$，$k_r=2.0\\times10^{-3}$　$T_2$：$k_f=6.0\\times10^{-2}$，$k_r=1.2\\times10^{-2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$T_1$：$10$，$T_2$：$5.0$"
+   },
+   {
+    "id": "3",
+    "tex": "(b)，(c)，(f)"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $k_f=\\dfrac{V_f}{[\\mathrm A][\\mathrm B]}$，$k_r=\\dfrac{V_r}{[\\mathrm C]^2}$．$[\\mathrm A][\\mathrm B]=0.20$，$[\\mathrm C]^2=0.040$ より\\\\\n$T_1$：$k_f=\\boldsymbol{2.0\\times10^{-2}}$，$k_r=\\boldsymbol{2.0\\times10^{-3}}$；$T_2$：$k_f=\\boldsymbol{6.0\\times10^{-2}}$，$k_r=\\boldsymbol{1.2\\times10^{-2}}$．\\\\\n\\textbf{(2)} 平衡では $V_f=V_r$ より $K=\\dfrac{k_f}{k_r}$．$T_1$：$\\boldsymbol{10}$，$T_2$：$\\boldsymbol{5.0}$．\\\\\n\\textbf{(3)} (a) 高温で $K$ が小さくなるので左へ移動する．誤り．\\\\\n(b) 温度を上げると吸熱方向（左）へ移動するので，右向きは発熱．\\textbf{正しい}．\\\\\n(c) 触媒は正・逆両方の活性化エネルギーを下げる．\\textbf{正しい}．\\\\\n(d) 温度上昇で $k_r$ は6倍，$k_f$ は3倍で，温度に敏感な逆反応の方が活性化エネルギーが大きい（発熱反応では「正反応の $E_a$ ＋ 発熱量 ＝ 逆反応の $E_a$」）．誤り．\\\\\n(e) 両辺の気体分子数が等しい（2＝2）ので移動しない．誤り．\\\\\n(f) 発熱反応では低温ほど $K$ が大きいので，$K=20\\,(>10)$ になるのは $T_1$ より低温．\\textbf{正しい}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "正反応・逆反応の初速度から速度定数を求め，その比として平衡定数を得る．平衡定数の温度変化から反応の発熱・吸熱を，速度定数の温度変化の大小から正・逆反応の活性化エネルギーの大小を判断し，両者が整合することを確かめる．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "reaction-rate"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "平衡定数",
+  "速度定数",
+  "活性化エネルギー",
+  "発熱反応",
+  "触媒"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

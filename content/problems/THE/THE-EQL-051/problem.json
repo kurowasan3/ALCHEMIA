@@ -1,0 +1,109 @@
+{
+ "id": "THE-EQL-051",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "酵素反応の定常状態と基質による飽和",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "酵素 E が基質 S を生成物 P に変える反応が，次の 2 段階で進むとする．\n\\[ \\ce{E + S <=>[$k_1$][$k_2$] ES} \\qquad \\ce{ES ->[$k_3$] E + P} \\]\nES の生成の速さは $k_1[\\ce{E}][\\ce{S}]$，ES が E と S に戻る速さは $k_2[\\ce{ES}]$，P の生成の速さは $v=k_3[\\ce{ES}]$ である．加えた酵素の全濃度を $[\\ce{E}]_0$ とすると $[\\ce{E}]_0=[\\ce{E}]+[\\ce{ES}]$ であり，$[\\ce{S}]$ は $[\\ce{E}]_0$ よりずっと大きいとする．反応開始後しばらくすると $[\\ce{ES}]$ は一定になった．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$[\\ce{ES}]$ が一定のときに成り立つ関係を用いて，$[\\ce{ES}]$ を $[\\ce{E}]_0$，$[\\ce{S}]$ と $K=\\dfrac{k_2+k_3}{k_1}$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "$[\\ce{S}]$ が $K$ よりずっと小さいときと，ずっと大きいときのそれぞれについて，$v$ は $[\\ce{S}]$ に対して何次の反応のようにふるまうか．また，$[\\ce{S}]$ がずっと大きいときの $v$ を式で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "$k_3=50\\,\\mathrm{/s}$，$K=4.0\\times10^{-4}\\,\\mathrm{mol/L}$，$[\\ce{E}]_0=2.0\\times10^{-8}\\,\\mathrm{mol/L}$ とする．$[\\ce{S}]=4.0\\times10^{-4}\\,\\mathrm{mol/L}$ のときの $v$ を有効数字 2 桁で求めよ．また，$v$ が最大値の $90\\,\\%$ になる $[\\ce{S}]$ を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$[\\ce{S}]=4.0\\times10^{-2}\\,\\mathrm{mol/L}$ で反応させているとき，(a) $[\\ce{S}]$ を 2 倍にする，(b) $[\\ce{E}]_0$ を 2 倍にする，のそれぞれで $v$ はおよそ何倍になるか．理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$[\\ce{ES}]=\\dfrac{[\\ce{E}]_0[\\ce{S}]}{K+[\\ce{S}]}$"
+   },
+   {
+    "id": "2",
+    "tex": "$[\\ce{S}]\\ll K$ のとき 1 次，$[\\ce{S}]\\gg K$ のとき 0 次で，$v=k_3[\\ce{E}]_0$"
+   },
+   {
+    "id": "3",
+    "tex": "$v=5.0\\times10^{-7}\\,\\mathrm{mol/(L\\cdot s)}$，$[\\ce{S}]=3.6\\times10^{-3}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "4",
+    "tex": "(a) ほぼ 1 倍（変わらない）：$[\\ce{S}]$ が $K$ の 100 倍もあり，酵素のほとんどが ES になって飽和しているから．(b) 2 倍：$v=k_3[\\ce{ES}]\\fallingdotseq k_3[\\ce{E}]_0$ で，ES になれる酵素の量そのものが 2 倍になるから"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $[\\ce{ES}]$ が一定なので，ES の生成の速さと消失の速さ（E と S に戻る＋P に変わる）が等しい．\n\\[ k_1[\\ce{E}][\\ce{S}]=(k_2+k_3)[\\ce{ES}] \\quad\\Rightarrow\\quad [\\ce{E}][\\ce{S}]=K[\\ce{ES}] \\]\n$[\\ce{E}]=[\\ce{E}]_0-[\\ce{ES}]$ を代入して $([\\ce{E}]_0-[\\ce{ES}])[\\ce{S}]=K[\\ce{ES}]$ より\n\\[ [\\ce{ES}]=\\boldsymbol{\\dfrac{[\\ce{E}]_0[\\ce{S}]}{K+[\\ce{S}]}},\\qquad v=k_3[\\ce{ES}]=\\dfrac{k_3[\\ce{E}]_0[\\ce{S}]}{K+[\\ce{S}]} \\]\n\\textbf{(2)} $[\\ce{S}]\\ll K$ では分母が $K$ とみなせ $v\\fallingdotseq\\dfrac{k_3[\\ce{E}]_0}{K}[\\ce{S}]$：$[\\ce{S}]$ に比例する\\textbf{1 次}．$[\\ce{S}]\\gg K$ では分母が $[\\ce{S}]$ とみなせ $v\\fallingdotseq\\boldsymbol{k_3[\\ce{E}]_0}$：$[\\ce{S}]$ によらない\\textbf{0 次}（最大の速さ）．酵素がほぼすべて ES の形になり，それ以上 S を増やしても ES が増えないからである．\\\\\n\\textbf{(3)} 最大の速さは $k_3[\\ce{E}]_0=50\\times2.0\\times10^{-8}=1.0\\times10^{-6}\\,\\mathrm{mol/(L\\cdot s)}$．$[\\ce{S}]=K$ のとき $\\dfrac{[\\ce{S}]}{K+[\\ce{S}]}=\\dfrac{1}{2}$ なので\n\\[ v=\\dfrac{1}{2}\\times1.0\\times10^{-6}=\\boldsymbol{5.0\\times10^{-7}\\,\\mathrm{mol/(L\\cdot s)}} \\]\n$\\dfrac{[\\ce{S}]}{K+[\\ce{S}]}=0.90$ より $[\\ce{S}]=9K=\\boldsymbol{3.6\\times10^{-3}\\,\\mathrm{mol/L}}$．最大の速さの $90\\,\\%$ を得るのにも，$K$ の 9 倍の基質が必要になる．\\\\\n\\textbf{(4)} $[\\ce{S}]=4.0\\times10^{-2}=100K$ では $\\dfrac{[\\ce{S}]}{K+[\\ce{S}]}=\\dfrac{100}{101}=0.990$．\\\\\n(a) $[\\ce{S}]=200K$ にすると $\\dfrac{200}{201}=0.995$ で，$v$ は $\\dfrac{0.995}{0.990}=1.005$ 倍，\\textbf{ほとんど変わらない}．\\\\\n(b) $v=k_3[\\ce{E}]_0\\times0.990$ は $[\\ce{E}]_0$ に比例するので \\textbf{2 倍}になる．飽和した条件では，速さを決めているのは酵素の量（と $k_3$）であって，基質の量ではない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "中間体 ES の濃度が一定（生成と消失の速さが等しい）とおき，酵素の全量の保存と組み合わせて反応速度を基質濃度の式で表す．基質が少ないと 1 次，多いと酵素が飽和して 0 次になるので，速さを上げるのに基質と酵素のどちらを増やすべきかが条件で変わる．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "protein-amino",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "酵素反応",
+  "定常状態",
+  "飽和",
+  "反応次数",
+  "反応速度"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

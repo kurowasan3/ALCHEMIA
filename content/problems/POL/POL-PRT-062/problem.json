@@ -1,0 +1,116 @@
+{
+ "id": "POL-PRT-062",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-05",
+ "topic": "複数の電離基をもつペプチドの等電点（同じ pKa の基が 2 個ある場合）",
+ "course": "化学",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "トリペプチド P の配列は N 末端から Lys–Lys–Glu である．P の電離する基とその $\\mathrm{p}K_\\mathrm{a}$（陽イオン形の酸としての値）を次のようにする．ペプチド中の各基は互いに独立に電離するものとし，2 つの Lys 側鎖の $\\mathrm{p}K_\\mathrm{a}$ は同じとする．\n\\begin{center}\nC 末端 $-\\ce{COOH}$：3.2　　Glu 側鎖 $-\\ce{COOH}$：4.3　　N 末端 $-\\ce{NH3+}$：7.9　　Lys 側鎖 $-\\ce{NH3+}$（2 個）：10.6\n\\end{center}\nある基について，$\\mathrm{pH}=\\mathrm{p}K_\\mathrm{a}+\\log_{10}\\dfrac{[\\text{塩基形}]}{[\\text{酸形}]}$ が成り立つ．必要なら $\\log_{10}2=0.30$ を用いよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "強酸性と強塩基性での P 1 分子の電荷をそれぞれ答えよ．また，pH を上げていったとき，P の正味の電荷が 0 の形が主成分となる pH の範囲を，上の $\\mathrm{p}K_\\mathrm{a}$ を用いて答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "等電点では，その範囲の両端の電離が「正電荷の減少」と「負電荷の増加」をちょうどつり合わせている．その範囲の外側の基（3.2，4.3 の基）は完全に電離しているとみなし，さらに N 末端の $-\\ce{NH3+}$ の残っている割合も，Lys 側鎖の $-\\ce{NH2}$ になっている割合も 1 より十分小さいとして，P の等電点を小数第 1 位まで求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "単純に「範囲の両端の $\\mathrm{p}K_\\mathrm{a}$ の平均」をとった値と (2) の値がずれる理由を簡潔に述べよ．"
+     },
+     {
+      "id": "4",
+      "tex": "ジペプチド Lys–Glu（各基の $\\mathrm{p}K_\\mathrm{a}$ は P と同じ値とする）の等電点を小数第 1 位まで求め，P の等電点との大小を答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "強酸性にした P $1.0\\,\\mathrm{mmol}$ の水溶液を水酸化ナトリウム水溶液で滴定する．pH がちょうど 7.9 になるまでに P と反応した $\\ce{NaOH}$ はおよそ何 mmol か．小数第 1 位まで答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "強酸性：$+3$，強塩基性：$-2$；$7.9<\\mathrm{pH}<10.6$ の範囲"
+   },
+   {
+    "id": "2",
+    "tex": "9.1"
+   },
+   {
+    "id": "3",
+    "tex": "正味の電荷を負にする基（Lys 側鎖）が 2 個あり，その電離が同じ割合でも負電荷は 2 倍の速さで増えるので，等電点は平均より $\\tfrac12\\log_{10}2=0.15$ だけ低い側にずれる．"
+   },
+   {
+    "id": "4",
+    "tex": "6.1；P の等電点のほうが大きい"
+   },
+   {
+    "id": "5",
+    "tex": "$2.5\\,\\mathrm{mmol}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　強酸性ではアミノ基 3 個がすべて $-\\ce{NH3+}$，カルボキシ基は電離しないので $\\boldsymbol{+3}$．強塩基性ではカルボキシ基 2 個が $-\\ce{COO-}$，アミノ基は中性なので $\\boldsymbol{-2}$．\npH を上げると $\\mathrm{p}K_\\mathrm{a}$ の小さい順に $\\ce{H+}$ を失い，電荷は $+3\\to+2$（3.2）$\\to+1$（4.3）$\\to0$（7.9）$\\to-1,\\,-2$（10.6）と変わる．よって電荷 0 の形が主成分となるのは $\\boldsymbol{7.9<\\mathrm{pH}<10.6}$．\n\n\\textbf{(2)}　$[\\ce{H+}]=h$，$K_1=10^{-7.9}$（N 末端），$K_2=10^{-10.6}$（Lys 側鎖）とする．カルボキシ基 2 個は完全に電離（$-2$）．\nN 末端が $-\\ce{NH3+}$ のままの割合は $\\dfrac{h}{h+K_1}\\fallingdotseq\\dfrac{h}{K_1}$，Lys 側鎖 1 個が $-\\ce{NH2}$ になった割合は $\\dfrac{K_2}{h+K_2}\\fallingdotseq\\dfrac{K_2}{h}$．\n正味の電荷は\n\\[ \\frac{h}{K_1}+2\\left(1-\\frac{K_2}{h}\\right)-2=\\frac{h}{K_1}-\\frac{2K_2}{h} \\]\nこれが 0 になる条件は\n\\[ h^2=2K_1K_2 \\quad\\Longrightarrow\\quad \\mathrm{pH}=\\frac{7.9+10.6}{2}-\\frac{\\log_{10}2}{2}=9.25-0.15=9.10 \\]\nよって等電点は $\\boldsymbol{9.1}$．このとき $h/K_1\\fallingdotseq0.06$，$K_2/h\\fallingdotseq0.03$ で，いずれも 1 より十分小さく近似は妥当である．\n\n\\textbf{(3)}　負の側に電荷を動かす基（Lys 側鎖）が同じ $\\mathrm{p}K_\\mathrm{a}$ で 2 個あるため，$\\ce{NH2}$ になる割合 $K_2/h$ が同じでも負電荷の増加は $2K_2/h$ になる．N 末端 1 個の正電荷 $h/K_1$ とつり合わせるには，$h$ を $\\sqrt2$ 倍（pH を $\\tfrac12\\log_{10}2=0.15$ 小さく）する必要がある．\\textbf{等電点は「同じ形の基の数」にも依存し，単純平均からずれる．}\n\n\\textbf{(4)}　Lys–Glu では電離する基は C 末端（3.2），Glu 側鎖（4.3），N 末端（7.9），Lys 側鎖（10.6）．強酸性で $+2$ なので，2 個のカルボキシ基が電離した後の $4.3<\\mathrm{pH}<7.9$ で電荷 0 の形が主となる．両側とも基は 1 個ずつなので\n\\[ \\mathrm{pI}=\\frac{4.3+7.9}{2}=\\boldsymbol{6.1} \\]\n外側の基（3.2 と 10.6）の影響はわずかで，小数第 1 位は変わらない．塩基性の基が 1 つ多い \\textbf{P の等電点のほうが大きい}．\n\n\\textbf{(5)}　強酸性の P（電荷 $+3$）から，加えた $\\ce{OH-}$ の数だけ $\\ce{H+}$ が失われる．pH 7.9 では，カルボキシ基 2 個はほぼ完全に電離（2.0 mmol 分），N 末端はちょうど半分が電離（0.5 mmol 分），Lys 側鎖はほとんど電離していない（$\\mathrm{pH}-\\mathrm{p}K_\\mathrm{a}=-2.7$ で 1 個あたり約 0.2 %）．\nよって $2.0+0.5=\\boldsymbol{2.5\\,\\mathrm{mmol}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ペプチドの電荷は pKa の小さい順に 1 ずつ減るので，電荷 0 の形が主となる区間の両端の pKa を選ぶ．等電点はその両端の電離による電荷のつり合いで決まり，同じ pKa の基が n 個あると [H+]^2=nK1K2 となって単純平均から (log n)/2 ずれる．近似の妥当性（各割合が 1 より十分小さい）も確かめる．"
+ },
+ "concepts": [
+  "protein-amino",
+  "ionization-equilibrium"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "等電点",
+  "ペプチド",
+  "電離定数",
+  "近似の妥当性",
+  "滴定"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

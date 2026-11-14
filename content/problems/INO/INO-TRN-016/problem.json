@@ -1,0 +1,101 @@
+{
+ "id": "INO-TRN-016",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-07",
+ "topic": "赤鉄鉱と磁鉄鉱からの銑鉄の製造（量的関係の比較）",
+ "course": "化学",
+ "level": 1,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "溶鉱炉で，鉄鉱石を一酸化炭素で還元して銑鉄をつくる．鉄鉱石として，$\\ce{Fe2O3}$ を質量で $80.0\\,\\%$ 含む赤鉄鉱と，$\\ce{Fe3O4}$ を質量で $60.0\\,\\%$ 含む磁鉄鉱の 2 種類を考える．鉄鉱石中の鉄はすべて銑鉄になるものとし，原子量は C = 12，O = 16，Fe = 56 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "純粋な $\\ce{Fe2O3}$ と $\\ce{Fe3O4}$ に含まれる鉄の質量パーセントをそれぞれ有効数字 3 桁で求め，どちらが大きいか答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "炭素を質量で $4.0\\,\\%$ 含む銑鉄 $1.0\\,\\mathrm t$ をつくるのに必要な赤鉄鉱と磁鉄鉱の質量をそれぞれ有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の銑鉄をつくるとき，鉄の酸化物をすべて一酸化炭素だけで還元したとすると，必要な一酸化炭素は赤鉄鉱・磁鉄鉱のそれぞれで何 t か．有効数字 2 桁で答えよ．また，その差が生じる理由を鉄の酸化数に着目して説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{Fe2O3}$ $70.0\\,\\%$，$\\ce{Fe3O4}$ $72.4\\,\\%$ で，$\\ce{Fe3O4}$ のほうが大きい"
+   },
+   {
+    "id": "2",
+    "tex": "赤鉄鉱 $1.7\\,\\mathrm t$，磁鉄鉱 $2.2\\,\\mathrm t$"
+   },
+   {
+    "id": "3",
+    "tex": "赤鉄鉱 $0.72\\,\\mathrm t$，磁鉄鉱 $0.64\\,\\mathrm t$．鉄の酸化数は $\\ce{Fe2O3}$ では $+3$，$\\ce{Fe3O4}$ では平均 $+\\dfrac83$ で，$\\ce{Fe3O4}$ のほうが鉄 1 mol を単体にするのに必要な電子（還元剤 CO）が少ないから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 式量は $\\ce{Fe2O3}=160$，$\\ce{Fe3O4}=232$．\n\\[ \\frac{112}{160}\\times100=\\boldsymbol{70.0\\,\\%},\\qquad \\frac{168}{232}\\times100=72.41\\cdots\\approx\\boldsymbol{72.4\\,\\%} \\]\n純物質としては $\\ce{Fe3O4}$ のほうが鉄の割合が大きい．\n\n\\textbf{(2)} 銑鉄中の鉄は $1.0\\times0.960=0.96\\,\\mathrm t$．\n\n赤鉄鉱：$0.96\\times\\dfrac{160}{112}\\div0.800=1.71\\cdots\\approx\\boldsymbol{1.7\\,\\mathrm t}$\n\n磁鉄鉱：$0.96\\times\\dfrac{232}{168}\\div0.600=2.20\\cdots\\approx\\boldsymbol{2.2\\,\\mathrm t}$\n\n純物質では $\\ce{Fe3O4}$ のほうが鉄に富むが，鉱石中の含有率が低いので必要な鉱石は多くなる．\n\n\\textbf{(3)} 鉄は $\\dfrac{0.96\\times10^6}{56}\\,\\mathrm{mol}$．\n\\[ \\ce{Fe2O3 + 3CO -> 2Fe + 3CO2},\\qquad \\ce{Fe3O4 + 4CO -> 3Fe + 4CO2} \\]\nより，鉄 1 mol あたり CO は赤鉄鉱で $\\dfrac32\\,\\mathrm{mol}$，磁鉄鉱で $\\dfrac43\\,\\mathrm{mol}$．\n\\[ \\text{赤鉄鉱：}\\frac{0.96\\times10^6}{56}\\times\\frac32\\times28=7.2\\times10^5\\,\\mathrm g=\\boldsymbol{0.72\\,\\mathrm t} \\]\n\\[ \\text{磁鉄鉱：}\\frac{0.96\\times10^6}{56}\\times\\frac43\\times28=6.4\\times10^5\\,\\mathrm g=\\boldsymbol{0.64\\,\\mathrm t} \\]\n$\\ce{CO}$ 1 分子は $\\ce{CO2}$ になるとき電子を 2 個与える．鉄 1 原子を単体にするのに必要な電子は $\\ce{Fe2O3}$ で 3 個，$\\ce{Fe3O4}$ で平均 $\\dfrac83$ 個なので，$\\ce{Fe3O4}$ のほうが $\\ce{CO}$ が少なくてすむ．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "鉄鉱石から得られる鉄の量は「酸化物中の鉄の割合×鉱石中の酸化物の含有率」で決まり，必要な還元剤（CO）の量は鉄の酸化数（Fe₂O₃ は +3，Fe₃O₄ は平均 +8/3）で決まる．"
+ },
+ "concepts": [
+  "transition-metals",
+  "redox"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "鉄の製錬",
+  "赤鉄鉱",
+  "磁鉄鉱",
+  "一酸化炭素",
+  "酸化数",
+  "量的関係"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

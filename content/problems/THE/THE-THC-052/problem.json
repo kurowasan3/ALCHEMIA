@@ -1,0 +1,117 @@
+{
+ "id": "THE-THC-052",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-10",
+ "topic": "アンモニアの酸化で酸素の量から決まる生成物の割合と反応エンタルピー",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "アンモニアを酸素と気相で反応させると，条件によって一酸化窒素 $\\ce{NO}$，硝酸 $\\ce{HNO3}$（気体），水 $\\ce{H2O}$（気体）が生じる．各物質の生成エンタルピーを次の値とする（単位 kJ/mol，すべて気体）．\n\\[ \\ce{NH3}\\ {-46}\\qquad \\ce{NO}\\ {+90}\\qquad \\ce{H2O}\\ {-242}\\qquad \\ce{HNO3}\\ {-135} \\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{4NH3 + 5O2 -> 4NO + 6H2O}$ の反応で，$\\ce{NH3}$ 1 mol が反応するときの反応エンタルピーを求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$\\ce{NH3}$ $1.00\\,\\mathrm{mol}$ と $\\ce{O2}$ $1.50\\,\\mathrm{mol}$ が過不足なく反応し，$\\ce{HNO3}$，$\\ce{NO}$，$\\ce{H2O}$ だけが生じた．それぞれの物質量を有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の反応全体の反応エンタルピーを有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\ce{NH3}$ $1.00\\,\\mathrm{mol}$ が $x$ mol の $\\ce{O2}$ と過不足なく反応して，生成物が $\\ce{HNO3}$，$\\ce{NO}$，$\\ce{H2O}$ のうちの 1〜3 種類だけになるためには，$x$ はどの範囲になければならないか．"
+     },
+     {
+      "id": "5",
+      "tex": "(4) の範囲で $x$ を大きくすると，反応全体で放出される熱量は大きくなるか，小さくなるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$-227\\,\\mathrm{kJ}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{HNO3}$ $0.333\\,\\mathrm{mol}$，$\\ce{NO}$ $0.667\\,\\mathrm{mol}$，$\\ce{H2O}$ $1.33\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "$-262\\,\\mathrm{kJ}$"
+   },
+   {
+    "id": "4",
+    "tex": "$1.25 \\leqq x \\leqq 2.00$"
+   },
+   {
+    "id": "5",
+    "tex": "大きくなる"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $\\ce{NH3 + 5/4O2 -> NO + 3/2H2O}$ について，(生成物の生成エンタルピーの和)$-$(反応物の和) を計算すると，\n$90 + \\dfrac{3}{2}\\times(-242) - (-46) = \\boldsymbol{-227\\,\\mathrm{kJ}}$．\n\n(2) $\\ce{HNO3}$ $a$，$\\ce{NO}$ $b$，$\\ce{H2O}$ $c$（mol）とする．原子の保存から\n\\[ \\ce{N}：a + b = 1.00,\\qquad \\ce{H}：a + 2c = 3.00,\\qquad \\ce{O}：3a + b + c = 2\\times1.50 \\]\n第 1，2 式を第 3 式に代入すると $3a + (1-a) + \\dfrac{3-a}{2} = 3$ より $a = \\dfrac{1}{3}$．\n$\\ce{HNO3}$ $\\boldsymbol{0.333\\,\\mathrm{mol}}$，$\\ce{NO}$ $\\boldsymbol{0.667\\,\\mathrm{mol}}$，$\\ce{H2O}$ $\\boldsymbol{1.33\\,\\mathrm{mol}}$．\n\n(3) $\\dfrac{1}{3}(-135) + \\dfrac{2}{3}(90) + \\dfrac{4}{3}(-242) - (-46) = -261.7 \\to \\boldsymbol{-262\\,\\mathrm{kJ}}$．\n\n(4) O の保存の式に $b = 1-a$，$c = \\dfrac{3-a}{2}$ を入れると $2x = 3a + (1-a) + \\dfrac{3-a}{2}$ より $x = 1.25 + 0.75a$．$0 \\leqq a \\leqq 1$（$a=0$ は $\\ce{NO}$ と $\\ce{H2O}$ だけ，$a=1$ は $\\ce{NH3 + 2O2 -> HNO3 + H2O}$）なので $\\boldsymbol{1.25 \\leqq x \\leqq 2.00}$．この範囲の外では $\\ce{O2}$ か $\\ce{NH3}$ が余るか，別の生成物（$\\ce{N2}$，$\\ce{NO2}$ など）が必要になる．\n\n(5) 反応エンタルピーを $a$ で表すと\n$\\Delta H = -135a + 90(1-a) - 242\\cdot\\dfrac{3-a}{2} + 46 = -227 - 104a$．\n$x$ が大きいほど $a$ が大きく，$\\Delta H$ はより負になるので，放出される熱量は\\textbf{大きくなる}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "生成物の種類が分かっていて反応物が過不足なく反応するとき，N・H・O 原子の保存から，与えた酸素の量だけで生成物の割合が決まる．生成エンタルピーから反応全体の反応エンタルピーを求め，酸素の量の取りうる範囲と，酸化が進むほど（硝酸が増えるほど）発熱が大きくなることを判断する．"
+ },
+ "concepts": [
+  "enthalpy",
+  "oxygen-sulfur",
+  "nitrogen-phosphorus"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "生成エンタルピー",
+  "ヘスの法則",
+  "原子の保存",
+  "アンモニアの酸化",
+  "硝酸"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

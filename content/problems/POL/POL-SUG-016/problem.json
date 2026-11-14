@@ -1,0 +1,102 @@
+{
+ "id": "POL-SUG-016",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-04",
+ "topic": "シクロデキストリンの包接化合物と元素分析",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "シクロデキストリン（CD）は，$n$ 個の $\\alpha$-グルコースが 1,4-グリコシド結合で環状につながった化合物で，分子式は $(\\ce{C6H10O5})_n$ と表される．CD は内側の空洞に疎水性の分子を取り込む．ある CD が，ナフタレン $\\ce{C10H8}$ 1 分子を CD 1 分子で取り込んだ化合物（包接化合物）をつくった．原子量は H = 1.0，C = 12，O = 16 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "CD そのものを完全燃焼させて生じる $\\ce{CO2}$ と $\\ce{H2O}$ の質量を測っても，$n$ を決めることはできない．その理由を答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "この包接化合物 $12.62\\,\\mathrm{mg}$ を完全燃焼させると，$\\ce{CO2}$ が $22.88\\,\\mathrm{mg}$，$\\ce{H2O}$ が $7.02\\,\\mathrm{mg}$ 生じた．$n$ を整数で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "CD の水溶液はフェーリング液を還元するか．理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "CD の組成式は $n$ によらずつねに $\\ce{C6H10O5}$ で，C・H・O の質量比が同じだから．"
+   },
+   {
+    "id": "2",
+    "tex": "7"
+   },
+   {
+    "id": "3",
+    "tex": "還元しない．すべてのグルコース単位の 1 位の炭素がグリコシド結合に使われていて，開環できる還元末端がないから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1)　$(\\ce{C6H10O5})_n$ の C，H，O の質量の割合は $n$ に関係なく一定なので，燃焼で得られるのは組成式 $\\ce{C6H10O5}$ だけで，$n$（分子量）はわからない．\n\n(2)　包接化合物の分子式は $\\ce{C_{6n+10}H_{10n+8}O_{5n}}$．燃焼で生じた物質量は\n\\[ \\ce{CO2}:\\ \\frac{22.88}{44}=0.520\\,\\mathrm{mmol},\\qquad \\ce{H2O}:\\ \\frac{7.02}{18}=0.390\\,\\mathrm{mmol}\\ (\\text{H は }0.780\\,\\mathrm{mmol}) \\]\nC と H の原子数の比は\n\\[ \\frac{6n+10}{10n+8}=\\frac{0.520}{0.780}=\\frac{2}{3}\\quad\\Rightarrow\\quad 18n+30=20n+16\\quad\\Rightarrow\\quad n=\\boldsymbol{7} \\]\n確認：$n=7$ の包接化合物 $\\ce{C52H78O35}$ の分子量は $1262$ で，$12.62\\,\\mathrm{mg}$ は $0.0100\\,\\mathrm{mmol}$．C は $0.520\\,\\mathrm{mmol}$，H は $0.780\\,\\mathrm{mmol}$ となり一致する．ナフタレン（C の割合が大きい）を取り込んだことで，C と H の比から $n$ が決まる．\n\n(3)　CD は環状につながっているので，鎖状のデンプンと違って還元末端（1 位のヒドロキシ基が自由なグルコース単位）が 1 つもない．よって$\\boldsymbol{\\text{還元しない}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "環状オリゴ糖は組成式が環の大きさによらないので，燃焼分析だけでは重合数が決まらないが，組成の異なる分子を一定比で取り込んだ包接化合物を分析すれば決められる．環状なので還元末端がなく還元性を示さない．"
+ },
+ "concepts": [
+  "saccharide",
+  "nitrogen-phosphorus",
+  "elemental-analysis"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "シクロデキストリン",
+  "元素分析",
+  "包接化合物",
+  "還元性",
+  "組成式",
+  "オリゴ糖"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

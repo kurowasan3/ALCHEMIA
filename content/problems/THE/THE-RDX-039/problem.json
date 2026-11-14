@@ -1,0 +1,109 @@
+{
+ "id": "THE-RDX-039",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-06",
+ "topic": "磁鉄鉱を還元する還元剤（水素・一酸化炭素・メタン）の電子数による比較",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "equation",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "磁鉄鉱の主成分 $\\ce{Fe3O4}$ を，水素 $\\ce{H2}$，一酸化炭素 $\\ce{CO}$，メタン $\\ce{CH4}$ のいずれかで還元して鉄 $\\ce{Fe}$ を得る．$\\ce{CO}$ の炭素は $\\ce{CO2}$ に，$\\ce{CH4}$ の炭素は $\\ce{CO2}$ に，水素は $\\ce{H2O}$ になるものとする．原子量は $\\mathrm{H}=1.0$，$\\mathrm{C}=12$，$\\mathrm{O}=16$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{Fe3O4}$ 1 mol が $\\ce{Fe}$ になるときに受け取る電子は何 mol か．また，$\\ce{H2}$，$\\ce{CO}$，$\\ce{CH4}$ それぞれ 1 mol が放出する電子は何 mol か．"
+     },
+     {
+      "id": "2",
+      "tex": "$\\ce{Fe3O4}$ を $\\ce{CH4}$ で還元する反応の化学反応式を書け．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\ce{Fe}$ を 1.0 mol 得るのに必要な還元剤の質量を，$\\ce{H2}$，$\\ce{CO}$，$\\ce{CH4}$ のそれぞれについて有効数字 2 桁で求め，小さい順に並べよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\ce{Fe}$ を 1.0 mol 得るときに発生する $\\ce{CO2}$ の物質量が少ない順に，3 つの還元剤を並べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{Fe3O4}$：8 mol，$\\ce{H2}$：2 mol，$\\ce{CO}$：2 mol，$\\ce{CH4}$：8 mol"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{Fe3O4 + CH4 -> 3Fe + CO2 + 2H2O}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{H2}$：2.7 g，$\\ce{CH4}$：5.3 g，$\\ce{CO}$：37 g；$\\ce{H2}<\\ce{CH4}<\\ce{CO}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{H2}<\\ce{CH4}<\\ce{CO}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　還元剤の必要量は「酸化剤が受け取る電子の数 ＝ 還元剤が出す電子の数」で決まる．電子の数は酸化数の変化から求める．\n\n(1) $\\ce{Fe3O4}$ の $\\ce{Fe}$ 3 個の酸化数の合計は $+8$（$\\ce{Fe^{2+}}$ 1 個と $\\ce{Fe^{3+}}$ 2 個）．すべて $0$ になるので $\\boldsymbol{8\\,\\mathrm{mol}}$ を受け取る．$\\ce{H2}$：$\\ce{H}$ $0\\to+1$ が 2 個で $\\boldsymbol{2\\,\\mathrm{mol}}$．$\\ce{CO}$：$\\ce{C}$ $+2\\to+4$ で $\\boldsymbol{2\\,\\mathrm{mol}}$．$\\ce{CH4}$：$\\ce{C}$ $-4\\to+4$ で $\\boldsymbol{8\\,\\mathrm{mol}}$（$\\ce{H}$ は $+1$ のまま）．\n\n(2) $\\ce{Fe3O4}$ 1 mol と $\\ce{CH4}$ 1 mol で電子数が等しいので\n\\[ \\ce{Fe3O4 + CH4 -> 3Fe + CO2 + 2H2O} \\]\n同様に $\\ce{Fe3O4 + 4H2 -> 3Fe + 4H2O}$，$\\ce{Fe3O4 + 4CO -> 3Fe + 4CO2}$．\n\n(3) $\\ce{Fe}$ 1.0 mol には $\\ce{Fe3O4}$ $1/3$ mol，電子 $8/3$ mol が必要．\n$\\ce{H2}$：$\\dfrac{8}{3}\\div2=\\dfrac{4}{3}\\,\\mathrm{mol}$，$\\dfrac{4}{3}\\times2.0=\\boldsymbol{2.7\\,\\mathrm{g}}$．\n$\\ce{CO}$：$\\dfrac{4}{3}\\,\\mathrm{mol}$，$\\dfrac{4}{3}\\times28=\\boldsymbol{37\\,\\mathrm{g}}$．\n$\\ce{CH4}$：$\\dfrac{8}{3}\\div8=\\dfrac{1}{3}\\,\\mathrm{mol}$，$\\dfrac{1}{3}\\times16=\\boldsymbol{5.3\\,\\mathrm{g}}$．\nよって $\\boldsymbol{\\ce{H2}<\\ce{CH4}<\\ce{CO}}$．$\\ce{CH4}$ は 1 分子で 8 個の電子を出せるので，物質量では最も少なくて済む．\n\n(4) $\\ce{CO2}$ は，$\\ce{H2}$：$0$，$\\ce{CH4}$：$\\dfrac{1}{3}\\,\\mathrm{mol}$，$\\ce{CO}$：$\\dfrac{4}{3}\\,\\mathrm{mol}$．よって $\\boldsymbol{\\ce{H2}<\\ce{CH4}<\\ce{CO}}$．$\\ce{CH4}$ は電子の一部を $\\ce{H}$ ではなく $\\ce{C}$ から出すので $\\ce{CO2}$ を生じるが，$\\ce{CO}$ に比べれば 4 分の 1 で済む．水素による製鉄が $\\ce{CO2}$ 削減策として研究されているのはこのためである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "酸化物を還元するのに必要な還元剤の量は，酸化数の変化から求めた電子の数のつり合いで決まる．H2・CO・CH4 の1分子が出す電子の数（2・2・8）の違いから，必要な物質量・質量と副生する CO2 の量を比べる．"
+ },
+ "concepts": [
+  "redox",
+  "transition-metals",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "酸化数",
+  "電子の授受",
+  "還元剤",
+  "製鉄",
+  "二酸化炭素"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,101 @@
+{
+ "id": "THE-ION-013",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "2価の弱酸（炭酸）の段階的な電離",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "二酸化炭素の水溶液中で，炭酸は次のように2段階に電離する．\n\\[ \\ce{H2CO3 <=> H+ + HCO3-}\\quad K_1=4.0\\times10^{-7}\\,\\mathrm{mol/L},\\qquad \\ce{HCO3- <=> H+ + CO3^2-}\\quad K_2=5.0\\times10^{-11}\\,\\mathrm{mol/L} \\]\n$K_2$ は $K_1$ に比べて非常に小さいので，$[\\ce{H+}]$ を求めるときは第1段階の電離だけを考えればよい．また電離度は 1 に比べて十分小さいとする．水に溶けた二酸化炭素はすべて $\\ce{H2CO3}$ になるものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$0.025\\,\\mathrm{mol/L}$ の炭酸水について，pH と第1段階の電離度を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) の炭酸水中の $\\ce{CO3^2-}$ のモル濃度を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(1) の炭酸水を水で 100 倍にうすめた．pH，第1段階の電離度，$\\ce{CO3^2-}$ のモル濃度は，それぞれうすめる前と比べてどうなるか．数値とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "pH 4.0，電離度 $4.0\\times10^{-3}$"
+   },
+   {
+    "id": "2",
+    "tex": "$5.0\\times10^{-11}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "3",
+    "tex": "pH は 5.0 に上がり，電離度は $4.0\\times10^{-2}$ に大きくなるが，$\\ce{CO3^2-}$ は $5.0\\times10^{-11}\\,\\mathrm{mol/L}$ のまま変わらない"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 第1段階だけを考え，$[\\ce{H+}]=[\\ce{HCO3-}]=C\\alpha$，$[\\ce{H2CO3}]\\fallingdotseq C$ とすると\n\\[ K_1=\\dfrac{(C\\alpha)^2}{C}=C\\alpha^2,\\qquad \\alpha=\\sqrt{\\dfrac{K_1}{C}}=\\sqrt{\\dfrac{4.0\\times10^{-7}}{0.025}}=\\boldsymbol{4.0\\times10^{-3}} \\]\n\\[ [\\ce{H+}]=C\\alpha=0.025\\times4.0\\times10^{-3}=1.0\\times10^{-4}\\,\\mathrm{mol/L},\\qquad \\mathrm{pH}=\\boldsymbol{4.0} \\]\n\n\\textbf{(2)} 第2段階の電離定数の式に，第1段階で決まった $[\\ce{H+}]=[\\ce{HCO3-}]$ を代入すると\n\\[ [\\ce{CO3^2-}]=K_2\\dfrac{[\\ce{HCO3-}]}{[\\ce{H+}]}=K_2=\\boldsymbol{5.0\\times10^{-11}\\,\\mathrm{mol/L}} \\]\n\n\\textbf{(3)} $C=2.5\\times10^{-4}\\,\\mathrm{mol/L}$ として同様に\n\\[ \\alpha=\\sqrt{\\dfrac{4.0\\times10^{-7}}{2.5\\times10^{-4}}}=4.0\\times10^{-2},\\qquad [\\ce{H+}]=1.0\\times10^{-5}\\,\\mathrm{mol/L},\\ \\mathrm{pH}=5.0 \\]\nうすめると電離度は大きくなり（$\\alpha\\propto 1/\\sqrt{C}$），pH は 1 上がる．一方，$[\\ce{H+}]=[\\ce{HCO3-}]$ の関係はうすめても成り立つので，$[\\ce{CO3^2-}]\\fallingdotseq K_2$ は濃度によらず \\textbf{変わらない}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "2価の弱酸の水溶液では第1段階の電離で [H+]≒[HA-] となるため，2価の陰イオンの濃度は K2 にほぼ等しく，酸の濃度によらない．うすめると電離度は大きくなり pH は上がるが，[A2-] は変わらない．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "concentration",
+  "ph"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電離平衡",
+  "多段階電離",
+  "炭酸",
+  "電離度",
+  "希釈"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

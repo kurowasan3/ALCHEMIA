@@ -1,0 +1,109 @@
+{
+ "id": "THE-THC-047",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-10",
+ "topic": "イオン半径のモデルによる溶解熱の符号と「大きさのそろった塩は溶けにくい」則",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "1 価の陽イオン $\\ce{M+}$（半径 $r_{\\mathrm M}$）と 1 価の陰イオン $\\ce{X-}$（半径 $r_{\\mathrm X}$）からなる塩 MX の溶解熱 $Q$（溶けるときに発生する熱，$\\mathrm{kJ/mol}$）を，次のモデルで考える．\n・固体を気体のイオンにばらばらにするときに吸収する熱（格子エネルギー）：$\\dfrac{\\alpha}{r_{\\mathrm M}+r_{\\mathrm X}}$\n・気体のイオンが水和するときに発生する熱の和：$\\beta\\left(\\dfrac{1}{r_{\\mathrm M}}+\\dfrac{1}{r_{\\mathrm X}}\\right)$\nしたがって $Q=-\\dfrac{\\alpha}{r_{\\mathrm M}+r_{\\mathrm X}}+\\beta\\left(\\dfrac{1}{r_{\\mathrm M}}+\\dfrac{1}{r_{\\mathrm X}}\\right)$ であり，$Q$ が大きいほど溶けやすいとする（$\\alpha$，$\\beta$ は正の定数）．\n実測値に合わせると $\\alpha$ はほぼ $4\\beta$ になるので，以下 $\\alpha=4\\beta$，$\\beta=56\\,\\mathrm{kJ\\cdot nm/mol}$ とする．イオン半径（nm）は $\\ce{Li+}$ 0.09，$\\ce{K+}$ 0.15，$\\ce{Cs+}$ 0.17，$\\ce{F-}$ 0.12，$\\ce{Cl-}$ 0.17，$\\ce{Br-}$ 0.18，$\\ce{I-}$ 0.21 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\alpha=4\\beta$ のとき，$Q$ を $\\beta$，$r_{\\mathrm M}$，$r_{\\mathrm X}$ を用いて，分子が完全平方の式になる 1 つの分数で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) から，$Q$ が最小になるのはどのような塩か．また，そのときの $Q$ の値を答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "LiF，LiI，CsF，CsI の $Q$ をそれぞれ有効数字2桁で求め，リチウム塩どうし・セシウム塩どうしで溶けやすいほうを答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "カリウムのハロゲン化物 KF，KCl，KBr，KI のうち，このモデルで最も溶けにくいと予想されるものを答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$Q=\\dfrac{\\beta\\,(r_{\\mathrm M}-r_{\\mathrm X})^2}{r_{\\mathrm M}\\,r_{\\mathrm X}\\,(r_{\\mathrm M}+r_{\\mathrm X})}$"
+   },
+   {
+    "id": "2",
+    "tex": "陽イオンと陰イオンの半径が等しい塩，$Q=0$"
+   },
+   {
+    "id": "3",
+    "tex": "LiF $22\\,\\mathrm{kJ/mol}$，LiI $1.4\\times10^{2}\\,\\mathrm{kJ/mol}$，CsF $24\\,\\mathrm{kJ/mol}$，CsI $6.6\\,\\mathrm{kJ/mol}$，溶けやすいのは LiI と CsF"
+   },
+   {
+    "id": "4",
+    "tex": "KCl"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　$\\alpha=4\\beta$ を代入して通分する．\n\\[Q=\\beta\\left(\\frac{1}{r_{\\mathrm M}}+\\frac{1}{r_{\\mathrm X}}-\\frac{4}{r_{\\mathrm M}+r_{\\mathrm X}}\\right)=\\beta\\,\\frac{(r_{\\mathrm M}+r_{\\mathrm X})^2-4r_{\\mathrm M}r_{\\mathrm X}}{r_{\\mathrm M}r_{\\mathrm X}(r_{\\mathrm M}+r_{\\mathrm X})}=\\boldsymbol{\\frac{\\beta\\,(r_{\\mathrm M}-r_{\\mathrm X})^2}{r_{\\mathrm M}r_{\\mathrm X}(r_{\\mathrm M}+r_{\\mathrm X})}}\\]\n\n\\textbf{(2)}　分子は 0 以上で，$r_{\\mathrm M}=r_{\\mathrm X}$ のときだけ 0．よって\\textbf{陽イオンと陰イオンの大きさがそろった塩}で $Q$ が最小の $\\boldsymbol{0}$ になる．\n意味：格子エネルギーは 2 つのイオンの半径の「和」で決まるので大きいイオンに支配され，水和熱は「逆数の和」なので小さいイオンに支配される．大きさがそろうと格子エネルギーの不利を水和でかせげず，大きさがちがうほど小さいイオンの水和熱がまさって溶けやすくなる．\n\n\\textbf{(3)}　(1) の式に代入する．\nLiF：$\\dfrac{56\\times0.03^2}{0.09\\times0.12\\times0.21}=22$，LiI：$\\dfrac{56\\times0.12^2}{0.09\\times0.21\\times0.30}=1.4\\times10^{2}$，\nCsF：$\\dfrac{56\\times0.05^2}{0.17\\times0.12\\times0.29}=24$，CsI：$\\dfrac{56\\times0.04^2}{0.17\\times0.21\\times0.38}=6.6$（単位 $\\mathrm{kJ/mol}$）．\nリチウム塩では $\\boldsymbol{\\text{LiI}}$，セシウム塩では $\\boldsymbol{\\text{CsF}}$ が溶けやすい．同じ陰イオンの順序が陽イオンによって逆転する（小さい $\\ce{Li+}$ は大きい $\\ce{I-}$ と，大きい $\\ce{Cs+}$ は小さい $\\ce{F-}$ と組むと溶けやすい）．実際に LiF と CsI は溶解度が小さく，LiI と CsF は非常に溶けやすい．\n\n\\textbf{(4)}　$\\ce{K+}$（0.15）と半径が最も近いのは $\\ce{Cl-}$（0.17）なので，$|r_{\\mathrm M}-r_{\\mathrm X}|$ が最小の \\textbf{KCl}．計算でも KF 10，KCl 2.7，KBr 5.7，KI 18（$\\mathrm{kJ/mol}$）．実際にカリウムのハロゲン化物では KCl の溶解度が最も小さい．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "格子エネルギーは半径の和に，水和熱は半径の逆数の和に依存するので，両者を α=4β で組み合わせると溶解熱は β(r_M−r_X)²/{r_M r_X(r_M+r_X)} となり，陽イオンと陰イオンの大きさがそろうほど溶けにくい．これにより同じハロゲン化物イオンでも陽イオンによって溶解度の順序が逆転することが説明できる．"
+ },
+ "concepts": [
+  "enthalpy",
+  "halogen",
+  "alkali-metals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "溶解熱",
+  "格子エネルギー",
+  "水和",
+  "イオン半径",
+  "アルカリ金属ハロゲン化物"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "id": "THE-EQL-112",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "可動壁で仕切った CO と O2 の混合後の圧力減少と圧平衡定数",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "内容積 $V$ が一定の円筒容器を，なめらかに動く可動壁で2室に仕切り，一方に一酸化炭素 $\\ce{CO}$，他方に酸素 $\\ce{O2}$ を入れて高温 $T$ に保った．可動壁が静止したとき，CO 側と $\\ce{O2}$ 側の室の長さの比は $2:1$ で，全圧は $3.0\\times10^{5}\\,\\mathrm{Pa}$ であった．この状態では反応は起こらないものとする．次に，温度 $T$ と体積 $V$ を保ったまま可動壁を取り除くと，\n\\[\\ce{2CO + O2 <=> 2CO2}\\]\nの平衡に達し，全圧は $2.4\\times10^{5}\\,\\mathrm{Pa}$ になった．CO ははじめ $2.0\\,\\mathrm{mol}$ あったものとし，気体はすべて理想気体とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "はじめの $\\ce{O2}$ の物質量を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "可動壁を取り除いたあと，全圧が減少した理由として正しいものを (ア)〜(ウ) から選べ．\\\\\n(ア) 反応で気体の分子の総数が減るから　(イ) 発熱反応で温度が下がるから　(ウ) 気体が混ざると体積が減るから"
+     },
+     {
+      "id": "3",
+      "tex": "平衡状態での $\\ce{CO2}$ の物質量を求めよ．また，圧平衡定数 $K_p$ を単位をつけて有効数字2桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "一般に，可動壁を取り除いたあとの全圧の減少量を $\\Delta P$ とすると，生成した $\\ce{CO2}$ の物質量 $a$ はどう表されるか．$\\Delta P$，$V$，$R$，$T$ を用いて答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$1.0\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "2",
+    "tex": "(ア)"
+   },
+   {
+    "id": "3",
+    "tex": "$1.2\\,\\mathrm{mol}$，$K_p=5.6\\times10^{-5}\\,\\mathrm{/Pa}$"
+   },
+   {
+    "id": "4",
+    "tex": "$a=\\dfrac{2\\Delta P\\,V}{RT}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 可動壁が静止しているとき両室の圧力は等しく，温度も等しいので，物質量の比は体積の比（断面積が同じなので長さの比）に等しい．$\\ce{O2}$ は $2.0\\times\\dfrac12=\\boldsymbol{1.0\\,\\mathrm{mol}}$．\n\n\\textbf{(2)} $\\ce{CO2}$ が $a\\,\\mathrm{mol}$ できると $\\ce{CO}$ が $a$，$\\ce{O2}$ が $\\dfrac a2$ 減るので，総物質量は $\\dfrac a2$ 減る．温度・体積一定では全圧は総物質量に比例するので減少する．答えは $\\boldsymbol{\\text{(ア)}}$．\n\n\\textbf{(3)} はじめの総物質量は 3.0 mol で，全圧が $\\dfrac{2.4}{3.0}=0.80$ 倍になったので平衡時の総物質量は 2.4 mol．$3.0-\\dfrac a2=2.4$ より $a=\\boldsymbol{1.2\\,\\mathrm{mol}}$．\n平衡時は $\\ce{CO}$ 0.8 mol，$\\ce{O2}$ 0.4 mol，$\\ce{CO2}$ 1.2 mol で，分圧は（全圧×モル分率）\n\\[p_{\\ce{CO}}=0.80\\times10^{5},\\quad p_{\\ce{O2}}=0.40\\times10^{5},\\quad p_{\\ce{CO2}}=1.2\\times10^{5}\\ (\\mathrm{Pa})\\]\n\\[K_p=\\frac{p_{\\ce{CO2}}^2}{p_{\\ce{CO}}^2\\,p_{\\ce{O2}}}=\\frac{(1.2\\times10^{5})^2}{(0.80\\times10^{5})^2\\times0.40\\times10^{5}}=\\boldsymbol{5.6\\times10^{-5}\\,\\mathrm{/Pa}}\\]\n\n\\textbf{(4)} 総物質量の減少は $\\dfrac a2$ なので，$\\Delta P=\\dfrac{a}{2}\\cdot\\dfrac{RT}{V}$，すなわち $\\boldsymbol{a=\\dfrac{2\\Delta P\\,V}{RT}}$．可動壁を取り除く前の各室の状態によらず，圧力の減少だけから生成量が決まる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "可動壁で仕切られた2室は圧力・温度が等しいので物質量の比が長さの比に等しい．壁を除いたあと分子数が減る反応では全圧の減少量が生成量に比例し，そこから平衡組成と圧平衡定数が求まる．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "mole",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "化学平衡",
+  "圧平衡定数",
+  "可動壁",
+  "分圧",
+  "一酸化炭素"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

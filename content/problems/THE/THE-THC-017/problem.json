@@ -1,0 +1,110 @@
+{
+ "id": "THE-THC-017",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-10",
+ "topic": "ベンゼンの共鳴エネルギーと置換反応の起こりやすさ",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "環状の炭化水素 1 mol に水素を付加させてシクロヘキサンにするときの反応エンタルピーは次のとおりである．\n\\[\\ce{C6H10 + H2 -> C6H12}\\quad \\Delta H = -120\\,\\mathrm{kJ}\\quad\\text{（シクロヘキセン）}\\]\n\\[\\ce{C6H8 + 2H2 -> C6H12}\\quad \\Delta H = -232\\,\\mathrm{kJ}\\quad\\text{（1,3-シクロヘキサジエン）}\\]\n\\[\\ce{C6H6 + 3H2 -> C6H12}\\quad \\Delta H = -208\\,\\mathrm{kJ}\\quad\\text{（ベンゼン）}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ベンゼンが，互いに影響しあわない 3 つの $\\ce{C=C}$ をもつ仮想的な分子（1,3,5-シクロヘキサトリエン）であるとすると，水素 3 mol の付加の $\\Delta H$ はいくらと予想されるか．また，実際のベンゼンはこの仮想分子より何 kJ/mol 安定か（共鳴エネルギー）．"
+     },
+     {
+      "id": "2",
+      "tex": "1,3-シクロヘキサジエンは，互いに影響しあわない 2 つの $\\ce{C=C}$ をもつと仮定した場合に比べて何 kJ/mol 安定か．(1) の値と比べよ．"
+     },
+     {
+      "id": "3",
+      "tex": "次の反応の $\\Delta H$ をそれぞれ求めよ．\\\\\n（a）$\\ce{C6H6 + H2 -> C6H8}$（1,3-シクロヘキサジエンの生成）　（b）$\\ce{C6H8 + H2 -> C6H10}$"
+     },
+     {
+      "id": "4",
+      "tex": "結合エネルギー〔kJ/mol〕を C–C 348，C=C 614，C–H 413，Br–Br 193，C–Br 285，H–Br 366 とする．ベンゼン 1 mol と臭素 1 mol の反応について，（c）置換反応 $\\ce{C6H6 + Br2 -> C6H5Br + HBr}$ と（d）付加反応 $\\ce{C6H6 + Br2 -> C6H6Br2}$（1 つの $\\ce{C=C}$ に付加）の $\\Delta H$ をそれぞれ求め，どちらが起こりやすいか答えよ．ただし（d）では，ベンゼンの共鳴エネルギーがすべて失われ，生成物には共鳴による安定化がないものとする．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$-360\\,\\mathrm{kJ}$，$152\\,\\mathrm{kJ/mol}$"
+   },
+   {
+    "id": "2",
+    "tex": "$8\\,\\mathrm{kJ/mol}$．ベンゼンの共鳴エネルギー（$152\\,\\mathrm{kJ/mol}$）よりはるかに小さい．"
+   },
+   {
+    "id": "3",
+    "tex": "（a）$+24\\,\\mathrm{kJ}$　（b）$-112\\,\\mathrm{kJ}$"
+   },
+   {
+    "id": "4",
+    "tex": "（c）$-45\\,\\mathrm{kJ}$　（d）$+41\\,\\mathrm{kJ}$，置換反応が起こりやすい"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\ce{C=C}$ 1 つあたり $-120\\,\\mathrm{kJ}$ なので，3 つなら $3\\times(-120) = \\boldsymbol{-360\\,\\mathrm{kJ}}$．実際は $-208\\,\\mathrm{kJ}$ しか出ないので，ベンゼンは $360-208 = \\boldsymbol{152\\,\\mathrm{kJ/mol}}$ だけエネルギーが低く安定．\\\\\n\\textbf{(2)} 予想 $2\\times(-120)=-240\\,\\mathrm{kJ}$ に対し実際は $-232\\,\\mathrm{kJ}$ なので，安定化は $\\boldsymbol{8\\,\\mathrm{kJ/mol}}$．二重結合が単に隣り合う（共役する）だけでは安定化は小さく，6 個の電子が環全体に非局在化したベンゼンの安定化（$152\\,\\mathrm{kJ/mol}$）は特別に大きい．\\\\\n\\textbf{(3)} ヘスの法則より\\\\\n（a）$\\Delta H = (-208) - (-232) = \\boldsymbol{+24\\,\\mathrm{kJ}}$（吸熱）\\\\\n（b）$\\Delta H = (-232) - (-120) = \\boldsymbol{-112\\,\\mathrm{kJ}}$（発熱）\\\\\nベンゼンへの最初の $\\ce{H2}$ の付加だけが吸熱で起こりにくく，いったん起これば以後は発熱的に進む．このため，ベンゼンを水素化しても途中の段階で止まりにくい．\\\\\n\\textbf{(4)} $\\Delta H = $（切れる結合の結合エネルギーの和）$-$（できる結合の結合エネルギーの和）．\\\\\n（c）切れる：C–H，Br–Br，できる：C–Br，H–Br（ベンゼン環はそのまま）\n\\[\\Delta H = (413+193)-(285+366) = \\boldsymbol{-45\\,\\mathrm{kJ}}\\]\n（d）切れる：C=C，Br–Br，できる：C–C，C–Br×2．局在した二重結合なら $(614+193)-(348+2\\times285) = -111\\,\\mathrm{kJ}$ だが，共鳴エネルギー $152\\,\\mathrm{kJ}$ を失うので\n\\[\\Delta H = -111 + 152 = \\boldsymbol{+41\\,\\mathrm{kJ}}\\]\n付加は吸熱，置換は発熱．芳香族性（共鳴による安定化）を保つ\\textbf{置換反応}のほうが起こりやすい．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "水素化エンタルピーを局在二重結合の和と比べてベンゼンの共鳴エネルギーを求め，ヘスの法則で段階ごとの ΔH を出す．共鳴エネルギーを失う付加は吸熱，環を保つ置換は発熱になることから，ベンゼンが置換反応を起こしやすい理由をエネルギーで説明する．"
+ },
+ "concepts": [
+  "enthalpy",
+  "hydrocarbon",
+  "aromatic"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "共鳴エネルギー",
+  "水素化エンタルピー",
+  "ヘスの法則",
+  "結合エネルギー",
+  "置換反応",
+  "ベンゼン"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

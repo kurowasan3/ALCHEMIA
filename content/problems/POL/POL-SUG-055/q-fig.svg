@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 445" width="760" height="445">
+<text x="20" y="26" text-anchor="start" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">［図 1］ 問 (1) の Fischer 投影式</text>
+<line x1="100" y1="90" x2="160" y2="90" stroke="currentColor" stroke-width="1.6"/>
+<line x1="130" y1="64" x2="130" y2="116" stroke="currentColor" stroke-width="1.6"/>
+<text x="130" y="58" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">CH<tspan baseline-shift="sub" font-size="10">2</tspan>OH</text>
+<text x="130" y="134" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">CHO</text>
+<text x="94" y="95" text-anchor="end" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">HO</text>
+<text x="166" y="95" text-anchor="start" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">H</text>
+<text x="130" y="164" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">(a)</text>
+<line x1="350" y1="90" x2="410" y2="90" stroke="currentColor" stroke-width="1.6"/>
+<line x1="380" y1="64" x2="380" y2="116" stroke="currentColor" stroke-width="1.6"/>
+<text x="380" y="58" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">CHO</text>
+<text x="380" y="134" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">CH<tspan baseline-shift="sub" font-size="10">2</tspan>OH</text>
+<text x="344" y="95" text-anchor="end" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">HO</text>
+<text x="416" y="95" text-anchor="start" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">H</text>
+<text x="380" y="164" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">(b)</text>
+<line x1="600" y1="90" x2="660" y2="90" stroke="currentColor" stroke-width="1.6"/>
+<line x1="630" y1="64" x2="630" y2="116" stroke="currentColor" stroke-width="1.6"/>
+<text x="630" y="58" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">H</text>
+<text x="630" y="134" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">OH</text>
+<text x="594" y="95" text-anchor="end" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">HOH<tspan baseline-shift="sub" font-size="10">2</tspan>C</text>
+<text x="666" y="95" text-anchor="start" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">CHO</text>
+<text x="630" y="164" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">(c)</text>
+<line x1="20" y1="190" x2="740" y2="190" stroke="currentColor" stroke-width="1" stroke-dasharray="5 4" opacity="0.5"/>
+<text x="20" y="218" text-anchor="start" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">［図 2］ D 型のアルドペントース（鎖状構造）</text>
+<text x="105" y="250" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">CHO</text>
+<line x1="105" y1="258" x2="105" y2="292" stroke="currentColor" stroke-width="1.6"/>
+<line x1="79" y1="280" x2="131" y2="280" stroke="currentColor" stroke-width="1.6"/>
+<text x="135" y="285" text-anchor="start" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">OH</text>
+<text x="75" y="285" text-anchor="end" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">H</text>
+<line x1="105" y1="292" x2="105" y2="326" stroke="currentColor" stroke-width="1.6"/>
+<line x1="79" y1="314" x2="131" y2="314" stroke="currentColor" stroke-width="1.6"/>
+<text x="135" y="319" text-anchor="start" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">OH</text>
+<text x="75" y="319" text-anchor="end" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">H</text>
+<line x1="105" y1="326" x2="105" y2="360" stroke="currentColor" stroke-width="1.6"/>
+<line x1="79" y1="348" x2="131" y2="348" stroke="currentColor" stroke-width="1.6"/>
+<text x="135" y="353" text-anchor="start" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">OH</text>
+<text x="75" y="353" text-anchor="end" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">H</text>
+<line x1="105" y1="360" x2="105" y2="370" stroke="currentColor" stroke-width="1.6"/>
+<text x="105" y="386" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">CH<tspan baseline-shift="sub" font-size="10">2</tspan>OH</text>
+<text x="105" y="414" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">D-リボース</text>
+<text x="288" y="250" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">CHO</text>
+<line x1="288" y1="258" x2="288" y2="292" stroke="currentColor" stroke-width="1.6"/>
+<line x1="262" y1="280" x2="314" y2="280" stroke="currentColor" stroke-width="1.6"/>
+<text x="318" y="285" text-anchor="start" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">H</text>
+<text x="258" y="285" text-anchor="end" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">HO</text>
+<line x1="288" y1="292" x2="288" y2="326" stroke="currentColor" stroke-width="1.6"/>
+<line x1="262" y1="314" x2="314" y2="314" stroke="currentColor" stroke-width="1.6"/>
+<text x="318" y="319" text-anchor="start" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">OH</text>
+<text x="258" y="319" text-anchor="end" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">H</text>
+<line x1="288" y1="326" x2="288" y2="360" stroke="currentColor" stroke-width="1.6"/>
+<line x1="262" y1="348" x2="314" y2="348" stroke="currentColor" stroke-width="1.6"/>
+<text x="318" y="353" text-anchor="start" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">OH</text>
+<text x="258" y="353" text-anchor="end" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">H</text>
+<line x1="288" y1="360" x2="288" y2="370" stroke="currentColor" stroke-width="1.6"/>
+<text x="288" y="386" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">CH<tspan baseline-shift="sub" font-size="10">2</tspan>OH</text>
+<text x="288" y="414" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">D-アラビノース</text>
+<text x="471" y="250" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">CHO</text>
+<line x1="471" y1="258" x2="471" y2="292" stroke="currentColor" stroke-width="1.6"/>
+<line x1="445" y1="280" x2="497" y2="280" stroke="currentColor" stroke-width="1.6"/>
+<text x="501" y="285" text-anchor="start" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">OH</text>
+<text x="441" y="285" text-anchor="end" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">H</text>
+<line x1="471" y1="292" x2="471" y2="326" stroke="currentColor" stroke-width="1.6"/>
+<line x1="445" y1="314" x2="497" y2="314" stroke="currentColor" stroke-width="1.6"/>
+<text x="501" y="319" text-anchor="start" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">H</text>
+<text x="441" y="319" text-anchor="end" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">HO</text>
+<line x1="471" y1="326" x2="471" y2="360" stroke="currentColor" stroke-width="1.6"/>
+<line x1="445" y1="348" x2="497" y2="348" stroke="currentColor" stroke-width="1.6"/>
+<text x="501" y="353" text-anchor="start" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">OH</text>
+<text x="441" y="353" text-anchor="end" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">H</text>
+<line x1="471" y1="360" x2="471" y2="370" stroke="currentColor" stroke-width="1.6"/>
+<text x="471" y="386" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">CH<tspan baseline-shift="sub" font-size="10">2</tspan>OH</text>
+<text x="471" y="414" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">D-キシロース</text>
+<text x="654" y="250" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">CHO</text>
+<line x1="654" y1="258" x2="654" y2="292" stroke="currentColor" stroke-width="1.6"/>
+<line x1="628" y1="280" x2="680" y2="280" stroke="currentColor" stroke-width="1.6"/>
+<text x="684" y="285" text-anchor="start" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">H</text>
+<text x="624" y="285" text-anchor="end" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">HO</text>
+<line x1="654" y1="292" x2="654" y2="326" stroke="currentColor" stroke-width="1.6"/>
+<line x1="628" y1="314" x2="680" y2="314" stroke="currentColor" stroke-width="1.6"/>
+<text x="684" y="319" text-anchor="start" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">H</text>
+<text x="624" y="319" text-anchor="end" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">HO</text>
+<line x1="654" y1="326" x2="654" y2="360" stroke="currentColor" stroke-width="1.6"/>
+<line x1="628" y1="348" x2="680" y2="348" stroke="currentColor" stroke-width="1.6"/>
+<text x="684" y="353" text-anchor="start" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">OH</text>
+<text x="624" y="353" text-anchor="end" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">H</text>
+<line x1="654" y1="360" x2="654" y2="370" stroke="currentColor" stroke-width="1.6"/>
+<text x="654" y="386" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">CH<tspan baseline-shift="sub" font-size="10">2</tspan>OH</text>
+<text x="654" y="414" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">D-リキソース</text>
+</svg>

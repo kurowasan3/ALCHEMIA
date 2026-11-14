@@ -1,0 +1,109 @@
+{
+ "id": "THE-EQL-146",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "2 つの濃度が同時に変わる測定からの反応次数の決定と，速度一定とした変化量の見積もり",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "高温の容器中で，一酸化窒素と水素は次のように反応する．\n\\[ \\ce{2NO + 2H2 -> N2 + 2H2O} \\]\n一定温度で，$\\ce{NO}$ と $\\ce{H2}$ の初濃度を変えて $\\ce{N2}$ の生成速度 $v$（反応初期の値）を測定し，次の結果を得た．\n\\begin{center}\n\\begin{tabular}{c|c|c|c}\n実験 & $[\\ce{NO}]\\,[\\mathrm{mol/L}]$ & $[\\ce{H2}]\\,[\\mathrm{mol/L}]$ & $v\\,[\\mathrm{mol/(L\\cdot s)}]$ \\\\ \\hline\n1 & $2.0\\times10^{-3}$ & $1.0\\times10^{-3}$ & $1.2\\times10^{-6}$ \\\\\n2 & $4.0\\times10^{-3}$ & $3.0\\times10^{-3}$ & $1.44\\times10^{-5}$ \\\\\n3 & $6.0\\times10^{-3}$ & $2.0\\times10^{-3}$ & $2.16\\times10^{-5}$\n\\end{tabular}\n\\end{center}\n反応速度式は $v = k[\\ce{NO}]^x[\\ce{H2}]^y$（$x, y$ は 0 以上の整数）で表されるものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "どの 2 つの実験を比べても，一方の濃度だけを変えた組はない．実験1 と実験2，実験1 と実験3 の速度の比から $x$ と $y$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "速度定数 $k$ を単位とともに有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "同じ温度で，$[\\ce{NO}] = 1.0\\times10^{-3}\\,\\mathrm{mol/L}$，$[\\ce{H2}] = 5.0\\times10^{-2}\\,\\mathrm{mol/L}$ の混合気体を反応させた．反応速度が初めの値のまま一定であるとみなすと，2.0 秒間で $\\ce{NO}$ のはじめの量の何 \\% が反応するか．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の見積もりは，実際に 2.0 秒間で反応する $\\ce{NO}$ の割合と比べて大きいか，小さいか．理由とともに答えよ．また，この見積もりが大きくずれないと考えてよい理由を述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$x=2$，$y=1$"
+   },
+   {
+    "id": "2",
+    "tex": "$k = 3.0\\times10^{2}\\,\\mathrm{L^2/(mol^2\\cdot s)}$"
+   },
+   {
+    "id": "3",
+    "tex": "$6.0\\,\\%$"
+   },
+   {
+    "id": "4",
+    "tex": "大きい．反応が進むと $[\\ce{NO}]$ と $[\\ce{H2}]$ が減り，速度（特に $[\\ce{NO}]^2$ に比例する分）は初めより小さくなるから．ただし反応する $\\ce{NO}$ は 6 \\% 程度と少なく，$\\ce{H2}$ は大過剰でほとんど変わらないので，速度の低下は 1 割程度にとどまり，見積もりは大きくずれない"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 2 つの比を連立する}　$\\dfrac{v_2}{v_1} = 2^x\\cdot3^y = \\dfrac{1.44\\times10^{-5}}{1.2\\times10^{-6}} = 12$，$\\dfrac{v_3}{v_1} = 3^x\\cdot2^y = \\dfrac{2.16\\times10^{-5}}{1.2\\times10^{-6}} = 18$．\n\n$12 = 2^2\\times3$，$18 = 3^2\\times2$ と素因数分解すると，整数の組は $\\boldsymbol{x=2}$，$\\boldsymbol{y=1}$ に限られる（$2^x3^y$ の素因数分解はただ 1 通りであるため）．\n\n\\textbf{(2)}　実験1 より\n\\[ k = \\frac{v}{[\\ce{NO}]^2[\\ce{H2}]} = \\frac{1.2\\times10^{-6}}{(2.0\\times10^{-3})^2\\times1.0\\times10^{-3}} = \\boldsymbol{3.0\\times10^{2}\\,\\mathrm{L^2/(mol^2\\cdot s)}} \\]\n（単位は $\\dfrac{\\mathrm{mol/(L\\cdot s)}}{(\\mathrm{mol/L})^3}$ から求める．）\n\n\\textbf{(3)}　$v = 3.0\\times10^{2}\\times(1.0\\times10^{-3})^2\\times5.0\\times10^{-2} = 1.5\\times10^{-5}\\,\\mathrm{mol/(L\\cdot s)}$．反応式の係数より $\\ce{NO}$ の減少速度は $\\ce{N2}$ の生成速度の 2 倍なので，2.0 秒間で減る $\\ce{NO}$ は\n\\[ 2\\times1.5\\times10^{-5}\\times2.0 = 6.0\\times10^{-5}\\,\\mathrm{mol/L}, \\qquad \\frac{6.0\\times10^{-5}}{1.0\\times10^{-3}}\\times100 = \\boldsymbol{6.0\\,\\%} \\]\n\n\\textbf{(4)}　実際には反応が進むにつれて濃度が減るので速度も減る．速度が初めの値のまま続くとした (3) の値は，実際より\\textbf{大きい}（上限の見積もり）．2.0 秒後の $[\\ce{NO}]$ は多くても 6 \\% しか減らないので，$[\\ce{NO}]^2$ は $(0.94)^2 \\fallingdotseq 0.88$ 倍までしか下がらず，$\\ce{H2}$（$\\ce{NO}$ の 50 倍）はほぼ一定である．時間平均すると速度は初めの値より 1 割弱小さいだけなので，(3) の見積もりは実際の値（約 5.7 \\%）と大きくは違わない．変化の割合が小さい範囲では「速度一定」の近似が使える．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "一方の濃度だけを変えた組がないとき，速度比を2つ取り 2^x3^y のような式を連立し素因数分解で整数の次数を決める．速度を初速度のまま一定とみなした変化量の見積もりは，濃度の減少で速度が下がる分だけ上限になり，変化の割合が小さいときにだけよい近似になることを確かめる．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "concentration",
+  "reaction-rate"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応速度式",
+  "反応次数",
+  "速度定数",
+  "初速度法",
+  "近似"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

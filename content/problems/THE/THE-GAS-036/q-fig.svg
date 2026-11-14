@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 300" width="460" height="300">
+<g fill="none" stroke="currentColor" stroke-width="1.5"><line x1="70" y1="250" x2="427" y2="250"/><line x1="70" y1="250" x2="70" y2="40.0"/></g>
+<line x1="70" y1="250" x2="70" y2="255" stroke="currentColor"/>
+<text x="70" y="270" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">0</text>
+<line x1="104" y1="250" x2="104" y2="255" stroke="currentColor"/>
+<text x="104" y="270" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">2</text>
+<line x1="138" y1="250" x2="138" y2="255" stroke="currentColor"/>
+<text x="138" y="270" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">4</text>
+<line x1="172" y1="250" x2="172" y2="255" stroke="currentColor"/>
+<text x="172" y="270" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">6</text>
+<line x1="206" y1="250" x2="206" y2="255" stroke="currentColor"/>
+<text x="206" y="270" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">8</text>
+<line x1="240" y1="250" x2="240" y2="255" stroke="currentColor"/>
+<text x="240" y="270" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">10</text>
+<line x1="274" y1="250" x2="274" y2="255" stroke="currentColor"/>
+<text x="274" y="270" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">12</text>
+<line x1="308" y1="250" x2="308" y2="255" stroke="currentColor"/>
+<text x="308" y="270" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">14</text>
+<line x1="342" y1="250" x2="342" y2="255" stroke="currentColor"/>
+<text x="342" y="270" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">16</text>
+<line x1="376" y1="250" x2="376" y2="255" stroke="currentColor"/>
+<text x="376" y="270" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">18</text>
+<line x1="410" y1="250" x2="410" y2="255" stroke="currentColor"/>
+<text x="410" y="270" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">20</text>
+<line x1="65" y1="250.0" x2="70" y2="250.0" stroke="currentColor"/>
+<text x="61" y="254.5" font-size="13" text-anchor="end" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">0</text>
+<line x1="65" y1="222.0" x2="70" y2="222.0" stroke="currentColor"/>
+<text x="61" y="226.5" font-size="13" text-anchor="end" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">20</text>
+<line x1="65" y1="194.0" x2="70" y2="194.0" stroke="currentColor"/>
+<text x="61" y="198.5" font-size="13" text-anchor="end" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">40</text>
+<line x1="65" y1="166.0" x2="70" y2="166.0" stroke="currentColor"/>
+<text x="61" y="170.5" font-size="13" text-anchor="end" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">60</text>
+<line x1="65" y1="138.0" x2="70" y2="138.0" stroke="currentColor"/>
+<text x="61" y="142.5" font-size="13" text-anchor="end" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">80</text>
+<line x1="65" y1="110.0" x2="70" y2="110.0" stroke="currentColor"/>
+<text x="61" y="114.5" font-size="13" text-anchor="end" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">100</text>
+<line x1="65" y1="82.0" x2="70" y2="82.0" stroke="currentColor"/>
+<text x="61" y="86.5" font-size="13" text-anchor="end" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">120</text>
+<line x1="65" y1="54.0" x2="70" y2="54.0" stroke="currentColor"/>
+<text x="61" y="58.5" font-size="13" text-anchor="end" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">140</text>
+<line x1="138" y1="250" x2="138" y2="138.0" stroke="currentColor" stroke-dasharray="4 3" opacity="0.5"/>
+<line x1="308" y1="250" x2="308" y2="138.0" stroke="currentColor" stroke-dasharray="4 3" opacity="0.5"/>
+<line x1="376" y1="250" x2="376" y2="82.0" stroke="currentColor" stroke-dasharray="4 3" opacity="0.5"/>
+<line x1="70" y1="138.0" x2="138" y2="138.0" stroke="currentColor" stroke-dasharray="4 3" opacity="0.5"/>
+<line x1="70" y1="82.0" x2="376" y2="82.0" stroke="currentColor" stroke-dasharray="4 3" opacity="0.5"/>
+<line x1="70" y1="222.0" x2="70" y2="222.0" stroke="currentColor" stroke-dasharray="4 3" opacity="0.5"/>
+<polyline fill="none" stroke="currentColor" stroke-width="2.5" points="70,222.0 138,138.0 308,138.0 376,82.0"/>
+<circle cx="70" cy="222.0" r="3" fill="currentColor"/>
+<text x="78" y="238.0" font-size="14" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">P</text>
+<circle cx="138" cy="138.0" r="3" fill="currentColor"/>
+<text x="134" y="128.0" font-size="14" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">Q</text>
+<circle cx="308" cy="138.0" r="3" fill="currentColor"/>
+<text x="304" y="128.0" font-size="14" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">R</text>
+<circle cx="376" cy="82.0" r="3" fill="currentColor"/>
+<text x="372" y="72.0" font-size="14" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">S</text>
+<text x="248.5" y="290" font-size="14" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">加熱時間〔min〕</text>
+<text x="22" y="152.0" font-size="14" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif" transform="rotate(-90 22 152.0)">温度〔℃〕</text>
+</svg>

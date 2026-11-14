@@ -1,0 +1,131 @@
+{
+ "id": "THE-GAS-022",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-08",
+ "topic": "可動隔壁で仕切った容器での蒸気圧と体積の配分",
+ "course": "化学",
+ "level": 3,
+ "minutes": 18,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，なめらかに動く隔壁で A 室と B 室に仕切られた容器がある．両室の容積の合計は $5.0\\,\\mathrm L$ で一定である．A 室に窒素 $0.010\\,\\mathrm{mol}$，B 室にエタノール $0.050\\,\\mathrm{mol}$ を入れ，温度を変えて実験した．隔壁は両室の圧力が等しくなる位置で止まる．エタノールの飽和蒸気圧は 27 ℃ で $9.0\\times10^{3}\\,\\mathrm{Pa}$，47 ℃ で $2.6\\times10^{4}\\,\\mathrm{Pa}$，67 ℃ で $6.4\\times10^{4}\\,\\mathrm{Pa}$ とする．$R=8.3\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$ とし，液体の体積と隔壁の体積は無視する．答えは有効数字2桁で示せ．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "27 ℃ で，A 室の体積は何 L か．"
+     },
+     {
+      "id": "2",
+      "tex": "27 ℃ で，B 室に液体として存在するエタノールは何 mol か．"
+     },
+     {
+      "id": "3",
+      "tex": "27 ℃ のまま A 室に窒素をさらに $0.0050\\,\\mathrm{mol}$ 加えた．B 室の液体のエタノールは何 mol になるか．また，それは (2) より増えるか減るか．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の窒素を加える前の状態にもどし，全体を 47 ℃ にした．A 室の圧力は何 Pa か．"
+     },
+     {
+      "id": "5",
+      "tex": "さらに全体を 67 ℃ にした．A 室の体積は何 L か．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：可動隔壁で仕切った容器での蒸気圧と体積の配分",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$2.8\\,\\mathrm L$"
+   },
+   {
+    "id": "2",
+    "tex": "$0.042\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "$0.047\\,\\mathrm{mol}$，増える"
+   },
+   {
+    "id": "4",
+    "tex": "$2.6\\times10^{4}\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "5",
+    "tex": "$0.83\\,\\mathrm L$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "B 室に液体が残っている間は，B 室の圧力はエタノールの飽和蒸気圧で，隔壁のつり合いから A 室の窒素の圧力もそれに等しい．\n\n\\textbf{(1)}　液体が残ると仮定すると，$V_\\mathrm A=\\dfrac{0.010\\times8.3\\times10^{3}\\times300}{9.0\\times10^{3}}=2.77\\approx\\boldsymbol{2.8\\,\\mathrm L}$．\n\n\\textbf{(2)}　$V_\\mathrm B=5.0-2.77=2.23\\,\\mathrm L$．気体のエタノールは $\\dfrac{9.0\\times10^{3}\\times2.23}{8.3\\times10^{3}\\times300}=8.1\\times10^{-3}\\,\\mathrm{mol}$ で $0.050$ より少ないので，確かに液体が残る．液体は $0.050-0.0081=0.0419\\approx\\boldsymbol{0.042\\,\\mathrm{mol}}$．\n\n\\textbf{(3)}　液体が残る限り圧力は $9.0\\times10^{3}\\,\\mathrm{Pa}$ のままなので，窒素が増えると A 室が広がる：$V_\\mathrm A=\\dfrac{0.015\\times8.3\\times10^{3}\\times300}{9.0\\times10^{3}}=4.15\\,\\mathrm L$，$V_\\mathrm B=0.85\\,\\mathrm L$．気体のエタノールは $\\dfrac{9.0\\times10^{3}\\times0.85}{8.3\\times10^{3}\\times300}=3.1\\times10^{-3}\\,\\mathrm{mol}$ に減り，液体は $0.0469\\approx\\boldsymbol{0.047\\,\\mathrm{mol}}$ に\\textbf{増える}．\n\n\\textbf{(4)}　液体が残ると仮定すると圧力は $2.6\\times10^{4}\\,\\mathrm{Pa}$ で，$V_\\mathrm A=\\dfrac{0.010\\times8.3\\times10^{3}\\times320}{2.6\\times10^{4}}=1.02\\,\\mathrm L$，$V_\\mathrm B=3.98\\,\\mathrm L$．気体のエタノールは $\\dfrac{2.6\\times10^{4}\\times3.98}{8.3\\times10^{3}\\times320}=0.039\\,\\mathrm{mol}<0.050$ で仮定は正しい．A 室の圧力は $\\boldsymbol{2.6\\times10^{4}\\,\\mathrm{Pa}}$．\n\n\\textbf{(5)}　すべて気体と仮定すると，両室の圧力は等しいので体積比＝物質量比．全圧は $\\dfrac{0.060\\times8.3\\times10^{3}\\times340}{5.0}=3.4\\times10^{4}\\,\\mathrm{Pa}$ で飽和蒸気圧 $6.4\\times10^{4}\\,\\mathrm{Pa}$ より低く，仮定は正しい．$V_\\mathrm A=5.0\\times\\dfrac{0.010}{0.060}=0.833\\approx\\boldsymbol{0.83\\,\\mathrm L}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "可動隔壁では両室の圧力が等しくなるので，液体が共存する間は他室の気体の圧力も飽和蒸気圧に固定され，体積の配分が決まる．他室の気体を増やすと蒸気の入る空間が狭まり凝縮が進むこと，液体がなくなると体積比＝物質量比になることを判断する．"
+ },
+ "concepts": [
+  "ideal-gas",
+  "mole",
+  "vapor-pressure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "蒸気圧",
+  "可動隔壁",
+  "分圧",
+  "凝縮",
+  "気液平衡"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

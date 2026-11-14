@@ -1,0 +1,109 @@
+{
+ "id": "THE-ACB-027",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-05",
+ "topic": "中和点と中性点のずれ（pH 7 にする塩基の量）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "$0.10\\,\\mathrm{mol/L}$ の酢酸水溶液 $50.0\\,\\mathrm{mL}$ に $0.10\\,\\mathrm{mol/L}$ の水酸化ナトリウム水溶液を加えていく．酢酸の電離定数は $K_a=2.0\\times10^{-5}\\,\\mathrm{mol/L}$，水のイオン積は $K_w=1.0\\times10^{-14}\\,(\\mathrm{mol/L})^2$，$\\log_{10}2=0.30$ とし，温度は $25\\,^\\circ\\mathrm{C}$ で一定とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "中和点（水酸化ナトリウム水溶液 $50.0\\,\\mathrm{mL}$ を加えた点）の pH を小数第1位まで求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "溶液の pH がちょうど 7.00 になったとき，$[\\ce{Na+}]$ と $[\\ce{CH3COO-}]$ の間に成り立つ関係を，電荷のつり合いをもとに答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "pH をちょうど 7.00 にするには，水酸化ナトリウム水溶液を中和点より何 mL 少なく加えればよいか．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "酢酸の代わりに同じ濃度・体積の「電離定数 $K_a=2.0\\times10^{-5}\\,\\mathrm{mol/L}$ の酸 HA」を，水酸化ナトリウムの代わりに「電離定数 $K_b=2.0\\times10^{-5}\\,\\mathrm{mol/L}$ の塩基 B（アンモニアと同程度の弱塩基）」の $0.10\\,\\mathrm{mol/L}$ 水溶液を用いる．pH をちょうど 7.00 にするために加える B の水溶液の体積は，中和点（$50.0\\,\\mathrm{mL}$）と比べてどうなるか．次の (a)〜(c) から選び，理由を答えよ．\\\\\n(a) 中和点より少ない　(b) 中和点ちょうど　(c) 中和点より多い"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "8.7"
+   },
+   {
+    "id": "2",
+    "tex": "$[\\ce{Na+}]=[\\ce{CH3COO-}]$"
+   },
+   {
+    "id": "3",
+    "tex": "$0.25\\,\\mathrm{mL}$"
+   },
+   {
+    "id": "4",
+    "tex": "(b)．pH 7.00 では $[\\ce{BH+}]=[\\ce{A-}]$ であり，$K_a=K_b$ なので酸と塩基の電離している割合がともに $200/201$ で等しく，加える B の全量は HA の全量に等しくなるから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 中和点の pH}\n中和点は $\\ce{CH3COONa}$ $5.0\\,\\mathrm{mmol}$ が $100\\,\\mathrm{mL}$ に溶けた $0.050\\,\\mathrm{mol/L}$ の溶液．$\\ce{CH3COO- + H2O <=> CH3COOH + OH-}$ の $K_h=K_w/K_a=5.0\\times10^{-10}\\,\\mathrm{mol/L}$ より\n\\[ [\\ce{OH-}]=\\sqrt{K_hC}=\\sqrt{5.0\\times10^{-10}\\times0.050}=5.0\\times10^{-6}\\,\\mathrm{mol/L},\\quad \\mathrm{pOH}=5.30,\\quad \\mathrm{pH}=\\boldsymbol{8.7} \\]\n中和点（酸と塩基が過不足なく反応した点）は中性点（pH 7）とは一致しない．\n\n\\textbf{(2) pH 7.00 での関係}\n電荷のつり合い $[\\ce{Na+}]+[\\ce{H+}]=[\\ce{CH3COO-}]+[\\ce{OH-}]$ において，pH 7.00 では $[\\ce{H+}]=[\\ce{OH-}]$ なので $\\boldsymbol{[\\ce{Na+}]=[\\ce{CH3COO-}]}$．\n\n\\textbf{(3) pH 7.00 にする量}\npH 7.00 では\n\\[ \\frac{[\\ce{CH3COO-}]}{[\\ce{CH3COOH}]}=\\frac{K_a}{[\\ce{H+}]}=\\frac{2.0\\times10^{-5}}{1.0\\times10^{-7}}=200 \\]\nなので，酢酸の全量 $5.0\\,\\mathrm{mmol}$ のうち $\\dfrac{200}{201}$ が $\\ce{CH3COO-}$ として存在する．(2) より加えた $\\ce{Na+}$ はこれと等しいので，必要な水酸化ナトリウム水溶液は\n\\[ 50.0\\times\\frac{200}{201}=49.75\\,\\mathrm{mL} \\]\n中和点より $50.0\\times\\dfrac{1}{201}=\\boldsymbol{0.25\\,\\mathrm{mL}}$ 少ない（ほぼ数滴分）．弱酸の陰イオンが加水分解して塩基性を示す分だけ，酸を少し残しておく必要がある．\n\n\\textbf{(4) 弱酸と弱塩基}\n電荷のつり合い $[\\ce{BH+}]+[\\ce{H+}]=[\\ce{A-}]+[\\ce{OH-}]$ より，pH 7.00 では $[\\ce{BH+}]=[\\ce{A-}]$．\n酸側：$\\dfrac{[\\ce{A-}]}{[\\ce{HA}]}=\\dfrac{K_a}{[\\ce{H+}]}=200$，塩基側：$\\dfrac{[\\ce{BH+}]}{[\\ce{B}]}=\\dfrac{K_b}{[\\ce{OH-}]}=200$．\nどちらも全量の $200/201$ がイオンになっているので，$[\\ce{BH+}]=[\\ce{A-}]$ から「B の全量＝HA の全量」．よって加える体積は中和点と同じ $50.0\\,\\mathrm{mL}$ で，答えは $\\boldsymbol{(b)}$．$K_a$ と $K_b$ が等しい弱酸と弱塩基の塩（酢酸アンモニウムなど）の水溶液がほぼ中性になるのと同じ理由である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "中和点（過不足なく反応した点）と中性点（pH 7）は一般に一致しない．pH 7 では電荷のつり合いから [Na+]=[A-] となり，電離定数の式から酸の何割がイオンになっているかがわかるので，pH 7 にするのに必要な塩基の量が中和点からどれだけずれるかが求まる．弱酸と弱塩基で Ka=Kb なら中和点がちょうど中性点になる．"
+ },
+ "concepts": [
+  "acid-base",
+  "ph",
+  "ionization-equilibrium"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "中和点",
+  "中性",
+  "電荷のつり合い",
+  "塩の加水分解",
+  "電離定数"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

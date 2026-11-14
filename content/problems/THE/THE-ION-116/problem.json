@@ -1,0 +1,109 @@
+{
+ "id": "THE-ION-116",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "標準生成ギブズエネルギーから求める溶解度積と溶解度の比較",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "反応の標準反応ギブズエネルギー $\\Delta G^\\circ$（kJ）は，（生成物の標準生成ギブズエネルギー $\\Delta G_\\mathrm{f}^\\circ$ の和）−（反応物の $\\Delta G_\\mathrm{f}^\\circ$ の和）で求められ，反応の平衡定数 $K$ と\n\\[ \\Delta G^\\circ=-2.303RT\\log_{10}K \\]\nの関係がある．$298\\,\\mathrm{K}$ では $2.303RT=5.70\\,\\mathrm{kJ/mol}$ とする．難溶性の塩の溶解平衡では，$K$ は溶解度積 $K_\\mathrm{sp}$（濃度の単位は $\\mathrm{mol/L}$）になる．$298\\,\\mathrm{K}$ での $\\Delta G_\\mathrm{f}^\\circ$（kJ/mol）は次のとおりである．\n\\[\\begin{array}{cccccccccc} \\ce{Cu+} & \\ce{Ag+} & \\ce{Cl-} & \\ce{Br-} & \\ce{I-} & \\ce{CrO4^2-} & \\ce{CuCl} & \\ce{CuBr} & \\ce{CuI} & \\ce{Ag2CrO4} \\\\ \\hline 50.0 & 77.1 & -131.2 & -104.0 & -51.6 & -727.8 & -119.9 & -100.8 & -69.5 & -641.8 \\end{array}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "塩化銅(I) の溶解 $\\ce{CuCl(s) <=> Cu+ + Cl-}$ の $\\Delta G^\\circ$ を求め，$\\log_{10}K_\\mathrm{sp}$ を小数第 1 位まで求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$\\ce{CuBr}$，$\\ce{CuI}$ の $\\log_{10}K_\\mathrm{sp}$ を小数第 1 位まで求め，$\\ce{CuCl}$・$\\ce{CuBr}$・$\\ce{CuI}$ を水へのモル溶解度の大きい順に並べよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\ce{Ag2CrO4(s) <=> 2Ag+ + CrO4^2-}$ の $\\log_{10}K_\\mathrm{sp}$ を小数第 1 位まで求めよ．また，$\\ce{CuI}$ と $\\ce{Ag2CrO4}$ の純水へのモル溶解度をそれぞれ有効数字 1 桁で求め，どちらがよく溶けるかを答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(1)〜(3) の溶解の $\\Delta G^\\circ$ はすべて正である．「$\\Delta G^\\circ>0$ だから，これらの塩は水にまったく溶けない」という考えの誤りを指摘せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\Delta G^\\circ=38.7\\,\\mathrm{kJ}$，$\\log_{10}K_\\mathrm{sp}=-6.8$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{CuBr}$：$-8.2$，$\\ce{CuI}$：$-11.9$，$\\ce{CuCl}>\\ce{CuBr}>\\ce{CuI}$"
+   },
+   {
+    "id": "3",
+    "tex": "$-12.0$．$\\ce{CuI}$：$1\\times10^{-6}\\,\\mathrm{mol/L}$，$\\ce{Ag2CrO4}$：$6\\times10^{-5}\\,\\mathrm{mol/L}$，$\\ce{Ag2CrO4}$ の方がよく溶ける．"
+   },
+   {
+    "id": "4",
+    "tex": "$\\Delta G^\\circ>0$ は平衡定数 $K_\\mathrm{sp}$ が 1 より小さいことを意味するだけで，0 ではない．溶解はイオンの濃度の積が $K_\\mathrm{sp}$ に達するまでは自発的に進むので，わずかに溶ける．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　$\\Delta G^\\circ=\\Delta G_\\mathrm{f}^\\circ(\\ce{Cu+})+\\Delta G_\\mathrm{f}^\\circ(\\ce{Cl-})-\\Delta G_\\mathrm{f}^\\circ(\\ce{CuCl})=50.0+(-131.2)-(-119.9)=\\boldsymbol{38.7\\,\\mathrm{kJ}}$．\n\\[ \\log_{10}K_\\mathrm{sp}=-\\dfrac{38.7}{5.70}=-6.79\\approx\\boldsymbol{-6.8} \\]\n\n\\textbf{(2)}　同様に，\n$\\ce{CuBr}$：$\\Delta G^\\circ=50.0-104.0+100.8=46.8\\,\\mathrm{kJ}$，$\\log_{10}K_\\mathrm{sp}=-8.21\\approx\\boldsymbol{-8.2}$\n\n$\\ce{CuI}$：$\\Delta G^\\circ=50.0-51.6+69.5=67.9\\,\\mathrm{kJ}$，$\\log_{10}K_\\mathrm{sp}=-11.91\\approx\\boldsymbol{-11.9}$\n\n3 つとも 1:1 型なので，モル溶解度 $s$ は $s=\\sqrt{K_\\mathrm{sp}}$ で，$K_\\mathrm{sp}$ の大小と同じ順になる．$\\boldsymbol{\\ce{CuCl}>\\ce{CuBr}>\\ce{CuI}}$．$\\Delta G^\\circ$ が大きい（溶けにくい）ほど $K_\\mathrm{sp}$ は指数関数的に小さくなり，$\\Delta G^\\circ$ が $5.70\\,\\mathrm{kJ}$ ふえるごとに $K_\\mathrm{sp}$ は $1/10$ になる．\n\n\\textbf{(3)}　$\\Delta G^\\circ=2\\times77.1+(-727.8)-(-641.8)=68.2\\,\\mathrm{kJ}$，$\\log_{10}K_\\mathrm{sp}=-\\dfrac{68.2}{5.70}=-11.96\\approx\\boldsymbol{-12.0}$．\n$\\ce{CuI}$ と $K_\\mathrm{sp}$ はほとんど同じ（$\\approx10^{-12}$）だが，溶け方の組成が違う．\n\n・$\\ce{CuI}$：$s^2=K_\\mathrm{sp}$ より $s=\\sqrt{1.2\\times10^{-12}}=1.1\\times10^{-6}\\approx\\boldsymbol{1\\times10^{-6}\\,\\mathrm{mol/L}}$\n\n・$\\ce{Ag2CrO4}$：$[\\ce{Ag+}]=2s$，$[\\ce{CrO4^2-}]=s$ より $4s^3=K_\\mathrm{sp}$，$s=\\sqrt[3]{\\dfrac{1.1\\times10^{-12}}{4}}=6.5\\times10^{-5}\\approx\\boldsymbol{6\\times10^{-5}\\,\\mathrm{mol/L}}$\n\n$\\ce{Ag2CrO4}$ の方が約 60 倍よく溶ける．組成の異なる塩では，$K_\\mathrm{sp}$ の単位も濃度との関係も違うので，$K_\\mathrm{sp}$ の大小をそのまま溶解度の大小とみなしてはいけない．\n\n\\textbf{(4)}　$\\Delta G^\\circ$ はすべての物質が標準状態（イオンなら $1\\,\\mathrm{mol/L}$）にあるときの値で，「$1\\,\\mathrm{mol/L}$ まで溶けることは起こらない」ことを示すにすぎない．イオンの濃度がそれよりずっと小さいうちは溶解の向きの $\\Delta G$ は負で，溶解は進み，濃度の積が $K_\\mathrm{sp}$（$>0$）に達したところで平衡になる．$\\Delta G^\\circ>0$ は「$K<1$」，すなわち平衡が溶けていない側にかたよっていることを表す．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "標準生成ギブズエネルギーから溶解の ΔG° を出し，ΔG°=−2.303RT log K で溶解度積に変換する．1:1 型どうしは Ksp の順が溶解度の順になるが，組成の違う塩では Ksp がほぼ同じでも溶解度は大きく異なることを比べ，ΔG°>0 が「溶けない」ではなく K<1 を意味することを判断する．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "precipitation",
+  "transition-metals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ギブズエネルギー",
+  "溶解度積",
+  "平衡定数",
+  "ハロゲン化銅(I)",
+  "クロム酸銀"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

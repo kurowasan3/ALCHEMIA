@@ -1,0 +1,102 @@
+{
+ "id": "POL-PRT-021",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-05",
+ "topic": "塩基の相補性（転写と塩基対の水素結合）",
+ "course": "化学",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "qa",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "DNA の二重らせんでは，アデニン（A）とチミン（T）が 2 本，グアニン（G）とシトシン（C）が 3 本の水素結合で塩基対をつくる．RNA ではチミンの代わりにウラシル（U）が使われ，A と対をつくる．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "RNA の糖はリボース $\\ce{C5H10O5}$ である．DNA の糖の名称と分子式を答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "DNA の一方の鎖の塩基配列が TACGGATC であるとき，これと対をつくるもう一方の鎖の塩基配列と，TACGGATC の鎖を鋳型としてつくられる RNA の塩基配列を，それぞれ左から対応する順に答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "どちらも 100 塩基対からなる二本鎖 DNA の断片 X と Y がある．全塩基に占める割合（物質量の割合）は，X ではアデニンが $30\\,\\%$，Y ではグアニンが $30\\,\\%$ である．X と Y それぞれについて，塩基対の間の水素結合の総数を求めよ．また，加熱したときに 1 本ずつの鎖に分かれにくいのはどちらか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "デオキシリボース，$\\ce{C5H10O4}$"
+   },
+   {
+    "id": "2",
+    "tex": "DNA：ATGCCTAG，RNA：AUGCCUAG"
+   },
+   {
+    "id": "3",
+    "tex": "X：240 本，Y：260 本．分かれにくいのは Y．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} DNA の糖は，リボースの 2 位の炭素の $\\ce{-OH}$ が $\\ce{-H}$ になった（酸素原子が 1 つ少ない）$\\boldsymbol{\\text{デオキシリボース}}$ $\\ce{C5H10O4}$ である．\\\\\n\\textbf{(2)} A と T，G と C が対になるので，相補鎖は $\\boldsymbol{\\text{ATGCCTAG}}$．RNA は鋳型の塩基と相補的につくられ，A に対しては U が入るので $\\boldsymbol{\\text{AUGCCUAG}}$．\\\\\n\\textbf{(3)} 100 塩基対には塩基が 200 個ある．\\\\\nX：A ＝ T ＝ $200\\times0.30 = 60$ 個，G ＝ C ＝ $(200-120)/2 = 40$ 個．A–T 対 60 組，G–C 対 40 組なので，水素結合は $60\\times2 + 40\\times3 = \\boldsymbol{240}$ 本．\\\\\nY：G ＝ C ＝ 60 個，A ＝ T ＝ 40 個．G–C 対 60 組，A–T 対 40 組なので $60\\times3 + 40\\times2 = \\boldsymbol{260}$ 本．\\\\\n水素結合の多い（G–C 対の割合が大きい）$\\boldsymbol{\\text{Y}}$ のほうが，2 本の鎖を引き離すのに多くのエネルギーが必要で，分かれにくい．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "A–T（RNA では A–U）・G–C の相補性から相補鎖と転写される RNA の配列を決める．塩基組成から A–T 対と G–C 対の数を求め，水素結合の本数（2 本と 3 本）の違いから二本鎖の安定性を比べる．"
+ },
+ "concepts": [
+  "protein-amino",
+  "nucleic-acid",
+  "intermolecular"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "DNA",
+  "RNA",
+  "塩基対",
+  "水素結合",
+  "転写",
+  "デオキシリボース"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

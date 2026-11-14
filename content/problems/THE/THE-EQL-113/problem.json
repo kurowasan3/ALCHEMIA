@@ -1,0 +1,108 @@
+{
+ "id": "THE-EQL-113",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "吸着剤で生成物の一方を取り除くことによる溶液中の平衡の移動",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある溶媒中で，物質 A は次の平衡によって P と R に分解する．\n\\[ \\ce{A <=>[\\text{}] P + R}\\qquad K=\\frac{[\\mathrm P][\\mathrm R]}{[\\mathrm A]}=1.00\\times10^{-3}\\,\\mathrm{mol/L} \\]\nA の濃度 $2.00\\times10^{-3}\\,\\mathrm{mol/L}$ の溶液 $0.100\\,\\mathrm L$ をつくり，平衡に達するまで置いた．次に，この溶液に P だけを吸着する吸着剤 S を $1.00\\,\\mathrm g$ 加え，十分に時間をおいた．S 1 g あたりに吸着される P の物質量 $q\\,[\\mathrm{mol/g}]$ は，溶液中の P の濃度 $[\\mathrm P]$ を用いて $q=H[\\mathrm P]$（$H=0.400\\,\\mathrm{L/g}$）で表される．温度は一定で，溶液の体積の変化は無視でき，A と R は吸着されないものとする．必要なら $\\sqrt{65}=8.062$ を用いよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "S を加える前の平衡での A の反応率（反応した A の物質量／はじめの A の物質量）を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "S を加えて新しい平衡に達したとき，溶液中の A，P，R の濃度は，S を加える前と比べてそれぞれ増加するか，減少するか．"
+     },
+     {
+      "id": "3",
+      "tex": "S を加えたあとの平衡での A の反応率を有効数字2桁で求めよ．また，そのとき生じている P のうち，S に吸着されているものの割合を有効数字2桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "吸着剤 S のかわりに，A だけを同じ $H$ で吸着する吸着剤を $1.00\\,\\mathrm g$ 加えたとすると，A の反応率（吸着された A も含めて，はじめの A 全体に対する割合）は (1) と比べて増加するか，減少するか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "0.50"
+   },
+   {
+    "id": "2",
+    "tex": "A：減少，P：減少，R：増加"
+   },
+   {
+    "id": "3",
+    "tex": "反応率 0.77，吸着されている割合 0.80"
+   },
+   {
+    "id": "4",
+    "tex": "減少"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　反応した A の濃度を $x$ とすると $\\dfrac{x^2}{2.00\\times10^{-3}-x}=1.00\\times10^{-3}$，すなわち $x^2+1.00\\times10^{-3}x-2.00\\times10^{-6}=0$．$x=1.00\\times10^{-3}\\,\\mathrm{mol/L}$ なので反応率は $\\boldsymbol{0.50}$．\n\n\\textbf{物質収支}　S に吸着された P の物質量は $qm=H[\\mathrm P]m$．反応した A の物質量を溶液 1 L あたりに直した量を $z$ とすると，P は溶液中と S 上に分かれるので\n\\[ zV=[\\mathrm P]V+H[\\mathrm P]m\\quad\\Rightarrow\\quad[\\mathrm P]=\\frac{z}{1+Hm/V}=\\frac{z}{1+\\frac{0.400\\times1.00}{0.100}}=\\frac z5 \\]\nR は吸着されないので $[\\mathrm R]=z$，$[\\mathrm A]=2.00\\times10^{-3}-z$．\n\n\\textbf{(3)}　平衡定数の式に代入して\n\\[ \\frac{(z/5)\\,z}{2.00\\times10^{-3}-z}=1.00\\times10^{-3}\\quad\\Rightarrow\\quad z^2+5.00\\times10^{-3}z-1.00\\times10^{-5}=0 \\]\n$z=\\dfrac{-5.00\\times10^{-3}+\\sqrt{6.5\\times10^{-5}}}{2}=\\dfrac{(-5.000+8.062)\\times10^{-3}}{2}=1.531\\times10^{-3}\\,\\mathrm{mol/L}$．反応率は $\\dfrac{1.531}{2.00}\\fallingdotseq\\boldsymbol{0.77}$．\n生じた P のうち吸着されている割合は $\\dfrac{Hm}{V+Hm}=\\dfrac{0.400}{0.500}=\\boldsymbol{0.80}$（濃度によらない）．\n\n\\textbf{(2)}　$[\\mathrm A]=4.7\\times10^{-4}$（もとは $1.00\\times10^{-3}$）で\\textbf{減少}，$[\\mathrm P]=z/5=3.1\\times10^{-4}$（もとは $1.00\\times10^{-3}$）で\\textbf{減少}，$[\\mathrm R]=1.53\\times10^{-3}$ で\\textbf{増加}．P を取り除くと平衡は右へ移るが，移動は取り除いた分を完全には補わないので，溶液中の P は減ったままになる（ルシャトリエの原理）．\n\n\\textbf{(4)}　A が吸着されると溶液中の A が減り，平衡は左（A が生じる向き）へ移る．計算すると，溶液 1 L あたりで反応した量 $w$ について $[\\mathrm A]=\\dfrac{2.00\\times10^{-3}-w}{5}$，$\\dfrac{w^2}{[\\mathrm A]}=K$ から $w=5.4\\times10^{-4}$，反応率は約 0.27 で\\textbf{減少}する．取り除く物質が反応物か生成物かで，移動の向きが逆になる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "吸着が線形（q=H[P]）なら，生じた P は溶液と吸着剤に一定の比 V：Hm で分かれるので，溶液中の [P] は生成量の 1/(1+Hm/V) になる．これを平衡定数の式に入れると，生成物を除くと平衡が右へ移って反応率が上がる一方，溶液中のその物質の濃度は減ったままになり，反応物を除けば逆に反応率が下がる．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "吸着平衡",
+  "平衡の移動",
+  "ルシャトリエの原理",
+  "物質収支",
+  "反応率"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

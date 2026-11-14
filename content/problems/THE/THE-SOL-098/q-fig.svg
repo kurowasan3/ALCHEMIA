@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 300">
+  <g font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">
+    <g transform="translate(20,10)"><path d="M 40 110 L 80 110 L 80 225 Q 80 230 85 230 L 110 230 L 110 260 L 70 260 Q 40 260 40 230 Z" fill="#1f5fbf" opacity="0.2"/>
+      <path d="M 40 40 L 40 230 Q 40 260 70 260 L 150 260 Q 180 260 180 230 L 180 40" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <path d="M 80 40 L 80 225 Q 80 230 85 230 L 135 230 Q 140 230 140 225 L 140 40" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <line x1="40" y1="110" x2="80" y2="110" stroke="currentColor" stroke-width="1.2"/>
+      <line x1="140" y1="110" x2="180" y2="110" stroke="currentColor" stroke-width="1.2"/>
+      <line x1="110" y1="230" x2="110" y2="260" stroke="#c0392b" stroke-width="2.5" stroke-dasharray="3,3"/>
+      <text x="118" y="250" font-size="13" fill="#c0392b">膜</text>
+      <text x="60" y="30" text-anchor="middle">左管</text>
+      <text x="160" y="30" text-anchor="middle">右管</text>
+      <text x="110" y="285" text-anchor="middle">初期状態</text><text x="60" y="175" text-anchor="middle">S</text><text x="160" y="175" text-anchor="middle">純水</text></g>
+    <path d="M 235 150 L 262 150" stroke="currentColor" stroke-width="2"/>
+    <path d="M 262 144 L 272 150 L 262 156 Z" fill="currentColor"/>
+    <g transform="translate(290,10)"><path d="M 40 80 L 80 80 L 80 225 Q 80 230 85 230 L 110 230 L 110 260 L 70 260 Q 40 260 40 230 Z" fill="#1f5fbf" opacity="0.2"/>
+      <path d="M 40 40 L 40 230 Q 40 260 70 260 L 150 260 Q 180 260 180 230 L 180 40" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <path d="M 80 40 L 80 225 Q 80 230 85 230 L 135 230 Q 140 230 140 225 L 140 40" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <line x1="40" y1="80" x2="80" y2="80" stroke="currentColor" stroke-width="1.2"/>
+      <line x1="140" y1="140" x2="180" y2="140" stroke="currentColor" stroke-width="1.2"/>
+      <line x1="110" y1="230" x2="110" y2="260" stroke="#c0392b" stroke-width="2.5" stroke-dasharray="3,3"/>
+      <text x="118" y="250" font-size="13" fill="#c0392b">膜</text>
+      <text x="60" y="30" text-anchor="middle">左管</text>
+      <text x="160" y="30" text-anchor="middle">右管</text>
+      <text x="110" y="285" text-anchor="middle">つり合いの状態</text><line x1="80" y1="80" x2="210" y2="80" stroke="currentColor" stroke-dasharray="4,3" opacity="0.5"/>
+      <line x1="180" y1="140" x2="210" y2="140" stroke="currentColor" stroke-dasharray="4,3" opacity="0.5"/>
+      <line x1="200" y1="84" x2="200" y2="136" stroke="currentColor" stroke-width="1.2"/>
+      <path d="M 196 88 L 200 80 L 204 88 Z M 196 132 L 200 140 L 204 132 Z" fill="currentColor"/>
+      <text x="212" y="115.0" font-style="italic">h</text></g>
+  </g>
+</svg>

@@ -1,0 +1,118 @@
+{
+ "id": "INO-TRN-037",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-07",
+ "topic": "亜硫酸水素イオンによる六価クロムの還元と水酸化クロム(III)としての除去",
+ "course": "化学",
+ "level": 3,
+ "minutes": 20,
+ "format": [
+  "equation",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "二クロム酸イオン $\\ce{Cr2O7^2-}$ を含む排水から有毒な六価クロムを除くため，酸性で亜硫酸水素ナトリウム $\\ce{NaHSO3}$ を加えてクロムを $\\ce{Cr^3+}$ に還元し，その後 pH を上げて水酸化クロム(III) $\\ce{Cr(OH)3}$ として沈殿させる．還元剤と酸化剤のはたらきは次の式で表される．\n\\[ \\ce{Cr2O7^2- + 14H+ + 6e- -> 2Cr^3+ + 7H2O} \\]\n\\[ \\ce{HSO3- + H2O -> SO4^2- + 3H+ + 2e-} \\]\n$\\ce{Cr(OH)3}$ の溶解度積は $K_\\mathrm{sp}=[\\ce{Cr^3+}][\\ce{OH-}]^{3}=6.3\\times10^{-31}\\,(\\mathrm{mol/L})^{4}$，水のイオン積は $1.0\\times10^{-14}\\,(\\mathrm{mol/L})^{2}$，原子量は H = 1.0，O = 16，Na = 23，S = 32，Cr = 52 とし，必要なら $\\log_{10}6.3=0.80$ を用いよ．加えた試薬による体積変化は無視する．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{Cr2O7^2-}$ と $\\ce{HSO3-}$ の反応をイオン反応式で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "クロムを $52.0\\,\\mathrm{mg}$ 含む排水 $1.00\\,\\mathrm{L}$（クロムはすべて $\\ce{Cr2O7^2-}$）を処理するのに最低限必要な $\\ce{NaHSO3}$ の質量〔mg〕を有効数字 3 桁で求めよ．また，この反応で溶液中の $\\ce{H+}$ は増えるか減るか．"
+     },
+     {
+      "id": "3",
+      "tex": "還元後，pH を 5.0 にした場合と 8.0 にした場合のそれぞれについて，溶液中に残る $[\\ce{Cr^3+}]$〔mol/L〕を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "処理後の水に残るクロムを $0.52\\,\\mathrm{mg/L}$ 以下にするには，pH を最低いくつ以上にする必要があるか．小数第 1 位まで答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "pH を 12 以上の強い塩基性にすると，いったん生じた沈殿の量が減ってしまう．その理由を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{Cr2O7^2- + 3HSO3- + 5H+ -> 2Cr^3+ + 3SO4^2- + 4H2O}$"
+   },
+   {
+    "id": "2",
+    "tex": "156 mg，$\\ce{H+}$ は減る"
+   },
+   {
+    "id": "3",
+    "tex": "pH 5.0：$6.3\\times10^{-4}\\,\\mathrm{mol/L}$，pH 8.0：$6.3\\times10^{-13}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "4",
+    "tex": "5.6"
+   },
+   {
+    "id": "5",
+    "tex": "$\\ce{Cr(OH)3}$ は両性水酸化物で，過剰の $\\ce{OH-}$ と反応して錯イオン $\\ce{[Cr(OH)4]-}$ となって溶けるから"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 電子の数をそろえるため，還元剤の式を 3 倍して足す．\n\\[ \\ce{Cr2O7^2- + 14H+ + 3HSO3- + 3H2O -> 2Cr^3+ + 7H2O + 3SO4^2- + 9H+} \\]\n両辺の $\\ce{H+}$，$\\ce{H2O}$ を整理して\n\\[ \\boldsymbol{\\ce{Cr2O7^2- + 3HSO3- + 5H+ -> 2Cr^3+ + 3SO4^2- + 4H2O}} \\]\n\n\\textbf{(2)} Cr は $\\dfrac{52.0\\times10^{-3}}{52}=1.00\\times10^{-3}\\,\\mathrm{mol}$，$\\ce{Cr2O7^2-}$ は $5.00\\times10^{-4}\\,\\mathrm{mol}$．$\\ce{HSO3-}$ はその 3 倍の $1.50\\times10^{-3}\\,\\mathrm{mol}$，$\\ce{NaHSO3}$（式量 104）は $1.50\\times10^{-3}\\times104\\times10^{3}=\\boldsymbol{156\\,\\mathrm{mg}}$．\n(1) の式では左辺で $\\ce{H+}$ が消費されるので，$\\ce{H+}$ は\\textbf{減る}（酸性に保たないと還元が進みにくい）．\n\n\\textbf{(3)} $[\\ce{Cr^3+}]=\\dfrac{K_\\mathrm{sp}}{[\\ce{OH-}]^{3}}$．\npH 5.0：$[\\ce{OH-}]=1.0\\times10^{-9}$ で $\\dfrac{6.3\\times10^{-31}}{1.0\\times10^{-27}}=\\boldsymbol{6.3\\times10^{-4}\\,\\mathrm{mol/L}}$（$33\\,\\mathrm{mg/L}$ で，ほとんど除けていない）．\npH 8.0：$[\\ce{OH-}]=1.0\\times10^{-6}$ で $\\boldsymbol{6.3\\times10^{-13}\\,\\mathrm{mol/L}}$（ほぼ完全に沈殿）．\nもとの $\\ce{Cr^3+}$ は $1.00\\times10^{-3}\\,\\mathrm{mol/L}$ なので，どちらも沈殿は生じている．\n\n\\textbf{(4)} $0.52\\,\\mathrm{mg/L}$ は $\\dfrac{0.52\\times10^{-3}}{52}=1.0\\times10^{-5}\\,\\mathrm{mol/L}$．\n\\[ [\\ce{OH-}]^{3}\\ge\\frac{6.3\\times10^{-31}}{1.0\\times10^{-5}}=6.3\\times10^{-26} \\]\n$\\log_{10}[\\ce{OH-}]\\ge\\dfrac{0.80-26}{3}=-8.40$，pOH $\\le8.40$ より pH $\\ge\\boldsymbol{5.6}$．\n\n\\textbf{(5)} $\\ce{Cr(OH)3}$ は $\\ce{Al(OH)3}$ と同じく両性水酸化物で，強塩基性では $\\ce{Cr(OH)3 + OH- -> [Cr(OH)4]-}$ のように錯イオンをつくって溶ける．このため溶解度積だけで考えて pH を上げすぎると，かえってクロムが溶液に残る．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "二クロム酸イオンの還元剤の量は電子の授受（Cr₂O₇²⁻ 1 個で 6 個，HSO₃⁻ 1 個で 2 個）で決まり，反応は H⁺ を消費する．還元後に残る Cr³⁺ は溶解度積から [OH⁻]³ に反比例するので，基準値を満たす最低の pH が求まるが，両性の Cr(OH)₃ は強塩基性で再び溶けるので pH には上限もある．"
+ },
+ "concepts": [
+  "transition-metals",
+  "precipitation",
+  "amphoteric"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "六価クロム",
+  "二クロム酸イオン",
+  "亜硫酸水素ナトリウム",
+  "溶解度積",
+  "両性水酸化物",
+  "排水処理"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

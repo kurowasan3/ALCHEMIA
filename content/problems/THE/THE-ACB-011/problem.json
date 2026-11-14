@@ -1,0 +1,109 @@
+{
+ "id": "THE-ACB-011",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-05",
+ "topic": "滴定曲線の特徴から組合せと濃度・電離度を読み取る",
+ "course": "化学",
+ "level": 1,
+ "minutes": 15,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の①〜③の中和滴定を行い，滴定曲線を得た．\n\\\\ ① 酢酸水溶液 $10.0\\,\\mathrm{mL}$ を $0.020\\,\\mathrm{mol/L}$ 水酸化ナトリウム水溶液で滴定\n\\\\ ② 水酸化ナトリウム水溶液 $10.0\\,\\mathrm{mL}$ を $0.020\\,\\mathrm{mol/L}$ 塩酸で滴定\n\\\\ ③ アンモニア水 $10.0\\,\\mathrm{mL}$ を $0.020\\,\\mathrm{mol/L}$ 塩酸で滴定\n\\\\ 次の表 P〜S は，4つの滴定曲線の特徴をまとめたものである（このうち1つは①〜③のどれにもあてはまらない）．\n\\[\\begin{array}{c|c|c|c|c} \\text{曲線} & \\text{初めの pH} & \\text{滴下による変化} & \\text{中和点までの滴下量 (mL)} & \\text{中和点の pH} \\\\ \\hline \\mathrm P & 12.3 & \\text{下降} & 10.0 & 7.0 \\\\ \\mathrm Q & 11.0 & \\text{下降} & 25.0 & 5.6 \\\\ \\mathrm R & 3.0 & \\text{上昇} & 20.0 & 8.4 \\\\ \\mathrm S & 1.7 & \\text{上昇} & 10.0 & 7.0 \\end{array}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "①〜③に対応する曲線を P〜S からそれぞれ選べ．"
+     },
+     {
+      "id": "2",
+      "tex": "①〜③で用いた酢酸水溶液・水酸化ナトリウム水溶液・アンモニア水のモル濃度をそれぞれ求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "①の酢酸と③のアンモニアの電離度をそれぞれ求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "曲線 Q の中和点の pH が 7 より小さい理由を述べよ．また，③の滴定に適した指示薬はフェノールフタレイン（変色域 pH 8.0〜9.8）とメチルオレンジ（変色域 pH 3.1〜4.4）のどちらか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "① R　② P　③ Q"
+   },
+   {
+    "id": "2",
+    "tex": "① $0.040\\,\\mathrm{mol/L}$　② $0.020\\,\\mathrm{mol/L}$　③ $0.050\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "3",
+    "tex": "酢酸 $0.025$，アンモニア $0.020$"
+   },
+   {
+    "id": "4",
+    "tex": "中和点で生じた塩化アンモニウムの $\\ce{NH4+}$ が加水分解して水溶液が弱い酸性を示すから．指示薬はメチルオレンジ．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 酸を塩基で滴定すると pH は上昇し，塩基を酸で滴定すると下降する．\\\\\n①（弱酸を強塩基で）：上昇し，初めの pH が強酸より高く，中和点が塩基性側 → \\textbf{R}．\\\\\n②（強塩基を強酸で）：下降し，中和点が pH 7 → \\textbf{P}．\\\\\n③（弱塩基を強酸で）：下降し，初めの pH が強塩基より低く，中和点が酸性側 → \\textbf{Q}．\\\\\nS は強酸を強塩基で滴定した曲線で，どれにもあてはまらない．\\\\\n\\textbf{(2)} 中和点で（酸の物質量）＝（塩基の物質量）（いずれも1価）．\\\\\n① $c\\times10.0=0.020\\times20.0$ より $\\boldsymbol{0.040\\,\\mathrm{mol/L}}$．② $c\\times10.0=0.020\\times10.0$ より $\\boldsymbol{0.020\\,\\mathrm{mol/L}}$（初めの pH $=14-\\log_{10}\\frac{1}{0.020}\\fallingdotseq12.3$ とも一致）．③ $c\\times10.0=0.020\\times25.0$ より $\\boldsymbol{0.050\\,\\mathrm{mol/L}}$．\\\\\n\\textbf{(3)} ① pH 3.0 より $[\\ce{H+}]=1.0\\times10^{-3}$，$\\alpha=\\dfrac{1.0\\times10^{-3}}{0.040}=\\boldsymbol{0.025}$．③ pH 11.0 より $[\\ce{OH-}]=1.0\\times10^{-3}$，$\\alpha=\\dfrac{1.0\\times10^{-3}}{0.050}=\\boldsymbol{0.020}$．\\\\\n\\textbf{(4)} 中和点の溶液は $\\ce{NH4Cl}$ 水溶液で，$\\ce{NH4+ + H2O <=> NH3 + H3O+}$ により弱い酸性になる．pH の急変が酸性側（およそ 7〜3）で起こるので，指示薬は\\textbf{メチルオレンジ}が適する．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "滴定曲線の初めの pH・変化の向き・中和点の位置と pH から，酸・塩基の強弱と滴定の組合せを判定する．中和点の滴下量から濃度を，初めの pH から弱酸・弱塩基の電離度を求める．"
+ },
+ "concepts": [
+  "acid-base",
+  "concentration",
+  "ph"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "滴定曲線",
+  "中和点",
+  "電離度",
+  "指示薬",
+  "塩の加水分解"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

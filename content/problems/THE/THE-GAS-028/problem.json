@@ -1,0 +1,115 @@
+{
+ "id": "THE-GAS-028",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-08",
+ "topic": "圧縮因子の低圧での傾きからファンデルワールス定数を決める（ボイル温度）",
+ "course": "化学",
+ "level": 5,
+ "minutes": 35,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "1 mol の実在気体の圧縮因子 $Z=\\dfrac{PV_{\\text{m}}}{RT}$（$V_{\\text{m}}$ はモル体積）について考える．ある気体 G はファンデルワールスの状態方程式\n\\[\\left(P+\\dfrac{a}{V_{\\text{m}}^{\\,2}}\\right)(V_{\\text{m}}-b)=RT\\]\nに従うものとする（$a,\\,b$ は正の定数）．$Z$ を圧力 $P$ に対してグラフにしたとき，$P\\to0$ での傾き $\\left(\\dfrac{dZ}{dP}\\right)_{0}$ を測定すると，$200\\,\\mathrm K$ で $-5.74\\times10^{-8}\\,\\mathrm{Pa^{-1}}$，$400\\,\\mathrm K$ で $-7.88\\times10^{-9}\\,\\mathrm{Pa^{-1}}$ であった．気体定数 $R=8.31\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$ とし，G の臨界温度は $191\\,\\mathrm K$（これより高い温度では凝縮しない）である．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ファンデルワールスの式から $Z=\\dfrac{V_{\\text{m}}}{V_{\\text{m}}-b}-\\dfrac{a}{RTV_{\\text{m}}}$ を導け．さらに，$V_{\\text{m}}\\gg b$ のとき $\\dfrac{1}{1-x}\\fallingdotseq1+x$（$|x|\\ll1$）を用い，低圧で $V_{\\text{m}}\\fallingdotseq\\dfrac{RT}{P}$ とみなせることを使って，$Z\\fallingdotseq1+\\left(b-\\dfrac{a}{RT}\\right)\\dfrac{P}{RT}$ となることを示せ．"
+     },
+     {
+      "id": "2",
+      "tex": "測定値から $a$（単位 $\\mathrm{Pa\\cdot L^{2}/mol^{2}}$）と $b$（単位 $\\mathrm{L/mol}$）を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "低圧で $Z$ が $P$ によらずほぼ1になる温度（ボイル温度）$T_{\\text{B}}$ を有効数字2桁で求めよ．また，$300\\,\\mathrm K$ と $800\\,\\mathrm K$ のそれぞれで，低圧で $Z$ は1より大きいか小さいか．分子間力と分子の体積のどちらの影響が勝つかとともに答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$200\\,\\mathrm K$ で圧力を上げていくと，$Z$ はいったん1より小さくなるが，十分な高圧で再び $Z=1$ となる．ファンデルワールスの式に従うとして，再び $Z=1$ となるモル体積と圧力を有効数字2桁で求めよ．また，このように $Z=1$ に戻る点が存在するのは，温度がどのような条件を満たすときか．"
+     },
+     {
+      "id": "5",
+      "tex": "$b$ は G と同じで $a$ が G より大きい気体 H がある．同じ温度・低圧で $Z$ が小さいのはどちらか．また，沸点が高いと考えられるのはどちらか．理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "解説参照"
+   },
+   {
+    "id": "2",
+    "tex": "$a=2.3\\times10^{5}\\,\\mathrm{Pa\\cdot L^{2}/mol^{2}}$，$b=4.3\\times10^{-2}\\,\\mathrm{L/mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "$T_{\\text{B}}=6.4\\times10^{2}\\,\\mathrm K$．$300\\,\\mathrm K$：1より小さい（分子間力の影響が勝つ），$800\\,\\mathrm K$：1より大きい（分子の体積の影響が勝つ）"
+   },
+   {
+    "id": "4",
+    "tex": "$V_{\\text{m}}=6.2\\times10^{-2}\\,\\mathrm{L/mol}$，$P=2.7\\times10^{7}\\,\\mathrm{Pa}$．$T<T_{\\text{B}}$（$a>RTb$）のとき"
+   },
+   {
+    "id": "5",
+    "tex": "$Z$ が小さいのも沸点が高いのも H．$a$ が大きいほど分子間力が強く，低圧での $Z$ の減少（$-\\dfrac{a}{RT}$ の項）が大きく，また液体から分子を引き離すのに大きなエネルギーが必要だから"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　ファンデルワールスの式を $P$ について解くと $P=\\dfrac{RT}{V_{\\text{m}}-b}-\\dfrac{a}{V_{\\text{m}}^{\\,2}}$．両辺に $\\dfrac{V_{\\text{m}}}{RT}$ をかけて\n\\[Z=\\dfrac{PV_{\\text{m}}}{RT}=\\dfrac{V_{\\text{m}}}{V_{\\text{m}}-b}-\\dfrac{a}{RTV_{\\text{m}}}\\]\n$\\dfrac{V_{\\text{m}}}{V_{\\text{m}}-b}=\\dfrac{1}{1-b/V_{\\text{m}}}\\fallingdotseq1+\\dfrac{b}{V_{\\text{m}}}$ より $Z\\fallingdotseq1+\\left(b-\\dfrac{a}{RT}\\right)\\dfrac{1}{V_{\\text{m}}}$．低圧では $\\dfrac{1}{V_{\\text{m}}}\\fallingdotseq\\dfrac{P}{RT}$ なので\n\\[Z\\fallingdotseq1+\\left(b-\\dfrac{a}{RT}\\right)\\dfrac{P}{RT}\\]\nしたがって $\\left(\\dfrac{dZ}{dP}\\right)_{0}=\\dfrac{1}{RT}\\left(b-\\dfrac{a}{RT}\\right)$．\n\n\\textbf{(2)}　傾きに $RT$ をかけると $b-\\dfrac{a}{RT}$ になる．$R\\times200=1.662\\times10^{6}$，$R\\times400=3.324\\times10^{6}$ なので\n\\[b-\\dfrac{a}{1.662\\times10^{6}}=-5.74\\times10^{-8}\\times1.662\\times10^{6}=-0.0954\\]\n\\[b-\\dfrac{a}{3.324\\times10^{6}}=-7.88\\times10^{-9}\\times3.324\\times10^{6}=-0.0262\\]\n辺々引くと $a\\left(\\dfrac{1}{1.662\\times10^{6}}-\\dfrac{1}{3.324\\times10^{6}}\\right)=0.0692$，すなわち $\\dfrac{a}{3.324\\times10^{6}}=0.0692$．\n\\[a=\\boldsymbol{2.3\\times10^{5}\\,\\mathrm{Pa\\cdot L^{2}/mol^{2}}},\\qquad b=-0.0262+0.0692=\\boldsymbol{4.3\\times10^{-2}\\,\\mathrm{L/mol}}\\]\n\n\\textbf{(3)}　傾きが 0 になるのは $b=\\dfrac{a}{RT}$ のとき．\n\\[T_{\\text{B}}=\\dfrac{a}{Rb}=\\dfrac{2.30\\times10^{5}}{8.31\\times10^{3}\\times0.0430}=6.4\\times10^{2}\\,\\mathrm K\\]\n$T<T_{\\text{B}}$ では $b<\\dfrac{a}{RT}$ で傾きが負，つまり $Z<1$．$300\\,\\mathrm K$ では\\textbf{1より小さく}，分子間力（$a$）の影響が勝つ．$T>T_{\\text{B}}$ では傾きが正で，$800\\,\\mathrm K$ では\\textbf{1より大きく}，分子の体積（$b$）の影響が勝つ．温度が高いと分子の運動が激しく，分子間力の影響（$\\dfrac{a}{RT}$）が小さくなるためである．\n\n\\textbf{(4)}　$Z=1$ は $P=\\dfrac{RT}{V_{\\text{m}}}$ のことなので，ファンデルワールスの式に代入すると\n\\[\\dfrac{RT}{V_{\\text{m}}-b}-\\dfrac{a}{V_{\\text{m}}^{\\,2}}=\\dfrac{RT}{V_{\\text{m}}}\\quad\\Longrightarrow\\quad\\dfrac{RTb}{V_{\\text{m}}(V_{\\text{m}}-b)}=\\dfrac{a}{V_{\\text{m}}^{\\,2}}\\quad\\Longrightarrow\\quad V_{\\text{m}}=\\dfrac{ab}{a-RTb}\\]\n$200\\,\\mathrm K$ では $RTb=1.662\\times10^{6}\\times0.0430=7.15\\times10^{4}$ なので\n\\[V_{\\text{m}}=\\dfrac{2.30\\times10^{5}\\times0.0430}{2.30\\times10^{5}-7.15\\times10^{4}}=\\boldsymbol{6.2\\times10^{-2}\\,\\mathrm{L/mol}},\\qquad P=\\dfrac{RT}{V_{\\text{m}}}=\\dfrac{1.662\\times10^{6}}{0.0624}=\\boldsymbol{2.7\\times10^{7}\\,\\mathrm{Pa}}\\]\n（200 K は臨界温度 191 K より高いので，この高圧でも凝縮は起こらない．）$V_{\\text{m}}>b>0$ となる解があるには $a-RTb>0$，すなわち $\\boldsymbol{T<T_{\\text{B}}}$ が必要．$T\\ge T_{\\text{B}}$ では低圧から $Z\\ge1$ で，1を下回ることがない．\n\n\\textbf{(5)}　低圧での $Z-1$ は $\\left(b-\\dfrac{a}{RT}\\right)\\dfrac{P}{RT}$ で，$b$ が同じなら $a$ が大きいほど小さい．したがって $Z$ が小さいのは \\textbf{H}．$a$ は分子間力の強さを表すので，H の方が液体の分子を引き離すのに大きなエネルギーが必要で，沸点も \\textbf{H} の方が高いと考えられる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ファンデルワールスの式を低圧で近似して Z−1 ≒ (b − a/RT)P/RT を導き，2つの温度での Z−P 曲線の初期の傾きから a と b を逆算する．引力項と体積項が打ち消し合うボイル温度を求め，温度による Z の符号の変化や，高圧で Z が再び1に戻る点が存在する条件を判断する．"
+ },
+ "concepts": [
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "実在気体",
+  "圧縮因子",
+  "ファンデルワールスの状態方程式",
+  "ボイル温度",
+  "近似"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

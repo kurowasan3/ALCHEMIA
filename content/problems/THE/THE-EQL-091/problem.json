@@ -1,0 +1,109 @@
+{
+ "id": "THE-EQL-091",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "触媒表面の2段階反応と中間体の定常状態",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある金属触媒の表面に吸着した原子 A と原子 B が，表面上で次の2段階で反応し，生成物 $\\ce{AB2}$ はできるとすぐに気体中へ放出される．\n\\[\\ce{A + B ->[k_1\\text{}] AB}\\quad (1)\\qquad\\qquad \\ce{AB + B ->[k_2\\text{}] AB2}\\quad (2)\\]\n各段階の速さは，表面濃度（単位面積あたりの物質量，$\\mathrm{mol/cm^2}$）を用いて $v_1 = k_1[\\ce{A}][\\ce{B}]$，$v_2 = k_2[\\ce{AB}][\\ce{B}]$ と表される．ある温度で $k_1 = 3.0\\times10^{6}$，$k_2 = 5.0\\times10^{11}$（単位はいずれも $\\mathrm{cm^2/(mol\\cdot s)}$）であり，気体から A と B が絶えず供給されて，$[\\ce{A}] = 4.0\\times10^{-10}\\,\\mathrm{mol/cm^2}$，$[\\ce{B}] = 2.0\\times10^{-9}\\,\\mathrm{mol/cm^2}$ に保たれている．中間体 AB の表面濃度は時間によらず一定（定常状態）とみなせるものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{AB2}$ の生成速度（$\\mathrm{mol/(cm^2\\cdot s)}$）を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "AB の表面濃度を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$[\\ce{A}]$ を変えずに $[\\ce{B}]$ だけを2倍に保ったとき，$\\ce{AB2}$ の生成速度と AB の表面濃度はそれぞれ何倍になるか．"
+     },
+     {
+      "id": "4",
+      "tex": "触媒の表面状態を変えたところ，$k_1$ は変わらず $k_2$ だけが $\\dfrac{1}{100}$ になった（$[\\ce{A}]$，$[\\ce{B}]$ ははじめと同じ）．$\\ce{AB2}$ の生成速度と AB の表面濃度はそれぞれ何倍になるか．AB はこのときも定常状態にあるものとする．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$2.4\\times10^{-12}\\,\\mathrm{mol/(cm^2\\cdot s)}$"
+   },
+   {
+    "id": "2",
+    "tex": "$2.4\\times10^{-15}\\,\\mathrm{mol/cm^2}$"
+   },
+   {
+    "id": "3",
+    "tex": "生成速度は2倍，AB の表面濃度は1倍（変わらない）"
+   },
+   {
+    "id": "4",
+    "tex": "生成速度は1倍（変わらない），AB の表面濃度は100倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　中間体 AB が一定なら「AB ができる速さ＝AB が使われる速さ」，すなわち $v_1 = v_2$．$\\ce{AB2}$ は (2) でできるので，その生成速度は $v_2$ に等しく，結局 $v_1$ に等しい．\n\n\\textbf{(1)} $v = v_1 = 3.0\\times10^{6}\\times4.0\\times10^{-10}\\times2.0\\times10^{-9} = \\boldsymbol{2.4\\times10^{-12}\\,\\mathrm{mol/(cm^2\\cdot s)}}$\n\n\\textbf{(2)} $k_1[\\ce{A}][\\ce{B}] = k_2[\\ce{AB}][\\ce{B}]$ より $[\\ce{B}]$ が消えて\n\\[[\\ce{AB}] = \\frac{k_1[\\ce{A}]}{k_2} = \\frac{3.0\\times10^{6}\\times4.0\\times10^{-10}}{5.0\\times10^{11}} = \\boldsymbol{2.4\\times10^{-15}\\,\\mathrm{mol/cm^2}}\\]\nA や B に比べてごくわずかで，できた AB はすぐに (2) で使われる．\n\n\\textbf{(3)} $v = k_1[\\ce{A}][\\ce{B}]$ なので生成速度は $\\boldsymbol{2}$ 倍．一方 $[\\ce{AB}] = k_1[\\ce{A}]/k_2$ は $[\\ce{B}]$ を含まないので $\\boldsymbol{1}$ 倍（変わらない）．B が増えると AB のできる速さも使われる速さも同じ割合で増えるからである．\n\n\\textbf{(4)} 定常状態では生成速度は $v_1$ で決まり $k_2$ によらないので $\\boldsymbol{1}$ 倍．$[\\ce{AB}] = k_1[\\ce{A}]/k_2$ は $\\boldsymbol{100}$ 倍になる．後の段階が遅くなると，その分だけ中間体がたまって $v_2$ を $v_1$ に追いつかせる（全体の速さは遅い (1) の段階が決めている）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "逐次反応の中間体が定常状態なら，その生成速度と消費速度が等しいことから中間体の濃度と全体の速度が決まる．全体の速さは最初の段階の速さで決まり，後の段階の速度定数は中間体の濃度だけを変える．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "concentration",
+  "reaction-rate"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "定常状態",
+  "反応中間体",
+  "触媒表面",
+  "反応速度式",
+  "律速段階"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

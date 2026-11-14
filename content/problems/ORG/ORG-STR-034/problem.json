@@ -1,0 +1,101 @@
+{
+ "id": "ORG-STR-034",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-01",
+ "topic": "炭化水素基と原子団の組合せによる化合物名と異性体の関係",
+ "course": "化学",
+ "level": 0,
+ "minutes": 8,
+ "format": [
+  "qa",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の炭化水素基 (a)〜(d) と原子団 (p)〜(v) を 1 つずつ組み合わせて有機化合物をつくる．\\\\\n炭化水素基：(a) $\\ce{CH3}-$　(b) $\\ce{C2H5}-$　(c) $\\ce{C6H5}-$（フェニル基）　(d) $\\ce{C6H5CH2}-$（ベンジル基）\\\\\n原子団：(p) $-\\ce{H}$　(q) $-\\ce{OH}$　(r) $-\\ce{CHO}$　(s) $-\\ce{COCH3}$　(t) $-\\ce{OCH3}$　(u) $-\\ce{COOH}$　(v) $-\\ce{CH3}$"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "次の組合せでできる化合物の名称と示性式を答えよ．\\quad ① (b) と (r)　② (a) と (s)　③ (c) と (s)　④ (d) と (q)　⑤ (c) と (t)"
+     },
+     {
+      "id": "2",
+      "tex": "①〜⑤のうち，互いに異性体（分子式が同じで構造が異なる）である組をすべてあげ，それぞれの分子式を答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(a)〜(d) と (p)〜(v) の組合せは全部で 28 通りあるが，異なる組合せなのに同じ化合物になるものがある．そのような化合物をすべてあげ，名称と，それを表す 2 通りの組合せを答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "① プロピオンアルデヒド（プロパナール）$\\ce{CH3CH2CHO}$　② アセトン $\\ce{CH3COCH3}$　③ アセトフェノン（メチルフェニルケトン）$\\ce{C6H5COCH3}$　④ ベンジルアルコール $\\ce{C6H5CH2OH}$　⑤ アニソール（メチルフェニルエーテル）$\\ce{C6H5OCH3}$"
+   },
+   {
+    "id": "2",
+    "tex": "①と②（$\\ce{C3H6O}$），④と⑤（$\\ce{C7H8O}$）"
+   },
+   {
+    "id": "3",
+    "tex": "エタン：(a) と (v)，(b) と (p)　　トルエン：(c) と (v)，(d) と (p)"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　基と原子団をつなげて示性式を書き，官能基から名称を決める．\n① $\\ce{C2H5}-\\ce{CHO}$ はアルデヒドで，$\\boldsymbol{\\text{プロピオンアルデヒド}}$ $\\ce{CH3CH2CHO}$．\n② $\\ce{CH3}-\\ce{COCH3}$ はケトンで，$\\boldsymbol{\\text{アセトン}}$ $\\ce{CH3COCH3}$．\n③ $\\ce{C6H5}-\\ce{COCH3}$ はベンゼン環とメチル基がカルボニル基をはさむケトンで，$\\boldsymbol{\\text{アセトフェノン}}$ $\\ce{C6H5COCH3}$．\n④ $\\ce{C6H5CH2}-\\ce{OH}$ は −OH がベンゼン環に直接ではなく $\\ce{CH2}$ についているのでアルコールで，$\\boldsymbol{\\text{ベンジルアルコール}}$．\n⑤ $\\ce{C6H5}-\\ce{OCH3}$ は −O− で 2 つの炭化水素基がつながったエーテルで，$\\boldsymbol{\\text{アニソール}}$（メチルフェニルエーテル）．\n\n\\textbf{(2)}　分子式を数える．① $\\ce{C3H6O}$，② $\\ce{C3H6O}$，③ $\\ce{C8H8O}$，④ $\\ce{C7H8O}$，⑤ $\\ce{C7H8O}$．\nしたがって \\textbf{①と②}（アルデヒドとケトン），\\textbf{④と⑤}（アルコールとエーテル）が異性体である．どちらも官能基の種類が異なる異性体で，「同じ分子式でも性質が大きく違う」例になっている（④は $\\ce{Na}$ と反応するが⑤は反応しない，など）．\n\n\\textbf{(3)}　原子団 (v) $-\\ce{CH3}$ は炭化水素基 (a) と同じものなので，「(x) に $\\ce{CH3}$ をつけたもの」と「(x) より $\\ce{CH2}$ 1 つ分長い基に H をつけたもの」が一致することがある．\n$\\ce{CH3}-\\ce{CH3}$（(a) と (v)）と $\\ce{C2H5}-\\ce{H}$（(b) と (p)）はどちらも $\\boldsymbol{\\text{エタン}}$ $\\ce{C2H6}$．\n$\\ce{C6H5}-\\ce{CH3}$（(c) と (v)）と $\\ce{C6H5CH2}-\\ce{H}$（(d) と (p)）はどちらも $\\boldsymbol{\\text{トルエン}}$ $\\ce{C6H5CH3}$．\nほかの組合せはすべて異なる化合物になる（28 通りから 26 種類）．名称は「どこで切って考えるか」によらず，できた分子そのものに対して 1 つに決まることに注意する．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "化合物名は「炭化水素基＋官能基（原子団）」の組合せとして読み書きでき，分子式を数えると官能基の種類が違う異性体（アルデヒドとケトン，アルコールとエーテル）が見つかる．逆に，切り方が違うだけで同じ分子になる組合せもある．"
+ },
+ "concepts": [
+  "organic-structure",
+  "hydrocarbon",
+  "alcohol-carbonyl"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "化合物名",
+  "示性式",
+  "官能基",
+  "異性体",
+  "炭化水素基"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" font-family="Noto Sans CJK JP, sans-serif" font-size="14">
+<line x1="107.5" y1="240" x2="107.5" y2="60" stroke="currentColor" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.5"/>
+<line x1="155.0" y1="240" x2="155.0" y2="60" stroke="currentColor" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.5"/>
+<line x1="202.5" y1="240" x2="202.5" y2="60" stroke="currentColor" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.5"/>
+<line x1="250.0" y1="240" x2="250.0" y2="60" stroke="currentColor" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.5"/>
+<line x1="60" y1="210.0" x2="250" y2="210.0" stroke="currentColor" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.5"/>
+<line x1="60" y1="180.0" x2="250" y2="180.0" stroke="currentColor" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.5"/>
+<line x1="60" y1="150.0" x2="250" y2="150.0" stroke="currentColor" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.5"/>
+<line x1="60" y1="120.0" x2="250" y2="120.0" stroke="currentColor" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.5"/>
+<line x1="60" y1="90.0" x2="250" y2="90.0" stroke="currentColor" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.5"/>
+<line x1="60" y1="60.0" x2="250" y2="60.0" stroke="currentColor" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.5"/>
+<line x1="60" y1="240" x2="262" y2="240" stroke="currentColor" stroke-width="1.5"/>
+<line x1="60" y1="240" x2="60" y2="48" stroke="currentColor" stroke-width="1.5"/>
+<text x="54" y="256" text-anchor="end" fill="currentColor">0</text>
+<text x="107.5" y="258" text-anchor="middle" fill="currentColor" font-size="13">100</text>
+<text x="155.0" y="258" text-anchor="middle" fill="currentColor" font-size="13">200</text>
+<text x="202.5" y="258" text-anchor="middle" fill="currentColor" font-size="13">300</text>
+<text x="250.0" y="258" text-anchor="middle" fill="currentColor" font-size="13">400</text>
+<text x="54" y="215.0" text-anchor="end" fill="currentColor" font-size="13">1</text>
+<text x="54" y="185.0" text-anchor="end" fill="currentColor" font-size="13">2</text>
+<text x="54" y="155.0" text-anchor="end" fill="currentColor" font-size="13">3</text>
+<text x="54" y="125.0" text-anchor="end" fill="currentColor" font-size="13">4</text>
+<text x="54" y="95.0" text-anchor="end" fill="currentColor" font-size="13">5</text>
+<text x="54" y="65.0" text-anchor="end" fill="currentColor" font-size="13">6</text>
+<text x="155.0" y="280" text-anchor="middle" fill="currentColor">絶対温度 T [K]</text>
+<text x="52" y="40" text-anchor="middle" fill="currentColor">体積 V [L]</text>
+<text x="155.0" y="38" text-anchor="middle" fill="currentColor" font-size="15">(a)</text>
+<line x1="60" y1="240" x2="250.0" y2="60.0" stroke="currentColor" stroke-width="2"/>
+<text x="256.0" y="65.0" fill="currentColor">p<tspan baseline-shift="sub" font-size="10">2</tspan></text>
+<line x1="60" y1="240" x2="250.0" y2="120.0" stroke="currentColor" stroke-width="2"/>
+<text x="256.0" y="125.0" fill="currentColor">p<tspan baseline-shift="sub" font-size="10">3</tspan></text>
+<line x1="60" y1="240" x2="250.0" y2="180.0" stroke="currentColor" stroke-width="2"/>
+<text x="256.0" y="185.0" fill="currentColor">p<tspan baseline-shift="sub" font-size="10">1</tspan></text>
+<line x1="398.0" y1="240" x2="398.0" y2="60" stroke="currentColor" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.5"/>
+<line x1="436.0" y1="240" x2="436.0" y2="60" stroke="currentColor" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.5"/>
+<line x1="474.0" y1="240" x2="474.0" y2="60" stroke="currentColor" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.5"/>
+<line x1="512.0" y1="240" x2="512.0" y2="60" stroke="currentColor" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.5"/>
+<line x1="550.0" y1="240" x2="550.0" y2="60" stroke="currentColor" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.5"/>
+<line x1="360" y1="195.0" x2="550" y2="195.0" stroke="currentColor" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.5"/>
+<line x1="360" y1="150.0" x2="550" y2="150.0" stroke="currentColor" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.5"/>
+<line x1="360" y1="105.0" x2="550" y2="105.0" stroke="currentColor" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.5"/>
+<line x1="360" y1="60.0" x2="550" y2="60.0" stroke="currentColor" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.5"/>
+<line x1="360" y1="240" x2="562" y2="240" stroke="currentColor" stroke-width="1.5"/>
+<line x1="360" y1="240" x2="360" y2="48" stroke="currentColor" stroke-width="1.5"/>
+<text x="354" y="256" text-anchor="end" fill="currentColor">0</text>
+<text x="398.0" y="258" text-anchor="middle" fill="currentColor" font-size="13">0.1</text>
+<text x="436.0" y="258" text-anchor="middle" fill="currentColor" font-size="13">0.2</text>
+<text x="474.0" y="258" text-anchor="middle" fill="currentColor" font-size="13">0.3</text>
+<text x="512.0" y="258" text-anchor="middle" fill="currentColor" font-size="13">0.4</text>
+<text x="550.0" y="258" text-anchor="middle" fill="currentColor" font-size="13">0.5</text>
+<text x="354" y="200.0" text-anchor="end" fill="currentColor" font-size="13">1</text>
+<text x="354" y="155.0" text-anchor="end" fill="currentColor" font-size="13">2</text>
+<text x="354" y="110.0" text-anchor="end" fill="currentColor" font-size="13">3</text>
+<text x="354" y="65.0" text-anchor="end" fill="currentColor" font-size="13">4</text>
+<text x="455.0" y="280" text-anchor="middle" fill="currentColor">1/V [L⁻¹]</text>
+<text x="352" y="40" text-anchor="middle" fill="currentColor">圧力 p [×10⁵ Pa]</text>
+<text x="455.0" y="38" text-anchor="middle" fill="currentColor" font-size="15">(b)</text>
+<line x1="360" y1="240" x2="550.0" y2="60.0" stroke="currentColor" stroke-width="2"/>
+<text x="556.0" y="65.0" fill="currentColor">T<tspan baseline-shift="sub" font-size="10">A</tspan></text>
+<line x1="360" y1="240" x2="550.0" y2="150.0" stroke="currentColor" stroke-width="2"/>
+<text x="556.0" y="155.0" fill="currentColor">T<tspan baseline-shift="sub" font-size="10">B</tspan></text>
+<line x1="360" y1="240" x2="550.0" y2="105.0" stroke="currentColor" stroke-width="2"/>
+<text x="556.0" y="110.0" fill="currentColor">T<tspan baseline-shift="sub" font-size="10">C</tspan></text>
+</svg>

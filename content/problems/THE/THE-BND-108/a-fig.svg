@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 270" width="700" height="270">
+<text x="190.0" y="18" text-anchor="middle" font-size="14" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">(ア) 単位格子の一辺 a / nm</text>
+<line x1="50" y1="230" x2="330" y2="230" stroke="currentColor"/>
+<line x1="50" y1="30" x2="50" y2="230" stroke="currentColor"/>
+<text x="330" y="264" text-anchor="end" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">温度 / ℃</text>
+<text x="14" y="130.0" text-anchor="middle" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor" transform="rotate(-90 14 130.0)">a / nm</text>
+<line x1="94.80000000000001" y1="30" x2="94.80000000000001" y2="230" stroke="currentColor" stroke-dasharray="4 3" opacity="0.5"/>
+<text x="94.80000000000001" y="247" text-anchor="middle" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">912</text>
+<line x1="287.6" y1="30" x2="287.6" y2="230" stroke="currentColor" stroke-dasharray="4 3" opacity="0.5"/>
+<text x="287.6" y="247" text-anchor="middle" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">1394</text>
+<line x1="50.0" y1="210.2" x2="94.8" y2="209.2" stroke="#1f5fbf" stroke-width="2.5"/>
+<text x="72.4" y="201.2" text-anchor="middle" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">α</text>
+<line x1="94.8" y1="60.6" x2="287.6" y2="52.6" stroke="#1f5fbf" stroke-width="2.5"/>
+<text x="191.2" y="44.6" text-anchor="middle" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">γ</text>
+<line x1="287.6" y1="203.6" x2="330.0" y2="202.8" stroke="#1f5fbf" stroke-width="2.5"/>
+<text x="308.8" y="194.8" text-anchor="middle" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">δ</text>
+<text x="46" y="214.0" text-anchor="end" font-size="11" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">0.29</text>
+<text x="46" y="134.0" text-anchor="end" font-size="11" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">0.33</text>
+<text x="46" y="54.0" text-anchor="end" font-size="11" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">0.37</text><text x="550.0" y="18" text-anchor="middle" font-size="14" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">(イ) 原子1個あたりの体積</text>
+<line x1="410" y1="230" x2="690" y2="230" stroke="currentColor"/>
+<line x1="410" y1="30" x2="410" y2="230" stroke="currentColor"/>
+<text x="690" y="264" text-anchor="end" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">温度 / ℃</text>
+<text x="374" y="130.0" text-anchor="middle" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor" transform="rotate(-90 374 130.0)">V / 10⁻² nm³</text>
+<line x1="454.8" y1="30" x2="454.8" y2="230" stroke="currentColor" stroke-dasharray="4 3" opacity="0.5"/>
+<text x="454.8" y="247" text-anchor="middle" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">912</text>
+<line x1="647.6" y1="30" x2="647.6" y2="230" stroke="currentColor" stroke-dasharray="4 3" opacity="0.5"/>
+<text x="647.6" y="247" text-anchor="middle" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">1394</text>
+<line x1="410.0" y1="178.0" x2="454.8" y2="168.8" stroke="#1f5fbf" stroke-width="2.5"/>
+<text x="432.4" y="160.8" text-anchor="middle" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">α</text>
+<line x1="454.8" y1="198.3" x2="647.6" y2="97.5" stroke="#1f5fbf" stroke-width="2.5"/>
+<text x="551.2" y="89.5" text-anchor="middle" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">γ</text>
+<line x1="647.6" y1="79.3" x2="690.0" y2="67.5" stroke="#1f5fbf" stroke-width="2.5"/>
+<text x="668.8" y="59.5" text-anchor="middle" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">δ</text>
+<text x="406" y="209.0" text-anchor="end" font-size="11" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">1.21</text>
+<text x="406" y="134.0" text-anchor="end" font-size="11" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">1.24</text>
+<text x="406" y="59.0" text-anchor="end" font-size="11" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">1.27</text>
+</svg>

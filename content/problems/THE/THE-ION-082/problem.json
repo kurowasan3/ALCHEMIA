@@ -1,0 +1,110 @@
+{
+ "id": "THE-ION-082",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "緩衝液に用いる酸の選び方と温度による緩衝液の pH の変化",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "compare",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "弱酸 HA とその共役塩基 $\\ce{A-}$ を混ぜた緩衝液の pH は $\\mathrm{pH}=\\mathrm{p}K_\\mathrm{a}+\\log_{10}\\dfrac{[\\ce{A-}]}{[\\ce{HA}]}$ で表され，温度を変えても $[\\ce{A-}]/[\\ce{HA}]$ はほとんど変わらないとする．次の表は 3 種類の酸の $\\mathrm{p}K_\\mathrm{a}$（$=-\\log_{10}K_\\mathrm{a}$）である．水のイオン積の温度変化は考えなくてよい．\n\\[ \\begin{array}{c|c|c} \\text{酸の電離} & 25\\,{}^\\circ\\mathrm{C} & 5\\,{}^\\circ\\mathrm{C}\\\\ \\hline \\ce{CH3COOH <=> CH3COO- + H+} & 4.76 & 4.77\\\\ \\ce{H2PO4- <=> HPO4^2- + H+} & 7.21 & 7.27\\\\ \\ce{NH4+ <=> NH3 + H+} & 9.25 & 9.90 \\end{array} \\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "pH 5.0，7.0，9.0 の緩衝液をつくるのに，それぞれどの酸とその共役塩基の組を用いるのが最も適当か．また，そのように選ぶ理由を答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$25\\,{}^\\circ\\mathrm{C}$ で pH を 5.00 にした酢酸緩衝液，7.00 にしたリン酸緩衝液，9.00 にしたアンモニア緩衝液を，それぞれ $5\\,{}^\\circ\\mathrm{C}$ に冷やした．それぞれの pH を小数第 2 位まで求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "3 つの酸のうち，電離が最も大きく吸熱である（電離熱の絶対値が最も大きい）ものはどれか．また，吸熱であると冷やしたとき $\\mathrm{p}K_\\mathrm{a}$ が大きくなる理由を，平衡の移動の考えで説明せよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$5\\,{}^\\circ\\mathrm{C}$ で pH 9.00 のアンモニア緩衝液を使いたい．$25\\,{}^\\circ\\mathrm{C}$ で調製して冷やす場合，$25\\,{}^\\circ\\mathrm{C}$ で pH をいくらに合わせておけばよいか．小数第 2 位まで答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "pH 5.0：$\\ce{CH3COOH}$ と $\\ce{CH3COO-}$，pH 7.0：$\\ce{H2PO4-}$ と $\\ce{HPO4^2-}$，pH 9.0：$\\ce{NH4+}$ と $\\ce{NH3}$．目的の pH に $\\mathrm{p}K_\\mathrm{a}$ が近い組ほど酸と塩基を同程度の濃度で含み，加えた酸・塩基のどちらにも強い緩衝作用を示すから"
+   },
+   {
+    "id": "2",
+    "tex": "酢酸 5.01，リン酸 7.06，アンモニア 9.65"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{NH4+}$．電離が吸熱なら，冷やすと平衡は発熱の向き（電離しない向き）に移動して $K_\\mathrm{a}$ が小さくなり，$\\mathrm{p}K_\\mathrm{a}$ が大きくなるから"
+   },
+   {
+    "id": "4",
+    "tex": "8.35"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\mathrm{pH}=\\mathrm{p}K_\\mathrm{a}$ のとき $[\\ce{A-}]=[\\ce{HA}]$ で，加えた $\\ce{H+}$ を $\\ce{A-}$ が，加えた $\\ce{OH-}$ を HA がどちらも十分に受け止められる．$\\mathrm{p}K_\\mathrm{a}$ から離れると一方が少なくなり緩衝作用が弱まる．そこで pH 5.0 には $\\mathrm{p}K_\\mathrm{a}=4.76$ の\\textbf{酢酸}，7.0 には $7.21$ の \\textbf{$\\ce{H2PO4-}$/$\\ce{HPO4^2-}$}，9.0 には $9.25$ の \\textbf{$\\ce{NH4+}$/$\\ce{NH3}$} を選ぶ．\n\n\\textbf{(2)} 比 $[\\ce{A-}]/[\\ce{HA}]$ は変わらないので，$\\log_{10}$（比）$=\\mathrm{pH}-\\mathrm{p}K_\\mathrm{a}$ を $25\\,{}^\\circ\\mathrm{C}$ で求めて $5\\,{}^\\circ\\mathrm{C}$ の $\\mathrm{p}K_\\mathrm{a}$ に足せばよい．\n酢酸：$5.00-4.76=0.24$，$4.77+0.24=\\boldsymbol{5.01}$．\nリン酸：$7.00-7.21=-0.21$，$7.27-0.21=\\boldsymbol{7.06}$．\nアンモニア：$9.00-9.25=-0.25$，$9.90-0.25=\\boldsymbol{9.65}$．\npH の変化は $\\mathrm{p}K_\\mathrm{a}$ の変化に等しい．\n\n\\textbf{(3)} $\\mathrm{p}K_\\mathrm{a}$ の変化は酢酸 $+0.01$，リン酸 $+0.06$，アンモニウムイオン $+0.65$ で，$\\boldsymbol{\\ce{NH4+}}$ が最も大きい．電離が吸熱反応なら，冷却すると平衡は発熱の向き，すなわち電離が戻る向きに移動するので $K_\\mathrm{a}$ が小さくなり $\\mathrm{p}K_\\mathrm{a}$ は大きくなる．変化が大きいほど電離熱（吸熱）が大きい．酢酸はほとんど変わらないので電離熱はほぼ 0 である．\n\n\\textbf{(4)} $5\\,{}^\\circ\\mathrm{C}$ で pH 9.00 なら $\\log_{10}$（比）$=9.00-9.90=-0.90$．$25\\,{}^\\circ\\mathrm{C}$ では $9.25-0.90=\\boldsymbol{8.35}$ に合わせておく．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "緩衝液は目的の pH に $\\mathrm{p}K_\\mathrm{a}$ が近い弱酸と共役塩基の組でつくる．温度を変えても濃度比は変わらないので，pH の変化は $\\mathrm{p}K_\\mathrm{a}$ の変化に等しく，電離が吸熱な酸ほど冷却で $\\mathrm{p}K_\\mathrm{a}$ と pH が大きく上がる．使う温度の $\\mathrm{p}K_\\mathrm{a}$ から逆算して調製時の pH を決める．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "nitrogen-phosphorus",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "緩衝液",
+  "電離定数",
+  "温度",
+  "ルシャトリエの原理",
+  "リン酸",
+  "アンモニア"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

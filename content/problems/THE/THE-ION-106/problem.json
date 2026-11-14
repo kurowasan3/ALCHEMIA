@@ -1,0 +1,109 @@
+{
+ "id": "THE-ION-106",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "医薬品の弱塩基の電離平衡（pH からの濃度の逆算・生理的 pH での陽イオン形の割合・希釈）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "窒素原子をもつ医薬品の多くは1価の弱塩基で，水中で次の電離平衡にある（塩基を B，$\\ce{H+}$ が結合したものを $\\ce{BH+}$ と書く）．\n\\[ \\ce{B + H2O <=>[\\text{}] BH+ + OH-}\\qquad K_\\mathrm{b}=\\frac{[\\ce{BH+}][\\ce{OH-}]}{[\\ce{B}]}=1.0\\times10^{-6}\\,\\mathrm{mol/L} \\]\n$25\\,^\\circ\\mathrm C$ で考え，水のイオン積 $K_\\mathrm w=1.0\\times10^{-14}\\,(\\mathrm{mol/L})^{2}$，$\\log_{10}2=0.30$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "B の塩酸塩 $\\ce{BHCl}$ を水に溶かした水溶液は酸性・中性・塩基性のどれを示すか．"
+     },
+     {
+      "id": "2",
+      "tex": "B だけを純水に溶かして $2.00\\,\\mathrm L$ とした水溶液の pH は $9.00$ であった．溶かした B の物質量を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "緩衝液で pH を $7.40$ に保った水溶液中での $[\\ce{BH+}]/[\\ce{B}]$ を有効数字2桁で求めよ．また，この pH で多く存在するのは $\\ce{BH+}$ と B のどちらか．"
+     },
+     {
+      "id": "4",
+      "tex": "(2) の水溶液を純水で 10 倍にうすめると，$[\\ce{BH+}]$ はもとの $\\dfrac{1}{10}$ より大きくなるか，小さくなるか，ちょうど $\\dfrac{1}{10}$ になるか．理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "酸性"
+   },
+   {
+    "id": "2",
+    "tex": "$2.2\\times10^{-4}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "$4.0$，$\\ce{BH+}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\dfrac{1}{10}$ より大きくなる（うすめると電離平衡が右に移り，電離する割合が増えるため）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　$\\ce{BH+}$ は弱塩基の共役酸なので，$\\ce{BH+ + H2O <=>[\\text{}] B + H3O+}$ と $\\ce{H+}$ を水に与え，\\textbf{酸性}を示す．\n\n\\textbf{(2)}　pH $9.00$ より $[\\ce{OH-}]=1.0\\times10^{-5}\\,\\mathrm{mol/L}$．$[\\ce{H+}]=1.0\\times10^{-9}$ は無視できるので，電荷のつり合いより $[\\ce{BH+}]=[\\ce{OH-}]=1.0\\times10^{-5}\\,\\mathrm{mol/L}$．\n\\[ [\\ce{B}]=\\frac{[\\ce{BH+}][\\ce{OH-}]}{K_\\mathrm b}=\\frac{(1.0\\times10^{-5})^{2}}{1.0\\times10^{-6}}=1.0\\times10^{-4}\\,\\mathrm{mol/L} \\]\n溶かした B の濃度は $[\\ce{B}]+[\\ce{BH+}]=1.1\\times10^{-4}\\,\\mathrm{mol/L}$ なので，物質量は $1.1\\times10^{-4}\\times2.00=\\boldsymbol{2.2\\times10^{-4}\\,\\mathrm{mol}}$．\n（電離した割合は約 $9\\,\\%$ で，$[\\ce{B}]$ を溶かした量と等しいとおく近似では 1 割ほどずれる．）\n\n\\textbf{(3)}　pH $7.40$ では pOH $=6.60$，$[\\ce{OH-}]=10^{-6.60}$．\n\\[ \\frac{[\\ce{BH+}]}{[\\ce{B}]}=\\frac{K_\\mathrm b}{[\\ce{OH-}]}=\\frac{10^{-6.00}}{10^{-6.60}}=10^{0.60}=\\boldsymbol{4.0}\\qquad(\\log_{10}4=2\\times0.30=0.60) \\]\nしたがって多く存在するのは $\\boldsymbol{\\ce{BH+}}$（約 8 割）．pH が $\\mathrm pK_\\mathrm a=14-\\mathrm pK_\\mathrm b=8.0$ より小さいので陽イオン形が多い．\n\n\\textbf{(4)}　うすめると平衡 $\\ce{B + H2O <=>[\\text{}] BH+ + OH-}$ は粒子の数が増える右向きに移り，電離する割合が大きくなる．そのため $[\\ce{BH+}]$ は濃度の減少ほどには減らず，\\textbf{もとの $\\dfrac{1}{10}$ より大きくなる}（計算すると約 $0.29$ 倍）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "弱塩基の溶液の pH から [OH⁻]=[BH⁺] を出し，Kb で [B] を求めて加えると溶かした量が逆算できる．[BH⁺]/[B]=Kb/[OH⁻] なので生理的 pH では pKa との大小で陽イオン形と分子形のどちらが多いかが決まり，うすめると電離の割合が増えるので [BH⁺] は濃度ほどには減らない．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "concentration",
+  "ph"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "弱塩基",
+  "電離定数",
+  "pH",
+  "共役酸",
+  "希釈"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

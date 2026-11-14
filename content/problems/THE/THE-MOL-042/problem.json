@@ -1,0 +1,102 @@
+{
+ "id": "THE-MOL-042",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-04",
+ "topic": "物質量の単位を変えたときの平衡定数・pH・物理定数の変化",
+ "course": "化学",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "物質量の単位を作り直し，「粒子 $6.02\\times10^{22}$ 個（現在の $\\tfrac{1}{10}\\,\\mathrm{mol}$ にあたる粒子数）の集団」を新しい単位 $1\\,\\mathrm{mol^*}$ と定めたとする．長さ・質量・体積・圧力・温度・電気量・エネルギーの単位（$\\mathrm{L}$，$\\mathrm{g}$，$\\mathrm{Pa}$，$\\mathrm{K}$，$\\mathrm{C}$，$\\mathrm{J}$ など）は変えない．濃度は $\\mathrm{mol^*/L}$，質量モル濃度は $\\mathrm{mol^*/kg}$ で表し，pH は $\\mathrm{pH^*}=-\\log_{10}\\,[\\ce{H+}]^*$（$[\\ce{H+}]^*$ は $\\mathrm{mol^*/L}$ 単位の数値）と定義する．$25\\,^\\circ\\mathrm{C}$ の水のイオン積は現在の単位で $1.0\\times10^{-14}\\,(\\mathrm{mol/L})^2$ である．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "次の①〜⑧の数値は，新しい単位で表すと現在の何倍になるか．\\\\\n① $\\ce{N2O4 <=> 2NO2}$ の濃度平衡定数　② $\\ce{H2 + I2 <=> 2HI}$ の濃度平衡定数　③ $\\ce{N2O4 <=> 2NO2}$ の圧平衡定数（$\\mathrm{Pa}$ 単位）　④ 水のイオン積　⑤ $\\ce{Ag2CrO4}$ の溶解度積　⑥ ファラデー定数　⑦ 気体定数　⑧ 水のモル凝固点降下"
+     },
+     {
+      "id": "2",
+      "tex": "$25\\,^\\circ\\mathrm{C}$ の純水の $\\mathrm{pH^*}$ を求めよ．また，$25\\,^\\circ\\mathrm{C}$ で $\\mathrm{pH^*}=6.5$ の水溶液は，酸性・中性・塩基性のどれか．"
+     },
+     {
+      "id": "3",
+      "tex": "次の (a)〜(e) のうち，単位を変えても数値が変わらないものをすべて選べ．\\\\\n(a) 現在の単位で $0.10\\,\\mathrm{mol/L}$ の酢酸水溶液の電離度　(b) 強酸の水溶液を水で 10 倍に薄めたときの pH の変化量　(c) ある水溶液の凝固点降下度　(d) $\\ce{2NO2 <=> N2O4}$ の濃度平衡定数　(e) フェノールフタレインが変色する pH の範囲"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "① 10 倍　② 1 倍（変わらない）　③ 1 倍（変わらない）　④ 100 倍　⑤ 1000 倍　⑥ $\\tfrac{1}{10}$ 倍　⑦ $\\tfrac{1}{10}$ 倍　⑧ $\\tfrac{1}{10}$ 倍"
+   },
+   {
+    "id": "2",
+    "tex": "$\\mathrm{pH^*}=6.0$，塩基性"
+   },
+   {
+    "id": "3",
+    "tex": "(a)，(b)，(c)"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　同じ量の物質を新しい単位で数えると，$1\\,\\mathrm{mol^*}$ が今の $\\tfrac{1}{10}\\,\\mathrm{mol}$ なので，物質量の数値は 10 倍になる．したがって，単位に $\\mathrm{mol}$ が $k$ 乗で含まれる量は $10^k$ 倍（分母にあれば $k<0$）になる．実際に起こる現象（粒子の数，質量，体積，圧力，温度変化）は単位の決め方によらない．\n\n\\textbf{(1)}　① 単位は $\\dfrac{(\\mathrm{mol/L})^2}{\\mathrm{mol/L}}=\\mathrm{mol/L}$ → $\\boldsymbol{10\\,\\text{倍}}$．（濃度がすべて 10 倍になるので $\\tfrac{10^2}{10}=10$ 倍と確かめてもよい．）\n② 両辺の係数の和が等しく単位がない → \\textbf{変わらない}．\n③ $\\mathrm{Pa}$ は物質量を含まない → \\textbf{変わらない}．\n④ $(\\mathrm{mol/L})^2$ → $\\boldsymbol{100\\,\\text{倍}}$．\n⑤ $[\\ce{Ag+}]^2[\\ce{CrO4^2-}]$ で $(\\mathrm{mol/L})^3$ → $\\boldsymbol{1000\\,\\text{倍}}$．\n⑥ $\\mathrm{C/mol}$ → $\\boldsymbol{\\tfrac{1}{10}\\,\\text{倍}}$（$1\\,\\mathrm{mol^*}$ の電子のもつ電気量は 10 分の 1）．\n⑦ $\\mathrm{Pa\\cdot L/(K\\cdot mol)}$ → $\\boldsymbol{\\tfrac{1}{10}\\,\\text{倍}}$．\n⑧ $\\mathrm{K\\cdot kg/mol}$ → $\\boldsymbol{\\tfrac{1}{10}\\,\\text{倍}}$．\n一般に，濃度平衡定数は $(\\mathrm{mol/L})^{\\Delta n}$（$\\Delta n$＝右辺の係数の和−左辺の係数の和）の単位をもつので $10^{\\Delta n}$ 倍になる．\n\n\\textbf{(2)}　水のイオン積は $1.0\\times10^{-12}\\,(\\mathrm{mol^*/L})^2$ になる．純水では $[\\ce{H+}]^*=[\\ce{OH-}]^*$ なので $[\\ce{H+}]^*=1.0\\times10^{-6}$，$\\boldsymbol{\\mathrm{pH^*}=6.0}$．\n「中性は pH 7」は単位の決め方に依存した数値にすぎない．新しい単位では中性が $\\mathrm{pH^*}=6.0$ なので，$\\mathrm{pH^*}=6.5$ は中性より $[\\ce{H+}]$ が小さく，$\\boldsymbol{\\text{塩基性}}$．（現在の単位にもどすと $[\\ce{H+}]=10^{-7.5}\\,\\mathrm{mol/L}$，pH $7.5$．）一般に $\\mathrm{pH^*}=\\mathrm{pH}-1$ である．\n\n\\textbf{(3)}　(a) 電離度は物質量の比なので変わらない．実際，$\\alpha=\\sqrt{K_{\\mathrm a}/c}$ で $K_{\\mathrm a}$ も $c$ も 10 倍になり，比は同じ．\n(b) $[\\ce{H+}]$ が $\\tfrac{1}{10}$ になれば，どちらの単位でも pH は 1 増える．差は変わらない．\n(c) 凝固点降下度は温度差（実際に測る量）である．$\\Delta T=K_{\\mathrm f}\\,m$ で $K_{\\mathrm f}$ は $\\tfrac{1}{10}$ 倍，$m$ は 10 倍になり，積は同じ．\n(d) $\\Delta n=-1$ なので $\\tfrac{1}{10}$ 倍に変わる．\n(e) 変色は実際の $[\\ce{H+}]$ で決まるが，それを表す pH の数値は 1 小さくなる（$8.0\\sim9.8$ が $7.0\\sim8.8$）．\nよって変わらないのは $\\boldsymbol{\\text{(a)，(b)，(c)}}$．物質量の比・温度差・pH の差のように，単位の取り方が打ち消し合う量だけが不変である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "物質量の単位を変えると，単位に mol を k 乗で含む量（濃度平衡定数は (mol/L)^Δn，水のイオン積，溶解度積，F，R，K_f など）は 10^k 倍に変わり，Δn=0 の平衡定数や Pa 単位の圧平衡定数は変わらない．中性の pH が 7 であることも単位の決め方に依存する．電離度・pH の差・凝固点降下度のように実際に観測される量や比は単位によらない．"
+ },
+ "concepts": [
+  "mole",
+  "precipitation",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "物質量",
+  "平衡定数",
+  "水のイオン積",
+  "pH",
+  "単位",
+  "次元"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

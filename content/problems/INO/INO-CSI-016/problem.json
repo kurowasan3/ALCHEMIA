@@ -1,0 +1,109 @@
+{
+ "id": "INO-CSI-016",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-04",
+ "topic": "アンモニウム形を経由する H 形ゼオライトの調製と酸点の量",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "pathway",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ゼオライトは，$\\ce{SiO4}$ 四面体と $\\ce{AlO4}$ 四面体が頂点の O を共有してつながった網目をもつケイ酸塩で，Al を含む四面体 1 つごとに生じる負電荷を，すき間にある陽イオンが打ち消している．ここでは，脱水した Na 形ゼオライトの組成式を $\\ce{NaAlSi2O6}$ とする．\\\\\nすき間の陽イオンが $\\ce{H+}$ である H 形ゼオライトは固体の酸触媒として使われる．しかし Na 形を塩酸で直接処理すると，網目の Al が $\\ce{Al^3+}$ として溶け出して骨格がこわれてしまう．そこで，Na 形を塩化アンモニウム水溶液で処理して $\\ce{NH4+}$ 形にしたあと，乾燥させて 400 ℃ 程度に加熱する．\\\\\n原子量は H = 1.0，N = 14，O = 16，Na = 23，Al = 27，Si = 28 とし，標準状態の気体のモル体積を 22.4 L/mol とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "Na 形を $\\ce{NH4+}$ 形にする反応と，$\\ce{NH4+}$ 形を加熱して H 形にする反応を，それぞれ組成式を使った反応式で書け．"
+     },
+     {
+      "id": "2",
+      "tex": "塩酸で直接処理すると骨格がこわれるのに，この方法で H 形にできるのはなぜか．加熱で何が起こるかに着目して説明せよ．"
+     },
+     {
+      "id": "3",
+      "tex": "Na 形 10.0 g をすべて $\\ce{NH4+}$ 形に変え，さらにすべて H 形にした．$\\ce{NH4+}$ 形と H 形の質量，および加熱で出ていく気体の標準状態での体積を，それぞれ有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "Si/Al 比が 5 の H 形ゼオライト（組成式 $\\ce{HAlSi5O12}$）と，(3) の H 形（Si/Al 比 2）とで，1 g あたりの $\\ce{H+}$ の物質量（酸点の数）を比べ，何倍か答えよ（有効数字 2 桁）．また，酸に対して骨格がこわれにくいのはどちらと考えられるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{NaAlSi2O6 + NH4+ -> NH4AlSi2O6 + Na+}$，$\\ce{NH4AlSi2O6 -> HAlSi2O6 + NH3}$"
+   },
+   {
+    "id": "2",
+    "tex": "溶液中で強い酸にさらさずに，イオン交換で入れた $\\ce{NH4+}$ を加熱で分解し，$\\ce{NH3}$ だけを気体として追い出して $\\ce{H+}$ を骨格の上に残すから．"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{NH4+}$ 形 9.75 g，H 形 8.91 g，$\\ce{NH3}$ 1.11 L"
+   },
+   {
+    "id": "4",
+    "tex": "Si/Al 比 2 のほうが 2.0 倍多い．酸にこわれにくいのは Si/Al 比 5 のほう．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} すき間の $\\ce{Na+}$ が溶液の $\\ce{NH4+}$ と交換される（イオン交換）．\n\\[\\ce{NaAlSi2O6 + NH4+ -> NH4AlSi2O6 + Na+}\\]\n加熱すると $\\ce{NH4+}$ が $\\ce{NH3}$ と $\\ce{H+}$ に分かれ，$\\ce{NH3}$ は気体として出ていく．\n\\[\\ce{NH4AlSi2O6 -> HAlSi2O6 + NH3}\\]\n\\textbf{(2)} 塩酸で処理すると，$\\ce{H+}$ が網目の Al–O 結合を切り，たとえば全体では $\\ce{NaAlSi2O6 + 4HCl -> NaCl + AlCl3 + 2SiO2 + 2H2O}$ のように Al が溶け出して骨格がこわれる．一方，$\\ce{NH4+}$ はほぼ中性の水溶液中でイオン交換されるだけなので骨格を傷めない．そのあとの加熱では，$\\ce{NH4+}$ から $\\ce{NH3}$ だけが気体として抜け，$\\ce{H+}$ は網目の負電荷のところに残る．つまり，\\textbf{強い酸の溶液を使わずに $\\ce{H+}$ を骨格に置く}ことができる．\\\\\n\\textbf{(3)} 式量は $\\ce{NaAlSi2O6}=23+27+2\\times 28+6\\times 16=202$，$\\ce{NH4AlSi2O6}=197$，$\\ce{HAlSi2O6}=180$．Na 形の物質量は $\\dfrac{10.0}{202}=4.95\\times 10^{-2}\\ \\mathrm{mol}$ で，各段階で組成式の物質量は変わらない．\n\\[\\ce{NH4+}\\ \\text{形：}4.95\\times 10^{-2}\\times 197=\\boldsymbol{9.75\\ \\mathrm{g}}\\qquad \\text{H 形：}4.95\\times 10^{-2}\\times 180=\\boldsymbol{8.91\\ \\mathrm{g}}\\]\n出ていく $\\ce{NH3}$ は $4.95\\times 10^{-2}\\ \\mathrm{mol}$ なので，$4.95\\times 10^{-2}\\times 22.4=\\boldsymbol{1.11\\ \\mathrm{L}}$．\\\\\n\\textbf{(4)} $\\ce{H+}$ の数は Al の数に等しく，組成式 1 つに 1 個である．$\\ce{HAlSi5O12}$ の式量は $1+27+5\\times 28+12\\times 16=360$ なので，1 g あたりの $\\ce{H+}$ は\n\\[\\text{Si/Al}=2\\text{：}\\frac{1}{180}\\ \\mathrm{mol}\\qquad \\text{Si/Al}=5\\text{：}\\frac{1}{360}\\ \\mathrm{mol}\\]\nで，Si/Al 比 2 のほうが $\\boldsymbol{2.0}$ 倍多い．ただし酸で切られやすいのは Al–O 結合なので，Al の割合が小さい（Si/Al 比が大きい）\\textbf{Si/Al 比 5 のほうが酸に強い}．酸点の数と骨格の丈夫さは両立しにくい．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "酸に弱いアルミノケイ酸塩の骨格に H⁺ を入れるには，NH₄⁺ とイオン交換してから加熱し，NH₃ だけを気体として追い出して H⁺ を残す．組成式の物質量が保たれることから各段階の質量と放出される NH₃ の量が決まり，Si/Al 比が小さいほど酸点は多いが酸に対しては弱い．"
+ },
+ "concepts": [
+  "carbon-silicon",
+  "elemental-analysis",
+  "functional-polymer"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ゼオライト",
+  "イオン交換",
+  "固体酸",
+  "アンモニウムイオン",
+  "量的関係"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

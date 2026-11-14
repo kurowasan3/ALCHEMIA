@@ -1,0 +1,109 @@
+{
+ "id": "THE-BND-043",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-03",
+ "topic": "格子定数の系列から陰イオンどうしの接触を見抜きイオン半径を決める",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "1 価の陽イオン $\\ce{A+}$，$\\ce{B+}$ と 1 価の陰イオン $\\ce{X-}$，$\\ce{Y-}$ からなる 4 種類の化合物 AX，AY，BX，BY は，いずれも塩化ナトリウム型の結晶をつくる．単位格子の一辺の長さ $a$ の測定値は次のとおりである．\n\\[ \\begin{array}{c|cccc} \\text{化合物} & \\mathrm{AX} & \\mathrm{AY} & \\mathrm{BX} & \\mathrm{BY} \\\\ \\hline a\\ [\\mathrm{nm}] & 0.509 & 0.622 & 0.560 & 0.640 \\end{array} \\]\nイオンは化合物によらず一定の半径をもつ硬い球とみなし，次のモデルで考える．\n\n【モデル】塩化ナトリウム型の単位格子では，辺の上に陽イオンと陰イオンが交互に並び，面の対角線の上に陰イオンどうしが並ぶ．ふつうは辺の上で陽イオンと陰イオンが接しており，$a=2(r^{+}+r^{-})$ となる．ただし陽イオンが小さすぎると，面の対角線上で陰イオンどうしが接して $a$ が決まり，陽イオンは陰イオンに接しない．イオンが重なり合うことはない（$r^{+}$，$r^{-}$ はそれぞれ陽イオン，陰イオンの半径）．\n\n$\\sqrt2=1.414$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "4 種類の化合物すべてで陽イオンと陰イオンが接していると仮定すると，測定値と矛盾することを示せ．"
+     },
+     {
+      "id": "2",
+      "tex": "陰イオンどうしが接している化合物をすべて答えよ．また，$\\ce{X-}$ と $\\ce{Y-}$ の半径を有効数字 3 桁で，$\\ce{B+}$ の半径を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\ce{A+}$ の半径について，このデータから何がいえるか．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\ce{A+}$ と，半径 $0.140\\,\\mathrm{nm}$ の陰イオン $\\ce{Z-}$ からなる化合物 AZ も塩化ナトリウム型の結晶をつくるとする．AZ の単位格子の一辺の長さとしてありうる範囲を有効数字 3 桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "すべて陽イオンと陰イオンが接していれば $a(\\mathrm{AX})+a(\\mathrm{BY}) = a(\\mathrm{AY})+a(\\mathrm{BX})$ となるはずだが，左辺 $1.149\\,\\mathrm{nm}$，右辺 $1.182\\,\\mathrm{nm}$ で一致しない"
+   },
+   {
+    "id": "2",
+    "tex": "AX と AY．$\\ce{X-}$ $0.180\\,\\mathrm{nm}$，$\\ce{Y-}$ $0.220\\,\\mathrm{nm}$，$\\ce{B+}$ $0.10\\,\\mathrm{nm}$"
+   },
+   {
+    "id": "3",
+    "tex": "$0.075\\,\\mathrm{nm}$ 以下であることだけがいえ，値は決まらない"
+   },
+   {
+    "id": "4",
+    "tex": "$0.396\\,\\mathrm{nm} \\le a \\le 0.429\\,\\mathrm{nm}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{幾何の準備} 辺の上の陽イオン–陰イオンの中心間距離は $\\dfrac a2$，面の対角線上の陰イオンどうしの中心間距離は $\\dfrac{\\sqrt2}{2}a$ である．イオンが重ならないことから，どの化合物でも\n\\[ \\dfrac a2 \\ge r^{+}+r^{-},\\qquad \\dfrac{\\sqrt2}{2}a \\ge 2r^{-}\\ \\ \\text{すなわち}\\ \\ r^{-}\\le\\dfrac{a}{2\\sqrt2} \\]\nで，少なくとも一方は等号になる．陰イオンどうしが接していて，しかも陽イオンが陰イオンを押し広げない条件は $r^{+} \\le (\\sqrt2-1)r^{-} = 0.414\\,r^{-}$ である．\n\n\\textbf{(1)} すべて陽イオンと陰イオンが接しているなら $\\dfrac a2 = r^{+}+r^{-}$ だから\n\\[ a(\\mathrm{AX})+a(\\mathrm{BY}) = 2(r_\\mathrm{A}+r_\\mathrm{X}+r_\\mathrm{B}+r_\\mathrm{Y}) = a(\\mathrm{AY})+a(\\mathrm{BX}) \\]\nとなるはず．ところが $0.509+0.640=\\boldsymbol{1.149}$，$0.622+0.560=\\boldsymbol{1.182}$ で一致しない．よって少なくとも 1 つの化合物では陰イオンどうしが接している．\n\n\\textbf{(2)} \\textbf{陰イオン接触になりうる化合物の限定}：$r^{-}\\le\\dfrac{a}{2\\sqrt2}$ はその陰イオンを含むすべての化合物で成り立つので\n\\[ r_\\mathrm{X} \\le \\dfrac{0.509}{2.828} = 0.180,\\qquad r_\\mathrm{Y} \\le \\dfrac{0.622}{2.828} = 0.220 \\]\n（単位 nm，以下同じ）．BX で陰イオンどうしが接するなら $r_\\mathrm{X} = 0.560/2.828 = 0.198$ となり上の上限に反する．BY も同様（$0.226>0.220$）．よって BX，BY では陽イオンと陰イオンが接し\n\\[ r_\\mathrm{B}+r_\\mathrm{X}=0.280,\\qquad r_\\mathrm{B}+r_\\mathrm{Y}=0.320 \\quad\\therefore\\quad r_\\mathrm{Y}-r_\\mathrm{X}=0.040 \\]\n\\textbf{AX，AY の場合分け}：(1) より両方とも陽イオン–陰イオン接触ではない．\n・AY だけが陰イオン接触とすると $r_\\mathrm{Y}=0.220$，$r_\\mathrm{X}=0.180$，AX から $r_\\mathrm{A}=0.2545-0.180=0.0745$．このとき $r_\\mathrm{A}/r_\\mathrm{X}=0.414$ でちょうど限界値となり，AX でも陰イオンどうしが接している（両方の接触が同時に起きている）．\n・AX だけが陰イオン接触とすると $r_\\mathrm{X}=0.180$，$r_\\mathrm{Y}=0.220$，AY から $r_\\mathrm{A}=0.311-0.220=0.091$．すると $r_\\mathrm{A}/r_\\mathrm{X}=0.51>0.414$ で，AX では陽イオンが陰イオンを押し広げて $a=2(0.091+0.180)=0.542$ となるはずで，測定値 0.509 と矛盾する．\n・AX，AY とも陰イオン接触とすると $r_\\mathrm{X}=0.180$，$r_\\mathrm{Y}=0.220$ で，$r_\\mathrm{Y}-r_\\mathrm{X}=0.040$ と一致する．\n以上より，陰イオンどうしが接しているのは \\textbf{AX と AY}，\n\\[ r_\\mathrm{X}=\\boldsymbol{0.180\\,\\mathrm{nm}},\\quad r_\\mathrm{Y}=\\boldsymbol{0.220\\,\\mathrm{nm}},\\quad r_\\mathrm{B}=0.280-0.180=\\boldsymbol{0.10\\,\\mathrm{nm}} \\]\n（BY からも $0.320-0.220=0.10$ で一致．$r_\\mathrm{B}/r_\\mathrm{X}=0.56$，$r_\\mathrm{B}/r_\\mathrm{Y}=0.45$ はともに 0.414 以上で，陽イオン–陰イオン接触の仮定と矛盾しない．）\n\n\\textbf{(3)} AX，AY では $\\ce{A+}$ は陰イオンに接していないので，$a$ には $r_\\mathrm{A}$ が現れない．いえるのは陰イオンを押し広げない条件\n\\[ r_\\mathrm{A} \\le 0.414\\times0.180 \\fallingdotseq 0.0745 \\]\n（AY からの $0.414\\times0.220$ より厳しい）だけで，$\\boldsymbol{r_\\mathrm{A}\\le 0.075\\,\\mathrm{nm}}$ \\textbf{という上限しか決まらない}．\n\n\\textbf{(4)} $r_\\mathrm{A}$ が決まらないので場合分けする．限界値は $0.414\\times0.140 = 0.058$．\n・$r_\\mathrm{A}\\le0.058$ なら陰イオンどうしが接し，$a=2\\sqrt2\\times0.140=0.396$．\n・$0.058 \\le r_\\mathrm{A} \\le 0.0745$ なら陽イオンと陰イオンが接し，$a=2(r_\\mathrm{A}+0.140)$ は $0.396$ から $2(0.0745+0.140)=0.429$ まで．\nよって $\\boldsymbol{0.396\\,\\mathrm{nm}\\le a\\le 0.429\\,\\mathrm{nm}}$．AZ の $a$ を測れば，$0.396$ より大きいときに限り $r_\\mathrm{A}$ が決まる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "塩化ナトリウム型結晶の格子定数が陽イオン半径と陰イオン半径の和で表せる（加成性）なら AX＋BY＝AY＋BX が成り立つはずで，その破れから陰イオンどうしが接している化合物の存在を見抜く．各陰イオンの半径の上限（最小の格子定数／2√2）で候補を絞り，場合分けで接触の様子を一意に決める．陰イオン接触の化合物からは陽イオン半径の上限しか得られないことを判断する．"
+ },
+ "concepts": [
+  "chemical-bond",
+  "alkali-metals",
+  "crystal"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "イオン半径",
+  "塩化ナトリウム型",
+  "限界半径比",
+  "格子定数",
+  "場合分け"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

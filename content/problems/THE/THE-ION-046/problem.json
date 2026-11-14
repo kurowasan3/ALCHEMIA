@@ -1,0 +1,117 @@
+{
+ "id": "THE-ION-046",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "1:2 型の難溶性塩と共通イオン効果（クロム酸銀）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "クロム酸銀 $\\ce{Ag2CrO4}$（暗赤色）は水に溶けにくく，飽和水溶液では次の溶解平衡が成り立つ．\n\\[\\ce{Ag2CrO4(s) <=> 2Ag+ + CrO4^2-}\\]\nある温度での溶解度積を $K_{sp}=[\\ce{Ag+}]^2[\\ce{CrO4^2-}]=4.0\\times10^{-12}\\,(\\mathrm{mol/L})^3$ とし，この温度で次の問いに答えよ．溶解度は，溶液 1 L に溶ける $\\ce{Ag2CrO4}$ の物質量で表し，有効数字2桁で答えよ．加えた塩は完全に電離し，$\\ce{Ag2CrO4}$ が溶けることによる体積変化は無視する．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "純水に対する $\\ce{Ag2CrO4}$ の溶解度を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$0.010\\,\\mathrm{mol/L}$ のクロム酸カリウム $\\ce{K2CrO4}$ 水溶液に対する溶解度を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$0.010\\,\\mathrm{mol/L}$ の硝酸銀 $\\ce{AgNO3}$ 水溶液に対する溶解度を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(2)，(3) で用いた近似（溶けた $\\ce{Ag2CrO4}$ に由来するイオンを，はじめから含まれるイオンに比べて無視する）が成り立っていることを確かめよ．"
+     },
+     {
+      "id": "5",
+      "tex": "同じ濃度の共通イオンを含む溶液でも，(2) と (3) で溶解度の下がり方が大きく異なる．どちらが大きく下がるかを答え，その理由を溶解度積の式の形から説明せよ．また，1:1 型の塩化銀 $\\ce{AgCl}$ では，同じ濃度の $\\ce{Ag+}$ と $\\ce{Cl-}$ のどちらを加えても溶解度の下がり方が等しいことを説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$1.0\\times10^{-4}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "2",
+    "tex": "$1.0\\times10^{-5}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "3",
+    "tex": "$4.0\\times10^{-8}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{K2CrO4}$ 水溶液では $s=1.0\\times10^{-5}$ で $[\\ce{CrO4^2-}]=0.010+s\\fallingdotseq0.010$，$\\ce{AgNO3}$ 水溶液では $2s=8.0\\times10^{-8}$ で $[\\ce{Ag+}]=0.010+2s\\fallingdotseq0.010$ となり，いずれも 0.1 % 以下の差で近似は成り立つ"
+   },
+   {
+    "id": "5",
+    "tex": "$\\ce{Ag+}$ を加えた $\\ce{AgNO3}$ 水溶液の方が大きく下がる．$K_{sp}$ は $[\\ce{Ag+}]$ の 2 乗を含むので，溶解度 $s$ は $[\\ce{Ag+}]$ の 2 乗に反比例し（$s=K_{sp}/[\\ce{Ag+}]^2$），$[\\ce{CrO4^2-}]$ には 1 乗でしか反比例しない（$s=\\frac12\\sqrt{K_{sp}/[\\ce{CrO4^2-}]}$）から．AgCl では $K_{sp}=[\\ce{Ag+}][\\ce{Cl-}]$ と両イオンが対等なので，どちらを加えても $s=K_{sp}/c$ で等しい．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "溶解度を $s\\,\\mathrm{mol/L}$ とすると，溶けた $\\ce{Ag2CrO4}$ 1 mol から $\\ce{Ag+}$ 2 mol と $\\ce{CrO4^2-}$ 1 mol が生じる．\n\n\\textbf{(1)} $[\\ce{Ag+}]=2s,\\ [\\ce{CrO4^2-}]=s$ より $(2s)^2 s=4s^3=4.0\\times10^{-12}$，$s^3=1.0\\times10^{-12}$，$s=\\boldsymbol{1.0\\times10^{-4}\\,\\mathrm{mol/L}}$．\n\n\\textbf{(2)} $[\\ce{CrO4^2-}]=0.010+s\\fallingdotseq0.010$ とおくと $(2s)^2\\times0.010=4.0\\times10^{-12}$，$s^2=1.0\\times10^{-10}$，$s=\\boldsymbol{1.0\\times10^{-5}\\,\\mathrm{mol/L}}$（純水の $\\frac1{10}$）．\n\n\\textbf{(3)} $[\\ce{Ag+}]=0.010+2s\\fallingdotseq0.010$ とおくと $(0.010)^2 s=4.0\\times10^{-12}$，$s=\\boldsymbol{4.0\\times10^{-8}\\,\\mathrm{mol/L}}$（純水の $\\frac1{2500}$）．\n\n\\textbf{(4)} (2)：$s=1.0\\times10^{-5}$ は 0.010 の 0.1 %．(3)：$2s=8.0\\times10^{-8}$ は 0.010 の $8\\times10^{-4}$ %．どちらも無視できる．\n\n\\textbf{(5)} 溶解度積の式で $[\\ce{Ag+}]$ は 2 乗で効く．共通イオンの濃度を $c$ とすると\n\\[\\ce{CrO4^2-}\\ \\text{を加えたとき}\\ s=\\frac12\\sqrt{\\frac{K_{sp}}{c}},\\qquad \\ce{Ag+}\\ \\text{を加えたとき}\\ s=\\frac{K_{sp}}{c^2}\\]\n$c$ が大きいほど後者の方が急に小さくなるので，$\\boldsymbol{\\ce{Ag+}\\ \\text{を加えた (3) の方が大きく下がる}}$．一方，$\\ce{AgCl}$ では $K_{sp}=[\\ce{Ag+}][\\ce{Cl-}]$ で両イオンの指数がともに 1 なので，どちらを濃度 $c$ だけ加えても $s=K_{sp}/c$ となり，下がり方は等しい．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "1:2 型の難溶性塩では溶解度積に一方のイオンが 2 乗で入るため，共通イオン効果の大きさが加えるイオンによって異なり，2 乗で入るイオンを加えたほうが溶解度ははるかに大きく下がる．1:1 型の塩では両イオンの効果は等しい．近似の妥当性も数値で確かめる．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "precipitation",
+  "transition-metals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "溶解度積",
+  "共通イオン効果",
+  "クロム酸銀",
+  "溶解度",
+  "近似"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

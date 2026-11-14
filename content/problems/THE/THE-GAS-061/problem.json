@@ -1,0 +1,108 @@
+{
+ "id": "THE-GAS-061",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-08",
+ "topic": "凝縮熱を含む空気塊の熱収支と山越えでの昇温（フェーン現象のモデル）",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "窒素と酸素あわせて $97.0\\,\\mathrm{mol}$ と水蒸気 $3.00\\,\\mathrm{mol}$ からなる空気の塊が，地表 A（圧力 $1000\\,\\mathrm{hPa}$，温度 $300\\,\\mathrm K$）から山の斜面にそって山頂 C（圧力 $750\\,\\mathrm{hPa}$）まで上昇し，山を越えて反対側の地表 D（$1000\\,\\mathrm{hPa}$）まで下降する．塊はまわりの空気と混じらず，熱のやりとりもしない．次のモデルで考える．\n\\\\・水蒸気の凝縮がなければ，塊の温度は圧力が $10.0\\,\\mathrm{hPa}$ 下がる（上がる）ごとに $1.00\\,\\mathrm K$ 下がる（上がる）．\n\\\\・凝縮が起こると，凝縮熱 $44.0\\,\\mathrm{kJ/mol}$ がすべて塊を温めるのに使われる．塊全体の温度を $1.00\\,\\mathrm K$ 上げるのに必要な熱量は $3.00\\,\\mathrm{kJ}$（一定）とする．したがって，塊の温度は「凝縮がないとしたときの温度」に「それまでに凝縮した水の物質量 $\\times\\dfrac{44.0}{3.00}\\,\\mathrm K$」を加えたものになる．\n\\\\・凝縮が起こっている間，水蒸気の分圧はその温度の飽和蒸気圧に等しい．凝縮した水はただちに塊から離れ，下降中には凝縮も蒸発も起こらない．\n\\\\水の飽和蒸気圧は次の表の値を用い，気体はすべて理想気体とする．\n\n\\begin{center}\n\\begin{tabular}{c|cccccccc}\n温度 [K] & 275 & 284 & 285 & 286 & 287 & 288 & 289 & 290 \\\\ \\hline\n飽和蒸気圧 [hPa] & 7.0 & 13.0 & 13.9 & 14.8 & 15.8 & 16.9 & 18.0 & 19.2\n\\end{tabular}\n\\end{center}"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "凝縮がまったく起こらないと仮定すると，C での塊の温度と水蒸気の分圧はいくらになるか．この結果から，C に達するまでに凝縮が起こることを示せ．"
+     },
+     {
+      "id": "2",
+      "tex": "C での温度を $T_{\\mathrm C}$，C に残る水蒸気を $n_{\\mathrm C}\\,\\mathrm{mol}$ とする．$T_{\\mathrm C}$ と $n_{\\mathrm C}$ が満たす 2 つの関係式をつくり，$T_{\\mathrm C}$ が表のどの 2 つの温度の間にあるかを決めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の 2 つの温度の間で，「関係式の左辺と右辺の差」が温度に比例して変わるとみなして $T_{\\mathrm C}$ を求め，D での温度 $T_{\\mathrm D}$ を有効数字3桁で答えよ．また，$T_{\\mathrm D}-300\\,\\mathrm K$ を，凝縮した水の物質量 $\\Delta n$ を用いて表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "次のア〜ウのように条件を変えると，$T_{\\mathrm D}$ は (3) の値より高くなるか，低くなるか，変わらないか．いずれの場合も C に達するまでに凝縮が起こるものとする．\\\\\nア　山頂がより高く，C の圧力が $700\\,\\mathrm{hPa}$ である．\\\\\nイ　A での水蒸気が $2.50\\,\\mathrm{mol}$（窒素と酸素は $97.5\\,\\mathrm{mol}$）である．\\\\\nウ　C の圧力は $750\\,\\mathrm{hPa}$ のままで，斜面の途中に平らな部分があり，凝縮が始まる高さだけが変わる（A と C の圧力・塊の組成は同じ）．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$275\\,\\mathrm K$，$22.5\\,\\mathrm{hPa}$（$275\\,\\mathrm K$ の飽和蒸気圧 $7.0\\,\\mathrm{hPa}$ より大きいので凝縮が起こる）"
+   },
+   {
+    "id": "2",
+    "tex": "$T_{\\mathrm C}=275+\\dfrac{44.0}{3.00}(3.00-n_{\\mathrm C})$，$n_{\\mathrm C}=\\dfrac{97.0\\,p_{\\mathrm s}(T_{\\mathrm C})}{750-p_{\\mathrm s}(T_{\\mathrm C})}$，$287\\,\\mathrm K$ と $288\\,\\mathrm K$ の間"
+   },
+   {
+    "id": "3",
+    "tex": "$T_{\\mathrm D}=312\\,\\mathrm K$，$T_{\\mathrm D}-300=\\dfrac{44.0}{3.00}\\Delta n$"
+   },
+   {
+    "id": "4",
+    "tex": "ア：高くなる，イ：低くなる，ウ：変わらない"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　A から C で圧力は $250\\,\\mathrm{hPa}$ 下がるので，凝縮がなければ $300-25.0=\\boldsymbol{275\\,\\mathrm K}$．組成（水蒸気のモル分率 $0.0300$）は変わらないので分圧は $750\\times0.0300=\\boldsymbol{22.5\\,\\mathrm{hPa}}$．これは $275\\,\\mathrm K$ の飽和蒸気圧 $7.0\\,\\mathrm{hPa}$ を大きく超え，ありえない．よって C に達するまでに凝縮が起こる．\n\n\\textbf{(2)}　モデルより，C での温度は凝縮がないときの $275\\,\\mathrm K$ に，凝縮した水 $3.00-n_{\\mathrm C}$ による昇温を加えたもの．\n\\[ T_{\\mathrm C}=275+\\frac{44.0}{3.00}\\,(3.00-n_{\\mathrm C}) \\quad\\cdots\\text{(A)} \\]\nまた C では水蒸気の分圧が飽和蒸気圧 $p_{\\mathrm s}(T_{\\mathrm C})$ に等しく，窒素・酸素は $97.0\\,\\mathrm{mol}$ のままなので\n\\[ \\frac{n_{\\mathrm C}}{97.0+n_{\\mathrm C}}\\times750=p_{\\mathrm s}\\quad\\Rightarrow\\quad n_{\\mathrm C}=\\frac{97.0\\,p_{\\mathrm s}}{750-p_{\\mathrm s}} \\quad\\cdots\\text{(B)} \\]\n表の温度 $T$ ごとに式 (B) で $n_{\\mathrm C}$ を求め，式 (A) の右辺 $R(T)$ と比べる．\n\\begin{center}\n\\begin{tabular}{c|cccc}\n$T$ [K] & 286 & 287 & 288 & 289 \\\\ \\hline\n$n_{\\mathrm C}$ [mol] & 1.953 & 2.087 & 2.236 & 2.385 \\\\\n$R(T)$ [K] & 290.4 & 288.4 & 286.2 & 284.0 \\\\\n$R(T)-T$ [K] & $+4.4$ & $+1.4$ & $-1.8$ & $-5.0$\n\\end{tabular}\n\\end{center}\n$R(T)-T$ の符号が変わるのは $\\boldsymbol{287\\,\\mathrm K\\ \\text{と}\\ 288\\,\\mathrm K\\ \\text{の間}}$．温度が高いと飽和蒸気圧が大きく凝縮が少ないので昇温も小さく，温度が低いとその逆になる．両者がつり合う温度がただ1つ決まる．\n\n\\textbf{(3)}　$R(T)-T$ が $+1.38$ から $-1.80$ に変わるので\n\\[ T_{\\mathrm C}=287+\\frac{1.38}{1.38+1.80}=287.4\\,\\mathrm K \\]\n下降では凝縮が起こらないので，$250\\,\\mathrm{hPa}$ 上がる間に $25.0\\,\\mathrm K$ 上がる．$T_{\\mathrm D}=287.4+25.0=312.4$ より $\\boldsymbol{312\\,\\mathrm K}$．\n\n式 (A) に下降の $+25.0\\,\\mathrm K$ を加えると，$T_{\\mathrm D}=300+\\dfrac{44.0}{3.00}(3.00-n_{\\mathrm C})$．すなわち\n\\[ \\boldsymbol{T_{\\mathrm D}-300=\\frac{44.0}{3.00}\\,\\Delta n} \\]\n乾いた上昇・下降による温度変化は打ち消し合い，山を越えて残る昇温は「水滴として塊から抜けた水の凝縮熱」だけである（$\\Delta n\\approx0.85\\,\\mathrm{mol}$ で約 $12\\,\\mathrm K$）．\n\n\\textbf{(4)}　$T_{\\mathrm D}-300$ は塊から抜けた水の量 $\\Delta n$ だけで決まるので，$\\Delta n$ がどう変わるかを考える．\n\\\\ア：C の圧力が低いと，乾いた分の冷却が大きく C での温度が低くなり，飽和蒸気圧が小さく，残る水蒸気が少なくなる（$\\Delta n$ が増える）．$\\boldsymbol{\\text{高くなる}}$．（同じ方法で計算すると $T_{\\mathrm D}\\approx315\\,\\mathrm K$．）\n\\\\イ：はじめの水蒸気が少ないと凝縮する量も減る．C での温度も低くなって残る水蒸気は少し減るが，その減り方ははじめの量の減り方より小さい（式 (A)・(B) を解くと $T_{\\mathrm C}\\approx285\\,\\mathrm K$，$\\Delta n\\approx0.67\\,\\mathrm{mol}$）．$\\boldsymbol{\\text{低くなる}}$（約 $310\\,\\mathrm K$）．\n\\\\ウ：式 (A)・(B) には凝縮が始まる高さも途中の経路も入っておらず，A と C の圧力と塊の組成だけで $T_{\\mathrm C}$ が決まる．$\\boldsymbol{\\text{変わらない}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "凝縮を伴う上昇では，温度が「乾いた断熱変化の温度＋凝縮量×凝縮熱／熱容量」で，凝縮量が「その温度の飽和蒸気圧で決まる残りの水蒸気」で決まるので，両者を連立して山頂の温度が自己無撞着に決まる．下降では乾いた変化だけが起こるので，山越え後の昇温は塊から抜けた水の凝縮熱だけで決まり，凝縮の始まる高さには依存しない．"
+ },
+ "concepts": [
+  "ideal-gas",
+  "vapor-pressure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "フェーン現象",
+  "凝縮熱",
+  "飽和蒸気圧",
+  "熱収支",
+  "分圧"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

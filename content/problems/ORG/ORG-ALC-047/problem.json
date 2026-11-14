@@ -1,0 +1,124 @@
+{
+ "id": "ORG-ALC-047",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-03",
+ "topic": "アルデヒドの縮合で脱水まで進む条件（α 炭素の H の数）と交差生成物の網羅・原料の決定",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "structure",
+  "pathway"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "塩基の存在下で，アルデヒドどうしは次のモデルのように縮合する．\n\\begin{center}\n$\\ce{R-CH2-CHO + R'-CHO ->[\\text{}] R'-CH(OH)-CH(R)-CHO ->[\\text{加熱}] R'-CH=C(R)-CHO + H2O}$\n\\end{center}\nすなわち，アルデヒド分子 P の $\\alpha$ 炭素（$\\ce{-CHO}$ の炭素の隣の炭素）に水素原子があると，その $\\alpha$ 炭素が別のアルデヒド分子 Q の $\\ce{-CHO}$ の炭素と結合し，Q の $\\ce{C=O}$ は $\\ce{C-OH}$ になって付加物が生じる（P を供与体，Q を受容体とよぶ．P と Q は同じ物質でもよい）．付加物の P 由来の $\\alpha$ 炭素に水素原子がまだ残っていれば，加熱により水がとれて $\\ce{C=C}$ が生じる．残っていなければ付加物のまま変化しない．以下では，生じうる生成物はすべて生じるものとし，加熱は常に十分に行うものとする．幾何異性体・鏡像異性体は区別しない．\n\nまた，$\\ce{C=C}$ をもつ化合物を酸化的に分解すると，$\\ce{C=C}$ が切れてそれぞれの炭素が $\\ce{C=O}$ になる（例：$\\ce{(CH3)2C=CHCH3}$ からは $\\ce{(CH3)2C=O}$ と $\\ce{CH3CHO}$）．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "2-メチルプロパナール $\\ce{(CH3)2CHCHO}$ だけを用いて反応させたときの最終生成物の示性式と分子式を答えよ．また，$\\ce{C=C}$ が生じない理由を述べよ．"
+     },
+     {
+      "id": "2",
+      "tex": "プロパナール $\\ce{CH3CH2CHO}$ と 2-メチルプロパナールの混合物を反応させたときに生じる生成物をすべて示性式と分子式で答えよ．また，そのうち $\\ce{C=C}$ をもつものはどれか．"
+     },
+     {
+      "id": "3",
+      "tex": "プロパナールとブタナール $\\ce{CH3CH2CH2CHO}$ の混合物を反応させると，生成物は何種類生じるか．そのうち分子式が互いに等しいものを示性式で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "分子式 $\\ce{C4H8O}$ のアルデヒド X とプロパナールの混合物を反応させたところ，生成物の 1 つとして $\\ce{C=C}$ をもつ $\\ce{C7H12O}$ の化合物 Y が得られた．Y を酸化的に分解すると X と $\\ce{CH3COCHO}$ が得られた．また，X だけを反応させると $\\ce{C8H14O}$ の化合物が得られた．X と Y の示性式を答えよ．また，「X だけを反応させた結果」がなければ X を決められない理由を述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：アルデヒドの縮合で脱水まで進む条件（α 炭素の H の数）と交差生成物の網羅・原料の決定",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{(CH3)2CH-CH(OH)-C(CH3)2-CHO}$，$\\ce{C8H16O2}$．付加で結合した $\\alpha$ 炭素（もとは H を 1 個しかもたない）には水素原子が残らないので，水がとれない"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{CH3CH2CH=C(CH3)CHO}$（$\\ce{C6H10O}$），$\\ce{(CH3)2CHCH=C(CH3)CHO}$（$\\ce{C7H12O}$），$\\ce{CH3CH2CH(OH)C(CH3)2CHO}$（$\\ce{C7H14O2}$），$\\ce{(CH3)2CHCH(OH)C(CH3)2CHO}$（$\\ce{C8H16O2}$）の 4 種類．$\\ce{C=C}$ をもつのはプロパナールが供与体となった前の 2 つ"
+   },
+   {
+    "id": "3",
+    "tex": "4 種類．$\\ce{CH3CH2CH2CH=C(CH3)CHO}$ と $\\ce{CH3CH2CH=C(C2H5)CHO}$（ともに $\\ce{C7H12O}$）"
+   },
+   {
+    "id": "4",
+    "tex": "X：$\\ce{CH3CH2CH2CHO}$，Y：$\\ce{CH3CH2CH2CH=C(CH3)CHO}$．X が 2-メチルプロパナールでも，プロパナールを供与体とする生成物 $\\ce{(CH3)2CHCH=C(CH3)CHO}$（$\\ce{C7H12O}$）が生じ，その分解物も 2-メチルプロパナールと $\\ce{CH3COCHO}$ になって区別できないから"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{モデルの読み方}　供与体になれるのは $\\alpha$ 炭素に H をもつアルデヒドだけで，受容体はどのアルデヒドでもよい．脱水には，付加のあとも供与体の $\\alpha$ 炭素に H が残っている（はじめ $\\alpha$ 炭素に H が 2 個以上ある）ことが必要である．縮合生成物では，受容体の $\\ce{-CHO}$ の炭素と供与体の $\\alpha$ 炭素が $\\ce{C=C}$ で結ばれ，供与体の $\\ce{-CHO}$ がその $\\ce{C=C}$ に直接ついている．\n\n(1) 2-メチルプロパナールの $\\alpha$ 炭素は $\\ce{(CH3)2CH-}$ の CH で，H は 1 個．これが受容体の $\\ce{-CHO}$ の炭素と結合すると H は残らない．\n\\[ \\ce{2(CH3)2CHCHO -> (CH3)2CH-CH(OH)-C(CH3)2-CHO} \\]\n最終生成物は付加物 $\\boldsymbol{\\ce{(CH3)2CH-CH(OH)-C(CH3)2-CHO}}$，分子式 $\\boldsymbol{\\ce{C8H16O2}}$．\n\n(2) どちらも $\\alpha$ 炭素に H をもつので供与体にも受容体にもなり，生成物は 供与体 2 通り × 受容体 2 通り ＝ 4 種類．ただし脱水まで進むかは供与体で決まる．プロパナール（$\\alpha$ 炭素に H 2 個）が供与体なら付加後も H が 1 個残って脱水し，2-メチルプロパナール（H 1 個）が供与体なら付加物で止まる．\n\\begin{center}\n\\begin{tabular}{c|c|c}\n供与体 & 受容体 & 最終生成物 \\\\ \\hline\nプロパナール & プロパナール & $\\ce{CH3CH2CH=C(CH3)CHO}$（$\\ce{C6H10O}$） \\\\\nプロパナール & 2-メチルプロパナール & $\\ce{(CH3)2CHCH=C(CH3)CHO}$（$\\ce{C7H12O}$） \\\\\n2-メチルプロパナール & プロパナール & $\\ce{CH3CH2CH(OH)C(CH3)2CHO}$（$\\ce{C7H14O2}$） \\\\\n2-メチルプロパナール & 2-メチルプロパナール & $\\ce{(CH3)2CHCH(OH)C(CH3)2CHO}$（$\\ce{C8H16O2}$）\n\\end{tabular}\n\\end{center}\n\\[ \\ce{CH3CH2CHO + (CH3)2CHCHO -> (CH3)2CHCH=C(CH3)CHO + H2O} \\]\n$\\ce{C=C}$ をもつのは\\textbf{プロパナールが供与体となった 2 つ}である．\n\n(3) どちらも $\\alpha$ 炭素に H を 2 個もつので，供与体 2 通り × 受容体 2 通り ＝ $\\boldsymbol{4}$ 種類（解答図）．\n\\begin{center}\n\\begin{tabular}{c|c|c}\n供与体 & 受容体 & 生成物 \\\\ \\hline\nプロパナール & プロパナール & $\\ce{CH3CH2CH=C(CH3)CHO}$（$\\ce{C6H10O}$） \\\\\nプロパナール & ブタナール & $\\ce{CH3CH2CH2CH=C(CH3)CHO}$（$\\ce{C7H12O}$） \\\\\nブタナール & プロパナール & $\\ce{CH3CH2CH=C(C2H5)CHO}$（$\\ce{C7H12O}$） \\\\\nブタナール & ブタナール & $\\ce{CH3CH2CH2CH=C(C2H5)CHO}$（$\\ce{C8H14O}$）\n\\end{tabular}\n\\end{center}\n交差した 2 つは原料の炭素数の和がどちらも 7 なので同じ分子式 $\\ce{C7H12O}$ になるが，どちらが供与体かで枝（$\\ce{CH3}$ か $\\ce{C2H5}$）と主鎖が入れかわった構造異性体である．\n\n(4) Y の $\\ce{C=C}$ を切ると，受容体側の炭素は元の $\\ce{-CHO}$ に戻り（受容体のアルデヒドが再生する），供与体側の炭素は $\\ce{-CO-}$ になって $\\ce{-CHO}$ とつながった断片になる．$\\ce{CH3COCHO}$ は $\\alpha$ 炭素に $\\ce{CH3}$ をもつプロパナール由来なので，Y ではプロパナールが供与体，X が受容体である．$\\ce{C4H8O}$ のアルデヒドはブタナールと 2-メチルプロパナールの 2 つで，どちらでも\n\\[ \\ce{CH3CH2CH2CH=C(CH3)CHO}, \\qquad \\ce{(CH3)2CHCH=C(CH3)CHO} \\]\nの $\\ce{C7H12O}$ が生じ，分解物も「X と $\\ce{CH3COCHO}$」で同じ形になる．ここで X だけの反応を使うと，2-メチルプロパナールなら (1) のとおり脱水せず $\\ce{C8H16O2}$ になるが，ブタナールなら $\\alpha$ 炭素に H が 2 個あるので $\\ce{C8H14O}$（2-エチル-2-ヘキセナール）になる．よって X は\\textbf{ブタナール} $\\boldsymbol{\\ce{CH3CH2CH2CHO}}$，Y は $\\boldsymbol{\\ce{CH3CH2CH2CH=C(CH3)CHO}}$ である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "アルデヒドの縮合を「α 炭素に H をもつ供与体が受容体の CHO 炭素と結合し，α 炭素に H が残れば脱水する」というモデルで扱い，混合物から生じる生成物を供与体×受容体の組で網羅する．脱水まで進むかは供与体の α 炭素の H の数（2 個以上か 1 個か）で分かれるので，同じ混合物から付加物と不飽和アルデヒドが混在し，同じ分子式の交差生成物や，分解物が同じになる原料の候補を，単独での反応の結果で区別する．"
+ },
+ "concepts": [
+  "alcohol-carbonyl",
+  "carbon-silicon",
+  "organic-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "アルデヒド",
+  "縮合",
+  "交差反応",
+  "α炭素",
+  "構造決定",
+  "異性体"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

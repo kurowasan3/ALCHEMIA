@@ -1,0 +1,109 @@
+{
+ "id": "THE-SOL-069",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-09",
+ "topic": "浸透圧から求めるファントホッフ係数と電離度・電離で生じるイオンの数",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "溶質が水中で電離するとき，浸透圧の測定値 $\\Pi$ を，溶質がまったく電離しないと仮定して計算した浸透圧 $\\Pi_0$ で割った値 $i=\\Pi/\\Pi_0$ を考える．溶質 1 分子（1 組成単位）が電離して $k$ 個のイオンになり，その割合（電離度）が $\\alpha$ であるとき，溶液中の粒子の数は $(1-\\alpha)+k\\alpha$ 倍になるので\n\\[ i = 1+(k-1)\\alpha \\]\nが成り立つ．温度はすべて $27\\,{}^\\circ\\mathrm{C}$（$300\\,\\mathrm{K}$），気体定数は $R=8.3\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$，原子量は Mg $=24.3$，Cl $=35.5$，Ca $=40.1$，Na $=23.0$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "溶質 $1.00\\times10^{-2}\\,\\mathrm{mol}$ を水に溶かして $1.00\\,\\mathrm{L}$ にした溶液について，$\\Pi_0$ を有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "1 価の弱酸 HA の $1.00\\times10^{-2}\\,\\mathrm{mol/L}$ 水溶液の浸透圧は $2.74\\times10^{4}\\,\\mathrm{Pa}$ であった．HA の電離度 $\\alpha$ と電離定数 $K_\\mathrm{a}$ を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "ある金属の塩化物 $\\ce{MCl_x}$ $0.953\\,\\mathrm{g}$ を水に溶かして $1.00\\,\\mathrm{L}$ にした溶液（濃度 $1.00\\times10^{-2}\\,\\mathrm{mol/L}$）の浸透圧は $6.97\\times10^{4}\\,\\mathrm{Pa}$ であった．この濃度で見かけの電離度が $\\alpha=0.90$ であるとして $k$ を整数で求め，$\\ce{MCl_x}$ を次から選べ．\\\\\n　（ア）$\\ce{NaCl}$　（イ）$\\ce{MgCl2}$　（ウ）$\\ce{CaCl2}$　（エ）$\\ce{AlCl3}$"
+     },
+     {
+      "id": "4",
+      "tex": "(2) の HA 水溶液を水で正確に 10 倍に薄めた．薄めた溶液の浸透圧は，もとの浸透圧の $\\dfrac{1}{10}$ と比べて大きいか，小さいか，等しいか．理由とともに答えよ．（計算は不要）"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\Pi_0=2.49\\times10^{4}\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\alpha=0.10$，$K_\\mathrm{a}=1.1\\times10^{-4}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "3",
+    "tex": "$k=3$，（イ）$\\ce{MgCl2}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\dfrac{1}{10}$ より大きい（薄めると電離度が大きくなり，粒子の数が $\\dfrac{1}{10}$ より多く残るため）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 電離しないと仮定すると $\\Pi_0=CRT=1.00\\times10^{-2}\\times8.3\\times10^{3}\\times300=\\boldsymbol{2.49\\times10^{4}\\,\\mathrm{Pa}}$．\n\n\\textbf{(2)} $i=\\dfrac{2.74\\times10^{4}}{2.49\\times10^{4}}=1.10$．HA は $\\ce{HA <=>[\\text{}] H+ + A-}$ で $k=2$ なので $i=1+\\alpha$，$\\boldsymbol{\\alpha=0.10}$．\n\\[ K_\\mathrm{a}=\\frac{C\\alpha^2}{1-\\alpha}=\\frac{1.00\\times10^{-2}\\times(0.10)^2}{0.90}=\\boldsymbol{1.1\\times10^{-4}\\,\\mathrm{mol/L}} \\]\n\n\\textbf{(3)} $i=\\dfrac{6.97\\times10^{4}}{2.49\\times10^{4}}=2.80$．$k=1+\\dfrac{i-1}{\\alpha}=1+\\dfrac{1.80}{0.90}=\\boldsymbol{3}$ なので，1 組成単位から 3 個のイオンができる $\\ce{MCl2}$ 型（$\\ce{M^2+ + 2Cl-}$）．式量は $0.953\\,\\mathrm{g}\\div(1.00\\times10^{-2}\\,\\mathrm{mol})=95.3$ で，$\\ce{MgCl2}$（$24.3+71.0=95.3$）に一致する．$\\ce{CaCl2}$ も $k=3$ だが式量 111.1 で合わない．よって \\textbf{（イ）}．$k$ だけでは陽イオンの種類は決まらず，式量と組み合わせて初めて決まることに注意．\n\n\\textbf{(4)} 強電解質や非電解質なら粒子の数はちょうど $\\dfrac{1}{10}$ になる．弱酸では，薄めると電離平衡が粒子の数が増える向き（右）に移り，電離度が大きくなる（$K_\\mathrm{a}$ 一定で $C$ が小さいほど $\\alpha$ は大きい）．したがって粒子の総数は $\\dfrac{1}{10}$ より多く，浸透圧は \\textbf{$\\dfrac{1}{10}$ より大きい}（$K_\\mathrm{a}$ から計算すると $\\alpha\\approx0.28$，$\\Pi\\approx3.2\\times10^{3}\\,\\mathrm{Pa}$ で，$2.74\\times10^{3}\\,\\mathrm{Pa}$ を上回る）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "浸透圧の実測値と非電離を仮定した計算値の比 i は粒子数の倍率で，i=1+(k−1)α から電離度（k を知っているとき）やイオンの数 k（α を知っているとき）が求まる．弱電解質では希釈で電離度が増えるため，浸透圧は濃度に比例しない．"
+ },
+ "concepts": [
+  "solution-colligative",
+  "concentration",
+  "ionization-equilibrium"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "浸透圧",
+  "ファントホッフ係数",
+  "電離度",
+  "電離定数",
+  "弱酸"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

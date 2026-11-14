@@ -1,0 +1,117 @@
+{
+ "id": "INO-AMP-016",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-06",
+ "topic": "テルミット反応で還元できる金属酸化物の判定（生成エンタルピーの比較）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "アルミニウムの粉末と金属酸化物の粉末の混合物に点火すると，激しく発熱して金属の単体が得られることがある（テルミット反応）．次の表の生成エンタルピーを用いて，以下の問いに答えよ．ただし，ここでは固体どうしの反応を考え，反応エンタルピー $\\Delta H$ が負であれば反応が進むとみなす．原子量は O = 16，Al = 27，Cr = 52，Fe = 56 とする．\n\\[ \\begin{array}{c|cccccc} \\text{物質} & \\ce{Al2O3} & \\ce{Fe2O3} & \\ce{Cr2O3} & \\ce{Co3O4} & \\ce{MgO} & \\ce{CaO} \\\\ \\hline \\Delta H_{\\mathrm{f}}\\ \\mathrm{(kJ/mol)} & -1676 & -824 & -1140 & -891 & -602 & -635 \\end{array} \\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{2Al + Fe2O3 -> Al2O3 + 2Fe}$ の反応エンタルピー〔kJ〕を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "表の各酸化物について，酸素原子 1 mol あたりの生成エンタルピーを考えると，Al で還元できるかどうかを一度に判断できる．その理由を説明し，表の $\\ce{Fe2O3}$，$\\ce{Cr2O3}$，$\\ce{Co3O4}$，$\\ce{MgO}$，$\\ce{CaO}$ のうち，Al で還元できるものをすべて選べ．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\ce{3Co3O4 + 8Al -> 4Al2O3 + 9Co}$ の反応エンタルピー〔kJ〕を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\ce{3MgO + 2Al -> Al2O3 + 3Mg}$ の反応エンタルピー〔kJ〕を求め，Al で MgO を還元できるかを判断せよ．また，逆に Mg を用いて $\\ce{Al2O3}$ から Al を取り出せるかを判断せよ．"
+     },
+     {
+      "id": "5",
+      "tex": "$\\ce{Fe2O3}$ と $\\ce{Cr2O3}$ について，それぞれ過不足のない混合物（Al との物質量比が反応式どおり）1 g あたりの発熱量〔kJ/g〕を有効数字3桁で求め，大きいほうを答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$-852\\,\\mathrm{kJ}$"
+   },
+   {
+    "id": "2",
+    "tex": "どの反応も，Al が奪った酸素原子 1 mol あたりの $\\Delta H$ は「$\\ce{Al2O3}$ の O 1 mol あたりの生成エンタルピー」から「もとの酸化物の O 1 mol あたりの生成エンタルピー」を引いた値になるので，O 1 mol あたりの生成エンタルピーが $\\ce{Al2O3}$（$-559\\,\\mathrm{kJ}$）より大きい（負の絶対値が小さい）酸化物なら還元できる．$\\ce{Fe2O3}$，$\\ce{Cr2O3}$，$\\ce{Co3O4}$"
+   },
+   {
+    "id": "3",
+    "tex": "$-4031\\,\\mathrm{kJ}$"
+   },
+   {
+    "id": "4",
+    "tex": "$+130\\,\\mathrm{kJ}$ で，Al では MgO を還元できない；逆の $\\ce{3Mg + Al2O3 -> 3MgO + 2Al}$ は $-130\\,\\mathrm{kJ}$ なので，Mg で $\\ce{Al2O3}$ から Al を取り出せる"
+   },
+   {
+    "id": "5",
+    "tex": "$\\ce{Fe2O3}$：$3.98\\,\\mathrm{kJ/g}$，$\\ce{Cr2O3}$：$2.60\\,\\mathrm{kJ/g}$，$\\ce{Fe2O3}$ のほうが大きい"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 単体の生成エンタルピーは 0 なので\n\\[ \\Delta H=(-1676)-(-824)=\\boldsymbol{-852\\,\\mathrm{kJ}} \\]\n\\textbf{(2)} 酸化物 $\\ce{M_xO_y}$ を Al で還元する反応は，「$\\ce{M_xO_y}$ を単体に分解して O を取り出し，その O で $\\ce{Al2O3}$ をつくる」反応とみなせる．O 原子 1 mol あたりで書くと\n\\[ \\Delta H\\ (\\text{O 1 mol あたり})=\\dfrac{-1676}{3}-\\dfrac{\\Delta H_{\\mathrm{f}}(\\ce{M_xO_y})}{y} \\]\nとなるので，O 1 mol あたりの生成エンタルピーが $\\ce{Al2O3}$ の $-1676/3=-558.7\\,\\mathrm{kJ}$ より大きい（負の絶対値が小さい）酸化物なら $\\Delta H<0$ となる．\n\\[ \\ce{Fe2O3}: -274.7,\\quad \\ce{Cr2O3}: -380.0,\\quad \\ce{Co3O4}: -222.8,\\quad \\ce{MgO}: -602,\\quad \\ce{CaO}: -635\\ \\ (\\mathrm{kJ}) \\]\nよって還元できるのは $\\ce{Fe2O3}$，$\\ce{Cr2O3}$，$\\ce{Co3O4}$ で，MgO・CaO は O をより強く結びつけているので還元できない．\\\\\n\\textbf{(3)} $\\Delta H=4\\times(-1676)-3\\times(-891)=-6704+2673=\\boldsymbol{-4031\\,\\mathrm{kJ}}$．（O 1 mol あたり $(-558.7)-(-222.8)\\fallingdotseq-336\\,\\mathrm{kJ}$ で，12 mol 分になっている．）\\\\\n\\textbf{(4)} $\\Delta H=(-1676)-3\\times(-602)=\\boldsymbol{+130\\,\\mathrm{kJ}}$（吸熱）なので，\\textbf{Al では MgO を還元できない}．逆向きの $\\ce{3Mg + Al2O3 -> 3MgO + 2Al}$ は $\\Delta H=-130\\,\\mathrm{kJ}$ なので，\\textbf{Mg で Al を取り出すことはできる}．還元力は「単体のイオン化傾向」の大小だけでなく，生じる酸化物が O 1 mol あたりどれだけ安定かで決まる．\\\\\n\\textbf{(5)} $\\ce{Fe2O3 + 2Al}$ の混合物は $160+2\\times27=214\\,\\mathrm{g}$ で $852\\,\\mathrm{kJ}$ を発生するので $\\dfrac{852}{214}=\\boldsymbol{3.98\\,\\mathrm{kJ/g}}$．$\\ce{Cr2O3 + 2Al -> Al2O3 + 2Cr}$ は $\\Delta H=-1676+1140=-536\\,\\mathrm{kJ}$，混合物は $152+54=206\\,\\mathrm{g}$ なので $\\dfrac{536}{206}=\\boldsymbol{2.60\\,\\mathrm{kJ/g}}$．$\\ce{Fe2O3}$ のほうが大きく，融けた鉄が得られるので鉄道レールの溶接に使われる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "テルミット反応は，Al と酸化物の間で酸素原子を奪い合う反応であり，酸素原子 1 mol あたりの生成エンタルピーを Al₂O₃ と比べると，Al で還元できる酸化物を一度に判定できる．Al で還元できない酸化物（MgO）の金属は逆に Al₂O₃ を還元できることも同じ比較で判断する．"
+ },
+ "concepts": [
+  "amphoteric",
+  "oxygen-sulfur",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "テルミット反応",
+  "アルミニウム",
+  "生成エンタルピー",
+  "還元",
+  "金属の製錬"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

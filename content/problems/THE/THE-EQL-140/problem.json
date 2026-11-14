@@ -1,0 +1,118 @@
+{
+ "id": "THE-EQL-140",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "2つの電離基で決まる酵素活性の pH 依存性（釣鐘形の曲線と最適 pH・見かけの pK のずれ）",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある酵素の活性部位には，酸として電離する 2 つの基 X と Y がある．\n\\[\\ce{X-H <=>[\\text{}] X^- + H+}\\ (\\text{電離定数 } K_1) \\qquad \\ce{Y-H+ <=>[\\text{}] Y + H+}\\ (\\text{電離定数 } K_2)\\]\n酵素は「X が電離していて（$\\ce{X^-}$），かつ Y が電離していない（$\\ce{Y-H+}$）」形のときだけ触媒としてはたらく．2 つの基の電離は互いに影響しないものとし，基質の濃度は十分大きく，反応速度 $V$ は活性な形の酵素の割合 $f$ に比例する（$V = V_{\\max}\\,f$．$V_{\\max}$ は酵素がすべて活性な形のときの速度で，pH によらない）．$h = [\\ce{H+}]$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$f$ を $h$，$K_1$，$K_2$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "$K_1 > K_2$ のとき，$f$ が最大になる pH を $\\mathrm{p}K_1 = -\\log_{10}K_1$，$\\mathrm{p}K_2 = -\\log_{10}K_2$ で表し，$f$ の最大値 $f_{\\max}$ を $K_1$，$K_2$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "酵素 P は $\\mathrm{p}K_1 = 4.0$，$\\mathrm{p}K_2 = 8.0$ で，最適 pH での速度は $9.8\\,\\mu\\mathrm{mol/(L\\cdot min)}$ であった．$V_{\\max}$ と，pH 4.0 での速度を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "酵素 Q は $\\mathrm{p}K_1 = 6.0$，$\\mathrm{p}K_2 = 7.0$ である．最適 pH と，最適 pH で活性な形にある酵素の割合 $f_{\\max}$ を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "酵素 Q で，速度が最適 pH での値の半分になる pH の一方は約 5.6 である．もう一方の pH を小数第 1 位まで求めよ．また，「速度が最大値の半分になる 2 つの pH が 2 つの基の pK に等しい」とみなす読み取り方が，酵素 P ではほぼ正しく，酵素 Q では成り立たない理由として最も適切なものを選べ．\\\\\n(ア) Q では 2 つの pK が近いため，最適 pH でも活性な形の割合が 1 よりかなり小さく，曲線の山の高さが $V_{\\max}$ にならないから．\\\\\n(イ) Q では最適 pH が 2 つの pK の平均からずれるから．\\\\\n(ウ) Q では 2 つの基の電離が互いに影響するから．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$f = \\dfrac{K_1 h}{(h+K_1)(h+K_2)}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\mathrm{pH} = \\dfrac{\\mathrm{p}K_1+\\mathrm{p}K_2}{2}$，$f_{\\max} = \\dfrac{1}{\\left(1+\\sqrt{K_2/K_1}\\right)^2}$"
+   },
+   {
+    "id": "3",
+    "tex": "$V_{\\max} = 10\\,\\mu\\mathrm{mol/(L\\cdot min)}$，pH 4.0 で $5.0\\,\\mu\\mathrm{mol/(L\\cdot min)}$"
+   },
+   {
+    "id": "4",
+    "tex": "pH 6.5，$f_{\\max} = 0.58$"
+   },
+   {
+    "id": "5",
+    "tex": "7.4，(ア)"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} X が電離している割合は $\\dfrac{[\\ce{X^-}]}{[\\ce{XH}]+[\\ce{X^-}]} = \\dfrac{K_1}{h+K_1}$，Y が電離していない割合は $\\dfrac{[\\ce{YH+}]}{[\\ce{YH+}]+[\\ce{Y}]} = \\dfrac{h}{h+K_2}$．2 つが独立なので積をとって\n\\[f = \\frac{K_1}{h+K_1}\\cdot\\frac{h}{h+K_2} = \\boldsymbol{\\frac{K_1 h}{(h+K_1)(h+K_2)}}\\]\n\n\\textbf{(2)} 分母を展開して $h$ で割ると\n\\[f = \\frac{K_1}{h + \\dfrac{K_1K_2}{h} + K_1 + K_2}\\]\n分母の $h + \\dfrac{K_1K_2}{h}$ は相加平均・相乗平均の関係から $h = \\sqrt{K_1K_2}$ のとき最小値 $2\\sqrt{K_1K_2}$ をとる．よって最適 pH は $-\\log_{10}\\sqrt{K_1K_2} = \\boldsymbol{\\dfrac{\\mathrm{p}K_1+\\mathrm{p}K_2}{2}}$ で，\n\\[f_{\\max} = \\frac{K_1}{K_1 + 2\\sqrt{K_1K_2} + K_2} = \\boldsymbol{\\frac{1}{\\left(1+\\sqrt{K_2/K_1}\\right)^2}}\\]\nまた $h$ を $K_1K_2/h$ に置き換えても $f$ は変わらないので，曲線は最適 pH を中心に左右対称（pH 軸上で）である．\n\n\\textbf{(3)} $\\sqrt{K_2/K_1} = 10^{-2.0} = 0.010$ なので $f_{\\max} = 1/1.01^2 = 0.980$．$V_{\\max} = 9.8/0.980 = \\boldsymbol{10\\,\\mu\\mathrm{mol/(L\\cdot min)}}$．pH 4.0 では $h = K_1$ なので $\\dfrac{K_1}{h+K_1} = \\dfrac12$，$\\dfrac{h}{h+K_2} = \\dfrac{10^{-4}}{10^{-4}+10^{-8}} \\fallingdotseq 1$．$f \\fallingdotseq 0.50$ で $V = \\boldsymbol{5.0\\,\\mu\\mathrm{mol/(L\\cdot min)}}$．pK が 4 離れていれば，pK の近くではもう一方の基の影響をほぼ無視できる．\n\n\\textbf{(4)} 最適 pH は $(6.0+7.0)/2 = \\boldsymbol{6.5}$．$\\sqrt{K_2/K_1} = 10^{-0.5} = 0.316$ で $f_{\\max} = 1/1.316^2 = \\boldsymbol{0.58}$．最も活性の高い pH でも，酵素の約 4 割は X が電離していないか Y が電離しているかで，はたらいていない．\n\n\\textbf{(5)} 曲線は pH 6.5 を中心に対称なので，もう一方は $6.5 + (6.5-5.6) = \\boldsymbol{7.4}$．Q の半分の点の幅（約 1.7）は pK の差 1.0 より大きい．半分の点が pK に一致するのは，山の高さがほぼ $V_{\\max}$ で，片方の pK 付近でもう一方の基がほぼ完全に活性形にある（pK が十分離れている）場合に限られる．Q では山の高さが $0.58V_{\\max}$ にすぎず，その半分は $0.29V_{\\max}$ である．一方 $\\mathrm{pH} = \\mathrm{p}K_1 = 6.0$ では $f = 0.5\\times\\dfrac{10^{-6}}{10^{-6}+10^{-7}} = 0.45$ と山の半分より大きいので，半分の点は pK より外側にずれる．よって \\textbf{(ア)}．(イ) 最適 pH は (2) のとおり常に平均に等しい．(ウ) 電離は独立と仮定しており，ずれはそれと関係なく生じる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "活性に必要な形が2つの独立な電離平衡の積で表されるとき，活性の割合 f=K₁h/((h+K₁)(h+K₂)) は相加相乗平均により h=√(K₁K₂) で最大となり，曲線は pH 軸上で対称な釣鐘形になる．pK が十分離れていれば山の高さ≈Vmax で半分の点≈pK だが，pK が近いと最適 pH でも活性形が少なく，山の高さや半分の点から Vmax・pK を読む近似が破れる．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "organic-test",
+  "protein-amino"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "酵素",
+  "最適pH",
+  "電離平衡",
+  "活性部位",
+  "相加相乗平均",
+  "近似の破れ"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

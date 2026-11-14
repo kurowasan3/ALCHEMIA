@@ -1,0 +1,100 @@
+{
+ "id": "THE-MOL-044",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-04",
+ "topic": "金属の酸化による体積変化と酸化被膜の保護性",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "金属の表面が酸化されてできる酸化物の膜が，内部の金属を守るはたらきをするかどうかは，「酸化物の体積」と「その酸化物に含まれる金属原子と同じ数の金属原子からなる金属の体積」の比 $R$ でおおよそ判断できる．\n$R<1$ のとき膜はすき間の多い多孔質になって保護作用がない．$1\\leqq R\\leqq 2$ のとき緻密な膜となって保護作用がある．$R>2$ のとき膜にひずみがたまり，ひび割れたりはがれたりして保護作用がない．\n\n次の表の値を用いて，以下の問いに答えよ．\n\\[\n\\begin{array}{c|ccc}\n & \\text{モル質量 [g/mol]} & \\text{密度 [g/cm}^3\\text{]} \\\\ \\hline\n\\ce{Mg} & 24.3 & 1.74 \\\\\n\\ce{MgO} & 40.3 & 3.58 \\\\\n\\ce{Ni} & 58.7 & 8.90 \\\\\n\\ce{NiO} & 74.7 & 6.67 \\\\\n\\ce{Fe} & 55.8 & 7.87 \\\\\n\\ce{Fe2O3} & 159.6 & 5.24\n\\end{array}\n\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "組成式 $\\ce{M_aO_b}$ の酸化物（モル質量 $M_{\\text{ox}}$，密度 $\\rho_{\\text{ox}}$）と金属 $\\ce{M}$（モル質量 $M_{\\text{m}}$，密度 $\\rho_{\\text{m}}$）について，$R$ を表す式を書け．"
+     },
+     {
+      "id": "2",
+      "tex": "$\\ce{Mg}\\to\\ce{MgO}$，$\\ce{Ni}\\to\\ce{NiO}$，$\\ce{Fe}\\to\\ce{Fe2O3}$ のそれぞれについて $R$ を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の 3 つの酸化物のうち，内部の金属を守る膜になると判断できるものを選べ．また，保護作用がないものについて，その原因が「多孔質」と「ひび割れ・はく離」のどちらかを答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$R=\\dfrac{M_{\\text{ox}}/\\rho_{\\text{ox}}}{a\\,M_{\\text{m}}/\\rho_{\\text{m}}}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{MgO}$：0.81，$\\ce{NiO}$：1.7，$\\ce{Fe2O3}$：2.1"
+   },
+   {
+    "id": "3",
+    "tex": "保護作用があるのは $\\ce{NiO}$．$\\ce{MgO}$ は多孔質，$\\ce{Fe2O3}$ はひび割れ・はく離"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　体積はモル体積（モル質量 ÷ 密度）で比べる．酸化物 1 mol には金属原子が $a$ mol 含まれるので，比べる金属の体積は $a$ mol 分である．\n\n(1) 酸化物 1 mol の体積は $M_{\\text{ox}}/\\rho_{\\text{ox}}$，金属 $a$ mol の体積は $a\\,M_{\\text{m}}/\\rho_{\\text{m}}$ なので\n\\[ R=\\dfrac{M_{\\text{ox}}/\\rho_{\\text{ox}}}{a\\,M_{\\text{m}}/\\rho_{\\text{m}}} \\]\n\n(2) モル体積〔$\\mathrm{cm^3/mol}$〕を求める．\n$\\ce{MgO}$：$40.3/3.58=11.26$，$\\ce{Mg}$：$24.3/1.74=13.97$ より $R=11.26/13.97=\\boldsymbol{0.81}$．\n\n$\\ce{NiO}$：$74.7/6.67=11.20$，$\\ce{Ni}$：$58.7/8.90=6.60$ より $R=11.20/6.60=\\boldsymbol{1.7}$．\n\n$\\ce{Fe2O3}$：$159.6/5.24=30.46$，$\\ce{Fe}$ 2 mol：$2\\times55.8/7.87=14.18$ より $R=30.46/14.18=\\boldsymbol{2.1}$．ここで $\\ce{Fe}$ を 1 mol 分しか数えないと $R=4.3$ となって誤る．\n\n(3) $1\\leqq R\\leqq 2$ の $\\boldsymbol{\\ce{NiO}}$ だけが緻密な保護膜になる．$\\ce{MgO}$ は $R<1$ で膜が金属の表面を覆いきれず $\\boldsymbol{\\text{多孔質}}$，$\\ce{Fe2O3}$ は $R>2$ で膜がふくらみすぎ $\\boldsymbol{\\text{ひび割れ・はく離}}$ する（鉄のさびがはがれ落ちて内部まで進むことと対応する）．\n\nなお，密度が小さい金属ほど $R$ は小さくなりやすい（アルカリ金属・アルカリ土類金属の酸化物はふつう $R<1$）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "金属の酸化による体積の変化を，酸化物と「同じ数の金属原子を含む金属」とのモル体積（モル質量÷密度）の比で比べる．組成式中の金属原子の数をそろえることが要点で，比の大きさから酸化被膜が多孔質・緻密・はく離のどれになるかを判断する．"
+ },
+ "concepts": [
+  "mole",
+  "elemental-analysis"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "モル体積",
+  "密度",
+  "酸化被膜",
+  "さび",
+  "量的関係"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,101 @@
+{
+ "id": "POL-FIB-007",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-02",
+ "topic": "浸透圧によるナイロン610の分子量とアミド結合の数",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ナイロン610 は，ヘキサメチレンジアミン $\\ce{H2N(CH2)6NH2}$ とセバシン酸 $\\ce{HOOC(CH2)8COOH}$ の縮合重合でつくられ，繰り返し単位は $\\ce{-[NH(CH2)6NH-CO(CH2)8CO]-}$（式量 282）である．\\\\\nあるナイロン610 $0.282\\,\\mathrm g$ を適当な溶媒に溶かして $100\\,\\mathrm{mL}$ とし，$27\\,^\\circ\\mathrm C$ で浸透圧を測ると $2.49\\times10^{2}\\,\\mathrm{Pa}$ であった．気体定数は $R = 8.3\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$ とし，末端の原子団の質量は無視してよい．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "このナイロン610 の平均分子量を有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "このナイロン610 の平均重合度（繰り返し単位の数）と，1 分子中のアミド結合のおよその数を答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "ナイロン610 の繊維は，分子量が同程度のポリエチレンの繊維より強い．その理由を分子の構造にふれて答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$2.82\\times10^{4}$"
+   },
+   {
+    "id": "2",
+    "tex": "重合度 100，アミド結合 約 200 個"
+   },
+   {
+    "id": "3",
+    "tex": "ナイロンの分子鎖には多数のアミド結合があり，隣り合う分子鎖の $\\ce{N-H}$ と $\\ce{C=O}$ の間に水素結合ができて分子どうしが強く引き合うから（ポリエチレンの分子間にはファンデルワールス力しかはたらかない）．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\Pi V = \\dfrac{w}{M}RT$ より\n\\[ M = \\frac{wRT}{\\Pi V} = \\frac{0.282\\times8.3\\times10^{3}\\times300}{2.49\\times10^{2}\\times0.100} = 2.82\\times10^{4} \\]\n平均分子量は $\\boldsymbol{2.82\\times10^{4}}$．\\\\\n\\textbf{(2)} 重合度 $n = \\dfrac{2.82\\times10^{4}}{282} = \\boldsymbol{100}$．繰り返し単位 1 つにアミド結合 $\\ce{-CO-NH-}$ が 2 個あるので，$2\\times100 =$ 約 $\\boldsymbol{200}$ 個（両末端の分を考えると $2n-1 = 199$ 個）．\\\\\n\\textbf{(3)} アミド結合の $\\ce{N-H}$ の H と，となりの分子鎖の $\\ce{C=O}$ の O との間に $\\boldsymbol{\\text{水素結合}}$ が多数できるので，分子鎖どうしがずれにくい．ポリエチレン（$\\ce{-[CH2-CH2]-}$）には極性のある結合がなく，分子間力はファンデルワールス力だけである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "高分子溶液の浸透圧から ΠV = (w/M)RT で平均分子量を求め，繰り返し単位の式量から重合度とアミド結合の数を出す．アミド結合間の水素結合が繊維の強さを生むことを，極性のないポリエチレンと比べて説明する．"
+ },
+ "concepts": [
+  "condensation-polymer",
+  "intermolecular",
+  "solution-colligative"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ナイロン610",
+  "浸透圧",
+  "平均分子量",
+  "重合度",
+  "水素結合"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

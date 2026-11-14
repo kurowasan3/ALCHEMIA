@@ -1,0 +1,100 @@
+{
+ "id": "INO-CSI-009",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-04",
+ "topic": "ケイ砂とコークスの量比と生成物",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "二酸化ケイ素 $\\ce{SiO2}$ を炭素 $\\ce{C}$ とともに電気炉で強熱すると，炭素の量によって 2 通りの反応が起こる．炭素が少ないときは単体のケイ素と一酸化炭素が生じ，炭素が多いときは炭化ケイ素 $\\ce{SiC}$ と一酸化炭素が生じる．原子量は C = 12，O = 16，Si = 28 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "2 つの反応をそれぞれ化学反応式で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "$\\ce{SiO2}$ $60\\,\\mathrm{kg}$ に炭素 $24\\,\\mathrm{kg}$ を加えて強熱し，どちらも過不足なく反応した．生じた固体の物質名と質量を答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\ce{SiO2}$ $60\\,\\mathrm{kg}$ に炭素 $30\\,\\mathrm{kg}$ を加えて強熱したところ，$\\ce{SiO2}$ と炭素はどちらも残らず，2 つの反応が両方起こった．生じたケイ素と炭化ケイ素の質量をそれぞれ求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{SiO2 + 2C -> Si + 2CO}$，$\\ce{SiO2 + 3C -> SiC + 2CO}$"
+   },
+   {
+    "id": "2",
+    "tex": "ケイ素，$28\\,\\mathrm{kg}$"
+   },
+   {
+    "id": "3",
+    "tex": "ケイ素 $14\\,\\mathrm{kg}$，炭化ケイ素 $20\\,\\mathrm{kg}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 酸素はすべて $\\ce{CO}$ になる．ケイ素が単体になるとき $\\ce{SiO2 + 2C -> Si + 2CO}$，炭素がさらにケイ素と結びつくとき $\\ce{SiO2 + 3C -> SiC + 2CO}$．\n\n\\textbf{(2)} $\\ce{SiO2}$（式量 60）は $\\dfrac{60\\times10^3}{60}=1.0\\times10^3\\,\\mathrm{mol}$，炭素は $\\dfrac{24\\times10^3}{12}=2.0\\times10^3\\,\\mathrm{mol}$．物質量の比 $\\ce{SiO2}:\\ce{C}=1:2$ なので，ケイ素が生じる反応だけが起こる．ケイ素は $1.0\\times10^3\\,\\mathrm{mol}$，質量は $\\boldsymbol{28\\,\\mathrm{kg}}$．\n\n\\textbf{(3)} 炭素は $\\dfrac{30\\times10^3}{12}=2.5\\times10^3\\,\\mathrm{mol}$．比は $1:2.5$ で，$1:2$ と $1:3$ の中間なので両方の反応が起こる．$\\ce{Si}$ を $x$ [kmol]，$\\ce{SiC}$ を $y$ [kmol] とすると\n\\[ x+y=1.0,\\qquad 2x+3y=2.5 \\]\nこれを解いて $x=0.50$，$y=0.50$．ケイ素は $0.50\\times28=\\boldsymbol{14\\,\\mathrm{kg}}$，炭化ケイ素（式量 40）は $0.50\\times40=\\boldsymbol{20\\,\\mathrm{kg}}$．\n\n炭素の量が $\\ce{SiO2}$ の 2 倍 mol 以下ならケイ素，3 倍 mol 以上なら炭化ケイ素が主に生じ，その間では両方が混ざる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "同じ原料の組み合わせでも，反応物の物質量の比によって生成物が変わる（SiO₂ と C は 1:2 なら Si，1:3 なら SiC）．中間の比では 2 つの反応の連立方程式で生成物の量を決める．"
+ },
+ "concepts": [
+  "carbon-silicon",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "二酸化ケイ素",
+  "炭化ケイ素",
+  "コークス",
+  "物質量の比",
+  "連立方程式"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

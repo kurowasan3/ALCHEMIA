@@ -1,0 +1,116 @@
+{
+ "id": "THE-EQL-119",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "容器の連結と不活性気体の加え方（定積・定圧）による解離平衡の移動",
+ "course": "化学",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "気体 A と気体 B の間に $\\ce{A <=>[\\text{}] 2B}$ の平衡が成り立ち，温度 $T$ での圧平衡定数は $K_\\mathrm{p}=\\dfrac{p_\\mathrm{B}^{\\,2}}{p_\\mathrm{A}}=2.0\\times10^{4}\\,\\mathrm{Pa}$ である．気体はすべて理想気体とし，温度は常に $T$ に保つ．配管の体積は無視する．\n体積 $V$ の容器 1 の中で A と B が平衡にあり，分圧は $p_\\mathrm{A}=8.0\\times10^{4}\\,\\mathrm{Pa}$，$p_\\mathrm{B}=4.0\\times10^{4}\\,\\mathrm{Pa}$ である．ここで，「A の解離度 $\\alpha$」を，B をすべて A に戻したと考えたときの A の物質量に対する，解離している A の物質量の割合と定義する．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "容器 1 の中の $\\alpha$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "容器 1 を，コックを介して体積 $2V$ の真空の容器 2 につなぎ，コックを開いた．新たな平衡における A，B の分圧，全圧，$\\alpha$ をそれぞれ有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の代わりに，容器 2 にあらかじめアルゴン（A，B と反応しない）を $1.0\\times10^{5}\\,\\mathrm{Pa}$ 入れておいてからコックを開いた．新たな平衡における A，B の分圧と全圧，$\\alpha$ を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(2)，(3) の代わりに，容器 1 をピストン付きの容器とみなし，全圧を最初の値に保ったままアルゴンを加えたところ，新たな平衡でアルゴンの分圧が $6.0\\times10^{4}\\,\\mathrm{Pa}$ になった．A，B の分圧と $\\alpha$ を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "(2)〜(4) の結果から，不活性な気体を加えたときに平衡が移動するかどうかを決めるものは何か．簡潔に述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "0.20"
+   },
+   {
+    "id": "2",
+    "tex": "$p_\\mathrm{A}=2.3\\times10^{4}\\,\\mathrm{Pa}$，$p_\\mathrm{B}=2.1\\times10^{4}\\,\\mathrm{Pa}$，全圧 $4.4\\times10^{4}\\,\\mathrm{Pa}$，$\\alpha=0.32$"
+   },
+   {
+    "id": "3",
+    "tex": "$p_\\mathrm{A}=2.3\\times10^{4}\\,\\mathrm{Pa}$，$p_\\mathrm{B}=2.1\\times10^{4}\\,\\mathrm{Pa}$，全圧 $1.1\\times10^{5}\\,\\mathrm{Pa}$，$\\alpha=0.32$"
+   },
+   {
+    "id": "4",
+    "tex": "$p_\\mathrm{A}=3.4\\times10^{4}\\,\\mathrm{Pa}$，$p_\\mathrm{B}=2.6\\times10^{4}\\,\\mathrm{Pa}$，$\\alpha=0.28$"
+   },
+   {
+    "id": "5",
+    "tex": "全圧ではなく，反応する気体（A と B）が占める体積（すなわち A，B の分圧の和）が変わるかどうかで決まる．体積一定で加えても A，B の分圧は変わらず平衡は移動しないが，全圧一定で加えると A，B が占める体積が増えて分圧の和が下がり，分子数の増える向き（解離の向き）に移動する．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　同温では物質量は「分圧 × 体積」に比例する．A を基準に数えた量 $n_0\\propto p_\\mathrm{A}V+\\tfrac12p_\\mathrm{B}V$ は反応によって変わらない．$\\alpha=\\dfrac{\\frac12p_\\mathrm{B}}{p_\\mathrm{A}+\\frac12p_\\mathrm{B}}$ であり，分圧の比だけで決まる．\n\n\\textbf{(1)}　$\\alpha=\\dfrac{2.0\\times10^4}{8.0\\times10^4+2.0\\times10^4}=\\boldsymbol{0.20}$．\n\n\\textbf{(2)}　体積が $3V$ になる．新しい分圧を $p_\\mathrm{A}'$，$p_\\mathrm{B}'=y$ とすると，A 基準の量の保存より\n\\[ 3V\\left(p_\\mathrm{A}'+\\tfrac12y\\right)=V(8.0\\times10^4+2.0\\times10^4) \\quad\\Longrightarrow\\quad p_\\mathrm{A}'+\\tfrac12y=3.33\\times10^4 \\]\n$p_\\mathrm{A}'=y^2/K_\\mathrm{p}$ を代入して $y^2+1.0\\times10^4\\,y-6.67\\times10^8=0$，$y=2.13\\times10^4$．\nよって $p_\\mathrm{B}'=\\boldsymbol{2.1\\times10^4}$，$p_\\mathrm{A}'=y^2/K_\\mathrm{p}=\\boldsymbol{2.3\\times10^4}$，全圧 $\\boldsymbol{4.4\\times10^4}\\,\\mathrm{Pa}$．\n$\\alpha=\\dfrac{1.07\\times10^4}{3.33\\times10^4}=\\boldsymbol{0.32}$．体積が増えて分圧が下がったので，分子数の増える向き（解離）に平衡が移動した．\n（A の物質量は最初の $3\\times2.27/8.0=0.85$ 倍に減る．）\n\n\\textbf{(3)}　アルゴンは反応に関わらず，全体の体積 $3V$ の中で A と B が占める体積も（2）と同じ $3V$ である．平衡定数は A，B の分圧だけで書けるので，A，B の分圧は (2) と同じ $p_\\mathrm{A}=\\boldsymbol{2.3\\times10^4}$，$p_\\mathrm{B}=\\boldsymbol{2.1\\times10^4}\\,\\mathrm{Pa}$，$\\alpha=\\boldsymbol{0.32}$．\nアルゴンの分圧は $1.0\\times10^5\\times\\dfrac{2V}{3V}=6.7\\times10^4$ なので，全圧は $4.40\\times10^4+6.67\\times10^4=1.11\\times10^5\\fallingdotseq\\boldsymbol{1.1\\times10^5\\,\\mathrm{Pa}}$．\n全圧は (2) より大きいが，平衡の位置は (2) と全く同じである．\n\n\\textbf{(4)}　全圧 $1.2\\times10^5\\,\\mathrm{Pa}$ のうちアルゴンが $6.0\\times10^4$ なので $p_\\mathrm{A}+p_\\mathrm{B}=6.0\\times10^4$．$p_\\mathrm{A}=p_\\mathrm{B}^{\\,2}/K_\\mathrm{p}$ を代入して\n\\[ p_\\mathrm{B}^{\\,2}+2.0\\times10^4\\,p_\\mathrm{B}-1.2\\times10^9=0,\\quad p_\\mathrm{B}=2.61\\times10^4 \\]\n$p_\\mathrm{B}=\\boldsymbol{2.6\\times10^4}$，$p_\\mathrm{A}=\\boldsymbol{3.4\\times10^4}\\,\\mathrm{Pa}$，$\\alpha=\\dfrac{1.30\\times10^4}{3.39\\times10^4+1.30\\times10^4}=\\boldsymbol{0.28}$．\n全圧は一定なのに，A，B の分圧の和が $1.2\\times10^5$ から $6.0\\times10^4$ に下がったので，解離が進んだ（0.20 → 0.28）．\n\n\\textbf{(5)}　平衡を決めるのは A，B の分圧だけである．不活性な気体を\\textbf{体積一定}で加えても A，B の分圧は変わらないので平衡は移動しない（(3) では体積が増えたことによる移動だけが起こり，(2) と同じ結果）．\\textbf{全圧一定}で加えると A，B が占める体積が増えて分圧の和が下がるので，気体の分子数が増える向きに移動する（(4)）．\\textbf{全圧の大きさではなく，反応する気体の分圧（体積）の変化で判断する}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "A ⇄ 2B の平衡では，A 基準の量（pA·V＋pB·V/2）の保存と Kp=pB²/pA を連立して新しい平衡を求める．不活性気体は，体積一定で加えれば反応気体の分圧を変えず平衡は動かないが，全圧一定で加えれば反応気体の分圧の和が下がって分子数の増える向きに移動する．全圧ではなく反応気体の分圧（占める体積）で判断する．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "圧平衡定数",
+  "解離度",
+  "不活性気体",
+  "ルシャトリエの原理",
+  "物質収支"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

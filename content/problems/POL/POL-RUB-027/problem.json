@@ -1,0 +1,109 @@
+{
+ "id": "POL-RUB-027",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-03",
+ "topic": "陽イオン交換樹脂をビーカー中で使うときの交換平衡と平衡定数",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "equation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "スルホ基 $\\ce{-SO3H}$ をもつ陽イオン交換樹脂（H 形）は，樹脂 1 g あたり $4.00\\times10^{-3}\\,\\mathrm{mol}$ のスルホ基をもつ．この樹脂 $10.0\\,\\mathrm g$ をビーカーに入れ，$0.100\\,\\mathrm{mol/L}$ の塩化ナトリウム水溶液 $500\\,\\mathrm{mL}$ を加えて十分にかき混ぜ，平衡に達するまで放置した．上澄み液 $50.0\\,\\mathrm{mL}$ をとり，$0.100\\,\\mathrm{mol/L}$ の水酸化ナトリウム水溶液で滴定したところ，中和に $30.0\\,\\mathrm{mL}$ を要した．\n樹脂の骨格を R と表し，溶液の体積は $500\\,\\mathrm{mL}$ のまま変わらないものとする．樹脂中のスルホ基は H 形か Na 形のどちらかであり，交換は平衡に達して止まるものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "樹脂と溶液の間で起こる交換反応を，イオンを含む反応式（可逆反応）で示せ．"
+     },
+     {
+      "id": "2",
+      "tex": "平衡状態で，溶液中の $\\ce{H+}$ と $\\ce{Na+}$，樹脂中の $\\ce{R-SO3H}$ と $\\ce{R-SO3Na}$ の物質量をそれぞれ求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "この交換反応の平衡定数 $K=\\dfrac{(\\ce{R-SO3Na}\\text{ の物質量})\\times(\\ce{H+}\\text{ の物質量})}{(\\ce{R-SO3H}\\text{ の物質量})\\times(\\ce{Na+}\\text{ の物質量})}$ を有効数字2桁で求めよ（樹脂相・溶液相の体積はそれぞれ分子と分母で打ち消し合う）．"
+     },
+     {
+      "id": "4",
+      "tex": "同じ樹脂 $20.0\\,\\mathrm g$ を，新しい $0.100\\,\\mathrm{mol/L}$ 塩化ナトリウム水溶液 $500\\,\\mathrm{mL}$ と平衡にした．(3) の $K$ を用いて，溶液中の $\\ce{Na+}$ のうち樹脂に取り込まれた割合（％）を有効数字2桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{R-SO3H + Na+ <=>[\\text{}] R-SO3Na + H+}$"
+   },
+   {
+    "id": "2",
+    "tex": "溶液中 $\\ce{H+}$ $3.00\\times10^{-2}\\,\\mathrm{mol}$，$\\ce{Na+}$ $2.00\\times10^{-2}\\,\\mathrm{mol}$，樹脂中 $\\ce{R-SO3H}$ $1.00\\times10^{-2}\\,\\mathrm{mol}$，$\\ce{R-SO3Na}$ $3.00\\times10^{-2}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "$4.5$"
+   },
+   {
+    "id": "4",
+    "tex": "$81\\,\\%$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 樹脂の $\\ce{H+}$ と溶液の $\\ce{Na+}$ が入れかわる可逆反応である．\n\\[ \\ce{R-SO3H + Na+ <=>[\\text{}] R-SO3Na + H+} \\]\nカラムに溶液を流す使い方では，生じた $\\ce{H+}$ が次々に流し去られて新しい樹脂に出会うので交換はほぼ完全に進むが，ビーカー中では $\\ce{H+}$ がたまって逆反応が起こり，平衡で止まる．\n\n\\textbf{(2)} 上澄み液 $50.0\\,\\mathrm{mL}$ 中の $\\ce{H+}$ は $0.100\\times0.0300=3.00\\times10^{-3}\\,\\mathrm{mol}$．溶液全体（$500\\,\\mathrm{mL}$）では $\\boldsymbol{3.00\\times10^{-2}\\,\\mathrm{mol}}$．これが樹脂から放出された量なので\n・$\\ce{R-SO3Na}$：$\\boldsymbol{3.00\\times10^{-2}\\,\\mathrm{mol}}$\n・$\\ce{R-SO3H}$：$4.00\\times10^{-3}\\times10.0-3.00\\times10^{-2}=\\boldsymbol{1.00\\times10^{-2}\\,\\mathrm{mol}}$\n・溶液中の $\\ce{Na+}$：$0.100\\times0.500-3.00\\times10^{-2}=\\boldsymbol{2.00\\times10^{-2}\\,\\mathrm{mol}}$\n（$\\ce{Cl-}$ は交換に関わらず，溶液は塩酸と食塩水の混合物になる．）\n\n\\textbf{(3)} \\[ K=\\dfrac{3.00\\times10^{-2}\\times3.00\\times10^{-2}}{1.00\\times10^{-2}\\times2.00\\times10^{-2}}=\\boldsymbol{4.5} \\]\n\n\\textbf{(4)} スルホ基は $8.00\\times10^{-2}\\,\\mathrm{mol}$，$\\ce{Na+}$ は $5.00\\times10^{-2}\\,\\mathrm{mol}$．交換した量を $x\\,\\mathrm{mol}$ とすると\n\\[ \\dfrac{x\\cdot x}{(8.00\\times10^{-2}-x)(5.00\\times10^{-2}-x)}=4.5 \\]\n整理して $3.5x^2-0.585x+0.0180=0$．$0<x<5.00\\times10^{-2}$ の解は $x=4.07\\times10^{-2}$．取り込まれた割合は $\\dfrac{4.07\\times10^{-2}}{5.00\\times10^{-2}}\\times100=\\boldsymbol{81\\,\\%}$．\n樹脂を 2 倍にしても，10 g のときの 60 % から 81 % に増えるだけで完全には取り除けない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ビーカー中で陽イオン交換樹脂を使うと，放出された H⁺ が溶液にたまって逆反応が起こり交換は平衡で止まる．滴定で放出された H⁺ の量を求めると樹脂相・溶液相の各成分の量が決まり，平衡定数が得られ，樹脂の量を変えたときの交換の割合も予測できる．"
+ },
+ "concepts": [
+  "rubber",
+  "functional-polymer",
+  "acid-base"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "陽イオン交換樹脂",
+  "交換平衡",
+  "平衡定数",
+  "中和滴定",
+  "スルホ基"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

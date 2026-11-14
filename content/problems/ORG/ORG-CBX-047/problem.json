@@ -1,0 +1,118 @@
+{
+ "id": "ORG-CBX-047",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-04",
+ "topic": "混合酸無水物とジアミンの反応で生じるアミドの種類",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "structure",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "酢酸と安息香酸が脱水縮合した混合酸無水物 $\\ce{CH3CO-O-COC6H5}$（化合物 E）は，アミンと温和な条件で反応してアミドとカルボン酸を生じる．このとき，アミンの N 原子は E の 2 つのカルボニル炭素のどちらとも反応し，どちらの反応も起こるものとする．\n原子量は H $=1.0$，C $=12.0$，N $=14.0$，O $=16.0$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "E 1 分子とメチルアミン $\\ce{CH3NH2}$ 1 分子の反応で生じうる「アミドとカルボン酸」の組み合わせを 2 通り，示性式で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "水酸化カリウム水溶液とクロロホルムの二層の溶媒中で，十分な量の E と 1,2-プロパンジアミン $\\ce{H2N-CH2-CH(CH3)-NH2}$ を反応させ，2 つのアミノ基をすべてアミドにした．クロロホルム層に得られるアミド化合物は何種類か（鏡像異性体は区別しない）．また，その中で分子量が等しいものは何種類あるか．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の各アミドの分子量を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(2) の水層を分けとり，塩酸を加えて強い酸性にすると白色の固体が析出した．この固体の名称を答え，もう一方のカルボン酸が析出しない理由を述べよ．"
+     },
+     {
+      "id": "5",
+      "tex": "(2) で 1,2-プロパンジアミンのかわりにエチレンジアミン $\\ce{H2N-CH2-CH2-NH2}$ を用いると，クロロホルム層に得られるアミド化合物は何種類になるか．理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{CH3CONHCH3}$ と $\\ce{C6H5COOH}$，$\\ce{C6H5CONHCH3}$ と $\\ce{CH3COOH}$"
+   },
+   {
+    "id": "2",
+    "tex": "4 種類．分子量が等しいものは 2 種類"
+   },
+   {
+    "id": "3",
+    "tex": "2 つともアセチル化：158，2 つともベンゾイル化：282，アセチル基とベンゾイル基を 1 つずつもつもの（2 種類）：220"
+   },
+   {
+    "id": "4",
+    "tex": "安息香酸．酢酸は水によく溶ける（炭素数が少なく親水性が大きい）ので析出しない"
+   },
+   {
+    "id": "5",
+    "tex": "3 種類．2 つのアミノ基が同等なので，アセチル基とベンゾイル基を 1 つずつもつものは 1 種類しかない"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} N が酢酸側のカルボニル炭素と結合すると，酢酸のアミドができ，安息香酸が離れる．逆なら安息香酸のアミドと酢酸．\n\\[\\ce{CH3COOCOC6H5 + CH3NH2 -> CH3CONHCH3 + C6H5COOH}\\]\n\\[\\ce{CH3COOCOC6H5 + CH3NH2 -> C6H5CONHCH3 + CH3COOH}\\]\nよって $\\boldsymbol{\\ce{CH3CONHCH3}\\text{ と }\\ce{C6H5COOH}}$，$\\boldsymbol{\\ce{C6H5CONHCH3}\\text{ と }\\ce{CH3COOH}}$．\n\n\\textbf{(2)} 1,2-プロパンジアミンの 2 つのアミノ基は，$\\ce{CH2}$ に結合したもの（1 位）と $\\ce{CH(CH3)}$ に結合したもの（2 位）で区別される．それぞれにアセチル基（Ac）かベンゾイル基（Bz）がつくので，\n\\[(1\\text{ 位},\\ 2\\text{ 位}) = (\\mathrm{Ac},\\mathrm{Ac}),\\ (\\mathrm{Bz},\\mathrm{Bz}),\\ (\\mathrm{Ac},\\mathrm{Bz}),\\ (\\mathrm{Bz},\\mathrm{Ac})\\]\nの $\\boldsymbol{4}$ \\textbf{種類}．(Ac, Bz) と (Bz, Ac) は分子式が同じ $\\ce{C12H16N2O2}$ の構造異性体で，分子量が等しいものは $\\boldsymbol{2}$ \\textbf{種類}．（2 位の炭素は不斉炭素だが，鏡像異性体は区別しない．）\n\n\\textbf{(3)}\n(Ac, Ac)：$\\ce{C7H14N2O2}$，$84.0+14.0+28.0+32.0 = \\boldsymbol{158}$\n(Bz, Bz)：$\\ce{C17H18N2O2}$，$204.0+18.0+28.0+32.0 = \\boldsymbol{282}$\n(Ac, Bz)・(Bz, Ac)：$\\ce{C12H16N2O2}$，$144.0+16.0+28.0+32.0 = \\boldsymbol{220}$\n\n\\textbf{(4)} 離れたカルボン酸は KOH 水溶液中でカリウム塩（$\\ce{CH3COOK}$，$\\ce{C6H5COOK}$）として水層にある．塩酸で強い酸性にすると弱酸が遊離する．\n\\[\\ce{C6H5COOK + HCl -> C6H5COOH + KCl}\\]\n安息香酸は水に溶けにくいので $\\boldsymbol{\\text{安息香酸}}$ が白色固体として析出する．酢酸も遊離するが，炭素数が少なく水とよく混じり合うので析出しない．\n\n\\textbf{(5)} エチレンジアミンの 2 つのアミノ基は同等なので，(Ac, Bz) と (Bz, Ac) は同じ化合物になる．(Ac, Ac)，(Bz, Bz)，(Ac, Bz) の $\\boldsymbol{3}$ \\textbf{種類}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "混合酸無水物はアミンと反応するとき2つのカルボニル炭素のどちらでもアシル化を起こすので，生じるアミドとカルボン酸は2通りになる．2つのアミノ基が区別されるジアミンでは，アシル基の付き方の組み合わせで分子量の同じ構造異性体が生じ，アミノ基が同等なら異性体の数が減る．"
+ },
+ "concepts": [
+  "carboxylic-ester",
+  "carbon-silicon",
+  "organic-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "酸無水物",
+  "アミド",
+  "アシル化",
+  "構造異性体",
+  "ジアミン",
+  "安息香酸"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

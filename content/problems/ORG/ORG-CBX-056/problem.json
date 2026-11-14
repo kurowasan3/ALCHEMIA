@@ -1,0 +1,110 @@
+{
+ "id": "ORG-CBX-056",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-04",
+ "topic": "燃焼に要する酸素と水素付加量から決める不飽和脂肪酸の分子式",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "分子内に環をもたず，カルボキシ基を 1 個もつ鎖式の不飽和脂肪酸 A がある．A の炭素原子間の不飽和結合は $\\ce{C=C}$ 結合だけである．A $3.04\\,\\mathrm g$ を完全燃焼させるには酸素 $0.270\\,\\mathrm{mol}$ が必要であった．また，A $3.04\\,\\mathrm g$ に触媒を用いて水素を付加させ，すべての $\\ce{C=C}$ 結合を飽和させるのに水素 $0.0400\\,\\mathrm{mol}$ を要した．原子量は H$=1.0$，C$=12$，O$=16$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A の分子式を $\\ce{C_{x}H_{y}O2}$，1 分子中の $\\ce{C=C}$ 結合の数を $k$ とする．$y$ を $x$ と $k$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "$x$ と $k$ を求め，A の分子式を答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "A と同じ分子式で，炭素原子間の不飽和結合が $\\ce{C=C}$ 2 個のかわりに $\\ce{C#C}$ 1 個になっている脂肪酸 B（ほかは A と同じく鎖式で $\\ce{C=C}$ を 2 個もつ）があったとする．B についても同じ実験（$3.04\\,\\mathrm g$ の燃焼に要する酸素，水素付加に要する水素）を行ったとき，A と区別できるか．"
+     },
+     {
+      "id": "4",
+      "tex": "A と，炭素数が同じ飽和脂肪酸 C の融点を比べると，どちらが高いか．A の $\\ce{C=C}$ 結合はすべてシス形である．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$y=2x-2k$"
+   },
+   {
+    "id": "2",
+    "tex": "$x=20$，$k=4$，$\\ce{C20H32O2}$"
+   },
+   {
+    "id": "3",
+    "tex": "区別できない"
+   },
+   {
+    "id": "4",
+    "tex": "C の方が高い"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 鎖式の飽和脂肪酸は $\\ce{C_{x}H_{2x}O2}$．$\\ce{C=C}$ 1 個ごとに H が 2 個減るので $\\boldsymbol{y=2x-2k}$．\n\n\\textbf{(2)} A の物質量を $n$ とすると，燃焼 $\\ce{C_{x}H_{y}O2} + \\left(x+\\dfrac{y}{4}-1\\right)\\ce{O2} \\ce{->} x\\ce{CO2} + \\dfrac{y}{2}\\ce{H2O}$ より\n\\[ n\\left(x+\\frac{y}{4}-1\\right)=0.270,\\qquad nk=0.0400,\\qquad n=\\frac{3.04}{12x+y+32} \\]\n2 式の比から $x+\\dfrac{y}{4}-1=6.75k$．$y=2x-2k$ を代入して $1.5x=7.25k+1$．また $\\dfrac{3.04k}{12x+y+32}=0.0400$ から $12x+y+32=76k$，すなわち $14x=78k-32$．これらを連立して $\\boldsymbol{k=4}$，$\\boldsymbol{x=20}$，$y=32$．分子式 $\\boldsymbol{\\ce{C20H32O2}}$（分子量 304，$n=0.0100\\,\\mathrm{mol}$；アラキドン酸）．\n\n\\textbf{(3)} $\\ce{C#C}$ 1 個は $\\ce{C=C}$ 2 個と同じだけ H を減らし，水素も 2 分子付加するので，B の分子式は A と同じ $\\ce{C20H32O2}$ で，付加する水素も 1 分子あたり 4 分子．燃焼の酸素量・水素の付加量ともに A と同じになり，\\textbf{区別できない}．これらの実験でわかるのは「H 2 個分の不足が何組あるか」（不飽和度）であって，その内訳ではない．\n\n\\textbf{(4)} シス形の $\\ce{C=C}$ があると炭化水素鎖が折れ曲がり，分子どうしが密に並べないので分子間力がはたらきにくく，融点は低い．したがって飽和脂肪酸 \\textbf{C の方が高い}（A は常温で液体）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "脂肪酸の燃焼に要する酸素量と水素付加量の比からは C と H の関係が，質量からは分子量の条件が得られ，飽和脂肪酸の一般式からの H の不足と組み合わせて分子式と C=C の数が決まる．水素付加量でわかるのは不飽和度だけで，C=C 2 個と C≡C 1 個は区別できない．"
+ },
+ "concepts": [
+  "carboxylic-ester",
+  "oxygen-sulfur",
+  "hydrocarbon"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "不飽和脂肪酸",
+  "燃焼",
+  "水素付加",
+  "分子式",
+  "不飽和度",
+  "融点"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

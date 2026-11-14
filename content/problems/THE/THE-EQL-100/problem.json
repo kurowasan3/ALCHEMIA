@@ -1,0 +1,110 @@
+{
+ "id": "THE-EQL-100",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "光路中の NO₂ 量の比から求める N₂O₄ の解離平衡定数と測定値のとりうる範囲",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "$\\ce{N2O4 <=> 2NO2}$ の平衡にある混合気体を，断面積の等しい円筒形の容器 A（長さ $10\\,\\mathrm{cm}$，全圧 $0.100\\,\\mathrm{atm}$）と容器 B（長さ $20\\,\\mathrm{cm}$，全圧 $0.050\\,\\mathrm{atm}$）に同じ温度 $T$ で封入した．容器の長さの方向に光を通して透過光を測定すると，光路中の $\\ce{NO2}$ の物質量が求められる．測定の結果，B の中の $\\ce{NO2}$ の物質量は A の中の $r = 1.236$ 倍であった．容器 A の $\\ce{NO2}$ のモル分率を $y_{\\mathrm A}$，B の $\\ce{NO2}$ のモル分率を $y_{\\mathrm B}$ とし，気体は理想気体とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\dfrac{y_{\\mathrm B}}{y_{\\mathrm A}} = r$ となることを示せ．"
+     },
+     {
+      "id": "2",
+      "tex": "圧平衡定数 $K_p$ が A と B で等しいことを用いて $y_{\\mathrm A}$ を $r$ だけの式で表し，$y_{\\mathrm A}$ と $K_p$（atm）を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "この実験の条件（全圧の比 $2:1$，長さの比 $1:2$）では，温度や $K_p$ の値によらず $r$ がとりうる値の範囲は $\\boxed{\\phantom{X}} < r < \\boxed{\\phantom{X}}$ に限られる．両端の値を求め，それぞれがどのような極限に対応するかを答えよ．また，ある測定で $r = 1.50$ が得られたとすると，何がいえるか．"
+     },
+     {
+      "id": "4",
+      "tex": "(2) の $K_p$ を用いて，同じ温度で長さ $40\\,\\mathrm{cm}$，全圧 $0.025\\,\\mathrm{atm}$ の容器 C に平衡混合気体を入れたとき，C の中の $\\ce{NO2}$ の物質量は A の中の何倍になるか，有効数字3桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "光路中の全分子の物質量は $PL$ に比例し，A と B で $0.100\\times10 = 0.050\\times20$ と等しい．$\\ce{NO2}$ の物質量は（全物質量）×（モル分率）なので，その比はモル分率の比 $y_{\\mathrm B}/y_{\\mathrm A}$ に等しい"
+   },
+   {
+    "id": "2",
+    "tex": "$y_{\\mathrm A} = \\dfrac{2-r^2}{r(2-r)}$，$y_{\\mathrm A} = 0.50$，$K_p = 5.0\\times10^{-2}\\,\\mathrm{atm}$"
+   },
+   {
+    "id": "3",
+    "tex": "$1 < r < \\sqrt2\\ (=1.41)$．$r\\to1$ は $K_p$ が非常に大きく両容器ともほぼすべて $\\ce{NO2}$ の極限，$r\\to\\sqrt2$ は $K_p$ が非常に小さくほとんど解離しない極限．$r = 1.50$ は範囲外なので，平衡が成り立っていない・温度が異なる・$\\ce{NO2}$ 以外の吸収があるなど，仮定のどれかが成り立っていない"
+   },
+   {
+    "id": "4",
+    "tex": "$1.46$ 倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 理想気体では全物質量 $n = \\dfrac{PSL}{RT}$（$S$ は断面積）．A と B で $PL$ が等しいので全物質量は等しい．$\\ce{NO2}$ の物質量は $ny$ なので，比は $\\boldsymbol{y_{\\mathrm B}/y_{\\mathrm A}}$．\n\n\\textbf{(2)} $K_p = \\dfrac{(yP)^2}{(1-y)P} = \\dfrac{y^2P}{1-y}$．A，B で等しく，$P_{\\mathrm A} = 2P_{\\mathrm B}$，$y_{\\mathrm B} = ry_{\\mathrm A}$ なので\n\\[\\frac{2y_{\\mathrm A}^2}{1-y_{\\mathrm A}} = \\frac{r^2y_{\\mathrm A}^2}{1-ry_{\\mathrm A}}\\ \\Longrightarrow\\ 2(1-ry_{\\mathrm A}) = r^2(1-y_{\\mathrm A})\\ \\Longrightarrow\\ \\boldsymbol{y_{\\mathrm A} = \\frac{2-r^2}{r(2-r)}}\\]\n（$y_{\\mathrm A}^2$ で割れて1次方程式になる．）$r = 1.236$ を代入すると\n\\[y_{\\mathrm A} = \\frac{2-1.528}{1.236\\times0.764} = 0.500 \\fallingdotseq \\boldsymbol{0.50},\\qquad K_p = \\frac{0.50^2\\times0.100}{1-0.50} = \\boldsymbol{5.0\\times10^{-2}\\,\\mathrm{atm}}\\]\n（検算：B では $y_{\\mathrm B} = 0.618$，$\\dfrac{0.618^2\\times0.050}{0.382} = 0.050$．）\n\n\\textbf{(3)} $0<y_{\\mathrm A}<1$ でなければならない．\n\\begin{itemize}\n\\item $y_{\\mathrm A} > 0$：$2 - r^2 > 0$ より $r < \\sqrt2$．$y_{\\mathrm A}\\to0$（$K_p\\to0$，ほとんど $\\ce{N2O4}$）では $y^2P/(1-y)\\fallingdotseq y^2P$ が一定なので $y\\propto1/\\sqrt P$，圧力を半分にすると $\\ce{NO2}$ の割合は $\\sqrt2$ 倍になる．\n\\item $y_{\\mathrm A} < 1$：$2 - r^2 < r(2-r)$ より $2r > 2$，すなわち $r > 1$．$y\\to1$（$K_p\\to\\infty$，ほぼすべて $\\ce{NO2}$）では圧力を変えても割合はもう増えない．\n\\end{itemize}\nよって $\\boldsymbol{1 < r < \\sqrt2}$．$r = 1.50$ を代入すると $y_{\\mathrm A} = \\dfrac{2-2.25}{1.5\\times0.5} = -0.33 < 0$ となり不可能．測定か仮定（同じ温度で平衡にある，光の吸収が $\\ce{NO2}$ の量だけで決まる，理想気体）のどれかに誤りがある．\n\n\\textbf{(4)} C で $\\dfrac{y^2\\times0.025}{1-y} = 0.050$ より $y^2 + 2y - 2 = 0$，$y_{\\mathrm C} = \\sqrt3 - 1 = 0.732$．C も $PL = 0.025\\times40 = 1.0$ で A と全物質量が等しいので，$\\ce{NO2}$ の比は $\\dfrac{0.732}{0.500} = \\boldsymbol{1.46}$ 倍．（圧力を 1/4 にしたので，(3) と同様に考えると上限は2倍．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "全物質量が等しくなるように圧力と光路長を選んだ容器では NO2 の量の比がモル分率の比になり，Kp が共通という条件から未知の解離の程度と Kp を逆算できる（1次方程式に帰着）．解離がほとんどない極限（y∝1/√P）とほぼ完全な極限から，測定値のとりうる範囲が決まり，範囲外の測定値は仮定の破れを意味する．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "nitrogen-phosphorus",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "化学平衡",
+  "圧平衡定数",
+  "逆算",
+  "極限",
+  "二酸化窒素",
+  "光の吸収"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

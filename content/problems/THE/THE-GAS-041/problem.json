@@ -1,0 +1,121 @@
+{
+ "id": "THE-GAS-041",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-08",
+ "topic": "理想気体のグラフの形と線の並び順",
+ "course": "化学",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "condition",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "理想気体 $0.20\\,\\mathrm{mol}$ について，図 (a) は 3 つの一定の圧力 $p_1$，$p_2$，$p_3$ のもとでの体積 $V$ と絶対温度 $T$ の関係，図 (b) は 3 つの一定の温度 $T_{\\mathrm A}$，$T_{\\mathrm B}$，$T_{\\mathrm C}$ のもとでの圧力 $p$ と $1/V$ の関係を示している．気体定数は $R=8.3\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "図 (a) で，$p_1$，$p_2$，$p_3$ を小さい順に並べ，$p_1:p_2:p_3$ を最も簡単な整数比で答えよ．また，$p_1$ の値を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "図 (b) で，$T_{\\mathrm A}$，$T_{\\mathrm B}$，$T_{\\mathrm C}$ を低い順に並べ，$T_{\\mathrm A}$ の値を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "この気体について，温度 $T_1$ と $T_2$（$T_1<T_2$）でのグラフを次の (ア)，(イ) のようにかくと，2 本の線はそれぞれどのような形で，互いにどのような位置関係になるか．\\\\\n（ア） 横軸に $V$，縦軸に $p$ をとったグラフ　（イ） 横軸に $p$，縦軸に $\\dfrac{pV}{T}$ をとったグラフ"
+     },
+     {
+      "id": "4",
+      "tex": "図 (a) の 3 本の直線を，横軸をセルシウス温度 $t$［℃］にかき直して低温側へ延長すると，3 本の直線は横軸上の 1 点で交わる．その温度を整数で答えよ．また，実在の気体ではこの温度まで直線に沿って体積が小さくなることはない．その理由を簡潔に述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：理想気体のグラフの形と線の並び順",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$p_2<p_3<p_1$，$p_1:p_2:p_3=6:2:3$，$p_1=3.3\\times10^{5}\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "2",
+    "tex": "$T_{\\mathrm B}<T_{\\mathrm C}<T_{\\mathrm A}$，$T_{\\mathrm A}=4.8\\times10^{2}\\,\\mathrm K$"
+   },
+   {
+    "id": "3",
+    "tex": "（ア）どちらも双曲線で，$T_2$ の線の方が原点から遠い（同じ $V$ で $p$ が大きい）．（イ）どちらも同じ高さ（$nR$）の水平な直線で，2 本は重なる"
+   },
+   {
+    "id": "4",
+    "tex": "$-273$ ℃．冷やしていくと分子間力の影響で途中で凝縮（または凝固）して気体でなくなり，また分子自身の体積があるので体積は 0 にならない"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 圧力一定では $V=\\dfrac{nR}{p}T$ で，直線の傾き $\\dfrac{nR}{p}$ は圧力に反比例する．傾きが大きいほど圧力は小さいので，$\\boldsymbol{p_2<p_3<p_1}$．\n400 K での体積は $p_1$：2 L，$p_2$：6 L，$p_3$：4 L で，圧力は体積に反比例するから\n\\[ p_1:p_2:p_3=\\dfrac12:\\dfrac16:\\dfrac14=\\boldsymbol{6:2:3} \\]\n$p_1=\\dfrac{nRT}{V}=\\dfrac{0.20\\times8.3\\times10^{3}\\times400}{2.0}=\\boldsymbol{3.3\\times10^{5}\\,\\mathrm{Pa}}$．\n\n\\textbf{(2)} 温度一定では $p=nRT\\cdot\\dfrac1V$ で，傾き $nRT$ は温度に比例する．$1/V=0.50\\,\\mathrm{L^{-1}}$ での圧力は $T_{\\mathrm A}$：4，$T_{\\mathrm B}$：2，$T_{\\mathrm C}$：3（$\\times10^{5}\\,\\mathrm{Pa}$）なので $\\boldsymbol{T_{\\mathrm B}<T_{\\mathrm C}<T_{\\mathrm A}}$（温度比 $4:2:3$）．\n\\[ T_{\\mathrm A}=\\dfrac{pV}{nR}=\\dfrac{4.0\\times10^{5}\\times2.0}{0.20\\times8.3\\times10^{3}}=482\\,\\mathrm K \\]\nすなわち $\\boldsymbol{4.8\\times10^{2}\\,\\mathrm K}$．\n\n\\textbf{(3)} （ア） $pV=nRT$（一定）なので $p$–$V$ のグラフは双曲線．同じ $V$ では温度の高い方が $p$ が大きいので，$\\boldsymbol{T_2\\text{ の線が外側（原点から遠い側）}}$にある．\n（イ） $\\dfrac{pV}{T}=nR$ は圧力にも温度にもよらない一定値なので，どちらも高さ $nR$ の水平な直線で，$\\boldsymbol{\\text{2 本は重なる}}$．縦軸が $pV$ なら $T$ に比例して $T_2$ の線が上にくるが，$T$ で割ると温度の違いは消える．\n\n\\textbf{(4)} $V=\\dfrac{nR}{p}(t+273)$ なので，どの圧力の直線も $V=0$ となるのは $t=\\boldsymbol{-273}$ ℃（絶対零度）．実在の気体は温度が下がると分子間力の影響が大きくなり，途中で液体（または固体）になってしまうので，この直線に沿って体積が小さくなり続けることはない．また，分子自身に体積があるので体積が 0 になることもない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "理想気体の状態方程式から，どの2変数をとると直線（原点を通る）・双曲線・水平線になるかを判断し，直線の傾き（nR/p，nRT）から一定に保った圧力・温度の大小と比を読み取る．pV/T は温度によらず一定なので，温度の違う線が重なることを見抜く．"
+ },
+ "concepts": [
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "理想気体",
+  "状態方程式",
+  "グラフ",
+  "ボイル・シャルルの法則",
+  "絶対零度"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

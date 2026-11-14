@@ -1,0 +1,101 @@
+{
+ "id": "THE-GAS-035",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-08",
+ "topic": "クラペイロンの式による状態図の境界線の傾きと三重点",
+ "course": "化学",
+ "level": 4,
+ "minutes": 35,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "状態図で2つの相の境界線（融解曲線・蒸気圧曲線・昇華圧曲線）の傾きは，次のクラペイロンの式で表される．\n\\[ \\dfrac{\\Delta P}{\\Delta T} = \\dfrac{\\Delta H}{T\\,\\Delta V} \\]\nここで $\\Delta H$ は 1 mol あたりの相変化のエンタルピー変化（融解熱・蒸発熱・昇華熱，いずれも正），$\\Delta V$ は相変化にともなう 1 mol あたりの体積変化（変化後 − 変化前），$T$ は絶対温度である．一方が気体の場合は，固体・液体の体積を無視して気体を理想気体とみなすと，この式から次の関係が得られる．\n\\[ \\ln\\dfrac{P_2}{P_1} = -\\dfrac{\\Delta H}{R}\\left(\\dfrac{1}{T_2}-\\dfrac{1}{T_1}\\right) \\]\n気体定数 $R = 8.31\\,\\mathrm{J/(K\\cdot mol)}$，重力加速度 $9.8\\,\\mathrm{m/s^2}$，$\\ce{H2O}$ のモル質量 $18.0\\,\\mathrm{g/mol}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$0^\\circ\\mathrm{C}$（$273\\,\\mathrm{K}$）付近での氷の密度を $0.917\\,\\mathrm{g/cm^3}$，水の密度を $1.000\\,\\mathrm{g/cm^3}$，融解熱を $6.0\\,\\mathrm{kJ/mol}$ とする．水の融解曲線の傾き $\\Delta P/\\Delta T$（単位 $\\mathrm{Pa/K}$）を有効数字 2 桁で求め，傾きの符号が負になる理由を説明せよ．また，質量 $60\\,\\mathrm{kg}$ の人がスケート靴の刃（氷との接触面積 $1.0\\,\\mathrm{cm^2}$）で $-5^\\circ\\mathrm{C}$ の氷の上に立ったとき，刃の下の氷の融点は何 K 下がるか有効数字 2 桁で求め，「刃の圧力で氷が融けて滑る」という説明がこの温度で成り立つか判断せよ．"
+     },
+     {
+      "id": "2",
+      "tex": "水の三重点を $273\\,\\mathrm{K}$，$610\\,\\mathrm{Pa}$ とし，三重点付近での水の蒸発熱を $45\\,\\mathrm{kJ/mol}$ とする．三重点付近での氷の昇華熱を求めよ．三重点での昇華圧曲線と蒸気圧曲線の傾きをそれぞれ有効数字 2 桁で求め，どちらが急か答えよ．さらに，$-10^\\circ\\mathrm{C}$（$263\\,\\mathrm{K}$）での氷の昇華圧と過冷却の水の蒸気圧を有効数字 2 桁で求めよ（蒸発熱・昇華熱は温度によらないとし，必要なら $e^{-0.754}=0.470$，$e^{-0.855}=0.425$ を用いよ）．$-10^\\circ\\mathrm{C}$ の雲の中に過冷却の水滴と氷の結晶が共存するとき，時間とともにどちらが成長し，どちらが小さくなるか．"
+     },
+     {
+      "id": "3",
+      "tex": "ベンゼンの固体と液体の蒸気圧を測定し，次の値を得た．\n\\[ \\begin{array}{c|cc|cc} \\text{状態} & \\text{固体} & \\text{固体} & \\text{液体} & \\text{液体} \\\\ \\hline T\\,[\\mathrm{K}] & 260 & 270 & 290 & 310 \\\\ P\\,[\\mathrm{Pa}] & 1.17\\times10^{3} & 2.48\\times10^{3} & 8.28\\times10^{3} & 2.06\\times10^{4} \\\\ \\ln(P/\\mathrm{Pa}) & 7.063 & 7.816 & 9.021 & 9.931 \\end{array} \\]\nベンゼンの昇華熱と蒸発熱を求め，融解熱を求めよ．また，昇華圧曲線と蒸気圧曲線の交点として三重点の温度と圧力を求めよ．さらに，$1.013\\times10^{5}\\,\\mathrm{Pa}$ でのベンゼンの沸点を求めよ．いずれも有効数字 2 桁とし，必要なら $\\ln(1.013\\times10^{5}) = 11.526$，$e^{8.52}=5.0\\times10^{3}$ を用いよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$-1.3\\times10^{7}\\,\\mathrm{Pa/K}$．氷が融けると体積が減る（$\\Delta V<0$）ため，圧力を上げると融点が下がる．融点の低下は $0.44\\,\\mathrm{K}$ で，$-5^\\circ\\mathrm{C}$ の氷は刃の圧力では融けないので，その説明は成り立たない"
+   },
+   {
+    "id": "2",
+    "tex": "昇華熱 $51\\,\\mathrm{kJ/mol}$．傾きは昇華圧曲線 $50\\,\\mathrm{Pa/K}$，蒸気圧曲線 $44\\,\\mathrm{Pa/K}$ で，昇華圧曲線の方が急．$-10^\\circ\\mathrm{C}$ で氷の昇華圧 $2.6\\times10^{2}\\,\\mathrm{Pa}$，過冷却の水の蒸気圧 $2.9\\times10^{2}\\,\\mathrm{Pa}$．水滴が蒸発して小さくなり，氷の結晶が成長する"
+   },
+   {
+    "id": "3",
+    "tex": "昇華熱 $44\\,\\mathrm{kJ/mol}$，蒸発熱 $34\\,\\mathrm{kJ/mol}$，融解熱 $9.9\\,\\mathrm{kJ/mol}$．三重点 $2.8\\times10^{2}\\,\\mathrm{K}$，$5.0\\times10^{3}\\,\\mathrm{Pa}$．沸点 $3.5\\times10^{2}\\,\\mathrm{K}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 水の融解曲線}　1 mol あたりの体積は 氷 $\\dfrac{18.0}{0.917} = 19.63\\,\\mathrm{cm^3}$，水 $\\dfrac{18.0}{1.000} = 18.00\\,\\mathrm{cm^3}$ で，融解による体積変化は\n\\[ \\Delta V = 18.00 - 19.63 = -1.63\\,\\mathrm{cm^3/mol} = -1.63\\times10^{-6}\\,\\mathrm{m^3/mol} \\]\n\\[ \\dfrac{\\Delta P}{\\Delta T} = \\dfrac{6.0\\times10^{3}}{273\\times(-1.63\\times10^{-6})} = \\boldsymbol{-1.3\\times10^{7}\\,\\mathrm{Pa/K}} \\]\n融解熱は正なので，傾きの符号は $\\Delta V$ の符号で決まる．氷は水素結合によるすき間の多い構造で水より密度が小さく，融けると体積が減る（$\\Delta V<0$）ので傾きは負，すなわち加圧すると融点が下がる．ただしその大きさは $1\\,\\mathrm{K}$ あたり $1.3\\times10^{7}\\,\\mathrm{Pa}$（約 130 気圧）で，融解曲線はほぼ垂直である．\n\n刃の下の圧力は $\\dfrac{60\\times9.8}{1.0\\times10^{-4}} = 5.9\\times10^{6}\\,\\mathrm{Pa}$ なので，融点の低下は\n\\[ \\dfrac{5.9\\times10^{6}}{1.35\\times10^{7}} = \\boldsymbol{0.44\\,\\mathrm{K}} \\]\n融点は $-0.44^\\circ\\mathrm{C}$ にしかならず，$-5^\\circ\\mathrm{C}$ の氷は融けない．したがって「圧力で融ける」という説明は \\textbf{成り立たない}（実際には摩擦熱や氷の表面のごく薄い液体のような層が原因と考えられている）．\n\n\\textbf{(2) 三重点付近}　ヘスの法則より，昇華（固体→気体）は融解と蒸発を続けて行ったものと同じなので\n\\[ \\Delta H_\\text{昇華} = 6.0 + 45 = \\boldsymbol{51\\,\\mathrm{kJ/mol}} \\]\n気体の体積 $\\Delta V \\fallingdotseq \\dfrac{RT}{P}$ を代入すると $\\dfrac{\\Delta P}{\\Delta T} = \\dfrac{\\Delta H\\,P}{RT^2}$ となる．三重点では $T$ と $P$ が共通なので\n\\[ \\text{昇華圧曲線}\\ \\dfrac{51\\times10^{3}\\times610}{8.31\\times273^2} = \\boldsymbol{50\\,\\mathrm{Pa/K}},\\qquad \\text{蒸気圧曲線}\\ \\dfrac{45\\times10^{3}\\times610}{8.31\\times273^2} = \\boldsymbol{44\\,\\mathrm{Pa/K}} \\]\n傾きの比は $\\Delta H$ の比 $51:45$ に等しく，\\textbf{昇華圧曲線の方が急}である．したがって三重点より低温側では，昇華圧曲線が蒸気圧曲線（を低温側に延長したもの）の下にくる．\n\n$\\dfrac{1}{263}-\\dfrac{1}{273} = \\dfrac{10}{263\\times273} = 1.393\\times10^{-4}\\,\\mathrm{K^{-1}}$ より\n\\[ \\text{過冷却の水}\\ \\ln\\dfrac{P}{610} = -\\dfrac{45\\times10^{3}}{8.31}\\times1.393\\times10^{-4} = -0.754,\\quad P = 610\\times0.470 = \\boldsymbol{2.9\\times10^{2}\\,\\mathrm{Pa}} \\]\n\\[ \\text{氷}\\ \\ln\\dfrac{P}{610} = -\\dfrac{51\\times10^{3}}{8.31}\\times1.393\\times10^{-4} = -0.855,\\quad P = 610\\times0.425 = \\boldsymbol{2.6\\times10^{2}\\,\\mathrm{Pa}} \\]\n雲の中の水蒸気の分圧がこの 2 つの値の間にあると，水滴にとっては不飽和なので水滴は蒸発し，氷にとっては過飽和なので水蒸気が氷に昇華（凝華）する．したがって \\textbf{水滴が小さくなり，氷の結晶が成長する}（水滴の水が水蒸気を通じて氷に移る．雪や雨のでき方の一つの説明である）．\n\n\\textbf{(3) ベンゼン}　2 点の $\\ln P$ の差から $\\dfrac{\\Delta H}{R}$ が求まる．\n\\[ \\text{固体：}\\ \\dfrac{\\Delta H_\\text{昇華}}{R} = \\dfrac{7.816-7.063}{\\frac{1}{260}-\\frac{1}{270}} = \\dfrac{0.753}{1.425\\times10^{-4}} = 5.29\\times10^{3}\\,\\mathrm{K},\\quad \\Delta H_\\text{昇華} = \\boldsymbol{44\\,\\mathrm{kJ/mol}} \\]\n\\[ \\text{液体：}\\ \\dfrac{\\Delta H_\\text{蒸発}}{R} = \\dfrac{9.931-9.021}{\\frac{1}{290}-\\frac{1}{310}} = \\dfrac{0.910}{2.225\\times10^{-4}} = 4.09\\times10^{3}\\,\\mathrm{K},\\quad \\Delta H_\\text{蒸発} = \\boldsymbol{34\\,\\mathrm{kJ/mol}} \\]\n融解熱は $\\Delta H_\\text{融解} = \\Delta H_\\text{昇華} - \\Delta H_\\text{蒸発} = (5286-4090)\\times8.31\\,\\mathrm{J/mol} = \\boldsymbol{9.9\\,\\mathrm{kJ/mol}}$．\n\n三重点：それぞれの直線を $\\ln P = a - \\dfrac{b}{T}$ と書くと，$b_\\text{固} = 5286$，$a_\\text{固} = 7.816 + \\dfrac{5286}{270} = 27.394$，$b_\\text{液} = 4090$，$a_\\text{液} = 9.931 + \\dfrac{4090}{310} = 23.126$．交点では\n\\[ \\dfrac{1}{T} = \\dfrac{a_\\text{固}-a_\\text{液}}{b_\\text{固}-b_\\text{液}} = \\dfrac{4.268}{1196} = 3.570\\times10^{-3},\\qquad T = \\boldsymbol{2.8\\times10^{2}\\,\\mathrm{K}} \\]\n$\\ln P = 23.126 - 4090\\times3.570\\times10^{-3} = 8.52$ より $P = \\boldsymbol{5.0\\times10^{3}\\,\\mathrm{Pa}}$．\n\n沸点：液体の直線で $\\ln P = 11.526$ となる温度は\n\\[ \\dfrac{1}{T} = \\dfrac{23.126-11.526}{4090} = 2.84\\times10^{-3},\\qquad T = \\boldsymbol{3.5\\times10^{2}\\,\\mathrm{K}} \\]\n三重点の圧力（$5.0\\times10^{3}\\,\\mathrm{Pa}$）は大気圧より低いので，大気圧のもとでベンゼンを加熱すると，約 $280\\,\\mathrm{K}$ で融解し，約 $350\\,\\mathrm{K}$ で沸騰する．（実測値は三重点 $279\\,\\mathrm{K}$，$4.8\\times10^{3}\\,\\mathrm{Pa}$，沸点 $353\\,\\mathrm{K}$，融解熱 $9.9\\,\\mathrm{kJ/mol}$ で，よく一致する．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "状態図の境界線の傾きは相変化の熱と体積変化の比（クラペイロンの式）で決まり，水の融解曲線が負でほぼ垂直なこと，三重点で昇華圧曲線が蒸気圧曲線より急なこと（昇華熱＝融解熱＋蒸発熱）を定量的に示す．後者から過冷却の水と氷の蒸気圧の大小を判断し，固体・液体の蒸気圧データから昇華熱・蒸発熱・融解熱と三重点を逆算する．"
+ },
+ "concepts": [
+  "ideal-gas",
+  "vapor-pressure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "状態図",
+  "クラペイロンの式",
+  "三重点",
+  "昇華圧",
+  "蒸気圧曲線",
+  "融解曲線"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

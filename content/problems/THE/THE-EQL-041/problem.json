@@ -1,0 +1,109 @@
+{
+ "id": "THE-EQL-041",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "固体の析出を伴う HI の生成平衡",
+ "course": "化学",
+ "level": 5,
+ "minutes": 30,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "容積 $8.3\\,\\mathrm{L}$ の真空容器に，白金触媒と，水素および固体のヨウ素を入れて $300\\,\\mathrm{K}$ に保ち，十分に時間をおいて次の平衡に到達させる．\n\\[ \\ce{H2(g) + I2(g) <=> 2HI(g)} \\]\n$300\\,\\mathrm{K}$ におけるこの反応の圧平衡定数は $K_p=\\dfrac{p_{\\mathrm{HI}}^{\\,2}}{p_{\\mathrm{H_2}}\\,p_{\\mathrm{I_2}}}=6.4\\times10^{2}$ である．また，ヨウ素は昇華性があり，$300\\,\\mathrm{K}$ で固体のヨウ素と共存する気体のヨウ素の分圧（昇華圧）は $40\\,\\mathrm{Pa}$ である．気体定数は $8.3\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$ とし，気体は理想気体，触媒と固体の体積は無視できるものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "水素 $3.0\\times10^{-3}\\,\\mathrm{mol}$ とヨウ素 $6.0\\times10^{-3}\\,\\mathrm{mol}$ を入れた．平衡に達したとき固体のヨウ素が残ることを示し，$\\ce{H2}$，$\\ce{I2}$，$\\ce{HI}$ の分圧と，残る固体のヨウ素の物質量を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "水素 $3.0\\times10^{-3}\\,\\mathrm{mol}$ とヨウ素 $1.5\\times10^{-3}\\,\\mathrm{mol}$ を入れた．平衡に達したとき固体のヨウ素が残らないことを示し，$\\ce{I2}$ の分圧を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "水素を $3.0\\times10^{-3}\\,\\mathrm{mol}$ 入れるとき，平衡状態で固体のヨウ素が存在するためには，ヨウ素を何 mol より多く入れる必要があるか．有効数字2桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(1) の平衡状態に，温度・容積を一定に保って (a) 固体のヨウ素を少量加えた場合，(b) 水素を少量加えた場合，新しい平衡での $\\ce{HI}$ の分圧はもとと比べてどうなるか．それぞれ「増加」「減少」「変化しない」で答え，理由を述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$p_{\\mathrm{H_2}}=1.0\\times10^{2}\\,\\mathrm{Pa}$，$p_{\\mathrm{I_2}}=40\\,\\mathrm{Pa}$，$p_{\\mathrm{HI}}=1.6\\times10^{3}\\,\\mathrm{Pa}$，固体のヨウ素 $3.2\\times10^{-3}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "2",
+    "tex": "$2.8\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "3",
+    "tex": "$2.8\\times10^{-3}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "4",
+    "tex": "(a) 変化しない　(b) 増加"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{換算}　$\\dfrac{V}{RT}=\\dfrac{8.3}{8.3\\times10^{3}\\times300}=\\dfrac{1}{3.0\\times10^{5}}\\,\\mathrm{mol/Pa}$ なので，$1.0\\times10^{-3}\\,\\mathrm{mol}$ は（すべて気体なら）分圧 $300\\,\\mathrm{Pa}$ に相当する．以下，物質量を「分圧に換算した値」で扱う．水素 $3.0\\times10^{-3}\\,\\mathrm{mol}$ は $900\\,\\mathrm{Pa}$ 相当．\n\n\\textbf{考え方}　固体のヨウ素があるかどうかで条件が変わる．\n\\begin{itemize}\n\\item 固体があるとき：$p_{\\mathrm{I_2}}=40\\,\\mathrm{Pa}$ に固定され，$p_{\\mathrm{HI}}^{\\,2}=K_p\\times40\\times p_{\\mathrm{H_2}}=2.56\\times10^{4}\\,p_{\\mathrm{H_2}}$．気体の組成は水素原子の総量だけで決まり，ヨウ素をいくら多く入れても変わらない．\n\\item 固体がないとき：ヨウ素はすべて気体で，$p_{\\mathrm{I_2}}<40\\,\\mathrm{Pa}$ でなければならない．\n\\end{itemize}\n\n\\textbf{(1)}　仮に固体がないとすると，ヨウ素 1800 Pa 相当，水素 900 Pa 相当で，$K_p$ が大きいので水素はほとんど反応し，$p_{\\mathrm{I_2}}\\approx1800-900=900\\,\\mathrm{Pa}$ となって昇華圧 40 Pa を大きく超える．よって矛盾し，固体のヨウ素が残る．\n\n固体があるので $p_{\\mathrm{I_2}}=40$．H 原子の保存（$\\ce{H2}$ 換算）より $p_{\\mathrm{H_2}}+\\dfrac{p_{\\mathrm{HI}}}{2}=900$．$p_{\\mathrm{HI}}=y$ とおくと\n\\[ y^{2}=2.56\\times10^{4}\\left(900-\\frac{y}{2}\\right)\\ \\Longrightarrow\\ y^{2}+1.28\\times10^{4}\\,y-2.304\\times10^{7}=0 \\]\n\\[ y=\\frac{-1.28\\times10^{4}+\\sqrt{1.6384\\times10^{8}+9.216\\times10^{7}}}{2}=\\frac{-12800+16000}{2}=1600 \\]\nよって $p_{\\mathrm{HI}}=\\boldsymbol{1.6\\times10^{3}\\,\\mathrm{Pa}}$，$p_{\\mathrm{H_2}}=900-800=\\boldsymbol{1.0\\times10^{2}\\,\\mathrm{Pa}}$，$p_{\\mathrm{I_2}}=\\boldsymbol{40\\,\\mathrm{Pa}}$．（確認：$\\dfrac{1600^{2}}{100\\times40}=640$．）\n\n気体中のヨウ素（$\\ce{I2}$ 換算）は $40+\\dfrac{1600}{2}=840\\,\\mathrm{Pa}$ 相当．固体は $1800-840=960\\,\\mathrm{Pa}$ 相当で，$960\\times\\dfrac{1}{3.0\\times10^{5}}=\\boldsymbol{3.2\\times10^{-3}\\,\\mathrm{mol}}$．\n\n\\textbf{(2)}　仮に固体があるとすると，(1) と同じく気体の組成は水素の量だけで決まり，気体中だけでヨウ素 840 Pa 相当（$2.8\\times10^{-3}\\,\\mathrm{mol}$）が必要になる．入れたヨウ素は 450 Pa 相当（$1.5\\times10^{-3}\\,\\mathrm{mol}$）しかないので矛盾．よって固体は残らない．\n\n$\\ce{I2}$ が $x$ 反応するとき $p_{\\mathrm{H_2}}=900-x$，$p_{\\mathrm{I_2}}=450-x$，$p_{\\mathrm{HI}}=2x$．$K_p$ が大きく水素が過剰なので，ヨウ素はほぼすべて反応する（$x\\approx450$）と近似すると $p_{\\mathrm{HI}}\\approx900$，$p_{\\mathrm{H_2}}\\approx450$ で\n\\[ p_{\\mathrm{I_2}}=\\frac{p_{\\mathrm{HI}}^{\\,2}}{K_p\\,p_{\\mathrm{H_2}}}\\approx\\frac{900^{2}}{640\\times450}=2.8\\,\\mathrm{Pa} \\]\nこれは 450 に比べて十分小さく（約 0.6 %），近似は妥当である（この値で $x=447$ として計算し直しても $2.76\\,\\mathrm{Pa}$ で変わらない）．40 Pa より小さいので，固体が析出しないこととも矛盾しない．答えは $\\boldsymbol{2.8\\,\\mathrm{Pa}}$．\n\n\\textbf{(3)}　固体が存在するとき気体は (1) の組成に決まり，気体中のヨウ素は 840 Pa 相当．入れたヨウ素がこれより多ければ，余りが固体として残る．$840\\times\\dfrac{1}{3.0\\times10^{5}}=\\boldsymbol{2.8\\times10^{-3}\\,\\mathrm{mol}}$ より多く入れればよい．\n\n\\textbf{(4)}　(a) 固体のヨウ素が存在する限り $p_{\\mathrm{I_2}}=40\\,\\mathrm{Pa}$ のままで，気体の組成は水素原子の量だけで決まる．固体を加えても気体の組成は変わらず，$p_{\\mathrm{HI}}$ は $\\boldsymbol{\\text{変化しない}}$（固体の量が増えるだけ）．\n\n(b) 水素原子の総量が増えるので，$p_{\\mathrm{HI}}^{\\,2}=2.56\\times10^{4}\\,p_{\\mathrm{H_2}}$ と $p_{\\mathrm{H_2}}+\\dfrac{p_{\\mathrm{HI}}}{2}=(\\text{増えた値})$ から $p_{\\mathrm{HI}}$，$p_{\\mathrm{H_2}}$ はともに $\\boldsymbol{\\text{増加}}$する．このとき固体のヨウ素が昇華して反応に使われ，$p_{\\mathrm{I_2}}$ は 40 Pa のまま保たれる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "化学平衡に昇華平衡が連成すると，固体のヨウ素がある間は I₂ の分圧が昇華圧に固定され，気体の組成は水素原子の量だけで決まる．固体がある・ないの両方を仮定して矛盾から場合分けし，固体が現れる境目のヨウ素の量を求める．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "halogen",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "圧平衡定数",
+  "昇華圧",
+  "相平衡",
+  "場合分け",
+  "ヨウ化水素"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

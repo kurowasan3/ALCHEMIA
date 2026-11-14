@@ -1,0 +1,100 @@
+{
+ "id": "THE-PER-011",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-02",
+ "topic": "逐次イオン化エネルギーから元素を決める",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "condition",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "表1は，第2〜第4周期の典型元素 W〜Z の逐次イオン化エネルギー（第1〜第6イオン化エネルギー $E_1$〜$E_6$，単位 $\\mathrm{kJ/mol}$）である．表2は，いくつかの元素の第1イオン化エネルギーである．\n\\[\n\\text{表1}\\quad\n\\begin{array}{c|cccccc}\n & E_1 & E_2 & E_3 & E_4 & E_5 & E_6 \\\\ \\hline\n\\text{W} & 738 & 1451 & 7733 & 10543 & 13630 & 18020 \\\\\n\\text{X} & 801 & 2427 & 3660 & 25026 & 32827 & \\text{—} \\\\\n\\text{Y} & 419 & 3052 & 4420 & 5877 & 7975 & 9590 \\\\\n\\text{Z} & 1012 & 1907 & 2914 & 4964 & 6274 & 21268\n\\end{array}\n\\]\n\\[\n\\text{表2}\\quad\n\\begin{array}{c|ccccccc}\n\\text{元素} & \\ce{Li} & \\ce{Na} & \\ce{Be} & \\ce{Ca} & \\ce{Al} & \\ce{N} & \\ce{As} \\\\ \\hline\nE_1 & 520 & 496 & 900 & 590 & 578 & 1402 & 944\n\\end{array}\n\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "W〜Z の価電子の数をそれぞれ答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "W〜Z の元素記号をそれぞれ答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "W と Y の $E_2$ を比べると，Y のほうがはるかに大きい．その理由を電子配置にもとづいて説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "W：2　X：3　Y：1　Z：5"
+   },
+   {
+    "id": "2",
+    "tex": "W：$\\ce{Mg}$　X：$\\ce{B}$　Y：$\\ce{K}$　Z：$\\ce{P}$"
+   },
+   {
+    "id": "3",
+    "tex": "Y（$\\ce{K}$）の2個目の電子は貴ガス（$\\ce{Ar}$）型の閉殻となった内側の電子殻から取り去る必要があるが，W（$\\ce{Mg}$）の2個目の電子はまだ最外殻の価電子だから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　価電子をすべて取り去った次の段階で，閉殻（貴ガス型）の内殻から電子を取り去ることになり，イオン化エネルギーが急増する．急増の直前までに取り去った電子の数が価電子の数．\n\n(1) W は $E_2\\to E_3$（$1451\\to7733$），X は $E_3\\to E_4$（$3660\\to25026$），Y は $E_1\\to E_2$（$419\\to3052$），Z は $E_5\\to E_6$（$6274\\to21268$）で急増する．価電子は W $\\boldsymbol{\\text{2}}$，X $\\boldsymbol{\\text{3}}$，Y $\\boldsymbol{\\text{1}}$，Z $\\boldsymbol{\\text{5}}$．\n\n(2) 同族では周期が大きいほど $E_1$ が小さいことを使う．\nW：2族．$\\ce{Be}$（900）より小さく $\\ce{Ca}$（590）より大きい 738 → 第3周期の $\\ce{Mg}$．\nX：13族．$\\ce{Al}$（578）より大きい 801 → 第2周期の $\\ce{B}$．\nY：1族．$\\ce{Li}$（520），$\\ce{Na}$（496）より小さい 419 → 第4周期の $\\ce{K}$．\nZ：15族．$\\ce{N}$（1402）より小さく $\\ce{As}$（944）より大きい 1012 → 第3周期の $\\ce{P}$．\n\n(3) $\\ce{K+}$ は $\\ce{Ar}$ と同じ閉殻の電子配置で，次の電子は原子核に近い内側の M 殻から取り去るのでエネルギーが非常に大きい．$\\ce{Mg+}$ はまだ最外殻（M 殻）に価電子が1個残っており，それを取り去るだけでよい．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "逐次イオン化エネルギーが急増する位置から価電子の数（族）を決め，同族元素の第1イオン化エネルギーの大小から周期を決めて元素を特定する．内殻の電子を取り去る段階でエネルギーが跳ね上がる理由を電子配置で説明する．"
+ },
+ "concepts": [
+  "periodicity",
+  "electron-config"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "イオン化エネルギー",
+  "逐次イオン化エネルギー",
+  "価電子",
+  "電子配置",
+  "元素の推定"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "id": "INO-PPT-020",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-08",
+ "topic": "銀の沈殿とアンモニア水への溶解・再沈殿",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "condition",
+  "equation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "硝酸銀水溶液に，次の（a）〜（d）の水溶液をそれぞれ加えたところ，いずれも沈殿が生じた．\\\\\n（a）塩化ナトリウム水溶液　（b）ヨウ化カリウム水溶液　（c）水酸化ナトリウム水溶液　（d）硫化ナトリウム水溶液"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "（a）〜（d）で生じた沈殿の化学式と色を答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "（a）〜（d）の沈殿に過剰のアンモニア水を加えたとき，溶けるものをすべて選べ．また，（a）の沈殿が溶ける変化をイオン反応式で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "（a）と（b）の沈殿の混合物から，一方の沈殿だけを取り出す方法を述べよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) で得たろ液に希硝酸を加えて酸性にすると，再び白色沈殿が生じた．この変化をイオン反応式で表し，沈殿が再び生じる理由を説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "（a）$\\ce{AgCl}$ 白色　（b）$\\ce{AgI}$ 黄色　（c）$\\ce{Ag2O}$ 褐色　（d）$\\ce{Ag2S}$ 黒色"
+   },
+   {
+    "id": "2",
+    "tex": "a，c．$\\ce{AgCl + 2NH3 -> [Ag(NH3)2]+ + Cl-}$"
+   },
+   {
+    "id": "3",
+    "tex": "混合物に過剰のアンモニア水を加えて $\\ce{AgCl}$ を溶かし，ろ過すると，溶けない $\\ce{AgI}$ だけがろ紙上に残る．"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{[Ag(NH3)2]+ + Cl- + 2H+ -> AgCl + 2NH4+}$．加えた $\\ce{H+}$ がアンモニアと反応して $\\ce{NH4+}$ になり，錯イオンが壊れて $\\ce{Ag+}$ が $\\ce{Cl-}$ と再び結びつくから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\ce{Ag+ + Cl- -> AgCl}$（白色），$\\ce{Ag+ + I- -> AgI}$（黄色），$\\ce{2Ag+ + 2OH- -> Ag2O + H2O}$（褐色），$\\ce{2Ag+ + S^2- -> Ag2S}$（黒色）．\n\n\\textbf{(2)} アンモニアは $\\ce{Ag+}$ とジアンミン銀(I) イオン $\\ce{[Ag(NH3)2]+}$ をつくる．沈殿の溶けにくさが小さい $\\ce{AgCl}$ と $\\ce{Ag2O}$ は溶けるが，非常に溶けにくい $\\ce{AgI}$，$\\ce{Ag2S}$ は溶けない．よって \\textbf{a，c}．\n\\[ \\ce{AgCl + 2NH3 -> [Ag(NH3)2]+ + Cl-} \\]\n（$\\ce{Ag2O + 4NH3 + H2O -> 2[Ag(NH3)2]+ + 2OH-}$）\n\n\\textbf{(3)} 過剰のアンモニア水を加えると $\\ce{AgCl}$ だけが溶けるので，ろ過すれば\\textbf{ろ紙上に $\\ce{AgI}$ が残る}．（ろ液には $\\ce{[Ag(NH3)2]+}$ と $\\ce{Cl-}$ が含まれる．）\n\n\\textbf{(4)}\n\\[ \\ce{[Ag(NH3)2]+ + Cl- + 2H+ -> AgCl + 2NH4+} \\]\n硝酸の $\\ce{H+}$ が配位子のアンモニアを $\\ce{NH4+}$ に変えるので，錯イオンが壊れて $\\ce{Ag+}$ が遊離し，ろ液中の $\\ce{Cl-}$ と再び $\\ce{AgCl}$ をつくる．この白色沈殿が生じることは，ろ液に $\\ce{Ag+}$ と $\\ce{Cl-}$ が含まれていた（(a) の沈殿が溶けていた）確認にもなる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "銀の沈殿がアンモニア水に溶けるかどうかは沈殿の溶けにくさで決まり（AgCl・Ag₂O は溶け，AgI・Ag₂S は溶けない），これで沈殿を分離できる．アンミン錯イオンは酸でアンモニアを NH₄⁺ にすると壊れ，AgCl が再沈殿する．"
+ },
+ "concepts": [
+  "precipitation",
+  "complex-ion",
+  "halogen"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "銀イオン",
+  "ハロゲン化銀",
+  "ジアンミン銀(I)イオン",
+  "錯イオンの分解",
+  "沈殿の分離"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

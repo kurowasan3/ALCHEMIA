@@ -1,0 +1,109 @@
+{
+ "id": "POL-FIB-008",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-02",
+ "topic": "浸透圧と末端基の滴定によるナイロン66の分子量の比較",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "あるナイロン66 $1.13\\,\\mathrm g$ を適当な溶媒に溶かして $100\\,\\mathrm{mL}$ とした．この溶液の浸透圧は $27\\,^\\circ\\mathrm C$ で $2.49\\times10^{3}\\,\\mathrm{Pa}$ であった．また，この溶液 $50.0\\,\\mathrm{mL}$ を $1.00\\times10^{-2}\\,\\mathrm{mol/L}$ の塩酸で滴定すると，分子の末端のアミノ基だけが反応し，$7.00\\,\\mathrm{mL}$ を要した（アミド結合は反応しない）．$R = 8.3\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$，ナイロン66 の繰り返し単位 $\\ce{-[NH(CH2)6NH-CO(CH2)4CO]-}$ の式量は 226 とし，答えは有効数字 2 桁とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "浸透圧から，このナイロン66 の平均分子量を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "すべての分子が末端にアミノ基を 1 個だけもつと仮定して，滴定の結果から平均分子量を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(1) と (2) が異なるのは，両末端がアミノ基の分子と，一方の末端だけがアミノ基（他方はカルボキシ基）の分子が混じっているためと考えられる．(1) の値が正しいとして，両末端がアミノ基の分子は全分子の何 % か．"
+     },
+     {
+      "id": "4",
+      "tex": "(1) の値から，1 分子に含まれるアジピン酸由来の単位は平均約何個か．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$1.1\\times10^{4}$"
+   },
+   {
+    "id": "2",
+    "tex": "$8.1\\times10^{3}$"
+   },
+   {
+    "id": "3",
+    "tex": "$40\\,\\%$"
+   },
+   {
+    "id": "4",
+    "tex": "約 50 個"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\Pi V = \\dfrac{w}{M}RT$ より\n\\[ M = \\frac{1.13\\times8.3\\times10^{3}\\times300}{2.49\\times10^{3}\\times0.100} = 1.13\\times10^{4} \\fallingdotseq \\boldsymbol{1.1\\times10^{4}} \\]\n\\textbf{(2)} $50.0\\,\\mathrm{mL}$ 中のナイロン66 は $0.565\\,\\mathrm g$．反応したアミノ基は $1.00\\times10^{-2}\\times\\dfrac{7.00}{1000} = 7.00\\times10^{-5}\\,\\mathrm{mol}$．1 分子にアミノ基 1 個なら分子も $7.00\\times10^{-5}\\,\\mathrm{mol}$ で，\n\\[ M = \\frac{0.565}{7.00\\times10^{-5}} = 8.07\\times10^{3} \\fallingdotseq \\boldsymbol{8.1\\times10^{3}} \\]\nアミノ基が分子の数より多いため，分子量を小さく見積もっている．\\\\\n\\textbf{(3)} (1) より $50.0\\,\\mathrm{mL}$ 中の分子は $\\dfrac{0.565}{1.13\\times10^{4}} = 5.00\\times10^{-5}\\,\\mathrm{mol}$．両末端がアミノ基の分子の割合を $x$ とすると，アミノ基は\n\\[ 5.00\\times10^{-5}\\times\\{2x + (1 - x)\\} = 7.00\\times10^{-5} \\]\nより $x = 0.40$，すなわち $\\boldsymbol{40\\,\\%}$．\\\\\n\\textbf{(4)} 繰り返し単位 1 つにアジピン酸由来の単位が 1 つあるので，$\\dfrac{1.13\\times10^{4}}{226} = 50$，約 $\\boldsymbol{50}$ 個．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "浸透圧からは分子の数（数平均分子量）が，末端基の滴定からは末端官能基の数が得られる．両者を比べると，両末端に同じ官能基をもつ分子の割合がわかる．"
+ },
+ "concepts": [
+  "condensation-polymer",
+  "acid-base",
+  "solution-colligative"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ナイロン66",
+  "浸透圧",
+  "末端基",
+  "平均分子量",
+  "中和滴定"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

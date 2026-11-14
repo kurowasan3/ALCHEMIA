@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 270" width="400" height="270" fill="none" stroke="currentColor" font-family="Noto Sans CJK JP, sans-serif">
+<line x1="70" y1="210" x2="370" y2="210" stroke-width="1.4"/>
+<line x1="70" y1="210" x2="70" y2="45" stroke-width="1.4"/>
+<rect x="116" y="97.5" width="28" height="112.5" fill="#1f5fbf" stroke="none"/>
+<text x="130.0" y="230.0" font-size="14" text-anchor="middle" font-weight="normal" fill="currentColor" stroke="none">114</text>
+<text x="130.0" y="89.5" font-size="14" text-anchor="middle" font-weight="bold" fill="currentColor" stroke="none">3</text>
+<rect x="206" y="60.0" width="28" height="150.0" fill="#1f5fbf" stroke="none"/>
+<text x="220.0" y="230.0" font-size="14" text-anchor="middle" font-weight="normal" fill="currentColor" stroke="none">116</text>
+<text x="220.0" y="52.0" font-size="14" text-anchor="middle" font-weight="bold" fill="currentColor" stroke="none">4</text>
+<rect x="296" y="172.5" width="28" height="37.5" fill="#1f5fbf" stroke="none"/>
+<text x="310.0" y="230.0" font-size="14" text-anchor="middle" font-weight="normal" fill="currentColor" stroke="none">118</text>
+<text x="310.0" y="164.5" font-size="14" text-anchor="middle" font-weight="bold" fill="currentColor" stroke="none">1</text>
+<text x="220.0" y="252.0" font-size="13" text-anchor="middle" font-weight="normal" fill="currentColor" stroke="none">分子の相対質量</text>
+<text x="58.0" y="135.0" font-size="13" text-anchor="end" font-weight="normal" fill="currentColor" stroke="none">存在比</text>
+<text x="130.0" y="67.5" font-size="12" text-anchor="middle" font-weight="normal" fill="currentColor" stroke="none">⁷⁹Br³⁵Cl</text>
+<text x="220.0" y="30.0" font-size="12" text-anchor="middle" font-weight="normal" fill="currentColor" stroke="none">⁷⁹Br³⁷Cl ＋ ⁸¹Br³⁵Cl</text>
+<text x="310.0" y="142.5" font-size="12" text-anchor="middle" font-weight="normal" fill="currentColor" stroke="none">⁸¹Br³⁷Cl</text>
+</svg>

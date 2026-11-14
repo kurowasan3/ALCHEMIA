@@ -1,0 +1,109 @@
+{
+ "id": "THE-ION-086",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "アンモニアの気液平衡と電離平衡の連成（pH によるアンモニアの放散）",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "アンモニウム塩を含む排水からアンモニアを除くため，排水に空気を接触させてアンモニアを気相へ追い出す方法を考える．水溶液中のアンモニアは $\\ce{NH4+ <=> NH3 + H+}$（電離定数 $K_{\\mathrm{a}}=5.6\\times10^{-10}\\,\\mathrm{mol/L}$）の平衡にあり，気相に移るのは電離していない $\\ce{NH3}$ だけである．気相の $\\ce{NH3}$ の分圧 $p$〔kPa〕と水溶液中の $[\\ce{NH3}]$ の間には $[\\ce{NH3}]=Hp$（$H=0.60\\,\\mathrm{mol/(L\\cdot kPa)}$）の関係（ヘンリーの法則）が成り立つ．\n\nアンモニア（$\\ce{NH3}$ と $\\ce{NH4+}$ の合計）を $c_0\\,\\mathrm{mol/L}$ 含む排水 $1.0\\,\\mathrm{L}$ を，$300\\,\\mathrm{K}$ で体積 $V\\,\\mathrm{L}$ の空気（はじめ $\\ce{NH3}$ を含まない）と密閉容器内で接触させ，平衡にする．排水の pH は緩衝作用により一定に保たれ，液体の体積は変わらないとする．気体は理想気体とし，気体定数は $R=8.31\\,\\mathrm{kPa\\cdot L/(K\\cdot mol)}$，$\\log_{10}5.6=0.75$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "水溶液中のアンモニアのうち $\\ce{NH3}$ として存在するものの割合 $\\alpha$ を $[\\ce{H+}]$ と $K_{\\mathrm{a}}$ で表せ．また，pH 7.25，9.25，11.25 のときの $\\alpha$ を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "1 回の接触で気相に移るアンモニアの割合 $f$ を，$\\alpha$，$H$，$V$，$R$，$T$ を用いて表せ．$c_0$ によらないことにも注意せよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$V=1.0\\times10^{3}\\,\\mathrm{L}$ のとき，pH 11.25 と pH 7.25 のそれぞれについて $f$ を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "pH 11.25 で，はじめのアンモニアの 90\\,\\% 以上を除きたい．(i) 新しい空気 $1.0\\times10^{3}\\,\\mathrm{L}$ との接触を繰り返すとき，最低何回必要か．(ii) 1 回の接触で済ませるとき，必要な空気の体積は何 L か（有効数字 2 桁）．(i) と (ii) で必要な空気の総量を比べ，どちらが少なくて済むか答えよ．必要なら $\\log_{10}0.602=-0.220$ を用いよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\alpha=\\dfrac{K_{\\mathrm{a}}}{K_{\\mathrm{a}}+[\\ce{H+}]}$；pH 7.25：$9.9\\times10^{-3}$，pH 9.25：0.50，pH 11.25：0.99"
+   },
+   {
+    "id": "2",
+    "tex": "$f=\\dfrac{V/(RT)}{H/\\alpha+V/(RT)}$"
+   },
+   {
+    "id": "3",
+    "tex": "pH 11.25：0.40，pH 7.25：$6.6\\times10^{-3}$"
+   },
+   {
+    "id": "4",
+    "tex": "(i) 5 回，(ii) $1.4\\times10^{4}\\,\\mathrm{L}$；(i) は総量 $5.0\\times10^{3}\\,\\mathrm{L}$ で，(i) のほうが少なくて済む"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　気液平衡（ヘンリーの法則）は $\\ce{NH3}$ にだけはたらき，その $\\ce{NH3}$ の量は電離平衡（pH）で決まる．2 つの平衡をつないで，アンモニアの全量が液相と気相にどう分かれるかを求める．\n\n(1) $[\\ce{NH3}]/[\\ce{NH4+}]=K_{\\mathrm{a}}/[\\ce{H+}]$ より\n\\[ \\alpha=\\dfrac{[\\ce{NH3}]}{[\\ce{NH3}]+[\\ce{NH4+}]}=\\dfrac{K_{\\mathrm{a}}}{K_{\\mathrm{a}}+[\\ce{H+}]} \\]\n$\\mathrm{p}K_{\\mathrm{a}}=10-0.75=9.25$ なので，pH が $\\mathrm{p}K_{\\mathrm{a}}-2$，$\\mathrm{p}K_{\\mathrm{a}}$，$\\mathrm{p}K_{\\mathrm{a}}+2$ のとき $[\\ce{H+}]/K_{\\mathrm{a}}=100,\\ 1,\\ 0.01$．よって $\\alpha=1/101=\\boldsymbol{9.9\\times10^{-3}}$，$\\boldsymbol{0.50}$，$100/101=\\boldsymbol{0.99}$．\n\n(2) 平衡時の $\\ce{NH3}$ の分圧を $p$ とすると，液相のアンモニアの全量は $[\\ce{NH3}]/\\alpha\\times1.0\\,\\mathrm{L}=Hp/\\alpha$（mol），気相は $pV/(RT)$（mol）．全量に対する気相の割合は\n\\[ f=\\dfrac{pV/(RT)}{Hp/\\alpha+pV/(RT)}=\\dfrac{V/(RT)}{H/\\alpha+V/(RT)} \\]\n$p$（すなわち $c_0$）が約分されて消えるので，$f$ は濃度によらない（分配平衡と同じ形）．\n\n(3) $V/(RT)=\\dfrac{1.0\\times10^{3}}{8.31\\times300}=0.401\\,\\mathrm{mol/kPa}$．\npH 11.25：$H/\\alpha=0.60/0.990=0.606$ より $f=\\dfrac{0.401}{0.606+0.401}=\\boldsymbol{0.40}$．\npH 7.25：$H/\\alpha=0.60\\times101=60.6$ より $f=\\dfrac{0.401}{60.6+0.401}=\\boldsymbol{6.6\\times10^{-3}}$．\npH を 4 下げると除去率は約 60 分の 1 になる．中性付近ではアンモニアのほとんどが揮発しない $\\ce{NH4+}$ だからである．実際の処理で石灰などを加えて強塩基性にするのはこのためである．\n\n(4) (i) 1 回ごとに液相に残る割合は $1-f=0.602$ で，接触のたびに同じ割合が残る．$0.602^{n}\\leqq0.10$ より $n\\geqq\\dfrac{-1}{-0.220}=4.5$，よって $\\boldsymbol{5}$ 回（空気の総量 $5.0\\times10^{3}\\,\\mathrm{L}$）．\n(ii) $f=0.90$ とするには $\\dfrac{V/(RT)}{0.606+V/(RT)}=0.90$ より $V/(RT)=9\\times0.606=5.45$，$V=5.45\\times8.31\\times300=\\boldsymbol{1.4\\times10^{4}\\,\\mathrm{L}}$．\n同じ除去率なら，少量の空気で何回にも分けて接触させる (i) のほうが，総量が約 3 分の 1 で済む．1 回で大量の空気を使うと，気相の分圧が下がりきったところでも液相に多く残ってしまうためである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "気相へ移れるのは電離していない NH3 だけなので，ヘンリーの法則と電離平衡を連立すると，1回の接触で気相へ移る割合は NH3 の存在割合 α（pH で決まる）と気液の体積比だけで決まり濃度によらない．pH を pKa より十分高くしないと放散できないことと，空気を分割して繰り返し接触させるほうが総量が少なくて済むことを定量的に示す．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "nitrogen-phosphorus",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ヘンリーの法則",
+  "電離平衡",
+  "アンモニア",
+  "連成平衡",
+  "分割操作"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

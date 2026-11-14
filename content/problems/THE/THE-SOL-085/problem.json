@@ -1,0 +1,131 @@
+{
+ "id": "THE-SOL-085",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-09",
+ "topic": "ガス吸収の段数と流し方（混合槽・向流）による必要な吸収液量",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "気体 A をモル分率 $f_0$ で含む気体混合物を流量 $G$〔mol/s〕で流し，A だけを溶かす吸収液（入口では A を含まない）を流量 $W$〔mol/s〕で流して接触させ，気体中の A のモル分率を $f_\\mathrm{f}$ まで下げたい．A は希薄なので，気体と液体の流量は場所によらずそれぞれ $G$，$W$ とみなせ，A のモル分率が $f$ の気体と，A のモル分率が $g$ の液体が平衡にあるとき $f=hg$（$h$ は定数）が成り立つ．また，液体は自分と平衡にある気体より A のモル分率が小さい気体とは接しても A を吸収しない（A を吸収するのは $g<f/h$ のときに限る）．図のように，次の 3 つの方式を考える．\n\n（Ⅰ）よくかき混ぜた槽 1 つに気体と液体を流し込み，それぞれ取り出す．槽から出る気体と液体は互いに平衡にあり，槽内の組成は出口の組成に等しい．\n\n（Ⅱ）（Ⅰ）と同じ槽を 2 つ使い，気体は槽1→槽2，液体は槽2→槽1 の順に流す．各槽から出る気体と液体は互いに平衡にある．\n\n（Ⅲ）縦長の塔の上から液体，下から気体を流して連続的に接触させる（向流）．塔は十分に長く，塔内のどの高さでも吸収が起こりうる．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "（Ⅰ）で必要な $\\dfrac{W}{G}$ を $f_0$，$f_\\mathrm{f}$，$h$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "（Ⅲ）で，塔のある高さの気体のモル分率を $f$，その高さの液体のモル分率を $g$ とする．塔の上端からその高さまでの A の収支から $g$ を $f$ の式で表し，それを用いて，（Ⅲ）で $f_\\mathrm{f}$ まで下げるのに必要な $\\dfrac{W}{G}$ の最小値を $f_0$，$f_\\mathrm{f}$，$h$ で表せ．どの高さで条件が最も厳しくなるかも答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "（Ⅱ）で，$\\dfrac{W}{hG}=a$ とおく．$\\dfrac{f_0}{f_\\mathrm{f}}$ を $a$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "$f_0=0.020$，$f_\\mathrm{f}=0.0010$，$h=2.0$ のとき，（Ⅰ），（Ⅱ）で必要な $\\dfrac{W}{G}$ と，（Ⅲ）での最小値をそれぞれ有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "（Ⅰ）と（Ⅲ）で必要な液量が大きく異なる理由を，それぞれの方式で出ていく液体が平衡になりうる相手の気体のモル分率を比べて説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：ガス吸収の段数と流し方（混合槽・向流）による必要な吸収液量",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\dfrac{W}{G}=\\dfrac{h(f_0-f_\\mathrm{f})}{f_\\mathrm{f}}$"
+   },
+   {
+    "id": "2",
+    "tex": "$g=\\dfrac{G}{W}(f-f_\\mathrm{f})$，$\\left(\\dfrac{W}{G}\\right)_\\mathrm{min}=\\dfrac{h(f_0-f_\\mathrm{f})}{f_0}$，塔の下端（気体の入口・液体の出口）で最も厳しい"
+   },
+   {
+    "id": "3",
+    "tex": "$\\dfrac{f_0}{f_\\mathrm{f}}=1+a+a^{2}$"
+   },
+   {
+    "id": "4",
+    "tex": "（Ⅰ）38，（Ⅱ）7.8，（Ⅲ）1.9"
+   },
+   {
+    "id": "5",
+    "tex": "（Ⅰ）では出ていく液体は出口の薄い気体（$f_\\mathrm{f}$）としか平衡になれず $g\\le f_\\mathrm{f}/h$ だが，（Ⅲ）では入口の濃い気体（$f_0$）と接して出ていくので $g$ を $f_0/h$ まで高められ，液 1 mol あたりに運べる A が $f_0/f_\\mathrm{f}$ 倍（ここでは 20 倍）になるから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 出口の液体は出口の気体と平衡で $g=f_\\mathrm{f}/h$．A の収支 $G(f_0-f_\\mathrm{f})=Wg$ より\n\\[ \\frac{W}{G}=\\boldsymbol{\\frac{h(f_0-f_\\mathrm{f})}{f_\\mathrm{f}}} \\]\n\n\\textbf{(2)} 塔の上端では気体のモル分率 $f_\\mathrm{f}$，液体のモル分率 0．上端からある高さまでの区間で，気体が失った A＝液体が得た A なので $G(f-f_\\mathrm{f})=W(g-0)$，すなわち $\\boldsymbol{g=\\dfrac{G}{W}(f-f_\\mathrm{f})}$（操作線）．\n\nどの高さでも吸収が進むには $g<\\dfrac{f}{h}$ でなければならない（等号は限界）．$g$ も $\\dfrac{f}{h}$ も $f$ の 1 次式なので，条件は $f$ の範囲 $f_\\mathrm{f}\\le f\\le f_0$ の両端で調べれば十分である．\n・上端（$f=f_\\mathrm{f}$）：$g=0<\\dfrac{f_\\mathrm{f}}{h}$ で常に満たされる．\n・下端（$f=f_0$）：$\\dfrac{G}{W}(f_0-f_\\mathrm{f})\\le\\dfrac{f_0}{h}$．\nよって $\\left(\\dfrac{W}{G}\\right)_\\mathrm{min}=\\boldsymbol{\\dfrac{h(f_0-f_\\mathrm{f})}{f_0}}$ で，条件が最も厳しいのは\\textbf{塔の下端}（濃い気体が入り，A を最も多く含む液体が出る所）．このとき出ていく液体は入口の気体と平衡（$g=f_0/h$）になっている．\n\n\\textbf{(3)} 槽2 から出る気体は $f_\\mathrm{f}$，液体は $g_2=f_\\mathrm{f}/h$．槽1 から出る気体を $f_1$，液体を $g_1=f_1/h$ とする．\n槽2 の収支：$G(f_1-f_\\mathrm{f})=Wg_2=\\dfrac{W}{h}f_\\mathrm{f}$ より $f_1=f_\\mathrm{f}(1+a)$．\n槽1 の収支：$G(f_0-f_1)=W(g_1-g_2)=\\dfrac{W}{h}(f_1-f_\\mathrm{f})$ より $f_0-f_1=a(f_1-f_\\mathrm{f})=a^{2}f_\\mathrm{f}$．\nよって $\\boldsymbol{\\dfrac{f_0}{f_\\mathrm{f}}=1+a+a^{2}}$．（1 段なら $1+a$ で，(1) と一致する．）\n\n\\textbf{(4)}（Ⅰ）$\\dfrac{2.0\\times(0.020-0.0010)}{0.0010}=\\boldsymbol{38}$．\n\n（Ⅱ）$1+a+a^{2}=20$ より $a=\\dfrac{-1+\\sqrt{77}}{2}=3.89$，$\\dfrac{W}{G}=ha=\\boldsymbol{7.8}$．\n\n（Ⅲ）$\\dfrac{2.0\\times0.019}{0.020}=\\boldsymbol{1.9}$．\n\n\\textbf{(5)} 吸収液 1 mol が運び出せる A の量は，出ていくときの $g$ で決まる．（Ⅰ）では槽内が出口の組成にそろうので，液体は薄い気体 $f_\\mathrm{f}$ と平衡にしかなれず $g\\le f_\\mathrm{f}/h$．（Ⅲ）では液体は最後に入口の濃い気体 $f_0$ と接して出ていくので $g$ を $f_0/h$ まで上げられる．運べる量の比は $f_0/f_\\mathrm{f}=20$ で，(4) の $38/1.9=20$ と一致する．（Ⅱ）はその中間で，段数を増やすほど（Ⅲ）に近づく．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "吸収液が運び出せる量は，出ていく液体がどの気体と平衡になりうるかで決まる．よく混ぜた槽では液体は薄い出口の気体としか平衡になれないが，向流では濃い入口の気体と接して出ていくので，物質収支の直線（操作線）と平衡線が気体の入口で接する条件から最小液量が決まり，段数を増やすと f₀/f_f＝1＋a＋a²＋… の形で近づく．"
+ },
+ "concepts": [
+  "solution-colligative",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ヘンリーの法則",
+  "ガス吸収",
+  "物質収支",
+  "向流",
+  "操作線",
+  "段数"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

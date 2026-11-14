@@ -1,0 +1,101 @@
+{
+ "id": "THE-ION-014",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "指示薬の電離定数と変色域",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "指示薬の多くは弱酸で，指示薬を $\\ce{HIn}$ と表すと水溶液中で $\\ce{HIn <=> H+ + In-}$ の電離平衡にある．$\\ce{HIn}$ と $\\ce{In-}$ は異なる色をもち，$\\dfrac{[\\ce{HIn}]}{[\\ce{In-}]}\\geqq10$ なら $\\ce{HIn}$ の色，$\\dfrac{[\\ce{HIn}]}{[\\ce{In-}]}\\leqq\\dfrac{1}{10}$ なら $\\ce{In-}$ の色に見え，その間が変色域になるとする．\\\\\n2種類の指示薬 P（$K_a=1.0\\times10^{-9}\\,\\mathrm{mol/L}$）と Q（$K_a=2.0\\times10^{-5}\\,\\mathrm{mol/L}$）がある．$\\log_{10}2=0.30$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "P と Q の変色域の pH の範囲をそれぞれ求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "pH 7.0 の水溶液に P を加えたとき，$\\dfrac{[\\ce{HIn}]}{[\\ce{In-}]}$ はいくらか．また，溶液は $\\ce{HIn}$ と $\\ce{In-}$ のどちらの色に見えるか．"
+     },
+     {
+      "id": "3",
+      "tex": "次の (a)〜(c) の中和滴定（中和点の pH を括弧内に示す）の指示薬として，P と Q のどちらが適しているか．両方とも使える場合は「両方」と答えよ．\\\\\n(a) 酢酸水溶液を水酸化ナトリウム水溶液で滴定（pH 8.7）\\\\\n(b) アンモニア水を塩酸で滴定（pH 5.3）\\\\\n(c) 塩酸を水酸化ナトリウム水溶液で滴定（pH 7.0，中和点前後で pH 約 3〜11 にわたって急変する）"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "P：pH 8.0〜10.0，Q：pH 3.7〜5.7"
+   },
+   {
+    "id": "2",
+    "tex": "$1.0\\times10^{2}$，$\\ce{HIn}$ の色"
+   },
+   {
+    "id": "3",
+    "tex": "(a) P　(b) Q　(c) 両方"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 電離定数の式を変形すると\n\\[ [\\ce{H+}]=K_a\\dfrac{[\\ce{HIn}]}{[\\ce{In-}]},\\qquad \\mathrm{pH}=-\\log_{10}K_a-\\log_{10}\\dfrac{[\\ce{HIn}]}{[\\ce{In-}]} \\]\n比が 10 から $\\tfrac{1}{10}$ まで変わる範囲は $\\mathrm{pH}=-\\log_{10}K_a\\pm1$．\\\\\nP：$-\\log_{10}(1.0\\times10^{-9})=9.0$ より \\textbf{pH 8.0〜10.0}．\\\\\nQ：$-\\log_{10}(2.0\\times10^{-5})=5-0.30=4.7$ より \\textbf{pH 3.7〜5.7}．\n\n\\textbf{(2)} $\\dfrac{[\\ce{HIn}]}{[\\ce{In-}]}=\\dfrac{[\\ce{H+}]}{K_a}=\\dfrac{1.0\\times10^{-7}}{1.0\\times10^{-9}}=\\boldsymbol{1.0\\times10^{2}}$．10 以上なので $\\ce{HIn}$ \\textbf{の色}に見える（P はまだ変色していない）．\n\n\\textbf{(3)} 中和点の pH が変色域に入るもの，または中和点前後の pH の急変の範囲に変色域が含まれるものを選ぶ．\\\\\n(a) 中和点 pH 8.7 は P の変色域内，Q では中和点よりずっと前に変色してしまう → \\textbf{P}．\\\\\n(b) 中和点 pH 5.3 は Q の変色域内，P は中和点よりずっと前（pH が 10〜8 に下がる途中）で変色してしまう → \\textbf{Q}．\\\\\n(c) pH の急変の範囲（約 3〜11）に P・Q どちらの変色域も含まれる → \\textbf{両方}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "弱酸型指示薬の変色域は電離定数の式 [H+]=Ka[HIn]/[In-] から pH = pKa ± 1 と求まる．中和点の pH や pH の急変の範囲に変色域が入る指示薬を選ぶ．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "ph",
+  "acid-base"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "指示薬",
+  "変色域",
+  "電離定数",
+  "中和滴定",
+  "pKa"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

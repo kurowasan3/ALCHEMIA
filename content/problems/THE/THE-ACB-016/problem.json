@@ -1,0 +1,123 @@
+{
+ "id": "THE-ACB-016",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-05",
+ "topic": "強酸と弱酸の混合溶液の滴定曲線",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "塩酸と酢酸を含む混合水溶液 $20.0\\,\\mathrm{mL}$ を $0.100\\,\\mathrm{mol/L}$ 水酸化ナトリウム水溶液で滴定したところ，図のように2つの中和点 $\\mathrm{a_1}$（$8.0\\,\\mathrm{mL}$），$\\mathrm{a_2}$（$20.0\\,\\mathrm{mL}$）をもつ滴定曲線が得られた．酢酸の電離定数を $K_a=2.0\\times10^{-5}\\,\\mathrm{mol/L}$，$\\log_{10}2=0.30$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "最初の中和点 $\\mathrm{a_1}$ までに中和されるのは主に塩酸と酢酸のどちらか．理由とともに答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "もとの混合水溶液中の塩化水素と酢酸のモル濃度を，それぞれ有効数字3桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "滴定前の混合水溶液の pH を小数第1位まで求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "水酸化ナトリウム水溶液を $14.0\\,\\mathrm{mL}$ 加えたときの pH を小数第1位まで求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：強酸と弱酸の混合溶液の滴定曲線",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "塩酸（塩酸から生じる多量の $\\ce{H+}$ のため酢酸の電離平衡が左に偏り，酢酸はほとんど電離していないので，先に強酸の $\\ce{H+}$ が中和される）"
+   },
+   {
+    "id": "2",
+    "tex": "塩化水素 $0.0400\\,\\mathrm{mol/L}$，酢酸 $0.0600\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "3",
+    "tex": "1.4"
+   },
+   {
+    "id": "4",
+    "tex": "4.7"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\ce{CH3COOH <=> CH3COO- + H+}$ の平衡は，塩酸の $\\ce{H+}$ によって左へ大きく偏る（共通イオン効果）．そのため加えた $\\ce{OH-}$ はまず水溶液中の $\\ce{H+}$，すなわち \\textbf{塩酸} の分を中和する．塩酸がなくなってはじめて酢酸の中和が進み，$\\mathrm{a_1}$ から $\\mathrm{a_2}$ までのゆるやかな部分（緩衝域）になる．\n\n\\textbf{(2)} $\\mathrm{a_1}$ までが $\\ce{HCl}$，$\\mathrm{a_1}$ から $\\mathrm{a_2}$ までの $12.0\\,\\mathrm{mL}$ が $\\ce{CH3COOH}$ の中和．\n\\[ [\\ce{HCl}]=\\dfrac{0.100\\times8.0}{20.0}=\\boldsymbol{0.0400\\,\\mathrm{mol/L}},\\qquad [\\ce{CH3COOH}]=\\dfrac{0.100\\times12.0}{20.0}=\\boldsymbol{0.0600\\,\\mathrm{mol/L}} \\]\n\n\\textbf{(3)} 酢酸の電離は無視できるので $[\\ce{H+}]=0.0400=4.0\\times10^{-2}\\,\\mathrm{mol/L}$．\n\\[ \\mathrm{pH}=2-\\log_{10}4=2-0.60=\\boldsymbol{1.4} \\]\n（確認：このとき $[\\ce{CH3COO-}]=K_a\\times\\dfrac{0.0600}{0.0400}=3.0\\times10^{-5}\\,\\mathrm{mol/L}$ で，$[\\ce{H+}]$ に比べて十分小さい．）\n\n\\textbf{(4)} $14.0\\,\\mathrm{mL}$ では，酢酸の中和に使われた $\\ce{NaOH}$ が $14.0-8.0=6.0\\,\\mathrm{mL}$ で，酢酸の中和に必要な $12.0\\,\\mathrm{mL}$ のちょうど半分．よって $[\\ce{CH3COOH}]=[\\ce{CH3COO-}]$ となり，\n\\[ [\\ce{H+}]=K_a\\dfrac{[\\ce{CH3COOH}]}{[\\ce{CH3COO-}]}=K_a=2.0\\times10^{-5},\\qquad \\mathrm{pH}=5-0.30=\\boldsymbol{4.7} \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "強酸と弱酸の混合溶液では，強酸の H+ による共通イオン効果で弱酸の電離が抑えられるため，強酸が先に中和され，2つの中和点が現れる．2つ目の中和区間の中点では [HA]=[A-] となり pH = pKa になる．"
+ },
+ "concepts": [
+  "acid-base",
+  "ph",
+  "ionization-equilibrium"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "中和滴定",
+  "滴定曲線",
+  "共通イオン効果",
+  "弱酸",
+  "緩衝液"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

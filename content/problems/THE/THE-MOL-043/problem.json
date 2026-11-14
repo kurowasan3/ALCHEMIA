@@ -1,0 +1,118 @@
+{
+ "id": "THE-MOL-043",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-04",
+ "topic": "石炭の燃焼排ガスの組成（空気の量・乾きガス）と石灰石による脱硫の量",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "equation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "質量パーセントで炭素 $80.0\\,\\%$，水素 $5.0\\,\\%$，硫黄 $2.0\\,\\%$ を含み，残りは燃焼に関与しない灰分である石炭がある．この石炭を，過不足のない量の空気（体積で窒素 $80\\,\\%$，酸素 $20\\,\\%$）で完全燃焼させる．炭素は $\\ce{CO2}$，水素は $\\ce{H2O}$，硫黄は $\\ce{SO2}$ になり，窒素は反応しない．原子量は $\\ce{H}=1.0$，$\\ce{C}=12$，$\\ce{O}=16$，$\\ce{S}=32$，$\\ce{Ca}=40$，$0\\,^\\circ\\mathrm{C}$，$1.013\\times10^{5}\\,\\mathrm{Pa}$ の気体のモル体積は $22.4\\,\\mathrm{L/mol}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "石炭 $1.00\\,\\mathrm{kg}$ の完全燃焼に必要な酸素の物質量と，必要な空気の体積（$0\\,^\\circ\\mathrm{C}$，$1.013\\times10^{5}\\,\\mathrm{Pa}$，$\\mathrm{m^3}$）をそれぞれ有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "排出気体（水はすべて気体とする）に占める $\\ce{CO2}$ の体積パーセントを有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "排出気体を冷却して水だけを完全に除いた後の $\\ce{CO2}$ の体積パーセントを有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の水を除いた排出気体中の $\\ce{SO2}$ の濃度は何 ppm（体積で $10^{6}$ 分の 1 を単位とする割合）か．有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "排出気体中の $\\ce{SO2}$ の $80\\,\\%$ を，石灰石（$\\ce{CaCO3}$）の粉末と酸素との反応で硫酸カルシウムにして除く（排煙脱硫）．この反応を化学反応式で表し，石炭 $1.00\\,\\mathrm{kg}$ あたりに必要な石灰石と，生成する硫酸カルシウムの質量をそれぞれ有効数字 2 桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "酸素 $80\\,\\mathrm{mol}$，空気 $8.9\\,\\mathrm{m^3}$"
+   },
+   {
+    "id": "2",
+    "tex": "$16\\,\\%$"
+   },
+   {
+    "id": "3",
+    "tex": "$17\\,\\%$"
+   },
+   {
+    "id": "4",
+    "tex": "$1.6\\times10^{3}\\,\\mathrm{ppm}$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\ce{2CaCO3 + 2SO2 + O2 -> 2CaSO4 + 2CO2}$，石灰石 $50\\,\\mathrm{g}$，硫酸カルシウム $68\\,\\mathrm{g}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{1.00 kg あたりの物質量}　$\\ce{C}$：$\\dfrac{800}{12} = 66.7\\,\\mathrm{mol}$，$\\ce{H}$：$\\dfrac{50}{1.0} = 50\\,\\mathrm{mol}$（$\\ce{H2O}$ 25.0 mol），$\\ce{S}$：$\\dfrac{20}{32} = 0.625\\,\\mathrm{mol}$．\n\\[ \\ce{C + O2 -> CO2},\\qquad \\ce{2H2 + O2 -> 2H2O},\\qquad \\ce{S + O2 -> SO2} \\]\n\n(1) 必要な $\\ce{O2}$ は $66.7 + \\dfrac{25.0}{2} + 0.625 = 79.8 \\approx \\boldsymbol{80\\,\\mathrm{mol}}$．空気はその 5 倍の $399\\,\\mathrm{mol}$ で，$399\\times22.4 = 8.94\\times10^{3}\\,\\mathrm{L} \\approx \\boldsymbol{8.9\\,\\mathrm{m^3}}$．\n\n(2) 排出気体は $\\ce{CO2}$ 66.7，$\\ce{H2O}$ 25.0，$\\ce{SO2}$ 0.625，$\\ce{N2}$ $79.8\\times4 = 319.2$（mol），合計 $411.5\\,\\mathrm{mol}$．$\\ce{CO2}$ は $\\dfrac{66.7}{411.5}\\times100 = 16.2 \\approx \\boldsymbol{16\\,\\%}$．酸素はすべて消費されるので，排出気体の大部分は空気から持ち込まれた窒素である．\n\n(3) 水を除くと合計 $386.5\\,\\mathrm{mol}$，$\\dfrac{66.7}{386.5}\\times100 = 17.2 \\approx \\boldsymbol{17\\,\\%}$．\n\n(4) $\\dfrac{0.625}{386.5}\\times10^{6} = 1.62\\times10^{3} \\approx \\boldsymbol{1.6\\times10^{3}\\,\\mathrm{ppm}}$．割合は小さく見えるが，大量の石炭を燃やすと排出される $\\ce{SO2}$ の総量は大きく，酸性雨の原因になる．\n\n(5) $\\boldsymbol{\\ce{2CaCO3 + 2SO2 + O2 -> 2CaSO4 + 2CO2}}$．除く $\\ce{SO2}$ は $0.625\\times0.80 = 0.500\\,\\mathrm{mol}$ で，$\\ce{CaCO3}$（式量 100）も同じ物質量必要なので $\\boldsymbol{50\\,\\mathrm{g}}$，生成する $\\ce{CaSO4}$（式量 136）は $0.500\\times136 = \\boldsymbol{68\\,\\mathrm{g}}$（セッコウとして建材などに利用される）．なお，この方法では $\\ce{SO2}$ 1 mol を除くごとに $\\ce{CO2}$ が 1 mol 生じる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "燃料の元素組成（C・H・S）から必要な酸素・空気の量と排出気体の組成を物質量で求め，空気から持ち込まれる窒素や水の除去で体積パーセントが変わることを確かめる．微量の SO₂ の濃度（ppm）と，石灰石による脱硫に必要な量・生じる硫酸カルシウムの量を反応式の係数から求める．"
+ },
+ "concepts": [
+  "mole",
+  "oxygen-sulfur",
+  "nitrogen-phosphorus"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "燃焼",
+  "排出ガス",
+  "空気の組成",
+  "体積パーセント",
+  "排煙脱硫",
+  "二酸化硫黄"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,108 @@
+{
+ "id": "THE-ELC-019",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-07",
+ "topic": "銅の電解精錬と物質収支",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "粗銅を陽極，純銅を陰極とし，硫酸を加えた硫酸銅(II) 水溶液を約 $0.3\\,\\mathrm{V}$ の低い電圧で電気分解して，銅を精製する．Fe = 56，Cu = 63.5 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "粗銅に不純物として Zn，Fe，Ni，Ag，Au，Pb が含まれているとする．このうち，(a) イオンとなって水溶液中に残るもの，(b) イオンにならずに陽極の下に沈殿するもの，(c) いったんイオンになるが直ちに沈殿するもの，をそれぞれすべて元素記号で答えよ．(c) については生じる沈殿の化学式も答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "電気分解を続けると，水溶液中の $\\ce{Cu^2+}$ の濃度は少しずつ減少する．その理由を簡潔に説明せよ．"
+     },
+     {
+      "id": "3",
+      "tex": "不純物として Fe と Ag だけを含む粗銅を用いて電気分解したところ，陰極の質量は $3.175\\,\\mathrm{g}$ 増加し，水溶液中の $\\ce{Cu^2+}$ は $0.0050\\,\\mathrm{mol}$ 減少し，陽極の質量は $3.30\\,\\mathrm{g}$ 減少した．陽極から溶け出した鉄は何 g か．有効数字2桁で答えよ．ただし，Fe は $\\ce{Fe^2+}$ となって溶けるものとする．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) で陽極泥として沈殿した銀は何 g か．有効数字2桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "(a) Zn，Fe，Ni　(b) Ag，Au　(c) Pb（沈殿は $\\ce{PbSO4}$）"
+   },
+   {
+    "id": "2",
+    "tex": "陽極では銅だけでなく Fe などイオン化傾向の大きい不純物も酸化されて電子を出すが，陰極では $\\ce{Cu^2+}$ だけが還元されるので，溶け出す銅より析出する銅が多くなるから．"
+   },
+   {
+    "id": "3",
+    "tex": "$0.28\\,\\mathrm{g}$"
+   },
+   {
+    "id": "4",
+    "tex": "$0.16\\,\\mathrm{g}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} Cu よりイオン化傾向の大きい Zn，Fe，Ni は陽極で酸化されてイオンになり，低電圧では陰極で還元されないので水溶液中に残る．Cu より小さい Ag，Au は酸化されずに陽極泥となる．Pb は $\\ce{Pb^2+}$ になるが，硫酸イオンと $\\ce{Pb^2+ + SO4^2- -> PbSO4}$ で沈殿する．\n\n\\textbf{(2)} 陽極で流れ出す電子の一部は不純物金属の酸化に使われるので，陽極から溶ける Cu は陰極に析出する Cu より少ない．その差の分だけ $\\ce{Cu^2+}$ が減る．\n\n\\textbf{(3)} 陰極：$\\ce{Cu^2+ + 2e- -> Cu}$ で $3.175/63.5=0.0500\\,\\mathrm{mol}$ 析出，電子 $0.100\\,\\mathrm{mol}$．$\\ce{Cu^2+}$ が $0.0050\\,\\mathrm{mol}$ 減ったので，陽極から溶けた Cu は $0.0500-0.0050=0.0450\\,\\mathrm{mol}$（電子 $0.0900\\,\\mathrm{mol}$）．残りの電子 $0.0100\\,\\mathrm{mol}$ は $\\ce{Fe -> Fe^2+ + 2e-}$ によるので Fe は $0.0050\\,\\mathrm{mol}$，$0.0050\\times56=\\boldsymbol{0.28\\,\\mathrm{g}}$．\n\n\\textbf{(4)} 陽極の減少量 = 溶けた Cu + 溶けた Fe + 陽極泥の Ag．$0.0450\\times63.5=2.8575\\,\\mathrm{g}$ より，Ag は $3.30-2.8575-0.28=0.1625\\approx\\boldsymbol{0.16\\,\\mathrm{g}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "電解精錬では陽極で不純物金属も電子を出すが陰極では Cu2+ だけが還元されるため，電子の物質量・陰極の析出量・溶液中の Cu2+ の減少量・陽極の減少量の収支から不純物と陽極泥の量を求める．"
+ },
+ "concepts": [
+  "electrolysis",
+  "transition-metals",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電解精錬",
+  "陽極泥",
+  "イオン化傾向",
+  "物質収支"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,108 @@
+{
+ "id": "THE-EQL-011",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "反応速度式（NO の酸化）と濃度・体積の変化",
+ "course": "化学",
+ "level": 1,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "一酸化窒素と酸素は $\\ce{2NO + O2 -> 2NO2}$ のように反応し，$\\ce{NO2}$ の生成速度 $v$ は $v=k[\\ce{NO}]^2[\\ce{O2}]$ で表される．一定温度に保った容積 $5.0\\,\\mathrm L$ の容器に $\\ce{NO}$ $2.0\\times10^{-3}\\,\\mathrm{mol}$ と $\\ce{O2}$ $1.0\\times10^{-3}\\,\\mathrm{mol}$ を入れたところ，はじめの $50\\,\\mathrm s$ 間に $\\ce{NO2}$ が $4.0\\times10^{-5}\\,\\mathrm{mol}$ 生じた．この間の $\\ce{NO}$，$\\ce{O2}$ の減少はわずかなので，濃度ははじめの値のままとみなしてよい．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "反応初期の $\\ce{NO2}$ の生成速度〔$\\mathrm{mol/(L\\cdot s)}$〕と速度定数 $k$〔$\\mathrm{L^2/(mol^2\\cdot s)}$〕を，それぞれ有効数字2桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "反応初期の $\\ce{O2}$ の減少速度は何 $\\mathrm{mol/(L\\cdot s)}$ か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "同じ温度で，同じ物質量の $\\ce{NO}$ と $\\ce{O2}$ を容積 $2.5\\,\\mathrm L$ の容器に入れると，$\\ce{NO2}$ の初期生成速度はもとの何倍になるか．"
+     },
+     {
+      "id": "4",
+      "tex": "同じ温度・容積 $5.0\\,\\mathrm L$ で，$\\ce{NO}$ と $\\ce{O2}$ の物質量の合計を $3.0\\times10^{-3}\\,\\mathrm{mol}$ に保ったまま，次の (a)〜(d) の組成で反応させる．$\\ce{NO2}$ の初期生成速度が最も大きいものを選び，最も小さいものの何倍かを答えよ．\n(a) $\\ce{NO}$ $1.0\\times10^{-3}$，$\\ce{O2}$ $2.0\\times10^{-3}\\,\\mathrm{mol}$　(b) 両方とも $1.5\\times10^{-3}\\,\\mathrm{mol}$　(c) $\\ce{NO}$ $2.0\\times10^{-3}$，$\\ce{O2}$ $1.0\\times10^{-3}\\,\\mathrm{mol}$　(d) $\\ce{NO}$ $2.5\\times10^{-3}$，$\\ce{O2}$ $0.5\\times10^{-3}\\,\\mathrm{mol}$"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "生成速度 $1.6\\times10^{-7}\\,\\mathrm{mol/(L\\cdot s)}$，$k=5.0\\times10^{3}\\,\\mathrm{L^2/(mol^2\\cdot s)}$"
+   },
+   {
+    "id": "2",
+    "tex": "$8.0\\times10^{-8}\\,\\mathrm{mol/(L\\cdot s)}$"
+   },
+   {
+    "id": "3",
+    "tex": "$8$ 倍"
+   },
+   {
+    "id": "4",
+    "tex": "(c) が最大で，最も小さい (a) の $2$ 倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $v=\\dfrac{4.0\\times10^{-5}/5.0}{50}=\\boldsymbol{1.6\\times10^{-7}\\,\\mathrm{mol/(L\\cdot s)}}$．はじめの濃度は $[\\ce{NO}]=4.0\\times10^{-4}$，$[\\ce{O2}]=2.0\\times10^{-4}\\,\\mathrm{mol/L}$ なので\n\\[ k=\\frac{1.6\\times10^{-7}}{(4.0\\times10^{-4})^2\\times2.0\\times10^{-4}}=\\boldsymbol{5.0\\times10^{3}\\,\\mathrm{L^2/(mol^2\\cdot s)}} \\]\n\\textbf{(2)} 係数比 $\\ce{O2}:\\ce{NO2}=1:2$ より，$\\ce{O2}$ の減少速度は $\\ce{NO2}$ の生成速度の $\\dfrac12$ で $\\boldsymbol{8.0\\times10^{-8}\\,\\mathrm{mol/(L\\cdot s)}}$．どの物質で表すかによって速度の値が変わることに注意．\n\\textbf{(3)} 体積が半分になると両方の濃度が 2 倍になるので，$v$ は $2^2\\times2=\\boldsymbol{8}$ 倍．\n\\textbf{(4)} 容積が同じなので $v\\propto n_\\ce{NO}^2\\,n_\\ce{O2}$（単位 $10^{-3}\\,\\mathrm{mol}$）で比べる．\n(a) $1.0^2\\times2.0=2.0$，(b) $1.5^2\\times1.5=3.4$，(c) $2.0^2\\times1.0=4.0$，(d) $2.5^2\\times0.5=3.1$．\n最大は \\textbf{(c)}，最小は (a) で，$4.0/2.0=\\boldsymbol{2}$ 倍．$\\ce{NO}$ の濃度が 2 乗で効くので $\\ce{NO}$ を多めにした方が速いが，$\\ce{O2}$ を減らしすぎると (d) のように遅くなる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "反応速度式の次数は実験で決まり，濃度を変えたときの速度の倍率は次数に従う（体積半分で 2²×1 乗＝8 倍）．速度はどの物質の変化量で表すかで係数比の分だけ値が異なる．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "nitrogen-phosphorus",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応速度式",
+  "速度定数",
+  "反応次数",
+  "一酸化窒素"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

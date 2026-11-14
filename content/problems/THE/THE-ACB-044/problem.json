@@ -1,0 +1,101 @@
+{
+ "id": "THE-ACB-044",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-05",
+ "topic": "ハロゲン置換カルボン酸の酸の強さ（誘起効果の大きさ・数・距離）と電離度が大きいときの pH",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "compare",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "カルボン酸の炭化水素基の H をハロゲン原子に置き換えると，酸の強さが変わる．25 ℃ での電離定数は，酢酸 $\\ce{CH3COOH}$ が $K_a=2.7\\times10^{-5}\\,\\mathrm{mol/L}$，クロロ酢酸 $\\ce{CH2ClCOOH}$ が $K_a=1.4\\times10^{-3}\\,\\mathrm{mol/L}$，ジクロロ酢酸 $\\ce{CHCl2COOH}$ が $K_a=4.5\\times10^{-2}\\,\\mathrm{mol/L}$ である．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "フルオロ酢酸 $\\ce{CH2FCOOH}$，クロロ酢酸，ブロモ酢酸 $\\ce{CH2BrCOOH}$，ヨード酢酸 $\\ce{CH2ICOOH}$ を，酸として強い順に並べ，その理由を述べよ．"
+     },
+     {
+      "id": "2",
+      "tex": "2-クロロプロパン酸 $\\ce{CH3CHClCOOH}$ と 3-クロロプロパン酸 $\\ce{CH2ClCH2COOH}$ では，どちらが強い酸か．理由とともに答えよ．また，3-クロロプロパン酸とプロパン酸 $\\ce{CH3CH2COOH}$ の $K_a$ の差は，2-クロロプロパン酸とプロパン酸の差と比べて大きいか小さいか．"
+     },
+     {
+      "id": "3",
+      "tex": "$0.10\\,\\mathrm{mol/L}$ のクロロ酢酸水溶液と $0.10\\,\\mathrm{mol/L}$ のジクロロ酢酸水溶液について，「電離度 $\\alpha\\ll1$ として $1-\\alpha\\fallingdotseq1$ とする近似」を使わずに $[\\ce{H+}]$ を有効数字 2 桁で求め，pH を小数第 2 位まで答えよ．また，近似を使って求めた pH と比べ，近似が使えないのはどちらの水溶液か答えよ．必要なら $\\sqrt{5.62}=2.371$，$\\sqrt{2.00}=1.415$，$\\sqrt{1.40}=1.183$，$\\sqrt{4.50}=2.121$，$\\log_{10}1.12=0.049$，$\\log_{10}4.83=0.684$，$\\log_{10}1.18=0.072$，$\\log_{10}6.71=0.827$ を用いよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{CH2FCOOH}>\\ce{CH2ClCOOH}>\\ce{CH2BrCOOH}>\\ce{CH2ICOOH}$．ハロゲンの電気陰性度が F > Cl > Br > I の順に大きく，電子を強く引き寄せるほど $\\ce{-COO-}$ の負電荷が分散して安定になり，$\\ce{H+}$ が電離しやすいから．"
+   },
+   {
+    "id": "2",
+    "tex": "2-クロロプロパン酸．Cl が $\\ce{-COOH}$ に近い炭素に結合しているほど電子を引き寄せる効果が強く及ぶから．3-クロロプロパン酸とプロパン酸の差の方が小さい．"
+   },
+   {
+    "id": "3",
+    "tex": "クロロ酢酸：$[\\ce{H+}]=1.1\\times10^{-2}\\,\\mathrm{mol/L}$，pH 1.95（近似では 1.93）．ジクロロ酢酸：$[\\ce{H+}]=4.8\\times10^{-2}\\,\\mathrm{mol/L}$，pH 1.32（近似では 1.17）．近似が使えないのはジクロロ酢酸水溶液．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　$\\ce{RCOOH <=>[\\text{}] RCOO- + H+}$ の平衡は，生じた $\\ce{RCOO-}$ が安定なほど右に偏る．電気陰性度の大きい原子が近くにあると，結合を通して電子が引き寄せられ（誘起効果），$\\ce{-COO-}$ の負電荷が分散して安定になる．表の値でも，Cl が 1 個増えるごとに $K_a$ は約 $50$ 倍，さらに約 $30$ 倍と大きくなっている．\n\n\\textbf{(1)} 電子を引き寄せる強さは電気陰性度で決まり，F（4.0）> Cl（3.2）> Br（3.0）> I（2.7）である．したがって\n\\[\\boldsymbol{\\ce{CH2FCOOH}>\\ce{CH2ClCOOH}>\\ce{CH2BrCOOH}>\\ce{CH2ICOOH}}\\]\n（実測の $\\mathrm{p}K_a$ は 2.6，2.9，2.9，3.2 で，この順になっている．）ハロゲン化水素の酸の強さ（HF が最も弱い）とは逆の順になることに注意する．ハロゲン化水素では H と直接結合したハロゲン原子との結合の強さが効くが，ここでは H は O に結合していて，ハロゲンは離れた位置から電子を引くだけだからである．\n\n\\textbf{(2)} 誘起効果は結合を 1 本へだてるごとに急に弱くなる．Cl が $\\ce{-COOH}$ の隣の炭素（2 位）にある $\\boldsymbol{\\ce{CH3CHClCOOH}}$ の方が強い酸である．3 位の Cl の効果は弱いので，3-クロロプロパン酸とプロパン酸の $K_a$ の差は\\textbf{小さい}（実測の $\\mathrm{p}K_a$ はプロパン酸 4.9，3-クロロ 4.1，2-クロロ 2.8）．\n\n\\textbf{(3)} 濃度 $c=0.10\\,\\mathrm{mol/L}$，$[\\ce{H+}]=x$ とおくと $\\dfrac{x^2}{c-x}=K_a$，すなわち $x^2+K_ax-K_ac=0$ より\n\\[x=\\frac{-K_a+\\sqrt{K_a^{\\,2}+4K_ac}}{2}\\]\nクロロ酢酸：$K_a^{\\,2}+4K_ac=1.96\\times10^{-6}+5.6\\times10^{-4}=5.62\\times10^{-4}$，$\\sqrt{\\phantom{x}}=2.371\\times10^{-2}$ なので\n\\[x=\\frac{-1.4\\times10^{-3}+2.371\\times10^{-2}}{2}=1.12\\times10^{-2}\\ \\Rightarrow\\ \\boldsymbol{[\\ce{H+}]=1.1\\times10^{-2}\\,\\mathrm{mol/L}},\\quad \\mathrm{pH}=2-0.049=\\boldsymbol{1.95}\\]\n近似では $x=\\sqrt{K_ac}=\\sqrt{1.40\\times10^{-4}}=1.18\\times10^{-2}$，pH $=2-0.072=1.93$ で，差は 0.02 と小さい（$\\alpha=0.11$）．\n\nジクロロ酢酸：$K_a^{\\,2}+4K_ac=2.03\\times10^{-3}+1.80\\times10^{-2}=2.00\\times10^{-2}$，$\\sqrt{\\phantom{x}}=1.415\\times10^{-1}$ なので\n\\[x=\\frac{-4.5\\times10^{-2}+1.415\\times10^{-1}}{2}=4.83\\times10^{-2}\\ \\Rightarrow\\ \\boldsymbol{[\\ce{H+}]=4.8\\times10^{-2}\\,\\mathrm{mol/L}},\\quad \\mathrm{pH}=2-0.684=\\boldsymbol{1.32}\\]\n近似では $x=\\sqrt{4.50\\times10^{-3}}=6.71\\times10^{-2}$，pH $=2-0.827=1.17$ となり，0.15 もずれる．実際の電離度は $\\alpha=0.48$ で $1-\\alpha\\fallingdotseq1$ とはとてもいえない．近似が使えないのは\\textbf{ジクロロ酢酸水溶液}である．\n\n\\textbf{まとめ}　近似 $[\\ce{H+}]=\\sqrt{K_ac}$ は $K_a\\ll c$（目安として $\\alpha$ が $0.05$ 程度以下）のときだけ使える．$K_a$ が濃度に近い強めの弱酸では，2 次方程式を解く必要がある．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ハロゲン置換カルボン酸の酸の強さは，置換基の電気陰性度・数・カルボキシ基からの距離で決まる誘起効果で比べられ，ハロゲン化水素の強さの順とは逆になる．電離定数が濃度に近い強めの弱酸では電離度≪1 の近似が破れるので，2 次方程式を解いて pH を求め，近似の可否を判断する．"
+ },
+ "concepts": [
+  "acid-base",
+  "halogen",
+  "carboxylic-ester"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "酸の強さ",
+  "誘起効果",
+  "電気陰性度",
+  "電離度",
+  "近似の破れ"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

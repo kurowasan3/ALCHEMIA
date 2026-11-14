@@ -1,0 +1,115 @@
+{
+ "id": "THE-EQL-165",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "第三体による安定化を含む結合反応の見かけの速度定数の圧力依存性（低圧・高圧の極限と直線化）",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "大気中でヒドロキシラジカル OH と二酸化窒素が結合して硝酸ができる反応 $\\ce{OH + NO2 -> HNO3}$ は，見かけは単純な二分子反応だが，次の段階を経て進む．$\\ce{HNO3^*}$ は余分なエネルギーをもつ（高エネルギー状態の）$\\ce{HNO3}$，M は衝突によってそのエネルギーを受け取るだけの分子（第三体，主に $\\ce{N2}$ や $\\ce{O2}$）である．\n\\[ \\ce{OH + NO2 ->[\\text{}] HNO3^*} \\quad (k_1) \\qquad \\ce{HNO3^* ->[\\text{}] OH + NO2} \\quad (k_{-1}) \\qquad \\ce{HNO3^* + M ->[\\text{}] HNO3 + M} \\quad (k_2) \\]\n$\\ce{HNO3^*}$ はすぐに分解または安定化するので，その濃度は定常状態にあるとみなせる．全体の反応速度を $v = k_2[\\ce{HNO3^*}][\\mathrm M] = k'[\\ce{OH}][\\ce{NO2}]$ と表したときの $k'$ を「見かけの速度定数」とよぶ．濃度は数密度（$\\mathrm{cm^{-3}}$）で表し，温度はすべて同じとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$[\\ce{HNO3^*}]$ を求め，$k'$ を $k_1$，$k_{-1}$，$k_2$，$[\\mathrm M]$ で表せ．また，生じた $\\ce{HNO3^*}$ のうち安定な $\\ce{HNO3}$ になる割合が $k'/k_1$ に等しいことを示せ．"
+     },
+     {
+      "id": "2",
+      "tex": "$[\\mathrm M]$ がきわめて小さい場合と，きわめて大きい場合のそれぞれについて，$k'$ の近似式と，反応速度 $v$ が $[\\ce{OH}]$，$[\\ce{NO2}]$，$[\\mathrm M]$ の何次になるかを答えよ．また，それぞれの場合に全体の速さを決めているのはどの過程かを述べよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$[\\mathrm M] = 3.0\\times10^{18}\\,\\mathrm{cm^{-3}}$ で $k' = 5.0\\times10^{-12}\\,\\mathrm{cm^3\\,s^{-1}}$，$[\\mathrm M] = 1.5\\times10^{19}\\,\\mathrm{cm^{-3}}$ で $k' = 1.5\\times10^{-11}\\,\\mathrm{cm^3\\,s^{-1}}$ であった．$\\dfrac{1}{k'}$ を $\\dfrac{1}{[\\mathrm M]}$ の一次式で表すことにより，$k_1$ と $\\dfrac{k_{-1}}{k_2}$ を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "地表付近（$[\\mathrm M] = 2.5\\times10^{19}\\,\\mathrm{cm^{-3}}$）と，圧力がその $\\dfrac{1}{10}$ の上空（同じ温度とする）での $k'$ をそれぞれ求め，上空の $k'$ が地表の何倍かを有効数字 2 桁で答えよ．また，この反応を単純な二分子反応とみなした場合，および $[\\mathrm M]$ がきわめて小さい場合の近似式を使った場合に予想される倍率と比べよ．"
+     },
+     {
+      "id": "5",
+      "tex": "第三体をアルゴンに替えると，エネルギーを受け取る効率が低く $k_2$ が $\\dfrac{1}{2}$ 倍になる（$k_1$，$k_{-1}$ は変わらない）．$[\\mathrm M] = 2.5\\times10^{19}\\,\\mathrm{cm^{-3}}$ のアルゴン中での $k'$ は，同じ数密度の (4) の地表付近の気体中の何倍か．有効数字 2 桁で答えよ．また，この倍率は $[\\mathrm M]$ を大きくしていくとどのような値に近づくか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$[\\ce{HNO3^*}] = \\dfrac{k_1[\\ce{OH}][\\ce{NO2}]}{k_{-1} + k_2[\\mathrm M]}$，$k' = \\dfrac{k_1k_2[\\mathrm M]}{k_{-1} + k_2[\\mathrm M]}$．安定化する割合は $\\dfrac{k_2[\\mathrm M]}{k_{-1} + k_2[\\mathrm M]} = \\dfrac{k'}{k_1}$"
+   },
+   {
+    "id": "2",
+    "tex": "$[\\mathrm M]$ が小さいとき $k' \\approx \\dfrac{k_1k_2}{k_{-1}}[\\mathrm M]$ で，$v$ は $[\\ce{OH}]$，$[\\ce{NO2}]$，$[\\mathrm M]$ についてそれぞれ 1 次（全体で 3 次）．$\\ce{HNO3^*}$ と M の衝突による安定化が速さを決める．$[\\mathrm M]$ が大きいとき $k' \\approx k_1$ で，$v$ は $[\\ce{OH}]$，$[\\ce{NO2}]$ について 1 次，$[\\mathrm M]$ について 0 次（全体で 2 次）．OH と $\\ce{NO2}$ の結合（$\\ce{HNO3^*}$ の生成）が速さを決める．"
+   },
+   {
+    "id": "3",
+    "tex": "$k_1 = 3.0\\times10^{-11}\\,\\mathrm{cm^3\\,s^{-1}}$，$\\dfrac{k_{-1}}{k_2} = 1.5\\times10^{19}\\,\\mathrm{cm^{-3}}$"
+   },
+   {
+    "id": "4",
+    "tex": "地表付近 $1.9\\times10^{-11}\\,\\mathrm{cm^3\\,s^{-1}}$，上空 $4.3\\times10^{-12}\\,\\mathrm{cm^3\\,s^{-1}}$，0.23 倍．単純な二分子反応なら 1 倍（変わらない），$[\\mathrm M]$ が小さい場合の近似式なら 0.10 倍と予想されるが，実際はその中間になる．"
+   },
+   {
+    "id": "5",
+    "tex": "0.73 倍．$[\\mathrm M]$ を大きくすると 1 に近づく．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 定常状態}　$\\ce{HNO3^*}$ の生成の速さと消失の速さが等しいので\n\\[ k_1[\\ce{OH}][\\ce{NO2}] = k_{-1}[\\ce{HNO3^*}] + k_2[\\ce{HNO3^*}][\\mathrm M] \\quad\\Longrightarrow\\quad [\\ce{HNO3^*}] = \\frac{k_1[\\ce{OH}][\\ce{NO2}]}{k_{-1} + k_2[\\mathrm M]} \\]\n\\[ v = k_2[\\ce{HNO3^*}][\\mathrm M] = \\frac{k_1k_2[\\mathrm M]}{k_{-1} + k_2[\\mathrm M]}[\\ce{OH}][\\ce{NO2}] \\quad\\text{より}\\quad \\boldsymbol{k' = \\frac{k_1k_2[\\mathrm M]}{k_{-1} + k_2[\\mathrm M]}} \\]\n$\\ce{HNO3^*}$ は単位時間あたり $k_{-1}$ の割合で分解し，$k_2[\\mathrm M]$ の割合で安定化するので，安定化する割合は $\\dfrac{k_2[\\mathrm M]}{k_{-1} + k_2[\\mathrm M]}$ で，これは $k'/k_1$ に等しい．つまり $k'$ は「結合が起こる速さ $k_1$」×「生じた $\\ce{HNO3^*}$ が分解する前に安定化する確率」である．\n\n\\textbf{(2) 2 つの極限}\n\\begin{itemize}\n\\item $k_2[\\mathrm M] \\ll k_{-1}$（低圧）：$k' \\approx \\dfrac{k_1k_2}{k_{-1}}[\\mathrm M]$，$v \\approx \\dfrac{k_1k_2}{k_{-1}}[\\ce{OH}][\\ce{NO2}][\\mathrm M]$ で \\textbf{全体で 3 次}．$\\ce{HNO3^*}$ はほとんど分解して元に戻り，ごく一部が M との衝突で安定化する．$\\ce{HNO3^*}$ は前段の平衡にあるとみなせ，\\textbf{M との衝突による安定化}が速さを決める．\n\\item $k_2[\\mathrm M] \\gg k_{-1}$（高圧）：$k' \\approx k_1$，$v \\approx k_1[\\ce{OH}][\\ce{NO2}]$ で $[\\mathrm M]$ に 0 次，\\textbf{全体で 2 次}．$\\ce{HNO3^*}$ は分解する前に必ず安定化するので，\\textbf{結合の段階}が速さを決める．\n\\end{itemize}\n\n\\textbf{(3) 直線化}　(1) の逆数をとると\n\\[ \\frac{1}{k'} = \\frac{1}{k_1} + \\frac{k_{-1}}{k_1k_2}\\cdot\\frac{1}{[\\mathrm M]} \\]\nで，$1/k'$ は $1/[\\mathrm M]$ の一次式になる．データは\n$[\\mathrm M] = 3.0\\times10^{18}$：$1/[\\mathrm M] = 3.33\\times10^{-19}$，$1/k' = 2.00\\times10^{11}$；\n$[\\mathrm M] = 1.5\\times10^{19}$：$1/[\\mathrm M] = 6.67\\times10^{-20}$，$1/k' = 6.67\\times10^{10}$．\n傾き $= \\dfrac{2.00\\times10^{11} - 6.67\\times10^{10}}{3.33\\times10^{-19} - 6.67\\times10^{-20}} = 5.0\\times10^{29}$，切片 $= 2.00\\times10^{11} - 5.0\\times10^{29}\\times3.33\\times10^{-19} = 3.33\\times10^{10}$．\nよって $k_1 = \\dfrac{1}{3.33\\times10^{10}} = \\boldsymbol{3.0\\times10^{-11}\\,\\mathrm{cm^3\\,s^{-1}}}$，$\\dfrac{k_{-1}}{k_2} = \\text{傾き}\\times k_1 = \\boldsymbol{1.5\\times10^{19}\\,\\mathrm{cm^{-3}}}$．\n$k_{-1}/k_2$ は $k'$ が $k_1$ の半分になる $[\\mathrm M]$ を表す．\n\n\\textbf{(4) 圧力による変化}　$k' = k_1\\dfrac{[\\mathrm M]}{[\\mathrm M] + 1.5\\times10^{19}}$ を使う．\n地表付近：$k' = 3.0\\times10^{-11}\\times\\dfrac{2.5}{2.5+1.5} = 1.875\\times10^{-11} \\approx \\boldsymbol{1.9\\times10^{-11}\\,\\mathrm{cm^3\\,s^{-1}}}$\n上空（$[\\mathrm M] = 2.5\\times10^{18}$）：$k' = 3.0\\times10^{-11}\\times\\dfrac{0.25}{0.25+1.5} = 4.29\\times10^{-12} \\approx \\boldsymbol{4.3\\times10^{-12}\\,\\mathrm{cm^3\\,s^{-1}}}$\n倍率 $\\dfrac{4.29\\times10^{-12}}{1.875\\times10^{-11}} = \\boldsymbol{0.23}$．\n単純な二分子反応なら速度定数は圧力によらず 1 倍，低圧の近似式（$k' \\propto [\\mathrm M]$）なら 0.10 倍となるはずだが，地表付近の $[\\mathrm M]$ は $k_{-1}/k_2$ と同程度なので，どちらの極限も成り立たず，実際はその中間の 0.23 倍になる．大気の反応の速度定数を高度によって変えなければならないのはこのためである．\n\n\\textbf{(5) 第三体の種類}　$k_2$ が半分になると $k_{-1}/k_2$ は 2 倍の $3.0\\times10^{19}\\,\\mathrm{cm^{-3}}$ になる．\n\\[ k'_{\\mathrm{Ar}} = 3.0\\times10^{-11}\\times\\frac{2.5}{2.5+3.0} = 1.36\\times10^{-11},\\qquad \\frac{k'_{\\mathrm{Ar}}}{k'} = \\frac{1.36\\times10^{-11}}{1.875\\times10^{-11}} = \\boldsymbol{0.73} \\]\n低圧の極限では $k'$ が $k_2$ に比例するので 0.5 倍になるが，$[\\mathrm M]$ を大きくすると $k'$ はどちらの気体でも $k_1$ に近づくので，倍率は $\\boldsymbol{1}$ に近づく（第三体の種類によらなくなる）．\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "高エネルギー状態の中間体が分解と第三体との衝突による安定化を競合する結合反応では，定常状態から見かけの速度定数が k₁k₂[M]/(k₋₁+k₂[M]) となり，低圧では [M] に比例（全体で 3 次），高圧では一定（2 次）になる．逆数をとった直線化で 2 つの定数を決め，実際の圧力が両極限の中間にあると圧力や第三体の種類による変化がどちらの極限の予想とも異なることを数値で確かめる．"
+ },
+ "concepts": [
+  "chemical-equilibrium"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "定常状態近似",
+  "反応次数",
+  "第三体",
+  "圧力依存性",
+  "大気化学"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

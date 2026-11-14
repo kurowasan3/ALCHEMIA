@@ -1,0 +1,106 @@
+{
+ "id": "THE-GAS-019",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-08",
+ "topic": "熱気球が浮くための内部の温度（気体の密度と温度）",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "容積 $500\\,\\mathrm{m^3}$ の熱気球がある．気球の下部は開いていて，内部の空気の圧力は常に外気圧と等しい．球皮・バーナー・乗員などの質量の合計（内部の空気を除く）は $150\\,\\mathrm{kg}$ で，これらの体積は無視できる．気球は，押しのけた外気の質量が「内部の空気の質量＋$150\\,\\mathrm{kg}$」と等しくなるとき浮いて静止する．空気の平均分子量を 29，$R=8.3\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$ とし，答えはすべて有効数字2桁で示せ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "外気が 27 ℃，$1.0\\times10^{5}\\,\\mathrm{Pa}$ のとき，気球が押しのけている外気の質量は何 kg か．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) の条件で気球が浮いて静止するには，内部の空気の温度を何 K にすればよいか．"
+     },
+     {
+      "id": "3",
+      "tex": "外気が $-3$ ℃，$1.0\\times10^{5}\\,\\mathrm{Pa}$ の寒い日には，(2) と比べて内部の空気の温度を高くする必要があるか，低くてよいか．必要な温度（K）を求めて答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "外気が 27 ℃ のまま，外気圧が $8.0\\times10^{4}\\,\\mathrm{Pa}$ の高地では，必要な内部の温度は何 K か．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$5.8\\times10^{2}\\,\\mathrm{kg}$"
+   },
+   {
+    "id": "2",
+    "tex": "$4.0\\times10^{2}\\,\\mathrm K$"
+   },
+   {
+    "id": "3",
+    "tex": "低くてよい，$3.5\\times10^{2}\\,\\mathrm K$"
+   },
+   {
+    "id": "4",
+    "tex": "$4.4\\times10^{2}\\,\\mathrm K$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "気体の質量は $m=\\dfrac{PVM}{RT}$ で，同じ $P,\\,V$ なら絶対温度に反比例する．$V=500\\,\\mathrm{m^3}=5.0\\times10^{5}\\,\\mathrm L$．\n\n\\textbf{(1)}　\\[m_{\\text{外}}=\\dfrac{1.0\\times10^{5}\\times5.0\\times10^{5}\\times29}{8.3\\times10^{3}\\times300}=5.82\\times10^{5}\\,\\mathrm g\\approx\\boldsymbol{5.8\\times10^{2}\\,\\mathrm{kg}}\\]\n\n\\textbf{(2)}　内部の空気は $582-150=432\\,\\mathrm{kg}$ であればよい．質量は温度に反比例するので\n\\[T_{\\text{内}}=300\\times\\dfrac{582}{432}=404\\approx\\boldsymbol{4.0\\times10^{2}\\,\\mathrm K}\\]\n\n\\textbf{(3)}　外気が冷たいほど密度が大きく，押しのける外気の質量（浮力）が大きい．270 K では $m_{\\text{外}}=582\\times\\dfrac{300}{270}=647\\,\\mathrm{kg}$，内部は $497\\,\\mathrm{kg}$ でよいので $T_{\\text{内}}=270\\times\\dfrac{647}{497}=351\\approx\\boldsymbol{3.5\\times10^{2}\\,\\mathrm K}$．(2) より\\textbf{低くてよい}．\n\n\\textbf{(4)}　圧力が $0.80$ 倍になると外気の質量も $0.80$ 倍の $466\\,\\mathrm{kg}$．内部は $316\\,\\mathrm{kg}$ にする必要があり，$T_{\\text{内}}=300\\times\\dfrac{466}{316}=442\\approx\\boldsymbol{4.4\\times10^{2}\\,\\mathrm K}$．圧力が低いと浮力が小さくなるので，より高温にしなければならない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "同じ圧力・体積の気体の質量は絶対温度に反比例することから，外気と内部の空気の質量差で熱気球の浮力を考え，必要な内部温度を求める．外気の温度や圧力が変わったときに必要な温度がどちらに変わるかを比較する．"
+ },
+ "concepts": [
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "気体の状態方程式",
+  "気体の密度",
+  "熱気球",
+  "温度と密度"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

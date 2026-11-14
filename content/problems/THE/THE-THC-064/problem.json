@@ -1,0 +1,109 @@
+{
+ "id": "THE-THC-064",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-10",
+ "topic": "ダイヤモンドと黒鉛の原子化エネルギーと 1 原子あたりの結合の数",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ダイヤモンドと黒鉛の燃焼エンタルピーはそれぞれ $-395.4\\,\\mathrm{kJ/mol}$，$-393.5\\,\\mathrm{kJ/mol}$ である．また，$\\ce{CO2}$ の C＝O の結合エネルギーを $804\\,\\mathrm{kJ/mol}$，O＝O の結合エネルギーを $498\\,\\mathrm{kJ/mol}$ とする．黒鉛の層と層の間の分子間力は無視してよい．$\\sqrt3=1.73$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ダイヤモンド $1\\,\\mathrm{mol}$ および黒鉛 $1\\,\\mathrm{mol}$ に含まれる C－C 結合はそれぞれ何 mol か．"
+     },
+     {
+      "id": "2",
+      "tex": "ダイヤモンドの C－C 結合の平均の結合エネルギー $[\\mathrm{kJ/mol}]$ を有効数字3桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "黒鉛の層内の炭素原子間の結合の平均の結合エネルギー $[\\mathrm{kJ/mol}]$ を有効数字3桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "ダイヤモンドの単位格子の一辺は $0.357\\,\\mathrm{nm}$，黒鉛の層内の正六角形網目の格子の辺の長さ（となりの六角形の中心どうしの距離）は $0.246\\,\\mathrm{nm}$ である．それぞれの隣接する炭素原子間の距離 $[\\mathrm{nm}]$ を有効数字3桁で求めよ．また，(2)〜(4) の結果から，炭素原子をばらばらにするのに必要なエネルギー（原子化エネルギー）がダイヤモンドと黒鉛でほぼ等しい理由として正しいものを次のア〜ウから選べ．\\\\\nア　両者の結合の強さが同じだから．\\\\\nイ　黒鉛の結合は短く強いが，1 原子あたりの結合の数がダイヤモンドより少ないから．\\\\\nウ　黒鉛では層の間の分子間力が大きく，それが結合の弱さを補うから．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "ダイヤモンド $2\\,\\mathrm{mol}$，黒鉛 $1.5\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "2",
+    "tex": "$357\\,\\mathrm{kJ/mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "$478\\,\\mathrm{kJ/mol}$"
+   },
+   {
+    "id": "4",
+    "tex": "ダイヤモンド $0.155\\,\\mathrm{nm}$，黒鉛 $0.142\\,\\mathrm{nm}$，イ"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　結合 1 本は 2 個の原子に共有されるので，1 原子あたりの結合の数は（配位数）$\\div2$．ダイヤモンドは 4 配位なので $\\boldsymbol{2\\,\\mathrm{mol}}$，黒鉛は層内で 3 配位なので $\\boldsymbol{1.5\\,\\mathrm{mol}}$．\n\n\\textbf{(2)}　$\\ce{C(固) + O2 -> CO2}$ を「固体を原子にばらし O＝O を切る」→「C＝O を 2 本つくる」と分けて考える．原子化エネルギーを $E$ とすると\n\\[ E+498-2\\times804=-395.4\\quad\\Rightarrow\\quad E=714.6\\,\\mathrm{kJ/mol} \\]\nこれは C－C 結合 2 mol 分なので，$714.6\\div2=\\boldsymbol{357\\,\\mathrm{kJ/mol}}$．\n\n\\textbf{(3)}　黒鉛では $E=2\\times804-498-393.5=716.5\\,\\mathrm{kJ/mol}$．これが結合 1.5 mol 分なので，$716.5\\div1.5=\\boldsymbol{478\\,\\mathrm{kJ/mol}}$．\n\n\\textbf{(4)}　ダイヤモンドでは体対角線の $\\dfrac14$ が結合距離：$\\dfrac{\\sqrt3}{4}\\times0.357=\\boldsymbol{0.155\\,\\mathrm{nm}}$．黒鉛では，となりの六角形の中心どうしの距離 $0.246\\,\\mathrm{nm}$ が結合距離の $\\sqrt3$ 倍なので，$\\dfrac{0.246}{\\sqrt3}=\\boldsymbol{0.142\\,\\mathrm{nm}}$．\n\n黒鉛の結合は単結合より短く強い（ベンゼンと同じように二重結合の性質を一部もつ）が，1 原子あたり 1.5 本しかない．ダイヤモンドは弱い単結合を 1 原子あたり 2 本もつ．$2\\times357\\fallingdotseq1.5\\times478$ となり，原子化エネルギーがほぼ等しくなる．層間の力は (3) で無視しても値がほぼ合うので小さい．答えは $\\boldsymbol{\\text{イ}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "共有結合の結晶の原子化エネルギーを平均結合エネルギーに直すには，1 原子あたりの結合の数（配位数÷2：ダイヤモンド 2，黒鉛 1.5）で割る．黒鉛の結合は短く強いが本数が少ないため，原子化エネルギーはダイヤモンドとほぼ等しくなる．"
+ },
+ "concepts": [
+  "enthalpy",
+  "complex-ion",
+  "crystal"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "結合エネルギー",
+  "原子化エネルギー",
+  "ダイヤモンド",
+  "黒鉛",
+  "配位数"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

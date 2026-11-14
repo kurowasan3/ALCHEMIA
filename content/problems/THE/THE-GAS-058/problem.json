@@ -1,0 +1,116 @@
+{
+ "id": "THE-GAS-058",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-08",
+ "topic": "水素の燃焼後に凝縮する水の量（圧力一定と体積一定の比較）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "$27\\,^\\circ\\mathrm{C}$，$1.00\\times10^{5}\\,\\mathrm{Pa}$ で，水素 $0.500\\,\\mathrm{mol}$ と酸素 $1.00\\,\\mathrm{mol}$ をピストン付きの容器に入れた．次の 2 通りの条件で水素を完全燃焼させ，その後 $27\\,^\\circ\\mathrm{C}$ に戻した．\n条件 P：ピストンを自由に動かし，容器内の圧力を $1.00\\times10^{5}\\,\\mathrm{Pa}$ に保つ．\\\\\n条件 V：ピストンを固定し，容器の体積をはじめの体積に保つ．\\\\\n気体は理想気体とし，$27\\,^\\circ\\mathrm{C}$ の水の飽和蒸気圧は $3.6\\times10^{3}\\,\\mathrm{Pa}$，気体定数は $8.31\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$，$\\ce{H2O}=18$ とする．液体の水の体積と，液体の水への気体の溶解は無視する．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "条件 P で，燃焼後の容器内の気体の体積は何 L か．有効数字 3 桁で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "条件 P で，生じた液体の水は何 g か．有効数字 3 桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "条件 V で，生じた液体の水は何 g か．有効数字 3 桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "条件 V で，燃焼後の容器内の全圧は何 Pa か．有効数字 3 桁で答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "液体の水が多く生じるのは条件 P と条件 V のどちらか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$19.4\\,\\mathrm{L}$"
+   },
+   {
+    "id": "2",
+    "tex": "$8.50\\,\\mathrm{g}$"
+   },
+   {
+    "id": "3",
+    "tex": "$8.03\\,\\mathrm{g}$"
+   },
+   {
+    "id": "4",
+    "tex": "$5.36\\times10^{4}\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "5",
+    "tex": "条件 P"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{2H2 + O2 -> 2H2O}$ より，燃焼後は $\\ce{O2}$ $0.750\\,\\mathrm{mol}$，$\\ce{H2O}$ $0.500\\,\\mathrm{mol}$．$RT = 8.31\\times10^{3}\\times300 = 2.493\\times10^{6}\\,\\mathrm{Pa\\cdot L/mol}$．\n\n\\textbf{凝縮の判定}　条件 P で水がすべて気体なら水の分圧は $1.00\\times10^{5}\\times\\dfrac{0.500}{1.250} = 4.0\\times10^{4}\\,\\mathrm{Pa}$ で，飽和蒸気圧を超えるので凝縮する．条件 V でも同様に凝縮する（(3) 参照）．\n\n(1) 気体の水を $x$ mol とすると，水の分圧が飽和蒸気圧に等しいので\n\\[ \\frac{x}{0.750 + x}\\times1.00\\times10^{5} = 3.6\\times10^{3} \\quad\\Longrightarrow\\quad x = \\frac{0.750\\times3.6\\times10^{3}}{9.64\\times10^{4}} = 0.0280\\,\\mathrm{mol} \\]\n体積は $\\dfrac{(0.750 + 0.0280)\\times2.493\\times10^{6}}{1.00\\times10^{5}} = \\boldsymbol{19.4\\,\\mathrm{L}}$．\n\n(2) $(0.500 - 0.0280)\\times18 = \\boldsymbol{8.50\\,\\mathrm{g}}$．\n\n(3) はじめの体積は $\\dfrac{1.500\\times2.493\\times10^{6}}{1.00\\times10^{5}} = 37.4\\,\\mathrm{L}$．この体積に気体として存在できる水は\n$\\dfrac{3.6\\times10^{3}\\times37.4}{2.493\\times10^{6}} = 0.0540\\,\\mathrm{mol}$ なので，液体は $(0.500 - 0.0540)\\times18 = \\boldsymbol{8.03\\,\\mathrm{g}}$．\n\n(4) $\\ce{O2}$ の分圧は，物質量が $1.500 \\to 0.750\\,\\mathrm{mol}$ と半分になったので $5.00\\times10^{4}\\,\\mathrm{Pa}$．全圧は $5.00\\times10^{4} + 3.6\\times10^{3} = \\boldsymbol{5.36\\times10^{4}\\,\\mathrm{Pa}}$．\n\n(5) 気体として存在できる水の量は「飽和蒸気圧 × 気体の体積」に比例する．条件 P では燃焼で気体が減った分だけ体積が $37.4\\,\\mathrm{L} \\to 19.4\\,\\mathrm{L}$ に縮むので，気体として残れる水が少なく，液体の水は $\\boldsymbol{\\text{条件 P}}$ のほうが多い．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "燃焼後の水は，飽和蒸気圧と気体の体積で決まる量だけが気体として残り，残りは凝縮する．圧力一定では燃焼で気体が減ると体積が縮むので，分圧の比（モル分率）から気体の水の量を求める．体積一定と比べて，気体として残れる水が少なく液体が多くなることを判断する．"
+ },
+ "concepts": [
+  "ideal-gas",
+  "vapor-pressure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "飽和蒸気圧",
+  "凝縮",
+  "圧力一定",
+  "体積一定",
+  "燃焼"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

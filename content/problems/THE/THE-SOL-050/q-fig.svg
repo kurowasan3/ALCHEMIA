@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 400" width="560" height="400">
+<line x1="70.0" y1="30.0" x2="70.0" y2="330.0" stroke="currentColor" stroke-dasharray="3 3" opacity="0.5" stroke-width="0.8"/>
+<text x="70.0" y="350.0" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">0</text>
+<line x1="143.3" y1="30.0" x2="143.3" y2="330.0" stroke="currentColor" stroke-dasharray="3 3" opacity="0.5" stroke-width="0.8"/>
+<text x="143.3" y="350.0" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">5</text>
+<line x1="216.7" y1="30.0" x2="216.7" y2="330.0" stroke="currentColor" stroke-dasharray="3 3" opacity="0.5" stroke-width="0.8"/>
+<text x="216.7" y="350.0" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">10</text>
+<line x1="290.0" y1="30.0" x2="290.0" y2="330.0" stroke="currentColor" stroke-dasharray="3 3" opacity="0.5" stroke-width="0.8"/>
+<text x="290.0" y="350.0" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">15</text>
+<line x1="363.3" y1="30.0" x2="363.3" y2="330.0" stroke="currentColor" stroke-dasharray="3 3" opacity="0.5" stroke-width="0.8"/>
+<text x="363.3" y="350.0" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">20</text>
+<line x1="436.7" y1="30.0" x2="436.7" y2="330.0" stroke="currentColor" stroke-dasharray="3 3" opacity="0.5" stroke-width="0.8"/>
+<text x="436.7" y="350.0" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">25</text>
+<line x1="510.0" y1="30.0" x2="510.0" y2="330.0" stroke="currentColor" stroke-dasharray="3 3" opacity="0.5" stroke-width="0.8"/>
+<text x="510.0" y="350.0" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">30</text>
+<line x1="70.0" y1="330.0" x2="510.0" y2="330.0" stroke="currentColor" stroke-dasharray="3 3" opacity="0.5" stroke-width="0.8"/>
+<text x="62.0" y="335.0" font-size="13" text-anchor="end" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">−30</text>
+<line x1="70.0" y1="270.0" x2="510.0" y2="270.0" stroke="currentColor" stroke-dasharray="3 3" opacity="0.5" stroke-width="0.8"/>
+<text x="62.0" y="275.0" font-size="13" text-anchor="end" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">−20</text>
+<line x1="70.0" y1="210.0" x2="510.0" y2="210.0" stroke="currentColor" stroke-dasharray="3 3" opacity="0.5" stroke-width="0.8"/>
+<text x="62.0" y="215.0" font-size="13" text-anchor="end" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">−10</text>
+<line x1="70.0" y1="150.0" x2="510.0" y2="150.0" stroke="currentColor" stroke-dasharray="3 3" opacity="0.5" stroke-width="0.8"/>
+<text x="62.0" y="155.0" font-size="13" text-anchor="end" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">0</text>
+<line x1="70.0" y1="90.0" x2="510.0" y2="90.0" stroke="currentColor" stroke-dasharray="3 3" opacity="0.5" stroke-width="0.8"/>
+<text x="62.0" y="95.0" font-size="13" text-anchor="end" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">10</text>
+<line x1="70.0" y1="30.0" x2="510.0" y2="30.0" stroke="currentColor" stroke-dasharray="3 3" opacity="0.5" stroke-width="0.8"/>
+<text x="62.0" y="35.0" font-size="13" text-anchor="end" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">20</text>
+<rect x="70.0" y="30.0" width="440" height="300" fill="none" stroke="currentColor" stroke-width="1.2"/>
+<polyline fill="none" stroke="currentColor" stroke-width="2" points="70.0,150.0 143.3,168.0 216.7,189.6 290.0,215.4 363.3,249.0 407.3,276.0"/>
+<polyline fill="none" stroke="currentColor" stroke-width="2" points="407.3,276.0 433.7,210.0 455.7,150.0 457.2,30.0"/>
+<line x1="70.0" y1="276.0" x2="510.0" y2="276.0" stroke="currentColor" stroke-width="2"/>
+<circle cx="407.3" cy="276.0" r="3.5" fill="currentColor"/>
+<text x="413.3" y="296.0" font-size="13" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">E（23 %，−21 ℃）</text>
+<text x="246.0" y="102.0" font-size="14" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">領域 A：水溶液</text>
+<text x="146.3" y="228.0" font-size="14" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">領域 B：</text>
+<text x="146.3" y="245.0" font-size="14" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">水溶液＋氷</text>
+<text x="231.3" y="309.0" font-size="14" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">領域 D：氷＋塩化ナトリウム（固体）</text>
+<text x="483.6" y="186.0" font-size="14" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">領域</text>
+<text x="483.6" y="204.0" font-size="14" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">C</text>
+<text x="290.0" y="372.0" font-size="14" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">塩化ナトリウムの質量パーセント濃度〔%〕</text>
+<text x="22" y="180.0" font-size="14" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif" transform="rotate(-90 22 180.0)">温度〔℃〕</text>
+</svg>

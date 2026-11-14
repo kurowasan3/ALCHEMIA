@@ -1,0 +1,122 @@
+{
+ "id": "THE-SOL-031",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-09",
+ "topic": "ドナン平衡と高分子電解質の浸透圧",
+ "course": "化学",
+ "level": 5,
+ "minutes": 35,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，容器を半透膜で I 室と II 室（どちらも体積 $1.00\\,\\mathrm L$）に仕切る．この膜は水分子と $\\ce{Na+}$，$\\ce{Cl-}$ を通すが，高分子の陰イオン $\\mathrm{Q^{10-}}$（1分子あたり10個の負電荷をもつ）は通さない．I 室には高分子電解質 $\\mathrm{Na_{10}Q}$（水中で $\\ce{Na+}$ と $\\mathrm{Q^{10-}}$ に完全に電離する）$50.0\\,\\mathrm g$ を溶かして，$\\mathrm{Q^{10-}}$ の濃度を $1.00\\times10^{-3}\\,\\mathrm{mol/L}$ とした．\n温度は $27$ ℃，気体定数は $R=8.3\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$ とし，次のモデルで考える．\n・どちらの室の溶液も電気的に中性である．\n・膜を通れるイオンについては，平衡で $[\\ce{Na+}]_{\\mathrm I}[\\ce{Cl-}]_{\\mathrm I}=[\\ce{Na+}]_{\\mathrm{II}}[\\ce{Cl-}]_{\\mathrm{II}}$ が成り立つ（ドナン平衡）．\n・I 室に圧力をかけて水の移動を止め，両室の体積は変わらないようにする．このとき I 室に余分にかける圧力（浸透圧）$\\Pi$ は，両室の溶質粒子（分子・イオン）の濃度の和の差を $\\Delta c$ として $\\Pi=\\Delta c\\,RT$ で表される．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "II 室が純水のとき，$\\ce{Na+}$ は膜を通れるにもかかわらず II 室へほとんど移動しない．その理由を述べ，このときの $\\Pi$ を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "II 室に $1.00\\times10^{-2}\\,\\mathrm{mol/L}$ の $\\ce{NaCl}$ 水溶液を入れて平衡にした．I 室・II 室の $\\ce{Na+}$ と $\\ce{Cl-}$ の濃度をそれぞれ有効数字3桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の平衡状態での $\\Pi$ を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "ある学生は (1) の $\\Pi$ から，高分子電解質を電離しない物質とみなしてモル質量を求めた．その値を有効数字2桁で求めよ．また，II 室の $\\ce{NaCl}$ の濃度を非常に大きくしていくと $\\Pi$ は何 Pa に近づくか（有効数字2桁）．それを使うと正しいモル質量が求まる理由を述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：ドナン平衡と高分子電解質の浸透圧",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\mathrm{Q^{10-}}$ が膜を通れないので，$\\ce{Na+}$ だけが II 室に移ると両室の電気的中性がくずれる（陰イオンが一緒に移れない）．そのため $\\ce{Na+}$ は $\\mathrm{Q^{10-}}$ と同じ側にとどまり，膜を通れない粒子と同じようにふるまう．$\\Pi=2.7\\times10^{4}\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "2",
+    "tex": "I 室：$[\\ce{Na+}]=1.33\\times10^{-2}\\,\\mathrm{mol/L}$，$[\\ce{Cl-}]=3.33\\times10^{-3}\\,\\mathrm{mol/L}$，II 室：$[\\ce{Na+}]=[\\ce{Cl-}]=6.67\\times10^{-3}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "3",
+    "tex": "$1.1\\times10^{4}\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "4",
+    "tex": "$4.5\\times10^{3}\\,\\mathrm{g/mol}$．$\\Pi$ は $2.5\\times10^{3}\\,\\mathrm{Pa}$ に近づく．塩が十分に多いと両室の小さいイオンの濃度の差がほぼなくなり，$\\Pi$ は膜を通れない $\\mathrm{Q^{10-}}$ の濃度だけで決まるから（モル質量 $5.0\\times10^{4}\\,\\mathrm{g/mol}$）．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$RT=8.3\\times10^{3}\\times300=2.49\\times10^{6}\\,\\mathrm{Pa\\cdot L/mol}$．I 室の $\\mathrm{Q^{10-}}$ は $1.00\\times10^{-3}\\,\\mathrm{mol/L}$，それにともなう $\\ce{Na+}$ は $1.00\\times10^{-2}\\,\\mathrm{mol/L}$ である．\n\\textbf{(1)} $\\ce{Na+}$ が II 室へ移るには，同じ量の負電荷が一緒に移らなければならない（さもないと II 室が正，I 室が負に帯電し，その電気的な力で $\\ce{Na+}$ は引き戻される）．膜を通れる陰イオンがないので，$\\ce{Na+}$ は I 室にとどまる．\nI 室の粒子は $\\mathrm{Q^{10-}}$ $1.00\\times10^{-3}$ と $\\ce{Na+}$ $1.00\\times10^{-2}$ の計 $1.10\\times10^{-2}\\,\\mathrm{mol/L}$，II 室は $0$ なので\n\\[ \\Pi=1.10\\times10^{-2}\\times2.49\\times10^{6}=2.74\\times10^{4}\\ \\Rightarrow\\ \\boldsymbol{2.7\\times10^{4}\\,\\mathrm{Pa}} \\]\n\\textbf{(2)} II 室から I 室へ $\\ce{NaCl}$ が $x\\,\\mathrm{mol/L}$ 移ったとする（$\\ce{Na+}$ と $\\ce{Cl-}$ は電気的中性を保つため同じ量ずつ移る）．\nI 室：$[\\ce{Na+}]=1.00\\times10^{-2}+x$，$[\\ce{Cl-}]=x$　II 室：$[\\ce{Na+}]=[\\ce{Cl-}]=1.00\\times10^{-2}-x$\n\\[ (1.00\\times10^{-2}+x)\\,x=(1.00\\times10^{-2}-x)^2\\ \\Rightarrow\\ 3.00\\times10^{-2}\\,x=1.00\\times10^{-4}\\ \\Rightarrow\\ x=3.33\\times10^{-3} \\]\nよって I 室 $[\\ce{Na+}]=\\boldsymbol{1.33\\times10^{-2}}$，$[\\ce{Cl-}]=\\boldsymbol{3.33\\times10^{-3}}$，II 室 $[\\ce{Na+}]=[\\ce{Cl-}]=\\boldsymbol{6.67\\times10^{-3}}$（単位 mol/L）．\n膜を通れるのに $\\ce{Cl-}$ は両室で等しくならず，$\\mathrm{Q^{10-}}$ のある I 室で少ない（$\\ce{Na+}$ は逆に多い）ことに注意する．\n\\textbf{(3)} 粒子の濃度の和は I 室 $1.00\\times10^{-3}+1.333\\times10^{-2}+3.33\\times10^{-3}=1.767\\times10^{-2}$，II 室 $2\\times6.67\\times10^{-3}=1.333\\times10^{-2}$（mol/L）．\n\\[ \\Pi=(1.767-1.333)\\times10^{-2}\\times2.49\\times10^{6}=1.08\\times10^{4}\\ \\Rightarrow\\ \\boldsymbol{1.1\\times10^{4}\\,\\mathrm{Pa}} \\]\n\\textbf{(4)} 電離しないとみなすと，(1) の $\\Pi$ から求めた溶質の濃度 $1.10\\times10^{-2}\\,\\mathrm{mol/L}$ がそのまま高分子の濃度と解釈されるので\n\\[ M=\\frac{50.0}{1.10\\times10^{-2}}=4.5\\times10^{3}\\ \\Rightarrow\\ \\boldsymbol{4.5\\times10^{3}\\,\\mathrm{g/mol}} \\]\n（真の値の $\\dfrac{1}{11}$）．\nII 室の $\\ce{NaCl}$ の初濃度を $c_0$，$a=1.00\\times10^{-2}$，$p=1.00\\times10^{-3}$ とすると，(2) と同様に $(a+x)x=(c_0-x)^2$ より $x=\\dfrac{c_0^{\\,2}}{a+2c_0}$．濃度の和の差は\n\\[ \\Delta c=\\bigl(p+a+2x\\bigr)-2(c_0-x)=p+\\frac{a^2}{a+2c_0} \\]\nとなり，$c_0$ を大きくすると $\\Delta c\\to p$，つまり $\\Pi\\to1.00\\times10^{-3}\\times2.49\\times10^{6}=\\boldsymbol{2.5\\times10^{3}\\,\\mathrm{Pa}}$ に近づく．（$c_0=0$ で (1)，$c_0=a$ で (3) の値に一致する．）\n塩が多いと I 室と II 室の小さなイオンの濃度の差（ドナン平衡による偏り）が相対的に無視でき，$\\Pi$ は膜を通れない $\\mathrm{Q^{10-}}$ の粒子数だけを反映する．その結果 $M=\\dfrac{50.0}{1.00\\times10^{-3}}=5.0\\times10^{4}\\,\\mathrm{g/mol}$ という正しい値が求まる．タンパク質などの高分子電解質の浸透圧を，十分な濃度の塩を含む溶液に対して測るのはこのためである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "膜を通れない高分子イオンがあると，膜を通れる小さなイオンも電気的中性とドナン平衡（両側の [Na⁺][Cl⁻] が等しい）に従って両側に不均等に分布する．浸透圧は両側の全粒子濃度の差で決まり，塩が少ないと対イオンが浸透圧を大きくするが，塩を十分加えると高分子の粒子数だけを反映するようになる．"
+ },
+ "concepts": [
+  "solution-colligative",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "浸透圧",
+  "ドナン平衡",
+  "高分子電解質",
+  "電気的中性",
+  "モル質量"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

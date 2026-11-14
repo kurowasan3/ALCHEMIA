@@ -1,0 +1,109 @@
+{
+ "id": "ORG-HYD-045",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-02",
+ "topic": "同位体で追う酢酸ナトリウムの脱炭酸とメタンの塩素置換の物質収支",
+ "course": "化学",
+ "level": 3,
+ "minutes": 12,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "炭素の一部を $^{13}\\mathrm{C}$（相対質量 13）で置き換えた 2 種類の酢酸ナトリウムがある．試料 P はカルボキシ基の炭素だけが $^{13}\\mathrm{C}$（$\\mathrm{CH_3{}^{13}COONa}$），試料 Q はメチル基の炭素だけが $^{13}\\mathrm{C}$（$\\ce{^{13}CH3COONa}$）である．それぞれを水酸化ナトリウムと混ぜて加熱すると，メタンと炭酸ナトリウムが生じる．原子量は H=1.0，C=12，O=16，Na=23，Cl=35.5 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "生じるメタンの分子量が 17 になるのは P，Q のどちらか．また，もう一方の試料では $^{13}\\mathrm{C}$ はどの物質に含まれるか．"
+     },
+     {
+      "id": "2",
+      "tex": "試料 Q $16.6\\,\\mathrm{g}$ を十分な量の水酸化ナトリウムと加熱した．生じるメタンは何 g か．有効数字3桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) で得たメタンをすべて塩素 $0.320\\,\\mathrm{mol}$ と混ぜ，光を当てると，塩素はすべて消費されて，メタンの一部が塩素で置換された何種類かの化合物と塩化水素が生じた．生じた塩化水素は何 g か．有効数字3桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の反応後，炭素を含む物質（未反応のメタンを含む）の質量の合計は何 g か．また，炭素を含む分子 1 個あたりの塩素原子の数の平均はいくらか．それぞれ有効数字3桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "Q，P では $^{13}\\mathrm{C}$ は炭酸ナトリウムに含まれる"
+   },
+   {
+    "id": "2",
+    "tex": "$3.40\\,\\mathrm{g}$"
+   },
+   {
+    "id": "3",
+    "tex": "$11.7\\,\\mathrm{g}$"
+   },
+   {
+    "id": "4",
+    "tex": "$14.4\\,\\mathrm{g}$，$1.60$ 個"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　脱炭酸では，カルボキシ基の炭素が $\\ce{CO2}$ の形で抜けて炭酸ナトリウムになり，メチル基がそのまま H を受け取ってメタンになる：\n\\[ \\ce{CH3COONa + NaOH -> CH4 + Na2CO3} \\]\nしたがってメチル基が $^{13}\\mathrm{C}$ の $\\boldsymbol{\\text{Q}}$ から $\\ce{^{13}CH4}$（分子量 17）が生じる．P ではメタンは普通の $\\ce{CH4}$（16）で，$^{13}\\mathrm{C}$ は$\\boldsymbol{\\text{炭酸ナトリウム}}$（$\\mathrm{Na_2{}^{13}CO_3}$）に入る．\n\n\\textbf{(2)}　Q のモル質量は $13+3+12+32+23=83\\,\\mathrm{g/mol}$．$16.6/83=0.200\\,\\mathrm{mol}$ から $\\ce{^{13}CH4}$ $0.200\\,\\mathrm{mol}$ が生じ，$0.200\\times17=\\boldsymbol{3.40\\,\\mathrm{g}}$．\n\n\\textbf{(3)}　光による置換では，どの段階（$\\ce{CH4}\\to\\ce{CH3Cl}\\to\\ce{CH2Cl2}\\to\\ce{CHCl3}\\to\\ce{CCl4}$）でも，$\\ce{Cl2}$ $1$ 分子が H $1$ 個と置き換わり，HCl $1$ 分子を生じる：\n\\[ \\ce{CH4 + Cl2 -> CH3Cl + HCl} \\quad\\text{など} \\]\n生成物の割合がわからなくても，HCl は消費された $\\ce{Cl2}$ と同じ $0.320\\,\\mathrm{mol}$．$0.320\\times36.5=11.68\\approx\\boldsymbol{11.7\\,\\mathrm{g}}$．\n\n\\textbf{(4)}　質量保存より，炭素を含む物質の合計＝メタン＋塩素－塩化水素：\n\\[ 3.40+0.320\\times71-11.68=\\boldsymbol{14.4\\,\\mathrm{g}} \\]\n炭素を含む分子の数は炭素原子の数と同じ $0.200\\,\\mathrm{mol}$ で変わらず，そこに入った塩素原子は $\\ce{Cl2}$ 1 分子につき 1 個の $0.320\\,\\mathrm{mol}$（もう 1 個は HCl へ）．平均は $0.320/0.200=\\boldsymbol{1.60}$ 個．置換反応では Cl の半分しか有機物に入らないことに注意する．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "酢酸塩の脱炭酸ではカルボキシ基の炭素が炭酸塩に，メチル基の炭素がメタンになることを同位体の行き先で確かめる．光による塩素置換では生成物の分布によらず Cl₂ 1 分子が HCl 1 分子を生じ，Cl の半分だけが有機物に入るので，HCl の量・有機物の質量・平均の置換数が決まる．"
+ },
+ "concepts": [
+  "hydrocarbon",
+  "halogen",
+  "alkali-metals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "脱炭酸",
+  "同位体",
+  "メタン",
+  "置換反応",
+  "塩化水素"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

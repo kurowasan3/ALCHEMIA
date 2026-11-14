@@ -1,0 +1,109 @@
+{
+ "id": "THE-ION-107",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "弱酸と強酸の pH の濃度依存（log C に対する傾きと無限希釈）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "compare",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "1価の弱酸 HA（電離定数 $K_\\mathrm{a}=1.0\\times10^{-5}\\,\\mathrm{mol/L}$）の水溶液と塩酸について，濃度 $C\\,[\\mathrm{mol/L}]$ を変えたときの pH を比べる．水のイオン積は $K_\\mathrm{w}=1.0\\times10^{-14}\\,(\\mathrm{mol/L})^2$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "HA の電離度が 1 に比べて十分小さく，水の電離も無視できるとき，HA 水溶液の pH を $K_\\mathrm{a}$ と $C$ で表せ．また，$\\log_{10}C$ を横軸，pH を縦軸にしたグラフの傾きを，HA 水溶液と塩酸のそれぞれについて答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$0.10\\,\\mathrm{mol/L}$ の HA 水溶液と $0.10\\,\\mathrm{mol/L}$ の塩酸を，それぞれ水で 100 倍に薄めた．薄める前と後の pH を，それぞれ小数第1位まで求めよ（HA は (1) の近似を用いてよい）．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の希釈で HA の電離度はおよそ何倍になるか．(1) の近似を用いて答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "濃度を $1.0\\times10^{-8}\\,\\mathrm{mol/L}$ まで下げたときの HA 水溶液と塩酸の pH について，正しいものを次のア〜ウから1つ選び，理由も述べよ．\\\\\nア　HA は弱酸なので，HA 水溶液の pH は塩酸より 1 以上大きい．\\\\\nイ　どちらも 7 よりわずかに小さく，両者の pH はほぼ等しい．\\\\\nウ　どちらも 8 になる．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\mathrm{pH}=\\dfrac12\\left(-\\log_{10}K_\\mathrm{a}-\\log_{10}C\\right)$，傾きは HA 水溶液 $-\\dfrac12$，塩酸 $-1$"
+   },
+   {
+    "id": "2",
+    "tex": "HA：$3.0\\to4.0$，塩酸：$1.0\\to3.0$"
+   },
+   {
+    "id": "3",
+    "tex": "約 10 倍"
+   },
+   {
+    "id": "4",
+    "tex": "イ（十分に薄いと HA もほぼ完全に電離し，しかも $\\ce{H+}$ の大部分を水の電離が供給するので，酸の強弱の差が消え，どちらも中性に近づく）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　電離度 $\\alpha$ が小さいと $[\\ce{HA}]\\fallingdotseq C$，$[\\ce{H+}]=[\\ce{A-}]$ なので $K_\\mathrm{a}=\\dfrac{[\\ce{H+}]^2}{C}$，$[\\ce{H+}]=\\sqrt{K_\\mathrm{a}C}$．\n\\[ \\mathrm{pH}=\\frac12\\left(-\\log_{10}K_\\mathrm{a}-\\log_{10}C\\right) \\]\n$\\log_{10}C$ が 1 増えると pH は $\\dfrac12$ 減るので傾きは $\\boldsymbol{-\\dfrac12}$．塩酸は $[\\ce{H+}]=C$，$\\mathrm{pH}=-\\log_{10}C$ なので傾きは $\\boldsymbol{-1}$．\n\n\\textbf{(2)}　HA：$C=0.10$ で $\\mathrm{pH}=\\dfrac12(5+1)=\\boldsymbol{3.0}$，$C=1.0\\times10^{-3}$ で $\\dfrac12(5+3)=\\boldsymbol{4.0}$．塩酸：$\\boldsymbol{1.0}$ から $\\boldsymbol{3.0}$．100 倍に薄めると，強酸の pH は 2 上がるが，弱酸は電離が進んで $\\ce{H+}$ の減り方が $\\dfrac{1}{10}$ にとどまるので，pH は 1 しか上がらない（厳密に二次方程式を解くと 4.02 で，近似は十分よい）．\n\n\\textbf{(3)}　$\\alpha=\\dfrac{[\\ce{H+}]}{C}=\\sqrt{\\dfrac{K_\\mathrm{a}}{C}}$ なので，$C$ が $\\dfrac{1}{100}$ になると $\\alpha$ は $\\sqrt{100}=\\boldsymbol{10}$ 倍（$0.010\\to0.10$）．薄めるほど電離が進むことが，(1) の傾きが $-\\dfrac12$ にゆるむ理由である．\n\n\\textbf{(4)}　$C=1.0\\times10^{-8}\\,\\mathrm{mol/L}$ では $K_\\mathrm{a}\\gg C$ なので HA はほぼ完全に電離し（電離度 0.99），強酸と同じふるまいになる．しかも酸からの $\\ce{H+}$（$10^{-8}$）は水の電離による $\\ce{H+}$（約 $10^{-7}$）より少ない．電荷のつり合い $[\\ce{H+}]=[\\ce{A-}]+[\\ce{OH-}]$ と $K_\\mathrm{w}$ から求めると，どちらも $[\\ce{H+}]\\fallingdotseq1.05\\times10^{-7}\\,\\mathrm{mol/L}$，pH はどちらも約 6.98 になる．酸を加えて pH が 7 を超えることはないので，$\\boldsymbol{\\text{イ}}$．$\\log_{10}C$ を小さくしていくと，どちらのグラフも傾きが 0 に近づき，pH 7 の水平線に漸近する．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "弱酸の pH は濃いところでは ½(pKa−log C) で log C に対する傾きが −1/2（強酸は −1）になり，薄めると電離度が √(Ka/C) で増えるので pH の上がり方が強酸の半分になる．十分薄いと弱酸もほぼ完全に電離し，水の電離が H⁺ の主な供給源になるので，強酸・弱酸の区別なく pH は 7 に漸近する．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "concentration",
+  "ph"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "弱酸",
+  "電離度",
+  "希釈",
+  "pH",
+  "水の電離"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

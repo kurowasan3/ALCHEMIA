@@ -1,0 +1,109 @@
+{
+ "id": "THE-SOL-079",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-09",
+ "topic": "酸化物コロイドの表面の電荷を決める二段階の酸塩基平衡と凝析する pH の範囲",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "金属酸化物の微粒子の表面には，ヒドロキシ基をもつ部位（$\\ce{S-OH}$ と書く）が多数ある．各部位は水溶液の $\\ce{H+}$ と次の 2 つの平衡にあり，部位はそれぞれ独立にふるまうとする．\n\\[ \\ce{S-OH2+ <=>[\\text{}] S-OH + H+}\\quad K_1 \\qquad\\qquad \\ce{S-OH <=>[\\text{}] S-O- + H+}\\quad K_2 \\]\n全部位のうち $\\ce{S-OH2+}$，$\\ce{S-OH}$，$\\ce{S-O-}$ である割合をそれぞれ $\\theta_{+}$，$\\theta_{0}$，$\\theta_{-}$ とし，粒子表面の正味の電荷の割合を $\\sigma=\\theta_{+}-\\theta_{-}$ とする（$\\sigma=0$ となる pH を等電点という）．$K_1,\\ K_2$ は $\\mathrm{mol/L}$ 単位の値とし，$\\mathrm{p}K=-\\log_{10}K$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\theta_{+}:\\theta_{0}:\\theta_{-}$ を $[\\ce{H+}]$，$K_1$，$K_2$ で表し，等電点の pH を $\\mathrm{p}K_1$ と $\\mathrm{p}K_2$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "酸化物 P の微粒子は，等電点が 9.0 で，pH 6.0 のとき $\\sigma=+0.909$ であった．$\\mathrm{p}K_1$ と $\\mathrm{p}K_2$ を求めよ（整数でよい）．途中で無視した化学種があれば，無視してよい理由も示せ．また，等電点で $\\theta_{0}$ はいくらか（有効数字 2 桁）．"
+     },
+     {
+      "id": "3",
+      "tex": "P のコロイドは $|\\sigma|\\leqq0.050$ になると電荷の反発が弱まって凝析する．凝析が起こる pH の範囲を小数第 1 位まで求めよ．必要なら $\\log_{10}5.47=0.738$ を用いよ．"
+     },
+     {
+      "id": "4",
+      "tex": "酸化物 Q の微粒子は，等電点は P と同じ 9.0 だが $\\mathrm{p}K_1=8.0,\\ \\mathrm{p}K_2=10.0$ である．Q のコロイドが凝析する pH の範囲を同様に求め（$\\log_{10}1.35=0.130$），P と比べて範囲が広いか狭いかを答えよ．また，その違いが生じる理由を $\\theta_{0}$ にふれて説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\theta_{+}:\\theta_{0}:\\theta_{-}=[\\ce{H+}]^{2}:K_1[\\ce{H+}]:K_1K_2$．等電点の pH $=\\dfrac{\\mathrm{p}K_1+\\mathrm{p}K_2}{2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\mathrm{p}K_1=7$，$\\mathrm{p}K_2=11$（pH 6.0 では $\\theta_{-}/\\theta_{0}=K_2/[\\ce{H+}]=10^{-5}$ なので $\\ce{S-O-}$ を無視できる）．等電点で $\\theta_{0}=0.98$"
+   },
+   {
+    "id": "3",
+    "tex": "pH 8.3 から 9.7"
+   },
+   {
+    "id": "4",
+    "tex": "pH 8.9 から 9.1 で，P より狭い．P は $\\mathrm{p}K_1$ と $\\mathrm{p}K_2$ が大きく離れているため，等電点のまわりの広い pH 範囲で大部分の部位が電荷をもたない $\\ce{S-OH}$（$\\theta_{0}\\approx1$）のままで，pH を変えても $\\sigma$ が 0 からなかなか離れないから"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\dfrac{\\theta_{0}}{\\theta_{+}}=\\dfrac{K_1}{[\\ce{H+}]}$，$\\dfrac{\\theta_{-}}{\\theta_{0}}=\\dfrac{K_2}{[\\ce{H+}]}$ より $\\theta_{+}:\\theta_{0}:\\theta_{-}=\\boldsymbol{[\\ce{H+}]^{2}:K_1[\\ce{H+}]:K_1K_2}$．\n\\[ \\sigma=\\frac{[\\ce{H+}]^{2}-K_1K_2}{[\\ce{H+}]^{2}+K_1[\\ce{H+}]+K_1K_2} \\]\n$\\sigma=0$ は $[\\ce{H+}]^{2}=K_1K_2$，すなわち $\\boldsymbol{\\mathrm{pH}=(\\mathrm{p}K_1+\\mathrm{p}K_2)/2}$．\n\n\\textbf{(2)} 等電点より $\\mathrm{p}K_1+\\mathrm{p}K_2=18$．pH 6.0 で $\\theta_{-}$ を無視すると $\\sigma\\approx\\theta_{+}=\\dfrac{[\\ce{H+}]}{[\\ce{H+}]+K_1}$ で，\n\\[ K_1=[\\ce{H+}]\\frac{1-\\sigma}{\\sigma}=1.0\\times10^{-6}\\times\\frac{0.091}{0.909}=1.0\\times10^{-7}\\ \\Rightarrow\\ \\boldsymbol{\\mathrm{p}K_1=7},\\ \\boldsymbol{\\mathrm{p}K_2=11} \\]\n確認：pH 6.0 で $\\theta_{-}/\\theta_{0}=K_2/[\\ce{H+}]=10^{-11}/10^{-6}=10^{-5}$ なので $\\ce{S-O-}$ の無視は妥当．\n等電点（$[\\ce{H+}]=10^{-9}$）では $[\\ce{H+}]^{2}:K_1[\\ce{H+}]:K_1K_2=10^{-18}:10^{-16}:10^{-18}=1:100:1$ で $\\theta_{0}=100/102=\\boldsymbol{0.98}$．\n\n\\textbf{(3)} $x=[\\ce{H+}]/\\sqrt{K_1K_2}=10^{\\,9-\\mathrm{pH}}$ とおき，分子分母を $K_1K_2$ で割ると\n\\[ \\sigma=\\frac{x^{2}-1}{x^{2}+ax+1},\\qquad a=\\sqrt{K_1/K_2}=10^{(\\mathrm{p}K_2-\\mathrm{p}K_1)/2} \\]\nP では $a=100$．$\\sigma=+0.050$：$0.95x^{2}-5x-1.05=0$ より $x=5.47$，$\\mathrm{pH}=9-0.738=8.26$．\n$x\\to1/x$ で $\\sigma\\to-\\sigma$ になる（等電点について対称）ので，$\\sigma=-0.050$ は $\\mathrm{pH}=9+0.738=9.74$．\nよって凝析は $\\boldsymbol{\\mathrm{pH}\\ 8.3\\sim9.7}$．\n\n\\textbf{(4)} Q では $a=10$：$0.95x^{2}-0.5x-1.05=0$ より $x=1.35$，$\\mathrm{pH}=9\\mp0.130$ で $\\boldsymbol{8.9\\sim9.1}$，P より\\textbf{狭い}．\n等電点での $\\theta_{0}$ は P が $100/102=0.98$，Q が $10/12=0.83$．$\\mathrm{p}K_1$ と $\\mathrm{p}K_2$ が離れているほど $a$ が大きく，等電点の前後で大部分の部位が無電荷の $\\ce{S-OH}$ のままなので，pH を少しずらしても $\\ce{S-OH2+}$ や $\\ce{S-O-}$ がわずかしか増えず，$\\sigma$ がなかなか大きくならない．そのため P は凝析する pH の範囲が広い．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "表面の部位が二段階の酸塩基平衡にあると，表面電荷 $\\sigma=(\\,[\\ce{H+}]^{2}-K_1K_2)/([\\ce{H+}]^{2}+K_1[\\ce{H+}]+K_1K_2)$ で，等電点は $(\\mathrm{p}K_1+\\mathrm{p}K_2)/2$ になる．1 点の電荷の測定と等電点から 2 つの $\\mathrm{p}K$ を決め，電荷が小さい（凝析する）pH の幅は $\\mathrm{p}K_1$ と $\\mathrm{p}K_2$ の差が大きいほど広くなる．"
+ },
+ "concepts": [
+  "solution-colligative",
+  "ph",
+  "colloid"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "コロイド",
+  "等電点",
+  "表面電荷",
+  "凝析",
+  "酸塩基平衡"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

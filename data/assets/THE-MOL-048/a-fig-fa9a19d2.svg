@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 360" width="520" height="360">
+<text x="260.0" y="22" text-anchor="middle" font-size="15" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">加えた NO の体積と気体の体積（試料 1）</text>
+<line x1="70" y1="300" x2="450.0" y2="300" stroke="currentColor" stroke-width="1.5"/>
+<line x1="70" y1="300" x2="70" y2="60.0" stroke="currentColor" stroke-width="1.5"/>
+<line x1="70.0" y1="300" x2="70.0" y2="305" stroke="currentColor"/>
+<text x="70.0" y="320" text-anchor="middle" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">0</text>
+<line x1="130.8" y1="300" x2="130.8" y2="305" stroke="currentColor"/>
+<text x="130.8" y="320" text-anchor="middle" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">40</text>
+<line x1="191.6" y1="300" x2="191.6" y2="305" stroke="currentColor"/>
+<text x="191.6" y="320" text-anchor="middle" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">80</text>
+<line x1="252.4" y1="300" x2="252.4" y2="305" stroke="currentColor"/>
+<text x="252.4" y="320" text-anchor="middle" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">120</text>
+<line x1="313.2" y1="300" x2="313.2" y2="305" stroke="currentColor"/>
+<text x="313.2" y="320" text-anchor="middle" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">160</text>
+<line x1="374.0" y1="300" x2="374.0" y2="305" stroke="currentColor"/>
+<text x="374.0" y="320" text-anchor="middle" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">200</text>
+<line x1="434.8" y1="300" x2="434.8" y2="305" stroke="currentColor"/>
+<text x="434.8" y="320" text-anchor="middle" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">240</text>
+<line x1="65" y1="268.0" x2="70" y2="268.0" stroke="currentColor"/>
+<text x="61" y="272.0" text-anchor="end" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">400</text>
+<line x1="65" y1="236.0" x2="70" y2="236.0" stroke="currentColor"/>
+<text x="61" y="240.0" text-anchor="end" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">420</text>
+<line x1="65" y1="204.0" x2="70" y2="204.0" stroke="currentColor"/>
+<text x="61" y="208.0" text-anchor="end" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">440</text>
+<line x1="65" y1="172.0" x2="70" y2="172.0" stroke="currentColor"/>
+<text x="61" y="176.0" text-anchor="end" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">460</text>
+<line x1="65" y1="140.0" x2="70" y2="140.0" stroke="currentColor"/>
+<text x="61" y="144.0" text-anchor="end" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">480</text>
+<line x1="65" y1="108.0" x2="70" y2="108.0" stroke="currentColor"/>
+<text x="61" y="112.0" text-anchor="end" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">500</text>
+<line x1="65" y1="76.0" x2="70" y2="76.0" stroke="currentColor"/>
+<text x="61" y="80.0" text-anchor="end" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">520</text>
+<text x="260.0" y="342" text-anchor="middle" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">加えた NO の体積 v [mL]</text>
+<text x="22" y="180.0" text-anchor="middle" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor" transform="rotate(-90 22 180.0)">気体の体積 V [mL]</text>
+<polyline points="70.0,108.0 313.2,236.0 450.0,92.0" fill="none" stroke="#1f5fbf" stroke-width="2.2"/>
+<circle cx="70.0" cy="108.0" r="4" fill="currentColor"/>
+<circle cx="130.8" cy="140.0" r="4" fill="currentColor"/>
+<circle cx="191.6" cy="172.0" r="4" fill="currentColor"/>
+<circle cx="252.4" cy="204.0" r="4" fill="currentColor"/>
+<circle cx="313.2" cy="236.0" r="4" fill="currentColor"/>
+<circle cx="374.0" cy="172.0" r="4" fill="currentColor"/>
+<circle cx="434.8" cy="108.0" r="4" fill="currentColor"/>
+<line x1="313.2" y1="236.0" x2="313.2" y2="300" stroke="currentColor" stroke-dasharray="5,4" opacity="0.5"/>
+<text x="321.2" y="254.0" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="#c0392b">最小点：v = 2a = 160 mL</text>
+<text x="100.4" y="100.0" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">傾き −1/2（V = V₀ − v/2）</text>
+<text x="298.0" y="76.0" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">傾き +1（V = V₀ − 3a + v）</text>
+</svg>

@@ -1,0 +1,109 @@
+{
+ "id": "INO-PPT-024",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-08",
+ "topic": "試薬の組合せによる陽イオンの識別",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "condition",
+  "qa"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "無色の水溶液 A〜E は，硝酸銀，硝酸亜鉛，硝酸アルミニウム，硝酸鉛(II)，硝酸バリウム，硝酸カルシウムのうちのいずれか1種類ずつの水溶液である（1つは使われていない）．A〜E に次の試薬を加えたところ，下の表の結果を得た．また，E の炎色反応は黄緑色であった．\n\\[\\begin{array}{c|c|c|c}\n & \\text{アンモニア水（少量→過剰）} & \\text{水酸化ナトリウム水溶液（少量→過剰）} & \\text{希塩酸} \\\\ \\hline\n\\text{A} & \\text{白色沈殿→溶ける} & \\text{白色沈殿→溶ける} & \\text{変化なし} \\\\\n\\text{B} & \\text{褐色沈殿→溶ける} & \\text{褐色沈殿→溶けない} & \\text{白色沈殿} \\\\\n\\text{C} & \\text{白色沈殿→溶けない} & \\text{白色沈殿→溶ける} & \\text{白色沈殿} \\\\\n\\text{D} & \\text{白色沈殿→溶けない} & \\text{白色沈殿→溶ける} & \\text{変化なし} \\\\\n\\text{E} & \\text{変化なし} & \\text{変化なし} & \\text{変化なし}\n\\end{array}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A〜E の溶質を化学式で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "B に少量のアンモニア水を加えて生じた沈殿が，過剰のアンモニア水に溶ける変化を化学反応式で書け．"
+     },
+     {
+      "id": "3",
+      "tex": "表の3種類の試薬のうちアンモニア水だけを使った場合，A〜E のうち区別できないのはどれとどれか．"
+     },
+     {
+      "id": "4",
+      "tex": "(3)の2つを区別するのに使える試薬を，次のア〜エからすべて選べ．\\\\ア　希硫酸　　イ　硫化水素（塩酸酸性で通じる）　　ウ　クロム酸カリウム水溶液　　エ　過剰の水酸化ナトリウム水溶液"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "A：$\\ce{Zn(NO3)2}$，B：$\\ce{AgNO3}$，C：$\\ce{Pb(NO3)2}$，D：$\\ce{Al(NO3)3}$，E：$\\ce{Ba(NO3)2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{Ag2O + 4NH3 + H2O -> 2[Ag(NH3)2]+ + 2OH-}$"
+   },
+   {
+    "id": "3",
+    "tex": "C と D"
+   },
+   {
+    "id": "4",
+    "tex": "ア，イ，ウ"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 手がかりの整理}\n\\begin{itemize}\n\\item 希塩酸で白色沈殿 → $\\ce{AgCl}$ か $\\ce{PbCl2}$ をつくる $\\ce{Ag+}$・$\\ce{Pb^2+}$（B，C）．\n\\item 褐色沈殿は $\\ce{Ag2O}$．過剰のアンモニア水で $\\ce{[Ag(NH3)2]+}$ となって溶け，過剰の $\\ce{NaOH}$ には溶けない → B は $\\ce{AgNO3}$．\n\\item C は過剰の $\\ce{NaOH}$ に溶ける（両性）が過剰の $\\ce{NH3}$ には溶けない → $\\ce{Pb^2+}$．\n\\item どちらの過剰にも溶ける白色沈殿 → $\\ce{Zn(OH)2}$（両性であり，アンミン錯イオン $\\ce{[Zn(NH3)4]^2+}$ もつくる）→ A は $\\ce{Zn(NO3)2}$．\n\\item 過剰の $\\ce{NaOH}$ にだけ溶け，塩酸で沈殿しない → $\\ce{Al(OH)3}$ → D は $\\ce{Al(NO3)3}$．\n\\item E は $\\ce{Ba^2+}$ か $\\ce{Ca^2+}$ で，炎色反応が黄緑色なので $\\ce{Ba(NO3)2}$（$\\ce{Ca}$ は橙赤色）．\n\\end{itemize}\n\n\\textbf{(2)} $\\ce{Ag2O + 4NH3 + H2O -> 2[Ag(NH3)2]+ + 2OH-}$（ジアンミン銀(I)イオン）．\n\n\\textbf{(3)} アンモニア水だけでは，A（白→溶ける），B（褐色→溶ける），E（変化なし）は区別できるが，C の $\\ce{Pb(OH)2}$ と D の $\\ce{Al(OH)3}$ はどちらも「白色沈殿→過剰でも溶けない」で，\\textbf{C と D} が区別できない．\n\n\\textbf{(4)} $\\ce{Pb^2+}$ だけが沈殿をつくる試薬を選ぶ．ア：$\\ce{PbSO4}$（白），イ：$\\ce{PbS}$（黒，$\\ce{Al^3+}$ は酸性で沈殿しない），ウ：$\\ce{PbCrO4}$（黄）．エ：$\\ce{Pb(OH)2}$ も $\\ce{Al(OH)3}$ も両性で，ともに溶けるので区別できない．よって \\textbf{ア，イ，ウ}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "沈殿の色と，過剰の NH₃（アンミン錯イオン）・過剰の NaOH（両性水酸化物）への溶解性の組合せで陽イオンを識別し，1種類の試薬では区別できない組（Pb²⁺ と Al³⁺）を見抜いて，区別できる試薬を選ぶ．"
+ },
+ "concepts": [
+  "precipitation",
+  "complex-ion",
+  "amphoteric"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "陽イオンの識別",
+  "両性水酸化物",
+  "アンミン錯イオン",
+  "炎色反応",
+  "沈殿反応"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

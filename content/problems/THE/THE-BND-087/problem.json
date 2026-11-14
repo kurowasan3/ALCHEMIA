@@ -1,0 +1,109 @@
+{
+ "id": "THE-BND-087",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-03",
+ "topic": "双極子モーメントと結合距離から求める部分電荷（気体のハロゲン化カリウムとハロゲン間化合物）",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "2 原子分子の結合の極性の大きさを，2 つの原子の中心に電荷 $+\\delta e$ と $-\\delta e$ があるとみなして，双極子モーメント $\\mu=L\\cdot\\delta\\cdot e$（$L$ は結合距離，$e=1.60\\times10^{-19}\\,\\mathrm{C}$ は電気素量）で表す．$\\delta=1$ なら電子 1 個が完全に移ったイオン結合，$\\delta=0$ なら極性のない共有結合に相当する．$\\mu$ の向きは $\\delta+$ から $\\delta-$ に向かう矢印で表す．気体の状態で測定した値を表に示す．\n\\[ \\begin{array}{c|c|c} \\text{分子} & L\\,[10^{-10}\\,\\mathrm{m}] & \\mu\\,[10^{-30}\\,\\mathrm{C\\cdot m}] \\\\ \\hline \\ce{KF} & 2.17 & 28.7 \\\\ \\ce{KCl} & 2.67 & 34.3 \\\\ \\ce{ClF} & 1.63 & 2.96 \\\\ \\ce{BrF} & 1.76 & 4.74 \\end{array} \\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "4 つの分子の $\\delta$ をそれぞれ有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "KCl は KF より $\\mu$ が大きいが，$\\delta$ は小さい．その理由として最も適当なものを次のア〜ウから選べ．\\\\\nア　Cl の電気陰性度が F より大きいから．\\\\\nイ　$\\mu$ は $\\delta$ と $L$ の積に比例し，KCl は結合距離が長いから．\\\\\nウ　KCl の気体分子は共有結合だから．"
+     },
+     {
+      "id": "3",
+      "tex": "BrF の $\\mu$ の向きを「○ から ○ へ」の形で答えよ．また，BrF の $\\delta$ が ClF より大きい理由を，電気陰性度を用いて簡潔に答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "4 つの分子を，結合のイオン結合性が大きい順に並べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "KF 0.83，KCl 0.80，ClF 0.11，BrF 0.17"
+   },
+   {
+    "id": "2",
+    "tex": "イ"
+   },
+   {
+    "id": "3",
+    "tex": "Br から F へ；Br の電気陰性度は Cl より小さく，F との電気陰性度の差が大きいから．"
+   },
+   {
+    "id": "4",
+    "tex": "KF ＞ KCl ＞ BrF ＞ ClF"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　$\\delta=\\dfrac{\\mu}{Le}$．$10^{-30}$ と $10^{-10}\\times10^{-19}=10^{-29}$ に注意して\n\\[ \\text{KF}:\\ \\frac{28.7\\times10^{-30}}{2.17\\times10^{-10}\\times1.60\\times10^{-19}}=\\boldsymbol{0.83},\\qquad \\text{KCl}:\\ \\frac{34.3}{2.67\\times16.0}=\\boldsymbol{0.80} \\]\n\\[ \\text{ClF}:\\ \\frac{2.96}{1.63\\times16.0}=\\boldsymbol{0.11},\\qquad \\text{BrF}:\\ \\frac{4.74}{1.76\\times16.0}=\\boldsymbol{0.17} \\]\n\n\\textbf{(2)}　$\\mu=L\\delta e$ なので，$\\delta$ が小さくても $L$ が長ければ $\\mu$ は大きくなる．$\\mu$ どうしを比べても結合の極性（電荷のかたより）は比べられず，$L$ で割った $\\delta$ で比べる必要がある．答えは \\textbf{イ}．（ア：F のほうが大きい．ウ：$\\delta=0.80$ はイオン結合に近い．）\n\n\\textbf{(3)}　F のほうが電気陰性度が大きく $\\delta-$ になるので，向きは \\textbf{Br から F へ}．ハロゲンの電気陰性度は F ＞ Cl ＞ Br で，Br と F の差は Cl と F の差より大きいので，電子が F 側に強く引き寄せられ $\\delta$ が大きくなる．\n\n\\textbf{(4)}　$\\delta$ の大きい順に \\textbf{KF ＞ KCl ＞ BrF ＞ ClF}．アルカリ金属とハロゲンの気体分子は $\\delta$ が 1 に近くイオン結合性が大きく，ハロゲンどうしの分子は極性共有結合である．電気陰性度の差（K–F ＞ K–Cl ＞ Br–F ＞ Cl–F）の順とも一致する．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "双極子モーメントは部分電荷と結合距離の積なので，結合の極性（イオン結合性）は μ をそのまま比べるのではなく，μ/(Le) で求めた δ で比べる．δ の大小は電気陰性度の差の大小と対応する．"
+ },
+ "concepts": [
+  "chemical-bond",
+  "halogen",
+  "periodicity"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "双極子モーメント",
+  "部分電荷",
+  "電気陰性度",
+  "結合の極性",
+  "イオン結合性"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

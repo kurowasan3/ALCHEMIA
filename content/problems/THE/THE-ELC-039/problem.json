@@ -1,0 +1,108 @@
+{
+ "id": "THE-ELC-039",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-07",
+ "topic": "リチウムイオン電池の正極の利用率と両極の容量のつり合い",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "リチウムイオン電池の正極にはコバルト酸リチウム $\\ce{LiCoO2}$，負極には黒鉛 $\\ce{C6}$（組成式）が使われる．放電時の両極の反応は次のとおりである．\n\\[ \\text{正極：}\\ \\ce{CoO2 + Li+ + e- -> LiCoO2}\\qquad \\text{負極：}\\ \\ce{LiC6 -> C6 + Li+ + e-} \\]\n$\\ce{LiCoO2}$ から $\\ce{Li+}$ をすべて引き抜くと結晶構造がこわれるため，実際の電池では充電時に正極から引き抜く Li を，$\\ce{LiCoO2}$ に含まれる Li の半分までにとどめている．一方，黒鉛は最大で $\\ce{LiC6}$ の組成まで Li を受け入れる．原子量は Li＝6.9，C＝12，O＝16，Co＝59，ファラデー定数は $F=9.65\\times10^{4}\\,\\mathrm{C/mol}$ とし，$1\\,\\mathrm{mAh}=3.6\\,\\mathrm{C}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{LiCoO2}$ $1\\,\\mathrm{g}$ あたりの電気量を，(i) Li をすべて引き抜くと仮定した場合と，(ii) 半分までにとどめる場合について，それぞれ mAh 単位で有効数字3桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$\\ce{LiCoO2}$ $10.0\\,\\mathrm{g}$ を正極に用いた電池を，正極の Li の半分まで引き抜くように充電する．引き抜いた Li をすべて受け入れるのに最低限必要な黒鉛の質量を有効数字3桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "実際の電池では，負極の黒鉛を (2) で求めた量よりやや多く入れる．黒鉛が不足していると，充電のときに負極で何が起こるおそれがあるか．"
+     },
+     {
+      "id": "4",
+      "tex": "この電池（(2) の条件）の平均の起電力を $3.7\\,\\mathrm{V}$ とすると，満充電から完全に放電したときに取り出せる電気エネルギーは何 kJ か．有効数字2桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "すべて引き抜く場合 $274\\,\\mathrm{mAh}$，半分までの場合 $137\\,\\mathrm{mAh}$"
+   },
+   {
+    "id": "2",
+    "tex": "$3.68\\,\\mathrm{g}$"
+   },
+   {
+    "id": "3",
+    "tex": "黒鉛に入りきらない $\\ce{Li+}$ が負極の表面で金属リチウムとして析出し，樹枝状に成長して短絡（発火）を起こすおそれがある．"
+   },
+   {
+    "id": "4",
+    "tex": "$18\\,\\mathrm{kJ}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 正極 1 g あたりの容量}\n$\\ce{LiCoO2}$ の式量は $6.9+59+32=97.9$．1 g は $\\dfrac{1}{97.9}\\,\\mathrm{mol}$ で，Li 1 個あたり電子 1 個が流れる．\n(i) すべて引き抜く場合：$\\dfrac{9.65\\times10^{4}}{97.9}=985.7\\,\\mathrm{C}$，$\\dfrac{985.7}{3.6}=\\boldsymbol{274\\,\\mathrm{mAh}}$\n(ii) 半分までの場合：その半分で $\\boldsymbol{137\\,\\mathrm{mAh}}$\n充電時の正極は $\\ce{LiCoO2}$ が $\\ce{Li_{0.5}CoO2}$ になるまでで止め，Co の酸化数は $+3$ から平均 $+3.5$ までしか上げない．\n\n\\textbf{(2) 必要な黒鉛}\n引き抜く Li：$\\dfrac{10.0}{97.9}\\times\\dfrac12=5.107\\times10^{-2}\\,\\mathrm{mol}$．\n$\\ce{LiC6}$ では Li 1 個に C 6 個が必要なので，C は $6\\times5.107\\times10^{-2}=0.3064\\,\\mathrm{mol}$．\n\\[ 0.3064\\times12=\\boldsymbol{3.68\\,\\mathrm{g}} \\]\n（黒鉛 1 g あたりの容量は $\\dfrac{9.65\\times10^{4}}{72}\\div3.6=372\\,\\mathrm{mAh}$ で，正極の実用容量 137 mAh の約 2.7 倍あるため，負極は正極より軽くてすむ．）\n\n\\textbf{(3) 黒鉛が不足したとき}\n黒鉛の層間がいっぱいになると，正極から送られてきた $\\ce{Li+}$ は行き場を失い，負極の表面で $\\ce{Li+ + e- -> Li}$ により$\\boldsymbol{\\text{金属リチウムが析出する}}$．析出した Li は樹枝状（デンドライト）に成長してセパレーターを突き破り，正極と短絡して発熱・発火の原因になる．また金属 Li は有機溶媒の電解液と反応して失われるので容量も低下する．\n\n\\textbf{(4) 取り出せる電気エネルギー}\n電気量 $Q=5.107\\times10^{-2}\\times9.65\\times10^{4}=4.93\\times10^{3}\\,\\mathrm{C}$．\n\\[ W=QV=4.93\\times10^{3}\\times3.7=1.82\\times10^{4}\\,\\mathrm{J}\\fallingdotseq\\boldsymbol{18\\,\\mathrm{kJ}} \\]\n（$\\ce{LiCoO2}$ と黒鉛の合計 $13.7\\,\\mathrm{g}$ あたりでは約 $1.3\\,\\mathrm{kJ/g}$ になる．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "リチウムイオン電池の容量は Li 1 個につき電子 1 個で決まるが，正極の LiCoO2 は構造が保てる範囲（Li の半分程度）までしか Li を出し入れできないので，実用容量は理論値の半分になる．正極から出る Li をすべて受け入れられるように負極の黒鉛の量（LiC6 まで）を合わせ，不足すると金属 Li が析出する危険があることを判断する．"
+ },
+ "concepts": [
+  "electrolysis",
+  "battery"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "リチウムイオン電池",
+  "容量",
+  "コバルト酸リチウム",
+  "黒鉛",
+  "電気エネルギー"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

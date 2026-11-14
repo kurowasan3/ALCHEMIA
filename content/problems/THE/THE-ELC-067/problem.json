@@ -1,0 +1,117 @@
+{
+ "id": "THE-ELC-067",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-07",
+ "topic": "銀イオンと銅(II)イオンの混合水溶液の電気分解（析出の順序と速さの変化）",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "硝酸銀 $2.00\\times10^{-3}\\,\\mathrm{mol}$ と硝酸銅(II) $3.00\\times10^{-3}\\,\\mathrm{mol}$ を含む水溶液に 2 本の白金電極を入れ，$0.500\\,\\mathrm{A}$ の一定電流で $1158$ 秒間電気分解した．電流はすべて電極反応に使われたものとする．原子量は $\\ce{Cu}=63.5$，$\\ce{Ag}=108$，ファラデー定数は $9.65\\times10^{4}\\,\\mathrm{C/mol}$，標準状態の気体のモル体積は $22.4\\,\\mathrm{L/mol}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "陰極に先に析出する金属は銀と銅のどちらか．"
+     },
+     {
+      "id": "2",
+      "tex": "陰極の質量は合計何 g 増加したか．有効数字 3 桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "陽極で発生した気体の体積は標準状態で何 mL か．有効数字 3 桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "銀の析出が終わるのは電流を流し始めてから何秒後か．有効数字 3 桁で答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "(4) の時刻より後の陰極の質量の増える速さは，それより前の速さの何倍か．有効数字 2 桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "銀"
+   },
+   {
+    "id": "2",
+    "tex": "$0.343\\,\\mathrm{g}$"
+   },
+   {
+    "id": "3",
+    "tex": "$33.6\\,\\mathrm{mL}$"
+   },
+   {
+    "id": "4",
+    "tex": "$386$ 秒後"
+   },
+   {
+    "id": "5",
+    "tex": "$0.29$ 倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "流れた電子は $\\dfrac{0.500\\times1158}{9.65\\times10^{4}} = 6.00\\times10^{-3}\\,\\mathrm{mol}$．\n\n(1) イオン化傾向は $\\ce{Cu} > \\ce{Ag}$ なので，$\\ce{Ag+}$ のほうが還元されやすく，\\textbf{銀}が先に析出する（$\\ce{Ag+}$ がなくなってから $\\ce{Cu^2+}$ が還元される）．\n\n(2) $\\ce{Ag+ + e- -> Ag}$ に $2.00\\times10^{-3}\\,\\mathrm{mol}$ の電子が使われ，残り $4.00\\times10^{-3}\\,\\mathrm{mol}$ で $\\ce{Cu^2+ + 2e- -> Cu}$ が $2.00\\times10^{-3}\\,\\mathrm{mol}$ 進む（$\\ce{Cu^2+}$ はまだ残る）．\n$108\\times2.00\\times10^{-3} + 63.5\\times2.00\\times10^{-3} = 0.216 + 0.127 = \\boldsymbol{0.343\\,\\mathrm{g}}$．\n\n(3) 陽極では $\\ce{2H2O -> O2 + 4H+ + 4e-}$．$\\ce{O2}$ は $\\dfrac{6.00\\times10^{-3}}{4} = 1.50\\times10^{-3}\\,\\mathrm{mol}$，$1.50\\times10^{-3}\\times22.4\\times10^{3} = \\boldsymbol{33.6\\,\\mathrm{mL}}$．陽極の反応は陰極で何が析出しても変わらない．\n\n(4) $\\dfrac{2.00\\times10^{-3}\\times9.65\\times10^{4}}{0.500} = \\boldsymbol{386}$ 秒後．\n\n(5) 電流が一定なので，単位時間に流れる電子の量は同じ．電子 1 mol あたりの析出量は，銀が $108\\,\\mathrm{g}$，銅が $\\dfrac{63.5}{2} = 31.75\\,\\mathrm{g}$．したがって $\\dfrac{31.75}{108} = 0.294 \\to \\boldsymbol{0.29}$ 倍に遅くなる（質量–時間のグラフは 386 秒で折れ曲がり，傾きが小さくなる）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "複数の金属イオンを含む水溶液の電気分解では，還元されやすい（イオン化傾向の小さい）金属から順に析出する．電子の物質量を共通の軸として，析出量・陽極の気体の量を求め，電子 1 mol あたりの析出質量の違いから，析出する金属が切り替わると質量の増える速さが変わることを判断する．"
+ },
+ "concepts": [
+  "electrolysis",
+  "transition-metals",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電気分解",
+  "析出の順序",
+  "ファラデーの法則",
+  "銀",
+  "銅"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

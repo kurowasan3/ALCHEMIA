@@ -1,0 +1,116 @@
+{
+ "id": "THE-EQL-024",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "反応商と平衡定数の比較による平衡移動の判断",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "体積 $1.0\\,\\mathrm L$ の密閉容器に窒素 $1.00\\,\\mathrm{mol}$ と水素 $2.00\\,\\mathrm{mol}$ を入れ，ある温度に保つと $\\ce{N2 + 3H2 <=> 2NH3}$ の反応が平衡に達し，水素が $0.50\\,\\mathrm{mol}$ 残っていた．以下，温度はすべてこの温度とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "平衡時の窒素とアンモニアの物質量を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "この温度での平衡定数 $K$ を単位とともに求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(1) の平衡混合物を，温度一定で体積 $0.50\\,\\mathrm L$ に圧縮した．圧縮した直後の $\\dfrac{[\\ce{NH3}]^2}{[\\ce{N2}][\\ce{H2}]^3}$ の値を求め，平衡がどちらに移動するかを答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "体積 $2.0\\,\\mathrm L$ の容器に窒素 $1.0\\,\\mathrm{mol}$，水素 $1.0\\,\\mathrm{mol}$，アンモニア $2.0\\,\\mathrm{mol}$ を入れた．反応は右・左どちらに進むか，または進まないか．"
+     },
+     {
+      "id": "5",
+      "tex": "体積 $1.0\\,\\mathrm L$ の容器に窒素 $0.50\\,\\mathrm{mol}$，水素 $0.50\\,\\mathrm{mol}$，アンモニア $2.0\\,\\mathrm{mol}$ を入れた．反応は右・左どちらに進むか，または進まないか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "窒素 $0.50\\,\\mathrm{mol}$，アンモニア $1.0\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "2",
+    "tex": "$16\\,(\\mathrm{mol/L})^{-2}$"
+   },
+   {
+    "id": "3",
+    "tex": "$4.0\\,(\\mathrm{mol/L})^{-2}$，右へ移動"
+   },
+   {
+    "id": "4",
+    "tex": "進まない（すでに平衡状態）"
+   },
+   {
+    "id": "5",
+    "tex": "左に進む"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 反応した $\\ce{H2}$ は $1.50\\,\\mathrm{mol}$．係数比より $\\ce{N2}$ は $0.50\\,\\mathrm{mol}$ 反応して $\\boldsymbol{0.50\\,\\mathrm{mol}}$ 残り，$\\ce{NH3}$ は $\\boldsymbol{1.0\\,\\mathrm{mol}}$ 生成．\\\\\n\\textbf{(2)} \\[ K=\\dfrac{[\\ce{NH3}]^2}{[\\ce{N2}][\\ce{H2}]^3}=\\dfrac{1.0^2}{0.50\\times0.50^3}=\\boldsymbol{16\\,(\\mathrm{mol/L})^{-2}} \\]\n\\textbf{(3)} 体積が半分になると各濃度が2倍：$Q=\\dfrac{2.0^2}{1.0\\times1.0^3}=\\boldsymbol{4.0}$（$=K/4$）．$Q<K$ なので，$Q$ が大きくなる向き，すなわち\\textbf{右}へ移動する（ルシャトリエの原理の「分子数の減る向き」と一致）．\\\\\n\\textbf{(4)} 濃度は $0.50$，$0.50$，$1.0\\,\\mathrm{mol/L}$．$Q=\\dfrac{1.0^2}{0.50\\times0.50^3}=16=K$ なので，すでに平衡状態で\\textbf{反応は進まない}．\\\\\n\\textbf{(5)} $Q=\\dfrac{2.0^2}{0.50\\times0.50^3}=64>K$ なので，$Q$ が小さくなる\\textbf{左}向きに進む．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "平衡定数と同じ形の式に現在の濃度を代入した値（反応商）を K と比べ，大小関係から反応の進む向きや平衡移動の向きを定量的に判断する．圧縮による移動も反応商の変化として説明できる．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "nitrogen-phosphorus",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応商",
+  "平衡定数",
+  "アンモニア合成",
+  "平衡の移動"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "id": "THE-EQL-096",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "受容体と薬剤の結合の速度定数の決定と結合率（一方が大過剰の場合）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 20,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "受容体タンパク質 R に薬剤分子 L が結合して複合体 RL ができる反応 $\\ce{R + L <=>[\\text{}] RL}$ を水溶液中，一定温度で調べる．正反応・逆反応の速度定数を $k_1$，$k_2$ とすると，それぞれの速度は $v_1 = k_1[\\ce{R}][\\ce{L}]$，$v_2 = k_2[\\ce{RL}]$ で表される．L の初濃度 $[\\ce{L}]_0$ は R の初濃度 $[\\ce{R}]_0$ より十分大きく，反応による L の濃度変化は無視できる（$[\\ce{L}] = [\\ce{L}]_0$）とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "RL の生成速度 $v = v_1 - v_2$ を，$k_1$，$k_2$，$[\\ce{R}]_0$，$[\\ce{L}]_0$，$[\\ce{RL}]$ を用いて表せ．また，$v = -\\alpha[\\ce{RL}] + \\beta$ の形に書いたときの $\\alpha$ と $\\beta$ を表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "$[\\ce{L}]_0$ を変えて $[\\ce{RL}]$ の時間変化を測定し，$\\alpha$ を求めたところ次の表のようになった．$k_1\\,[\\mathrm{L/(mol \\cdot s)}]$ と $k_2\\,[\\mathrm{s^{-1}}]$ を有効数字 2 桁で求めよ．\n\\[\\begin{array}{c|ccc}\n[\\ce{L}]_0\\ [\\times 10^{-8}\\,\\mathrm{mol/L}] & 1.0 & 2.0 & 3.0 \\\\ \\hline\n\\alpha\\ [\\times 10^{-3}\\,\\mathrm{s^{-1}}] & 2.5 & 4.0 & 5.5\n\\end{array}\\]"
+     },
+     {
+      "id": "3",
+      "tex": "平衡に達したとき，R のうち L と結合しているものの割合（結合率）$X = \\dfrac{[\\ce{RL}]}{[\\ce{R}]_0}$ を，平衡定数 $K = \\dfrac{k_1}{k_2}$ と $[\\ce{L}]_0$ を用いて表せ．また，$X = 0.50$ となる $[\\ce{L}]_0$ は何 $\\mathrm{mol/L}$ か，有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "平衡で $X = 0.90$ とするには，$[\\ce{L}]_0$ を何 $\\mathrm{mol/L}$ にすればよいか，有効数字 2 桁で答えよ．また，その値は $X = 0.50$ のときの何倍か．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$v = k_1[\\ce{L}]_0([\\ce{R}]_0 - [\\ce{RL}]) - k_2[\\ce{RL}]$，$\\alpha = k_1[\\ce{L}]_0 + k_2$，$\\beta = k_1[\\ce{L}]_0[\\ce{R}]_0$"
+   },
+   {
+    "id": "2",
+    "tex": "$k_1 = 1.5 \\times 10^{5}\\,\\mathrm{L/(mol \\cdot s)}$，$k_2 = 1.0 \\times 10^{-3}\\,\\mathrm{s^{-1}}$"
+   },
+   {
+    "id": "3",
+    "tex": "$X = \\dfrac{K[\\ce{L}]_0}{1 + K[\\ce{L}]_0}$，$6.7 \\times 10^{-9}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "4",
+    "tex": "$6.0 \\times 10^{-8}\\,\\mathrm{mol/L}$，9 倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　R の物質収支より $[\\ce{R}] = [\\ce{R}]_0 - [\\ce{RL}]$．\n\\[v = k_1[\\ce{L}]_0([\\ce{R}]_0 - [\\ce{RL}]) - k_2[\\ce{RL}] = -(k_1[\\ce{L}]_0 + k_2)[\\ce{RL}] + k_1[\\ce{L}]_0[\\ce{R}]_0\\]\nよって $\\boldsymbol{\\alpha = k_1[\\ce{L}]_0 + k_2}$，$\\boldsymbol{\\beta = k_1[\\ce{L}]_0[\\ce{R}]_0}$．$\\alpha$ は $[\\ce{L}]_0$ の 1 次関数になる．\n\n\\textbf{(2)}　$\\alpha$ を $[\\ce{L}]_0$ に対してとると直線で，傾きが $k_1$，切片が $k_2$．\\\\\n傾き：$\\dfrac{(5.5 - 2.5) \\times 10^{-3}}{(3.0 - 1.0) \\times 10^{-8}} = \\boldsymbol{1.5 \\times 10^{5}\\,\\mathrm{L/(mol \\cdot s)}}$\\\\\n切片：$2.5 \\times 10^{-3} - 1.5 \\times 10^{5} \\times 1.0 \\times 10^{-8} = \\boldsymbol{1.0 \\times 10^{-3}\\,\\mathrm{s^{-1}}}$\n\n\\textbf{(3)}　平衡では $v = 0$ なので $[\\ce{RL}] = \\dfrac{\\beta}{\\alpha} = \\dfrac{k_1[\\ce{L}]_0[\\ce{R}]_0}{k_1[\\ce{L}]_0 + k_2}$．分母・分子を $k_2$ で割って\n\\[X = \\boldsymbol{\\dfrac{K[\\ce{L}]_0}{1 + K[\\ce{L}]_0}}\\]\n$K = \\dfrac{1.5 \\times 10^{5}}{1.0 \\times 10^{-3}} = 1.5 \\times 10^{8}\\,\\mathrm{L/mol}$．$X = 0.50$ となるのは $K[\\ce{L}]_0 = 1$，すなわち $[\\ce{L}]_0 = \\dfrac{1}{K} = 6.67 \\times 10^{-9} \\fallingdotseq \\boldsymbol{6.7 \\times 10^{-9}\\,\\mathrm{mol/L}}$．$\\dfrac{1}{K}$ は「半分の R が結合する L の濃度」を表す．\n\n\\textbf{(4)}　$\\dfrac{K[\\ce{L}]_0}{1 + K[\\ce{L}]_0} = 0.90$ より $K[\\ce{L}]_0 = 9.0$，$[\\ce{L}]_0 = \\dfrac{9.0}{1.5 \\times 10^{8}} = \\boldsymbol{6.0 \\times 10^{-8}\\,\\mathrm{mol/L}}$．$X = 0.50$ のときの $\\boldsymbol{9}$ 倍で，結合率を 0.5 から 0.9 に上げるだけでも薬剤の濃度は 9 倍必要になる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "一方を大過剰にすると，複合体の生成速度は複合体濃度の 1 次関数 v=−α[RL]+β となり，α=k₁[L]₀+k₂ を [L]₀ に対してとった直線の傾きと切片から k₁・k₂ が求まる．平衡の結合率は X=K[L]₀/(1+K[L]₀) で，1/K が結合率 0.5 の濃度，0.9 にはその 9 倍が必要になる．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "concentration",
+  "reaction-rate"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応速度定数",
+  "平衡定数",
+  "擬一次反応",
+  "結合率",
+  "薬剤と受容体"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

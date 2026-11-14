@@ -1,0 +1,122 @@
+{
+ "id": "THE-SOL-063",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-09",
+ "topic": "浸透圧の測定値の外挿による高分子の分子量",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある水溶性の高分子化合物の分子量を求めるため，濃度 $c$（溶液 1 L あたりの高分子の質量 g）を変えた水溶液をつくり，水だけを通す半透膜を用いて $27\\,^\\circ\\mathrm{C}$ で浸透圧 $\\Pi$ を測定した．\n\\[\\begin{array}{c|cccc} c\\ (\\mathrm{g/L}) & 2.0 & 4.0 & 6.0 & 8.0 \\\\ \\hline \\Pi\\ (\\mathrm{Pa}) & 63.2 & 132.8 & 208.8 & 291.2 \\end{array}\\]\n気体定数は $8.3\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "各濃度で $\\Pi/c$ を計算すると，$c$ に対してどのように変化するか．また，$\\Pi/c$ を $c=0$ に外挿した値を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) の外挿値を用いて，この高分子の分子量を有効数字2けたで求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$c=8.0\\,\\mathrm{g/L}$ の測定値1つだけからファントホッフの式 $\\Pi=\\dfrac{c}{M}RT$ で分子量を求めると，いくらになるか（有効数字2けた）．また，(2) と比べて大きいか小さいか．$\\Pi/c$ を $c=0$ に外挿して分子量を求める理由を述べよ．"
+     },
+     {
+      "id": "4",
+      "tex": "同じ高分子を別の溶媒 Y に溶かして同じ温度で測定したところ，$\\Pi/c$ は濃度によらずほぼ一定であった．溶媒 Y 中で $c=8.0\\,\\mathrm{g/L}$ のときの浸透圧を予測せよ（有効数字2けた）．ただし，この高分子は溶媒 Y 中でも会合や解離をしないものとする．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：浸透圧の測定値の外挿による高分子の分子量",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\Pi/c$ は $31.6,\\ 33.2,\\ 34.8,\\ 36.4\\ \\mathrm{Pa\\cdot L/g}$ と，$c$ に比例して（$c$ が 1 g/L 増すごとに 0.80 ずつ）増える．外挿値 $30.0\\,\\mathrm{Pa\\cdot L/g}$"
+   },
+   {
+    "id": "2",
+    "tex": "$8.3\\times10^{4}$"
+   },
+   {
+    "id": "3",
+    "tex": "$6.8\\times10^{4}$，小さい．ファントホッフの式は溶質粒子どうしの相互作用が無視できる無限に薄い溶液でだけ厳密に成り立ち，有限の濃度では浸透圧がずれるので，$c\\to0$ の極限の値を使う必要があるから"
+   },
+   {
+    "id": "4",
+    "tex": "$2.4\\times10^{2}\\,\\mathrm{Pa}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\Pi/c$ は順に $63.2\\div2.0=31.6$，$132.8\\div4.0=33.2$，$208.8\\div6.0=34.8$，$291.2\\div8.0=36.4$（単位 $\\mathrm{Pa\\cdot L/g}$）．差はどれも $1.6$（$c$ の差 $2.0$ あたり）で，$\\Pi/c$ は $c$ の一次式\n\\[\\frac{\\Pi}{c}=30.0+0.80\\,c\\]\nで表される．$c=0$ に外挿した値は $\\boldsymbol{30.0\\,\\mathrm{Pa\\cdot L/g}}$．\n\n\\textbf{(2)} ファントホッフの式 $\\Pi=\\dfrac{c}{M}RT$ は $c\\to0$ で厳密に成り立つので，$\\left(\\dfrac{\\Pi}{c}\\right)_{c\\to0}=\\dfrac{RT}{M}$．\n\\[M=\\frac{8.3\\times10^{3}\\times300}{30.0}=8.3\\times10^{4}\\]\n分子量は $\\boldsymbol{8.3\\times10^{4}}$．\n\n\\textbf{(3)} $M=\\dfrac{RT}{\\Pi/c}=\\dfrac{8.3\\times10^{3}\\times300}{36.4}=6.84\\times10^{4}$ で $\\boldsymbol{6.8\\times10^{4}}$，(2) より $\\boldsymbol{\\text{小さい}}$．\n\nこの溶液では $\\Pi/c$ が濃度とともに大きくなる（浸透圧が理想的な値より大きい）．高分子は1分子が大きく，濃度が上がると分子どうしが互いの占める空間に入れないことや溶媒との相互作用の影響が現れて，ファントホッフの式からずれる．ファントホッフの式は粒子どうしの相互作用が無視できる $\\boldsymbol{\\text{無限に薄い溶液でだけ厳密に成り立つ}}$ ので，1点の値をそのまま使うと分子量に誤差が出る．浸透圧そのものは $c\\to0$ で 0 になって測れないが，$\\Pi/c$ は直線的に変化するので，いくつかの濃度の測定値から $c=0$ に外挿すれば極限の値が得られる（実在気体の $PV/n$ を $P\\to0$ に外挿するのと同じ考え方）．\n\n\\textbf{(4)} 外挿値 $\\left(\\dfrac{\\Pi}{c}\\right)_{c\\to0}=\\dfrac{RT}{M}$ は温度と高分子の分子量だけで決まり，溶媒によらない．溶媒によって変わるのは直線の傾き（濃度による相互作用の効果）である．溶媒 Y では傾きがほぼ 0 なので，どの濃度でも $\\Pi/c\\fallingdotseq30.0\\,\\mathrm{Pa\\cdot L/g}$ となり，\n\\[\\Pi\\fallingdotseq30.0\\times8.0=240\\,\\mathrm{Pa}\\]\nすなわち $\\boldsymbol{2.4\\times10^{2}\\,\\mathrm{Pa}}$ と予測できる．（同じ濃度でも水中の $291.2\\,\\mathrm{Pa}$ より小さい．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ファントホッフの式は無限に薄い溶液でだけ厳密に成り立つので，高分子溶液では Π/c が濃度とともに変わり，1点の測定から求めた分子量はずれる．Π/c を濃度に対してプロットして c=0 に外挿した値が RT/M を与え，この切片は溶媒によらず，溶媒で変わるのは傾きだけである．"
+ },
+ "concepts": [
+  "solution-colligative",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "浸透圧",
+  "高分子",
+  "分子量",
+  "外挿",
+  "ファントホッフの式"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

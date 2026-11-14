@@ -1,0 +1,109 @@
+{
+ "id": "INO-OXS-016",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-02",
+ "topic": "接触法の平衡転化率と中間吸収（二段の接触）の効果",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "接触法では，硫黄を燃やした気体（物質量の割合で $\\ce{SO2}$ 10 %，$\\ce{O2}$ 11 %，$\\ce{N2}$ 79 %）を触媒層に通して\n\\[\\ce{2SO2 + O2 <=> 2SO3}\\]\nの平衡に到達させる．触媒層の温度での圧平衡定数は $K_\\mathrm{p}=\\dfrac{p_{\\ce{SO3}}^{\\,2}}{p_{\\ce{SO2}}^{\\,2}\\,p_{\\ce{O2}}}=0.16\\,\\mathrm{Pa^{-1}}$，全圧はつねに $1.0\\times10^{5}\\,\\mathrm{Pa}$ に保たれるとする．$\\ce{SO2}$ の転化率（反応した $\\ce{SO2}$ の割合）を $\\alpha$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\dfrac{\\alpha}{1-\\alpha}$ を $K_\\mathrm{p}$ と $\\ce{O2}$ の分圧 $p_{\\ce{O2}}$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "転化率は 1 に近いと予想されるので，$p_{\\ce{O2}}$ を「$\\ce{SO2}$ がすべて反応したとき」の値で近似して $\\alpha$ を求めよ．さらに，得られた $\\alpha$ で $p_{\\ce{O2}}$ を計算し直して $\\alpha$ を求め直し，有効数字3桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "1段目の平衡の後，気体を濃硫酸に通して $\\ce{SO3}$ だけを完全に吸収させ，残りの気体を2段目の触媒層に通して再び平衡にした（中間吸収）．2段目で残っていた $\\ce{SO2}$ のうち反応する割合 $\\beta$ と，最初の $\\ce{SO2}$ に対する全体の転化率を，それぞれ有効数字3桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "中間吸収を行わず，1段のまま全圧を $2.0\\times10^{5}\\,\\mathrm{Pa}$ にした場合の転化率を(2)と同じ方法で求め（有効数字3桁），未反応のまま残る $\\ce{SO2}$ の割合を(3)の方法と比べよ．また，中間吸収によって $K_\\mathrm{p}$ が変わらないのに転化率が大きく上がる理由を述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\dfrac{\\alpha}{1-\\alpha}=\\sqrt{K_\\mathrm{p}\\,p_{\\ce{O2}}}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\alpha=0.970$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\beta=0.971$，全体の転化率 $0.999$（99.9 %）"
+   },
+   {
+    "id": "4",
+    "tex": "転化率 $0.978$．未反応の $\\ce{SO2}$ は約 2.2 % で，中間吸収（約 0.09 %）の約 25 倍残る．中間吸収では生成物 $\\ce{SO3}$ を除くので，2段目は $\\ce{SO3}$ のない状態から新しい平衡に向かい，残った $\\ce{SO2}$ の大部分がさらに反応できる（比 $\\frac{p_{\\ce{SO3}}}{p_{\\ce{SO2}}}$ が同じ平衡値になるまで反応が進む）から"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　$\\frac{p_{\\ce{SO3}}}{p_{\\ce{SO2}}}=\\frac{\\alpha}{1-\\alpha}$（同じ容器内の分圧の比＝物質量の比）なので，平衡定数は「生成物と原料の比」を $\\sqrt{K_\\mathrm p p_{\\ce{O2}}}$ に固定する．$\\ce{O2}$ は大過剰で変化が小さいので近似が効く．\n\n(1) $K_\\mathrm p=\\left(\\dfrac{p_{\\ce{SO3}}}{p_{\\ce{SO2}}}\\right)^2\\dfrac{1}{p_{\\ce{O2}}}$ より $\\boldsymbol{\\dfrac{\\alpha}{1-\\alpha}=\\sqrt{K_\\mathrm p\\,p_{\\ce{O2}}}}$．\n\n(2) 原料 100 mol あたり，平衡で $\\ce{SO2}$ $10(1-\\alpha)$，$\\ce{SO3}$ $10\\alpha$，$\\ce{O2}$ $11-5\\alpha$，$\\ce{N2}$ 79，計 $100-5\\alpha$ mol．\n$\\alpha\\to1$ とすると $p_{\\ce{O2}}\\fallingdotseq\\frac{6}{95}\\times1.0\\times10^5=6.32\\times10^3\\,\\mathrm{Pa}$，$\\sqrt{0.16\\times6.32\\times10^3}=31.8$，$\\alpha=\\frac{31.8}{32.8}=0.9695$．\nこれで計算し直すと $p_{\\ce{O2}}=\\frac{11-4.85}{100-4.85}\\times10^5=6.46\\times10^3\\,\\mathrm{Pa}$，$\\sqrt{0.16\\times6.46\\times10^3}=32.2$，$\\alpha=\\frac{32.2}{33.2}=\\boldsymbol{0.970}$．もう一度くり返しても変わらない（$p_{\\ce{O2}}$ の 2 % のずれは平方根で 1 % になり，さらに $\\frac{\\alpha}{1-\\alpha}$ から $\\alpha$ に直すと $1-\\alpha$ に対して約 1 % の補正にしかならない）．\n\n(3) $\\ce{SO3}$ を除いた後は $\\ce{SO2}$ $0.30$，$\\ce{O2}$ $6.15$，$\\ce{N2}$ 79 mol（計 85.45 mol）．2段目もほぼすべて反応すると近似すると $p_{\\ce{O2}}\\fallingdotseq\\frac{6.15-0.15}{85.45-0.15}\\times10^5=7.03\\times10^3\\,\\mathrm{Pa}$，$\\sqrt{0.16\\times7.03\\times10^3}=33.5$，$\\beta=\\frac{33.5}{34.5}=\\boldsymbol{0.971}$．\n全体では未反応の割合が $(1-\\alpha)(1-\\beta)=0.030\\times0.029=8.7\\times10^{-4}$ なので，転化率は $\\boldsymbol{0.999}$．\n\n(4) $p_{\\ce{O2}}$ も2倍になるので $\\frac{\\alpha}{1-\\alpha}=\\sqrt{0.16\\times2\\times6.46\\times10^3}\\fallingdotseq45$，$\\alpha=\\boldsymbol{0.978}$（近似をくり返しても同じ）．未反応の $\\ce{SO2}$ は $2.2\\,\\%$ で，中間吸収の $0.087\\,\\%$ の約 25 倍．\n加圧しても比 $\\frac{\\alpha}{1-\\alpha}$ は $\\sqrt{P}$ にしか比例しないが，中間吸収では1段目の後に $\\ce{SO3}$ を取り除いて分子の比 $\\frac{p_{\\ce{SO3}}}{p_{\\ce{SO2}}}$ を 0 にもどすので，2段目では残った $\\ce{SO2}$ について改めて約 30 倍の比まで反応が進み，未反応分が掛け算で小さくなる．$K_\\mathrm p$ は温度だけで決まり変わらないが，生成物を除くことで平衡が右に移るのである（ルシャトリエの原理）．反応時間を長くしても平衡で止まるので，1段では超えられない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "O2 が大過剰の平衡では α/(1−α)=√(Kp·pO2) となり，pO2 を完全反応時の値で近似して求めた後に計算し直して近似の妥当性を確かめる．生成物 SO3 を途中で除いて再び平衡にすると，未反応分が (1−α)(1−β) と掛け算で小さくなり，Kp が同じでも加圧より大きく転化率が上がる．"
+ },
+ "concepts": [
+  "oxygen-sulfur",
+  "industrial-process",
+  "chemical-equilibrium"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "接触法",
+  "圧平衡定数",
+  "近似の妥当性",
+  "中間吸収",
+  "ルシャトリエの原理"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,110 @@
+{
+ "id": "THE-ION-071",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "強酸・弱酸・緩衝液を 10 倍にうすめたときの pH 変化の比較",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "compare",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "25 ℃ で次の実験を行った．$\\log_{10}2=0.30$，$\\log_{10}3=0.48$ とし，水の電離は無視してよい．\n$0.40\\,\\mathrm{mol/L}$ の酢酸水溶液 $50\\,\\mathrm{mL}$ と $0.10\\,\\mathrm{mol/L}$ の水酸化ナトリウム水溶液 $50\\,\\mathrm{mL}$ を混合した溶液（溶液 C）の pH を測定すると 4.22 であった．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "溶液 C の測定値から，酢酸の電離定数 $K_\\mathrm{a}$ を有効数字2桁で求めよ．ただし $10^{0.78}=6.0$ とする．"
+     },
+     {
+      "id": "2",
+      "tex": "溶液 C を純水で 10 倍にうすめた．うすめた後の pH を小数第1位まで求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$2.0\\times10^{-3}\\,\\mathrm{mol/L}$ の塩酸（溶液 A）と $0.20\\,\\mathrm{mol/L}$ の酢酸水溶液（溶液 B）は，どちらも pH が 2.70 である．それぞれを純水で 10 倍にうすめた後の pH を小数第2位まで求めよ．酢酸の電離定数は (1) の値を用いよ．"
+     },
+     {
+      "id": "4",
+      "tex": "10 倍にうすめたときの pH の変化量が大きい順に溶液 A，B，C を並べ，その順になる理由を，それぞれの溶液の $[\\ce{H+}]$ が何に比例する（または何で決まる）かに注目して説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$2.0\\times10^{-5}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "2",
+    "tex": "4.2"
+   },
+   {
+    "id": "3",
+    "tex": "A：3.70，B：3.20"
+   },
+   {
+    "id": "4",
+    "tex": "A ＞ B ＞ C．A では $[\\ce{H+}]$ が酸の濃度に比例し（10 倍にうすめると pH は 1 上がる），B では $[\\ce{H+}]=\\sqrt{K_\\mathrm{a}c}$ と濃度の平方根に比例し（0.5 上がる），C では $[\\ce{H+}]=K_\\mathrm{a}[\\ce{CH3COOH}]/[\\ce{CH3COO-}]$ と濃度の比で決まり，うすめても比が変わらない（ほとんど変わらない）から．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　混合前の物質量は酢酸 $0.40\\times0.050=0.020\\,\\mathrm{mol}$，$\\ce{NaOH}$ $0.10\\times0.050=0.0050\\,\\mathrm{mol}$．\n\\[ \\ce{CH3COOH + NaOH -> CH3COONa + H2O} \\]\nにより，混合後（100 mL）は $\\ce{CH3COOH}$ $0.015\\,\\mathrm{mol}$（$0.15\\,\\mathrm{mol/L}$），$\\ce{CH3COO-}$ $0.0050\\,\\mathrm{mol}$（$0.050\\,\\mathrm{mol/L}$）．酢酸の電離は共通イオンで抑えられ，$[\\ce{H+}]$ はこれらの濃度に比べて十分小さいので，濃度はこのまま使える．$[\\ce{H+}]=10^{-4.22}=10^{0.78}\\times10^{-5}=6.0\\times10^{-5}\\,\\mathrm{mol/L}$ より\n\\[ K_\\mathrm{a}=\\dfrac{[\\ce{H+}][\\ce{CH3COO-}]}{[\\ce{CH3COOH}]}=6.0\\times10^{-5}\\times\\dfrac{0.050}{0.15}=\\boldsymbol{2.0\\times10^{-5}\\,\\mathrm{mol/L}} \\]\n\n\\textbf{(2)}　10 倍にうすめると $[\\ce{CH3COOH}]=0.015$，$[\\ce{CH3COO-}]=0.0050\\,\\mathrm{mol/L}$ になるが，比は 3 のまま．$[\\ce{H+}]=K_\\mathrm{a}\\times3=6.0\\times10^{-5}\\,\\mathrm{mol/L}$ で，これはまだ $0.0050$ に比べて十分小さい（約 1 %）．したがって pH は$\\boldsymbol{\\text{4.2}}$のまま変わらない（厳密に解いても 4.23）．\n\n\\textbf{(3)}　A：強酸は完全に電離するので $[\\ce{H+}]=2.0\\times10^{-4}\\,\\mathrm{mol/L}$，pH $=4-0.30=\\boldsymbol{3.70}$．\nB：弱酸の $[\\ce{H+}]=\\sqrt{K_\\mathrm{a}c}=\\sqrt{2.0\\times10^{-5}\\times0.020}=\\sqrt{4.0\\times10^{-7}}$ より\n\\[ \\mathrm{pH}=-\\tfrac12\\log_{10}(4.0\\times10^{-7})=-\\tfrac12(0.60-7)=\\boldsymbol{3.20} \\]\n（電離度は約 0.03 で，$c(1-\\alpha)\\fallingdotseq c$ の近似は妥当．）\n\n\\textbf{(4)}　pH の変化は A：$+1.00$，B：$+0.50$，C：ほぼ 0 なので$\\boldsymbol{\\text{A＞B＞C}}$．\n・強酸 A：$[\\ce{H+}]=c$．濃度が $\\dfrac{1}{10}$ になれば $[\\ce{H+}]$ も $\\dfrac{1}{10}$ で，pH は 1 上がる．\n・弱酸 B：うすめると電離度が大きくなる（ルシャトリエの原理：粒子の数が増える電離の向きへ移動）ので，$[\\ce{H+}]=\\sqrt{K_\\mathrm{a}c}$ は $\\dfrac{1}{\\sqrt{10}}$ にしか減らず，pH は 0.5 上がる．\n・緩衝液 C：$[\\ce{H+}]=K_\\mathrm{a}\\dfrac{[\\ce{CH3COOH}]}{[\\ce{CH3COO-}]}$ は 2 つの濃度の\\textbf{比}で決まり，うすめても両方が同じ割合で減るので比は変わらない．\n同じ pH（2.70）の A と B でも，うすめたときのふるまいは異なる．pH が等しいことは $[\\ce{H+}]$ が等しいことしか意味せず，溶液がもつ酸の「たくわえ」（未電離の分子や共役塩基）の違いは pH だけでは見えない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "10 倍にうすめたときの pH 変化は [H⁺] の決まり方で違い，強酸は濃度に比例して pH が 1，弱酸は濃度の平方根に比例して 0.5 上がり，緩衝液は酸と共役塩基の濃度の比で決まるのでほとんど変わらない．部分中和した溶液の pH の測定値から電離定数を求めることもできる．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "concentration",
+  "ph"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "緩衝液",
+  "希釈",
+  "弱酸",
+  "強酸",
+  "pH",
+  "電離定数"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

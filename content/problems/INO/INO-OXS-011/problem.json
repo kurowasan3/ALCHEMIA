@@ -1,0 +1,116 @@
+{
+ "id": "INO-OXS-011",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-02",
+ "topic": "黄鉄鉱からの硫酸製造と SO2 の転化率",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "接触法の原料となる二酸化硫黄は，硫黄の燃焼のほか，黄鉄鉱 $\\ce{FeS2}$ を燃焼させて得ることもできる．このとき鉄は $\\ce{Fe2O3}$ になる．H = 1.0，O = 16，S = 32，Fe = 56 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "黄鉄鉱の燃焼を化学反応式で書け．"
+     },
+     {
+      "id": "2",
+      "tex": "黄鉄鉱（純度 100 %）から質量パーセント濃度 98.0 % の濃硫酸を $50.0\\,\\mathrm{kg}$ つくるには，黄鉄鉱は何 kg 必要か．黄鉄鉱中の S はすべて $\\ce{H2SO4}$ になるものとし，有効数字3桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) と同じ量の濃硫酸を硫黄からつくる場合と比べると，必要な原料の質量は黄鉄鉱のほうが何倍か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\ce{SO2}$ 10.0 %，$\\ce{O2}$ 10.0 %，$\\ce{N2}$ 80.0 %（物質量の割合）の混合気体を一定体積の容器に入れ，触媒を加えて一定温度に保つと，$\\ce{2SO2 + O2 <=> 2SO3}$ が平衡に達し，圧力は反応前の 0.960 倍になった．はじめの $\\ce{SO2}$ の何 % が $\\ce{SO3}$ に変化したか．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "接触法では，生じた $\\ce{SO3}$ を直接水に吸収させず，濃硫酸に吸収させる．その理由を簡潔に述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{4FeS2 + 11O2 -> 2Fe2O3 + 8SO2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$30.0\\,\\mathrm{kg}$"
+   },
+   {
+    "id": "3",
+    "tex": "$1.9$ 倍"
+   },
+   {
+    "id": "4",
+    "tex": "$80\\,\\%$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\ce{SO3}$ と水の反応は発熱が大きく，水が蒸発して硫酸が霧状になり，吸収されにくいから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\ce{4FeS2 + 11O2 -> 2Fe2O3 + 8SO2}$．\n\n\\textbf{(2)} $\\ce{H2SO4}$：$50.0\\times0.980=49.0\\,\\mathrm{kg}$，$49.0\\times10^3/98=500\\,\\mathrm{mol}$．S の保存より $\\ce{FeS2}$ 1 mol から $\\ce{H2SO4}$ 2 mol ができるので $\\ce{FeS2}$ は $250\\,\\mathrm{mol}$，$250\\times120=\\boldsymbol{30.0\\,\\mathrm{kg}}$．\n\n\\textbf{(3)} 硫黄なら $500\\times32=16.0\\,\\mathrm{kg}$．$30.0/16.0=1.875\\approx\\boldsymbol{1.9}$ 倍（Fe の分だけ重い）．\n\n\\textbf{(4)} はじめ全体を 100 mol とし，$\\ce{SO2}$ が $2a\\,\\mathrm{mol}$ 反応したとすると，$\\ce{O2}$ が $a$ 減り $\\ce{SO3}$ が $2a$ 増えるので，全物質量は $a$ だけ減る．体積・温度一定で圧力は物質量に比例するから $100-a=96.0$，$a=4.0$．$\\ce{SO2}$ は $8.0\\,\\mathrm{mol}$ 反応し，$\\dfrac{8.0}{10.0}\\times100=\\boldsymbol{80\\,\\%}$．（$\\ce{O2}$ は 4.0 mol 消費で足りている．）\n\n\\textbf{(5)} $\\ce{SO3 + H2O -> H2SO4}$ は激しく発熱し，水蒸気と $\\ce{SO3}$ が反応して硫酸の細かい霧ができ，水に吸収されにくい．濃硫酸に吸収させて発煙硫酸とし，これを希硫酸で薄めて濃硫酸にする．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "原料の違い（S と FeS2）による硫酸の量的関係を S 原子の保存で求め，定容・定温での圧力変化から平衡時の SO2 の転化率を求める．"
+ },
+ "concepts": [
+  "oxygen-sulfur",
+  "transition-metals",
+  "industrial-process"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "接触法",
+  "黄鉄鉱",
+  "量的関係",
+  "化学平衡"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

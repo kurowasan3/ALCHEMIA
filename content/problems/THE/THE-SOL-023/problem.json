@@ -1,0 +1,102 @@
+{
+ "id": "THE-SOL-023",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-09",
+ "topic": "分配平衡と抽出の回数",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水とヘキサンは互いに溶け合わず2層に分かれる．ある有機化合物 X は両方の溶媒に同じ分子として溶け，一定温度では「ヘキサン層の濃度 $C_\\mathrm h$ と水層の濃度 $C_\\mathrm w$ の比 $K=C_\\mathrm h/C_\\mathrm w$」が一定に保たれる（分配の法則）．濃度は「X の質量〔g〕/ 溶媒の体積〔mL〕」で表すものとし，以下は同じ温度で行う．\nX $1.0\\,\\mathrm g$ を含む水溶液 $100\\,\\mathrm{mL}$ にヘキサン $100\\,\\mathrm{mL}$ を加えて分液漏斗でよく振り混ぜ，静置したところ，X $0.80\\,\\mathrm g$ がヘキサン層に移った．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "分配係数 $K$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "新たに用意した「X $1.0\\,\\mathrm g$ を含む水溶液 $100\\,\\mathrm{mL}$」から，ヘキサン合計 $100\\,\\mathrm{mL}$ を使って X を抽出する．(a) $100\\,\\mathrm{mL}$ で1回抽出する場合と，(b) $50\\,\\mathrm{mL}$ ずつ2回（1回目のヘキサン層を除いてから，2回目を行う）抽出する場合とで，ヘキサンに移る X の合計は何 g か．どちらが多いかも答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$50\\,\\mathrm{mL}$ ずつのヘキサンで抽出をくり返すとき，X の $99\\,\\%$ 以上をヘキサンに移すには最低何回の抽出が必要か．"
+     }
+    ]
+   },
+   {
+    "type": "text",
+    "tex": "数値は有効数字2桁で答えよ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$4.0$"
+   },
+   {
+    "id": "2",
+    "tex": "(a) $0.80\\,\\mathrm g$，(b) $0.89\\,\\mathrm g$．(b) の方が多い．"
+   },
+   {
+    "id": "3",
+    "tex": "$5$ 回"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 水層に $0.20\\,\\mathrm g$，ヘキサン層に $0.80\\,\\mathrm g$ が残るので $K=\\dfrac{0.80/100}{0.20/100}=\\boldsymbol{4.0}$．\n\\textbf{(2)} (a) (1) と同じ操作なので $\\boldsymbol{0.80\\,\\mathrm g}$．\n(b) 1回の抽出で水層に残る X の割合を $r$ とすると，ヘキサン $50\\,\\mathrm{mL}$ では\n\\[ \\frac{(1-r)/50}{r/100}=4.0 \\quad\\Rightarrow\\quad r=\\frac13 \\]\n2回で水層に残るのは $1.0\\times\\left(\\tfrac13\\right)^2=0.111\\,\\mathrm g$ なので，移る合計は $1.0-0.111=\\boldsymbol{0.89\\,\\mathrm g}$．同じ量の溶媒でも，分けて何回も抽出する方が多く取り出せる．\n\\textbf{(3)} $n$ 回後に水層に残る割合は $\\left(\\tfrac13\\right)^n$．これが $0.01$ 以下になればよい．$3^4=81<100$，$3^5=243>100$ より，最低 $\\boldsymbol{5}$ 回．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "分配係数が一定のとき，1回の抽出で水層に残る割合は溶媒の量だけで決まり，抽出をくり返すと残る割合はその積になる．同じ総量の溶媒なら，分けて何回も抽出する方が多く取り出せる．"
+ },
+ "concepts": [
+  "solution-colligative"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "分配平衡",
+  "抽出",
+  "分液漏斗",
+  "分配係数"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

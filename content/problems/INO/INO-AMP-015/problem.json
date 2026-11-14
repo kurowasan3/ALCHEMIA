@@ -1,0 +1,139 @@
+{
+ "id": "INO-AMP-015",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-06",
+ "topic": "両性水酸化物の沈殿量の変化から混合水溶液の組成を求める（Zn²⁺ と Mg²⁺）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "硝酸亜鉛と硝酸マグネシウムを含む混合水溶液 $100\\,\\mathrm{mL}$ に，$1.00\\,\\mathrm{mol/L}$ の水酸化ナトリウム水溶液を少しずつ加え，生じた沈殿の物質量の合計を調べたところ，図のようになった．沈殿は NaOH 水溶液 $30.0\\,\\mathrm{mL}$ まで増え，$30.0\\,\\mathrm{mL}$ から $40.0\\,\\mathrm{mL}$ までは減少し，それ以降は一定であった．各段階の反応は順に完全に進むものとし，原子量は H = 1.0，O = 16，Mg = 24.3，Zn = 65.4 とする．数値は有効数字3桁で答えよ．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "NaOH 水溶液 $0\\sim30.0\\,\\mathrm{mL}$ で起こる2つの変化を，イオン反応式で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "$30.0\\sim40.0\\,\\mathrm{mL}$ で沈殿が減少する変化を，イオン反応式で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "もとの混合水溶液中の $\\ce{Zn^2+}$ と $\\ce{Mg^2+}$ のモル濃度〔mol/L〕をそれぞれ求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "沈殿の質量の最大値〔g〕と，$40.0\\,\\mathrm{mL}$ 以降の沈殿の質量〔g〕を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "折れ点の位置（$30.0\\,\\mathrm{mL}$ と $40.0\\,\\mathrm{mL}$）が同じグラフが，$\\ce{Zn^2+}$ の代わりに $\\ce{Al^3+}$ を含む混合水溶液（$\\ce{Al^3+}$ と $\\ce{Mg^2+}$）から得られたと仮定すると，矛盾が生じる．その理由を説明せよ．"
+     },
+     {
+      "id": "6",
+      "tex": "もとの混合水溶液に，NaOH 水溶液の代わりにアンモニア水を過剰に加えたとき，沈殿として残る物質の化学式を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：両性水酸化物の沈殿量の変化から混合水溶液の組成を求める（Zn²⁺ と Mg²⁺）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{Zn^2+ + 2OH- -> Zn(OH)2}$，$\\ce{Mg^2+ + 2OH- -> Mg(OH)2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{Zn(OH)2 + 2OH- -> [Zn(OH)4]^2-}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{Zn^2+}$ $5.00\\times10^{-2}\\,\\mathrm{mol/L}$，$\\ce{Mg^2+}$ $1.00\\times10^{-1}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "4",
+    "tex": "最大値 $1.08\\,\\mathrm{g}$，$40.0\\,\\mathrm{mL}$ 以降 $0.583\\,\\mathrm{g}$"
+   },
+   {
+    "id": "5",
+    "tex": "減少部分から $\\ce{Al^3+}$ は $10.0\\,\\mathrm{mmol}$ となり，その沈殿だけで $\\ce{OH-}$ を $30.0\\,\\mathrm{mmol}$ 使うので $\\ce{Mg^2+}$ は 0 となるが，それでは $40.0\\,\\mathrm{mL}$ 以降に沈殿が残ることと合わないから"
+   },
+   {
+    "id": "6",
+    "tex": "$\\ce{Mg(OH)2}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 2種類の水酸化物がともに沈殿する．\n\\[ \\ce{Zn^2+ + 2OH- -> Zn(OH)2},\\qquad \\ce{Mg^2+ + 2OH- -> Mg(OH)2} \\]\n\\textbf{(2)} 両性水酸化物の $\\ce{Zn(OH)2}$ だけが過剰の $\\ce{OH-}$ に溶ける（$\\ce{Mg(OH)2}$ は溶けない）．\n\\[ \\ce{Zn(OH)2 + 2OH- -> [Zn(OH)4]^2-} \\]\n\\textbf{(3)} 加えた $\\ce{OH-}$ は $1\\,\\mathrm{mL}$ あたり $1.00\\,\\mathrm{mmol}$．減少部分（$10.0\\,\\mathrm{mmol}$）は (2) の反応なので，$n_{\\mathrm{Zn}}=\\dfrac{10.0}{2}=5.00\\,\\mathrm{mmol}$．増加部分（$30.0\\,\\mathrm{mmol}$）は $2n_{\\mathrm{Zn}}+2n_{\\mathrm{Mg}}=30.0$ より $n_{\\mathrm{Mg}}=10.0\\,\\mathrm{mmol}$．体積 $100\\,\\mathrm{mL}$ で割って\n\\[ [\\ce{Zn^2+}]=\\boldsymbol{5.00\\times10^{-2}\\,\\mathrm{mol/L}},\\qquad [\\ce{Mg^2+}]=\\boldsymbol{1.00\\times10^{-1}\\,\\mathrm{mol/L}} \\]\n\\textbf{(4)} 式量は $\\ce{Zn(OH)2}=99.4$，$\\ce{Mg(OH)2}=58.3$．最大値は両方が沈殿しきった $30.0\\,\\mathrm{mL}$ のときで\n\\[ 5.00\\times10^{-3}\\times99.4+1.00\\times10^{-2}\\times58.3=0.497+0.583=\\boldsymbol{1.08\\,\\mathrm{g}} \\]\n$40.0\\,\\mathrm{mL}$ 以降は $\\ce{Mg(OH)2}$ だけが残り $\\boldsymbol{0.583\\,\\mathrm{g}}$．\\\\\n\\textbf{(5)} $\\ce{Al(OH)3}$ は $\\ce{Al(OH)3 + OH- -> [Al(OH)4]-}$ のように $\\ce{OH-}$ 1個で溶ける．減少部分の $\\ce{OH-}$ $10.0\\,\\mathrm{mmol}$ から $n_{\\mathrm{Al}}=10.0\\,\\mathrm{mmol}$ となり，$\\ce{Al(OH)3}$ の沈殿に $\\ce{OH-}$ が $3\\times10.0=30.0\\,\\mathrm{mmol}$ 必要である．すると増加部分の $30.0\\,\\mathrm{mmol}$ はすべて Al に使われ，$n_{\\mathrm{Mg}}=0$ になる．しかし実際には $40.0\\,\\mathrm{mL}$ 以降も沈殿が残っているので\\textbf{矛盾する}．このように，溶ける段階と沈殿する段階で $\\ce{OH-}$ の数の比（Zn は 2:2，Al は 3:1）が違うので，折れ点の位置から両性金属のイオンを見分けることもできる．\\\\\n\\textbf{(6)} 過剰のアンモニア水では $\\ce{Zn(OH)2}$ が $\\ce{[Zn(NH3)4]^2+}$ となって溶けるが，$\\ce{Mg(OH)2}$ はアンミン錯イオンをつくらずに残る．\n\\[ \\ce{Zn(OH)2 + 4NH3 -> [Zn(NH3)4]^2+ + 2OH-} \\]\n残る沈殿は $\\ce{Mg(OH)2}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "両性水酸化物を含む混合水溶液に強塩基を加えると，沈殿が増える区間（全陽イオンの沈殿）と減る区間（両性水酸化物だけが溶ける）の OH⁻ の量から各イオンの量が決まる．沈殿と溶解に使う OH⁻ の数の比が Zn と Al で違うことから，折れ点の位置と矛盾しない金属イオンを判断する．"
+ },
+ "concepts": [
+  "amphoteric",
+  "complex-ion",
+  "precipitation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "両性水酸化物",
+  "水酸化亜鉛",
+  "沈殿量のグラフ",
+  "量的関係",
+  "アンミン錯イオン"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

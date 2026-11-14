@@ -1,0 +1,122 @@
+{
+ "id": "THE-BND-025",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-03",
+ "topic": "六方最密構造の格子と密度",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "チタンの結晶は常温で六方最密構造をとる．図はその正六角柱の格子で，正六角形の一辺は $a=0.295\\,\\mathrm{nm}$，高さは $c=0.468\\,\\mathrm{nm}$ である．$\\ce{Ti}=47.9$，アボガドロ定数 $6.0\\times10^{23}\\,/\\mathrm{mol}$，$\\sqrt3=1.73$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "図の正六角柱に含まれる原子の数と，1個の原子に最も近い原子の数（配位数）を答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "正六角柱の体積は何 $\\mathrm{cm^3}$ か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "チタンの結晶の密度は何 $\\mathrm{g/cm^3}$ か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "原子を同じ大きさの球とみなし，理想的な六方最密構造と面心立方格子を比べたとき，充填率はどちらが大きいか．また，同じ原子半径の金属が六方最密構造から面心立方格子に変わったとすると，密度はどうなるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：六方最密構造の格子と密度",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "6 個，配位数 12"
+   },
+   {
+    "id": "2",
+    "tex": "$1.1\\times10^{-22}\\,\\mathrm{cm^3}$"
+   },
+   {
+    "id": "3",
+    "tex": "$4.5\\,\\mathrm{g/cm^3}$"
+   },
+   {
+    "id": "4",
+    "tex": "充填率は等しい（どちらも約 74 %）．密度は変わらない．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 上下の面の頂点 12 個はそれぞれ6つの六角柱に共有されて $\\tfrac16\\times12=2$，上下の面の中心 2 個は $\\tfrac12\\times2=1$，内部に 3 個．計 $\\boldsymbol{\\text{6}}$ 個．同じ層の6個と上下の層の3個ずつで配位数は $\\boldsymbol{\\text{12}}$．\n\n(2) 底面積は一辺 $a$ の正三角形6個分なので\n\\[V=\\frac{3\\sqrt3}{2}a^2c=\\frac{3\\times1.73}{2}\\times0.295^2\\times0.468\\fallingdotseq0.106\\,\\mathrm{nm^3}=\\boldsymbol{1.1\\times10^{-22}\\,\\mathrm{cm^3}}\\]\n\n(3) \\[d=\\frac{6\\times47.9}{6.0\\times10^{23}\\times1.06\\times10^{-22}}\\fallingdotseq\\boldsymbol{4.5\\,\\mathrm{g/cm^3}}\\]\n\n(4) 六方最密構造と面心立方格子はどちらも同じ大きさの球を最も密に詰めた構造（層の積み重ね方が ABAB… か ABCABC… かの違い）で，充填率はどちらも約 74 % で$\\boldsymbol{\\text{等しい}}$．原子1個あたりの体積が同じなので，密度は$\\boldsymbol{\\text{変わらない}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "六方最密構造の正六角柱に含まれる原子数（6個）と体積から密度を求める．六方最密構造と面心立方格子は積み重ね方が違うだけの同じ充填率の最密構造であり，同じ原子半径なら密度が等しい．"
+ },
+ "concepts": [
+  "chemical-bond",
+  "crystal"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "六方最密構造",
+  "単位格子",
+  "密度",
+  "充填率",
+  "最密構造"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

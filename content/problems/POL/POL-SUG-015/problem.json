@@ -1,0 +1,116 @@
+{
+ "id": "POL-SUG-015",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-04",
+ "topic": "フルクトースの環状構造と還元性",
+ "course": "化学",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "structure",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "フルクトースは鎖状構造 $\\ce{HOCH2-CO-CH(OH)-CH(OH)-CH(OH)-CH2OH}$ をもち，炭素原子には $\\ce{-CH2OH}$ の端から順に 1〜6 の番号をつける（2 位がカルボニル基の炭素）．水溶液中では，2 位のカルボニル基に分子内のヒドロキシ基が付加して環状構造をとり，鎖状構造と平衡状態になっている．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "酸素原子 1 個を含む六員環構造と五員環構造ができるのは，2 位のカルボニル基にそれぞれ何位の炭素についたヒドロキシ基が付加したときか．"
+     },
+     {
+      "id": "2",
+      "tex": "フルクトースはホルミル基をもたないのにフェーリング液を還元する．還元性を示す鎖状構造中の部分構造を示性式で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "鎖状構造のフルクトースと，五員環構造のフルクトースがもつ不斉炭素原子の数をそれぞれ答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：フルクトースの環状構造と還元性",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "六員環：6 位，五員環：5 位"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{-CO-CH2OH}$"
+   },
+   {
+    "id": "3",
+    "tex": "鎖状 3 個，五員環 4 個"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "(1)　環に含まれる原子は，2 位の炭素から付加したヒドロキシ基の炭素までの炭素と，酸素原子 1 個である．6 位の OH が付加すると C2〜C6 の 5 個の炭素＋O で $\\boldsymbol{\\text{六員環（6 位）}}$，5 位の OH が付加すると C2〜C5 の 4 個の炭素＋O で $\\boldsymbol{\\text{五員環（5 位）}}$．\n\n(2)　鎖状構造の 1 位・2 位の $\\boldsymbol{\\ce{-CO-CH2OH}}$（ヒドロキシケトン）の部分が，塩基性水溶液中で酸化されやすく還元性を示す．\n\n(3)　鎖状構造では 3，4，5 位の炭素が不斉炭素原子で $\\boldsymbol{3}$ 個（2 位は $\\ce{C=O}$，1・6 位は $\\ce{-CH2OH}$）．五員環構造では，2 位の炭素が $\\ce{-OH}$，$\\ce{-CH2OH}$（1 位），環の $\\ce{-O-}$，3 位の炭素と結合して新たに不斉炭素原子になるので，2〜5 位の $\\boldsymbol{4}$ 個（6 位は環の外の $\\ce{-CH2OH}$）．解答図に鎖状構造と五員環構造を示す．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ケトースのフルクトースは 2 位のカルボニル基に 5 位または 6 位の OH が付加して五員環・六員環をつくる．環化で 2 位が新たな不斉炭素になり，鎖状では −CO−CH2OH 部分が還元性を示す．"
+ },
+ "concepts": [
+  "saccharide",
+  "organic-structure",
+  "hydrocarbon"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "フルクトース",
+  "環状構造",
+  "五員環",
+  "不斉炭素原子",
+  "還元性",
+  "ケトース"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

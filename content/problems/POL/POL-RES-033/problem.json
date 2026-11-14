@@ -1,0 +1,117 @@
+{
+ "id": "POL-RES-033",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-01",
+ "topic": "モノマー反応性比と共重合体の連鎖の長さの分布・組成",
+ "course": "化学",
+ "level": 4,
+ "minutes": 35,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "2 種類の単量体 A，B のラジカル共重合では，成長末端のラジカルが A 単位か B 単位か（$\\mathrm{A}\\cdot$，$\\mathrm{B}\\cdot$ と表す）によって，次の 4 つの成長反応が起こる．\n\\begin{center}\n\\begin{tabular}{ll}\n$\\mathrm{A}\\cdot + \\mathrm{A} \\to \\mathrm{AA}\\cdot$ & 速さ $k_{\\mathrm{AA}}[\\mathrm{A}\\cdot][\\mathrm{A}]$ \\\\\n$\\mathrm{A}\\cdot + \\mathrm{B} \\to \\mathrm{AB}\\cdot$ & 速さ $k_{\\mathrm{AB}}[\\mathrm{A}\\cdot][\\mathrm{B}]$ \\\\\n$\\mathrm{B}\\cdot + \\mathrm{A} \\to \\mathrm{BA}\\cdot$ & 速さ $k_{\\mathrm{BA}}[\\mathrm{B}\\cdot][\\mathrm{A}]$ \\\\\n$\\mathrm{B}\\cdot + \\mathrm{B} \\to \\mathrm{BB}\\cdot$ & 速さ $k_{\\mathrm{BB}}[\\mathrm{B}\\cdot][\\mathrm{B}]$\n\\end{tabular}\n\\end{center}\n$r_{\\mathrm{A}} = k_{\\mathrm{AA}}/k_{\\mathrm{AB}}$，$r_{\\mathrm{B}} = k_{\\mathrm{BB}}/k_{\\mathrm{BA}}$ をモノマー反応性比という．重合の初期だけを考え，単量体の濃度比 $x = [\\mathrm{A}]/[\\mathrm{B}]$ は一定とする．鎖は十分に長く，末端の影響は無視する．共重合体の鎖の中で，B に両側をはさまれて A が $n$ 個連続した部分を「長さ $n$ の A 連鎖」とよぶ（B 連鎖も同様）．必要なら，$0<q<1$ のとき $\\displaystyle\\sum_{n=1}^{\\infty} n q^{n-1} = \\frac{1}{(1-q)^2}$ を用いよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\mathrm{A}\\cdot$ に次に A が付加する確率 $p$ を $r_{\\mathrm{A}}$ と $x$ で表せ．また，A 連鎖の長さがちょうど $n$ である確率を $p$ と $n$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "A 連鎖の長さの平均値は $1 + r_{\\mathrm{A}}x$ となることを示せ．同様に，B 連鎖の長さの平均値を $r_{\\mathrm{B}}$ と $x$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "$r_{\\mathrm{A}} = 4.0$，$r_{\\mathrm{B}} = 0.25$，$x = 1$ のとき，A 連鎖の長さが 1，3 である確率をそれぞれ求めよ．また，共重合体中の A 単位の物質量の割合 [\\%] を求めよ．A 連鎖と B 連鎖は交互に並ぶことを用いてよい．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の単量体の組で，共重合体の組成が $\\mathrm{A}:\\mathrm{B} = 1:1$ になるのは，単量体の混合物中の A の物質量の割合が何 \\% のときか．また，そのとき共重合体は A と B が 1 つずつ交互に並んだ交互共重合体といえるか．"
+     },
+     {
+      "id": "5",
+      "tex": "別の単量体の組 C，D を $[\\mathrm{C}] = [\\mathrm{D}]$ で共重合させたところ，C 連鎖の平均の長さは 3.0，D 連鎖の平均の長さは 1.5 であった．$r_{\\mathrm{C}}$ と $r_{\\mathrm{D}}$ を求めよ．さらに，この組では単量体の比 $[\\mathrm{C}]/[\\mathrm{D}]$ をどのように変えても，共重合体中の C 単位と D 単位の物質量比は単量体の比の一定倍になることを示し，その倍率を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$p = \\dfrac{r_{\\mathrm{A}}x}{r_{\\mathrm{A}}x+1}$，長さ $n$ の確率は $p^{\\,n-1}(1-p)$"
+   },
+   {
+    "id": "2",
+    "tex": "平均 $= \\displaystyle\\sum n p^{n-1}(1-p) = \\frac{1}{1-p} = 1 + r_{\\mathrm{A}}x$．B 連鎖の平均は $1 + \\dfrac{r_{\\mathrm{B}}}{x}$"
+   },
+   {
+    "id": "3",
+    "tex": "長さ 1：$0.20$，長さ 3：$0.128$．A 単位 $80\\,\\%$"
+   },
+   {
+    "id": "4",
+    "tex": "$20\\,\\%$．交互共重合体とはいえない（A 連鎖・B 連鎖の平均の長さはともに 2 で，長さ 2 以上の連鎖も多く含む）"
+   },
+   {
+    "id": "5",
+    "tex": "$r_{\\mathrm{C}} = 2.0$，$r_{\\mathrm{D}} = 0.50$．共重合体中の C:D は $\\dfrac{1+2y}{1+0.5/y} = 2y$（$y = [\\mathrm{C}]/[\\mathrm{D}]$）となり，単量体の比の 2 倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 付加の確率}　$\\mathrm{A}\\cdot$ に A が付加する速さと B が付加する速さの比は $k_{\\mathrm{AA}}[\\mathrm{A}] : k_{\\mathrm{AB}}[\\mathrm{B}] = r_{\\mathrm{A}}x : 1$ なので\n\\[ p = \\frac{k_{\\mathrm{AA}}[\\mathrm{A}]}{k_{\\mathrm{AA}}[\\mathrm{A}] + k_{\\mathrm{AB}}[\\mathrm{B}]} = \\boldsymbol{\\frac{r_{\\mathrm{A}}x}{r_{\\mathrm{A}}x+1}} \\]\nB のあとに A が 1 個入った状態から，A が $n-1$ 回続けて付加し（確率 $p^{n-1}$），次に B が付加する（確率 $1-p$）ので，長さ $n$ の確率は $\\boldsymbol{p^{\\,n-1}(1-p)}$．\n\n\\textbf{(2) 平均の長さ}\n\\[ \\sum_{n=1}^{\\infty} n\\,p^{n-1}(1-p) = (1-p)\\cdot\\frac{1}{(1-p)^2} = \\frac{1}{1-p} = \\frac{r_{\\mathrm{A}}x+1}{1} = \\boldsymbol{1 + r_{\\mathrm{A}}x} \\]\nB についても，$\\mathrm{B}\\cdot$ に B が付加する確率 $\\dfrac{r_{\\mathrm{B}}/x}{r_{\\mathrm{B}}/x+1}$ から，平均は $\\boldsymbol{1 + \\dfrac{r_{\\mathrm{B}}}{x}}$．\n\n\\textbf{(3)}　$p = \\dfrac{4.0}{5.0} = 0.80$．長さ 1：$1-p = \\boldsymbol{0.20}$，長さ 3：$0.80^2\\times0.20 = \\boldsymbol{0.128}$．\n\n平均の長さは A：$1 + 4.0 = 5.0$，B：$1 + 0.25 = 1.25$．A 連鎖と B 連鎖は交互に並ぶので数が等しく，単位の数の比は平均の長さの比になる．\n\\[ \\mathrm{A}:\\mathrm{B} = 5.0 : 1.25 = 4 : 1, \\qquad \\frac{5.0}{5.0+1.25}\\times100 = \\boldsymbol{80\\,\\%} \\]\n単量体は $1:1$ なのに，共重合体は A に大きくかたよる．\n\n\\textbf{(4)}　$1 + r_{\\mathrm{A}}x = 1 + \\dfrac{r_{\\mathrm{B}}}{x}$ より $x^2 = \\dfrac{r_{\\mathrm{B}}}{r_{\\mathrm{A}}} = \\dfrac{0.25}{4.0}$，$x = 0.25$．A の割合は $\\dfrac{0.25}{1+0.25}\\times100 = \\boldsymbol{20\\,\\%}$．このとき平均の長さは A，B ともに $1 + 4.0\\times0.25 = 2.0$ で，A 連鎖が長さ 1 である確率は $1-p = \\dfrac{1}{2}$ にすぎない．組成は $1:1$ でも，AA や BBB のような連鎖を多く含む（A と B が 1 つずつ交互に並ぶには $r_{\\mathrm{A}}$，$r_{\\mathrm{B}}$ がともに 0 に近い必要がある）．よって\\textbf{交互共重合体とはいえない}．\n\n\\textbf{(5) 反応性比の決定}　$[\\mathrm{C}]=[\\mathrm{D}]$（比 1）では平均の長さが $1 + r_{\\mathrm{C}} = 3.0$，$1 + r_{\\mathrm{D}} = 1.5$ なので $\\boldsymbol{r_{\\mathrm{C}} = 2.0}$，$\\boldsymbol{r_{\\mathrm{D}} = 0.50}$．比を $y = [\\mathrm{C}]/[\\mathrm{D}]$ にすると，共重合体中の C:D は\n\\[ \\frac{1 + 2.0y}{1 + 0.50/y} = \\frac{y(1+2y)}{y + 0.5} = \\frac{2y\\,(y+0.5)}{y+0.5} = 2y \\]\nとなり，常に単量体の比の $\\boldsymbol{2}$ \\textbf{倍}である．これは $r_{\\mathrm{C}}r_{\\mathrm{D}} = 1$ のときに限って起こる（一般に $\\dfrac{1+r_{\\mathrm{C}}y}{1+r_{\\mathrm{D}}/y} = r_{\\mathrm{C}}y$ となるのは $r_{\\mathrm{C}}r_{\\mathrm{D}}=1$ のとき）．どちらの末端ラジカルに対しても C は D の 2 倍付加しやすく，末端の種類に左右されないため，共重合体の組成は単量体の組成だけで決まる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "末端の種類だけで次の付加が決まるモデルでは，連鎖が 1 つ伸びる確率 p=r_Ax/(r_Ax+1) が一定なので連鎖の長さは等比的に分布し，平均の長さは 1+r_Ax になる．A 連鎖と B 連鎖が交互に並ぶことから共重合体の組成を平均の長さの比で求め，組成 1:1 の条件や，連鎖の長さから反応性比を逆に決めて r_Ar_B=1 のとき組成が単量体比の一定倍になることを導く．"
+ },
+ "concepts": [
+  "addition-polymer",
+  "hydrocarbon"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "共重合",
+  "モノマー反応性比",
+  "連鎖の長さ",
+  "確率",
+  "組成",
+  "ラジカル重合"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

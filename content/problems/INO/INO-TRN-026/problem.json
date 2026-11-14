@@ -1,0 +1,117 @@
+{
+ "id": "INO-TRN-026",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-07",
+ "topic": "クロム鉄鉱のアルカリ酸化融解と金属クロムの製造",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "equation",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "クロムの主要な鉱石であるクロム鉄鉱の主成分は $\\ce{FeCr2O4}$ である．これから金属クロムを得る工程の一例を次に示す．\\\\\n工程1：鉱石を炭酸ナトリウムと混ぜ，空気を送りながら強熱すると，クロムはクロム酸ナトリウム $\\ce{Na2CrO4}$ に，鉄は $\\ce{Fe2O3}$ になり，二酸化炭素が発生する．\\\\\n工程2：水で $\\ce{Na2CrO4}$ を溶かし出して $\\ce{Fe2O3}$ と分け，硫酸を加えて二クロム酸ナトリウム $\\ce{Na2Cr2O7}$ とする．\\\\\n工程3：$\\ce{Na2Cr2O7}$ を還元して酸化クロム(III) $\\ce{Cr2O3}$ とし，これをアルミニウムの粉末と混ぜて点火し，金属クロムを得る．\\\\\n原子量は O=16，Al=27，Cr=52，Fe=56，標準状態の気体のモル体積は $22.4\\,\\mathrm{L/mol}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{FeCr2O4}$ 中の Fe と Cr の酸化数をそれぞれ答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "工程1 で，$\\ce{FeCr2O4}$ 1 個が失う電子は何個か．これをもとに工程1 の化学反応式を書け．"
+     },
+     {
+      "id": "3",
+      "tex": "工程2 の化学反応式を書け．また，この反応は酸化還元反応といえるか．理由とともに答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "工程3 の後半（$\\ce{Cr2O3}$ からクロムを得る反応）の化学反応式を書け．"
+     },
+     {
+      "id": "5",
+      "tex": "$\\ce{FeCr2O4}$ を質量パーセントで $44.8\\,\\%$ 含む鉱石 $1.00\\,\\mathrm{kg}$ をこの方法で処理する．工程1 で必要な酸素の体積（標準状態），得られる金属クロムの最大の質量，工程3 で必要なアルミニウムの質量を，それぞれ有効数字3桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "Fe $+2$，Cr $+3$"
+   },
+   {
+    "id": "2",
+    "tex": "7 個，$\\ce{4FeCr2O4 + 8Na2CO3 + 7O2 -> 8Na2CrO4 + 2Fe2O3 + 8CO2}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{2Na2CrO4 + H2SO4 -> Na2Cr2O7 + Na2SO4 + H2O}$，酸化還元反応ではない（Cr は $+6$ のままで，どの原子の酸化数も変化しないから）"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{Cr2O3 + 2Al -> 2Cr + Al2O3}$"
+   },
+   {
+    "id": "5",
+    "tex": "酸素 $78.4\\,\\mathrm{L}$，クロム $208\\,\\mathrm{g}$，アルミニウム $108\\,\\mathrm{g}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\ce{FeCr2O4}$ は $\\ce{FeO}\\cdot\\ce{Cr2O3}$ とみなせる．O を $-2$ として，Fe $\\boldsymbol{+2}$，Cr $\\boldsymbol{+3}$．\\\\\n\\textbf{(2)} Fe：$+2\\to+3$ で 1 個，Cr：$+3\\to+6$ で $3\\times2=6$ 個，合計 $\\boldsymbol{7}$ 個の電子を失う．$\\ce{O2}$ 1 分子は電子 4 個を受け取るので，$\\ce{FeCr2O4}$ 4 個に対して $\\ce{O2}$ 7 個．Na と C の数を合わせて\n\\[\\ce{4FeCr2O4 + 8Na2CO3 + 7O2 -> 8Na2CrO4 + 2Fe2O3 + 8CO2}\\]\n\\textbf{(3)} $\\ce{2Na2CrO4 + H2SO4 -> Na2Cr2O7 + Na2SO4 + H2O}$（イオンでは $\\ce{2CrO4^2- + 2H+ -> Cr2O7^2- + H2O}$）．$\\ce{CrO4^2-}$ と $\\ce{Cr2O7^2-}$ の Cr はどちらも $+6$ で，黄色から赤橙色に変わるが\\textbf{酸化還元反応ではない}（酸と塩基の反応による縮合）．\\\\\n\\textbf{(4)} テルミット法：$\\ce{Cr2O3 + 2Al -> 2Cr + Al2O3}$\\\\\n\\textbf{(5)} $\\ce{FeCr2O4}$（式量 224）は $\\dfrac{1000\\times0.448}{224}=2.00\\,\\mathrm{mol}$．\\\\\n酸素：$2.00\\times\\dfrac{7}{4}=3.50\\,\\mathrm{mol}$，$3.50\\times22.4=\\boldsymbol{78.4\\,\\mathrm{L}}$．\\\\\nクロム：Cr は工程を通して保存されるので $2.00\\times2=4.00\\,\\mathrm{mol}$，$4.00\\times52=\\boldsymbol{208\\,\\mathrm{g}}$．\\\\\nアルミニウム：$\\ce{Cr2O3}$ $2.00\\,\\mathrm{mol}$ に対して $\\ce{Al}$ $4.00\\,\\mathrm{mol}$（Cr と同じ物質量），$4.00\\times27=\\boldsymbol{108\\,\\mathrm{g}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "2種類の元素（Fe と Cr）が同時に酸化される反応では，1 化学式あたりに失う電子の合計（Fe 1 個＋Cr 6 個）から酸素の係数を決める．クロム酸塩から二クロム酸塩への変化は酸化数の変わらない反応であることを見分け，工程を通して保存される Cr の物質量で原料・還元剤の量を結びつける．"
+ },
+ "concepts": [
+  "transition-metals",
+  "oxygen-sulfur",
+  "alkali-metals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "クロム",
+  "酸化数",
+  "反応式の係数",
+  "テルミット法",
+  "クロム鉄鉱"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

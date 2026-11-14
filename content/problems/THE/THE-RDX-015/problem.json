@@ -1,0 +1,108 @@
+{
+ "id": "THE-RDX-015",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-06",
+ "topic": "反応性の手がかりから金属を決める",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "condition",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "P〜V は，マグネシウム，アルミニウム，鉄，鉛，銅，銀のいずれかである．次の ①〜⑦ を読んで，あとの問いに答えよ．\n\\\\① P，Q，R は希塩酸に溶けて水素を発生するが，T，U，V は希塩酸にほとんど溶けない．\n\\\\② P〜V のうち，熱水と反応して水素を発生するのは Q だけである．\n\\\\③ P と R は濃硝酸には溶けない．\n\\\\④ P は水酸化ナトリウム水溶液に溶けて水素を発生するが，R は溶けない．\n\\\\⑤ T，U，V はいずれも希硝酸に溶ける．\n\\\\⑥ U の陽イオンを含む水溶液に V を浸すと，V の表面に U が析出する．\n\\\\⑦ V の陽イオンを含む水溶液に T を浸すと，T の表面に V が析出する．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "P〜V に当てはまる金属を元素記号で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "P〜V を，イオン化傾向の大きい順に並べよ．"
+     },
+     {
+      "id": "3",
+      "tex": "T は水素よりイオン化傾向が大きいのに，希塩酸にほとんど溶けない．その理由を答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "③で P と R が濃硝酸に溶けない理由を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "P：Al，Q：Mg，R：Fe，T：Pb，U：Ag，V：Cu"
+   },
+   {
+    "id": "2",
+    "tex": "Q，P，R，T，V，U"
+   },
+   {
+    "id": "3",
+    "tex": "表面に水に溶けにくい $\\ce{PbCl2}$ が生じて内部を覆い，反応が止まるから"
+   },
+   {
+    "id": "4",
+    "tex": "表面にち密な酸化物の被膜ができる（不動態になる）から"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} ①より P，Q，R は水素よりイオン化傾向が大きい Mg，Al，Fe のいずれか．②で熱水と反応するのは Mg なので \\textbf{Q = Mg}．④で塩基の水溶液に溶ける両性金属は Al なので \\textbf{P = Al}，\\textbf{R = Fe}（③の不動態とも合う）．\\\\\nT，U，V は Pb，Cu，Ag．⑥より U は V よりイオン化傾向が小さく，⑦より V は T より小さい．よって T > V > U の順で，\\textbf{T = Pb}，\\textbf{V = Cu}，\\textbf{U = Ag}．（⑥は $\\ce{2Ag+ + Cu -> 2Ag + Cu^2+}$，⑦は $\\ce{Cu^2+ + Pb -> Cu + Pb^2+}$．）\n\n\\textbf{(2)} \\textbf{Q（Mg）> P（Al）> R（Fe）> T（Pb）> V（Cu）> U（Ag）}．\n\n\\textbf{(3)} Pb は水素よりわずかにイオン化傾向が大きいが，$\\ce{Pb + 2HCl -> PbCl2 + H2}$ で生じた $\\ce{PbCl2}$ が水に溶けにくく表面を覆うため，反応がすぐに止まる．（希硫酸でも $\\ce{PbSO4}$ が表面を覆うので溶けにくい．希硝酸では $\\ce{Pb(NO3)2}$ が水に溶けるので溶ける．）\n\n\\textbf{(4)} Al と Fe（ほかに Ni など）は濃硝酸に入れると表面にち密な酸化物の膜ができ，内部が保護されてそれ以上反応しなくなる．この状態を \\textbf{不動態} という．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "金属の同定では，酸・水・塩基との反応性，不動態，両性，他の金属イオンとの置換反応（金属の析出）を組み合わせてイオン化傾向の順を決める．水素より上の金属でも，表面に難溶性の塩（PbCl2，PbSO4）ができると酸に溶けない例外に注意する．"
+ },
+ "concepts": [
+  "redox",
+  "amphoteric"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "イオン化傾向",
+  "金属の同定",
+  "不動態",
+  "両性金属",
+  "鉛"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

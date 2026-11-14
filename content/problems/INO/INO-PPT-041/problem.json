@@ -1,0 +1,117 @@
+{
+ "id": "INO-PPT-041",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-08",
+ "topic": "錯陽イオンと錯陰イオンからなる塩（同じ組成式で式量の異なる錯体）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "白金(II) の錯イオンはどれも正方形の構造をとる．テトラアンミン白金(II) 塩化物 $\\ce{[Pt(NH3)4]Cl2}$ の水溶液と，テトラクロリド白金(II) 酸カリウム $\\ce{K2[PtCl4]}$ の水溶液を混ぜると，水に溶けにくい緑色の固体 Q が沈殿する．Q は錯陽イオンと錯陰イオンが $1:1$ で結びついた塩であり，元素の組成は電荷をもたない錯体 $\\ce{[PtCl2(NH3)2]}$（シス形とトランス形がある）と同じである．\n原子量は H $=1.0$，N $=14.0$，Cl $=35.5$，Ag $=107.9$，Pt $=195.1$ とする．錯イオンの中の Cl は $\\ce{Ag+}$ と沈殿をつくらず，Q はろ液に溶けないものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "Q の化学式（錯イオンがわかる形）を書け．また，Q の式量は $\\ce{[PtCl2(NH3)2]}$ の式量の何倍か．"
+     },
+     {
+      "id": "2",
+      "tex": "$1.00\\times10^{-2}\\,\\mathrm{mol/L}$ の $\\ce{[Pt(NH3)4]Cl2}$ 水溶液 $20.0\\,\\mathrm{mL}$ と $1.00\\times10^{-2}\\,\\mathrm{mol/L}$ の $\\ce{K2[PtCl4]}$ 水溶液 $30.0\\,\\mathrm{mL}$ を混ぜた．生じる Q は何 g か．有効数字 3 桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の沈殿をろ過したろ液に，硝酸銀水溶液を十分に加えると，塩化銀は何 g 生じるか．有効数字 3 桁で答えよ．また，ろ液に残っている白金を含むイオンの化学式と物質量を答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "次のア〜エのうち，Q と $\\ce{[PtCl2(NH3)2]}$ を区別できるものをすべて選べ．\\\\\nア 元素分析で求めた各元素の質量パーセント　イ 物質 1 mol の質量（式量）　ウ 白金の酸化数　エ 固体の中にイオン（電荷をもつ粒子）があるかどうか"
+     },
+     {
+      "id": "5",
+      "tex": "Q と同じ組成で，1 価の錯陽イオンと 1 価の錯陰イオンからなる塩も考えられる．それぞれの錯イオンの化学式を書け（どちらも中心は Pt 1 個で，配位子は $\\ce{NH3}$ と $\\ce{Cl-}$ のみ，配位数は 4 とする）．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{[Pt(NH3)4][PtCl4]}$，2 倍"
+   },
+   {
+    "id": "2",
+    "tex": "$0.120\\,\\mathrm{g}$"
+   },
+   {
+    "id": "3",
+    "tex": "塩化銀 $5.74\\times10^{-2}\\,\\mathrm{g}$．$\\ce{[PtCl4]^2-}$ が $1.00\\times10^{-4}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "4",
+    "tex": "イ，エ"
+   },
+   {
+    "id": "5",
+    "tex": "$\\ce{[PtCl(NH3)3]+}$ と $\\ce{[PtCl3(NH3)]-}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 錯陽イオン $\\ce{[Pt(NH3)4]^2+}$ と錯陰イオン $\\ce{[PtCl4]^2-}$ が $1:1$ で結びつく．\n\\[\\ce{[Pt(NH3)4]^2+ + [PtCl4]^2- -> [Pt(NH3)4][PtCl4]}\\]\nQ $= \\boldsymbol{\\ce{[Pt(NH3)4][PtCl4]}}$ は $\\ce{Pt2Cl4N4H12}$ で，$\\ce{[PtCl2(NH3)2]}$（$\\ce{PtCl2N2H6}$）のちょうど $\\boldsymbol{2}$ \\textbf{倍}の式量をもつ（組成式は同じ）．\n\n\\textbf{(2)} $\\ce{[Pt(NH3)4]^2+}$：$1.00\\times10^{-2}\\times0.0200 = 2.00\\times10^{-4}\\,\\mathrm{mol}$，$\\ce{[PtCl4]^2-}$：$3.00\\times10^{-4}\\,\\mathrm{mol}$．$1:1$ で反応するので Q は $2.00\\times10^{-4}\\,\\mathrm{mol}$ 生じる．\nQ の式量 $= 2\\times195.1 + 4\\times35.5 + 4\\times14.0 + 12\\times1.0 = 600.2$\n質量 $= 2.00\\times10^{-4}\\times600.2 = \\boldsymbol{0.120\\,\\mathrm{g}}$．\n\n\\textbf{(3)} ろ液に残る $\\ce{Cl-}$ は $\\ce{[Pt(NH3)4]Cl2}$ に由来する $2\\times2.00\\times10^{-4} = 4.00\\times10^{-4}\\,\\mathrm{mol}$ だけ（$\\ce{[PtCl4]^2-}$ の Cl は配位していて沈殿しない）．\n\\[\\ce{Ag+ + Cl- -> AgCl}\\]\nAgCl $= 4.00\\times10^{-4}\\times143.4 = \\boldsymbol{5.74\\times10^{-2}\\,\\mathrm{g}}$．\n白金を含むイオンは，過剰だった $\\boldsymbol{\\ce{[PtCl4]^2-}}$ が $3.00\\times10^{-4}-2.00\\times10^{-4} = \\boldsymbol{1.00\\times10^{-4}\\,\\mathrm{mol}}$ 残る（ほかに $\\ce{K+}$ $6.00\\times10^{-4}\\,\\mathrm{mol}$）．\n\n\\textbf{(4)} 組成式が同じなので，ア 質量パーセントは等しく区別できない．ウ 白金はどちらも $+2$（Q では $\\ce{[Pt(NH3)4]^2+}$ が $x = +2$，$\\ce{[PtCl4]^2-}$ が $x - 4 = -2$ より $+2$）．イ 式量は 2 倍違う．エ Q はイオンからなる塩，$\\ce{[PtCl2(NH3)2]}$ は電荷のない分子．よって $\\boldsymbol{\\text{イ，エ}}$．\n\n\\textbf{(5)} Pt(II) に $\\ce{Cl-}$ が $k$ 個，$\\ce{NH3}$ が $4-k$ 個配位すると電荷は $2-k$．$+1$ は $k=1$，$-1$ は $k=3$ なので $\\boldsymbol{\\ce{[PtCl(NH3)3]+}}$ と $\\boldsymbol{\\ce{[PtCl3(NH3)]-}}$．両者を合わせると $\\ce{Pt2Cl4(NH3)4}$ で Q と同じ組成になる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "錯陽イオンと錯陰イオンが結びついた塩は，電荷をもたない錯体と組成式が同じでも式量が整数倍になる．沈殿の量は不足する錯イオンで決まり，配位している Cl は Ag⁺ と沈殿しないので，ろ液中の遊離の Cl⁻ だけが AgCl になる．"
+ },
+ "concepts": [
+  "precipitation",
+  "complex-ion",
+  "elemental-analysis"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "錯イオン",
+  "白金錯体",
+  "マグヌス塩",
+  "組成式",
+  "沈殿の量的関係"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,102 @@
+{
+ "id": "ORG-STR-058",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-01",
+ "topic": "非等価な炭素原子の数による C₅H₁₀O のカルボニル化合物の判別",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "structure",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "分子中の炭素原子のうち，結合している原子・原子団（その先のつながり方まで含めて）がまったく同じものどうしを「等価」とよぶ．例えば 2-メチルプロパン $\\ce{(CH3)3CH}$ の 3 個の $\\ce{CH3}$ の炭素は互いに等価で，中央の炭素とは非等価なので，非等価な炭素原子は 2 種類である．分子式 $\\ce{C5H10O}$ で表されるアルデヒドとケトンについて，次の問いに答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{C5H10O}$ のアルデヒドとケトンは，構造異性体として全部で何種類あるか．"
+     },
+     {
+      "id": "2",
+      "tex": "次の化合物 P，Q，R を示性式で答えよ．\\\\\nP：非等価な炭素原子が 3 種類で，アンモニア性硝酸銀水溶液を還元する．\\\\\nQ：非等価な炭素原子が 3 種類で，アンモニア性硝酸銀水溶液を還元しない．\\\\\nR：非等価な炭素原子が 4 種類で，ヨウ素と水酸化ナトリウム水溶液を加えて温めると黄色沈殿を生じる．"
+     },
+     {
+      "id": "3",
+      "tex": "化合物 T は非等価な炭素原子を 5 種類もち，アンモニア性硝酸銀水溶液を還元しない．T を還元して得たアルコールを脱水し，生じたアルケンに水素を付加させると，非等価な炭素原子が 3 種類のアルカンが得られた．T の示性式を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "7 種類"
+   },
+   {
+    "id": "2",
+    "tex": "P：$\\ce{(CH3)3CCHO}$　Q：$\\ce{CH3CH2COCH2CH3}$　R：$\\ce{CH3COCH(CH3)2}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{CH3COCH2CH2CH3}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 炭素骨格は $\\ce{C-C-C-C-C}$，$\\ce{C-C(C)-C-C}$，$\\ce{C-C(C)2-C}$ の 3 種類．H を 2 個以上もつ炭素を $\\ce{C=O}$ にする位置を数える．\n直鎖：$\\ce{CH3CH2CH2CH2CHO}$，$\\ce{CH3COCH2CH2CH3}$，$\\ce{CH3CH2COCH2CH3}$ の 3 種類．\n枝分かれ 1 つ：$\\ce{CH3CH2CH(CH3)CHO}$，$\\ce{(CH3)2CHCH2CHO}$，$\\ce{CH3COCH(CH3)2}$ の 3 種類．\n枝分かれ 2 つ：$\\ce{(CH3)3CCHO}$ の 1 種類．合計 $\\boldsymbol{7}$ 種類．\n\n\\textbf{非等価な炭素の数}　対称な位置をまとめて数えると次のとおり．\n\\[ \\begin{array}{lc|lc}\n\\ce{CH3CH2CH2CH2CHO} & 5 & \\ce{CH3COCH2CH2CH3} & 5\\\\\n\\ce{CH3CH2CH(CH3)CHO} & 5 & \\ce{CH3CH2COCH2CH3} & 3\\\\\n\\ce{(CH3)2CHCH2CHO} & 4 & \\ce{CH3COCH(CH3)2} & 4\\\\\n\\ce{(CH3)3CCHO} & 3 & & \\end{array} \\]\n（$\\ce{(CH3)2CH-}$ の 2 個の $\\ce{CH3}$，$\\ce{(CH3)3C-}$ の 3 個の $\\ce{CH3}$，3-ペンタノンの左右の $\\ce{CH2}$ どうし・$\\ce{CH3}$ どうしはそれぞれ等価．）\n\n\\textbf{(2)} 3 種類のものは $\\ce{(CH3)3CCHO}$ と $\\ce{CH3CH2COCH2CH3}$．銀鏡反応を示すのはアルデヒドなので P＝$\\boldsymbol{\\ce{(CH3)3CCHO}}$，Q＝$\\boldsymbol{\\ce{CH3CH2COCH2CH3}}$．\n4 種類のものは $\\ce{(CH3)2CHCH2CHO}$ と $\\ce{CH3COCH(CH3)2}$．ヨードホルム反応には $\\ce{CH3CO-}$ が必要なので R＝$\\boldsymbol{\\ce{CH3COCH(CH3)2}}$．\n\n\\textbf{(3)} 非等価な炭素が 5 種類のものは $\\ce{CH3CH2CH2CH2CHO}$，$\\ce{CH3CH2CH(CH3)CHO}$，$\\ce{CH3COCH2CH2CH3}$ の 3 つ．還元・脱水・水素付加では炭素骨格は変わらないので，得られるアルカンはもとの骨格の飽和炭化水素である．直鎖骨格ならペンタン（$\\ce{CH3}$，$\\ce{CH2}$ の 2 種，中央の $\\ce{CH2}$ で 3 種類），$\\ce{C-C(C)-C-C}$ 骨格なら 2-メチルブタン（4 種類）．\n5 種類のケトンは $\\ce{CH3COCH2CH2CH3}$ で，直鎖骨格からペンタン（3 種類）を与え，条件に合う．T＝$\\boldsymbol{\\ce{CH3COCH2CH2CH3}}$．\nなお同じ 5 種類でも $\\ce{CH3CH2CH(CH3)CHO}$ は 2-メチルブタン（4 種類）を与え，$\\ce{CH3CH2CH2CH2CHO}$ はペンタンを与えるが銀鏡反応を示すので除かれる．非等価な炭素の数は，官能基が消えて分子の対称性が上がると減る（2-ペンタノン 5 種類 → ペンタン 3 種類）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "非等価な炭素の数は分子の対称性で決まり，同じ分子式の異性体を区別する手がかりになる．官能基の反応（銀鏡反応・ヨードホルム反応）と組み合わせて候補を絞り，官能基を除いて対称性が上がると非等価な炭素の数が減ることを使って炭素骨格を決める．"
+ },
+ "concepts": [
+  "organic-structure",
+  "carbon-silicon",
+  "alcohol-carbonyl"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "非等価な炭素",
+  "異性体",
+  "アルデヒド",
+  "ケトン",
+  "ヨードホルム反応",
+  "銀鏡反応"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

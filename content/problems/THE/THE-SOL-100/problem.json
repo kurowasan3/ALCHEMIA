@@ -1,0 +1,109 @@
+{
+ "id": "THE-SOL-100",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-09",
+ "topic": "くり返し蒸留の回数（蒸気中の比が液中の比の α 倍）と共沸組成の限界",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ベンゼン（A）とトルエン（B）は理想溶液をつくる．$90\\,^\\circ\\mathrm{C}$ における純粋な A，B の蒸気圧はそれぞれ $1.36\\times10^{5}\\,\\mathrm{Pa}$，$5.4\\times10^{4}\\,\\mathrm{Pa}$ である．\n液体混合物を沸騰させ，液体と平衡にある蒸気をとり出してすべて凝縮させる操作を「1回の蒸留」とよぶ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ラウールの法則を用いると，平衡にある蒸気中の物質量の比 $y_{\\mathrm A}/y_{\\mathrm B}$ は液体中の比 $x_{\\mathrm A}/x_{\\mathrm B}$ の $\\alpha$ 倍になる．$90\\,^\\circ\\mathrm{C}$ での $\\alpha$ を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "以下では $\\alpha$ は温度・組成によらず (1) の値で一定とみなす．A のモル分率が $0.10$ の液体を 1 回蒸留して得られる液体の A のモル分率を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "A のモル分率 $0.10$ の液体から始めて蒸留をくり返し，A のモル分率が $0.80$ 以上の液体を得たい．必要な蒸留の最少回数を答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "エタノールと水の混合物は理想溶液ではなく，大気圧ではエタノールのモル分率約 $0.89$ の組成で液体と蒸気の組成が一致し，この組成で沸点が最も低くなる．エタノールのモル分率 $0.10$ の液体から始めて (3) と同じ蒸留を何回もくり返したときの結果として正しいものを，次のア〜ウから1つ選べ．\\\\\nア　回数を増やせば，エタノールのモル分率はいくらでも 1 に近づく．\\\\\nイ　エタノールのモル分率は約 $0.89$ に近づくが，それを越えることはない．\\\\\nウ　エタノールのモル分率は 1 回目で最大になり，その後は下がっていく．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$2.5$"
+   },
+   {
+    "id": "2",
+    "tex": "$0.22$"
+   },
+   {
+    "id": "3",
+    "tex": "4 回"
+   },
+   {
+    "id": "4",
+    "tex": "イ"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　ラウールの法則より $p_{\\mathrm A}=x_{\\mathrm A}P_{\\mathrm A}^{*}$，$p_{\\mathrm B}=x_{\\mathrm B}P_{\\mathrm B}^{*}$．蒸気中の物質量の比は分圧の比に等しいので\n\\[ \\frac{y_{\\mathrm A}}{y_{\\mathrm B}}=\\frac{p_{\\mathrm A}}{p_{\\mathrm B}}=\\frac{P_{\\mathrm A}^{*}}{P_{\\mathrm B}^{*}}\\cdot\\frac{x_{\\mathrm A}}{x_{\\mathrm B}},\\qquad \\alpha=\\frac{1.36\\times10^{5}}{5.4\\times10^{4}}=2.51\\cdots\\fallingdotseq\\boldsymbol{2.5} \\]\n（蒸気は蒸気圧の大きい A に富む．）\n\n\\textbf{(2)}　$\\dfrac{y_{\\mathrm A}}{y_{\\mathrm B}}=2.5\\times\\dfrac{0.10}{0.90}=0.2777\\cdots$．$y_{\\mathrm A}=\\dfrac{0.2777}{1+0.2777}=0.217\\cdots\\fallingdotseq\\boldsymbol{0.22}$．凝縮した液体の組成は蒸気と同じである．\n\n\\textbf{(3)}　1 回の蒸留で比 $x_{\\mathrm A}/x_{\\mathrm B}$ は $\\alpha$ 倍になるので，$n$ 回後の比は $\\dfrac{1}{9}\\times2.5^{n}$．モル分率 $0.80$ 以上は比が $\\dfrac{0.80}{0.20}=4$ 以上なので\n\\[ \\frac{1}{9}\\times2.5^{n}\\ge4\\iff2.5^{n}\\ge36 \\]\n$2.5^{3}=15.6$，$2.5^{4}=39.1$ より $\\boldsymbol{4}$ 回（3 回後は $0.63$，4 回後は $0.81$）．\n\n\\textbf{(4)}　共沸組成（約 $0.89$）より水の多い側では蒸気はエタノールに富むので，蒸留のたびにエタノールのモル分率は上がるが，共沸組成に近づくほど液体と蒸気の組成の差が小さくなり，共沸組成では蒸気と液体の組成が等しくなって，もはや濃縮されない．したがって $\\boldsymbol{\\text{イ}}$．単純な蒸留のくり返しでは共沸組成を越えられないので，無水エタノールを得るには別の方法（脱水剤など）が必要になる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "理想溶液では蒸気中の物質量の比が液中の比の α 倍（α は純物質の蒸気圧の比）になるので，n 回の蒸留で比は αⁿ 倍になり，目標組成に必要な回数が対数で決まる．液と蒸気の組成が一致する共沸組成があると，蒸留のくり返しではそこを越えられない．"
+ },
+ "concepts": [
+  "solution-colligative",
+  "mole",
+  "vapor-pressure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ラウールの法則",
+  "蒸留",
+  "分留",
+  "共沸",
+  "エタノール"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

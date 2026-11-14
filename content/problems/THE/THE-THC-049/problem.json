@@ -1,0 +1,108 @@
+{
+ "id": "THE-THC-049",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-10",
+ "topic": "燃焼エンタルピーから求める水素付加のエンタルピーと C=C 結合のエネルギー",
+ "course": "化学",
+ "level": 3,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "プロペン $\\ce{CH2=CHCH3}$（気），水素（気），プロパン $\\ce{CH3CH2CH3}$（気）の燃焼エンタルピーは，それぞれ $-2058\\,\\mathrm{kJ/mol}$，$-286\\,\\mathrm{kJ/mol}$，$-2219\\,\\mathrm{kJ/mol}$ である（生じる水はいずれも液体）．また，結合エネルギーは C－H：$413\\,\\mathrm{kJ/mol}$，C－C：$348\\,\\mathrm{kJ/mol}$，H－H：$436\\,\\mathrm{kJ/mol}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "プロペンへの水素付加 $\\ce{CH2=CHCH3 + H2 -> CH3CH2CH3}$（すべて気体）の反応エンタルピー $\\Delta H\\,[\\mathrm{kJ/mol}]$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) の結果と結合エネルギーを用いて，C＝C 結合の結合エネルギー $[\\mathrm{kJ/mol}]$ を有効数字3桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "C＝C 結合の結合エネルギーは C－C 結合の何倍か．有効数字3桁で答えよ．また，この結果からわかることとして正しいものを次のア〜ウから1つ選べ．\\\\\nア　C＝C 結合の2本目の結合は1本目の結合より切れにくい．\\\\\nイ　C＝C 結合の2本目の結合は1本目の結合より切れやすく，付加反応が起こりやすい原因になる．\\\\\nウ　C＝C 結合の2本の結合は等しく，どちらも C－C 結合と同じ強さである．"
+     },
+     {
+      "id": "4",
+      "tex": "結合エネルギーだけを用いて 1-ブテン $\\ce{CH2=CHCH2CH3}$（気）への水素付加の反応エンタルピーを予想すると何 kJ/mol になるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$-125\\,\\mathrm{kJ/mol}$"
+   },
+   {
+    "id": "2",
+    "tex": "$613\\,\\mathrm{kJ/mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "1.76 倍，イ"
+   },
+   {
+    "id": "4",
+    "tex": "$-125\\,\\mathrm{kJ/mol}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　ヘスの法則より，反応エンタルピー＝（反応物の燃焼エンタルピーの和）－（生成物の燃焼エンタルピーの和）．\n\\[ \\Delta H=(-2058)+(-286)-(-2219)=\\boldsymbol{-125\\,\\mathrm{kJ/mol}} \\]\n（燃焼で生じる $\\ce{CO2}$ と $\\ce{H2O}$ は両辺で同じ量になるので打ち消し合う．）\n\n\\textbf{(2)}　水素付加で切れる結合は C＝C 1 本と H－H 1 本，できる結合は C－C 1 本と C－H 2 本（ほかの結合は変わらない）．$\\Delta H=(\\text{切れる結合の和})-(\\text{できる結合の和})$ より\n\\[ -125=(E_{\\ce{C=C}}+436)-(348+2\\times413)\\quad\\Rightarrow\\quad E_{\\ce{C=C}}=\\boldsymbol{613\\,\\mathrm{kJ/mol}} \\]\n\n\\textbf{(3)}　$\\dfrac{613}{348}=\\boldsymbol{1.76}$ 倍．C＝C 結合は C－C 結合の 2 倍より弱く，2 本目の結合（π結合）の分は $613-348=265\\,\\mathrm{kJ/mol}$ で，1 本目（σ結合，$348$）より小さい．このため2本目だけが切れて新しい2つの結合ができる付加反応が起こりやすく，しかも発熱になる．答えは $\\boldsymbol{\\text{イ}}$．\n\n\\textbf{(4)}　1-ブテンでも切れる結合・できる結合はプロペンと同じ（C＝C，H－H を切り，C－C と C－H 2 本をつくる）ので，予想値は $\\boldsymbol{-125\\,\\mathrm{kJ/mol}}$（実測は約 $-126\\,\\mathrm{kJ/mol}$）．結合エネルギーは多くの分子での平均値なので，結合の組み替えが同じ反応はほぼ同じ反応エンタルピーになる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "燃焼エンタルピーの差（ヘスの法則）で水素付加のエンタルピーを求め，切れる結合とできる結合の収支から C=C の結合エネルギーを逆算する．C=C は C−C の 2 倍より弱く，2 本目（π結合）が切れやすいことが付加反応の起こりやすさと発熱の理由になり，結合の組み替えが同じ反応は同じ反応エンタルピーと予想できる．"
+ },
+ "concepts": [
+  "enthalpy",
+  "hydrocarbon"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ヘスの法則",
+  "燃焼エンタルピー",
+  "結合エネルギー",
+  "水素付加",
+  "π結合"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

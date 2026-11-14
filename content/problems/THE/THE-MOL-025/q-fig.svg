@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 330" width="520" height="330">
+<g stroke="currentColor" fill="none" stroke-width="1.5"><line x1="70" y1="280" x2="490" y2="280"/><line x1="70" y1="280" x2="70" y2="45"/></g>
+<line x1="70.0" y1="280" x2="70.0" y2="285" stroke="currentColor"/><text x="70.0" y="300" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">0</text>
+<line x1="163.3" y1="280" x2="163.3" y2="285" stroke="currentColor"/><text x="163.3" y="300" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">200</text>
+<line x1="256.7" y1="280" x2="256.7" y2="285" stroke="currentColor"/><text x="256.7" y="300" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">400</text>
+<line x1="350.0" y1="280" x2="350.0" y2="285" stroke="currentColor"/><text x="350.0" y="300" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">600</text>
+<line x1="443.3" y1="280" x2="443.3" y2="285" stroke="currentColor"/><text x="443.3" y="300" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">800</text>
+<line x1="65" y1="251.2" x2="70" y2="251.2" stroke="currentColor"/><text x="61" y="255.2" font-size="13" text-anchor="end" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">40</text>
+<line x1="65" y1="193.8" x2="70" y2="193.8" stroke="currentColor"/><text x="61" y="197.8" font-size="13" text-anchor="end" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">60</text>
+<line x1="65" y1="136.2" x2="70" y2="136.2" stroke="currentColor"/><text x="61" y="140.2" font-size="13" text-anchor="end" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">80</text>
+<line x1="65" y1="78.8" x2="70" y2="78.8" stroke="currentColor"/><text x="61" y="82.8" font-size="13" text-anchor="end" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">100</text>
+<text x="280" y="322" font-size="14" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">温度〔℃〕</text>
+<text x="20" y="165.0" font-size="14" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif" transform="rotate(-90 20 165.0)">質量〔mg〕</text>
+<path d="M81.7,70.7 L121.3,70.7 L140.0,84.5 L163.3,116.1 L182.0,122.5 L252.0,122.5 L270.7,136.2 L294.0,193.8 L312.7,216.8 L354.7,216.8 L373.3,222.5 L406.0,251.2 L434.0,267.4 L490.0,267.4" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linejoin="round"/>
+<line x1="70" y1="70.7" x2="121.3" y2="70.7" stroke="currentColor" stroke-dasharray="4 3" opacity="0.5"/>
+<line x1="70" y1="122.5" x2="252.0" y2="122.5" stroke="currentColor" stroke-dasharray="4 3" opacity="0.5"/>
+<line x1="70" y1="216.8" x2="354.7" y2="216.8" stroke="currentColor" stroke-dasharray="4 3" opacity="0.5"/>
+<line x1="70" y1="267.4" x2="490.0" y2="267.4" stroke="currentColor" stroke-dasharray="4 3" opacity="0.5"/>
+<text x="98.0" y="63.7" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">102.8</text>
+<text x="210.0" y="115.5" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">84.8</text>
+<text x="322.0" y="209.8" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">52.0</text>
+<text x="452.7" y="260.4" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">34.4</text>
+<text x="159.7" y="98.9" font-size="13" fill="#1f5fbf" font-family="Noto Sans CJK JP, sans-serif">第1段階</text>
+<text x="290.3" y="170.8" font-size="13" fill="#1f5fbf" font-family="Noto Sans CJK JP, sans-serif">第2段階</text>
+<text x="400.0" y="242.6" font-size="13" fill="#1f5fbf" font-family="Noto Sans CJK JP, sans-serif">第3段階</text>
+</svg>

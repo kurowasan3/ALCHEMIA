@@ -1,0 +1,109 @@
+{
+ "id": "THE-THC-045",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-10",
+ "topic": "燃料ごとの発熱量あたりの CO₂ 排出量とアンモニア混焼による削減",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "燃料を燃焼させて一定の熱量を得るとき，排出される二酸化炭素 $\\ce{CO2}$ の量は燃料の種類によって異なる．生成エンタルピーは次の値を用いよ（単位 $\\mathrm{kJ/mol}$）．\n\\[\\ce{CO2(g)}: -394,\\quad \\ce{H2O(l)}: -286,\\quad \\ce{H2O(g)}: -242,\\quad \\ce{CH4(g)}: -75,\\quad \\ce{C3H8(g)}: -105,\\quad \\ce{NH3(g)}: -46\\]\n石炭のモデルとして黒鉛 $\\ce{C}$，天然ガスのモデルとしてメタン $\\ce{CH4}$，液化石油ガスのモデルとしてプロパン $\\ce{C3H8}$ を考え，(1)〜(3) では生成する水は液体とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "プロパンの完全燃焼を，反応エンタルピー $\\Delta H$ を付した化学反応式で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "黒鉛・メタン・プロパンについて，$\\ce{CO2}$ を $1\\,\\mathrm{mol}$ 排出するあいだに得られる熱量をそれぞれ有効数字 3 桁で求め，同じ熱量を得るときの $\\ce{CO2}$ 排出量が多い順に並べよ．"
+     },
+     {
+      "id": "3",
+      "tex": "アンモニアは燃焼すると窒素と水だけを生じる（$\\ce{4NH3 + 3O2 -> 2N2 + 6H2O}$）．黒鉛 $1.0\\,\\mathrm{mol}$ にアンモニアを混ぜて燃焼させ，$\\ce{CO2}$ $1\\,\\mathrm{mol}$ あたりに得られる熱量をプロパンの場合と等しくするには，アンモニアを何 mol 混ぜればよいか，有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "実際のボイラーでは，生じた水は気体のまま排出されることが多い．水を気体として計算し直すと，「黒鉛に対してメタンでは同じ熱量あたりの $\\ce{CO2}$ 排出量が何分の 1 になるか」の値は，水を液体とした場合と比べてどうなるか．それぞれの値を有効数字 2 桁で求めて答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{C3H8(g) + 5O2(g) -> 3CO2(g) + 4H2O(l)}$　$\\Delta H = -2221\\,\\mathrm{kJ}$"
+   },
+   {
+    "id": "2",
+    "tex": "黒鉛 $394\\,\\mathrm{kJ}$，メタン $891\\,\\mathrm{kJ}$，プロパン $740\\,\\mathrm{kJ}$．多い順に 黒鉛，プロパン，メタン"
+   },
+   {
+    "id": "3",
+    "tex": "$0.90\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "4",
+    "tex": "水が液体なら $\\dfrac{1}{2.3}$，気体なら $\\dfrac{1}{2.0}$ で，水が気体のときの方がメタンの削減効果は小さくなる．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　$\\Delta H = 3 \\times (-394) + 4 \\times (-286) - (-105) = -2221\\,\\mathrm{kJ}$．\n\\[\\boldsymbol{\\ce{C3H8(g) + 5O2(g) -> 3CO2(g) + 4H2O(l)} \\quad \\Delta H = -2221\\,\\mathrm{kJ}}\\]\n\n\\textbf{(2) $\\ce{CO2}$ 1 mol あたりの熱量}　\\\\\n黒鉛：$\\ce{C + O2 -> CO2}$ の発熱は $394\\,\\mathrm{kJ}$ で，$\\ce{CO2}$ 1 mol あたり $\\boldsymbol{394\\,\\mathrm{kJ}}$．\\\\\nメタン：$\\Delta H = -394 + 2 \\times (-286) - (-75) = -891\\,\\mathrm{kJ}$，$\\ce{CO2}$ 1 mol あたり $\\boldsymbol{891\\,\\mathrm{kJ}}$．\\\\\nプロパン：$\\dfrac{2221}{3} = 740.3 \\fallingdotseq \\boldsymbol{740\\,\\mathrm{kJ}}$．\\\\\n同じ熱量あたりの $\\ce{CO2}$ は「$\\ce{CO2}$ 1 mol あたりの熱量」に反比例するので，多い順に $\\boldsymbol{\\text{黒鉛，プロパン，メタン}}$．H の割合が大きい燃料ほど，$\\ce{CO2}$ を出さない水の生成による発熱の割合が大きい．\n\n\\textbf{(3) アンモニアの混焼}　$\\ce{NH3}$ 1 mol の燃焼の発熱は $\\dfrac{6 \\times 286 - 4 \\times 46}{4} = 383\\,\\mathrm{kJ}$．黒鉛 $1.0\\,\\mathrm{mol}$（$\\ce{CO2}$ 1.0 mol）に $\\ce{NH3}$ を $x\\,\\mathrm{mol}$ 混ぜると\n\\[394 + 383x = 740.3 \\quad \\Longrightarrow \\quad x = 0.904 \\fallingdotseq \\boldsymbol{0.90\\,\\mathrm{mol}}\\]\n\n\\textbf{(4) 水が気体の場合}　メタンの発熱は $394 + 2 \\times 242 - 75 = 803\\,\\mathrm{kJ}$，黒鉛は $394\\,\\mathrm{kJ}$ のまま（水を生じない）．\\\\\n水が液体：$\\dfrac{394}{891} = \\dfrac{1}{2.26}$，水が気体：$\\dfrac{394}{803} = \\dfrac{1}{2.04}$．\\\\\nすなわち $\\boldsymbol{\\dfrac{1}{2.3}}$ から $\\boldsymbol{\\dfrac{1}{2.0}}$ になる．水の凝縮熱を回収できない分は H を多く含む燃料だけが損をするので，メタンの $\\ce{CO2}$ 削減効果は小さくなる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "同じ熱量あたりの CO₂ 排出量は「CO₂ 1 mol あたりの燃焼熱」の逆数で比べられ，H の割合が大きい燃料ほど有利になる．CO₂ を出さない燃料（NH₃）を混ぜたときの熱量の収支や，生成する水が気体か液体かで H を含む燃料の有利さが変わることを生成エンタルピーから計算する．"
+ },
+ "concepts": [
+  "enthalpy",
+  "nitrogen-phosphorus",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "燃焼エンタルピー",
+  "生成エンタルピー",
+  "二酸化炭素排出",
+  "アンモニア燃料",
+  "ヘスの法則"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

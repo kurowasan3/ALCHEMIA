@@ -1,0 +1,109 @@
+{
+ "id": "INO-PPT-039",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-08",
+ "topic": "コバルト(III) アンミン錯塩の内圏・外圏の塩化物イオン（AgCl の量と粒子の数）",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "structure",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "組成式がそれぞれ $\\ce{CoCl3.6NH3}$，$\\ce{CoCl3.5NH3}$，$\\ce{CoCl3.4NH3}$ で表される 3 種類のコバルト(III) の化合物 X，Y，Z がある．いずれも $\\ce{Co^3+}$ に $\\ce{NH3}$ と $\\ce{Cl-}$ が合わせて 6 個配位した八面体形の錯イオンを含み，配位していない $\\ce{Cl-}$ は錯イオンの外側にある．X，Y，Z をそれぞれ $0.0100\\,\\mathrm{mol}$ ずつ水に溶かし，十分な量の硝酸銀水溶液を加えてただちに沈殿をろ過すると，塩化銀の質量はそれぞれ $4.30\\,\\mathrm{g}$，$2.87\\,\\mathrm{g}$，$1.43\\,\\mathrm{g}$ であった．配位している $\\ce{Cl-}$ はこの操作では沈殿しないものとする．原子量は Cl 35.5，Ag 107.9 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "X，Y，Z に含まれる錯イオンの化学式を，電荷を含めて答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "Z には色の異なる 2 種類の異性体が存在する．その理由を，錯イオンの立体構造から説明せよ．"
+     },
+     {
+      "id": "3",
+      "tex": "組成式 $\\ce{CoCl3.3NH3}$ の化合物 W も同様の八面体形の錯体をつくる．W $0.0100\\,\\mathrm{mol}$ に同じ操作をしたときの塩化銀の質量と，W の錯体の異性体の数を答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "X，Y，Z，W の $0.010\\,\\mathrm{mol/kg}$ 水溶液を，凝固点降下の大きい順に並べよ．ただし，塩は完全に電離するものとする．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "X：$\\ce{[Co(NH3)6]^3+}$　Y：$\\ce{[CoCl(NH3)5]^2+}$　Z：$\\ce{[CoCl2(NH3)4]+}$"
+   },
+   {
+    "id": "2",
+    "tex": "2 個の $\\ce{Cl-}$ が隣り合う位置（シス形）と向かい合う位置（トランス形）の 2 通りの配置があるため．"
+   },
+   {
+    "id": "3",
+    "tex": "塩化銀 $0\\,\\mathrm{g}$，異性体は 2 種類"
+   },
+   {
+    "id": "4",
+    "tex": "X ＞ Y ＞ Z ＞ W"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　$\\ce{Ag+}$ で沈殿するのは錯イオンの外にある $\\ce{Cl-}$ だけである．塩化銀（式量 $143.4$）の物質量から，化合物 1 mol あたりの「外の $\\ce{Cl-}$」の数がわかり，残りの $\\ce{Cl-}$ が配位している．\n\n\\textbf{(1)}　塩化銀の物質量は X：$\\dfrac{4.30}{143.4}=0.0300\\,\\mathrm{mol}$，Y：$0.0200\\,\\mathrm{mol}$，Z：$0.0100\\,\\mathrm{mol}$．化合物 $0.0100\\,\\mathrm{mol}$ あたりなので，外の $\\ce{Cl-}$ は X：3 個，Y：2 個，Z：1 個．配位数 6 から，X は $\\ce{NH3}$ 6 個，Y は $\\ce{NH3}$ 5 個と $\\ce{Cl-}$ 1 個，Z は $\\ce{NH3}$ 4 個と $\\ce{Cl-}$ 2 個が配位している．電荷は $+3$ から配位した $\\ce{Cl-}$ の数を引いて\nX：$\\boldsymbol{\\ce{[Co(NH3)6]^3+}}$，Y：$\\boldsymbol{\\ce{[CoCl(NH3)5]^2+}}$，Z：$\\boldsymbol{\\ce{[CoCl2(NH3)4]+}}$．\n（X は $\\ce{[Co(NH3)6]Cl3}$，Y は $\\ce{[CoCl(NH3)5]Cl2}$，Z は $\\ce{[CoCl2(NH3)4]Cl}$ と書ける．）\n\n\\textbf{(2)}　八面体の 6 つの頂点のうち 2 つに $\\ce{Cl-}$ を置く方法は，\\textbf{隣り合う 2 頂点（シス形）}と\\textbf{向かい合う 2 頂点（トランス形）}の 2 通りで，回転しても互いに重ならない．このため Z には 2 種類の異性体がある．\n\n\\textbf{(3)}　W は $\\ce{[CoCl3(NH3)3]}$ で，3 個の $\\ce{Cl-}$ がすべて配位した電荷 0 の錯体である．外の $\\ce{Cl-}$ がないので，塩化銀は $\\boldsymbol{0\\,\\mathrm{g}}$．$\\ce{Cl-}$ 3 個が 1 つの面の 3 頂点を占める配置と，同一平面（子午線）上に並ぶ配置の $\\boldsymbol{2}$ 種類の異性体がある．\n\n\\textbf{(4)}　1 mol が電離して生じる粒子の数は X：$\\ce{[Co(NH3)6]^3+}+3\\ce{Cl-}$ で 4，Y：3，Z：2，W：電離しないので 1．凝固点降下は粒子の総数に比例するので，$\\boldsymbol{\\text{X}>\\text{Y}>\\text{Z}>\\text{W}}$（比は $4:3:2:1$）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "錯塩では Ag+ で沈殿するのは錯イオンの外にある Cl− だけなので，AgCl の量から外の Cl− の数を数え，配位数 6 との差から内圏の配位子と錯イオンの電荷を決める．外の Cl− の数は電離で生じる粒子の数（凝固点降下の大きさ）も決め，八面体の MA4B2・MA3B3 はそれぞれ 2 種類の異性体をもつ．"
+ },
+ "concepts": [
+  "precipitation",
+  "complex-ion",
+  "organic-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "錯イオン",
+  "配位数",
+  "塩化銀",
+  "異性体",
+  "凝固点降下"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

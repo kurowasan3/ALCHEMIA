@@ -1,0 +1,113 @@
+{
+ "id": "THE-SOL-026",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-09",
+ "topic": "閉じた管で測る浸透圧と電離度",
+ "course": "化学",
+ "level": 3,
+ "minutes": 20,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "一端を閉じた断面積 $2.00\\,\\mathrm{cm^2}$，長さ $L=25.0\\,\\mathrm{cm}$ のガラス管に，塩化カルシウム $\\ce{CaCl2}$ の結晶 $2.38\\times10^{-3}\\,\\mathrm{mol}$ を入れ，開いている口を半透膜でふさいだ．図のように，管を鉛直に立てて半透膜が水面にちょうど接するように固定したところ，水が半透膜を通って管内に入り，結晶はすべて溶けた．やがて，管の上端から $h=5.00\\,\\mathrm{cm}$ の位置まで水溶液が満ちたところで水の浸入が止まった．\nはじめ管内の空気は $1.00\\times10^{5}\\,\\mathrm{Pa}$（大気圧）で，温度は常に $27$ ℃ とする．結晶の体積，管内の水蒸気の圧力，水溶液の液柱による圧力は無視し，気体定数は $R=8.3\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "平衡後の管内の空気の圧力と，水溶液の浸透圧を，それぞれ有効数字3桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "水溶液中での $\\ce{CaCl2}$ の電離度を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "塩化カルシウムの代わりに同じ物質量のグルコースを入れて同じ実験をすると，$h$ は何 cm になるか．有効数字3桁で求め，塩化カルシウムの場合より大きいか小さいかを理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：閉じた管で測る浸透圧と電離度",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "空気：$5.00\\times10^{5}\\,\\mathrm{Pa}$，浸透圧：$4.00\\times10^{5}\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "2",
+    "tex": "$0.85$"
+   },
+   {
+    "id": "3",
+    "tex": "$8.83\\,\\mathrm{cm}$．溶質粒子の数が少なく浸透圧が小さいので，入る水が少なくて空気があまり圧縮されず，$h$ は大きくなる．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 管内の空気は温度一定で長さ $25.0\\,\\mathrm{cm}$ から $5.00\\,\\mathrm{cm}$ に圧縮された（ボイルの法則）．\n\\[ P=1.00\\times10^{5}\\times\\frac{25.0}{5.00}=\\boldsymbol{5.00\\times10^{5}\\,\\mathrm{Pa}} \\]\n半透膜の内側の圧力が外側（大気圧）より浸透圧の分だけ高くなったところで水の浸入が止まるので，$\\Pi=5.00\\times10^{5}-1.00\\times10^{5}=\\boldsymbol{4.00\\times10^{5}\\,\\mathrm{Pa}}$．\n\\textbf{(2)} 水溶液の体積は $2.00\\times(25.0-5.00)=40.0\\,\\mathrm{cm^3}=0.0400\\,\\mathrm L$．溶質粒子の物質量は\n\\[ \\frac{\\Pi V}{RT}=\\frac{4.00\\times10^{5}\\times0.0400}{8.3\\times10^{3}\\times300}=6.43\\times10^{-3}\\,\\mathrm{mol} \\]\n$\\ce{CaCl2 -> Ca^2+ + 2Cl-}$ より，電離度 $\\alpha$ のとき粒子は $2.38\\times10^{-3}(1+2\\alpha)\\,\\mathrm{mol}$．$1+2\\alpha=2.70$ から $\\alpha=\\boldsymbol{0.85}$．\n\\textbf{(3)} 長さを cm，体積を L で表す．空気の圧力は $1.00\\times10^{5}\\times\\dfrac{25.0}{h}$，浸透圧はそれから大気圧を引いた $1.00\\times10^{5}\\times\\dfrac{25.0-h}{h}$．グルコース水溶液の体積は $2.00\\times10^{-3}(25.0-h)\\,\\mathrm L$ なので\n\\[ 1.00\\times10^{5}\\times\\frac{25.0-h}{h}=\\frac{2.38\\times10^{-3}\\times8.3\\times10^{3}\\times300}{2.00\\times10^{-3}(25.0-h)} \\]\n\\[ \\Rightarrow\\ (25.0-h)^2=29.63h \\quad\\Rightarrow\\quad h^2-79.63h+625=0,\\quad h=\\boldsymbol{8.83\\,\\mathrm{cm}}\\ (0<h<25) \\]\nグルコースは電離しないので溶質粒子が少なく，同じ体積なら浸透圧が小さい．そのため入ってくる水が少なく，空気の圧縮も小さいので，$h$ は塩化カルシウムの場合（$5.00\\,\\mathrm{cm}$）より\\textbf{大きく}なる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "閉じた管に入った溶媒が空気を圧縮し，「管内の気体の圧力−外圧＝浸透圧」で浸入が止まる．気体の圧縮（ボイルの法則）と溶液の体積（希釈）の両方が液面の位置で決まるので，連立して浸透圧や電離度を求める．"
+ },
+ "concepts": [
+  "solution-colligative",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "浸透圧",
+  "ボイルの法則",
+  "電離度",
+  "半透膜"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

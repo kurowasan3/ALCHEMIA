@@ -1,0 +1,130 @@
+{
+ "id": "THE-ELC-021",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-07",
+ "topic": "陽イオン交換膜と陰イオン交換膜による電気透析",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，陽イオン交換膜 X と陰イオン交換膜 Y を X，Y，X，Y の順に用いて電解槽を A〜E の5室に仕切り，A 室に炭素電極（陽極），E 室に鉄電極（陰極）を入れた．各室に $0.500\\,\\mathrm{mol/L}$ の塩化ナトリウム水溶液を $1.00\\,\\mathrm{L}$ ずつ入れ，2.00 時間電気分解したところ，E 室で発生した気体は 27 ℃，$1.00\\times10^{5}\\,\\mathrm{Pa}$ で $2.49\\,\\mathrm{L}$ であった．X は陽イオンだけを，Y は陰イオンだけを通すものとし，水溶液の体積変化と気体の水への溶解は無視する．気体定数 $R=8.31\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$，$F=9.65\\times10^{4}\\,\\mathrm{C/mol}$，$\\log_{10}2=0.30$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "電気分解後，塩化ナトリウムの濃度が電気分解前より大きくなっている室をすべて答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "流れた電子の物質量は何 mol か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "平均の電流は何 A か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "電気分解後の E 室の水溶液の pH を小数第1位まで求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "電気分解後の A〜E 室の塩化ナトリウムのモル濃度の比を，簡単な整数比で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：陽イオン交換膜と陰イオン交換膜による電気透析",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "B，D"
+   },
+   {
+    "id": "2",
+    "tex": "$0.20\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "$2.7\\,\\mathrm{A}$"
+   },
+   {
+    "id": "4",
+    "tex": "$13.3$"
+   },
+   {
+    "id": "5",
+    "tex": "A : B : C : D : E = 3 : 7 : 3 : 7 : 3"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方} 電流が流れると，陽イオンは陰極（E 側）へ，陰イオンは陽極（A 側）へ移動しようとする．各膜を通れるのは X なら $\\ce{Na+}$，Y なら $\\ce{Cl-}$ だけである．電子 1 mol あたりの変化は次の通り．\nA 室：陽極で $\\ce{2Cl- -> Cl2 + 2e-}$，$\\ce{Na+}$ は X を通って B へ出る → NaCl が 1 mol 減る．\nB 室：A から $\\ce{Na+}$ が入り，C から Y を通って $\\ce{Cl-}$ が入る．B の $\\ce{Na+}$ は右の Y を，$\\ce{Cl-}$ は左の X を通れない → NaCl が 1 mol 増える．\nC 室：$\\ce{Cl-}$ は Y を通って B へ，$\\ce{Na+}$ は X を通って D へ出る → 1 mol 減る．\nD 室：B と同様に 1 mol 増える．\nE 室：陰極で $\\ce{2H2O + 2e- -> H2 + 2OH-}$，$\\ce{Cl-}$ は Y を通って D へ出る → NaCl が 1 mol 減り，NaOH が 1 mol 増える．\n\n\\textbf{(1)} \\textbf{B，D}（濃縮室．C は脱塩された水が得られる室）．\n\n\\textbf{(2)} $\\ce{H2}$：$n=\\dfrac{1.00\\times10^5\\times2.49}{8.31\\times10^3\\times300}=0.0999\\,\\mathrm{mol}$．電子は $2\\times0.0999\\approx\\boldsymbol{0.20\\,\\mathrm{mol}}$．\n\n\\textbf{(3)} $\\dfrac{0.200\\times9.65\\times10^4}{2.00\\times3600}=2.68\\approx\\boldsymbol{2.7\\,\\mathrm{A}}$．\n\n\\textbf{(4)} E 室の $[\\ce{OH-}]=0.200\\,\\mathrm{mol/L}$，$\\mathrm{pOH}=-\\log_{10}(2\\times10^{-1})=0.70$，$\\mathrm{pH}=14-0.70=\\boldsymbol{13.3}$．\n\n\\textbf{(5)} 減る室は $0.500-0.200=0.300$，増える室は $0.700\\,\\mathrm{mol/L}$．よって \\textbf{3 : 7 : 3 : 7 : 3}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "陽イオン交換膜と陰イオン交換膜を交互に置くと，イオンの移動方向と膜の選択性から濃縮される室と脱塩される室が交互にできる．電子 1 mol あたりの各室の NaCl の増減を数え上げて濃度を求める．"
+ },
+ "concepts": [
+  "electrolysis",
+  "functional-polymer",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "イオン交換膜",
+  "電気透析",
+  "電気分解",
+  "pH"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

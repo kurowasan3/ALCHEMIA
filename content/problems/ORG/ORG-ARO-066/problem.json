@@ -1,0 +1,131 @@
+{
+ "id": "ORG-ARO-066",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-05",
+ "topic": "ケトンとフェノール2分子の縮合（ビスフェノールの生成）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "structure",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "カルボニル化合物は，酸を触媒としてフェノールと反応する．カルボニル基の炭素原子にフェノールのベンゼン環の炭素原子（ヒドロキシ基のパラ位）が結合し，さらにもう1分子のフェノールが同じ炭素原子に結合して水がとれると，1分子のカルボニル化合物と2分子のフェノールから，ヒドロキシ基を2個もつ化合物（ビスフェノール類）ができる．\n\n分子式 $\\ce{C4H8O}$ のカルボニル化合物のうち，ヨードホルム反応を示し，銀鏡反応を示さない化合物を X とする．X と十分な量のフェノールを反応させて化合物 Y を得た．原子量は H = 1.0，C = 12，O = 16 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "X の名称と示性式を答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "Y の分子式を答え，X とフェノールから Y ができる反応を化学反応式で示せ．"
+     },
+     {
+      "id": "3",
+      "tex": "X $7.2\\,\\mathrm g$ をすべて反応させたところ，Y が理論量の $80\\,\\%$ 得られた．得られた Y の質量は何 g か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "Y の分子の中で，X のカルボニル基の炭素原子であった炭素原子は不斉炭素原子か．理由とともに答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "Y $1\\,\\mathrm{mol}$ とちょうど反応する水酸化ナトリウムは何 mol か．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：ケトンとフェノール2分子の縮合（ビスフェノールの生成）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "2-ブタノン（エチルメチルケトン），$\\ce{CH3COC2H5}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{C16H18O2}$，$\\ce{C4H8O + 2C6H6O -> C16H18O2 + H2O}$"
+   },
+   {
+    "id": "3",
+    "tex": "$19\\,\\mathrm g$"
+   },
+   {
+    "id": "4",
+    "tex": "不斉炭素原子ではない（同じ 4-ヒドロキシフェニル基が2個結合しているため）"
+   },
+   {
+    "id": "5",
+    "tex": "$2\\,\\mathrm{mol}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\ce{C4H8O}$ のカルボニル化合物はブタナール $\\ce{CH3CH2CH2CHO}$，2-メチルプロパナール $\\ce{(CH3)2CHCHO}$，2-ブタノン $\\ce{CH3COC2H5}$ の3種．銀鏡反応を示さないのはケトンの 2-ブタノンだけで，$\\ce{CH3CO-}$ をもつのでヨードホルム反応も示す．よって X は $\\boldsymbol{\\text{2-ブタノン}}$．\n\n\\textbf{(2)} カルボニル炭素に2個の 4-ヒドロキシフェニル基 $\\ce{-C6H4OH}$ が結合し，カルボニル基の O はフェノールの環の H 2個とともに $\\ce{H2O}$ としてとれる．Y は $\\ce{C2H5-C(CH3)(C6H4OH)2}$（解答図）で，原子の数を数えると $\\boldsymbol{\\ce{C16H18O2}}$．\n\\[\\ce{C4H8O + 2C6H6O -> C16H18O2 + H2O}\\]\n\n\\textbf{(3)} X のモル質量は $72\\,\\mathrm{g/mol}$，Y は $242\\,\\mathrm{g/mol}$．X $7.2\\,\\mathrm g$ は $0.10\\,\\mathrm{mol}$ で，X 1 mol から Y 1 mol ができるので\n\\[0.10 \\times 0.80 \\times 242 = 19.36 \\fallingdotseq \\boldsymbol{19\\,\\mathrm g}\\]\n\n\\textbf{(4)} この炭素原子には $\\ce{-CH3}$，$\\ce{-C2H5}$，および2個の同じ $\\ce{-C6H4OH}$ が結合している．4つの基のうち2つが同じなので$\\boldsymbol{\\text{不斉炭素原子ではない}}$（X に別の種類のフェノールを1分子ずつ結合させた場合などとは異なる）．\n\n\\textbf{(5)} Y のヒドロキシ基は2個ともフェノール性（ベンゼン環に直接結合）で，弱酸として NaOH と中和する．よって $\\boldsymbol{2\\,\\mathrm{mol}}$．なお，アルコール性の OH なら NaOH とは反応しない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "カルボニル化合物はフェノール2分子とパラ位で縮合してビスフェノール類と水を生じる（1:2の量的関係）．カルボニル化合物はヨードホルム反応・銀鏡反応で絞り込み，生成物の分子式・不斉炭素の有無・フェノール性OHの数を判断する．"
+ },
+ "concepts": [
+  "aromatic",
+  "carbon-silicon",
+  "organic-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ビスフェノール",
+  "付加縮合",
+  "ヨードホルム反応",
+  "フェノール",
+  "不斉炭素原子"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

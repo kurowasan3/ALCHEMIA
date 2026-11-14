@@ -1,0 +1,122 @@
+{
+ "id": "THE-GAS-030",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-08",
+ "topic": "ピストン付き容器と定積容器の連結",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，容積 $2.0\\,\\mathrm{L}$ で体積の変わらない容器 I と，なめらかに動くピストンをもつ容器 II が，コックのついた細い管でつながっている．ピストンには常に外から $1.0\\times10^{5}\\,\\mathrm{Pa}$ の圧力がかかっており，ピストンの質量，管の容積は無視できる．温度は常に一定に保たれ，気体はすべて理想気体とし，互いに反応しないものとする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "コックを閉じた状態で，容器 I に窒素を $2.0\\times10^{5}\\,\\mathrm{Pa}$ で入れ，容器 II にはアルゴンを入れたところ，容器 II の体積は $3.0\\,\\mathrm{L}$ になった．このあとコックを開いて十分に時間がたつと，ピストンは上がるか下がるか．また，容器 II の体積は何 L になるか．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) でコックを開いたあとの窒素とアルゴンの分圧はそれぞれ何 Pa か．有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "別の実験で，容器 II にアルゴンを入れて体積を $3.0\\,\\mathrm{L}$ とし，容器 I には窒素をある圧力 $p$ で入れてからコックを開いたところ，容器 II の体積は $1.2\\,\\mathrm{L}$ になった．$p$ は何 Pa か．有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "容器 I を真空にし，容器 II にアルゴンを入れて体積を $1.5\\,\\mathrm{L}$ としてからコックを開いた．ピストンはどうなるか．また，十分に時間がたったあとの容器内の圧力は何 Pa か．有効数字 2 桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：ピストン付き容器と定積容器の連結",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "上がる．$5.0\\,\\mathrm{L}$"
+   },
+   {
+    "id": "2",
+    "tex": "窒素 $5.7\\times10^{4}\\,\\mathrm{Pa}$，アルゴン $4.3\\times10^{4}\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "3",
+    "tex": "$1.0\\times10^{4}\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "4",
+    "tex": "ピストンは容器 II の底まで下がり，圧力は $7.5\\times10^{4}\\,\\mathrm{Pa}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方} ピストンが動ける間は，容器 II の気体の圧力は外圧 $1.0\\times10^{5}\\,\\mathrm{Pa}$ に等しい．コックを開いたあとも，ピストンが底に着かない限り全体の圧力は $1.0\\times10^{5}\\,\\mathrm{Pa}$ に保たれ，体積が変わって調整される．温度一定なので，物質量は（圧力）×（体積）に比例し，その和が保存される．\n\n\\textbf{(1)} 開く前の（圧力×体積）の和は\n\\[ 2.0\\times10^{5}\\times2.0 + 1.0\\times10^{5}\\times3.0 = 7.0\\times10^{5}\\ (\\mathrm{Pa\\cdot L}) \\]\n開いたあとは $1.0\\times10^{5}\\,\\mathrm{Pa}$ なので全体積は $7.0\\,\\mathrm{L}$，容器 II の体積は $7.0-2.0=\\boldsymbol{5.0\\,\\mathrm{L}}$．$3.0\\,\\mathrm{L}$ より大きいのでピストンは\\textbf{上がる}．容器 I の窒素の圧力が外圧より高いので，窒素が容器 II 側に広がってピストンを押し上げる．\n\n\\textbf{(2)} 分圧は物質量の比（＝開く前の圧力×体積の比）で全圧を分ける．\n\\[ p_{\\ce{N2}} = 1.0\\times10^{5}\\times\\dfrac{4.0}{7.0} \\fallingdotseq \\boldsymbol{5.7\\times10^{4}\\,\\mathrm{Pa}},\\qquad p_{\\ce{Ar}} = 1.0\\times10^{5}\\times\\dfrac{3.0}{7.0} \\fallingdotseq \\boldsymbol{4.3\\times10^{4}\\,\\mathrm{Pa}} \\]\n\n\\textbf{(3)} 開いたあとの全体積は $2.0+1.2=3.2\\,\\mathrm{L}$ で，圧力は $1.0\\times10^{5}\\,\\mathrm{Pa}$．\n\\[ p\\times2.0 + 1.0\\times10^{5}\\times3.0 = 1.0\\times10^{5}\\times3.2 \\quad\\therefore\\quad p = \\boldsymbol{1.0\\times10^{4}\\,\\mathrm{Pa}} \\]\n容器 II の体積が減った（ピストンが下がった）ことから，$p$ は外圧より小さいと判断でき，結果と合う．\n\n\\textbf{(4)} ピストンが動けるとすると，全体の圧力は $1.0\\times10^{5}\\,\\mathrm{Pa}$ のままで，全体積は $1.5\\,\\mathrm{L}$ のまま．ところが容器 I だけで $2.0\\,\\mathrm{L}$ あるので，容器 II の体積は $1.5-2.0<0$ となり不可能．したがって，ピストンは\\textbf{容器 II の底まで下がり}，そこで止まる．そのあとは気体が容器 I の $2.0\\,\\mathrm{L}$ を占め，圧力は外圧より低くなる．\n\\[ P = 1.0\\times10^{5}\\times\\dfrac{1.5}{2.0} = \\boldsymbol{7.5\\times10^{4}\\,\\mathrm{Pa}} \\]\nピストンが底に着くと，「圧力が外圧に等しい」という条件は成り立たなくなり，代わりに「体積が一定（$2.0\\,\\mathrm{L}$）」という条件で圧力が決まる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "外圧一定のピストン付き容器と定積容器を連結すると，ピストンが動ける間は全体の圧力が外圧に固定され，物質量の総和（同温では圧力×体積の和）から全体積が決まる．ピストンの上下から最初の圧力の大小を判断し，ピストンが底に着く場合は定圧の条件から定積の条件に切りかわることを見抜く．"
+ },
+ "concepts": [
+  "ideal-gas",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ピストン",
+  "連結容器",
+  "ボイルの法則",
+  "分圧",
+  "条件の切りかえ"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

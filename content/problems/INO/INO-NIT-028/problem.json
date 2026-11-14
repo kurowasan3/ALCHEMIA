@@ -1,0 +1,109 @@
+{
+ "id": "INO-NIT-028",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-03",
+ "topic": "リン酸カルシウムと塩酸の段階的な反応（加える酸の量と生成物・固体が消える点）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "equation",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "骨や歯の成分であるリン酸カルシウム $\\ce{Ca3(PO4)2}$（水に溶けにくい）に塩酸を加えていくと，リン酸イオンが段階的に $\\ce{H+}$ を受け取る．加えた $\\ce{HCl}$ の量に応じて，反応は次の順に進むものとする．\n\\\\ 第1段：$\\ce{CaHPO4}$（水に溶けにくい）が生じる．\n\\\\ 第2段：$\\ce{CaHPO4}$ がさらに反応して $\\ce{Ca(H2PO4)2}$（水に溶ける）が生じる．\n\\\\ 第3段：$\\ce{Ca(H2PO4)2}$ がさらに反応して $\\ce{H3PO4}$ が生じる．\n\\\\ いずれの段でも，カルシウムの残りは $\\ce{CaCl2}$ になる．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{Ca3(PO4)2}$ 1 mol に $\\ce{HCl}$ をちょうど 2 mol，4 mol，6 mol 加えたときの反応を，それぞれ $\\ce{Ca3(PO4)2}$ を左辺にした1つの化学反応式で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "$\\ce{Ca3(PO4)2}$ $0.0100\\,\\mathrm{mol}$ に $\\ce{HCl}$ $0.0300\\,\\mathrm{mol}$ を含む塩酸を加え，反応が終わった．生じた $\\ce{CaHPO4}$，$\\ce{Ca(H2PO4)2}$，$\\ce{CaCl2}$ の物質量をそれぞれ求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\ce{Ca3(PO4)2}$ $0.0100\\,\\mathrm{mol}$ の固体が見かけ上すべて溶けて固体がなくなるのに必要な $2.0\\,\\mathrm{mol/L}$ 塩酸の最小の体積（mL）を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "リン酸カルシウムは塩酸に溶けるが，硫酸バリウムは塩酸にほとんど溶けない．この違いの理由として最も適当なものを次の (a)〜(c) から選べ．\\\\ (a) $\\ce{PO4^3-}$ は弱酸の陰イオンなので $\\ce{H+}$ と結びつき，$\\ce{Ca3(PO4)2}$ の溶解平衡が溶ける向きに移動するが，$\\ce{SO4^2-}$ は強酸の陰イオンなので $\\ce{H+}$ とほとんど結びつかない．\\\\ (b) $\\ce{Ca^2+}$ は $\\ce{Cl-}$ と結びついて溶けにくい塩をつくり，溶解平衡が溶ける向きに移動するから．\\\\ (c) $\\ce{Ca3(PO4)2}$ の溶解度積は $\\ce{BaSO4}$ より大きく，酸を加えなくても十分に溶けるから．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "2 mol：$\\ce{Ca3(PO4)2 + 2HCl -> 2CaHPO4 + CaCl2}$　4 mol：$\\ce{Ca3(PO4)2 + 4HCl -> Ca(H2PO4)2 + 2CaCl2}$　6 mol：$\\ce{Ca3(PO4)2 + 6HCl -> 2H3PO4 + 3CaCl2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{CaHPO4}$ $1.00\\times10^{-2}\\,\\mathrm{mol}$，$\\ce{Ca(H2PO4)2}$ $5.0\\times10^{-3}\\,\\mathrm{mol}$，$\\ce{CaCl2}$ $1.50\\times10^{-2}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "$20\\,\\mathrm{mL}$"
+   },
+   {
+    "id": "4",
+    "tex": "(a)"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} リン酸イオン 1 個が受け取る $\\ce{H+}$ の数は，$\\ce{HPO4^2-}$ で 1，$\\ce{H2PO4-}$ で 2，$\\ce{H3PO4}$ で 3．$\\ce{Ca3(PO4)2}$ 1 mol には $\\ce{PO4^3-}$ が 2 mol あるので，それぞれ $\\ce{HCl}$ 2，4，6 mol が必要で，残りのカルシウムが $\\ce{CaCl2}$ になる．\n\\[ \\ce{Ca3(PO4)2 + 2HCl -> 2CaHPO4 + CaCl2} \\]\n\\[ \\ce{Ca3(PO4)2 + 4HCl -> Ca(H2PO4)2 + 2CaCl2} \\]\n\\[ \\ce{Ca3(PO4)2 + 6HCl -> 2H3PO4 + 3CaCl2} \\]\n\\textbf{(2)} 第1段で $\\ce{HCl}$ $0.0200\\,\\mathrm{mol}$ を使い，$\\ce{CaHPO4}$ $0.0200\\,\\mathrm{mol}$ と $\\ce{CaCl2}$ $0.0100\\,\\mathrm{mol}$ が生じる．残りの $\\ce{HCl}$ $0.0100\\,\\mathrm{mol}$ は第2段 $\\ce{2CaHPO4 + 2HCl -> Ca(H2PO4)2 + CaCl2}$ に使われ，$\\ce{CaHPO4}$ $0.0100\\,\\mathrm{mol}$ が反応して $\\ce{Ca(H2PO4)2}$ $0.0050\\,\\mathrm{mol}$，$\\ce{CaCl2}$ $0.0050\\,\\mathrm{mol}$ が生じる．\n\\\\ よって $\\ce{CaHPO4}$ $\\boldsymbol{1.00\\times10^{-2}\\,\\mathrm{mol}}$，$\\ce{Ca(H2PO4)2}$ $\\boldsymbol{5.0\\times10^{-3}\\,\\mathrm{mol}}$，$\\ce{CaCl2}$ $\\boldsymbol{1.50\\times10^{-2}\\,\\mathrm{mol}}$．（Ca：$0.0100+0.0050+0.0150=0.0300$，P：$0.0100+2\\times0.0050=0.0200$ で保存されている．）\n\\\\ \\textbf{(3)} 固体が残るのは $\\ce{Ca3(PO4)2}$ か $\\ce{CaHPO4}$ が残っている間である．すべてが水に溶ける $\\ce{Ca(H2PO4)2}$ になれば固体はなくなるので，$\\ce{H3PO4}$ まで進める必要はない．必要な $\\ce{HCl}$ は第2段の終わりまでの $4\\times0.0100=0.0400\\,\\mathrm{mol}$ で，$0.0400/2.0=0.020\\,\\mathrm{L}$，すなわち $\\boldsymbol{20\\,\\mathrm{mL}}$．\n\\\\ \\textbf{(4)} 難溶性の塩が強酸に溶けるのは，陰イオンが弱酸の陰イオンで $\\ce{H+}$ と結びつき，溶液中の陰イオンの濃度が下がって溶解平衡が溶ける向きに移るときである（$\\ce{PO4^3- + H+ -> HPO4^2-}$ など）．$\\ce{SO4^2-}$ は強酸の陰イオンなので $\\ce{H+}$ とほとんど結びつかず，$\\ce{BaSO4}$ は溶けない．$\\ce{CaCl2}$ は水に溶けるので (b) は誤り．よって \\textbf{(a)}．歯のエナメル質が酸で溶ける（虫歯）のも同じ理由である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "リン酸イオンは強酸から H⁺ を段階的に受け取るので，Ca₃(PO₄)₂ と HCl の生成物は物質量の比（2・4・6 倍）で CaHPO₄・Ca(H₂PO₄)₂・H₃PO₄ と変わり，中間の量では2つの段の生成物が共存する．固体が消えるのは水に溶ける Ca(H₂PO₄)₂ まで進んだ点で，弱酸の陰イオンをもつ難溶性塩だけが強酸に溶ける．"
+ },
+ "concepts": [
+  "nitrogen-phosphorus",
+  "alkali-metals",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "リン酸カルシウム",
+  "弱酸の遊離",
+  "段階的な反応",
+  "量的関係",
+  "溶解平衡"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

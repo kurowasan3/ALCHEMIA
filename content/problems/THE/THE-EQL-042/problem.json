@@ -1,0 +1,101 @@
+{
+ "id": "THE-EQL-042",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "2段階エステル化の逐次平衡",
+ "course": "化学",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "エチレングリコール $\\ce{HOCH2CH2OH}$（G とする）を酢酸と少量の濃硫酸とともに一定温度に保つと，次の2段階のエステル化が起こり，どちらも平衡に達する．\n\\[ \\ce{HOCH2CH2OH + CH3COOH <=> HOCH2CH2OCOCH3 + H2O} \\quad \\cdots(\\mathrm i) \\]\n\\[ \\ce{HOCH2CH2OCOCH3 + CH3COOH <=> CH3COOCH2CH2OCOCH3 + H2O} \\quad \\cdots(\\mathrm{ii}) \\]\nモノエステル $\\ce{HOCH2CH2OCOCH3}$ を M，ジエステル $\\ce{CH3COOCH2CH2OCOCH3}$ を D とする．(i)，(ii) の平衡定数を $K_1=\\dfrac{[\\mathrm M][\\ce{H2O}]}{[\\mathrm G][\\ce{CH3COOH}]}$，$K_2=\\dfrac{[\\mathrm D][\\ce{H2O}]}{[\\mathrm M][\\ce{CH3COOH}]}$ とする．どちらも両辺の分子数が等しいので，濃度の代わりに物質量を用いてよい．他の反応は起こらないものとする．\n\n実験：G $1.00\\,\\mathrm{mol}$ と酢酸 $1.50\\,\\mathrm{mol}$ に少量の濃硫酸を加えて平衡に達するまで保った．平衡混合物を中和滴定し，濃硫酸の分を差し引いて求めた酢酸は $0.50\\,\\mathrm{mol}$ であった．また，残っていた G は $0.25\\,\\mathrm{mol}$ であった．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "平衡混合物中の M，D，水の物質量を求め，$K_1$，$K_2$ の値を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "平衡状態では，G，M，D の物質量の比が，酢酸と水の物質量の比 $r=\\dfrac{n(\\ce{CH3COOH})}{n(\\ce{H2O})}$ だけで決まることを示し，$n(\\mathrm G):n(\\mathrm M):n(\\mathrm D)$ を $K_1$，$K_2$，$r$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "同じ温度で，G $1.00\\,\\mathrm{mol}$ と酢酸 $a\\,\\mathrm{mol}$（水は含まない）から反応を始め，平衡状態で D の物質量を M の 9 倍以上にしたい．$a$ の最小値を有効数字2桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "M $0.50\\,\\mathrm{mol}$，D $0.25\\,\\mathrm{mol}$，水 $1.00\\,\\mathrm{mol}$；$K_1=4.0$，$K_2=1.0$"
+   },
+   {
+    "id": "2",
+    "tex": "$n(\\mathrm G):n(\\mathrm M):n(\\mathrm D)=1:K_1r:K_1K_2r^{2}$"
+   },
+   {
+    "id": "3",
+    "tex": "$19$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　(i) で $x\\,\\mathrm{mol}$，(ii) で $y\\,\\mathrm{mol}$ 反応したとすると，G $1.00-x$，M $x-y$，D $y$，酢酸 $1.50-x-y$，水 $x+y$．\n\nG が 0.25 mol より $x=0.75$．酢酸が 0.50 mol より $x+y=1.00$，$y=0.25$．よって M $=\\boldsymbol{0.50\\,\\mathrm{mol}}$，D $=\\boldsymbol{0.25\\,\\mathrm{mol}}$，水 $=\\boldsymbol{1.00\\,\\mathrm{mol}}$．\n\\[ K_1=\\frac{0.50\\times1.00}{0.25\\times0.50}=\\boldsymbol{4.0},\\qquad K_2=\\frac{0.25\\times1.00}{0.50\\times0.50}=\\boldsymbol{1.0} \\]\n（滴定で分かるのは酢酸の量＝ $x+y$ だけで，これだけでは2つの平衡を分けられない．G の量というもう1つの情報があって初めて $x$，$y$ が決まる．）\n\n\\textbf{(2)}　$K_1$，$K_2$ の式を変形すると\n\\[ \\frac{n(\\mathrm M)}{n(\\mathrm G)}=K_1\\frac{n(\\ce{CH3COOH})}{n(\\ce{H2O})}=K_1r,\\qquad \\frac{n(\\mathrm D)}{n(\\mathrm M)}=K_2r \\]\nよって $\\boldsymbol{n(\\mathrm G):n(\\mathrm M):n(\\mathrm D)=1:K_1r:K_1K_2r^{2}}$．2つの平衡が同じ「酢酸＋…⇄…＋水」の形なので，グリコール側の分布は酢酸と水の比 $r$ だけで決まる．（(1) では $r=0.50/1.00=0.50$ で $1:2:1$ となり，実験と一致する．）\n\n\\textbf{(3)}　$\\dfrac{n(\\mathrm D)}{n(\\mathrm M)}=K_2r=r\\geqq9$．$r$ が大きいほど $a$ も大きいので，最小の $a$ は $r=9$ のとき．このとき $n(\\mathrm G):n(\\mathrm M):n(\\mathrm D)=1:36:324$（合計 361）なので\n\\[ n(\\mathrm M)=\\frac{36}{361},\\quad n(\\mathrm D)=\\frac{324}{361}\\,\\mathrm{mol} \\]\n生じた水は，M 1 mol あたり 1 mol，D 1 mol あたり 2 mol なので\n\\[ n(\\ce{H2O})=\\frac{36+2\\times324}{361}=\\frac{684}{361}=1.895\\,\\mathrm{mol} \\]\n消費された酢酸も水と同じ $1.895\\,\\mathrm{mol}$，平衡で残る酢酸は $r\\times n(\\ce{H2O})=9\\times1.895=17.05\\,\\mathrm{mol}$．\n\\[ a=17.05+1.895=18.9\\approx\\boldsymbol{19} \\]\n（酢酸を大過剰にしてもモノエステルは残る．D を増やすには，水を除いて $r$ を大きくする方法も有効である．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "同じ試薬（酢酸）と同じ副生成物（水）をもつ2段階の逐次平衡では，中間体と生成物の分布が酢酸と水の比だけで決まる．2つの測定値から2つの平衡定数を分離し，目標の生成物比から必要な原料の量を逆算する．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "carboxylic-ester",
+  "organic-test"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "逐次平衡",
+  "エステル化",
+  "平衡定数",
+  "ジエステル",
+  "エチレングリコール"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

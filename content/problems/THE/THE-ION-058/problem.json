@@ -1,0 +1,108 @@
+{
+ "id": "THE-ION-058",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "色の見え方が非対称な指示薬の変色域と電離定数",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "弱酸型の指示薬 HIn は，水溶液中で $\\ce{HIn <=> H+ + In-}$ の電離平衡にあり，酸型 HIn は黄色，塩基型 $\\ce{In-}$ は青色である．指示薬 X（電離定数 $K$，$\\mathrm{p}K=-\\log_{10}K=7.0$）では，青色は濃く目立つので，$\\dfrac{[\\ce{In-}]}{[\\ce{HIn}]}$ が $\\dfrac{1}{9}$ に達すると青みが見えはじめる．一方，黄色は淡いので，$\\dfrac{[\\ce{In-}]}{[\\ce{HIn}]}$ が $4$ をこえると黄色みが見えなくなり，それ以上は色が変わらない．$\\log_{10}2=0.30$，$\\log_{10}3=0.48$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "pH を $\\mathrm{p}K$ と $\\dfrac{[\\ce{In-}]}{[\\ce{HIn}]}$ を用いて表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "指示薬 X の変色域（青みが見えはじめる pH から，色が変わらなくなる pH まで）を小数第 2 位まで求め，その幅を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "変色域の中央の pH は $\\mathrm{p}K$ と一致するか．一致しない場合，どちら側にずれているか．理由とともに答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "色の見え方の条件が X と同じで，変色域が pH 4.4〜6.0 と観察された指示薬 Z がある．Z の $\\mathrm{p}K$ を小数第 1 位まで求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\mathrm{pH}=\\mathrm{p}K+\\log_{10}\\dfrac{[\\ce{In-}]}{[\\ce{HIn}]}$"
+   },
+   {
+    "id": "2",
+    "tex": "pH 6.04〜7.60，幅 1.56"
+   },
+   {
+    "id": "3",
+    "tex": "一致しない．中央（pH 6.82）は $\\mathrm{p}K$ より酸性側にずれる．濃い青色は少量でも見えるので変色が低い pH から始まり，淡い黄色は少し残るだけで見えなくなるので，$\\mathrm{p}K$ より下側の範囲が広くなるから．"
+   },
+   {
+    "id": "4",
+    "tex": "$\\mathrm{p}K=5.4$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $K=\\dfrac{[\\ce{H+}][\\ce{In-}]}{[\\ce{HIn}]}$ より $[\\ce{H+}]=K\\dfrac{[\\ce{HIn}]}{[\\ce{In-}]}$．両辺の常用対数をとって $-1$ を掛けると\n\\[ \\boldsymbol{\\mathrm{pH}=\\mathrm{p}K+\\log_{10}\\frac{[\\ce{In-}]}{[\\ce{HIn}]}} \\]\n\n\\textbf{(2)} 青みが見えはじめる pH：$\\mathrm{pH}=7.0+\\log_{10}\\dfrac19=7.0-2\\times0.48=\\boldsymbol{6.04}$\n色が変わらなくなる pH：$\\mathrm{pH}=7.0+\\log_{10}4=7.0+2\\times0.30=\\boldsymbol{7.60}$\n変色域の幅は $7.60-6.04=\\boldsymbol{1.56}$．\n\n\\textbf{(3)} 中央は $\\dfrac{6.04+7.60}{2}=6.82$ で，$\\mathrm{p}K=7.0$ と$\\boldsymbol{\\text{一致しない}}$．変色域は $\\mathrm{p}K$ から下側へ $0.96$，上側へ $0.60$ 広がっており，中央は$\\boldsymbol{\\text{酸性側}}$にずれる．色の濃い塩基型は少しできただけで見え，色の淡い酸型は少し残っていても見えないため，変色が起こる範囲が低い pH 側に偏る．教科書でいう「変色域はおよそ $\\mathrm{p}K\\pm1$」は，2 つの色の見えやすさが同じと考えたときの目安である．\n\n\\textbf{(4)} 変色域の下端は $\\mathrm{p}K-0.96$，上端は $\\mathrm{p}K+0.60$ である．下端から $\\mathrm{p}K=4.4+0.96=5.36$，上端から $\\mathrm{p}K=6.0-0.60=5.4$．両者は一致し，$\\mathrm{p}K=\\boldsymbol{5.4}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "指示薬の変色域は pH＝pK＋log([In⁻]/[HIn]) に，色が見えはじめる比と見えなくなる比を代入して求める．2つの色の見えやすさが異なると変色域は pK に対して非対称になり，中央は色の淡い型の側にずれる．観察した変色域から pK を逆算できる．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "ph"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "指示薬",
+  "変色域",
+  "電離定数",
+  "pK",
+  "色の見え方"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

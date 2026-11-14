@@ -1,0 +1,109 @@
+{
+ "id": "THE-SOL-030",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-09",
+ "topic": "弱電解質の凝固点降下と電離平衡の連成（氷の析出による濃縮）",
+ "course": "化学",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ジクロロ酢酸 $\\ce{CHCl2COOH}$ は，水中で一部が $\\ce{CHCl2COOH <=> H+ + CHCl2COO-}$ のように電離する1価の酸である．水のモル凝固点降下を $1.86\\,\\mathrm{K\\cdot kg/mol}$ とし，次のように考える．\n・凝固点付近の水溶液では，濃度はすべて質量モル濃度〔mol/kg〕で表し，電離定数 $K_a=\\dfrac{[\\ce{H+}][\\ce{CHCl2COO-}]}{[\\ce{CHCl2COOH}]}$ も質量モル濃度で表す．$K_a$ は温度・濃度によらず一定とする．\n・凝固点降下度は，溶けているすべての粒子（分子とイオン）の質量モル濃度の和に比例する．析出する氷は純粋な水で，溶質はすべて液相に残る．水の電離は無視できる．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "質量モル濃度 $0.100\\,\\mathrm{mol/kg}$ の水溶液の凝固点は $-0.279$ ℃ であった．この濃度での電離度と $K_a$ を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "水 $100\\,\\mathrm g$ にジクロロ酢酸 $1.00\\times10^{-2}\\,\\mathrm{mol}$ を溶かした水溶液を冷却し，$-0.744$ ℃ に保って平衡にした．このときの液相での電離度と，析出した氷の質量を求めよ．氷の質量は有効数字3桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) を，「電離度は (1) の値のまま変わらない」と仮定して計算すると，析出する氷の質量は何 g になるか．有効数字3桁で答えよ．また，(2) の結果とどちらが大きいか，理由とともに答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "ある学生は，(1) で $1-\\alpha\\approx1$（$\\alpha$ は電離度）と近似して $K_a$ を求めた．この近似で得られる値は正しい $K_a$ の何倍か．また，この近似が使えるのは $\\alpha\\le0.050$ のときとすると，この酸では質量モル濃度が何 mol/kg 以上でなければならないか（有効数字2桁）．その結果から，凝固点降下の測定でこの近似が使えるかどうかを判断せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "電離度 $0.50$，$K_a=5.0\\times10^{-2}\\,\\mathrm{mol/kg}$"
+   },
+   {
+    "id": "2",
+    "tex": "電離度 $\\dfrac{1}{3}\\,(0.33)$，氷 $66.7\\,\\mathrm g$"
+   },
+   {
+    "id": "3",
+    "tex": "$62.5\\,\\mathrm g$．(2) の方が大きい．氷が析出して濃縮されると電離平衡が分子の側に移って電離度が下がり，粒子数の倍率 $1+\\alpha$ が小さくなるので，同じ凝固点降下度に達するにはより濃く（液相の水をより少なく）しなければならないから．"
+   },
+   {
+    "id": "4",
+    "tex": "$0.50$ 倍．$19\\,\\mathrm{mol/kg}$ 以上．凝固点降下の式は希薄溶液でしか成り立たず，そのような濃い溶液は測定に使えないので，この近似は使えない（電離平衡を $1-\\alpha$ のまま解く必要がある）．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 電離度を $\\alpha$ とすると，粒子の質量モル濃度の和は $c(1-\\alpha)+c\\alpha+c\\alpha=c(1+\\alpha)$ である．\n\\[ 0.279=1.86\\times0.100\\times(1+\\alpha)\\quad\\Rightarrow\\quad 1+\\alpha=1.50,\\quad \\alpha=\\boldsymbol{0.50} \\]\n\\[ K_a=\\frac{(c\\alpha)^2}{c(1-\\alpha)}=\\frac{c\\alpha^2}{1-\\alpha}=\\frac{0.100\\times0.50^2}{0.50}=\\boldsymbol{5.0\\times10^{-2}\\,\\mathrm{mol/kg}} \\]\n\\textbf{(2)} 液相の水を $w\\,\\mathrm{kg}$，酸の質量モル濃度を $c=\\dfrac{1.00\\times10^{-2}}{w}$，電離度を $\\alpha$ とすると，次の2式が同時に成り立つ．\n\\[ \\text{凝固点降下：}\\ 1.86\\,c(1+\\alpha)=0.744\\ \\Rightarrow\\ c(1+\\alpha)=0.400 \\qquad \\text{電離平衡：}\\ \\frac{c\\alpha^2}{1-\\alpha}=0.050 \\]\n第1式から $c=\\dfrac{0.400}{1+\\alpha}$ を第2式に代入すると\n\\[ \\frac{0.400\\,\\alpha^2}{(1+\\alpha)(1-\\alpha)}=0.050\\ \\Rightarrow\\ 0.400\\,\\alpha^2=0.050(1-\\alpha^2)\\ \\Rightarrow\\ \\alpha^2=\\frac{1}{9} \\]\n$0<\\alpha<1$ より $\\alpha=\\boldsymbol{\\dfrac{1}{3}}$．このとき $c=\\dfrac{0.400}{4/3}=0.300\\,\\mathrm{mol/kg}$，$w=\\dfrac{1.00\\times10^{-2}}{0.300}=3.33\\times10^{-2}\\,\\mathrm{kg}$．析出した氷は $100-33.3=\\boldsymbol{66.7\\,\\mathrm g}$．\n\\textbf{(3)} $\\alpha=0.50$ のままなら $c\\times1.50=0.400$ より $c=0.2667\\,\\mathrm{mol/kg}$，$w=\\dfrac{1.00\\times10^{-2}}{0.2667}=3.75\\times10^{-2}\\,\\mathrm{kg}$ で，氷は $100-37.5=\\boldsymbol{62.5\\,\\mathrm g}$．\n(2) の方が $4.2\\,\\mathrm g$ 大きい．濃縮によって $\\dfrac{c\\alpha^2}{1-\\alpha}=K_a$ を保つように $\\alpha$ が $0.50\\to0.33$ と下がる（ルシャトリエの原理：粒子数が減る向きに平衡が移る）ので，粒子の総数は溶質の物質量の $1.50$ 倍から $1.33$ 倍に減る．同じ凝固点 $-0.744$ ℃（粒子の質量モル濃度 $0.400$）にするには液相の水をさらに減らす，つまりより多くの氷が析出しなければならない．\n\\textbf{(4)} 近似では $K_a'=c\\alpha^2=0.100\\times0.50^2=2.5\\times10^{-2}$ で，正しい値の $\\boldsymbol{0.50}$ 倍（$1-\\alpha=0.50$ の分だけ小さく出る）．\n$\\alpha=0.050$ となる濃度は $\\dfrac{c\\times0.050^2}{1-0.050}=5.0\\times10^{-2}$ より $c=\\dfrac{5.0\\times10^{-2}\\times0.95}{2.5\\times10^{-3}}=19\\,\\mathrm{mol/kg}$．$\\alpha$ は濃いほど小さいので $\\boldsymbol{19\\,\\mathrm{mol/kg}}$ 以上が必要である．凝固点降下度が質量モル濃度に比例するのは希薄溶液に限られ，このような濃度は測定に使えない．したがって $K_a$ の大きい酸では，凝固点降下の測定に使う濃度の範囲で $1-\\alpha\\approx1$ の近似は成り立たず，(1)(2) のように $1-\\alpha$ を残して解く必要がある．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "電離度が濃度で変わる弱電解質では，凝固点降下（粒子数）と電離平衡を連立して電離度と電離定数を決める．冷却で氷が析出して濃縮されると電離度が下がって粒子数の倍率が減るので，析出量は「電離度一定」とした見積もりより多くなる．"
+ },
+ "concepts": [
+  "solution-colligative",
+  "concentration",
+  "ionization-equilibrium"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "凝固点降下",
+  "電離平衡",
+  "電離度",
+  "濃縮",
+  "近似の妥当性"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

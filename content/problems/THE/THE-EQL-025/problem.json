@@ -1,0 +1,117 @@
+{
+ "id": "THE-EQL-025",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "平衡時の体積百分率から反応量と熱量を求める",
+ "course": "化学",
+ "level": 1,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "五塩化リンを加熱すると $\\ce{PCl5(g) <=> PCl3(g) + Cl2(g)}$（右向きの反応の $\\Delta H=+88\\,\\mathrm{kJ}$）の平衡が成り立つ．$\\ce{PCl5}$ $1.00\\,\\mathrm{mol}$ を容積可変の容器に入れ，$500\\,\\mathrm K$，全圧 $1.0\\times10^5\\,\\mathrm{Pa}$ に保ったところ，平衡時の気体中の塩素は体積で $25\\,\\%$ であった．$R=8.3\\times10^3\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$ とし，答えは有効数字2桁で求めよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "平衡時の $\\ce{PCl5}$，$\\ce{PCl3}$，$\\ce{Cl2}$ の物質量を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "平衡に達するまでに吸収された熱量は何 kJ か．"
+     },
+     {
+      "id": "3",
+      "tex": "平衡時の混合気体の体積は何 L か．"
+     },
+     {
+      "id": "4",
+      "tex": "この温度での濃度平衡定数 $K_c$ を単位とともに求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "温度を $500\\,\\mathrm K$ に保ち，全圧 $2.0\\times10^5\\,\\mathrm{Pa}$ で同じ実験を行うと，平衡に達するまでに吸収される熱量は (2) と比べて大きいか，小さいか．理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{PCl5}$ $0.67\\,\\mathrm{mol}$，$\\ce{PCl3}$ $0.33\\,\\mathrm{mol}$，$\\ce{Cl2}$ $0.33\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "2",
+    "tex": "$29\\,\\mathrm{kJ}$"
+   },
+   {
+    "id": "3",
+    "tex": "$55\\,\\mathrm L$"
+   },
+   {
+    "id": "4",
+    "tex": "$3.0\\times10^{-3}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "5",
+    "tex": "小さい（加圧で平衡が気体分子数の減る左へ移動し，分解する $\\ce{PCl5}$ が減るから）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 分解した $\\ce{PCl5}$ を $x$ mol とすると，$\\ce{PCl5}$ $1.00-x$，$\\ce{PCl3}$ $x$，$\\ce{Cl2}$ $x$，合計 $1.00+x$．体積百分率＝モル分率より\n\\[ \\dfrac{x}{1.00+x}=0.25\\quad\\Rightarrow\\quad x=\\dfrac13=0.333 \\]\n$\\ce{PCl5}$ $\\boldsymbol{0.67}$，$\\ce{PCl3}$ $\\boldsymbol{0.33}$，$\\ce{Cl2}$ $\\boldsymbol{0.33\\,\\mathrm{mol}}$．\\\\\n\\textbf{(2)} $\\ce{PCl5}$ $1\\,\\mathrm{mol}$ の分解で $88\\,\\mathrm{kJ}$ 吸収するので $88\\times\\dfrac13=\\boldsymbol{29\\,\\mathrm{kJ}}$．\\\\\n\\textbf{(3)} $V=\\dfrac{nRT}{P}=\\dfrac{1.333\\times8.3\\times10^3\\times500}{1.0\\times10^5}=55.3\\fallingdotseq\\boldsymbol{55\\,\\mathrm L}$．\\\\\n\\textbf{(4)} \\[ K_c=\\dfrac{[\\ce{PCl3}][\\ce{Cl2}]}{[\\ce{PCl5}]}=\\dfrac{(0.333/55.3)^2}{0.667/55.3}=3.0\\times10^{-3}\\,\\mathrm{mol/L} \\]\n\\textbf{(5)} 加圧すると平衡は気体分子数の減る左へ移動し，平衡時に分解している $\\ce{PCl5}$ が少なくなる．吸収熱量は分解量に比例するので\\textbf{小さい}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "平衡時の体積百分率（モル分率）から分解量を逆算し，反応エンタルピーから出入りする熱量，状態方程式から体積を求める．圧力を変えると平衡の移動で反応量が変わり，出入りする熱量も変わることを比較する．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "nitrogen-phosphorus",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "平衡定数",
+  "モル分率",
+  "反応エンタルピー",
+  "五塩化リン",
+  "平衡の移動"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

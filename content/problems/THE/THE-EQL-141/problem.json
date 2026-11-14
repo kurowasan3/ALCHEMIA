@@ -1,0 +1,117 @@
+{
+ "id": "THE-EQL-141",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "速く生じる生成物と安定な生成物（速度支配から平衡支配への移り変わりと前駆平衡の近似）",
+ "course": "化学",
+ "level": 4,
+ "minutes": 35,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "化合物 A は，次の 2 つの可逆反応によって異性体 B と C に変化する．各反応は 1 段階で起こり，速度定数（単位 $/\\mathrm{min}$）は次のとおりである．\n\\[\\text{反応 (1)}:\\ \\ce{A <=>[\\text{}] B}\\ \\ (k_1 = 1.0,\\ k_{-1} = 0.50)\\qquad \\text{反応 (2)}:\\ \\ce{A <=>[\\text{}] C}\\ \\ (k_2 = 0.050,\\ k_{-2} = 0.0050)\\]\n$k_1$，$k_2$ は正反応，$k_{-1}$，$k_{-2}$ は逆反応の速度定数である．\n各物質の物質量の変化の速さは，$\\dfrac{dn_{\\mathrm{B}}}{dt} = k_1 n_{\\mathrm{A}} - k_{-1} n_{\\mathrm{B}}$，$\\dfrac{dn_{\\mathrm{C}}}{dt} = k_2 n_{\\mathrm{A}} - k_{-2} n_{\\mathrm{C}}$ で表されるものとする（体積一定）．時刻 $t = 0$ に A だけが $1.0\\,\\mathrm{mol}$ ある．$\\log_e 2 = 0.69$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "反応開始直後に生じる B と C の物質量の比 $n_{\\mathrm{B}}/n_{\\mathrm{C}}$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "十分に時間がたって平衡に達したときの A，B，C の物質量を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "反応 (1) は反応 (2) よりはるかに速いので，反応開始から数分後には A と B の間で平衡（$n_{\\mathrm{B}} = 2n_{\\mathrm{A}}$）がほぼ成り立ったまま，C がゆっくり増えていくとみなせる．この近似のもとで $\\dfrac{dn_{\\mathrm{C}}}{dt}$ を $n_{\\mathrm{C}}$ だけの式で表せ．また，$n_{\\mathrm{C}}$ が平衡での値の半分に達する時刻を有効数字 2 桁で求めよ（$\\dfrac{dx}{dt} = -kx$ の解は $x = x_0e^{-kt}$ である）．"
+     },
+     {
+      "id": "4",
+      "tex": "$n_{\\mathrm{B}}$ は時間とともにどのように変化するか．最も適切なものを選べ．\\\\\n(ア) 単調に増加して平衡値 $0.15\\,\\mathrm{mol}$ に近づく．\\\\\n(イ) 数分で約 $0.6\\,\\mathrm{mol}$ の最大値に達したのち，ゆっくり減少して平衡値に近づく．\\\\\n(ウ) 単調に減少する．\\\\\n(エ) 反応開始直後から平衡値 $0.15\\,\\mathrm{mol}$ のまま変わらない．"
+     },
+     {
+      "id": "5",
+      "tex": "B をできるだけ多く得たい．反応をどの時点で止めるのがよいか．また，C をできるだけ多く得たい場合はどうすればよいか．それぞれ簡潔に答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "20"
+   },
+   {
+    "id": "2",
+    "tex": "A $0.077\\,\\mathrm{mol}$，B $0.15\\,\\mathrm{mol}$，C $0.77\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\dfrac{dn_{\\mathrm{C}}}{dt} = \\dfrac{k_2}{3}(1.0 - n_{\\mathrm{C}}) - k_{-2}n_{\\mathrm{C}} = 0.0167 - 0.0217\\,n_{\\mathrm{C}}$，約 $32\\,\\mathrm{min}$"
+   },
+   {
+    "id": "4",
+    "tex": "(イ)"
+   },
+   {
+    "id": "5",
+    "tex": "B：A と B の平衡がほぼ成り立つ数分後（約 3 分）に止める．C：十分に長い時間反応させて平衡に到達させる．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 開始直後は $n_{\\mathrm{B}}$，$n_{\\mathrm{C}}$ がほぼ 0 で逆反応は無視でき，生成の速さの比は $k_1 n_{\\mathrm{A}} : k_2 n_{\\mathrm{A}} = 1.0:0.050$．$n_{\\mathrm{B}}/n_{\\mathrm{C}} = \\boldsymbol{20}$（速度定数の比で決まる：速度支配）．\n\n\\textbf{(2)} 平衡では $\\dfrac{n_{\\mathrm{B}}}{n_{\\mathrm{A}}} = \\dfrac{k_1}{k_{-1}} = 2.0$，$\\dfrac{n_{\\mathrm{C}}}{n_{\\mathrm{A}}} = \\dfrac{k_2}{k_{-2}} = 10$．$n_{\\mathrm{A}}(1 + 2 + 10) = 1.0$ より $n_{\\mathrm{A}} = \\dfrac{1}{13}$．A $\\boldsymbol{0.077}$，B $\\boldsymbol{0.15}$，C $\\boldsymbol{0.77\\,\\mathrm{mol}}$．このとき $n_{\\mathrm{B}}/n_{\\mathrm{C}} = 0.20$ で，(1) と大小が逆転する（平衡支配）．\n\n\\textbf{(3)} A と B の合計は $1.0 - n_{\\mathrm{C}}$ で，$n_{\\mathrm{B}} = 2n_{\\mathrm{A}}$ なので $n_{\\mathrm{A}} = \\dfrac{1.0 - n_{\\mathrm{C}}}{3}$．\n\\[\\frac{dn_{\\mathrm{C}}}{dt} = \\frac{k_2}{3}(1.0 - n_{\\mathrm{C}}) - k_{-2}n_{\\mathrm{C}} = \\boldsymbol{0.0167 - 0.0217\\,n_{\\mathrm{C}}}\\]\n平衡値 $n_{\\mathrm{C}}^{\\mathrm{eq}} = \\dfrac{0.0167}{0.0217} = 0.77$（(2) と一致）を用いて $x = n_{\\mathrm{C}}^{\\mathrm{eq}} - n_{\\mathrm{C}}$ とおくと $\\dfrac{dx}{dt} = -0.0217x$．$x$ が初めの半分になる時刻は\n\\[t = \\frac{\\log_e 2}{\\dfrac{k_2}{3} + k_{-2}} = \\frac{0.69}{0.0217} \\fallingdotseq \\boldsymbol{32\\,\\mathrm{min}}\\]\n（A–B の平衡ができるまでの数分間に生じる C はわずかなので，近似はよく成り立つ．厳密に数値計算しても約 31 分である．）C の生成の見かけの速さは $k_2$ ではなく，A が全体の $1/3$ しかないことを反映した $k_2/3$ で決まる．\n\n\\textbf{(4)} A–B の平衡は $k_1 + k_{-1} = 1.5\\,/\\mathrm{min}$ の速さで数分のうちにでき，そのとき $n_{\\mathrm{B}} \\fallingdotseq \\dfrac23(1.0 - n_{\\mathrm{C}})$ で約 $0.6\\,\\mathrm{mol}$ になる．その後は C が増えるにつれて A と B が一緒に減り，平衡値 $0.15\\,\\mathrm{mol}$ に近づく．\\textbf{(イ)}（数値計算では $t \\fallingdotseq 3\\,\\mathrm{min}$ で最大値 $0.62\\,\\mathrm{mol}$）．\n\n\\textbf{(5)} B は「速くできるが不安定な」生成物なので，A–B の平衡がほぼ成立し C がまだ少ない\\textbf{数分後（約 3 分）に反応を止めて}取り出す．C は「遅いが安定な」生成物なので，\\textbf{十分長く反応させて平衡に到達させる}（時間が足りなければ，より高温で速めて平衡に早く到達させる）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "共通の反応物から速い可逆反応と遅い可逆反応が並行するとき，初期の生成物比は速度定数の比（速度支配），最終の比は平衡定数の比（平衡支配）で決まり，両者は逆転しうる．速い平衡が成り立ったまま遅い反応が進むとする前駆平衡の近似で，遅い生成物の見かけの速度定数（k₂ に A の割合を掛けたもの＋逆反応）と途中で極大をとる中間的な生成物の挙動を導く．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "reaction-rate"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "速度支配",
+  "平衡支配",
+  "前駆平衡",
+  "可逆反応",
+  "反応速度",
+  "近似"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

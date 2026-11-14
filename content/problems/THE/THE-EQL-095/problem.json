@@ -1,0 +1,108 @@
+{
+ "id": "THE-EQL-095",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "水素吸蔵合金の解離平衡と不活性気体を含む混合気体の圧縮",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある水素吸蔵合金 M は，次の可逆反応で水素を吸蔵して固体 $\\ce{MH2}$ になる．\n\\[\\ce{MH2(s) <=>[\\text{}] M(s) + H2(g)}\\]\n固体の量は平衡に影響しないので，この平衡の圧平衡定数は $K_\\mathrm{p} = p_{\\ce{H2}}$（水素の分圧）で表される．$27\\,^\\circ\\mathrm{C}$ では $K_\\mathrm{p} = 1.50 \\times 10^{5}\\,\\mathrm{Pa}$ であり，水素の分圧がこれより小さいときは吸蔵は起こらない．\n\nピストン付きの容器に，十分な量の M（水素を吸蔵していない）と，水素 $0.600\\,\\mathrm{mol}$・窒素 $0.400\\,\\mathrm{mol}$ の混合気体を入れ，$27\\,^\\circ\\mathrm{C}$，全圧 $1.00 \\times 10^{5}\\,\\mathrm{Pa}$ とした．その後，温度を $27\\,^\\circ\\mathrm{C}$ に保ったまま，ゆっくり圧縮した．窒素は吸蔵されず，固体の体積は無視でき，気体は理想気体とする．気体定数は $R = 8.31 \\times 10^{3}\\,\\mathrm{Pa \\cdot L/(K \\cdot mol)}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "圧縮前の気体の体積は何 L か，有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "水素の吸蔵が始まるときの全圧は何 Pa か，有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "さらに圧縮して全圧が $6.00 \\times 10^{5}\\,\\mathrm{Pa}$ になったとき，M に吸蔵された水素は何 mol か．また，そのときの気体の体積は何 L か．それぞれ有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "窒素を入れずに水素 $0.600\\,\\mathrm{mol}$ だけで同じ操作を行った．吸蔵が始まってから，気体の水素がすべて吸蔵されるまでの間，体積を小さくしていくと全圧はどうなるか．「増加する」「一定である」「減少する」から選び，理由を簡潔に述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$25\\,\\mathrm{L}$"
+   },
+   {
+    "id": "2",
+    "tex": "$2.5 \\times 10^{5}\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "3",
+    "tex": "吸蔵された水素 $0.47\\,\\mathrm{mol}$，体積 $2.2\\,\\mathrm{L}$"
+   },
+   {
+    "id": "4",
+    "tex": "一定である（気体は水素だけで，その分圧は $K_\\mathrm{p}$ に固定されるから）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　$V = \\dfrac{nRT}{P} = \\dfrac{1.000 \\times 8.31 \\times 10^{3} \\times 300}{1.00 \\times 10^{5}} = 24.9 \\fallingdotseq \\boldsymbol{25\\,\\mathrm{L}}$．\n\n\\textbf{(2) 吸蔵の始まり}　吸蔵が始まるまでは気体の物質量は一定で，水素のモル分率は $0.600$ のまま．水素の分圧が $K_\\mathrm{p}$ に達したとき吸蔵が始まるので\n\\[P = \\dfrac{1.50 \\times 10^{5}}{0.600} = \\boldsymbol{2.5 \\times 10^{5}\\,\\mathrm{Pa}}\\]\n\n\\textbf{(3) 吸蔵が進んでいる間}　固体 $\\ce{M}$ と $\\ce{MH2}$ が共存している間は，水素の分圧は $K_\\mathrm{p} = 1.50 \\times 10^{5}\\,\\mathrm{Pa}$ に固定される．よって窒素の分圧は $6.00 \\times 10^{5} - 1.50 \\times 10^{5} = 4.50 \\times 10^{5}\\,\\mathrm{Pa}$．同じ容器・同じ温度では分圧の比＝物質量の比なので，気体の水素は\n\\[n_{\\ce{H2}} = 0.400 \\times \\dfrac{1.50}{4.50} = 0.133\\,\\mathrm{mol}\\]\n吸蔵された水素は $0.600 - 0.133 = 0.467 \\fallingdotseq \\boldsymbol{0.47\\,\\mathrm{mol}}$．体積は窒素について\n\\[V = \\dfrac{0.400 \\times 8.31 \\times 10^{3} \\times 300}{4.50 \\times 10^{5}} = 2.22 \\fallingdotseq \\boldsymbol{2.2\\,\\mathrm{L}}\\]\n\n\\textbf{(4) 水素だけのとき}　気体は水素だけで，固体が共存する間その分圧（＝全圧）は $K_\\mathrm{p}$ に固定される．体積を小さくすると，その分の水素が吸蔵されて気体の物質量が減り，圧力は $1.50 \\times 10^{5}\\,\\mathrm{Pa}$ のまま $\\boldsymbol{\\text{一定である}}$（水の凝縮が起こっている間の水蒸気の圧力と同じ考え方）．窒素がある場合は，窒素の分圧が圧縮で増えるので全圧は増加し続ける点が異なる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "固体と気体の平衡では気体の分圧が圧平衡定数に固定されるので，吸蔵の開始は水素の分圧が K_p に達したときで決まり，吸蔵が進む間は他の気体の分圧から気体の水素の量が求まる．気体が水素だけなら圧縮しても圧力は一定のままである．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "水素吸蔵合金",
+  "圧平衡定数",
+  "固体を含む平衡",
+  "分圧",
+  "圧縮"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

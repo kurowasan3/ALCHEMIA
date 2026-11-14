@@ -1,0 +1,107 @@
+{
+ "id": "THE-EQL-158",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "解離吸着と分子状吸着の判別（吸着量の圧力依存性の直線化）",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "金属表面には気体を吸着できる場所（サイト）が $N_{0}\\,\\mathrm{mol}$ あり，1 つのサイトには原子または分子が 1 個だけ吸着でき，吸着は互いに影響しないとする．占められたサイトの割合を被覆率 $\\theta$ とする．\\\\\n【分子状吸着】（$\\ce{H2}$ が分子のまま 1 サイトに吸着）：吸着速度 $k_{\\mathrm a}P(1-\\theta)$，脱着速度 $k_{\\mathrm d}\\theta$．平衡では $\\theta=\\dfrac{KP}{1+KP}$（$K=k_{\\mathrm a}/k_{\\mathrm d}$）．\\\\\n【解離吸着】（$\\ce{H2}$ が 2 個の H 原子に分かれて，隣り合う空いたサイト 2 つに吸着）：吸着速度 $k_{\\mathrm a}'P(1-\\theta)^{2}$，脱着（H 原子 2 個が出会って $\\ce{H2}$ として離れる）速度 $k_{\\mathrm d}'\\theta^{2}$．$K'=k_{\\mathrm a}'/k_{\\mathrm d}'$ とする．\\\\\nある金属粉末に，一定温度でさまざまな圧力 $P$ の $\\ce{H2}$ を吸着させ，吸着した $\\ce{H2}$ の物質量 $n$ を測定した．\n\\begin{center}\n\\begin{tabular}{c|cccc}\n$P$〔Pa〕 & $25$ & $100$ & $400$ & $1600$ \\\\ \\hline\n$n$〔$10^{-5}\\,\\mathrm{mol}$〕 & $0.909$ & $1.67$ & $2.86$ & $4.44$\n\\end{tabular}\n\\end{center}"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "解離吸着の平衡での $\\theta$ を $K'$ と $P$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "分子状吸着なら $P/n$ が $P$ の 1 次関数に，解離吸着なら $\\sqrt{P}/n$ が $\\sqrt{P}$ の 1 次関数になることを示せ（$n$ と $\\theta$ の関係に注意）．"
+     },
+     {
+      "id": "3",
+      "tex": "表のデータはどちらのモデルに従うか．根拠となる計算を示して判定し，サイトの総数 $N_{0}$〔mol〕と $K'$〔$\\mathrm{/Pa}$〕を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "この金属で，サイトのちょうど半分が H 原子で占められる $\\ce{H2}$ の圧力を求めよ．また，十分に低い圧力の領域で $\\ce{H2}$ の圧力を $1/4$ にすると，吸着量はおよそ何倍になるか．分子状吸着する気体の場合と比べて答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\theta=\\dfrac{\\sqrt{K'P}}{1+\\sqrt{K'P}}$"
+   },
+   {
+    "id": "2",
+    "tex": "分子状：$n=N_{0}\\theta$ より $\\dfrac{P}{n}=\\dfrac{1}{N_{0}}P+\\dfrac{1}{N_{0}K}$．解離：$\\ce{H2}$ 1 分子で 2 サイトなので $n=\\dfrac{N_{0}\\theta}{2}$，$\\dfrac{\\sqrt{P}}{n}=\\dfrac{2}{N_{0}}\\sqrt{P}+\\dfrac{2}{N_{0}\\sqrt{K'}}$．"
+   },
+   {
+    "id": "3",
+    "tex": "$P/n$ は $2.75,\\,5.99,\\,14.0,\\,36.0$（$\\times10^{6}$）で $P$ に対する傾きが一定でないが，$\\sqrt{P}/n$ は $5.50,\\,5.99,\\,6.99,\\,9.01$（$\\times10^{5}$）で $\\sqrt{P}$ に対する傾きが一定（$1.0\\times10^{4}$）なので解離吸着．$N_{0}=2.0\\times10^{-4}\\,\\mathrm{mol}$，$K'=4.0\\times10^{-4}\\,\\mathrm{/Pa}$．"
+   },
+   {
+    "id": "4",
+    "tex": "$2.5\\times10^{3}\\,\\mathrm{Pa}$．解離吸着では吸着量は $\\sqrt{P}$ に比例するので約 $1/2$ 倍，分子状吸着なら $P$ に比例して $1/4$ 倍．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 平衡では $k_{\\mathrm a}'P(1-\\theta)^{2}=k_{\\mathrm d}'\\theta^{2}$，すなわち $\\left(\\dfrac{\\theta}{1-\\theta}\\right)^{2}=K'P$．$0<\\theta<1$ なので $\\dfrac{\\theta}{1-\\theta}=\\sqrt{K'P}$，\n\\[ \\theta=\\boldsymbol{\\frac{\\sqrt{K'P}}{1+\\sqrt{K'P}}} \\]\n\\textbf{(2)} 分子状吸着では $\\ce{H2}$ 1 分子が 1 サイトを占めるので $n=N_{0}\\theta=\\dfrac{N_{0}KP}{1+KP}$．逆数をとって $P$ を掛けると $\\dfrac{P}{n}=\\dfrac{1+KP}{N_{0}K}=\\dfrac{1}{N_{0}}P+\\dfrac{1}{N_{0}K}$．\\\\\n解離吸着では $\\ce{H2}$ 1 分子が H 原子 2 個として 2 サイトを占めるので $n=\\dfrac{N_{0}\\theta}{2}$．同様に\n\\[ \\frac{\\sqrt{P}}{n}=\\frac{2(1+\\sqrt{K'P})}{N_{0}\\sqrt{K'}}=\\frac{2}{N_{0}}\\sqrt{P}+\\frac{2}{N_{0}\\sqrt{K'}} \\]\n\\textbf{(3)} 分子状モデルの検討：$P/n$〔$\\mathrm{Pa/mol}$〕は $2.75\\times10^{6}$，$5.99\\times10^{6}$，$1.40\\times10^{7}$，$3.60\\times10^{7}$．隣どうしの傾きは $4.3\\times10^{4}$，$2.7\\times10^{4}$，$1.8\\times10^{4}$ と小さくなり，直線にならない．\\\\\n解離モデルの検討：$\\sqrt{P}=5,\\,10,\\,20,\\,40$ に対し $\\sqrt{P}/n$ は $5.50\\times10^{5}$，$5.99\\times10^{5}$，$6.99\\times10^{5}$，$9.01\\times10^{5}$．傾きは $\\dfrac{0.49\\times10^{5}}{5}\\fallingdotseq\\dfrac{1.00\\times10^{5}}{10}\\fallingdotseq\\dfrac{2.02\\times10^{5}}{20}\\fallingdotseq1.0\\times10^{4}$ で一定，すなわち\\textbf{解離吸着}．\\\\\n傾き $\\dfrac{2}{N_{0}}=1.0\\times10^{4}$ より $N_{0}=\\boldsymbol{2.0\\times10^{-4}\\,\\mathrm{mol}}$．切片は $5.50\\times10^{5}-1.0\\times10^{4}\\times5=5.0\\times10^{5}$ で，$\\dfrac{2}{N_{0}\\sqrt{K'}}=\\dfrac{1.0\\times10^{4}}{\\sqrt{K'}}=5.0\\times10^{5}$ より $\\sqrt{K'}=2.0\\times10^{-2}$，$K'=\\boldsymbol{4.0\\times10^{-4}\\,\\mathrm{/Pa}}$．\n\n\\textbf{(4)} $\\theta=\\frac{1}{2}$ は $\\sqrt{K'P}=1$，$P=1/K'=\\boldsymbol{2.5\\times10^{3}\\,\\mathrm{Pa}}$．\\\\\n低圧で $\\sqrt{K'P}\\ll1$ なら $\\theta\\fallingdotseq\\sqrt{K'P}$ で，吸着量は $\\sqrt{P}$ に比例する．$P$ を $1/4$ にすると吸着量は $\\boldsymbol{1/2}$ 倍にしかならない．分子状吸着なら $\\theta\\fallingdotseq KP$ で $\\boldsymbol{1/4}$ 倍．解離吸着では，脱着に H 原子 2 個が出会う必要があり（速度が $\\theta^{2}$ に比例），被覆率が低いほど脱着しにくいため，低圧でも吸着量が保たれやすい．\nこのように，吸着量の圧力依存性をどの形に直線化できるかで，気体が表面で解離しているかどうかを判定できる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "解離吸着では吸着・脱着の速度がそれぞれ空きサイト・被覆率の 2 乗に比例するので被覆率は √(K'P)/(1+√(K'P)) となり，吸着した分子の数はサイトの半分で数える．吸着量のデータを P/n–P と √P/n–√P の両方で直線化して，どちらが直線になるかから吸着の様式を判定し，傾きと切片からサイト数と平衡定数を求める．低圧での圧力依存性（P か √P か）の違いも比べる．"
+ },
+ "concepts": [
+  "chemical-equilibrium"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "吸着平衡",
+  "ラングミュア型",
+  "解離吸着",
+  "直線化",
+  "触媒"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "id": "THE-GAS-054",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-08",
+ "topic": "密閉容器内の水の電気分解と水蒸気圧を含む圧力変化",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "白金電極 2 本と圧力計を備えた密閉できる容器に，硫酸ナトリウム水溶液を入れた．気相部分の体積は $500\\,\\mathrm{mL}$ で，電気分解の前後で変わらないものとする．温度を $27\\,^\\circ\\mathrm{C}$ に保ってバルブを開き，気相の圧力を大気圧 $1.013\\times10^{5}\\,\\mathrm{Pa}$ にしてからバルブを閉じた．\n次に，$27\\,^\\circ\\mathrm{C}$ のまま $0.500\\,\\mathrm{A}$ の電流を 32 分 10 秒間流して電気分解した．気相では常に水の気液平衡が成り立ち，水蒸気圧は $27\\,^\\circ\\mathrm{C}$ で $3.6\\times10^{3}\\,\\mathrm{Pa}$，$47\\,^\\circ\\mathrm{C}$ で $1.06\\times10^{4}\\,\\mathrm{Pa}$ とする．気体の水への溶解，溶質による水蒸気圧の変化，電気分解による液体の量の変化は無視する．ファラデー定数は $9.65\\times10^{4}\\,\\mathrm{C/mol}$，気体定数は $8.31\\times10^{3}\\,\\mathrm{Pa\\cdot L/(mol\\cdot K)}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "陰極と陽極で起こる変化を，電子 $\\ce{e-}$ を含むイオン反応式で示せ．"
+     },
+     {
+      "id": "2",
+      "tex": "バルブを閉じた直後の気相の空気の分圧を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "電気分解で発生した気体の物質量の合計を求めよ．また，電気分解後（$27\\,^\\circ\\mathrm{C}$）の圧力計の値を有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "電気分解後，容器全体を $47\\,^\\circ\\mathrm{C}$ にした．圧力計の値を有効数字 3 桁で求めよ．また，「容器内の気体の全圧が絶対温度に比例して増える」としてボイル・シャルルの法則だけで計算すると，値はどうなるか．大きくなる・小さくなるのどちらかで答え，その理由を述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "陰極：$\\ce{2H2O + 2e- -> H2 + 2OH-}$，陽極：$\\ce{2H2O -> O2 + 4H+ + 4e-}$"
+   },
+   {
+    "id": "2",
+    "tex": "$9.77\\times10^{4}\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "3",
+    "tex": "$7.50\\times10^{-3}\\,\\mathrm{mol}$，$1.39\\times10^{5}\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "4",
+    "tex": "$1.55\\times10^{5}\\,\\mathrm{Pa}$；小さくなる（全圧を比例させると $1.48\\times10^{5}\\,\\mathrm{Pa}$）．水蒸気の分圧は温度に比例するのではなく，その温度の蒸気圧（$3.6\\times10^{3}$ → $1.06\\times10^{4}\\,\\mathrm{Pa}$）まで液体の蒸発によって大きく増えるから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　$\\ce{Na+}$ や $\\ce{SO4^2-}$ は反応せず，水が反応する．\n\\[ \\text{陰極}:\\ \\ce{2H2O + 2e- -> H2 + 2OH-} \\qquad \\text{陽極}:\\ \\ce{2H2O -> O2 + 4H+ + 4e-} \\]\n\n\\textbf{(2)}　気相は空気と水蒸気の混合物で，水蒸気の分圧は蒸気圧に等しい．空気の分圧は $1.013\\times10^5-3.6\\times10^3=\\boldsymbol{9.77\\times10^{4}\\,\\mathrm{Pa}}$．\n\n\\textbf{(3)}　電気量は $0.500\\times1930=965\\,\\mathrm{C}$，電子は $965/(9.65\\times10^4)=1.00\\times10^{-2}\\,\\mathrm{mol}$．\n$\\ce{H2}$ は電子 2 mol につき 1 mol で $5.00\\times10^{-3}\\,\\mathrm{mol}$，$\\ce{O2}$ は電子 4 mol につき 1 mol で $2.50\\times10^{-3}\\,\\mathrm{mol}$，合計 $\\boldsymbol{7.50\\times10^{-3}\\,\\mathrm{mol}}$．\nこれによる分圧の増加は\n\\[ \\frac{7.50\\times10^{-3}\\times8.31\\times10^3\\times300}{0.500}=3.74\\times10^4\\,\\mathrm{Pa} \\]\n空気の分圧と水蒸気圧は変わらないので，圧力計は $1.013\\times10^5+3.74\\times10^4=1.387\\times10^5\\fallingdotseq\\boldsymbol{1.39\\times10^{5}\\,\\mathrm{Pa}}$．\n\n\\textbf{(4)}　空気・$\\ce{H2}$・$\\ce{O2}$ は体積一定で絶対温度に比例する．$27\\,^\\circ\\mathrm{C}$ での分圧の和は $9.77\\times10^4+3.74\\times10^4=1.351\\times10^5$ なので，$47\\,^\\circ\\mathrm{C}$ では\n\\[ 1.351\\times10^5\\times\\frac{320}{300}=1.441\\times10^5\\,\\mathrm{Pa} \\]\n水蒸気は液体の水が残っているので $47\\,^\\circ\\mathrm{C}$ の蒸気圧 $1.06\\times10^4\\,\\mathrm{Pa}$ になる．全圧は $1.441\\times10^5+1.06\\times10^4=1.547\\times10^5\\fallingdotseq\\boldsymbol{1.55\\times10^{5}\\,\\mathrm{Pa}}$．\n全圧 $1.387\\times10^5$ をそのまま $\\dfrac{320}{300}$ 倍すると $1.48\\times10^5\\,\\mathrm{Pa}$ となり，\\textbf{小さくなる}．水蒸気の分圧は気体の量が一定のまま温度に比例して増えるのではなく，液体の蒸発によってその温度の蒸気圧（約 3 倍）まで増えるので，ボイル・シャルルの法則を全圧に当てはめることはできない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "液体の水と共存する気相では水蒸気の分圧は常にその温度の蒸気圧であり，電気分解で生じた H2・O2 や空気の分圧だけが物質量と温度に比例して変わる．全圧は「蒸気圧＋その他の気体の分圧」として計算し，加熱時に全圧へボイル・シャルルの法則を当てはめてはいけない．"
+ },
+ "concepts": [
+  "ideal-gas",
+  "mole",
+  "electrolysis"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電気分解",
+  "水蒸気圧",
+  "分圧",
+  "気体の状態方程式",
+  "ファラデー定数"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

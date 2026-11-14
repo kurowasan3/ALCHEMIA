@@ -1,0 +1,109 @@
+{
+ "id": "THE-GAS-072",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-08",
+ "topic": "蒸発熱と外圧から求める沸点の変化（水とエタノールの比較）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "液体の飽和蒸気圧 $P$ と絶対温度 $T$ の間には，蒸発熱 $\\Delta H$（$\\mathrm{J/mol}$，温度によらず一定とする）を用いて，次の関係が近似的に成り立つ．\n\\[\n\\log_{10}P=-\\frac{\\Delta H}{2.303RT}+C\\qquad(C\\ \\text{は物質ごとの定数})\n\\]\n液体は飽和蒸気圧が外圧に等しくなる温度で沸騰する．大気圧 $P_0=1.013\\times10^5\\,\\mathrm{Pa}$ での沸点は，水が $373\\,\\mathrm K$，エタノールが $351\\,\\mathrm K$ であり，蒸発熱は水が $40.7\\,\\mathrm{kJ/mol}$，エタノールが $38.6\\,\\mathrm{kJ/mol}$ である．\n（$R=8.31\\,\\mathrm{J/(K\\cdot mol)}$，$\\log_{10}2=0.301$，$\\log_{10}7=0.845$）"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "上の式を使って，外圧 $P$ のもとでの沸点 $T$ と大気圧での沸点 $T_0$ の関係を，$C$ を含まない式で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "外圧が $P_0$ の $0.70$ 倍の高地で，水は何 $^\\circ\\mathrm C$ で沸騰するか．整数で答えよ（$0^\\circ\\mathrm C=273\\,\\mathrm K$）．"
+     },
+     {
+      "id": "3",
+      "tex": "外圧を $P_0$ の $2.0$ 倍にした圧力鍋の中で，水は何 $^\\circ\\mathrm C$ で沸騰するか．整数で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "外圧が $P_0$ の $0.70$ 倍のとき，水とエタノールの沸点は大気圧のときよりそれぞれ何 K 下がるか．小数第 1 位まで求めよ．また，「蒸発熱が小さい液体ほど，外圧が変わったときの沸点の変化が大きい」という考えが正しいかどうかを，この結果をもとに，沸点の低下がおよそ何に比例するかを示して説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\log_{10}\\dfrac{P}{P_0}=-\\dfrac{\\Delta H}{2.303R}\\left(\\dfrac1T-\\dfrac1{T_0}\\right)$"
+   },
+   {
+    "id": "2",
+    "tex": "$90^\\circ\\mathrm C$"
+   },
+   {
+    "id": "3",
+    "tex": "$121^\\circ\\mathrm C$"
+   },
+   {
+    "id": "4",
+    "tex": "水 $9.9\\,\\mathrm K$，エタノール $9.2\\,\\mathrm K$．正しくない．沸点の低下はおよそ $T_0^{\\,2}/\\Delta H$ に比例し，エタノールは $\\Delta H$ が小さいが $T_0$ も低いので $T_0^{\\,2}/\\Delta H$ は水より小さく（水 $3.42$，エタノール $3.19$，単位 $\\mathrm{K^2\\,mol/J}$），沸点の低下は水より小さい．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}\\quad 沸点では飽和蒸気圧が外圧に等しいので，外圧 $P$ のとき $\\log_{10}P=-\\dfrac{\\Delta H}{2.303RT}+C$，外圧 $P_0$ のとき $\\log_{10}P_0=-\\dfrac{\\Delta H}{2.303RT_0}+C$．辺々引いて $C$ を消すと\n\\[\n\\log_{10}\\frac{P}{P_0}=-\\frac{\\Delta H}{2.303R}\\left(\\frac1T-\\frac1{T_0}\\right)\n\\quad\\Longleftrightarrow\\quad \\frac1T=\\frac1{T_0}-\\frac{2.303R}{\\Delta H}\\log_{10}\\frac{P}{P_0}\n\\]\n\n\\textbf{(2)}\\quad $\\log_{10}0.70=\\log_{10}7-1=-0.155$．\n\\[\n\\frac1T=\\frac1{373}+\\frac{2.303\\times8.31\\times0.155}{40.7\\times10^3}=2.681\\times10^{-3}+7.29\\times10^{-5}=2.754\\times10^{-3}\n\\]\n$T=363\\,\\mathrm K$，すなわち $\\boldsymbol{90^\\circ\\mathrm C}$．外圧が下がると，より低い温度で蒸気圧が外圧に届く．\n\n\\textbf{(3)}\\quad $\\log_{10}2.0=0.301$ なので\n$\\dfrac1T=2.681\\times10^{-3}-\\dfrac{2.303\\times8.31\\times0.301}{40.7\\times10^3}=2.681\\times10^{-3}-1.415\\times10^{-4}=2.539\\times10^{-3}$，\n$T=394\\,\\mathrm K$，すなわち $\\boldsymbol{121^\\circ\\mathrm C}$．\n\n\\textbf{(4)}\\quad エタノールも同様に\n$\\dfrac1T=\\dfrac1{351}+\\dfrac{2.303\\times8.31\\times0.155}{38.6\\times10^3}=2.849\\times10^{-3}+7.69\\times10^{-5}=2.926\\times10^{-3}$，$T=341.8\\,\\mathrm K$．\n沸点の低下は 水 $373-363.1=\\boldsymbol{9.9\\,\\mathrm K}$，エタノール $351-341.8=\\boldsymbol{9.2\\,\\mathrm K}$．\n\n$T$ と $T_0$ が近いとき $\\dfrac1{T_0}-\\dfrac1T=\\dfrac{T-T_0}{TT_0}\\approx\\dfrac{T-T_0}{T_0^{\\,2}}$ なので\n\\[\nT_0-T\\approx\\frac{2.303R\\,T_0^{\\,2}}{\\Delta H}\\left|\\log_{10}\\frac{P}{P_0}\\right|\n\\]\n沸点の変化は $\\Delta H$ だけでなく $T_0^{\\,2}$ にも比例する．$T_0^{\\,2}/\\Delta H$ は 水 $373^2/40700=3.42$，エタノール $351^2/38600=3.19$ で，エタノールのほうが小さい．蒸発熱は小さくても，もとの沸点が低いことの効果のほうが大きいので，「蒸発熱が小さいほど沸点の変化が大きい」という考えは\\textbf{正しくない}（同じ $T_0$ どうしで比べたときにだけ成り立つ）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "蒸気圧の式 log P = −ΔH/(2.303RT) + C を 2 つの外圧で引き算すると定数が消え，外圧の比だけから沸点が求まる．沸点の変化はおよそ T0²/ΔH に比例するので，蒸発熱の大小だけでなくもとの沸点の高さも効き，蒸発熱の小さい液体のほうが沸点の変化が小さい場合がある．"
+ },
+ "concepts": [
+  "ideal-gas",
+  "vapor-pressure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "蒸気圧",
+  "沸点",
+  "外圧",
+  "蒸発熱",
+  "圧力鍋",
+  "クラウジウス・クラペイロンの式"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

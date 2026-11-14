@@ -1,0 +1,107 @@
+{
+ "id": "THE-GAS-025",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-08",
+ "topic": "ファンデルワールスの状態方程式による補正の比較",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "実在気体 1 mol に対するファンデルワールスの状態方程式は\n\\[\\left(P+\\dfrac{a}{V^{2}}\\right)(V-b)=RT\\]\nで表される．$a$ は分子間力の強さ，$b$ は分子自身の体積に関係する定数である．メタンと水素の定数は次のとおりとし，$R=8.3\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$ とする．\n\\[\\begin{array}{c|cc} & a\\,(\\mathrm{Pa\\cdot L^2/mol^2}) & b\\,(\\mathrm{L/mol})\\\\\\hline \\ce{CH4} & 2.3\\times10^{5} & 0.043\\\\ \\ce{H2} & 2.5\\times10^{4} & 0.027\\end{array}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "メタン 1.0 mol を 300 K で容積 $0.50\\,\\mathrm L$ の容器に入れたときの圧力を，理想気体の状態方程式とファンデルワールスの状態方程式でそれぞれ求めよ．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) のメタンについて，ファンデルワールスの式による圧力を用いて $\\dfrac{PV}{RT}$ を有効数字2桁で求めよ．また，$a$ による補正と $b$ による補正のどちらの影響が大きいといえるか．"
+     },
+     {
+      "id": "3",
+      "tex": "同じ条件（1.0 mol，300 K，$0.50\\,\\mathrm L$）で水素について $\\dfrac{PV}{RT}$ を求め，メタンと比べて 1 より大きいか小さいかの違いが生じる理由を説明せよ．有効数字3桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$a$ の値が大きい物質ほど沸点や蒸発エンタルピーが大きい傾向がある．その理由を述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "理想気体：$5.0\\times10^{6}\\,\\mathrm{Pa}$，ファンデルワールス：$4.5\\times10^{6}\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "2",
+    "tex": "0.91，$a$ による補正（分子間力）の影響の方が大きい"
+   },
+   {
+    "id": "3",
+    "tex": "1.04．水素は $a$ が小さく分子間力による圧力の減少がわずかで，分子自身の体積（$b$）による圧力の増加の方が上回るから．メタンは $a$ が大きく，分子間力による減少が上回るので 1 より小さい．"
+   },
+   {
+    "id": "4",
+    "tex": "$a$ が大きいほど分子間力が強く，液体から分子を引き離して気体にするのに多くのエネルギーが必要になるから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ファンデルワールスの式を変形すると $P=\\dfrac{RT}{V-b}-\\dfrac{a}{V^{2}}$．第1項は分子の体積による圧力の増加，第2項は分子間力による圧力の減少を表す．$RT=8.3\\times10^{3}\\times300=2.49\\times10^{6}\\,\\mathrm{Pa\\cdot L/mol}$．\n\n\\textbf{(1)}　理想気体：$P=\\dfrac{2.49\\times10^{6}}{0.50}=4.98\\times10^{6}\\approx\\boldsymbol{5.0\\times10^{6}\\,\\mathrm{Pa}}$．\nファンデルワールス：\\[P=\\dfrac{2.49\\times10^{6}}{0.50-0.043}-\\dfrac{2.3\\times10^{5}}{0.50^{2}}=5.45\\times10^{6}-0.92\\times10^{6}=4.53\\times10^{6}\\approx\\boldsymbol{4.5\\times10^{6}\\,\\mathrm{Pa}}\\]\n\n\\textbf{(2)}　$\\dfrac{PV}{RT}=\\dfrac{4.53\\times10^{6}\\times0.50}{2.49\\times10^{6}}=0.909\\approx\\boldsymbol{0.91}$．$b$ による補正は理想気体の値より $0.47\\times10^{6}\\,\\mathrm{Pa}$ 圧力を上げ，$a$ による補正は $0.92\\times10^{6}\\,\\mathrm{Pa}$ 下げる．\\textbf{$a$（分子間力）の影響の方が大きい}ので 1 より小さい．\n\n\\textbf{(3)}　\\[P=\\dfrac{2.49\\times10^{6}}{0.50-0.027}-\\dfrac{2.5\\times10^{4}}{0.50^{2}}=5.26\\times10^{6}-0.10\\times10^{6}=5.16\\times10^{6}\\,\\mathrm{Pa}\\]\n$\\dfrac{PV}{RT}=\\dfrac{5.16\\times10^{6}\\times0.50}{2.49\\times10^{6}}=\\boldsymbol{1.04}$．水素は分子間力がきわめて弱く（$a$ が小さい），体積の効果（$b$）が勝つため 1 より大きくなる．\n\n\\textbf{(4)}　$a$ は分子間の引力の強さを表す．引力が強い物質ほど，液体の分子を引き離して気体にするのに多くのエネルギー（蒸発エンタルピー）が必要で，蒸気圧が外圧に達するにも高い温度（沸点）が必要になる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ファンデルワールスの式の2つの補正項（分子の体積による圧力の増加と分子間力による圧力の減少）の大きさを数値で比べ，実在気体の PV/RT が1より大きくなるか小さくなるかを判断する．"
+ },
+ "concepts": [
+  "ideal-gas",
+  "intermolecular"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "実在気体",
+  "ファンデルワールスの状態方程式",
+  "分子間力",
+  "圧縮因子"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

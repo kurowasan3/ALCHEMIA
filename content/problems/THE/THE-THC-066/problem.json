@@ -1,0 +1,109 @@
+{
+ "id": "THE-THC-066",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-10",
+ "topic": "硝酸アンモニウム爆薬の酸素収支と質量あたりの発熱量",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "硝酸アンモニウム $\\ce{NH4NO3}$（固体）は，起爆すると窒素・水蒸気・酸素に分解する．これに燃料を混ぜた爆薬が鉱山などで使われている．ここでは燃料を炭素 $\\ce{C}$（黒鉛）とみなして考える．生成エンタルピー〔kJ/mol〕は $\\ce{NH4NO3}$(固) $-366$，$\\ce{H2O}$(気) $-242$，$\\ce{CO2}$(気) $-394$，$\\ce{CO}$(気) $-111$ とし，原子量は H = 1.0，C = 12，N = 14，O = 16 とする．生じる水はすべて気体とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{NH4NO3}$ だけが分解する反応の化学反応式を書き，$\\ce{NH4NO3}$ $1\\,\\mathrm{kg}$ あたりの反応エンタルピー〔kJ〕を有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$\\ce{NH4NO3}$ の分解で生じる $\\ce{O2}$ がちょうど炭素をすべて $\\ce{CO2}$ にする（$\\ce{O2}$ も炭素も余らない）混合物について，$\\ce{NH4NO3}$ と $\\ce{C}$ の物質量の比を求め，反応の化学反応式を書け．また，混合物 $1\\,\\mathrm{kg}$ あたりの反応エンタルピー〔kJ〕を有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\ce{C}$ と $\\ce{NH4NO3}$ の物質量の比 $\\ce{C}/\\ce{NH4NO3}$ が (A) 0.25，(B) 0.50，(C) 1.0 の 3 種類の混合物がある．(C) では酸素が不足し，炭素はすべて $\\ce{CO}$ になるとする．混合物 $1\\,\\mathrm{kg}$ あたりの発熱量の大きい順に並べよ．また，(A)，(C) が (B) より発熱量が小さい理由をそれぞれ簡潔に述べよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(2) の混合物 $1.00\\,\\mathrm{kg}$ が反応したときに生じる気体（水蒸気を含む）の物質量〔mol〕を有効数字 3 桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{2NH4NO3 -> 2N2 + 4H2O + O2}$，$-1.48\\times10^{3}\\,\\mathrm{kJ}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{NH4NO3}:\\ce{C}=2:1$，$\\ce{2NH4NO3 + C -> 2N2 + 4H2O + CO2}$，$-3.66\\times10^{3}\\,\\mathrm{kJ}$"
+   },
+   {
+    "id": "3",
+    "tex": "(B)＞(A)＞(C)．(A) は $\\ce{O2}$ が余り，燃えない $\\ce{NH4NO3}$ の分の質量が増えるだけで発熱にならないから．(C) は酸素が不足して炭素が $\\ce{CO}$ までしか酸化されず，$\\ce{CO2}$ にするときより発熱が小さいうえ，炭素の質量も増えるから．"
+   },
+   {
+    "id": "4",
+    "tex": "$40.7\\,\\mathrm{mol}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　反応エンタルピー＝（生成物の生成エンタルピーの和）−（反応物の生成エンタルピーの和）．単体（$\\ce{N2}$，$\\ce{O2}$，$\\ce{C}$）は 0．\n\n(1) N・H・O の数を合わせると $\\ce{2NH4NO3 -> 2N2 + 4H2O + O2}$．\n\\[\\Delta H = 4\\times(-242)-2\\times(-366)=-236\\,\\mathrm{kJ}\\quad(\\ce{NH4NO3}\\ 2\\,\\mathrm{mol}=160\\,\\mathrm{g}\\ \\text{あたり})\\]\n$1\\,\\mathrm{kg}$ あたり $-236\\times\\dfrac{1000}{160}=\\boldsymbol{-1.48\\times10^{3}\\,\\mathrm{kJ}}$．$\\ce{NH4NO3}$ 2 mol で $\\ce{O2}$ が 1 mol 余っている（酸素が過剰な爆薬）．\n\n(2) 余る $\\ce{O2}$ 1 mol で $\\ce{C}$ 1 mol が $\\ce{CO2}$ になるので $\\ce{NH4NO3}:\\ce{C}=\\boldsymbol{2:1}$，$\\boldsymbol{\\ce{2NH4NO3 + C -> 2N2 + 4H2O + CO2}}$．\n\\[\\Delta H = 4\\times(-242)+(-394)-2\\times(-366)=-630\\,\\mathrm{kJ}\\quad(160+12=172\\,\\mathrm{g}\\ \\text{あたり})\\]\n$1\\,\\mathrm{kg}$ あたり $-630\\times\\dfrac{1000}{172}=\\boldsymbol{-3.66\\times10^{3}\\,\\mathrm{kJ}}$．燃料を加えると，(1) で余っていた酸素が燃料の燃焼に使われるので，質量あたりの発熱が約 2.5 倍になる．\n\n(3) それぞれ $1\\,\\mathrm{kg}$ あたりで計算すると，\n(A) $\\ce{4NH4NO3 + C -> 4N2 + 8H2O + CO2 + O2}$：$\\Delta H=-866\\,\\mathrm{kJ}/332\\,\\mathrm{g}$ → 約 $2.61\\times10^{3}\\,\\mathrm{kJ}$ の発熱．\n(B) (2) より $3.66\\times10^{3}\\,\\mathrm{kJ}$．\n(C) $\\ce{NH4NO3 + C -> N2 + 2H2O + CO}$：$\\Delta H=-458\\,\\mathrm{kJ}/184\\,\\mathrm{g}$（2 mol ずつあたり）→ 約 $2.49\\times10^{3}\\,\\mathrm{kJ}$．\nよって \\textbf{(B)＞(A)＞(C)}．酸素がちょうど過不足ない組成（酸素収支がゼロ）で質量あたりの発熱が最大になる．(A) では余った $\\ce{O2}$ を生じる分の $\\ce{NH4NO3}$ が発熱に寄与しない「重り」になり，(C) では炭素の酸化が $\\ce{CO}$ で止まる（$\\ce{CO}$ の生成エンタルピーは $\\ce{CO2}$ の約 3 割）．(C) は有毒な $\\ce{CO}$ を生じる点でも好ましくない．\n\n(4) (2) の式で反応物 172 g から気体 $2+4+1=7\\,\\mathrm{mol}$ が生じる．$7\\times\\dfrac{1000}{172}=\\boldsymbol{40.7\\,\\mathrm{mol}}$．固体から一瞬で多量の高温の気体が生じることが爆発の力になる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "爆薬の分解生成物は分子内の酸素で決まり，生成エンタルピーから反応エンタルピーを求める．酸素が余る組成では余りを生む分の質量が，酸素が足りない組成では CO で止まる酸化が発熱を下げるので，質量あたりの発熱は酸素が過不足ない組成で最大になる．"
+ },
+ "concepts": [
+  "enthalpy",
+  "oxygen-sulfur",
+  "nitrogen-phosphorus"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応エンタルピー",
+  "生成エンタルピー",
+  "硝酸アンモニウム",
+  "爆発",
+  "酸素収支"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

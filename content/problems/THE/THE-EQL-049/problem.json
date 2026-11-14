@@ -1,0 +1,110 @@
+{
+ "id": "THE-EQL-049",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "逐次・競合反応としてのアルキル化と原料過剰の効果",
+ "course": "化学",
+ "level": 5,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ベンゼン（B）にエチレン（E）を酸触媒で反応させるとエチルベンゼン（M）が生じるが，M はさらに E と反応してジエチルベンゼン（D）になる．\n\\[\\ce{C6H6 + C2H4 -> C6H5C2H5}\\qquad v_1 = k_1[\\mathrm{B}][\\mathrm{E}]\\]\n\\[\\ce{C6H5C2H5 + C2H4 -> C6H4(C2H5)2}\\qquad v_2 = k_2[\\mathrm{M}][\\mathrm{E}]\\]\nアルキル基はベンゼン環の電子密度を高めるので，M は B より反応しやすい．ここでは $k_2 = 2k_1$ とし，D はこれ以上反応しないものとする．温度一定でよくかき混ぜた液体の B $n_0\\,[\\mathrm{mol}]$ に E を少しずつ吹き込み，吹き込んだ E はすべて反応させる．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ある瞬間の M と B の物質量の比を $r = n_\\mathrm{M}/n_\\mathrm{B}$ とする．この瞬間の $v_2/v_1$ を $r$ で表せ．また，E の吹き込み方（溶液中の E の濃度）を変えても，生成物の組成が E の総量だけで決まる理由を述べよ．"
+     },
+     {
+      "id": "2",
+      "tex": "B の残っている割合を $f = n_\\mathrm{B}/n_0$ とすると，$n_\\mathrm{M} = n_0 f(1-f)$，$n_\\mathrm{D} = n_0(1-f)^2$ が成り立つ．$f$ がわずかに $\\Delta f$ だけ減る（B が $n_0\\Delta f$ 消費される）間の M の正味の増加量と D の増加量を，$\\Delta f$ の2乗の項を無視して求め，それらが (1) の速さの比と矛盾しないことを確かめよ．"
+     },
+     {
+      "id": "3",
+      "tex": "B $1.0\\,\\mathrm{mol}$ あたり E $0.10\\,\\mathrm{mol}$ を反応させたとき，生成物の物質量比 $n_\\mathrm{D}/n_\\mathrm{M}$ を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$n_\\mathrm{D}/n_\\mathrm{M}$ を $0.010$ 以下にするには，B $1.0\\,\\mathrm{mol}$ あたりの E を何 mol 以下にすればよいか．有効数字2桁で答えよ．また，このとき工業的には未反応の B をどうするのがよいか述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$v_2/v_1 = 2r$；$v_1$ と $v_2$ はどちらも $[\\mathrm{E}]$ に比例するので，比をとると $[\\mathrm{E}]$ が消え，各瞬間の生成の割合が B と M の量だけで決まるから"
+   },
+   {
+    "id": "2",
+    "tex": "M の正味の増加量 $n_0(2f-1)\\Delta f$，D の増加量 $2n_0(1-f)\\Delta f$；B の消費 $n_0\\Delta f$ は $v_1$，D の増加は $v_2$ に比例し，$v_2/v_1 = 2(1-f) = 2r$ となって前問の速さの比と一致する（M の正味の増加 ＝ $v_1 - v_2$ に比例する量とも一致）"
+   },
+   {
+    "id": "3",
+    "tex": "0.10"
+   },
+   {
+    "id": "4",
+    "tex": "0.010 mol 以下（B を E の 100 倍以上の物質量で用いる）；未反応の多量の B は蒸留で回収して原料として再び使う"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 同じ溶液中なので濃度の比は物質量の比に等しく\n\\[\\frac{v_2}{v_1} = \\frac{k_2[\\mathrm{M}][\\mathrm{E}]}{k_1[\\mathrm{B}][\\mathrm{E}]} = \\frac{2n_\\mathrm{M}}{n_\\mathrm{B}} = \\boldsymbol{2r}\\]\n$[\\mathrm{E}]$ は打ち消し合うので，E をゆっくり吹き込んでも速く吹き込んでも，各瞬間に「E 1 分子が B と M のどちらと反応するか」の割合は B と M の量の比だけで決まる．したがって生成物の組成は，これまでに反応した E の量（B の消費の程度）だけで決まる．\n\n\\textbf{(2)} $n_\\mathrm{M} = n_0(f - f^2)$ より，$f \\to f - \\Delta f$ で\n\\[\\Delta n_\\mathrm{M} = n_0\\{(f - \\Delta f) - (f - \\Delta f)^2 - f + f^2\\} = n_0(2f - 1)\\Delta f - n_0(\\Delta f)^2 \\fallingdotseq n_0(2f-1)\\Delta f\\]\n\\[\\Delta n_\\mathrm{D} = n_0\\{(1 - f + \\Delta f)^2 - (1 - f)^2\\} \\fallingdotseq 2n_0(1 - f)\\Delta f\\]\nB の消費量 $n_0\\Delta f$ は反応1の量（$v_1$），D の増加量は反応2の量（$v_2$）なので，$\\dfrac{v_2}{v_1} = \\dfrac{2n_0(1-f)\\Delta f}{n_0\\Delta f} = 2(1-f)$．一方 $2r = \\dfrac{2n_0f(1-f)}{n_0f} = 2(1-f)$ で一致する．M の正味の増加は（反応1で生成）$-$（反応2で消費）$= n_0\\Delta f\\{1 - 2(1-f)\\} = n_0(2f-1)\\Delta f$ となり，これも一致する．\n\n\\textbf{(3)} 消費された E は $n_\\mathrm{M} + 2n_\\mathrm{D} = n_0\\{f(1-f) + 2(1-f)^2\\} = n_0(1-f)(2-f)$．これが $0.10n_0$ なので\n\\[f^2 - 3f + 1.9 = 0,\\qquad f = \\frac{3 - \\sqrt{1.4}}{2} = 0.9084\\quad(0 < f \\le 1 \\text{ の解})\\]\n\\[\\frac{n_\\mathrm{D}}{n_\\mathrm{M}} = \\frac{(1-f)^2}{f(1-f)} = \\frac{1-f}{f} = \\frac{0.0916}{0.9084} \\fallingdotseq \\boldsymbol{0.10}\\]\nE の約 17 % が D の生成に使われたことになる．\n\n\\textbf{(4)} $\\dfrac{1-f}{f} \\le 0.010$ より $f \\ge \\dfrac{1}{1.01} = 0.9901$．このとき E は $(1-f)(2-f) = 0.0099\\times1.0099 \\fallingdotseq 0.010$，すなわち B $1.0\\,\\mathrm{mol}$ あたり \\textbf{0.010 mol 以下}（B を E の約 100 倍の物質量で用いる）．\\\\\nB のほとんどは反応せずに残るので，工業的には未反応の B を蒸留で分けて反応器に戻し，繰り返し使う．$k_2 > k_1$ の逐次反応では，目的の一置換体の割合を高めるには原料 B を大過剰にして M の濃度を低く保つしかない．逆に，置換によって環の電子密度が下がる反応（ニトロ化など，$k_2 < k_1$）では多置換は起こりにくい．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "生成物が原料より速く反応する逐次・競合反応では，両反応の速さの比が共通の反応相手の濃度によらず物質量比だけで決まるので，組成は反応した量だけの関数になる．与えられた組成の式を速さの比と照合し，副生成物の割合を抑えるのに必要な原料の過剰の程度を定量的に求める．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "aromatic",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "逐次反応",
+  "競合反応",
+  "反応速度",
+  "アルキル化",
+  "エチルベンゼン",
+  "原料過剰"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

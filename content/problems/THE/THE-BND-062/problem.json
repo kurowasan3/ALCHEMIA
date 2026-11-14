@@ -1,0 +1,117 @@
+{
+ "id": "THE-BND-062",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-03",
+ "topic": "イオン化エネルギーと電子親和力から決める電気陰性度（マリケン）と結合の極性",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "原子 1 個あたりのイオン化エネルギー $I$ と電子親和力 $E$ を表に示す（単位 $10^{-19}\\,\\mathrm{J}$）．\n\\[\n\\begin{array}{c|cccc}\n & \\mathrm{H} & \\mathrm{Na} & \\mathrm{F} & \\mathrm{Cl} \\\\ \\hline\nI & 21.8 & 8.2 & 27.9 & 20.8 \\\\\nE & 1.2 & 0.9 & 5.4 & 5.8\n\\end{array}\n\\]\n2 原子 X，Z からなる分子 XZ で，X から Z へ電子 1 個を移して $\\ce{X+}$ と $\\ce{Z-}$ をつくるのに必要なエネルギーは $I_\\mathrm{X} - E_\\mathrm{Z}$，逆向きに移して $\\ce{X-}$ と $\\ce{Z+}$ をつくるのに必要なエネルギーは $I_\\mathrm{Z} - E_\\mathrm{X}$ である．マリケンは，$\\chi = \\dfrac{I+E}{2}$ を原子の電気陰性度とした．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{X+Z-}$ をつくる方が $\\ce{X-Z+}$ をつくるより必要なエネルギーが小さくなる条件を，$\\chi_\\mathrm{X}$ と $\\chi_\\mathrm{Z}$ の大小で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "Cl の $\\chi$ を求めよ（単位 $10^{-19}\\,\\mathrm{J}$，有効数字 3 桁）．また，H，Na，F，Cl を $\\chi$ の大きい順に並べよ．"
+     },
+     {
+      "id": "3",
+      "tex": "電子親和力は Cl の方が F より大きいのに，電気陰性度は F の方が大きい．その理由を表の値にもとづいて述べよ．"
+     },
+     {
+      "id": "4",
+      "tex": "気体中で孤立した Na 原子と Cl 原子から $\\ce{Na+}$ と $\\ce{Cl-}$ をつくるのに必要なエネルギーを求めよ．また，距離 $r$ だけ離れたイオンの対は，静電気的な引力により $\\dfrac{k}{r}$（$k = 2.3\\times10^{-28}\\,\\mathrm{J\\cdot m}$）だけ安定になる．イオンの対 $\\ce{Na+Cl-}$ が 2 個の中性原子よりエネルギーが低くなるのは，$r$ が何 m より小さいときか．有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "HCl 分子の電気双極子モーメントの大きさは $3.6\\times10^{-30}\\,\\mathrm{C\\cdot m}$，原子間距離は $1.27\\times10^{-10}\\,\\mathrm{m}$ である．H と Cl の原子がそれぞれ $+\\delta$，$-\\delta$ の電荷をもつとみなしたとき，$\\delta$ は電気素量 $1.60\\times10^{-19}\\,\\mathrm{C}$ の何倍か．有効数字 2 桁で答えよ．また，負の電荷を帯びるのはどちらの原子か．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\chi_\\mathrm{Z} > \\chi_\\mathrm{X}$"
+   },
+   {
+    "id": "2",
+    "tex": "$13.3\\times10^{-19}\\,\\mathrm{J}$．F ＞ Cl ＞ H ＞ Na"
+   },
+   {
+    "id": "3",
+    "tex": "F はイオン化エネルギーが Cl よりはるかに大きく（$27.9$ と $20.8$），電子を放しにくさの差が電子親和力の小さな差（$5.4$ と $5.8$）を大きく上回るから"
+   },
+   {
+    "id": "4",
+    "tex": "$2.4\\times10^{-19}\\,\\mathrm{J}$，$r < 9.6\\times10^{-10}\\,\\mathrm{m}$"
+   },
+   {
+    "id": "5",
+    "tex": "$0.18$ 倍．Cl"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\ce{X+Z-}$ の方が有利な条件は\n\\[I_\\mathrm{X} - E_\\mathrm{Z} < I_\\mathrm{Z} - E_\\mathrm{X} \\iff I_\\mathrm{X} + E_\\mathrm{X} < I_\\mathrm{Z} + E_\\mathrm{Z} \\iff \\boldsymbol{\\chi_\\mathrm{Z} > \\chi_\\mathrm{X}}\\]\n（静電気的な安定化はどちらのイオン対でも同じとみなせる）．$\\chi$ の大きい原子が負電荷を帯びる．\n\n\\textbf{(2)} $\\chi_\\mathrm{Cl} = (20.8+5.8)/2 = \\boldsymbol{13.3\\times10^{-19}\\,\\mathrm{J}}$．\n同様に H：$11.5$，Na：$4.55$，F：$(27.9+5.4)/2 = 16.65$．\nよって $\\boldsymbol{\\mathrm{F > Cl > H > Na}}$．\n\n\\textbf{(3)} $\\chi$ は「電子を引きつける力（$E$）」と「電子を放しにくさ（$I$）」の平均である．$E$ は Cl の方が $0.4$ だけ大きいが，$I$ は F の方が $7.1$ も大きい．F は原子半径が小さく，原子核が電子を強く引きつけるので $I$ が大きい．その差が効いて $I+E$ は F（$33.3$）の方が Cl（$26.6$）より大きくなる．\n\n\\textbf{(4)} 必要なエネルギー $= I_\\mathrm{Na} - E_\\mathrm{Cl} = 8.2 - 5.8 = \\boldsymbol{2.4\\times10^{-19}\\,\\mathrm{J}}$（正なので，離れたままではイオンになる方が不利）．\n引力による安定化 $k/r$ がこれを上回ればよい：\n\\[\\frac{k}{r} > 2.4\\times10^{-19} \\iff r < \\frac{2.3\\times10^{-28}}{2.4\\times10^{-19}} = \\boldsymbol{9.6\\times10^{-10}\\,\\mathrm{m}}\\]\n実際の NaCl 分子の原子間距離（約 $2.4\\times10^{-10}\\,\\mathrm{m}$）はこれよりずっと短いので，イオン結合をつくった方が安定になる．\n\n\\textbf{(5)} 双極子モーメント $= \\delta \\times L$ より\n\\[\\delta = \\frac{3.6\\times10^{-30}}{1.27\\times10^{-10}} = 2.83\\times10^{-20}\\,\\mathrm{C},\\qquad \\frac{\\delta}{1.60\\times10^{-19}} = \\boldsymbol{0.18}\\]\n電子が完全に移った場合（1 倍）の約 2 割で，共有結合に部分的なイオン性が加わった状態．$\\chi$ の大きい $\\boldsymbol{\\mathrm{Cl}}$ が負電荷を帯びる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "電子を一方の原子へ移すのに必要なエネルギーを両方向で比べると，I+E の大きい原子が負電荷を帯びることになり，これがマリケンの電気陰性度になる．電子親和力の大小と電気陰性度の大小が一致しない例を I の寄与で説明し，イオン対の静電的安定化との比較や双極子モーメントから部分電荷の大きさを見積もる．"
+ },
+ "concepts": [
+  "chemical-bond",
+  "periodicity",
+  "intermolecular"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電気陰性度",
+  "イオン化エネルギー",
+  "電子親和力",
+  "双極子モーメント",
+  "極性"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

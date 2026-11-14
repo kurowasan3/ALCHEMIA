@@ -1,0 +1,109 @@
+{
+ "id": "THE-EQL-064",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "シクロデキストリンの包接平衡と溶解度（複合体の組成の判定）",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "シクロデキストリン（CD）は筒状の環状オリゴ糖で，内側の空洞に疎水性の分子（ゲスト）を取り込んで水に溶ける複合体をつくる．水に溶けにくい固体のゲストを，CD を含む水溶液に過剰に加えてよく振り混ぜ，平衡に達した後の溶液中のゲストの全濃度 $S_\\mathrm T$（遊離のゲストと複合体中のゲストの和）を測定した．固体のゲストが残っている限り，遊離のゲストの濃度は CD の有無によらず一定値 $S_0$（CD がないときの溶解度）に保たれるものとする．加えた CD の全濃度を $C_\\mathrm T$ とし，CD と複合体はすべて溶けているとする．\\\\\nゲスト X（$S_0=2.0\\times10^{-4}\\,\\mathrm{mol/L}$）とゲスト Y（$S_0=1.0\\times10^{-4}\\,\\mathrm{mol/L}$）について次の結果を得た（単位はいずれも $10^{-3}\\,\\mathrm{mol/L}$）．\n\\[\\begin{array}{c|ccccc} C_\\mathrm T & 0 & 2.0 & 4.0 & 6.0 & 8.0 \\\\ \\hline S_\\mathrm T\\ (\\mathrm X) & 0.20 & 1.20 & 2.20 & 3.20 & 4.20 \\end{array} \\qquad \\begin{array}{c|cccccc} C_\\mathrm T & 0 & 1.2 & 2.8 & 4.8 & 7.2 & 10.0 \\\\ \\hline S_\\mathrm T\\ (\\mathrm Y) & 0.10 & 0.20 & 0.50 & 1.00 & 1.70 & 2.60 \\end{array}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ゲスト G と CD が 1:1 の複合体 G·CD をつくる場合（$\\mathrm{G}+\\mathrm{CD}\\rightleftarrows\\mathrm{G{\\cdot}CD}$，平衡定数 $K_1=\\dfrac{[\\mathrm{G{\\cdot}CD}]}{[\\mathrm G][\\mathrm{CD}]}$），$S_\\mathrm T$ を $S_0$，$K_1$，$C_\\mathrm T$ で表せ．また，$C_\\mathrm T$ に対する $S_\\mathrm T$ のグラフの傾きが 1 を超えない理由を述べよ．"
+     },
+     {
+      "id": "2",
+      "tex": "X は CD と 1:1 の複合体をつくる．$K_1$ を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "Y の結果は 1:1 の複合体では説明できないことを示せ．また，Y 1 分子が CD 2 分子に挟まれた複合体 $\\mathrm{Y{\\cdot}CD_2}$ だけをつくる（$K_2=\\dfrac{[\\mathrm{Y{\\cdot}CD_2}]}{[\\mathrm Y][\\mathrm{CD}]^2}$）と考えると説明できることを示し，$K_2$ を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "Y について，$C_\\mathrm T=2.0\\times10^{-2}\\,\\mathrm{mol/L}$ のときの $S_\\mathrm T$ を有効数字 2 桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$S_\\mathrm T=S_0+\\dfrac{K_1S_0}{1+K_1S_0}C_\\mathrm T$．理由：CD 1 分子が取り込めるゲストは 1 分子までで，加えた CD の一部は遊離のまま残るから（傾き $\\dfrac{K_1S_0}{1+K_1S_0}<1$）"
+   },
+   {
+    "id": "2",
+    "tex": "$5.0\\times10^{3}\\,\\mathrm{L/mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "1:1 なら $\\dfrac{S_\\mathrm T-S_0}{C_\\mathrm T}$ は一定のはずだが，Y では $0.083$ から $0.25$ まで増加するので説明できない．$\\mathrm{Y{\\cdot}CD_2}$ とすると，遊離の CD の濃度 $C_\\mathrm T-2(S_\\mathrm T-S_0)$ が $1.0,\\ 2.0,\\ 3.0,\\ 4.0,\\ 5.0\\,(\\times10^{-3}\\,\\mathrm{mol/L})$ となり，$\\dfrac{S_\\mathrm T-S_0}{[\\mathrm{CD}]^2}$ がすべて $100\\,\\mathrm{L/mol}$ で一定になる．$K_2=1.0\\times10^{6}\\,(\\mathrm{L/mol})^2$"
+   },
+   {
+    "id": "4",
+    "tex": "$6.2\\times10^{-3}\\,\\mathrm{mol/L}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 遊離のゲストは $[\\mathrm G]=S_0$ に固定されるので $[\\mathrm{G{\\cdot}CD}]=K_1S_0[\\mathrm{CD}]$．CD の保存 $C_\\mathrm T=[\\mathrm{CD}]+[\\mathrm{G{\\cdot}CD}]$ と合わせて\n\\[ [\\mathrm{G{\\cdot}CD}]=\\dfrac{K_1S_0}{1+K_1S_0}C_\\mathrm T,\\qquad S_\\mathrm T=S_0+[\\mathrm{G{\\cdot}CD}]=S_0+\\dfrac{K_1S_0}{1+K_1S_0}C_\\mathrm T \\]\n$C_\\mathrm T$ の 1 次式（直線）になる．傾き $\\dfrac{K_1S_0}{1+K_1S_0}$ は CD のうち複合体になっている割合で，CD 1 分子あたりゲストは多くても 1 分子，しかも遊離の CD が必ず残るので\\textbf{1 より小さい}．\\\\\n\\textbf{(2)} X の傾きは $\\dfrac{(4.20-0.20)\\times10^{-3}}{8.0\\times10^{-3}}=0.50$ で一定（直線）．\n\\[ \\dfrac{K_1S_0}{1+K_1S_0}=0.50 \\ \\Longrightarrow\\ K_1S_0=1.0 \\ \\Longrightarrow\\ K_1=\\dfrac{1.0}{2.0\\times10^{-4}}=\\boldsymbol{5.0\\times10^{3}\\,\\mathrm{L/mol}} \\]\n\\textbf{(3)} 1:1 なら，(1) より $\\dfrac{S_\\mathrm T-S_0}{C_\\mathrm T}$ は一定．Y では\n\\[ \\dfrac{0.10}{1.2}=0.083,\\ \\ \\dfrac{0.40}{2.8}=0.14,\\ \\ \\dfrac{0.90}{4.8}=0.19,\\ \\ \\dfrac{1.60}{7.2}=0.22,\\ \\ \\dfrac{2.50}{10.0}=0.25 \\]\nと増加し（グラフが下に凸），1:1 では説明できない．\\\\\n$\\mathrm{Y{\\cdot}CD_2}$ をつくるとき，$[\\mathrm{Y{\\cdot}CD_2}]=S_\\mathrm T-S_0$，CD の保存から $[\\mathrm{CD}]=C_\\mathrm T-2(S_\\mathrm T-S_0)$．表から（単位 $10^{-3}\\,\\mathrm{mol/L}$）\n\\[ [\\mathrm{CD}]=1.2-0.2=1.0,\\ \\ 2.8-0.8=2.0,\\ \\ 4.8-1.8=3.0,\\ \\ 7.2-3.2=4.0,\\ \\ 10.0-5.0=5.0 \\]\n$[\\mathrm{Y{\\cdot}CD_2}]=0.10,\\ 0.40,\\ 0.90,\\ 1.60,\\ 2.50$ はちょうど $[\\mathrm{CD}]^2$ に比例し，$\\dfrac{[\\mathrm{Y{\\cdot}CD_2}]}{[\\mathrm{CD}]^2}=\\dfrac{0.10\\times10^{-3}}{(1.0\\times10^{-3})^2}=100\\,\\mathrm{L/mol}$ で一定．これは $K_2S_0$ に等しいので\n\\[ K_2=\\dfrac{100}{1.0\\times10^{-4}}=\\boldsymbol{1.0\\times10^{6}\\,(\\mathrm{L/mol})^2} \\]\nCD 2 分子が必要なので，CD が多いほど複合体のできる割合が急に増え，グラフが下に凸になる．\\\\\n\\textbf{(4)} $[\\mathrm{CD}]=x$ とおくと $[\\mathrm{Y{\\cdot}CD_2}]=100x^2$，CD の保存から $x+2\\times100x^2=2.0\\times10^{-2}$．\n\\[ 200x^2+x-0.020=0 \\ \\Longrightarrow\\ x=\\dfrac{-1+\\sqrt{1+16}}{400}=7.81\\times10^{-3}\\,\\mathrm{mol/L} \\]\n$[\\mathrm{Y{\\cdot}CD_2}]=100\\times(7.81\\times10^{-3})^2=6.10\\times10^{-3}$，$S_\\mathrm T=6.10\\times10^{-3}+1.0\\times10^{-4}=6.20\\times10^{-3}\\fallingdotseq\\boldsymbol{6.2\\times10^{-3}\\,\\mathrm{mol/L}}$．\\\\\n（CD の保存を考えずに $[\\mathrm{CD}]=C_\\mathrm T$ とすると $S_\\mathrm T=4.0\\times10^{-2}$ となり，加えた CD で取り込める上限 $C_\\mathrm T/2=1.0\\times10^{-2}$ を超えてしまう．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "固体のゲストが残る限り遊離のゲストの濃度は溶解度に固定されるので，包接平衡と CD の保存だけで溶解度の増加が決まる．1:1 複合体なら溶解度は CD の量に比例し傾きは 1 未満，ゲスト 1 個に CD 2 個の複合体なら遊離の CD の 2 乗に比例して下に凸になるので，データの形から組成と平衡定数が決まる．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "nitrogen-phosphorus",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "シクロデキストリン",
+  "包接化合物",
+  "化学平衡",
+  "溶解度",
+  "平衡定数"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

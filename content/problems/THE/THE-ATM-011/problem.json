@@ -1,0 +1,121 @@
+{
+ "id": "THE-ATM-011",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-01",
+ "topic": "同位体の組み合わせと分子の質量分布",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "臭素には $^{79}\\mathrm{Br}$（相対質量 79.0）と $^{81}\\mathrm{Br}$（相対質量 81.0）の2種類の同位体が存在し，その存在比はほぼ $1:1$ である．塩素には $^{35}\\mathrm{Cl}$（相対質量 35.0）と $^{37}\\mathrm{Cl}$（相対質量 37.0）が $3:1$ の比で存在する．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "臭素分子 $\\ce{Br2}$ には質量の異なる分子が何種類あるか．また，それらの存在比を，質量の小さいものから順に最も簡単な整数比で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "塩化臭素 $\\ce{BrCl}$ には質量の異なる分子が何種類あるか．それぞれの分子の相対質量と，その存在比（質量の小さいものから順に最も簡単な整数比）を答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\ce{BrCl}$ の平均分子量を小数第1位まで求め，臭素と塩素の原子量の和に等しくなることを確かめよ．"
+     },
+     {
+      "id": "4",
+      "tex": "ある元素 Z の単体は二原子分子 $\\ce{Z2}$ であり，質量の異なる3種類の分子の存在比が，質量の小さいものから順に $9:6:1$ であった．Z の2種類の同位体の存在比（軽いもの：重いもの）を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：同位体の組み合わせと分子の質量分布",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "3 種類，$1:2:1$"
+   },
+   {
+    "id": "2",
+    "tex": "3 種類，相対質量 114，116，118，存在比 $3:4:1$"
+   },
+   {
+    "id": "3",
+    "tex": "115.5"
+   },
+   {
+    "id": "4",
+    "tex": "$3:1$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "(1) $^{79}\\mathrm{Br}^{79}\\mathrm{Br}$（158），$^{79}\\mathrm{Br}^{81}\\mathrm{Br}$（160），$^{81}\\mathrm{Br}^{81}\\mathrm{Br}$（162）の $\\boldsymbol{\\text{3}}$ 種類．質量 160 の分子は「79 と 81」「81 と 79」の2通りの組み合わせからできるので，存在比は $\\tfrac12\\cdot\\tfrac12:2\\cdot\\tfrac12\\cdot\\tfrac12:\\tfrac12\\cdot\\tfrac12=\\boldsymbol{1:2:1}$．\n\n(2) 組み合わせは4通り：\n$^{79}\\mathrm{Br}^{35}\\mathrm{Cl}$ 114（$\\tfrac12\\times\\tfrac34=\\tfrac38$），$^{79}\\mathrm{Br}^{37}\\mathrm{Cl}$ 116（$\\tfrac12\\times\\tfrac14=\\tfrac18$），$^{81}\\mathrm{Br}^{35}\\mathrm{Cl}$ 116（$\\tfrac38$），$^{81}\\mathrm{Br}^{37}\\mathrm{Cl}$ 118（$\\tfrac18$）．\n質量 116 は2通りの組み合わせの合計 $\\tfrac18+\\tfrac38=\\tfrac48$．よって $\\boldsymbol{\\text{3}}$ 種類で，$\\boldsymbol{\\text{114：116：118 ＝ 3：4：1}}$．\n\n(3) \\[114\\times\\frac38+116\\times\\frac48+118\\times\\frac18=\\frac{924}{8}=\\boldsymbol{115.5}\\]\n臭素の原子量 $(79.0+81.0)/2=80.0$，塩素の原子量 $35.0\\times\\tfrac34+37.0\\times\\tfrac14=35.5$ で，和 115.5 と一致する．\n\n(4) 軽い同位体の割合を $p$，重いものを $q=1-p$ とすると，3種類の分子の比は $p^2:2pq:q^2=9:6:1$．$p:q=3:1$ のとき $9:6:1$ となる．答えは $\\boldsymbol{\\text{3：1}}$（塩素がこれにあたる）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "二原子分子の質量の分布は同位体の存在比の積で決まり，同じ質量になる組み合わせ（⁷⁹Br³⁷Cl と ⁸¹Br³⁵Cl など）は合算する．逆に分子の質量分布の比から同位体の存在比を求めることができる．"
+ },
+ "concepts": [
+  "electron-config"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "同位体",
+  "存在比",
+  "分子量",
+  "質量分析",
+  "逆算"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

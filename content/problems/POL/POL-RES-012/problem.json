@@ -1,0 +1,109 @@
+{
+ "id": "POL-RES-012",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-01",
+ "topic": "付加重合の開始剤の効率と平均分子量",
+ "course": "化学",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "メタクリル酸メチル $\\ce{CH2=C(CH3)COOCH3}$（分子量 100）$10.0\\,\\mathrm g$ に重合開始剤 $2.00\\times10^{-4}\\,\\mathrm{mol}$ を加えて付加重合させると，平均分子量 $5.00\\times10^{4}$ の重合体が $6.00\\,\\mathrm g$ 得られた．はたらいた開始剤 1 分子から重合体 1 分子ができるものとし，重合体の末端の開始剤の質量は無視する．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "単量体のうち重合体になったものは何 % か．"
+     },
+     {
+      "id": "2",
+      "tex": "重合体の平均重合度を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "加えた開始剤のうち，重合体の生成にはたらいたものは何 % か．"
+     },
+     {
+      "id": "4",
+      "tex": "開始剤を $4.00\\times10^{-4}\\,\\mathrm{mol}$ にし，(3) と同じ割合の開始剤がはたらいて，同じ $6.00\\,\\mathrm g$ の重合体ができたとすると，平均分子量はいくらになるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$60.0\\,\\%$"
+   },
+   {
+    "id": "2",
+    "tex": "500"
+   },
+   {
+    "id": "3",
+    "tex": "$60.0\\,\\%$"
+   },
+   {
+    "id": "4",
+    "tex": "$2.50\\times10^{4}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\dfrac{6.00}{10.0}\\times100 = \\boldsymbol{60.0\\,\\%}$．\\\\\n\\textbf{(2)} 繰り返し単位の式量は単量体と同じ 100 なので，$\\dfrac{5.00\\times10^{4}}{100} = \\boldsymbol{500}$．\\\\\n\\textbf{(3)} 重合体の分子は $\\dfrac{6.00}{5.00\\times10^{4}} = 1.20\\times10^{-4}\\,\\mathrm{mol}$．これがはたらいた開始剤の物質量なので，$\\dfrac{1.20\\times10^{-4}}{2.00\\times10^{-4}}\\times100 = \\boldsymbol{60.0\\,\\%}$．\\\\\n\\textbf{(4)} はたらく開始剤は $4.00\\times10^{-4}\\times0.600 = 2.40\\times10^{-4}\\,\\mathrm{mol}$ で，重合体の分子も同じ数できる．同じ質量を 2 倍の数の分子で分けるので，平均分子量は $\\dfrac{6.00}{2.40\\times10^{-4}} = \\boldsymbol{2.50\\times10^{4}}$ と半分になる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "開始剤 1 分子から高分子 1 分子ができるので，生成した高分子の物質量（質量÷平均分子量）がはたらいた開始剤の量に等しい．開始剤を増やすと分子の数が増え，同じ質量なら平均分子量は小さくなる．"
+ },
+ "concepts": [
+  "addition-polymer",
+  "hydrocarbon",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "付加重合",
+  "重合開始剤",
+  "平均分子量",
+  "重合度",
+  "メタクリル酸メチル"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

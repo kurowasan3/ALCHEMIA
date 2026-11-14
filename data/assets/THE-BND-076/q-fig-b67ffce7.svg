@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 290" width="500" height="290">
+<line x1="80.0" y1="255.0" x2="80.0" y2="85.0" stroke="currentColor" stroke-width="1.4"/>
+<line x1="80.0" y1="255.0" x2="173.5" y2="221.0" stroke="currentColor" stroke-width="1.4" stroke-dasharray="5 4" opacity="0.5"/>
+<line x1="80.0" y1="255.0" x2="250.0" y2="255.0" stroke="currentColor" stroke-width="1.4"/>
+<line x1="80.0" y1="85.0" x2="173.5" y2="51.0" stroke="currentColor" stroke-width="1.4"/>
+<line x1="80.0" y1="85.0" x2="250.0" y2="85.0" stroke="currentColor" stroke-width="1.4"/>
+<line x1="173.5" y1="221.0" x2="173.5" y2="51.0" stroke="currentColor" stroke-width="1.4" stroke-dasharray="5 4" opacity="0.5"/>
+<line x1="173.5" y1="221.0" x2="343.5" y2="221.0" stroke="currentColor" stroke-width="1.4" stroke-dasharray="5 4" opacity="0.5"/>
+<line x1="173.5" y1="51.0" x2="343.5" y2="51.0" stroke="currentColor" stroke-width="1.4"/>
+<line x1="250.0" y1="255.0" x2="250.0" y2="85.0" stroke="currentColor" stroke-width="1.4"/>
+<line x1="250.0" y1="255.0" x2="343.5" y2="221.0" stroke="currentColor" stroke-width="1.4"/>
+<line x1="250.0" y1="85.0" x2="343.5" y2="51.0" stroke="currentColor" stroke-width="1.4"/>
+<line x1="343.5" y1="221.0" x2="343.5" y2="51.0" stroke="currentColor" stroke-width="1.4"/>
+<line x1="211.8" y1="153.0" x2="80.0" y2="255.0" stroke="currentColor" stroke-width="1.4" opacity="0.8"/>
+<line x1="211.8" y1="153.0" x2="343.5" y2="221.0" stroke="currentColor" stroke-width="1.4" opacity="0.8"/>
+<line x1="211.8" y1="153.0" x2="250.0" y2="85.0" stroke="currentColor" stroke-width="1.4" opacity="0.8"/>
+<line x1="211.8" y1="153.0" x2="173.5" y2="51.0" stroke="currentColor" stroke-width="1.4" opacity="0.8"/>
+<circle cx="80.0" cy="255.0" r="11" fill="white" stroke="currentColor" stroke-width="1.6"/>
+<circle cx="80.0" cy="85.0" r="11" fill="white" stroke="currentColor" stroke-width="1.6"/>
+<circle cx="173.5" cy="221.0" r="11" fill="white" stroke="currentColor" stroke-width="1.6"/>
+<circle cx="173.5" cy="51.0" r="11" fill="white" stroke="currentColor" stroke-width="1.6"/>
+<circle cx="250.0" cy="255.0" r="11" fill="white" stroke="currentColor" stroke-width="1.6"/>
+<circle cx="250.0" cy="85.0" r="11" fill="white" stroke="currentColor" stroke-width="1.6"/>
+<circle cx="343.5" cy="221.0" r="11" fill="white" stroke="currentColor" stroke-width="1.6"/>
+<circle cx="343.5" cy="51.0" r="11" fill="white" stroke="currentColor" stroke-width="1.6"/>
+<circle cx="211.8" cy="153.0" r="11" fill="white" stroke="currentColor" stroke-width="1.6"/>
+<circle cx="145.9" cy="204.0" r="7" fill="currentColor"/>
+<circle cx="277.6" cy="187.0" r="7" fill="currentColor"/>
+<circle cx="230.9" cy="119.0" r="7" fill="currentColor"/>
+<circle cx="192.6" cy="102.0" r="7" fill="currentColor"/>
+<circle cx="415" cy="110" r="7" fill="currentColor"/><text x="430" y="115" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="currentColor">原子 A</text>
+<circle cx="415" cy="145" r="11" fill="white" stroke="currentColor" stroke-width="1.6"/><text x="430" y="150" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="currentColor">原子 B</text>
+</svg>

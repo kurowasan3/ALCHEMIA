@@ -1,0 +1,109 @@
+{
+ "id": "THE-BND-056",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-03",
+ "topic": "蒸発熱と沸点の比（トルートンの規則）と水素結合による例外",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の表は，いくつかの液体の沸点（1 気圧）と，沸点における蒸発熱である．\n\\[\\begin{array}{l|c|c}\n\\text{物質} & \\text{沸点}\\,[^\\circ\\mathrm{C}] & \\text{蒸発熱}\\,[\\mathrm{kJ/mol}]\\\\\\hline\n\\text{四塩化炭素 } \\ce{CCl4} & 76.7 & 29.8\\\\\n\\text{ベンゼン } \\ce{C6H6} & 80.1 & 30.7\\\\\n\\text{硫化水素 } \\ce{H2S} & -60.3 & 18.7\\\\\n\\text{ジメチルエーテル } \\ce{CH3OCH3} & -24.8 & 21.5\\\\\n\\text{水 } \\ce{H2O} & 100.0 & 40.7\\\\\n\\text{エタノール } \\ce{C2H5OH} & 78.3 & 38.6\n\\end{array}\\]\n絶対温度は $T\\,[\\mathrm K]=t\\,[^\\circ\\mathrm C]+273.2$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "それぞれの物質について，蒸発熱 $[\\mathrm{J/mol}]$ を沸点の絶対温度で割った値 $[\\mathrm{J/(mol\\cdot K)}]$ を整数で求めよ．また，値がほかと比べて大きく外れる物質をすべて選び，その共通点を答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "同じ分子式 $\\ce{C2H6O}$ をもつエタノールとジメチルエーテルを比べると，沸点だけでなく (1) の値も異なる．(1) の値がエタノールで大きくなる理由として最も適当なものを選べ．\\quad (ア) 分子量が大きいため　(イ) 液体中で分子どうしが水素結合でつながり，気体になるときにその結合を切る必要があるうえ，液体の分子の並び方がより規則的であるため　(ウ) 分子の極性がないため"
+     },
+     {
+      "id": "3",
+      "tex": "水素結合をもたない物質では (1) の値がほぼ一定で $87\\,\\mathrm{J/(mol\\cdot K)}$ とみなせる．セレン化水素 $\\ce{H2Se}$（沸点 $-41\\,^\\circ\\mathrm{C}$）の蒸発熱を有効数字 2 桁で推定せよ．"
+     },
+     {
+      "id": "4",
+      "tex": "同様に，蒸発熱が $33.2\\,\\mathrm{kJ/mol}$ のトルエンの沸点 $[^\\circ\\mathrm{C}]$ を有効数字 2 桁で推定せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{CCl4}$ 85，$\\ce{C6H6}$ 87，$\\ce{H2S}$ 88，$\\ce{CH3OCH3}$ 87，$\\ce{H2O}$ 109，$\\ce{C2H5OH}$ 110；外れるのは水とエタノールで，どちらも分子間に水素結合をつくる（−OH をもつ）"
+   },
+   {
+    "id": "2",
+    "tex": "イ"
+   },
+   {
+    "id": "3",
+    "tex": "$20\\,\\mathrm{kJ/mol}$"
+   },
+   {
+    "id": "4",
+    "tex": "$1.1\\times10^{2}\\,^\\circ\\mathrm{C}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　$\\ce{CCl4}$：$29800/349.9=\\boldsymbol{85}$，$\\ce{C6H6}$：$30700/353.3=\\boldsymbol{87}$，$\\ce{H2S}$：$18700/212.9=\\boldsymbol{88}$，$\\ce{CH3OCH3}$：$21500/248.4=\\boldsymbol{87}$，$\\ce{H2O}$：$40700/373.2=\\boldsymbol{109}$，$\\ce{C2H5OH}$：$38600/351.5=\\boldsymbol{110}$（単位 $\\mathrm{J/(mol\\cdot K)}$）．\n分子の大きさや沸点が大きく違っても，多くの液体ではこの値が 85〜88 にそろう（トルートンの規則）．大きく外れるのは\\textbf{水とエタノール}で，どちらも \\textbf{−OH をもち分子間に水素結合をつくる}．\n\n\\textbf{(2)}　沸点が高いだけなら，蒸発熱も沸点に比例して大きくなり比はそろうはずである．比が大きいのは，水素結合を切るエネルギーに加えて，液体中で分子が水素結合によって規則的に並んでおり，気体になるときの乱雑さの増え方がふつうの液体より大きいことを表している．答えは\\textbf{イ}．（ア）分子量は同じ．（ウ）どちらも極性分子である．\n\n\\textbf{(3)}　沸点 $-41+273.2=232.2\\,\\mathrm K$．蒸発熱 $\\fallingdotseq87\\times232.2=2.0\\times10^{4}\\,\\mathrm{J/mol}=\\boldsymbol{20\\,\\mathrm{kJ/mol}}$（実測値は約 $20\\,\\mathrm{kJ/mol}$）．同じ 16 族の $\\ce{H2S}$ と同様に水素結合をほとんどつくらないので，この規則が使える．\n\n\\textbf{(4)}　$T\\fallingdotseq\\dfrac{33200}{87}=381.6\\,\\mathrm K$，$t\\fallingdotseq108\\,^\\circ\\mathrm C$，有効数字 2 桁で $\\boldsymbol{1.1\\times10^{2}\\,^\\circ\\mathrm C}$（実測値は $111\\,^\\circ\\mathrm C$）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "多くの液体では蒸発熱と沸点（絶対温度）の比がほぼ一定（トルートンの規則）なので，一方から他方を見積もれる．水素結合をつくる液体（水・エタノール）はこの比が大きく外れ，同じ分子式の異性体（エタノールとジメチルエーテル）の比較でも水素結合の効果が見える．"
+ },
+ "concepts": [
+  "chemical-bond",
+  "organic-structure",
+  "intermolecular"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "蒸発熱",
+  "沸点",
+  "水素結合",
+  "トルートンの規則",
+  "分子間力"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

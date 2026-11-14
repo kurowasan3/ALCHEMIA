@@ -1,0 +1,108 @@
+{
+ "id": "INO-TRN-046",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-07",
+ "topic": "d 軌道の分裂幅と遷移金属イオン・錯イオンの色（吸収波長と補色）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "遷移金属のイオンに配位子が結合すると，5 つの d 軌道はエネルギーの低い組と高い組に分かれる．その差を $\\Delta$（分裂幅）とする．低い軌道の電子が光を吸収して高い軌道に移ると，その光が除かれた残りの色（補色）が見える．吸収する光子 1 個のエネルギーは，イオン 1 個あたりの $\\Delta$ に等しいとする．\n$h=6.63\\times10^{-34}\\,\\mathrm{J\\,s}$，$c=3.00\\times10^{8}\\,\\mathrm{m/s}$，$N_{\\mathrm A}=6.02\\times10^{23}\\,\\mathrm{/mol}$．吸収する光と見える色の関係は次の表のとおりとする．\n\\[\\begin{array}{c|c|c}\n\\text{吸収する光の波長} & \\text{吸収する光の色} & \\text{見える色（補色）}\\\\ \\hline\n400\\sim435\\,\\mathrm{nm} & \\text{紫} & \\text{黄緑}\\\\\n435\\sim480\\,\\mathrm{nm} & \\text{青} & \\text{黄}\\\\\n480\\sim490\\,\\mathrm{nm} & \\text{緑青} & \\text{橙}\\\\\n490\\sim500\\,\\mathrm{nm} & \\text{青緑} & \\text{赤}\\\\\n500\\sim560\\,\\mathrm{nm} & \\text{緑} & \\text{赤紫}\\\\\n560\\sim580\\,\\mathrm{nm} & \\text{黄緑} & \\text{紫}\\\\\n580\\sim595\\,\\mathrm{nm} & \\text{黄} & \\text{青}\\\\\n595\\sim605\\,\\mathrm{nm} & \\text{橙} & \\text{緑青}\\\\\n605\\sim750\\,\\mathrm{nm} & \\text{赤} & \\text{青緑}\n\\end{array}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{[Ti(H2O)6]^3+}$ は $510\\,\\mathrm{nm}$ の光を最も強く吸収する．$\\ce{Ti^3+}$ の d 電子の数を答え，$\\Delta$ を $\\mathrm{kJ/mol}$ 単位で有効数字 3 桁で求めよ．また，この水溶液は何色に見えるか．"
+     },
+     {
+      "id": "2",
+      "tex": "銅(II) を含む 2 種類の固体 P，Q では，銅のまわりの $\\ce{Cu-O}$ 距離 $R$ が P で $0.200\\,\\mathrm{nm}$，Q で $0.194\\,\\mathrm{nm}$ であった．$\\Delta$ は $R^5$ に反比例するものとする．P が $620\\,\\mathrm{nm}$ の光を吸収するとき，Q が吸収する光の波長を有効数字 3 桁で求めよ．P と Q はそれぞれ何色に見えるか．"
+     },
+     {
+      "id": "3",
+      "tex": "次の水和イオンのうち，d 電子が高い軌道へ移る吸収が起こらず，無色と考えられるものをすべて選び，理由を述べよ．\n\\[\\ce{Sc^3+},\\quad \\ce{Ti^3+},\\quad \\ce{Ni^2+},\\quad \\ce{Cu^2+},\\quad \\ce{Zn^2+},\\quad \\ce{Ag+}\\]"
+     },
+     {
+      "id": "4",
+      "tex": "銅(II) の水溶液は $790\\,\\mathrm{nm}$ 付近を中心に吸収して淡い青色に見えるが，過剰のアンモニア水を加えて $\\ce{[Cu(NH3)4]^2+}$ にすると，吸収の中心が $590\\,\\mathrm{nm}$ 付近に移り，深い青色になる．水と $\\ce{NH3}$ のどちらが $\\Delta$ を大きくする配位子か．$\\Delta$ は何倍になったか，有効数字 2 桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "d 電子 1 個，$\\Delta=235\\,\\mathrm{kJ/mol}$，赤紫色"
+   },
+   {
+    "id": "2",
+    "tex": "$532\\,\\mathrm{nm}$．P は青緑色，Q は赤紫色"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{Sc^3+}$，$\\ce{Zn^2+}$，$\\ce{Ag+}$．$\\ce{Sc^3+}$ は d 電子が 0 個で移る電子がなく，$\\ce{Zn^2+}$・$\\ce{Ag+}$ は d 軌道が 10 個の電子で満たされていて，高い軌道に移る空きがないから．"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{NH3}$．$1.3$ 倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} Ti の電子配置は $[\\mathrm{Ar}]3\\mathrm d^2 4\\mathrm s^2$ で，$\\ce{Ti^3+}$ は 4s の 2 個と 3d の 1 個を失うので \\textbf{d 電子は 1 個}．\n\\[\\Delta=\\frac{hcN_{\\mathrm A}}{\\lambda}=\\frac{6.63\\times10^{-34}\\times3.00\\times10^{8}\\times6.02\\times10^{23}}{510\\times10^{-9}}=2.35\\times10^{5}\\,\\mathrm{J/mol}=\\boldsymbol{235\\,\\mathrm{kJ/mol}}\\]\n$510\\,\\mathrm{nm}$ は緑の光なので，補色の\\textbf{赤紫色}に見える．\n\n\\textbf{(2)} $\\Delta\\propto R^{-5}$，$\\lambda\\propto\\dfrac1\\Delta\\propto R^{5}$ なので\n\\[\\lambda_{\\mathrm Q}=620\\times\\left(\\frac{0.194}{0.200}\\right)^{5}=620\\times0.8587=\\boldsymbol{532\\,\\mathrm{nm}}\\]\n距離が $3\\,\\%$ 縮むだけで $\\Delta$ は約 $16\\,\\%$ 大きくなり，吸収は短波長側へずれる．P は赤（$605\\sim750$）を吸収して\\textbf{青緑色}，Q は緑（$500\\sim560$）を吸収して\\textbf{赤紫色}に見える．\n\n\\textbf{(3)} d 電子の数は $\\ce{Sc^3+}$ 0，$\\ce{Ti^3+}$ 1，$\\ce{Ni^2+}$ 8，$\\ce{Cu^2+}$ 9，$\\ce{Zn^2+}$ 10，$\\ce{Ag+}$ 10（4d）．\n低い組から高い組へ電子が移るには，「低い組に電子があり，かつ高い組に空きがある」ことが必要である．d 電子 0 個の $\\boldsymbol{\\ce{Sc^3+}}$ は移る電子がなく，d 電子 10 個の $\\boldsymbol{\\ce{Zn^2+}}$，$\\boldsymbol{\\ce{Ag+}}$ は高い組まで満員で空きがないので，この吸収が起こらず無色である（図鑑のとおり $\\ce{[Zn(NH3)4]^2+}$ も無色）．$\\ce{Ti^3+}$（赤紫），$\\ce{Ni^2+}$（緑），$\\ce{Cu^2+}$（青）は色をもつ．\n\n\\textbf{(4)} 吸収波長が短いほど $\\Delta$ は大きいので，$790\\to590\\,\\mathrm{nm}$ と短くなった $\\boldsymbol{\\ce{NH3}}$ の方が $\\Delta$ を大きくする配位子である．$\\Delta\\propto\\dfrac1\\lambda$ より $\\dfrac{790}{590}=\\boldsymbol{1.3}$ 倍．吸収が赤（目に見えにくい長波長側）から黄〜橙に移ったので，補色の青が濃くはっきりと見えるようになる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "d 軌道の分裂幅 Δ は吸収する光子のエネルギーに等しく，吸収波長から Δ を求められ，見える色は吸収した光の補色になる．金属–配位子の距離が縮んだり配位子が変わったりして Δ が大きくなると吸収は短波長側へ移り色が変わる．d 電子が 0 個または 10 個のイオンは d 電子の移動が起こらず無色になる．"
+ },
+ "concepts": [
+  "transition-metals",
+  "complex-ion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "遷移元素",
+  "錯イオン",
+  "d軌道の分裂",
+  "補色",
+  "吸収波長"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

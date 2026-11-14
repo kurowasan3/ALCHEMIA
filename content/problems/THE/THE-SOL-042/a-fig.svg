@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 330" font-family="Noto Sans CJK JP, sans-serif" font-size="13">
+<line x1="70" y1="280" x2="485" y2="280" stroke="currentColor" stroke-width="1.5"/>
+<line x1="70" y1="280" x2="70" y2="25" stroke="currentColor" stroke-width="1.5"/>
+<path d="M485 280 l-8 -4 v8 z" fill="currentColor"/><path d="M70 25 l-4 8 h8 z" fill="currentColor"/>
+<line x1="70.0" y1="280" x2="70.0" y2="285" stroke="currentColor"/>
+<text x="70.0" y="300" text-anchor="middle" fill="currentColor">0</text>
+<line x1="203.3" y1="280" x2="203.3" y2="285" stroke="currentColor"/>
+<text x="203.3" y="300" text-anchor="middle" fill="currentColor">50</text>
+<line x1="336.7" y1="280" x2="336.7" y2="285" stroke="currentColor"/>
+<text x="336.7" y="300" text-anchor="middle" fill="currentColor">100</text>
+<line x1="470.0" y1="280" x2="470.0" y2="285" stroke="currentColor"/>
+<text x="470.0" y="300" text-anchor="middle" fill="currentColor">150</text>
+<line x1="65" y1="280.0" x2="70" y2="280.0" stroke="currentColor"/>
+<text x="61" y="284.0" text-anchor="end" fill="currentColor">0</text>
+<line x1="65" y1="184.0" x2="70" y2="184.0" stroke="currentColor"/>
+<text x="61" y="188.0" text-anchor="end" fill="currentColor">100</text>
+<line x1="65" y1="88.0" x2="70" y2="88.0" stroke="currentColor"/>
+<text x="61" y="92.0" text-anchor="end" fill="currentColor">200</text>
+<text x="480" y="320" text-anchor="end" fill="currentColor">加えた質量 [g]</text>
+<text x="78" y="20" fill="currentColor">析出・残存する五水和物の質量 [g]</text>
+<polyline points="86.7,280.0 433.0,53.3 470.0,53.3" fill="none" stroke="#1f5fbf" stroke-width="2.5"/>
+<polyline points="100.3,280.0 470.0,146.9" fill="none" stroke="#c0392b" stroke-width="2.5" stroke-dasharray="7 4"/>
+<line x1="433.0" y1="53.3" x2="433.0" y2="280" stroke="currentColor" stroke-dasharray="4 3" opacity="0.5"/>
+<line x1="70" y1="53.3" x2="433.0" y2="53.3" stroke="currentColor" stroke-dasharray="4 3" opacity="0.5"/>
+<text x="74" y="48.3" fill="currentColor">236</text>
+<text x="433.0" y="274" text-anchor="end" fill="currentColor">136</text>
+<text x="283.3" y="136.0" fill="#1f5fbf" text-anchor="end">無水物を加えた場合</text>
+<text x="283.3" y="153.0" fill="#1f5fbf" text-anchor="end">傾き 1.82</text>
+<text x="384.7" y="203.2" fill="#c0392b">五水和物を</text>
+<text x="384.7" y="220.2" fill="#c0392b">加えた場合</text>
+<text x="384.7" y="237.2" fill="#c0392b">傾き 1</text>
+<text x="443.3" y="45.3" text-anchor="middle" fill="currentColor" font-size="12">液体なし</text>
+<text x="86.7" y="313" text-anchor="middle" fill="#1f5fbf" font-size="12">6.25</text>
+</svg>

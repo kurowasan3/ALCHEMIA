@@ -1,0 +1,118 @@
+{
+ "id": "INO-NIT-024",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-03",
+ "topic": "尿素を用いる窒素酸化物の除去（電子の授受による量的関係）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "equation",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ディーゼル車の排ガス中の窒素酸化物（$\\ce{NO}$，$\\ce{NO2}$）を除くために，尿素水を排ガスに吹き込む方法がある．尿素 $\\ce{CO(NH2)2}$ は高温で水と反応してアンモニアと二酸化炭素になり，生じたアンモニアが触媒上で窒素酸化物を窒素 $\\ce{N2}$ と水に還元する．原子量は H $=1.0$，C $=12.0$，N $=14.0$，O $=16.0$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "尿素と水からアンモニアと二酸化炭素が生じる反応の化学反応式を書け．"
+     },
+     {
+      "id": "2",
+      "tex": "排ガス中には酸素が多く含まれ，$\\ce{NO}$ は酸素も関与して次のように還元される．係数 $a\\sim d$ を答えよ（係数 1 も書くこと）．また，この反応で酸化数が増加する原子と減少する原子をすべて答えよ．\n\\[ a\\,\\ce{NO} + b\\,\\ce{NH3} + \\ce{O2} \\ce{->} c\\,\\ce{N2} + d\\,\\ce{H2O} \\]"
+     },
+     {
+      "id": "3",
+      "tex": "$\\ce{NO2}$ は酸素なしで $\\ce{NH3}$ と反応して $\\ce{N2}$ と $\\ce{H2O}$ になる．この反応の化学反応式を書け．"
+     },
+     {
+      "id": "4",
+      "tex": "1 時間あたり $\\ce{NO}$ $2.0\\,\\mathrm{mol}$ と $\\ce{NO2}$ $0.50\\,\\mathrm{mol}$ を含む排ガスを，(2)・(3) の反応で完全に処理したい．1 時間あたりに必要な尿素の質量を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "酸素がない条件では，$\\ce{NO}$ は $\\ce{6NO + 4NH3 -> 5N2 + 6H2O}$ のように還元される．$\\ce{NO}$ 1 mol を処理するのに必要な $\\ce{NH3}$ の物質量を，酸素がない場合と (2) の場合とで比べ，違いが生じる理由を電子の授受にもとづいて述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{CO(NH2)2 + H2O -> 2NH3 + CO2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$a=4$，$b=4$，$c=4$，$d=6$．増加：$\\ce{NH3}$ の N（$-3\\to0$），減少：$\\ce{NO}$ の N（$+2\\to0$）と $\\ce{O2}$ の O（$0\\to-2$）"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{6NO2 + 8NH3 -> 7N2 + 12H2O}$"
+   },
+   {
+    "id": "4",
+    "tex": "$80\\,\\mathrm{g}$"
+   },
+   {
+    "id": "5",
+    "tex": "酸素なし：$\\dfrac23\\,\\mathrm{mol}$，(2)：$1\\,\\mathrm{mol}$．(2) では $\\ce{NH3}$ が出す電子の一部を $\\ce{O2}$ も受け取るので，$\\ce{NO}$ 1 mol あたりに必要な $\\ce{NH3}$ が多くなる"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\ce{CO(NH2)2 + H2O -> 2NH3 + CO2}$（酸化数の変化はない）．\n\n\\textbf{(2)} 電子の授受で考える．$\\ce{NH3}$ の N：$-3\\to0$ で 1 個あたり電子 3 個を出す．$\\ce{NO}$ の N：$+2\\to0$ で 2 個受け取る．$\\ce{O2}$：O が $0\\to-2$ で 1 分子あたり 4 個受け取る．$\\ce{O2}$ 1 分子に対し $\\ce{NO}$ を $a$，$\\ce{NH3}$ を $b$ とすると，$3b=2a+4$．N のつり合い $a+b=2c$，H から $3b=2d$，O から $a+2=d$．これらを満たす最小の整数は $a=4,\\ b=4,\\ c=4,\\ d=6$．\n\\[ \\ce{4NO + 4NH3 + O2 -> 4N2 + 6H2O} \\]\n酸化数が\\textbf{増加}するのは $\\ce{NH3}$ の N，\\textbf{減少}するのは $\\ce{NO}$ の N と $\\ce{O2}$ の O．\n\n\\textbf{(3)} $\\ce{NO2}$ の N：$+4\\to0$ で 4 個受け取る．$\\ce{NO2}:\\ce{NH3}=3:4$（$4\\times3=3\\times4$）．\n\\[ \\ce{6NO2 + 8NH3 -> 7N2 + 12H2O} \\]\n\n\\textbf{(4)} $\\ce{NH3}$ は，$\\ce{NO}$ に $2.0\\times\\dfrac44=2.0\\,\\mathrm{mol}$，$\\ce{NO2}$ に $0.50\\times\\dfrac86=0.667\\,\\mathrm{mol}$，計 $2.67\\,\\mathrm{mol}$．尿素 1 mol から $\\ce{NH3}$ 2 mol が生じるので尿素は $1.33\\,\\mathrm{mol}$，$1.33\\times60.0=\\boldsymbol{80\\,\\mathrm{g}}$．\n\n\\textbf{(5)} 酸素なし：$\\ce{NH3}/\\ce{NO}=4/6=\\boldsymbol{\\dfrac23}$．(2)：$4/4=\\boldsymbol{1}$．\n$\\ce{NO}$ 1 mol が受け取る電子は 2 mol で同じだが，(2) では $\\ce{O2}$ も電子を受け取る（$\\ce{NO}$ 4 mol で 8 mol，$\\ce{O2}$ 1 mol で 4 mol）．$\\ce{NH3}$ はその両方に電子を供給するので，必要量が $\\dfrac{8+4}{8}=1.5$ 倍になる．酸素が共存しても $\\ce{NO}$ を還元できるのがこの方法の特徴だが，その分アンモニア（尿素）を余分に消費する．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "尿素の加水分解で生じた NH₃ が NO・NO₂ を N₂ に還元する反応を，酸化数の変化（電子の授受）から係数を決めて組み立て，処理に必要な尿素の量を求める．酸素が共存すると O₂ も電子を受け取るため，同じ NO を処理するのに必要な NH₃ が増えることを比べる．"
+ },
+ "concepts": [
+  "nitrogen-phosphorus",
+  "oxygen-sulfur",
+  "redox"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "窒素酸化物",
+  "尿素",
+  "アンモニア",
+  "酸化還元",
+  "排ガス浄化",
+  "量的関係"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

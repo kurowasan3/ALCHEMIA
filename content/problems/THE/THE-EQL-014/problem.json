@@ -1,0 +1,101 @@
+{
+ "id": "THE-EQL-014",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "反応速度式と各物質の速さの関係",
+ "course": "化学",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある高温の容器中で，ホスフィン $\\ce{PH3}$ は $\\ce{4PH3 -> P4 + 6H2}$ のように分解する（逆反応は無視できる）．$\\ce{PH3}$ の減少速度を $v$ とし，温度を一定にして $\\ce{PH3}$ の初濃度を変え，反応開始直後の $v$ を測定したところ，次の結果を得た．\n\\[\\begin{array}{c|c} [\\ce{PH3}]_0\\ (\\mathrm{mol/L}) & v\\ (\\mathrm{mol/(L\\cdot s)}) \\\\ \\hline 0.020 & 1.2\\times10^{-4} \\\\ 0.040 & 2.4\\times10^{-4} \\\\ 0.060 & 3.6\\times10^{-4} \\end{array}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "反応速度式を $v=k[\\ce{PH3}]^x$ と表すとき，$x$ の値と速度定数 $k$（単位も）を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$[\\ce{PH3}]=0.050\\,\\mathrm{mol/L}$ の瞬間における $\\ce{H2}$ の生成速度と $\\ce{P4}$ の生成速度を，それぞれ有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "次の操作①〜④をそれぞれ単独で行ったとき，$v$ と $k$ はそれぞれ「増加する／減少する／変化しない」のどれになるか．\\\\ ① 温度一定で $\\ce{PH3}$ の濃度を2倍にする　② 温度を上げる　③ 触媒を加える　④ 温度・体積一定で $\\ce{H2}$ を加える"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$x=1$，$k=6.0\\times10^{-3}\\,/\\mathrm{s}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{H2}$：$4.5\\times10^{-4}\\,\\mathrm{mol/(L\\cdot s)}$，$\\ce{P4}$：$7.5\\times10^{-5}\\,\\mathrm{mol/(L\\cdot s)}$"
+   },
+   {
+    "id": "3",
+    "tex": "① $v$ 増加，$k$ 変化しない　② $v$ 増加，$k$ 増加　③ $v$ 増加，$k$ 増加　④ $v$ 変化しない，$k$ 変化しない"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 初濃度を2倍・3倍にすると $v$ も2倍・3倍になるので $v\\propto[\\ce{PH3}]^1$，すなわち $\\boldsymbol{x=1}$（一次反応）．\n\\[ k=\\dfrac{v}{[\\ce{PH3}]}=\\dfrac{1.2\\times10^{-4}}{0.020}=\\boldsymbol{6.0\\times10^{-3}\\,/\\mathrm{s}} \\]\n\\textbf{(2)} $v=6.0\\times10^{-3}\\times0.050=3.0\\times10^{-4}\\,\\mathrm{mol/(L\\cdot s)}$．係数比 $\\ce{PH3}:\\ce{P4}:\\ce{H2}=4:1:6$ より，各物質の変化の速さもこの比になる．\n\\[ \\ce{H2}:\\ 3.0\\times10^{-4}\\times\\dfrac{6}{4}=\\boldsymbol{4.5\\times10^{-4}}\\,\\mathrm{mol/(L\\cdot s)},\\qquad \\ce{P4}:\\ 3.0\\times10^{-4}\\times\\dfrac{1}{4}=\\boldsymbol{7.5\\times10^{-5}}\\,\\mathrm{mol/(L\\cdot s)} \\]\n\\textbf{(3)} 速度定数 $k$ は温度と触媒（活性化エネルギー）で決まり，濃度にはよらない．\\\\\n① 濃度が増えれば $v=k[\\ce{PH3}]$ は2倍になるが，$k$ は変化しない．\\\\\n② 温度を上げると $k$ が大きくなり，$v$ も増加する．\\\\\n③ 触媒は活性化エネルギーを下げるので $k$ が大きくなり，$v$ も増加する．\\\\\n④ $\\ce{H2}$ は速度式に含まれず，逆反応も無視できるので，$v$ も $k$ も変化しない（生成物を加えても分解の速さには影響しない）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "初濃度と初速度の比例関係から反応次数と速度定数を決め，係数比から各物質の生成速度を求める．濃度の変化は v だけを，温度・触媒は k そのものを変えることを区別する．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "concentration",
+  "reaction-rate"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応速度式",
+  "速度定数",
+  "一次反応",
+  "係数比",
+  "触媒"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

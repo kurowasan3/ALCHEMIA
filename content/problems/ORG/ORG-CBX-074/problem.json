@@ -1,0 +1,124 @@
+{
+ "id": "ORG-CBX-074",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-04",
+ "topic": "β-ケト酸・マロン酸型の脱炭酸のモデルによる C₅H₆O₅ のケトジカルボン酸の識別",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "structure",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "カルボキシ基をもつ化合物の加熱による脱炭酸について，次のモデルが成り立つものとする．\n\\begin{itemize}\n\\item (i) カルボキシ基の炭素が結合している炭素（$\\alpha$ 炭素）に，さらにケトンのカルボニル基 $\\ce{C=O}$ が結合している化合物（$\\beta$-ケト酸：$\\ce{R-CO-CH2-COOH}$ の形）は，穏やかに加熱すると $\\ce{CO2}$ を失い，$\\ce{R-CO-CH3}$ の形になる．\n\\item (ii) 同じ炭素に 2 個のカルボキシ基が結合した化合物（マロン酸型）も，加熱すると 1 個の $\\ce{COOH}$ が $\\ce{CO2}$ として外れ，その炭素に H が残る．\n\\item (iii) ケトンの炭素にカルボキシ基が直接結合している場合（$\\alpha$-ケト酸）や，カルボニル基とカルボキシ基が 2 個以上の炭素で隔てられている場合は，この条件では脱炭酸しない．また，一度脱炭酸して生じた化合物が (i)・(ii) の形であれば，さらに脱炭酸が続く．\n\\end{itemize}\n分子式 $\\ce{C5H6O5}$ で表され，鎖式で，カルボキシ基 2 個とケトンのカルボニル基 1 個をもち，ほかに不飽和結合や酸素を含む官能基をもたない化合物を考える（アルデヒド基はもたない）．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "条件にあう構造異性体はいくつあるか．すべて示性式で示せ（立体異性体は区別しない）．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) の各化合物を十分に加熱したとき，1 mol から放出される $\\ce{CO2}$ の物質量と，最終的に得られる有機化合物の示性式を答えよ（変化しないものは「変化しない」と書け）．"
+     },
+     {
+      "id": "3",
+      "tex": "化合物 X は (1) のいずれかで，不斉炭素原子をもたず，加熱すると 1 mol から $\\ce{CO2}$ が 2 mol 発生してアセトンが得られた．また，X のケトンのカルボニル基だけを還元して第二級アルコールにした化合物も不斉炭素原子をもたなかった．X の示性式を答えよ．X の候補を絞り込む根拠も示せ．"
+     },
+     {
+      "id": "4",
+      "tex": "化合物 Y は (1) のいずれかで，不斉炭素原子を 1 個もつ．Y の示性式，Y を加熱して得られる化合物の示性式を答えよ．さらに，一方の鏡像異性体だけからなる Y を加熱して得られる化合物が光学活性を示すかどうか，および Y のケトンのカルボニル基だけを還元した化合物に考えられる立体異性体の数を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：β-ケト酸・マロン酸型の脱炭酸のモデルによる C₅H₆O₅ のケトジカルボン酸の識別",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "4 つ．$\\ce{CH3COCH(COOH)2}$，$\\ce{HOOCCH(CH3)COCOOH}$，$\\ce{HOOCCH2COCH2COOH}$，$\\ce{HOOCCOCH2CH2COOH}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{CH3COCH(COOH)2}$：2 mol，$\\ce{CH3COCH3}$；$\\ce{HOOCCH(CH3)COCOOH}$：1 mol，$\\ce{CH3CH2COCOOH}$；$\\ce{HOOCCH2COCH2COOH}$：2 mol，$\\ce{CH3COCH3}$；$\\ce{HOOCCOCH2CH2COOH}$：0 mol，変化しない"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{HOOCCH2COCH2COOH}$（還元生成物 $\\ce{HOOCCH2CH(OH)CH2COOH}$ は C3 の両側が同じで不斉炭素がない．もう一つの候補 $\\ce{CH3COCH(COOH)2}$ の還元生成物 $\\ce{CH3CH(OH)CH(COOH)2}$ は不斉炭素をもつので除かれる）"
+   },
+   {
+    "id": "4",
+    "tex": "Y は $\\ce{HOOCCH(CH3)COCOOH}$，加熱生成物は $\\ce{CH3CH2COCOOH}$，光学活性を示さない，立体異性体は 4 種類"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 候補の網羅}　不飽和度は $(2\\times5+2-6)/2=3$ で，COOH 2 個と C=O 1 個で使い切るので，ほかは飽和である．COOH の炭素は鎖の末端，ケトンの炭素は炭素 2 個と結合した炭素である．炭素骨格ごとに調べると，\n\\begin{itemize}\n\\item 直鎖：$\\ce{HOOC-CO-CH2-CH2-COOH}$（ケトンが端から 2 番目），$\\ce{HOOC-CH2-CO-CH2-COOH}$（中央）\n\\item 枝分かれ：$\\ce{HOOC-CH(CH3)-CO-COOH}$，$\\ce{CH3-CO-CH(COOH)2}$\n\\end{itemize}\nの \\textbf{4} つである（第四級炭素をもつ骨格では，ケトンにできる炭素が残らない）．\n\n\\textbf{(2) モデルの当てはめ}　各 COOH について「$\\alpha$ 炭素にケトンの C=O が付いているか」「同じ炭素にもう 1 つ COOH があるか」を調べる．\n\\begin{itemize}\n\\item $\\ce{CH3COCH(COOH)2}$：2 個の COOH はどちらも $\\beta$-ケト酸の形で，マロン酸型でもある．1 個外れると $\\ce{CH3COCH2COOH}$（アセト酢酸，なお $\\beta$-ケト酸）となり，続けて脱炭酸する．\\[\\ce{CH3COCH(COOH)2 -> CH3COCH3 + 2CO2}\\]\n\\item $\\ce{HOOCCH(CH3)COCOOH}$：CH に付いた COOH は $\\beta$-ケト酸の形で外れるが，C=O に直接付いた COOH は $\\alpha$-ケト酸の形で残る．\\[\\ce{HOOCCH(CH3)COCOOH -> CH3CH2COCOOH + CO2}\\] 生成物は $\\alpha$-ケト酸なのでここで止まる．\n\\item $\\ce{HOOCCH2COCH2COOH}$：両側の COOH がともに $\\beta$-ケト酸の形．1 個外れると $\\ce{CH3COCH2COOH}$ となり，さらに外れる．\\[\\ce{HOOCCH2COCH2COOH -> CH3COCH3 + 2CO2}\\]\n\\item $\\ce{HOOCCOCH2CH2COOH}$：一方は $\\alpha$-ケト酸，他方は C=O から 2 個の炭素で隔てられているので，どちらも外れず \\textbf{変化しない}．\n\\end{itemize}\n\n\\textbf{(3)}　「CO₂ 2 mol とアセトン」を与えるのは $\\ce{CH3COCH(COOH)2}$ と $\\ce{HOOCCH2COCH2COOH}$ の 2 つで，加熱の結果だけでは区別できない（どちらも不斉炭素をもたない）．そこで還元生成物を比べる．\n$\\ce{HOOCCH2CH(OH)CH2COOH}$ の C3 には $\\ce{-CH2COOH}$ が 2 個付いているので不斉炭素ではない．一方 $\\ce{CH3CH(OH)CH(COOH)2}$ の CH(OH) には $\\ce{CH3}$，H，OH，$\\ce{CH(COOH)2}$ の 4 種類が付いており不斉炭素である．よって X は $\\ce{HOOCCH2COCH2COOH}$．\n\n\\textbf{(4)}　4 つの候補のうち不斉炭素をもつのは $\\ce{HOOCCH(CH3)COCOOH}$ の CH（H，$\\ce{CH3}$，COOH，$\\ce{COCOOH}$）だけなので，これが Y．加熱生成物 $\\ce{CH3CH2COCOOH}$ では，もとの不斉炭素が $\\ce{CH2}$ になっているので不斉炭素がなく，\\textbf{光学活性を示さない}（脱炭酸で不斉が消える）．\nY の還元生成物 $\\ce{HOOCCH(CH3)CH(OH)COOH}$ は，C2（H，$\\ce{CH3}$，COOH，$\\ce{CH(OH)COOH}$）と C3（H，OH，COOH，$\\ce{CH(CH3)COOH}$）の 2 個の不斉炭素をもち，両端の置換基が異なるのでメソ体はない．よって立体異性体は $2^2=$ \\textbf{4} 種類．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "与えられた脱炭酸のモデル（β-ケト酸とマロン酸型は CO₂ を失い，α-ケト酸や離れた COOH は残る）を，分子式から網羅したケトジカルボン酸の各 COOH に当てはめ，放出される CO₂ の量と生成物を決める．加熱の結果が同じになる異性体は，カルボニル還元後の不斉炭素の有無（分子の対称性）で区別し，脱炭酸で不斉炭素が CH₂ になって光学活性が失われることも判断する．"
+ },
+ "concepts": [
+  "carboxylic-ester",
+  "carbon-silicon",
+  "organic-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "脱炭酸",
+  "β-ケト酸",
+  "マロン酸",
+  "異性体の網羅",
+  "不斉炭素",
+  "構造決定"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

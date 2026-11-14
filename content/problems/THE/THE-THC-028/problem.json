@@ -1,0 +1,109 @@
+{
+ "id": "THE-THC-028",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-10",
+ "topic": "熱量計の熱容量を補正した中和エンタルピーの測定",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "発泡ポリスチレン製の容器（熱量計）を用いて，次の実験を行った．水溶液の密度はすべて $1.0\\,\\mathrm{g/mL}$，比熱はすべて $4.2\\,\\mathrm{J/(g\\cdot K)}$ とし，容器の外との熱の出入りは無視できる（温度は放冷を補正した値）ものとする．\n実験 1：容器に 20.0 ℃ の水 $100\\,\\mathrm{g}$ を入れて容器も 20.0 ℃ にしたのち，40.0 ℃ の水 $100\\,\\mathrm{g}$ を加えてかき混ぜると，全体が 29.6 ℃ になった．\n実験 2：同じ容器に 25.0 ℃ の $1.0\\,\\mathrm{mol/L}$ 塩酸 $100\\,\\mathrm{mL}$ を入れ（容器も 25.0 ℃），25.0 ℃ の $1.0\\,\\mathrm{mol/L}$ 水酸化ナトリウム水溶液 $100\\,\\mathrm{mL}$ を加えてかき混ぜると，温度は 31.6 ℃ まで上がった．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "実験 1 から，容器の温度を 1 K 上げるのに必要な熱量（容器の熱容量）[J/K] を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "実験 2 から，中和エンタルピー $\\Delta H$ [kJ/mol]（$\\ce{H+ + OH- -> H2O}$，$\\ce{H2O}$ 1 mol あたり）を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "容器の熱容量を無視して実験 2 の結果を計算すると，中和エンタルピーは何 kJ/mol になるか．有効数字 2 桁で答えよ．また，(2) の値と比べてどちらが真の値に近いか．理由とともに答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "同じ容器に 25.0 ℃ の $1.0\\,\\mathrm{mol/L}$ 塩酸 $100\\,\\mathrm{mL}$ を入れ，25.0 ℃ の $1.0\\,\\mathrm{mol/L}$ 水酸化ナトリウム水溶液 $50\\,\\mathrm{mL}$ を加えると，温度は何 K 上がると予想されるか．(2) の結果（四捨五入する前の値）を用いて有効数字 2 桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$35\\,\\mathrm{J/K}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\Delta H=-58\\,\\mathrm{kJ/mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "$-55\\,\\mathrm{kJ/mol}$．(2) の値のほうが真の値に近い．発生した熱の一部は容器の温度を上げるのに使われており，これを無視すると発熱量を小さく見積もるから．"
+   },
+   {
+    "id": "4",
+    "tex": "$4.3\\,\\mathrm{K}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 温水が失った熱量は，冷水と容器が受け取った熱量に等しい．容器の熱容量を $C$ とすると\n\\[ 100\\times4.2\\times(40.0-29.6)=100\\times4.2\\times(29.6-20.0)+C\\times(29.6-20.0) \\]\n\\[ 4368=4032+9.6C\\qquad C=\\frac{336}{9.6}=\\boldsymbol{35\\,\\mathrm{J/K}} \\]\n（容器がなければ 30.0 ℃ になるはずだが，容器が熱を吸収した分だけ低くなった．）\n\n\\textbf{(2)} 生じた $\\ce{H2O}$ は $1.0\\times0.100=0.100\\,\\mathrm{mol}$．発生した熱は水溶液 $200\\,\\mathrm{g}$ と容器の両方の温度を $6.6\\,\\mathrm{K}$ 上げた．\n\\[ Q=(200\\times4.2+35)\\times6.6=875\\times6.6=5775\\,\\mathrm{J} \\]\n\\[ \\frac{5775\\,\\mathrm{J}}{0.100\\,\\mathrm{mol}}=57.75\\,\\mathrm{kJ/mol}\\qquad \\Delta H=\\boldsymbol{-58\\,\\mathrm{kJ/mol}} \\]\n（発熱なので $\\Delta H$ は負．）\n\n\\textbf{(3)} 容器を無視すると $Q=200\\times4.2\\times6.6=5544\\,\\mathrm{J}$，$\\dfrac{5544}{0.100}=55.4\\,\\mathrm{kJ/mol}$ より $\\Delta H=\\boldsymbol{-55\\,\\mathrm{kJ/mol}}$．\n発生した熱の一部は容器に吸収され，水溶液の温度上昇は小さく現れる．その分を数えない (3) は発熱量を過小評価するので，容器の熱容量を補正した $\\boldsymbol{(2)}$ のほうが真の値に近い．\n\n\\textbf{(4)} $\\ce{NaOH}$ は $0.050\\,\\mathrm{mol}$，$\\ce{HCl}$ は $0.100\\,\\mathrm{mol}$ なので，中和するのは $0.050\\,\\mathrm{mol}$（$\\ce{NaOH}$ がすべて反応し，塩酸が残る）．発生する熱は\n\\[ 57.75\\,\\mathrm{kJ/mol}\\times0.050\\,\\mathrm{mol}=2887.5\\,\\mathrm{J} \\]\nこれで水溶液 $150\\,\\mathrm{g}$ と容器の温度が上がるので\n\\[ \\Delta T=\\frac{2887.5}{150\\times4.2+35}=\\frac{2887.5}{665}=4.34\\fallingdotseq\\boldsymbol{4.3\\,\\mathrm{K}} \\]\n反応する量は半分になるが，温める物の量も減るので，温度上昇は実験 2 の半分（3.3 K）より大きくなる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "熱量計では発生した熱の一部が容器の温度上昇に使われるので，温水と冷水の混合から容器の熱容量を求めて補正する．補正しないと発熱量を過小評価する．中和の熱は少ないほうの物質量で決まり，温度上昇は「発熱量÷（溶液と容器の熱容量の和）」で決まる．"
+ },
+ "concepts": [
+  "enthalpy",
+  "mole",
+  "acid-base"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "中和エンタルピー",
+  "熱量計",
+  "熱容量",
+  "比熱",
+  "温度上昇"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

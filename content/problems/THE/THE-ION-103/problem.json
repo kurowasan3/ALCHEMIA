@@ -1,0 +1,110 @@
+{
+ "id": "THE-ION-103",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "中和の途中の pH から弱酸の電離定数を求め，中和点の pH と指示薬を決める",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "濃度不明のギ酸 $\\ce{HCOOH}$ 水溶液 $10.0\\,\\mathrm{mL}$ を，$0.100\\,\\mathrm{mol/L}$ の水酸化ナトリウム水溶液で $25\\,^\\circ\\mathrm{C}$ で滴定した．水酸化ナトリウム水溶液を $5.00\\,\\mathrm{mL}$ 加えたとき pH は $3.30$ であり，$20.0\\,\\mathrm{mL}$ 加えたところで中和点に達した．$\\log_{10}2=0.30$，水のイオン積 $K_\\mathrm{w}=1.0\\times10^{-14}\\,(\\mathrm{mol/L})^2$ とし，ギ酸の電離平衡では $\\ce{HCOOH}$ と $\\ce{HCOO-}$ の量は加えた NaOH の量だけから決まる（ギ酸自身の電離による変化は無視できる）ものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ギ酸水溶液のモル濃度を有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "ギ酸の電離定数 $K_\\mathrm{a}$ を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "中和点の pH を小数第 1 位まで求めよ．（(2) の $K_\\mathrm{a}$ は四捨五入する前の値を使え．）"
+     },
+     {
+      "id": "4",
+      "tex": "この滴定の指示薬として適切なのは，メチルオレンジ（変色域 pH 3.1〜4.4）とフェノールフタレイン（変色域 pH 8.0〜9.8）のどちらか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$0.200\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "2",
+    "tex": "$1.7\\times10^{-4}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "3",
+    "tex": "8.3"
+   },
+   {
+    "id": "4",
+    "tex": "フェノールフタレイン"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 中和点まで NaOH を $0.100\\times20.0=2.00\\,\\mathrm{mmol}$ 加えたので，ギ酸も $2.00\\,\\mathrm{mmol}$．$\\dfrac{2.00}{10.0}=\\boldsymbol{0.200\\,\\mathrm{mol/L}}$．\n\n\\textbf{(2)} $5.00\\,\\mathrm{mL}$ 加えた点では，$\\ce{HCOO-}$ が $0.500\\,\\mathrm{mmol}$，残った $\\ce{HCOOH}$ が $1.50\\,\\mathrm{mmol}$．同じ体積の中にあるので濃度比は物質量比に等しい．\n\\[ K_\\mathrm{a}=\\frac{[\\ce{H+}][\\ce{HCOO-}]}{[\\ce{HCOOH}]}=[\\ce{H+}]\\times\\frac{0.500}{1.50} \\]\n$[\\ce{H+}]=10^{-3.30}=10^{0.70}\\times10^{-4}=5.0\\times10^{-4}\\,\\mathrm{mol/L}$（$10^{0.70}=\\dfrac{10}{2}=5.0$）なので，$K_\\mathrm{a}=\\dfrac{5.0\\times10^{-4}}{3}=1.66\\cdots\\times10^{-4}\\approx\\boldsymbol{1.7\\times10^{-4}\\,\\mathrm{mol/L}}$．\n中和点の半分（$10.0\\,\\mathrm{mL}$）でなくても，酸と塩の比がわかる点なら $K_\\mathrm{a}$ が求められる．\n\n\\textbf{(3)} 中和点では $\\ce{HCOONa}$ が $2.00\\,\\mathrm{mmol}$，体積 $30.0\\,\\mathrm{mL}$ で $c=\\dfrac{1}{15}\\,\\mathrm{mol/L}$．$\\ce{HCOO- + H2O <=> HCOOH + OH-}$ の加水分解で\n\\[ [\\ce{OH-}]=\\sqrt{\\frac{K_\\mathrm{w}}{K_\\mathrm{a}}\\,c}=\\sqrt{\\frac{1.0\\times10^{-14}\\times3}{5.0\\times10^{-4}}\\times\\frac{1}{15}}=\\sqrt{4.0\\times10^{-12}}=2.0\\times10^{-6}\\,\\mathrm{mol/L} \\]\n$\\mathrm{pOH}=6-0.30=5.70$ より $\\mathrm{pH}=\\boldsymbol{8.3}$．\n\n\\textbf{(4)} 中和点の pH 8.3 付近で急に変化する範囲に変色域がある \\textbf{フェノールフタレイン}．メチルオレンジは中和点よりずっと前（緩衝域の途中）で変色してしまう．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "弱酸の滴定の途中の点では，加えた塩基の量から酸と共役塩基の物質量比が決まるので，その点の pH から Ka が求まる（半中和点でなくてよい）．求めた Ka から中和点の塩の加水分解による pH を計算し，指示薬を選ぶ．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "mole",
+  "ph"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ギ酸",
+  "電離定数",
+  "中和滴定",
+  "緩衝液",
+  "塩の加水分解",
+  "指示薬"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

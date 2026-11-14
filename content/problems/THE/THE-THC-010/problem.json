@@ -1,0 +1,100 @@
+{
+ "id": "THE-THC-010",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-10",
+ "topic": "酸素不足での不完全燃焼と発熱量",
+ "course": "化学",
+ "level": 1,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "エタン $\\ce{C2H6}$ $1.00\\,\\mathrm{mol}$ を酸素 $3.25\\,\\mathrm{mol}$ と混合して燃焼させたところ，酸素はすべて消費され，エタンも残らなかった．エタンの水素原子はすべて水蒸気になり，炭素原子は二酸化炭素と一酸化炭素になった（すすは生じなかった）．生成エンタルピー〔kJ/mol〕を $\\ce{CO2(気)}$ $-394$，$\\ce{CO(気)}$ $-111$，$\\ce{H2O(気)}$ $-242$，$\\ce{C2H6(気)}$ $-84$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "生じた二酸化炭素と一酸化炭素の物質量をそれぞれ求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "この燃焼で発生した熱量は何 kJ か．有効数字3桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "エタン $1.00\\,\\mathrm{mol}$ が完全燃焼（水は水蒸気）した場合と比べて，発生した熱量は何 kJ 少ないか．また，その差は何という反応の熱に相当するか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "二酸化炭素 $1.50\\,\\mathrm{mol}$，一酸化炭素 $0.50\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "2",
+    "tex": "$1.29\\times10^{3}\\,\\mathrm{kJ}$"
+   },
+   {
+    "id": "3",
+    "tex": "$142\\,\\mathrm{kJ}$ 少ない．生じた一酸化炭素 $0.50\\,\\mathrm{mol}$ が燃焼して二酸化炭素になる反応（$\\ce{CO + 1/2O2 -> CO2}$）の熱に相当する．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 水素 6 原子から $\\ce{H2O}$ が $3.00\\,\\mathrm{mol}$．二酸化炭素を $a\\,\\mathrm{mol}$，一酸化炭素を $b\\,\\mathrm{mol}$ とすると，炭素原子について $a+b=2.00$，酸素原子について $2a+b+3.00=3.25\\times2=6.50$．これを解いて $a=\\boldsymbol{1.50\\,\\mathrm{mol}}$，$b=\\boldsymbol{0.50\\,\\mathrm{mol}}$．全体の反応は\n\\[ \\ce{2C2H6 + 13/2O2 -> 3CO2 + CO + 6H2O} \\]\n（エタン $1\\,\\mathrm{mol}$ あたりではこの半分）．\n\\textbf{(2)} \\[ \\Delta H=\\{1.50\\times(-394)+0.50\\times(-111)+3.00\\times(-242)\\}-(-84)=-1288.5\\,\\mathrm{kJ} \\]\n発生した熱量は $\\boldsymbol{1.29\\times10^{3}\\,\\mathrm{kJ}}$．\n\\textbf{(3)} 完全燃焼 $\\ce{C2H6 + 7/2O2 -> 2CO2 + 3H2O}$ では $\\Delta H=\\{2\\times(-394)+3\\times(-242)\\}-(-84)=-1430\\,\\mathrm{kJ}$．差は $1430-1288.5=141.5\\fallingdotseq\\boldsymbol{142\\,\\mathrm{kJ}}$．\n一酸化炭素の燃焼 $\\ce{CO + 1/2O2 -> CO2}$ の $\\Delta H=-394-(-111)=-283\\,\\mathrm{kJ}$ で，$0.50\\,\\mathrm{mol}$ 分は $141.5\\,\\mathrm{kJ}$．不完全燃焼で失われた熱は，生じた一酸化炭素が燃え残った分の燃焼熱に等しい（ヘスの法則）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "不完全燃焼では，原子の保存（C・H・O）から生成物の物質量を決め，生成エンタルピーで発熱量を求める．完全燃焼との差は，生じた一酸化炭素の燃焼エンタルピーに等しい（ヘスの法則）．"
+ },
+ "concepts": [
+  "enthalpy",
+  "oxygen-sulfur",
+  "carbon-silicon"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "不完全燃焼",
+  "生成エンタルピー",
+  "ヘスの法則",
+  "一酸化炭素"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

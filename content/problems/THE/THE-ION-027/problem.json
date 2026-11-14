@@ -1,0 +1,109 @@
+{
+ "id": "THE-ION-027",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "フォルハルト法で沈殿が移り変わることによる誤差",
+ "course": "化学",
+ "level": 5,
+ "minutes": 35,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "濃度未知の塩化ナトリウム水溶液 $25.00\\,\\mathrm{mL}$ に希硝酸を加え，$0.1000\\,\\mathrm{mol/L}$ 硝酸銀水溶液 $30.00\\,\\mathrm{mL}$ を加えて $\\ce{Cl-}$ をすべて $\\ce{AgCl}$ として沈殿させた．沈殿をろ過せずに鉄(III)ミョウバン（指示薬）を加え，残った $\\ce{Ag+}$ を $0.1000\\,\\mathrm{mol/L}$ チオシアン酸カリウム水溶液で逆滴定した（フォルハルト法）．よく振り混ぜて，溶液と沈殿が平衡に達しても赤色が消えなくなった点を終点とする．次の値を用いよ．\n\\[ K_{sp}(\\ce{AgCl})=1.8\\times10^{-10},\\quad K_{sp}(\\ce{AgSCN})=1.0\\times10^{-12},\\quad K_{sp}(\\ce{AgBr})=5.0\\times10^{-13}\\ \\ (\\text{単位はいずれも}\\ (\\mathrm{mol/L})^2) \\]\n\\[ \\ce{Fe^3+ + SCN- <=> [Fe(SCN)]^2+}\\qquad K=\\dfrac{[\\ce{[Fe(SCN)]^2+}]}{[\\ce{Fe^3+}][\\ce{SCN-}]}=2.0\\times10^{2}\\,\\mathrm{L/mol} \\]\n赤色は $[\\ce{[Fe(SCN)]^2+}]=6.0\\times10^{-6}\\,\\mathrm{mol/L}$ で認められる．終点での溶液の体積は $100\\,\\mathrm{mL}$，$[\\ce{Fe^3+}]=1.0\\times10^{-2}\\,\\mathrm{mol/L}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "終点における $[\\ce{SCN-}]$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "終点では，$\\ce{AgCl}$ の一部が $\\ce{AgSCN}$ に変わっている．この変化を化学反応式で表し，その平衡定数を求めよ．また，終点で溶液中に存在する $\\ce{Cl-}$ の濃度を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "真の濃度が $0.0800\\,\\mathrm{mol/L}$ であったとすると，チオシアン酸カリウム水溶液の滴下量は何 mL になるか．小数第2位まで求めよ．また，この滴下量から計算される塩化ナトリウム水溶液の濃度を有効数字3桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "試料が臭化ナトリウム水溶液であった場合，沈殿の変化（ハロゲン化銀が $\\ce{AgSCN}$ に変わること）による滴下量の増加分を (3) と比べよ．また，(3) の誤差の原因から考えて，塩化物の定量で誤差を小さくする方法を2つ述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$3.0\\times10^{-6}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{AgCl + SCN- -> AgSCN + Cl-}$，$K=1.8\\times10^{2}$；$[\\ce{Cl-}]=5.4\\times10^{-4}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "3",
+    "tex": "$10.55\\,\\mathrm{mL}$；$0.0778\\,\\mathrm{mol/L}$（約 $2.7\\,\\%$ 小さい）"
+   },
+   {
+    "id": "4",
+    "tex": "臭化物では増加分は約 $0.0015\\,\\mathrm{mL}$ で，前問の $0.54\\,\\mathrm{mL}$ に比べて無視できる；逆滴定の前に $\\ce{AgCl}$ をろ過して除く，指示薬の $\\ce{Fe^3+}$ の濃度を大きくして終点の $[\\ce{SCN-}]$ を小さくする"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} \\[ [\\ce{SCN-}]=\\dfrac{[\\ce{[Fe(SCN)]^2+}]}{K[\\ce{Fe^3+}]}=\\dfrac{6.0\\times10^{-6}}{2.0\\times10^{2}\\times1.0\\times10^{-2}}=\\boldsymbol{3.0\\times10^{-6}\\,\\mathrm{mol/L}} \\]\n\n\\textbf{(2)} $\\ce{AgSCN}$ の方が溶けにくいので，$\\ce{SCN-}$ が少しでも残ると \\[ \\ce{AgCl + SCN- -> AgSCN + Cl-} \\] が進む．平衡定数は\n\\[ K'=\\dfrac{[\\ce{Cl-}]}{[\\ce{SCN-}]}=\\dfrac{[\\ce{Ag+}][\\ce{Cl-}]}{[\\ce{Ag+}][\\ce{SCN-}]}=\\dfrac{K_{sp}(\\ce{AgCl})}{K_{sp}(\\ce{AgSCN})}=\\boldsymbol{1.8\\times10^{2}} \\]\n終点では $\\ce{AgCl}$ と $\\ce{AgSCN}$ がともに存在して平衡にあるので\n\\[ [\\ce{Cl-}]=K'[\\ce{SCN-}]=1.8\\times10^{2}\\times3.0\\times10^{-6}=\\boldsymbol{5.4\\times10^{-4}\\,\\mathrm{mol/L}} \\]\nこのとき $[\\ce{Ag+}]=\\dfrac{K_{sp}(\\ce{AgSCN})}{[\\ce{SCN-}]}=3.3\\times10^{-7}\\,\\mathrm{mol/L}$ である．\n\n\\textbf{(3)} 銀・塩素・チオシアン酸の物質収支をとる．加えた $\\ce{Ag+}$ を $n_{\\mathrm{Ag}}$，試料の $\\ce{Cl-}$ を $n_{\\mathrm{Cl}}$，加えた $\\ce{SCN-}$ を $n_{\\mathrm{S}}$ とすると，沈殿中の銀 $=n_{\\mathrm{Ag}}-(\\text{溶液中の銀})$ が $(n_{\\mathrm{Cl}}-\\text{溶液中の}\\ \\ce{Cl-})+(n_{\\mathrm S}-\\text{溶液中の}\\ \\ce{SCN-}\\ \\text{と}\\ \\ce{[Fe(SCN)]^2+})$ に等しいので\n\\[ n_{\\mathrm S}=n_{\\mathrm{Ag}}-n_{\\mathrm{Cl}}+(\\text{溶液中の}\\ \\ce{Cl-})-(\\text{溶液中の}\\ \\ce{Ag+})+(\\text{溶液中の}\\ \\ce{SCN-}+\\ce{[Fe(SCN)]^2+}) \\]\n溶液中の量は $\\ce{Cl-}$ $5.4\\times10^{-5}\\,\\mathrm{mol}$，$\\ce{Ag+}$ $3.3\\times10^{-8}\\,\\mathrm{mol}$，$\\ce{SCN-}+\\ce{[Fe(SCN)]^2+}$ $9\\times10^{-7}\\,\\mathrm{mol}$ で，$\\ce{Cl-}$ 以外は小さい．よって\n\\[ n_{\\mathrm S}=3.000\\times10^{-3}-2.000\\times10^{-3}+5.4\\times10^{-5}-3.3\\times10^{-8}+9\\times10^{-7}=1.0549\\times10^{-3}\\,\\mathrm{mol}\\ \\Rightarrow\\ \\boldsymbol{10.55\\,\\mathrm{mL}} \\]\n増加分 $0.55\\,\\mathrm{mL}$ のうち $0.54\\,\\mathrm{mL}$ が $\\ce{AgCl}$ から溶け出した $\\ce{Cl-}$ によるもの（指示薬の分は $0.009\\,\\mathrm{mL}$）．この値から計算すると\n\\[ \\dfrac{3.000\\times10^{-3}-1.055\\times10^{-3}}{0.02500}=\\boldsymbol{0.0778\\,\\mathrm{mol/L}} \\]\nとなり，真の値より約 $2.7\\,\\%$ 小さい．$\\ce{AgCl}$ が $\\ce{SCN-}$ を余分に消費するので，その分 $\\ce{Cl-}$ が少なく見積もられる．終点の赤色が振ると消える（$\\ce{SCN-}$ が $\\ce{AgCl}$ に取られて $\\ce{[Fe(SCN)]^2+}$ が分解する）のはこのためである．\n\n\\textbf{(4)} 臭化物では $K'=\\dfrac{5.0\\times10^{-13}}{1.0\\times10^{-12}}=0.50$，$[\\ce{Br-}]=0.50\\times3.0\\times10^{-6}=1.5\\times10^{-6}\\,\\mathrm{mol/L}$，溶液 100 mL 中 $1.5\\times10^{-7}\\,\\mathrm{mol}$ で，沈殿の変化による滴下量の増加は $\\boldsymbol{0.0015\\,\\mathrm{mL}}$ 程度（指示薬の分 $0.009\\,\\mathrm{mL}$ より小さい）．$\\ce{AgBr}$ は $\\ce{AgSCN}$ より溶けにくいので沈殿の変化がほとんど起こらず，ろ過しなくてよい．\n塩化物で誤差を小さくするには，(i) 逆滴定の前に $\\ce{AgCl}$ をろ過して除き，ろ液（と洗液）の $\\ce{Ag+}$ を滴定する，(ii) $\\ce{Fe^3+}$ を濃くして終点の $[\\ce{SCN-}]$ を下げる（たとえば $[\\ce{Fe^3+}]=0.10\\,\\mathrm{mol/L}$ なら $[\\ce{SCN-}]=3.0\\times10^{-7}$，$[\\ce{Cl-}]=5.4\\times10^{-5}\\,\\mathrm{mol/L}$ で誤差は $0.27\\,\\%$ に下がる）．（実際には有機溶媒で沈殿の表面を覆い，$\\ce{SCN-}$ と接触させない方法も用いられる．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "フォルハルト法の終点では指示薬の平衡から [SCN-] が決まり，AgCl が共存すると AgCl + SCN- ⇄ AgSCN + Cl- の平衡（K = Ksp の比）により溶液中に Cl- が出て，その分だけ SCN- が余分に消費される．物質収支から誤差の大きさを求め，AgBr では無視できること，ろ過や Fe3+ 濃度で誤差を減らせることを判断する．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "precipitation",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "フォルハルト法",
+  "沈殿滴定",
+  "溶解度積",
+  "沈殿の移り変わり",
+  "滴定誤差"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

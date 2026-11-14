@@ -1,0 +1,109 @@
+{
+ "id": "ORG-ALC-025",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-03",
+ "topic": "二重結合をもつアルコールの酸化と水素付加の順序",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "pathway",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "2-プロペン-1-オール（アリルアルコール）$\\ce{CH2=CHCH2OH}$ を A とする．A からプロピオン酸 $\\ce{CH3CH2COOH}$ を，次の 2 つの経路でつくる．\\\\\n経路 I：A を二重結合を残したままおだやかに酸化して B とし，B をさらに酸化して C とする．C にニッケル触媒を用いて水素を付加させると，プロピオン酸が得られる．\\\\\n経路 II：A にニッケル触媒を用いて水素を付加させて D とし，D を酸化して E，E をさらに酸化するとプロピオン酸が得られる．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "B，C，D，E の示性式を答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "A〜E のうち，次の (a)〜(c) にあてはまるものをそれぞれすべて選べ．(a) 臭素の四塩化炭素溶液を脱色する．(b) 銀鏡反応を示す．(c) 炭酸水素ナトリウム水溶液を加えると気体が発生する．"
+     },
+     {
+      "id": "3",
+      "tex": "経路 I で，C ではなく B にニッケル触媒を用いて十分な量の水素を作用させると，何が得られるか．示性式と，B $1\\,\\mathrm{mol}$ が反応する水素の物質量を答えよ．また，C に十分な量の水素を作用させてもプロピオン酸で反応が止まる理由を答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "経路 I の酸化剤として，硫酸酸性の過マンガン酸カリウム水溶液を用いるのは適当でない．その理由を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "B：$\\ce{CH2=CHCHO}$，C：$\\ce{CH2=CHCOOH}$，D：$\\ce{CH3CH2CH2OH}$，E：$\\ce{CH3CH2CHO}$"
+   },
+   {
+    "id": "2",
+    "tex": "(a) A，B，C　(b) B，E　(c) C"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{CH3CH2CH2OH}$（1-プロパノール），$2\\,\\mathrm{mol}$．カルボキシ基の C=O はニッケル触媒による水素付加では還元されず，C=C だけに水素が付加するから．"
+   },
+   {
+    "id": "4",
+    "tex": "過マンガン酸カリウムは酸化力が強く，二重結合も酸化して切断してしまうから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 経路}　第一級アルコールは酸化されてアルデヒド，さらにカルボン酸になる．経路 I は C=C を残したまま $\\ce{-CH2OH -> -CHO -> -COOH}$ と進む：\n\\[\\ce{CH2=CHCH2OH} \\xrightarrow{\\text{酸化}} \\ce{CH2=CHCHO} \\xrightarrow{\\text{酸化}} \\ce{CH2=CHCOOH}\\]\n\\[\\ce{CH2=CHCOOH + H2 -> CH3CH2COOH}\\]\n経路 II は先に C=C に水素を付加させる：\n\\[\\ce{CH2=CHCH2OH + H2 -> CH3CH2CH2OH}\\]\n\\[\\ce{CH3CH2CH2OH} \\xrightarrow{\\text{酸化}} \\ce{CH3CH2CHO} \\xrightarrow{\\text{酸化}} \\ce{CH3CH2COOH}\\]\nB：$\\boldsymbol{\\ce{CH2=CHCHO}}$（アクロレイン），C：$\\boldsymbol{\\ce{CH2=CHCOOH}}$（アクリル酸），D：$\\boldsymbol{\\ce{CH3CH2CH2OH}}$，E：$\\boldsymbol{\\ce{CH3CH2CHO}}$．酸化と水素付加の順序を入れかえても最終生成物は同じだが，途中の化合物は異なる．\n\n\\textbf{(2)}　(a) 臭素の付加は C=C をもつものだけ：\\textbf{A，B，C}．（アルデヒドの C=O には付加しない．）\\\\\n(b) ホルミル基 $\\ce{-CHO}$ をもつもの：\\textbf{B，E}．\\\\\n(c) 炭酸より強い酸，すなわちカルボン酸：\\textbf{C}．\n\\[\\ce{CH2=CHCOOH + NaHCO3 -> CH2=CHCOONa + H2O + CO2}\\]\n同じ検出反応でも，経路 I の途中の化合物は C=C の反応を，経路 II の途中の化合物は示さない．\n\n\\textbf{(3)}　ニッケル触媒による水素付加では，C=C だけでなくアルデヒドの C=O にも水素が付加してアルコールになる．B は C=C と C=O を 1 個ずつもつので，\n\\[\\ce{CH2=CHCHO + 2H2 -> CH3CH2CH2OH}\\]\n生成物は $\\boldsymbol{\\ce{CH3CH2CH2OH}}$（1-プロパノール）で，水素は $\\boldsymbol{2\\,\\mathrm{mol}}$．一方，カルボキシ基の C=O はこの条件では還元されないので，C では C=C の付加だけが起こってプロピオン酸で止まる．目的物をカルボン酸にしたいなら，酸化をカルボン酸の段階まで進めてから水素を付加させる必要がある．\n\n\\textbf{(4)}　硫酸酸性の過マンガン酸カリウムは酸化力が強く，ヒドロキシ基だけでなく\\textbf{炭素原子間の二重結合も酸化して切断する}ので，C=C を保ったまま $\\ce{-CH2OH}$ だけを酸化することができない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "C=C とヒドロキシ基をもつ化合物では，酸化と水素付加の順序を入れかえても同じカルボン酸に至るが，途中の化合物の検出反応（臭素の付加・銀鏡反応・NaHCO₃）が異なる．ニッケル触媒の水素付加はアルデヒドの C=O にも起こるがカルボキシ基には起こらないので，どの段階で水素を付加するかで生成物が変わる．"
+ },
+ "concepts": [
+  "alcohol-carbonyl",
+  "halogen",
+  "hydrocarbon"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "アリルアルコール",
+  "アルコールの酸化",
+  "水素の付加",
+  "銀鏡反応",
+  "臭素の付加"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

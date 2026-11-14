@@ -1,0 +1,369 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 890 180"><g transform="translate(0,0)">
+<path d='M 107.4,48.7 L 107.4,77.9' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 103.2,48.7 L 103.2,77.9' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 105.3,76.7 L 129.6,90.6' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 105.3,76.7 L 81.1,90.7' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 81.1,90.7 L 63.2,80.4' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 106.5,77.4 L 105.3,76.7 L 104.1,77.4' style='fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 82.3,90.0 L 81.1,90.7 L 80.2,90.2' style='fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 39.6 70.9
+L 41.2 70.9
+L 41.2 76.0
+L 47.3 76.0
+L 47.3 70.9
+L 48.9 70.9
+L 48.9 82.8
+L 47.3 82.8
+L 47.3 77.3
+L 41.2 77.3
+L 41.2 82.8
+L 39.6 82.8
+L 39.6 70.9
+' fill='currentColor'/>
+<path d='M 51.4 76.8
+Q 51.4 74.0, 52.8 72.4
+Q 54.2 70.8, 56.8 70.8
+Q 59.5 70.8, 60.9 72.4
+Q 62.3 74.0, 62.3 76.8
+Q 62.3 79.7, 60.8 81.3
+Q 59.4 83.0, 56.8 83.0
+Q 54.2 83.0, 52.8 81.3
+Q 51.4 79.7, 51.4 76.8
+M 56.8 81.6
+Q 58.6 81.6, 59.6 80.4
+Q 60.6 79.2, 60.6 76.8
+Q 60.6 74.5, 59.6 73.3
+Q 58.6 72.1, 56.8 72.1
+Q 55.0 72.1, 54.0 73.3
+Q 53.0 74.5, 53.0 76.8
+Q 53.0 79.2, 54.0 80.4
+Q 55.0 81.6, 56.8 81.6
+' fill='currentColor'/>
+</g><text x="85.0" y="160" text-anchor="middle" font-size="14" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">A</text><line x1="175" y1="70.0" x2="232" y2="70.0" stroke="currentColor" stroke-width="1.5"/><polygon points="236,70.0 228,66.0 228,74.0" fill="currentColor"/><text x="205.0" y="60.0" text-anchor="middle" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">Br₂</text><g transform="translate(240,0)">
+<path d='M 131.5,80.7 L 112.2,91.8' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 112.2,91.8 L 88.0,77.8' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 88.0,77.8 L 74.0,53.5' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 88.0,77.8 L 98.0,60.4' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 88.0,77.8 L 63.7,91.8' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 63.7,91.8 L 45.9,81.4' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 113.2,91.2 L 112.2,91.8 L 111.0,91.1' style='fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 64.9,91.1 L 63.7,91.8 L 62.8,91.2' style='fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 138.2 77.5
+Q 139.4 77.8, 139.9 78.5
+Q 140.5 79.2, 140.5 80.3
+Q 140.5 81.9, 139.5 82.8
+Q 138.4 83.8, 136.4 83.8
+L 132.4 83.8
+L 132.4 71.9
+L 136.0 71.9
+Q 138.0 71.9, 139.0 72.7
+Q 140.0 73.5, 140.0 75.0
+Q 140.0 76.8, 138.2 77.5
+M 134.0 73.2
+L 134.0 76.9
+L 136.0 76.9
+Q 137.1 76.9, 137.7 76.5
+Q 138.4 76.0, 138.4 75.0
+Q 138.4 73.2, 136.0 73.2
+L 134.0 73.2
+M 136.4 82.4
+Q 137.6 82.4, 138.2 81.9
+Q 138.8 81.3, 138.8 80.3
+Q 138.8 79.3, 138.2 78.8
+Q 137.5 78.3, 136.2 78.3
+L 134.0 78.3
+L 134.0 82.4
+L 136.4 82.4
+' fill='currentColor'/>
+<path d='M 143.2 75.1
+L 143.4 76.3
+Q 144.3 75.0, 145.8 75.0
+Q 146.3 75.0, 146.9 75.2
+L 146.7 76.6
+Q 145.9 76.4, 145.5 76.4
+Q 144.8 76.4, 144.4 76.7
+Q 143.9 76.9, 143.5 77.6
+L 143.5 83.8
+L 142.0 83.8
+L 142.0 75.1
+L 143.2 75.1
+' fill='currentColor'/>
+<path d='M 103.8 53.2
+Q 104.9 53.6, 105.5 54.3
+Q 106.1 55.0, 106.1 56.0
+Q 106.1 57.6, 105.0 58.6
+Q 104.0 59.5, 102.0 59.5
+L 98.0 59.5
+L 98.0 47.6
+L 101.5 47.6
+Q 103.5 47.6, 104.5 48.4
+Q 105.6 49.2, 105.6 50.8
+Q 105.6 52.6, 103.8 53.2
+M 99.6 48.9
+L 99.6 52.7
+L 101.5 52.7
+Q 102.7 52.7, 103.3 52.2
+Q 103.9 51.7, 103.9 50.8
+Q 103.9 48.9, 101.5 48.9
+L 99.6 48.9
+M 102.0 58.2
+Q 103.1 58.2, 103.8 57.6
+Q 104.4 57.0, 104.4 56.0
+Q 104.4 55.0, 103.7 54.5
+Q 103.0 54.0, 101.7 54.0
+L 99.6 54.0
+L 99.6 58.2
+L 102.0 58.2
+' fill='currentColor'/>
+<path d='M 108.8 50.9
+L 108.9 52.1
+Q 109.8 50.7, 111.3 50.7
+Q 111.8 50.7, 112.4 50.9
+L 112.2 52.3
+Q 111.5 52.1, 111.1 52.1
+Q 110.4 52.1, 109.9 52.4
+Q 109.4 52.7, 109.1 53.3
+L 109.1 59.5
+L 107.5 59.5
+L 107.5 50.9
+L 108.8 50.9
+' fill='currentColor'/>
+<path d='M 22.3 71.9
+L 23.9 71.9
+L 23.9 76.9
+L 30.0 76.9
+L 30.0 71.9
+L 31.6 71.9
+L 31.6 83.8
+L 30.0 83.8
+L 30.0 78.3
+L 23.9 78.3
+L 23.9 83.8
+L 22.3 83.8
+L 22.3 71.9
+' fill='currentColor'/>
+<path d='M 34.0 77.8
+Q 34.0 74.9, 35.4 73.3
+Q 36.9 71.7, 39.5 71.7
+Q 42.1 71.7, 43.5 73.3
+Q 45.0 74.9, 45.0 77.8
+Q 45.0 80.7, 43.5 82.3
+Q 42.1 83.9, 39.5 83.9
+Q 36.9 83.9, 35.4 82.3
+Q 34.0 80.7, 34.0 77.8
+M 39.5 82.6
+Q 41.3 82.6, 42.3 81.4
+Q 43.3 80.2, 43.3 77.8
+Q 43.3 75.4, 42.3 74.3
+Q 41.3 73.1, 39.5 73.1
+Q 37.7 73.1, 36.7 74.2
+Q 35.7 75.4, 35.7 77.8
+Q 35.7 80.2, 36.7 81.4
+Q 37.7 82.6, 39.5 82.6
+' fill='currentColor'/>
+</g><text x="325.0" y="160" text-anchor="middle" font-size="14" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">B（不斉炭素 1 個）</text><line x1="415" y1="70.0" x2="472" y2="70.0" stroke="currentColor" stroke-width="1.5"/><polygon points="476,70.0 468,66.0 468,74.0" fill="currentColor"/><text x="445.0" y="44.0" text-anchor="middle" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">KMnO₄</text><text x="445.0" y="60.0" text-anchor="middle" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">H₂SO₄</text><g transform="translate(480,0)">
+<path d='M 37.2,76.8 L 58.0,64.7' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 58.0,64.7 L 82.3,78.6' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 82.3,78.6 L 68.3,102.9' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 82.3,78.6 L 92.3,96.0' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 82.3,78.6 L 106.5,64.6' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 108.6,65.8 L 108.6,43.7' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 104.4,65.8 L 104.4,43.7' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 106.5,64.6 L 124.4,74.9' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 57.0,65.3 L 58.0,64.7 L 59.2,65.4' style='fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 105.3,65.3 L 106.5,64.6 L 107.4,65.1' style='fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 27.6 78.4
+Q 28.7 78.8, 29.3 79.5
+Q 29.9 80.2, 29.9 81.2
+Q 29.9 82.8, 28.8 83.8
+Q 27.8 84.7, 25.8 84.7
+L 21.8 84.7
+L 21.8 72.8
+L 25.3 72.8
+Q 27.3 72.8, 28.4 73.6
+Q 29.4 74.4, 29.4 76.0
+Q 29.4 77.8, 27.6 78.4
+M 23.4 74.1
+L 23.4 77.9
+L 25.3 77.9
+Q 26.5 77.9, 27.1 77.4
+Q 27.7 76.9, 27.7 76.0
+Q 27.7 74.1, 25.3 74.1
+L 23.4 74.1
+M 25.8 83.3
+Q 27.0 83.3, 27.6 82.8
+Q 28.2 82.2, 28.2 81.2
+Q 28.2 80.2, 27.5 79.7
+Q 26.8 79.2, 25.5 79.2
+L 23.4 79.2
+L 23.4 83.3
+L 25.8 83.3
+' fill='currentColor'/>
+<path d='M 32.6 76.1
+L 32.8 77.3
+Q 33.7 75.9, 35.2 75.9
+Q 35.6 75.9, 36.3 76.1
+L 36.0 77.5
+Q 35.3 77.3, 34.9 77.3
+Q 34.2 77.3, 33.7 77.6
+Q 33.3 77.9, 32.9 78.5
+L 32.9 84.7
+L 31.3 84.7
+L 31.3 76.1
+L 32.6 76.1
+' fill='currentColor'/>
+<path d='M 98.1 102.6
+Q 99.2 102.9, 99.8 103.6
+Q 100.4 104.3, 100.4 105.3
+Q 100.4 106.9, 99.3 107.9
+Q 98.3 108.8, 96.3 108.8
+L 92.3 108.8
+L 92.3 96.9
+L 95.8 96.9
+Q 97.8 96.9, 98.9 97.7
+Q 99.9 98.6, 99.9 100.1
+Q 99.9 101.9, 98.1 102.6
+M 93.9 98.3
+L 93.9 102.0
+L 95.8 102.0
+Q 97.0 102.0, 97.6 101.5
+Q 98.2 101.0, 98.2 100.1
+Q 98.2 98.3, 95.8 98.3
+L 93.9 98.3
+M 96.3 107.5
+Q 97.5 107.5, 98.1 106.9
+Q 98.7 106.4, 98.7 105.3
+Q 98.7 104.3, 98.0 103.8
+Q 97.3 103.3, 96.0 103.3
+L 93.9 103.3
+L 93.9 107.5
+L 96.3 107.5
+' fill='currentColor'/>
+<path d='M 103.1 100.2
+L 103.3 101.4
+Q 104.2 100.0, 105.6 100.0
+Q 106.1 100.0, 106.8 100.2
+L 106.5 101.6
+Q 105.8 101.4, 105.4 101.4
+Q 104.7 101.4, 104.2 101.7
+Q 103.7 102.0, 103.4 102.6
+L 103.4 108.8
+L 101.8 108.8
+L 101.8 100.2
+L 103.1 100.2
+' fill='currentColor'/>
+<path d='M 101.0 36.6
+Q 101.0 33.8, 102.4 32.2
+Q 103.8 30.6, 106.4 30.6
+Q 109.1 30.6, 110.5 32.2
+Q 111.9 33.8, 111.9 36.6
+Q 111.9 39.5, 110.5 41.2
+Q 109.1 42.8, 106.4 42.8
+Q 103.8 42.8, 102.4 41.2
+Q 101.0 39.5, 101.0 36.6
+M 106.4 41.5
+Q 108.3 41.5, 109.2 40.2
+Q 110.2 39.0, 110.2 36.6
+Q 110.2 34.3, 109.2 33.1
+Q 108.3 31.9, 106.4 31.9
+Q 104.6 31.9, 103.6 33.1
+Q 102.7 34.3, 102.7 36.6
+Q 102.7 39.0, 103.6 40.2
+Q 104.6 41.5, 106.4 41.5
+' fill='currentColor'/>
+<path d='M 125.3 78.6
+Q 125.3 75.7, 126.7 74.1
+Q 128.1 72.5, 130.8 72.5
+Q 133.4 72.5, 134.8 74.1
+Q 136.2 75.7, 136.2 78.6
+Q 136.2 81.5, 134.8 83.1
+Q 133.4 84.8, 130.8 84.8
+Q 128.2 84.8, 126.7 83.1
+Q 125.3 81.5, 125.3 78.6
+M 130.8 83.4
+Q 132.6 83.4, 133.6 82.2
+Q 134.6 81.0, 134.6 78.6
+Q 134.6 76.2, 133.6 75.1
+Q 132.6 73.9, 130.8 73.9
+Q 129.0 73.9, 128.0 75.1
+Q 127.0 76.2, 127.0 78.6
+Q 127.0 81.0, 128.0 82.2
+Q 129.0 83.4, 130.8 83.4
+' fill='currentColor'/>
+<path d='M 138.1 72.7
+L 139.7 72.7
+L 139.7 77.7
+L 145.8 77.7
+L 145.8 72.7
+L 147.4 72.7
+L 147.4 84.6
+L 145.8 84.6
+L 145.8 79.1
+L 139.7 79.1
+L 139.7 84.6
+L 138.1 84.6
+L 138.1 72.7
+' fill='currentColor'/>
+</g><text x="565.0" y="160" text-anchor="middle" font-size="14" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">C（不斉炭素 1 個）</text><line x1="655" y1="70.0" x2="712" y2="70.0" stroke="currentColor" stroke-width="1.5"/><polygon points="716,70.0 708,66.0 708,74.0" fill="currentColor"/><text x="685.0" y="60.0" text-anchor="middle" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">Zn</text><g transform="translate(720,0)">
+<path d='M 107.4,31.6 L 107.4,60.8' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 103.2,31.6 L 103.2,60.8' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 105.3,59.6 L 129.6,73.5' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 105.3,59.6 L 81.1,73.6' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 79.0,72.4 L 79.0,94.7' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 83.2,72.4 L 83.2,94.7' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 81.1,73.6 L 63.2,63.3' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 106.5,60.3 L 105.3,59.6 L 104.1,60.3' style='fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 82.3,72.9 L 81.1,73.6 L 80.2,73.1' style='fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 75.7 101.7
+Q 75.7 98.8, 77.1 97.2
+Q 78.5 95.6, 81.2 95.6
+Q 83.8 95.6, 85.2 97.2
+Q 86.6 98.8, 86.6 101.7
+Q 86.6 104.5, 85.2 106.2
+Q 83.8 107.8, 81.2 107.8
+Q 78.5 107.8, 77.1 106.2
+Q 75.7 104.6, 75.7 101.7
+M 81.2 106.5
+Q 83.0 106.5, 83.9 105.3
+Q 84.9 104.0, 84.9 101.7
+Q 84.9 99.3, 83.9 98.1
+Q 83.0 97.0, 81.2 97.0
+Q 79.3 97.0, 78.3 98.1
+Q 77.4 99.3, 77.4 101.7
+Q 77.4 104.1, 78.3 105.3
+Q 79.3 106.5, 81.2 106.5
+' fill='currentColor'/>
+<path d='M 39.6 53.8
+L 41.2 53.8
+L 41.2 58.9
+L 47.3 58.9
+L 47.3 53.8
+L 48.9 53.8
+L 48.9 65.7
+L 47.3 65.7
+L 47.3 60.2
+L 41.2 60.2
+L 41.2 65.7
+L 39.6 65.7
+L 39.6 53.8
+' fill='currentColor'/>
+<path d='M 51.4 59.7
+Q 51.4 56.9, 52.8 55.3
+Q 54.2 53.7, 56.8 53.7
+Q 59.5 53.7, 60.9 55.3
+Q 62.3 56.9, 62.3 59.7
+Q 62.3 62.6, 60.8 64.2
+Q 59.4 65.9, 56.8 65.9
+Q 54.2 65.9, 52.8 64.2
+Q 51.4 62.6, 51.4 59.7
+M 56.8 64.5
+Q 58.6 64.5, 59.6 63.3
+Q 60.6 62.1, 60.6 59.7
+Q 60.6 57.4, 59.6 56.2
+Q 58.6 55.0, 56.8 55.0
+Q 55.0 55.0, 54.0 56.2
+Q 53.0 57.4, 53.0 59.7
+Q 53.0 62.1, 54.0 63.3
+Q 55.0 64.5, 56.8 64.5
+' fill='currentColor'/>
+</g><text x="805.0" y="160" text-anchor="middle" font-size="14" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">メタクリル酸</text></svg>

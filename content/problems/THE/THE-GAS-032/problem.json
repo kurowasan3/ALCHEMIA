@@ -1,0 +1,109 @@
+{
+ "id": "THE-GAS-032",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-08",
+ "topic": "圧縮因子を用いた高圧の実在気体の体積・物質量",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "実在気体のふるまいは，圧縮因子 $Z=\\dfrac{PV}{nRT}$ を用いて $PV=ZnRT$ と表せる（理想気体では常に $Z=1$）．ある気体 X について，$300\\,\\mathrm{K}$ での圧力 $P$ と $Z$ の関係は次のとおりであった．\n\\[ \\begin{array}{c|cccccc} P\\ [\\times10^{5}\\,\\mathrm{Pa}] & 1 & 100 & 200 & 400 & 600 & 800 \\\\ \\hline Z & 1.00 & 0.85 & 0.82 & 1.00 & 1.20 & 1.40 \\end{array} \\]\n気体定数は $8.31\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "X $1.00\\,\\mathrm{mol}$ を $300\\,\\mathrm{K}$，$2.0\\times10^{7}\\,\\mathrm{Pa}$ にしたときの体積を，理想気体とみなした場合と実際の場合について，それぞれ有効数字 2 桁で求めよ．また，実際の体積は理想気体とみなした体積より何 % 小さいか．"
+     },
+     {
+      "id": "2",
+      "tex": "「$300\\,\\mathrm{K}$，$4.0\\times10^{7}\\,\\mathrm{Pa}$ の X は $Z=1.00$ なので，分子間力も分子自身の体積も無視できる状態にある」という考えは正しいか．理由とともに答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "容積 $10.0\\,\\mathrm{L}$ の耐圧容器に，$300\\,\\mathrm{K}$ で X を $8.0\\times10^{7}\\,\\mathrm{Pa}$ になるまで詰めた．容器内の X の物質量を有効数字 2 桁で求めよ．また，理想気体とみなして計算した物質量と比べて，多いか少ないか．"
+     },
+     {
+      "id": "4",
+      "tex": "同じ容器に $300\\,\\mathrm{K}$ で X を $2.0\\times10^{7}\\,\\mathrm{Pa}$ まで詰めた場合と比べると，(3) では圧力が 4 倍であるが，詰められた X の物質量は何倍か．有効数字 2 桁で答え，4 倍とならない理由を述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "理想気体とみなすと $0.12\\,\\mathrm{L}$，実際は $0.10\\,\\mathrm{L}$．$18\\,\\%$ 小さい"
+   },
+   {
+    "id": "2",
+    "tex": "正しくない．分子間力は体積を小さくする（$Z<1$）向きに，分子自身の体積は体積を大きくする（$Z>1$）向きにはたらき，この圧力では両者の効果がちょうど打ち消し合って $Z=1$ になっているだけである"
+   },
+   {
+    "id": "3",
+    "tex": "$2.3\\times10^{2}\\,\\mathrm{mol}$．理想気体とみなした値（$3.2\\times10^{2}\\,\\mathrm{mol}$）より少ない"
+   },
+   {
+    "id": "4",
+    "tex": "$2.3$ 倍．$2.0\\times10^{7}\\,\\mathrm{Pa}$ では分子間力のために $Z<1$ で理想気体より多く詰まるが，$8.0\\times10^{7}\\,\\mathrm{Pa}$ では分子自身の体積のために $Z>1$ となり理想気体より少なくしか詰まらないから"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 理想気体とみなすと\n\\[ V_\\text{理想} = \\dfrac{nRT}{P} = \\dfrac{1.00\\times8.31\\times10^{3}\\times300}{2.0\\times10^{7}} = 0.1247 \\fallingdotseq \\boldsymbol{0.12\\,\\mathrm{L}} \\]\n実際は $Z=0.82$ なので $V = ZV_\\text{理想} = 0.82\\times0.1247 = 0.102 \\fallingdotseq \\boldsymbol{0.10\\,\\mathrm{L}}$．実際の体積は理想気体の $0.82$ 倍，すなわち $\\boldsymbol{18\\,\\%}$ 小さい．この圧力では分子が近づいて分子間力（引力）がはたらき，理想気体より縮む．\n\n\\textbf{(2)} \\textbf{正しくない}．$Z$ を 1 からずらす要因は 2 つある．分子間力（引力）は分子を引き寄せて体積を小さくし $Z<1$ に，分子自身の体積は分子が動ける空間を狭めて体積を大きくし $Z>1$ にする．表で $Z$ が $0.82$（$2.0\\times10^{7}\\,\\mathrm{Pa}$）から $1.40$（$8.0\\times10^{7}\\,\\mathrm{Pa}$）へと変わる途中の $4.0\\times10^{7}\\,\\mathrm{Pa}$ では，両方の効果が大きいまま\\textbf{打ち消し合って}たまたま $Z=1$ になっているにすぎない．分子間力も分子の体積も無視できるのは，低圧（表の $1\\times10^{5}\\,\\mathrm{Pa}$）のような分子どうしが十分離れた状態である．\n\n\\textbf{(3)} $n = \\dfrac{PV}{ZRT}$ より\n\\[ n = \\dfrac{8.0\\times10^{7}\\times10.0}{1.40\\times8.31\\times10^{3}\\times300} = 229 \\fallingdotseq \\boldsymbol{2.3\\times10^{2}\\,\\mathrm{mol}} \\]\n理想気体とみなすと $\\dfrac{8.0\\times10^{7}\\times10.0}{8.31\\times10^{3}\\times300} = 321 \\fallingdotseq 3.2\\times10^{2}\\,\\mathrm{mol}$ となるので，実際は\\textbf{少ない}（理想気体の $1/1.40$ 倍）．\n\n\\textbf{(4)} $2.0\\times10^{7}\\,\\mathrm{Pa}$ では\n\\[ n' = \\dfrac{2.0\\times10^{7}\\times10.0}{0.82\\times8.31\\times10^{3}\\times300} = 97.8\\,\\mathrm{mol} \\]\nよって $\\dfrac{229}{97.8} \\fallingdotseq \\boldsymbol{2.3}$ 倍（$=4\\times\\dfrac{0.82}{1.40}$）．物質量は $\\dfrac{P}{Z}$ に比例するので，$Z$ が $0.82$ から $1.40$ に増えた分だけ 4 倍より少なくなる．低めの圧力では引力のために理想気体より多く詰まり，高い圧力では分子自身の体積のために詰めにくくなるからである．高圧容器の充塡量を理想気体の式で見積もると，高圧ほど過大な見積もりになる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "圧縮因子 Z を用いた PV＝ZnRT で，高圧の実在気体の体積や容器に詰められる物質量を求め，理想気体の式による見積もりとのずれの向きを判断する．Z＝1 となる高圧の点は理想気体に近いのではなく，引力と分子の体積の効果が打ち消し合っているだけであることを見抜く．"
+ },
+ "concepts": [
+  "ideal-gas",
+  "intermolecular",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "実在気体",
+  "圧縮因子",
+  "高圧",
+  "分子間力",
+  "分子の体積"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

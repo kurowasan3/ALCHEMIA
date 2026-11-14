@@ -1,0 +1,100 @@
+{
+ "id": "THE-SOL-027",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-09",
+ "topic": "気体の混合と水への溶解（ヘンリーの法則）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "コックで連結した2つの耐圧容器 X，Y がある．X（容積 $1.0\\,\\mathrm L$）には二酸化炭素だけが $2.0\\times10^{5}\\,\\mathrm{Pa}$ で入っている．Y（容積 $2.0\\,\\mathrm L$）には水 $1.0\\,\\mathrm L$ と窒素が入っており，窒素の圧力は $1.0\\times10^{5}\\,\\mathrm{Pa}$，水には二酸化炭素は溶けていない．温度は $27$ ℃ に保つ．\n二酸化炭素は $27$ ℃，分圧 $1.0\\times10^{5}\\,\\mathrm{Pa}$ で水 $1.0\\,\\mathrm L$ に $0.030\\,\\mathrm{mol}$ 溶け，ヘンリーの法則に従う．窒素の溶解，水の蒸気圧，水の体積変化，連結部の容積は無視し，気体定数は $R=8.3\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "コックを開いてよく振り混ぜ，平衡に達したときの二酸化炭素の分圧と，水に溶けている二酸化炭素の物質量を，それぞれ有効数字2桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) のときの容器内の全圧を有効数字2桁で求めよ．また，Y に水が入っていなかった（Y 全体が窒素だけの気体）とすると，コックを開いたあとの全圧はいくらになるか．Y の窒素の物質量は同じとする．"
+     },
+     {
+      "id": "3",
+      "tex": "(1) の平衡状態から，容器全体を $27$ ℃ より高い温度に保つと，水に溶けている二酸化炭素の量と気体部分の二酸化炭素の分圧はそれぞれどう変化するか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "分圧 $7.3\\times10^{4}\\,\\mathrm{Pa}$，溶解量 $2.2\\times10^{-2}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "2",
+    "tex": "$1.2\\times10^{5}\\,\\mathrm{Pa}$；水がない場合は $1.0\\times10^{5}\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "3",
+    "tex": "溶けている量は減少し，二酸化炭素の分圧は増加する．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $RT=8.3\\times10^{3}\\times300=2.49\\times10^{6}\\,\\mathrm{Pa\\cdot L/mol}$．はじめの二酸化炭素は $\\dfrac{2.0\\times10^{5}\\times1.0}{2.49\\times10^{6}}=8.03\\times10^{-2}\\,\\mathrm{mol}$．\nコックを開くと気体部分は X の $1.0\\,\\mathrm L$ と Y の $1.0\\,\\mathrm L$（$2.0-1.0$）を合わせた $2.0\\,\\mathrm L$．平衡時の分圧を $p$ とすると，気体中と水中の二酸化炭素の合計がはじめの量に等しいので\n\\[ \\frac{p\\times2.0}{2.49\\times10^{6}}+0.030\\times\\frac{p}{1.0\\times10^{5}}=8.03\\times10^{-2} \\quad\\Rightarrow\\quad p=7.28\\times10^{4}\\fallingdotseq\\boldsymbol{7.3\\times10^{4}\\,\\mathrm{Pa}} \\]\n溶解量は $0.030\\times0.728=\\boldsymbol{2.2\\times10^{-2}\\,\\mathrm{mol}}$．\n\\textbf{(2)} 窒素は $1.0\\,\\mathrm L$ から $2.0\\,\\mathrm L$ に広がるので $5.0\\times10^{4}\\,\\mathrm{Pa}$．全圧は $7.28\\times10^{4}+5.0\\times10^{4}=\\boldsymbol{1.2\\times10^{5}\\,\\mathrm{Pa}}$．\n水がない場合，気体部分は $1.0+2.0=3.0\\,\\mathrm L$．二酸化炭素は $2.0\\times10^{5}\\times\\dfrac{1.0}{3.0}=6.67\\times10^{4}\\,\\mathrm{Pa}$，窒素は（$1.0\\times10^{5}\\,\\mathrm{Pa}$ で $1.0\\,\\mathrm L$ を占める量なので）$1.0\\times10^{5}\\times\\dfrac{1.0}{3.0}=3.33\\times10^{4}\\,\\mathrm{Pa}$．全圧は $\\boldsymbol{1.0\\times10^{5}\\,\\mathrm{Pa}}$．水があると二酸化炭素が溶けて減る一方，気体の体積が小さいので，全圧はかえって高くなる．\n\\textbf{(3)} 気体の溶解度は温度が高いほど小さいので，水に溶けている二酸化炭素は\\textbf{減少}し，その分が気体中に出てくる．さらに温度上昇そのものでも圧力は上がるので，二酸化炭素の分圧は\\textbf{増加}する．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "容器を連結して気体が広がるとき，水に溶ける気体は「気相の物質量＋溶解量（分圧に比例）＝全量」の収支式で平衡の分圧を決める．溶けない気体は体積の変化だけで分圧が決まり，気体の溶解度は高温ほど小さい．"
+ },
+ "concepts": [
+  "solution-colligative",
+  "mole",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ヘンリーの法則",
+  "分圧",
+  "気体の溶解度",
+  "物質量の収支"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

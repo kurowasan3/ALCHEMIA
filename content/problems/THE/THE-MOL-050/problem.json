@@ -1,0 +1,109 @@
+{
+ "id": "THE-MOL-050",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-04",
+ "topic": "空気中での硫化銀の加熱（同時に進む2つの酸化と硫酸銀の分解）の質量変化",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "equation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "硫化銀 $\\ce{Ag2S}$ $12.40\\,\\mathrm{g}$ を空気中でゆっくり加熱した．$650\\,^\\circ\\mathrm{C}$ ではすべての $\\ce{Ag2S}$ が反応しており，固体は銀 $\\ce{Ag}$ と硫酸銀 $\\ce{Ag2SO4}$ の混合物 $12.24\\,\\mathrm{g}$ になっていた．このとき起こった反応は次の2つである．\n\\[ \\text{反応 P：}\\ce{Ag2S} \\text{ が } \\ce{O2} \\text{ と反応して } \\ce{Ag} \\text{ と } \\ce{SO2} \\text{ になる}\\qquad \\text{反応 Q：}\\ce{Ag2S} \\text{ が } \\ce{O2} \\text{ と反応して } \\ce{Ag2SO4} \\text{ になる} \\]\nさらに $950\\,^\\circ\\mathrm{C}$ まで加熱すると，$\\ce{Ag2SO4}$ はすべて分解して $\\ce{Ag}$，$\\ce{SO2}$，$\\ce{O2}$ になった（反応 R）．原子量は $\\mathrm{O}=16$，$\\mathrm{S}=32$，$\\mathrm{Ag}=108$，標準状態の気体のモル体積は $22.4\\,\\mathrm{L/mol}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "反応 P，Q，R の化学反応式を書け．"
+     },
+     {
+      "id": "2",
+      "tex": "$650\\,^\\circ\\mathrm{C}$ までに反応 P，Q で反応した $\\ce{Ag2S}$ の物質量をそれぞれ有効数字3桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$950\\,^\\circ\\mathrm{C}$ で反応が終わったときの固体の質量を有効数字3桁で求めよ．また，この質量から反応 P と Q の割合を求めることはできるか．理由とともに答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "はじめから $950\\,^\\circ\\mathrm{C}$ までの全体で，発生した $\\ce{SO2}$ と，差し引き消費された $\\ce{O2}$ の体積（標準状態）をそれぞれ有効数字3桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "P：$\\ce{Ag2S + O2 -> 2Ag + SO2}$　Q：$\\ce{Ag2S + 2O2 -> Ag2SO4}$　R：$\\ce{Ag2SO4 -> 2Ag + SO2 + O2}$"
+   },
+   {
+    "id": "2",
+    "tex": "P：$3.50\\times10^{-2}\\,\\mathrm{mol}$，Q：$1.50\\times10^{-2}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "$10.8\\,\\mathrm{g}$．求められない．最後はどちらの経路でもすべて $\\ce{Ag}$ になり，質量は銀の物質量だけで決まるから．"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{SO2}$：$1.12\\,\\mathrm{L}$，$\\ce{O2}$：$1.12\\,\\mathrm{L}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　S の酸化数は P で $-2\\to+4$，Q で $-2\\to+6$ になり，$\\ce{O2}$ が酸化剤である．\n\\[ \\text{P：}\\ce{Ag2S + O2 -> 2Ag + SO2}\\qquad \\text{Q：}\\ce{Ag2S + 2O2 -> Ag2SO4} \\]\n\\[ \\text{R：}\\ce{Ag2SO4 -> 2Ag + SO2 + O2} \\]\n\n\\textbf{(2)}　式量は $\\ce{Ag2S}=248$，$\\ce{Ag}=108$，$\\ce{Ag2SO4}=312$．はじめの $\\ce{Ag2S}$ は $12.40/248=5.00\\times10^{-2}\\,\\mathrm{mol}$．P で $x\\,\\mathrm{mol}$，Q で $y\\,\\mathrm{mol}$ 反応したとすると，P では $\\ce{Ag2S}$ $1\\,\\mathrm{mol}$ あたり固体が $248\\to216$（$-32\\,\\mathrm{g}$），Q では $248\\to312$（$+64\\,\\mathrm{g}$）変わるので\n\\[ x+y=5.00\\times10^{-2},\\qquad 12.40-32x+64y=12.24 \\]\nこれを解くと $\\boldsymbol{x=3.50\\times10^{-2}\\,\\mathrm{mol}}$，$\\boldsymbol{y=1.50\\times10^{-2}\\,\\mathrm{mol}}$．質量の減少（P）と増加（Q）が打ち消し合うので，質量の変化が小さくても反応が少ないとは限らない．\n\n\\textbf{(3)}　R の後はすべての銀が $\\ce{Ag}$ になる．Ag 原子の物質量は $2\\times5.00\\times10^{-2}=0.100\\,\\mathrm{mol}$ なので，固体は $0.100\\times108=\\boldsymbol{10.8\\,\\mathrm{g}}$．この値は $x,\\,y$ の配分によらないので，最終質量から P と Q の割合は\\textbf{求められない}．割合を知るには，途中（$650\\,^\\circ\\mathrm{C}$）の質量のように，2つの経路で値が異なる量を測る必要がある．\n\n\\textbf{(4)}　S はすべて最後に $\\ce{SO2}$ になるので，$\\ce{SO2}$ は $5.00\\times10^{-2}\\,\\mathrm{mol}$，$5.00\\times10^{-2}\\times22.4=\\boldsymbol{1.12\\,\\mathrm{L}}$．\n$\\ce{O2}$ は P で $x$，Q で $2y$ 消費され，R で $y$ 放出されるので，差し引き $x+2y-y=x+y=5.00\\times10^{-2}\\,\\mathrm{mol}$，すなわち $\\boldsymbol{1.12\\,\\mathrm{L}}$．Q と R を足すと P と同じ式になる（Q＋R＝P）ので，経路によらず全体は $\\ce{Ag2S + O2 -> 2Ag + SO2}$ になる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "同じ物質が質量を減らす反応（金属と気体になる）と増やす反応（硫酸塩になる）を同時に起こすとき，途中の質量だけから両者の物質量を連立方程式で求められる．最後の生成物が経路によらず同じなら，最終質量や全体の気体の出入りは経路の割合によらない（2つの経路の和が同じ式になる）ので，割合の決定には途中の測定が必要になる．"
+ },
+ "concepts": [
+  "mole",
+  "oxygen-sulfur",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "熱重量分析",
+  "硫化銀",
+  "硫酸銀",
+  "連立方程式",
+  "経路によらない量"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

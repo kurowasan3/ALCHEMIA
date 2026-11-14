@@ -1,0 +1,109 @@
+{
+ "id": "THE-ION-028",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "吸光度による指示薬の電離定数の決定と指示薬が pH を変える効果",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "弱酸型の指示薬 $\\ce{HIn}$ は水溶液中で $\\ce{HIn <=> H+ + In-}$（電離定数 $K_a$）の平衡にあり，$\\ce{HIn}$ は黄色，$\\ce{In-}$ は青色である．ある波長の光を当てたときの溶液の吸光度 $A$（光の吸収の強さを表す量）は，$\\ce{In-}$ だけが吸収するので $[\\ce{In-}]$ に比例する．以下の測定では，指示薬の全濃度 $[\\ce{HIn}]+[\\ce{In-}]$ はつねに $1.0\\times10^{-5}\\,\\mathrm{mol/L}$ とし，指示薬は $\\ce{HIn}$ の形で加えるものとする．\n\\textbf{測定1}：強塩基性の水溶液では $A=0.800$ であった．\n\\textbf{測定2}：pH 7.00 の緩衝液では $A=0.160$ であった．\n\\textbf{測定3}：pH 未知の緩衝液では $A=0.560$ であった．\n緩衝液は十分に濃く，指示薬を加えてもその pH は変わらないとする．25 ℃，$K_w=1.0\\times10^{-14}\\,(\\mathrm{mol/L})^2$，$\\log_{10}2=0.30$，$\\log_{10}3=0.48$，$\\log_{10}7=0.85$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "測定1・2から指示薬の $K_a$ と $\\mathrm{p}K_a\\,(=-\\log_{10}K_a)$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "測定3の緩衝液の pH を小数第2位まで求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "この指示薬を $\\ce{CO2}$ を含まない純水に加えた（全濃度 $1.0\\times10^{-5}\\,\\mathrm{mol/L}$）．水の電離も考慮して，この溶液の pH を小数第1位まで求めよ．また，このとき指示薬の色から読み取れる pH は純水の pH（7.0）と一致するか．理由とともに答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "純水の pH を指示薬で測るとき，指示薬を加えたことによる pH の低下を 0.05 以下にするには，指示薬（$\\ce{HIn}$）の全濃度を何 mol/L 以下にする必要があるか．有効数字2桁で求めよ（$10^{0.1}=1.26$ とする）．また，この結果から，緩衝作用のない試料の pH を指示薬で正しく測ることが難しい理由を述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$K_a=2.5\\times10^{-8}\\,\\mathrm{mol/L}$，$\\mathrm{p}K_a=7.60$"
+   },
+   {
+    "id": "2",
+    "tex": "$7.97$"
+   },
+   {
+    "id": "3",
+    "tex": "pH $6.3$；一致しない．指示薬自身が弱酸として $\\ce{H+}$ を出し，純水の pH を 6.3 に下げてしまい，色はその下がった pH を示すから"
+   },
+   {
+    "id": "4",
+    "tex": "$1.0\\times10^{-7}\\,\\mathrm{mol/L}$ 以下；そこまでうすくすると色（吸光度）が弱すぎて測れず，色を読める濃度では指示薬自身が試料の pH を変えてしまうから"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 強塩基性ではすべて $\\ce{In-}$ なので，$A=0.800$ が $[\\ce{In-}]=1.0\\times10^{-5}\\,\\mathrm{mol/L}$ に対応する．pH 7.00 では $[\\ce{In-}]$ が全体の $\\dfrac{0.160}{0.800}=0.20$，$[\\ce{HIn}]$ が 0.80 なので\n\\[ K_a=[\\ce{H+}]\\dfrac{[\\ce{In-}]}{[\\ce{HIn}]}=1.0\\times10^{-7}\\times\\dfrac{0.20}{0.80}=\\boldsymbol{2.5\\times10^{-8}\\,\\mathrm{mol/L}},\\]\n\\[ \\mathrm{p}K_a=-\\log_{10}(2.5\\times10^{-8})=8-\\log_{10}\\dfrac{10}{4}=7+2\\log_{10}2=\\boldsymbol{7.60} \\]\n\n\\textbf{(2)} $\\dfrac{[\\ce{In-}]}{[\\ce{HIn}]}=\\dfrac{0.560}{0.800-0.560}=\\dfrac{7}{3}$ より\n\\[ \\mathrm{pH}=\\mathrm{p}K_a+\\log_{10}\\dfrac{[\\ce{In-}]}{[\\ce{HIn}]}=7.60+0.85-0.48=\\boldsymbol{7.97} \\]\n\n\\textbf{(3)} 緩衝作用がないので，指示薬自身の電離が pH を決める．電荷のつり合い $[\\ce{H+}]=[\\ce{In-}]+[\\ce{OH-}]$ に $[\\ce{In-}]=\\dfrac{K_a[\\ce{HIn}]}{[\\ce{H+}]}$，$[\\ce{OH-}]=\\dfrac{K_w}{[\\ce{H+}]}$ を入れると\n\\[ [\\ce{H+}]^2=K_a[\\ce{HIn}]+K_w \\]\n電離の割合は小さいとして $[\\ce{HIn}]\\fallingdotseq1.0\\times10^{-5}$ とおくと $[\\ce{H+}]^2=2.5\\times10^{-13}+1.0\\times10^{-14}=2.6\\times10^{-13}$，$[\\ce{H+}]=5.1\\times10^{-7}\\,\\mathrm{mol/L}$．このとき $\\dfrac{[\\ce{In-}]}{[\\ce{HIn}]}=\\dfrac{K_a}{[\\ce{H+}]}=0.049$ で，電離の割合を小さいとした近似も妥当（$K_aC$ と $K_w$ の比から，水の電離の寄与は約 4 % で，厳密には無視できない大きさ）．\n\\[ \\mathrm{pH}=7-\\log_{10}5.1\\fallingdotseq\\boldsymbol{6.3} \\]\n指示薬の色（$A=0.800\\times\\dfrac{0.049}{1.049}\\fallingdotseq0.038$）から読む pH も 6.3 となり，\\textbf{純水本来の 7.0 とは一致しない}．指示薬は「指示薬を加えた後の溶液」の pH を正しく示しているが，緩衝作用のない試料では指示薬そのもの（弱酸）が pH を変えてしまうからである．\n\n\\textbf{(4)} pH の低下を 0.05 以下にするには，$[\\ce{H+}]$ を $10^{0.05}$ 倍以下，$[\\ce{H+}]^2$ を $10^{0.1}=1.26$ 倍以下にすればよい．\n\\[ K_aC+K_w\\leqq1.26K_w\\quad\\Rightarrow\\quad C\\leqq\\dfrac{0.26\\times1.0\\times10^{-14}}{2.5\\times10^{-8}}=\\boldsymbol{1.0\\times10^{-7}\\,\\mathrm{mol/L}} \\]\n（このとき $[\\ce{H+}]\\fallingdotseq1.1\\times10^{-7}$ で $[\\ce{In-}]/[\\ce{HIn}]=0.22$ 程度，$\\ce{HIn}$ の電離の割合は小さく近似は妥当．）全濃度を $\\tfrac{1}{100}$ にすると吸光度も $\\tfrac{1}{100}$ 程度（$A\\fallingdotseq0.0015$）になり，色は事実上見えない．色を読める濃度の指示薬を入れると試料の pH が変わり，pH が変わらないほどうすくすると色が読めない．緩衝液のように $\\ce{H+}$ を受け止める成分を多く含む試料でなければ，指示薬による pH 測定は信頼できない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "指示薬の色の強さ（吸光度）から [In-]/[HIn] を求めると，緩衝液中の測定から pKa を逆算でき，未知の pH も決まる．一方，指示薬自身も弱酸なので，緩衝作用のない試料では [H+]^2 = Ka C + Kw のように指示薬が pH を変えてしまい，色を読める濃度との両立が難しい．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "concentration",
+  "ph"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "指示薬",
+  "電離定数",
+  "吸光度",
+  "緩衝液",
+  "水の電離"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

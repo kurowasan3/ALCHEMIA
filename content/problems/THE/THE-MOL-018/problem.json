@@ -1,0 +1,108 @@
+{
+ "id": "THE-MOL-018",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-04",
+ "topic": "沈殿の質量から金属の原子量と価数を決める",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある金属 M の塩化物 $\\ce{MCl_n}$ $1.00\\,\\mathrm g$ を水に溶かし，十分な量の硝酸銀水溶液を加えると，塩化銀の沈殿が $2.65\\,\\mathrm g$ 得られた．$\\ce{Cl}=35.5$，$\\ce{Ag}=108$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "沈殿した塩化銀の物質量と，もとの塩化物 $1.00\\,\\mathrm g$ 中の金属 M の質量を，有効数字3桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "塩化物イオン 1 mol あたりに結びついている M の質量は何 g か．有効数字3桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "M の価数 $n$ を 1，2，3 と仮定して M の原子量を求め，次の原子量の値と比べて M を決定せよ．\\\\\n$\\ce{Na}=23$，$\\ce{Mg}=24$，$\\ce{Al}=27$，$\\ce{K}=39$，$\\ce{Ca}=40$，$\\ce{Fe}=56$，$\\ce{Cu}=63.5$，$\\ce{Zn}=65.4$"
+     },
+     {
+      "id": "4",
+      "tex": "M のもう一つの価数の塩化物 $1.00\\,\\mathrm g$ を用いて同じ操作を行うと，塩化銀の沈殿は何 g 得られるか．有効数字3桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{AgCl}$：$1.85\\times10^{-2}\\,\\mathrm{mol}$，M：$0.344\\,\\mathrm g$"
+   },
+   {
+    "id": "2",
+    "tex": "$18.7\\,\\mathrm g$"
+   },
+   {
+    "id": "3",
+    "tex": "$n=1$ で 18.7，$n=2$ で 37.3，$n=3$ で 56.0 となり，一致するのは $n=3$ の鉄 $\\ce{Fe}$"
+   },
+   {
+    "id": "4",
+    "tex": "$2.26\\,\\mathrm g$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $\\ce{AgCl}=143.5$ より $\\dfrac{2.65}{143.5}\\fallingdotseq\\boldsymbol{1.85\\times10^{-2}\\,\\mathrm{mol}}$．\n\\[\\ce{MCl_n + nAgNO3 -> M(NO3)_n + nAgCl}\\]\n$\\ce{Cl}$ はすべて $\\ce{AgCl}$ になるので，$\\ce{Cl}$ の質量は $0.01847\\times35.5\\fallingdotseq0.656\\,\\mathrm g$．M は $1.00-0.656=\\boldsymbol{0.344\\,\\mathrm g}$．\n\n(2) $\\dfrac{0.344}{0.01847}\\fallingdotseq\\boldsymbol{18.7\\,\\mathrm g}$．\n\n(3) M の原子量は (2) の値の $n$ 倍．\n$n=1$：18.7（該当なし），$n=2$：37.3（$\\ce{K}$ 39 は1価，$\\ce{Ca}$ 40 とは合わない），$n=3$：56.0 → \\textbf{鉄 $\\ce{Fe}$}（$\\ce{FeCl3}$）．\n\n(4) 鉄のもう一つの価数は 2 で $\\ce{FeCl2}$（式量 127）．\n\\[\\ce{FeCl2 + 2AgNO3 -> Fe(NO3)2 + 2AgCl}\\]\n\\[\\frac{1.00}{127}\\times2\\times143.5\\fallingdotseq\\boldsymbol{2.26\\,\\mathrm g}\\]\n同じ質量でも，$\\ce{Cl}$ の割合が小さい $\\ce{FeCl2}$ のほうが沈殿は少ない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "塩化物の沈殿（AgCl）の質量から Cl 1 mol あたりの金属の質量を求め，価数を仮定して原子量の候補と照合することで，価数と元素を同時に決める．同じ金属でも価数が違う塩では沈殿量が変わる．"
+ },
+ "concepts": [
+  "mole",
+  "precipitation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "沈殿",
+  "原子量",
+  "価数",
+  "量的関係",
+  "逆算"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

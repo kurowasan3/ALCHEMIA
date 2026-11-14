@@ -1,0 +1,109 @@
+{
+ "id": "POL-PRT-026",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-05",
+ "topic": "アミノ酸の微視的電離定数と双性イオン・中性分子の比",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "アラニン $\\ce{CH3CH(NH2)COOH}$ の水溶液中には，次の 4 種類の化学種が考えられる（R は $\\ce{CH3CH}$ の部分を表す）．\n\\[ \\begin{array}{ll} \\text{C：} \\ce{H3N+-R-COOH}\\ (\\text{陽イオン}) & \\text{Z：} \\ce{H3N+-R-COO-}\\ (\\text{双性イオン}) \\\\ \\text{N：} \\ce{H2N-R-COOH}\\ (\\text{電荷をもたない分子}) & \\text{A：} \\ce{H2N-R-COO-}\\ (\\text{陰イオン}) \\end{array} \\]\nC から $\\ce{H+}$ が 1 個取れると Z または N に，Z または N から $\\ce{H+}$ がもう 1 個取れると A になる．それぞれの段階の電離定数を\n\\[ k_\\mathrm{Z}=\\dfrac{[\\mathrm{Z}][\\ce{H+}]}{[\\mathrm{C}]},\\quad k_\\mathrm{N}=\\dfrac{[\\mathrm{N}][\\ce{H+}]}{[\\mathrm{C}]},\\quad k'_\\mathrm{Z}=\\dfrac{[\\mathrm{A}][\\ce{H+}]}{[\\mathrm{Z}]},\\quad k'_\\mathrm{N}=\\dfrac{[\\mathrm{A}][\\ce{H+}]}{[\\mathrm{N}]} \\]\nとする．一方，滴定で測定できるのは Z と N を区別しない電離定数\n\\[ K_1=\\dfrac{([\\mathrm{Z}]+[\\mathrm{N}])[\\ce{H+}]}{[\\mathrm{C}]}=10^{-2.34}\\,\\mathrm{mol/L},\\qquad K_2=\\dfrac{[\\mathrm{A}][\\ce{H+}]}{[\\mathrm{Z}]+[\\mathrm{N}]}=10^{-9.69}\\,\\mathrm{mol/L} \\]\nである．また，アラニンのメチルエステルの陽イオン $\\ce{H3N+-R-COOCH3}$ の電離定数は $10^{-7.80}\\,\\mathrm{mol/L}$ であり，これは C の $\\ce{-NH3+}$ から $\\ce{H+}$ が取れる電離定数 $k_\\mathrm{N}$ に等しいとみなせるものとする．必要なら $10^{0.46}=2.9$，$10^{0.32}=2.1$ を用いよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$K_1=k_\\mathrm{Z}+k_\\mathrm{N}$ であることを示し，水溶液中の Z と N の濃度比 $[\\mathrm{Z}]/[\\mathrm{N}]$ を有効数字 2 桁で求めよ．また，この比が pH によって変わらない理由を述べよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$k_\\mathrm{Z}k'_\\mathrm{Z}=k_\\mathrm{N}k'_\\mathrm{N}$ および $\\dfrac{1}{K_2}=\\dfrac{1}{k'_\\mathrm{Z}}+\\dfrac{1}{k'_\\mathrm{N}}$ が成り立つことを示し，N の $\\ce{-COOH}$ の電離定数 $k'_\\mathrm{N}$ を $10^{-x}$ の形（$x$ は小数第 2 位まで）で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "C の $\\ce{-COOH}$（電離定数 $k_\\mathrm{Z}$）と N の $\\ce{-COOH}$（電離定数 $k'_\\mathrm{N}$）では，どちらが強い酸か．また，エステルの陽イオンの $\\ce{-NH3+}$（$10^{-7.80}$）と Z の $\\ce{-NH3+}$（$k'_\\mathrm{Z}$）ではどちらが強い酸か．それぞれ (1)，(2) の結果を用いて比べ，その違いが生じる理由を電荷の影響から説明せよ．"
+     },
+     {
+      "id": "4",
+      "tex": "等電点（pH を小数第 2 位まで）を求めよ．また，等電点におけるアラニンの全濃度に対する C の割合と N の割合を，それぞれ有効数字 1 桁で求め，「等電点ではアミノ酸は電荷をもたない分子として存在する」という表現の誤りを指摘せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$[\\mathrm{Z}]/[\\mathrm{N}]=2.9\\times10^{5}$．Z と N はどちらも C から生じ，比は $k_\\mathrm{Z}/k_\\mathrm{N}$ で $[\\ce{H+}]$ を含まないから"
+   },
+   {
+    "id": "2",
+    "tex": "$k'_\\mathrm{N}=10^{-4.23}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "3",
+    "tex": "C の $\\ce{-COOH}$ のほうが強い酸（$10^{-2.34}$ と $10^{-4.23}$）．エステルの陽イオンの $\\ce{-NH3+}$ のほうが強い酸（$10^{-7.80}$ と $10^{-9.69}$）．近くにある正電荷（$\\ce{-NH3+}$）は $\\ce{H+}$ を押し出して $\\ce{-COOH}$ の電離を助け，近くにある負電荷（$\\ce{-COO-}$）は $\\ce{H+}$ を引き止めて $\\ce{-NH3+}$ の電離を妨げるから"
+   },
+   {
+    "id": "4",
+    "tex": "等電点 6.02，C の割合 $2\\times10^{-4}$，N の割合 $3\\times10^{-6}$．等電点で全体の電荷が 0 になるのは，ほとんどすべてが正と負の電荷を同時にもつ双性イオン Z として存在するからであり（C と A はごくわずかで等量），電荷をもたない分子 N はごくわずかしか存在しない"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $[\\mathrm{Z}]=\\dfrac{k_\\mathrm{Z}[\\mathrm{C}]}{[\\ce{H+}]}$，$[\\mathrm{N}]=\\dfrac{k_\\mathrm{N}[\\mathrm{C}]}{[\\ce{H+}]}$ を $K_1$ の定義に代入すると\n\\[ K_1=\\dfrac{([\\mathrm{Z}]+[\\mathrm{N}])[\\ce{H+}]}{[\\mathrm{C}]}=k_\\mathrm{Z}+k_\\mathrm{N} \\]\n$k_\\mathrm{N}=10^{-7.80}$ は $K_1=10^{-2.34}$ の約 $10^{-5.5}$ 倍にすぎないので $k_\\mathrm{Z}=K_1-k_\\mathrm{N}\\fallingdotseq10^{-2.34}$．よって\n\\[ \\dfrac{[\\mathrm{Z}]}{[\\mathrm{N}]}=\\dfrac{k_\\mathrm{Z}}{k_\\mathrm{N}}=10^{-2.34+7.80}=10^{5.46}=\\boldsymbol{2.9\\times10^{5}} \\]\nZ と N は同じ C から $\\ce{H+}$ が 1 個取れたもので，比に $[\\ce{H+}]$ が入らない．pH を変えると Z と N は同じ割合で増減するだけである．\\\\\n\\textbf{(2)} C → A の変化を Z 経由と N 経由で表すと，どちらも $\\dfrac{[\\mathrm{A}][\\ce{H+}]^2}{[\\mathrm{C}]}$ に等しい：\n\\[ k_\\mathrm{Z}k'_\\mathrm{Z}=\\dfrac{[\\mathrm{Z}][\\ce{H+}]}{[\\mathrm{C}]}\\cdot\\dfrac{[\\mathrm{A}][\\ce{H+}]}{[\\mathrm{Z}]}=\\dfrac{[\\mathrm{A}][\\ce{H+}]^2}{[\\mathrm{C}]}=k_\\mathrm{N}k'_\\mathrm{N} \\]\nまた $[\\mathrm{Z}]=\\dfrac{[\\mathrm{A}][\\ce{H+}]}{k'_\\mathrm{Z}}$，$[\\mathrm{N}]=\\dfrac{[\\mathrm{A}][\\ce{H+}]}{k'_\\mathrm{N}}$ を $K_2$ の定義に入れると\n\\[ \\dfrac{1}{K_2}=\\dfrac{[\\mathrm{Z}]+[\\mathrm{N}]}{[\\mathrm{A}][\\ce{H+}]}=\\dfrac{1}{k'_\\mathrm{Z}}+\\dfrac{1}{k'_\\mathrm{N}} \\]\n$\\dfrac{k'_\\mathrm{N}}{k'_\\mathrm{Z}}=\\dfrac{k_\\mathrm{Z}}{k_\\mathrm{N}}=2.9\\times10^{5}$ なので $\\dfrac{1}{k'_\\mathrm{N}}$ は $\\dfrac{1}{k'_\\mathrm{Z}}$ に比べて無視でき，$k'_\\mathrm{Z}\\fallingdotseq K_2=10^{-9.69}$．したがって\n\\[ k'_\\mathrm{N}=\\dfrac{k_\\mathrm{Z}k'_\\mathrm{Z}}{k_\\mathrm{N}}=10^{-2.34-9.69+7.80}=\\boldsymbol{10^{-4.23}\\,\\mathrm{mol/L}} \\]\n\\textbf{(3)} \\textbf{$\\ce{-COOH}$ どうし}：C（$10^{-2.34}$）は N（$10^{-4.23}$）より約 80 倍強い酸．C ではすぐ隣に正電荷 $\\ce{-NH3+}$ があり，生じる $\\ce{-COO-}$ を静電的に安定にし，$\\ce{H+}$ を反発で押し出す．N の $\\ce{-COOH}$ は酢酸（約 $10^{-4.8}$）に近い普通のカルボキシ基としてふるまう．\\\\\n\\textbf{$\\ce{-NH3+}$ どうし}：エステルの陽イオン（$10^{-7.80}$）は Z（$10^{-9.69}$）より約 80 倍強い酸．Z では隣の負電荷 $\\ce{-COO-}$ が $\\ce{H+}$ を引き止めるので，$\\ce{-NH3+}$ から $\\ce{H+}$ が取れにくい．エステルにはこの負電荷がない．\\\\\n（両方の倍率がどちらも $10^{1.89}$ で等しいのは，(2) の関係 $k_\\mathrm{Z}/k'_\\mathrm{N}=k_\\mathrm{N}/k'_\\mathrm{Z}$ から必然である．）\\\\\n\\textbf{(4)} 等電点では C と A の濃度が等しく，$[\\mathrm{C}]=\\dfrac{([\\mathrm{Z}]+[\\mathrm{N}])[\\ce{H+}]}{K_1}$，$[\\mathrm{A}]=\\dfrac{K_2([\\mathrm{Z}]+[\\mathrm{N}])}{[\\ce{H+}]}$ を等しいとおいて $[\\ce{H+}]^2=K_1K_2$．\n\\[ \\mathrm{pH}=\\dfrac{2.34+9.69}{2}=6.015\\fallingdotseq\\boldsymbol{6.02} \\]\nこのとき $\\dfrac{[\\mathrm{C}]}{[\\mathrm{Z}]+[\\mathrm{N}]}=\\dfrac{[\\ce{H+}]}{K_1}=10^{-6.015+2.34}=10^{-3.675}\\fallingdotseq10^{-3.68}=10^{0.32}\\times10^{-4}=2.1\\times10^{-4}$，$[\\mathrm{A}]$ も同じ．C と A を合わせても $0.04\\,\\%$ 程度なので，ほぼ全量が Z＋N で，C の割合は $\\boldsymbol{2\\times10^{-4}}$．N の割合は\n\\[ \\dfrac{[\\mathrm{N}]}{\\text{全濃度}}\\fallingdotseq\\dfrac{1}{1+2.9\\times10^{5}}=3.4\\times10^{-6}\\fallingdotseq\\boldsymbol{3\\times10^{-6}} \\]\n等電点で「全体として電荷が 0」になるのは，正負の電荷を両方もつ \\textbf{Z が圧倒的に多く}，わずかな C と A が等量ずつあるためである．電荷をもたない分子 N は 100 万分の数個しかなく，「電荷をもたない分子として存在する」は誤りである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "滴定で測る電離定数は，双性イオンと電荷をもたない分子を区別しない 2 つの経路（微視的電離定数）の和（第 1 段）・逆数の和（第 2 段）になる．エステルをモデルにして一方の経路の定数を与えると，双性イオンと中性分子の比（pH によらない）と，各基の酸の強さが求まり，近くの電荷が電離を助けたり妨げたりすることが定量的に比べられる．"
+ },
+ "concepts": [
+  "protein-amino",
+  "carboxylic-ester",
+  "ph"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "双性イオン",
+  "微視的電離定数",
+  "等電点",
+  "アミノ酸",
+  "電離平衡"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,116 @@
+{
+ "id": "THE-ELC-018",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-07",
+ "topic": "マンガン乾電池とアルカリマンガン乾電池",
+ "course": "化学",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "equation",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "マンガン乾電池は，負極活物質に亜鉛，正極活物質に酸化マンガン(IV)，電解液に塩化亜鉛と塩化アンモニウムの水溶液を用いた一次電池である．アルカリマンガン乾電池は，電解液を水酸化カリウム水溶液に替えたものである．どちらの電池でも，正極では $\\ce{MnO2}$ が $\\ce{MnO(OH)}$ に還元されるものとする．O = 16，Mn = 55，Zn = 65.4 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "マンガン乾電池の正極の反応を，$\\ce{H+}$（$\\ce{NH4+}$ から供給される）と電子 $\\mathrm{e^-}$ を含むイオン反応式で書け．"
+     },
+     {
+      "id": "2",
+      "tex": "アルカリマンガン乾電池の負極では，亜鉛は $\\ce{[Zn(OH)4]^2-}$ になる．この反応を電子 $\\mathrm{e^-}$ を含むイオン反応式で書け．"
+     },
+     {
+      "id": "3",
+      "tex": "アルカリマンガン乾電池の正極の反応を，$\\ce{H2O}$ と電子 $\\mathrm{e^-}$ を含むイオン反応式で書け．"
+     },
+     {
+      "id": "4",
+      "tex": "マンガン乾電池の正極に $\\ce{MnO2}$ がなく炭素棒だけだったとすると，放電を続けたとき正極で何が起こり，電池の電圧はどうなるか．簡潔に説明せよ．"
+     },
+     {
+      "id": "5",
+      "tex": "マンガン乾電池で亜鉛が $1.31\\,\\mathrm{g}$ 反応したとき，反応した $\\ce{MnO2}$ は何 g か．有効数字2桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{MnO2 + H+ + e- -> MnO(OH)}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{Zn + 4OH- -> [Zn(OH)4]^2- + 2e-}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{MnO2 + H2O + e- -> MnO(OH) + OH-}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{H+}$ が還元されて水素が発生し，気泡が電極を覆って電圧が低下する（分極）"
+   },
+   {
+    "id": "5",
+    "tex": "$3.5\\,\\mathrm{g}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\ce{MnO2 + H+ + e- -> MnO(OH)}$（Mn の酸化数 $+4\\to+3$）．\n\n\\textbf{(2)} 塩基性の電解液中では $\\ce{Zn^2+}$ が $\\ce{OH-}$ と錯イオンをつくる：$\\ce{Zn + 4OH- -> [Zn(OH)4]^2- + 2e-}$．\n\n\\textbf{(3)} $\\ce{H+}$ の代わりに $\\ce{H2O}$ が水素を与える：$\\ce{MnO2 + H2O + e- -> MnO(OH) + OH-}$．\n\n\\textbf{(4)} 正極で電子を受け取るものが $\\ce{H+}$ だけになり，$\\ce{2H+ + 2e- -> H2}$ で\\textbf{水素が発生}する．気泡が電極表面を覆うなどして反応が妨げられ，\\textbf{電圧が急に下がる}（分極）．$\\ce{MnO2}$ は電子を受け取って水素の発生を防ぐので，減極剤ともよばれる．\n\n\\textbf{(5)} Zn：$1.31/65.4=2.00\\times10^{-2}\\,\\mathrm{mol}$，電子 $4.01\\times10^{-2}\\,\\mathrm{mol}$．$\\ce{MnO2}$ は電子と同じ物質量反応するので $4.01\\times10^{-2}\\times87=3.49\\approx\\boldsymbol{3.5\\,\\mathrm{g}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "乾電池の正極で MnO2 が H+（酸性）または H2O（塩基性）から水素を受け取って還元されること，MnO2 がないと H2 が発生して分極が起こること，負極の亜鉛と正極の MnO2 の量的関係．"
+ },
+ "concepts": [
+  "electrolysis",
+  "amphoteric",
+  "transition-metals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "マンガン乾電池",
+  "アルカリマンガン乾電池",
+  "分極",
+  "減極剤"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,115 @@
+{
+ "id": "THE-EQL-149",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "独立で同等な複数の結合部位への段階的な結合（統計的な因子）と協同性の判定",
+ "course": "化学",
+ "level": 3,
+ "minutes": 20,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "分子 H は，小分子 G を1個ずつ結合できる同じ結合部位を3つもつ．各部位は互いに影響し合わず（独立），どの部位についても\n\\[ k=\\frac{[\\text{その部位が空いた H}][\\ce{G}]}{[\\text{その部位に G が結合した H}]} \\]\n（ほかの部位の状態は同じ）が成り立つ．G を $i$ 個結合した H をまとめて $\\mathrm{H}_i$（$i=0,1,2,3$）と表し，段階ごとの解離定数を次のように定める．\n\\[ K_1=\\frac{[\\mathrm{H_0}][\\ce{G}]}{[\\mathrm{H_1}]},\\quad K_2=\\frac{[\\mathrm{H_1}][\\ce{G}]}{[\\mathrm{H_2}]},\\quad K_3=\\frac{[\\mathrm{H_2}][\\ce{G}]}{[\\mathrm{H_3}]} \\]\nまた $a=[\\ce{G}]/k$ とおく．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\mathrm{H_1}$，$\\mathrm{H_2}$ には，G が結合している部位の違いによってそれぞれ何通りの形があるか．また，$[\\mathrm{H_1}]$，$[\\mathrm{H_2}]$，$[\\mathrm{H_3}]$ を $[\\mathrm{H_0}]$ と $a$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "$K_1$，$K_2$，$K_3$ を $k$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "全結合部位のうち G が結合している割合 $\\theta$ を $a$ で表せ．また，$[\\ce{G}]=k$ のとき，H 全体のうち $\\mathrm{H_0}$，$\\mathrm{H_1}$，$\\mathrm{H_2}$，$\\mathrm{H_3}$ が占める割合をそれぞれ求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "3つの結合部位をもつ別の分子 X，Y，Z について段階ごとの解離定数を測定した（単位 $\\mathrm{mol/L}$）．それぞれの結合部位が独立か，1個目の結合が2個目以降の結合を強める（正の協同性）か，弱める（負の協同性）かを判定せよ．\\\\\nX：$K_1=2.0\\times10^{-4}$，$K_2=6.0\\times10^{-4}$，$K_3=1.8\\times10^{-3}$\\\\\nY：$K_1=K_2=K_3=2.0\\times10^{-4}$\\\\\nZ：$K_1=1.0\\times10^{-4}$，$K_2=1.0\\times10^{-3}$，$K_3=1.0\\times10^{-2}$"
+     },
+     {
+      "id": "5",
+      "tex": "X の1部位あたりの解離定数 $k$ を求めよ．また，$[\\ce{G}]=1.2\\times10^{-3}\\,\\mathrm{mol/L}$ のときの X の $\\theta$ を有効数字2桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\mathrm{H_1}$：3通り，$\\mathrm{H_2}$：3通り．$[\\mathrm{H_1}]=3a[\\mathrm{H_0}]$，$[\\mathrm{H_2}]=3a^2[\\mathrm{H_0}]$，$[\\mathrm{H_3}]=a^3[\\mathrm{H_0}]$"
+   },
+   {
+    "id": "2",
+    "tex": "$K_1=\\dfrac{k}{3}$，$K_2=k$，$K_3=3k$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\theta=\\dfrac{a}{1+a}$．$\\mathrm{H_0}$：$\\dfrac{1}{8}$，$\\mathrm{H_1}$：$\\dfrac{3}{8}$，$\\mathrm{H_2}$：$\\dfrac{3}{8}$，$\\mathrm{H_3}$：$\\dfrac{1}{8}$"
+   },
+   {
+    "id": "4",
+    "tex": "X：独立，Y：正の協同性，Z：負の協同性"
+   },
+   {
+    "id": "5",
+    "tex": "$k=6.0\\times10^{-4}\\,\\mathrm{mol/L}$，$\\theta=0.67$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　G が1個結合した形は，3つの部位のどれに結合するかで $\\boldsymbol{3}$ 通り，2個結合した形は空いている1部位の選び方で $\\boldsymbol{3}$ 通りある．\n特定の1部位に結合した形1つの濃度は，その部位について $k$ の式を使うと $[\\mathrm{H_0}]\\,[\\ce{G}]/k=a[\\mathrm{H_0}]$ である．同様に，結合部位を1つ増やすごとに $a$ 倍になる．形の数を掛けて\n\\[ [\\mathrm{H_1}]=3a[\\mathrm{H_0}],\\quad [\\mathrm{H_2}]=3a^2[\\mathrm{H_0}],\\quad [\\mathrm{H_3}]=a^3[\\mathrm{H_0}] \\]\n係数 1，3，3，1 は $(1+a)^3$ の展開の係数と同じである．\n\n\\textbf{(2)}　$a=[\\ce{G}]/k$ を使うと\n\\[ K_1=\\frac{[\\mathrm{H_0}][\\ce{G}]}{3a[\\mathrm{H_0}]}=\\frac{k}{3},\\quad K_2=\\frac{3a[\\mathrm{H_0}][\\ce{G}]}{3a^2[\\mathrm{H_0}]}=k,\\quad K_3=\\frac{3a^2[\\mathrm{H_0}][\\ce{G}]}{a^3[\\mathrm{H_0}]}=3k \\]\n部位どうしが独立でも，段階ごとの解離定数は $1:3:9$ と変わる．はじめは空いた部位が3つあって G が結合しやすく（$K_1$ が小さい），最後は空いた部位が1つしかないうえ，外れる G の候補が3個あるためである（統計的な効果）．\n\n\\textbf{(3)}　\n\\[ \\theta=\\frac{[\\mathrm{H_1}]+2[\\mathrm{H_2}]+3[\\mathrm{H_3}]}{3([\\mathrm{H_0}]+[\\mathrm{H_1}]+[\\mathrm{H_2}]+[\\mathrm{H_3}])}=\\frac{3a+6a^2+3a^3}{3(1+3a+3a^2+a^3)}=\\frac{3a(1+a)^2}{3(1+a)^3}=\\boldsymbol{\\frac{a}{1+a}} \\]\n結合部位が1つだけの分子と同じ式になる．$[\\ce{G}]=k$（$a=1$）では全体が $1+3+3+1=8$ に比例するので，$\\mathrm{H_0}$：$\\boldsymbol{1/8}$，$\\mathrm{H_1}$：$\\boldsymbol{3/8}$，$\\mathrm{H_2}$：$\\boldsymbol{3/8}$，$\\mathrm{H_3}$：$\\boldsymbol{1/8}$（このとき $\\theta=1/2$）．\n\n\\textbf{(4)}　独立なら $K_2/K_1=3$，$K_3/K_2=3$ になるはずである（(2)）．これと比べる．\nX：$K_2/K_1=3.0$，$K_3/K_2=3.0$ → \\textbf{独立}．\nY：$K_2/K_1=1$ で 3 より小さい．2個目は統計的な予想より結合しやすい → \\textbf{正の協同性}．「定数がすべて等しいから独立」と考えるのは誤りである．\nZ：$K_2/K_1=10$ で 3 より大きい．2個目以降が統計的な予想より結合しにくい → \\textbf{負の協同性}．\n\n\\textbf{(5)}　X は独立なので $k=3K_1=\\boldsymbol{6.0\\times10^{-4}\\,\\mathrm{mol/L}}$（$K_2=k$，$K_3=3k$ とも一致）．$a=1.2\\times10^{-3}/6.0\\times10^{-4}=2.0$ より\n\\[ \\theta=\\frac{2.0}{1+2.0}=0.666\\cdots\\approx\\boldsymbol{0.67} \\]\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "同等で独立な結合部位が n 個ある分子では，i 個結合した分子の形の数（組み合わせの数）が統計的な因子となり，段階ごとの解離定数は部位どうしが独立でも 1:3:9（3部位）のように変わる一方，全部位の結合割合は1部位の分子と同じ a/(1+a) になる．測定した段階定数の比を統計的な予想と比べて，独立・正の協同性・負の協同性を判定する．"
+ },
+ "concepts": [
+  "chemical-equilibrium"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "結合平衡",
+  "統計的因子",
+  "協同性",
+  "解離定数",
+  "組み合わせ"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

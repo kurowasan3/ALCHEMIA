@@ -1,0 +1,124 @@
+{
+ "id": "THE-BND-019",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-03",
+ "topic": "1つの結晶に含まれる結合の種類",
+ "course": "化学",
+ "level": 1,
+ "minutes": 8,
+ "format": [
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の(1)〜(5)の物質の結晶に含まれる化学結合および分子間にはたらく力を，下の語群からすべて選べ．また(6)に答えよ．\n\n語群：イオン結合，共有結合，配位結合，金属結合，水素結合，ファンデルワールス力"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "硫酸アンモニウム $\\ce{(NH4)2SO4}$"
+     },
+     {
+      "id": "2",
+      "tex": "ヨウ素 $\\ce{I2}$"
+     },
+     {
+      "id": "3",
+      "tex": "炭酸カルシウム $\\ce{CaCO3}$"
+     },
+     {
+      "id": "4",
+      "tex": "氷 $\\ce{H2O}$"
+     },
+     {
+      "id": "5",
+      "tex": "鉄 $\\ce{Fe}$"
+     },
+     {
+      "id": "6",
+      "tex": "(1)〜(5)のうち，単体でありながら結晶中に2種類の結合（力）を含むものを選べ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "イオン結合，共有結合，配位結合"
+   },
+   {
+    "id": "2",
+    "tex": "共有結合，ファンデルワールス力"
+   },
+   {
+    "id": "3",
+    "tex": "イオン結合，共有結合"
+   },
+   {
+    "id": "4",
+    "tex": "共有結合，水素結合，ファンデルワールス力"
+   },
+   {
+    "id": "5",
+    "tex": "金属結合"
+   },
+   {
+    "id": "6",
+    "tex": "ヨウ素 $\\ce{I2}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $\\ce{NH4+}$ と $\\ce{SO4^2-}$ の間は$\\boldsymbol{\\text{イオン結合}}$．$\\ce{NH4+}$ 内の $\\ce{N-H}$ と $\\ce{SO4^2-}$ 内の $\\ce{S-O}$ は$\\boldsymbol{\\text{共有結合}}$で，$\\ce{NH4+}$ は $\\ce{NH3 + H+ -> NH4+}$ によってできるので$\\boldsymbol{\\text{配位結合}}$も含む（できたあとの4本の $\\ce{N-H}$ は区別できない）．\n\n(2) $\\ce{I-I}$ は$\\boldsymbol{\\text{共有結合}}$，$\\ce{I2}$ 分子どうしは$\\boldsymbol{\\text{ファンデルワールス力}}$で結びつく分子結晶．\n\n(3) $\\ce{Ca^2+}$ と $\\ce{CO3^2-}$ の間は$\\boldsymbol{\\text{イオン結合}}$，$\\ce{CO3^2-}$ 内の $\\ce{C-O}$ は$\\boldsymbol{\\text{共有結合}}$．\n\n(4) 分子内の $\\ce{O-H}$ は$\\boldsymbol{\\text{共有結合}}$，分子どうしは主に$\\boldsymbol{\\text{水素結合}}$（ファンデルワールス力もはたらく）．\n\n(5) $\\boldsymbol{\\text{金属結合}}$のみ．\n\n(6) 単体は (2) $\\ce{I2}$ と (5) $\\ce{Fe}$．$\\ce{Fe}$ は金属結合だけだが，$\\ce{I2}$ は共有結合と分子間力の2種類を含む．答えは $\\boldsymbol{\\text{ヨウ素}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "多原子イオンを含むイオン結晶や分子結晶では，粒子間の結合と粒子内の結合が別の種類になり，1つの結晶に複数の結合・力が共存する．多原子イオンの成り立ち（配位結合）までさかのぼって数える．"
+ },
+ "concepts": [
+  "chemical-bond",
+  "complex-ion",
+  "crystal"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "化学結合",
+  "配位結合",
+  "多原子イオン",
+  "分子結晶",
+  "条件判断"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

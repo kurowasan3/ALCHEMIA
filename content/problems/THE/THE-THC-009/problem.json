@@ -1,0 +1,107 @@
+{
+ "id": "THE-THC-009",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-10",
+ "topic": "水の状態と燃焼エンタルピー・混合気体の組成",
+ "course": "化学",
+ "level": 1,
+ "minutes": 15,
+ "format": [
+  "equation",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "生成エンタルピー〔kJ/mol〕を $\\ce{CO2(気)}$ $-394$，$\\ce{H2O(液)}$ $-286$，$\\ce{CH4(気)}$ $-75$，$\\ce{C3H8(気)}$ $-105$ とし，水の蒸発エンタルピーを $+44\\,\\mathrm{kJ/mol}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "プロパンが完全燃焼して液体の水が生じる反応を，反応エンタルピー $\\Delta H$ を付した化学反応式で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "プロパンが完全燃焼して水がすべて気体として生じる場合の $\\Delta H$ を求めよ．また，(1) と (2) のどちらの方が発生する熱量が大きいか，理由とともに答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "メタンとプロパンの混合気体 $1.00\\,\\mathrm{mol}$ を完全燃焼させ，生じた水をすべて液体にしたところ，$1423\\,\\mathrm{kJ}$ の熱が発生した．混合気体中のメタンの物質量を有効数字3桁で求めよ．メタンの燃焼エンタルピーも上の生成エンタルピーから求めること．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の燃焼に必要な空気は，$0$ ℃，$1.013\\times10^{5}\\,\\mathrm{Pa}$ で少なくとも何 L か．空気は体積で酸素 $20\\,\\%$，窒素 $80\\,\\%$ とし，この条件で気体 $1\\,\\mathrm{mol}$ は $22.4\\,\\mathrm L$ を占めるとする．有効数字3桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{C3H8(気) + 5O2(気) -> 3CO2(気) + 4H2O(液)}$　$\\Delta H=-2221\\,\\mathrm{kJ}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\Delta H=-2045\\,\\mathrm{kJ}$．(1) の方が大きい．水蒸気が液体の水になるときにも熱が放出されるので，液体の水が生じる方が発生する熱量が $4\\times44=176\\,\\mathrm{kJ}$ 多い．"
+   },
+   {
+    "id": "3",
+    "tex": "$0.600\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "4",
+    "tex": "$358\\,\\mathrm L$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} （反応エンタルピー）＝（生成物の生成エンタルピーの和）－（反応物の生成エンタルピーの和）より\n\\[ \\Delta H=\\{3\\times(-394)+4\\times(-286)\\}-(-105)=-2221\\,\\mathrm{kJ} \\]\n\\[ \\ce{C3H8(気) + 5O2(気) -> 3CO2(気) + 4H2O(液)}\\quad \\Delta H=\\boldsymbol{-2221\\,\\mathrm{kJ}} \\]\n\\textbf{(2)} $\\ce{H2O(液) -> H2O(気)}$ $\\Delta H=+44\\,\\mathrm{kJ}$ を 4 倍して (1) に加えると $\\Delta H=-2221+176=\\boldsymbol{-2045\\,\\mathrm{kJ}}$．水蒸気が凝縮するときに放出される熱の分だけ，液体の水が生じる (1) の方が発熱量が大きい．\n\\textbf{(3)} メタンの燃焼：$\\ce{CH4(気) + 2O2(気) -> CO2(気) + 2H2O(液)}$ の $\\Delta H=\\{-394+2\\times(-286)\\}-(-75)=-891\\,\\mathrm{kJ}$．メタンを $x\\,\\mathrm{mol}$ とすると\n\\[ 891x+2221(1.00-x)=1423 \\quad\\Rightarrow\\quad x=\\boldsymbol{0.600\\,\\mathrm{mol}} \\]\n\\textbf{(4)} 必要な酸素はメタン $0.600\\times2$ とプロパン $0.400\\times5$ で $3.20\\,\\mathrm{mol}$．空気はその 5 倍の $16.0\\,\\mathrm{mol}$ で，$16.0\\times22.4=\\boldsymbol{358\\,\\mathrm L}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "燃焼エンタルピーは生じる水の状態（液体・気体）で蒸発エンタルピーの分だけ変わる．混合燃料の発熱量から，各成分の燃焼エンタルピーを使って組成を逆算できる．"
+ },
+ "concepts": [
+  "enthalpy",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "燃焼エンタルピー",
+  "生成エンタルピー",
+  "蒸発エンタルピー",
+  "混合気体"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

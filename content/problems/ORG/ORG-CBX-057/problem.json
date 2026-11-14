@@ -1,0 +1,110 @@
+{
+ "id": "ORG-CBX-057",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-04",
+ "topic": "C5H10O2 のエステル 9 種の加水分解生成物（アルコールの級・ヨードホルム反応・不斉炭素）による分類",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "structure",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "分子式 $\\ce{C5H10O2}$ で表されるエステルには，構造異性体が 9 種類ある（立体異性体は区別しない）．これら 9 種類について次の問いに答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "加水分解で得られるアルコールがヨードホルム反応を示すものは何種類か．"
+     },
+     {
+      "id": "2",
+      "tex": "分子内に不斉炭素原子をもつものは何種類か．"
+     },
+     {
+      "id": "3",
+      "tex": "加水分解で得られるアルコールが，濃硫酸を加えて加熱しても分子内脱水でアルケンを生じないものは何種類か．"
+     },
+     {
+      "id": "4",
+      "tex": "加水分解で得られるアルコールが，二クロム酸カリウムの硫酸酸性水溶液で酸化されにくいものは何種類か．また，そのエステルの示性式を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "3 種類"
+   },
+   {
+    "id": "2",
+    "tex": "1 種類"
+   },
+   {
+    "id": "3",
+    "tex": "2 種類"
+   },
+   {
+    "id": "4",
+    "tex": "1 種類，$\\ce{HCOOC(CH3)3}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{9 種類の内訳}（酸の炭素数＋アルコールの炭素数＝5）\\\\\nギ酸エステル：$\\ce{HCOOCH2CH2CH2CH3}$，$\\ce{HCOOCH(CH3)CH2CH3}$，$\\ce{HCOOCH2CH(CH3)2}$，$\\ce{HCOOC(CH3)3}$\\\\\n酢酸エステル：$\\ce{CH3COOCH2CH2CH3}$，$\\ce{CH3COOCH(CH3)2}$\\\\\nプロピオン酸エステル：$\\ce{CH3CH2COOCH2CH3}$\\\\\nメチルエステル：$\\ce{CH3CH2CH2COOCH3}$，$\\ce{(CH3)2CHCOOCH3}$\n\n\\textbf{(1)} ヨードホルム反応を示すアルコールは $\\ce{CH3CH(OH)-}$ の構造をもつもの（エタノールを含む）．2-ブタノール，2-プロパノール，エタノールを生じる $\\ce{HCOOCH(CH3)CH2CH3}$，$\\ce{CH3COOCH(CH3)2}$，$\\ce{CH3CH2COOCH2CH3}$ の $\\boldsymbol{3}$ 種類．\n\n\\textbf{(2)} 4 つの異なる基が結合した炭素をもつのは，2-ブタノールのエステル $\\ce{HCOOCH(CH3)CH2CH3}$ の $\\boldsymbol{1}$ 種類（$\\ce{-OCHO}$，$\\ce{-CH3}$，$\\ce{-C2H5}$，$\\ce{-H}$）．\n\n\\textbf{(3)} 分子内脱水には OH の付いた炭素の隣の炭素に H が必要．炭素 1 個のメタノールはアルケンを生じないので，メチルエステル 2 種類 $\\ce{CH3CH2CH2COOCH3}$，$\\ce{(CH3)2CHCOOCH3}$ の $\\boldsymbol{2}$ 種類．\n\n\\textbf{(4)} 酸化されにくいのは OH の付いた炭素に H がない第三級アルコールで，2-メチル-2-プロパノールを生じる $\\boldsymbol{\\text{1 種類}}$，示性式 $\\ce{HCOOC(CH3)3}$．なお，このエステルを加水分解して生じるギ酸は還元性をもつので，「加水分解生成物がどちらも酸化されない」わけではない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "C5H10O2 のエステルを「酸の炭素数＋アルコールの炭素数」で網羅し，加水分解で生じるアルコールの構造（CH3CH(OH)− の有無，β 位の H の有無，第三級かどうか）とエステル自体の不斉炭素で分類する．"
+ },
+ "concepts": [
+  "carboxylic-ester",
+  "organic-structure",
+  "alcohol-carbonyl"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "エステル",
+  "構造異性体",
+  "加水分解",
+  "ヨードホルム反応",
+  "第三級アルコール",
+  "不斉炭素"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

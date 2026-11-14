@@ -1,0 +1,117 @@
+{
+ "id": "POL-SUG-038",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-04",
+ "topic": "酸化銅(I) を経由する還元糖の酸化還元滴定（電子の受け渡しの連鎖）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "equation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "はちみつに含まれる単糖（グルコースとフルクトース）の量を，次の方法で調べた．\nはちみつ $0.500\\,\\mathrm g$ を水に溶かして $100\\,\\mathrm{mL}$ とし，その $10.0\\,\\mathrm{mL}$ に十分な量のフェーリング液を加えて加熱した．生じた赤色沈殿の酸化銅(I) $\\ce{Cu2O}$ をろ過して洗い，これを硫酸酸性の硫酸鉄(III) 水溶液（過剰）に完全に溶かした．このとき $\\ce{Fe^3+}$ の一部が $\\ce{Fe^2+}$ に変わった．生じた $\\ce{Fe^2+}$ を $0.0100\\,\\mathrm{mol/L}$ 過マンガン酸カリウム水溶液で滴定したところ，$8.40\\,\\mathrm{mL}$ で終点に達した．\nただし，グルコース・フルクトースのいずれも 1 mol から $\\ce{Cu2O}$ が 1 mol 生じるものとし，はちみつ中のフェーリング液を還元する物質はこの 2 種の単糖だけとする．単糖の分子量は 180 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{Cu2O}$ が硫酸酸性の $\\ce{Fe^3+}$ 水溶液に溶ける変化をイオン反応式で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "$\\ce{Fe^2+}$ と過マンガン酸イオンの反応をイオン反応式で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "単糖 1 mol あたり，滴定で消費される $\\ce{KMnO4}$ は何 mol か．"
+     },
+     {
+      "id": "4",
+      "tex": "はちみつに含まれる単糖の質量パーセントを有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "過マンガン酸カリウム水溶液の代わりに $0.0100\\,\\mathrm{mol/L}$ 二クロム酸カリウム水溶液（硫酸酸性で $\\ce{Cr2O7^2-}$ が $\\ce{Cr^3+}$ になる）で同じ $\\ce{Fe^2+}$ を滴定したとすると，終点までに何 mL 必要か．有効数字 3 桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{Cu2O + 2Fe^3+ + 2H+ -> 2Cu^2+ + 2Fe^2+ + H2O}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{MnO4- + 5Fe^2+ + 8H+ -> Mn^2+ + 5Fe^3+ + 4H2O}$"
+   },
+   {
+    "id": "3",
+    "tex": "$0.400\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "4",
+    "tex": "$75.6\\,\\%$"
+   },
+   {
+    "id": "5",
+    "tex": "$7.00\\,\\mathrm{mL}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　糖が出した電子は，$\\ce{Cu2O}$ → $\\ce{Fe^2+}$ → $\\ce{MnO4-}$ と順に受け渡される．途中の物質の量を追わなくても，「電子の物質量」で一気につなげる．\n\n\\textbf{(1)}　$\\ce{Cu2O}$ の Cu は $+1$ で，$\\ce{Fe^3+}$ に電子を渡して $\\ce{Cu^2+}$ になる（$\\ce{Cu2O}$ 1 mol で電子 2 mol）．\n\\[\\ce{Cu2O + 2Fe^3+ + 2H+ -> 2Cu^2+ + 2Fe^2+ + H2O}\\]\n\\textbf{(2)}　$\\ce{MnO4-}$ は電子 5 mol を受け取って $\\ce{Mn^2+}$ になる．\n\\[\\ce{MnO4- + 5Fe^2+ + 8H+ -> Mn^2+ + 5Fe^3+ + 4H2O}\\]\n\\textbf{(3)}　フェーリング液の反応で単糖 1 mol は $\\ce{Cu^2+}$ 2 mol を還元して $\\ce{Cu2O}$ 1 mol を生じる（例：$\\ce{C6H12O6 + 2Cu^2+ + 5OH- -> C6H11O7- + Cu2O + 3H2O}$）．\n単糖 1 mol → $\\ce{Cu2O}$ 1 mol → $\\ce{Fe^2+}$ 2 mol → $\\ce{MnO4-}$ $\\dfrac{2}{5}$ mol．よって $\\boldsymbol{0.400\\,\\mathrm{mol}}$．\n\n\\textbf{(4)}　$\\ce{MnO4-}$：$0.0100\\times\\dfrac{8.40}{1000}=8.40\\times10^{-5}\\,\\mathrm{mol}$．\n10.0 mL 中の単糖：$8.40\\times10^{-5}\\div0.400=2.10\\times10^{-4}\\,\\mathrm{mol}$．\n100 mL（はちみつ全体）では $2.10\\times10^{-3}\\,\\mathrm{mol}$，質量は $2.10\\times10^{-3}\\times180=0.378\\,\\mathrm g$．\n\\[\\frac{0.378}{0.500}\\times100=\\boldsymbol{75.6\\,\\%}\\]\n\\textbf{(5)}　受け取る電子の物質量は同じ $4.20\\times10^{-4}\\,\\mathrm{mol}$（$=\\ce{Fe^2+}$ の物質量）．$\\ce{Cr2O7^2-}$ は 1 mol あたり電子 6 mol を受け取る（$\\ce{Cr2O7^2- + 6Fe^2+ + 14H+ -> 2Cr^3+ + 6Fe^3+ + 7H2O}$）ので\n\\[\\frac{4.20\\times10^{-4}}{6}=7.00\\times10^{-5}\\,\\mathrm{mol},\\qquad \\frac{7.00\\times10^{-5}}{0.0100}\\times1000=\\boldsymbol{7.00\\,\\mathrm{mL}}\\]\n酸化剤の種類が変わっても，糖 1 mol が出す電子（2 mol）は変わらないので，必要な体積は受け取る電子の数（5 と 6）に反比例する．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "還元糖の定量では，糖が出した電子が Cu₂O → Fe²⁺ → MnO₄⁻ と受け渡されるので，途中の物質を追わずに電子の物質量で糖と滴定剤をつなげられる（単糖 1 mol → Cu₂O 1 mol → Fe²⁺ 2 mol → MnO₄⁻ 0.4 mol）．滴定剤を変えても糖の出す電子は同じなので，必要量は滴定剤 1 mol が受け取る電子の数で決まる．"
+ },
+ "concepts": [
+  "saccharide",
+  "transition-metals",
+  "nitrogen-phosphorus"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "還元糖",
+  "フェーリング液",
+  "酸化還元滴定",
+  "過マンガン酸カリウム",
+  "電子の物質量"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

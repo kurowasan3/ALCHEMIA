@@ -1,0 +1,118 @@
+{
+ "id": "ORG-ARO-086",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-05",
+ "topic": "一置換ベンゼン C₉H₁₁NO のアミドの網羅と加水分解生成物による分類・構造決定",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "structure",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "分子式 $\\ce{C9H11NO}$ で表される一置換ベンゼンのうち，側鎖にアミド結合（カルボニル基 $\\ce{C=O}$ の炭素と窒素原子の結合）をもつもの（側鎖は環をもたず，アミドの $\\ce{C=O}$ 以外に不飽和結合をもたない）を考える．アミド結合を加水分解すると，カルボン酸とアミン（またはアンモニア）が生じる．光学異性体は区別しないものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "このような化合物は何種類あるか．"
+     },
+     {
+      "id": "2",
+      "tex": "不斉炭素原子をもつものは何種類あるか．"
+     },
+     {
+      "id": "3",
+      "tex": "加水分解すると，ベンゼン環をもつカルボン酸が生じるものは何種類あるか．"
+     },
+     {
+      "id": "4",
+      "tex": "加水分解で生じるカルボン酸が銀鏡反応を示すものは何種類あるか．また，窒素原子に水素原子が結合していないものは何種類あるか．"
+     },
+     {
+      "id": "5",
+      "tex": "化合物 Y はこれらのうちの 1 つで，加水分解すると銀鏡反応を示さないカルボン酸と，ベンゼン環をもつアミンが生じた．このアミンの窒素原子には炭素原子が 2 個結合していた．Y の構造を示性式で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "12 種類"
+   },
+   {
+    "id": "2",
+    "tex": "2 種類"
+   },
+   {
+    "id": "3",
+    "tex": "5 種類"
+   },
+   {
+    "id": "4",
+    "tex": "銀鏡反応を示すもの 4 種類，N に H が結合していないもの 4 種類"
+   },
+   {
+    "id": "5",
+    "tex": "$\\ce{CH3CON(CH3)C6H5}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 数え上げ} 側鎖は $\\ce{C3H6NO}$ で，その中に $\\ce{-CO-N<}$ がある．ベンゼン環がアミドの「カルボニル側」「窒素側」のどちらにつくかで分ける．\n\\begin{itemize}\n\\item ベンゼン環がカルボニル側（環$-$C 骨格$-$CO$-$N）：\\\\\n$\\ce{C6H5CONHC2H5}$，$\\ce{C6H5CON(CH3)2}$，$\\ce{C6H5CH2CONHCH3}$，$\\ce{C6H5CH2CH2CONH2}$，$\\ce{C6H5CH(CH3)CONH2}$ の 5 種類．\n\\item ベンゼン環が窒素側（環$-$C 骨格$-$N$-$CO）：\\\\\nN に環が直接つく：$\\ce{C6H5NHCOC2H5}$，$\\ce{C6H5N(CH3)COCH3}$，$\\ce{C6H5N(C2H5)CHO}$\\\\\nN と環の間に C がある：$\\ce{C6H5CH2NHCOCH3}$，$\\ce{C6H5CH2N(CH3)CHO}$，$\\ce{C6H5CH2CH2NHCHO}$，$\\ce{C6H5CH(CH3)NHCHO}$\\\\\nの 7 種類．\n\\end{itemize}\n合計 \\textbf{12 種類}．\n\n\\textbf{(2)} 不斉炭素は $\\ce{C6H5CH(CH3)CONH2}$ と $\\ce{C6H5CH(CH3)NHCHO}$ の $\\ce{CH}$ で，\\textbf{2 種類}．\n\n\\textbf{(3)} ベンゼン環がカルボニル側にある 5 種類は，加水分解で安息香酸・フェニル酢酸・3-フェニルプロピオン酸・2-フェニルプロピオン酸を生じる．\\textbf{5 種類}．\n\n\\textbf{(4)} 銀鏡反応を示すカルボン酸はギ酸（ホルミル基をもつ）．ホルミル基が窒素原子に結合した $\\ce{C6H5N(C2H5)CHO}$，$\\ce{C6H5CH2N(CH3)CHO}$，$\\ce{C6H5CH2CH2NHCHO}$，$\\ce{C6H5CH(CH3)NHCHO}$ の \\textbf{4 種類}．\\\\\nN に H がないもの（N に C が 3 個結合）は $\\ce{C6H5CON(CH3)2}$，$\\ce{C6H5N(CH3)COCH3}$，$\\ce{C6H5N(C2H5)CHO}$，$\\ce{C6H5CH2N(CH3)CHO}$ の \\textbf{4 種類}．\n\n\\textbf{(5)} アミン側にベンゼン環があるのは窒素側の 7 種類．そのうちギ酸を生じないのは $\\ce{C6H5NHCOC2H5}$（アニリン），$\\ce{C6H5N(CH3)COCH3}$（$N$-メチルアニリン），$\\ce{C6H5CH2NHCOCH3}$（ベンジルアミン）の 3 種類で，生じるアミンの N に C が 2 個結合している（第二級アミン）のは $N$-メチルアニリンだけである．よって Y は $\\boldsymbol{\\ce{CH3CON(CH3)C6H5}}$（$N$-メチルアセトアニリド）．なお，アニリンを生じる $\\ce{C6H5NHCOC2H5}$ だけが，加水分解後にジアゾ化してジアゾニウム塩をつくれる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "アミドの異性体は，ベンゼン環がカルボニル側か窒素側か，N に結合する炭素の数で分けると重複なく数えられる．加水分解でできるカルボン酸（芳香族カルボン酸か，ギ酸か）とアミン（第一級・第二級，環をもつか）の性質を組み合わせて，候補を分類し 1 つに絞る．"
+ },
+ "concepts": [
+  "aromatic",
+  "nitrogen-phosphorus",
+  "carbon-silicon"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "異性体の数",
+  "アミド",
+  "加水分解",
+  "銀鏡反応",
+  "第二級アミン",
+  "構造決定"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

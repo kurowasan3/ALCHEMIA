@@ -1,0 +1,109 @@
+{
+ "id": "INO-PPT-050",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-08",
+ "topic": "ジアンミン銀イオンの逐次生成と遊離のアンモニア濃度による銀の化学種の割合",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "アンモニアを含む水溶液中の銀(I) は，次の2段階の平衡により $\\ce{Ag+}$，$\\ce{[Ag(NH3)]+}$，$\\ce{[Ag(NH3)2]+}$ の3種類の化学種として存在する（$[\\mathrm X]$ はモル濃度）．\n\\[ \\ce{Ag+ + NH3 <=> [Ag(NH3)]+}\\qquad K_1=\\frac{[\\ce{[Ag(NH3)]+}]}{[\\ce{Ag+}][\\ce{NH3}]}=2.0\\times10^{3}\\,\\mathrm{L/mol} \\]\n\\[ \\ce{[Ag(NH3)]+ + NH3 <=> [Ag(NH3)2]+}\\qquad K_2=\\frac{[\\ce{[Ag(NH3)2]+}]}{[\\ce{[Ag(NH3)]+}][\\ce{NH3}]}=7.5\\times10^{3}\\,\\mathrm{L/mol} \\]\n銀を含む化学種の濃度の総和を $C$ とし，錯イオンをつくっていない（遊離の）$\\ce{NH3}$ の濃度を $L$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "銀を含む化学種のうち $\\ce{Ag+}$ の割合 $[\\ce{Ag+}]/C$ を，$K_1$，$K_2$，$L$ を用いて表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "$L=0.10\\,\\mathrm{mol/L}$ のとき，$[\\ce{[Ag(NH3)2]+}]/[\\ce{[Ag(NH3)]+}]$ の値と，$[\\ce{Ag+}]/C$ の値をそれぞれ有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "溶液に酸を加えていくと $L$ が小さくなる．$[\\ce{Ag+}]=[\\ce{[Ag(NH3)2]+}]$ となる $L$ を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の $L$ のとき，$\\ce{[Ag(NH3)]+}$ の濃度は $\\ce{Ag+}$ の濃度より大きいか，小さいか．理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\dfrac{1}{1+K_1L+K_1K_2L^{2}}$"
+   },
+   {
+    "id": "2",
+    "tex": "$[\\ce{[Ag(NH3)2]+}]/[\\ce{[Ag(NH3)]+}]=7.5\\times10^{2}$，$[\\ce{Ag+}]/C=6.7\\times10^{-6}$"
+   },
+   {
+    "id": "3",
+    "tex": "$2.6\\times10^{-4}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "4",
+    "tex": "小さい（$[\\ce{[Ag(NH3)]+}]/[\\ce{Ag+}]=K_1L=\\sqrt{K_1/K_2}=0.52<1$）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　平衡定数の式から $[\\ce{[Ag(NH3)]+}]=K_1L[\\ce{Ag+}]$，$[\\ce{[Ag(NH3)2]+}]=K_2L[\\ce{[Ag(NH3)]+}]=K_1K_2L^{2}[\\ce{Ag+}]$．よって\n\\[ C=[\\ce{Ag+}](1+K_1L+K_1K_2L^{2}),\\qquad \\frac{[\\ce{Ag+}]}{C}=\\boldsymbol{\\frac{1}{1+K_1L+K_1K_2L^{2}}} \\]\n\n\\textbf{(2)}　隣り合う2つの化学種の比は，その段の平衡定数と $L$ だけで決まる：$\\dfrac{[\\ce{[Ag(NH3)2]+}]}{[\\ce{[Ag(NH3)]+}]}=K_2L=7.5\\times10^{3}\\times0.10=\\boldsymbol{7.5\\times10^{2}}$．\nまた $K_1L=2.0\\times10^{2}$，$K_1K_2L^{2}=1.5\\times10^{7}\\times0.010=1.5\\times10^{5}$ より\n\\[ \\frac{[\\ce{Ag+}]}{C}=\\frac{1}{1+200+150000}=\\boldsymbol{6.7\\times10^{-6}} \\]\n遊離の $\\ce{NH3}$ が十分にあると，銀はほとんどすべて $\\ce{[Ag(NH3)2]+}$ になっている．\n\n\\textbf{(3)}　$[\\ce{Ag+}]=[\\ce{[Ag(NH3)2]+}]$ は $K_1K_2L^{2}=1$，すなわち\n\\[ L=\\frac{1}{\\sqrt{K_1K_2}}=\\frac{1}{\\sqrt{1.5\\times10^{7}}}=2.58\\times10^{-4}\\fallingdotseq\\boldsymbol{2.6\\times10^{-4}\\,\\mathrm{mol/L}} \\]\n酸を加えると $\\ce{NH3 + H+ -> NH4+}$ により遊離の $\\ce{NH3}$ が減り，平衡が左へ移って $\\ce{Ag+}$ がもどってくる．\n\n\\textbf{(4)}　$\\dfrac{[\\ce{[Ag(NH3)]+}]}{[\\ce{Ag+}]}=K_1L=\\dfrac{K_1}{\\sqrt{K_1K_2}}=\\sqrt{\\dfrac{K_1}{K_2}}=\\sqrt{\\dfrac{2.0\\times10^{3}}{7.5\\times10^{3}}}=0.52<1$．\nよって $\\ce{[Ag(NH3)]+}$ は $\\ce{Ag+}$（および同濃度の $\\ce{[Ag(NH3)2]+}$）より\\textbf{小さい}．2段目の平衡定数のほうが大きい（$K_2>K_1$）ので，$\\ce{[Ag(NH3)]+}$ はできてもすぐに2個目の $\\ce{NH3}$ と結合してしまい，中間の化学種は少ししか存在しない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "逐次錯形成では隣り合う化学種の比がその段の平衡定数×遊離の配位子濃度だけで決まり，銀の化学種の割合は 1:K₁L:K₁K₂L² で配分される．遊離の NH₃ を酸で減らすと Ag⁺ がもどり，[Ag⁺]=[Ag(NH₃)₂⁺] となるのは L=1/√(K₁K₂) のときで，K₂>K₁ ならそこで中間体は両端より少ない．"
+ },
+ "concepts": [
+  "precipitation",
+  "complex-ion",
+  "nitrogen-phosphorus"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "錯イオン",
+  "逐次生成定数",
+  "ジアンミン銀イオン",
+  "化学種の割合",
+  "アンモニア"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

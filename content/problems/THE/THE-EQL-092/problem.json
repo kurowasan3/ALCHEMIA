@@ -1,0 +1,118 @@
+{
+ "id": "THE-EQL-092",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "N₂O₄ ⇄ 2NO₂ の平衡と光路中の NO₂ の量（全圧と光路の長さの比較）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 20,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "赤褐色の $\\ce{NO2}$ と無色の $\\ce{N2O4}$ の間には $\\ce{N2O4 <=> 2NO2}$ の平衡が成り立ち，ある温度 $T$ での圧平衡定数は $K_p = \\dfrac{p_{\\ce{NO2}}^{\\,2}}{p_{\\ce{N2O4}}} = 0.15\\,\\mathrm{atm}$ である．断面積の等しい円筒形のガラス容器 C（長さ $15\\,\\mathrm{cm}$）と D（長さ $45\\,\\mathrm{cm}$）に，温度 $T$ で平衡にある $\\ce{NO2}$ と $\\ce{N2O4}$ の混合気体を，C は全圧 $0.0300\\,\\mathrm{atm}$，D は全圧 $0.0100\\,\\mathrm{atm}$ になるように封入した．それぞれの容器の一端から同じ強さの光を入れ，他端で透過光を測定する．透過光は，光が通る容器の中の $\\ce{NO2}$ の物質量が多いほど弱くなるものとする．気体は理想気体とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "C と D の中の気体分子の総数（$\\ce{NO2}$ と $\\ce{N2O4}$ の合計の物質量）の比を答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "C，D の中の $\\ce{NO2}$ の分圧をそれぞれ有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "透過光が強いのは C，D のどちらか．また，D の中の $\\ce{NO2}$ の物質量は C の中の何倍か，有効数字2桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "平衡が成り立たない（すべて同じ1種類の気体である）とした場合，透過光の強さは C と D でどうなるか．(3) と比べて，違いが生じる理由を説明せよ．"
+     },
+     {
+      "id": "5",
+      "tex": "D に，温度と体積を変えずにアルゴンを加えて全圧を $0.0300\\,\\mathrm{atm}$ にした．D の透過光の強さは変化するか．理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$1:1$"
+   },
+   {
+    "id": "2",
+    "tex": "C：$2.6\\times10^{-2}\\,\\mathrm{atm}$，D：$9.4\\times10^{-3}\\,\\mathrm{atm}$"
+   },
+   {
+    "id": "3",
+    "tex": "C，$1.1$ 倍"
+   },
+   {
+    "id": "4",
+    "tex": "C と D で等しい．全圧の低い D では平衡が $\\ce{NO2}$ の側（分子数が増える向き）へ移動して $\\ce{NO2}$ の割合が大きくなるため，同じ分子の総数でも D のほうが $\\ce{NO2}$ が多くなる"
+   },
+   {
+    "id": "5",
+    "tex": "変化しない（体積一定でアルゴンを加えても $\\ce{NO2}$・$\\ce{N2O4}$ の分圧は変わらず，平衡は移動しない）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 物質量は $n = \\dfrac{PV}{RT}$，体積は長さに比例するので，$n_{\\mathrm C}:n_{\\mathrm D} = 0.0300\\times15 : 0.0100\\times45 = \\boldsymbol{1:1}$．\n\n\\textbf{(2)} $\\ce{NO2}$ の分圧を $x$ とすると，$p_{\\ce{N2O4}} = P - x$ なので $\\dfrac{x^2}{P - x} = 0.15$．\n\\begin{itemize}\n\\item C（$P=0.0300$）：$x^2 + 0.15x - 0.0045 = 0$ より $x = \\dfrac{-0.15+\\sqrt{0.0405}}{2} = 0.0256 \\fallingdotseq \\boldsymbol{2.6\\times10^{-2}\\,\\mathrm{atm}}$\n\\item D（$P=0.0100$）：$x^2 + 0.15x - 0.0015 = 0$ より $x = \\dfrac{-0.15+\\sqrt{0.0285}}{2} = 0.00941 \\fallingdotseq \\boldsymbol{9.4\\times10^{-3}\\,\\mathrm{atm}}$\n\\end{itemize}\n\n\\textbf{(3)} 光路中の $\\ce{NO2}$ の物質量は（分圧）×（長さ）に比例する．\n\\[\\frac{n_{\\ce{NO2},\\mathrm D}}{n_{\\ce{NO2},\\mathrm C}} = \\frac{0.00941\\times45}{0.0256\\times15} = \\frac{0.423}{0.384} = 1.10 \\fallingdotseq \\boldsymbol{1.1}\\ \\text{倍}\\]\nD のほうが $\\ce{NO2}$ が多く光をよく吸収するので，透過光が強いのは $\\boldsymbol{\\text{C}}$．\n\n\\textbf{(4)} 平衡がなければ光路中の分子数が等しい（(1)）ので透過光も$\\boldsymbol{\\text{等しい}}$．実際には，全圧が低い D では，ルシャトリエの原理により分子数が増える向き（$\\ce{N2O4 -> 2NO2}$）に平衡が移動しており，$\\ce{NO2}$ のモル分率が C（$0.0256/0.0300 = 0.85$）より D（$0.00941/0.0100 = 0.94$）のほうが大きい．容器を長くして同じ分子数を薄く入れると，解離が進むぶん $\\ce{NO2}$ が増える．\n\n\\textbf{(5)} 体積一定でアルゴンを加えても，$\\ce{NO2}$ と $\\ce{N2O4}$ の物質量・体積・温度は同じなので分圧は変わらず，$K_p$ の式は満たされたまま．平衡は移動せず，透過光は$\\boldsymbol{\\text{変化しない}}$．（全圧一定で加えた場合は体積が増え，分圧が下がるので解離が進む．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "光路中の NO2 の量は（NO2 の分圧）×（光路の長さ）に比例する．分子の総数が同じでも，全圧が低く薄い容器では N2O4 の解離が進んで NO2 が多くなる．体積一定で不活性気体を加えても分圧は変わらず平衡は移動しない．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "nitrogen-phosphorus",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "化学平衡",
+  "圧平衡定数",
+  "ルシャトリエの原理",
+  "二酸化窒素",
+  "光の吸収",
+  "不活性気体"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

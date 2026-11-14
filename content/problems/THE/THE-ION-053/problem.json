@@ -1,0 +1,117 @@
+{
+ "id": "THE-ION-053",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "2種の陽イオンと2種の陰イオンが共存するときの沈殿の順序",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "25 ℃ における 3 種類の難溶性塩の溶解度積と沈殿の色は次のとおりである．\n\\[ \\ce{AgCl}\\ (\\text{白色})：1.8\\times10^{-10}\\,\\mathrm{mol^2/L^2}\\qquad \\ce{Ag2CrO4}\\ (\\text{赤褐色})：1.2\\times10^{-12}\\,\\mathrm{mol^3/L^3}\\qquad \\ce{BaCrO4}\\ (\\text{黄色})：1.2\\times10^{-10}\\,\\mathrm{mol^2/L^2} \\]\n$\\ce{Ag+}$ を $2.0\\times10^{-5}\\,\\mathrm{mol/L}$，$\\ce{Ba^2+}$ を $1.0\\times10^{-5}\\,\\mathrm{mol/L}$ 含む水溶液 A $100\\,\\mathrm{mL}$ に，$\\ce{Cl-}$ を $1.0\\times10^{-3}\\,\\mathrm{mol/L}$，$\\ce{CrO4^2-}$ を $5.0\\times10^{-4}\\,\\mathrm{mol/L}$ 含む水溶液 B を少しずつ加えていく．B を加えたことによる体積の変化は無視できるものとし，$\\ce{BaCl2}$ は水によく溶ける．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "水溶液 A の $\\ce{Ag+}$・$\\ce{Ba^2+}$ の濃度のもとで，$\\ce{AgCl}$，$\\ce{Ag2CrO4}$，$\\ce{BaCrO4}$ がそれぞれ沈殿しはじめるのに必要な陰イオン（$\\ce{Cl-}$ または $\\ce{CrO4^2-}$）の濃度を，有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "最初に生じる沈殿の化学式と色，および沈殿が生じはじめるまでに加えた B の体積 [mL] を有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "2 番目に生じる沈殿の化学式と色，および沈殿が生じはじめるまでに加えた B の体積 [mL] を有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "3 種類の塩のうち溶解度積の値が最も小さいのは $\\ce{Ag2CrO4}$ であるが，この実験では $\\ce{Ag2CrO4}$ は最初に沈殿しない．その理由を簡潔に述べよ．"
+     },
+     {
+      "id": "5",
+      "tex": "B のかわりに，$\\ce{CrO4^2-}$ の濃度だけを $1.0\\times10^{-2}\\,\\mathrm{mol/L}$ にした水溶液を加えると，最初に生じる沈殿は何か．化学式と，沈殿が生じはじめるまでに加えた体積 [mL] を有効数字 2 桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{AgCl}$：$[\\ce{Cl-}]=9.0\\times10^{-6}\\,\\mathrm{mol/L}$，$\\ce{Ag2CrO4}$：$[\\ce{CrO4^2-}]=3.0\\times10^{-3}\\,\\mathrm{mol/L}$，$\\ce{BaCrO4}$：$[\\ce{CrO4^2-}]=1.2\\times10^{-5}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{AgCl}$（白色），$0.90\\,\\mathrm{mL}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{BaCrO4}$（黄色），$2.4\\,\\mathrm{mL}$"
+   },
+   {
+    "id": "4",
+    "tex": "溶解度積は塩の組成によって単位も式の形も異なり，値どうしを直接比べられない．$\\ce{Ag2CrO4}$ は $[\\ce{Ag+}]^2$ を含むので，$\\ce{Ag+}$ がうすいと沈殿に必要な $[\\ce{CrO4^2-}]$ が非常に大きくなるから．"
+   },
+   {
+    "id": "5",
+    "tex": "$\\ce{BaCrO4}$，$0.12\\,\\mathrm{mL}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 沈殿は，イオンの濃度の積（組成に応じたべき）が溶解度積をこえたときに生じはじめる．\n\\[ \\ce{AgCl}：[\\ce{Cl-}]=\\frac{1.8\\times10^{-10}}{2.0\\times10^{-5}}=\\boldsymbol{9.0\\times10^{-6}\\,\\mathrm{mol/L}} \\]\n\\[ \\ce{Ag2CrO4}：[\\ce{CrO4^2-}]=\\frac{1.2\\times10^{-12}}{(2.0\\times10^{-5})^2}=\\boldsymbol{3.0\\times10^{-3}\\,\\mathrm{mol/L}} \\]\n\\[ \\ce{BaCrO4}：[\\ce{CrO4^2-}]=\\frac{1.2\\times10^{-10}}{1.0\\times10^{-5}}=\\boldsymbol{1.2\\times10^{-5}\\,\\mathrm{mol/L}} \\]\n\n\\textbf{(2)(3)} B を $v\\,\\mathrm{mL}$ 加えたとき（体積変化は無視），\n\\[ [\\ce{Cl-}]=1.0\\times10^{-3}\\times\\frac{v}{100},\\qquad [\\ce{CrO4^2-}]=5.0\\times10^{-4}\\times\\frac{v}{100} \\]\nそれぞれが (1) の値に達する $v$ は\n\\[ \\ce{AgCl}：v=\\frac{9.0\\times10^{-6}\\times100}{1.0\\times10^{-3}}=0.90\\,\\mathrm{mL},\\quad \\ce{BaCrO4}：v=\\frac{1.2\\times10^{-5}\\times100}{5.0\\times10^{-4}}=2.4\\,\\mathrm{mL},\\quad \\ce{Ag2CrO4}：v=\\frac{3.0\\times10^{-3}\\times100}{5.0\\times10^{-4}}=600\\,\\mathrm{mL} \\]\nしたがって最初は $\\boldsymbol{\\ce{AgCl}}$ の\\textbf{白色}沈殿が $\\boldsymbol{0.90\\,\\mathrm{mL}}$ で，次に $\\boldsymbol{\\ce{BaCrO4}}$ の\\textbf{黄色}沈殿が $\\boldsymbol{2.4\\,\\mathrm{mL}}$ で生じはじめる．\n$\\ce{AgCl}$ が沈殿しても $\\ce{Ba^2+}$ の濃度は変わらないので，$\\ce{BaCrO4}$ の判定は (1) の値のままでよい．一方，$\\ce{AgCl}$ の沈殿によって $[\\ce{Ag+}]$ は $2.0\\times10^{-5}\\,\\mathrm{mol/L}$ より小さくなるので，$\\ce{Ag2CrO4}$ が沈殿するにはさらに多くの $\\ce{CrO4^2-}$ が必要になり，$2.4\\,\\mathrm{mL}$ までに $\\ce{Ag2CrO4}$ が生じることはない．\n\n\\textbf{(4)} $K_{sp}$ は $\\ce{AgCl}$・$\\ce{BaCrO4}$ では $\\mathrm{mol^2/L^2}$，$\\ce{Ag2CrO4}$ では $\\mathrm{mol^3/L^3}$ で，単位も式の形も違うので値の大小だけでは比べられない．$\\ce{Ag2CrO4}$ は $[\\ce{Ag+}]^2[\\ce{CrO4^2-}]$ で判定するため，$[\\ce{Ag+}]$ が $10^{-5}\\,\\mathrm{mol/L}$ 程度とうすいと 2 乗で効いて小さくなり，(1) のように $3.0\\times10^{-3}\\,\\mathrm{mol/L}$ もの $\\ce{CrO4^2-}$ が必要になる．沈殿の順序は，それぞれの塩が沈殿しはじめるのに必要な量を計算して比べて決める．\n\n\\textbf{(5)} $\\ce{BaCrO4}$ が沈殿しはじめる体積は $v=\\dfrac{1.2\\times10^{-5}\\times100}{1.0\\times10^{-2}}=0.12\\,\\mathrm{mL}$ となり，$\\ce{AgCl}$ の $0.90\\,\\mathrm{mL}$（$\\ce{Cl-}$ の濃度は同じなので変わらない）より先になる．最初の沈殿は $\\boldsymbol{\\ce{BaCrO4}}$（黄色），$\\boldsymbol{0.12\\,\\mathrm{mL}}$．\n（$\\ce{Ag2CrO4}$ は $v=\\dfrac{3.0\\times10^{-3}\\times100}{1.0\\times10^{-2}}=30\\,\\mathrm{mL}$ が必要で，やはり最初にはならない．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "複数の陽イオン・陰イオンが共存するときの沈殿の順序は，溶解度積の値の大小ではなく，候補の塩それぞれについて沈殿しはじめるのに必要なイオン濃度（さらに滴下量）を計算して比べて決める．組成の異なる塩では濃度のべきが違うので，濃度条件を変えると順序が入れ替わる．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "precipitation",
+  "transition-metals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "溶解度積",
+  "分別沈殿",
+  "沈殿の順序",
+  "クロム酸塩",
+  "塩化銀"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

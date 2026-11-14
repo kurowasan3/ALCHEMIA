@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 230" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="none" stroke="currentColor">
+  <rect x="200" y="30" width="160" height="160" stroke-width="2"/>
+  <text x="280" y="95" text-anchor="middle" fill="currentColor" stroke="none">反応箱</text>
+  <text x="280" y="118" text-anchor="middle" fill="currentColor" stroke="none" font-size="13">N<tspan baseline-shift="sub" font-size="10">2</tspan>O<tspan baseline-shift="sub" font-size="10">4</tspan>，NO<tspan baseline-shift="sub" font-size="10">2</tspan> の</text>
+  <text x="280" y="136" text-anchor="middle" fill="currentColor" stroke="none" font-size="13">平衡混合気体</text>
+  <line x1="40" y1="80" x2="200" y2="80" stroke-width="1.6"/>
+  <line x1="40" y1="140" x2="200" y2="140" stroke-width="1.6"/>
+  <rect x="90" y="82" width="10" height="56" fill="currentColor" opacity="0.35" stroke="none"/>
+  <line x1="40" y1="110" x2="90" y2="110" stroke-width="1.6"/>
+  <line x1="200" y1="82" x2="200" y2="138" stroke-dasharray="4 3" stroke-width="2" stroke="#1f5fbf"/>
+  <text x="145" y="114" text-anchor="middle" fill="currentColor" stroke="none" font-size="13">N<tspan baseline-shift="sub" font-size="10">2</tspan>O<tspan baseline-shift="sub" font-size="10">4</tspan></text>
+  <text x="120" y="70" text-anchor="middle" fill="currentColor" stroke="none" font-size="13">シリンダー P</text>
+  <text x="112" y="165" text-anchor="middle" fill="currentColor" stroke="none" font-size="13">膜 P（N<tspan baseline-shift="sub" font-size="10">2</tspan>O<tspan baseline-shift="sub" font-size="10">4</tspan> だけ通す）</text>
+  <line x1="360" y1="80" x2="520" y2="80" stroke-width="1.6"/>
+  <line x1="360" y1="140" x2="520" y2="140" stroke-width="1.6"/>
+  <rect x="362" y="82" width="10" height="56" fill="currentColor" opacity="0.35" stroke="none"/>
+  <line x1="372" y1="110" x2="420" y2="110" stroke-width="1.6"/>
+  <line x1="360" y1="82" x2="360" y2="138" stroke-dasharray="4 3" stroke-width="2" stroke="#c0392b"/>
+  <text x="450" y="70" text-anchor="middle" fill="currentColor" stroke="none" font-size="13">シリンダー Q</text>
+  <text x="448" y="165" text-anchor="middle" fill="currentColor" stroke="none" font-size="13">膜 Q（NO<tspan baseline-shift="sub" font-size="10">2</tspan> だけ通す）</text>
+  <text x="62" y="102" text-anchor="middle" fill="currentColor" stroke="none" font-size="12">ピストン</text>
+  <text x="462" y="114" text-anchor="middle" fill="currentColor" stroke="none" font-size="12">ピストン</text>
+</svg>

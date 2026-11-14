@@ -1,0 +1,101 @@
+{
+ "id": "THE-ION-061",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "滴定の各段階での化学種の濃度の大小（アンモニアと塩酸）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "compare",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "$0.10\\,\\mathrm{mol/L}$ のアンモニア水 $20.0\\,\\mathrm{mL}$ に，$0.10\\,\\mathrm{mol/L}$ の塩酸を滴下していく．塩酸を $10.0\\,\\mathrm{mL}$ 加えた溶液を R，$20.0\\,\\mathrm{mL}$ 加えた溶液（中和点）を P，$30.0\\,\\mathrm{mL}$ 加えた溶液を Q とする．アンモニアの電離定数は $K_b=2.0\\times10^{-5}\\,\\mathrm{mol/L}$，水のイオン積は $K_w=1.0\\times10^{-14}\\,(\\mathrm{mol/L})^2$，$\\log_{10}2=0.30$ とする．溶液中の化学種として $\\ce{NH4+}$，$\\ce{Cl-}$，$\\ce{NH3}$，$\\ce{H+}$，$\\ce{OH-}$ の5つを考える．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "溶液 R 中の5つの化学種を，モル濃度の大きい順に並べよ．"
+     },
+     {
+      "id": "2",
+      "tex": "溶液 P の pH を小数第2位まで求めよ．また，溶液 P では $[\\ce{H+}]$ と $[\\ce{NH3}]$ のどちらが大きいか．電荷のつり合いと物質量の関係をもとに理由とともに答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "溶液 Q の pH を小数第2位まで求めよ．また，Q 中の $[\\ce{NH3}]$ を有効数字2桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$[\\ce{NH4+}]>[\\ce{Cl-}]>[\\ce{NH3}]>[\\ce{OH-}]>[\\ce{H+}]$"
+   },
+   {
+    "id": "2",
+    "tex": "pH 5.30．$[\\ce{H+}]$ のほうが大きい（$[\\ce{H+}]=[\\ce{NH3}]+[\\ce{OH-}]$ が成り立つため）"
+   },
+   {
+    "id": "3",
+    "tex": "pH 1.70，$[\\ce{NH3}]=1.0\\times10^{-9}\\,\\mathrm{mol/L}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方} 濃度の大小は，① 加えた量（物質量の収支）でおおまかに決め，② ほぼ等しいものどうしは電荷のつり合い $[\\ce{NH4+}]+[\\ce{H+}]=[\\ce{Cl-}]+[\\ce{OH-}]$ で決着をつける．\n\n\\textbf{(1) 溶液 R（半中和点）}\n$\\ce{NH3}$ $2.0\\,\\mathrm{mmol}$ のうち $1.0\\,\\mathrm{mmol}$ が $\\ce{NH4+}$ になり，体積は $30.0\\,\\mathrm{mL}$．$[\\ce{NH3}]\\fallingdotseq[\\ce{NH4+}]\\fallingdotseq[\\ce{Cl-}]\\fallingdotseq0.033\\,\\mathrm{mol/L}$ と，3つがほぼ等しい．\n\\[ [\\ce{OH-}]=K_b\\frac{[\\ce{NH3}]}{[\\ce{NH4+}]}\\fallingdotseq2.0\\times10^{-5}\\,\\mathrm{mol/L}\\quad(\\mathrm{pH}\\ 9.30),\\qquad [\\ce{H+}]=5.0\\times10^{-10}\\,\\mathrm{mol/L} \\]\n電荷のつり合いより $[\\ce{NH4+}]-[\\ce{Cl-}]=[\\ce{OH-}]-[\\ce{H+}]>0$，また $\\ce{NH3}$ の全量は一定なので $[\\ce{NH3}]=\\dfrac{2.0\\,\\mathrm{mmol}}{30.0\\,\\mathrm{mL}}-[\\ce{NH4+}]$ で，$[\\ce{NH4+}]$ が $\\ce{Cl-}$ より多い分だけ $[\\ce{NH3}]$ は $\\ce{Cl-}$ より少ない．よって\n\\[ \\boldsymbol{[\\ce{NH4+}]>[\\ce{Cl-}]>[\\ce{NH3}]>[\\ce{OH-}]>[\\ce{H+}]} \\]\n\n\\textbf{(2) 溶液 P（中和点）}\n$\\ce{NH4Cl}$ $2.0\\,\\mathrm{mmol}$ が $40.0\\,\\mathrm{mL}$ に溶けた $0.050\\,\\mathrm{mol/L}$ の溶液．$\\ce{NH4+ <=> NH3 + H+}$ の電離定数は $K_a=K_w/K_b=5.0\\times10^{-10}\\,\\mathrm{mol/L}$ なので\n\\[ [\\ce{H+}]=\\sqrt{K_aC}=\\sqrt{5.0\\times10^{-10}\\times0.050}=5.0\\times10^{-6}\\,\\mathrm{mol/L},\\qquad \\mathrm{pH}=6-\\log_{10}5=\\boldsymbol{5.30} \\]\n電荷のつり合い $[\\ce{NH4+}]+[\\ce{H+}]=[\\ce{Cl-}]+[\\ce{OH-}]$ に，物質量の関係 $[\\ce{NH4+}]+[\\ce{NH3}]=[\\ce{Cl-}]$（中和点では $\\ce{NH3}$ の全量と $\\ce{Cl-}$ が等しい）を代入すると\n\\[ [\\ce{H+}]=[\\ce{NH3}]+[\\ce{OH-}] \\]\nとなる．$\\ce{H+}$ は $\\ce{NH4+}$ の電離（$\\ce{NH3}$ と同数）と水の電離（$\\ce{OH-}$ と同数）の両方から生じるので，$\\boldsymbol{[\\ce{H+}]}$ \\textbf{のほうがわずかに大きい}（$[\\ce{OH-}]=2.0\\times10^{-9}\\,\\mathrm{mol/L}$ の分だけ）．\n\n\\textbf{(3) 溶液 Q（塩酸が過剰）}\n過剰の $\\ce{HCl}$ は $1.0\\,\\mathrm{mmol}$，体積 $50.0\\,\\mathrm{mL}$．$\\ce{NH4+}$ の電離は強酸の $\\ce{H+}$ によってさらに抑えられるので無視でき\n\\[ [\\ce{H+}]=\\frac{1.0}{50.0}=2.0\\times10^{-2}\\,\\mathrm{mol/L},\\qquad \\mathrm{pH}=2-0.30=\\boldsymbol{1.70} \\]\n$[\\ce{NH4+}]=2.0/50.0=0.040\\,\\mathrm{mol/L}$ より\n\\[ [\\ce{NH3}]=\\frac{K_a[\\ce{NH4+}]}{[\\ce{H+}]}=\\frac{5.0\\times10^{-10}\\times0.040}{2.0\\times10^{-2}}=\\boldsymbol{1.0\\times10^{-9}\\,\\mathrm{mol/L}} \\]\nP では $[\\ce{NH3}]\\fallingdotseq[\\ce{H+}]$ だったが，Q では強酸の $\\ce{H+}$ によって $\\ce{NH3}$ が約 $1/5000$ に減っている（共通イオン効果）．Q の順は $[\\ce{Cl-}]>[\\ce{NH4+}]>[\\ce{H+}]>[\\ce{NH3}]>[\\ce{OH-}]$ である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "弱塩基を強酸で滴定する途中・中和点・過剰点で，化学種の濃度の大小をまず物質量の収支で大まかに決め，ほぼ等しいものどうしは電荷のつり合いで決める．中和点では電荷のつり合いと物質量の関係から [H+]=[NH3]+[OH-] が導かれ，[H+] が [NH3] よりわずかに大きいことがわかる．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "nitrogen-phosphorus",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電荷のつり合い",
+  "塩の加水分解",
+  "中和点",
+  "共通イオン効果",
+  "化学種の濃度"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

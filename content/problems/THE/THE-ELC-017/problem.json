@@ -1,0 +1,124 @@
+{
+ "id": "THE-ELC-017",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-07",
+ "topic": "ニッケル・カドミウム電池の電極反応と量的関係",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "equation",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ニッケル・カドミウム電池は，負極に $\\ce{Cd}$，正極に $\\ce{NiO(OH)}$，電解液に水酸化カリウム水溶液を用いた二次電池である．放電すると，負極の $\\ce{Cd}$ は $\\ce{Cd(OH)2}$ に，正極の $\\ce{NiO(OH)}$ は $\\ce{Ni(OH)2}$ に変わる．H = 1.0，O = 16，Ni = 59，$F=9.65\\times10^{4}\\,\\mathrm{C/mol}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "放電時の負極の反応を，電子 $\\mathrm{e^-}$ を含むイオン反応式で書け．"
+     },
+     {
+      "id": "2",
+      "tex": "放電時の電池全体の反応を，1つの化学反応式で書け．"
+     },
+     {
+      "id": "3",
+      "tex": "放電に伴い，電解液の水酸化カリウムの濃度はどうなるか．また，ニッケル・水素電池（放電の全体反応 $\\ce{\\text{M}H + NiO(OH) -> \\text{M} + Ni(OH)2}$，M は水素吸蔵合金）ではどうなるか．それぞれ「大きくなる」「小さくなる」「変わらない」で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "ニッケル・カドミウム電池から電子 $0.10\\,\\mathrm{mol}$ 分の電気量を取り出したとき，負極と正極の質量はそれぞれ何 g 増加または減少するか．"
+     },
+     {
+      "id": "5",
+      "tex": "正極に $\\ce{NiO(OH)}$ が $2.76\\,\\mathrm{g}$ 含まれる電池から，$0.40\\,\\mathrm{A}$ の電流を理論上何時間取り出せるか．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "6",
+      "tex": "充電が終わった後も充電を続ける（過充電）と，正極から酸素が発生する．密閉型の電池では，負極に多めに入れたカドミウムがこの酸素を吸収して $\\ce{Cd(OH)2}$ になる．この反応を化学反応式で書け．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{Cd + 2OH- -> Cd(OH)2 + 2e-}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{Cd + 2NiO(OH) + 2H2O -> Cd(OH)2 + 2Ni(OH)2}$"
+   },
+   {
+    "id": "3",
+    "tex": "ニッケル・カドミウム電池：大きくなる，ニッケル・水素電池：変わらない"
+   },
+   {
+    "id": "4",
+    "tex": "負極 $1.7\\,\\mathrm{g}$ 増加，正極 $0.10\\,\\mathrm{g}$ 増加"
+   },
+   {
+    "id": "5",
+    "tex": "$2.0$ 時間"
+   },
+   {
+    "id": "6",
+    "tex": "$\\ce{2Cd + O2 + 2H2O -> 2Cd(OH)2}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\ce{Cd + 2OH- -> Cd(OH)2 + 2e-}$．\n\n\\textbf{(2)} 正極は $\\ce{NiO(OH) + H2O + e- -> Ni(OH)2 + OH-}$．これを2倍して (1) と足すと $\\ce{Cd + 2NiO(OH) + 2H2O -> Cd(OH)2 + 2Ni(OH)2}$．\n\n\\textbf{(3)} 全体反応で $\\ce{KOH}$ は増減しないが，水が消費される（電子 2 mol あたり $\\ce{H2O}$ 2 mol）ので，濃度はわずかに\\textbf{大きくなる}．ニッケル・水素電池の全体反応には水も $\\ce{OH-}$ も現れないので\\textbf{変わらない}．（鉛蓄電池では硫酸が消費されて濃度が小さくなるのと対照的である．）\n\n\\textbf{(4)} 負極：$\\ce{Cd}$ が $\\ce{Cd(OH)2}$ に変わるので，電子 2 mol あたり $\\ce{2OH}$ 分（34 g）増える．$0.10\\,\\mathrm{mol}$ では $34\\times0.10/2=\\boldsymbol{1.7\\,\\mathrm{g}}$ 増加．正極：$\\ce{NiO(OH)}$ が $\\ce{Ni(OH)2}$ に変わるので，電子 1 mol あたり H 1 mol（1.0 g）増える．$\\boldsymbol{0.10\\,\\mathrm{g}}$ 増加．\n\n\\textbf{(5)} $\\ce{NiO(OH)}=92$ より $2.76/92=0.0300\\,\\mathrm{mol}$．電子も $0.0300\\,\\mathrm{mol}$ で，電気量 $0.0300\\times9.65\\times10^4=2895\\,\\mathrm{C}$．時間は $2895/0.40=7.24\\times10^3\\,\\mathrm{s}\\approx\\boldsymbol{2.0}$ 時間．\n\n\\textbf{(6)} $\\ce{2Cd + O2 + 2H2O -> 2Cd(OH)2}$．酸素が気体として電池内にたまらないので，内圧の上昇を防げる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "アルカリ型二次電池の電極反応から，電極の質量変化と電解液の濃度変化を電子の物質量で結びつける．全体反応に水や電解質が現れるかどうかで電解液の濃度変化が決まる（鉛蓄電池・ニッケル水素電池との比較）．"
+ },
+ "concepts": [
+  "electrolysis",
+  "alkali-metals",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ニッケル・カドミウム電池",
+  "ニッケル・水素電池",
+  "二次電池",
+  "電極の質量変化"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "id": "THE-ION-026",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "きわめて薄い弱酸の pH と2つの近似の破れ",
+ "course": "化学",
+ "level": 5,
+ "minutes": 25,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "1価の弱酸 HA の $25\\,{}^\\circ\\mathrm{C}$ における電離定数は $K_a=\\dfrac{[\\ce{H+}][\\ce{A-}]}{[\\ce{HA}]}=1.0\\times10^{-6}\\,\\mathrm{mol/L}$，水のイオン積は $K_w=1.0\\times10^{-14}\\,(\\mathrm{mol/L})^2$ である．HA の水溶液について，次の問いに答えよ．ただし $\\log_{10}2=0.30$，$\\sqrt{6}=2.45$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "濃度 $1.0\\times10^{-2}\\,\\mathrm{mol/L}$ の HA 水溶液の pH を求めよ．計算で用いた近似が成り立つことも確かめよ．"
+     },
+     {
+      "id": "2",
+      "tex": "濃度 $6.0\\times10^{-6}\\,\\mathrm{mol/L}$ の HA 水溶液の pH を小数第2位まで求めよ．また，(1) と同じ近似を用いて $[\\ce{H+}]$ を求めると，正しい値の何倍になるか．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "ある濃度の HA 水溶液の pH を測定したところ $6.70$ であった．この水溶液の HA の濃度（溶かした HA の総濃度）を有効数字2桁で求めよ．また，このときの HA の電離度を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) で，(ア) 水の電離を無視した場合，(イ) HA が完全に電離すると仮定した場合に求まる HA の濃度を，それぞれ有効数字2桁で求めよ．また，(3) の正しい値からのずれが大きいのはどちらか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$4.0$"
+   },
+   {
+    "id": "2",
+    "tex": "$5.70$；$1.2$ 倍"
+   },
+   {
+    "id": "3",
+    "tex": "$1.8\\times10^{-7}\\,\\mathrm{mol/L}$，電離度 $0.83$"
+   },
+   {
+    "id": "4",
+    "tex": "(ア) $2.4\\times10^{-7}\\,\\mathrm{mol/L}$　(イ) $1.5\\times10^{-7}\\,\\mathrm{mol/L}$；(ア) の方がずれが大きい"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{基本の式}　濃度 $C$ の HA 水溶液で $[\\ce{H+}]=h$ とおく．電荷のつり合い $[\\ce{H+}]=[\\ce{A-}]+[\\ce{OH-}]$ と，$[\\ce{A-}]+[\\ce{HA}]=C$，$K_a$ の式から $[\\ce{A-}]=\\dfrac{CK_a}{K_a+h}$ なので\n\\[ h=\\frac{CK_a}{K_a+h}+\\frac{K_w}{h} \\quad\\cdots(*) \\]\nよく使う近似は「水の電離を無視（$[\\ce{OH-}]\\ll[\\ce{A-}]$）」と「電離度が小さい（$h\\ll K_a$，すなわち $[\\ce{HA}]\\approx C$）」の2つで，両方を使うと $h=\\sqrt{CK_a}$ になる．\n\n\\textbf{(1)}　$h=\\sqrt{1.0\\times10^{-2}\\times1.0\\times10^{-6}}=1.0\\times10^{-4}$，pH $=\\boldsymbol{4.0}$．確認：電離度 $\\dfrac{h}{C}=0.010\\ll1$，$[\\ce{OH-}]=1.0\\times10^{-10}\\ll h$．両方の近似が成り立つ．\n\n\\textbf{(2)}　水の電離を無視し，電離度の近似は使わずに $\\dfrac{h^{2}}{C-h}=K_a$ を解く．\n\\[ h^{2}+1.0\\times10^{-6}h-6.0\\times10^{-12}=0 \\ \\Longrightarrow\\ (h-2.0\\times10^{-6})(h+3.0\\times10^{-6})=0 \\]\n$h=2.0\\times10^{-6}$，pH $=6-0.30=\\boldsymbol{5.70}$．確認：$[\\ce{OH-}]=5.0\\times10^{-9}$ は $h$ の 0.25 % で，水の電離は無視できる．電離度は $\\dfrac{2.0\\times10^{-6}}{6.0\\times10^{-6}}=0.33$ で 1 に比べて小さくない．\n\n(1) の近似では $h=\\sqrt{6.0\\times10^{-6}\\times1.0\\times10^{-6}}=2.45\\times10^{-6}$ で，$\\dfrac{2.45}{2.0}=\\boldsymbol{1.2}$ 倍（約 22 % 大きい）．濃度が $K_a$ に近づくと電離度が大きくなり，この近似は破れる．\n\n\\textbf{(3)}　$h=10^{-6.70}=10^{0.30}\\times10^{-7}=2.0\\times10^{-7}$．$[\\ce{OH-}]=\\dfrac{1.0\\times10^{-14}}{2.0\\times10^{-7}}=5.0\\times10^{-8}$ は $h$ の 25 % で無視できない．また $K_a=1.0\\times10^{-6}$ に対し $h$ は $K_a$ の 0.2 倍で，電離度も 1 とはみなせない．どちらの近似も使えないので $(*)$ をそのまま使う．$(*)$ を $C$ について解くと\n\\[ C=\\left(h-\\frac{K_w}{h}\\right)\\frac{K_a+h}{K_a}=(2.0\\times10^{-7}-5.0\\times10^{-8})\\times\\frac{1.2\\times10^{-6}}{1.0\\times10^{-6}}=\\boldsymbol{1.8\\times10^{-7}\\,\\mathrm{mol/L}} \\]\n電離度 $=\\dfrac{[\\ce{A-}]}{C}=\\dfrac{K_a}{K_a+h}=\\dfrac{1.0}{1.2}=\\boldsymbol{0.83}$．\n\n（$h$ から $C$ を求める向きなら，3次方程式を解かずに $(*)$ に代入するだけで済む．）\n\n\\textbf{(4)}　(ア) 水の電離を無視：$[\\ce{A-}]=h$，$C=h+\\dfrac{h^{2}}{K_a}=2.0\\times10^{-7}+4.0\\times10^{-8}=\\boldsymbol{2.4\\times10^{-7}\\,\\mathrm{mol/L}}$（正しい値の 1.33 倍）．\n\n(イ) 完全電離を仮定：$C=[\\ce{A-}]=h-\\dfrac{K_w}{h}=\\boldsymbol{1.5\\times10^{-7}\\,\\mathrm{mol/L}}$（正しい値の 0.83 倍）．\n\nずれは (ア) が $+33\\,\\%$，(イ) が $-17\\,\\%$ で，$\\boldsymbol{\\text{(ア)}}$ の方が大きい．この濃度域では HA の大部分（83 %）が電離しているので「ほぼ強酸」とみなす方が近く，水の電離（$\\ce{H+}$ の 25 % を供給）を無視する誤りの方が大きく効く．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "弱酸の pH の計算で使う「水の電離を無視」「電離度が小さい」の2つの近似は濃度によって別々に破れ，濃度が K_a 程度では後者が，さらに薄いと両方が破れる．電荷のつり合いから導いた厳密な式を pH の測定値から濃度を逆算する向きに使い，各近似の誤差の大きさを比べる．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "concentration",
+  "ph"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電離平衡",
+  "弱酸のpH",
+  "水の電離",
+  "近似の妥当性",
+  "電荷のつり合い"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

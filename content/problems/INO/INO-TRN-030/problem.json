@@ -1,0 +1,109 @@
+{
+ "id": "INO-TRN-030",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-07",
+ "topic": "銅の乾式製錬における鉄と銅の選択的酸化（硫化物と酸化物の交換反応）",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "黄銅鉱 $\\ce{CuFeS2}$ からの銅の製錬では，鉱石を酸素とケイ砂 $\\ce{SiO2}$ とともに溶かして鉄の一部を酸化物としてスラグ（$\\ce{2FeO.SiO2}$）に移し，$\\ce{Cu2S}$ と $\\ce{FeS}$ の混合物（かわ（鈹））をつくる．次に，転炉でかわに空気を吹き込んで粗銅を得る．25 ℃ における生成エンタルピー（kJ/mol）を次のとおりとする．\n\\[\\ce{FeS}:\\,-100\\quad \\ce{FeO}:\\,-272\\quad \\ce{Cu2S}:\\,-80\\quad \\ce{Cu2O}:\\,-170\\quad \\ce{SO2}:\\,-297\\]\n原子量は $\\mathrm{O}=16$，$\\mathrm{Si}=28$，$\\mathrm{S}=32$，$\\mathrm{Cu}=63.5$，$\\mathrm{H}=1.0$ とする．反応エンタルピーの符号で反応の進みやすさを判断してよいものとする（ただし (3) は除く）．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "反応 $\\ce{Cu2O + FeS -> Cu2S + FeO}$ の $\\Delta H$ を求めよ．これから，酸素が不足した状態で銅と鉄と硫黄を含む融体を酸化すると，銅と鉄はそれぞれ主にどのような化合物になると考えられるか．"
+     },
+     {
+      "id": "2",
+      "tex": "かわが $\\ce{Cu2S}$ $1.00\\,\\mathrm{mol}$ と $\\ce{FeS}$ $0.500\\,\\mathrm{mol}$ からなるとき，転炉で空気を吹き込むと，まず鉄が除かれ，そのあとで銅が生じる．この順序になる理由を，(1) の結果と，$\\ce{FeS}$ と $\\ce{Cu2S}$ をそれぞれ酸化物にする反応の $\\ce{O2}$ $1\\,\\mathrm{mol}$ あたりの $\\Delta H$ を比べて説明せよ．また，鉄を除く段階（$\\ce{FeS}$ が $\\ce{FeO}$ と $\\ce{SO2}$ になる）と，銅を生じる段階（$\\ce{Cu2S + O2 -> 2Cu + SO2}$）で必要な $\\ce{O2}$ はそれぞれ何 mol か．"
+     },
+     {
+      "id": "3",
+      "tex": "銅を生じる段階は，$\\ce{Cu2S}$ の一部が $\\ce{Cu2O}$ に酸化され，これが残りの $\\ce{Cu2S}$ と $\\ce{Cu2S + 2Cu2O -> 6Cu + SO2}$ のように反応して進む．はじめの $\\ce{Cu2S}$ のうち何分の何がいったん $\\ce{Cu2O}$ になるか．また，この反応と，銅を生じる段階全体の $\\Delta H$ をそれぞれ求め，燃料を加えなくても転炉の温度が保たれる理由と，吸熱の反応 $\\ce{Cu2S + 2Cu2O -> 6Cu + SO2}$ が高温で進む理由を答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "純粋な $\\ce{CuFeS2}$ から銅 $1.00\\,\\mathrm{t}$ をつくるとき，全体の変化を $\\ce{2CuFeS2 + 5O2 -> 2Cu + 2FeO + 4SO2}$，スラグを $\\ce{2FeO.SiO2}$ とする．必要な $\\ce{O2}$ と $\\ce{SiO2}$ は何 t か．また，生じる $\\ce{SO2}$ をすべて硫酸 $\\ce{H2SO4}$ にすると何 t 得られるか．有効数字3けたで答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\Delta H=-82\\,\\mathrm{kJ}$．鉄は酸化物 $\\ce{FeO}$ に，銅は硫化物 $\\ce{Cu2S}$ になる．"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{O2}$ $1\\,\\mathrm{mol}$ あたりの $\\Delta H$ は，$\\ce{FeS}\\to\\ce{FeO}$ が $-313\\,\\mathrm{kJ}$，$\\ce{Cu2S}\\to\\ce{Cu2O}$ が $-258\\,\\mathrm{kJ}$ で，$\\ce{FeS}$ の酸化の方が起こりやすい．また，かりに $\\ce{Cu2O}$ ができても $\\ce{FeS}$ が残っているかぎり交換反応で $\\ce{Cu2S}$ にもどるので，$\\ce{FeS}$ がなくなるまで銅は生じない．$\\ce{O2}$：鉄を除く段階 $0.750\\,\\mathrm{mol}$，銅を生じる段階 $1.00\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\dfrac{2}{3}$．$\\ce{Cu2S + 2Cu2O -> 6Cu + SO2}$ は $\\Delta H=+123\\,\\mathrm{kJ}$，段階全体 $\\ce{Cu2S + O2 -> 2Cu + SO2}$ は $\\Delta H=-217\\,\\mathrm{kJ}$．全体としては発熱反応なので，その熱で温度が保たれる．また吸熱の反応は固体・液体から気体の $\\ce{SO2}$ が生じて乱雑さが大きく増す反応なので，高温ほど進みやすく，生じた $\\ce{SO2}$ が吹き込む空気とともに運び去られることでも進む．"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{O2}$ $1.26\\,\\mathrm{t}$，$\\ce{SiO2}$ $0.472\\,\\mathrm{t}$，$\\ce{H2SO4}$ $3.09\\,\\mathrm{t}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　$\\Delta H=(-80)+(-272)-\\{(-170)+(-100)\\}=\\boldsymbol{-82\\,\\mathrm{kJ}}$．\n発熱の向きに進むと考えると，銅と鉄が酸素と硫黄を分け合うとき，酸素は鉄と，硫黄は銅と結びつく方が安定である．したがって酸素が不足していれば，$\\boldsymbol{\\text{鉄は }\\ce{FeO}}$（スラグへ），$\\boldsymbol{\\text{銅は }\\ce{Cu2S}}$（かわへ）となる．これが，酸化の量を加減するだけで鉄を銅から分けられる理由である．\n\n\\textbf{(2)}　$\\ce{2FeS + 3O2 -> 2FeO + 2SO2}$：$\\Delta H=2(-272)+2(-297)-2(-100)=-938\\,\\mathrm{kJ}$，$\\ce{O2}$ $1\\,\\mathrm{mol}$ あたり $\\boldsymbol{-313\\,\\mathrm{kJ}}$．\n$\\ce{2Cu2S + 3O2 -> 2Cu2O + 2SO2}$：$\\Delta H=2(-170)+2(-297)-2(-80)=-774\\,\\mathrm{kJ}$，$\\ce{O2}$ $1\\,\\mathrm{mol}$ あたり $\\boldsymbol{-258\\,\\mathrm{kJ}}$．\n吹き込んだ酸素はより発熱的な $\\ce{FeS}$ の酸化に使われ，たとえ一部の $\\ce{Cu2S}$ が $\\ce{Cu2O}$ になっても，(1) の反応（この2つの酸化反応の差 $-469-(-387)=-82\\,\\mathrm{kJ}$ にあたる）で $\\ce{FeS}$ と反応して $\\ce{Cu2S}$ にもどる．このため $\\ce{FeS}$ が尽きるまで銅は生じない．\n$\\ce{O2}$：鉄を除く段階は $\\ce{FeS}$ $0.500\\,\\mathrm{mol}$ に対して $0.500\\times\\dfrac{3}{2}=\\boldsymbol{0.750\\,\\mathrm{mol}}$，銅を生じる段階は $\\ce{Cu2S}$ $1.00\\,\\mathrm{mol}$ に対して $\\boldsymbol{1.00\\,\\mathrm{mol}}$．\n\n\\textbf{(3)}　$\\ce{Cu2S}$ のうち $x\\,\\mathrm{mol}$ が $\\ce{Cu2O}$ になると，これと反応する $\\ce{Cu2S}$ は $x/2\\,\\mathrm{mol}$．$x+\\dfrac{x}{2}=1$ より $x=\\boldsymbol{\\dfrac{2}{3}}$．（$\\ce{2Cu2S + 3O2 -> 2Cu2O + 2SO2}$ と $\\ce{Cu2S + 2Cu2O -> 6Cu + SO2}$ を足すと $\\ce{3Cu2S + 3O2 -> 6Cu + 3SO2}$ となり，全体の式と一致する．）\n$\\ce{Cu2S + 2Cu2O -> 6Cu + SO2}$：$\\Delta H=-297-\\{(-80)+2(-170)\\}=\\boldsymbol{+123\\,\\mathrm{kJ}}$（吸熱）．\n$\\ce{Cu2S + O2 -> 2Cu + SO2}$：$\\Delta H=-297-(-80)=\\boldsymbol{-217\\,\\mathrm{kJ}}$（発熱）．\n段階全体では発熱なので，空気を吹き込むだけで反応熱により高温が保たれ，燃料はいらない（鉄を除く段階も大きな発熱反応である）．吸熱の反応が進むのは，液体どうしの反応から気体が生じて乱雑さ（エントロピー）が大きく増すため高温で有利になることと，$\\ce{SO2}$ が気流で運び去られて平衡が右へずれることによる．このため $\\Delta H$ の符号だけでは判断できない．\n\n\\textbf{(4)}　$\\mathrm{Cu}=\\dfrac{1.00\\times10^{6}}{63.5}=1.575\\times10^{4}\\,\\mathrm{mol}$．全体の式より，$\\mathrm{Cu}$ $1\\,\\mathrm{mol}$ あたり $\\ce{O2}$ $2.5\\,\\mathrm{mol}$，$\\ce{FeO}$ $1\\,\\mathrm{mol}$，$\\ce{SO2}$ $2\\,\\mathrm{mol}$．スラグ $\\ce{2FeO.SiO2}$ では $\\ce{SiO2}$ は $\\ce{FeO}$ の半分．\n\\[\\ce{O2}:\\ 1.575\\times10^{4}\\times2.5\\times32=1.26\\times10^{6}\\,\\mathrm{g}=\\boldsymbol{1.26\\,\\mathrm{t}}\\]\n\\[\\ce{SiO2}:\\ 1.575\\times10^{4}\\times0.5\\times60=\\boldsymbol{0.472\\,\\mathrm{t}}\\]\n\\[\\ce{H2SO4}:\\ 1.575\\times10^{4}\\times2\\times98=\\boldsymbol{3.09\\,\\mathrm{t}}\\]\n硫黄はすべて $\\ce{SO2}$ になるので，銅の 3 倍以上の質量の硫酸が副生する．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "硫化物と酸化物の交換反応 Cu₂O + FeS → Cu₂S + FeO が発熱であることから，酸素が不足する条件では鉄が酸化物，銅が硫化物になり，FeS が残るかぎり Cu₂O ができても Cu₂S にもどる．この選択性で鉄を先に除き，その後 Cu₂S の 2/3 を Cu₂O にして残りと反応させて銅を得る．段階ごとの酸素量と全体の物質収支を原子の保存で結ぶ．"
+ },
+ "concepts": [
+  "transition-metals",
+  "oxygen-sulfur",
+  "enthalpy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "銅の製錬",
+  "黄銅鉱",
+  "選択的酸化",
+  "反応エンタルピー",
+  "物質収支"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

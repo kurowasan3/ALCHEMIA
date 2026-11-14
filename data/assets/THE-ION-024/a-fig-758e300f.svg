@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 320" width="520" height="320">
+<g stroke="currentColor" stroke-width="1.5"><line x1="70" y1="260" x2="480" y2="260"/><line x1="70" y1="260" x2="70" y2="40"/></g>
+<line x1="70.0" y1="260" x2="70.0" y2="265" stroke="currentColor"/><text x="70.0" y="280" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">0</text>
+<line x1="170.0" y1="260" x2="170.0" y2="265" stroke="currentColor"/><text x="170.0" y="280" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">4</text>
+<line x1="270.0" y1="260" x2="270.0" y2="265" stroke="currentColor"/><text x="270.0" y="280" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">8</text>
+<line x1="370.0" y1="260" x2="370.0" y2="265" stroke="currentColor"/><text x="370.0" y="280" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">12</text>
+<line x1="470.0" y1="260" x2="470.0" y2="265" stroke="currentColor"/><text x="470.0" y="280" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">16</text>
+<line x1="65" y1="260.0" x2="70" y2="260.0" stroke="currentColor"/><text x="61" y="264.0" font-size="13" text-anchor="end" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">0</text>
+<line x1="65" y1="190.0" x2="70" y2="190.0" stroke="currentColor"/><text x="61" y="194.0" font-size="13" text-anchor="end" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">4</text>
+<line x1="65" y1="120.0" x2="70" y2="120.0" stroke="currentColor"/><text x="61" y="124.0" font-size="13" text-anchor="end" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">8</text>
+<line x1="65" y1="50.0" x2="70" y2="50.0" stroke="currentColor"/><text x="61" y="54.0" font-size="13" text-anchor="end" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">12</text>
+<text x="270" y="304" font-size="14" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">注入した CO<tspan baseline-shift="sub" font-size="10">2</tspan> の物質量〔×10<tspan baseline-shift="super" font-size="10">−3</tspan> mol〕</text>
+<text x="22" y="155.0" font-size="14" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif" transform="rotate(-90 22 155.0)">CO₂ の分圧〔×10³ Pa〕</text>
+<path d="M70.0,260.0 L82.5,260.0 L95.0,260.0 L107.5,260.0 L120.0,260.0 L132.5,260.0 L145.0,260.0 L157.5,260.0 L170.0,260.0 L182.5,260.0 L195.0,260.0 L207.5,260.0 L220.0,260.0 L232.5,260.0 L245.0,260.0 L257.5,259.9 L270.0,259.9 L282.5,259.8 L295.0,259.6 L307.5,259.2 L320.0,256.4 L332.5,247.0 L345.0,235.5 L357.5,223.7 L370.0,211.9 L382.5,200.0 L395.0,188.1 L407.5,176.1 L420.0,164.2 L432.5,152.2 L445.0,140.3 L457.5,128.3 L470.0,116.4" fill="none" stroke="#1f5fbf" stroke-width="2.4"/>
+<line x1="195.0" y1="260" x2="195.0" y2="60" stroke="currentColor" stroke-dasharray="4 3" opacity="0.5"/>
+<text x="195.0" y="55" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">Na₂CO₃ の組成</text>
+<line x1="320.0" y1="260" x2="320.0" y2="60" stroke="currentColor" stroke-dasharray="4 3" opacity="0.5"/>
+<text x="320.0" y="55" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">NaHCO₃ の組成</text>
+<text x="82.5" y="220" font-size="13" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">NaOH が残る・緩衝域：</text>
+<text x="82.5" y="238" font-size="13" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">分圧はごく小さい</text>
+<circle cx="445.0" cy="140.3" r="4" fill="#c0392b"/><text x="437.0" y="130.3" font-size="13" text-anchor="end" fill="#c0392b" font-family="Noto Sans CJK JP, sans-serif">(2) 6.8×10³ Pa</text>
+</svg>

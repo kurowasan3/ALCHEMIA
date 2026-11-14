@@ -1,0 +1,123 @@
+{
+ "id": "INO-TRN-021",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-07",
+ "topic": "ステンレス鋼に含まれる鉄・クロム・ニッケルの分離",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "pathway",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "鉄・クロム・ニッケルからなるステンレス鋼の小片を酸に溶かし，濃硝酸を加えて加熱して，$\\ce{Fe^3+}$，$\\ce{Cr^3+}$，$\\ce{Ni^2+}$ を含む溶液 S をつくった．S について図の操作1〜3を行った．操作1では，ろ液 Q が黄色になった．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ろ液 Q を黄色にしているイオンの化学式と，そのイオン中のクロムの酸化数を答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "操作1で $\\ce{Cr^3+}$ が (1) のイオンに変化する反応を，イオン反応式で書け．"
+     },
+     {
+      "id": "3",
+      "tex": "沈殿 R，沈殿 U の化学式と，ろ液 T を青紫色にしている錯イオンの化学式を答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "この小片に銅も含まれていたとすると，銅は図のどこに含まれるか．また，そのときろ液 T 中のニッケルと銅を区別して確かめるには，T を塩酸で酸性にしてから何を加えればよいか．起こる変化とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：ステンレス鋼に含まれる鉄・クロム・ニッケルの分離",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{CrO4^2-}$，酸化数 $+6$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{2Cr^3+ + 3H2O2 + 10OH- -> 2CrO4^2- + 8H2O}$"
+   },
+   {
+    "id": "3",
+    "tex": "R：$\\ce{Fe(OH)3}$，U：$\\ce{PbCrO4}$，T の錯イオン：$\\ce{[Ni(NH3)6]^2+}$"
+   },
+   {
+    "id": "4",
+    "tex": "銅は沈殿 P に $\\ce{Cu(OH)2}$ として入り，操作2で $\\ce{[Cu(NH3)4]^2+}$ となってろ液 T に入る．T を塩酸で酸性にして硫化水素を通じると，$\\ce{CuS}$ の黒色沈殿が生じ，$\\ce{Ni^2+}$ は沈殿せずに溶液中に残る．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{操作1（過剰の NaOH ＋ H₂O₂）} $\\ce{Fe^3+}$ は $\\ce{Fe(OH)3}$，$\\ce{Ni^2+}$ は $\\ce{Ni(OH)2}$ となり，過剰の $\\ce{NaOH}$ にも溶けずに沈殿 P になる．$\\ce{Cr^3+}$ は塩基性で $\\ce{H2O2}$ に酸化され，黄色のクロム酸イオン $\\ce{CrO4^2-}$ となってろ液 Q に移る．\n\n\\textbf{(1)(2)} $\\ce{CrO4^2-}$ 中の Cr の酸化数は $x+4\\times(-2)=-2$ より $\\boldsymbol{+6}$．Cr は $+3\\to+6$ で1個あたり電子3個を失い，$\\ce{H2O2}$ は1分子あたり電子2個を受け取る（$\\ce{H2O2 + 2e- -> 2OH-}$）ので，$\\ce{Cr^3+}:\\ce{H2O2}=2:3$．\n\\[\\ce{2Cr^3+ + 3H2O2 + 10OH- -> 2CrO4^2- + 8H2O}\\]\n\n\\textbf{(3)} 操作2：$\\ce{Ni(OH)2}$ は過剰のアンモニア水に $\\ce{[Ni(NH3)6]^2+}$（青紫色）となって溶け（$\\ce{Ni(OH)2 + 6NH3 -> [Ni(NH3)6]^2+ + 2OH-}$），赤褐色の $\\ce{Fe(OH)3}$ が沈殿 R として残る．\n操作3：$\\ce{Pb^2+ + CrO4^2- -> PbCrO4}$（黄色）で，クロムの存在を確かめる．\n\n\\textbf{(4) 条件を変えると} $\\ce{Cu(OH)2}$ は過剰の $\\ce{NaOH}$ に溶けないので沈殿 P に入り，過剰のアンモニア水で $\\ce{[Cu(NH3)4]^2+}$（深青色）となってろ液 T に移る（$\\ce{Cu(OH)2 + 4NH3 -> [Cu(NH3)4]^2+ + 2OH-}$）．つまり Ni と Cu はどちらも T に入り，色も似ていて区別しにくい．\nそこで T を塩酸で酸性にして\\textbf{硫化水素}を通じる．$\\ce{Cu^2+ + H2S -> CuS + 2H+}$ で\\textbf{黒色の CuS} が沈殿するが，$\\ce{NiS}$ は酸性では沈殿しないので $\\ce{Ni^2+}$ はろ液に残る．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "遷移元素の混合物を，過剰の NaOH＋H₂O₂ で Cr³⁺ を CrO₄²⁻（酸化数＋6）に酸化してろ液へ，過剰の NH₃ で Ni²⁺ をアンミン錯イオンにして Fe(OH)₃ と分ける，という操作の意味を追い，別の金属（Cu）が加わったときにどこへ行きどう区別するかを判断する．"
+ },
+ "concepts": [
+  "transition-metals",
+  "complex-ion",
+  "organic-test"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "クロム酸イオン",
+  "アンミン錯イオン",
+  "酸化数",
+  "金属イオンの分離",
+  "ステンレス鋼"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

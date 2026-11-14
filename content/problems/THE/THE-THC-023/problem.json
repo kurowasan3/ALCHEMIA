@@ -1,0 +1,99 @@
+{
+ "id": "THE-THC-023",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-10",
+ "topic": "塩酸との反応熱の測定とヘスの法則によるマグネシウムの燃焼エンタルピー",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "発泡ポリスチレン製のカップに $0.500\\,\\mathrm{mol/L}$ の塩酸 $100\\,\\mathrm{mL}$ を入れ，次の実験 A・B を別々に行った．温度上昇は，放冷による温度低下を直線で外挿して，固体を加えた時刻での値として求めた．\n実験 A：マグネシウム $0.243\\,\\mathrm g$ を加えるとすべて溶け，温度上昇は $11.2\\,\\mathrm K$ であった．\n実験 B：酸化マグネシウム $0.403\\,\\mathrm g$ を加えるとすべて溶け，温度上昇は $3.62\\,\\mathrm K$ であった．\n溶液の質量は $100\\,\\mathrm g$，比熱は $4.18\\,\\mathrm{J/(g\\cdot K)}$ とし，カップや固体の熱容量は無視する．原子量は $\\mathrm{O}=16.0$，$\\mathrm{Mg}=24.3$ とし，$\\ce{H2O(液)}$ の生成エンタルピーは $-286\\,\\mathrm{kJ/mol}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "実験 A，B の反応の反応エンタルピー（それぞれ Mg，MgO $1\\,\\mathrm{mol}$ あたり）を有効数字3桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) の結果を用いて，マグネシウムの燃焼 $\\ce{Mg(固) + 1/2O2(気) -> MgO(固)}$ の $\\Delta H$ を有効数字3桁で求めよ．また，この値を燃焼させて直接測るのではなく，このような方法で求める利点を1つ述べよ．"
+     },
+     {
+      "id": "3",
+      "tex": "実験 A で，マグネシウムを $0.729\\,\\mathrm g$ にして同じ操作をした．温度上昇は何 K になると予想されるか．有効数字3桁で答えよ．また，このとき溶け残るマグネシウムは何 g か．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "A：$-468\\,\\mathrm{kJ/mol}$，B：$-151\\,\\mathrm{kJ/mol}$"
+   },
+   {
+    "id": "2",
+    "tex": "$-603\\,\\mathrm{kJ/mol}$．マグネシウムの燃焼は激しい発光と高温をともない，生成物の一部が窒化マグネシウムになるなど熱を正確に集めにくいが，塩酸との反応は穏やかで，水溶液中で温度上昇として正確に測れる．"
+   },
+   {
+    "id": "3",
+    "tex": "$28.0\\,\\mathrm K$，$0.12\\,\\mathrm g$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 塩酸中の $\\ce{HCl}$ は $0.500\\times0.100=0.0500\\,\\mathrm{mol}$．\nA：$\\ce{Mg + 2HCl -> MgCl2 + H2}$，$\\mathrm{Mg}$ は $0.243/24.3=0.0100\\,\\mathrm{mol}$（$\\ce{HCl}$ は $0.0200\\,\\mathrm{mol}$ 必要で十分ある）．発熱量は $100\\times4.18\\times11.2=4682\\,\\mathrm J$ なので\n\\[ \\Delta H_{\\mathrm A}=-\\frac{4.682\\,\\mathrm{kJ}}{0.0100\\,\\mathrm{mol}}=\\boldsymbol{-468\\,\\mathrm{kJ/mol}} \\]\nB：$\\ce{MgO + 2HCl -> MgCl2 + H2O}$，$\\mathrm{MgO}$ は $0.403/40.3=0.0100\\,\\mathrm{mol}$．発熱量 $100\\times4.18\\times3.62=1513\\,\\mathrm J$ より\n\\[ \\Delta H_{\\mathrm B}=\\boldsymbol{-151\\,\\mathrm{kJ/mol}} \\]\n\n\\textbf{(2)} 求める式は，(A) － (B) ＋ （水の生成 $\\ce{H2 + 1/2O2 -> H2O}$）で得られる．\n\\[ \\Delta H=-468.2-(-151.3)+(-286)=-602.9\\fallingdotseq\\boldsymbol{-603\\,\\mathrm{kJ/mol}} \\]\n（$\\ce{MgCl2}$ と $\\ce{H2}$，$\\ce{H2O}$ が打ち消し合う．）マグネシウムの燃焼は激しい発光と高温をともない，空気中では窒化物もでき，熱を逃さず集めるのが難しい．ヘスの法則を使えば，測りやすい溶液中の反応の組み合わせで求められる．\n\n\\textbf{(3)} $\\mathrm{Mg}$ $0.729\\,\\mathrm g$ は $0.0300\\,\\mathrm{mol}$ だが，$\\ce{HCl}$ $0.0500\\,\\mathrm{mol}$ と反応できる $\\mathrm{Mg}$ は $0.0250\\,\\mathrm{mol}$ だけ．\n\\[ \\Delta T=\\frac{0.0250\\times468.2\\times10^{3}}{100\\times4.18}=\\boldsymbol{28.0\\,\\mathrm K} \\]\n（全量が反応すると考えた $33.6\\,\\mathrm K$ にはならない．）溶け残りは $0.0050\\,\\mathrm{mol}$，$0.0050\\times24.3=\\boldsymbol{0.12\\,\\mathrm g}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "直接測りにくいマグネシウムの燃焼エンタルピーを，Mg と MgO それぞれと塩酸との反応熱を溶液の温度上昇から求め，水の生成エンタルピーと組み合わせてヘスの法則で求める．試料を増やしたときは塩酸が不足しないかを確かめ，反応した量だけで温度上昇を見積もる．"
+ },
+ "concepts": [
+  "enthalpy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ヘスの法則",
+  "熱量測定",
+  "反応エンタルピー",
+  "マグネシウム",
+  "過不足"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

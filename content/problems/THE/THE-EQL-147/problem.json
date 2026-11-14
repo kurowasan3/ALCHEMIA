@@ -1,0 +1,116 @@
+{
+ "id": "THE-EQL-147",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "吸着平衡（ラングミュアの式）の直線化による飽和吸着量と比表面積・細孔による表面積の増大",
+ "course": "化学",
+ "level": 3,
+ "minutes": 20,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "固体の表面には気体分子を1個ずつ吸着できる場所（吸着点）があり，吸着点の総数のうち分子が吸着している割合 $\\theta$ は，気体の圧力を $p$，吸着平衡定数を $K$ として\n\\[ \\theta=\\frac{Kp}{1+Kp} \\]\nで表されるとする（吸着は1層だけ）．吸着した気体の体積（$0\\,^\\circ\\mathrm{C}$，$1.013\\times10^{5}\\,\\mathrm{Pa}$ に換算）を $V$，すべての吸着点が埋まったときの $V$ を $V_\\infty$ とすると $\\theta=V/V_\\infty$ である．ある多孔質の吸着剤 $2.00\\,\\mathrm{g}$ に $0\\,^\\circ\\mathrm{C}$ で気体 Z を吸着させ，次の結果を得た．\n\\[ \\begin{array}{c|ccc} p\\ [\\mathrm{Pa}] & 2.00\\times10^{4} & 5.00\\times10^{4} & 1.00\\times10^{5} \\\\ \\hline V\\ [\\mathrm{mL}] & 14.3 & 25.0 & 33.3 \\end{array} \\]\n標準状態の気体のモル体積は $22.4\\,\\mathrm{L/mol}$，アボガドロ定数は $6.02\\times10^{23}\\,/\\mathrm{mol}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "上の式を変形して，$\\dfrac{p}{V}$ が $p$ の1次式になることを示し，その傾きと切片を $K$，$V_\\infty$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "表の値から $V_\\infty$ と $K$ を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "吸着した Z 1分子が表面で占める面積を $2.0\\times10^{-19}\\,\\mathrm{m^2}$ として，この吸着剤 $1\\,\\mathrm{g}$ あたりの表面積（比表面積）を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "圧力を $1.00\\times10^{5}\\,\\mathrm{Pa}$ から2倍にすると，吸着量は何倍になるか（有効数字2桁）．また，$\\theta=0.90$ にするのに必要な圧力を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "この吸着剤の表面積が大きいのは細孔のためである．$1\\,\\mathrm{cm}\\times1\\,\\mathrm{cm}$，厚さ $2.0\\,\\mu\\mathrm{m}$ の膜を貫く半径 $3.0\\,\\mathrm{nm}$ の円筒形の細孔が，表面 $50\\,\\mathrm{nm^2}$ あたり1個あいているとする．細孔の内壁と膜の表裏の面の面積の和は，細孔のない同じ大きさの膜の表裏の面積の何倍か．有効数字2桁で求めよ（膜の側面は無視する）．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\dfrac{p}{V}=\\dfrac{1}{V_\\infty}\\,p+\\dfrac{1}{KV_\\infty}$．傾き $\\dfrac{1}{V_\\infty}$，切片 $\\dfrac{1}{KV_\\infty}$"
+   },
+   {
+    "id": "2",
+    "tex": "$V_\\infty=50\\,\\mathrm{mL}$，$K=2.0\\times10^{-5}\\,\\mathrm{Pa^{-1}}$"
+   },
+   {
+    "id": "3",
+    "tex": "$1.3\\times10^{2}\\,\\mathrm{m^2/g}$"
+   },
+   {
+    "id": "4",
+    "tex": "$1.2$ 倍，$4.5\\times10^{5}\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "5",
+    "tex": "$3.8\\times10^{2}$ 倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　$\\dfrac{V}{V_\\infty}=\\dfrac{Kp}{1+Kp}$ の逆数をとると $\\dfrac{V_\\infty}{V}=\\dfrac{1}{Kp}+1$．両辺に $\\dfrac{p}{V_\\infty}$ をかけて\n\\[ \\frac{p}{V}=\\frac{1}{V_\\infty}\\,p+\\frac{1}{KV_\\infty} \\]\n傾き $\\boldsymbol{\\dfrac{1}{V_\\infty}}$，切片 $\\boldsymbol{\\dfrac{1}{KV_\\infty}}$ の直線になる．\n\n\\textbf{(2)}　$\\dfrac{p}{V}$ は順に $1.40\\times10^{3}$，$2.00\\times10^{3}$，$3.00\\times10^{3}\\,\\mathrm{Pa/mL}$ で，3点は1直線上にある．傾きは $\\dfrac{3.00\\times10^{3}-1.40\\times10^{3}}{1.00\\times10^{5}-2.00\\times10^{4}}=2.0\\times10^{-2}\\,\\mathrm{mL^{-1}}$ なので $V_\\infty=\\boldsymbol{50\\,\\mathrm{mL}}$．切片は $1.40\\times10^{3}-2.0\\times10^{-2}\\times2.00\\times10^{4}=1.0\\times10^{3}\\,\\mathrm{Pa/mL}$ なので\n\\[ K=\\frac{1}{1.0\\times10^{3}\\times50}=\\boldsymbol{2.0\\times10^{-5}\\,\\mathrm{Pa^{-1}}} \\]\n\n\\textbf{(3)}　1層を埋める Z は $\\dfrac{50\\times10^{-3}}{22.4}=2.23\\times10^{-3}\\,\\mathrm{mol}$，分子数 $2.23\\times10^{-3}\\times6.02\\times10^{23}=1.34\\times10^{21}$．表面積は $1.34\\times10^{21}\\times2.0\\times10^{-19}=2.7\\times10^{2}\\,\\mathrm{m^2}$（$2.00\\,\\mathrm{g}$ あたり）なので，比表面積は $\\boldsymbol{1.3\\times10^{2}\\,\\mathrm{m^2/g}}$．\n\n\\textbf{(4)}　$p=1.00\\times10^{5}$ では $Kp=2.0$，$\\theta=\\dfrac{2.0}{3.0}=0.667$．$p=2.00\\times10^{5}$ では $Kp=4.0$，$\\theta=\\dfrac{4.0}{5.0}=0.80$．比は $\\dfrac{0.80}{0.667}=\\boldsymbol{1.2}$ 倍で，2倍にはならない．吸着点の数に限りがあるので，空いた吸着点 $(1-\\theta)$ が減るほど圧力を上げても増えにくくなる．\n$\\theta=0.90$ では $\\dfrac{Kp}{1+Kp}=0.90$ より $Kp=9.0$，$p=\\dfrac{9.0}{2.0\\times10^{-5}}=\\boldsymbol{4.5\\times10^{5}\\,\\mathrm{Pa}}$．\n\n\\textbf{(5)}　細孔の数は $\\dfrac{1\\times10^{-4}\\,\\mathrm{m^2}}{50\\times10^{-18}\\,\\mathrm{m^2}}=2.0\\times10^{12}$ 個．1個の内壁の面積は $2\\pi rL=2\\pi\\times3.0\\times10^{-9}\\times2.0\\times10^{-6}=3.77\\times10^{-14}\\,\\mathrm{m^2}$ なので，内壁の合計は $7.54\\times10^{-2}\\,\\mathrm{m^2}=754\\,\\mathrm{cm^2}$．表裏の面は穴の分（$\\pi r^2/50\\,\\mathrm{nm^2}=0.57$）だけ減り $2\\times(1-0.57)=0.87\\,\\mathrm{cm^2}$．合計 $755\\,\\mathrm{cm^2}$ を細孔のない膜の $2\\,\\mathrm{cm^2}$ で割って $\\boldsymbol{3.8\\times10^{2}}$ 倍．表面積のほとんどが細孔の内壁であり，吸着量は吸着点の総数（表面積）に比例するので，細孔の多い物質ほど吸着能力が大きい．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "有限個の吸着点への1層吸着（θ=Kp/(1+Kp)）は p/V を p に対してプロットすると直線になり，傾きから飽和吸着量，切片から吸着平衡定数が求まる．飽和吸着量と1分子の占有面積から表面積が決まり，吸着点に限りがあるため圧力を上げても吸着量は比例して増えない．細孔の内壁が表面積の大部分を占めることを円筒のモデルで見積もる．"
+ },
+ "concepts": [
+  "chemical-equilibrium"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "吸着平衡",
+  "ラングミュアの式",
+  "直線化",
+  "比表面積",
+  "細孔",
+  "飽和"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

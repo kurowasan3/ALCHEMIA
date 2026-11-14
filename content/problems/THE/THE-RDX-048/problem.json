@@ -1,0 +1,110 @@
+{
+ "id": "THE-RDX-048",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-06",
+ "topic": "過酸化水素からの酸素の発生（触媒の酸化マンガン(IV)と酸化剤の過マンガン酸カリウム）",
+ "course": "化学",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "compare",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "$0.500\\,\\mathrm{mol/L}$ の過酸化水素水 $20.0\\,\\mathrm{mL}$ を 2 つ用意し，次の実験 (a)，(b) を行った．気体の体積は標準状態（$0\\,^\\circ\\mathrm{C}$，$1.013\\times10^{5}\\,\\mathrm{Pa}$）に換算し，モル体積は $22.4\\,\\mathrm{L/mol}$ とする．\n\\\\（a）少量の酸化マンガン(IV) $\\ce{MnO2}$ を加え，気体の発生が止まるまで放置した．$\\ce{MnO2}$ の質量は反応の前後で変わらなかった．\n\\\\（b）希硫酸を加えて酸性にし，$0.100\\,\\mathrm{mol/L}$ の過マンガン酸カリウム水溶液を，赤紫色が消えなくなるまで加えた．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "(a)，(b) で起こる反応を，それぞれ反応式（(b) はイオン反応式）で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "(a)，(b) で発生した酸素の体積はそれぞれ何 L か．有効数字 3 桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(b) で加えた過マンガン酸カリウム水溶液は何 mL か．有効数字 3 桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(a)，(b) のそれぞれで，反応した $\\ce{H2O2}$ のうち還元剤としてはたらいたものの割合を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "(a) $\\ce{2H2O2 -> 2H2O + O2}$，(b) $\\ce{2MnO4- + 5H2O2 + 6H+ -> 2Mn^2+ + 5O2 + 8H2O}$"
+   },
+   {
+    "id": "2",
+    "tex": "(a) $0.112\\,\\mathrm{L}$，(b) $0.224\\,\\mathrm{L}$"
+   },
+   {
+    "id": "3",
+    "tex": "$40.0\\,\\mathrm{mL}$"
+   },
+   {
+    "id": "4",
+    "tex": "(a) $\\dfrac{1}{2}$，(b) すべて（1）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} (a) の $\\ce{MnO2}$ は質量が変わらないので触媒であり，$\\ce{H2O2}$ 自身が分解する：$\\ce{2H2O2 -> 2H2O + O2}$．\n(b) では $\\ce{MnO4-}$ が酸化剤（Mn：$+7\\to+2$，電子 5 個を受け取る），$\\ce{H2O2}$ が還元剤（O：$-1\\to0$，1 分子で電子 2 個を出す）としてはたらく：\n\\[ \\ce{2MnO4- + 5H2O2 + 6H+ -> 2Mn^2+ + 5O2 + 8H2O} \\]\n\n\\textbf{(2)} $\\ce{H2O2}$ は $0.500\\times0.0200=1.00\\times10^{-2}\\,\\mathrm{mol}$．\n(a) $\\ce{H2O2}$ 2 mol から $\\ce{O2}$ 1 mol なので $5.00\\times10^{-3}\\,\\mathrm{mol}$，$\\boldsymbol{0.112\\,\\mathrm{L}}$．\n(b) $\\ce{H2O2}$ 1 mol から $\\ce{O2}$ 1 mol なので $1.00\\times10^{-2}\\,\\mathrm{mol}$，$\\boldsymbol{0.224\\,\\mathrm{L}}$．\n同じ量の過酸化水素からでも，酸化剤を使うと触媒のときの 2 倍の酸素が得られる．\n\n\\textbf{(3)} $\\ce{MnO4-}$ は $\\ce{H2O2}$ の $\\dfrac{2}{5}$ 倍で $4.00\\times10^{-3}\\,\\mathrm{mol}$．$\\dfrac{4.00\\times10^{-3}}{0.100}=0.0400\\,\\mathrm{L}=\\boldsymbol{40.0\\,\\mathrm{mL}}$．\n\n\\textbf{(4)} (a) の分解は自己酸化還元で，2 分子の $\\ce{H2O2}$ のうち 1 分子が O を $-1\\to0$（$\\ce{O2}$）にして還元剤，もう 1 分子が O を $-1\\to-2$（$\\ce{H2O}$）にして酸化剤としてはたらく．還元剤の割合は $\\boldsymbol{\\dfrac{1}{2}}$．\n(b) では電子を受け取るのは $\\ce{MnO4-}$ なので，$\\ce{H2O2}$ は\\textbf{すべて}還元剤として O を $-1\\to0$ にし，$\\ce{O2}$ になる（発生する $\\ce{O2}$ の O はすべて $\\ce{H2O2}$ に由来する）．このため (b) の $\\ce{O2}$ は (a) の 2 倍になる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "MnO₂ を触媒とする H₂O₂ の分解は自己酸化還元で，H₂O₂ の半分だけが還元剤として O₂ になるが，KMnO₄ を酸化剤にすると H₂O₂ はすべて還元剤として O₂ になる．同じ量の H₂O₂ から得られる O₂ が触媒のときの2倍になることを，酸化数の変化から判断する．"
+ },
+ "concepts": [
+  "redox",
+  "transition-metals",
+  "oxygen-sulfur"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "過酸化水素",
+  "酸化マンガン(IV)",
+  "過マンガン酸カリウム",
+  "触媒",
+  "自己酸化還元",
+  "酸素の発生"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

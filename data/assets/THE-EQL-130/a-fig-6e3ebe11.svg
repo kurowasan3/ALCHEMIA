@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 340" width="520" height="340" font-family="Noto Sans CJK JP, sans-serif">
+<line x1="70" y1="290" x2="469.0" y2="290" stroke="currentColor" stroke-width="1.5"/>
+<line x1="70" y1="290" x2="70" y2="20.0" stroke="currentColor" stroke-width="1.5"/>
+<text x="473.0" y="295" font-size="14" fill="currentColor">t/min</text>
+<text x="62" y="12.0" font-size="14" fill="currentColor">c/(mol/L)</text>
+<line x1="70" y1="290" x2="70" y2="295" stroke="currentColor"/>
+<text x="70" y="311" font-size="13" fill="currentColor" text-anchor="middle">0</text>
+<line x1="260" y1="290" x2="260" y2="295" stroke="currentColor"/>
+<text x="260" y="311" font-size="13" fill="currentColor" text-anchor="middle">5</text>
+<line x1="450" y1="290" x2="450" y2="295" stroke="currentColor"/>
+<text x="450" y="311" font-size="13" fill="currentColor" text-anchor="middle">10</text>
+<line x1="65" y1="230.0" x2="70" y2="230.0" stroke="currentColor"/>
+<text x="61" y="235.0" font-size="13" fill="currentColor" text-anchor="end">0.2</text>
+<line x1="65" y1="170.0" x2="70" y2="170.0" stroke="currentColor"/>
+<text x="61" y="175.0" font-size="13" fill="currentColor" text-anchor="end">0.4</text>
+<line x1="65" y1="110.0" x2="70" y2="110.0" stroke="currentColor"/>
+<text x="61" y="115.0" font-size="13" fill="currentColor" text-anchor="end">0.6</text>
+<line x1="65" y1="50.0" x2="70" y2="50.0" stroke="currentColor"/>
+<text x="61" y="55.0" font-size="13" fill="currentColor" text-anchor="end">0.8</text>
+<polyline points="70.0,50.0 73.8,53.3 77.6,56.6 81.4,59.8 85.2,62.9 89.0,66.1 92.8,69.2 96.6,72.2 100.4,75.2 104.2,78.2 108.0,81.1 111.8,83.9 115.6,86.8 119.4,89.6 123.2,92.3 127.0,95.1 130.8,97.7 134.6,100.4 138.4,103.0 142.2,105.6 146.0,108.1 149.8,110.6 153.6,113.1 157.4,115.5 161.2,117.9 165.0,120.3 168.8,122.6 172.6,124.9 176.4,127.2 180.2,129.4 184.0,131.7 187.8,133.8 191.6,136.0 195.4,138.1 199.2,140.2 203.0,142.3 206.8,144.3 210.6,146.3 214.4,148.3 218.2,150.2 222.0,152.2 225.8,154.1 229.6,155.9 233.4,157.8 237.2,159.6 241.0,161.4 244.8,163.2 248.6,164.9 252.4,166.6 256.2,168.3 260.0,170.0 263.8,171.7 267.6,173.3 271.4,174.9 275.2,176.5 279.0,178.0 282.8,179.6 286.6,181.1 290.4,182.6 294.2,184.1 298.0,185.5 301.8,187.0 305.6,188.4 309.4,189.8 313.2,191.2 317.0,192.5 320.8,193.9 324.6,195.2 328.4,196.5 332.2,197.8 336.0,199.1 339.8,200.3 343.6,201.5 347.4,202.8 351.2,204.0 355.0,205.1 358.8,206.3 362.6,207.5 366.4,208.6 370.2,209.7 374.0,210.8 377.8,211.9 381.6,213.0 385.4,214.1 389.2,215.1 393.0,216.1 396.8,217.1 400.6,218.2 404.4,219.1 408.2,220.1 412.0,221.1 415.8,222.0 419.6,223.0 423.4,223.9 427.2,224.8 431.0,225.7 434.8,226.6 438.6,227.5 442.4,228.3 446.2,229.2 450.0,230.0" fill="none" stroke="currentColor" stroke-width="2"/>
+<line x1="70" y1="50.0" x2="260" y2="170.0" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="6,4"/>
+<line x1="70" y1="110.0" x2="260" y2="110.0" stroke="#c0392b" stroke-width="1.6"/>
+<line x1="70" y1="116.87659509332437" x2="260" y2="116.87659509332437" stroke="#1f5fbf" stroke-width="1.6"/>
+<line x1="260" y1="290" x2="260" y2="170.0" stroke="currentColor" stroke-dasharray="4,4" opacity="0.5"/>
+<text x="268" y="108.0" font-size="14" fill="#c0392b">相加平均 c̄ = 0.600（弦）</text>
+<text x="268" y="132.87659509332437" font-size="14" fill="#1f5fbf">時間平均 ⟨c⟩ = 0.577（曲線）</text>
+<text x="313.20000000000005" y="170.0" font-size="14" fill="currentColor">c = 0.800 e<tspan baseline-shift="super" font-size="10">−kt</tspan></text>
+</svg>

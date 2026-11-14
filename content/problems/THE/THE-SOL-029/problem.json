@@ -1,0 +1,101 @@
+{
+ "id": "THE-SOL-029",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-09",
+ "topic": "浸透圧による多糖の分子量と重合度",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある多糖 P は，グルコース 1 分子に $n$ 分子のフルクトースが直鎖状に結合した構造をもち，その分子量は $162(n+1)+18$ と表される．P $1.00\\,\\mathrm g$ を水に溶かして $200\\,\\mathrm{mL}$ とした溶液の $27\\,^\\circ\\mathrm C$ における浸透圧は $2.47\\times10^{3}\\,\\mathrm{Pa}$ であった．気体定数は $R=8.31\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "P の分子量を有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$n$ を整数で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "この溶液中の P を完全に加水分解して単糖にした（溶液の体積・温度は変わらないものとする）．浸透圧はもとの何倍になるか．整数で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$5.0\\times10^{3}$"
+   },
+   {
+    "id": "2",
+    "tex": "30"
+   },
+   {
+    "id": "3",
+    "tex": "31 倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1)　ファントホッフの式 $\\Pi V=\\dfrac{w}{M}RT$ より\n\\[ M=\\frac{wRT}{\\Pi V}=\\frac{1.00\\times8.31\\times10^{3}\\times300}{2.47\\times10^{3}\\times0.200}\\approx5.05\\times10^{3} \\]\nよって $\\boldsymbol{5.0\\times10^{3}}$．\n\n(2)　$162(n+1)+18=5.05\\times10^{3}$ より $n+1\\approx31.0$，$\\boldsymbol{n=30}$．\n\n(3)　浸透圧は溶質粒子の物質量（モル濃度）に比例し，粒子 1 個の大きさにはよらない．P 1 分子を完全に加水分解するとグルコース 1 分子とフルクトース $n=30$ 分子，合わせて $31$ 分子の単糖が生じる．よって浸透圧は $\\boldsymbol{31}$ 倍になる（質量は水が加わって増えるが，浸透圧は粒子の数で決まる）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "浸透圧は溶質粒子の数に比例するので，高分子でも測定でき分子量と重合度が求まる．加水分解で 1 分子が多数の単糖に分かれると，浸透圧は生じた粒子数の倍になる．"
+ },
+ "concepts": [
+  "solution-colligative",
+  "saccharide"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "浸透圧",
+  "分子量",
+  "多糖",
+  "重合度",
+  "加水分解",
+  "ファントホッフの式"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

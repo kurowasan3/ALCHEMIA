@@ -1,0 +1,109 @@
+{
+ "id": "THE-ION-056",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "硫酸の第2段階の電離と硫酸ナトリウムの添加による pH の上昇",
+ "course": "化学",
+ "level": 3,
+ "minutes": 18,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "硫酸は水溶液中で次のように電離する．第 1 段階は完全に進み，第 2 段階の電離定数は 25 ℃ で $K_2=1.2\\times10^{-2}\\,\\mathrm{mol/L}$ である．\n\\[ \\ce{H2SO4 -> H+ + HSO4-}\\qquad \\ce{HSO4- <=> H+ + SO4^2-} \\]\n必要なら $\\sqrt{1.984\\times10^{-3}}=4.454\\times10^{-2}$，$\\sqrt{1.0384\\times10^{-2}}=0.1019$，$\\log_{10}2.6=0.41$，$\\log_{10}5.0=0.70$ を用いよ．水の電離は無視する．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$0.020\\,\\mathrm{mol/L}$ の硫酸水溶液で，第 2 段階で電離した $\\ce{HSO4-}$ の濃度を $y\\,\\mathrm{mol/L}$ とする．$y$ を有効数字 2 桁で求め，$[\\ce{H+}]$ と pH（小数第 1 位まで）を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) の水溶液で，$\\ce{HSO4-}$ のうち電離したものの割合は何 % か．有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(1) の水溶液に，体積が変わらないように硫酸ナトリウム $\\ce{Na2SO4}$ を溶かし，加えた $\\ce{Na2SO4}$ の濃度が $0.10\\,\\mathrm{mol/L}$ となるようにした．このときの $[\\ce{H+}]$ を有効数字 2 桁で求め，pH を小数第 1 位まで求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(1) の水溶液と同じ pH の塩酸に，(a) 塩化ナトリウム，(b) 硫酸ナトリウムをそれぞれ $0.10\\,\\mathrm{mol/L}$ となるように溶かした．pH はそれぞれどうなるか．理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$y=6.3\\times10^{-3}\\,\\mathrm{mol/L}$，$[\\ce{H+}]=2.6\\times10^{-2}\\,\\mathrm{mol/L}$，pH 1.6"
+   },
+   {
+    "id": "2",
+    "tex": "31 %"
+   },
+   {
+    "id": "3",
+    "tex": "$[\\ce{H+}]=5.0\\times10^{-3}\\,\\mathrm{mol/L}$，pH 2.3"
+   },
+   {
+    "id": "4",
+    "tex": "(a) 変わらない（$\\ce{Cl-}$ は強酸の陰イオンで $\\ce{H+}$ と結びつかない）．(b) 大きくなる（$\\ce{SO4^2-}$ が $\\ce{H+}$ と結びついて $\\ce{HSO4-}$ になり，$[\\ce{H+}]$ が減る）．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 第 1 段階で $[\\ce{H+}]=[\\ce{HSO4-}]=0.020\\,\\mathrm{mol/L}$ となり，さらに第 2 段階で $y$ だけ電離すると\n\\[ [\\ce{H+}]=0.020+y,\\quad [\\ce{HSO4-}]=0.020-y,\\quad [\\ce{SO4^2-}]=y \\]\n\\[ K_2=\\frac{(0.020+y)y}{0.020-y}=1.2\\times10^{-2} \\]\n整理して $y^2+0.032y-2.4\\times10^{-4}=0$．\n\\[ y=\\frac{-0.032+\\sqrt{1.024\\times10^{-3}+9.6\\times10^{-4}}}{2}=\\frac{-0.032+0.04454}{2}=6.27\\times10^{-3}\\fallingdotseq\\boldsymbol{6.3\\times10^{-3}\\,\\mathrm{mol/L}} \\]\n$[\\ce{H+}]=0.020+0.00627=0.0263\\fallingdotseq\\boldsymbol{2.6\\times10^{-2}\\,\\mathrm{mol/L}}$，pH $=2-0.41=1.59\\fallingdotseq\\boldsymbol{1.6}$．\n（2 価の強酸とみなすと $[\\ce{H+}]=0.040\\,\\mathrm{mol/L}$ になるが，実際はそれより小さい．）\n\n\\textbf{(2)} $\\dfrac{6.27\\times10^{-3}}{0.020}\\times100=\\boldsymbol{31\\,\\%}$．第 1 段階で生じた $\\ce{H+}$ によって第 2 段階の電離が抑えられている．\n\n\\textbf{(3)} 加えた $\\ce{SO4^2-}$ は $\\ce{H+}$ と結びついて $\\ce{HSO4-}$ になる．物質収支で考える．水素（$\\ce{H+}$ と $\\ce{HSO4-}$ の H）の総量は $2\\times0.020=0.040\\,\\mathrm{mol/L}$，硫酸イオン由来の S の総量は $0.020+0.10=0.12\\,\\mathrm{mol/L}$ である．$[\\ce{HSO4-}]=z$ とすると\n\\[ [\\ce{H+}]=0.040-z,\\qquad [\\ce{SO4^2-}]=0.12-z,\\qquad K_2=\\frac{(0.040-z)(0.12-z)}{z}=1.2\\times10^{-2} \\]\n整理して $z^2-0.172z+4.8\\times10^{-3}=0$．$z<0.040$ の解は\n\\[ z=\\frac{0.172-\\sqrt{2.9584\\times10^{-2}-1.92\\times10^{-2}}}{2}=\\frac{0.172-0.1019}{2}=0.03505\\,\\mathrm{mol/L} \\]\n$[\\ce{H+}]=0.040-0.03505=4.95\\times10^{-3}\\fallingdotseq\\boldsymbol{5.0\\times10^{-3}\\,\\mathrm{mol/L}}$，pH $=3-0.70=2.30\\fallingdotseq\\boldsymbol{2.3}$．\n多量の $\\ce{SO4^2-}$ が $\\ce{HSO4-}$ の電離を左へ押し戻し（共通イオン効果），$\\ce{H+}$ の大部分が $\\ce{HSO4-}$ に取り込まれた．$\\ce{HSO4-}$ と $\\ce{SO4^2-}$ の混合液は，pH 2 付近で緩衝作用を示す．\n\n\\textbf{(4)} (a) $\\ce{Cl-}$ は強酸 $\\ce{HCl}$ の陰イオンで，$\\ce{H+}$ と結びつかない．pH は$\\boldsymbol{\\text{変わらない}}$．\n(b) $\\ce{SO4^2-}$ は弱酸 $\\ce{HSO4-}$（$K_2=1.2\\times10^{-2}$）の共役塩基なので，$\\ce{H+ + SO4^2- -> HSO4-}$ が起こり $[\\ce{H+}]$ が減る．pH は$\\boldsymbol{\\text{大きくなる}}$．「強酸の塩だから中性で pH を変えない」とはいえない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "硫酸の第2段階は電離定数 10⁻² 程度の弱酸の電離なので，硫酸の [H⁺] は 2 価の強酸とした値より小さく，2次方程式で求める．硫酸イオンは弱酸 HSO₄⁻ の共役塩基なので，強酸性の溶液に硫酸塩を加えると H⁺ を受け取って pH が上がる（塩化物では変わらない）．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "oxygen-sulfur",
+  "alkali-metals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "硫酸",
+  "二段階電離",
+  "共通イオン効果",
+  "硫酸水素イオン",
+  "pH"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

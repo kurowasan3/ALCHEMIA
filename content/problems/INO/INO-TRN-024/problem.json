@@ -1,0 +1,117 @@
+{
+ "id": "INO-TRN-024",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-07",
+ "topic": "質量変化による鉄の酸化物の同定と空気中での加熱",
+ "course": "化学",
+ "level": 3,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "鉄の酸化物には $\\ce{FeO}$，$\\ce{Fe3O4}$，$\\ce{Fe2O3}$ の3種類がある．このうちのどれか1種類だけからなる黒色の粉末 X がある．原子量は O=16，Fe=56 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "X $2.32\\,\\mathrm{g}$ を水素の気流中で十分に加熱したところ，すべて鉄に還元され，残った固体の質量は $1.68\\,\\mathrm{g}$ であった．X はどの酸化物か．化学式で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) の還元の化学反応式を書け．"
+     },
+     {
+      "id": "3",
+      "tex": "X $2.32\\,\\mathrm{g}$ を，水素中ではなく空気中で質量が変化しなくなるまで加熱すると，固体の質量は何 g になるか．有効数字3桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "3種類の酸化物のうち，空気中で加熱しても質量が変化しないものはどれか．理由とともに答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "同じ質量の $\\ce{FeO}$ と $\\ce{Fe3O4}$ をそれぞれ空気中で質量が変化しなくなるまで加熱した．$\\ce{FeO}$ の質量の増加量は，$\\ce{Fe3O4}$ の質量の増加量の何倍か．有効数字2桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{Fe3O4}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{Fe3O4 + 4H2 -> 3Fe + 4H2O}$"
+   },
+   {
+    "id": "3",
+    "tex": "$2.40\\,\\mathrm{g}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{Fe2O3}$（鉄の酸化数がすでに $+3$ で，空気中の酸素によってそれ以上酸化されないから）"
+   },
+   {
+    "id": "5",
+    "tex": "$3.2$ 倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 残った鉄は $\\dfrac{1.68}{56}=0.0300\\,\\mathrm{mol}$，失われた酸素は $\\dfrac{2.32-1.68}{16}=0.0400\\,\\mathrm{mol}$．$\\mathrm{Fe:O}=0.0300:0.0400=3:4$ なので X は $\\boldsymbol{\\ce{Fe3O4}}$．\\\\\n（質量で比べてもよい：鉄の質量の割合は $\\ce{FeO}$ $\\tfrac{56}{72}=0.778$，$\\ce{Fe3O4}$ $\\tfrac{168}{232}=0.724$，$\\ce{Fe2O3}$ $\\tfrac{112}{160}=0.700$ で，実測 $\\tfrac{1.68}{2.32}=0.724$ と一致するのは $\\ce{Fe3O4}$．）\\\\\n\\textbf{(2)} $\\ce{Fe3O4 + 4H2 -> 3Fe + 4H2O}$\\\\\n\\textbf{(3)} 空気中では鉄が $+3$ になるまで酸化される：$\\ce{4Fe3O4 + O2 -> 6Fe2O3}$．鉄 $0.0300\\,\\mathrm{mol}$ は $\\ce{Fe2O3}$ $0.0150\\,\\mathrm{mol}$ になるので $0.0150\\times160=\\boldsymbol{2.40\\,\\mathrm{g}}$．\\\\\n\\textbf{(4)} 空気中で加熱すると，鉄は最も安定な $+3$ の酸化数まで酸化される．$\\ce{FeO}$（$+2$）と $\\ce{Fe3O4}$（$+2$ と $+3$ を含む）は酸素を取り込んで質量が増えるが，$\\boldsymbol{\\ce{Fe2O3}}$ は鉄がすでに $+3$ なので変化しない．\\\\\n\\textbf{(5)} $\\ce{4FeO + O2 -> 2Fe2O3}$ より，$\\ce{FeO}$ $1\\,\\mathrm{mol}$（$72\\,\\mathrm{g}$）は O 原子 $0.5\\,\\mathrm{mol}$（$8\\,\\mathrm{g}$）を取り込む．$\\ce{Fe3O4}$ $1\\,\\mathrm{mol}$（$232\\,\\mathrm{g}$）も $\\tfrac{3}{2}\\ce{Fe2O3}$ になるので O 原子 $0.5\\,\\mathrm{mol}$（$8\\,\\mathrm{g}$）を取り込む．質量 $m$ あたりの増加量は $\\tfrac{8m}{72}$ と $\\tfrac{8m}{232}$ なので，比は $\\dfrac{232}{72}=3.22\\fallingdotseq\\boldsymbol{3.2}$ 倍．\\\\\n1 mol あたり取り込む酸素は同じでも，$\\ce{Fe3O4}$ は式量が大きく，含まれる $\\ce{Fe^2+}$ の割合が小さいので，質量あたりの増加は小さい．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "還元で失われる酸素・空気中の酸化で取り込まれる酸素の質量から Fe と O の物質量比を求めて鉄の酸化物を同定する．空気中では鉄が +3 になるまでしか酸化されないので，加熱後の質量や質量増加の大小は，含まれる Fe²⁺ の量で決まる．"
+ },
+ "concepts": [
+  "transition-metals",
+  "oxygen-sulfur",
+  "elemental-analysis"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "鉄の酸化物",
+  "酸化数",
+  "質量変化",
+  "組成式の決定",
+  "四酸化三鉄"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,65 @@
+# 検証スクリプト（グループ g07）  python3 -I この.py  （単独で動く）
+import sys, json, re, os, math
+sys.path.insert(0, '/home/claude/kurowasan3/alchemia/tools')
+from chemlib import check_equation
+
+FIELDS = set('''原子の構造と電子配置 元素の周期表と周期性 化学結合と結晶 物質量と化学反応式 酸と塩基 酸化還元反応 電池と電気分解 気体の性質 溶液の性質 化学反応とエネルギー 反応速度と化学平衡 電離平衡と溶解平衡
+ハロゲン・貴ガス・水素 酸素・硫黄 窒素・リン 炭素・ケイ素 アルカリ金属・アルカリ土類金属 アルミニウム・亜鉛・スズ・鉛 遷移元素（鉄・銅・銀・クロム・マンガン） 金属イオンの沈殿・錯イオン・系統分析 気体の製法と性質
+有機化合物の構造と元素分析 脂肪族炭化水素 アルコール・アルデヒド・ケトン カルボン酸・エステル・油脂 芳香族化合物 有機化合物の検出反応と分離
+高分子の基礎と合成樹脂 合成繊維 ゴム・機能性高分子 糖類 アミノ酸・タンパク質・核酸'''.split())
+FORMATS = {'qa', 'equation', 'compare', 'condition', 'pathway', 'calc', 'structure'}
+
+def ce_blocks(s):
+    out, i = [], 0
+    while True:
+        i = s.find('\\ce{', i)
+        if i < 0: return out
+        j = i + 4; depth = 1
+        while depth:
+            if s[j] == '{': depth += 1
+            elif s[j] == '}': depth -= 1
+            j += 1
+        out.append(s[i+4:j-1]); i = j
+
+def check_item(path, dmin, dmax):
+    it = json.load(open(path, encoding='utf-8'))
+    for k in ('src_no','src_label','field','theme','difficulty','time_min','format','problem','answer','solution','core','tags','verified','verify_note','problem_fig','solution_fig'):
+        assert k in it, k
+    assert it['field'] in FIELDS, it['field']
+    assert dmin <= it['difficulty'] <= dmax, it['difficulty']
+    assert set(it['format'].split(',')) <= FORMATS, it['format']
+    n_eq = 0
+    for key in ('problem', 'answer', 'solution'):
+        for b in ce_blocks(it[key]):
+            if re.search(r'boxed|\\text|\\mathrm', b): continue
+            if len(re.findall(r'<=>|->|<-', b)) != 1: continue
+            r = check_equation(b)
+            assert r is None, (b, r)
+            n_eq += 1
+            print('式OK:', b)
+    print('検査した式の数:', n_eq)
+    np_ = it['problem'].count('\\item'); na = len(re.findall(r'(^|\s)\((\d+)\)', it['answer']))
+    assert np_ == na or (np_ == 0 and na == 0), ('小問の数', np_, na)
+    d = os.path.dirname(path)
+    for f in ('problem_fig', 'solution_fig'):
+        if it[f]: assert os.path.exists(os.path.join(d, it[f])), it[f]
+    assert '\\hfill$\\square$' in it['solution']
+    return it
+
+def sig(x, n):
+    return float(f'{x:.{n}g}')
+it = check_item('/home/claude/chemx/todai/out/items/ORG-ARO-068/item.json', 1, 3)
+from rdkit import Chem
+from rdkit.Chem.rdMolDescriptors import CalcMolFormula
+AW = {'C': 12.0, 'H': 1.0, 'N': 14.0, 'O': 16.0}
+def M(smi):
+    m = Chem.AddHs(Chem.MolFromSmiles(smi)); return sum(AW[a.GetSymbol()] for a in m.GetAtoms())
+S = {'X': 'Oc1ccc(cc1)/N=N/c1ccccc1', 'A': 'Nc1ccccc1', 'B': 'Nc1ccc(O)cc1', 'D': 'CC(=O)Nc1ccc(OC(C)=O)cc1', 'E': 'CC(=O)Nc1ccc(O)cc1', 'phenol': 'Oc1ccccc1'}
+F = {k: CalcMolFormula(Chem.MolFromSmiles(v)) for k, v in S.items()}
+print(F)
+assert F['X'] == 'C12H10N2O' and F['D'] == 'C10H11NO3' and F['E'] == 'C8H9NO2' and F['B'] == 'C6H7NO'
+na = 1.86/M(S['A']); npn = 2.35/M(S['phenol']); nx = 3.17/M(S['X'])
+y = nx/min(na, npn)*100
+print(M(S['A']), M(S['phenol']), M(S['X']), na, npn, nx, y)
+assert na < npn and sig(y, 2) == 80
+print('ORG-ARO-068 OK')

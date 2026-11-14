@@ -1,0 +1,110 @@
+{
+ "id": "THE-EQL-126",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "エタンの脱水素平衡（定圧容器と定積容器で同じ平衡定数を使う）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 18,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "エタンは高温で次のように脱水素され，平衡に達する．\n\\[ \\ce{C2H6 <=> C2H4 + H2} \\]\n次の実験 1〜3 を同じ温度 $1000\\,\\mathrm{K}$ で行った．気体定数は $8.31\\times10^{3}\\,\\mathrm{Pa\\cdot L/(mol\\cdot K)}$ とし，気体はすべて理想気体とする．\n\\\\実験 1　容積を自由に変えられる容器にエタン $1.00\\,\\mathrm{mol}$ を入れ，圧力を $1.00\\times10^{5}\\,\\mathrm{Pa}$ に保つと，平衡に達したとき体積は $108\\,\\mathrm{L}$ になった．\n\\\\実験 2　容積 $50.0\\,\\mathrm{L}$ の容器にエタンを入れて密閉すると，平衡に達したときエチレンが $0.150\\,\\mathrm{mol}$ 生じていた．\n\\\\実験 3　実験 1 と同じ操作を，圧力を $2.00\\times10^{5}\\,\\mathrm{Pa}$ に保って行った．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "実験 1 の平衡状態で生じた水素は何 mol か．有効数字 3 桁で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "この温度での濃度平衡定数 $K_\\mathrm{c}$ を有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "実験 2 で最初に入れたエタンは何 mol か．有効数字 3 桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "実験 3 で，エタンのうち反応したものの割合は何 % か．有効数字 3 桁で答えよ．また，実験 1 と比べて大きいか小さいか，理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$0.300\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "2",
+    "tex": "$1.19\\times10^{-3}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "3",
+    "tex": "$0.528\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "4",
+    "tex": "$21.7\\,\\%$，小さい（加圧すると気体分子の数が減る向きに平衡が移動するから）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 反応したエタンを $x\\,\\mathrm{mol}$ とすると，全物質量は $1.00+x$．\n\\[ 1.00+x=\\frac{PV}{RT}=\\frac{1.00\\times10^{5}\\times108}{8.31\\times10^{3}\\times1000}=1.30 \\]\n$x=\\boldsymbol{0.300\\,\\mathrm{mol}}$．\n\n\\textbf{(2)} 平衡時はエタン $0.700$，エチレン・水素 各 $0.300\\,\\mathrm{mol}$，体積 $108\\,\\mathrm{L}$．\n\\[ K_\\mathrm{c}=\\frac{[\\ce{C2H4}][\\ce{H2}]}{[\\ce{C2H6}]}=\\frac{0.300^2}{0.700\\times108}=\\boldsymbol{1.19\\times10^{-3}\\,\\mathrm{mol/L}} \\]\n\n\\textbf{(3)} 最初のエタンを $n\\,\\mathrm{mol}$ とすると，平衡時エタン $n-0.150$，エチレン・水素 各 $0.150\\,\\mathrm{mol}$，体積 $50.0\\,\\mathrm{L}$．\n\\[ \\frac{0.150^2}{(n-0.150)\\times50.0}=1.190\\times10^{-3}\\quad\\Rightarrow\\quad n-0.150=0.378,\\quad n=\\boldsymbol{0.528\\,\\mathrm{mol}} \\]\n（反応した割合は $28.4\\,\\%$ で，定積容器でも体積と量が違えば反応した割合は変わる．）\n\n\\textbf{(4)} 定圧では，反応した割合を $\\alpha$ とすると分圧はエタン $\\dfrac{1-\\alpha}{1+\\alpha}P$，エチレン・水素 各 $\\dfrac{\\alpha}{1+\\alpha}P$ なので\n\\[ K_\\mathrm{p}=\\frac{\\alpha^2}{1-\\alpha^2}P \\]\n実験 1 から $K_\\mathrm{p}=\\dfrac{0.300^2}{1-0.300^2}\\times1.00\\times10^{5}=9.89\\times10^{3}\\,\\mathrm{Pa}$．実験 3 では $\\dfrac{\\alpha^2}{1-\\alpha^2}=\\dfrac{9.89\\times10^{3}}{2.00\\times10^{5}}=0.0495$ から $\\alpha=0.217$，つまり $\\boldsymbol{21.7\\,\\%}$ で，実験 1 より\\textbf{小さい}．正反応は気体分子の数が増える反応なので，圧力を高くすると分子の数が減る逆反応の向きに平衡が移動する．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "定圧容器では平衡時の体積から全物質量が決まり，それで求めた濃度平衡定数を，体積の違う定積容器の平衡に使って初めの量を逆算する．分子数が増える解離平衡は，圧力を上げると反応した割合が小さくなることを Kp=α²P/(1−α²) で確かめる．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "mole",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "化学平衡",
+  "平衡定数",
+  "脱水素",
+  "定圧変化",
+  "ルシャトリエの原理",
+  "エタン"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

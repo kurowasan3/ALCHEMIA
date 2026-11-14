@@ -1,0 +1,102 @@
+{
+ "id": "POL-PRT-020",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-05",
+ "topic": "断片の検出反応からペプチドの配列を決める",
+ "course": "化学",
+ "level": 3,
+ "minutes": 18,
+ "format": [
+  "structure",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "アラニン（Ala，側鎖 $\\ce{-CH3}$），グリシン（Gly，$\\ce{-H}$），グルタミン酸（Glu，$\\ce{-(CH2)2COOH}$），リシン（Lys，$\\ce{-(CH2)4NH2}$），チロシン（Tyr，$\\ce{-CH2C6H4OH}$），システイン（Cys，$\\ce{-CH2SH}$）が 1 個ずつ縮合した鎖状ヘキサペプチド P について，次の結果を得た．\\\\\n① P に亜硝酸ナトリウムと希塩酸を作用させたのち完全に加水分解すると，生成物の中に乳酸 $\\ce{CH3CH(OH)COOH}$ があった．\\\\\n② P の C 末端のアミノ酸には不斉炭素原子がない．\\\\\n③ 塩基性アミノ酸のカルボキシ基側のペプチド結合だけを切る酵素 X を P に作用させると，断片 $\\mathrm{F_1}$ と $\\mathrm{F_2}$ が得られた．$\\mathrm{F_2}$ はビウレット反応を示さず，水酸化ナトリウムを加えて加熱したのち酢酸鉛(II)水溶液を加えると黒色沈殿を生じた．\\\\\n④ 芳香族アミノ酸のカルボキシ基側のペプチド結合だけを切る酵素 Y を P に作用させると，2 つのトリペプチド $\\mathrm{G_1}$，$\\mathrm{G_2}$ が得られた．$\\mathrm{G_1}$ はキサントプロテイン反応を示した．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "① から，P の N 末端のアミノ酸は何か．亜硝酸がはたらく原子団にふれて理由を答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "P のアミノ酸配列を，N 末端を左にして略号で答えよ（例：Gly-Ala-Ser）．"
+     },
+     {
+      "id": "3",
+      "tex": "pH 7 の緩衝液で $\\mathrm{G_1}$ と $\\mathrm{G_2}$ を電気泳動すると，それぞれ陽極側・陰極側のどちらへ移動するか．理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "アラニン．亜硝酸は遊離のアミノ基 $\\ce{-NH2}$ をヒドロキシ基 $\\ce{-OH}$ に変える．$\\alpha$-アミノ基が遊離しているのは N 末端だけで，乳酸はアラニンの $\\ce{-NH2}$ が $\\ce{-OH}$ になったものだから．"
+   },
+   {
+    "id": "2",
+    "tex": "Ala-Glu-Tyr-Lys-Cys-Gly"
+   },
+   {
+    "id": "3",
+    "tex": "$\\mathrm{G_1}$（Ala-Glu-Tyr）は Glu の側鎖の $\\ce{-COO-}$ のため全体で負の電荷をもち陽極側へ，$\\mathrm{G_2}$（Lys-Cys-Gly）は Lys の側鎖の $\\ce{-NH3+}$ のため全体で正の電荷をもち陰極側へ移動する．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 亜硝酸は $\\ce{-NH2}$ を $\\ce{-OH}$ に変える（$\\ce{N2}$ が発生する）．ペプチド中で $\\alpha$-アミノ基が遊離しているのは N 末端だけである．乳酸 $\\ce{CH3CH(OH)COOH}$ は $\\ce{CH3CH(NH2)COOH}$（アラニン）の $\\ce{-NH2}$ が $\\ce{-OH}$ になったものなので，N 末端は $\\boldsymbol{\\text{Ala}}$．\\\\\n\\textbf{(2)} ② 不斉炭素原子がないのは Gly だけなので C 末端は Gly．\\\\\n③ 酵素 X は Lys の C 側で切る．$\\mathrm{F_2}$ はビウレット反応を示さないのでジペプチド以下で，S を含むので Cys を含む．C 末端側の断片なので $\\mathrm{F_2}$ ＝ Cys-Gly，Lys は 4 番目．\\\\\n④ 酵素 Y は Tyr の C 側で切る．2 つのトリペプチドになるので Tyr は 3 番目．残る Glu は 2 番目．\\\\\nよって $\\boldsymbol{\\text{Ala-Glu-Tyr-Lys-Cys-Gly}}$（$\\mathrm{F_1}$ ＝ Ala-Glu-Tyr-Lys，$\\mathrm{G_1}$ ＝ Ala-Glu-Tyr（Tyr を含みキサントプロテイン反応陽性），$\\mathrm{G_2}$ ＝ Lys-Cys-Gly）．\\\\\n\\textbf{(3)} pH 7 では，末端の $\\ce{-NH3+}$ と $\\ce{-COO-}$ の電荷は打ち消し合う．$\\mathrm{G_1}$ は Glu の側鎖 $\\ce{-COO-}$ の分だけ負に帯電し $\\boldsymbol{\\text{陽極側}}$ へ，$\\mathrm{G_2}$ は Lys の側鎖 $\\ce{-NH3+}$ の分だけ正に帯電し $\\boldsymbol{\\text{陰極側}}$ へ移動する．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "亜硝酸による脱アミノで N 末端残基をヒドロキシ酸として同定し，2 種類の酵素（塩基性・芳香族アミノ酸の C 側で切断）で得た断片の大きさと検出反応（ビウレット・硫黄・キサントプロテイン）から配列を決める．断片の側鎖の電荷から電気泳動の向きを判断する．"
+ },
+ "concepts": [
+  "protein-amino",
+  "oxygen-sulfur",
+  "nitrogen-phosphorus"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ペプチド",
+  "アミノ酸配列",
+  "検出反応",
+  "電気泳動",
+  "ビウレット反応",
+  "キサントプロテイン反応"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

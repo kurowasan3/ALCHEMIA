@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 330" width="520" height="330">
+<path d="M80,20 L80,280 L490,280" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<path d="M480.0,160.0 L473.8,158.1 L467.5,156.2 L461.2,154.1 L455.0,152.0 L448.8,149.9 L442.5,147.6 L436.2,145.3 L430.0,142.9 L423.8,140.4 L417.5,137.8 L411.3,135.1 L405.0,132.3 L398.8,129.4 L392.5,126.4 L392.5,126.4 L87.5,126.4 L87.0,110.4 L86.3,83.6 L85.5,56.8 L85.0,38.9" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+<line x1="80" y1="126.4" x2="87.5" y2="126.4" stroke="currentColor"/>
+<text x="72" y="131.4" text-anchor="end" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">8.6</text>
+<line x1="392.5" y1="126.4" x2="392.5" y2="280" stroke="currentColor" stroke-dasharray="4 4" opacity="0.5"/>
+<text x="392.5" y="300" text-anchor="middle" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">2.5</text>
+<text x="480.0" y="300" text-anchor="middle" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">3.2</text>
+<text x="80" y="300" text-anchor="middle" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">0</text>
+<text x="280.0" y="322" text-anchor="middle" font-size="14" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">モル体積〔L/mol〕</text>
+<text x="24" y="155.0" text-anchor="middle" font-size="14" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor" transform="rotate(-90 24 155.0)">圧力〔×10⁵ Pa〕</text>
+<circle cx="467.5" cy="156.2" r="3.5" fill="currentColor"/>
+<text x="473.5" y="148.2" font-size="15" font-weight="bold" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">P</text>
+<circle cx="392.5" cy="126.4" r="3.5" fill="currentColor"/>
+<text x="396.5" y="116.4" font-size="15" font-weight="bold" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">Q</text>
+<circle cx="87.5" cy="126.4" r="3.5" fill="currentColor"/>
+<text x="93.5" y="116.4" font-size="15" font-weight="bold" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">R</text>
+<circle cx="85.0" cy="38.9" r="3.5" fill="currentColor"/>
+<text x="95.0" y="46.9" font-size="15" font-weight="bold" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">S</text>
+<text x="280.0" y="98.4" text-anchor="middle" font-size="14" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">20 ℃（模式図）</text>
+</svg>

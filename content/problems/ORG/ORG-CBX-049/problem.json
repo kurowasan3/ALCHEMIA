@@ -1,0 +1,108 @@
+{
+ "id": "ORG-CBX-049",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-04",
+ "topic": "不飽和脂肪酸の二重結合の位置（酸化的・還元的オゾン分解の使い分け）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "structure",
+  "pathway"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "炭素間二重結合 $\\ce{R^1-CH=CH-R^2}$ にオゾンを作用させたのち，酸化的に処理するとカルボン酸 $\\ce{R^1-COOH}$ と $\\ce{HOOC-R^2}$ が，還元的に処理するとアルコール $\\ce{R^1-CH2OH}$ と $\\ce{HOCH2-R^2}$ が得られる．ただし，還元的処理ではカルボキシ基やエステル結合は変化しない．また，カルボン酸にジアゾメタンを作用させると $\\ce{-COOH}$ は $\\ce{-COOCH3}$ になる．\n\n枝分かれのない不飽和脂肪酸 F（分子式 $\\ce{C16H28O2}$）には炭素間二重結合が 2 つあり，三重結合や環はない．\n\\textbf{実験 1}　F にオゾンを作用させて酸化的に処理し，生じたカルボン酸をすべてジアゾメタンでメチルエステルにすると，次の 3 種類の化合物が得られた．\\\\\n$\\ce{CH3CH2CH2COOCH3}$，$\\ce{CH3OOC(CH2)2COOCH3}$，$\\ce{CH3OOC(CH2)6COOCH3}$\\\\\n\\textbf{実験 2}　F をジアゾメタンでメチルエステルにしてから，オゾンを作用させて還元的に処理した．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "F の分子量を求めよ（原子量 $\\ce{H}=1.0$，$\\ce{C}=12$，$\\ce{O}=16$）．また，F $2.52\\,\\mathrm{g}$ に白金触媒を用いて水素を完全に付加させると，水素は標準状態で何 mL 消費されるか，有効数字 3 桁で答えよ（標準状態の気体 1 mol の体積は $22.4\\,\\mathrm{L}$）．"
+     },
+     {
+      "id": "2",
+      "tex": "実験 1 の結果だけでは，F の構造は 1 つに決まらない．考えられる F の構造をすべて示性式で示せ．"
+     },
+     {
+      "id": "3",
+      "tex": "実験 2 で $\\ce{HO(CH2)4OH}$ が得られた．F の構造を示性式で示せ．また，実験 2 で得られたそれ以外の 2 つの化合物を示性式で示せ．"
+     },
+     {
+      "id": "4",
+      "tex": "実験 1 では，F のカルボキシ基側の末端から生じた断片と，2 つの二重結合にはさまれた部分から生じた断片を区別できない．その理由を簡潔に述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "分子量 252，$448\\,\\mathrm{mL}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{CH3(CH2)2CH=CH(CH2)2CH=CH(CH2)6COOH}$ と $\\ce{CH3(CH2)2CH=CH(CH2)6CH=CH(CH2)2COOH}$"
+   },
+   {
+    "id": "3",
+    "tex": "F：$\\ce{CH3(CH2)2CH=CH(CH2)2CH=CH(CH2)6COOH}$，ほかの生成物：$\\ce{CH3(CH2)2CH2OH}$ と $\\ce{HOCH2(CH2)6COOCH3}$"
+   },
+   {
+    "id": "4",
+    "tex": "どちらの断片も両端が $\\ce{-COOH}$ になり，メチル化するとどちらもジメチルエステルになるから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　$\\ce{C16H28O2}$ の分子量は $12 \\times 16 + 1.0 \\times 28 + 16 \\times 2 = \\boldsymbol{252}$．$2.52\\,\\mathrm{g}$ は $0.0100\\,\\mathrm{mol}$ で，二重結合 2 つに $\\ce{H2}$ が $0.0200\\,\\mathrm{mol}$ 付加するので，$0.0200 \\times 22.4 \\times 10^{3} = \\boldsymbol{448\\,\\mathrm{mL}}$．\n\n\\textbf{(2) 断片のつなぎ方}　メチルエステルが 1 つの $\\ce{CH3CH2CH2COOCH3}$ は，もとの分子の $\\ce{CH3}$ 側の末端 $\\ce{CH3(CH2)2CH=}$ から生じた．ジメチルエステル 2 種は，「二重結合にはさまれた部分 $\\ce{=CH-(CH2)_m-CH=}$」と「$\\ce{-COOH}$ 側の末端 $\\ce{=CH-(CH2)_m-COOH}$」のどちらからも生じうる．炭素数は $4 + 4 + 8 = 16$ で F と一致するので，候補は\n\\[\\ce{CH3(CH2)2CH=CH(CH2)2CH=CH(CH2)6COOH} \\quad \\text{と} \\quad \\ce{CH3(CH2)2CH=CH(CH2)6CH=CH(CH2)2COOH}\\]\nの 2 つ．\n\n\\textbf{(3) 還元的処理による区別}　先にメチルエステルにしてから還元的に処理すると，$\\ce{-COOH}$ 側の末端の断片は一方の端がエステル $\\ce{-COOCH3}$ のまま，もう一方が $\\ce{-CH2OH}$ になる．はさまれた部分は両端とも $\\ce{-CH2OH}$（ジオール）になる．ジオールが $\\ce{HO(CH2)4OH}$ だったので，はさまれた部分は $\\ce{=CH-(CH2)2-CH=}$ であり，F は $\\boldsymbol{\\ce{CH3(CH2)2CH=CH(CH2)2CH=CH(CH2)6COOH}}$．ほかの生成物は $\\ce{CH3}$ 側から $\\boldsymbol{\\ce{CH3(CH2)2CH2OH}}$（1-ブタノール），$\\ce{-COOH}$ 側から $\\boldsymbol{\\ce{HOCH2(CH2)6COOCH3}}$．（もう一方の候補なら $\\ce{HO(CH2)8OH}$ と $\\ce{HOCH2(CH2)2COOCH3}$ が得られるはずである．）\n\n\\textbf{(4)}　酸化的処理では，二重結合の炭素はすべて $\\ce{-COOH}$ になる．$\\ce{-COOH}$ 側の末端の断片は「もとからあった $\\ce{-COOH}$＋新しい $\\ce{-COOH}$」，はさまれた部分は「新しい $\\ce{-COOH}$ 2 個」となり，\\textbf{どちらも両端が $\\ce{-COOH}$ のジカルボン酸}になって見分けがつかない．還元的処理では新しくできる端だけが $\\ce{-CH2OH}$ になるので，もとからあった端（エステル）と区別できる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "オゾン分解の酸化的処理では二重結合の炭素がすべて COOH になるので，鎖の COOH 側の末端の断片と二重結合にはさまれた断片がどちらもジカルボン酸になり区別できない．先にエステルにしてから還元的処理を行うと，新しい端だけが CH₂OH になるので，はさまれた断片（ジオール）と末端の断片（ヒドロキシエステル）が区別でき，結合順が決まる．"
+ },
+ "concepts": [
+  "carboxylic-ester",
+  "oxygen-sulfur"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "オゾン分解",
+  "不飽和脂肪酸",
+  "二重結合の位置",
+  "構造決定",
+  "メチルエステル"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,118 @@
+{
+ "id": "INO-NIT-015",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-03",
+ "topic": "電気炉によるリンの製造（ケイ砂とコークスの役割と量的関係）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "リン鉱石（主成分 $\\ce{Ca3(PO4)2}$）にケイ砂 $\\ce{SiO2}$ とコークス C を混ぜて電気炉で強熱すると，リン $\\ce{P4}$ の蒸気と一酸化炭素が発生し，ケイ酸カルシウム $\\ce{CaSiO3}$ が炉に残る．発生した $\\ce{P4}$ の蒸気を空気に触れさせずに水中で冷やすと，黄リンが得られる．次の問いに答えよ．原子量は C = 12，O = 16，P = 31，Ca = 40 とし，気体の体積は標準状態で $22.4\\,\\mathrm{L/mol}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "この変化は $a\\,\\ce{Ca3(PO4)2} + b\\,\\ce{SiO2} + c\\,\\ce{C} \\longrightarrow d\\,\\ce{CaSiO3} + e\\,\\ce{CO} + \\ce{P4}$ と表される．係数 $a\\sim e$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "この反応で酸化数が変化する原子をすべて挙げ，それぞれ酸化数がいくつからいくつに変化したかを答えよ．また，$\\ce{P4}$ 1 mol が生じるときに移動する電子は何 mol か．"
+     },
+     {
+      "id": "3",
+      "tex": "ケイ砂を加えずにリン鉱石とコークスだけを強熱しても，リンはほとんど得られない．ケイ砂のはたらきを，酸化物の性質（酸性・塩基性）に着目して説明せよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\ce{Ca3(PO4)2}$ を質量で $62.0\\,\\%$ 含むリン鉱石 $1.00\\,\\mathrm{t}$（$1.00\\times10^3\\,\\mathrm{kg}$）がすべて反応したとき，得られる $\\ce{P4}$ の質量〔kg〕，消費されるコークス（炭素）の質量〔kg〕，発生する一酸化炭素の標準状態での体積〔$\\mathrm{m^3}$〕を，有効数字3桁で求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "(4) で得た $\\ce{P4}$ をすべて燃焼させて十酸化四リンとし，これを水と加熱してリン酸 $\\ce{H3PO4}$ にした．得られるリン酸の質量〔kg〕を有効数字3桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$a=2$，$b=6$，$c=10$，$d=6$，$e=10$"
+   },
+   {
+    "id": "2",
+    "tex": "P：$+5\\to0$，C：$0\\to+2$；$20\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "酸性酸化物の $\\ce{SiO2}$ が，リン酸カルシウム中の塩基性酸化物 CaO と結びついて $\\ce{CaSiO3}$ となり，リンを酸化物（$\\ce{P4O10}$）として切り離す．切り離された酸化物がコークスで還元されて $\\ce{P4}$ になる"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{P4}$ $124\\,\\mathrm{kg}$，炭素 $120\\,\\mathrm{kg}$，一酸化炭素 $224\\,\\mathrm{m^3}$"
+   },
+   {
+    "id": "5",
+    "tex": "$392\\,\\mathrm{kg}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} P の数から $a=2$（$\\ce{P4}$ 1 個に P 4 個）．Ca の数から $d=3a=6$，Si の数から $b=d=6$．O の数は左辺 $8a+2b=16+12=28$，右辺 $3d+e=18+e$ より $e=10$．C の数から $c=e=10$．\n\\[ \\ce{2Ca3(PO4)2 + 6SiO2 + 10C -> 6CaSiO3 + 10CO + P4} \\]\n\\textbf{(2)} \\textbf{P が $+5\\to0$}（還元された），\\textbf{C が $0\\to+2$}（酸化された）．Ca（$+2$），Si（$+4$），O（$-2$）は変化しない．P 1 個あたり電子 5 個なので，$\\ce{P4}$ 1 mol で $\\boldsymbol{20\\,\\mathrm{mol}}$（C 10 mol が 2 個ずつ失う電子 $10\\times2=20\\,\\mathrm{mol}$ と一致）．\\\\\n\\textbf{(3)} $\\ce{Ca3(PO4)2}$ は $\\ce{3CaO.P2O5}$ とみなせる．酸性酸化物の $\\ce{SiO2}$ は塩基性酸化物の CaO と結びついて $\\ce{CaSiO3}$（スラグ）をつくり，リンの酸化物を追い出す．$\\ce{SiO2}$ は揮発しにくい酸性酸化物なので，高温では揮発しやすいリンの酸化物と入れかわる．追い出されたリンの酸化物がコークスで還元され，$\\ce{P4}$ の蒸気として炉から出ていく．\\\\\n\\textbf{(4)} $\\ce{Ca3(PO4)2}$（式量 310）は $1.00\\times10^3\\times0.620=620\\,\\mathrm{kg}$，$\\dfrac{620}{310}=2.00\\,\\mathrm{kmol}$．(1) の式から\n\\[ \\ce{P4}:\\ 1.00\\,\\mathrm{kmol}\\times124=\\boldsymbol{124\\,\\mathrm{kg}},\\qquad \\text{C}:\\ 10.0\\,\\mathrm{kmol}\\times12=\\boldsymbol{120\\,\\mathrm{kg}} \\]\n\\[ \\text{CO}:\\ 10.0\\times10^3\\,\\mathrm{mol}\\times22.4\\,\\mathrm{L/mol}=2.24\\times10^5\\,\\mathrm{L}=\\boldsymbol{224\\,\\mathrm{m^3}} \\]\n\\textbf{(5)} \\[ \\ce{P4 + 5O2 -> P4O10},\\qquad \\ce{P4O10 + 6H2O -> 4H3PO4} \\]\nP 原子は保存されるので，$\\ce{P4}$ 1.00 kmol から $\\ce{H3PO4}$（式量 98）が $4.00\\,\\mathrm{kmol}$，$4.00\\times98=\\boldsymbol{392\\,\\mathrm{kg}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "リン酸カルシウムからのリンの製造では，酸性酸化物 SiO₂ が塩基性酸化物 CaO をスラグとして固定してリンの酸化物を切り離し，コークスがそれを還元する（P は +5→0，C は 0→+2）．原子の保存から係数を決め，鉱石の量から P₄・炭素・CO・リン酸の量を物質量で結びつける．"
+ },
+ "concepts": [
+  "nitrogen-phosphorus",
+  "alkali-metals",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "リン",
+  "リンの製造",
+  "電気炉",
+  "酸化数",
+  "ケイ砂",
+  "量的関係"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

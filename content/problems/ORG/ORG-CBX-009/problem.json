@@ -1,0 +1,131 @@
+{
+ "id": "ORG-CBX-009",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-04",
+ "topic": "ジエステルの構造決定（元素分析・けん化・酸無水物の生成）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 18,
+ "format": [
+  "structure",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "炭素・水素・酸素からなる分子量 158 の化合物 X $79.0\\,\\mathrm{mg}$ を完全燃焼させると，二酸化炭素 $154\\,\\mathrm{mg}$ と水 $45.0\\,\\mathrm{mg}$ が生じた．X に水酸化ナトリウム水溶液を加えて加熱し，完全にけん化したのち，反応液から2種類のアルコール P，Q を等しい物質量ずつ得た．残った水溶液に塩酸を加えて酸性にすると，2価カルボン酸 Y が得られた．P はヨードホルム反応を示したが，Q は示さなかった．Y を約 $160\\,^\\circ\\mathrm{C}$ に加熱すると，容易に水がとれて化合物 Z が生じたが，Y の異性体 W は同じ条件では変化しなかった．Y と W に，それぞれ触媒を用いて水素を付加させると，同じ化合物 V が得られた．原子量は $\\mathrm{H}=1.0$，$\\mathrm{C}=12$，$\\mathrm{O}=16$，$\\mathrm{Na}=23$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "X の分子式を答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "P，Q，Y，Z，V の名称を答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "Y は加熱で容易に Z になるが，W はならない．その理由を，Y と W の構造の違いから説明せよ．"
+     },
+     {
+      "id": "4",
+      "tex": "X の構造を示性式で答えよ．立体構造（シス形かトランス形か）も明示すること．"
+     },
+     {
+      "id": "5",
+      "tex": "X $1.58\\,\\mathrm{g}$ を完全にけん化するのに必要な水酸化ナトリウムは何 g か．有効数字2桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：ジエステルの構造決定（元素分析・けん化・酸無水物の生成）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{C7H10O4}$"
+   },
+   {
+    "id": "2",
+    "tex": "P：エタノール，Q：メタノール，Y：マレイン酸，Z：無水マレイン酸，V：コハク酸"
+   },
+   {
+    "id": "3",
+    "tex": "Y（マレイン酸）はシス形で，2つのカルボキシ基が二重結合の同じ側にあって近いので分子内で脱水できるが，W（フマル酸）はトランス形で2つのカルボキシ基が反対側に離れているので分子内で脱水できないから．"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{CH3OOC-CH=CH-COOC2H5}$（シス形）"
+   },
+   {
+    "id": "5",
+    "tex": "$0.80\\,\\mathrm{g}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 元素分析} X は $\\dfrac{79.0}{158}=0.500\\,\\mathrm{mmol}$．\nC：$\\dfrac{154}{44}=3.50\\,\\mathrm{mmol}$，H：$\\dfrac{45.0}{18}\\times2=5.00\\,\\mathrm{mmol}$，O：$\\dfrac{79.0-3.50\\times12-5.00\\times1.0}{16}=2.00\\,\\mathrm{mmol}$．\n1分子あたり C 7，H 10，O 4 で，$\\boldsymbol{\\ce{C7H10O4}}$（$7\\times12+10+4\\times16=158$ と一致）．\n\n\\textbf{(2) 加水分解生成物} 2価カルボン酸と2種のアルコールが 1:1:1 でできるので，X は2つのエステル結合をもつジエステル．ヨードホルム反応を示す P は $\\ce{CH3CH2OH}$（$\\mathrm{CH_{3}CH(OH)-}$ の構造をもつ）\\textbf{エタノール}，Q は \\textbf{メタノール}．\n分子式から $\\ce{C7H10O4 + 2H2O}$ $-$ $\\ce{CH4O}$ $-$ $\\ce{C2H6O}$ $=$ $\\ce{C4H4O4}$ なので Y は $\\ce{HOOC-CH=CH-COOH}$．加熱で容易に脱水するのはシス形の\\textbf{マレイン酸}で，Z は\\textbf{無水マレイン酸}（$\\ce{C4H4O4 -> C4H2O3 + H2O}$），W はトランス形のフマル酸．水素付加すると二重結合がなくなり，どちらも\\textbf{コハク酸} $\\ce{HOOCCH2CH2COOH}$ になる．\n\n\\textbf{(3)} 酸無水物は，2つの $\\mathrm{-COOH}$ が近くにあって5員環をつくれるときに分子内でできる．シス形では同じ側にあるので可能，トランス形では反対側にあり C=C の回転もできないので不可能．\n\n\\textbf{(4)} マレイン酸の2つのカルボキシ基が，それぞれメタノール・エタノールとエステルをつくった $\\ce{CH3OOC-CH=CH-COOC2H5}$（\\textbf{シス形}）．構造式は解答図．\n\n\\textbf{(5) けん化の量的関係}\n\\[\\ce{CH3OOCCH=CHCOOC2H5 + 2NaOH -> NaOOCCH=CHCOONa + CH3OH + C2H5OH}\\]\nX $\\dfrac{1.58}{158}=1.00\\times10^{-2}\\,\\mathrm{mol}$ に $\\ce{NaOH}$ は $2.00\\times10^{-2}\\,\\mathrm{mol}$ 必要で，$2.00\\times10^{-2}\\times40=\\boldsymbol{0.80\\,\\mathrm{g}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "元素分析で分子式を出し，けん化で生じる2種のアルコール（ヨードホルム反応で区別）と2価カルボン酸に分けて組み立て直す．カルボン酸がシス形かトランス形かを，加熱で酸無水物ができるかどうかで判定し，ジエステルのけん化に NaOH が2倍量要ることまで量的に扱う．"
+ },
+ "concepts": [
+  "carboxylic-ester",
+  "organic-structure",
+  "elemental-analysis"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "エステル",
+  "元素分析",
+  "けん化",
+  "マレイン酸",
+  "シス-トランス異性体"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

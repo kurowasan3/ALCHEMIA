@@ -1,0 +1,101 @@
+{
+ "id": "THE-MOL-038",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-04",
+ "topic": "炭素による酸化物の還元で生じる CO と CO₂ の比と炭素の消費量",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "酸化銅(II) $\\ce{CuO}$ $24.0\\,\\mathrm{g}$ と十分な量の炭素の粉末を混ぜ，空気を断って強熱したところ，酸化銅(II) はすべて銅に還元され，気体として一酸化炭素と二酸化炭素だけが発生した．発生した気体の酸素原子はすべて酸化銅(II) に由来するものとする．原子量は C=12，O=16，Cu=64，標準状態の気体のモル体積は $22.4\\,\\mathrm{L/mol}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "発生した $\\ce{CO}$ と $\\ce{CO2}$ の物質量の比が $1:2$ であったとき，消費された炭素の質量と，発生した気体の標準状態での総体積を，それぞれ有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "別の実験で，同じ量の酸化銅(II) を還元したとき消費された炭素は $2.88\\,\\mathrm{g}$ であった．発生した $\\ce{CO}$ と $\\ce{CO2}$ の物質量の比を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "この反応で消費される炭素の質量がとりうる範囲を有効数字 2 桁で求めよ．また，「炭素が $1.5\\,\\mathrm{g}$ 消費された」という報告はありうるか．理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "炭素 $2.2\\,\\mathrm{g}$，気体 $4.0\\,\\mathrm{L}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{CO}:\\ce{CO2}=3:1$"
+   },
+   {
+    "id": "3",
+    "tex": "$1.8\\,\\mathrm{g}$ 以上 $3.6\\,\\mathrm{g}$ 以下．$1.5\\,\\mathrm{g}$ はすべて $\\ce{CO2}$ になった場合の最小量 $1.8\\,\\mathrm{g}$ より少ないので，ありえない．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　反応は $\\ce{2CuO + C -> 2Cu + CO2}$ と $\\ce{CuO + C -> Cu + CO}$ の 2 通りが同時に起こる．個々の反応の割合を考えるより，原子の保存で整理する．\n$n(\\ce{CuO})=\\dfrac{24.0}{80}=0.300\\,\\mathrm{mol}$．O 原子 $0.300\\,\\mathrm{mol}$ が CO と CO$_2$ に分かれて出ていくので，\n\\[\\text{O の保存：}\\ n(\\ce{CO})+2n(\\ce{CO2})=0.300,\\qquad \\text{C の保存：}\\ n(\\ce{C})=n(\\ce{CO})+n(\\ce{CO2})\\]\n\n\\textbf{(1)}　$n(\\ce{CO})=x$，$n(\\ce{CO2})=2x$ とすると $x+4x=0.300$，$x=0.0600$．\n炭素 $=0.0600+0.120=0.180\\,\\mathrm{mol}$，$0.180\\times12=2.16$ → $\\boldsymbol{2.2\\,\\mathrm{g}}$．\n気体の総体積 $=0.180\\times22.4=4.03$ → $\\boldsymbol{4.0\\,\\mathrm{L}}$（気体の物質量＝消費した炭素の物質量）．\n\n\\textbf{(2)}　$n(\\ce{C})=\\dfrac{2.88}{12}=0.240\\,\\mathrm{mol}$．$n(\\ce{CO})+n(\\ce{CO2})=0.240$，$n(\\ce{CO})+2n(\\ce{CO2})=0.300$ より $n(\\ce{CO2})=0.0600$，$n(\\ce{CO})=0.180$．\n$\\boldsymbol{\\ce{CO}:\\ce{CO2}=3:1}$．\n\n\\textbf{(3)}　$n(\\ce{C})=0.300-n(\\ce{CO2})$ で，$0\\le n(\\ce{CO2})\\le0.150$．\nすべて $\\ce{CO2}$：$n(\\ce{C})=0.150\\,\\mathrm{mol}$（$1.8\\,\\mathrm{g}$），すべて $\\ce{CO}$：$0.300\\,\\mathrm{mol}$（$3.6\\,\\mathrm{g}$）．\nよって $\\boldsymbol{1.8\\,\\mathrm{g}\\le m(\\ce{C})\\le3.6\\,\\mathrm{g}}$．$1.5\\,\\mathrm{g}$ は O 原子をすべて $\\ce{CO2}$ として運び出すのに必要な最小量にも足りないので，$\\boldsymbol{\\text{ありえない}}$（測定の誤りか，炭素以外の還元剤・空気の混入が疑われる）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "酸化物の O が CO と CO₂ に分かれて出ていく還元では，O 原子と C 原子の保存の 2 式から，気体の組成比と炭素の消費量を互いに求められる．炭素の消費量は「すべて CO₂」と「すべて CO」の場合の間に入り，範囲外の測定値は不合理と判断できる．"
+ },
+ "concepts": [
+  "mole",
+  "carbon-silicon",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "原子の保存",
+  "還元",
+  "一酸化炭素",
+  "二酸化炭素",
+  "量的関係"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

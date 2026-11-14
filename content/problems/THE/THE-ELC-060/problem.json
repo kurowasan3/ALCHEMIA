@@ -1,0 +1,101 @@
+{
+ "id": "THE-ELC-060",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-07",
+ "topic": "リチウムを取り込んだ黒鉛と水の反応による組成と充電の割合の決定",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "equation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "リチウムイオン電池の負極の黒鉛は，充電のとき層間にリチウムイオンを取り込み，組成 $\\ce{LiC_n}$ の化合物になる．\n\\[ \\ce{nC + Li+ + e- ->[\\text{}] LiC_{n}} \\]\n$\\ce{LiC_n}$ は金属リチウムと同じように水と反応して水素を発生し，リチウムは $\\ce{LiOH}$ になり炭素は黒鉛にもどる．\n【実験1】リチウムを最も多く取り込ませた黒鉛（すべて $\\ce{LiC_n}$）$2.00\\,\\mathrm g$ を十分な量の水と反応させると，標準状態で $284\\,\\mathrm{mL}$ の水素が発生した．\n【実験2】実験1で得た水溶液を $0.500\\,\\mathrm{mol/L}$ の塩酸で中和した．\n【実験3】途中まで充電した負極（$\\ce{LiC_n}$ と黒鉛の混合物）$2.00\\,\\mathrm g$ を十分な量の水と反応させると，標準状態で $142\\,\\mathrm{mL}$ の水素が発生した．\n原子量は Li = 6.94，C = 12.0 とし，標準状態の気体 1 mol の体積は $22.4\\,\\mathrm L$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "実験1から $n$ を整数で求め，$\\ce{LiC_n}$ と水の反応を化学反応式で示せ．"
+     },
+     {
+      "id": "2",
+      "tex": "実験2で中和に要する塩酸の体積を有効数字3桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "実験3の負極に含まれる炭素のうち，最大限まで充電したときに取り込めるリチウムの量に対して，実際に取り込まれていたリチウムの割合（％）を有効数字2桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$n=6$，$\\ce{2LiC6 + 2H2O -> 2LiOH + 12C + H2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$50.7\\,\\mathrm{mL}$"
+   },
+   {
+    "id": "3",
+    "tex": "$48\\,\\%$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\ce{LiC_n}$ 中の Li は金属 Li と同じく電子を 1 個出して $\\ce{Li+}$ になり，その電子が水を還元して $\\ce{H2}$ を生じる．Li 2 mol あたり $\\ce{H2}$ 1 mol．\n$\\ce{H2}$：$0.284/22.4=1.268\\times10^{-2}\\,\\mathrm{mol}$ → Li（＝$\\ce{LiC_n}$）：$2.536\\times10^{-2}\\,\\mathrm{mol}$．\n$\\ce{LiC_n}$ の式量 $=\\dfrac{2.00}{2.536\\times10^{-2}}=78.9=6.94+12.0n$ より $n=5.99$，すなわち $\\boldsymbol{n=6}$．\n\\[ \\ce{2LiC6 + 2H2O -> 2LiOH + 12C + H2} \\]\n（充電の電極反応は $\\ce{6C + Li+ + e- -> LiC6}$．$\\ce{LiC6}$ は黒鉛の層間のすべての層に Li が入った組成である．）\n\n\\textbf{(2)} 生じた $\\ce{LiOH}$ は $2.536\\times10^{-2}\\,\\mathrm{mol}$．$\\ce{LiOH + HCl -> LiCl + H2O}$ より塩酸は\n\\[ \\dfrac{2.536\\times10^{-2}}{0.500}=5.07\\times10^{-2}\\,\\mathrm L=\\boldsymbol{50.7\\,\\mathrm{mL}} \\]\n\n\\textbf{(3)} $\\ce{H2}$ $0.142/22.4=6.34\\times10^{-3}\\,\\mathrm{mol}$ → Li $1.268\\times10^{-2}\\,\\mathrm{mol}$．これは $\\ce{LiC6}$ $1.268\\times10^{-2}\\,\\mathrm{mol}$（$1.268\\times10^{-2}\\times78.94=1.001\\,\\mathrm g$）に相当し，残り $2.00-1.001=0.999\\,\\mathrm g$ は Li を含まない黒鉛．\n負極の炭素の総物質量 $=6\\times1.268\\times10^{-2}+\\dfrac{0.999}{12.0}=7.61\\times10^{-2}+8.33\\times10^{-2}=0.1594\\,\\mathrm{mol}$．最大限充電すれば Li は $0.1594/6=2.66\\times10^{-2}\\,\\mathrm{mol}$ 入るので\n\\[ \\dfrac{1.268\\times10^{-2}}{2.66\\times10^{-2}}\\times100=\\boldsymbol{48\\,\\%} \\]\n水素の量が実験1のちょうど半分でも 50 % にならないのは，同じ 2.00 g の中で Li の質量の分だけ炭素の量が異なるからである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "LiC_n の Li は金属 Li と同じく水を還元するので，発生する H₂ の量から Li の物質量が分かり，試料の質量と合わせて組成 n（LiC₆）が決まる．途中まで充電した負極では，Li を含む部分と含まない黒鉛の質量を分けて炭素の総量を求め，最大に取り込める Li の量と比べる．"
+ },
+ "concepts": [
+  "electrolysis",
+  "carbon-silicon",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "リチウムイオン電池",
+  "黒鉛",
+  "層間化合物",
+  "水素の発生",
+  "充電の割合"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

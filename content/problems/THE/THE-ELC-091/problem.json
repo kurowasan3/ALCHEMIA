@@ -1,0 +1,109 @@
+{
+ "id": "THE-ELC-091",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-07",
+ "topic": "リチウムイオン電池の負極材料（黒鉛とケイ素）の容量を質量・体積で比べる",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "リチウムイオン電池の負極では，充電のときに $\\ce{Li+}$ と電子を受け入れる．黒鉛は層の間に Li を受け入れて最大で $\\ce{LiC6}$ となり，ケイ素は Li と合金をつくって最大で $\\ce{Li22Si5}$（Si 1 個あたり Li 4.4 個）となる．\n\\[\\ce{6C + Li+ + e- -> LiC6},\\qquad \\ce{5Si + 22Li+ + 22e- -> Li22Si5}\\]\n原子量：Li 6.94，C 12.0，Si 28.1．ファラデー定数 $9.65\\times10^{4}\\,\\mathrm{C/mol}$，$1\\,\\mathrm{mAh}=3.6\\,\\mathrm{C}$．黒鉛の密度 $2.25\\,\\mathrm{g/cm^3}$，ケイ素の密度 $2.33\\,\\mathrm{g/cm^3}$．黒鉛は $\\ce{LiC6}$ になると体積が $10\\,\\%$ 増え，ケイ素は Li を最大まで受け入れると体積が $4.0$ 倍になるものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "充電前の負極材料（黒鉛またはケイ素）$1\\,\\mathrm{g}$ あたりに蓄えられる電気量 [mAh/g] を，それぞれ有効数字 3 桁で求めよ．ケイ素は黒鉛の何倍か．"
+     },
+     {
+      "id": "2",
+      "tex": "電池を充電した状態では，負極は Li を含んだ $\\ce{LiC6}$ や $\\ce{Li22Si5}$ になっている．Li を含んだ物質 $1\\,\\mathrm{g}$ あたりの電気量 [mAh/g] を，それぞれ有効数字 3 桁で求めよ．ケイ素の優位（倍率）は (1) と比べてどう変わるか．"
+     },
+     {
+      "id": "3",
+      "tex": "充電した状態の負極材料 $1\\,\\mathrm{cm^3}$ あたりの電気量 [mAh/cm$^3$] を，それぞれ有効数字 3 桁で求め，倍率を比べよ．"
+     },
+     {
+      "id": "4",
+      "tex": "ケイ素負極は容量が大きいのに，充放電をくり返すと容量が急に低下しやすい．黒鉛と比べてその原因を，Li の受け入れ方の違いから説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "黒鉛 $372\\,\\mathrm{mAh/g}$，ケイ素 $4.20\\times10^{3}\\,\\mathrm{mAh/g}$，約 11 倍"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{LiC6}$ $340\\,\\mathrm{mAh/g}$，$\\ce{Li22Si5}$ $2.01\\times10^{3}\\,\\mathrm{mAh/g}$．約 5.9 倍に縮まる．"
+   },
+   {
+    "id": "3",
+    "tex": "黒鉛 $762\\,\\mathrm{mAh/cm^3}$，ケイ素 $2.44\\times10^{3}\\,\\mathrm{mAh/cm^3}$，約 3.2 倍"
+   },
+   {
+    "id": "4",
+    "tex": "黒鉛は層の間に Li が入るだけで骨格がほとんど変わらない（体積変化 $10\\,\\%$）が，ケイ素は Li と合金をつくって結晶そのものが組みかわり体積が 4 倍にもなる．膨張・収縮のくり返しで粒子が割れたり電極から外れたりして，電気的に使えない部分が増えるため．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 黒鉛：C $6\\,\\mathrm{mol}$（$72.0\\,\\mathrm{g}$）が電子 $1\\,\\mathrm{mol}$ を受け入れるので\n\\[\\frac{9.65\\times10^{4}}{72.0\\times3.6}=\\boldsymbol{372\\,\\mathrm{mAh/g}}\\]\nケイ素：Si $1\\,\\mathrm{mol}$（$28.1\\,\\mathrm{g}$）が電子 $4.4\\,\\mathrm{mol}$ を受け入れるので\n\\[\\frac{4.4\\times9.65\\times10^{4}}{28.1\\times3.6}=\\boldsymbol{4.20\\times10^{3}\\,\\mathrm{mAh/g}}\\]\n倍率は $\\dfrac{4197}{372}=11.3$，約 \\textbf{11 倍}．Si は 1 原子が多くの Li を受け入れ，しかも C 6 個分より軽い．\n\n\\textbf{(2)} 充電状態の質量には受け入れた Li の質量も含まれる．\n$\\ce{LiC6}$：$72.0+6.94=78.94\\,\\mathrm{g}$ あたり電子 $1\\,\\mathrm{mol}$ → $\\dfrac{9.65\\times10^{4}}{78.94\\times3.6}=\\boldsymbol{340\\,\\mathrm{mAh/g}}$．\n$\\ce{Li_{4.4}Si}$：$28.1+4.4\\times6.94=58.64\\,\\mathrm{g}$ あたり電子 $4.4\\,\\mathrm{mol}$ → $\\dfrac{4.4\\times9.65\\times10^{4}}{58.64\\times3.6}=\\boldsymbol{2.01\\times10^{3}\\,\\mathrm{mAh/g}}$．\n倍率は $5.9$ 倍に縮まる．ケイ素は受け入れる Li が多いぶん，Li の質量（約 $31\\,\\mathrm{g}$）が加わる割合も大きいからである．\n\n\\textbf{(3)} 黒鉛：$\\ce{LiC6}$ 1 mol 分の体積は $\\dfrac{72.0}{2.25}\\times1.10=35.2\\,\\mathrm{cm^3}$ なので $\\dfrac{9.65\\times10^{4}/3.6}{35.2}=\\boldsymbol{762\\,\\mathrm{mAh/cm^3}}$．\nケイ素：Si 1 mol 分の体積は $\\dfrac{28.1}{2.33}\\times4.0=48.2\\,\\mathrm{cm^3}$ なので $\\dfrac{4.4\\times9.65\\times10^{4}/3.6}{48.2}=\\boldsymbol{2.44\\times10^{3}\\,\\mathrm{mAh/cm^3}}$．\n倍率は約 $\\boldsymbol{3.2}$ 倍．電池の中で負極が占める体積は充電したときの大きさで決まるので，体積で比べるとケイ素の優位はさらに小さくなる．\n\n\\textbf{(4)} 黒鉛では $\\ce{Li+}$ が層の間に入り込む（層状の骨格はそのまま）ので体積変化は約 $10\\,\\%$ にとどまる．ケイ素では Si–Si の結合が切れて Li との合金に組みかわるので，体積が 4 倍に膨らみ，放電で縮む．このくり返しで粒子にひびが入って細かく割れ，導電材や集電体との接触が失われた部分は充放電に使えなくなるので，容量が低下する．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "負極材料の容量は受け入れる Li の数と材料の質量で決まり，充電前の質量で比べるとケイ素は黒鉛の約 11 倍だが，受け入れた Li の質量や充電時の体積まで含めて比べると優位は大きく縮む．層の間に入るだけの黒鉛と合金をつくるケイ素では体積変化が大きく違い，これが寿命の差になる．"
+ },
+ "concepts": [
+  "electrolysis",
+  "carbon-silicon",
+  "battery"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "リチウムイオン電池",
+  "負極",
+  "ケイ素",
+  "容量",
+  "体積変化"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

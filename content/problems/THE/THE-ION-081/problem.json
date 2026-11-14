@@ -1,0 +1,109 @@
+{
+ "id": "THE-ION-081",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "強酸にアンモニアを吸収させていくときの pH の求め方の切り替え",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "$0.050\\,\\mathrm{mol/L}$ の塩酸 $1.0\\,\\mathrm{L}$ に，アンモニアの気体を少しずつ吸収させる．溶液の体積は変わらず，温度は一定で，吸収したアンモニアはすべて溶液中にとどまるものとする．アンモニアの電離定数を $K_{\\mathrm{b}}=1.8\\times10^{-5}\\,\\mathrm{mol/L}$，水のイオン積を $K_{\\mathrm{w}}=1.0\\times10^{-14}\\,(\\mathrm{mol/L})^2$ とし，必要なら $\\log_{10}2=0.30$，$\\log_{10}3=0.48$，$\\log_{10}1.8=0.26$ を用いよ．pH は小数第 1 位まで答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "アンモニアを $0.020\\,\\mathrm{mol}$ 吸収させたときの pH を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "アンモニアを $0.050\\,\\mathrm{mol}$ 吸収させたときの pH を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "アンモニアを $0.100\\,\\mathrm{mol}$ 吸収させたときの pH を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(2) の溶液と (3) の溶液に，それぞれさらに塩化水素 $1.0\\times10^{-3}\\,\\mathrm{mol}$ を吸収させた．pH の変化が小さいのはどちらの溶液か．理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "1.5"
+   },
+   {
+    "id": "2",
+    "tex": "5.3"
+   },
+   {
+    "id": "3",
+    "tex": "9.3"
+   },
+   {
+    "id": "4",
+    "tex": "アンモニアを 0.100 mol 吸収させた溶液．$\\ce{NH3}$ と $\\ce{NH4+}$ がともに多量にある緩衝液で，加えた $\\ce{H+}$ を $\\ce{NH3}$ が受け止めるから"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　$\\ce{NH3 + HCl -> NH4Cl}$ の中和が進むので，吸収量によって溶液の主な成分が「塩酸＋塩化アンモニウム」→「塩化アンモニウムのみ」→「塩化アンモニウム＋アンモニア」と変わる．それぞれで pH の求め方を切り替える．\n\n(1) $\\ce{HCl}$ が $0.050-0.020=0.030\\,\\mathrm{mol}$ 残る．$\\ce{NH4+}$ の電離（加水分解）は強酸の $\\ce{H+}$ に比べて無視でき，$[\\ce{H+}]=3.0\\times10^{-2}\\,\\mathrm{mol/L}$．$\\mathrm{pH}=2-\\log_{10}3=\\boldsymbol{1.5}$．\n\n(2) ちょうど中和して $0.050\\,\\mathrm{mol/L}$ の $\\ce{NH4Cl}$ 水溶液となる．$\\ce{NH4+ <=> NH3 + H+}$ の電離定数は $K_{\\mathrm{a}}=K_{\\mathrm{w}}/K_{\\mathrm{b}}$ で，電離はわずかなので\n\\[ [\\ce{H+}]=\\sqrt{K_{\\mathrm{a}}c}=\\sqrt{\\dfrac{K_{\\mathrm{w}}}{K_{\\mathrm{b}}}\\,c} \\]\n$\\mathrm{p}K_{\\mathrm{b}}=5-0.26=4.74$，$\\log_{10}0.050=\\log_{10}\\dfrac{10}{2}-2=-1.30$ より\n\\[ \\mathrm{pH}=\\dfrac{1}{2}\\left(14-\\mathrm{p}K_{\\mathrm{b}}-\\log_{10}c\\right)=\\dfrac{1}{2}(14-4.74+1.30)=5.28 \\]\nよって $\\boldsymbol{5.3}$．「中和点」でも弱塩基と強酸の塩なので酸性である．\n\n(3) $\\ce{NH4+}$ $0.050\\,\\mathrm{mol}$ と $\\ce{NH3}$ $0.050\\,\\mathrm{mol}$ が共存する．\n\\[ [\\ce{OH-}]=K_{\\mathrm{b}}\\dfrac{[\\ce{NH3}]}{[\\ce{NH4+}]}=1.8\\times10^{-5}\\,\\mathrm{mol/L} \\]\n$\\mathrm{pOH}=4.74$，$\\mathrm{pH}=\\boldsymbol{9.3}$（9.26）．\n\n(4) $\\boldsymbol{\\text{(3) の溶液}}$．(3) では加えた $\\ce{H+}$ が $\\ce{NH3 + H+ -> NH4+}$ で消費され，比 $[\\ce{NH3}]/[\\ce{NH4+}]$ が $0.050/0.050$ から $0.049/0.051$ に変わるだけなので，pH は約 0.02 しか下がらない（緩衝作用）．(2) では $\\ce{H+}$ を受け止める $\\ce{NH3}$ がほとんどないので，$[\\ce{H+}]$ は約 $1.0\\times10^{-3}\\,\\mathrm{mol/L}$ となり pH は 5.3 から約 3.0 へ大きく下がる．なお，(1) のような濃い強酸の溶液も，もともと $[\\ce{H+}]$ が大きいので少量の酸や塩基では pH があまり変わらないが，これは緩衝作用によるものではない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "強酸に弱塩基を加えていくと，溶液の主成分が「強酸の残り」「弱塩基の塩のみ（加水分解で酸性）」「弱塩基とその塩（緩衝液）」と変わるので，段階ごとに pH の求め方を切り替える．K_a＝K_w/K_b の関係と，緩衝作用をもつのはどの段階かを確認する．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "nitrogen-phosphorus",
+  "ph"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "アンモニア",
+  "塩化アンモニウム",
+  "加水分解",
+  "緩衝液",
+  "pH"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

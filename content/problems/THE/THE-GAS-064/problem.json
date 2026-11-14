@@ -1,0 +1,109 @@
+{
+ "id": "THE-GAS-064",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-08",
+ "topic": "浮きも沈みもしない風船のつり合いと水上置換の補正から求める気体の平均分子量",
+ "course": "化学",
+ "level": 3,
+ "minutes": 20,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ゴム部分の質量がどちらも $1.75\\,\\mathrm{g}$ の風船を2つ用意し，一方にヘリウム，他方に炭化水素の混合気体 X をつめて糸で結んだところ，空気中で上昇も下降もしない状態になった．このとき風船の中の圧力は，ヘリウム風船が $1.03\\times10^{5}\\,\\mathrm{Pa}$，X の風船が $1.02\\times10^{5}\\,\\mathrm{Pa}$ であった．つぎに，それぞれの風船の気体をすべて水上置換でメスシリンダーに集め，内外の水面をそろえて体積を測ると，ヘリウムは $4.80\\,\\mathrm{L}$，X は $1.20\\,\\mathrm{L}$ であった．\n実験はすべて $300\\,\\mathrm{K}$，大気圧 $1.00\\times10^{5}\\,\\mathrm{Pa}$ で行い，$300\\,\\mathrm{K}$ の飽和水蒸気圧は $3.6\\times10^{3}\\,\\mathrm{Pa}$，空気の平均分子量は 29.0，気体定数は $R=8.31\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$，原子量は He=4.0，H=1.0，C=12 とする．ゴムの体積，糸の質量，気体の水への溶解は無視する．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ヘリウムと X の物質量をそれぞれ有効数字3桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "空気中で浮きも沈みもしない状態での，ヘリウム風船と X の風船の体積をそれぞれ有効数字3桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "この状態で風船2つが押しのけている空気の質量を有効数字3桁で求めよ．また，浮きも沈みもしない条件から，X の質量を有効数字3桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "X の平均分子量を有効数字2桁で求めよ．また，X が炭素数が1つだけ異なる2種類のアルカンの混合物であるとき，物質量で多いほうの成分の名称を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "ヘリウム $0.186\\,\\mathrm{mol}$，X $0.0464\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "2",
+    "tex": "ヘリウム風船 $4.49\\,\\mathrm{L}$，X の風船 $1.13\\,\\mathrm{L}$"
+   },
+   {
+    "id": "3",
+    "tex": "空気 $6.55\\,\\mathrm{g}$，X $2.30\\,\\mathrm{g}$"
+   },
+   {
+    "id": "4",
+    "tex": "50，プロパン"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　水上置換で集めた気体は水蒸気を含み，内外の水面をそろえたので全圧が大気圧に等しい．目的の気体の分圧は $1.00\\times10^{5}-3.6\\times10^{3}=9.64\\times10^{4}\\,\\mathrm{Pa}$．\n\\[ n_{\\mathrm{He}}=\\frac{9.64\\times10^{4}\\times4.80}{8.31\\times10^{3}\\times300}=\\boldsymbol{0.186\\,\\mathrm{mol}},\\qquad n_{\\mathrm X}=\\frac{9.64\\times10^{4}\\times1.20}{8.31\\times10^{3}\\times300}=\\boldsymbol{0.0464\\,\\mathrm{mol}} \\]\n\n\\textbf{(2)}　風船の中では乾いた気体が風船の内圧を示すので，$V=\\dfrac{nRT}{P}$ より\n\\[ V_{\\mathrm{He}}=\\frac{0.1856\\times8.31\\times10^{3}\\times300}{1.03\\times10^{5}}=\\boldsymbol{4.49\\,\\mathrm{L}},\\qquad V_{\\mathrm X}=\\frac{0.04640\\times8.31\\times10^{3}\\times300}{1.02\\times10^{5}}=\\boldsymbol{1.13\\,\\mathrm{L}} \\]\n（ゴムの張力の分だけ内圧が大気圧より高く，集めたときの体積とは異なる．）\n\n\\textbf{(3)}　空気の密度は $\\dfrac{PM}{RT}=\\dfrac{1.00\\times10^{5}\\times29.0}{8.31\\times10^{3}\\times300}=1.163\\,\\mathrm{g/L}$．押しのけた空気は $(4.492+1.134)\\times1.163=\\boldsymbol{6.55\\,\\mathrm{g}}$．浮きも沈みもしないので，浮力（押しのけた空気の重さ）＝全体の重さ：\n\\[ 6.545=2\\times1.75+0.1856\\times4.0+m_{\\mathrm X}\\quad\\Rightarrow\\quad m_{\\mathrm X}=\\boldsymbol{2.30\\,\\mathrm{g}} \\]\n\n\\textbf{(4)}　$M=\\dfrac{2.303}{0.04640}=49.6\\approx\\boldsymbol{50}$．プロパン $\\ce{C3H8}$（44）とブタン $\\ce{C4H10}$（58）の間にあり，プロパンのモル分率を $x$ とすると $44x+58(1-x)=49.6$ より $x\\approx0.6$．多いのは\\textbf{プロパン}である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "浮きも沈みもしない風船では，押しのけた空気の質量（風船内の圧力で決まる体積×空気の密度）がゴムと中の気体の質量の和に等しい．物質量は水上置換で集めた体積を水蒸気圧で補正して求め，両者を組み合わせて未知の気体の平均分子量と主成分を決める．"
+ },
+ "concepts": [
+  "ideal-gas",
+  "rubber",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "浮力",
+  "気体の密度",
+  "水上置換",
+  "水蒸気圧",
+  "平均分子量"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

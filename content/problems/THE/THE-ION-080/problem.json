@@ -1,0 +1,101 @@
+{
+ "id": "THE-ION-080",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "蒸発濃縮による硫酸カルシウム二水和物（セッコウ）の析出開始と析出量",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある塩湖の水は，水 $1\\,\\mathrm{kg}$ あたり $\\ce{Ca^2+}$ を $0.015\\,\\mathrm{mol}$，$\\ce{SO4^2-}$ を $0.040\\,\\mathrm{mol}$ 含む．この水を常温で蒸発させて濃縮すると，やがて硫酸カルシウム二水和物 $\\ce{CaSO4.2H2O}$（セッコウ）が析出しはじめる．\n\\[ \\ce{Ca^2+ + SO4^2- + 2H2O -> CaSO4.2H2O} \\]\n濃縮した液中で，セッコウが析出しているときには $m_{\\ce{Ca^2+}}\\times m_{\\ce{SO4^2-}}=2.4\\times10^{-3}\\,(\\mathrm{mol/kg})^{2}$ が成り立つものとする（$m$ は水 $1\\,\\mathrm{kg}$ あたりの物質量）．他のイオンとの反応，結晶に取り込まれる水の量は無視する．原子量は H 1.0，O 16.0，S 32.1，Ca 40.1 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "水の質量がはじめの何分の 1 になったときセッコウが析出しはじめるか．"
+     },
+     {
+      "id": "2",
+      "tex": "さらに濃縮して，水の質量をはじめの $\\dfrac14$ にした．はじめの水 $1\\,\\mathrm{kg}$ あたり，セッコウは何 g 析出しているか．有効数字 3 桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "セッコウが析出しはじめてから (2) の状態になるまでの間に，液中の $\\ce{Ca^2+}$ と $\\ce{SO4^2-}$ の濃度（$\\mathrm{mol/kg}$）はそれぞれ増加するか，減少するか．(1) と (2) の時点の値を示して答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\dfrac12$"
+   },
+   {
+    "id": "2",
+    "tex": "$1.72\\,\\mathrm{g}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{Ca^2+}$ は $0.030\\to0.020\\,\\mathrm{mol/kg}$ に減少し，$\\ce{SO4^2-}$ は $0.080\\to0.12\\,\\mathrm{mol/kg}$ に増加する．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　水の質量が $\\dfrac1X$ になると，イオンの物質量は変わらないので質量モル濃度は $X$ 倍になる．析出が起こってからは，析出した分だけ $\\ce{Ca^2+}$ と $\\ce{SO4^2-}$ が $1:1$ で減る．\n\n\\textbf{(1)}　$(0.015X)(0.040X)=2.4\\times10^{-3}$ より $X^{2}=4.0$，$X=2.0$．水の質量がはじめの $\\boldsymbol{\\dfrac12}$ になったときに析出しはじめる．\n\n\\textbf{(2)}　はじめの水 $1\\,\\mathrm{kg}$ あたり $s\\,\\mathrm{mol}$ 析出したとすると，水は $0.25\\,\\mathrm{kg}$ なので\n\\[ \\frac{0.015-s}{0.25}\\times\\frac{0.040-s}{0.25}=2.4\\times10^{-3} \\quad\\Longrightarrow\\quad s^{2}-0.055s+4.5\\times10^{-4}=0 \\]\n$0<s<0.015$ の解は $s=\\dfrac{0.055-0.035}{2}=0.010\\,\\mathrm{mol}$．$\\ce{CaSO4.2H2O}$ の式量は $172.2$ なので，析出量は $172.2\\times0.010\\fallingdotseq\\boldsymbol{1.72\\,\\mathrm{g}}$．はじめの $\\ce{Ca^2+}$ の $\\dfrac23$ が析出している．\n\n\\textbf{(3)}　(1) の時点：$m_{\\ce{Ca^2+}}=0.015\\times2=0.030$，$m_{\\ce{SO4^2-}}=0.040\\times2=0.080\\,\\mathrm{mol/kg}$．\n(2) の時点：$m_{\\ce{Ca^2+}}=\\dfrac{0.005}{0.25}=0.020$，$m_{\\ce{SO4^2-}}=\\dfrac{0.030}{0.25}=0.12\\,\\mathrm{mol/kg}$（積は $2.4\\times10^{-3}$ で一定）．\n析出が進んでも両イオンは同じ物質量ずつ減るので，物質量の差 $0.040-0.015=0.025\\,\\mathrm{mol}$ は保存される．濃縮で水が減ると，この差の濃度 $(m_{\\ce{SO4^2-}}-m_{\\ce{Ca^2+}})$ は大きくなる．積が一定のまま差が広がるので，\\textbf{少ない方の $\\ce{Ca^2+}$ は減少し，多い方の $\\ce{SO4^2-}$ は増加する}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "濃縮で水の質量が 1/X になると質量モル濃度は X 倍になり，積が溶解度積に達したところで析出が始まる．析出後は 2 種のイオンが 1:1 で減るので物質量の差が保存され，濃縮を続けると積を一定に保ったまま差が広がり，少ない方のイオンの濃度は下がり多い方は上がる．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "precipitation",
+  "oxygen-sulfur"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "溶解度積",
+  "蒸発濃縮",
+  "セッコウ",
+  "質量モル濃度",
+  "析出量"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "id": "THE-ELC-043",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-07",
+ "topic": "電池の理論エネルギー密度の比較",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "電池の理論エネルギー密度 $[\\mathrm{J/g}]$ を，「電池全体の反応式の反応物（左辺の物質）の合計 $1\\,\\mathrm g$ あたりに取り出せる電気エネルギー」と定義する．電子 $n\\,[\\mathrm{mol}]$ が起電力 $E\\,[\\mathrm V]$ のもとで流れたとき取り出せる電気エネルギーは $nFE\\,[\\mathrm J]$ である．次の 3 種類の電池について答えよ．ファラデー定数 $F=9.65\\times10^4\\,\\mathrm{C/mol}$，原子量は H = 1.0，Li = 6.9，O = 16，Mn = 54.9，Ni = 58.7，Zn = 65.4，Ag = 108，Cd = 112 とする．\n\nニッケル・カドミウム電池（起電力 $1.30\\,\\mathrm V$）：$\\ce{Cd + 2NiO(OH) + 2H2O -> Cd(OH)2 + 2Ni(OH)2}$\\\\\n酸化銀電池（起電力 $1.55\\,\\mathrm V$）：$\\ce{Zn + Ag2O -> ZnO + 2Ag}$\\\\\nリチウム電池（起電力 $3.00\\,\\mathrm V$）：$\\ce{Li + MnO2 -> LiMnO2}$"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ニッケル・カドミウム電池の理論エネルギー密度を有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "酸化銀電池とリチウム電池の理論エネルギー密度を，それぞれ有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "理論エネルギー密度は「起電力 $E$」と「電子 $1\\,\\mathrm{mol}$ あたりの反応物の質量 $m$」で決まる．リチウム電池と酸化銀電池の理論エネルギー密度の比を，$E$ の比と $m$ の比に分けて示し，リチウム電池の値が大きい理由を 2 つ答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "リチウム電池の電解液には水溶液を使えない．その理由を 2 つ答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$757\\,\\mathrm{J/g}$"
+   },
+   {
+    "id": "2",
+    "tex": "酸化銀電池 $1.01\\times10^3\\,\\mathrm{J/g}$，リチウム電池 $3.09\\times10^3\\,\\mathrm{J/g}$"
+   },
+   {
+    "id": "3",
+    "tex": "比 $\\fallingdotseq3.07$（$E$ の比 $1.94$ と $m$ の比の逆数 $1.59$ の積）．起電力が大きいことと，リチウムの原子量が小さく電子 $1\\,\\mathrm{mol}$ あたりの反応物の質量が小さいこと．"
+   },
+   {
+    "id": "4",
+    "tex": "リチウムは水と激しく反応して水素を発生するから．また，起電力 $3\\,\\mathrm V$ は水が電気分解される電圧より大きく，水溶液では水が分解されてしまうから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　電子 $n\\,\\mathrm{mol}$ あたりの反応物の質量を $M_{\\text{反応物}}$ とすると，エネルギー密度 $=\\dfrac{nFE}{M_{\\text{反応物}}}=\\dfrac{FE}{m}$（$m$：電子 $1\\,\\mathrm{mol}$ あたりの反応物の質量）．\n\n(1) 反応式どおり電子 $2\\,\\mathrm{mol}$ が流れる（$\\ce{Cd}$：$0\\to+2$）．$\\ce{NiO(OH)}=91.7$，$\\ce{H2O}=18.0$ より反応物の質量は $112+2\\times91.7+2\\times18.0=331.4\\,\\mathrm g$．\\\\\n$\\dfrac{2\\times9.65\\times10^4\\times1.30}{331.4}=757.1\\fallingdotseq\\boldsymbol{757}\\,\\mathrm{J/g}$．\\\\\n（全体の反応式に $\\ce{H2O}$ が反応物として現れるので，定義どおり水の質量も含める．除くと $849\\,\\mathrm{J/g}$ となり，値は定義に左右される．）\n\n(2) 酸化銀電池：電子 $2\\,\\mathrm{mol}$，反応物 $65.4+232=297.4\\,\\mathrm g$．$\\dfrac{2\\times9.65\\times10^4\\times1.55}{297.4}=1006\\fallingdotseq\\boldsymbol{1.01\\times10^3}\\,\\mathrm{J/g}$．\\\\\nリチウム電池：電子 $1\\,\\mathrm{mol}$（$\\ce{Li}$：$0\\to+1$），反応物 $6.9+86.9=93.8\\,\\mathrm g$．$\\dfrac{9.65\\times10^4\\times3.00}{93.8}=3086\\fallingdotseq\\boldsymbol{3.09\\times10^3}\\,\\mathrm{J/g}$．\n\n(3) 電子 $1\\,\\mathrm{mol}$ あたりの反応物の質量 $m$ は，酸化銀電池 $148.7\\,\\mathrm g$，リチウム電池 $93.8\\,\\mathrm g$．\\\\\n$\\dfrac{\\text{リチウム}}{\\text{酸化銀}}=\\dfrac{E_{\\ce{Li}}}{E_{\\ce{Ag}}}\\times\\dfrac{m_{\\ce{Ag}}}{m_{\\ce{Li}}}=\\dfrac{3.00}{1.55}\\times\\dfrac{148.7}{93.8}=1.94\\times1.59\\fallingdotseq\\boldsymbol{3.07}$．\\\\\n① 起電力が約 2 倍と大きい（リチウムはイオン化傾向が最も大きく，電子を出す力が強い）．② リチウムは原子量 6.9 と非常に軽く，電子 1 個を出すのに必要な質量が小さい．起電力の寄与のほうがやや大きい．\n\n(4) ① $\\ce{2Li + 2H2O -> 2LiOH + H2}$ のように水と激しく反応する．② 水は約 $1.2\\,\\mathrm V$ 以上で電気分解されるので，$3\\,\\mathrm V$ の起電力をもつ電池の中では水が分解されてしまう．そのためリチウム電池（リチウムイオン電池も）は有機溶媒にリチウム塩を溶かした電解液を用いる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "電池の理論エネルギー密度は FE/m（m：電子1 mol あたりの反応物の質量）で決まるので，電池どうしの比は起電力の比と m の比の積に分解できる．リチウム電池が大きいのは高い起電力と軽い活物質の両方によるが，その高い起電力と Li の反応性のために水溶液の電解液は使えない．"
+ },
+ "concepts": [
+  "electrolysis",
+  "mole",
+  "battery"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "エネルギー密度",
+  "リチウム電池",
+  "酸化銀電池",
+  "ニッケル・カドミウム電池",
+  "起電力"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

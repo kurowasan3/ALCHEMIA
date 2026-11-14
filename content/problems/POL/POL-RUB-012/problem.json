@@ -1,0 +1,109 @@
+{
+ "id": "POL-RUB-012",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-03",
+ "topic": "陽・陰イオン交換樹脂の流出液の混合と pH",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "スルホ基をもつ陽イオン交換樹脂 $\\ce{R-SO3H}$ を詰めたカラム I と，$\\ce{-N+(CH3)3OH-}$ の構造をもつ陰イオン交換樹脂を詰めたカラム II がある（R は樹脂の骨格）．次の操作を行った．\n操作 1：カラム I に $0.020\\,\\mathrm{mol/L}$ の塩化マグネシウム水溶液 $20.0\\,\\mathrm{mL}$ を通し，さらに純水で十分に洗って流出液をすべて集めた．\n操作 2：カラム II に $0.030\\,\\mathrm{mol/L}$ の硫酸ナトリウム水溶液 $10.0\\,\\mathrm{mL}$ を通し，同様に流出液をすべて集めた．\nどちらのカラムでもイオン交換は完全に起こるものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "操作 1 のカラム内で起こるイオン交換を，イオン反応式で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "操作 1，操作 2 の流出液に含まれる溶質の化学式と，そこに含まれる $\\ce{H+}$ または $\\ce{OH-}$ の物質量をそれぞれ求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "2 つの流出液を混合し，純水を加えて $200\\,\\mathrm{mL}$ にした．この水溶液の pH を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "操作 2 の硫酸ナトリウム水溶液の濃度だけを変えて同じ操作を行い，(3) の混合溶液をちょうど中性にしたい．硫酸ナトリウム水溶液の濃度を何 $\\mathrm{mol/L}$ にすればよいか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{2R-SO3H + Mg^2+ ->[\\text{}] (R-SO3)2Mg + 2H+}$"
+   },
+   {
+    "id": "2",
+    "tex": "操作 1：$\\ce{HCl}$，$\\ce{H+}$ $8.0\\times10^{-4}\\,\\mathrm{mol}$，操作 2：$\\ce{NaOH}$，$\\ce{OH-}$ $6.0\\times10^{-4}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "pH 3.0"
+   },
+   {
+    "id": "4",
+    "tex": "$0.040\\,\\mathrm{mol/L}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　イオン交換は電荷の量（価数×物質量）どうしで起こる．2 価の $\\ce{Mg^2+}$ 1 個は $\\ce{H+}$ 2 個と，2 価の $\\ce{SO4^2-}$ 1 個は $\\ce{OH-}$ 2 個と入れ替わる．\n\n(1) $\\ce{Mg^2+}$ は 2 個のスルホン酸イオンに捕らえられ，$\\ce{H+}$ が 2 個放出される．\n\\[\\ce{2R-SO3H + Mg^2+ ->[\\text{}] (R-SO3)2Mg + 2H+}\\]\n$\\ce{Cl-}$ は陽イオン交換樹脂を素通りするので，流出液は塩酸になる．\n\n(2) 操作 1：$\\ce{Mg^2+}$ は $0.020\\times\\dfrac{20.0}{1000}=4.0\\times10^{-4}\\,\\mathrm{mol}$．$\\ce{H+}$ はその 2 倍の $\\boldsymbol{8.0\\times10^{-4}\\,\\mathrm{mol}}$ で，流出液の溶質は $\\boldsymbol{\\ce{HCl}}$．\n操作 2：$\\ce{SO4^2-}$ は $0.030\\times\\dfrac{10.0}{1000}=3.0\\times10^{-4}\\,\\mathrm{mol}$．\n\\[\\ce{2R-N(CH3)3OH + SO4^2- ->[\\text{}] (R-N(CH3)3)2SO4 + 2OH-}\\]\nより $\\ce{OH-}$ は $\\boldsymbol{6.0\\times10^{-4}\\,\\mathrm{mol}}$．$\\ce{Na+}$ は素通りするので流出液の溶質は $\\boldsymbol{\\ce{NaOH}}$．\n\n(3) 混合すると $\\ce{H+ + OH- -> H2O}$ で中和し，$\\ce{H+}$ が $8.0\\times10^{-4}-6.0\\times10^{-4}=2.0\\times10^{-4}\\,\\mathrm{mol}$ 余る．\n\\[[\\ce{H+}]=\\frac{2.0\\times10^{-4}}{0.200}=1.0\\times10^{-3}\\,\\mathrm{mol/L}\\qquad \\boldsymbol{\\mathrm{pH}=3.0}\\]\n物質量だけを見ると $\\ce{MgCl2}$（$4.0\\times10^{-4}\\,\\mathrm{mol}$）の方が $\\ce{Na2SO4}$（$3.0\\times10^{-4}\\,\\mathrm{mol}$）よりわずかに多いだけだが，比べるべきなのは交換された電荷の量である．\n\n(4) $\\ce{OH-}$ を $8.0\\times10^{-4}\\,\\mathrm{mol}$ にすればよい．$2\\times c\\times\\dfrac{10.0}{1000}=8.0\\times10^{-4}$ より $c=\\boldsymbol{0.040\\,\\mathrm{mol/L}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "陽イオン交換樹脂は陽イオンの電荷の量と同じ物質量の H⁺ を，陰イオン交換樹脂は陰イオンの電荷の量と同じ物質量の OH⁻ を放出する．2 価のイオンでは 2 倍になることを使い，酸性と塩基性の流出液を混合したときの過不足から pH や中性にする条件を求める．"
+ },
+ "concepts": [
+  "rubber",
+  "functional-polymer",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "イオン交換樹脂",
+  "陽イオン交換",
+  "陰イオン交換",
+  "中和",
+  "pH"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

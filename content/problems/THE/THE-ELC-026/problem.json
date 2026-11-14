@@ -1,0 +1,109 @@
+{
+ "id": "THE-ELC-026",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-07",
+ "topic": "濃淡電池の起電力から溶解度積・錯イオンの生成定数を求める",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "equation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "銀線を $\\ce{Ag+}$ を含む水溶液に浸した電極の電位 $E$ は，25 ℃ で\n\\[ E=E^\\circ+0.059\\log_{10}[\\ce{Ag+}]\\quad(\\mathrm V) \\]\nで表されるとする（$E^\\circ$ は定数）．同じ銀の電極を2つ用い，次のような電池（濃淡電池）をつくった．両液は硝酸カリウムを含む塩橋でつなぎ，液間の電位差は無視する．\n\\textbf{左側}：$0.10\\,\\mathrm{mol/L}$ $\\ce{KCl}$ 水溶液に $\\ce{AgCl}$ の固体を加えて飽和させ，銀線を浸したもの．\n\\textbf{右側}：$0.10\\,\\mathrm{mol/L}$ $\\ce{AgNO3}$ 水溶液に銀線を浸したもの．\nこの電池の起電力は $0.472\\,\\mathrm V$ であった．$\\log_{10}2=0.30$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "正極は左右どちらか．また，電流を取り出したときの正極と負極の反応を，電子 $\\ce{e-}$ を含むイオン反応式で表せ（負極では生じた $\\ce{Ag+}$ がただちに沈殿することに注意せよ）．"
+     },
+     {
+      "id": "2",
+      "tex": "起電力の値から，左側の $[\\ce{Ag+}]$ と $\\ce{AgCl}$ の溶解度積を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "左側の溶液を，遊離の $\\ce{NH3}$ を $1.0\\,\\mathrm{mol/L}$，$\\ce{[Ag(NH3)2]+}$ を $1.0\\times10^{-3}\\,\\mathrm{mol/L}$ 含む水溶液に替えると，起電力は $0.531\\,\\mathrm V$ になった．$\\ce{Ag+ + 2NH3 <=> [Ag(NH3)2]+}$ の平衡定数を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "左側を，$0.10\\,\\mathrm{mol/L}$ $\\ce{KBr}$ 水溶液に $\\ce{AgBr}$ を飽和させたものに替えると，起電力は何 V になると予想されるか．$K_{sp}(\\ce{AgBr})=5.0\\times10^{-13}\\,(\\mathrm{mol/L})^2$ として小数第2位まで求め，(2) の電池の起電力と比べて大小の理由を述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "右側；正極 $\\ce{Ag+ + e- -> Ag}$，負極 $\\ce{Ag + Cl- -> AgCl + e-}$"
+   },
+   {
+    "id": "2",
+    "tex": "$[\\ce{Ag+}]=1.0\\times10^{-9}\\,\\mathrm{mol/L}$，$K_{sp}=1.0\\times10^{-10}\\,(\\mathrm{mol/L})^2$"
+   },
+   {
+    "id": "3",
+    "tex": "$1.0\\times10^{7}\\,(\\mathrm{mol/L})^{-2}$"
+   },
+   {
+    "id": "4",
+    "tex": "$0.61\\,\\mathrm V$；$\\ce{AgBr}$ の方が溶けにくく，左側の $[\\ce{Ag+}]$ がさらに小さくなって両極の $[\\ce{Ag+}]$ の差（比）が大きくなるから，起電力は大きい"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 起電力は（正極の電位）−（負極の電位）$=0.059\\log_{10}\\dfrac{[\\ce{Ag+}]_{\\text{正}}}{[\\ce{Ag+}]_{\\text{負}}}$ で，$[\\ce{Ag+}]$ の大きい方が電位が高い．左側の $[\\ce{Ag+}]$ は $\\ce{AgCl}$ の溶解平衡で非常に小さく抑えられているので，\\textbf{右側が正極}．\n正極：$\\ce{Ag+ + e- -> Ag}$（濃い $\\ce{Ag+}$ が析出）．負極：銀が $\\ce{Ag+}$ になるが，$\\ce{Cl-}$ が多いのでただちに沈殿し，全体として\n\\[ \\ce{Ag + Cl- -> AgCl + e-} \\]\n電子は外部回路を左（負極）から右（正極）へ流れる．\n\n\\textbf{(2)} \\[ 0.472=0.059\\log_{10}\\dfrac{0.10}{[\\ce{Ag+}]_{\\text{左}}}\\ \\Rightarrow\\ \\log_{10}\\dfrac{0.10}{[\\ce{Ag+}]_{\\text{左}}}=8.00\\ \\Rightarrow\\ [\\ce{Ag+}]_{\\text{左}}=\\boldsymbol{1.0\\times10^{-9}\\,\\mathrm{mol/L}} \\]\n左側では $[\\ce{Cl-}]=0.10\\,\\mathrm{mol/L}$（$\\ce{AgCl}$ の溶解による増加は無視できる）なので\n\\[ K_{sp}=[\\ce{Ag+}][\\ce{Cl-}]=1.0\\times10^{-9}\\times0.10=\\boldsymbol{1.0\\times10^{-10}\\,(\\mathrm{mol/L})^2} \\]\n直接は測れないほど小さな $[\\ce{Ag+}]$ を，起電力から求めたことになる．\n\n\\textbf{(3)} \\[ \\log_{10}\\dfrac{0.10}{[\\ce{Ag+}]}=\\dfrac{0.531}{0.059}=9.00\\ \\Rightarrow\\ [\\ce{Ag+}]=1.0\\times10^{-10}\\,\\mathrm{mol/L} \\]\n\\[ \\beta=\\dfrac{[\\ce{[Ag(NH3)2]+}]}{[\\ce{Ag+}][\\ce{NH3}]^2}=\\dfrac{1.0\\times10^{-3}}{1.0\\times10^{-10}\\times1.0^2}=\\boldsymbol{1.0\\times10^{7}\\,(\\mathrm{mol/L})^{-2}} \\]\n\n\\textbf{(4)} $[\\ce{Ag+}]_{\\text{左}}=\\dfrac{5.0\\times10^{-13}}{0.10}=5.0\\times10^{-12}\\,\\mathrm{mol/L}$．\n\\[ E=0.059\\log_{10}\\dfrac{0.10}{5.0\\times10^{-12}}=0.059\\log_{10}(2.0\\times10^{10})=0.059\\times10.30=0.608\\fallingdotseq\\boldsymbol{0.61\\,\\mathrm V} \\]\n(2) の $0.472\\,\\mathrm V$ より大きい．$K_{sp}$ が小さい（溶けにくい）ほど負極側の $[\\ce{Ag+}]$ が小さくなり，両極の濃度の比が大きくなるので起電力が大きくなる．逆に言えば，起電力の測定から $K_{sp}$ の大小や値を決められる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "同じ金属の電極でもイオン濃度が違えば電池になり，起電力は濃度比の対数に比例する（与えられた式）．一方の極の [Ag+] を沈殿平衡や錯形成で極端に小さくすると，起電力の測定値から直接測れない [Ag+] を求め，溶解度積や錯イオンの生成定数を決められる．"
+ },
+ "concepts": [
+  "electrolysis",
+  "complex-ion",
+  "precipitation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "濃淡電池",
+  "起電力",
+  "溶解度積",
+  "錯イオン",
+  "銀電極"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

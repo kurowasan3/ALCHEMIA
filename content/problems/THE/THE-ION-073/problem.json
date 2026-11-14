@@ -1,0 +1,109 @@
+{
+ "id": "THE-ION-073",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "シリカの溶解度と pH（ケイ酸の電離と水ガラスからのゲルの析出）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "非晶質の二酸化ケイ素（シリカゲル）を水に入れると，一部がケイ酸として溶けて $\\ce{SiO2 + 2H2O <=> H4SiO4}$ の平衡になる．固体が残っているかぎり，溶液中の電離していない $\\ce{H4SiO4}$ の濃度は pH によらず一定値 $S=2.0\\times10^{-3}\\,\\mathrm{mol/L}$ に保たれる（$25\\,^{\\circ}\\mathrm{C}$）．溶けた $\\ce{H4SiO4}$ は $\\ce{H4SiO4 <=> H+ + H3SiO4-}$（$K_a=1.6\\times10^{-10}\\,\\mathrm{mol/L}$）のように電離する．pH $11$ 以下では2段目の電離は無視でき，溶液の体積変化も無視する．$\\log_{10}2=0.30$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "溶けているケイ素の全濃度 $C=[\\ce{H4SiO4}]+[\\ce{H3SiO4-}]$ を，$S$，$K_a$，$[\\ce{H+}]$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "シリカゲルが共存するとき，pH $7.0$ と pH $10.0$ のそれぞれで $C$ を有効数字2けたで求めよ．これをもとに，シリカゲルを詰めたカラムに強い塩基性の溶液を流してはいけない理由を答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "シリカゲルが共存するとき，$C$ が $S$ の $5$ 倍になる pH を小数第1位まで求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "ケイ素の全濃度が $0.020\\,\\mathrm{mol/L}$ で pH $11.0$ の水ガラスのうすい水溶液に，塩酸を加えて pH を $9.0$ にした．このとき溶液 $1\\,\\mathrm{L}$ あたり何 mol のケイ素が固体（ゲル）として析出するか．pH $11.0$ では固体が析出していないことを確かめたうえで，有効数字2けたで答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$C=S\\left(1+\\dfrac{K_a}{[\\ce{H+}]}\\right)$"
+   },
+   {
+    "id": "2",
+    "tex": "pH $7.0$：$2.0\\times10^{-3}\\,\\mathrm{mol/L}$，pH $10.0$：$5.2\\times10^{-3}\\,\\mathrm{mol/L}$．pH が高いほど $\\ce{H4SiO4}$ が $\\ce{H3SiO4-}$ に変わって $C$ が大きくなり，シリカゲルが溶け出して劣化するから．"
+   },
+   {
+    "id": "3",
+    "tex": "pH $10.4$"
+   },
+   {
+    "id": "4",
+    "tex": "$1.8\\times10^{-2}\\,\\mathrm{mol}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　$K_a=\\dfrac{[\\ce{H+}][\\ce{H3SiO4-}]}{[\\ce{H4SiO4}]}$ より $[\\ce{H3SiO4-}]=\\dfrac{K_aS}{[\\ce{H+}]}$．\n\\[C=S+\\frac{K_aS}{[\\ce{H+}]}=\\boldsymbol{S\\left(1+\\frac{K_a}{[\\ce{H+}]}\\right)}\\]\n固体と接している分子形の濃度は一定で，電離した分だけ余分に溶ける．\n\n\\textbf{(2)}　pH $7.0$：$K_a/[\\ce{H+}]=1.6\\times10^{-3}$ で $1$ に比べて無視でき，$C=\\boldsymbol{2.0\\times10^{-3}\\,\\mathrm{mol/L}}$．\npH $10.0$：$K_a/[\\ce{H+}]=1.6$ なので $C=2.0\\times10^{-3}\\times2.6=\\boldsymbol{5.2\\times10^{-3}\\,\\mathrm{mol/L}}$．\n$K_a/[\\ce{H+}]$ は pH が $1$ 上がるごとに $10$ 倍になるので，$\\mathrm{p}K_a$（約 $9.8$）を超えると溶解量が急に増え，シリカゲルが溶けて劣化する．\n\n\\textbf{(3)}　$1+\\dfrac{K_a}{[\\ce{H+}]}=5$ より $[\\ce{H+}]=\\dfrac{K_a}{4}=4.0\\times10^{-11}\\,\\mathrm{mol/L}$．\n\\[\\mathrm{pH}=11-\\log_{10}4.0=11-0.60=\\boldsymbol{10.4}\\]\n\n\\textbf{(4)}　pH $11.0$ で溶けうる最大の濃度は $C_{\\max}=2.0\\times10^{-3}\\times(1+16)=3.4\\times10^{-2}\\,\\mathrm{mol/L}$．$0.020<0.034$ なので固体は析出していない（分子形の濃度は $S$ に達していない）．\npH $9.0$ では $C_{\\max}=2.0\\times10^{-3}\\times(1+0.16)=2.32\\times10^{-3}\\,\\mathrm{mol/L}$ で，$0.020$ よりはるかに小さいので，超えた分が析出する．\n\\[0.020-0.00232=0.0177\\ \\to\\ \\boldsymbol{1.8\\times10^{-2}\\,\\mathrm{mol}}\\]\n水ガラスに酸を加えるとケイ酸のゲルが沈殿するのは，pH が下がって溶けていられるケイ素の量が急に小さくなるためである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "固体の SiO₂ と接している溶液では分子形 H₄SiO₄ の濃度が一定に保たれるので，溶けるケイ素の全量は S(1+Ka/[H⁺]) となり，pKa 付近から上で急に増える．これを使って，塩基性の液でシリカゲルが溶ける条件や，水ガラスを酸性側にしたときに析出するゲルの量を判断する．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "carbon-silicon",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ケイ酸",
+  "シリカゲル",
+  "溶解平衡",
+  "電離定数",
+  "水ガラス"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

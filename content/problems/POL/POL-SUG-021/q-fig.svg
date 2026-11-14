@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 240" width="360" height="240">
+<text x="120" y="40" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">CHO</text>
+<line x1="120" y1="46" x2="120" y2="68" stroke="currentColor" stroke-width="1.5"/>
+<line x1="98" y1="69" x2="142" y2="69" stroke="currentColor" stroke-width="1.5"/>
+<text x="95" y="74" text-anchor="end" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">?</text>
+<text x="145" y="74" text-anchor="start" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">?</text>
+<line x1="120" y1="80" x2="120" y2="102" stroke="currentColor" stroke-width="1.5"/>
+<line x1="98" y1="103" x2="142" y2="103" stroke="currentColor" stroke-width="1.5"/>
+<text x="95" y="108" text-anchor="end" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">?</text>
+<text x="145" y="108" text-anchor="start" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">?</text>
+<line x1="120" y1="114" x2="120" y2="136" stroke="currentColor" stroke-width="1.5"/>
+<line x1="98" y1="137" x2="142" y2="137" stroke="currentColor" stroke-width="1.5"/>
+<text x="95" y="142" text-anchor="end" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">H</text>
+<text x="145" y="142" text-anchor="start" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">OH</text>
+<line x1="120" y1="148" x2="120" y2="162" stroke="currentColor" stroke-width="1.5"/>
+<text x="120" y="176" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">CH<tspan baseline-shift="sub" font-size="10">2</tspan>OH</text>
+<text x="40" y="40" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="currentColor" opacity="0.7">1 位</text>
+<text x="40" y="74" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="currentColor" opacity="0.7">2 位</text>
+<text x="40" y="108" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="currentColor" opacity="0.7">3 位</text>
+<text x="40" y="142" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="currentColor" opacity="0.7">4 位</text>
+<text x="40" y="176" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="currentColor" opacity="0.7">5 位</text>
+<text x="200" y="80" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="currentColor">? は H と OH の</text>
+<text x="200" y="98" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="currentColor">どちらかの向き</text>
+<text x="200" y="140" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="currentColor">縦の結合：紙面の奥</text>
+<text x="200" y="158" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="currentColor">横の結合：紙面の手前</text>
+</svg>

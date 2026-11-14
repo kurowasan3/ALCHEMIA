@@ -1,0 +1,110 @@
+{
+ "id": "INO-ALK-026",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-05",
+ "topic": "石灰ソーダ法による硬水の軟化と必要な薬品の量",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "equation",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "$\\ce{Ca^2+}$ や $\\ce{Mg^2+}$ を多く含む硬水からこれらを除く方法の 1 つに石灰ソーダ法がある．水酸化カルシウム $\\ce{Ca(OH)2}$（石灰）と炭酸ナトリウム $\\ce{Na2CO3}$（ソーダ）を加え，$\\ce{Ca^2+}$ は $\\ce{CaCO3}$ として，$\\ce{Mg^2+}$ は $\\ce{Mg(OH)2}$ として沈殿させる（$\\ce{MgCO3}$ は比較的水に溶けやすいので，$\\ce{Mg^2+}$ は炭酸塩としては除けない）．炭酸水素イオンは $\\ce{Ca(OH)2}$ の $\\ce{OH-}$ によって炭酸イオンに変わり，例えば次のように反応する．\n\\[ \\ce{Ca(HCO3)2 + Ca(OH)2 -> 2CaCO3 + 2H2O} \\]\nある硬水 $1\\,\\mathrm{L}$ に，$\\ce{Ca(HCO3)2}$ $1.5\\times10^{-3}\\,\\mathrm{mol}$，$\\ce{Mg(HCO3)2}$ $0.50\\times10^{-3}\\,\\mathrm{mol}$，$\\ce{MgCl2}$ $0.80\\times10^{-3}\\,\\mathrm{mol}$，$\\ce{CaSO4}$ $1.0\\times10^{-3}\\,\\mathrm{mol}$ が溶けている．反応は完全に進み，沈殿は完全に除かれるものとする．式量は $\\ce{Ca(OH)2}=74$，$\\ce{Na2CO3}=106$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{Mg(HCO3)2}$ と $\\ce{MgCl2}$ のそれぞれが $\\ce{Ca(OH)2}$ と反応して沈殿を生じる化学反応式を書け．"
+     },
+     {
+      "id": "2",
+      "tex": "$\\ce{MgCl2}$ はカルシウムを含まないのに，これを除くには $\\ce{Ca(OH)2}$ だけでなく $\\ce{Na2CO3}$ も必要になる．その理由を化学反応式を用いて説明せよ．"
+     },
+     {
+      "id": "3",
+      "tex": "この硬水 $1.00\\,\\mathrm{m^3}$ を軟化するのに必要な $\\ce{Ca(OH)2}$ と $\\ce{Na2CO3}$ の質量はそれぞれ何 g か．有効数字 3 桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "軟化した後の水に残る陽イオンは何か．また，そのモル濃度を有効数字 2 桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{Mg(HCO3)2 + 2Ca(OH)2 -> Mg(OH)2 + 2CaCO3 + 2H2O}$，$\\ce{MgCl2 + Ca(OH)2 -> Mg(OH)2 + CaCl2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{Mg^2+}$ を沈殿させると，加えた $\\ce{Ca(OH)2}$ の $\\ce{Ca^2+}$ が $\\ce{CaCl2}$ として溶液に残るので，$\\ce{CaCl2 + Na2CO3 -> CaCO3 + 2NaCl}$ によって除く必要があるから．"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{Ca(OH)2}$：$244\\,\\mathrm{g}$，$\\ce{Na2CO3}$：$191\\,\\mathrm{g}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{Na+}$，$3.6\\times10^{-3}\\,\\mathrm{mol/L}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　硬度成分の陰イオンが $\\ce{HCO3-}$ か，$\\ce{Cl-}$・$\\ce{SO4^2-}$ かで，必要な薬品が変わる．$\\ce{HCO3-}$ は $\\ce{OH-}$ で $\\ce{CO3^2-}$ に変わるので，炭酸イオンを自前で用意できる．\n\n\\textbf{(1)}　$\\ce{Mg(HCO3)2}$ では，$\\ce{HCO3-}$ 2 個を $\\ce{CO3^2-}$ にする $\\ce{OH-}$ 2 個と，$\\ce{Mg^2+}$ を $\\ce{Mg(OH)2}$ にする $\\ce{OH-}$ 2 個が必要で，$\\ce{Ca(OH)2}$ は 2 mol いる．\n\\[ \\boldsymbol{\\ce{Mg(HCO3)2 + 2Ca(OH)2 -> Mg(OH)2 + 2CaCO3 + 2H2O}} \\]\n$\\ce{MgCl2}$ では $\\ce{Mg^2+}$ を $\\ce{Mg(OH)2}$ にするだけなので\n\\[ \\boldsymbol{\\ce{MgCl2 + Ca(OH)2 -> Mg(OH)2 + CaCl2}} \\]\n\n\\textbf{(2)}　上の反応で $\\ce{Mg^2+}$ は除けるが，その代わりに同じ物質量の $\\ce{Ca^2+}$ が $\\ce{CaCl2}$ として溶液に入り，硬度は下がらない（$\\ce{Mg^2+}$ が $\\ce{Ca^2+}$ に置きかわっただけ）．この $\\ce{Ca^2+}$ を除くために炭酸イオンが必要で，\n\\[ \\ce{CaCl2 + Na2CO3 -> CaCO3 + 2NaCl} \\]\nとなる．$\\ce{CaSO4}$ も同様に $\\ce{CaSO4 + Na2CO3 -> CaCO3 + Na2SO4}$ で除く．\n\n\\textbf{(3)}　水 $1\\,\\mathrm{L}$ あたりの必要量（単位 $10^{-3}\\,\\mathrm{mol}$）は次のとおり．\n・$\\ce{Ca(HCO3)2}$ $1.5$：$\\ce{Ca(OH)2}$ $1.5$\n\n・$\\ce{Mg(HCO3)2}$ $0.50$：$\\ce{Ca(OH)2}$ $1.0$\n\n・$\\ce{MgCl2}$ $0.80$：$\\ce{Ca(OH)2}$ $0.80$，$\\ce{Na2CO3}$ $0.80$\n\n・$\\ce{CaSO4}$ $1.0$：$\\ce{Na2CO3}$ $1.0$\n\n合計で $\\ce{Ca(OH)2}$ $3.3\\times10^{-3}\\,\\mathrm{mol/L}$，$\\ce{Na2CO3}$ $1.8\\times10^{-3}\\,\\mathrm{mol/L}$．$1.00\\,\\mathrm{m^3}=1.00\\times10^{3}\\,\\mathrm{L}$ では\n\\[ \\ce{Ca(OH)2}:\\ 3.3\\times74=\\boldsymbol{244\\,\\mathrm{g}} \\qquad \\ce{Na2CO3}:\\ 1.8\\times106=\\boldsymbol{191\\,\\mathrm{g}} \\]\n加えた $\\ce{Ca(OH)2}$ の $\\ce{Ca^2+}$ は，炭酸水素塩の分は自分の $\\ce{CO3^2-}$ で，$\\ce{MgCl2}$ の分は $\\ce{Na2CO3}$ で，すべて $\\ce{CaCO3}$ として沈殿する．\n\n\\textbf{(4)}　$\\ce{Ca^2+}$・$\\ce{Mg^2+}$ はすべて沈殿し，加えた $\\ce{Na2CO3}$ の $\\ce{Na+}$ が $\\ce{NaCl}$・$\\ce{Na2SO4}$ として残る．陽イオンは $\\boldsymbol{\\ce{Na+}}$ で，$2\\times1.8\\times10^{-3}=\\boldsymbol{3.6\\times10^{-3}\\,\\mathrm{mol/L}}$（$\\ce{Cl-}$ $1.6\\times10^{-3}$ と $\\ce{SO4^2-}$ $1.0\\times10^{-3}\\,\\mathrm{mol/L}$ と電荷がつり合う）．炭酸水素塩による硬度（一時硬度）は塩ごと除かれるが，塩化物・硫酸塩による硬度（永久硬度）は $\\ce{Na+}$ の塩に置きかわるだけである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "硬度成分の陰イオンが炭酸水素イオンなら石灰の OH− で炭酸イオンをつくれるが，塩化物・硫酸塩の硬度では炭酸ナトリウムが必要になる．Mg2+ は水酸化物として除くため石灰の Ca2+ が入れかわりに残り，それをさらにソーダで除くことを反応式で追い，薬品の必要量と処理後に残るイオンを求める．"
+ },
+ "concepts": [
+  "alkali-metals",
+  "oxygen-sulfur",
+  "ph"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "硬水",
+  "石灰ソーダ法",
+  "炭酸カルシウム",
+  "水酸化マグネシウム",
+  "一時硬度",
+  "永久硬度"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,117 @@
+{
+ "id": "THE-EQL-029",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "滴定によるエステル化の平衡定数の決定",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "酢酸 $1.00\\,\\mathrm{mol}$，エタノール $2.00\\,\\mathrm{mol}$ に，触媒として濃硫酸（$\\ce{H2SO4}$ として $0.010\\,\\mathrm{mol}$）を加えて一定温度に保つと，次の平衡に達した．\n\\[ \\ce{CH3COOH + C2H5OH <=> CH3COOC2H5 + H2O} \\]\n平衡に達した反応液全体の $\\dfrac{1}{20}$ を正確にはかり取り，水で薄めてから $0.50\\,\\mathrm{mol/L}$ 水酸化ナトリウム水溶液で滴定すると，$27.0\\,\\mathrm{mL}$ を要した．別に，反応に用いたのと同量の濃硫酸だけを水で薄め，その $\\dfrac{1}{20}$ を同じ水酸化ナトリウム水溶液で滴定すると $2.0\\,\\mathrm{mL}$ を要した．滴定の間に平衡は移動せず，エステルは加水分解しないものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "平衡時の反応液全体に含まれる酢酸の物質量を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "この温度での平衡定数 $K$ を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "硫酸の分を差し引かずに 27.0 mL をすべて酢酸によるものとして計算すると，$K$ はいくらになるか（有効数字2桁）．また，それは正しい値より大きいか小さいか．"
+     },
+     {
+      "id": "4",
+      "tex": "濃硫酸の量だけを2倍にして同じ実験を行うと，平衡に達するまでの時間と，平衡時の酢酸エチルの物質量はそれぞれどうなるか．"
+     },
+     {
+      "id": "5",
+      "tex": "同じ温度で，酢酸 $1.00\\,\\mathrm{mol}$ から平衡時に酢酸エチルを $0.90\\,\\mathrm{mol}$ 得るには，エタノールを初めに何 mol 加えればよいか．有効数字2桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$0.25\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "2",
+    "tex": "$1.8$"
+   },
+   {
+    "id": "3",
+    "tex": "$1.6$，正しい値より小さい"
+   },
+   {
+    "id": "4",
+    "tex": "平衡に達するまでの時間は短くなり，酢酸エチルの物質量は変わらない"
+   },
+   {
+    "id": "5",
+    "tex": "$5.4\\,\\mathrm{mol}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 酢酸の中和に使われた NaOH は $27.0-2.0=25.0\\,\\mathrm{mL}$．はかり取った分の酢酸は $0.50\\times\\dfrac{25.0}{1000}=0.0125\\,\\mathrm{mol}$，全体ではその 20 倍で $\\boldsymbol{0.25\\,\\mathrm{mol}}$．\\\\\n\\textbf{(2)} 反応した酢酸は $0.75\\,\\mathrm{mol}$．平衡時は酢酸 $0.25$，エタノール $1.25$，酢酸エチル $0.75$，水 $0.75\\,\\mathrm{mol}$（体積は約分される）．\n\\[ K=\\dfrac{0.75\\times0.75}{0.25\\times1.25}=\\boldsymbol{1.8} \\]\n\\textbf{(3)} 酢酸を $0.50\\times0.0270\\times20=0.27\\,\\mathrm{mol}$ と見積もることになり，$K=\\dfrac{0.73^2}{0.27\\times1.27}=1.55\\fallingdotseq\\boldsymbol{1.6}$．酢酸を多く見積もる（反応量を少なく見積もる）ので，正しい値より\\textbf{小さく}なる．\\\\\n\\textbf{(4)} 触媒は正・逆反応をともに速くするので，平衡に達するまでの時間は\\textbf{短くなる}が，平衡定数も平衡の位置も変わらず，酢酸エチルの物質量は\\textbf{変わらない}．\\\\\n\\textbf{(5)} エタノールを $a$ mol とすると，平衡時は酢酸 $0.10$，エタノール $a-0.90$，酢酸エチル・水各 $0.90\\,\\mathrm{mol}$．\n\\[ \\dfrac{0.90^2}{0.10(a-0.90)}=1.8\\quad\\Rightarrow\\quad a-0.90=4.5,\\ \\ a=\\boldsymbol{5.4\\,\\mathrm{mol}} \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "平衡混合物を中和滴定して残った酸の量から平衡組成と平衡定数を求める．触媒の硫酸も NaOH を消費するので空試験の分を差し引く必要があり，怠ると K を誤る．求めた K から目標の収量に必要な初めの量を逆算する．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "oxygen-sulfur",
+  "carboxylic-ester"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "エステル化",
+  "平衡定数",
+  "中和滴定",
+  "空試験",
+  "触媒"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

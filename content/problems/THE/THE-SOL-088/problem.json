@@ -1,0 +1,109 @@
+{
+ "id": "THE-SOL-088",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-09",
+ "topic": "密閉容器内の2つの溶液の間の水の移動（蒸気圧降下と最終的な濃度）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 12,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "密閉できる容器の中にビーカー A，B を置いた．A には水 $100\\,\\mathrm{g}$ に尿素 $0.050\\,\\mathrm{mol}$ を溶かした水溶液，B には水 $100\\,\\mathrm{g}$ にグルコース $0.150\\,\\mathrm{mol}$ を溶かした水溶液を入れ，容器を密閉して一定温度で十分に長い時間放置した．溶質はどれも不揮発性で，水溶液は希薄溶液とみなせる（蒸気圧降下は質量モル濃度に比例する）ものとする．容器内の気体に含まれる水の量は無視できるものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "水はビーカー A から B へ，B から A へのどちらに移動するか．"
+     },
+     {
+      "id": "2",
+      "tex": "十分に時間がたった後，A と B に含まれる水はそれぞれ何 g か．"
+     },
+     {
+      "id": "3",
+      "tex": "A に純水 $100\\,\\mathrm{g}$ を入れた場合，十分に時間がたった後の A の水は何 g か．"
+     },
+     {
+      "id": "4",
+      "tex": "A の尿素の代わりに塩化ナトリウム $0.050\\,\\mathrm{mol}$（水溶液中で完全に電離する）を溶かした場合，十分に時間がたった後の A の水は何 g か．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "A から B へ"
+   },
+   {
+    "id": "2",
+    "tex": "A $50\\,\\mathrm{g}$，B $150\\,\\mathrm{g}$"
+   },
+   {
+    "id": "3",
+    "tex": "$0\\,\\mathrm{g}$"
+   },
+   {
+    "id": "4",
+    "tex": "$80\\,\\mathrm{g}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　密閉容器では，蒸気圧の高い液面から水が蒸発し，蒸気圧の低い液面で凝縮する．蒸気圧が等しくなるまで（すなわち溶質粒子の質量モル濃度が等しくなるまで）水が移動し続ける．\n\n(1) はじめの質量モル濃度は A $0.50\\,\\mathrm{mol/kg}$，B $1.50\\,\\mathrm{mol/kg}$．濃い B のほうが蒸気圧が低いので，水は $\\boldsymbol{\\text{A から B へ}}$ 移動する．\n\n(2) 水の合計は $200\\,\\mathrm{g}$．A の水を $w$ g とすると，濃度が等しくなる条件は\n\\[ \\frac{0.050}{w} = \\frac{0.150}{200-w} \\quad\\Longrightarrow\\quad w = 50 \\]\nA $\\boldsymbol{50\\,\\mathrm{g}}$，B $\\boldsymbol{150\\,\\mathrm{g}}$．水は溶質の物質量の比 $1:3$ に分かれる．\n\n(3) 純水の蒸気圧は，どんな濃度の水溶液の蒸気圧よりも高い．A の水が残っている限り蒸気圧は等しくならないので，A の水はすべて B へ移り，$\\boldsymbol{0\\,\\mathrm{g}}$ になる．\n\n(4) $\\ce{NaCl -> Na+ + Cl-}$ で粒子は $0.100\\,\\mathrm{mol}$ になる．$\\dfrac{0.100}{w} = \\dfrac{0.150}{200-w}$ より $w = \\boldsymbol{80\\,\\mathrm{g}}$．蒸気圧降下は溶質の種類ではなく粒子の数で決まる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "密閉容器内に濃度の違う溶液を置くと，蒸気圧の高い方から低い方へ水が蒸発・凝縮して移り，溶質粒子の質量モル濃度が等しくなるまで続く．最終状態では水が溶質粒子の物質量の比に分かれ，純水は必ずすべて移ること，電解質は粒子の数で考えることを判断する．"
+ },
+ "concepts": [
+  "solution-colligative",
+  "mole",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "蒸気圧降下",
+  "質量モル濃度",
+  "水の移動",
+  "密閉容器",
+  "電離"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

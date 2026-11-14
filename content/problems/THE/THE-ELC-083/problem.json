@@ -1,0 +1,124 @@
+{
+ "id": "THE-ELC-083",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-07",
+ "topic": "電気再生式脱イオン装置の電流収支（電流効率・水の解離・濃縮室の中和）",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，陽極側から陰イオン交換膜 A と陽イオン交換膜 C を交互に並べ，イオン交換樹脂を詰めた脱塩室 $\\mathrm{D}_1\\sim\\mathrm{D}_{10}$ と濃縮室 $\\mathrm{K}_1\\sim\\mathrm{K}_{10}$ を交互につくった装置がある（$\\mathrm{K}_{10}$ は陰極室を兼ねる）．各脱塩室には $2.0\\times10^{-3}\\,\\mathrm{mol/L}$ の NaCl 水溶液を毎分 $0.50\\,\\mathrm{L}$，各濃縮室には同じ水溶液を毎分 $0.050\\,\\mathrm{L}$ ずつ流し，一定の電流 $I$ を流し続ける．膜は 1 種類の符号のイオンだけを完全に通し，すべての膜を同じ電流 $I$ が流れる．脱塩室では，NaCl が残っている間は電流はすべて $\\ce{Na+}$ と $\\ce{Cl-}$ が運び，NaCl がなくなった部分では水が $\\ce{H+}$ と $\\ce{OH-}$ に解離して，これらが残りの電流を運ぶものとする．ファラデー定数は $F=9.65\\times10^{4}\\,\\mathrm{C/mol}$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "1 つの脱塩室を電荷 $1\\,\\mathrm{mol}$ 分（$F$）の電気量が通過すると，その脱塩室から出ていく $\\ce{Na+}$ と $\\ce{Cl-}$ はそれぞれ何 mol か．これを用いて，脱塩室の NaCl をすべて除くのに必要な最小の電流 $[\\mathrm{A}]$ を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$I=2.0\\,\\mathrm{A}$ のとき，電流のうち NaCl の除去に使われる割合（電流効率）$[\\%]$ と，1 つの脱塩室で 1 秒あたりに解離する水の物質量 $[\\mathrm{mol/s}]$ をそれぞれ有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$I=1.2\\,\\mathrm{A}$ のとき，脱塩室の出口の NaCl の濃度 $[\\mathrm{mol/L}]$ を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$I=2.0\\,\\mathrm{A}$ のとき，濃縮室 $\\mathrm{K}_k\\ (1\\le k\\le9)$ には両隣の脱塩室から何が入ってくるか．それをもとに，$\\mathrm{K}_k$ の出口の水溶液の pH は入口と比べて変わるかどうかを判断し，$\\mathrm{K}_k$ の出口の NaCl の濃度 $[\\mathrm{mol/L}]$ を有効数字2桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：電気再生式脱イオン装置の電流収支（電流効率・水の解離・濃縮室の中和）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{Na+}$ $1\\,\\mathrm{mol}$，$\\ce{Cl-}$ $1\\,\\mathrm{mol}$，最小の電流 $1.6\\,\\mathrm{A}$"
+   },
+   {
+    "id": "2",
+    "tex": "電流効率 $80\\,\\%$，水 $4.1\\times10^{-6}\\,\\mathrm{mol/s}$"
+   },
+   {
+    "id": "3",
+    "tex": "$5.1\\times10^{-4}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\mathrm{D}_k$ から $\\ce{Na+}$ と $\\ce{H+}$，$\\mathrm{D}_{k+1}$ から $\\ce{Cl-}$ と $\\ce{OH-}$ が同じ物質量ずつ入る．$\\ce{H+}$ と $\\ce{OH-}$ は中和して水にもどるので pH は変わらない．NaCl の濃度は $2.2\\times10^{-2}\\,\\mathrm{mol/L}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　脱塩室の陰極側は陽イオン交換膜 C，陽極側は陰イオン交換膜 A である．膜 C を通る電流は陽イオンだけが，膜 A を通る電流は陰イオンだけが運ぶので，電気量 $F$ が通ると陰極側へ陽イオン $1\\,\\mathrm{mol}$，陽極側へ陰イオン $1\\,\\mathrm{mol}$ が出ていく．NaCl があればそれは $\\boldsymbol{\\ce{Na+}\\ 1\\,\\mathrm{mol}}$ と $\\boldsymbol{\\ce{Cl-}\\ 1\\,\\mathrm{mol}}$ である．流れ込む NaCl は\n\\[ 2.0\\times10^{-3}\\times\\frac{0.50}{60}=1.67\\times10^{-5}\\,\\mathrm{mol/s} \\]\nこれをすべて除くには $I_\\mathrm{min}=9.65\\times10^{4}\\times1.67\\times10^{-5}=\\boldsymbol{1.6\\,\\mathrm{A}}$．膜は直列なので，10 室あっても必要な電流は 1 室分と同じである（電圧は室の数に比例して大きくなる）．\n\n\\textbf{(2)}　$I/F=\\dfrac{2.0}{9.65\\times10^{4}}=2.07\\times10^{-5}\\,\\mathrm{mol/s}$ の電荷が通るが，運べる NaCl は $1.67\\times10^{-5}\\,\\mathrm{mol/s}$ しかない．電流効率は $\\dfrac{1.67}{2.07}=0.80$，すなわち $\\boldsymbol{80\\,\\%}$．残りは水の解離で生じた $\\ce{H+}$（膜 C 側へ）と $\\ce{OH-}$（膜 A 側へ）が運ぶ．$\\ce{H2O -> H+ + OH-}$ の 1 mol で電荷 1 mol 分を運ぶので，解離する水は $(2.07-1.67)\\times10^{-5}=\\boldsymbol{4.1\\times10^{-6}\\,\\mathrm{mol/s}}$．この解離で生じた $\\ce{H+}$・$\\ce{OH-}$ が樹脂を再生している．\n\n\\textbf{(3)}　$I<I_\\mathrm{min}$ なので NaCl は出口まで残り，電流はすべて $\\ce{Na+}$・$\\ce{Cl-}$ が運ぶ（水は解離しない）．除かれる NaCl は $\\dfrac{1.2}{9.65\\times10^{4}}=1.24\\times10^{-5}\\,\\mathrm{mol/s}$ なので\n\\[ c_\\mathrm{out}=2.0\\times10^{-3}-\\frac{1.24\\times10^{-5}}{0.50/60}=\\boldsymbol{5.1\\times10^{-4}\\,\\mathrm{mol/L}} \\]\n\n\\textbf{(4)}　$\\mathrm{K}_k$ の陽極側は膜 C（$\\mathrm{D}_k$ の陰極側），陰極側は膜 A（$\\mathrm{D}_{k+1}$ の陽極側）．したがって $\\mathrm{D}_k$ からは陽イオン（$\\ce{Na+}$ と $\\ce{H+}$），$\\mathrm{D}_{k+1}$ からは陰イオン（$\\ce{Cl-}$ と $\\ce{OH-}$）が入る．すべての脱塩室は同じ条件なので，$\\ce{Na+}$ と $\\ce{Cl-}$ はどちらも $1.67\\times10^{-5}\\,\\mathrm{mol/s}$，$\\ce{H+}$ と $\\ce{OH-}$ はどちらも $4.1\\times10^{-6}\\,\\mathrm{mol/s}$ で等しい．$\\ce{H+ + OH- -> H2O}$ で水にもどるので，\\textbf{pH は変わらない}．結局，脱塩室で解離した水は濃縮室で再生され，水の解離に使われた電流分（20 %）のエネルギーは熱として失われるだけである．\n\n$\\mathrm{K}_k$ の NaCl は毎秒 $1.67\\times10^{-5}\\,\\mathrm{mol}$ 増えるので，出口の濃度は\n\\[ 2.0\\times10^{-3}+\\frac{1.67\\times10^{-5}}{0.050/60}=2.0\\times10^{-3}+2.0\\times10^{-2}=\\boldsymbol{2.2\\times10^{-2}\\,\\mathrm{mol/L}} \\]\n（濃縮室の流量を脱塩室の $\\dfrac{1}{10}$ にしたので，除いた塩が 10 倍に濃縮される．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "直列に並んだ脱塩室では電気量 F ごとに陽イオン・陰イオンが 1 mol ずつ膜を通るので，必要な最小電流は流入する塩の物質量の流れ×F で決まる．それを超える電流は水の解離で生じた H⁺・OH⁻ が運び（電流効率の低下＝樹脂の再生），隣り合う脱塩室から濃縮室に入る H⁺ と OH⁻ は等量なので中和して pH は変わらない．電流が不足すると塩は出口まで残り，出口濃度は電流と流量の比で決まる．"
+ },
+ "concepts": [
+  "electrolysis",
+  "functional-polymer",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電気透析",
+  "イオン交換膜",
+  "電流効率",
+  "ファラデー定数",
+  "水の解離",
+  "物質収支"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

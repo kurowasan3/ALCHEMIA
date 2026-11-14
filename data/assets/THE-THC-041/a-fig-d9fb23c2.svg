@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" width="640" height="440">
+<rect x="80" y="40" width="480" height="340" fill="none" stroke="currentColor" stroke-width="1.2"/>
+<line x1="80" y1="380.0" x2="560" y2="380.0" stroke="currentColor" stroke-dasharray="3 4" opacity="0.5"/>
+<text x="72" y="385.0" text-anchor="end" font-size="13" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">-800</text>
+<line x1="80" y1="295.0" x2="560" y2="295.0" stroke="currentColor" stroke-dasharray="3 4" opacity="0.5"/>
+<text x="72" y="300.0" text-anchor="end" font-size="13" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">-600</text>
+<line x1="80" y1="210.0" x2="560" y2="210.0" stroke="currentColor" stroke-dasharray="3 4" opacity="0.5"/>
+<text x="72" y="215.0" text-anchor="end" font-size="13" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">-400</text>
+<line x1="80" y1="125.0" x2="560" y2="125.0" stroke="currentColor" stroke-dasharray="3 4" opacity="0.5"/>
+<text x="72" y="130.0" text-anchor="end" font-size="13" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">-200</text>
+<line x1="80" y1="40.0" x2="560" y2="40.0" stroke="currentColor" stroke-dasharray="3 4" opacity="0.5"/>
+<text x="72" y="45.0" text-anchor="end" font-size="13" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">0</text>
+<line x1="136.5" y1="380" x2="136.5" y2="385" stroke="currentColor"/>
+<text x="136.5" y="402" text-anchor="middle" font-size="13" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">500</text>
+<line x1="277.6" y1="380" x2="277.6" y2="385" stroke="currentColor"/>
+<text x="277.6" y="402" text-anchor="middle" font-size="13" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">1000</text>
+<line x1="418.8" y1="380" x2="418.8" y2="385" stroke="currentColor"/>
+<text x="418.8" y="402" text-anchor="middle" font-size="13" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">1500</text>
+<line x1="560.0" y1="380" x2="560.0" y2="385" stroke="currentColor"/>
+<text x="560.0" y="402" text-anchor="middle" font-size="13" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">2000</text>
+<text x="320.0" y="432" text-anchor="middle" font-size="14" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">温度 T（K）</text>
+<text x="22" y="210.0" text-anchor="middle" font-size="14" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif" transform="rotate(-90 22 210.0)">G（kJ，O₂ 1 mol あたり）</text>
+<line x1="80.0" y1="156.7" x2="560.0" y2="286.1" stroke="#c0392b" stroke-width="2"/>
+<text x="566" y="291.1" font-size="14" fill="#c0392b" font-family="Noto Sans CJK JP, sans-serif">①</text>
+<line x1="80.0" y1="207.8" x2="560.0" y2="210.0" stroke="#1f5fbf" stroke-width="2"/>
+<text x="489.4" y="201.7" font-size="14" fill="#1f5fbf" font-family="Noto Sans CJK JP, sans-serif">②</text>
+<line x1="80.0" y1="219.5" x2="560.0" y2="82.9" stroke="currentColor" stroke-width="2"/>
+<text x="566" y="87.9" font-size="14" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">③</text>
+<line x1="80.0" y1="253.6" x2="560.0" y2="153.9" stroke="currentColor" stroke-width="2"/>
+<text x="566" y="158.9" font-size="14" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">④</text>
+<line x1="80.0" y1="339.7" x2="560.0" y2="207.4" stroke="currentColor" stroke-width="2"/>
+<text x="566" y="212.4" font-size="14" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">⑤</text>
+<circle cx="120.3" cy="208.0" r="4" fill="currentColor"/>
+<text x="126.3" y="200.0" text-anchor="start" font-size="13" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">443 K</text>
+<circle cx="283.0" cy="211.4" r="4" fill="currentColor"/>
+<text x="291.0" y="231.4" text-anchor="start" font-size="13" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">1019 K</text>
+<circle cx="415.7" cy="247.2" r="4" fill="currentColor"/>
+<text x="423.7" y="267.2" text-anchor="start" font-size="13" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">1489 K</text>
+<circle cx="272.8" cy="208.7" r="4" fill="currentColor"/>
+<text x="264.8" y="198.7" text-anchor="end" font-size="13" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">983 K</text>
+<text x="92" y="90" font-size="13" fill="#c0392b" font-family="Noto Sans CJK JP, sans-serif">① 2C + O₂ → 2CO</text>
+<text x="92" y="110" font-size="13" fill="#1f5fbf" font-family="Noto Sans CJK JP, sans-serif">② C + O₂ → CO₂</text>
+<text x="92" y="130" font-size="13" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">③ 2Ni + O₂ → 2NiO</text>
+<text x="92" y="150" font-size="13" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">④ 2Fe + O₂ → 2FeO</text>
+<text x="92" y="170" font-size="13" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">⑤ 4/3Cr + O₂ → 2/3Cr₂O₃</text>
+<text x="90" y="60" font-size="13" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">ある温度で下にある線の還元剤は，上にある線の酸化物を還元できる</text>
+</svg>

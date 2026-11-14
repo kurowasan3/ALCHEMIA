@@ -1,0 +1,109 @@
+{
+ "id": "INO-ALK-025",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-05",
+ "topic": "炭酸ナトリウムの製法の全体の反応式と原子利用率",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "equation",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "炭酸ナトリウムの工業的製法であるアンモニアソーダ法（ソルベー法）は，次の5つの反応からなる．\n\\[\\begin{array}{ll} \\text{(a)} & \\ce{NaCl + NH3 + CO2 + H2O -> NaHCO3 + NH4Cl} \\\\ \\text{(b)} & \\ce{2NaHCO3 -> Na2CO3 + CO2 + H2O} \\\\ \\text{(c)} & \\ce{CaCO3 -> CaO + CO2} \\\\ \\text{(d)} & \\ce{CaO + H2O -> Ca(OH)2} \\\\ \\text{(e)} & \\ce{2NH4Cl + Ca(OH)2 -> CaCl2 + 2NH3 + 2H2O} \\end{array}\\]\n反応が完全に進むとき，「目的とする生成物の質量 ÷ 全生成物の質量 × 100」を原子利用率（％）とよぶ．全体の反応式で考え，途中で再利用される物質は数えない．原子量は $\\ce{H}=1.0$，$\\ce{C}=12$，$\\ce{N}=14$，$\\ce{O}=16$，$\\ce{Na}=23$，$\\ce{Cl}=35.5$，$\\ce{Ca}=40$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "(a)〜(e) を組み合わせて，アンモニアソーダ法の全体の反応式を 1 つの式で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "$\\ce{Na2CO3}$ を目的生成物とするとき，アンモニアソーダ法の原子利用率を有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "別の方法（塩安ソーダ法）では，アンモニア合成工場から $\\ce{NH3}$ と $\\ce{CO2}$ を受け取り，(a) と (b) だけを行って，(a) で生じた $\\ce{NH4Cl}$ を回収せずに肥料として売る．この方法の全体の反応式を書け．また，$\\ce{Na2CO3}$ だけを目的生成物とした場合と，$\\ce{Na2CO3}$ と $\\ce{NH4Cl}$ の両方を目的生成物とした場合の原子利用率を，それぞれ有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\ce{Na2CO3}$ を $1.00\\,\\mathrm{t}$ つくるとき，アンモニアソーダ法で副生する $\\ce{CaCl2}$ と，塩安ソーダ法で生じる $\\ce{NH4Cl}$ はそれぞれ何 t か．有効数字 3 桁で答えよ．また，両方の方法で消費される $\\ce{NaCl}$ の質量が等しくなる理由を述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{2NaCl + CaCO3 -> Na2CO3 + CaCl2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$48.8\\,\\%$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{2NaCl + 2NH3 + CO2 + H2O -> Na2CO3 + 2NH4Cl}$，$\\ce{Na2CO3}$ だけ：$49.8\\,\\%$，両方：$100\\,\\%$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{CaCl2}$：$1.05\\,\\mathrm{t}$，$\\ce{NH4Cl}$：$1.01\\,\\mathrm{t}$．どちらも $\\ce{Na}$ はすべて $\\ce{NaCl}$ から来て $\\ce{Na2CO3}$ になるので，$\\ce{Na2CO3}$ 1 mol に $\\ce{NaCl}$ 2 mol が必要（$1.10\\,\\mathrm{t}$）で等しい．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 全体の反応式}　(b) は (a) の 2 倍の $\\ce{NaHCO3}$ を使うので，$2\\times$(a)＋(b)＋(c)＋(d)＋(e) をつくる．\n\\[ \\ce{2NaCl + 2NH3 + 2CO2 + 2H2O -> 2NaHCO3 + 2NH4Cl} \\quad (2\\times\\text{a}) \\]\nこれに (b)〜(e) を加えると，$\\ce{NaHCO3}$，$\\ce{NH4Cl}$，$\\ce{NH3}$，$\\ce{CO2}$，$\\ce{CaO}$，$\\ce{Ca(OH)2}$，$\\ce{H2O}$ は左右で消え，\n\\[ \\boldsymbol{\\ce{2NaCl + CaCO3 -> Na2CO3 + CaCl2}} \\]\n$\\ce{NH3}$ と $\\ce{CO2}$ は工程内を循環するだけで，正味では消費されない．\n\n\\textbf{(2)}　式量は $\\ce{Na2CO3}=106$，$\\ce{CaCl2}=111$．\n\\[ \\dfrac{106}{106+111}\\times100=\\boldsymbol{48.8\\,\\%} \\]\n\n\\textbf{(3)}　$2\\times$(a)＋(b) で $\\ce{NaHCO3}$ と，(b) で戻る $\\ce{CO2}$・$\\ce{H2O}$ の一部が消えて\n\\[ \\boldsymbol{\\ce{2NaCl + 2NH3 + CO2 + H2O -> Na2CO3 + 2NH4Cl}} \\]\n$\\ce{NH4Cl}=53.5$ なので，$\\ce{Na2CO3}$ だけを目的とすると $\\dfrac{106}{106+2\\times53.5}\\times100=\\dfrac{106}{213}\\times100=\\boldsymbol{49.8\\,\\%}$．$\\ce{NH4Cl}$ も製品とすれば，生成物はすべて製品なので $\\boldsymbol{100\\,\\%}$．原子利用率は「何を製品とみなすか」で変わり，副生物を売れる製品にすることが廃棄物を減らす手段になる．\n\n\\textbf{(4)}　$\\ce{Na2CO3}$ $1.00\\,\\mathrm{t}$ は $\\dfrac{1.00\\times10^{6}}{106}=9.43\\times10^{3}\\,\\mathrm{mol}$．\n\n・$\\ce{CaCl2}$ は同じ物質量なので $9.43\\times10^{3}\\times111\\,\\mathrm{g}=\\boldsymbol{1.05\\,\\mathrm{t}}$．\n\n・$\\ce{NH4Cl}$ はその 2 倍の物質量なので $2\\times9.43\\times10^{3}\\times53.5\\,\\mathrm{g}=\\boldsymbol{1.01\\,\\mathrm{t}}$．\n\n$\\ce{NaCl}$ はどちらの方法でも $\\ce{Na}$ の唯一の供給源で，$\\ce{Na}$ はすべて $\\ce{Na2CO3}$ に入るから，$\\ce{Na2CO3}$ 1 mol あたり $\\ce{NaCl}$ 2 mol（$1.00\\,\\mathrm{t}$ あたり $2\\times9.43\\times10^{3}\\times58.5\\,\\mathrm{g}=1.10\\,\\mathrm{t}$）が必要で等しい．違うのは $\\ce{Cl}$ の行き先で，アンモニアソーダ法では利用価値の低い $\\ce{CaCl2}$ に，塩安ソーダ法では肥料の $\\ce{NH4Cl}$ になる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "多段階の工業プロセスは，各段の反応式を係数をそろえて足し合わせると循環する物質が消え，全体の反応式から原子利用率が求まる．副生物を製品として売る工程に変えると，同じ原料の消費でも原子利用率が大きく変わる．"
+ },
+ "concepts": [
+  "alkali-metals",
+  "nitrogen-phosphorus",
+  "industrial-process"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "アンモニアソーダ法",
+  "塩安ソーダ法",
+  "原子利用率",
+  "全体の反応式",
+  "炭酸ナトリウム"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

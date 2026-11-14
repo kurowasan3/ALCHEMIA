@@ -1,0 +1,116 @@
+{
+ "id": "THE-ELC-020",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-07",
+ "topic": "電気分解と鉛蓄電池・ヨウ素滴定の組み合わせ",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "電解槽 A に濃度未知の硫酸銅(II) 水溶液 $200\\,\\mathrm{mL}$，電解槽 B に希硫酸を入れ，いずれも白金電極を用いた．A，B，電流計および鉛蓄電池を直列につなぎ，$0.400\\,\\mathrm{A}$ の一定電流で電気分解したところ，B の両極から発生した気体の合計は標準状態で $168\\,\\mathrm{mL}$ であった．電解後，A の水溶液 $10.0\\,\\mathrm{mL}$ をとり，過剰のヨウ化カリウム水溶液を加えて生じたヨウ素を $0.0500\\,\\mathrm{mol/L}$ チオ硫酸ナトリウム水溶液で滴定すると，$12.0\\,\\mathrm{mL}$ を要した．\n\\[\\ce{2Cu^2+ + 4I- -> 2CuI + I2}\\qquad \\ce{I2 + 2S2O3^2- -> 2I- + S4O6^2-}\\]\nH = 1.0，O = 16，S = 32，$F=9.65\\times10^{4}\\,\\mathrm{C/mol}$，標準状態の気体のモル体積を $22.4\\,\\mathrm{L/mol}$ とする．気体は水に溶けず，電解による溶液の体積変化はないものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "流れた電子の物質量は何 mol か．有効数字3桁で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "電気分解した時間は何分か．有効数字3桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "鉛蓄電池内で消費された硫酸は何 g か．有効数字3桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "電解前の A の硫酸銅(II) 水溶液のモル濃度は何 mol/L か．有効数字3桁で答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "電気分解をさらに続け，A の $\\ce{Cu^2+}$ がすべて析出した後も電流を流し続けると，A の陰極では何が起こるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$1.00\\times10^{-2}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "2",
+    "tex": "$40.2$ 分"
+   },
+   {
+    "id": "3",
+    "tex": "$0.980\\,\\mathrm{g}$"
+   },
+   {
+    "id": "4",
+    "tex": "$8.50\\times10^{-2}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "5",
+    "tex": "水素が発生する"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} B は水の電気分解で，電子 4 mol あたり $\\ce{H2}$ 2 mol と $\\ce{O2}$ 1 mol，計 3 mol の気体が出る．気体は $0.168/22.4=7.50\\times10^{-3}\\,\\mathrm{mol}$ なので，電子は $7.50\\times10^{-3}\\times\\dfrac43=\\boldsymbol{1.00\\times10^{-2}\\,\\mathrm{mol}}$．\n\n\\textbf{(2)} $t=\\dfrac{1.00\\times10^{-2}\\times9.65\\times10^4}{0.400}=2412.5\\,\\mathrm{s}=\\boldsymbol{40.2}$ 分．\n\n\\textbf{(3)} 鉛蓄電池の全体反応 $\\ce{Pb + PbO2 + 2H2SO4 -> 2PbSO4 + 2H2O}$ では，電子 2 mol あたり $\\ce{H2SO4}$ 2 mol を消費する．$1.00\\times10^{-2}\\times98=\\boldsymbol{0.980\\,\\mathrm{g}}$．\n\n\\textbf{(4)} 2つの式から $\\ce{Cu^2+}$ と $\\ce{S2O3^2-}$ は物質量比 1 : 1．電解後の $\\ce{Cu^2+}$ は $0.0500\\times\\dfrac{12.0}{1000}=6.00\\times10^{-4}\\,\\mathrm{mol}$（10.0 mL 中）で，濃度 $6.00\\times10^{-2}\\,\\mathrm{mol/L}$．A の陰極で析出した Cu は $5.00\\times10^{-3}\\,\\mathrm{mol}$ で，200 mL あたり $2.50\\times10^{-2}\\,\\mathrm{mol/L}$ の減少．電解前は $6.00\\times10^{-2}+2.50\\times10^{-2}=\\boldsymbol{8.50\\times10^{-2}\\,\\mathrm{mol/L}}$．\n\n\\textbf{(5)} 還元される $\\ce{Cu^2+}$ がなくなると，代わりに $\\ce{2H+ + 2e- -> H2}$ が起こり，\\textbf{水素が発生する}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "直列回路で，水の電気分解の気体量から電子の物質量を求め，それを鉛蓄電池の硫酸消費量と，ヨウ素滴定で求めた電解後の Cu2+ 量に結びつけて電解前の濃度を逆算する．"
+ },
+ "concepts": [
+  "electrolysis",
+  "halogen",
+  "oxygen-sulfur"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電気分解",
+  "鉛蓄電池",
+  "ヨウ素滴定",
+  "直列接続"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

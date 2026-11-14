@@ -1,0 +1,109 @@
+{
+ "id": "THE-ACB-028",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-05",
+ "topic": "炭酸ナトリウムと塩酸を混ぜる順序と二酸化炭素の発生量",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "$0.200\\,\\mathrm{mol/L}$ の炭酸ナトリウム水溶液 $100\\,\\mathrm{mL}$ と，$0.300\\,\\mathrm{mol/L}$ の塩酸 $100\\,\\mathrm{mL}$ を，次の 2 通りの順序で全量混合した．\n\\begin{itemize}\n\\item 実験 I：炭酸ナトリウム水溶液をかき混ぜながら，塩酸を少しずつ加える．\n\\item 実験 II：塩酸をかき混ぜながら，炭酸ナトリウム水溶液を少しずつ加える．\n\\end{itemize}\nただし，次のように考えてよい．(i) 反応はすべて瞬時に起こる．(ii) 溶液中に $\\ce{CO3^2-}$ と $\\ce{HCO3-}$ がともにあるとき，加えた $\\ce{H+}$ はまず $\\ce{CO3^2-}$ と反応する．(iii) $\\ce{HCO3-}$ と $\\ce{H+}$ から生じた二酸化炭素はただちにすべて気体として出ていき，水への溶解や，後から加えた $\\ce{CO3^2-}$ との反応は無視できる．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "実験 I で，二酸化炭素が発生し始めるのは塩酸を何 mL 加えたときか．また，発生した二酸化炭素の総物質量を求めよ（有効数字 3 桁）．"
+     },
+     {
+      "id": "2",
+      "tex": "実験 II で，二酸化炭素の発生が止まるのは炭酸ナトリウム水溶液を何 mL 加えたときか．また，発生した二酸化炭素の総物質量を求めよ（有効数字 3 桁）．"
+     },
+     {
+      "id": "3",
+      "tex": "実験 I，II の後の溶液に含まれる，炭素を含むイオンの化学式と物質量をそれぞれ答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "濃度のわからない炭酸ナトリウム水溶液と塩酸を用いて，炭酸ナトリウムを $a\\,\\mathrm{mol}$，塩化水素を $b\\,\\mathrm{mol}$ 含む量どうしで同じ 2 通りの実験を行うと，二酸化炭素は実験 I で $0.0100\\,\\mathrm{mol}$，実験 II で $0.0125\\,\\mathrm{mol}$ 発生した．$a$，$b$ を求めよ．答えが 1 通りに決まることも示せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$66.7\\,\\mathrm{mL}$，$1.00\\times10^{-2}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "2",
+    "tex": "$75.0\\,\\mathrm{mL}$，$1.50\\times10^{-2}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "実験 I：$\\ce{HCO3-}$ $1.00\\times10^{-2}\\,\\mathrm{mol}$　実験 II：$\\ce{CO3^2-}$ $5.0\\times10^{-3}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "4",
+    "tex": "$a=0.0150$，$b=0.0250$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "物質量：$\\ce{Na2CO3}$ $c=0.0200\\,\\mathrm{mol}$，$\\ce{HCl}$ $h=0.0300\\,\\mathrm{mol}$．$\\ce{CO3^2-}$ は 2 段階で $\\ce{H+}$ を受け取る．\n\\[\\ce{Na2CO3 + HCl -> NaHCO3 + NaCl}\\qquad\\ce{NaHCO3 + HCl -> NaCl + H2O + CO2}\\]\n\n\\textbf{(1) 実験 I（塩酸を後から加える）}\nはじめは $\\ce{CO3^2-}$ が大量にあるので，加えた $\\ce{H+}$ はすべて第 1 段階に使われ，$\\ce{CO2}$ は出ない．$\\ce{CO3^2-}$ がすべて $\\ce{HCO3-}$ になる（$\\ce{HCl}$ $0.0200\\,\\mathrm{mol}$ を加える）までは発生しない．\n\\[\\frac{0.0200}{0.300}\\times10^{3}=\\boldsymbol{66.7\\,\\mathrm{mL}}\\]\nその後の $\\ce{HCl}$ $h-c=0.0100\\,\\mathrm{mol}$ が第 2 段階に使われるので，$\\ce{CO2}$ は $\\boldsymbol{1.00\\times10^{-2}\\,\\mathrm{mol}}$．\n\n\\textbf{(2) 実験 II（炭酸ナトリウムを後から加える）}\nはじめは $\\ce{H+}$ が大量にあるので，加えた $\\ce{CO3^2-}$ は 1 滴ごとにただちに 2 段階とも進み，$\\ce{Na2CO3 + 2HCl -> 2NaCl + H2O + CO2}$ として $\\ce{CO2}$ になる．$\\ce{H+}$ がなくなる（$\\ce{Na2CO3}$ を $h/2=0.0150\\,\\mathrm{mol}$ 加える）と発生は止まる．\n\\[\\frac{0.0150}{0.200}\\times10^{3}=\\boldsymbol{75.0\\,\\mathrm{mL}}\\]\n$\\ce{CO2}$ は $\\boldsymbol{1.50\\times10^{-2}\\,\\mathrm{mol}}$．残りの $\\ce{Na2CO3}$ $0.0050\\,\\mathrm{mol}$ は反応する相手がない（(iii) より，出ていった $\\ce{CO2}$ とも反応しない）．\n\n\\textbf{(3) 最後の溶液}\nどちらも $\\ce{Na+}$ $0.0400\\,\\mathrm{mol}$，$\\ce{Cl-}$ $0.0300\\,\\mathrm{mol}$ を含み，残りの負電荷 $0.0100\\,\\mathrm{mol}$ 分を炭素を含むイオンが担う．\n\\begin{itemize}\n\\item 実験 I：$\\ce{HCO3-}$ $\\boldsymbol{1.00\\times10^{-2}\\,\\mathrm{mol}}$（炭素の保存：$0.0200-0.0100$）．\n\\item 実験 II：$\\ce{CO3^2-}$ $\\boldsymbol{5.0\\times10^{-3}\\,\\mathrm{mol}}$（2 価なので負電荷 $0.0100\\,\\mathrm{mol}$ 分）．\n\\end{itemize}\n同じ物質を同じ量だけ混ぜても，気体が系外に出ていく反応では，順序によって $\\ce{CO2}$ の量も最後の溶液の組成も変わる．\n\n\\textbf{(4) 逆に $a$，$b$ を決める}\n(1)(2) の考え方を一般化すると\n\\[\\text{I}=\\begin{cases}0 & (b\\le a)\\\\ b-a & (a<b\\le 2a)\\\\ a & (b\\ge 2a)\\end{cases}\\qquad \\text{II}=\\begin{cases}\\dfrac b2 & (b\\le 2a)\\\\ a & (b\\ge 2a)\\end{cases}\\]\n$b\\ge2a$ なら I＝II＝$a$ となるが，測定値は I＜II なので $b<2a$．I$>0$ より $a<b$．よって\n\\[b-a=0.0100,\\qquad \\frac b2=0.0125\\]\n$\\boldsymbol{b=0.0250}$，$\\boldsymbol{a=0.0150}$．これは $a<b<2a$（$0.0150<0.0250<0.0300$）を満たし，他の場合は矛盾するので答えは 1 通りに決まる．\n\nなお，炭酸ナトリウムの代わりに炭酸水素ナトリウムを用いると，$\\ce{H+}$ との反応は 1 段階だけなので，どちらの順序でも $\\ce{CO2}$ は $\\min(\\text{塩基},\\ \\text{酸})$ となり，順序によらない．順序で結果が変わるのは，2 段階で $\\ce{H+}$ を受け取る塩基だからである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "2 段階で H⁺ を受け取る炭酸イオンでは，酸を少しずつ加えると第 1 段階（HCO₃⁻ の生成）が先に完了するまで CO₂ が出ないが，炭酸塩を酸に加えると 1 滴ごとに CO₂ まで進む．気体が系外に出る反応なので混合の順序で CO₂ の量と最後の溶液の組成が変わり，2 通りの発生量から場合分けで酸と炭酸塩の量を一意に逆算できる．"
+ },
+ "concepts": [
+  "acid-base",
+  "carbon-silicon",
+  "alkali-metals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "炭酸ナトリウム",
+  "二段階中和",
+  "混合の順序",
+  "二酸化炭素",
+  "場合分け"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

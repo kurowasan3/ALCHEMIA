@@ -1,0 +1,101 @@
+{
+ "id": "THE-ION-015",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "リン酸の電離度と中和に必要な塩基の量",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "リン酸は3価の弱酸で，次のように3段階に電離する．\n\\[ \\ce{H3PO4 <=> H+ + H2PO4-}\\ (K_1=5.0\\times10^{-3}\\,\\mathrm{mol/L}),\\quad \\ce{H2PO4- <=> H+ + HPO4^2-}\\ (K_2=6.3\\times10^{-8}\\,\\mathrm{mol/L}),\\quad \\ce{HPO4^2- <=> H+ + PO4^3-}\\ (K_3=4.5\\times10^{-13}\\,\\mathrm{mol/L}) \\]\n濃度 $C\\,\\mathrm{(mol/L)}$ のリン酸水溶液の pH は 2.0 であった．$[\\ce{H+}]$ は第1段階の電離だけで決まるものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "第1段階の電離度 $\\alpha$ を 1 に比べて無視する近似（$1-\\alpha\\fallingdotseq1$）を使うと，$C$ はいくらと計算されるか．また，そのとき $\\alpha$ はいくらになり，近似が成り立っているといえるか．"
+     },
+     {
+      "id": "2",
+      "tex": "近似を使わずに，$C$ と第1段階の電離度 $\\alpha$ を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "このリン酸水溶液 $10.0\\,\\mathrm{mL}$ を完全に中和（$\\ce{Na3PO4}$ まで）するのに必要な $\\ce{NaOH}$ の物質量は，pH 2.0 の塩酸 $10.0\\,\\mathrm{mL}$ を中和するのに必要な $\\ce{NaOH}$ の物質量の何倍か．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$C=2.0\\times10^{-2}\\,\\mathrm{mol/L}$，$\\alpha=0.50$ となり，1 に比べて無視できないので近似は成り立たない"
+   },
+   {
+    "id": "2",
+    "tex": "$C=3.0\\times10^{-2}\\,\\mathrm{mol/L}$，$\\alpha=0.33$"
+   },
+   {
+    "id": "3",
+    "tex": "9.0 倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $[\\ce{H+}]=[\\ce{H2PO4-}]=1.0\\times10^{-2}$，$[\\ce{H3PO4}]\\fallingdotseq C$ とすると\n\\[ C=\\dfrac{[\\ce{H+}]^2}{K_1}=\\dfrac{(1.0\\times10^{-2})^2}{5.0\\times10^{-3}}=2.0\\times10^{-2}\\,\\mathrm{mol/L} \\]\nこのとき $\\alpha=\\dfrac{1.0\\times10^{-2}}{2.0\\times10^{-2}}=0.50$ となり，「$\\alpha\\ll1$」という仮定と矛盾する．\\textbf{近似は成り立たない}．$K_1$ が大きい（比較的強い）酸では，この近似は使えない．\n\n\\textbf{(2)} $[\\ce{H3PO4}]=C-[\\ce{H+}]$ として\n\\[ K_1=\\dfrac{[\\ce{H+}]^2}{C-[\\ce{H+}]}\\quad\\Rightarrow\\quad C=[\\ce{H+}]+\\dfrac{[\\ce{H+}]^2}{K_1}=1.0\\times10^{-2}+2.0\\times10^{-2}=\\boldsymbol{3.0\\times10^{-2}\\,\\mathrm{mol/L}} \\]\n\\[ \\alpha=\\dfrac{1.0\\times10^{-2}}{3.0\\times10^{-2}}=\\boldsymbol{0.33} \\]\n\n\\textbf{(3)} 中和に必要な塩基の量は，電離しているかどうかに関係なく，酸のもつ $\\ce{H}$ の総量で決まる．\n\\[ \\text{リン酸：}3\\times3.0\\times10^{-2}\\times\\dfrac{10.0}{1000}=9.0\\times10^{-4}\\,\\mathrm{mol},\\qquad \\text{塩酸：}1.0\\times10^{-2}\\times\\dfrac{10.0}{1000}=1.0\\times10^{-4}\\,\\mathrm{mol} \\]\nよって $\\boldsymbol{9.0}$ \\textbf{倍}．pH が同じでも，弱酸の水溶液ははるかに多くの塩基を中和できる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "電離定数が大きめの弱酸では電離度を 1 に比べて無視できず，[HA]=C−[H+] として扱う必要がある．中和に必要な塩基の量は電離の程度ではなく酸の価数と全濃度で決まるので，同じ pH でも多価の弱酸は強酸よりずっと多くの塩基を消費する．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "nitrogen-phosphorus",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電離平衡",
+  "リン酸",
+  "電離度",
+  "多価の酸",
+  "中和"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

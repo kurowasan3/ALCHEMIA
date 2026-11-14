@@ -1,0 +1,129 @@
+{
+ "id": "POL-PRT-046",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-05",
+ "topic": "分子式の差から読むトリプトファンからメラトニンへの生合成経路",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "pathway",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "体内では，アミノ酸の L-トリプトファン（図）から酵素 E1〜E4 による 4 段階の反応で，ホルモンのメラトニン $\\ce{C13H16N2O2}$ がつくられる．\n\\[\\text{L-トリプトファン }\\ce{C11H12N2O2}\\xrightarrow{\\text{E1}}\\mathrm X\\ \\ce{C11H12N2O3}\\xrightarrow{\\text{E2}}\\mathrm Y\\ \\ce{C10H12N2O}\\xrightarrow{\\text{E3}}\\mathrm Z\\ \\ce{C12H14N2O2}\\xrightarrow{\\text{E4}}\\text{メラトニン}\\]\n次のことがわかっている．ただし，五員環の NH（インドール環の NH）は酸性も塩基性も示さず，反応もしないものとする．\n・トリプトファンは塩化鉄(III) 水溶液で呈色しないが，X，Y，Z は呈色する．メラトニンは呈色しない．\n・E2 の反応では Y のほかに気体が 1 分子生じる．\n・E3 の反応では酢酸に由来するアセチル基 $\\ce{CH3CO-}$ が付く．Y は希塩酸に溶けるが，Z とメラトニンは希塩酸に溶けにくい．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "E1〜E4 の働きとして最も適当なものを，次の (a)〜(f) からそれぞれ選べ．\\\\\n(a) ベンゼン環にヒドロキシ基を導入する　(b) カルボキシ基を $\\ce{CO2}$ として除く（脱炭酸）　(c) アミノ基をアセチル化してアミド結合をつくる　(d) フェノール性ヒドロキシ基をメチル化してエーテル結合をつくる　(e) カルボキシ基を還元する　(f) アミノ基を酸化する"
+     },
+     {
+      "id": "2",
+      "tex": "トリプトファン，X，Y，Z，メラトニンのうち，不斉炭素原子をもつものをすべて答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "トリプトファン，X，Y，Z，メラトニンのうち，希塩酸にも水酸化ナトリウム水溶液にも塩をつくって溶けるものをすべて答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：分子式の差から読むトリプトファンからメラトニンへの生合成経路",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：分子式の差から読むトリプトファンからメラトニンへの生合成経路",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "E1：(a)　E2：(b)　E3：(c)　E4：(d)"
+   },
+   {
+    "id": "2",
+    "tex": "トリプトファン，X"
+   },
+   {
+    "id": "3",
+    "tex": "トリプトファン，X，Y"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{分子式の差を読む}\nE1：$\\ce{C11H12N2O2}\\to\\ce{C11H12N2O3}$ で O が 1 個増える．X から塩化鉄(III) で呈色するようになったので，ベンゼン環の H が OH に置き換わった（フェノール性 OH の導入）→ $\\boldsymbol{\\text{(a)}}$．\nE2：$\\ce{C11H12N2O3}-\\ce{C10H12N2O}=\\ce{CO2}$．気体 $\\ce{CO2}$ が抜けたので脱炭酸 → $\\boldsymbol{\\text{(b)}}$．$\\ce{C11H12N2O3 -> C10H12N2O + CO2}$\nE3：$\\ce{C10H12N2O}\\to\\ce{C12H14N2O2}$ は $\\ce{C2H2O}$ の増加で，H を 1 個 $\\ce{CH3CO-}$ に置き換えた形．Z はまだ呈色する（フェノール性 OH が残る）のに希塩酸に溶けなくなったので，塩基性のアミノ基がアミドになった → $\\boldsymbol{\\text{(c)}}$．\nE4：$\\ce{C12H14N2O2}\\to\\ce{C13H16N2O2}$ は $\\ce{CH2}$ の増加（H を $\\ce{CH3}$ に置換）．呈色しなくなったので，フェノール性 OH が $\\ce{-OCH3}$（エーテル）になった → $\\boldsymbol{\\text{(d)}}$．\n（構造は解答図．Y はセロトニン，Z は N-アセチルセロトニンである．）\n\n\\textbf{(2)}　トリプトファンと X は，$\\alpha$ 炭素に $\\ce{-H}$，$\\ce{-NH2}$，$\\ce{-COOH}$，$\\ce{-CH2-}$（環側）の 4 種類が付いた不斉炭素をもつ．脱炭酸で $\\ce{-COOH}$ が H になると，この炭素は $\\ce{-CH2-}$ で H を 2 個もつので不斉でなくなる．よって $\\boldsymbol{\\text{トリプトファン，X}}$．\n\n\\textbf{(3)}　希塩酸には塩基性の基（アミノ基），NaOH 水溶液には酸性の基（カルボキシ基またはフェノール性 OH）があれば溶ける．\nトリプトファン：$\\ce{-NH2}$ と $\\ce{-COOH}$ → 両方に溶ける．X：$\\ce{-NH2}$，$\\ce{-COOH}$，フェノール性 OH → 両方．Y：$\\ce{-NH2}$ とフェノール性 OH → 両方．Z：フェノール性 OH だけ（アミドは塩基性を示さない）→ NaOH 水溶液だけ．メラトニン：酸性・塩基性の基がない → どちらにも溶けにくい．\nよって $\\boldsymbol{\\text{トリプトファン，X，Y}}$．カルボキシ基がなくなっても（Y），フェノール性 OH があれば塩基の水溶液に溶ける点に注意．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "生合成の各段階を分子式の差（＋O，−CO₂，＋C₂H₂O，＋CH₂）と，塩化鉄(III) による呈色・酸への溶解性の変化から，ヒドロキシ化・脱炭酸・アミノ基のアセチル化・フェノール性 OH のメチル化と読み取る．脱炭酸で α 炭素の不斉が消え，酸性・塩基性の基の組合せで酸・塩基への溶解性が決まる．"
+ },
+ "concepts": [
+  "protein-amino",
+  "transition-metals",
+  "carbon-silicon"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "アミノ酸",
+  "生合成",
+  "脱炭酸",
+  "不斉炭素",
+  "フェノール",
+  "アミド"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,117 @@
+{
+ "id": "ORG-CBX-061",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-04",
+ "topic": "ヨードホルム反応で酸とアルコールが結びつくエステル C₉H₁₈O₂ の構造決定",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "structure",
+  "pathway"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "分子式 $\\ce{C9H18O2}$ の鎖式のエステル A を加水分解すると，アルコール B とカルボン酸 C が得られた．B はヨードホルム反応を示し，この反応で生じた有機化合物のナトリウム塩を希塩酸で処理すると C が得られた．また，B に濃硫酸を加えて加熱し脱水すると，アルケンが（シス-トランス異性体を区別して）2 種類生じた．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "B の炭素骨格を $\\ce{R-CH(OH)-CH3}$（R はアルキル基）と表すとき，C を R を用いた示性式で表せ．また，A の分子式から R の炭素数を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "脱水で生じるアルケンについての条件を使わないとき，A として考えられる構造は何種類か．示性式ですべて答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "脱水の結果から A を 1 つに決め，示性式で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "B のヨードホルム反応の化学反応式を，B の示性式を用いて書け（ヨウ素と水酸化ナトリウムを用いる）．"
+     },
+     {
+      "id": "5",
+      "tex": "A の分子中の不斉炭素原子の数を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "C は $\\ce{R-COOH}$，R の炭素数は 3"
+   },
+   {
+    "id": "2",
+    "tex": "2 種類：$\\ce{CH3CH2CH2COOCH(CH3)CH2CH2CH3}$ と $\\ce{(CH3)2CHCOOCH(CH3)CH(CH3)2}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{(CH3)2CHCOOCH(CH3)CH(CH3)2}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{(CH3)2CHCH(OH)CH3 + 4I2 + 6NaOH -> CHI3 + (CH3)2CHCOONa + 5NaI + 5H2O}$"
+   },
+   {
+    "id": "5",
+    "tex": "1 個"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　ヨードホルム反応では $\\ce{CH3-CH(OH)-}$ の部分の $\\ce{CH3}$ が $\\ce{CHI3}$ として外れ，残りがカルボン酸の塩になる：\n\\[ \\ce{R-CH(OH)-CH3} \\longrightarrow \\ce{R-COONa} + \\ce{CHI3} \\]\nよって C は $\\boldsymbol{\\ce{R-COOH}}$ で，\\textbf{酸とアルコールが同じ R をもつ}．A は $\\ce{R-COO-CH(CH3)-R}$ と書け，炭素数は $2r+3=9$ から $r=\\boldsymbol{3}$（H の数も $2(2r+1)+4=18$ で一致）．\n\n\\textbf{(2)}　$\\ce{C3H7}$ には直鎖のプロピル基と枝分かれのイソプロピル基の 2 種類があるので，A は $\\boldsymbol{2}$ 種類：\n\\[ \\ce{CH3CH2CH2COOCH(CH3)CH2CH2CH3}\\quad(\\text{B は 2-ペンタノール，C は酪酸}) \\]\n\\[ \\ce{(CH3)2CHCOOCH(CH3)CH(CH3)2}\\quad(\\text{B は 3-メチル-2-ブタノール，C は 2-メチルプロパン酸}) \\]\n\n\\textbf{(3)}　脱水では OH の炭素と，H をもつ隣の炭素の間に二重結合ができる．\n・2-ペンタノール：1-ペンテン，2-ペンテン（シス・トランス）の 3 種類．\\\\\n・3-メチル-2-ブタノール：3-メチル-1-ブテン，2-メチル-2-ブテン（シス-トランス異性体なし）の 2 種類．\\\\\n2 種類なので B は 3-メチル-2-ブタノール，A は $\\boldsymbol{\\ce{(CH3)2CHCOOCH(CH3)CH(CH3)2}}$．\n\n\\textbf{(4)}　$\\ce{R-CH(OH)CH3}$ は $\\ce{I2}$ でまず $\\ce{R-COCH3}$ に酸化され（$\\ce{I2}$ 1 mol），さらに $\\ce{CH3}$ の H 3 個が I に置き換わり（$\\ce{I2}$ 3 mol），塩基で切断される．全体で $\\ce{I2}$ 4 mol，$\\ce{NaOH}$ 6 mol：\n\\[ \\ce{(CH3)2CHCH(OH)CH3 + 4I2 + 6NaOH -> CHI3 + (CH3)2CHCOONa + 5NaI + 5H2O} \\]\n\n\\textbf{(5)}　アルコール部分の $\\ce{-O-CH(CH3)-CH(CH3)2}$ の CH（H，$\\ce{CH3}$，$\\ce{O-CO-}$，イソプロピル基が結合）だけが不斉炭素原子で $\\boldsymbol{1}$ 個．酸部分の $\\ce{(CH3)2CH-}$ の CH は同じ $\\ce{CH3}$ を 2 つもつので不斉ではない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ヨードホルム反応は R−CH(OH)CH₃ を炭素が 1 つ少ない R−COOH に変えるので，加水分解生成物の酸がアルコールのヨードホルム反応で得られるなら両者は同じアルキル基 R をもち，エステルは R−COO−CH(CH₃)−R と決まる．R の異性体は脱水で生じるアルケンの数で区別する．"
+ },
+ "concepts": [
+  "carboxylic-ester",
+  "organic-structure",
+  "hydrocarbon"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "エステル",
+  "ヨードホルム反応",
+  "構造決定",
+  "脱水",
+  "不斉炭素原子"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

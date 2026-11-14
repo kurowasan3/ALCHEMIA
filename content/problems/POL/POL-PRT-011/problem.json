@@ -1,0 +1,110 @@
+{
+ "id": "POL-PRT-011",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-05",
+ "topic": "窒素の定量によるアミノ酸の決定",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "structure"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "天然の $\\alpha$-アミノ酸 Q，R は，いずれも不斉炭素原子を 1 個もち，C，H，N，O だけからなる．アミノ酸中の窒素をすべてアンモニアに変えて定量したところ，Q $0.292\\,\\mathrm g$ から $4.00\\times10^{-3}\\,\\mathrm{mol}$，R $0.330\\,\\mathrm g$ から $2.00\\times10^{-3}\\,\\mathrm{mol}$ のアンモニアが得られた．また，炭素の質量パーセントは Q が $49.3\\,\\%$，R が $65.5\\,\\%$ であり，R はキサントプロテイン反応を示した．原子量は H = 1.0，C = 12，N = 14，O = 16 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "Q，R の窒素の質量パーセントを，それぞれ有効数字 3 桁で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "Q の分子中の窒素原子が 1 個であると仮定すると，Q の分子量はいくらになるか．また，この仮定が誤りである理由を，最も分子量の小さい $\\alpha$-アミノ酸であるグリシン（分子量 75）と比べて答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "Q の分子量と分子式を求め，Q の名称を答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "R の分子量を求め，R の名称を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "Q $19.2\\,\\%$，R $8.48\\,\\%$"
+   },
+   {
+    "id": "2",
+    "tex": "73．$\\alpha$-アミノ酸は少なくとも $\\ce{H2N-CH-COOH}$ の骨格をもち，分子量はグリシンの 75 以上になるはずだが，73 はそれより小さいから．"
+   },
+   {
+    "id": "3",
+    "tex": "分子量 146，$\\ce{C6H14N2O2}$，リシン"
+   },
+   {
+    "id": "4",
+    "tex": "分子量 165，フェニルアラニン"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1)　窒素の質量は アンモニアの物質量 $\\times14$．\n\\[ \\text{Q}:\\ \\frac{4.00\\times10^{-3}\\times14}{0.292}\\times100\\approx\\boldsymbol{19.2\\,\\%},\\qquad \\text{R}:\\ \\frac{2.00\\times10^{-3}\\times14}{0.330}\\times100\\approx\\boldsymbol{8.48\\,\\%} \\]\n\n(2)　N が 1 個なら，Q の物質量はアンモニアと同じ $4.00\\times10^{-3}\\,\\mathrm{mol}$ で，分子量は $0.292/(4.00\\times10^{-3})=\\boldsymbol{73}$．しかし $\\alpha$-アミノ酸で最小のグリシンでも 75 なので，73 はありえない．\n\n(3)　N が 2 個とすると，Q は $2.00\\times10^{-3}\\,\\mathrm{mol}$ で分子量 $\\boldsymbol{146}$．C の数は $146\\times0.493/12\\approx6.0$ より 6 個．N 2 個（28）と C 6 個（72）の残り $146-72-28=46$ を H と O で分けると，$\\ce{-COOH}$ をもつので O は 2 個（32），H は 14 個．分子式 $\\boldsymbol{\\ce{C6H14N2O2}}$，側鎖にアミノ基をもつ塩基性アミノ酸の $\\boldsymbol{\\text{リシン}}$ $\\ce{H2N(CH2)4CH(NH2)COOH}$．\n\n(4)　R は N 1 個とすると分子量 $0.330/(2.00\\times10^{-3})=\\boldsymbol{165}$．C の数は $165\\times0.655/12\\approx9.0$．ベンゼン環をもち（キサントプロテイン反応），$\\ce{C9H11NO2}$ の $\\boldsymbol{\\text{フェニルアラニン}}$ $\\ce{C6H5CH2CH(NH2)COOH}$ である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "窒素の定量からはアミノ酸の物質量が窒素原子の数を仮定して求まる．仮定した分子量が最小のアミノ酸より小さいなど不合理なら窒素が複数ある（塩基性アミノ酸）と判断し，炭素の割合と合わせて分子式を決める．"
+ },
+ "concepts": [
+  "protein-amino",
+  "nitrogen-phosphorus",
+  "carbon-silicon"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "アミノ酸",
+  "窒素の定量",
+  "分子量",
+  "リシン",
+  "フェニルアラニン",
+  "元素分析"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

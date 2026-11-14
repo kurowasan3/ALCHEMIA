@@ -1,0 +1,131 @@
+{
+ "id": "THE-ELC-084",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-07",
+ "topic": "抵抗につないだ空気亜鉛電池の電圧変化から読む電池質量の時間変化",
+ "course": "化学",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "空気亜鉛電池（全体の反応 $\\ce{2Zn + O2 -> 2ZnO}$）の両極に $100\\,\\Omega$ の抵抗だけをつないで放電させた．電池の両端の電圧 $V$ は，放電開始から $t_1=20.0$ 時間までは $V_1=1.40\\,\\mathrm{V}$ で一定であり，その後は時間に対して直線的に下がって $t_2=25.0$ 時間で $V_2=0.80\\,\\mathrm{V}$ となったので，そこで放電を止めた．回路を流れる電流は $I=V/R$（$R$ は抵抗）で表され，電池の質量の変化は全体の反応によるものだけとする．原子量は $\\ce{O}=16$，ファラデー定数は $9.65\\times10^{4}\\,\\mathrm{C/mol}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "電池の質量 $W$ の増加の速さ $\\dfrac{\\Delta W}{\\Delta t}$（g/s）を，そのときの電圧 $V$（V）を用いて表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "時刻 $t$ に対する $W$ のグラフの形として最も適切なものを次から選べ．\n（ア）$0\\sim t_1$ は直線，$t_1$ で折れ曲がって傾きの小さい直線になる．\n（イ）$0\\sim t_1$ は直線，$t_1$ 以後は折れ曲がらずにつながり，傾きがしだいに小さくなる曲線になる．\n（ウ）$0\\sim t_1$ は直線，$t_1$ 以後は傾きがしだいに大きくなる曲線になる．\n（エ）全体が 1 本の直線になる．"
+     },
+     {
+      "id": "3",
+      "tex": "放電を止めるまでに流れた電気量と，電池の質量の増加量 $W_2-W_0$ を有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$t_2$ における $W$–$t$ グラフの傾きは，$t_1$ より前の傾きの何倍か．有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "電池の質量の増加量が $W_2-W_0$ の 90.0 \\% に達したのは，放電開始から何時間後か．有効数字 3 桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：抵抗につないだ空気亜鉛電池の電圧変化から読む電池質量の時間変化",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\dfrac{\\Delta W}{\\Delta t}=\\dfrac{8\\,V}{R\\times9.65\\times10^{4}}=8.3\\times10^{-7}\\,V\\ \\mathrm{g/s}$"
+   },
+   {
+    "id": "2",
+    "tex": "（イ）"
+   },
+   {
+    "id": "3",
+    "tex": "電気量 $1.21\\times10^{3}\\,\\mathrm{C}$，増加量 $0.100\\,\\mathrm{g}$"
+   },
+   {
+    "id": "4",
+    "tex": "$0.57$ 倍"
+   },
+   {
+    "id": "5",
+    "tex": "$21.7$ 時間後"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 電子 1 mol あたり取り込まれる酸素は $\\ce{O}$ 原子 $1/2\\,\\mathrm{mol}$（$\\ce{O2}$ 1 mol で電子 4 mol），すなわち $8\\,\\mathrm{g}$．電流 $I=V/R$ のとき電子は毎秒 $I/F$ mol 流れるので\n\\[\\frac{\\Delta W}{\\Delta t}=\\frac{8V}{RF}=\\frac{8V}{100\\times9.65\\times10^{4}}\\approx\\boldsymbol{8.3\\times10^{-7}\\,V}\\ \\mathrm{g/s}.\\]\n\n\\textbf{(2)} グラフの傾きは $V$ に比例する．$t_1$ までは $V$ 一定で直線，$t_1$ 以後は $V$ が連続的に（とびなく）減っていくので，傾きは $t_1$ で急に変わらず，しだいに小さくなる（上に凸の放物線）．よって\\textbf{（イ）}．傾きが急に変わる（ア）は電流が不連続に変わる場合である．\n\n\\textbf{(3)} $0\\sim t_1$：$I=1.40/100=0.0140\\,\\mathrm{A}$，$t_1=72000\\,\\mathrm{s}$ で $0.0140\\times72000=1008\\,\\mathrm{C}$．\n$t_1\\sim t_2$：電流は $0.0140\\,\\mathrm{A}$ から $0.0080\\,\\mathrm{A}$ へ直線的に変わるので，平均 $0.0110\\,\\mathrm{A}$ と $18000\\,\\mathrm{s}$ の積で $198\\,\\mathrm{C}$．\n合計 $1206\\,\\mathrm{C}\\approx\\boldsymbol{1.21\\times10^{3}\\,\\mathrm{C}}$．\n質量増加 $\\dfrac{1206}{9.65\\times10^{4}}\\times8=\\boldsymbol{0.100\\,\\mathrm{g}}$．\n\n\\textbf{(4)} 傾きは $V$ に比例するので $V_2/V_1=0.80/1.40=\\boldsymbol{0.57}$ 倍．\n\n\\textbf{(5)} 90.0 \\% は電気量 $0.900\\times1206=1085.4\\,\\mathrm{C}$．$t_1$ までの $1008\\,\\mathrm{C}$ では足りないので，$t_1$ からさらに $77.4\\,\\mathrm{C}$ 流れる時刻 $t_1+\\tau$ を求める．$t_1$ 以後の電圧は $V=1.40-\\dfrac{0.60}{18000}\\tau$ なので，その間に流れる電気量は\n\\[\\frac{1}{100}\\left(1.40\\,\\tau-\\frac{0.60}{2\\times18000}\\tau^{2}\\right)=77.4.\\]\n$1.667\\times10^{-5}\\tau^{2}-1.40\\,\\tau+7740=0$ を解くと $\\tau\\approx5.95\\times10^{3}\\,\\mathrm{s}$（もう一方の解 $\\approx7.8\\times10^{4}\\,\\mathrm{s}$ は $18000\\,\\mathrm{s}$ を超えるので不適）．$\\tau=1.65$ 時間なので，$20.0+1.65=\\boldsymbol{21.7}$ \\textbf{時間後}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "電池の質量増加の速さは電流（＝電圧/抵抗）に比例するので，W–t グラフの傾きは V–t グラフをそのまま写したものになる．電圧が直線的に下がる区間では電気量が時間の 2 次式となり，質量増加の割合から時刻を求めるには 2 次方程式の解を区間の条件で選ぶ．"
+ },
+ "concepts": [
+  "electrolysis",
+  "amphoteric",
+  "battery"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "空気亜鉛電池",
+  "電気量",
+  "ファラデーの法則",
+  "グラフの読み取り",
+  "質量変化"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

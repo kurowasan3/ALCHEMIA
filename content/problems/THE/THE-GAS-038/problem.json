@@ -1,0 +1,115 @@
+{
+ "id": "THE-GAS-038",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-08",
+ "topic": "二量体形成と分子の体積で表す実在気体の圧縮因子",
+ "course": "化学",
+ "level": 5,
+ "minutes": 35,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "分子 M からなる気体の実在気体としてのふるまいを，次のモデルで考える．\n【モデル】分子間の引力の効果を，2 分子が一時的にくっついた M$_2$ をつくる平衡 $\\ce{2M <=>[\\text{}] M2}$ で表す．分子の体積の効果は，容器の体積 $V$ のうち，M の単位 1 個あたり $m$〔L〕の体積が分子自身に占められて動けない空間になる（M$_2$ も M 2 個分の $2m$ を占める）ことで表す．すなわち，M の単位の総物質量を $n_0$（すべて M として数えた量）とすると，自由に動ける空間の体積は $V_2 = V - n_0 N_{\\mathrm A} m$ で，この空間で M と M$_2$ は理想気体の混合物としてふるまい，\n\\[ P V_2 = (n_{\\mathrm M} + n_{\\mathrm{M_2}}) RT,\\qquad K = \\dfrac{p_{\\mathrm{M_2}}}{p_{\\mathrm M}^{\\,2}}\\ \\ (\\text{一定温度で一定}) \\]\nが成り立つ．ここで $P$ は気体の圧力，$p_{\\mathrm M}$，$p_{\\mathrm{M_2}}$ はそれぞれの分圧（$p_{\\mathrm M} + p_{\\mathrm{M_2}} = P$）である．圧縮因子を $Z = \\dfrac{PV}{n_0RT}$ とし，$N_{\\mathrm A} = 6.0\\times10^{23}\\,/\\mathrm{mol}$，$R = 8.3\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$Z$ を $P$，$p_{\\mathrm M}$，$m$，$T$ などを用いて表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "$KP \\ll 1$ の低圧では，$Z \\fallingdotseq 1 - \\left(K - \\dfrac{N_{\\mathrm A} m}{RT}\\right)P$ となることを示せ．"
+     },
+     {
+      "id": "3",
+      "tex": "300 K でこの気体の $Z$ を測定すると，$P \\to 0$ での $Z$–$P$ 曲線の傾きは $-2.4\\times10^{-8}\\,/\\mathrm{Pa}$ であった．また，非常に高い圧力では，$Z$ は直線 $Z = 0.50 + 1.6\\times10^{-8} P$（$P$ の単位は Pa）にしだいに近づいた．この直線の切片が 0.50 になる理由を説明し，$m$〔L〕と 300 K での $K$〔/Pa〕を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "300 K，$P = 5.0\\times10^{7}\\,\\mathrm{Pa}$ での $Z$ を有効数字 2 桁で求めよ．また，このとき M の単位のうち M$_2$ になっているものの割合を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "二量体の生成は発熱反応である．400 K では $K = 1.0\\times10^{-8}\\,/\\mathrm{Pa}$ であった．400 K では，どの圧力でも $Z > 1$ となることを示せ（$m$ は温度によらないとする）．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$Z = \\dfrac{P}{2P - p_{\\mathrm M}} + \\dfrac{N_{\\mathrm A} m P}{RT}$"
+   },
+   {
+    "id": "2",
+    "tex": "$p_{\\mathrm M} \\fallingdotseq P - KP^2$ より $\\dfrac{P}{2P - p_{\\mathrm M}} \\fallingdotseq 1 - KP$ となり，示される"
+   },
+   {
+    "id": "3",
+    "tex": "高圧では平衡が M$_2$ 側にほぼ完全にかたより，粒子の数が M の単位の数の半分になるから．$m = 6.6\\times10^{-26}\\,\\mathrm{L}$，$K = 4.0\\times10^{-8}\\,/\\mathrm{Pa}$"
+   },
+   {
+    "id": "4",
+    "tex": "$Z = 1.5$，割合 $\\dfrac{2}{3}$（67 %）"
+   },
+   {
+    "id": "5",
+    "tex": "$Z - 1 \\geqq \\left(\\dfrac{N_{\\mathrm A} m}{RT} - K\\right)P$ で，400 K では $\\dfrac{N_{\\mathrm A} m}{RT} = 1.2\\times10^{-8}\\,/\\mathrm{Pa} > K$ なので，すべての $P > 0$ で $Z > 1$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　M の単位の物質量 $n_0$ と，実際に飛んでいる粒子の物質量 $n_{\\mathrm M} + n_{\\mathrm{M_2}}$ を区別する．自由空間では分圧が物質量に比例するので，物質量の比を分圧の比で表せる．\n\n(1) 自由空間では $n_{\\mathrm M} : n_{\\mathrm{M_2}} = p_{\\mathrm M} : p_{\\mathrm{M_2}}$ で，$n_0 = n_{\\mathrm M} + 2n_{\\mathrm{M_2}}$ なので\n\\[ \\dfrac{n_{\\mathrm M} + n_{\\mathrm{M_2}}}{n_0} = \\dfrac{p_{\\mathrm M} + p_{\\mathrm{M_2}}}{p_{\\mathrm M} + 2p_{\\mathrm{M_2}}} = \\dfrac{P}{P + (P - p_{\\mathrm M})} = \\dfrac{P}{2P - p_{\\mathrm M}} \\]\n$V = V_2 + n_0 N_{\\mathrm A} m$ と $PV_2 = (n_{\\mathrm M} + n_{\\mathrm{M_2}})RT$ より\n\\[ Z = \\dfrac{PV}{n_0RT} = \\dfrac{n_{\\mathrm M} + n_{\\mathrm{M_2}}}{n_0} + \\dfrac{N_{\\mathrm A} m P}{RT} = \\boldsymbol{\\dfrac{P}{2P - p_{\\mathrm M}} + \\dfrac{N_{\\mathrm A} m P}{RT}} \\]\n\n(2) $p_{\\mathrm M} + Kp_{\\mathrm M}^{\\,2} = P$．$KP \\ll 1$ なら $p_{\\mathrm M} \\fallingdotseq P$ なので $Kp_{\\mathrm M}^{\\,2} \\fallingdotseq KP^2$，$p_{\\mathrm M} \\fallingdotseq P - KP^2$．\n\\[ \\dfrac{P}{2P - p_{\\mathrm M}} \\fallingdotseq \\dfrac{P}{P + KP^2} = \\dfrac{1}{1 + KP} \\fallingdotseq 1 - KP \\]\nよって $Z \\fallingdotseq 1 - \\left(K - \\dfrac{N_{\\mathrm A} m}{RT}\\right)P$．引力（二量体化）の効果 $K$ が体積の効果 $\\dfrac{N_{\\mathrm A}m}{RT}$ を上回ると，低圧で $Z<1$ になる．\n\n(3) $P$ が大きくなると $\\dfrac{p_{\\mathrm M}}{P}$ は 0 に近づく（$p_{\\mathrm M} \\fallingdotseq \\sqrt{P/K}$ 程度で，$P$ より増え方が遅い）．したがって $\\dfrac{P}{2P - p_{\\mathrm M}} \\to \\dfrac{1}{2}$：ほぼすべてが M$_2$ になり，粒子の数が $n_0$ の半分になるので，$Z$ は直線 $\\dfrac{1}{2} + \\dfrac{N_{\\mathrm A}m}{RT}P$ に近づく．切片 0.50 はこの「粒子数が半分」を表している．\n直線の傾きから\n\\[ N_{\\mathrm A} m = 1.6\\times10^{-8} \\times 8.3\\times10^{3} \\times 300 = 3.98\\times10^{-2}\\,\\mathrm{L/mol},\\qquad m = \\dfrac{3.98\\times10^{-2}}{6.0\\times10^{23}} = \\boldsymbol{6.6\\times10^{-26}\\,\\mathrm{L}} \\]\n（$6.6\\times10^{-23}\\,\\mathrm{cm^3}$，一辺約 0.4 nm の立方体程度で，分子の大きさとして妥当）．低圧の傾きは $-(K - 1.6\\times10^{-8}) = -2.4\\times10^{-8}$ なので $\\boldsymbol{K = 4.0\\times10^{-8}\\,/\\mathrm{Pa}}$．\n\n(4) $KP = 4.0\\times10^{-8}\\times5.0\\times10^{7} = 2.0$ で $KP \\ll 1$ ではないので，(2) の近似は使えない．$Kp_{\\mathrm M}^{\\,2} + p_{\\mathrm M} - P = 0$ を解くと\n\\[ p_{\\mathrm M} = \\dfrac{-1 + \\sqrt{1 + 4KP}}{2K} = \\dfrac{-1 + 3}{2\\times4.0\\times10^{-8}} = 2.5\\times10^{7}\\,\\mathrm{Pa} \\]\n\\[ Z = \\dfrac{5.0\\times10^{7}}{1.0\\times10^{8} - 2.5\\times10^{7}} + 1.6\\times10^{-8}\\times5.0\\times10^{7} = 0.667 + 0.80 = 1.47 \\fallingdotseq \\boldsymbol{1.5} \\]\nM$_2$ になっている M の単位の割合は $\\dfrac{2n_{\\mathrm{M_2}}}{n_0} = \\dfrac{2(P - p_{\\mathrm M})}{2P - p_{\\mathrm M}} = \\dfrac{5.0\\times10^{7}}{7.5\\times10^{7}} = \\boldsymbol{\\dfrac{2}{3}}$．二量体化がかなり進んでいても，体積の効果が大きいので $Z > 1$ になっている．\n\n(5) $Z - 1 = \\dfrac{P}{2P - p_{\\mathrm M}} - 1 + \\dfrac{N_{\\mathrm A}mP}{RT} = -\\dfrac{p_{\\mathrm{M_2}}}{p_{\\mathrm M} + 2p_{\\mathrm{M_2}}} + \\dfrac{N_{\\mathrm A}mP}{RT}$．ここで $p_{\\mathrm M} + 2p_{\\mathrm{M_2}} \\geqq p_{\\mathrm M}$，$p_{\\mathrm{M_2}} = Kp_{\\mathrm M}^{\\,2}$，$p_{\\mathrm M} \\leqq P$ より\n\\[ \\dfrac{p_{\\mathrm{M_2}}}{p_{\\mathrm M} + 2p_{\\mathrm{M_2}}} \\leqq \\dfrac{Kp_{\\mathrm M}^{\\,2}}{p_{\\mathrm M}} = Kp_{\\mathrm M} \\leqq KP \\qquad \\therefore\\ Z - 1 \\geqq \\left(\\dfrac{N_{\\mathrm A}m}{RT} - K\\right)P \\]\n400 K では $\\dfrac{N_{\\mathrm A}m}{RT} = \\dfrac{3.98\\times10^{-2}}{8.3\\times10^{3}\\times400} = 1.2\\times10^{-8}\\,/\\mathrm{Pa}$ で，$K = 1.0\\times10^{-8}\\,/\\mathrm{Pa}$ より大きい．よって $P > 0$ のすべてで $\\boldsymbol{Z > 1}$ となり，300 K で見られた $Z$ の極小（1 を下回る部分）は現れない．温度が上がると発熱反応である二量体化の $K$ が小さくなり，引力の効果が体積の効果に負けるためである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "分子間引力を二量体化平衡で，分子の体積を動けない空間で表すと，Z は「粒子数／M の単位の数」と体積項の和になる．低圧の初期勾配は K と体積項の差，高圧の漸近線は切片 1/2（完全な二量体化）と傾き（体積項）を与えるので，2 つのデータから K と分子の体積を逆算できる．近似が使える範囲（KP≪1）を判断し，使えないときは平衡を厳密に解く．"
+ },
+ "concepts": [
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "実在気体",
+  "圧縮因子",
+  "二量体化平衡",
+  "排除体積",
+  "近似の妥当性"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

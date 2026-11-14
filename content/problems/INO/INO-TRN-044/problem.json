@@ -1,0 +1,109 @@
+{
+ "id": "INO-TRN-044",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-07",
+ "topic": "3種の鉄の酸化物の混合物（成分は決まらず酸化数の内訳は決まる）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "酸化鉄(II) $\\ce{FeO}$，四酸化三鉄 $\\ce{Fe3O4}$，酸化鉄(III) $\\ce{Fe2O3}$ の3種だけからなる均一な粉末試料がある．各成分の割合はわかっていない．この試料について次の実験を行った．原子量は $\\mathrm{O}=16$，$\\mathrm{Fe}=56$ とし，反応はすべて完全に進むものとする．\n\\\\\n実験1：試料 $6.00\\,\\mathrm{g}$ を酸素中で質量が変わらなくなるまで加熱すると，すべて $\\ce{Fe2O3}$ になり，質量は $6.40\\,\\mathrm{g}$ になった．\n\\\\\n実験2：同じ試料 $6.00\\,\\mathrm{g}$ を水素中で加熱し，すべて単体の鉄に還元した（$\\ce{Fe3O4 + 4H2 -> 3Fe + 4H2O}$ など）．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "実験2で得られる鉄の質量 $[\\mathrm{g}]$ を有効数字3桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "実験2で反応した水素の物質量 $[\\mathrm{mol}]$ を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "試料 $6.00\\,\\mathrm{g}$ 中の鉄のうち，酸化数 $+2$ の鉄と $+3$ の鉄の物質量 $[\\mathrm{mol}]$ をそれぞれ有効数字2桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "実験1・2の結果だけから，試料中の $\\ce{FeO}$，$\\ce{Fe3O4}$，$\\ce{Fe2O3}$ それぞれの物質量は決まるか．決まらない場合は，$\\ce{Fe3O4}$ の物質量のとりうる最大値 $[\\mathrm{mol}]$ を有効数字2桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$4.48\\,\\mathrm{g}$"
+   },
+   {
+    "id": "2",
+    "tex": "$9.5\\times10^{-2}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "$+2$ の鉄 $5.0\\times10^{-2}\\,\\mathrm{mol}$，$+3$ の鉄 $3.0\\times10^{-2}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "4",
+    "tex": "決まらない．$\\ce{Fe3O4}$ の最大値は $1.5\\times10^{-2}\\,\\mathrm{mol}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　3成分の混合物でも，元素ごと（Fe と O）・酸化数ごと（$\\ce{Fe^2+}$ と $\\ce{Fe^3+}$）に数えれば，わかっている量だけで決まるものがある．\n\n\\textbf{(1)}　鉄原子は加熱しても還元しても保存される．$\\ce{Fe2O3}$（式量 160）$6.40\\,\\mathrm{g}$ は $0.0400\\,\\mathrm{mol}$ なので，鉄は $0.0800\\,\\mathrm{mol}$，質量は $0.0800\\times56=\\boldsymbol{4.48\\,\\mathrm{g}}$．\n\n\\textbf{(2)}　試料中の酸素は $6.00-4.48=1.52\\,\\mathrm{g}$，すなわち $\\dfrac{1.52}{16}=0.0950\\,\\mathrm{mol}$．水素による還元では O 原子 1 個を $\\ce{H2}$ 1 分子が $\\ce{H2O}$ として取り去るので，水素は $\\boldsymbol{9.5\\times10^{-2}\\,\\mathrm{mol}}$（どの成分でも $\\ce{FeO + H2 -> Fe + H2O}$，$\\ce{Fe2O3 + 3H2 -> 2Fe + 3H2O}$ のように O と $\\ce{H2}$ は 1:1）．\n\n\\textbf{(3)}　$+2$ の鉄を $x$，$+3$ の鉄を $y\\,[\\mathrm{mol}]$ とする．鉄の数：$x+y=0.0800$．酸化物は全体として電気的に中性で，$\\ce{O^2-}$ の負電荷を鉄の正電荷が打ち消すので $2x+3y=2\\times0.0950=0.190$．これを解いて $y=0.030$，$x=0.050$．よって $+2$ の鉄 $\\boldsymbol{5.0\\times10^{-2}\\,\\mathrm{mol}}$，$+3$ の鉄 $\\boldsymbol{3.0\\times10^{-2}\\,\\mathrm{mol}}$．（$\\ce{Fe3O4}$ は $\\ce{Fe^2+}$ 1 個と $\\ce{Fe^3+}$ 2 個を含むとみなせる．）\n\n\\textbf{(4)}　$\\ce{FeO}$ $a$，$\\ce{Fe3O4}$ $b$，$\\ce{Fe2O3}$ $c\\,[\\mathrm{mol}]$ とすると，わかっている式は\n\\[ a+3b+2c=0.0800\\ (\\text{Fe}),\\qquad a+4b+3c=0.0950\\ (\\text{O}) \\]\nの2本だけで，未知数は3つある．解くと $a=0.050-b$，$c=0.015-b$ となり，$b$ を決める条件がない（$+2$ の鉄 $a+b$，$+3$ の鉄 $2b+2c$ は $b$ によらない）．したがって各成分の量は\\textbf{決まらない}．$a\\ge0$，$c\\ge0$ より $0\\le b\\le0.015$ なので，$\\ce{Fe3O4}$ の最大値は $\\boldsymbol{1.5\\times10^{-2}\\,\\mathrm{mol}}$（このとき $\\ce{FeO}$ $0.035\\,\\mathrm{mol}$，$\\ce{Fe2O3}$ 0）．たとえば $b=0$（$\\ce{FeO}$ $0.050$，$\\ce{Fe2O3}$ $0.015\\,\\mathrm{mol}$）でも質量は $6.00\\,\\mathrm{g}$ になり，実験結果は同じになる．$\\ce{Fe3O4}$ は $\\ce{FeO}$ と $\\ce{Fe2O3}$ を 1:1 で合わせたものと元素組成も酸化数の内訳も同じなので，質量変化では区別できない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "FeO・Fe₃O₄・Fe₂O₃ の混合物では，酸化後の質量から Fe，元の質量との差から O の物質量が決まり，還元に要する H₂ は O と同じ物質量になる．電気的中性の式を加えると Fe²⁺・Fe³⁺ の量も決まるが，Fe₃O₄ が FeO＋Fe₂O₃ と等価なため成分ごとの量は1つ自由度が残り決まらない．"
+ },
+ "concepts": [
+  "transition-metals",
+  "mole",
+  "redox"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "鉄の酸化物",
+  "混合物",
+  "酸化数",
+  "電気的中性",
+  "物質量"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,102 @@
+{
+ "id": "POL-SUG-010",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-04",
+ "topic": "二糖の還元性と酸化銅(I)の量的関係",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "還元性を示す糖 1 mol がフェーリング液と反応すると，酸化銅(I) $\\ce{Cu2O}$ が 1 mol 生じるものとする．原子量は H = 1.0，C = 12，O = 16，Cu = 63.5 とし，マルトースとスクロースの分子量はともに 342 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "マルトース $3.42\\,\\mathrm g$ の水溶液に十分量のフェーリング液を加えて加熱すると，$\\ce{Cu2O}$ は何 g 生じるか．有効数字 3 桁で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "スクロース $3.42\\,\\mathrm g$ を完全に加水分解したのち中和し，十分量のフェーリング液を加えて加熱すると，$\\ce{Cu2O}$ は何 g 生じるか．有効数字 3 桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "マルトースとスクロースの混合物 $6.84\\,\\mathrm g$ がある．これをそのまま水に溶かして十分量のフェーリング液と反応させると，$\\ce{Cu2O}$ が $0.572\\,\\mathrm g$ 生じた．混合物中のマルトースの質量パーセントと，同じ混合物 $6.84\\,\\mathrm g$ を完全に加水分解してからフェーリング液と反応させたときに生じる $\\ce{Cu2O}$ の質量を，それぞれ有効数字 3 桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$1.43\\,\\mathrm g$"
+   },
+   {
+    "id": "2",
+    "tex": "$2.86\\,\\mathrm g$"
+   },
+   {
+    "id": "3",
+    "tex": "マルトース $20.0\\,\\%$，$\\ce{Cu2O}$ $5.72\\,\\mathrm g$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{Cu2O}$ の式量は $63.5\\times2+16=143$．\n\n(1)　マルトースは還元性を示す．$3.42/342=1.00\\times10^{-2}\\,\\mathrm{mol}$ なので，$\\ce{Cu2O}$ も $1.00\\times10^{-2}\\,\\mathrm{mol}$，\n\\[ 1.00\\times10^{-2}\\times143=\\boldsymbol{1.43\\,\\mathrm g} \\]\n\n(2)　スクロースそのものは還元性を示さないが，$\\ce{C12H22O11 + H2O -> 2C6H12O6}$（グルコース＋フルクトース）により，$1.00\\times10^{-2}\\,\\mathrm{mol}$ から単糖が $2.00\\times10^{-2}\\,\\mathrm{mol}$ 生じ，どちらも還元性を示す．\n\\[ 2.00\\times10^{-2}\\times143=\\boldsymbol{2.86\\,\\mathrm g} \\]\n\n(3)　加水分解前に反応するのはマルトースだけ．$0.572/143=4.00\\times10^{-3}\\,\\mathrm{mol}$ がマルトースの物質量で，その質量は $4.00\\times10^{-3}\\times342=1.368\\,\\mathrm g$．\n\\[ \\frac{1.368}{6.84}\\times100=\\boldsymbol{20.0\\,\\%} \\]\n加水分解後は，マルトースもスクロースも 1 mol から還元性の単糖を 2 mol 生じる．二糖の合計は $6.84/342=2.00\\times10^{-2}\\,\\mathrm{mol}$ なので，単糖は $4.00\\times10^{-2}\\,\\mathrm{mol}$，\n\\[ 4.00\\times10^{-2}\\times143=\\boldsymbol{5.72\\,\\mathrm g} \\]\n加水分解後の $\\ce{Cu2O}$ の量は，混合物の組成によらず二糖の合計物質量だけで決まる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "二糖は，還元性を示すもの（マルトース）は加水分解前でも 1 mol あたり還元剤として働くが，加水分解するとどちらも 2 mol の還元性単糖になる．加水分解前後の還元量の差から混合物の組成が求まる．"
+ },
+ "concepts": [
+  "saccharide",
+  "transition-metals",
+  "nitrogen-phosphorus"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "フェーリング反応",
+  "酸化銅(I)",
+  "マルトース",
+  "スクロース",
+  "加水分解",
+  "量的関係"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

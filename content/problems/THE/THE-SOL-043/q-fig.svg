@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 300" font-family="Noto Sans CJK JP, sans-serif" font-size="14">
+  <!-- cylinder walls -->
+  <path d="M90 30 L90 270 L250 270 L250 30" fill="none" stroke="currentColor" stroke-width="2.5"/>
+  <!-- piston -->
+  <rect x="92" y="70" width="156" height="16" fill="none" stroke="currentColor" stroke-width="2"/>
+  <line x1="170" y1="70" x2="170" y2="20" stroke="currentColor" stroke-width="3"/>
+  <text x="262" y="83" fill="currentColor">ピストン</text>
+  <!-- gas -->
+  <text x="170" y="140" text-anchor="middle" fill="currentColor">気体（体積 V）</text>
+  <!-- water -->
+  <line x1="92" y1="190" x2="248" y2="190" stroke="#1f5fbf" stroke-width="2"/>
+  <path d="M100 205 q10 -6 20 0 t20 0 M160 225 q10 -6 20 0 t20 0 M115 248 q10 -6 20 0 t20 0" fill="none" stroke="#1f5fbf" stroke-width="1.2" opacity="0.7"/>
+  <text x="170" y="240" text-anchor="middle" fill="currentColor">水 1.00 L</text>
+  <!-- thermostat -->
+  <rect x="60" y="110" width="220" height="172" fill="none" stroke="currentColor" stroke-dasharray="6 4" opacity="0.5"/>
+  <text x="280" y="297" text-anchor="end" fill="currentColor" font-size="13">27 ℃（300 K）</text>
+</svg>

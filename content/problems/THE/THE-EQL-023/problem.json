@@ -1,0 +1,115 @@
+{
+ "id": "THE-EQL-023",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "正・逆反応の速さの比と平衡定数",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "$\\ce{H2(g) + I2(g) <=> 2HI(g)}$ の正反応・逆反応の速さ $v_1$，$v_2$ は，速度定数 $k_1$，$k_2$ を用いて $v_1=k_1[\\ce{H2}][\\ce{I2}]$，$v_2=k_2[\\ce{HI}]^2$ で表されるとする．ある温度でこの反応の平衡定数は $K=36$ である．体積 $1.0\\,\\mathrm L$ の容器を用い，温度は常にこの温度に保つ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "平衡定数 $K$ を $k_1$，$k_2$ を用いて表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "容器に $\\ce{H2}$ と $\\ce{I2}$ を $0.50\\,\\mathrm{mol}$ ずつ入れて反応させた．$\\ce{HI}$ が $0.50\\,\\mathrm{mol}$ 生じた瞬間，$v_1$ は $v_2$ の何倍か．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の反応が平衡に達したときの $\\ce{HI}$ の物質量を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "別に，空の容器に $\\ce{H2}$ $0.10\\,\\mathrm{mol}$，$\\ce{I2}$ $0.10\\,\\mathrm{mol}$，$\\ce{HI}$ $0.80\\,\\mathrm{mol}$ を入れた．入れた直後の $v_1$ は $v_2$ の何倍か（有効数字2桁）．また，反応はどちら向きに進むか．"
+     },
+     {
+      "id": "5",
+      "tex": "(4) の混合物が平衡に達したときの $\\ce{HI}$ の物質量を求め，(3) の結果と比べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$K=\\dfrac{k_1}{k_2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$9.0$ 倍"
+   },
+   {
+    "id": "3",
+    "tex": "$0.75\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "4",
+    "tex": "$0.56$ 倍，左向き（$\\ce{HI}$ が分解する向き）"
+   },
+   {
+    "id": "5",
+    "tex": "$0.75\\,\\mathrm{mol}$，小問3の平衡と同じ"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 平衡では $v_1=v_2$ なので $k_1[\\ce{H2}][\\ce{I2}]=k_2[\\ce{HI}]^2$，よって $\\boldsymbol{K=\\dfrac{[\\ce{HI}]^2}{[\\ce{H2}][\\ce{I2}]}=\\dfrac{k_1}{k_2}}$．\\\\\n\\textbf{(2)} 任意の瞬間で\n\\[ \\dfrac{v_1}{v_2}=\\dfrac{k_1}{k_2}\\cdot\\dfrac{[\\ce{H2}][\\ce{I2}]}{[\\ce{HI}]^2}=\\dfrac{K}{Q}\\quad\\left(Q=\\dfrac{[\\ce{HI}]^2}{[\\ce{H2}][\\ce{I2}]}\\right) \\]\n$\\ce{HI}$ $0.50\\,\\mathrm{mol}$ のとき $\\ce{H2}=\\ce{I2}=0.25\\,\\mathrm{mol}$，$Q=\\dfrac{0.50^2}{0.25^2}=4.0$．$\\dfrac{v_1}{v_2}=\\dfrac{36}{4.0}=\\boldsymbol{9.0}$ 倍．\\\\\n\\textbf{(3)} $\\ce{H2}$ が $x$ mol 反応すると $\\dfrac{(2x)^2}{(0.50-x)^2}=36$，$\\dfrac{2x}{0.50-x}=6$ より $x=0.375$．$\\ce{HI}$ $\\boldsymbol{0.75\\,\\mathrm{mol}}$．\\\\\n\\textbf{(4)} $Q=\\dfrac{0.80^2}{0.10\\times0.10}=64>K$．$\\dfrac{v_1}{v_2}=\\dfrac{36}{64}=0.5625\\fallingdotseq\\boldsymbol{0.56}$ 倍で $v_1<v_2$，\\textbf{左向き}に進む．\\\\\n\\textbf{(5)} $\\ce{HI}$ が $2y$ mol 分解すると $\\dfrac{0.80-2y}{0.10+y}=6$ より $y=0.025$，$\\ce{HI}$ $\\boldsymbol{0.75\\,\\mathrm{mol}}$．(4) の混合物は H 原子・I 原子の量が (2) と同じ（$\\ce{H2}$・$\\ce{I2}$ 各 $0.50\\,\\mathrm{mol}$ 相当）なので，同じ温度・体積では\\textbf{どちら側から始めても同じ平衡状態}になる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "平衡定数が正・逆反応の速度定数の比であることから，任意の瞬間の正反応と逆反応の速さの比が K/Q になることを導き，反応の進む向きを判断する．原子の総量が同じなら反応物側・生成物側どちらから始めても同じ平衡に達する．"
+ },
+ "concepts": [
+  "chemical-equilibrium"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "平衡定数",
+  "速度定数",
+  "反応商",
+  "ヨウ化水素",
+  "平衡の向き"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

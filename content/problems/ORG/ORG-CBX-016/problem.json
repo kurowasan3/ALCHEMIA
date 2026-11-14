@@ -1,0 +1,110 @@
+{
+ "id": "ORG-CBX-016",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-04",
+ "topic": "ビニルエステルの加水分解とエノールの変化",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "condition",
+  "structure"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "分子式 $\\ce{C10H10O2}$ の3種類のエステル P，Q，R はいずれも安息香酸のエステルで，アルコール部分に炭素–炭素二重結合を1つもつ．\\\\\nP，Q，R をそれぞれ水酸化ナトリウム水溶液で加水分解すると，いずれも安息香酸ナトリウムと，次の化合物 p，q，r が得られた．\\\\\np：金属ナトリウムと反応しない．ヨードホルム反応を示すが，フェーリング液は還元しない．\\\\\nq：金属ナトリウムと反応しない．フェーリング液を還元するが，ヨードホルム反応は示さない．\\\\\nr：金属ナトリウムと反応して水素を発生し，臭素水を脱色する．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "p，q，r の示性式を書け．"
+     },
+     {
+      "id": "2",
+      "tex": "P と Q の加水分解では，アルコール部分がアルコールとして得られず，p や q になる．その理由を説明せよ．"
+     },
+     {
+      "id": "3",
+      "tex": "P，Q，R の示性式を書け．"
+     },
+     {
+      "id": "4",
+      "tex": "P，Q，R のうち，シス-トランス異性体が存在するものを選べ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "p：$\\ce{CH3COCH3}$，q：$\\ce{CH3CH2CHO}$，r：$\\ce{CH2=CHCH2OH}$"
+   },
+   {
+    "id": "2",
+    "tex": "加水分解で生じるのは，二重結合の炭素に OH が結合したエノール形のアルコールで，これは不安定なのですぐに H が移動してカルボニル化合物（ケトンやアルデヒド）に変わるから．"
+   },
+   {
+    "id": "3",
+    "tex": "P：$\\ce{C6H5COOC(CH3)=CH2}$，Q：$\\ce{C6H5COOCH=CHCH3}$，R：$\\ce{C6H5COOCH2CH=CH2}$"
+   },
+   {
+    "id": "4",
+    "tex": "Q"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "アルコール部分は $\\ce{C10H10O2 + H2O}$ から安息香酸 $\\ce{C7H6O2}$ を除いた $\\ce{C3H6O}$．\n\\textbf{(1)} p は Na と反応せず（OH なし），$\\ce{CH3CO-}$ をもち還元性なし → アセトン $\\ce{CH3COCH3}$．q は OH なしで還元性あり，ヨードホルム陰性 → プロピオンアルデヒド $\\ce{CH3CH2CHO}$．r は OH と $\\ce{C=C}$ をもつ → アリルアルコール $\\ce{CH2=CHCH2OH}$．\n\\textbf{(2)} エステルの O が二重結合の炭素についていると，加水分解でエノール $\\ce{C=C-OH}$ が生じ，すぐにケト形 $\\ce{CH-C=O}$ に変わる．\n\\[\\ce{CH2=C(OH)CH3 -> CH3COCH3}\\qquad \\ce{CH3CH=CHOH -> CH3CH2CHO}\\]\n（酢酸ビニルの加水分解でアセトアルデヒドが生じるのと同じ．）\n\\textbf{(3)} エノールの OH の位置から逆にたどる：P $=\\ce{C6H5COOC(CH3)=CH2}$，Q $=\\ce{C6H5COOCH=CHCH3}$，R $=\\ce{C6H5COOCH2CH=CH2}$（ふつうのアルコールのエステル）．\n\\textbf{(4)} 二重結合の両方の炭素に異なる2つの原子・原子団がつくのは \\textbf{Q} だけ（P と R は $\\ce{=CH2}$ をもつ）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "二重結合の炭素に酸素が結合したエステルを加水分解すると，エノールが生じてすぐにアルデヒドやケトンに変わる．生成物の性質（Na との反応・ヨードホルム・フェーリング）から，二重結合の位置を逆にたどってエステルを決める．"
+ },
+ "concepts": [
+  "carboxylic-ester",
+  "oxygen-sulfur",
+  "nitrogen-phosphorus"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "エノール",
+  "ビニルエステル",
+  "加水分解",
+  "ケト-エノール",
+  "フェーリング液",
+  "ヨードホルム反応"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

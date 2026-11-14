@@ -1,0 +1,115 @@
+{
+ "id": "INO-ALK-013",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-05",
+ "topic": "ナトリウム化合物の相互変換",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "pathway",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図は，ナトリウムの化合物どうしの変換を示したものである．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "変換 ①〜⑤ に最も適する操作を，次の（ア）〜（キ）から 1 つずつ選べ．\\\\\n（ア）水溶液に二酸化炭素を少量吸収させる　（イ）水溶液に二酸化炭素を過剰に通じる\\\\\n（ウ）固体を加熱する　（エ）水溶液に水酸化カルシウムを加え，沈殿をろ過する\\\\\n（オ）水溶液を陽イオン交換膜を用いて電気分解する　（カ）塩酸を加える　（キ）アンモニアを通じる"
+     },
+     {
+      "id": "2",
+      "tex": "変換 ③ と ⑤ を化学反応式で表せ．また，⑤ の変化が進む理由を簡潔に述べよ．"
+     },
+     {
+      "id": "3",
+      "tex": "水酸化ナトリウム $0.200\\,\\mathrm{mol}$ を含む水溶液に二酸化炭素 $0.150\\,\\mathrm{mol}$ を通じて，すべて吸収させた．水溶液中に生じた炭酸ナトリウムと炭酸水素ナトリウムの物質量をそれぞれ求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：ナトリウム化合物の相互変換",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "① オ　② ア　③ イ　④ ウ　⑤ エ"
+   },
+   {
+    "id": "2",
+    "tex": "③ $\\ce{Na2CO3 + CO2 + H2O -> 2NaHCO3}$，⑤ $\\ce{Na2CO3 + Ca(OH)2 -> CaCO3 + 2NaOH}$．水に溶けにくい炭酸カルシウムが沈殿して水溶液から除かれるから．"
+   },
+   {
+    "id": "3",
+    "tex": "炭酸ナトリウム $0.050\\,\\mathrm{mol}$，炭酸水素ナトリウム $0.100\\,\\mathrm{mol}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} ① 食塩水の電気分解（イオン交換膜法）：$\\ce{2NaCl + 2H2O -> 2NaOH + H2 + Cl2}$ → \\textbf{オ}．\n\n② $\\ce{2NaOH + CO2 -> Na2CO3 + H2O}$ → \\textbf{ア}．③ 炭酸ナトリウムにさらに $\\ce{CO2}$ を通じると炭酸水素ナトリウムになる → \\textbf{イ}．② と ③ は同じ「$\\ce{CO2}$ を通じる」操作で，量によって生成物が変わる．\n\n④ $\\ce{2NaHCO3 -> Na2CO3 + H2O + CO2}$（固体の加熱）→ \\textbf{ウ}．⑤ → \\textbf{エ}．\n\n\\textbf{(2)}\n③：$\\ce{Na2CO3 + CO2 + H2O -> 2NaHCO3}$\n\n⑤：$\\ce{Na2CO3 + Ca(OH)2 -> CaCO3 + 2NaOH}$\n\n\n⑤ は強塩基どうしの反応に見えるが，$\\ce{CaCO3}$ が水に溶けにくく沈殿として系外に出るため右に進む．\n\n\\textbf{(3)} まず ② が起こる．$\\ce{NaOH}$ $0.200\\,\\mathrm{mol}$ は $\\ce{CO2}$ $0.100\\,\\mathrm{mol}$ と反応して $\\ce{Na2CO3}$ $0.100\\,\\mathrm{mol}$ になる．残りの $\\ce{CO2}$ $0.050\\,\\mathrm{mol}$ は ③ で $\\ce{Na2CO3}$ $0.050\\,\\mathrm{mol}$ と反応し，$\\ce{NaHCO3}$ $0.100\\,\\mathrm{mol}$ を生じる．\n\\[ \\ce{Na2CO3}: 0.100-0.050=\\boldsymbol{0.050\\,\\mathrm{mol}},\\qquad \\ce{NaHCO3}: \\boldsymbol{0.100\\,\\mathrm{mol}} \\]\n（確認：Na は $0.050\\times2+0.100=0.200\\,\\mathrm{mol}$，C は $0.050+0.100=0.150\\,\\mathrm{mol}$ で保存されている．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "Na 化合物は電気分解・CO₂ の吸収・加熱・苛性化（Ca(OH)₂ で CaCO₃ を沈殿）で相互に変換できる．NaOH への CO₂ の吸収は量によって Na₂CO₃ → NaHCO₃ と段階的に進むので，CO₂ の量から生成物の組成が決まる．"
+ },
+ "concepts": [
+  "alkali-metals",
+  "precipitation",
+  "carbon-silicon"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "水酸化ナトリウム",
+  "炭酸ナトリウム",
+  "炭酸水素ナトリウム",
+  "二酸化炭素の吸収",
+  "反応経路"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

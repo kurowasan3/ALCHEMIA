@@ -1,0 +1,109 @@
+{
+ "id": "POL-RUB-006",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-03",
+ "topic": "スルホン化の割合と 2 価の陽イオンの交換",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "equation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "スチレン $\\ce{C8H8}$ と $p$-ジビニルベンゼン $\\ce{C10H10}$ を物質量の比 $4 : 1$ で共重合させた樹脂 $54.6\\,\\mathrm g$ を濃硫酸で処理すると，ベンゼン環の一部の H がスルホ基 $\\ce{-SO3H}$ に置き換わり，陽イオン交換樹脂 $86.6\\,\\mathrm g$ が得られた．この樹脂を $\\ce{R-SO3H}$ と表す．原子量は H = 1.0，C = 12，O = 16，S = 32 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "樹脂中のベンゼン環のうち，スルホン化されたものは何 % か．有効数字 3 桁で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "この陽イオン交換樹脂を詰めた管に，濃度不明の塩化マグネシウム水溶液 $20.0\\,\\mathrm{mL}$ を流し，さらに純水で十分に洗った．流出液と洗液を合わせて $0.100\\,\\mathrm{mol/L}$ 水酸化ナトリウム水溶液で滴定すると $32.0\\,\\mathrm{mL}$ を要した．樹脂で起こった反応をイオン反応式で書き，塩化マグネシウム水溶液のモル濃度を有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) と同じ濃度・同じ体積の塩化ナトリウム水溶液を流した場合，滴定に要する水酸化ナトリウム水溶液は何 mL か．"
+     },
+     {
+      "id": "4",
+      "tex": "この陽イオン交換樹脂 $10.0\\,\\mathrm g$ が交換できる $\\ce{H+}$ をすべて使うとすると，(2) の塩化マグネシウム水溶液を最大何 mL 処理できるか．有効数字 3 桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$80.0\\,\\%$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{2R-SO3H + Mg^2+ -> (R-SO3)2Mg + 2H+}$，$8.00\\times10^{-2}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "3",
+    "tex": "$16.0\\,\\mathrm{mL}$"
+   },
+   {
+    "id": "4",
+    "tex": "$289\\,\\mathrm{mL}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 「スチレン 4 分子＋ジビニルベンゼン 1 分子」の組の質量は $104\\times4 + 130 = 546$，その中にベンゼン環は 5 個．樹脂 $54.6\\,\\mathrm g$ は $0.100\\,\\mathrm{mol}$ 分の組なので，ベンゼン環は $0.500\\,\\mathrm{mol}$．\\\\\nH 1 個が $\\ce{SO3H}$ になると質量は $\\ce{SO3}$ の分（80）増える．増加は $86.6 - 54.6 = 32.0\\,\\mathrm g$ なので，スルホ基は $\\dfrac{32.0}{80} = 0.400\\,\\mathrm{mol}$．割合は $\\dfrac{0.400}{0.500}\\times100 = \\boldsymbol{80.0\\,\\%}$．\\\\\n\\textbf{(2)} $\\ce{Mg^2+}$ 1 個は $\\ce{H+}$ 2 個と交換される：\n\\[ \\ce{2R-SO3H + Mg^2+ -> (R-SO3)2Mg + 2H+} \\]\n出てきた $\\ce{H+}$ は $0.100\\times\\dfrac{32.0}{1000} = 3.20\\times10^{-3}\\,\\mathrm{mol}$ なので，$\\ce{Mg^2+}$ は $1.60\\times10^{-3}\\,\\mathrm{mol}$．濃度は $\\dfrac{1.60\\times10^{-3}}{0.0200} = \\boldsymbol{8.00\\times10^{-2}\\,\\mathrm{mol/L}}$．\\\\\n\\textbf{(3)} $\\ce{Na+}$ 1 個は $\\ce{H+}$ 1 個と交換されるので，出てくる $\\ce{H+}$ は半分の $1.60\\times10^{-3}\\,\\mathrm{mol}$．NaOH は $\\boldsymbol{16.0\\,\\mathrm{mL}}$．\\\\\n\\textbf{(4)} 樹脂 $1\\,\\mathrm g$ のスルホ基は $\\dfrac{0.400}{86.6}\\,\\mathrm{mol}$．$10.0\\,\\mathrm g$ では $\\dfrac{0.400\\times10.0}{86.6} = 4.619\\times10^{-2}\\,\\mathrm{mol}$．交換できる $\\ce{Mg^2+}$ はその半分の $2.309\\times10^{-2}\\,\\mathrm{mol}$ なので，体積は $\\dfrac{2.309\\times10^{-2}}{8.00\\times10^{-2}} = 0.2887\\,\\mathrm L$，すなわち $\\boldsymbol{289\\,\\mathrm{mL}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "スルホン化による質量増加（H→SO₃H で +80）からスルホ基の数を求め，イオン交換では 2 価の陽イオン 1 個が H⁺ 2 個と交換されることを使って濃度や処理できる量を計算する（1 価イオンとの比較）．"
+ },
+ "concepts": [
+  "rubber",
+  "functional-polymer",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "陽イオン交換樹脂",
+  "スルホン化",
+  "イオン交換",
+  "中和滴定",
+  "共重合"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

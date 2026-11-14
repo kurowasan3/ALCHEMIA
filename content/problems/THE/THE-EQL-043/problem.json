@@ -1,0 +1,108 @@
+{
+ "id": "THE-EQL-043",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "炭酸カルシウムの分解と黒鉛の反応の連成平衡",
+ "course": "化学",
+ "level": 5,
+ "minutes": 35,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "容積 $8.3\\,\\mathrm{L}$ の真空容器に炭酸カルシウムと黒鉛を入れて $1000\\,\\mathrm{K}$ に保つと，次の2つの平衡が同時に成り立ちうる．\n\\[ \\ce{CaCO3(s) <=> CaO(s) + CO2(g)} \\qquad K_{p1}=p_{\\ce{CO2}}=4.0\\times10^{3}\\,\\mathrm{Pa} \\]\n\\[ \\ce{C(s) + CO2(g) <=> 2CO(g)} \\qquad K_{p2}=\\frac{p_{\\ce{CO}}^{\\,2}}{p_{\\ce{CO2}}}=1.0\\times10^{5}\\,\\mathrm{Pa} \\]\nここで $K_{p1}$，$K_{p2}$ は $1000\\,\\mathrm{K}$ での圧平衡定数である．ただし，平衡定数の式は固体がその平衡に存在するときだけ成り立つ．気体定数は $8.3\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$，固体の体積は無視でき，$\\ce{CaO}$ と黒鉛は反応しないものとする．答えはすべて有効数字2桁で求めよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{CaCO3}$ $0.050\\,\\mathrm{mol}$ と黒鉛 $0.050\\,\\mathrm{mol}$ を入れた．平衡に達したとき，$\\ce{CO2}$ と $\\ce{CO}$ の分圧，全圧，残っている $\\ce{CaCO3}$ と黒鉛の物質量を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "黒鉛を十分に多く入れたとき，平衡に達した後も $\\ce{CaCO3}$ が残るためには，$\\ce{CaCO3}$ を何 mol より多く入れる必要があるか．また，$\\ce{CaCO3}$ を十分に多く入れたとき，黒鉛が残るためには，黒鉛を何 mol より多く入れる必要があるか．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\ce{CaCO3}$ $6.0\\times10^{-3}\\,\\mathrm{mol}$ と黒鉛 $0.050\\,\\mathrm{mol}$ を入れた．平衡に達したときの $\\ce{CO2}$ と $\\ce{CO}$ の分圧と全圧を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\ce{CaCO3}$ $0.050\\,\\mathrm{mol}$ と黒鉛 $5.0\\times10^{-3}\\,\\mathrm{mol}$ を入れた．十分に時間がたったときの $\\ce{CO2}$ と $\\ce{CO}$ の分圧と全圧，残っている $\\ce{CaCO3}$ の物質量を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$p_{\\ce{CO2}}=4.0\\times10^{3}\\,\\mathrm{Pa}$，$p_{\\ce{CO}}=2.0\\times10^{4}\\,\\mathrm{Pa}$，全圧 $2.4\\times10^{4}\\,\\mathrm{Pa}$，$\\ce{CaCO3}$ $3.6\\times10^{-2}\\,\\mathrm{mol}$，黒鉛 $4.0\\times10^{-2}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{CaCO3}$：$1.4\\times10^{-2}\\,\\mathrm{mol}$，黒鉛：$1.0\\times10^{-2}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "$p_{\\ce{CO2}}=1.0\\times10^{3}\\,\\mathrm{Pa}$，$p_{\\ce{CO}}=1.0\\times10^{4}\\,\\mathrm{Pa}$，全圧 $1.1\\times10^{4}\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "4",
+    "tex": "$p_{\\ce{CO2}}=4.0\\times10^{3}\\,\\mathrm{Pa}$，$p_{\\ce{CO}}=1.0\\times10^{4}\\,\\mathrm{Pa}$，全圧 $1.4\\times10^{4}\\,\\mathrm{Pa}$，$\\ce{CaCO3}$ $4.1\\times10^{-2}\\,\\mathrm{mol}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{換算}　$\\dfrac{V}{RT}=\\dfrac{8.3}{8.3\\times10^{3}\\times1000}=1.0\\times10^{-6}\\,\\mathrm{mol/Pa}$．分圧 $p$ の気体は $1.0\\times10^{-6}\\,p\\,\\mathrm{mol}$．\n\n\\textbf{物質収支}　$\\ce{CaCO3}$ が $n_1$ 分解して $\\ce{CO2}$ $n_1$ が生じ，そのうち $n_2$ が黒鉛 $n_2$ と反応して $\\ce{CO}$ $2n_2$ になる．よって\n\\[ n(\\ce{CO2})=n_1-n_2,\\quad n(\\ce{CO})=2n_2 \\ \\Longrightarrow\\ n_1=n(\\ce{CO2})+\\frac{n(\\ce{CO})}{2},\\quad n_2=\\frac{n(\\ce{CO})}{2} \\]\n\\textbf{場合分けの考え方}　$\\ce{CaCO3}$ が残れば $p_{\\ce{CO2}}=K_{p1}$ に固定され，黒鉛が残れば $p_{\\ce{CO}}^{\\,2}=K_{p2}\\,p_{\\ce{CO2}}$ が成り立つ．固体が使い尽くされたら，その平衡の式は使えず，代わりに「反応商が平衡定数に届かない」ことが条件になる．\n\n\\textbf{(1)}　両方の固体が残ると仮定すると $p_{\\ce{CO2}}=4.0\\times10^{3}$，$p_{\\ce{CO}}=\\sqrt{1.0\\times10^{5}\\times4.0\\times10^{3}}=2.0\\times10^{4}\\,\\mathrm{Pa}$．このとき\n\\[ n_1=(4.0\\times10^{3}+1.0\\times10^{4})\\times10^{-6}=0.014\\,\\mathrm{mol},\\qquad n_2=1.0\\times10^{4}\\times10^{-6}=0.010\\,\\mathrm{mol} \\]\nどちらも入れた量 0.050 mol より少ないので仮定は正しい．$p_{\\ce{CO2}}=\\boldsymbol{4.0\\times10^{3}\\,\\mathrm{Pa}}$，$p_{\\ce{CO}}=\\boldsymbol{2.0\\times10^{4}\\,\\mathrm{Pa}}$，全圧 $\\boldsymbol{2.4\\times10^{4}\\,\\mathrm{Pa}}$，$\\ce{CaCO3}$ $0.050-0.014=\\boldsymbol{3.6\\times10^{-2}\\,\\mathrm{mol}}$，黒鉛 $0.050-0.010=\\boldsymbol{4.0\\times10^{-2}\\,\\mathrm{mol}}$．\n\n\\textbf{(2)}　両方の固体が残る限り気体の組成は (1) と同じで，それに必要な分解量は $\\ce{CaCO3}$ $0.014\\,\\mathrm{mol}$，黒鉛 $0.010\\,\\mathrm{mol}$．これより多く入れれば残るので，$\\ce{CaCO3}$ $\\boldsymbol{1.4\\times10^{-2}\\,\\mathrm{mol}}$，黒鉛 $\\boldsymbol{1.0\\times10^{-2}\\,\\mathrm{mol}}$．（$\\ce{CaCO3}$ の分解量は $\\ce{CO2}$ だけでなく $\\ce{CO}$ に変わった分も含むことに注意．）\n\n\\textbf{(3)}　$6.0\\times10^{-3}<1.4\\times10^{-2}$ なので $\\ce{CaCO3}$ はすべて分解し，黒鉛は残る．炭素の保存（$\\ce{CaCO3}$ 由来）より $p_{\\ce{CO2}}+\\dfrac{p_{\\ce{CO}}}{2}=\\dfrac{6.0\\times10^{-3}}{1.0\\times10^{-6}}=6.0\\times10^{3}$，黒鉛があるので $p_{\\ce{CO2}}=\\dfrac{p_{\\ce{CO}}^{\\,2}}{1.0\\times10^{5}}$．$p_{\\ce{CO}}=z$ とおくと\n\\[ \\frac{z^{2}}{1.0\\times10^{5}}+\\frac{z}{2}=6.0\\times10^{3}\\ \\Longrightarrow\\ z^{2}+5.0\\times10^{4}z-6.0\\times10^{8}=0 \\]\n\\[ z=\\frac{-5.0\\times10^{4}+\\sqrt{2.5\\times10^{9}+2.4\\times10^{9}}}{2}=\\frac{-5.0\\times10^{4}+7.0\\times10^{4}}{2}=1.0\\times10^{4} \\]\n$p_{\\ce{CO}}=\\boldsymbol{1.0\\times10^{4}\\,\\mathrm{Pa}}$，$p_{\\ce{CO2}}=\\boldsymbol{1.0\\times10^{3}\\,\\mathrm{Pa}}$，全圧 $\\boldsymbol{1.1\\times10^{4}\\,\\mathrm{Pa}}$．\n\n確認：$p_{\\ce{CO2}}=1.0\\times10^{3}<K_{p1}$ なので，$\\ce{CaCO3}$ が存在できない（あればさらに分解する）ことと矛盾しない．黒鉛の消費は $5.0\\times10^{-3}\\,\\mathrm{mol}$ で，0.050 mol に足りる．\n\n\\textbf{(4)}　$5.0\\times10^{-3}<1.0\\times10^{-2}$ なので黒鉛はすべて反応し，$\\ce{CaCO3}$ は残る．$p_{\\ce{CO2}}=K_{p1}=\\boldsymbol{4.0\\times10^{3}\\,\\mathrm{Pa}}$，$\\ce{CO}$ は黒鉛の量で決まり $n(\\ce{CO})=2\\times5.0\\times10^{-3}=1.0\\times10^{-2}\\,\\mathrm{mol}$，$p_{\\ce{CO}}=\\boldsymbol{1.0\\times10^{4}\\,\\mathrm{Pa}}$．全圧 $\\boldsymbol{1.4\\times10^{4}\\,\\mathrm{Pa}}$．\n\n確認：$\\dfrac{p_{\\ce{CO}}^{\\,2}}{p_{\\ce{CO2}}}=\\dfrac{(1.0\\times10^{4})^{2}}{4.0\\times10^{3}}=2.5\\times10^{4}<K_{p2}$ で，黒鉛があればさらに反応する状態なので，黒鉛がなくなったことと矛盾しない．\n\n$\\ce{CaCO3}$ の分解量 $n_1=(4.0\\times10^{3}+5.0\\times10^{3})\\times10^{-6}=9.0\\times10^{-3}\\,\\mathrm{mol}$，残り $0.050-0.009=\\boldsymbol{4.1\\times10^{-2}\\,\\mathrm{mol}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "固体が関わる2つの平衡が CO₂ を共有して連成する系で，それぞれの固体が残るかどうかで成り立つ式が変わる．両方残る場合の必要量を境目として3通りに場合分けし，固体が尽きた側は「反応商が平衡定数に届かない」ことで解の正しさを確かめる．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "alkali-metals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "固体を含む平衡",
+  "連成平衡",
+  "圧平衡定数",
+  "場合分け",
+  "炭酸カルシウム"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

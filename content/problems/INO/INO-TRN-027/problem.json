@@ -1,0 +1,108 @@
+{
+ "id": "INO-TRN-027",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-07",
+ "topic": "塩基性炭酸銅の加熱分解と組成の決定",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "銅の鉱物には，炭酸銅(II) と水酸化銅(II) が一定の比で結びついた塩基性炭酸銅 $x\\ce{CuCO3}\\cdot y\\ce{Cu(OH)2}$ がいくつかある（青色の藍銅鉱，緑色のくじゃく石など）．ある塩基性炭酸銅の結晶 $3.46\\,\\mathrm{g}$ を，乾いた空気を通じながら試験管中で十分に加熱したところ，黒色の固体 $2.40\\,\\mathrm{g}$ が残った．発生した気体をすべて管 P，管 Q の順に通したところ，管 P の質量は $0.18\\,\\mathrm{g}$，管 Q の質量は $0.88\\,\\mathrm{g}$ 増加した．管 P と管 Q には，塩化カルシウムかソーダ石灰のどちらかが詰めてある．原子量は H=1.0，C=12，O=16，Cu=64 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "管 P，管 Q に詰めたものはそれぞれどちらか．また，管をつなぐ順を逆にすると，どのような不都合が生じるか．"
+     },
+     {
+      "id": "2",
+      "tex": "残った黒色の固体は何か．化学式で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "この塩基性炭酸銅の $x:y$ を最も簡単な整数比で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "残った黒色の固体 $2.40\\,\\mathrm{g}$ を炭素の粉末と混ぜて加熱すると，赤色の金属と二酸化炭素が生じた．この反応の化学反応式を書き，得られる金属の質量を有効数字3桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "管 P：塩化カルシウム，管 Q：ソーダ石灰．逆にすると，先のソーダ石灰が水と二酸化炭素の両方を吸収してしまい，それぞれの質量を分けて測れない．"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{CuO}$"
+   },
+   {
+    "id": "3",
+    "tex": "$x:y=2:1$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{2CuO + C -> 2Cu + CO2}$，$1.92\\,\\mathrm{g}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 塩化カルシウム（中性の乾燥剤）は水だけを吸収し，ソーダ石灰（$\\ce{CaO}$ と $\\ce{NaOH}$，塩基性）は水と二酸化炭素（酸性の気体）の両方を吸収する．そこで先に塩化カルシウムで水だけを除き，次にソーダ石灰で二酸化炭素を吸収させる．管 P は\\textbf{塩化カルシウム}，管 Q は\\textbf{ソーダ石灰}．逆の順にすると最初のソーダ石灰が両方を吸収するので，水と二酸化炭素の量を区別できない．\\\\\n\\textbf{(2)} 炭酸銅(II) も水酸化銅(II) も加熱すると酸化銅(II) になる．黒色の固体は $\\boldsymbol{\\ce{CuO}}$．\\\\\n\\textbf{(3)} $\\ce{CuO}$：$\\dfrac{2.40}{80}=0.0300\\,\\mathrm{mol}$，$\\ce{H2O}$：$\\dfrac{0.18}{18}=0.0100\\,\\mathrm{mol}$，$\\ce{CO2}$：$\\dfrac{0.88}{44}=0.0200\\,\\mathrm{mol}$．\\\\\n$\\ce{CuCO3 -> CuO + CO2}$，$\\ce{Cu(OH)2 -> CuO + H2O}$ より，$\\ce{CuCO3}$ は $0.0200\\,\\mathrm{mol}$，$\\ce{Cu(OH)2}$ は $0.0100\\,\\mathrm{mol}$．$x:y=\\boldsymbol{2:1}$（藍銅鉱 $2\\ce{CuCO3}\\cdot\\ce{Cu(OH)2}$）．\\\\\n検算：Cu は $0.0200+0.0100=0.0300\\,\\mathrm{mol}$ で $\\ce{CuO}$ と一致する．式量 $2\\times124+98=346$ で，$0.0100\\,\\mathrm{mol}$ は $3.46\\,\\mathrm{g}$ となり試料の質量とも一致する．加熱の反応は\n\\[\\ce{Cu3(CO3)2(OH)2 -> 3CuO + 2CO2 + H2O}\\]\n\\textbf{(4)} $\\ce{2CuO + C -> 2Cu + CO2}$．Cu は $0.0300\\,\\mathrm{mol}$ なので $0.0300\\times64=\\boldsymbol{1.92\\,\\mathrm{g}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "塩基性炭酸銅を加熱すると炭酸塩部分は CO₂ を，水酸化物部分は H₂O を出してともに CuO になるので，吸収管で水と二酸化炭素を分けて測れば組成比が決まる．水だけを吸収する塩化カルシウムを先に，両方を吸収するソーダ石灰を後につなぐ順序の理由を判断する．"
+ },
+ "concepts": [
+  "transition-metals",
+  "alkali-metals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "塩基性炭酸銅",
+  "熱分解",
+  "吸収管",
+  "組成の決定",
+  "酸化銅(II)"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

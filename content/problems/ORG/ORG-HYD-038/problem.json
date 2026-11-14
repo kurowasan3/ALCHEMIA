@@ -1,0 +1,109 @@
+{
+ "id": "ORG-HYD-038",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-02",
+ "topic": "アルケンの水和（マルコフニコフ則）と脱水（ザイツェフ則）で元のアルケンにもどるか",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "condition",
+  "pathway"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "分子式 $\\ce{C6H12}$ のアルケン (a)〜(e) に，酸性条件で水を付加させた（水和）．さらに，得られたアルコールを酸性条件で加熱して分子内で脱水させた．水和はマルコフニコフ則（二重結合の炭素のうち，水素原子が多く結合している方に H が付加する）に，脱水はザイツェフ則（二重結合の炭素により多くのアルキル基が結合したアルケンが優先して生じる）に従い，それぞれ主生成物だけを考える．反応中に炭素骨格の変化や二重結合の移動は起こらないものとし，シス-トランス異性体は区別しない．\n\\[\\begin{array}{lll}\n\\text{(a)}\\ \\ce{CH2=C(CH3)CH2CH2CH3} & \\text{(b)}\\ \\ce{(CH3)2C=CHCH2CH3} & \\text{(c)}\\ \\ce{CH2=CHCH2CH(CH3)2} \\\\\n\\text{(d)}\\ \\ce{CH2=C(CH3)CH(CH3)2} & \\text{(e)}\\ \\ce{CH2=CHC(CH3)3} &\n\\end{array}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "(a)〜(e) の水和で生じる主生成物のアルコールをそれぞれ示性式で示せ．同じ化合物になるものがあれば，それも答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) のアルコールのうち，二クロム酸カリウムの硫酸酸性水溶液で酸化されないものを生じるアルケンをすべて記号で選べ．"
+     },
+     {
+      "id": "3",
+      "tex": "(c) と (d) から得られたアルコールの脱水で生じる主生成物のアルケンを，それぞれ示性式で示せ．"
+     },
+     {
+      "id": "4",
+      "tex": "水和に続いて脱水を行うと，元のアルケンが主生成物としてもどってくるものを (a)〜(e) からすべて選べ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "(a) $\\ce{(CH3)2C(OH)CH2CH2CH3}$　(b) $\\ce{(CH3)2C(OH)CH2CH2CH3}$　(c) $\\ce{CH3CH(OH)CH2CH(CH3)2}$　(d) $\\ce{(CH3)2C(OH)CH(CH3)2}$　(e) $\\ce{CH3CH(OH)C(CH3)3}$．(a) と (b) は同じ化合物になる．"
+   },
+   {
+    "id": "2",
+    "tex": "(a)，(b)，(d)"
+   },
+   {
+    "id": "3",
+    "tex": "(c)：$\\ce{CH3CH=CHCH(CH3)2}$，(d)：$\\ce{(CH3)2C=C(CH3)2}$"
+   },
+   {
+    "id": "4",
+    "tex": "(b)，(e)"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 水和}　H は水素原子の多い方の炭素に，$\\ce{-OH}$ はもう一方の炭素に結合する．\\\\\n(a) $\\ce{CH2=}$ に H，第三級の炭素に OH：$\\boldsymbol{\\ce{(CH3)2C(OH)CH2CH2CH3}}$（2-メチル-2-ペンタノール）．\\\\\n(b) $\\ce{=CH-}$（H 1 個）に H，$\\ce{(CH3)2C=}$（H 0 個）に OH：やはり $\\boldsymbol{\\ce{(CH3)2C(OH)CH2CH2CH3}}$．よって \\textbf{(a) と (b) は同じアルコール}になる．\\\\\n(c) $\\boldsymbol{\\ce{CH3CH(OH)CH2CH(CH3)2}}$（4-メチル-2-ペンタノール）．\\\\\n(d) $\\boldsymbol{\\ce{(CH3)2C(OH)CH(CH3)2}}$（2,3-ジメチル-2-ブタノール）．\\\\\n(e) $\\boldsymbol{\\ce{CH3CH(OH)C(CH3)3}}$（3,3-ジメチル-2-ブタノール）．\n\n\\textbf{(2)}　OH の結合した炭素に H がない第三級アルコールは酸化されない．(a)(b)(d) のアルコールが第三級なので $\\boldsymbol{\\text{(a)，(b)，(d)}}$．\n\n\\textbf{(3)・(4) 脱水}　OH の炭素と，H をもつ隣の炭素との間に二重結合ができる．候補が複数あれば，二重結合の炭素にアルキル基が多く結合する方が主生成物．\\\\\n(a)(b) のアルコール $\\ce{(CH3)2C(OH)CH2CH2CH3}$：隣の炭素は $\\ce{CH3}$（→ $\\ce{CH2=C(CH3)CH2CH2CH3}$，アルキル基 2 個）と $\\ce{CH2}$（→ $\\ce{(CH3)2C=CHCH2CH3}$，アルキル基 3 個）．主生成物は (b) なので，(a) はもどらず (b) はもどる．\\\\\n(c) のアルコール $\\ce{CH3CH(OH)CH2CH(CH3)2}$：$\\ce{CH3}$ 側なら $\\ce{CH2=CH-}$（アルキル基 1 個），$\\ce{CH2}$ 側なら $\\boldsymbol{\\ce{CH3CH=CHCH(CH3)2}}$（アルキル基 2 個）が主生成物で，(c) はもどらない．\\\\\n(d) のアルコール $\\ce{(CH3)2C(OH)CH(CH3)2}$：$\\ce{CH(CH3)2}$ 側に二重結合をつくると $\\boldsymbol{\\ce{(CH3)2C=C(CH3)2}}$（アルキル基 4 個）が主生成物で，(d) はもどらない．\\\\\n(e) のアルコール $\\ce{CH3CH(OH)C(CH3)3}$：隣の炭素のうち $\\ce{C(CH3)3}$ の炭素には H がないので，二重結合は $\\ce{CH3}$ 側にしかできず，$\\ce{CH2=CHC(CH3)3}$ だけが生じる．よって (e) はもどる．\\\\\n以上より元にもどるのは $\\boldsymbol{\\text{(b)，(e)}}$．(b) は「もともと最も多くアルキル基をもつアルケン」，(e) は「脱水の向きが 1 通りしかない」ために元にもどる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "水和（マルコフニコフ則）と脱水（ザイツェフ則）を続けて行うと，アルコールを経由して二重結合が最も置換基の多い位置へ移る．元のアルケンがもどるのは，それがすでに最も置換されたアルケンであるか，脱水の向きが隣の炭素の H の有無で 1 通りに限られる場合である．"
+ },
+ "concepts": [
+  "hydrocarbon",
+  "carbon-silicon",
+  "alcohol-carbonyl"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "マルコフニコフ則",
+  "ザイツェフ則",
+  "水和",
+  "脱水",
+  "第三級アルコール"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

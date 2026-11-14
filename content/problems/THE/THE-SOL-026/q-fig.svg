@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 300" width="420" height="300" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="none" stroke="currentColor">
+  <!-- ビーカー -->
+  <path d="M40 120 V280 H380 V120" stroke-width="2"/>
+  <rect x="42" y="232" width="336" height="46" fill="currentColor" fill-opacity="0.08" stroke="none"/>
+  <line x1="42" y1="232" x2="378" y2="232" stroke-width="1.5"/>
+  <!-- 図 a：はじめ -->
+  <path d="M100 232 V32 H130 V232" stroke-width="2"/>
+  <line x1="98" y1="232" x2="132" y2="232" stroke="#1f5fbf" stroke-width="4"/>
+  <g fill="currentColor" stroke="none">
+    <circle cx="106" cy="226" r="3"/><circle cx="114" cy="226" r="3"/><circle cx="122" cy="226" r="3"/>
+    <text x="78" y="24">はじめ</text>
+    <text x="140" y="200">塩化カルシウム</text><text x="140" y="216">の結晶</text>
+  </g>
+  <line x1="138" y1="208" x2="124" y2="222" stroke-width="1"/>
+  <!-- 図 b：平衡後 -->
+  <path d="M260 232 V32 H290 V232" stroke-width="2"/>
+  <rect x="262" y="72" width="26" height="160" fill="currentColor" fill-opacity="0.3" stroke="none"/>
+  <line x1="262" y1="72" x2="288" y2="72" stroke-width="1.5"/>
+  <line x1="258" y1="232" x2="292" y2="232" stroke="#1f5fbf" stroke-width="4"/>
+  <!-- 寸法 -->
+  <line x1="245" y1="32" x2="245" y2="232" stroke-width="1"/>
+  <path d="M241 38 L245 30 L249 38 M241 226 L245 234 L249 226" stroke-width="1"/>
+  <line x1="305" y1="32" x2="305" y2="72" stroke-width="1"/>
+  <path d="M301 38 L305 30 L309 38 M301 66 L305 74 L309 66" stroke-width="1"/>
+  <line x1="290" y1="32" x2="312" y2="32" stroke-dasharray="3 3" opacity="0.5"/>
+  <line x1="290" y1="72" x2="312" y2="72" stroke-dasharray="3 3" opacity="0.5"/>
+  <g fill="currentColor" stroke="none">
+    <text x="238" y="24">平衡後</text>
+    <text x="226" y="136">L</text>
+    <text x="314" y="57">h</text>
+    <text x="312" y="140">水溶液</text>
+    <text x="300" y="258">半透膜</text>
+    <text x="54" y="262">水</text>
+  </g>
+  <line x1="310" y1="136" x2="284" y2="136" stroke-width="1"/>
+  <line x1="298" y1="252" x2="284" y2="236" stroke-width="1"/>
+</svg>

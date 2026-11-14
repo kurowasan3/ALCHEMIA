@@ -1,0 +1,117 @@
+{
+ "id": "THE-ELC-069",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-07",
+ "topic": "電極の質量変化と流れた電気量から電池の電極金属を決める（モル質量／価数）",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ダニエル電池と同じしくみで，2 種類の金属 X，Y をそれぞれその金属の陽イオンを含む水溶液に浸し，素焼き板で仕切った電池をつくった．X，Y は次の金属のどれかである．\n\\[ \\ce{Mg},\\ \\ce{Fe},\\ \\ce{Ni},\\ \\ce{Zn},\\ \\ce{Sn},\\ \\ce{Pb},\\ \\ce{Cu},\\ \\ce{Ag} \\]\nこの電池を $0.100\\,\\mathrm{A}$ の一定電流で $64\\,$分 $20\\,$秒間放電させたところ，負極の X の質量は $130\\,\\mathrm{mg}$ 減少し，正極の Y の質量は $432\\,\\mathrm{mg}$ 増加した．各電極では金属の溶解と析出だけが起こり，陽イオンは素焼き板を通らないものとする．原子量は $\\ce{Mg}=24$，$\\ce{Fe}=56$，$\\ce{Ni}=59$，$\\ce{Zn}=65$，$\\ce{Sn}=119$，$\\ce{Pb}=207$，$\\ce{Cu}=64$，$\\ce{Ag}=108$，ファラデー定数は $9.65\\times10^{4}\\,\\mathrm{C/mol}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "流れた電子の物質量を有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "電子 $1\\,\\mathrm{mol}$ あたりの X の質量減少（モル質量／イオンの価数）を求め，X を元素記号で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "同様にして Y を元素記号で答え，正極の反応をイオン反応式（電子 $\\ce{e-}$ を含む式）で書け．"
+     },
+     {
+      "id": "4",
+      "tex": "正極側の水溶液は，はじめ Y の陽イオンを $0.100\\,\\mathrm{mol/L}$ 含み，体積は $100\\,\\mathrm{mL}$ であった．放電後の Y の陽イオンの濃度を有効数字 3 桁で求めよ（体積変化は無視する）．"
+     },
+     {
+      "id": "5",
+      "tex": "X の代わりに銅を負極に用い，正極は Y のままで同じ電気量を流したとすると，負極の質量減少は $130\\,\\mathrm{mg}$ より大きいか，小さいか．数値（有効数字 3 桁）とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$4.00\\times10^{-3}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "2",
+    "tex": "$32.5\\,\\mathrm{g}$，$\\ce{Zn}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{Ag}$，$\\ce{Ag+ + e- -> Ag}$"
+   },
+   {
+    "id": "4",
+    "tex": "$6.00\\times10^{-2}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "5",
+    "tex": "小さい，$128\\,\\mathrm{mg}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $Q=0.100\\times(64\\times60+20)=0.100\\times3860=386\\,\\mathrm{C}$．電子は $\\dfrac{386}{9.65\\times10^{4}}=\\boldsymbol{4.00\\times10^{-3}\\,\\mathrm{mol}}$．\n\n\\textbf{(2)} n 価の陽イオンになる金属（モル質量 $M$）は，電子 1 mol あたり $M/n$ [g] 溶ける．$\\dfrac{0.130}{4.00\\times10^{-3}}=\\boldsymbol{32.5\\,\\mathrm{g}}$．候補の $M/n$ は $\\ce{Mg^2+}$：12，$\\ce{Fe^2+}$：28（$\\ce{Fe^3+}$ なら 18.7），$\\ce{Ni^2+}$：29.5，$\\ce{Zn^2+}$：32.5，$\\ce{Sn^2+}$：59.5（$\\ce{Sn^4+}$ なら 29.8），$\\ce{Pb^2+}$：103.5，$\\ce{Cu^2+}$：32，$\\ce{Ag+}$：108．一致するのは $\\boldsymbol{\\ce{Zn}}$（$\\ce{Zn -> Zn^2+ + 2e-}$）．質量だけでは原子量が決まらず，価数の候補まで考えて $M/n$ で比べるのがポイントである．\n\n\\textbf{(3)} $\\dfrac{0.432}{4.00\\times10^{-3}}=108\\,\\mathrm{g}$ なので $\\boldsymbol{\\ce{Ag}}$（1 価）．正極：$\\ce{Ag+ + e- -> Ag}$．Zn と Ag ではイオン化傾向の大きい Zn が負極になり，向きとも矛盾しない．\n\n\\textbf{(4)} $\\ce{Ag+}$ は $0.100\\times0.100=1.00\\times10^{-2}\\,\\mathrm{mol}$ から $4.00\\times10^{-3}\\,\\mathrm{mol}$ 減って $6.00\\times10^{-3}\\,\\mathrm{mol}$．濃度は $\\boldsymbol{6.00\\times10^{-2}\\,\\mathrm{mol/L}}$（電荷のつり合いは，$\\ce{NO3-}$ などの陰イオンが素焼き板を通って負極側へ移動することで保たれる）．\n\n\\textbf{(5)} 銅の $M/n=32$ なので $4.00\\times10^{-3}\\times32=0.128\\,\\mathrm{g}=\\boldsymbol{128\\,\\mathrm{mg}}$ で，\\textbf{小さい}．同じ電気量でも溶ける質量は $M/n$ に比例し，起電力の大小とは関係がない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "電池の電極で溶ける・析出する金属の質量は電子 1 mol あたり M/n（モル質量／イオンの価数）なので，質量変化と電気量から M/n を求め，価数の候補まで含めて金属を特定する．イオン化傾向の大小は電極の向きの確認に使う．"
+ },
+ "concepts": [
+  "electrolysis",
+  "mole",
+  "battery"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ファラデーの法則",
+  "電池",
+  "電極の質量変化",
+  "イオンの価数",
+  "金属の決定"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

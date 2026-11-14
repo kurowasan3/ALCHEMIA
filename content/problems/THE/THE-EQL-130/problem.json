@@ -1,0 +1,131 @@
+{
+ "id": "THE-EQL-130",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "平均の速度÷平均の濃度で求める一次反応の速度定数の近似誤差と使える範囲",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "触媒を加えた過酸化水素水の分解 $\\ce{2H2O2 -> 2H2O + O2}$ は，$\\ce{H2O2}$ のモル濃度 $c$ について一次反応で，速度定数を $k$ とすると $c=c_0e^{-kt}$（$c_0$ は $t=0$ の濃度）にしたがう．\n濃度 $0.800\\,\\mathrm{mol/L}$ の過酸化水素水 $20.0\\,\\mathrm{mL}$ に触媒を加えたところ，はじめの $5.00\\,\\mathrm{min}$ 間に $4.00\\times10^{-3}\\,\\mathrm{mol}$ の酸素が発生した．\n実験では，ある時間間隔 $\\Delta t$ の平均の分解速度 $\\bar v=\\dfrac{c_0-c_1}{\\Delta t}$（$c_1$ は $\\Delta t$ 後の濃度）を，その区間の平均濃度 $\\bar c=\\dfrac{c_0+c_1}{2}$ で割った値 $k_{\\mathrm{app}}=\\dfrac{\\bar v}{\\bar c}$ を速度定数とみなすことが多い．溶液の体積変化は無視し，必要なら $\\ln 2=0.693$，$\\ln\\dfrac{10}{9}=0.1054$，$\\ln\\dfrac{10}{7}=0.3567$ を用いよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$5.00\\,\\mathrm{min}$ 後の $\\ce{H2O2}$ の濃度を求め，$k_{\\mathrm{app}}\\,[\\mathrm{min^{-1}}]$ を有効数字3桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "真の速度定数 $k\\,[\\mathrm{min^{-1}}]$ と，比 $k_{\\mathrm{app}}/k$ をそれぞれ有効数字3桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "一次反応では，区間内の時間平均の濃度 $\\langle c\\rangle$ を用いると $\\bar v=k\\langle c\\rangle$ が厳密に成り立つ．$\\bar c$ と $\\langle c\\rangle$ はどちらが大きいか．また，その結果から $k_{\\mathrm{app}}$ と $k$ の大小について，反応の進み具合（$c_1/c_0$）によらずにいえることを答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "1 区間で分解する $\\ce{H2O2}$ の割合が $10\\,\\%$，$30\\,\\%$，$50\\,\\%$，$75\\,\\%$ となるように $\\Delta t$ を選んだとき，$k_{\\mathrm{app}}$ と $k$ の差が $k$ の $2\\,\\%$ 以内に収まるものをすべて選べ．"
+     },
+     {
+      "id": "5",
+      "tex": "(1) の $k_{\\mathrm{app}}$ を用いて，同じ近似（区間の平均速度＝$k_{\\mathrm{app}}\\times$区間の平均濃度）で $10.0\\,\\mathrm{min}$ 後の濃度を予測する．方法ア：$5.00\\,\\mathrm{min}$ の区間を 2 回くり返して求めた場合と，方法イ：$10.0\\,\\mathrm{min}$ を 1 区間として求めた場合の予測値 $[\\mathrm{mol/L}]$ を有効数字3桁でそれぞれ答え，真の値と一致するほうを答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：平均の速度÷平均の濃度で求める一次反応の速度定数の近似誤差と使える範囲",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$c_1=0.400\\,\\mathrm{mol/L}$，$k_{\\mathrm{app}}=0.133\\,\\mathrm{min^{-1}}$"
+   },
+   {
+    "id": "2",
+    "tex": "$k=0.139\\,\\mathrm{min^{-1}}$，$k_{\\mathrm{app}}/k=0.962$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\bar c$ のほうが大きい．$k_{\\mathrm{app}}$ はつねに $k$ より小さい"
+   },
+   {
+    "id": "4",
+    "tex": "$10\\,\\%$ と $30\\,\\%$"
+   },
+   {
+    "id": "5",
+    "tex": "方法ア $0.200\\,\\mathrm{mol/L}$，方法イ $0.160\\,\\mathrm{mol/L}$；真の値（$0.200\\,\\mathrm{mol/L}$）と一致するのは方法ア"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　発生した $\\ce{O2}$ の 2 倍の $\\ce{H2O2}$ が分解したので，分解量は $8.00\\times10^{-3}\\,\\mathrm{mol}$，濃度の減少は $\\dfrac{8.00\\times10^{-3}}{0.0200}=0.400\\,\\mathrm{mol/L}$．よって $c_1=\\boldsymbol{0.400\\,\\mathrm{mol/L}}$．\n\\[ \\bar v=\\frac{0.400}{5.00}=0.0800\\,\\mathrm{mol/(L\\cdot min)},\\quad \\bar c=0.600\\,\\mathrm{mol/L},\\quad k_{\\mathrm{app}}=\\frac{0.0800}{0.600}=\\boldsymbol{0.133\\,\\mathrm{min^{-1}}} \\]\n\n\\textbf{(2)}　$c_1/c_0=e^{-k\\Delta t}=\\dfrac12$ より $k=\\dfrac{\\ln2}{5.00}=0.1386\\approx\\boldsymbol{0.139\\,\\mathrm{min^{-1}}}$．\n\\[ \\frac{k_{\\mathrm{app}}}{k}=\\frac{0.1333}{0.1386}=\\boldsymbol{0.962} \\]\n近似は約 $4\\,\\%$ 小さく見積もっている．\n\n\\textbf{(3)}　一般に $r=c_1/c_0$ とおくと\n\\[ k_{\\mathrm{app}}\\Delta t=\\frac{2(1-r)}{1+r},\\qquad k\\Delta t=-\\ln r \\]\n一次反応の $c(t)$ は下に凸の曲線なので，区間内の曲線は両端を結ぶ線分（弦）より下にある．$\\langle c\\rangle$ は曲線の高さの平均，$\\bar c$ は弦の高さの平均（両端の相加平均）だから，$\\boldsymbol{\\bar c>\\langle c\\rangle}$（解答図）．\n$\\bar v=k\\langle c\\rangle=k_{\\mathrm{app}}\\bar c$ なので $k_{\\mathrm{app}}=k\\dfrac{\\langle c\\rangle}{\\bar c}<k$．$c_1/c_0$ によらず \\textbf{$k_{\\mathrm{app}}$ はつねに $k$ より小さく}，区間を短くする（$r\\to1$）ほど曲線と弦の差が小さくなって $k$ に近づく．\n（(1) の数値では $\\langle c\\rangle=\\dfrac{c_0-c_1}{k\\Delta t}=\\dfrac{0.400}{0.693}=0.577\\,\\mathrm{mol/L}<\\bar c=0.600\\,\\mathrm{mol/L}$．）\n\n\\textbf{(4)}　$k_{\\mathrm{app}}/k=\\dfrac{2(1-r)/(1+r)}{-\\ln r}$ を計算する．\n\\[ \\begin{array}{c|c|c|c} \\text{分解の割合} & r & 2(1-r)/(1+r) & -\\ln r \\\\ \\hline 10\\,\\% & 0.90 & 0.1053 & 0.1054 \\\\ 30\\,\\% & 0.70 & 0.3529 & 0.3567 \\\\ 50\\,\\% & 0.50 & 0.6667 & 0.693 \\\\ 75\\,\\% & 0.25 & 1.200 & 1.386 \\end{array} \\]\n比はそれぞれ $0.999$，$0.989$，$0.962$，$0.866$（$-\\ln 0.25=2\\ln2$）．差が $2\\,\\%$ 以内なのは $\\boldsymbol{10\\,\\%}$ と $\\boldsymbol{30\\,\\%}$．1 区間の分解が $3$ 割程度までなら，この近似で十分である．\n\n\\textbf{(5)}　近似では $\\dfrac{c_{\\mathrm{n}}-c_{\\mathrm{n+1}}}{\\Delta t}=k_{\\mathrm{app}}\\dfrac{c_{\\mathrm{n}}+c_{\\mathrm{n+1}}}{2}$ なので\n\\[ c_{\\mathrm{n+1}}=c_{\\mathrm{n}}\\times\\frac{1-k_{\\mathrm{app}}\\Delta t/2}{1+k_{\\mathrm{app}}\\Delta t/2} \\]\n方法ア　$\\Delta t=5.00$：$k_{\\mathrm{app}}\\Delta t/2=\\dfrac13$ なので 1 区間ごとに $\\dfrac{1-1/3}{1+1/3}=\\dfrac12$ 倍．2 回で $0.800\\times\\dfrac14=\\boldsymbol{0.200\\,\\mathrm{mol/L}}$．\n方法イ　$\\Delta t=10.0$：$k_{\\mathrm{app}}\\Delta t/2=\\dfrac23$ なので $0.800\\times\\dfrac{1-2/3}{1+2/3}=0.800\\times\\dfrac15=\\boldsymbol{0.160\\,\\mathrm{mol/L}}$．\n真の値は $c=0.800\\times e^{-10.0k}=0.800\\times\\left(\\dfrac12\\right)^{2}=0.200\\,\\mathrm{mol/L}$ で，一致するのは \\textbf{方法ア}．\n$k_{\\mathrm{app}}$ は測定した区間 $\\Delta t$ で $r$ を正しく再現するように決めた値なので，同じ $\\Delta t$ でくり返す限り誤差は打ち消し合って正確な値を与える．しかし区間の長さを変えると，$k_{\\mathrm{app}}$ が $k$ より小さいことによる誤差がそのまま現れる．近似で得た「速度定数」は，求めたときと同じ区間の幅で使う必要がある．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "一次反応の濃度は下に凸に減るので，区間の両端の相加平均の濃度は時間平均の濃度より大きく，平均速度÷相加平均濃度で求めた速度定数はつねに真の値より小さい（比は 2(1−r)/(1+r) と −ln r の比）．この近似は 1 区間の分解が小さいときだけ使え，求めたときと同じ区間の幅でくり返し使う限りは誤差が打ち消して正確な予測になるが，区間の幅を変えると誤差が現れる．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "concentration",
+  "reaction-rate"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一次反応",
+  "速度定数",
+  "平均の反応速度",
+  "近似の誤差",
+  "過酸化水素の分解"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

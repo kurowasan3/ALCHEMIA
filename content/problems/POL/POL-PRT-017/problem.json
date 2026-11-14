@@ -1,0 +1,102 @@
+{
+ "id": "POL-PRT-017",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-05",
+ "topic": "官能基の当量からトリペプチドの構成アミノ酸を決める",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "structure",
+  "qa"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の 8 種類の $\\alpha$-アミノ酸のうち，異なる 3 種類が 1 分子ずつ縮合した鎖状トリペプチド P（分子式 $\\ce{C17H23N3O7}$）がある．ペプチド結合は $\\alpha$-アミノ基と $\\alpha$-カルボキシ基の間だけでできているものとする．\\\\\nグリシン（Gly）$\\ce{C2H5NO2}$，アラニン（Ala）$\\ce{C3H7NO2}$，セリン（Ser，側鎖 $\\ce{-CH2OH}$）$\\ce{C3H7NO3}$，アスパラギン酸（Asp，側鎖 $\\ce{-CH2COOH}$）$\\ce{C4H7NO4}$，グルタミン酸（Glu，側鎖 $\\ce{-(CH2)2COOH}$）$\\ce{C5H9NO4}$，リシン（Lys，側鎖 $\\ce{-(CH2)4NH2}$）$\\ce{C6H14N2O2}$，フェニルアラニン（Phe，側鎖 $\\ce{-CH2C6H5}$）$\\ce{C9H11NO2}$，チロシン（Tyr，側鎖 $\\ce{-CH2C6H4OH}$）$\\ce{C9H11NO3}$\\\\\n実験1：P $1\\,\\mathrm{mol}$ に含まれるカルボキシ基をすべてメチルエステルにするには，メタノールが $2\\,\\mathrm{mol}$ 必要であった．\\\\\n実験2：P $1\\,\\mathrm{mol}$ とちょうど反応する水酸化ナトリウムは $2\\,\\mathrm{mol}$ であった（ペプチド結合は加水分解されないものとする）．\\\\\n実験3：P はキサントプロテイン反応を示した．\\\\\n実験4：P を部分的に加水分解すると，フェニルアラニンと，ベンゼン環をもたないジペプチドが得られた．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "実験1と実験2の結果が同じ物質量になったことから，P に含まれないと判断できるアミノ酸を表から1つ選び，その理由を答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "P を構成する 3 種類のアミノ酸を略号で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "P のアミノ酸配列として考えられるものは何通りあるか．N 末端と C 末端は区別する．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "チロシン（Tyr）．フェノール性ヒドロキシ基は NaOH とは反応するがメタノールとはエステルをつくらないので，Tyr を含めば NaOH の物質量がメタノールより多くなるから．"
+   },
+   {
+    "id": "2",
+    "tex": "Ser，Glu，Phe"
+   },
+   {
+    "id": "3",
+    "tex": "4 通り"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} メタノールでエステルになるのはカルボキシ基だけである．NaOH はカルボキシ基のほかフェノール性ヒドロキシ基とも反応する．両者が同じ $2\\,\\mathrm{mol}$ なので，P にはフェノール性 OH がなく，$\\boldsymbol{\\text{チロシン}}$ は含まれない．\\\\\n\\textbf{(2)} 実験1より P のカルボキシ基は 2 個．C 末端の 1 個のほかに，側鎖に $\\ce{-COOH}$ をもつ酸性アミノ酸（Asp か Glu）が 1 個含まれる．実験3（ベンゼン環）と (1) から，芳香族アミノ酸は Phe．\\\\\nP は 3 分子が 2 分子の水を失ってできるので，3 種類のアミノ酸の分子式の和は\n\\[ \\ce{C17H23N3O7} + 2\\,\\ce{H2O} = \\ce{C17H27N3O9} \\]\nPhe（$\\ce{C9H11NO2}$）を除くと，残り 2 種類の和は $\\ce{C8H16N2O7}$．\\\\\nGlu（$\\ce{C5H9NO4}$）なら残りは $\\ce{C3H7NO3}$ ＝ Ser で表にある．Asp（$\\ce{C4H7NO4}$）なら残りは $\\ce{C4H9NO3}$ で表にない．N が 3 個なので Lys（N 2 個）も入らない．よって $\\boldsymbol{\\text{Ser，Glu，Phe}}$．\\\\\n\\textbf{(3)} 実験4で Phe が単独で外れ，残りがジペプチド（Ser と Glu）として得られたので，Phe は鎖の端にある．\\\\\nPhe が N 末端：Phe-Ser-Glu，Phe-Glu-Ser．Phe が C 末端：Ser-Glu-Phe，Glu-Ser-Phe．\\\\\nよって $\\boldsymbol{4}$ 通り．なお，Phe が中央にあると部分加水分解で Phe 単独とジペプチドは同時には得られない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "官能基ごとに反応する試薬の当量（メタノールは COOH だけ，NaOH は COOH とフェノール性 OH）の違いから構成アミノ酸の側鎖を絞り込み，分子式の和（＋水 2 分子）で残りを決める．部分加水分解の生成物から端にある残基を決め，配列の数を数える．"
+ },
+ "concepts": [
+  "protein-amino",
+  "carboxylic-ester",
+  "aromatic"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "トリペプチド",
+  "構造決定",
+  "エステル化",
+  "中和",
+  "キサントプロテイン反応",
+  "分子式"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

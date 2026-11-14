@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160" font-family="Noto Sans CJK JP, sans-serif" font-size="13">
+<g stroke="currentColor" stroke-width="1.8" fill="none" stroke-linejoin="round">
+<path d="M70,80 L105,60 L105,100 Z"/>
+<path d="M105,60 L145,47 L170,80 L145,113 L105,100"/>
+</g>
+<g fill="currentColor">
+<text x="98" y="52">1</text><text x="146" y="40">2</text><text x="176" y="84">3</text><text x="146" y="130">4</text><text x="98" y="118">5</text><text x="52" y="84">6</text>
+</g>
+</svg>

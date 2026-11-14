@@ -1,0 +1,137 @@
+{
+ "id": "POL-RES-029",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-01",
+ "topic": "エポキシ樹脂のプレポリマー（ビスフェノール A とエピクロロヒドリン）の重合度とエポキシ当量",
+ "course": "化学",
+ "level": 3,
+ "minutes": 18,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のビスフェノール A（以下 BPA）を水酸化ナトリウム水溶液中でエピクロロヒドリン（以下 ECH）と反応させると，フェノキシドイオンが ECH と反応して $\\ce{NaCl}$ が外れ，三員環のエーテル（エポキシ基）をもつグリシジル基 G が酸素原子に結合する．また，フェノキシドイオンはエポキシ基の環を開いて結合することもでき，このとき $\\ce{-O-CH2-CH(OH)-CH2-O-}$ の形のつながりができる．これらの反応がくり返されると，両末端にエポキシ基をもつ次の構造の分子（プレポリマー）が得られる．\n\\[ \\mathrm{G{-}O{-}Ar{-}O}\\left[\\mathrm{CH_2{-}CH(OH){-}CH_2{-}O{-}Ar{-}O}\\right]_n\\mathrm{{-}G} \\]\nここで $\\mathrm{Ar}$ は $\\ce{-C6H4-C(CH3)2-C6H4-}$，G はグリシジル基（$\\ce{C3H5O}$）である．$n=0$ の分子の分子式は $\\ce{C21H24O4}$ である．プレポリマーを硬化剤と反応させると，両末端のエポキシ基が反応して網目状のエポキシ樹脂になる．原子量は H $=1.0$，C $=12$，O $=16$，Na $=23$，Cl $=35.5$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$n=0$ の分子が BPA と ECH と水酸化ナトリウムから生じる反応を，分子式を用いた化学反応式で示せ．"
+     },
+     {
+      "id": "2",
+      "tex": "一般の $n$ のプレポリマーの分子量は，$n$ を用いて $284n+340$ と表されることを示せ．"
+     },
+     {
+      "id": "3",
+      "tex": "あるプレポリマー（いろいろな $n$ の分子の混合物）では，エポキシ基 1 mol あたりの質量（エポキシ当量）が $525\\,\\mathrm{g/mol}$ であった．平均の $n$ と，1分子あたりに含まれる $\\ce{-OH}$ 基の平均の数を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の平均の $n$ のプレポリマーを過不足なくつくるのに必要な BPA と ECH の物質量の比を，最も簡単な整数比で答えよ．また，$n=0$ の分子を主成分とする粘度の低いプレポリマーをつくりたいとき，ECH の量をどうすればよいか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：エポキシ樹脂のプレポリマー（ビスフェノール A とエピクロロヒドリン）の重合度とエポキシ当量",
+   "caption": ""
+  },
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：エポキシ樹脂のプレポリマー（ビスフェノール A とエピクロロヒドリン）の重合度とエポキシ当量",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{C15H16O2 + 2C3H5ClO + 2NaOH -> C21H24O4 + 2NaCl + 2H2O}$"
+   },
+   {
+    "id": "2",
+    "tex": "解説参照（BPA $n+1$ 分子と ECH $n+2$ 分子から $\\ce{HCl}$ $n+2$ 分子が取れる）"
+   },
+   {
+    "id": "3",
+    "tex": "$n=2.5$，$\\ce{-OH}$ 基 2.5 個"
+   },
+   {
+    "id": "4",
+    "tex": "BPA : ECH $=7:9$，ECH を BPA の 2 倍よりはるかに過剰に用いる"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　BPA の2つの $\\ce{-OH}$ がそれぞれ ECH 1 分子と反応し，Cl が $\\ce{NaCl}$ として外れる（$\\ce{-OH}$ の H は $\\ce{NaOH}$ と水になる）．\n\\[ \\boldsymbol{\\ce{C15H16O2 + 2C3H5ClO + 2NaOH -> C21H24O4 + 2NaCl + 2H2O}} \\]\n分子量は BPA $228$，ECH $92.5$，生成物 $340$ である．\n\n\\textbf{(2)}　構造式から，プレポリマー1分子には Ar を含む BPA 由来の単位が $n+1$ 個，ECH 由来の $\\ce{C3}$ 単位（2つの G と $n$ 個の $\\ce{-CH2CH(OH)CH2-}$）が $n+2$ 個ある．各 ECH は差し引き $\\ce{HCl}$ 1 分子を失って結合する（BPA の OH の H と ECH の Cl が取れる）ので\n\\[ M=(n+1)\\times228+(n+2)\\times(92.5-36.5)=228n+228+56n+112=\\boldsymbol{284n+340} \\]\n（$n=0$ で $340$ となり (1) と一致する．くり返し単位 $\\ce{C18H20O3}$ の式量が $284$ である．）\n\n\\textbf{(3)}　エポキシ基は1分子に2個なので，平均分子量 $=2\\times525=1050$．\n\\[ 284n+340=1050\\quad\\Rightarrow\\quad n=\\boldsymbol{2.5} \\]\n$\\ce{-OH}$ 基はくり返し単位ごとに1個あるので，1分子あたり平均 $\\boldsymbol{2.5}$ 個．（この $\\ce{-OH}$ も硬化の際に反応や水素結合に関わる．）\n\n\\textbf{(4)}　BPA : ECH $=(n+1):(n+2)=3.5:4.5=\\boldsymbol{7:9}$．BPA に対して ECH が多いほど，BPA の両端が早く G でふさがれて鎖が伸びにくくなり $n$ が小さくなる．$n=0$ が主成分のプレポリマーには，ECH を\\textbf{BPA の 2 倍よりはるかに過剰に}用いる（逆に比が $1:1$ に近いほど $n$ は大きくなる）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "エポキシ樹脂のプレポリマーは BPA (n+1) 分子と ECH (n+2) 分子から HCl (n+2) 分子が取れた構造で，分子量は 284n+340 となる．両末端の2つのエポキシ基からエポキシ当量を平均分子量に直して平均重合度を求め，原料の物質量比 (n+1):(n+2) で重合度が決まる（ECH が過剰なほど n が小さい）．"
+ },
+ "concepts": [
+  "addition-polymer",
+  "nitrogen-phosphorus",
+  "aromatic"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "エポキシ樹脂",
+  "ビスフェノールA",
+  "エピクロロヒドリン",
+  "プレポリマー",
+  "重合度",
+  "エポキシ当量"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,110 @@
+{
+ "id": "THE-ION-040",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "純粋なアミノ酸水溶液の pH と等電点（近似の限界）",
+ "course": "化学",
+ "level": 5,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "グリシンは水溶液中で，陽イオン $\\ce{H3N^+CH2COOH}$（$\\ce{G+}$ と表す），双性イオン $\\ce{H3N^+CH2COO^-}$（$\\ce{G^{\\pm}}$），陰イオン $\\ce{H2NCH2COO^-}$（$\\ce{G-}$）の平衡混合物として存在する．分子式で書くと\n\\[ \\ce{C2H6NO2+ <=> C2H5NO2 + H+}\\quad K_1=\\dfrac{[\\ce{G^{\\pm}}][\\ce{H+}]}{[\\ce{G+}]}=4.0\\times10^{-3}\\,\\mathrm{mol/L} \\]\n\\[ \\ce{C2H5NO2 <=> C2H4NO2- + H+}\\quad K_2=\\dfrac{[\\ce{G-}][\\ce{H+}]}{[\\ce{G^{\\pm}}]}=2.5\\times10^{-10}\\,\\mathrm{mol/L} \\]\nである．水のイオン積は $K_\\mathrm{w}=1.0\\times10^{-14}\\,(\\mathrm{mol/L})^2$ とする．グリシンの等電点は，$[\\ce{G+}]=[\\ce{G-}]$ となる pH として $\\mathrm{pH}=\\dfrac{1}{2}(\\mathrm{p}K_1+\\mathrm{p}K_2)=6.0$ と求められる．\n\nここでは，純粋なグリシン（結晶）だけを純水に溶かして濃度 $C\\,(\\mathrm{mol/L})$ とした溶液の pH を考える．必要なら $\\log_{10}1.03=0.01$，$\\log_{10}2.08=0.32$，$\\log_{10}4.56=0.66$，$\\log_{10}9.62=0.98$ を用いよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "この溶液の電荷のつり合いの式を書け．さらに，グリシンの大部分が双性イオンとして存在する（$[\\ce{G^{\\pm}}]\\fallingdotseq C$）として，$[\\ce{H+}]^2=\\dfrac{K_1(K_2C+K_\\mathrm{w})}{K_1+C}$ となることを示せ．"
+     },
+     {
+      "id": "2",
+      "tex": "$C=1.0\\times10^{-1}$，$1.0\\times10^{-3}$，$1.0\\times10^{-6}\\,\\mathrm{mol/L}$ のときの pH をそれぞれ小数第 1 位まで求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "純粋なグリシン水溶液の pH が等電点（6.0）に一致するには，$C$ がどのような条件を満たす必要があるか．(1) の式をもとに 2 つの条件を不等式で示し，(2) の 3 つの濃度でどの条件が成り立たないかを説明せよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$C=1.0\\times10^{-3}\\,\\mathrm{mol/L}$ の溶液について，$[\\ce{G+}]$ と $[\\ce{G-}]$ を有効数字 2 桁で求めて比較し，この溶液を電気泳動するとグリシンは全体としてどちらの電極へ移動するかを答えよ．また，中性の分子を溶かしただけなのにこのような偏りが生じる理由を，電荷のつり合いの式を用いて説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$[\\ce{H+}]+[\\ce{G+}]=[\\ce{G-}]+[\\ce{OH-}]$（導出は解説）"
+   },
+   {
+    "id": "2",
+    "tex": "$C=1.0\\times10^{-1}$：pH 6.0，$C=1.0\\times10^{-3}$：pH 6.3，$C=1.0\\times10^{-6}$：pH 7.0"
+   },
+   {
+    "id": "3",
+    "tex": "$C\\gg K_1$（$C\\gg4.0\\times10^{-3}\\,\\mathrm{mol/L}$）かつ $K_2C\\gg K_\\mathrm{w}$（$C\\gg4.0\\times10^{-5}\\,\\mathrm{mol/L}$）．$1.0\\times10^{-1}$ では両方成り立つ．$1.0\\times10^{-3}$ では $C\\gg K_1$ が成り立たない．$1.0\\times10^{-6}$ では両方とも成り立たず，水の電離が支配的で pH は 7 に近づく．"
+   },
+   {
+    "id": "4",
+    "tex": "$[\\ce{G+}]=1.1\\times10^{-7}\\,\\mathrm{mol/L}$，$[\\ce{G-}]=5.5\\times10^{-7}\\,\\mathrm{mol/L}$ で $[\\ce{G-}]>[\\ce{G+}]$ なので，グリシンは全体として陽極へ移動する．電荷のつり合いから $[\\ce{G+}]-[\\ce{G-}]=[\\ce{OH-}]-[\\ce{H+}]$ であり，溶液は酸性（$[\\ce{H+}]>[\\ce{OH-}]$）なので右辺は負．双性イオンが放出した $\\ce{H+}$ の一部が溶液中に $\\ce{H+}$ として残るため，それに見合う分だけ $\\ce{G-}$ が $\\ce{G+}$ より多くなる．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　溶液中の陽イオンは $\\ce{H+}$ と $\\ce{G+}$，陰イオンは $\\ce{G-}$ と $\\ce{OH-}$（$\\ce{G^{\\pm}}$ は電荷 0）なので\n\\[ [\\ce{H+}]+[\\ce{G+}]=[\\ce{G-}]+[\\ce{OH-}] \\]\n電離定数から $[\\ce{G+}]=\\dfrac{[\\ce{G^{\\pm}}][\\ce{H+}]}{K_1}$，$[\\ce{G-}]=\\dfrac{K_2[\\ce{G^{\\pm}}]}{[\\ce{H+}]}$，$[\\ce{OH-}]=\\dfrac{K_\\mathrm{w}}{[\\ce{H+}]}$．代入して両辺に $[\\ce{H+}]$ をかけると\n\\[ [\\ce{H+}]^2\\left(1+\\dfrac{[\\ce{G^{\\pm}}]}{K_1}\\right)=K_2[\\ce{G^{\\pm}}]+K_\\mathrm{w} \\]\n$[\\ce{G^{\\pm}}]\\fallingdotseq C$ とおいて整理すると $[\\ce{H+}]^2=\\dfrac{K_1(K_2C+K_\\mathrm{w})}{K_1+C}$ が得られる．\n\n\\textbf{(2)}　\n・$C=1.0\\times10^{-1}$：$[\\ce{H+}]^2=\\dfrac{4.0\\times10^{-3}\\times(2.5\\times10^{-11}+1.0\\times10^{-14})}{0.104}=9.62\\times10^{-13}$，$\\mathrm{pH}=\\dfrac{13-0.98}{2}=6.01\\Rightarrow\\boldsymbol{6.0}$\n・$C=1.0\\times10^{-3}$：$[\\ce{H+}]^2=\\dfrac{4.0\\times10^{-3}\\times(2.5\\times10^{-13}+1.0\\times10^{-14})}{5.0\\times10^{-3}}=2.08\\times10^{-13}$，$\\mathrm{pH}=\\dfrac{13-0.32}{2}=6.34\\Rightarrow\\boldsymbol{6.3}$\n・$C=1.0\\times10^{-6}$：$[\\ce{H+}]^2=\\dfrac{4.0\\times10^{-3}\\times(2.5\\times10^{-16}+1.0\\times10^{-14})}{4.001\\times10^{-3}}\\fallingdotseq1.03\\times10^{-14}$，$\\mathrm{pH}=\\dfrac{14-0.01}{2}=6.99\\Rightarrow\\boldsymbol{7.0}$\nいずれも $[\\ce{H+}]/K_1$ は $10^{-4}$ 以下，$K_2/[\\ce{H+}]$ も $10^{-3}$ 以下なので，$[\\ce{G^{\\pm}}]\\fallingdotseq C$ の近似は妥当である．\n\n\\textbf{(3)}　(1) の式で $C\\gg K_1$ なら分母は $C$，$K_2C\\gg K_\\mathrm{w}$ なら分子は $K_1K_2C$ となり，$[\\ce{H+}]^2\\fallingdotseq K_1K_2$，すなわち $\\mathrm{pH}=\\dfrac{1}{2}(\\mathrm{p}K_1+\\mathrm{p}K_2)$（等電点）になる．条件は\n\\[ C\\gg K_1=4.0\\times10^{-3}\\,\\mathrm{mol/L}\\quad\\text{かつ}\\quad C\\gg\\dfrac{K_\\mathrm{w}}{K_2}=4.0\\times10^{-5}\\,\\mathrm{mol/L} \\]\n$C=1.0\\times10^{-1}$ では両方を満たす（pH 6.0）．$C=1.0\\times10^{-3}$ では $K_2C=2.5\\times10^{-13}\\gg K_\\mathrm{w}$ は成り立つが，$C$ が $K_1$ より小さいので分母が $K_1+C$ のまま残り，pH は 6.3 にずれる．$C=1.0\\times10^{-6}$ では $C\\ll K_1$ かつ $K_2C\\ll K_\\mathrm{w}$ で，$[\\ce{H+}]^2\\fallingdotseq K_\\mathrm{w}$ となって純水とほぼ同じ pH 7.0 になる．\n「アミノ酸を水に溶かせば等電点の pH になる」は，濃い溶液でだけ成り立つ近似である．\n\n\\textbf{(4)}　$[\\ce{H+}]=\\sqrt{2.08\\times10^{-13}}=4.56\\times10^{-7}\\,\\mathrm{mol/L}$ より\n\\[ [\\ce{G+}]=\\dfrac{C[\\ce{H+}]}{K_1}=\\dfrac{1.0\\times10^{-3}\\times4.56\\times10^{-7}}{4.0\\times10^{-3}}=\\boldsymbol{1.1\\times10^{-7}\\,\\mathrm{mol/L}} \\]\n\\[ [\\ce{G-}]=\\dfrac{K_2C}{[\\ce{H+}]}=\\dfrac{2.5\\times10^{-10}\\times1.0\\times10^{-3}}{4.56\\times10^{-7}}=\\boldsymbol{5.5\\times10^{-7}\\,\\mathrm{mol/L}} \\]\n$[\\ce{G-}]>[\\ce{G+}]$ なので，グリシンは平均として負に帯電し，\\textbf{陽極}へ移動する（pH 6.3 が等電点 6.0 より大きいことと一致）．\n電荷のつり合いを変形すると $[\\ce{G+}]-[\\ce{G-}]=[\\ce{OH-}]-[\\ce{H+}]=\\dfrac{1.0\\times10^{-14}}{4.56\\times10^{-7}}-4.56\\times10^{-7}=-4.34\\times10^{-7}$ で，確かに $1.14\\times10^{-7}-5.48\\times10^{-7}=-4.34\\times10^{-7}$ と一致する．双性イオンの $\\ce{-NH3+}$ が $\\ce{H+}$ を放出して $\\ce{G-}$ になる一方，$\\ce{-COO-}$ が $\\ce{H+}$ を受け取って $\\ce{G+}$ になる量はそれより少なく，その差の $\\ce{H+}$ が溶液中に残って酸性になる．溶液全体は電気的に中性でも，グリシンだけを見ると負に偏る．濃い溶液では $[\\ce{G+}]$，$[\\ce{G-}]$ が $[\\ce{H+}]$ よりずっと大きいので，この差は相対的に無視でき，等電点に一致する．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "純粋なアミノ酸だけを溶かした溶液の pH は電荷のつり合いから [H⁺]²=K₁(K₂C+K_w)/(K₁+C) で決まり，C≫K₁ かつ K₂C≫K_w のときだけ等電点 ½(pK₁+pK₂) に一致する．薄い溶液では等電点からずれ，溶液中に残る H⁺ の分だけアミノ酸が正負どちらかに偏って帯電する．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "protein-amino",
+  "ph"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "等電点",
+  "双性イオン",
+  "電荷のつり合い",
+  "近似の妥当性",
+  "水の電離",
+  "グリシン"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

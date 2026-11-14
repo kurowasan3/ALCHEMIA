@@ -1,0 +1,109 @@
+{
+ "id": "THE-ELC-088",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-07",
+ "topic": "電解液の伝導率から求める電流と電気分解の気体の量",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "equation",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "断面積 $4.0\\,\\mathrm{cm^2}$ の直方体の容器に $0.10\\,\\mathrm{mol/L}$ の硝酸カリウム水溶液を満たし，向かい合う 2 つの面に白金の平板電極を間隔 $5.0\\,\\mathrm{cm}$ で置いた．溶液の電気の通しやすさは伝導率 $\\kappa$（$\\mathrm{S/cm}$，$\\mathrm{S}=\\Omega^{-1}$）で表され，長さ $l$，断面積 $A$ の液柱の抵抗は $R=\\dfrac{l}{\\kappa A}$ である．また，濃度 $c$（$\\mathrm{mol/L}$）の電解質の溶液では $\\kappa=\\dfrac{\\Lambda c}{1000}$ で，$\\Lambda$（$\\mathrm{S\\,cm^2/mol}$）をモル伝導率という．$\\ce{KNO3}$ の $\\Lambda$ は，$0.10\\,\\mathrm{mol/L}$ で $120$，$0.20\\,\\mathrm{mol/L}$ で $113\\,\\mathrm{S\\,cm^2/mol}$ とする．\n\n電極間に直流 $6.0\\,\\mathrm{V}$ を加えると，両極から気体が発生した．加えた電圧のうち $1.8\\,\\mathrm{V}$ は電極での反応に使われ，残りが溶液の抵抗にかかるものとする．溶液の濃度・温度は変わらないとし，ファラデー定数は $9.65\\times10^{4}\\,\\mathrm{C/mol}$，気体のモル体積は標準状態で $22.4\\,\\mathrm{L/mol}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "陰極と陽極で起こる反応を，電子 $\\ce{e-}$ を含むイオン反応式で書け．"
+     },
+     {
+      "id": "2",
+      "tex": "この液柱の伝導率 $\\kappa$ と抵抗 $R$ を求めよ．$R$ は有効数字 3 桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "流れる電流は何 A か．また，$30.0$ 分間に両極で発生する気体の体積の合計は標準状態で何 mL か．それぞれ有効数字 3 桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "溶液を $0.20\\,\\mathrm{mol/L}$ の $\\ce{KNO3}$ 水溶液にかえて同じ操作をすると，気体の発生する速さは (3) の何倍になるか．有効数字 3 桁で答えよ．また，濃度が 2 倍なのに 2 倍にならない理由を述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "陰極：$\\ce{2H2O + 2e- -> H2 + 2OH-}$　陽極：$\\ce{2H2O -> O2 + 4H+ + 4e-}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\kappa=1.2\\times10^{-2}\\,\\mathrm{S/cm}$，$R=104\\,\\Omega$"
+   },
+   {
+    "id": "3",
+    "tex": "$4.03\\times10^{-2}\\,\\mathrm{A}$，$12.6\\,\\mathrm{mL}$"
+   },
+   {
+    "id": "4",
+    "tex": "$1.88$ 倍．濃度が高いとイオンどうしの静電的な引き合いでイオンが動きにくくなり，モル伝導率が小さくなる（$120\\to113$）ので，伝導率は 2 倍より小さくしかならない．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　$\\ce{K+}$ も $\\ce{NO3-}$ も反応しにくいので，両極で水が反応する．\n陰極：$\\boldsymbol{\\ce{2H2O + 2e- -> H2 + 2OH-}}$，陽極：$\\boldsymbol{\\ce{2H2O -> O2 + 4H+ + 4e-}}$．全体では $\\ce{2H2O -> 2H2 + O2}$ で，$\\ce{KNO3}$ は電流を運ぶ役割だけをもつ．\n\n\\textbf{(2)}　$\\kappa=\\dfrac{120\\times0.10}{1000}=\\boldsymbol{1.2\\times10^{-2}\\,\\mathrm{S/cm}}$．\n\\[ R=\\dfrac{l}{\\kappa A}=\\dfrac{5.0}{1.2\\times10^{-2}\\times4.0}=104.2\\approx\\boldsymbol{104\\,\\Omega} \\]\n\n\\textbf{(3)}　溶液にかかる電圧は $6.0-1.8=4.2\\,\\mathrm{V}$ なので，$I=\\dfrac{4.2}{104.2}=\\boldsymbol{4.03\\times10^{-2}\\,\\mathrm{A}}$．\n$30.0$ 分間の電気量は $4.03\\times10^{-2}\\times1800=72.6\\,\\mathrm{C}$ で，電子は $\\dfrac{72.6}{9.65\\times10^{4}}=7.52\\times10^{-4}\\,\\mathrm{mol}$．\n電子 4 mol あたり $\\ce{H2}$ 2 mol と $\\ce{O2}$ 1 mol が生じるので，気体は電子の $\\dfrac{3}{4}$ 倍の $5.64\\times10^{-4}\\,\\mathrm{mol}$．\n\\[ 5.64\\times10^{-4}\\times22.4\\times10^{3}=\\boldsymbol{12.6\\,\\mathrm{mL}} \\]\n\n\\textbf{(4)}　$0.20\\,\\mathrm{mol/L}$ では $\\kappa=\\dfrac{113\\times0.20}{1000}=2.26\\times10^{-2}\\,\\mathrm{S/cm}$．溶液にかかる電圧は同じなので，電流（＝気体の発生速度）は $\\kappa$ に比例し，\n\\[ \\dfrac{2.26\\times10^{-2}}{1.2\\times10^{-2}}=\\boldsymbol{1.88\\ \\text{倍}} \\]\nイオンの数は 2 倍になっても，濃い溶液ではまわりの反対符号のイオンに引き戻されてイオン 1 個あたりの動きやすさが下がり，モル伝導率が小さくなる．そのため伝導率は濃度に正比例しない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "モル伝導率と濃度から伝導率を出し，液柱の形から溶液の抵抗と流れる電流を求めて，ファラデーの法則で電気分解の生成量につなぐ．濃度を上げてもモル伝導率が下がるため，電流（生成速度）は濃度に比例しないことを判断する．"
+ },
+ "concepts": [
+  "electrolysis",
+  "concentration",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "伝導率",
+  "モル伝導率",
+  "オームの法則",
+  "電気分解",
+  "ファラデーの法則"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

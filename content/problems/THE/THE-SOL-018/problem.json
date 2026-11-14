@@ -1,0 +1,112 @@
+{
+ "id": "THE-SOL-018",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-09",
+ "topic": "溶媒の蒸気が共存するときのヘンリーの法則",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "なめらかに動くピストン付きの容器に，$27$ ℃，$1.00\\times10^{5}\\,\\mathrm{Pa}$ で気体 A $0.200\\,\\mathrm{mol}$ だけが入っている．ここに液体 B $1.00\\,\\mathrm{mol}$ を加え，温度 $27$ ℃，全圧 $1.00\\times10^{5}\\,\\mathrm{Pa}$ を保ったままよく振り混ぜて，気液平衡にした．$27$ ℃ での B の飽和蒸気圧は $2.50\\times10^{4}\\,\\mathrm{Pa}$ であり，A は B に溶けてヘンリーの法則に従い，A の分圧が $1.00\\times10^{5}\\,\\mathrm{Pa}$ のとき，容器内の液体 B 全体に $5.00\\times10^{-2}\\,\\mathrm{mol}$ 溶ける．A が溶けることによる B の蒸気圧の変化，液体 B の量の変化が A の溶解量に与える影響，および液体の体積は無視する．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "平衡時に液体 B に溶けている A の物質量を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "平衡時の気体の体積は，B を加える前の何倍か．A の一部が溶けたにもかかわらず，気体の体積が増えるか減るかも答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$27$ ℃ のままピストンを押して全圧を $2.00\\times10^{5}\\,\\mathrm{Pa}$ にした．液体に溶けている A の物質量を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "次に，$27$ ℃ のままピストンをゆっくり引いて体積を増やし，B をすべて気化させた．B の気化が完了した直後の容器内の圧力を求めよ．"
+     }
+    ]
+   },
+   {
+    "type": "text",
+    "tex": "答えはいずれも有効数字3桁で求めよ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$3.75\\times10^{-2}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "2",
+    "tex": "$1.08$ 倍（増える）"
+   },
+   {
+    "id": "3",
+    "tex": "$8.75\\times10^{-2}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "4",
+    "tex": "$3.00\\times10^{4}\\,\\mathrm{Pa}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 気相には B の蒸気が飽和蒸気圧で存在するので，A の分圧は全圧から B の蒸気圧を引いたもの．\n\\[ p_\\mathrm A=1.00\\times10^{5}-2.50\\times10^{4}=7.50\\times10^{4}\\,\\mathrm{Pa} \\]\n溶解量は分圧に比例するので $5.00\\times10^{-2}\\times\\dfrac{7.50\\times10^{4}}{1.00\\times10^{5}}=\\boldsymbol{3.75\\times10^{-2}\\,\\mathrm{mol}}$．\n\\textbf{(2)} 気相の A は $0.200-0.0375=0.1625\\,\\mathrm{mol}$．気相中の A のモル分率は $7.50/10.0=0.750$ なので，気体全体は $0.1625/0.750=0.2167\\,\\mathrm{mol}$．同温・同圧では体積は物質量に比例するので $0.2167/0.200=\\boldsymbol{1.08}$ 倍．A が溶けて減る分（$0.0375\\,\\mathrm{mol}$）より，B の蒸気が加わる分（$0.0542\\,\\mathrm{mol}$）の方が多いので，体積は\\textbf{増える}．\n\\textbf{(3)} $p_\\mathrm A=2.00\\times10^{5}-2.50\\times10^{4}=1.75\\times10^{5}\\,\\mathrm{Pa}$．溶解量は $5.00\\times10^{-2}\\times1.75=\\boldsymbol{8.75\\times10^{-2}\\,\\mathrm{mol}}$．\n\\textbf{(4)} 液体が無くなると溶けていた A もすべて気体に戻るので，気体は A $0.200\\,\\mathrm{mol}$ と B $1.00\\,\\mathrm{mol}$．気化が完了した直後は B の分圧がちょうど飽和蒸気圧 $2.50\\times10^{4}\\,\\mathrm{Pa}$ に等しい．分圧は物質量に比例するので\n\\[ P=2.50\\times10^{4}\\times\\frac{0.200+1.00}{1.00}=\\boldsymbol{3.00\\times10^{4}\\,\\mathrm{Pa}} \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "溶媒の蒸気が共存する気相では，ヘンリーの法則に使う溶質気体の分圧は全圧から溶媒の飽和蒸気圧を引いたものになる．溶媒がすべて気化した瞬間は，溶媒の分圧が飽和蒸気圧に等しく，溶けていた気体もすべて気相に戻る．"
+ },
+ "concepts": [
+  "solution-colligative",
+  "ideal-gas",
+  "vapor-pressure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ヘンリーの法則",
+  "分圧",
+  "飽和蒸気圧",
+  "気液平衡"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

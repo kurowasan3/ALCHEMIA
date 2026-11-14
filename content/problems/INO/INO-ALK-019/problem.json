@@ -1,0 +1,124 @@
+{
+ "id": "INO-ALK-019",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-05",
+ "topic": "石灰水に通じた CO₂ の量と沈殿量（2 段階の反応）",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "$0.0200\\,\\mathrm{mol/L}$ の水酸化カルシウム水溶液（石灰水）$500\\,\\mathrm{mL}$ に二酸化炭素を少しずつ通じると，はじめは白く濁り，さらに通じ続けると濁りが消えて透明になる．通じた $\\ce{CO2}$ はすべて溶液に吸収され，溶液の体積は変わらないものとする．原子量は C = 12，O = 16，Ca = 40，気体のモル体積は $0\\,^\\circ\\mathrm C$，$1.013\\times10^5\\,\\mathrm{Pa}$ で $22.4\\,\\mathrm{L/mol}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "白く濁る反応と，濁りが消える反応を，それぞれ化学反応式で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "生じる沈殿の質量の最大値〔g〕と，沈殿がちょうど完全に消えるまでに吸収された $\\ce{CO2}$ の体積（$0\\,^\\circ\\mathrm C$，$1.013\\times10^5\\,\\mathrm{Pa}$）〔L〕を，それぞれ有効数字3桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "この石灰水 $500\\,\\mathrm{mL}$ ずつに，2 人の生徒 P，Q が別々に量のわからない $\\ce{CO2}$ を通じたところ，どちらの沈殿も $0.700\\,\\mathrm g$ であった．吸収された $\\ce{CO2}$ の物質量として考えられる値を 2 つ，有効数字3桁で答えよ．また，沈殿をろ過したろ液にさらに $\\ce{CO2}$ を通じる操作で，P と Q のどちらがどちらの値かを見分ける方法を説明せよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\ce{CO2}$ を $0.0250\\,\\mathrm{mol}$ 吸収させた透明な溶液を加熱し，変化がなくなるまで $\\ce{CO2}$ を追い出した．生じる沈殿は何 g か．有効数字3桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：石灰水に通じた CO₂ の量と沈殿量（2 段階の反応）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "白濁：$\\ce{Ca(OH)2 + CO2 -> CaCO3 + H2O}$，濁りが消える：$\\ce{CaCO3 + CO2 + H2O -> Ca(HCO3)2}$"
+   },
+   {
+    "id": "2",
+    "tex": "沈殿の最大値 $1.00\\,\\mathrm g$，$\\ce{CO2}$ $0.448\\,\\mathrm L$"
+   },
+   {
+    "id": "3",
+    "tex": "$7.00\\times10^{-3}\\,\\mathrm{mol}$ と $1.30\\times10^{-2}\\,\\mathrm{mol}$．ろ液に $\\ce{CO2}$ を通じて白く濁れば（$\\ce{Ca(OH)2}$ が残っていた）$7.00\\times10^{-3}\\,\\mathrm{mol}$，濁らなければ（$\\ce{Ca(HCO3)2}$ だけ）$1.30\\times10^{-2}\\,\\mathrm{mol}$ の方である．"
+   },
+   {
+    "id": "4",
+    "tex": "$1.00\\,\\mathrm g$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　$\\ce{Ca(OH)2}$ は $0.0200\\times0.500=0.0100\\,\\mathrm{mol}$．$\\ce{CO2}$ を通じると，まず $\\ce{Ca(OH)2}$ がなくなるまで沈殿が増え，その後は沈殿が $\\ce{CO2}$ と 1:1 で溶けていく（解答図）．\n\n(1) 第 1 段階 $\\ce{Ca(OH)2 + CO2 -> CaCO3 + H2O}$（$\\ce{CaCO3}$ の白色沈殿），第 2 段階 $\\ce{CaCO3 + CO2 + H2O -> Ca(HCO3)2}$（炭酸水素カルシウムは水に溶ける）．\n\n(2) 第 1 段階が終わるとき $\\ce{CaCO3}$ は $0.0100\\,\\mathrm{mol}$ で，$0.0100\\times100=\\boldsymbol{1.00\\,\\mathrm g}$ が最大．それを全部溶かすのにさらに $0.0100\\,\\mathrm{mol}$ 必要なので，合計 $0.0200\\,\\mathrm{mol}$，$0.0200\\times22.4=\\boldsymbol{0.448\\,\\mathrm L}$．\n\n(3) 沈殿 $0.700\\,\\mathrm g$ は $7.00\\times10^{-3}\\,\\mathrm{mol}$．\n・第 1 段階の途中なら，吸収した $\\ce{CO2}$ は沈殿と同じ $\\boldsymbol{7.00\\times10^{-3}\\,\\mathrm{mol}}$（$\\ce{Ca(OH)2}$ が $3.00\\times10^{-3}\\,\\mathrm{mol}$ 残る）．\n・第 2 段階の途中なら，$1.00\\times10^{-2}\\,\\mathrm{mol}$ の沈殿のうち $3.00\\times10^{-3}\\,\\mathrm{mol}$ が溶けたので $\\ce{CO2}$ は $0.0100+0.00300=\\boldsymbol{1.30\\times10^{-2}\\,\\mathrm{mol}}$（ろ液には $\\ce{Ca(HCO3)2}$ が $3.00\\times10^{-3}\\,\\mathrm{mol}$ ある）．\n沈殿の量だけでは 2 つを区別できないので，ろ液の中身の違いを調べる．ろ液に $\\ce{CO2}$ を通じたとき，$\\ce{Ca(OH)2}$ が残っている方は再び $\\ce{CaCO3}$ が沈殿して白濁し，$\\ce{Ca(HCO3)2}$ だけの方は変化しない．（ろ液を加熱すると，逆に $\\ce{Ca(HCO3)2}$ の方だけが $\\ce{Ca(HCO3)2 -> CaCO3 + CO2 + H2O}$ により白濁する．石灰水を加えても $\\ce{Ca(HCO3)2 + Ca(OH)2 -> 2CaCO3 + 2H2O}$ で $\\ce{Ca(HCO3)2}$ の方だけが白濁する．）\n\n(4) $0.0250\\,\\mathrm{mol}$ 吸収では $0.0200\\,\\mathrm{mol}$ を超えているので，カルシウムはすべて $\\ce{Ca(HCO3)2}$（$0.0100\\,\\mathrm{mol}$）として溶けており，余分の $\\ce{CO2}$ は溶液に溶けているだけである．加熱すると $\\ce{Ca(HCO3)2 -> CaCO3 + CO2 + H2O}$ が進み，Ca の量で決まる $0.0100\\,\\mathrm{mol}$，$\\boldsymbol{1.00\\,\\mathrm g}$ の $\\ce{CaCO3}$ が沈殿する（余分の $\\ce{CO2}$ の量によらない）．鍾乳石ができるのも，この $\\ce{CO2}$ が抜けて $\\ce{CaCO3}$ が析出する反応による．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "石灰水に CO₂ を通じると，Ca(OH)₂ がなくなるまで CaCO₃ が増え，その後同じ物質量の CO₂ で溶けていくので，同じ沈殿量に対して CO₂ の量が 2 通りありうる．ろ液に残るのが Ca(OH)₂ か Ca(HCO₃)₂ かを調べる操作で区別し，加熱による再沈殿量は Ca の量だけで決まる．"
+ },
+ "concepts": [
+  "alkali-metals",
+  "precipitation",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "石灰水",
+  "二酸化炭素",
+  "炭酸カルシウム",
+  "炭酸水素カルシウム",
+  "量的関係",
+  "沈殿量のグラフ"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

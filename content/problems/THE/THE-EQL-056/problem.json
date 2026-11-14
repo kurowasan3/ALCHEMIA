@@ -1,0 +1,117 @@
+{
+ "id": "THE-EQL-056",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "酵素反応の阻害の型を速度データから判定する",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "酵素 E による反応 $\\ce{E + S <=>[\\text{}] ES ->[\\text{}] E + P}$ では，ES の濃度が一定とみなせるとき，生成物 P の生成速度 $v$ は\n\\[ v=\\dfrac{V[\\ce{S}]}{K+[\\ce{S}]}\\qquad\\left(V=k_3[\\ce{E}]_0,\\ K=\\dfrac{k_2+k_3}{k_1}\\right) \\]\nと表される（$[\\ce{E}]_0$ は酵素の全濃度，$k_1,k_2$ は ES の生成・解離，$k_3$ は ES から P ができる速度定数）．この式は $[\\ce{E}]_0=[\\ce{E}]+[\\ce{ES}]$ と $[\\ce{E}][\\ce{S}]=K[\\ce{ES}]$ から導かれる．\n\nこの酵素のはたらきを妨げる物質（阻害剤）I は，次のどちらかのしかたで酵素に結合する．I が結合した酵素は P をつくらない．I の結合と解離は速く，常に平衡にあり，I の濃度 $[\\ce{I}]$ は一定とみなせる．\n\\textbf{型①}　I は E にだけ結合して EI となり，ES には結合しない．$\\dfrac{[\\ce{E}][\\ce{I}]}{[\\ce{EI}]}=K_\\mathrm{i}$．\\\\\n\\textbf{型②}　I は E にも ES にも同じ強さで結合し，EI と ESI をつくる．$\\dfrac{[\\ce{E}][\\ce{I}]}{[\\ce{EI}]}=\\dfrac{[\\ce{ES}][\\ce{I}]}{[\\ce{ESI}]}=K_\\mathrm{i}$．ESI からも P はできず，$[\\ce{E}][\\ce{S}]=K[\\ce{ES}]$ は成り立ったままとする．\\\\\n2 種類の阻害剤 X，Y をそれぞれ $[\\ce{I}]=2.0\\times10^{-5}\\,\\mathrm{mol/L}$ で加えたときと，加えないときの $v$〔$\\mathrm{mol/(L\\cdot s)}$〕を測定し，次の結果を得た（酵素の濃度はすべて同じ）．\n\\[ \\begin{array}{c|ccc} [\\ce{S}]\\ (\\mathrm{mol/L}) & \\text{阻害剤なし} & \\text{X} & \\text{Y} \\\\ \\hline 1.0\\times10^{-4} & 2.00\\times10^{-6} & 8.57\\times10^{-7} & 1.33\\times10^{-6} \\\\ 1.0\\times10^{-3} & 5.00\\times10^{-6} & 3.75\\times10^{-6} & 3.33\\times10^{-6} \\end{array} \\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "型①のときの $v$ を，$V,K,K_\\mathrm{i},[\\ce{S}],[\\ce{I}]$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "型②のときの $v$ を，$V,K,K_\\mathrm{i},[\\ce{S}],[\\ce{I}]$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "$v=\\dfrac{V'[\\ce{S}]}{K'+[\\ce{S}]}$ の形の式では $\\dfrac{1}{v}=\\dfrac{K'}{V'}\\cdot\\dfrac{1}{[\\ce{S}]}+\\dfrac{1}{V'}$ となることを用いて，阻害剤なし，X，Y のそれぞれについて $V'$ と $K'$ を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "X，Y はそれぞれ型①，型②のどちらか．判断の根拠を示し，それぞれの $K_\\mathrm{i}$ を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "$[\\ce{S}]=1.0\\times10^{-2}\\,\\mathrm{mol/L}$ のとき，X，Y を同じ濃度で加えると，$v$ はそれぞれ阻害剤なしの何 \\% になるか．整数で答えよ．また，この結果から，基質を大量に加えることで阻害を打ち消せるのはどちらの型か，その理由とともに述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$v=\\dfrac{V[\\ce{S}]}{K\\left(1+\\dfrac{[\\ce{I}]}{K_\\mathrm{i}}\\right)+[\\ce{S}]}$"
+   },
+   {
+    "id": "2",
+    "tex": "$v=\\dfrac{V}{1+\\dfrac{[\\ce{I}]}{K_\\mathrm{i}}}\\cdot\\dfrac{[\\ce{S}]}{K+[\\ce{S}]}$"
+   },
+   {
+    "id": "3",
+    "tex": "阻害剤なし：$V'=6.0\\times10^{-6}\\,\\mathrm{mol/(L\\cdot s)}$，$K'=2.0\\times10^{-4}\\,\\mathrm{mol/L}$．X：$V'=6.0\\times10^{-6}$，$K'=6.0\\times10^{-4}$．Y：$V'=4.0\\times10^{-6}$，$K'=2.0\\times10^{-4}$"
+   },
+   {
+    "id": "4",
+    "tex": "X は型①（$V'$ が変わらず $K'$ だけが $1+[\\ce{I}]/K_\\mathrm{i}=3$ 倍），$K_\\mathrm{i}=1.0\\times10^{-5}\\,\\mathrm{mol/L}$．Y は型②（$K'$ が変わらず $V'$ だけが $1/1.5$ 倍），$K_\\mathrm{i}=4.0\\times10^{-5}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "5",
+    "tex": "X：96 \\%，Y：67 \\%．型①（X）．型①の I は E とだけ結合して S と E を奪い合うので，S を増やすと E は ES になって I が結合できなくなる．型②の I は ES にも結合するので，S をいくら増やしても一定の割合の酵素が ESI としてはたらかない"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $[\\ce{ES}]=\\dfrac{[\\ce{E}][\\ce{S}]}{K}$，$[\\ce{EI}]=\\dfrac{[\\ce{E}][\\ce{I}]}{K_\\mathrm{i}}$ を $[\\ce{E}]_0=[\\ce{E}]+[\\ce{ES}]+[\\ce{EI}]$ に入れると\n\\[ [\\ce{E}]_0=[\\ce{E}]\\left(1+\\dfrac{[\\ce{S}]}{K}+\\dfrac{[\\ce{I}]}{K_\\mathrm{i}}\\right),\\qquad v=k_3[\\ce{ES}]=\\dfrac{k_3[\\ce{E}]_0[\\ce{S}]/K}{1+\\dfrac{[\\ce{S}]}{K}+\\dfrac{[\\ce{I}]}{K_\\mathrm{i}}}=\\boldsymbol{\\dfrac{V[\\ce{S}]}{K\\left(1+\\dfrac{[\\ce{I}]}{K_\\mathrm{i}}\\right)+[\\ce{S}]}} \\]\n見かけの $K$ だけが $\\alpha=1+\\dfrac{[\\ce{I}]}{K_\\mathrm{i}}$ 倍になり，$V$ は変わらない．\\\\\n\\textbf{(2)} さらに $[\\ce{ESI}]=\\dfrac{[\\ce{ES}][\\ce{I}]}{K_\\mathrm{i}}$ が加わり\n\\[ [\\ce{E}]_0=[\\ce{E}]\\left(1+\\dfrac{[\\ce{S}]}{K}\\right)\\left(1+\\dfrac{[\\ce{I}]}{K_\\mathrm{i}}\\right),\\qquad v=\\boldsymbol{\\dfrac{V}{1+\\dfrac{[\\ce{I}]}{K_\\mathrm{i}}}\\cdot\\dfrac{[\\ce{S}]}{K+[\\ce{S}]}} \\]\n見かけの $V$ だけが $\\dfrac{1}{\\alpha}$ 倍になり，$K$ は変わらない．\\\\\n\\textbf{(3)} $\\dfrac{1}{[\\ce{S}]}=1.0\\times10^{4}$ と $1.0\\times10^{3}$ の 2 点で $\\dfrac{1}{v}$ を計算し，傾き $\\dfrac{K'}{V'}$ と切片 $\\dfrac{1}{V'}$ を求める．\\\\\n阻害剤なし：$\\dfrac{1}{v}=5.00\\times10^{5},\\ 2.00\\times10^{5}$．傾き $=\\dfrac{3.00\\times10^{5}}{9.0\\times10^{3}}=33.3$，切片 $=2.00\\times10^{5}-33.3\\times10^{3}=1.67\\times10^{5}$ より $V'=\\boldsymbol{6.0\\times10^{-6}}$，$K'=33.3\\times6.0\\times10^{-6}=\\boldsymbol{2.0\\times10^{-4}}$．\\\\\nX：$\\dfrac{1}{v}=1.167\\times10^{6},\\ 2.67\\times10^{5}$．傾き $=\\dfrac{9.00\\times10^{5}}{9.0\\times10^{3}}=100$，切片 $=2.67\\times10^{5}-1.00\\times10^{5}=1.67\\times10^{5}$ より $V'=\\boldsymbol{6.0\\times10^{-6}}$，$K'=\\boldsymbol{6.0\\times10^{-4}}$．\\\\\nY：$\\dfrac{1}{v}=7.52\\times10^{5},\\ 3.00\\times10^{5}$．傾き $=\\dfrac{4.52\\times10^{5}}{9.0\\times10^{3}}=50.2$，切片 $=3.00\\times10^{5}-0.502\\times10^{5}=2.50\\times10^{5}$ より $V'=\\boldsymbol{4.0\\times10^{-6}}$，$K'=50.2\\times4.0\\times10^{-6}=\\boldsymbol{2.0\\times10^{-4}}$．\\\\\n\\textbf{(4)} X は $V'$ が阻害剤なしと同じで $K'$ だけが 3 倍 → (1) の形，\\textbf{型①}．$1+\\dfrac{2.0\\times10^{-5}}{K_\\mathrm{i}}=3$ より $K_\\mathrm{i}=\\boldsymbol{1.0\\times10^{-5}\\,\\mathrm{mol/L}}$．\\\\\nY は $K'$ が変わらず $V'$ だけが $\\dfrac{4.0}{6.0}=\\dfrac{1}{1.5}$ 倍 → (2) の形，\\textbf{型②}．$1+\\dfrac{2.0\\times10^{-5}}{K_\\mathrm{i}}=1.5$ より $K_\\mathrm{i}=\\boldsymbol{4.0\\times10^{-5}\\,\\mathrm{mol/L}}$．\\\\\n1 つの $[\\ce{S}]$ だけの測定では，どちらも「$v$ が小さくなった」としかわからない．2 つ以上の $[\\ce{S}]$ で測り，$V'$ と $K'$ のどちらが変わったかを見ることで型が決まる．\\\\\n\\textbf{(5)} 阻害剤なし：$v_0=\\dfrac{6.0\\times10^{-6}\\times1.0\\times10^{-2}}{2.0\\times10^{-4}+1.0\\times10^{-2}}=5.88\\times10^{-6}$．\\\\\nX：$\\dfrac{6.0\\times10^{-6}\\times1.0\\times10^{-2}}{6.0\\times10^{-4}+1.0\\times10^{-2}}=5.66\\times10^{-6}$，$\\dfrac{5.66}{5.88}=0.962$ → $\\boldsymbol{96\\,\\%}$．\\\\\nY：$\\dfrac{v_0}{1.5}$ → $\\boldsymbol{67\\,\\%}$（$[\\ce{S}]$ によらず常に $\\dfrac{1}{1.5}$）．\\\\\n型①（X）では I と S が同じ E を奪い合うので，$[\\ce{S}]\\gg K\\alpha$ にすれば E はほとんど ES になり，阻害は\\textbf{打ち消せる}．型②（Y）では I が ES にも結合し，$[\\ce{S}]$ によらず全酵素の $\\dfrac{[\\ce{I}]/K_\\mathrm{i}}{1+[\\ce{I}]/K_\\mathrm{i}}$ が I と結合してはたらかないので，最大速度そのものが下がり，基質を増やしても回復しない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "阻害剤が酵素とだけ結合して基質と奪い合う場合は見かけの K だけが，酵素と酵素-基質複合体の両方に結合する場合は見かけの最大速度だけが (1+[I]/Ki) 倍に変わる．逆数をとった直線関係で 2 つの基質濃度の速度から V' と K' を求め，どちらが変わったかで阻害の型と Ki を決め，基質の大量添加で阻害を打ち消せるかを判断する．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "protein-amino",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "酵素反応",
+  "阻害剤",
+  "速度式",
+  "平衡",
+  "逆数プロット"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

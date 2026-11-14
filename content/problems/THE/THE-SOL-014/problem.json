@@ -1,0 +1,115 @@
+{
+ "id": "THE-SOL-014",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-09",
+ "topic": "硫酸ナトリウムの転移点と析出する結晶の種類",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図は硫酸ナトリウムの溶解度曲線の概略である（溶解度は水 $100\\,\\mathrm g$ に溶ける無水物 $\\ce{Na2SO4}$ の質量〔g〕）．$32.4$ ℃ より低温の飽和水溶液と共存する固体は十水和物 $\\ce{Na2SO4.10H2O}$，$32.4$ ℃ より高温では無水物 $\\ce{Na2SO4}$ であり，溶解度は $25$ ℃ で $28\\,\\mathrm g$，$32.4$ ℃ で $50\\,\\mathrm g$，$80$ ℃ で $44\\,\\mathrm g$ とする．$32.4$ ℃ をわずかにこえた温度での溶解度も $50\\,\\mathrm g$ とする．式量は $\\ce{Na2SO4}=142$，$\\ce{H2O}=18$ とし，数値の答えは有効数字2桁で求めよ．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$32.4$ ℃ の飽和水溶液 $150\\,\\mathrm g$ がある．(i) 水が蒸発しないようにして $80$ ℃ に加熱したとき，(ii) $25$ ℃ に冷却したとき，それぞれ析出する結晶の化学式と質量を答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$80$ ℃ の飽和水溶液 $144\\,\\mathrm g$ がある．(i) $80$ ℃ に保ったまま水 $50\\,\\mathrm g$ を蒸発させたとき，(ii) 水を蒸発させずに $25$ ℃ に冷却したとき，それぞれ析出する結晶の質量を求めよ．また，得られる結晶に含まれる $\\ce{Na2SO4}$ の質量が多いのは (i)，(ii) のどちらか．"
+     },
+     {
+      "id": "3",
+      "tex": "十水和物の結晶 $32.2\\,\\mathrm g$ を密閉容器に入れてゆっくり加熱すると，$32.4$ ℃ をわずかにこえたところで結晶が融けたように見えた．このとき容器内に残っている固体の化学式と質量を求め，この変化が起こる理由を述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：硫酸ナトリウムの転移点と析出する結晶の種類",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "(i) $\\ce{Na2SO4}$（無水物）$6.0\\,\\mathrm g$，(ii) $\\ce{Na2SO4.10H2O}$ $77\\,\\mathrm g$"
+   },
+   {
+    "id": "2",
+    "tex": "(i) $22\\,\\mathrm g$（無水物），(ii) $56\\,\\mathrm g$（十水和物），$\\ce{Na2SO4}$ の質量が多いのは (ii)"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{Na2SO4}$，$5.2\\,\\mathrm g$．$32.4$ ℃ 以上では十水和物は安定に存在できず無水物と水に分かれ，その水和水に無水物の一部が溶けて飽和水溶液になるため．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　十水和物 $\\ce{Na2SO4.10H2O}$（式量 $322$）は $\\ce{Na2SO4}$ を $\\dfrac{142}{322}$，水を $\\dfrac{180}{322}$ の割合で含む．析出する固体が無水物なら溶媒の水は減らないが，十水和物なら水和水として水も取り込まれる．また $32.4$ ℃ より高温では溶解度が温度とともに小さくなるので，\\textbf{加熱で結晶が析出する}．\n\\textbf{(1)} 飽和水溶液 $150\\,\\mathrm g$ は水 $100\\,\\mathrm g$ と $\\ce{Na2SO4}$ $50\\,\\mathrm g$．\n(i) $80$ ℃ では無水物が固体として共存し，溶解度は $44\\,\\mathrm g$ に下がるので，無水物 $\\ce{Na2SO4}$ が $50-44=\\boldsymbol{6.0\\,\\mathrm g}$ 析出する．\n(ii) $25$ ℃ では十水和物が析出する．析出量を $x\\,\\mathrm g$ とすると，残った溶液が飽和なので\n\\[ \\frac{50-\\frac{142}{322}x}{100-\\frac{180}{322}x}=\\frac{28}{100} \\quad\\Rightarrow\\quad x=\\frac{22\\times322}{142-50.4}=77.3 \\]\nよって $\\ce{Na2SO4.10H2O}$ が $\\boldsymbol{77\\,\\mathrm g}$ 析出する．\n\\textbf{(2)} $144\\,\\mathrm g$ は水 $100\\,\\mathrm g$ と $\\ce{Na2SO4}$ $44\\,\\mathrm g$．\n(i) $80$ ℃ で水 $50\\,\\mathrm g$ に溶けていられるのは $22\\,\\mathrm g$ なので，無水物が $44-22=\\boldsymbol{22\\,\\mathrm g}$ 析出．\n(ii) 十水和物 $y\\,\\mathrm g$ が析出するとして $\\dfrac{44-\\frac{142}{322}y}{100-\\frac{180}{322}y}=\\dfrac{28}{100}$ より $y=\\dfrac{16\\times322}{91.6}=56.2$，$\\boldsymbol{56\\,\\mathrm g}$．この中の $\\ce{Na2SO4}$ は $56.2\\times\\dfrac{142}{322}=24.8\\,\\mathrm g$ で，(i) の $22\\,\\mathrm g$ より多い．よって $\\boldsymbol{(ii)}$．十水和物が析出すると溶媒の水も結晶に取り込まれて減るので，冷却だけでも多くの $\\ce{Na2SO4}$ が析出する．\n\\textbf{(3)} 十水和物 $32.2\\,\\mathrm g$（$0.100\\,\\mathrm{mol}$）は $\\ce{Na2SO4}$ $14.2\\,\\mathrm g$ と水 $18.0\\,\\mathrm g$ からなる．$32.4$ ℃ をこえると十水和物は $\\ce{Na2SO4.10H2O -> Na2SO4 + 10H2O}$ のように無水物と水に分かれ，水 $18.0\\,\\mathrm g$ には $\\ce{Na2SO4}$ が $18.0\\times\\dfrac{50}{100}=9.0\\,\\mathrm g$ 溶ける．残る固体は無水物 $\\ce{Na2SO4}$ で，$14.2-9.0=\\boldsymbol{5.2\\,\\mathrm g}$．結晶が自分の水和水に溶けるため，融けたように見える．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "硫酸ナトリウムは転移点（32.4 ℃）を境に析出する固体が十水和物から無水物に変わり，転移点より上では溶解度が温度とともに下がるので加熱で無水物が析出する．十水和物が析出するときは水和水として溶媒も取り込まれ，転移点をこえると十水和物は自らの水和水に一部溶けて無水物が残る．"
+ },
+ "concepts": [
+  "solution-colligative",
+  "oxygen-sulfur",
+  "alkali-metals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "溶解度",
+  "水和物",
+  "転移点",
+  "硫酸ナトリウム",
+  "再結晶"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

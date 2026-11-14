@@ -1,0 +1,118 @@
+{
+ "id": "THE-ION-037",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "沈殿平衡と錯形成平衡の競合（AgCl・AgI とアンモニア）",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "銀イオンはアンモニアとジアンミン銀(I)イオンをつくる．\n\\[\\ce{Ag+ + 2NH3 <=> [Ag(NH3)2]+}\\qquad \\beta=\\frac{[\\ce{[Ag(NH3)2]+}]}{[\\ce{Ag+}][\\ce{NH3}]^2}=1.6\\times10^{7}\\,(\\mathrm{mol/L})^{-2}\\]\n塩化銀と ヨウ化銀の溶解度積をそれぞれ $K_{\\mathrm{sp}}(\\ce{AgCl})=1.8\\times10^{-10}\\,(\\mathrm{mol/L})^2$，$K_{\\mathrm{sp}}(\\ce{AgI})=8.0\\times10^{-17}\\,(\\mathrm{mol/L})^2$ とする．アンモニアの電離，$\\ce{[Ag(NH3)]+}$ の生成，溶解に伴う体積変化は無視し，$\\sqrt{2.88}=1.70$，$\\sqrt{1.28}=1.13$ を用いてよい．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{AgCl}$ がアンモニア水に溶ける反応 $\\ce{AgCl + 2NH3 <=> [Ag(NH3)2]+ + Cl-}$ の平衡定数 $K_1=\\dfrac{[\\ce{[Ag(NH3)2]+}][\\ce{Cl-}]}{[\\ce{NH3}]^2}$ を $K_{\\mathrm{sp}}(\\ce{AgCl})$ と $\\beta$ で表し，値を求めよ．$\\ce{AgI}$ についての同様の平衡定数 $K_2$ の値も求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "はじめの濃度 1.00 mol/L のアンモニア水 1.00 L に溶ける $\\ce{AgCl}$ の物質量を有効数字 3 桁で求めよ．また，「錯イオンの生成で消費される $\\ce{NH3}$ を無視して $[\\ce{NH3}]=1.00$ mol/L とする」近似で求めた値と比べ，この近似が妥当かどうか判断せよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\ce{AgCl}$ $1.0\\times10^{-3}$ mol と $\\ce{AgI}$ $1.0\\times10^{-3}$ mol の混合沈殿に，アンモニア水を加えて全体を 100 mL とした．$\\ce{AgCl}$ をすべて溶かすのに必要なアンモニアの全濃度（錯イオンになった分も含む）の最小値を有効数字 2 桁で求めよ．また，そのとき $\\ce{AgI}$ はどの程度溶けるか．$[\\ce{I-}]$ を求めて判断せよ．"
+     },
+     {
+      "id": "4",
+      "tex": "濃度 6.0 mol/L のアンモニア水 100 mL に $\\ce{AgI}$ $1.0\\times10^{-3}$ mol を加えたとき，溶ける $\\ce{AgI}$ は加えた量の何 % か．整数で答えよ（$\\ce{NH3}$ の消費は無視してよい）．"
+     },
+     {
+      "id": "5",
+      "tex": "(3) で $\\ce{AgCl}$ がちょうど溶けきった溶液をろ過し，ろ液にヨウ化カリウムを加えて $[\\ce{I-}]=1.0\\times10^{-3}$ mol/L とした．沈殿は生じるか．ろ液中の $[\\ce{Ag+}]$ を求めて判断せよ．また，ろ液に硝酸を加えて酸性にすると何が起こるか．イオン反応式で示せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$K_1=K_{\\mathrm{sp}}(\\ce{AgCl})\\,\\beta=2.9\\times10^{-3}$（$2.88\\times10^{-3}$），$K_2=1.3\\times10^{-9}$（$1.28\\times10^{-9}$）"
+   },
+   {
+    "id": "2",
+    "tex": "$4.85\\times10^{-2}$ mol．近似では $5.4\\times10^{-2}$ mol となり約 11 % 大きくなるので，この近似は妥当でない"
+   },
+   {
+    "id": "3",
+    "tex": "0.21 mol/L．$[\\ce{I-}]=4.4\\times10^{-9}$ mol/L で，$\\ce{AgI}$ はほとんど溶けない"
+   },
+   {
+    "id": "4",
+    "tex": "2 %"
+   },
+   {
+    "id": "5",
+    "tex": "$[\\ce{Ag+}]=1.8\\times10^{-8}$ mol/L，$[\\ce{Ag+}][\\ce{I-}]=1.8\\times10^{-11}>K_{\\mathrm{sp}}(\\ce{AgI})$ なので $\\ce{AgI}$ が沈殿する．酸性にすると $\\ce{[Ag(NH3)2]+ + Cl- + 2H+ -> AgCl + 2NH4+}$ により $\\ce{AgCl}$ が再び沈殿する"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　$K_1=\\dfrac{[\\ce{[Ag(NH3)2]+}][\\ce{Cl-}]}{[\\ce{NH3}]^2}=\\dfrac{[\\ce{[Ag(NH3)2]+}]}{[\\ce{Ag+}][\\ce{NH3}]^2}\\cdot[\\ce{Ag+}][\\ce{Cl-}]=\\beta\\,K_{\\mathrm{sp}}(\\ce{AgCl})$．\n\\[K_1=1.6\\times10^{7}\\times1.8\\times10^{-10}=\\boldsymbol{2.88\\times10^{-3}},\\qquad K_2=1.6\\times10^{7}\\times8.0\\times10^{-17}=\\boldsymbol{1.28\\times10^{-9}}\\]\n沈殿をつくる力（$K_{\\mathrm{sp}}$）と錯イオンをつくる力（$\\beta$）の積が「溶けやすさ」を決める．$K_2$ は $K_1$ の約 $10^{-6}$ 倍である．\n\n\\textbf{(2)}　溶ける $\\ce{AgCl}$ を $s$ mol/L とすると $[\\ce{[Ag(NH3)2]+}]=[\\ce{Cl-}]=s$，$[\\ce{NH3}]=1.00-2s$（$[\\ce{Ag+}]$ は錯イオンに比べて無視できる）．\n\\[\\frac{s^2}{(1.00-2s)^2}=K_1\\quad\\Longrightarrow\\quad\\frac{s}{1.00-2s}=\\sqrt{2.88\\times10^{-3}}=5.37\\times10^{-2}\\]\n\\[s=\\frac{5.37\\times10^{-2}}{1+2\\times5.37\\times10^{-2}}=\\boldsymbol{4.85\\times10^{-2}}\\ \\mathrm{mol}\\]\n近似 $[\\ce{NH3}]=1.00$ では $s=5.37\\times10^{-2}\\approx5.4\\times10^{-2}$ mol で，正しい値より約 11 % 大きい．$\\ce{NH3}$ の消費量 $2s\\approx0.10$ mol/L がはじめの濃度の 1 割に達しているので，\\textbf{この近似は妥当でない}（消費を無視できるのは $2s$ がはじめの濃度に比べて十分小さいときに限られる）．\n\n\\textbf{(3)}　$\\ce{AgCl}$ がすべて溶けると $[\\ce{Cl-}]=[\\ce{[Ag(NH3)2]+}]=1.0\\times10^{-2}$ mol/L（$\\ce{AgI}$ の溶解分は後で確かめる）．溶けきるのに必要な遊離の $\\ce{NH3}$ は\n\\[[\\ce{NH3}]=\\frac{1.0\\times10^{-2}}{\\sqrt{K_1}}=\\frac{1.0\\times10^{-2}}{5.37\\times10^{-2}}=0.186\\,\\mathrm{mol/L}\\]\n錯イオンに使われた $2\\times1.0\\times10^{-2}$ mol/L を加えて，全濃度は $0.186+0.020=\\boldsymbol{0.21}$ mol/L．\\\\\nこのとき $[\\ce{Ag+}]=\\dfrac{K_{\\mathrm{sp}}(\\ce{AgCl})}{[\\ce{Cl-}]}=1.8\\times10^{-8}$ mol/L なので，$\\ce{AgI}$ と平衡にある $[\\ce{I-}]=\\dfrac{8.0\\times10^{-17}}{1.8\\times10^{-8}}=\\boldsymbol{4.4\\times10^{-9}}$ mol/L．溶けた $\\ce{AgI}$ は $4.4\\times10^{-10}$ mol にすぎず，\\textbf{ほとんど溶けない}．はじめの仮定（$\\ce{AgI}$ の溶解を無視）も正しい．この濃度のアンモニア水で $\\ce{Cl-}$ と $\\ce{I-}$ を分離できる．\n\n\\textbf{(4)}　$\\dfrac{s'}{6.0}=\\sqrt{K_2}=\\sqrt{1.28\\times10^{-9}}=3.58\\times10^{-5}$ より $s'=2.1\\times10^{-4}$ mol/L．100 mL では $2.1\\times10^{-5}$ mol で，加えた $1.0\\times10^{-3}$ mol の $\\boldsymbol{2}$ \\textbf{\\%} しか溶けない．濃いアンモニア水でも $\\ce{AgI}$ はほぼ溶けない．\n\n\\textbf{(5)}　ろ液では $[\\ce{[Ag(NH3)2]+}]=1.0\\times10^{-2}$，$[\\ce{NH3}]=0.186$ mol/L なので\n\\[[\\ce{Ag+}]=\\frac{1.0\\times10^{-2}}{1.6\\times10^{7}\\times0.186^2}=\\boldsymbol{1.8\\times10^{-8}}\\ \\mathrm{mol/L}\\]\n（これは (3) の値と同じで，$\\ce{AgCl}$ との平衡がちょうど保たれていた状態である．）$[\\ce{Ag+}][\\ce{I-}]=1.8\\times10^{-11}>8.0\\times10^{-17}$ なので \\textbf{$\\ce{AgI}$ が沈殿する}．錯イオンになっていても，わずかに存在する $\\ce{Ag+}$ が $K_{\\mathrm{sp}}$ の極めて小さい沈殿を生じうる．\\\\\n硝酸を加えると $\\ce{NH3 + H+ -> NH4+}$ で $\\ce{NH3}$ が除かれ，錯イオンの平衡が左に移るので $[\\ce{Ag+}]$ が増え，$\\ce{[Ag(NH3)2]+ + Cl- + 2H+ -> AgCl + 2NH4+}$ により $\\ce{AgCl}$ が再沈殿する．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "沈殿の溶解平衡と錯イオンの生成平衡が同時に成り立つとき，沈殿が錯イオンとして溶ける反応の平衡定数は Ksp と生成定数の積になる．これを使って溶解度や必要な配位子の量を求め，配位子の消費を無視する近似の妥当性を判断する．Ksp の差によって AgCl だけを溶かして AgI と分離できること，錯イオン溶液中にもわずかに残る Ag⁺ が別の沈殿を生じうることを条件判断する．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "complex-ion",
+  "precipitation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "溶解度積",
+  "錯イオン",
+  "化学平衡",
+  "アンモニア",
+  "銀",
+  "近似"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,108 @@
+{
+ "id": "POL-PRT-060",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-05",
+ "topic": "側鎖のカルボキシ基で結合したアスパラギン酸を含むペプチドの異性体",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "structure",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "アスパラギン酸 $\\ce{HOOC-CH2-CH(NH2)-COOH}$ は2つのカルボキシ基をもつので，次のアミノ酸の $\\alpha$-アミノ基とペプチド結合をつくるとき，$\\alpha$ 位のカルボキシ基（$\\alpha$ 結合）と側鎖のカルボキシ基（$\\beta$ 結合）のどちらも使うことができる．グリシン（Gly），アラニン（Ala），アスパラギン酸（Asp）を1分子ずつ含み，ペプチド結合はすべて「カルボキシ基と $\\alpha$-アミノ基」の間でできているトリペプチドについて考える．立体異性体は区別しない．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "鎖状のトリペプチドは何種類あるか．"
+     },
+     {
+      "id": "2",
+      "tex": "3つのアミノ酸が輪になった環状のトリペプチドは何種類あるか．また，その環をつくる原子の数（環の員数）として考えられるものをすべて答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "鎖状のトリペプチド X を部分的に加水分解すると，Ala と Asp からなるジペプチドと，Asp と Gly からなるジペプチドが得られた．また，X を亜硝酸と反応させて N 末端の $\\alpha$-アミノ基をヒドロキシ基に変えてから完全に加水分解すると，ヒドロキシ酸としてグリコール酸 $\\ce{HO-CH2-COOH}$ が得られた．X として考えられる構造をすべて示性式で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "鎖状のトリペプチド Y は，遊離の2つのカルボキシ基が同じアミノ酸残基に結合しており，N 末端のアミノ酸は Ala である．Y の示性式を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "10 種類"
+   },
+   {
+    "id": "2",
+    "tex": "4 種類，9 員環と 10 員環"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{H2N-CH2-CO-NH-CH(CH2COOH)-CO-NH-CH(CH3)-COOH}$ と $\\ce{H2N-CH2-CO-NH-CH(COOH)-CH2-CO-NH-CH(CH3)-COOH}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{H2N-CH(CH3)-CO-NH-CH2-CO-NH-CH(COOH)-CH2-COOH}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 3つのアミノ酸の並べ方（N 末端から）は $3!=6$ 通り．Asp が C 末端以外（N 末端または中央）にあるときは，次の残基との結合に $\\alpha$・$\\beta$ の2通りがあり，C 末端にあるときは1通り．Asp が C 末端の並びは2通り（Gly-Ala-Asp，Ala-Gly-Asp）なので\n\\[ 4\\times2+2\\times1=\\boldsymbol{10}\\ \\text{種類}\\]\n\n\\textbf{(2)} 環状では N 末端・C 末端がないので，並び方は「Gly→Ala→Asp→（Gly）」と「Gly→Asp→Ala→（Gly）」の2通り（ペプチド結合には CO→NH の向きがあるので，逆回りは別の化合物）．それぞれ Asp の結合が $\\alpha$・$\\beta$ の2通りで $\\boldsymbol{4}$ 種類．1残基あたり環に入る原子は $\\alpha$ 結合なら N・C$_\\alpha$・C の3個，$\\beta$ 結合の Asp なら N・C$_\\alpha$・$\\ce{CH2}$・C の4個なので，環は $3\\times3=\\boldsymbol{9}$ 員環または $3+3+4=\\boldsymbol{10}$ 員環．\n\n\\textbf{(3)} 部分加水分解で Ala–Asp と Asp–Gly のジペプチドができるので，Asp が中央にある．N 末端がグリコール酸（Gly から）になったので N 末端は Gly で，並びは Gly-Asp-Ala．Asp と Ala の結合には $\\alpha$・$\\beta$ の2通りがあり，与えられた情報ではどちらとも決まらない．\n\\[\\ce{H2N-CH2-CO-NH-CH(CH2COOH)-CO-NH-CH(CH3)-COOH}\\ (\\alpha)\\]\n\\[\\ce{H2N-CH2-CO-NH-CH(COOH)-CH2-CO-NH-CH(CH3)-COOH}\\ (\\beta)\\]\nの $\\boldsymbol{2}$ つが候補である（部分加水分解で得られる Asp–Ala のジペプチドも，$\\alpha$ 体と $\\beta$ 体で互いに構造異性体になる）．\n\n\\textbf{(4)} 2つのカルボキシ基が同じ残基にあるのは，Asp が C 末端にあって $\\alpha$・$\\beta$ の両方のカルボキシ基が遊離しているときだけである（Asp が C 末端以外なら，遊離のカルボキシ基は Asp に1つ，C 末端の残基に1つと分かれる）．N 末端が Ala なので並びは Ala-Gly-Asp：\n\\[\\boldsymbol{\\ce{H2N-CH(CH3)-CO-NH-CH2-CO-NH-CH(COOH)-CH2-COOH}}\\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "2つのカルボキシ基をもつアミノ酸は α・β のどちらでもペプチド結合をつくれるので，並び順に加えて結合の仕方の異性体が生じ（C末端では区別がなくなる），環状では環の員数も変わる．並び順は部分加水分解と末端分析で決まっても，α・β の区別は別の情報が要る．"
+ },
+ "concepts": [
+  "protein-amino",
+  "organic-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ペプチド",
+  "アスパラギン酸",
+  "構造異性体",
+  "環状ペプチド",
+  "末端分析"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

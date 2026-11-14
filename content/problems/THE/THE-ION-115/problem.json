@@ -1,0 +1,109 @@
+{
+ "id": "THE-ION-115",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "リン酸カルシウムの溶解度の pH 依存性と溶けはじめる臨界 pH（多段階の電離平衡と溶解平衡の連成）",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "リン酸の電離定数を $K_1=7.5\\times10^{-3}\\,\\mathrm{mol/L}$，$K_2=6.2\\times10^{-8}\\,\\mathrm{mol/L}$，$K_3=4.8\\times10^{-13}\\,\\mathrm{mol/L}$，リン酸カルシウムの溶解度積を $K_\\mathrm{sp}=[\\ce{Ca^2+}]^3[\\ce{PO4^3-}]^2=2.0\\times10^{-29}\\,(\\mathrm{mol/L})^5$ とする．\n\\\\ リン酸を含む化学種の濃度の合計を $C_\\mathrm{P}=[\\ce{H3PO4}]+[\\ce{H2PO4-}]+[\\ce{HPO4^2-}]+[\\ce{PO4^3-}]$，そのうち $\\ce{PO4^3-}$ の割合を $\\alpha=[\\ce{PO4^3-}]/C_\\mathrm{P}$ とする．溶液の pH は十分な量の緩衝液で一定に保たれ，$\\ce{Ca3(PO4)2}$ 以外の沈殿や，$\\ce{Ca^2+}$ とリン酸イオンの錯形成は起こらないものとする．$\\log_{10}2=0.30$，$\\log_{10}3=0.48$ を用いてよい．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\alpha$ を $[\\ce{H+}]$，$K_1$，$K_2$，$K_3$ で表し，pH 7.0 と pH 5.0 での値を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "純粋な $\\ce{Ca3(PO4)2}$ を pH 7.0 および pH 5.0 の緩衝液に溶かして飽和させたときの溶解度 $S$（溶液 1 L に溶けた $\\ce{Ca3(PO4)2}$ の物質量）を，それぞれ有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$K_1\\gg[\\ce{H+}]\\gg K_2$ が成り立つ pH の範囲では，$S$ は $[\\ce{H+}]^{a}$ に比例する．$a$ を分数で求め，この範囲で pH が 1 下がると $S$ は何倍になるかを有効数字2桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$[\\ce{Ca^2+}]=1.5\\times10^{-3}\\,\\mathrm{mol/L}$，$C_\\mathrm{P}=4.0\\times10^{-3}\\,\\mathrm{mol/L}$ を含む液（だ液を単純化したもの）に $\\ce{Ca3(PO4)2}$ の固体が接している．pH がある値より低くなると固体は溶けはじめる．この pH（臨界 pH）を有効数字2桁で求めよ．また，pH 6.5 でこの固体は溶けるか，溶けないか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\alpha=\\dfrac{K_1K_2K_3}{[\\ce{H+}]^3+K_1[\\ce{H+}]^2+K_1K_2[\\ce{H+}]+K_1K_2K_3}$，pH 7.0：$1.8\\times10^{-6}$，pH 5.0：$3.0\\times10^{-10}$"
+   },
+   {
+    "id": "2",
+    "tex": "pH 7.0：$1.4\\times10^{-4}\\,\\mathrm{mol/L}$，pH 5.0：$4.6\\times10^{-3}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "3",
+    "tex": "$a=\\dfrac{4}{5}$，6.3 倍"
+   },
+   {
+    "id": "4",
+    "tex": "臨界 pH 5.9，pH 6.5 では溶けない（過飽和）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $[\\ce{H2PO4-}]=\\dfrac{[\\ce{H3PO4}]K_1}{[\\ce{H+}]}$ などを順に代入して $[\\ce{H3PO4}]$ で割ると\n\\[ \\alpha=\\frac{K_1K_2K_3}{[\\ce{H+}]^3+K_1[\\ce{H+}]^2+K_1K_2[\\ce{H+}]+K_1K_2K_3} \\]\npH 7.0（$h=1.0\\times10^{-7}$）：分母の主な項は $K_1h^2=7.5\\times10^{-17}$ と $K_1K_2h=4.65\\times10^{-17}$ で，$\\alpha=\\dfrac{2.23\\times10^{-22}}{1.215\\times10^{-16}}=\\boldsymbol{1.8\\times10^{-6}}$．\n\\\\ pH 5.0（$h=1.0\\times10^{-5}$）：$K_1h^2=7.5\\times10^{-13}$ が主で $K_1K_2h=4.65\\times10^{-15}$ も少し効き，$\\alpha=\\dfrac{2.23\\times10^{-22}}{7.55\\times10^{-13}}=\\boldsymbol{3.0\\times10^{-10}}$．\n\\\\ \\textbf{(2)} 溶けた $\\ce{Ca3(PO4)2}$ を $S$ とすると $[\\ce{Ca^2+}]=3S$，$C_\\mathrm{P}=2S$，$[\\ce{PO4^3-}]=2S\\alpha$．\n\\[ K_\\mathrm{sp}=(3S)^3(2S\\alpha)^2=108\\,S^5\\alpha^2\\quad\\Longrightarrow\\quad S=\\left(\\frac{K_\\mathrm{sp}}{108\\,\\alpha^2}\\right)^{1/5} \\]\npH 7.0：$S=\\boldsymbol{1.4\\times10^{-4}\\,\\mathrm{mol/L}}$，pH 5.0：$S=\\boldsymbol{4.6\\times10^{-3}\\,\\mathrm{mol/L}}$（約 33 倍）．\n\\\\ 純水に溶かすのと違い，溶けて生じた $\\ce{PO4^3-}$ はほとんど $\\ce{HPO4^2-}$，$\\ce{H2PO4-}$ になり $[\\ce{PO4^3-}]$ が低く保たれるので，酸性ほど多く溶ける．ここで $\\alpha\\ll1$ の近似を使わず $C_\\mathrm{P}$ で物質収支をとったことが要点である．\n\\\\ \\textbf{(3)} $K_1\\gg h\\gg K_2$ では分母は $K_1h^2$ が支配し $\\alpha\\approx K_2K_3/h^2$．$S\\propto\\alpha^{-2/5}\\propto h^{4/5}$ より $\\boldsymbol{a=4/5}$．pH が 1 下がる（$h$ が 10 倍）と $S$ は $10^{0.8}=\\boldsymbol{6.3}$ 倍．pH 7.0 は $h\\approx K_2$ でこの近似の外にあり（$K_1K_2h$ の項が無視できない），pH 7→5 の実際の比は $6.3^2\\approx40$ より小さい約 33 倍になる．\n\\\\ \\textbf{(4)} 固体が溶けはじめるのは $[\\ce{Ca^2+}]^3(C_\\mathrm{P}\\alpha)^2=K_\\mathrm{sp}$ になるとき（これより $\\alpha$ が小さい＝酸性側では未飽和）．\n\\[ \\alpha=\\sqrt{\\frac{K_\\mathrm{sp}}{[\\ce{Ca^2+}]^3C_\\mathrm{P}^2}}=\\sqrt{\\frac{2.0\\times10^{-29}}{(1.5\\times10^{-3})^3(4.0\\times10^{-3})^2}}=1.9\\times10^{-8} \\]\nこの付近では $h\\ll K_1$ なので $\\alpha\\approx\\dfrac{K_2K_3}{h(h+K_2)}$．$h^2+K_2h-K_2K_3/\\alpha=0$，すなわち $h^2+6.2\\times10^{-8}h-1.55\\times10^{-12}=0$ を解いて $h=1.2\\times10^{-6}\\,\\mathrm{mol/L}$，臨界 pH は $\\boldsymbol{5.9}$．（$K_2h$ の項を無視しても pH 5.9 で答えは変わらないが，$h$ と $K_2$ の比は約 20 なので確かめておく．）\n\\\\ pH 6.5 は臨界 pH より高く，イオン積は $K_\\mathrm{sp}$ の約 170 倍（過飽和）なので，固体は\\textbf{溶けない}．pH が 5.9 を下回ると溶けはじめる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "弱酸の陰イオンからなる難溶性塩では，溶けた陰イオンの大部分が H⁺ を受け取るので溶解度積に効く [PO₄³⁻] は全濃度の α 倍となり，物質収支（Ca²⁺=3S，C_P=2S）と組み合わせて S=(Ksp/108α²)^{1/5} が pH で大きく変わる．α≈K₂K₃/h² の範囲では S∝[H⁺]^{4/5} で，一定組成の液ではイオン積が Ksp に等しくなる臨界 pH より酸性で溶けはじめる．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "precipitation",
+  "nitrogen-phosphorus"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "溶解度積",
+  "多段階電離",
+  "リン酸カルシウム",
+  "臨界pH",
+  "近似の妥当性"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,118 @@
+{
+ "id": "THE-RDX-022",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-06",
+ "topic": "COD と TOC の比から求める有機物の炭素の平均酸化数",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水中の有機物の量を表す指標に，COD のほかに TOC（全有機炭素：試料 $1\\,\\mathrm{L}$ 中の有機物に含まれる炭素の質量 $[\\mathrm{mg}]$）がある．ここでは COD を，試料 $1\\,\\mathrm{L}$ 中の有機物を完全に $\\ce{CO2}$ と $\\ce{H2O}$ に酸化するのに必要な酸素の質量 $[\\mathrm{mg}]$（理論値）とする．有機物は C，H，O だけからなるものとし，原子量は H=1.0，C=12，O=16 とする．化合物中の H の酸化数は $+1$，O は $-2$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "分子式 $\\ce{C_xH_yO_z}$ の有機物について，炭素の平均の酸化数 $m$ を $x,\\,y,\\,z$ で表せ．また，この有機物だけを含む水の COD と TOC の比（質量比）$R=\\dfrac{\\mathrm{COD}}{\\mathrm{TOC}}$ が $m$ だけで決まることを示し，$R$ を $m$ の式で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "メタノール，ギ酸，グルコースの $R$ をそれぞれ求めよ（分数のままでよい）．また，C，H，O からなる有機化合物で $R$ が最も大きくなるのはどの化合物か．"
+     },
+     {
+      "id": "3",
+      "tex": "ある1種類の有機物だけを含む試料水 $1.00\\,\\mathrm{L}$ を分析すると，TOC が $48\\,\\mathrm{mg/L}$，COD が $128\\,\\mathrm{mg/L}$ であった．さらにこの試料水 $1.00\\,\\mathrm{L}$ は，水酸化ナトリウム $2.0\\times10^{-3}\\,\\mathrm{mol}$ とちょうど中和した．この有機物は1価のカルボン酸である．有機物の示性式を答え，他の候補が除かれることも示せ．"
+     },
+     {
+      "id": "4",
+      "tex": "メタノールとギ酸だけを含む試料水の TOC が $36\\,\\mathrm{mg/L}$，COD が $128\\,\\mathrm{mg/L}$ であった．メタノールとギ酸の濃度 $[\\mathrm{mg/L}]$ をそれぞれ有効数字2桁で求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "ある試料水の $R$ は $\\dfrac83$ であった．この値だけから，グルコースだけを含む水と，メタノールとギ酸を物質量の比 $1:1$ で含む水とは区別できない．その理由を述べ，両者を区別するのに使える簡単な測定を1つ挙げよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$m=\\dfrac{2z-y}{x}$，$R=\\dfrac{2(4-m)}{3}$"
+   },
+   {
+    "id": "2",
+    "tex": "メタノール $4$，ギ酸 $\\dfrac43$，グルコース $\\dfrac83$．最も大きいのはメタン（$R=\\dfrac{16}{3}$）"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{CH3COOH}$"
+   },
+   {
+    "id": "4",
+    "tex": "メタノール $80\\,\\mathrm{mg/L}$，ギ酸 $23\\,\\mathrm{mg/L}$"
+   },
+   {
+    "id": "5",
+    "tex": "$R$ は炭素の平均の酸化数だけで決まり，どちらも平均の酸化数が 0 になるから．中和滴定（ギ酸を含む水だけが水酸化ナトリウムを消費する）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　分子全体の酸化数の和は 0 なので $xm+y\\times(+1)+z\\times(-2)=0$，\n\\[ m=\\dfrac{2z-y}{x} \\]\n炭素原子 1 個が $\\ce{CO2}$（酸化数 $+4$）になるとき失う電子は $4-m$ 個，$\\ce{O2}$ 1 分子は電子 4 個を受け取るので，炭素 1 mol あたり必要な $\\ce{O2}$ は $\\dfrac{4-m}{4}\\,\\mathrm{mol}$．質量比は\n\\[ R=\\dfrac{\\mathrm{COD}}{\\mathrm{TOC}}=\\dfrac{32\\times\\frac{4-m}{4}}{12}=\\dfrac{2(4-m)}{3} \\]\nで，$x,\\,y,\\,z$ の個々の値によらず $m$ だけで決まる．\n\n\\textbf{(2)}　メタノール $\\ce{CH4O}$：$m=\\dfrac{2-4}{1}=-2$，$R=\\boldsymbol{4}$．\\\\\nギ酸 $\\ce{CH2O2}$：$m=\\dfrac{4-2}{1}=+2$，$R=\\boldsymbol{\\dfrac43}$．\\\\\nグルコース $\\ce{C6H12O6}$：$m=\\dfrac{12-12}{6}=0$，$R=\\boldsymbol{\\dfrac83}$．\\\\\n$R$ は $m$ が小さいほど大きい．炭素の酸化数が最も小さい（$-4$）のは，C 1 個に H が 4 個結合した$\\boldsymbol{\\text{メタン}}$ $\\ce{CH4}$ で，$R=\\dfrac{16}{3}$ が上限である．\n\n\\textbf{(3)}　$R=\\dfrac{128}{48}=\\dfrac83$ より $m=0$．炭素は $\\dfrac{48\\times10^{-3}}{12}=4.0\\times10^{-3}\\,\\mathrm{mol}$．1価の酸として $2.0\\times10^{-3}\\,\\mathrm{mol}$ なので，1 分子に炭素 $\\dfrac{4.0}{2.0}=2$ 個．分子式は $\\ce{C2H_yO_z}$ で $m=0$ より $y=2z$．\n\nカルボキシ基 1 個を含む炭素 2 個の化合物は，もう一方の炭素の状態で $\\ce{CH3COOH}$（$\\ce{C2H4O2}$，$m=0$），$\\ce{HOCH2COOH}$（$\\ce{C2H4O3}$，$m=+1$），$\\ce{OHCCOOH}$（$\\ce{C2H2O3}$，$m=+2$）がある．（シュウ酸 $\\ce{(COOH)2}$ は2価の酸で $m=+3$．）$m=0$ を満たすのは酢酸だけで，答えは $\\boldsymbol{\\ce{CH3COOH}}$．\n\n確認：$2.0\\times10^{-3}\\,\\mathrm{mol}$ の酢酸は $\\ce{CH3COOH + 2O2 -> 2CO2 + 2H2O}$ で $\\ce{O2}$ $4.0\\times10^{-3}\\,\\mathrm{mol}=128\\,\\mathrm{mg}$ を要し，COD と一致する．\n\n\\textbf{(4)}　メタノールを $a\\,\\mathrm{mol}$，ギ酸を $b\\,\\mathrm{mol}$（試料 $1\\,\\mathrm{L}$ 中）とする．炭素：$a+b=\\dfrac{36\\times10^{-3}}{12}=3.0\\times10^{-3}$．\\\\\n電子：メタノールは炭素 1 個あたり $4-(-2)=6$ 個，ギ酸は $4-2=2$ 個の電子を失う．COD から $\\ce{O2}$ は $\\dfrac{128\\times10^{-3}}{32}=4.0\\times10^{-3}\\,\\mathrm{mol}$，電子は $1.6\\times10^{-2}\\,\\mathrm{mol}$．\n\\[ 6a+2b=1.6\\times10^{-2},\\quad a+b=3.0\\times10^{-3} \\quad\\Longrightarrow\\quad a=2.5\\times10^{-3},\\ b=5.0\\times10^{-4} \\]\nメタノール（$32$）$2.5\\times10^{-3}\\times32=\\boldsymbol{80\\,\\mathrm{mg/L}}$，ギ酸（$46$）$5.0\\times10^{-4}\\times46=\\boldsymbol{23\\,\\mathrm{mg/L}}$．\n\n\\textbf{(5)}　混合物の $R$ は，炭素の物質量で重みをつけた平均の酸化数 $\\bar m$ で $R=\\dfrac{2(4-\\bar m)}{3}$ と表せる．メタノール（$-2$）とギ酸（$+2$）の $1:1$ 混合物は $\\bar m=0$ で，グルコース（$m=0$）と同じ $R=\\dfrac83$ になる．$R$ がわかるのは平均の酸化数だけなので，どの化合物がどれだけあるかは決まらない．ギ酸は酸なので，$\\boldsymbol{\\text{中和滴定}}$（水酸化ナトリウムの消費の有無）で区別できる（グルコースは中性）．(3) で中和の結果を合わせて用いたのも，$R$ だけでは化合物が決まらないからである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "有機物を CO₂ まで酸化するのに要する電子数は炭素の酸化数で決まるので，COD/TOC の質量比は炭素の平均酸化数 m だけの関数 2(4−m)/3 になる．この比から平均酸化数を求め，中和などの追加情報と組み合わせて化合物や混合物の組成を逆に決める．比だけでは平均値しか分からず，同じ値を与える別の組成を区別できない．"
+ },
+ "concepts": [
+  "redox",
+  "carbon-silicon",
+  "acid-base"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "COD",
+  "TOC",
+  "酸化数",
+  "電子の授受",
+  "組成の決定",
+  "逆算"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

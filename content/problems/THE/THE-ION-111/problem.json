@@ -1,0 +1,110 @@
+{
+ "id": "THE-ION-111",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "二酸化炭素の水和を含めた炭酸の見かけの電離定数と血液の pH",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水に溶けた二酸化炭素は，大部分が $\\ce{CO2}$ 分子のまま存在し，ごく一部だけが水と反応して炭酸 $\\ce{H2CO3}$ になる．炭酸は弱酸として電離する．$25^\\circ\\mathrm{C}$ で\n\\[ \\ce{CO2 + H2O <=> H2CO3}\\quad K_\\mathrm{h}=\\frac{[\\ce{H2CO3}]}{[\\ce{CO2}]}=10^{-2.8},\\qquad \\ce{H2CO3 <=> H+ + HCO3-}\\quad K_\\mathrm{a}=\\frac{[\\ce{H+}][\\ce{HCO3-}]}{[\\ce{H2CO3}]}=10^{-3.6}\\,\\mathrm{mol/L} \\]\nとする．ふつう実験で求められる炭酸の電離定数は，溶けている $\\ce{CO2}$ と $\\ce{H2CO3}$ を区別せずに合計した濃度 $C=[\\ce{CO2}]+[\\ce{H2CO3}]$ を使った「見かけの電離定数」$K'=\\dfrac{[\\ce{H+}][\\ce{HCO3-}]}{C}$ である．酢酸の電離定数は $10^{-4.8}\\,\\mathrm{mol/L}$，$\\log_{10}2=0.30$，$\\log_{10}3=0.48$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$K'$ を $K_\\mathrm{h}$，$K_\\mathrm{a}$ で表し，その値を $10^{x}$ の形（$x$ は小数第1位まで）で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "炭酸 $\\ce{H2CO3}$ そのもの（$K_\\mathrm{a}$）と，見かけの炭酸（$K'$）は，それぞれ酢酸より強い酸か弱い酸か答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "ヒトの血液（$37^\\circ\\mathrm{C}$）では $K'=10^{-6.1}\\,\\mathrm{mol/L}$ とし，血液に溶ける二酸化炭素の総濃度 $C$ は二酸化炭素の分圧 1 Pa あたり $2.3\\times10^{-7}\\,\\mathrm{mol/L}$ とする．二酸化炭素の分圧 $5.2\\times10^{3}\\,\\mathrm{Pa}$，pH $7.4$ のとき，$[\\ce{HCO3-}]$ $[\\mathrm{mol/L}]$ を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の状態から，呼吸の異常で二酸化炭素の分圧が $7.8\\times10^{3}\\,\\mathrm{Pa}$ に上がった．$[\\ce{HCO3-}]$ が (3) と同じなら pH はいくらになるか，小数第1位まで求めよ．また，pH を $7.4$ に保つには $[\\ce{HCO3-}]$ を何 mol/L にする必要があるか，有効数字2桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$K'=\\dfrac{K_\\mathrm{a}K_\\mathrm{h}}{1+K_\\mathrm{h}}\\fallingdotseq K_\\mathrm{a}K_\\mathrm{h}=10^{-6.4}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{H2CO3}$ は酢酸より強い，見かけの炭酸は酢酸より弱い"
+   },
+   {
+    "id": "3",
+    "tex": "$2.4\\times10^{-2}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "4",
+    "tex": "pH $7.2$，$[\\ce{HCO3-}]=3.6\\times10^{-2}\\,\\mathrm{mol/L}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　$\\ce{H+}$ と $\\ce{HCO3-}$ を生むのは $\\ce{H2CO3}$ だけだが，その $\\ce{H2CO3}$ は溶けた $\\ce{CO2}$ のごく一部しかない．見かけの電離定数は，分母に電離しない $\\ce{CO2}$ を含めてしまう分だけ小さくなる．\n\n\\textbf{(1)}　$[\\ce{H2CO3}]=K_\\mathrm{h}[\\ce{CO2}]$ より $C=(1+K_\\mathrm{h})[\\ce{CO2}]$，$[\\ce{H+}][\\ce{HCO3-}]=K_\\mathrm{a}K_\\mathrm{h}[\\ce{CO2}]$．よって\n\\[ K'=\\frac{K_\\mathrm{a}K_\\mathrm{h}}{1+K_\\mathrm{h}} \\]\n$K_\\mathrm{h}=10^{-2.8}\\ll1$ なので $K'\\fallingdotseq K_\\mathrm{a}K_\\mathrm{h}=10^{-3.6-2.8}=\\boldsymbol{10^{-6.4}\\,\\mathrm{mol/L}}$．これは全体の反応 $\\ce{CO2 + H2O <=> H+ + HCO3-}$ の平衡定数とみてもよい．\n\n\\textbf{(2)}　$K_\\mathrm{a}=10^{-3.6}>10^{-4.8}$ なので $\\ce{H2CO3}$ そのものは\\textbf{酢酸より強い}．一方 $K'=10^{-6.4}<10^{-4.8}$ で，見かけの炭酸は\\textbf{酢酸より弱い}．「炭酸は弱い酸」といわれるのは，溶けた二酸化炭素の大部分が酸として働かない $\\ce{CO2}$ 分子のままだからである．\n\n\\textbf{(3)}　$C=2.3\\times10^{-7}\\times5.2\\times10^{3}=1.2\\times10^{-3}\\,\\mathrm{mol/L}$．\n\\[ \\frac{[\\ce{HCO3-}]}{C}=\\frac{K'}{[\\ce{H+}]}=10^{-6.1+7.4}=10^{1.3}=20 \\]\n（$10^{0.3}=2$）．$[\\ce{HCO3-}]=20\\times1.2\\times10^{-3}=\\boldsymbol{2.4\\times10^{-2}\\,\\mathrm{mol/L}}$．\n\n\\textbf{(4)}　$C$ は分圧に比例して $1.5$ 倍になる．$[\\ce{HCO3-}]$ が同じなら比は $20/1.5$ になり，\n\\[ \\mathrm{pH}=6.1+\\log_{10}\\frac{20}{1.5}=7.4-\\log_{10}1.5=7.4-(0.48-0.30)=7.22 \\]\nで，pH は \\textbf{7.2} に下がる．pH は比 $[\\ce{HCO3-}]/C$ だけで決まるので，$7.4$ に保つには $[\\ce{HCO3-}]$ も $1.5$ 倍の $\\boldsymbol{3.6\\times10^{-2}\\,\\mathrm{mol/L}}$ にすればよい（腎臓が $\\ce{HCO3-}$ を保持して補う）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "溶けた CO₂ のうち H₂CO₃ になるのはごく一部なので，CO₂ と H₂CO₃ を合わせた濃度に対する見かけの電離定数は K'=K_aK_h/(1+K_h)≈K_aK_h と小さくなり，H₂CO₃ 自体は酢酸より強いのに見かけの炭酸は弱い．血液の pH は [HCO₃⁻]/C の比で決まり，C は CO₂ 分圧に比例するので，分圧が上がっても HCO₃⁻ を同じ倍率で増やせば pH は保たれる．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "carbon-silicon",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "炭酸",
+  "二酸化炭素",
+  "電離定数",
+  "水和平衡",
+  "血液",
+  "緩衝液"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

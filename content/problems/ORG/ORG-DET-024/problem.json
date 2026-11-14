@@ -1,0 +1,109 @@
+{
+ "id": "ORG-DET-024",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-06",
+ "topic": "フェーリング液・銀鏡反応の半反応式と析出量",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "equation",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "アルデヒドの還元性は，次の半反応式（いずれも塩基性の水溶液中）を組み合わせて考えることができる．\n\\[ \\text{フェーリング液}：\\ce{2Cu^2+ + 2OH- + 2e- -> Cu2O + H2O} \\]\n\\[ \\text{アンモニア性硝酸銀水溶液}：\\ce{[Ag(NH3)2]+ + e- -> Ag + 2NH3} \\]\n\\[ \\text{アルデヒド}：\\ce{R-CHO} + 3\\ce{OH-} \\ce{->} \\ce{R-COO-} + 2\\ce{H2O} + 2\\ce{e-} \\]\n原子量は H = 1.0，C = 12，O = 16，Cu = 63.5，Ag = 108 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "アセトアルデヒドとフェーリング液の反応を，$\\ce{OH-}$ を含むイオン反応式で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "アセトアルデヒドとアセトンの混合物にフェーリング液を十分に加えて加熱したところ，赤色沈殿が $1.43\\,\\mathrm{g}$ 生じた．混合物に含まれていたアセトアルデヒドは何 g か（有効数字 3 桁）．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) と同じ質量の混合物にアンモニア性硝酸銀水溶液を十分に加えて温めると，何 g の銀が析出するか（有効数字 3 桁）．"
+     },
+     {
+      "id": "4",
+      "tex": "ホルムアルデヒド $\\ce{HCHO}$ はまずギ酸イオン $\\ce{HCOO-}$ に酸化されるが，ギ酸イオンもホルミル基をもつので，アンモニア性硝酸銀水溶液が十分にあると，さらに炭酸イオン $\\ce{CO3^2-}$ まで酸化される．ホルムアルデヒド $0.300\\,\\mathrm{g}$ にアンモニア性硝酸銀水溶液を十分に加えたとき，析出する銀は何 g か（有効数字 3 桁）．また，同じ物質量のアセトアルデヒドと比べて何倍か．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{CH3CHO + 2Cu^2+ + 5OH- -> CH3COO- + Cu2O + 3H2O}$"
+   },
+   {
+    "id": "2",
+    "tex": "$0.440\\,\\mathrm{g}$"
+   },
+   {
+    "id": "3",
+    "tex": "$2.16\\,\\mathrm{g}$"
+   },
+   {
+    "id": "4",
+    "tex": "$4.32\\,\\mathrm{g}$，2 倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} アルデヒドの半反応式（$\\ce{R}=\\ce{CH3}$）と $\\ce{Cu^2+}$ の半反応式は，どちらも電子 2 個なのでそのまま足す．\n\\[ \\ce{CH3CHO + 3OH- -> CH3COO- + 2H2O + 2e-} \\]\n\\[ \\ce{2Cu^2+ + 2OH- + 2e- -> Cu2O + H2O} \\]\n\\[ \\boldsymbol{\\ce{CH3CHO + 2Cu^2+ + 5OH- -> CH3COO- + Cu2O + 3H2O}} \\]\n$\\ce{Cu}$ の酸化数は $+2\\to+1$ で，$\\ce{Cu^2+}$ 2 個が電子 2 個を受け取って $\\ce{Cu2O}$ 1 個になる．アセトンにはホルミル基がないので反応しない．\n\n\\textbf{(2)} 赤色沈殿は $\\ce{Cu2O}$（モル質量 $63.5\\times2+16=143\\,\\mathrm{g/mol}$）で，$1.43/143=1.00\\times10^{-2}\\,\\mathrm{mol}$．(1) よりアセトアルデヒドも $1.00\\times10^{-2}\\,\\mathrm{mol}$ で，モル質量 $44\\,\\mathrm{g/mol}$ より\n\\[ 1.00\\times10^{-2}\\times44=\\boldsymbol{0.440\\,\\mathrm{g}} \\]\n\n\\textbf{(3)} アセトアルデヒド 1 分子は電子を 2 個放出し，$\\ce{[Ag(NH3)2]+}$ 1 個は電子 1 個で $\\ce{Ag}$ 1 個になるので，銀は 2 倍の $2.00\\times10^{-2}\\,\\mathrm{mol}$ 析出する．\n\\[ 2.00\\times10^{-2}\\times108=\\boldsymbol{2.16\\,\\mathrm{g}} \\]\n同じアルデヒドでも，生じる沈殿の物質量は $\\ce{Cu2O}$ 1 に対して $\\ce{Ag}$ 2 である（どちらも電子 2 個分）．\n\n\\textbf{(4)} $\\ce{HCHO}$（$30\\,\\mathrm{g/mol}$）は $0.300/30=1.00\\times10^{-2}\\,\\mathrm{mol}$．$\\ce{HCHO}$ が $\\ce{HCOO-}$ になるときに電子 2 個，$\\ce{HCOO-}$ が $\\ce{CO3^2-}$ になるときにさらに電子 2 個を放出するので，1 分子あたり電子 4 個：\n\\[ \\ce{HCHO + 4[Ag(NH3)2]+ + 6OH- -> CO3^2- + 4Ag + 8NH3 + 4H2O} \\]\n析出する銀は $4.00\\times10^{-2}\\,\\mathrm{mol}$ で\n\\[ 4.00\\times10^{-2}\\times108=\\boldsymbol{4.32\\,\\mathrm{g}} \\]\n同じ物質量のアセトアルデヒド（電子 2 個）の $\\boldsymbol{2}$ 倍である．ホルムアルデヒドは酸化された生成物（ギ酸）もまた還元性をもつので，還元剤としての能力が 2 段階分になる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "アルデヒドの酸化（電子 2 個）と Cu²⁺→Cu₂O，[Ag(NH₃)₂]⁺→Ag の半反応式を塩基性条件で組み合わせると，アルデヒド 1 mol から Cu₂O 1 mol・Ag 2 mol が生じる量的関係が決まる．ホルムアルデヒドは生成物のギ酸イオンもホルミル基をもち炭酸イオンまで酸化されるので，電子 4 個分の銀を析出させる．"
+ },
+ "concepts": [
+  "organic-test",
+  "nitrogen-phosphorus",
+  "alcohol-carbonyl"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "フェーリング液",
+  "銀鏡反応",
+  "半反応式",
+  "アルデヒド",
+  "ホルムアルデヒド"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 295" width="440" height="295">
+<text x="210" y="22" text-anchor="middle" font-size="15" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">B の位置（平面図）</text>
+<polygon points="60.0,143.2 204.0,60.0 348.0,143.2 204.0,226.4" fill="none" stroke="currentColor" stroke-width="2"/>
+<line x1="204.0" y1="60.0" x2="204.0" y2="226.4" stroke="currentColor" stroke-dasharray="5,4" opacity="0.5"/>
+<line x1="156.0" y1="143.2" x2="252.0" y2="143.2" stroke="#1f5fbf" stroke-width="2"/>
+<circle cx="156.0" cy="143.2" r="7" fill="none" stroke="#1f5fbf" stroke-width="2.2"/>
+<circle cx="252.0" cy="143.2" r="7" fill="none" stroke="#1f5fbf" stroke-width="2.2"/>
+<text x="204.0" y="131.2" text-anchor="middle" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="#1f5fbf">a/√3</text>
+<circle cx="60.0" cy="143.2" r="9" fill="currentColor"/>
+<circle cx="204.0" cy="60.0" r="9" fill="currentColor"/>
+<circle cx="348.0" cy="143.2" r="9" fill="currentColor"/>
+<circle cx="204.0" cy="226.4" r="9" fill="currentColor"/>
+<text x="30.0" y="91.6" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">a = 0.3029 nm</text>
+<text x="288.0" y="97.6" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">a = 0.3029 nm</text>
+<text x="76.0" y="148.2" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">60°</text>
+<text x="190.0" y="86.0" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">120°</text>
+<circle cx="300" cy="240" r="7" fill="currentColor"/><text x="314" y="245" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">Ti</text>
+<circle cx="350" cy="240" r="6" fill="none" stroke="#1f5fbf" stroke-width="2"/><text x="362" y="245" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="#1f5fbf">B</text>
+<text x="20" y="285" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">B は高さ c/2 の面にあり，2 つの正三角形の重心の真上</text>
+</svg>

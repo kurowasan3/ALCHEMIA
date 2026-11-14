@@ -1,0 +1,109 @@
+{
+ "id": "THE-THC-067",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-10",
+ "topic": "燃焼エンタルピーから比べるメチルアミンの2つの合成経路（窒素は N₂ になる）",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "メチルアミン $\\ce{CH3NH2}$ は，工業的には (A) メタノールとアンモニアから，また (B) シアン化水素への水素付加によってもつくることができる．\n\\[ \\text{(A)}\\quad \\ce{CH3OH(l) + NH3(g) -> CH3NH2(g) + H2O(l)} \\qquad \\text{(B)}\\quad \\ce{HCN(g) + 2H2(g) -> CH3NH2(g)} \\]\n25 ℃ における燃焼エンタルピー（$\\mathrm{kJ/mol}$）を下の表に示す．燃焼によって炭素は $\\ce{CO2(g)}$，水素は $\\ce{H2O(l)}$，窒素は $\\ce{N2(g)}$ になるものとする．\n\\[ \\begin{array}{c|c|c|c|c} \\text{黒鉛} & \\ce{H2(g)} & \\ce{CH3OH(l)} & \\ce{NH3(g)} & \\ce{HCN(g)} \\\\ \\hline -394 & -286 & -726 & -383 & -672 \\end{array} \\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "メチルアミン（気体）の生成エンタルピーは $-23\\,\\mathrm{kJ/mol}$ である．メチルアミン（気体）の燃焼エンタルピーを整数で求め，燃焼の反応を $\\Delta H$ を付した反応式（メチルアミンの係数を 1 とする）で示せ．"
+     },
+     {
+      "id": "2",
+      "tex": "反応 (A) の反応エンタルピー $\\Delta H_{\\mathrm A}$（メチルアミン 1 mol あたり）を整数で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "反応 (B) の反応エンタルピー $\\Delta H_{\\mathrm B}$（メチルアミン 1 mol あたり）を整数で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "反応を高温の気相（すべての物質が気体）で行い，平衡に達させる．温度を一定に保って全圧を高くしたとき，メチルアミンの平衡での生成量が増えるのは (A)・(B) のどちらか．理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$-1086\\,\\mathrm{kJ/mol}$；$\\ce{CH3NH2(g) + 9/4O2(g) -> CO2(g) + 5/2H2O(l) + 1/2N2(g)}$　$\\Delta H=-1086\\,\\mathrm{kJ}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\Delta H_{\\mathrm A}=-23\\,\\mathrm{kJ/mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\Delta H_{\\mathrm B}=-158\\,\\mathrm{kJ/mol}$"
+   },
+   {
+    "id": "4",
+    "tex": "(B)．(B) は気体分子が 3 mol から 1 mol に減る反応なので加圧で右に移るが，(A) は気体の物質量が 2 mol のまま変わらないので圧力の影響を受けない．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　燃焼エンタルピーがわかっている物質どうしの反応では\n\\[ \\Delta H(\\text{反応}) = (\\text{反応物の燃焼エンタルピーの和}) - (\\text{生成物の燃焼エンタルピーの和}) \\]\nが成り立つ（ヘスの法則．反応物を燃やしても，生成物にしてから燃やしても同じ $\\ce{CO2}$・$\\ce{H2O}$・$\\ce{N2}$ に行き着くから）．窒素を含む物質でも，燃焼で $\\ce{N2}$ になると決めておけば同じように使える．\n\n\\textbf{(1)}　メチルアミンの燃焼 $\\ce{CH3NH2(g) + 9/4O2(g) -> CO2(g) + 5/2H2O(l) + 1/2N2(g)}$ の $\\Delta H$ は，生成エンタルピーを使って\n\\[ \\Delta H = (-394) + \\tfrac{5}{2}\\times(-286) + 0 - (-23) = -394 - 715 + 23 = \\boldsymbol{-1086\\,\\mathrm{kJ/mol}} \\]\n（$\\ce{O2}$・$\\ce{N2}$ の生成エンタルピーは 0）．\n\n\\textbf{(2)}　$\\ce{H2O(l)}$ はこれ以上燃えないので燃焼エンタルピーは 0 とみなす．\n\\[ \\Delta H_{\\mathrm A} = \\{(-726) + (-383)\\} - \\{(-1086) + 0\\} = \\boldsymbol{-23\\,\\mathrm{kJ/mol}} \\]\n\n\\textbf{(3)}　$\\ce{H2}$ は 2 mol 分を数える．\n\\[ \\Delta H_{\\mathrm B} = \\{(-672) + 2\\times(-286)\\} - (-1086) = \\boldsymbol{-158\\,\\mathrm{kJ/mol}} \\]\n(B) のほうがはるかに大きく発熱する．(B) は C≡N の三重結合に水素を付加する反応であり，(A) は C–O 結合を C–N 結合に置きかえるだけの反応だからである．\n\n\\textbf{(4)}　気相では (A) は $\\ce{CH3OH + NH3 -> CH3NH2 + H2O}$ で気体 2 mol → 2 mol，(B) は 3 mol → 1 mol である．ルシャトリエの原理により，加圧すると気体分子の数が減る向きに平衡が移るので，生成量が増えるのは \\textbf{(B)}．(A) は分子の数が変わらないので，全圧を変えても平衡の位置は変わらない．\nなお，どちらも発熱反応なので低温ほど平衡は右に偏るが，(A) は発熱が小さいので温度による平衡の移動も小さい．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "燃焼で窒素が N₂ になると決めれば，含窒素化合物を含む反応でも「反応物の燃焼エンタルピーの和−生成物の燃焼エンタルピーの和」で反応エンタルピーが求まる（燃えない H₂O は 0）．同じ生成物をつくる2経路の発熱の大小と，気体分子数の変化による加圧の効果の違いを比べる．"
+ },
+ "concepts": [
+  "enthalpy",
+  "nitrogen-phosphorus",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ヘスの法則",
+  "燃焼エンタルピー",
+  "生成エンタルピー",
+  "メチルアミン",
+  "ルシャトリエの原理"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

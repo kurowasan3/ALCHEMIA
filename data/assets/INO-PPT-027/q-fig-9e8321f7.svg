@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 560" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">
+<defs><marker id="q-ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+<rect x="10" y="10" width="420" height="34" rx="17" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<text x="220" y="32" text-anchor="middle">試料水溶液（Ag<tspan baseline-shift="super" font-size="10">+</tspan>，Cu<tspan baseline-shift="super" font-size="10">2+</tspan>，Fe<tspan baseline-shift="super" font-size="10">3+</tspan>，Zn<tspan baseline-shift="super" font-size="10">2+</tspan>，Ca<tspan baseline-shift="super" font-size="10">2+</tspan>，Na<tspan baseline-shift="super" font-size="10">+</tspan>）</text>
+<line x1="70" y1="44" x2="70" y2="106" stroke="currentColor" stroke-width="1.5"/>
+<text x="82" y="70">操作1：希塩酸を加える</text>
+<line x1="70" y1="106" x2="490" y2="106" stroke="currentColor" stroke-width="1.5" marker-end="url(#q-ah)"/>
+<rect x="492" y="89" width="110" height="34" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<text x="547" y="111" text-anchor="middle">沈殿 A</text>
+<line x1="70" y1="106" x2="70" y2="168" stroke="currentColor" stroke-width="1.5"/>
+<text x="82" y="132">操作2：硫化水素を通じる</text>
+<line x1="70" y1="168" x2="490" y2="168" stroke="currentColor" stroke-width="1.5" marker-end="url(#q-ah)"/>
+<rect x="492" y="151" width="110" height="34" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<text x="547" y="173" text-anchor="middle">沈殿 B</text>
+<line x1="70" y1="168" x2="70" y2="230" stroke="currentColor" stroke-width="1.5"/>
+<text x="82" y="194">操作3：煮沸し，濃硝酸を少量加えて加熱</text>
+<line x1="70" y1="230" x2="70" y2="292" stroke="currentColor" stroke-width="1.5"/>
+<text x="82" y="256">操作4：NH<tspan baseline-shift="sub" font-size="10">4</tspan>Cl 水溶液を加え，アンモニア水を過剰に加える</text>
+<line x1="70" y1="292" x2="490" y2="292" stroke="currentColor" stroke-width="1.5" marker-end="url(#q-ah)"/>
+<rect x="492" y="275" width="110" height="34" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<text x="547" y="297" text-anchor="middle">沈殿 C</text>
+<line x1="70" y1="292" x2="70" y2="354" stroke="currentColor" stroke-width="1.5"/>
+<text x="82" y="318">操作5：硫化水素を通じる</text>
+<line x1="70" y1="354" x2="490" y2="354" stroke="currentColor" stroke-width="1.5" marker-end="url(#q-ah)"/>
+<rect x="492" y="337" width="110" height="34" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<text x="547" y="359" text-anchor="middle">沈殿 D</text>
+<line x1="70" y1="354" x2="70" y2="416" stroke="currentColor" stroke-width="1.5"/>
+<text x="82" y="380">操作6：炭酸アンモニウム水溶液を加える</text>
+<line x1="70" y1="416" x2="490" y2="416" stroke="currentColor" stroke-width="1.5" marker-end="url(#q-ah)"/>
+<rect x="492" y="399" width="110" height="34" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<text x="547" y="421" text-anchor="middle">沈殿 E</text>
+<line x1="70" y1="416" x2="70" y2="446" stroke="currentColor" stroke-width="1.5" marker-end="url(#q-ah)"/>
+<rect x="15" y="448" width="110" height="34" rx="17" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<text x="70" y="470" text-anchor="middle">ろ液 F</text>
+<text x="140" y="470">→ 炎色反応で確認</text>
+<text x="320.0" y="516" text-anchor="middle" font-size="12" opacity="0.8">各操作で生じた沈殿はろ過して分け，ろ液を次の操作に用いる</text>
+</svg>

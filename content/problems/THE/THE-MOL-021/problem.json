@@ -1,0 +1,115 @@
+{
+ "id": "THE-MOL-021",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-04",
+ "topic": "熱重量変化からの化学式の決定（硫酸銅(II)五水和物）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "equation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "硫酸銅(II)五水和物 $\\ce{CuSO4.5H2O}$（青色）$499\\,\\mathrm{mg}$ を乾燥した窒素気流中で 1000 ℃ まで一定の速さで加熱し，質量の変化を記録したところ図の曲線が得られた．A〜E はそれぞれの温度範囲で安定な固体で，A は加熱前の $\\ce{CuSO4.5H2O}$，E は黒色の固体である．質量の減少（累計）は B で $72\\,\\mathrm{mg}$，C で $144\\,\\mathrm{mg}$，D で $180\\,\\mathrm{mg}$，E で $340\\,\\mathrm{mg}$ であった．D→E の変化では銅を含まない物質が1種類だけ放出されたものとする．原子量は $\\mathrm{H}=1.0$，$\\mathrm{O}=16$，$\\mathrm{S}=32$，$\\mathrm{Cu}=63.5$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "B，C，D の化学式をそれぞれ答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "E の化学式を答え，D→E の変化を化学反応式で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "保存中に一部の水和水を失った硫酸銅(II)の水和物 $\\ce{CuSO4}\\cdot x\\ce{H2O}$ が $0.854\\,\\mathrm{g}$ ある．これを同じように 1000 ℃ まで加熱すると，E が $0.318\\,\\mathrm{g}$ 残った．$x$ を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：熱重量変化からの化学式の決定（硫酸銅(II)五水和物）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "B：$\\ce{CuSO4.3H2O}$，C：$\\ce{CuSO4.H2O}$，D：$\\ce{CuSO4}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{CuO}$，$\\ce{CuSO4 -> CuO + SO3}$"
+   },
+   {
+    "id": "3",
+    "tex": "$x=3$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{CuSO4.5H2O}=249.5$ より，試料は $\\dfrac{499}{249.5}=2.00\\,\\mathrm{mmol}$．銅は固体に残り続けるので，各段階の固体も $2.00\\,\\mathrm{mmol}$ である．\n\n\\textbf{(1)}　$\\ce{H2O}$ 1 mmol は $18\\,\\mathrm{mg}$．A→B の減少 $72\\,\\mathrm{mg}$ は $\\ce{H2O}$ $4.0\\,\\mathrm{mmol}$，すなわち 1 mol あたり 2 mol の水が外れたので B は $\\ce{CuSO4.3H2O}$．B→C も $72\\,\\mathrm{mg}$（2 mol 分）で C は $\\ce{CuSO4.H2O}$，C→D は $36\\,\\mathrm{mg}$（1 mol 分）で D は無水物 $\\ce{CuSO4}$（白色）．\n\n\\textbf{(2)}　E の質量は $499-340=159\\,\\mathrm{mg}$ で，式量は $\\dfrac{159}{2.00}=79.5=63.5+16$ より $\\ce{CuO}$（黒色）．D→E で失われた質量 $160\\,\\mathrm{mg}$ は 1 mol あたり $80$ で $\\ce{SO3}$ に相当するから\n\\[\\ce{CuSO4 -> CuO + SO3}\\]\n\n\\textbf{(3)}　E（$\\ce{CuO}$）は $\\dfrac{0.318}{79.5}=4.00\\times10^{-3}\\,\\mathrm{mol}$ で，もとの水和物も同じ物質量．式量は $\\dfrac{0.854}{4.00\\times10^{-3}}=213.5$．$159.5+18x=213.5$ より $\\boldsymbol{x=3}$（B と同じ三水和物）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "熱重量曲線の各段階の質量減少を，固体中に残り続ける元素（Cu）の物質量を基準にして「外れた分子の数」に直し，中間体の化学式を決める．逆に最終生成物の質量から未知の水和数を求める．"
+ },
+ "concepts": [
+  "mole",
+  "transition-metals",
+  "oxygen-sulfur"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "物質量",
+  "熱分解",
+  "水和物",
+  "化学式の決定",
+  "熱重量分析"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

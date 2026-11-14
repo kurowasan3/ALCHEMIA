@@ -1,0 +1,123 @@
+{
+ "id": "THE-BND-057",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-03",
+ "topic": "気体の原子対で電子が移る距離とイオン結合性分子の解離",
+ "course": "化学",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "気体のアルカリ金属原子 M とハロゲン原子 X が近づくとき，「中性原子の対 M + X」と「イオン対 $\\ce{M+}$ + $\\ce{X-}$」のエネルギーを比べる．中性原子の対のエネルギーを距離によらず $0$ とし，イオン対のエネルギーは，イオン化エネルギー $I$ と電子親和力 $E_{\\mathrm{ea}}$，イオン間のクーロン引力だけを考えて，原子核間の距離 $r\\ [\\mathrm{nm}]$ のとき\n\\[ E_{\\text{イオン対}}=(I-E_{\\mathrm{ea}})-\\frac{139}{r}\\quad[\\mathrm{kJ/mol}] \\]\nと表されるものとする（モデル）．エネルギーの低い方の状態がとられるとする．\n\\[ \\begin{array}{c|cccc} & \\ce{Li} & \\ce{Na} & \\ce{K} & \\ce{Cs} \\\\ \\hline I\\ [\\mathrm{kJ/mol}] & 520 & 496 & 419 & 376 \\end{array}\\qquad \\begin{array}{c|cccc} & \\ce{F} & \\ce{Cl} & \\ce{Br} & \\ce{I} \\\\ \\hline E_{\\mathrm{ea}}\\ [\\mathrm{kJ/mol}] & 328 & 349 & 325 & 295 \\end{array} \\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "K と Br について，十分に離れた位置で電子を K から Br に移すのに必要なエネルギーを求めよ．また，K と Br を遠くから近づけていくとき，電子が移ってイオン対の方が安定になる距離 $r_{\\mathrm c}$ は何 $\\mathrm{nm}$ か（有効数字 3 桁）．"
+     },
+     {
+      "id": "2",
+      "tex": "Cs–Cl，K–Br，Li–F，Na–I の 4 組を，$r_{\\mathrm c}$ の大きい順に並べよ．"
+     },
+     {
+      "id": "3",
+      "tex": "気体の KBr 分子の核間距離は $0.282\\,\\mathrm{nm}$ である．このモデルで，KBr 分子を K 原子と Br 原子に解離させるのに必要なエネルギーを有効数字 3 桁で求めよ．また，実測値は約 $380\\,\\mathrm{kJ/mol}$ である．モデルの値と実測値の差の主な原因を次から選べ．\\\\\n(ア) 近づきすぎたイオンの電子雲どうしの反発を無視した　(イ) 電子親和力の値が大きすぎる　(ウ) K と Br の間に共有結合がまったくないとした"
+     },
+     {
+      "id": "4",
+      "tex": "気体の KBr 分子に熱を加えて，核間距離をゆっくり広げながら解離させると，最終的に生じるのは原子（K + Br）か，イオン（$\\ce{K+}$ + $\\ce{Br-}$）か．また，表の金属とハロゲンのどの組合せでも同じ結論になるかどうかを，理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：気体の原子対で電子が移る距離とイオン結合性分子の解離",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$94\\,\\mathrm{kJ/mol}$，$r_{\\mathrm c}=1.48\\,\\mathrm{nm}$"
+   },
+   {
+    "id": "2",
+    "tex": "Cs–Cl ＞ K–Br ＞ Li–F ＞ Na–I"
+   },
+   {
+    "id": "3",
+    "tex": "$399\\,\\mathrm{kJ/mol}$，(ア)"
+   },
+   {
+    "id": "4",
+    "tex": "原子（K + Br）．どの組合せでも同じ．表の最小の $I$（Cs 376）が最大の $E_{\\mathrm{ea}}$（Cl 349）より大きく，どの組でも $I-E_{\\mathrm{ea}}>0$ なので，十分離れるとイオン対の方がエネルギーが高くなるから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　イオン対のエネルギーは，遠方では $I-E_{\\mathrm{ea}}$（正）だが，近づくとクーロン引力で下がっていく．中性原子の対（$0$）と交わる距離 $r_{\\mathrm c}$ より内側ではイオン対が，外側では中性原子が安定である（解答図）．\n\n\\textbf{(1)}　$I(\\ce{K})-E_{\\mathrm{ea}}(\\ce{Br})=419-325=\\boldsymbol{94\\,\\mathrm{kJ/mol}}$．遠く離れていると電子の移動は吸熱で起こらない．\n$94-\\dfrac{139}{r_{\\mathrm c}}=0$ より $r_{\\mathrm c}=\\dfrac{139}{94}=\\boldsymbol{1.48\\,\\mathrm{nm}}$．これは KBr 分子の核間距離の 5 倍以上で，K と Br は「接触」するずっと前に電子を受け渡す．\n\n\\textbf{(2)}　$r_{\\mathrm c}=\\dfrac{139}{I-E_{\\mathrm{ea}}}$ なので，$I-E_{\\mathrm{ea}}$ が小さいほど大きい．\nCs–Cl：$376-349=27$ → $5.15\\,\\mathrm{nm}$，K–Br：$94$ → $1.48\\,\\mathrm{nm}$，Li–F：$520-328=192$ → $0.724\\,\\mathrm{nm}$，Na–I：$496-295=201$ → $0.692\\,\\mathrm{nm}$．\nよって $\\boldsymbol{\\text{Cs–Cl} > \\text{K–Br} > \\text{Li–F} > \\text{Na–I}}$．Li は Na よりイオン化エネルギーが大きいが，F の電子親和力が I より十分大きいので，Li–F の方が遠くで電子が移る．片方の原子の性質だけでなく，差 $I-E_{\\mathrm{ea}}$ で決まることに注意する．\n\n\\textbf{(3)}　$r=0.282\\,\\mathrm{nm}$ で $E=94-\\dfrac{139}{0.282}=94-492.9=-398.9\\,\\mathrm{kJ/mol}$．中性原子の対（$0$）より $399$ 低いので，解離に必要なエネルギーは $\\boldsymbol{399\\,\\mathrm{kJ/mol}}$．\nモデルは引力だけを考えているので，そのままでは $r\\to0$ でエネルギーが限りなく下がり，平衡距離も決まらない．実際には近づきすぎると電子雲どうしが重なって強い反発が生じ，そのぶん実際の分子はモデルより不安定になる．よって $\\boldsymbol{\\text{(ア)}}$．（(イ) の電子親和力は実測値であり，(ウ) 共有結合性を加えればむしろ安定化の方向に働く．）\n\n\\textbf{(4)}　$r<r_{\\mathrm c}$ ではイオン対が，$r>r_{\\mathrm c}$ では中性原子の対が低い．ゆっくり引き離すと，$r_{\\mathrm c}$ を過ぎたところで電子が Br から K にもどり，生じるのは $\\boldsymbol{\\text{原子（K + Br）}}$ である．KBr 分子はイオン結合性の強い分子だが，気体中の解離生成物はイオンではない．\nイオンに解離する方が有利になるのは $I<E_{\\mathrm{ea}}$ の組合せだけだが，表の最小の $I$（Cs 376）でも最大の $E_{\\mathrm{ea}}$（Cl 349）より大きい．したがって\\textbf{どの組合せでも原子に解離する}．（一般に，気体の原子どうしの電子移動はそれだけでは吸熱で，イオン結合を安定にしているのはイオン間のクーロン引力である．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "気体の原子対では，遠方のイオン対のエネルギー I−E_ea（正）がクーロン引力で下がり，中性原子の対と交わる距離 r_c=k/(I−E_ea) より内側でだけ電子が移る．r_c は I と E_ea の差で決まり，I>E_ea であるかぎり，イオン結合性の分子もゆっくり解離させると原子にもどる．引力だけのモデルは近距離の反発を欠くため結合エネルギーを過大に見積もる．"
+ },
+ "concepts": [
+  "chemical-bond",
+  "periodicity",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "イオン化エネルギー",
+  "電子親和力",
+  "クーロン力",
+  "イオン結合",
+  "解離"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

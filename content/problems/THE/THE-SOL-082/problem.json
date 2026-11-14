@@ -1,0 +1,109 @@
+{
+ "id": "THE-SOL-082",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-09",
+ "topic": "冷却で析出する量の比較（水和物の析出・温度とともに溶解度が下がる塩）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の表は，3 種類の塩の水 $100\\,\\mathrm{g}$ に溶ける質量（無水物の質量，$\\mathrm{g}$）である．炭酸ナトリウムは $20\\,{}^\\circ\\mathrm{C}$ の水溶液からは十水和物 $\\ce{Na2CO3.10H2O}$ として析出し，ほかの 2 つは無水物として析出する．\n\\[\\begin{array}{c|c|c|c}\n & \\ce{KNO3} & \\ce{Na2CO3} & \\ce{Li2CO3}\\\\\\hline\n20\\,{}^\\circ\\mathrm{C} & 31.6 & 21.5 & 1.33\\\\\n80\\,{}^\\circ\\mathrm{C} & 169 & 44.0 & 0.85\n\\end{array}\\]\n$80\\,{}^\\circ\\mathrm{C}$ の水 $100\\,\\mathrm{g}$ を入れたビーカー 3 つに，それぞれ $\\ce{KNO3}$ $40.0\\,\\mathrm{g}$，無水の $\\ce{Na2CO3}$ $30.0\\,\\mathrm{g}$，$\\ce{Li2CO3}$ $1.20\\,\\mathrm{g}$ を加え，温度を保ってよくかき混ぜた．その後，$20\\,{}^\\circ\\mathrm{C}$ まで冷却して十分な時間放置した．水の蒸発は無視し，式量は $\\ce{Na2CO3}=106$，$\\ce{H2O}=18$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{KNO3}$ のビーカーで $20\\,{}^\\circ\\mathrm{C}$ に冷却したときに析出する結晶は何 $\\mathrm{g}$ か．"
+     },
+     {
+      "id": "2",
+      "tex": "$\\ce{Na2CO3}$ のビーカーで $20\\,{}^\\circ\\mathrm{C}$ に冷却したときに析出する結晶（十水和物）は何 $\\mathrm{g}$ か．有効数字 2 けたで答えよ．また，その値が $30.0-21.5=8.5\\,\\mathrm{g}$ よりはるかに大きくなる理由を答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\ce{Li2CO3}$ のビーカーについて，$80\\,{}^\\circ\\mathrm{C}$ で溶け残った固体の質量と，$20\\,{}^\\circ\\mathrm{C}$ に冷却した後の固体の質量をそれぞれ答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "3 種類の塩それぞれの $20\\,{}^\\circ\\mathrm{C}$ の飽和水溶液（水 $100\\,\\mathrm{g}$ を含む）を $80\\,{}^\\circ\\mathrm{C}$ に加熱したとき，結晶が析出するものを選び，析出する質量を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$8.4\\,\\mathrm{g}$"
+   },
+   {
+    "id": "2",
+    "tex": "$36\\,\\mathrm{g}$；析出する結晶が水和水として溶媒の水を取り込むため，残った溶液の水が減ってさらに多くの $\\ce{Na2CO3}$ が溶けきれなくなるから"
+   },
+   {
+    "id": "3",
+    "tex": "$80\\,{}^\\circ\\mathrm{C}$：$0.35\\,\\mathrm{g}$，$20\\,{}^\\circ\\mathrm{C}$：$0\\,\\mathrm{g}$（すべて溶ける）"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{Li2CO3}$ だけ；$0.48\\,\\mathrm{g}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　$80\\,{}^\\circ\\mathrm{C}$ では $40.0<169$ なのですべて溶けている．$20\\,{}^\\circ\\mathrm{C}$ では $31.6\\,\\mathrm{g}$ までしか溶けないので，$40.0-31.6=\\boldsymbol{8.4\\,\\mathrm{g}}$ が析出する．\\\\\n\\textbf{(2)}　$80\\,{}^\\circ\\mathrm{C}$ では $30.0<44.0$ ですべて溶けている．十水和物（式量 $106+180=286$）が $x\\,\\mathrm{g}$ 析出するとすると，結晶に含まれる $\\ce{Na2CO3}$ は $\\dfrac{106}{286}x$，水は $\\dfrac{180}{286}x$ である．残った溶液は $20\\,{}^\\circ\\mathrm{C}$ の飽和溶液なので\n\\[\\dfrac{30.0-\\dfrac{106}{286}x}{100-\\dfrac{180}{286}x}=\\dfrac{21.5}{100}\\]\nこれを解くと $x=36.1$，よって $\\boldsymbol{36\\,\\mathrm{g}}$．\\\\\n結晶 $36\\,\\mathrm{g}$ のうち約 $23\\,\\mathrm{g}$ は水和水で，溶媒の水が $100\\,\\mathrm{g}$ から約 $77\\,\\mathrm{g}$ に減る．溶媒が減った分だけ溶けていられる $\\ce{Na2CO3}$ も減るので，析出量は「加えた量 − 溶解度」の $8.5\\,\\mathrm{g}$ よりはるかに多くなる．\\\\\n\\textbf{(3)}　$\\ce{Li2CO3}$ は温度が高いほど溶けにくい．$80\\,{}^\\circ\\mathrm{C}$ では $0.85\\,\\mathrm{g}$ しか溶けないので $1.20-0.85=\\boldsymbol{0.35\\,\\mathrm{g}}$ が溶け残る．冷却すると溶解度が $1.33\\,\\mathrm{g}$ に増え，$1.20<1.33$ なので溶け残りもすべて溶け，固体は $\\boldsymbol{0\\,\\mathrm{g}}$ になる．冷却すれば必ず結晶が出るとは限らない．\\\\\n\\textbf{(4)}　$\\ce{KNO3}$ と $\\ce{Na2CO3}$ は加熱すると溶解度が増えるので析出しない．$\\ce{Li2CO3}$ は $20\\,{}^\\circ\\mathrm{C}$ の飽和溶液に $1.33\\,\\mathrm{g}$ 溶けているが $80\\,{}^\\circ\\mathrm{C}$ では $0.85\\,\\mathrm{g}$ しか溶けないので，$\\ce{Li2CO3}$ \\textbf{だけ}が $1.33-0.85=\\boldsymbol{0.48\\,\\mathrm{g}}$ 析出する．このような塩は，加熱して析出させることで精製できる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "冷却による析出量は溶解度の温度変化の向きと析出する固体の組成で決まる．水和物が析出すると結晶が溶媒の水を奪うため析出量は「加えた量−溶解度」より大きくなり，温度とともに溶解度が下がる塩は冷却で逆に溶け，加熱で析出する．"
+ },
+ "concepts": [
+  "solution-colligative",
+  "crystal"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "溶解度",
+  "再結晶",
+  "水和物",
+  "溶解度曲線",
+  "炭酸リチウム",
+  "析出量"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

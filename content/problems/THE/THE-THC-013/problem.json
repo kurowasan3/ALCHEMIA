@@ -1,0 +1,121 @@
+{
+ "id": "THE-THC-013",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-10",
+ "topic": "エネルギー図と物質の状態による反応エンタルピーの違い",
+ "course": "化学",
+ "level": 1,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図は，水素・臭素・臭化水素のいろいろな状態のエンタルピーを，$\\ce{H2(気) + Br2(液)}$ を基準（0）として表したものである（単位 kJ）．H−H の結合エネルギーは $436\\,\\mathrm{kJ/mol}$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "Br−Br と H−Br の結合エネルギーはそれぞれ何 kJ/mol か．"
+     },
+     {
+      "id": "2",
+      "tex": "$\\ce{H2(気) + Br2(気) -> 2HBr(気)}$ の反応エンタルピー $\\Delta H$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\ce{H2(気) + Br2(液) -> 2HBr(気)}$ の $\\Delta H$ を求め，(2) と比べてどちらの発熱が何 kJ 大きいか，理由とともに答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "ヨウ素について，H−I の結合エネルギーを $299\\,\\mathrm{kJ/mol}$，I−I の結合エネルギーを $151\\,\\mathrm{kJ/mol}$ とすると，$\\ce{H2(気) + I2(気) -> 2HI(気)}$ の $\\Delta H$ はいくらか．また，$\\ce{H2(気) + I2(固) -> 2HI(気)}$ の $\\Delta H$ が $+53\\,\\mathrm{kJ}$ であるとき，ヨウ素の昇華エンタルピーは何 kJ/mol か．ヨウ素が気体の場合と固体の場合で，反応が発熱か吸熱かがどうなるかにもふれよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：エネルギー図と物質の状態による反応エンタルピーの違い",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "Br−Br $193\\,\\mathrm{kJ/mol}$，H−Br $366\\,\\mathrm{kJ/mol}$"
+   },
+   {
+    "id": "2",
+    "tex": "$-103\\,\\mathrm{kJ}$"
+   },
+   {
+    "id": "3",
+    "tex": "$-72\\,\\mathrm{kJ}$．(2) の方が $31\\,\\mathrm{kJ}$ 発熱が大きい．液体の臭素はまず蒸発に $31\\,\\mathrm{kJ}$ を吸収する必要があるため．"
+   },
+   {
+    "id": "4",
+    "tex": "$-11\\,\\mathrm{kJ}$，昇華エンタルピー $+64\\,\\mathrm{kJ/mol}$．気体のヨウ素では発熱反応だが，固体のヨウ素では昇華に要する熱の方が大きく吸熱反応になる．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\ce{H2(気) + Br2(気)}$ から $\\ce{2H(気) + 2Br(気)}$ にするのに $629\\,\\mathrm{kJ}$ ＝ H−H ＋ Br−Br．Br−Br $=629-436=\\boldsymbol{193\\,\\mathrm{kJ/mol}}$．\n$\\ce{2H(気) + 2Br(気)}$ は $31+629=660\\,\\mathrm{kJ}$，$\\ce{2HBr(気)}$ は $-72\\,\\mathrm{kJ}$ の位置にあるので，H−Br 結合 2 mol を切るのに $660-(-72)=732\\,\\mathrm{kJ}$．H−Br $=\\boldsymbol{366\\,\\mathrm{kJ/mol}}$．\n\\textbf{(2)} $\\Delta H=(436+193)-2\\times366=\\boldsymbol{-103\\,\\mathrm{kJ}}$（図では $31\\,\\mathrm{kJ}$ の準位から $-72\\,\\mathrm{kJ}$ の準位へ）．\n\\textbf{(3)} 図から直接 $\\Delta H=\\boldsymbol{-72\\,\\mathrm{kJ}}$．$\\ce{Br2(液) -> Br2(気)}$ $\\Delta H=+31\\,\\mathrm{kJ}$ の分だけ出発点のエンタルピーが低いので，気体の臭素から反応する (2) の方が $\\boldsymbol{31\\,\\mathrm{kJ}}$ 発熱が大きい．\n\\textbf{(4)} $\\Delta H=(436+151)-2\\times299=\\boldsymbol{-11\\,\\mathrm{kJ}}$（発熱）．\n固体からの反応 ＝（昇華）＋（気体どうしの反応）なので，昇華エンタルピーを $S$ とすると $S+(-11)=+53$，$S=\\boldsymbol{+64\\,\\mathrm{kJ/mol}}$．\n固体のヨウ素を使うと昇華の吸熱（$64\\,\\mathrm{kJ}$）が気体反応の発熱（$11\\,\\mathrm{kJ}$）を上回るので，全体は\\textbf{吸熱}反応になる．このように，反応物・生成物の状態によって $\\Delta H$ の符号まで変わることがある．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "エネルギー図では結合の切断（原子の状態）・状態変化（蒸発・昇華）・生成物の準位の差から，結合エネルギーや反応エンタルピーが読み取れる．反応物の状態が違うと状態変化のエンタルピーの分だけ ΔH が変わり，符号が逆転することもある．"
+ },
+ "concepts": [
+  "enthalpy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "結合エネルギー",
+  "エネルギー図",
+  "昇華エンタルピー",
+  "蒸発エンタルピー",
+  "ヘスの法則"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

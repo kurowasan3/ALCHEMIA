@@ -1,0 +1,109 @@
+{
+ "id": "THE-EQL-077",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "けん化の進行を反応停止と逆滴定で追う方法と指示薬の選択",
+ "course": "化学",
+ "level": 3,
+ "minutes": 20,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "酢酸エチルと水酸化ナトリウムの反応 $\\ce{CH3COOC2H5 + NaOH -> CH3COONa + C2H5OH}$ の速さ $v$ は，$v=k[\\ce{CH3COOC2H5}][\\ce{NaOH}]$ で表される．25 ℃ で，反応開始時の濃度が $[\\ce{CH3COOC2H5}]=1.00\\times10^{-2}\\,\\mathrm{mol/L}$，$[\\ce{NaOH}]=1.50\\times10^{-2}\\,\\mathrm{mol/L}$ となるように混合した．60 秒後に反応液 $10.0\\,\\mathrm{mL}$ をとり出し，ただちに $5.00\\times10^{-2}\\,\\mathrm{mol/L}$ の塩酸 $5.00\\,\\mathrm{mL}$ に加えた．この液を $2.00\\times10^{-2}\\,\\mathrm{mol/L}$ の水酸化ナトリウム水溶液で滴定したところ，フェノールフタレインを指示薬としたときの滴定量は $5.46\\,\\mathrm{mL}$ であった．溶液の体積変化は無視する．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "とり出した反応液を，ただちに過剰の塩酸に加えるのはなぜか．"
+     },
+     {
+      "id": "2",
+      "tex": "60 秒後の $[\\ce{NaOH}]$ と $[\\ce{CH3COOC2H5}]$ を有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "最初の 60 秒間の酢酸エチルの平均の分解速度と，それぞれの濃度の平均値を用いて，速度定数 $k$ を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "同じ操作で，指示薬をメチルオレンジにかえて滴定した場合の滴定量を求めよ．また，メチルオレンジを用いるとこの反応の進み具合を調べられない理由を述べよ．ただし，メチルオレンジの変色域では酢酸はほとんど中和されないものとする．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "反応液中の $\\ce{NaOH}$ をすべて中和して反応をその時点で止めるため（酸性では加水分解は非常に遅い）．"
+   },
+   {
+    "id": "2",
+    "tex": "$[\\ce{NaOH}]=1.41\\times10^{-2}\\,\\mathrm{mol/L}$，$[\\ce{CH3COOC2H5}]=9.08\\times10^{-3}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "3",
+    "tex": "$k=0.11\\,\\mathrm{L/(mol\\cdot s)}$"
+   },
+   {
+    "id": "4",
+    "tex": "$5.00\\,\\mathrm{mL}$．メチルオレンジでは残った塩酸だけが滴定される．塩酸を消費するのは残った $\\ce{NaOH}$ と生じた $\\ce{CH3COO-}$ で，その和は反応の進み具合によらず最初の $\\ce{NaOH}$ の量に等しいので，滴定量はいつ測っても同じになるから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　とり出したあとも反応は進むので，その時点の濃度を測るには反応を止める必要がある．過剰の塩酸で $\\ce{OH-}$ をすべて中和すれば，けん化は止まる（酸を触媒とする加水分解も起こるが，非常に遅く滴定の間は無視できる）．また，$\\ce{NaOH}$ を直接塩酸で滴定すると，滴定の間にも反応が進んでしまう．\n\n\\textbf{(2)}　とり出した液に含まれる $\\ce{NaOH}$ を $a$ mmol，生じた $\\ce{CH3COONa}$ を $b$ mmol とする．加えた塩酸 0.250 mmol は，$\\ce{NaOH}$ $a$ mmol を中和し，$\\ce{CH3COO-}$ $b$ mmol を酢酸に変え，$0.250-a-b$ mmol が残る．\\\\\nフェノールフタレイン（変色域は塩基性側）では，残った塩酸と酢酸の両方が滴定されるので\n\\[(0.250-a-b)+b=0.250-a=2.00\\times10^{-2}\\times5.46=0.1092\\ \\Longrightarrow\\ a=0.1408\\,\\mathrm{mmol}\\]\n\\[[\\ce{NaOH}]=\\frac{0.1408}{10.0}=\\boldsymbol{1.41\\times10^{-2}\\,\\mathrm{mol/L}}\\]\n反応した量は $1.50\\times10^{-2}-1.408\\times10^{-2}=9.2\\times10^{-4}\\,\\mathrm{mol/L}$ で，酢酸エチルも同じだけ減るから\n\\[[\\ce{CH3COOC2H5}]=1.00\\times10^{-2}-9.2\\times10^{-4}=\\boldsymbol{9.08\\times10^{-3}\\,\\mathrm{mol/L}}\\]\n\n\\textbf{(3)}　平均の速度 $\\bar v=\\dfrac{9.2\\times10^{-4}}{60}=1.53\\times10^{-5}\\,\\mathrm{mol/(L\\cdot s)}$．平均の濃度は酢酸エチル $\\dfrac{1.00+0.908}{2}\\times10^{-2}=9.54\\times10^{-3}$，$\\ce{NaOH}$ $\\dfrac{1.50+1.408}{2}\\times10^{-2}=1.454\\times10^{-2}\\,\\mathrm{mol/L}$．\n\\[k=\\frac{1.53\\times10^{-5}}{(9.54\\times10^{-3})(1.454\\times10^{-2})}=0.11\\,\\mathrm{L/(mol\\cdot s)}\\]\nよって $\\boldsymbol{k=0.11\\,\\mathrm{L/(mol\\cdot s)}}$．\n\n\\textbf{(4)}　メチルオレンジ（変色域は酸性側）では，強酸の塩酸だけが滴定され，酢酸はほとんど滴定されない．滴定量は残った塩酸 $0.250-a-b$ mmol に対応する．ところが，$\\ce{NaOH}$ が 1 mol 反応するごとに $\\ce{CH3COO-}$ が 1 mol 生じるので，$a+b$ は最初の $\\ce{NaOH}$ の量 $0.150\\,\\mathrm{mmol}$ のまま一定である．\n\\[\\frac{0.250-0.150}{2.00\\times10^{-2}}=\\boldsymbol{5.00\\,\\mathrm{mL}}\\]\n$\\ce{OH-}$ も $\\ce{CH3COO-}$ も塩酸を同じだけ消費するので，両者の入れかわり（反応の進行）はメチルオレンジの滴定では見えない．フェノールフタレインでは酢酸も滴定されて $b$ が打ち消され，残った $\\ce{NaOH}$ だけが測れる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "反応途中の試料は過剰の酸で反応を止め，残った酸を逆滴定して塩基の残量を求める．このとき生じた弱酸の陰イオンも酸を消費するので，指示薬の変色域によって滴定される酸が変わり，フェノールフタレインなら残った塩基の量がわかるが，メチルオレンジでは塩基と陰イオンの和（一定）しか測れず反応の進行を追えない．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "aromatic",
+  "reaction-rate"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応速度",
+  "けん化",
+  "逆滴定",
+  "指示薬",
+  "速度定数"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

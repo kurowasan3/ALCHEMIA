@@ -1,0 +1,118 @@
+{
+ "id": "THE-SOL-097",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-09",
+ "topic": "不純物の酸素を含む窒素でくり返す脱気の到達限界（ヘンリーの法則と漸化式の極限）",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "$25\\,^\\circ\\mathrm{C}$ で，空気（体積百分率で $\\ce{O2}$ $20.0\\,\\%$）と溶解平衡にある水 $1.00\\,\\mathrm{L}$ を，自由に動くピストンのついた容器に気体が入らないように満たした．容器内の圧力はつねに $1.00\\times10^{5}\\,\\mathrm{Pa}$ に保たれる．次の操作をくり返して水中の $\\ce{O2}$ を取り除く．\n\n\\textbf{操作}　$\\ce{O2}$ を体積分率 $\\varepsilon$ だけ含む窒素を注入して，容器内の気体部分の体積を $0.150\\,\\mathrm{L}$ にし，溶解平衡に達したのち，ピストンを押して気体部分だけをすべて追い出す．\n\n$k$ 回目の操作後に水に溶けている $\\ce{O2}$ の体積（$25\\,^\\circ\\mathrm{C}$，$1.00\\times10^{5}\\,\\mathrm{Pa}$ に換算）を $V_k\\,[\\mathrm{mL}]$ とし，はじめの値を $V_0$ とする．$\\ce{O2}$ は分圧 $1.00\\times10^{5}\\,\\mathrm{Pa}$ のとき水 $1.00\\,\\mathrm{L}$ に $30.0\\,\\mathrm{mL}$（同じ条件に換算）溶け，ヘンリーの法則に従う．注入した気体の体積は $0.150\\,\\mathrm{L}$ とみなし，水の蒸気圧と体積変化，窒素の溶解の影響は無視する．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\varepsilon = 1.00\\times10^{-4}$ のとき，$V_1$ を有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$V_k$ を $V_{k-1}$ と $\\varepsilon$ で表せ．さらに，操作を限りなくくり返したときに $V_k$ が近づく値 $V_\\infty$ を $\\varepsilon$ で表し，$\\varepsilon = 1.00\\times10^{-4}$ のときの値を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\varepsilon = 1.00\\times10^{-4}$ のとき，$V_k$ が初めて $V_0$ の $1/1000$ 以下になるのは何回目の操作か．また，$\\varepsilon = 0$（純粋な窒素）の場合は何回目か．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\varepsilon = 1.00\\times10^{-4}$ の窒素で，$V_k$ を $V_0$ の $1/10000$ 以下にすることはできるか．できない場合，何回くり返しても到達できるようにするには，$\\varepsilon$ をいくら未満にする必要があるか．"
+     },
+     {
+      "id": "5",
+      "tex": "1 回の操作で気体部分の体積を $0.300\\,\\mathrm{L}$ にすると，$V_0$ の $1/1000$ 以下になるまでの回数と $V_\\infty$ はそれぞれどうなるか（$\\varepsilon = 1.00\\times10^{-4}$）．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$1.00\\,\\mathrm{mL}$"
+   },
+   {
+    "id": "2",
+    "tex": "$V_k = \\dfrac{1}{6}\\left(V_{k-1} + 150\\varepsilon\\right)$，$V_\\infty = 30.0\\varepsilon$，$3.00\\times10^{-3}\\,\\mathrm{mL}$"
+   },
+   {
+    "id": "3",
+    "tex": "5 回目，純粋な窒素では 4 回目"
+   },
+   {
+    "id": "4",
+    "tex": "できない．$\\varepsilon < 2.0\\times10^{-5}$"
+   },
+   {
+    "id": "5",
+    "tex": "回数は 4 回に減るが，$V_\\infty$ は $3.00\\times10^{-3}\\,\\mathrm{mL}$ のまま変わらない．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} はじめは $\\ce{O2}$ の分圧が $0.200\\times10^{5}\\,\\mathrm{Pa}$ なので $V_0 = 30.0\\times0.200 = 6.00\\,\\mathrm{mL}$．\\\\\n操作後の $\\ce{O2}$ の分圧を $p\\times10^{5}\\,\\mathrm{Pa}$ とすると，全圧 $1.00\\times10^{5}\\,\\mathrm{Pa}$ の気体部分 $150\\,\\mathrm{mL}$ 中の $\\ce{O2}$ は（同じ条件に換算して）$150p\\,\\mathrm{mL}$，水中は $30.0p\\,\\mathrm{mL}$．注入した気体中の $\\ce{O2}$ は $150\\varepsilon\\,\\mathrm{mL}$ なので，$\\ce{O2}$ の収支は\n\\[ V_0 + 150\\varepsilon = 150p + 30.0p \\]\n$\\varepsilon = 1.00\\times10^{-4}$ では $p = \\dfrac{6.00 + 0.0150}{180} = 3.34\\times10^{-2}$，$V_1 = 30.0p = \\boldsymbol{1.00\\,\\mathrm{mL}}$．\n\n\\textbf{(2)} (1) と同じ収支を $k$ 回目に立てると $V_k = 30.0p = \\dfrac{30.0}{180}(V_{k-1} + 150\\varepsilon)$，すなわち\n\\[ V_k = \\frac{1}{6}\\left(V_{k-1} + 150\\varepsilon\\right) \\]\n$V_k = V_{k-1} = V_\\infty$ とおくと $V_\\infty = \\dfrac{150\\varepsilon}{5} = 30.0\\varepsilon$．これは「$\\ce{O2}$ の分圧が $\\varepsilon\\times10^{5}\\,\\mathrm{Pa}$ の気体と平衡にある水」に溶ける量そのもので，$\\varepsilon = 1.00\\times10^{-4}$ では $\\boldsymbol{3.00\\times10^{-3}\\,\\mathrm{mL}}$．\\\\\n漸化式から $V_\\infty$ を引くと\n\\[ V_k - V_\\infty = \\frac{1}{6}\\left(V_{k-1} - V_\\infty\\right),\\qquad V_k = V_\\infty + \\left(\\frac{1}{6}\\right)^{k}(V_0 - V_\\infty) \\]\nで，差は 1 回ごとに $1/6$ になる．\n\n\\textbf{(3)} 目標は $V_0/1000 = 6.00\\times10^{-3}\\,\\mathrm{mL}$．\n\\[ 3.00\\times10^{-3} + \\left(\\frac{1}{6}\\right)^{k}\\times5.997 \\le 6.00\\times10^{-3} \\iff 6^{k} \\ge 1999 \\]\n$6^4 = 1296$，$6^5 = 7776$ なので \\textbf{5 回目}．$\\varepsilon = 0$ なら $6^k \\ge 1000$ で \\textbf{4 回目}．不純物のために，目標の半分がはじめから「取り除けない分」として残り，必要な回数が増える．\n\n\\textbf{(4)} $V_k$ はつねに $V_\\infty = 3.00\\times10^{-3}\\,\\mathrm{mL}$ より大きく，$V_0/10000 = 6.00\\times10^{-4}\\,\\mathrm{mL}$ には\\textbf{何回くり返しても到達できない}．到達できるには $V_\\infty < 6.00\\times10^{-4}$，すなわち $30.0\\varepsilon < 6.00\\times10^{-4}$ より $\\boldsymbol{\\varepsilon < 2.0\\times10^{-5}}$ が必要である．\n\n\\textbf{(5)} 気体部分が $300\\,\\mathrm{mL}$ なら $V_k = \\dfrac{30.0}{330}(V_{k-1} + 300\\varepsilon)$ で，差は 1 回ごとに $1/11$ になる．$11^k \\ge 1999$ より（$11^3 = 1331$，$11^4 = 14641$）\\textbf{4 回}に減る．しかし不動点は $V_\\infty = \\dfrac{(30.0/330)\\times300\\varepsilon}{1 - 30.0/330} = 30.0\\varepsilon$ で\\textbf{変わらない}．到達できる下限は，気体の量や回数ではなく，注入する気体の純度（$\\ce{O2}$ の分圧）だけで決まる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "気相を入れかえる脱気では，水中の O₂ と注入気体中の O₂ の和を，ヘンリーの法則で気相と水に分け直す収支から漸化式 V_k=r(V_{k−1}+c) が得られる．不純物を含む気体では V_k は 0 ではなく不動点（注入気体の O₂ 分圧と平衡にある溶解量）に近づき，入れかえの量や回数を増やしても下限は純度だけで決まる．"
+ },
+ "concepts": [
+  "solution-colligative",
+  "oxygen-sulfur",
+  "nitrogen-phosphorus"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ヘンリーの法則",
+  "脱気",
+  "溶存酸素",
+  "漸化式",
+  "到達限界",
+  "分圧"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,110 @@
+{
+ "id": "THE-THC-060",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-10",
+ "topic": "ニトログリセリンの密閉容器内での爆発（発熱による気体の温度上昇と圧力）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ニトログリセリン $\\ce{C3H5N3O9}$（液体，モル質量 $227\\,\\mathrm{g/mol}$）は，外から酸素を取り込まずに分解し，炭素原子はすべて $\\ce{CO2}$，水素原子は $\\ce{H2O}$（気体），窒素原子は $\\ce{N2}$ になり，余った酸素原子は $\\ce{O2}$ になる．生成エンタルピーは $\\ce{C3H5N3O9}$（液）$-370\\,\\mathrm{kJ/mol}$，$\\ce{CO2}$（気）$-394\\,\\mathrm{kJ/mol}$，$\\ce{H2O}$（気）$-242\\,\\mathrm{kJ/mol}$ とする．\n容積 $0.100\\,\\mathrm{L}$ の頑丈な密閉容器に $300\\,\\mathrm{K}$ のニトログリセリン $0.500\\,\\mathrm{mol}$ を入れて瞬時に分解させた．発生した熱はすべて生じた気体の温度上昇に使われ，気体の定積モル比熱（体積一定で 1 mol を 1 K 上げる熱量）は成分によらず $40\\,\\mathrm{J/(mol\\cdot K)}$ で一定とする．気体は理想気体とし，$R=8.31\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$ とする．なお，体積一定での反応熱は反応エンタルピーと等しいとみなしてよい．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "分解の反応式を，係数が最も簡単な整数になるように書け．"
+     },
+     {
+      "id": "2",
+      "tex": "ニトログリセリン 1 mol の分解の反応エンタルピーを求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "生じた気体の物質量と，到達する温度を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "到達したときの容器内の圧力を有効数字2桁で求めよ．また，同じ熱量を同じ物質量の液体の水の加熱に使った場合と比べて，爆発の破壊力が大きい理由として最も適切なものを選べ．\\\\\nア　生成物がすべて液体だから．\\\\\nイ　狭い体積の中に多量の気体が一瞬で生じ，しかも高温になるため，圧力が非常に大きくなるから．\\\\\nウ　生じた $\\ce{O2}$ がさらに容器を燃やすから．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{4C3H5N3O9 -> 12CO2 + 10H2O + 6N2 + O2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$-1417\\,\\mathrm{kJ/mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "$3.6\\,\\mathrm{mol}$，$5.2\\times10^{3}\\,\\mathrm{K}$"
+   },
+   {
+    "id": "4",
+    "tex": "$1.6\\times10^{9}\\,\\mathrm{Pa}$，イ"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　1 mol から C は $\\ce{CO2}$ 3 mol（O 6 mol），H は $\\ce{H2O}$ 2.5 mol（O 2.5 mol），N は $\\ce{N2}$ 1.5 mol．O は $9-6-2.5=0.5$ mol 余り $\\ce{O2}$ 0.25 mol．4 倍して\n\\[ \\ce{4C3H5N3O9 -> 12CO2 + 10H2O + 6N2 + O2} \\]\n\n\\textbf{(2)}　$\\Delta H=\\{3\\times(-394)+2.5\\times(-242)\\}-(-370)=\\boldsymbol{-1417\\,\\mathrm{kJ/mol}}$\n\n\\textbf{(3)}　1 mol から気体 $3+2.5+1.5+0.25=7.25$ mol なので，$0.500$ mol からは $3.625\\approx\\boldsymbol{3.6\\,\\mathrm{mol}}$．発熱 $1417\\times0.500=708.5\\,\\mathrm{kJ}$ がこの気体の温度上昇に使われるので\n\\[ \\Delta T=\\frac{708.5\\times10^{3}}{3.625\\times40}=4.89\\times10^{3}\\,\\mathrm{K},\\qquad T=300+4886\\approx\\boldsymbol{5.2\\times10^{3}\\,\\mathrm{K}} \\]\n\n\\textbf{(4)}　はじめ液体で満たされていた $0.100\\,\\mathrm{L}$ を気体が占めるので\n\\[ P=\\frac{nRT}{V}=\\frac{3.625\\times8.31\\times10^{3}\\times5186}{0.100}=\\boldsymbol{1.6\\times10^{9}\\,\\mathrm{Pa}} \\]\n大気圧の約 1 万 6 千倍である．液体の水を加熱しても体積はほとんど変わらないが，爆発では液体 1 mol から気体が 7 mol 以上も一瞬で生じ，それが数千 K に加熱されるので，圧力が桁違いに大きくなる．答えは \\textbf{イ}．（実際は高圧で理想気体からずれるので目安の値である．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "爆薬の分解では分子内の酸素で生成物が決まり，生成エンタルピーから求めた発熱が狭い体積に一瞬で生じた多量の気体の温度上昇に使われる．定積モル比熱から到達温度，理想気体の式から圧力を見積もると，気体の物質量の増加と高温の両方が圧力を桁違いに大きくすることがわかる．"
+ },
+ "concepts": [
+  "enthalpy",
+  "oxygen-sulfur",
+  "nitrogen-phosphorus"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "爆薬",
+  "ニトログリセリン",
+  "反応エンタルピー",
+  "定積モル比熱",
+  "温度上昇",
+  "圧力"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

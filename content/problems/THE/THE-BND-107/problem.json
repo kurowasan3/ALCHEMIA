@@ -1,0 +1,117 @@
+{
+ "id": "THE-BND-107",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-03",
+ "topic": "ばねモデルによる二原子分子の赤外吸収（力の定数・同位体効果・DF と HCl の判別）",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "二原子分子 AB の伸縮振動を，2 つの原子をばねでつないだモデルで考える．このモデルでは，分子が吸収する赤外線の波数 $\\tilde\\nu$（波長の逆数，単位 $\\mathrm{cm^{-1}}$）は\n\\[\\tilde\\nu=\\frac{1}{2\\pi c}\\sqrt{\\frac{k}{\\mu}},\\qquad \\mu=\\frac{m_{\\mathrm A}m_{\\mathrm B}}{m_{\\mathrm A}+m_{\\mathrm B}}\\]\nで表される．$k$ は結合の「力の定数」（ばね定数，単位 $\\mathrm{N/m}$）で，同位体を入れかえても変わらない．$\\mu$ は換算質量（分子 1 個あたり，単位 $\\mathrm{kg}$），$c=3.00\\times10^{10}\\,\\mathrm{cm/s}$ である．\n原子の相対質量：$^{1}\\mathrm H$ 1.008，$^{2}\\mathrm H$（D）2.014，$^{19}\\mathrm F$ 19.00，$^{35}\\mathrm{Cl}$ 34.97，$^{37}\\mathrm{Cl}$ 36.97，$^{79}\\mathrm{Br}$ 78.92．アボガドロ定数 $6.02\\times10^{23}\\,\\mathrm{/mol}$，$\\pi=3.14$．天然の塩素は $^{35}\\mathrm{Cl}$ $75\\,\\%$，$^{37}\\mathrm{Cl}$ $25\\,\\%$，フッ素は $^{19}\\mathrm F$ だけからなる．\n観測された波数：$\\mathrm{H^{19}F}$ $3962\\,\\mathrm{cm^{-1}}$，$\\mathrm{H^{35}Cl}$ $2886\\,\\mathrm{cm^{-1}}$，$\\mathrm{H^{79}Br}$ $2559\\,\\mathrm{cm^{-1}}$．\n結合エネルギー：$\\ce{H-F}$ $568$，$\\ce{H-Cl}$ $432$，$\\ce{H-Br}$ $366$（$\\mathrm{kJ/mol}$）．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\mathrm{H^{35}Cl}$ の換算質量 $\\mu$ [kg] と力の定数 $k$ [N/m] を有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$\\mathrm{HF}$ と $\\mathrm{HBr}$ の力の定数を有効数字 3 桁で求め，3 つのハロゲン化水素の力の定数の順と結合エネルギーの順を比べよ．また，ハロゲン化水素どうしなら $\\tilde\\nu$ の大小だけで力の定数の大小を判断してよい理由を，$\\mu$ の値にもとづいて述べよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\mathrm{H^{37}Cl}$ の波数を有効数字 5 桁で予想し，天然の塩化水素の吸収が「近接した強弱 2 本組」として観測される理由を，2 本の間隔 [$\\mathrm{cm^{-1}}$] と強度比を示して説明せよ．低波数側の線はどちらの分子によるものか．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\mathrm{D^{35}Cl}$ と $\\mathrm{DF}$ の波数をこのモデルで予想せよ（有効数字 4 桁）．$\\tilde\\nu(\\mathrm{DX})/\\tilde\\nu(\\mathrm{HX})$ を $1/\\sqrt2=0.707$ で近似できるのはどのような場合か．$\\mathrm{DF}$ と $\\mathrm{D^{35}Cl}$ の比の値を比べて説明せよ．"
+     },
+     {
+      "id": "5",
+      "tex": "ある 1 種類の二原子分子の気体（$\\mathrm{DF}$ か天然の $\\mathrm{HCl}$ のどちらか）の赤外吸収を調べたところ，$2870\\sim2890\\,\\mathrm{cm^{-1}}$ 付近に吸収が見られた．中心の波数だけでは区別できない理由を述べ，吸収線の本数と強度比からどちらであるかを判定する方法を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\mu=1.63\\times10^{-27}\\,\\mathrm{kg}$，$k=4.81\\times10^{2}\\,\\mathrm{N/m}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\mathrm{HF}$ $8.86\\times10^{2}\\,\\mathrm{N/m}$，$\\mathrm{HBr}$ $3.84\\times10^{2}\\,\\mathrm{N/m}$．力の定数も結合エネルギーも $\\mathrm{HF}>\\mathrm{HCl}>\\mathrm{HBr}$ で同じ順．ハロゲンは H よりはるかに重いので $\\mu$ はどれも H の質量に近く（$0.957\\sim0.995$ 倍の範囲），$\\tilde\\nu$ の大小が $k$ の大小をそのまま表す．"
+   },
+   {
+    "id": "3",
+    "tex": "$\\mathrm{H^{37}Cl}$ は $2883.8\\,\\mathrm{cm^{-1}}$．間隔約 $2.2\\,\\mathrm{cm^{-1}}$ の 2 本で，強度比は $\\mathrm{H^{35}Cl}:\\mathrm{H^{37}Cl}=3:1$．低波数側の弱い線が $\\mathrm{H^{37}Cl}$．"
+   },
+   {
+    "id": "4",
+    "tex": "$\\mathrm{D^{35}Cl}$ $2070\\,\\mathrm{cm^{-1}}$，$\\mathrm{DF}$ $2873\\,\\mathrm{cm^{-1}}$．相手の原子 X が H・D よりはるかに重いときに近似が成り立つ．比は $\\mathrm{D^{35}Cl}$ $0.717$，$\\mathrm{DF}$ $0.725$ で，軽い F ほど $0.707$ からずれる．"
+   },
+   {
+    "id": "5",
+    "tex": "DF（予想 $2873\\,\\mathrm{cm^{-1}}$）と $\\mathrm{H^{35}Cl}$（$2886\\,\\mathrm{cm^{-1}}$）の吸収位置がたまたま近いため．DF なら F は同位体が 1 種類なので吸収は 1 本，天然の HCl なら約 $2.2\\,\\mathrm{cm^{-1}}$ 離れた強度比 $3:1$ の 2 本組（低波数側が弱い）になる．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\mathrm{H^{35}Cl}$ の換算質量（モルあたり）は $\\dfrac{1.008\\times34.97}{1.008+34.97}=0.97975\\,\\mathrm{g/mol}$．分子 1 個あたりでは\n\\[\\mu=\\frac{0.97975\\times10^{-3}}{6.02\\times10^{23}}=\\boldsymbol{1.63\\times10^{-27}\\,\\mathrm{kg}}\\]\n$k=\\mu(2\\pi c\\tilde\\nu)^{2}$ に $2\\pi c\\tilde\\nu=2\\times3.14\\times3.00\\times10^{10}\\times2886=5.437\\times10^{14}\\,\\mathrm{s^{-1}}$ を入れて\n\\[k=1.6275\\times10^{-27}\\times(5.437\\times10^{14})^{2}=\\boldsymbol{4.81\\times10^{2}\\,\\mathrm{N/m}}\\]\n\n\\textbf{(2)} $\\mu_{\\mathrm{HF}}=\\dfrac{1.008\\times19.00}{20.008}=0.9572\\,\\mathrm{g/mol}$，$\\mu_{\\mathrm{HBr}}=\\dfrac{1.008\\times78.92}{79.928}=0.9953\\,\\mathrm{g/mol}$ を使って同様に計算すると\n$k_{\\mathrm{HF}}=\\boldsymbol{8.86\\times10^{2}\\,\\mathrm{N/m}}$，$k_{\\mathrm{HBr}}=\\boldsymbol{3.84\\times10^{2}\\,\\mathrm{N/m}}$．\n順は $\\mathrm{HF}\\,(886)>\\mathrm{HCl}\\,(481)>\\mathrm{HBr}\\,(384)$ で，結合エネルギーの順 $568>432>366$ と一致する．強い結合ほど「かたいばね」になっている．\n$\\mu=\\dfrac{m_{\\mathrm H}m_{\\mathrm X}}{m_{\\mathrm H}+m_{\\mathrm X}}=\\dfrac{m_{\\mathrm H}}{1+m_{\\mathrm H}/m_{\\mathrm X}}$ で，$m_{\\mathrm X}\\gg m_{\\mathrm H}$ なので $\\mu\\approx m_{\\mathrm H}$（実際 $0.957\\sim0.995\\,\\mathrm{g/mol}$ で差は $4\\,\\%$ 程度）．$\\tilde\\nu\\propto\\sqrt{k/\\mu}$ の $\\mu$ がほぼ共通なので，$\\tilde\\nu$ の大小が $k$ の大小を表す．\n\n\\textbf{(3)} $k$ は同じなので $\\tilde\\nu\\propto1/\\sqrt\\mu$．$\\mu(\\mathrm{H^{37}Cl})=\\dfrac{1.008\\times36.97}{37.978}=0.98124\\,\\mathrm{g/mol}$ より\n\\[\\tilde\\nu(\\mathrm{H^{37}Cl})=2886\\times\\sqrt{\\frac{0.97975}{0.98124}}=\\boldsymbol{2883.8\\,\\mathrm{cm^{-1}}}\\]\n間隔は約 $2.2\\,\\mathrm{cm^{-1}}$．Cl の質量が 2 増えても $\\mu$ は $0.15\\,\\%$ しか変わらないので，ずれはわずかである．天然の塩化水素は $\\mathrm{H^{35}Cl}$ と $\\mathrm{H^{37}Cl}$ が $3:1$ で混ざっているので，吸収は「強い線（$\\mathrm{H^{35}Cl}$）とそのすぐ低波数側の弱い線（$\\mathrm{H^{37}Cl}$）」の 2 本組になる．重い同位体ほど $\\mu$ が大きく波数が小さい．\n\n\\textbf{(4)} $\\mu(\\mathrm{D^{35}Cl})=\\dfrac{2.014\\times34.97}{36.984}=1.9043$，$\\mu(\\mathrm{DF})=\\dfrac{2.014\\times19.00}{21.014}=1.8210\\,\\mathrm{g/mol}$．\n\\[\\tilde\\nu(\\mathrm{D^{35}Cl})=2886\\sqrt{\\frac{0.97975}{1.9043}}=\\boldsymbol{2070\\,\\mathrm{cm^{-1}}},\\qquad \\tilde\\nu(\\mathrm{DF})=3962\\sqrt{\\frac{0.9572}{1.8210}}=\\boldsymbol{2873\\,\\mathrm{cm^{-1}}}\\]\n$\\mu\\approx m_{\\mathrm H}$ または $m_{\\mathrm D}$ と置ける（X が十分重い）なら比は $\\sqrt{m_{\\mathrm H}/m_{\\mathrm D}}\\approx1/\\sqrt2=0.707$ になる．実際の比は $\\mathrm{DCl}$ $0.717$，$\\mathrm{DF}$ $0.725$ で，X が軽い F では D と H の質量の違いの一部が X の側に「吸収」され（$\\mu$ が $m_{\\mathrm D}$ より小さめになる割合が大きい），$0.707$ から大きくずれる．X が重いほど近似がよい．\n\n\\textbf{(5)} DF の予想波数 $2873\\,\\mathrm{cm^{-1}}$ と $\\mathrm{H^{35}Cl}$ の $2886\\,\\mathrm{cm^{-1}}$ は $13\\,\\mathrm{cm^{-1}}$ しか違わず，どちらも「$2870\\sim2890$ 付近」に入る（さらにばねモデル自体の誤差もある）ので，中心の位置だけでは決めにくい．\n決め手は同位体の 2 本組である．F は $^{19}\\mathrm F$ だけなので DF の吸収は \\textbf{1 本}，天然の HCl なら (3) のとおり $\\boldsymbol{2.2\\,\\mathrm{cm^{-1}}}$ 離れた強度比 $\\boldsymbol{3:1}$ の 2 本組（低波数側が弱い）になる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "力の定数が同じ同位体どうしでは波数は換算質量の平方根に反比例し，相手の原子が重いほど換算質量は軽い原子の質量に近づく．これを使うと，H–X の波数比較で結合の強さを判断でき，塩素同位体による強度 3:1 の 2 本組の間隔や D 置換の波数を予想でき，偶然近い位置に吸収をもつ DF と HCl を線の本数と強度比で見分けられる．"
+ },
+ "concepts": [
+  "chemical-bond",
+  "halogen",
+  "electron-config"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "赤外吸収",
+  "力の定数",
+  "換算質量",
+  "同位体効果",
+  "結合の強さ"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

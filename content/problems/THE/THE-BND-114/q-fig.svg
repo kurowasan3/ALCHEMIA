@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-25 0 450 320" width="450" height="320" font-family="Noto Sans CJK JP, sans-serif">
+  <g stroke="currentColor" fill="none">
+    <polygon points="85,182 318,195 260,130" stroke-dasharray="5 4" opacity="0.5" stroke-width="1.2"/>
+        <line x1="200.0" y1="145.0" x2="200.0" y2="52.0" stroke-width="2"/>
+    <line x1="200.0" y1="171.0" x2="200.0" y2="264.0" stroke-width="2"/>
+    <line x1="187.2" y1="160.2" x2="84.8" y2="178.0" stroke-width="2"/>
+    <line x1="212.6" y1="161.4" x2="318.4" y2="189.9" stroke-width="2"/>
+    <line x1="211.6" y1="152.1" x2="259.3" y2="127.5" stroke-width="2" stroke-dasharray="5 4"/>
+    <circle cx="200" cy="40" r="12" stroke-width="1.5"/>
+    <circle cx="200" cy="276" r="12" stroke-width="1.5"/>
+    <circle cx="73" cy="180" r="12" stroke-width="1.5"/>
+    <circle cx="330" cy="193" r="12" stroke-width="1.5"/>
+    <circle cx="270" cy="122" r="12" stroke-width="1.5"/>
+  </g>
+  <g fill="currentColor" font-size="15" text-anchor="middle">
+    <text x="200" y="164" font-size="16">P</text>
+    <text x="200" y="45">a</text>
+    <text x="200" y="281">a</text>
+    <text x="73" y="185">e</text>
+    <text x="330" y="198">e</text>
+    <text x="270" y="127">e</text>
+    <text x="222" y="45" font-size="13" text-anchor="start">アピカル位</text>
+    <text x="222" y="281" font-size="13" text-anchor="start">アピカル位</text>
+    <text x="73" y="216" font-size="13">エクアトリアル位</text>
+    <text x="330" y="229" font-size="13">エクアトリアル位</text>
+    <text x="292" y="112" font-size="13" text-anchor="start">エクアトリアル位</text>
+    <text x="200" y="312" font-size="13">e の 3 つは同じ平面上で互いに 120° をなす（破線の結合は紙面の奥）</text>
+  </g>
+</svg>

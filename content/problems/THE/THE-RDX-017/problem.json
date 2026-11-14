@@ -1,0 +1,109 @@
+{
+ "id": "THE-RDX-017",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-06",
+ "topic": "酸化力の序列に基づく還元剤混合物の逐次酸化と量的関係",
+ "course": "化学",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "compare",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の実験 (a)～(d) を行った．\n(a) ヨウ化カリウム水溶液に塩化鉄(III)水溶液を加えると褐色になり，デンプン水溶液で青紫色を示した．\n(b) 臭化カリウム水溶液に塩化鉄(III)水溶液を加えても変化はなかった．\n(c) 硫酸鉄(II)水溶液に臭素水を加えると臭素の色が消え，チオシアン酸カリウム水溶液で血赤色を示した．\n(d) 臭化カリウム水溶液に塩素水を加えると赤褐色になった．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "(a) と (c) の変化をイオン反応式で表せ．また，$\\ce{Cl2}$，$\\ce{Br2}$，$\\ce{I2}$，$\\ce{Fe^3+}$ を酸化力の強い順に並べよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$\\ce{KI}$，$\\ce{FeSO4}$，$\\ce{KBr}$ を $2.00\\,\\mathrm{mmol}$ ずつ含む酸性の水溶液にヘキサンを加え，塩素水を少しずつ加えてよく振る．$\\ce{I-}$，$\\ce{Fe^2+}$，$\\ce{Br-}$ が酸化される順序を答え，その順序になる理由を，酸化力の順を用いて説明せよ．ただし，$\\ce{Cl2}$ は $\\ce{I2}$ をさらに酸化しないものとする．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) で加えた $\\ce{Cl2}$ が $1.50\\,\\mathrm{mmol}$ のときと $2.50\\,\\mathrm{mmol}$ のときについて，生じている $\\ce{I2}$，$\\ce{Fe^3+}$，$\\ce{Br2}$ の物質量をそれぞれ求めよ．また，加えた $\\ce{Cl2}$ を $n\\,\\mathrm{mmol}$（$0\\leqq n\\leqq3.00$）として，$\\ce{Fe^3+}$ の物質量を $n$ の式で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\ce{KI}$，$\\ce{FeSO4}$，$\\ce{KBr}$ を含む未知の水溶液に，(2) と同様に塩素水を少しずつ加えた．水層の一部をとってチオシアン酸カリウム水溶液を加えると血赤色を示すようになったのは，$\\ce{Cl2}$ を $0.80\\,\\mathrm{mmol}$ 加えた後であり，ヘキサン層に臭素の色が加わりはじめたのは $2.40\\,\\mathrm{mmol}$ 加えた後であった．この水溶液に含まれていた $\\ce{KI}$ と $\\ce{FeSO4}$ の物質量を求めよ．また，この実験から $\\ce{KBr}$ の物質量を決めるには，さらにどのような測定をすればよいか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "(a) $\\ce{2Fe^3+ + 2I- -> 2Fe^2+ + I2}$，(c) $\\ce{2Fe^2+ + Br2 -> 2Fe^3+ + 2Br-}$；$\\ce{Cl2}>\\ce{Br2}>\\ce{Fe^3+}>\\ce{I2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{I-}$ → $\\ce{Fe^2+}$ → $\\ce{Br-}$；還元剤としての強さはそれぞれの酸化体の酸化力と逆順で $\\ce{I-}>\\ce{Fe^2+}>\\ce{Br-}$ となり，もし弱い還元剤が先に酸化されても，生じた $\\ce{Br2}$ や $\\ce{Fe^3+}$ が残っている強い還元剤を酸化して元に戻るから"
+   },
+   {
+    "id": "3",
+    "tex": "$1.50\\,\\mathrm{mmol}$：$\\ce{I2}$ $1.00$，$\\ce{Fe^3+}$ $1.00$，$\\ce{Br2}$ $0\\,\\mathrm{mmol}$；$2.50\\,\\mathrm{mmol}$：$\\ce{I2}$ $1.00$，$\\ce{Fe^3+}$ $2.00$，$\\ce{Br2}$ $0.50\\,\\mathrm{mmol}$；$\\ce{Fe^3+}$ は $0\\leqq n\\leqq1.00$ で $0$，$1.00\\leqq n\\leqq2.00$ で $2(n-1.00)$，$2.00\\leqq n\\leqq3.00$ で $2.00\\,\\mathrm{mmol}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{KI}$ $1.60\\,\\mathrm{mmol}$，$\\ce{FeSO4}$ $3.20\\,\\mathrm{mmol}$；ヘキサン層の臭素の色がそれ以上濃くならなくなる（$\\ce{Br-}$ がなくなる）までの $\\ce{Cl2}$ の量を測る（$\\ce{KBr}$ はその後の $\\ce{Cl2}$ の量の2倍）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} (a) $\\ce{2Fe^3+ + 2I- -> 2Fe^2+ + I2}$ より酸化力は $\\ce{Fe^3+}>\\ce{I2}$．(b) から $\\ce{Br2}>\\ce{Fe^3+}$（$\\ce{Fe^3+}$ は $\\ce{Br-}$ を酸化できない）．(c) $\\ce{2Fe^2+ + Br2 -> 2Fe^3+ + 2Br-}$ からも $\\ce{Br2}>\\ce{Fe^3+}$．(d) $\\ce{Cl2 + 2Br- -> 2Cl- + Br2}$ より $\\ce{Cl2}>\\ce{Br2}$．よって $\\boldsymbol{\\ce{Cl2}>\\ce{Br2}>\\ce{Fe^3+}>\\ce{I2}}$．\n\n\\textbf{(2)} 酸化力の強い酸化剤の相手（還元された形）ほど電子を出しにくいので，還元剤の強さは $\\ce{I-}>\\ce{Fe^2+}>\\ce{Br-}$．加えた $\\ce{Cl2}$ は最も強い還元剤 $\\ce{I-}$ から酸化する．仮に局所的に $\\ce{Br-}$ や $\\ce{Fe^2+}$ が先に酸化されても，\n\\[ \\ce{Br2 + 2Fe^2+ -> 2Br- + 2Fe^3+},\\qquad \\ce{2Fe^3+ + 2I- -> 2Fe^2+ + I2} \\]\nによって，より強い還元剤が残っている限りそれが酸化され，元に戻る．したがって振り混ぜて平衡になった状態では，$\\boldsymbol{\\ce{I-}\\to\\ce{Fe^2+}\\to\\ce{Br-}}$ の順に酸化されていく．\n\n\\textbf{(3)} $\\ce{Cl2 + 2I- -> 2Cl- + I2}$ に $1.00\\,\\mathrm{mmol}$，$\\ce{Cl2 + 2Fe^2+ -> 2Cl- + 2Fe^3+}$ に $1.00\\,\\mathrm{mmol}$，$\\ce{Cl2 + 2Br- -> 2Cl- + Br2}$ に $1.00\\,\\mathrm{mmol}$ の $\\ce{Cl2}$ が必要で，この順に進む．\n$1.50\\,\\mathrm{mmol}$：$\\ce{I-}$ がすべて酸化され（$\\ce{I2}$ $1.00$），残りの $0.50\\,\\mathrm{mmol}$ で $\\ce{Fe^2+}$ $1.00\\,\\mathrm{mmol}$ が酸化される．$\\ce{I2}$ $\\boldsymbol{1.00}$，$\\ce{Fe^3+}$ $\\boldsymbol{1.00}$，$\\ce{Br2}$ $\\boldsymbol{0}\\,\\mathrm{mmol}$．\n$2.50\\,\\mathrm{mmol}$：$\\ce{I2}$ $\\boldsymbol{1.00}$，$\\ce{Fe^3+}$ $\\boldsymbol{2.00}$，残り $0.50\\,\\mathrm{mmol}$ で $\\ce{Br2}$ $\\boldsymbol{0.50}\\,\\mathrm{mmol}$．\n$\\ce{Fe^3+}$ の物質量は，$\\ce{I-}$ を酸化し終わる $n=1.00$ までは 0，その後 $\\ce{Cl2}$ $1\\,\\mathrm{mmol}$ あたり $2\\,\\mathrm{mmol}$ ずつ増え，$n=2.00$ で $2.00\\,\\mathrm{mmol}$ に達してからは一定：\n\\[ 0\\ (0\\leqq n\\leqq1.00),\\qquad 2(n-1.00)\\ (1.00\\leqq n\\leqq2.00),\\qquad 2.00\\ (2.00\\leqq n\\leqq3.00) \\]\n\n\\textbf{(4)} 血赤色（$\\ce{Fe^3+}$）が現れはじめるのは $\\ce{I-}$ がなくなった時点なので，$\\ce{KI}$ は $0.80\\times2=\\boldsymbol{1.60\\,\\mathrm{mmol}}$．臭素の色が現れはじめるのは $\\ce{Fe^2+}$ もなくなった時点なので，$\\ce{Fe^2+}$ の酸化に使われた $\\ce{Cl2}$ は $2.40-0.80=1.60\\,\\mathrm{mmol}$，$\\ce{FeSO4}$ は $\\boldsymbol{3.20\\,\\mathrm{mmol}}$．\n$\\ce{KBr}$ の量は，さらに $\\ce{Cl2}$ を加えて $\\ce{Br2}$ がもう増えなくなる（$\\ce{Br-}$ がなくなる）までの $\\ce{Cl2}$ の量 $m$ を測れば $2m$ として求まる（あるいは，酸化の前に $\\ce{AgNO3}$ でハロゲン化物イオンの総量を沈殿として量り，$\\ce{KI}$ の分を差し引いてもよい）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "実験結果から酸化力の序列（Cl2 > Br2 > Fe3+ > I2）を組み立てると，還元剤の混合物は強い還元剤から順に酸化されること（弱い方が先に酸化されても生成物が強い還元剤を酸化して戻る）が導ける．逐次的な酸化の区切り（色の変化が現れる点）から各成分の物質量を逆に求める．"
+ },
+ "concepts": [
+  "redox",
+  "transition-metals",
+  "halogen"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "酸化力",
+  "酸化還元反応",
+  "逐次反応",
+  "ハロゲン",
+  "鉄イオン"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

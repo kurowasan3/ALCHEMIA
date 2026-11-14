@@ -1,0 +1,100 @@
+{
+ "id": "THE-EQL-019",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "物質量の変化から係数と平衡定数を決める",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "体積 $2.0\\,\\mathrm{L}$ の容器に気体 A と気体 B を入れ，温度一定に保つと，$a\\mathrm{A}+b\\mathrm{B}\\rightleftarrows c\\mathrm{C}$（$a,b,c$ は最も簡単な整数）の反応が起こった．各物質の物質量（mol）は次のように変化した．\n\\[\\begin{array}{c|ccccc} \\text{時間 (min)} & 0 & 2 & 4 & 6 & 8 \\\\ \\hline \\mathrm{A} & 4.00 & 3.40 & 3.00 & 2.80 & 2.80 \\\\ \\mathrm{B} & 3.00 & 1.80 & 1.00 & 0.60 & 0.60 \\\\ \\mathrm{C} & 0 & 0.60 & 1.00 & 1.20 & 1.20 \\end{array}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$a$，$b$，$c$ の値を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "この温度での平衡定数 $K$ を単位とともに有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "右向きの反応は発熱反応である．次の①〜④を行って再び平衡に達したとき，平衡定数 $K$ と平衡時の C の物質量はそれぞれ（増加／減少／変化しない）のどれになるか．\\\\ ① 温度を上げる　② 温度一定で体積を小さくする　③ 触媒を加える　④ 温度一定で，初めに入れる A の量だけを増やして実験し直す"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$a=1$，$b=2$，$c=1$"
+   },
+   {
+    "id": "2",
+    "tex": "$4.8\\,(\\mathrm{mol/L})^{-2}$"
+   },
+   {
+    "id": "3",
+    "tex": "① $K$ 減少，C 減少　② $K$ 変化しない，C 増加　③ $K$ 変化しない，C 変化しない　④ $K$ 変化しない，C 増加"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 平衡までの変化量は A $-1.20$，B $-2.40$，C $+1.20\\,\\mathrm{mol}$．どの時刻でも変化量の比は $1:2:1$ なので $\\boldsymbol{a=1,\\ b=2,\\ c=1}$（$\\mathrm{A+2B \\rightleftarrows C}$）．\\\\\n\\textbf{(2)} 平衡時（6 分以降）の濃度は $[\\mathrm A]=1.40$，$[\\mathrm B]=0.30$，$[\\mathrm C]=0.60\\,\\mathrm{mol/L}$．\n\\[ K=\\dfrac{[\\mathrm C]}{[\\mathrm A][\\mathrm B]^2}=\\dfrac{0.60}{1.40\\times0.30^2}=4.76\\fallingdotseq\\boldsymbol{4.8\\,(\\mathrm{mol/L})^{-2}} \\]\n\\textbf{(3)} 平衡定数は温度だけで決まる．\\\\\n① 発熱反応なので温度を上げると左へ移動し，$K$ も\\textbf{減少}，C も\\textbf{減少}．\\\\\n② 圧縮すると気体分子数の減る右へ移動して C は\\textbf{増加}するが，温度一定なので $K$ は\\textbf{変化しない}．\\\\\n③ 触媒は平衡に達するまでの時間を短くするだけで，$K$・C の量とも\\textbf{変化しない}．\\\\\n④ A を増やすと平衡は右へ寄り C は\\textbf{増加}するが，$K$ は\\textbf{変化しない}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "反応途中の物質量の変化量の比から化学反応式の係数を決め，平衡時の濃度から単位付きの平衡定数を求める．平衡定数は温度だけで決まり，濃度・圧力・触媒では変わらないことを平衡時の物質量の変化と区別する．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "mole",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "平衡定数",
+  "係数の決定",
+  "平衡の移動",
+  "発熱反応"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

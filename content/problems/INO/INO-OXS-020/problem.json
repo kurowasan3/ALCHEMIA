@@ -1,0 +1,109 @@
+{
+ "id": "INO-OXS-020",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-02",
+ "topic": "硫黄の塩化物の組成決定と四窒化四硫黄の合成（酸化数の変化による係数決定と量的関係）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 20,
+ "format": [
+  "equation",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "四窒化四硫黄 $\\ce{S4N4}$ は，硫黄と窒素が交互に並んだ環をもつ化合物で，次のようにして合成される．原子量は H = 1.0，N = 14，S = 32，Cl = 35.5 とする．\n\n・融解した硫黄に塩素を通じると，橙黄色の液体 A が得られる．A は分子量が 120 以上 150 未満で，質量で $47.4\\,\\%$ の硫黄を含む．\n\n・A $13.5\\,\\mathrm g$ にさらに塩素を通じると，すべてが赤色の液体 B に変わり，質量は $20.6\\,\\mathrm g$ になった．B は分子量が約 100 の分子からなる．\n\n・B を有機溶媒に溶かし，過剰のアンモニアを通じると $\\ce{S4N4}$ が生じ，硫黄と塩化アンモニウムが副生する．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A の分子式を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "B の分子式を求め，A から B が生じる反応の化学反応式を書け．"
+     },
+     {
+      "id": "3",
+      "tex": "B とアンモニアから $\\ce{S4N4}$ が生じる反応で，S，N の酸化数はそれぞれどう変化するか．$\\ce{S4N4}$ 中の N の酸化数を $-3$ とせよ．これをもとに，次の反応式の係数 $a\\sim e$ を決めよ．\n\\[a\\,\\ce{B} + b\\,\\ce{NH3} \\ce{->} c\\,\\ce{S4N4} + d\\,\\ce{S} + e\\,\\ce{NH4Cl}\\]"
+     },
+     {
+      "id": "4",
+      "tex": "$\\ce{S4N4}$ を $9.2\\,\\mathrm g$ 得るのに必要な B と，消費されるアンモニアの質量をそれぞれ有効数字 2 桁で求めよ．ただし反応は (3) の式のとおり完全に進むとする．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{S2Cl2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{SCl2}$，$\\ce{S2Cl2 + Cl2 -> 2SCl2}$"
+   },
+   {
+    "id": "3",
+    "tex": "S は $+2$ から，$\\ce{S4N4}$ 中の $+3$ と単体の $0$ に変化（不均化），N は $-3$ のまま変化しない．$a=6$，$b=16$，$c=1$，$d=2$，$e=12$"
+   },
+   {
+    "id": "4",
+    "tex": "B：$31\\,\\mathrm g$，アンモニア：$14\\,\\mathrm g$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 100 g あたり S $47.4\\,\\mathrm g$，Cl $52.6\\,\\mathrm g$ なので，物質量の比は\n\\[\\mathrm{S:Cl}=\\frac{47.4}{32}:\\frac{52.6}{35.5}=1.48:1.48=1:1\\]\n組成式は $\\ce{SCl}$（式量 67.5）．分子量が 120〜150 なので $(\\ce{SCl})_2$，分子式は $\\boldsymbol{\\ce{S2Cl2}}$（分子量 135）．\n\n\\textbf{(2)} A は $13.5/135=0.100\\,\\mathrm{mol}$．増えた質量 $20.6-13.5=7.1\\,\\mathrm g$ は $\\ce{Cl2}$ $7.1/71=0.100\\,\\mathrm{mol}$ にあたる．よって A 1 mol に $\\ce{Cl2}$ 1 mol が加わり，生成物全体の組成は $\\ce{S2Cl4}$，すなわち $\\ce{SCl2}$ である．$\\ce{SCl2}$ の分子量は 103 で「約 100」に合う（$\\ce{S2Cl4}$ なら 206）．B は $\\boldsymbol{\\ce{SCl2}}$ で\n\\[\\ce{S2Cl2 + Cl2 -> 2SCl2}\\]\n\n\\textbf{(3)} 酸化数は，$\\ce{SCl2}$ 中の S が $+2$（Cl は $-1$），$\\ce{S4N4}$ 中の S は N を $-3$ として $+3$，単体の S は $0$．$\\ce{NH3}$ と $\\ce{NH4Cl}$ の N はどちらも $-3$ で，N の酸化数は変化しない．したがって S の一部が $+2\\to+3$ に酸化され，残りが $+2\\to0$ に還元される（不均化）．\n\n$\\ce{S4N4}$ 1 mol をつくると S 4 mol が 1 ずつ酸化されて電子 4 mol を失う．これを S が $+2\\to0$（2 ずつ）で受け取るには S 2 mol が必要．よって $c=1$，$d=2$，S の合計から $a=4+2=6$．Cl の保存から $e=12$．N の保存から $b=4+12=16$（H も $16\\times3=48=12\\times4$ でつり合う）．\n\\[\\ce{6SCl2 + 16NH3 -> S4N4 + 2S + 12NH4Cl}\\]\nすなわち $a=\\boldsymbol6$，$b=\\boldsymbol{16}$，$c=\\boldsymbol1$，$d=\\boldsymbol2$，$e=\\boldsymbol{12}$．\nアンモニアは窒素源であるとともに，生じる $\\ce{HCl}$ を $\\ce{NH4Cl}$ として取り込む塩基としてもはたらいている（16 mol のうち 12 mol）．\n\n\\textbf{(4)} $\\ce{S4N4}$ の分子量は $4\\times32+4\\times14=184$ で，$9.2/184=0.050\\,\\mathrm{mol}$．\n\\[\\ce{SCl2}：0.050\\times6\\times103=30.9\\fallingdotseq\\boldsymbol{31\\,\\mathrm g},\\qquad \\ce{NH3}：0.050\\times16\\times17=13.6\\fallingdotseq\\boldsymbol{14\\,\\mathrm g}\\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "元素の質量百分率と分子量の範囲から硫黄の塩化物の分子式を決め，塩素の付加による質量増加から次の生成物を決める．アンモニアとの反応では N の酸化数は変わらず S だけが不均化することを酸化数で見抜き，電子の授受から係数を決めて量的関係を計算する．"
+ },
+ "concepts": [
+  "oxygen-sulfur",
+  "halogen",
+  "nitrogen-phosphorus"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "硫黄の化合物",
+  "組成式",
+  "酸化数",
+  "不均化",
+  "化学反応式の係数"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

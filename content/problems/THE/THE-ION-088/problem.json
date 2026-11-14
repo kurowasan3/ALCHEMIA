@@ -1,0 +1,109 @@
+{
+ "id": "THE-ION-088",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "緩衝液の濃度・成分比と緩衝能（加えられる酸の量の限界）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "弱酸 HA（電離定数 $K_{\\mathrm a}=2.0\\times10^{-5}\\,\\mathrm{mol/L}$）とその塩 NaA を含む緩衝液について考える．いずれの溶液も体積は $100\\,\\mathrm{mL}$ で，酸は少量の濃塩酸として加え，体積の変化は無視できるものとする．$\\log_{10}2=0.301$，$\\log_{10}3=0.477$，$\\log_{10}7=0.845$ とする．\n\\begin{itemize}\n\\item 緩衝液 P：HA $1.0\\times10^{-2}\\,\\mathrm{mol}$，NaA $1.0\\times10^{-2}\\,\\mathrm{mol}$\n\\item 緩衝液 Q：HA $1.0\\times10^{-3}\\,\\mathrm{mol}$，NaA $1.0\\times10^{-3}\\,\\mathrm{mol}$\n\\item 緩衝液 R：HA $4.0\\times10^{-3}\\,\\mathrm{mol}$，NaA $1.6\\times10^{-2}\\,\\mathrm{mol}$\n\\end{itemize}"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "緩衝液 P と Q の pH をそれぞれ小数第1位まで求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "P と Q に，それぞれ $\\ce{HCl}$ を $2.0\\times10^{-3}\\,\\mathrm{mol}$ 加えた．加えたあとの pH をそれぞれ小数第1位まで求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "pH を $\\mathrm{p}K_{\\mathrm a}-1$ 以上に保ったまま加えることのできる $\\ce{HCl}$ の物質量は，P では Q の何倍か．"
+     },
+     {
+      "id": "4",
+      "tex": "P と R はどちらも HA と NaA を合わせて $2.0\\times10^{-2}\\,\\mathrm{mol}$ 含む．それぞれに $\\ce{HCl}$ を $4.0\\times10^{-3}\\,\\mathrm{mol}$ 加えたときの pH の変化の大きさを小数第2位まで求め，pH が変化しにくいのはどちらか答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "P：4.7，Q：4.7"
+   },
+   {
+    "id": "2",
+    "tex": "P：4.5，Q：2.0"
+   },
+   {
+    "id": "3",
+    "tex": "10 倍"
+   },
+   {
+    "id": "4",
+    "tex": "P：0.37，R：0.43，P"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{緩衝液の pH}　HA の電離はわずかで，A$^-$ がたくさんあるのでさらに抑えられる．$[\\mathrm{HA}]$，$[\\mathrm A^-]$ は加えた量のままとみてよく\n\\[ [\\mathrm H^+]=K_{\\mathrm a}\\frac{[\\mathrm{HA}]}{[\\mathrm A^-]},\\qquad \\mathrm{pH}=\\mathrm pK_{\\mathrm a}+\\log_{10}\\frac{[\\mathrm A^-]}{[\\mathrm{HA}]},\\qquad \\mathrm pK_{\\mathrm a}=5-\\log_{10}2=4.699 \\]\n\n\\textbf{(1)}　P，Q ともに $[\\mathrm{HA}]=[\\mathrm A^-]$ なので pH は $\\boldsymbol{4.7}$（濃度によらない）．\n\n\\textbf{(2)}　加えた $\\ce{H+}$ は $\\ce{A- + H+ ->[\\text{}] HA}$ で消費される．\nP：HA $1.2\\times10^{-2}$，A$^-$ $8.0\\times10^{-3}\\,\\mathrm{mol}$ となり $\\mathrm{pH}=4.699+\\log_{10}\\dfrac{2}{3}=4.699-0.176=\\boldsymbol{4.5}$．\nQ：A$^-$ は $1.0\\times10^{-3}\\,\\mathrm{mol}$ しかないので，すべて HA に変わっても $\\ce{HCl}$ が $1.0\\times10^{-3}\\,\\mathrm{mol}$ 余る．$[\\ce{H+}]=\\dfrac{1.0\\times10^{-3}}{0.100}=1.0\\times10^{-2}\\,\\mathrm{mol/L}$（HA の電離は強酸に抑えられて無視できる）で，$\\mathrm{pH}=\\boldsymbol{2.0}$．\nP の pH はほとんど変わらないが，Q は緩衝作用の限界をこえて pH が大きく下がる．\n\n\\textbf{(3)}　$\\mathrm{pH}=\\mathrm pK_{\\mathrm a}-1$ は $\\dfrac{[\\mathrm A^-]}{[\\mathrm{HA}]}=\\dfrac{1}{10}$ のとき．はじめ HA，A$^-$ を $n$ ずつ含む緩衝液に $x$ を加えると $\\dfrac{n-x}{n+x}=\\dfrac1{10}$，$x=\\dfrac{9}{11}n$．$x$ は $n$ に比例するので，P（$n=1.0\\times10^{-2}$）は Q（$n=1.0\\times10^{-3}$）の $\\boldsymbol{10}$ 倍加えられる．同じ pH の緩衝液でも，濃いほど緩衝能が大きい．\n\n\\textbf{(4)}　P：$\\dfrac{[\\mathrm A^-]}{[\\mathrm{HA}]}$ が $1$ から $\\dfrac{6.0\\times10^{-3}}{1.4\\times10^{-2}}=\\dfrac37$ に変わるので，変化は $\\log_{10}\\dfrac73=0.845-0.477=0.368\\fallingdotseq\\boldsymbol{0.37}$．\nR：比が $\\dfrac{16}{4.0}=4$ から $\\dfrac{1.2\\times10^{-2}}{8.0\\times10^{-3}}=\\dfrac32$ に変わるので，変化は $\\log_{10}4-\\log_{10}\\dfrac32=0.602-(0.477-0.301)=0.426\\fallingdotseq\\boldsymbol{0.43}$．\npH が変化しにくいのは $\\boldsymbol{\\text P}$．合計量が同じなら，HA と A$^-$ が等量（$\\mathrm{pH}=\\mathrm pK_{\\mathrm a}$）に近いほど，酸・塩基を加えたときの比の変化が小さく緩衝能が大きい．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "緩衝液の pH は成分の比 [A⁻]/[HA] だけで決まるので，薄めても変わらないが，加えた酸を受け止められる量（緩衝能）は A⁻ の量に比例し，A⁻ が尽きると pH は急落する．合計量が同じなら成分比 1:1 のときに比の変化が最も小さく緩衝能が最大になる．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "concentration",
+  "ph"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "緩衝液",
+  "緩衝能",
+  "ヘンダーソン・ハッセルバルヒの式",
+  "弱酸",
+  "pH"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

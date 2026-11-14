@@ -1,0 +1,109 @@
+{
+ "id": "THE-ION-019",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "錯イオン形成によるハロゲン化銀の溶解",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ハロゲン化銀の溶解度積と，ジアンミン銀(I)イオンの生成の平衡定数を次のとおりとする．\n\\[ K_{sp}(\\ce{AgCl})=2.0\\times10^{-10}\\,(\\mathrm{mol/L})^2,\\qquad K_{sp}(\\ce{AgBr})=5.0\\times10^{-13}\\,(\\mathrm{mol/L})^2 \\]\n\\[ \\ce{Ag+ + 2NH3 <=> [Ag(NH3)2]+}\\qquad K_f=\\dfrac{[\\ce{[Ag(NH3)2]+}]}{[\\ce{Ag+}][\\ce{NH3}]^2}=1.25\\times10^{7}\\,(\\mathrm{mol/L})^{-2} \\]\n$\\sqrt2=1.41$ とし，溶解による体積変化は無視する．また，アンモニア水中で溶けた銀はすべて $\\ce{[Ag(NH3)2]+}$ になり，アンモニアの電離は無視できるとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "純水 1.0 L に溶ける $\\ce{AgCl}$ の物質量を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$\\ce{AgCl + 2NH3 <=> [Ag(NH3)2]+ + Cl-}$ の平衡定数 $K$ を $K_{sp}$ と $K_f$ で表し，その値を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$1.0\\,\\mathrm{mol/L}$ アンモニア水 1.0 L に溶ける $\\ce{AgCl}$ の物質量を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$1.0\\,\\mathrm{mol/L}$ アンモニア水 1.0 L に溶ける $\\ce{AgBr}$ の物質量を有効数字2桁で求め，(3) と比べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$1.4\\times10^{-5}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "2",
+    "tex": "$K=K_{sp}K_f=2.5\\times10^{-3}$"
+   },
+   {
+    "id": "3",
+    "tex": "$4.5\\times10^{-2}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "4",
+    "tex": "$2.5\\times10^{-3}\\,\\mathrm{mol}$；$\\ce{AgCl}$ の約 $\\tfrac{1}{18}$ しか溶けない"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $[\\ce{Ag+}]=[\\ce{Cl-}]=s$ として $s^2=2.0\\times10^{-10}$，$s=1.41\\times10^{-5}$．よって $\\boldsymbol{1.4\\times10^{-5}\\,\\mathrm{mol}}$．\n\n\\textbf{(2)} \n\\[ K=\\dfrac{[\\ce{[Ag(NH3)2]+}][\\ce{Cl-}]}{[\\ce{NH3}]^2}=\\dfrac{[\\ce{[Ag(NH3)2]+}]}{[\\ce{Ag+}][\\ce{NH3}]^2}\\times[\\ce{Ag+}][\\ce{Cl-}]=\\boldsymbol{K_{sp}K_f}=2.0\\times10^{-10}\\times1.25\\times10^{7}=\\boldsymbol{2.5\\times10^{-3}} \\]\n\n\\textbf{(3)} 溶ける $\\ce{AgCl}$ を $x\\,\\mathrm{mol}$ とすると，$[\\ce{[Ag(NH3)2]+}]=[\\ce{Cl-}]=x$，$[\\ce{NH3}]=1.0-2x$．\n\\[ \\dfrac{x^2}{(1.0-2x)^2}=2.5\\times10^{-3}\\quad\\Rightarrow\\quad \\dfrac{x}{1.0-2x}=0.050\\quad\\Rightarrow\\quad x=\\dfrac{0.050}{1.10}=\\boldsymbol{4.5\\times10^{-2}\\,\\mathrm{mol}} \\]\n純水の約 3000 倍溶ける．\n\n\\textbf{(4)} $K'=5.0\\times10^{-13}\\times1.25\\times10^{7}=6.25\\times10^{-6}$．\n\\[ \\dfrac{y}{1.0-2y}=\\sqrt{6.25\\times10^{-6}}=2.5\\times10^{-3}\\quad\\Rightarrow\\quad y=\\dfrac{2.5\\times10^{-3}}{1.005}\\fallingdotseq\\boldsymbol{2.5\\times10^{-3}\\,\\mathrm{mol}} \\]\n$K_{sp}$ が 400 分の 1 になると，溶ける量は $\\sqrt{400}=20$ 分の 1 程度（アンモニアの消費を考えると約 18 分の 1）になる．$\\ce{AgBr}$ はアンモニア水に溶けにくい．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "難溶性塩が錯イオンをつくって溶ける反応の平衡定数は Ksp と錯イオンの生成定数の積になる．錯形成剤の消費も含めて溶解量を求めると，Ksp の差が溶けやすさの大きな差となって現れる（AgCl はアンモニア水に溶けるが AgBr は溶けにくい）．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "complex-ion",
+  "precipitation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "溶解度積",
+  "錯イオン",
+  "ジアンミン銀イオン",
+  "ハロゲン化銀",
+  "平衡定数"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

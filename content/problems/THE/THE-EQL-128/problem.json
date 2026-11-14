@@ -1,0 +1,117 @@
+{
+ "id": "THE-EQL-128",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "黒鉛と二酸化炭素の平衡（全圧の変化から分圧と圧平衡定数，圧縮・固体の追加の影響）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "容積一定の容器に二酸化炭素だけを入れ，温度 $T$ で圧力を $1.00\\times10^{5}\\,\\mathrm{Pa}$ にした．温度を $T$ に保ったまま，この容器に十分な量の黒鉛（固体）を加えて長時間おいたところ，次の可逆反応が平衡に達し，気体の全圧は $1.60\\times10^{5}\\,\\mathrm{Pa}$ になった．\n\\[ \\ce{C + CO2 <=> 2CO} \\]\n気体はすべて理想気体とし，固体の体積は無視できるものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "平衡状態での $\\ce{CO2}$ と $\\ce{CO}$ の分圧をそれぞれ有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "温度 $T$ でのこの反応の圧平衡定数 $K_{\\mathrm{p}}=\\dfrac{p_{\\ce{CO}}^{2}}{p_{\\ce{CO2}}}$ を単位とともに有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(1) の平衡状態に，温度一定のまま黒鉛をさらに加えた．気体の全圧は増加する・減少する・変わらない，のどれか．理由とともに答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(1) の平衡状態から，温度一定のまま容器の容積を半分にした（黒鉛は残っている）．新しい平衡状態での全圧を有効数字 2 桁で求めよ．また，その値が $1.60\\times10^{5}\\,\\mathrm{Pa}$ の 2 倍より大きいか小さいかを答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "この反応は吸熱反応である．(1) の平衡状態から容積一定のまま温度を上げると，気体中の $\\ce{CO}$ の物質量の割合はどうなるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{CO2}$：$4.0\\times10^{4}\\,\\mathrm{Pa}$，$\\ce{CO}$：$1.2\\times10^{5}\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "2",
+    "tex": "$3.6\\times10^{5}\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "3",
+    "tex": "変わらない．固体の黒鉛は平衡定数の式に含まれず，加えても気体の分圧の関係は変わらないから．"
+   },
+   {
+    "id": "4",
+    "tex": "$3.0\\times10^{5}\\,\\mathrm{Pa}$，2 倍（$3.20\\times10^{5}\\,\\mathrm{Pa}$）より小さい．"
+   },
+   {
+    "id": "5",
+    "tex": "大きくなる．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 温度・容積が一定なので，分圧は物質量に比例する．$\\ce{CO2}$ の分圧が $x\\,\\mathrm{Pa}$ 減ると $\\ce{CO}$ の分圧は $2x\\,\\mathrm{Pa}$ 増えるので，全圧は $x$ だけ増える．\n\\[ 1.00\\times10^{5} + x = 1.60\\times10^{5} \\quad\\Rightarrow\\quad x = 6.0\\times10^{4}\\,\\mathrm{Pa} \\]\nよって $p_{\\ce{CO2}} = 1.00\\times10^{5} - 6.0\\times10^{4} = \\boldsymbol{4.0\\times10^{4}\\,\\mathrm{Pa}}$，$p_{\\ce{CO}} = 2x = \\boldsymbol{1.2\\times10^{5}\\,\\mathrm{Pa}}$．\n（一般に，最初の圧力 $P_1$ と平衡時の全圧 $P_2$ から $p_{\\ce{CO2}} = 2P_1 - P_2$ となる．）\n\n\\textbf{(2)} \\[ K_{\\mathrm{p}} = \\frac{(1.2\\times10^{5})^{2}}{4.0\\times10^{4}} = \\boldsymbol{3.6\\times10^{5}\\,\\mathrm{Pa}} \\]\n\\textbf{(3)} 固体の黒鉛の「濃度」は一定とみなされ，平衡定数の式に入らない．黒鉛が残っている限り平衡の位置は気体の分圧だけで決まるので，全圧は\\textbf{変わらない}．\n\n\\textbf{(4)} 容積を半分にした直後は $p_{\\ce{CO2}} = 8.0\\times10^{4}$，$p_{\\ce{CO}} = 2.4\\times10^{5}\\,\\mathrm{Pa}$ で，$\\dfrac{(2.4\\times10^{5})^{2}}{8.0\\times10^{4}} = 7.2\\times10^{5} > K_{\\mathrm{p}}$ だから，平衡は左（気体分子の数が減る向き）へ移る．$\\ce{CO2}$ の分圧が $y$ 増えるとすると（$10^{5}\\,\\mathrm{Pa}$ 単位）\n\\[ \\frac{(2.4-2y)^{2}}{0.80+y} = 3.6 \\quad\\Rightarrow\\quad y = 0.235 \\]\n$p_{\\ce{CO2}} = 1.03\\times10^{5}$，$p_{\\ce{CO}} = 1.93\\times10^{5}\\,\\mathrm{Pa}$，全圧 $= (0.80+2.4-y)\\times10^{5} = 2.97\\times10^{5} \\approx \\boldsymbol{3.0\\times10^{5}\\,\\mathrm{Pa}}$．\nこれはルシャトリエの原理どおり，圧縮で上がった圧力を下げる向きに平衡が移った結果で，2 倍の $3.20\\times10^{5}\\,\\mathrm{Pa}$ より\\textbf{小さい}．\n\n\\textbf{(5)} 吸熱反応なので，温度を上げると平衡は右に移り，$\\ce{CO}$ の割合は\\textbf{大きくなる}（黒鉛が残っている限り）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "固体を含む平衡 C + CO₂ ⇄ 2CO では，容積一定なら全圧の増加分がそのまま CO₂ の減少分になるので全圧から分圧と Kp が決まる．固体の量は平衡に影響せず，圧縮すると気体分子の減る向きに移るので全圧は単純な 2 倍より小さくなる．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "carbon-silicon",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ブードア平衡",
+  "圧平衡定数",
+  "固体を含む平衡",
+  "ルシャトリエの原理",
+  "分圧"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

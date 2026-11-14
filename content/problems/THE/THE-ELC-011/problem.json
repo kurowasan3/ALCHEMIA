@@ -1,0 +1,109 @@
+{
+ "id": "THE-ELC-011",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-07",
+ "topic": "鉛蓄電池の放電による電解液の濃度変化",
+ "course": "化学",
+ "level": 3,
+ "minutes": 18,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "鉛蓄電池は，負極に $\\ce{Pb}$，正極に $\\ce{PbO2}$，電解液に希硫酸を用いた二次電池である．質量パーセント濃度 $35.0\\,\\%$ の希硫酸 $1000\\,\\mathrm g$ を電解液とする鉛蓄電池を放電させ，$4.825\\times10^{4}\\,\\mathrm C$ の電気量を取り出した．$F=9.65\\times10^{4}\\,\\mathrm{C/mol}$，原子量は H = 1.0，O = 16，S = 32，Pb = 207 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "放電の全体の反応を化学反応式で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "負極と正極の質量はそれぞれ何 g 増加または減少したか．"
+     },
+     {
+      "id": "3",
+      "tex": "放電後の電解液の質量パーセント濃度を有効数字3桁で求めよ．また，(2) の結果と電解液の質量の変化が矛盾しないことを確かめよ．"
+     },
+     {
+      "id": "4",
+      "tex": "充電するとき，鉛蓄電池の正極は外部電源の正極・負極のどちらにつなぐか．また，充電しすぎると電解液の量が減っていく．その原因を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{Pb + PbO2 + 2H2SO4 -> 2PbSO4 + 2H2O}$"
+   },
+   {
+    "id": "2",
+    "tex": "負極 $24.0\\,\\mathrm g$ 増加，正極 $16.0\\,\\mathrm g$ 増加"
+   },
+   {
+    "id": "3",
+    "tex": "$31.4\\,\\%$；電解液は $40.0\\,\\mathrm g$ 減少し，両極の増加量の和 $40.0\\,\\mathrm g$ と一致する"
+   },
+   {
+    "id": "4",
+    "tex": "外部電源の正極．充電しすぎると水が電気分解されて水素と酸素が発生し，水が失われるから"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 負極 $\\ce{Pb + SO4^2- -> PbSO4 + 2e-}$，正極 $\\ce{PbO2 + 4H+ + SO4^2- + 2e- -> PbSO4 + 2H2O}$ を合わせて\n\\[ \\ce{Pb + PbO2 + 2H2SO4 -> 2PbSO4 + 2H2O} \\]\n\n\\textbf{(2)} 電子は $\\dfrac{4.825\\times10^{4}}{9.65\\times10^{4}}=0.500\\,\\mathrm{mol}$．電子 2 mol あたり，負極は $\\ce{Pb}\\to\\ce{PbSO4}$ で $\\ce{SO4}$ 分 96 g，正極は $\\ce{PbO2}\\to\\ce{PbSO4}$ で $\\ce{SO2}$ 分 64 g 増える．\n\\[ \\text{負極}：96\\times\\dfrac{0.500}{2}=\\boldsymbol{24.0\\,\\mathrm g\\ 増加},\\qquad \\text{正極}：64\\times\\dfrac{0.500}{2}=\\boldsymbol{16.0\\,\\mathrm g\\ 増加} \\]\n\n\\textbf{(3)} 電子 2 mol で $\\ce{H2SO4}$ 2 mol が消費され，$\\ce{H2O}$ 2 mol が生じる．電子 0.500 mol では $\\ce{H2SO4}$ $0.500\\times98=49.0\\,\\mathrm g$ が減り，$\\ce{H2O}$ $0.500\\times18=9.0\\,\\mathrm g$ が増える．\n\\[ \\dfrac{350-49.0}{1000-49.0+9.0}\\times100=\\dfrac{301}{960}\\times100=\\boldsymbol{31.4\\,\\%} \\]\n電解液は $49.0-9.0=40.0\\,\\mathrm g$ 減少し，これは両極の増加量 $24.0+16.0=40.0\\,\\mathrm g$ に等しい（質量保存）．放電すると電解液の濃度・密度が小さくなるので，密度を測ると充電の状態がわかる．\n\n\\textbf{(4)} 充電では放電の逆反応を起こすので，鉛蓄電池の正極（$\\ce{PbSO4}$ が $\\ce{PbO2}$ に酸化される極）を外部電源の \\textbf{正極} につなぐ．充電が終わったあとも電流を流し続けると，$\\ce{2H2O -> 2H2 + O2}$ の電気分解が起こり，\\textbf{水が気体として失われる}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "鉛蓄電池の放電では電子 2 mol あたり H2SO4 2 mol が消費され H2O 2 mol が生じるので，電解液の濃度は溶質の減少と溶媒の増加の両方で下がる．電解液の質量減少は両極に移った SO4・SO2 分の質量増加と等しい．"
+ },
+ "concepts": [
+  "electrolysis",
+  "mole",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "鉛蓄電池",
+  "二次電池",
+  "ファラデーの法則",
+  "質量パーセント濃度",
+  "充電"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

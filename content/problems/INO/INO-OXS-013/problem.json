@@ -1,0 +1,109 @@
+{
+ "id": "INO-OXS-013",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-02",
+ "topic": "チオ硫酸ナトリウムの生成と反応",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "pathway",
+  "equation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応経路について答えよ．\n\\[ \\ce{SO2} \\xrightarrow{\\text{NaOH 水溶液に十分吸収}} \\boxed{\\,\\text{A}\\,} \\xrightarrow{\\text{硫黄の粉末を加えて煮沸}} \\boxed{\\,\\text{B}\\,} \\xrightarrow{\\text{希塩酸}} \\text{白濁（C）}+\\ce{SO2} \\]\nA，B はいずれもナトリウム塩で，B は写真の定着やヨウ素滴定に使われる．原子量は I = 127 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A，B の化学式を答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$\\ce{SO2}$ から A，A から B ができる変化を，それぞれ化学反応式で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "B に希塩酸を加えたときの変化を化学反応式で表し，白濁の原因となる物質 C を答えよ．また，この反応で B の硫黄は酸化されたのか還元されたのか，生成物中の硫黄の酸化数をもとに説明せよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$0.100\\,\\mathrm{mol/L}$ の B の水溶液 $20.0\\,\\mathrm{mL}$ とちょうど反応するヨウ素 $\\ce{I2}$ は何 g か．有効数字 3 桁で答えよ．ただし，B とヨウ素はイオン反応式 $\\ce{2S2O3^2- + I2 -> S4O6^2- + 2I-}$ のように反応する．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "A $\\ce{Na2SO3}$，B $\\ce{Na2S2O3}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{SO2 + 2NaOH -> Na2SO3 + H2O}$，$\\ce{Na2SO3 + S -> Na2S2O3}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{Na2S2O3 + 2HCl -> 2NaCl + S + SO2 + H2O}$，C は硫黄．B の硫黄（平均の酸化数 $+2$）の一部が $0$ の $\\ce{S}$ に還元され，残りが $+4$ の $\\ce{SO2}$ に酸化される（自己酸化還元）．"
+   },
+   {
+    "id": "4",
+    "tex": "$0.254\\,\\mathrm g$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)(2)} $\\ce{SO2}$ は酸性酸化物なので，水酸化ナトリウムと中和して亜硫酸ナトリウムになる．\n\\[ \\ce{SO2 + 2NaOH -> Na2SO3 + H2O} \\]\nこれに硫黄を加えて煮沸すると，硫黄原子が 1 個加わってチオ硫酸ナトリウムになる．\n\\[ \\ce{Na2SO3 + S -> Na2S2O3} \\]\nよって A は $\\boldsymbol{\\mathrm{Na_2SO_3}}$，B は $\\boldsymbol{\\mathrm{Na_2S_2O_3}}$．\n\n\\textbf{(3)} チオ硫酸イオンは酸性で分解する．\n\\[ \\ce{Na2S2O3 + 2HCl -> 2NaCl + S + SO2 + H2O} \\]\n水に溶けない硫黄のコロイド状の粒子が生じるので白濁する（C は\\textbf{硫黄}）．$\\ce{S2O3^2-}$ の硫黄の酸化数は平均 $+2$ で，生成物では $\\ce{S}$ が $0$，$\\ce{SO2}$ が $+4$．同じ物質の硫黄の一部が還元され，一部が酸化される\\textbf{自己酸化還元反応}である．\n\nなお，生じた $\\ce{SO2}$ は経路の出発物質と同じで，反応経路は「$\\ce{SO2}$ に硫黄 1 原子を付けて，酸で外す」形になっている．\n\n\\textbf{(4)} B は $0.100\\times\\dfrac{20.0}{1000}=2.00\\times10^{-3}\\,\\mathrm{mol}$．$\\ce{S2O3^2-}:\\ce{I2}=2:1$ より $\\ce{I2}$ は $1.00\\times10^{-3}\\,\\mathrm{mol}$，質量は $1.00\\times10^{-3}\\times254=\\boldsymbol{0.254\\,\\mathrm g}$．\n\nこの反応では硫黄の平均酸化数が $+2$（$\\ce{S2O3^2-}$）から $+2.5$（$\\ce{S4O6^2-}$）に増え，B は還元剤としてはたらいている．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "亜硫酸イオンに硫黄を付加してチオ硫酸イオン（硫黄の平均酸化数 +2）をつくり，酸性では S（0）と SO₂（+4）に自己酸化還元で分解する．チオ硫酸イオンは I₂ と 2:1 で反応する還元剤としてもはたらく．"
+ },
+ "concepts": [
+  "oxygen-sulfur",
+  "halogen",
+  "alkali-metals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "チオ硫酸ナトリウム",
+  "亜硫酸ナトリウム",
+  "自己酸化還元",
+  "ヨウ素滴定",
+  "酸化数"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,116 @@
+{
+ "id": "THE-BND-014",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-03",
+ "topic": "電子対の数から分子を決める",
+ "course": "化学",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "structure",
+  "qa"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "原子番号1〜10の元素の原子だけからなる分子 A〜D について，分子全体に含まれる共有電子対と非共有電子対の数（すべての原子について合計したもの）と特徴を次に示す．\n\\[\n\\begin{array}{c|c|c|l}\n & \\text{共有電子対} & \\text{非共有電子対} & \\text{特徴} \\\\ \\hline\n\\text{A} & 3 & 1 & \\text{三角錐形の分子} \\\\\n\\text{B} & 4 & 4 & \\text{3原子からなる直線形の無極性分子} \\\\\n\\text{C} & 3 & 2 & \\text{単体の分子} \\\\\n\\text{D} & 4 & 1 & \\text{3原子からなる直線形の分子で，炭素を含む}\n\\end{array}\n\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A の分子式を答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "B の分子式を答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "C の分子式を答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "D の分子式を答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "A〜D のうち，極性分子をすべて選べ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{NH3}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{CO2}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{N2}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{HCN}$"
+   },
+   {
+    "id": "5",
+    "tex": "A，D"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{数え方}　二重結合は共有電子対2組，三重結合は3組と数える．\n\n(1) 共有電子対3組・非共有電子対1組で三角錐形 → 中心原子が3本の単結合と1組の非共有電子対をもつ $\\ce{NH3}$．\n\n(2) $\\ce{O=C=O}$ は共有電子対 $2+2=4$ 組，非共有電子対は各 $\\ce{O}$ に2組で計4組．なお一酸化二窒素 $\\ce{N2O}$ も同じ電子対の数で直線形だが，両端の原子が異なるので極性分子となり条件に合わない．よって $\\ce{CO2}$．\n\n(3) $\\ce{N#N}$ は共有電子対3組，各 $\\ce{N}$ に非共有電子対1組で計2組．一酸化炭素 $\\ce{C#O}$ も同じ数になるが単体ではない．よって $\\ce{N2}$．\n\n(4) $\\ce{H-C#N}$ は共有電子対 $1+3=4$ 組，$\\ce{N}$ に非共有電子対1組．よって $\\ce{HCN}$．\n\n(5) $\\ce{NH3}$（三角錐形）と $\\ce{HCN}$（両端が $\\ce{H}$ と $\\ce{N}$ で非対称）は極性分子．$\\ce{CO2}$・$\\ce{N2}$ は無極性．答えは $\\boldsymbol{\\text{A，D}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "分子全体の共有電子対・非共有電子対の数と分子の形・極性から，電子式を組み立てて分子を逆に特定する．同じ電子対の数をもつ候補（N₂ と CO，CO₂ と N₂O）を条件で区別する．"
+ },
+ "concepts": [
+  "chemical-bond",
+  "intermolecular"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電子式",
+  "共有電子対",
+  "非共有電子対",
+  "極性分子",
+  "構造決定"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

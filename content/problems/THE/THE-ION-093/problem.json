@@ -1,0 +1,110 @@
+{
+ "id": "THE-ION-093",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "クロム酸水素イオンの二量化平衡と希釈・pH の効果",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "酸性の水溶液中のクロム(VI) は，主に次の平衡にある．\n\\[\\ce{HCrO4- <=> H+ + CrO4^2-}\\qquad K_1=\\dfrac{[\\ce{H+}][\\ce{CrO4^2-}]}{[\\ce{HCrO4-}]}=3.2\\times10^{-7}\\,\\mathrm{mol/L}\\]\n\\[\\ce{2HCrO4- <=> Cr2O7^2- + H2O}\\qquad K_2=\\dfrac{[\\ce{Cr2O7^2-}]}{[\\ce{HCrO4-}]^2}=1.0\\times10^{2}\\,\\mathrm{L/mol}\\]\n水溶液 $1\\,\\mathrm{L}$ あたりに含まれるクロム原子の総物質量を $C\\,[\\mathrm{mol/L}]$ とする．pH は緩衝液で一定に保たれるものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "pH 3.0 での $[\\ce{CrO4^2-}]/[\\ce{HCrO4-}]$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "pH 3.0，$C=0.10\\,\\mathrm{mol/L}$ のとき，$[\\ce{HCrO4-}]$ と $[\\ce{Cr2O7^2-}]$ を求めよ．また，クロム原子のうち $\\ce{Cr2O7^2-}$ として存在するものの割合（\\%）を求めよ．$\\ce{CrO4^2-}$ は (1) の結果にもとづいて無視してよい．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の水溶液を pH 3.0 のまま水で 100 倍に薄めた（$C=1.0\\times10^{-3}\\,\\mathrm{mol/L}$）．クロム原子のうち $\\ce{Cr2O7^2-}$ として存在するものの割合（\\%）を有効数字 2 けたで求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(2) の水溶液に次の操作を行ったとき，クロム原子のうち $\\ce{Cr2O7^2-}$ として存在するものの割合が明らかに大きくなるものをすべて選べ．\\quad (ア) 水で薄める　(イ) pH を 3.0 から 2.0 に下げる　(ウ) $\\ce{CrO3}$ を溶かして $C$ を $0.20\\,\\mathrm{mol/L}$ にする（pH は 3.0 のまま）　(エ) pH を 9.0 に上げる"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$3.2\\times10^{-4}$"
+   },
+   {
+    "id": "2",
+    "tex": "$[\\ce{HCrO4-}]=0.020\\,\\mathrm{mol/L}$，$[\\ce{Cr2O7^2-}]=0.040\\,\\mathrm{mol/L}$，$80\\,\\%$"
+   },
+   {
+    "id": "3",
+    "tex": "$15\\,\\%$"
+   },
+   {
+    "id": "4",
+    "tex": "ウ"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　$\\dfrac{[\\ce{CrO4^2-}]}{[\\ce{HCrO4-}]}=\\dfrac{K_1}{[\\ce{H+}]}=\\dfrac{3.2\\times10^{-7}}{1.0\\times10^{-3}}=\\boldsymbol{3.2\\times10^{-4}}$．pH 3.0 では $\\ce{CrO4^2-}$ はほとんど存在しない．\\\\\n\\textbf{(2)}　$[\\ce{HCrO4-}]=y$ とすると $[\\ce{Cr2O7^2-}]=K_2y^2=100y^2$．クロム原子の数の保存（$\\ce{Cr2O7^2-}$ は Cr を 2 個含む）より\n\\[y+2\\times100y^2=0.10\\quad\\Longrightarrow\\quad200y^2+y-0.10=0\\]\n$y=\\dfrac{-1+\\sqrt{1+80}}{400}=\\boldsymbol{0.020\\,\\mathrm{mol/L}}$，$[\\ce{Cr2O7^2-}]=100\\times0.020^2=\\boldsymbol{0.040\\,\\mathrm{mol/L}}$．割合は $\\dfrac{2\\times0.040}{0.10}\\times100=\\boldsymbol{80\\,\\%}$．\\\\\n\\textbf{(3)}　$200y^2+y-1.0\\times10^{-3}=0$ より $y=\\dfrac{-1+\\sqrt{1.8}}{400}=8.54\\times10^{-4}\\,\\mathrm{mol/L}$，$[\\ce{Cr2O7^2-}]=100y^2=7.30\\times10^{-5}\\,\\mathrm{mol/L}$．割合は $\\dfrac{2\\times7.30\\times10^{-5}}{1.0\\times10^{-3}}\\times100\\fallingdotseq\\boldsymbol{15\\,\\%}$．\\\\\npH は変わらないのに，薄めると $\\ce{Cr2O7^2-}$ の割合が 80 \\% から約 15 \\% に下がる．二量化の平衡定数には $[\\ce{HCrO4-}]$ が 2 乗で入るので，薄めると $\\dfrac{[\\ce{Cr2O7^2-}]}{[\\ce{HCrO4-}]}=K_2[\\ce{HCrO4-}]$ が小さくなる（粒子の数が増える向きに平衡が移る）．一方，$[\\ce{CrO4^2-}]/[\\ce{HCrO4-}]=K_1/[\\ce{H+}]$ は濃度によらず pH だけで決まる．\\\\\n\\textbf{(4)}　(ア) (3) のとおり割合は小さくなる．(イ) 二量化の平衡 $\\ce{2HCrO4- <=> Cr2O7^2- + H2O}$ には $\\ce{H+}$ が含まれない．pH 3.0 ですでにクロムはほぼすべて $\\ce{HCrO4-}$ か $\\ce{Cr2O7^2-}$ なので，さらに酸性にしても（$\\ce{CrO4^2-}$ のわずかな分が移るだけで）割合はほとんど変わらない．(ウ) $C$ を大きくすると $K_2[\\ce{HCrO4-}]$ が大きくなり，割合は大きくなる（$C=0.20$ では約 85 \\%）．(エ) pH 9.0 では $[\\ce{CrO4^2-}]/[\\ce{HCrO4-}]=3.2\\times10^{2}$ となり，クロムはほぼ $\\ce{CrO4^2-}$ になって割合は小さくなる．よって \\textbf{ウ}．\\\\\n\\textbf{ポイント}　「酸性にすると黄色の $\\ce{CrO4^2-}$ が橙赤色の $\\ce{Cr2O7^2-}$ になる」のは中性付近から酸性にする場合の話で，十分酸性の領域では二量体の割合を決めるのは pH ではなくクロムの濃度である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "クロム(VI) の酸塩基平衡（HCrO4−/CrO4²−の比）は pH だけで決まるが，二量化平衡（2HCrO4− ⇄ Cr2O7²−）は H+ を含まず濃度の2乗に依存するので，十分酸性の領域では二量体の割合は pH ではなく全濃度で決まり，希釈すると単量体側に移る．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "transition-metals",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "二クロム酸イオン",
+  "クロム酸イオン",
+  "二量化平衡",
+  "希釈",
+  "ルシャトリエの原理",
+  "物質収支"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,108 @@
+{
+ "id": "ORG-STR-027",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-01",
+ "topic": "C₅H₁₂O₂ の 2 価アルコールの異性体と不斉炭素（酸化・メソ体）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "structure",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "分子式 $\\ce{C5H12O2}$ で表される鎖式の 2 価アルコール（ヒドロキシ基を 2 個もつアルコール）について考える．ただし，1 個の炭素原子に 2 個のヒドロキシ基が結合したものは不安定なので除く．構造は示性式（例：$\\ce{HOCH2CH(CH3)CH2CH2OH}$）で答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "条件に合う 2 価アルコールの構造異性体は全部で何種類あるか．"
+     },
+     {
+      "id": "2",
+      "tex": "2 個のヒドロキシ基がどちらも第一級アルコールのヒドロキシ基（$\\ce{-CH2OH}$ の形）であるものをすべて示せ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の化合物をそれぞれ硫酸酸性の二クロム酸カリウム水溶液で十分に酸化すると，両端の $\\ce{-CH2OH}$ がともに $\\ce{-COOH}$ に変わったジカルボン酸が得られるとする．もとの 2 価アルコールと得られるジカルボン酸の両方が不斉炭素原子をもつものを (2) から選べ．"
+     },
+     {
+      "id": "4",
+      "tex": "不斉炭素原子を 2 個もつものをすべて示し，それぞれについて立体異性体（鏡像異性体を含む）が何種類あるかを答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "14 種類"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{HOCH2CH2CH2CH2CH2OH}$，$\\ce{HOCH2CH(CH3)CH2CH2OH}$，$\\ce{CH3CH2CH(CH2OH)2}$，$\\ce{(CH3)2C(CH2OH)2}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{HOCH2CH(CH3)CH2CH2OH}$（酸化生成物は $\\ce{HOOCCH(CH3)CH2COOH}$）"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{CH3CH(OH)CH(OH)CH2CH3}$：4 種類，$\\ce{HOCH2CH(CH3)CH(OH)CH3}$：4 種類，$\\ce{CH3CH(OH)CH2CH(OH)CH3}$：3 種類"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 数え上げ}　炭素骨格は 3 種類（直鎖，2-メチルブタン，2,2-ジメチルプロパン）．それぞれの異なる 2 個の炭素に OH を 1 個ずつつけ，対称性で同じになるものを除く．\n\\begin{itemize}\n\\item 直鎖 $\\ce{C-C-C-C-C}$（炭素を 1〜5 と番号づけ）：(1,2)，(1,3)，(1,4)，(1,5)，(2,3)，(2,4) の 6 種類（(2,5) は (1,4) と，(3,4) は (2,3) と同じ）．\n\\item 2-メチルブタン $\\ce{C-C(C)-C-C}$：OH をつけられる炭素は「2 個の等価なメチル基 a」「枝分かれの炭素 b」「$\\ce{CH2}$ の炭素 c」「端のメチル基 d」の 4 種類．組は (a,a′)，(a,b)，(a,c)，(a,d)，(b,c)，(b,d)，(c,d) の 7 種類．\n\\item 2,2-ジメチルプロパン：中心の炭素には H がないので，4 個の等価なメチル基から 2 個を選ぶ 1 種類．\n\\end{itemize}\n合計 $6+7+1=\\boldsymbol{14}$ 種類．\n\n\\textbf{(2) 両方が第一級}　OH がつく炭素がどちらも炭素 1 個とだけ結合している（鎖の端か枝の先の）ものを拾う．直鎖の (1,5)，2-メチルブタンの (a,a′) と (a,d)，2,2-ジメチルプロパンの 1 種類で，\n$\\ce{HOCH2(CH2)3CH2OH}$，$\\ce{CH3CH2CH(CH2OH)2}$，$\\ce{HOCH2CH(CH3)CH2CH2OH}$，$\\ce{(CH3)2C(CH2OH)2}$ の $\\boldsymbol{4}$ 種類．\n\n\\textbf{(3) 酸化で不斉炭素は残るか}　不斉炭素原子は 4 つの異なる原子・原子団と結合した炭素．\n\\begin{itemize}\n\\item $\\ce{HOCH2(CH2)3CH2OH}$ → $\\ce{HOOC(CH2)3COOH}$：どちらにも不斉炭素なし．\n\\item $\\ce{CH3CH2CH(CH2OH)2}$：中央の炭素に $\\ce{-CH2OH}$ が 2 個あるので不斉でない．酸化後も $\\ce{-COOH}$ が 2 個で不斉でない．\n\\item $\\ce{(CH3)2C(CH2OH)2}$：不斉炭素なし．\n\\item $\\ce{HOCH2CH(CH3)CH2CH2OH}$：2 位の炭素は H，$\\ce{CH3}$，$\\ce{CH2OH}$，$\\ce{CH2CH2OH}$ と結合し不斉．酸化すると H，$\\ce{CH3}$，$\\ce{COOH}$，$\\ce{CH2COOH}$ となり，やはり 4 つが異なるので不斉炭素が残る．\n\\end{itemize}\nよって $\\boldsymbol{\\ce{HOCH2CH(CH3)CH2CH2OH}}$．酸化で同じ基が 2 つにそろうと不斉が消えることがあるが，この場合は $\\ce{-CH2OH}$ と $\\ce{-CH2CH2OH}$ が $\\ce{-COOH}$ と $\\ce{-CH2COOH}$ になり，違いが保たれる．\n\n\\textbf{(4) 不斉炭素 2 個}　(1) の 14 種類のうち不斉炭素原子を 2 個もつのは次の 3 種類．\n\\begin{itemize}\n\\item $\\ce{CH3CH(OH)CH(OH)CH2CH3}$（2,3-ペンタンジオール）：2 つの不斉炭素の周りの基の組が異なる（一方は $\\ce{CH3}$，他方は $\\ce{C2H5}$）ので，$2^2=\\boldsymbol{4}$ 種類（鏡像異性体の組が 2 組）．\n\\item $\\ce{HOCH2CH(CH3)CH(OH)CH3}$（2-メチル-1,3-ブタンジオール）：同様に $\\boldsymbol{4}$ 種類．\n\\item $\\ce{CH3CH(OH)CH2CH(OH)CH3}$（2,4-ペンタンジオール）：2 つの不斉炭素が同じ組の基（H，OH，$\\ce{CH3}$，$\\ce{CH2CH(OH)CH3}$）をもち，分子が左右対称に組み立てられている．配置の組み合わせ 4 通りのうち，2 つの配置が互いに逆のものは分子内に対称面をもち，鏡像と重なる（メソ体）．もう 1 組は互いに鏡像異性体．よって $2+1=\\boldsymbol{3}$ 種類．\n\\end{itemize}\n不斉炭素が $n$ 個なら立体異性体は最大 $2^n$ 種類だが，分子が対称でメソ体ができると少なくなる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "炭素骨格ごとに OH 2 個の位置を対称性に注意して数え上げ，OH の級数で酸化生成物を考える．酸化で基が変わっても 4 つの基の違いが保たれれば不斉炭素は残ること，不斉炭素が 2 個でも分子が対称ならメソ体ができて立体異性体が 2^n より少なくなることを判断する．"
+ },
+ "concepts": [
+  "organic-structure",
+  "alcohol-carbonyl"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "異性体",
+  "2価アルコール",
+  "不斉炭素原子",
+  "メソ体",
+  "アルコールの酸化"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

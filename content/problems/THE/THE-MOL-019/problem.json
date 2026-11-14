@@ -1,0 +1,109 @@
+{
+ "id": "THE-MOL-019",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-04",
+ "topic": "金属タンパク質の分子量と1分子中の原子数",
+ "course": "化学",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある軟体動物の血液に含まれる酸素運搬タンパク質 X は，銅原子を質量パーセントで $0.254\\,\\%$ 含む．X は酸素と結合するとき，銅原子2個が $\\ce{O2}$ 1分子と結合する．原子量は $\\mathrm{Cu}=63.5$，気体定数は $R=8.3\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "X 1分子に銅原子が少なくとも1個含まれるとすると，X の分子量は少なくともいくらか．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "浸透圧の測定から，X の分子量は $1.0\\times10^{5}$ と求められた．X 1分子に含まれる銅原子は何個か．"
+     },
+     {
+      "id": "3",
+      "tex": "酸素で飽和させた X $1.0\\,\\mathrm{g}$ が結合している $\\ce{O2}$ の体積は，27 ℃，$1.0\\times10^{5}\\,\\mathrm{Pa}$ で何 mL か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "別の個体から得た X について，(3) と同じ条件で測った $\\ce{O2}$ の体積が (3) の値の半分しかなかった．分子量と銅の含有率は (2) と同じであった．この X 1分子が平均して結合している $\\ce{O2}$ は何分子か．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$2.5\\times10^{4}$"
+   },
+   {
+    "id": "2",
+    "tex": "4 個"
+   },
+   {
+    "id": "3",
+    "tex": "$0.50\\,\\mathrm{mL}$"
+   },
+   {
+    "id": "4",
+    "tex": "1 分子"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 最小分子量}　1分子に Cu が1個だけ含まれるとき分子量は最小で，$M\\times\\dfrac{0.254}{100}=63.5$ より $M=\\dfrac{63.5}{0.00254}=\\boldsymbol{2.5\\times10^{4}}$．\n\n\\textbf{(2)}　1分子中の Cu の数 $=\\dfrac{1.0\\times10^{5}\\times0.00254}{63.5}=\\boldsymbol{4}$ 個．実際の分子量は最小分子量のちょうど4倍になっている．\n\n\\textbf{(3)}　X $1.0\\,\\mathrm g$ は $\\dfrac{1.0}{1.0\\times10^{5}}=1.0\\times10^{-5}\\,\\mathrm{mol}$．Cu 4 個に $\\ce{O2}$ 2 分子が結合するので $\\ce{O2}$ は $2.0\\times10^{-5}\\,\\mathrm{mol}$．\n\\[V=\\dfrac{nRT}{P}=\\dfrac{2.0\\times10^{-5}\\times8.3\\times10^{3}\\times300}{1.0\\times10^{5}}=5.0\\times10^{-4}\\,\\mathrm L=\\boldsymbol{0.50\\,\\mathrm{mL}}\\]\n\n\\textbf{(4)}　分子量・Cu の数が同じなので，$\\ce{O2}$ の体積が半分なら結合している $\\ce{O2}$ も1分子あたり半分，つまり $2\\times\\dfrac{1}{2}=\\boldsymbol{1}$ 分子（結合部位の半分しか使われていない）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "質量パーセントと「1分子に少なくとも1個」の仮定から最小分子量を出し，別法で求めた分子量との比から1分子中の原子数を決める．さらに結合した気体の体積から1分子あたりの結合数を逆算する．"
+ },
+ "concepts": [
+  "mole",
+  "protein-amino",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "物質量",
+  "分子量",
+  "質量パーセント",
+  "気体の体積",
+  "タンパク質"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "id": "THE-GAS-065",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-08",
+ "topic": "水の電気分解で集めた気体の燃焼後の凝縮の判定と，水がすべて蒸発する体積",
+ "course": "化学",
+ "level": 3,
+ "minutes": 18,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水酸化ナトリウム水溶液を白金電極で電気分解し，両極で発生した気体をすべて（水蒸気は除いて），アルゴン $5.00\\times10^{-3}\\,\\mathrm{mol}$ が入ったピストン付きの容器に集めた．電流は $1.93\\,\\mathrm{A}$ で $1000$ 秒間流した．その後，容器を $60\\,^\\circ\\mathrm{C}$ に保ち，圧力を $1.0\\times10^{5}\\,\\mathrm{Pa}$ に保ったまま点火して水素を完全に燃焼させ，再び $60\\,^\\circ\\mathrm{C}$ にした．\nファラデー定数は $9.65\\times10^{4}\\,\\mathrm{C/mol}$，気体定数は $8.31\\times10^{3}\\,\\mathrm{Pa\\cdot L/(mol\\cdot K)}$，$60\\,^\\circ\\mathrm{C}$ の水の飽和蒸気圧は $2.0\\times10^{4}\\,\\mathrm{Pa}$ とし，液体の水の体積と，気体の水への溶解は無視する．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "発生した水素と酸素の物質量をそれぞれ有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "点火前の容器内の気体の体積（$60\\,^\\circ\\mathrm{C}$，$1.0\\times10^{5}\\,\\mathrm{Pa}$）を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "燃焼後，$60\\,^\\circ\\mathrm{C}$，$1.0\\times10^{5}\\,\\mathrm{Pa}$ で容器内に液体の水は存在するか．理由とともに答えよ．また，そのときの気体の体積を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "燃焼後，温度を $60\\,^\\circ\\mathrm{C}$ に保ったままピストンを引いて体積を大きくしていくと，ある体積で液体の水がちょうどなくなった．その体積（L）と，そのときの容器内の圧力を有効数字 2 桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "水素 $1.00\\times10^{-2}\\,\\mathrm{mol}$，酸素 $5.00\\times10^{-3}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "2",
+    "tex": "$5.5\\times10^{2}\\,\\mathrm{mL}$"
+   },
+   {
+    "id": "3",
+    "tex": "存在する．水がすべて気体なら水蒸気の分圧は $6.7\\times10^{4}\\,\\mathrm{Pa}$ となり飽和蒸気圧を超えるから．体積 $1.7\\times10^{2}\\,\\mathrm{mL}$"
+   },
+   {
+    "id": "4",
+    "tex": "$1.4\\,\\mathrm{L}$，$3.0\\times10^{4}\\,\\mathrm{Pa}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 電子は $\\dfrac{1.93\\times1000}{9.65\\times10^{4}} = 2.00\\times10^{-2}\\,\\mathrm{mol}$．陰極 $\\ce{2H2O + 2e- -> H2 + 2OH-}$，陽極 $\\ce{4OH- -> O2 + 2H2O + 4e-}$ より，水素 $\\boldsymbol{1.00\\times10^{-2}\\,\\mathrm{mol}}$，酸素 $\\boldsymbol{5.00\\times10^{-3}\\,\\mathrm{mol}}$．\n\n\\textbf{(2)} 気体は $\\ce{H2}$・$\\ce{O2}$・$\\ce{Ar}$ の合計 $2.00\\times10^{-2}\\,\\mathrm{mol}$．\n\\[V = \\frac{2.00\\times10^{-2}\\times8.31\\times10^{3}\\times333}{1.0\\times10^{5}} = 0.553\\,\\mathrm{L} \\fallingdotseq \\boldsymbol{5.5\\times10^{2}\\,\\mathrm{mL}}\\]\n\n\\textbf{(3)} $\\ce{2H2 + O2 -> 2H2O}$ で水素と酸素はちょうど反応し，水 $1.00\\times10^{-2}\\,\\mathrm{mol}$ とアルゴン $5.00\\times10^{-3}\\,\\mathrm{mol}$ が残る．水がすべて気体だと仮定すると，水蒸気の分圧は全圧の $\\dfrac{1.00}{1.50}$ で $6.7\\times10^{4}\\,\\mathrm{Pa}$ となり，飽和蒸気圧 $2.0\\times10^{4}\\,\\mathrm{Pa}$ を超えて矛盾する．よって液体の水が\\textbf{存在する}．このとき水蒸気の分圧は $2.0\\times10^{4}\\,\\mathrm{Pa}$，アルゴンの分圧は $8.0\\times10^{4}\\,\\mathrm{Pa}$ で，\n\\[V = \\frac{5.00\\times10^{-3}\\times8.31\\times10^{3}\\times333}{8.0\\times10^{4}} = 0.173\\,\\mathrm{L} \\fallingdotseq \\boldsymbol{1.7\\times10^{2}\\,\\mathrm{mL}}\\]\n燃焼で気体の体積は約 $1/3$ になる．\n\n\\textbf{(4)} 液体の水がちょうどなくなるとき，水 $1.00\\times10^{-2}\\,\\mathrm{mol}$ がすべて気体で，その分圧が飽和蒸気圧に等しい：\n\\[V = \\frac{1.00\\times10^{-2}\\times8.31\\times10^{3}\\times333}{2.0\\times10^{4}} = 1.38\\,\\mathrm{L} \\fallingdotseq \\boldsymbol{1.4\\,\\mathrm{L}}\\]\nこのときアルゴンの分圧は $\\dfrac{5.00\\times10^{-3}\\times8.31\\times10^{3}\\times333}{1.38} = 1.0\\times10^{4}\\,\\mathrm{Pa}$ なので，全圧は $2.0\\times10^{4} + 1.0\\times10^{4} = \\boldsymbol{3.0\\times10^{4}\\,\\mathrm{Pa}}$（アルゴンと水蒸気の物質量比 $1:2$ がそのまま分圧比になる）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "電気量から水の電気分解で生じる H₂・O₂ の量を求め，燃焼で生じた水について「すべて気体と仮定した分圧」と飽和蒸気圧を比べて凝縮の有無を判定し，凝縮しているときは非凝縮性気体の分圧から体積を求める．液体がちょうど消える体積では，水の分圧が飽和蒸気圧に等しく物質量は全量であることを使う．"
+ },
+ "concepts": [
+  "ideal-gas",
+  "mole",
+  "electrolysis"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "水の電気分解",
+  "飽和蒸気圧",
+  "凝縮の判定",
+  "分圧",
+  "ファラデー定数"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

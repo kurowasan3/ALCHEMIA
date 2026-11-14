@@ -1,0 +1,110 @@
+{
+ "id": "THE-ION-029",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "モール法の指示薬濃度・pH と滴定誤差",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "$0.0200\\,\\mathrm{mol/L}$ 塩化ナトリウム水溶液 $50.0\\,\\mathrm{mL}$ に指示薬としてクロム酸カリウムを加え，$0.0200\\,\\mathrm{mol/L}$ 硝酸銀水溶液で滴定する（モール法）．赤褐色の $\\ce{Ag2CrO4}$ が見えはじめた点を終点とする．次の値を用い，終点付近の溶液の体積はつねに $100\\,\\mathrm{mL}$ とする．\n\\[ K_{sp}(\\ce{AgCl})=1.0\\times10^{-10}\\,(\\mathrm{mol/L})^2,\\qquad K_{sp}(\\ce{Ag2CrO4})=1.2\\times10^{-12}\\,(\\mathrm{mol/L})^3 \\]\n赤褐色を目で認めるには，溶液 $1\\,\\mathrm L$ あたり $1.0\\times10^{-5}\\,\\mathrm{mol}$ の $\\ce{Ag2CrO4}$ が沈殿する必要があるとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "当量点（加えた $\\ce{Ag+}$ と $\\ce{Cl-}$ の物質量が等しい点）での $[\\ce{Ag+}]$ を求めよ．また，当量点でちょうど $\\ce{Ag2CrO4}$ が沈殿しはじめるための $[\\ce{CrO4^2-}]$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "実際には指示薬の黄色が濃すぎると終点が見にくいので，終点で $[\\ce{CrO4^2-}]=3.0\\times10^{-3}\\,\\mathrm{mol/L}$ となるようにした．$\\ce{Ag2CrO4}$ が沈殿しはじめるときの $[\\ce{Ag+}]$ と $[\\ce{Cl-}]$ を求めよ．さらに，物質収支を考えて，終点までに加えた $\\ce{Ag+}$ が当量点より何 mol 多いかを求め，滴定誤差を百分率で有効数字2桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の誤差を補正するため，$\\ce{Cl-}$ を含まない水に炭酸カルシウム（白色の沈殿の代わり）とクロム酸カリウムを加えて同じ体積・濃度にし，同じ終点まで硝酸銀水溶液を滴下する空試験を行った．空試験の滴下量は何 mL か．また，本試験の滴下量から空試験の値を差し引いた場合の誤差を百分率で求め，(2) と比べよ．"
+     },
+     {
+      "id": "4",
+      "tex": "溶液の pH が高すぎると $\\ce{2Ag+ + 2OH- -> Ag2O + H2O}$ により褐色の $\\ce{Ag2O}$ が沈殿する．$[\\ce{Ag+}][\\ce{OH-}]=2.0\\times10^{-8}\\,(\\mathrm{mol/L})^2$ をこえると $\\ce{Ag2O}$ が生じるとして，(2) の終点の $[\\ce{Ag+}]$ で $\\ce{Ag2O}$ が生じない pH の上限を求めよ．また，pH 6.0 では $\\ce{CrO4^2- + H+ <=> HCrO4-}$（$\\ce{HCrO4-}$ の電離定数 $3.2\\times10^{-7}\\,\\mathrm{mol/L}$）により $\\ce{CrO4^2-}$ が減る．クロム酸の全濃度を $3.0\\times10^{-3}\\,\\mathrm{mol/L}$ として，pH 6.0 での滴定誤差を百分率で有効数字2桁で求めよ（$\\ce{Cr2O7^2-}$ の生成は無視し，$\\sqrt{16.5}=4.06$ とする）．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$[\\ce{Ag+}]=1.0\\times10^{-5}\\,\\mathrm{mol/L}$；$[\\ce{CrO4^2-}]=1.2\\times10^{-2}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "2",
+    "tex": "$[\\ce{Ag+}]=2.0\\times10^{-5}$，$[\\ce{Cl-}]=5.0\\times10^{-6}\\,\\mathrm{mol/L}$；$3.5\\times10^{-6}\\,\\mathrm{mol}$ 多く，誤差 $+0.35\\,\\%$"
+   },
+   {
+    "id": "3",
+    "tex": "$0.20\\,\\mathrm{mL}$；補正後は $-0.050\\,\\%$ で，(2) の $+0.35\\,\\%$ より小さくなる"
+   },
+   {
+    "id": "4",
+    "tex": "pH $11.0$；$+0.58\\,\\%$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 当量点では $[\\ce{Ag+}]=[\\ce{Cl-}]$ なので $[\\ce{Ag+}]=\\sqrt{1.0\\times10^{-10}}=\\boldsymbol{1.0\\times10^{-5}\\,\\mathrm{mol/L}}$．このとき $\\ce{Ag2CrO4}$ が沈殿しはじめるには\n\\[ [\\ce{CrO4^2-}]=\\dfrac{1.2\\times10^{-12}}{(1.0\\times10^{-5})^2}=\\boldsymbol{1.2\\times10^{-2}\\,\\mathrm{mol/L}} \\]\n\n\\textbf{(2)} \\[ [\\ce{Ag+}]=\\sqrt{\\dfrac{1.2\\times10^{-12}}{3.0\\times10^{-3}}}=\\boldsymbol{2.0\\times10^{-5}\\,\\mathrm{mol/L}},\\qquad [\\ce{Cl-}]=\\dfrac{1.0\\times10^{-10}}{2.0\\times10^{-5}}=\\boldsymbol{5.0\\times10^{-6}\\,\\mathrm{mol/L}} \\]\n当量点を過ぎてから沈殿しはじめる．加えた $\\ce{Ag+}$ は「溶液中の $\\ce{Ag+}$」「$\\ce{AgCl}$」「$\\ce{Ag2CrO4}$」に，$\\ce{Cl-}$ は「溶液中の $\\ce{Cl-}$」「$\\ce{AgCl}$」に分かれるので，\n\\[ n(\\ce{Ag})_{\\text{加}}-n(\\ce{Cl})_{\\text{全}}=\\left([\\ce{Ag+}]-[\\ce{Cl-}]+2\\times(\\ce{Ag2CrO4}\\ \\text{の量})\\right)\\times V \\]\n\\[ =(2.0\\times10^{-5}-5.0\\times10^{-6}+2\\times1.0\\times10^{-5})\\times0.100=\\boldsymbol{3.5\\times10^{-6}\\,\\mathrm{mol}} \\]\n$\\ce{Cl-}$ は $1.00\\times10^{-3}\\,\\mathrm{mol}$ なので，誤差は $\\boldsymbol{+0.35\\,\\%}$（滴下量で $0.175\\,\\mathrm{mL}$ 多い）．\n\n\\textbf{(3)} 空試験では $\\ce{Cl-}$ がないので，$[\\ce{Ag+}]=2.0\\times10^{-5}\\,\\mathrm{mol/L}$ にするための分と，$\\ce{Ag2CrO4}$ を見えるだけ沈殿させる分が必要．\n\\[ (2.0\\times10^{-5}+2.0\\times10^{-5})\\times0.100=4.0\\times10^{-6}\\,\\mathrm{mol}\\ \\Rightarrow\\ \\dfrac{4.0\\times10^{-6}}{0.0200}\\,\\mathrm L=\\boldsymbol{0.20\\,\\mathrm{mL}} \\]\n本試験の過剰分 $3.5\\times10^{-6}\\,\\mathrm{mol}$ から $4.0\\times10^{-6}\\,\\mathrm{mol}$ を差し引くと $-0.5\\times10^{-6}\\,\\mathrm{mol}$，誤差は $\\boldsymbol{-0.050\\,\\%}$ になり，(2) の $+0.35\\,\\%$ より大幅に小さい．わずかに引きすぎになるのは，本試験では終点でも $\\ce{Cl-}$ が $5.0\\times10^{-6}\\,\\mathrm{mol/L}$ 沈殿せずに残っている分（$\\ce{Ag+}$ を消費しない分）が空試験にはないためである．\n\n\\textbf{(4)} $[\\ce{OH-}]\\leqq\\dfrac{2.0\\times10^{-8}}{2.0\\times10^{-5}}=1.0\\times10^{-3}\\,\\mathrm{mol/L}$ より，pH の上限は $\\boldsymbol{11.0}$．\npH 6.0 では $\\dfrac{[\\ce{CrO4^2-}]}{[\\ce{CrO4^2-}]+[\\ce{HCrO4-}]}=\\dfrac{3.2\\times10^{-7}}{3.2\\times10^{-7}+1.0\\times10^{-6}}=0.242$，$[\\ce{CrO4^2-}]=7.27\\times10^{-4}\\,\\mathrm{mol/L}$ に減る．\n\\[ [\\ce{Ag+}]=\\sqrt{\\dfrac{1.2\\times10^{-12}}{7.27\\times10^{-4}}}=\\sqrt{16.5}\\times10^{-5}=4.06\\times10^{-5},\\qquad [\\ce{Cl-}]=\\dfrac{1.0\\times10^{-10}}{4.06\\times10^{-5}}=2.5\\times10^{-6} \\]\n過剰分は $(4.06\\times10^{-5}-0.25\\times10^{-5}+2.0\\times10^{-5})\\times0.100=5.8\\times10^{-6}\\,\\mathrm{mol}$，誤差は $\\boldsymbol{+0.58\\,\\%}$．酸性側では終点が遅れて誤差が大きくなり，塩基性側では $\\ce{Ag2O}$ が沈殿する．モール法がほぼ中性（pH 7～10 程度）で行われるのはこのためである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "モール法では当量点の [Ag+]=√Ksp(AgCl) で Ag2CrO4 が沈殿しはじめる [CrO4^2-] が最適値になるが，実際の指示薬濃度では終点が当量点を過ぎ，物質収支（[Ag+]−[Cl-]＋沈殿の Ag）から誤差が求まる．空試験で補正でき，酸性では HCrO4- の生成で終点が遅れ，塩基性では Ag2O が沈殿する．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "precipitation",
+  "transition-metals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "モール法",
+  "沈殿滴定",
+  "溶解度積",
+  "滴定誤差",
+  "空試験",
+  "クロム酸銀"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

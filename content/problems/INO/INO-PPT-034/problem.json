@@ -1,0 +1,117 @@
+{
+ "id": "INO-PPT-034",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-08",
+ "topic": "EDTA の条件付き生成定数と pH による選択的キレート滴定",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "EDTA（$\\ce{H4Y}$ と表す）は金属イオン $\\ce{M}$ と $1:1$ の錯イオン $\\ce{MY}$ をつくる．生成定数を $K=\\dfrac{[\\ce{MY}]}{[\\ce{M}][\\ce{Y^4-}]}$ とする（電荷は省略）．EDTA は弱酸なので，錯イオンになっていない EDTA の全濃度 $[\\ce{Y}']$（$\\ce{H4Y}$〜$\\ce{Y^4-}$ の合計）のうち $\\ce{Y^4-}$ の割合 $\\alpha$ は $\\mathrm{pH}$ で変わり，$[\\ce{Y^4-}]=\\alpha[\\ce{Y}']$ である．そこで，一定の $\\mathrm{pH}$ では\n\\[ K'=\\dfrac{[\\ce{MY}]}{[\\ce{M}][\\ce{Y}']}=\\alpha K \\]\n（条件付き生成定数）を使って考える．$\\alpha$ の値は次のとおり．\n\\[ \\begin{array}{c|cccccc} \\mathrm{pH} & 2 & 4 & 6 & 8 & 10 & 12 \\\\ \\hline \\alpha & 3.7\\times10^{-14} & 3.6\\times10^{-9} & 2.2\\times10^{-5} & 5.4\\times10^{-3} & 0.35 & 0.98 \\end{array} \\]\n$K$ は $\\ce{Ca^2+}$ で $5.0\\times10^{10}\\,\\mathrm{L/mol}$，$\\ce{Fe^3+}$ で $1.3\\times10^{25}\\,\\mathrm{L/mol}$ とする．滴定はすべて緩衝液で $\\mathrm{pH}$ を一定に保って行い，金属イオンの水酸化物の沈殿や緩衝液の成分との錯形成は考えなくてよい（(4) を除く）．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "金属イオンを EDTA で滴定した当量点で，錯イオンの濃度を $C$（$[\\ce{MY}]\\fallingdotseq C$）とすると，$[\\ce{M}]=\\sqrt{C/K'}$ となることを示せ．また，「当量点で錯イオンになっていない金属イオンが全体の $0.10\\,\\%$ 以下」を正確な滴定の条件とすると，その条件は $K'C\\geqq1.0\\times10^{6}$ と表せることを示せ．"
+     },
+     {
+      "id": "2",
+      "tex": "$1.00\\times10^{-2}\\,\\mathrm{mol/L}$ の $\\ce{Ca^2+}$ 水溶液 $50.0\\,\\mathrm{mL}$ を $1.00\\times10^{-2}\\,\\mathrm{mol/L}$ の EDTA 水溶液で滴定する．表の $\\mathrm{pH}$ のうち，(1) の条件を満たす最も低い $\\mathrm{pH}$ を答えよ．また，$\\mathrm{pH}\\ 6$ で滴定したとき，当量点で錯イオンになっていない $\\ce{Ca^2+}$ は全体の何 $\\%$ か．有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\ce{Fe^3+}$ と $\\ce{Ca^2+}$ をともに $1.00\\times10^{-2}\\,\\mathrm{mol/L}$ 含む水溶液 $50.0\\,\\mathrm{mL}$ を，$\\mathrm{pH}\\ 2$ で $1.00\\times10^{-2}\\,\\mathrm{mol/L}$ の EDTA 水溶液で滴定する．$\\ce{Fe^3+}$ の条件付き生成定数を有効数字 2 桁で求め，$\\ce{Fe^3+}$ が正確に滴定できることを示せ．また，$\\ce{Fe^3+}$ の当量点で $\\dfrac{[\\ce{CaY}]}{[\\ce{Ca^2+}]}$ はいくらか．有効数字 2 桁で答え，$\\ce{Fe^3+}$ だけを選択的に定量できる理由を説明せよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の混合水溶液を，最初から $\\mathrm{pH}\\ 10$ で滴定すると，終点までに加えた EDTA の量から何が求まるか．$\\mathrm{pH}\\ 10$ で実際に問題になることも含めて答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "EDTA の二ナトリウム塩 $\\ce{Na2H2Y}$ と $\\ce{Ca^2+}$ の反応 $\\ce{Ca^2+ + H2Y^2- ->[\\text{}] CaY^2- + 2H+}$ では $\\ce{H+}$ が生じる．(2) の滴定を緩衝液を使わず $\\mathrm{pH}\\ 10$ の水溶液から始め，EDTA 水溶液を $5.0\\,\\mathrm{mL}$ 加えて反応が進んだとすると，生じた $\\ce{H+}$ だけで $\\mathrm{pH}$ はいくらになるか．小数第 1 位まで答え（$\\log_{10}1.82=0.26$），このあと滴定が正しく進まない理由を $K'C$ の大きさから説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "当量点では $\\mathrm{MY}\\rightleftarrows\\mathrm{M}+\\mathrm{Y}'$ の解離だけで $\\ce{M}$ と $\\ce{Y}'$ が等量生じるので $[\\ce{M}]=[\\ce{Y}']$．$K'=C/[\\ce{M}]^{2}$ より $[\\ce{M}]=\\sqrt{C/K'}$．条件 $[\\ce{M}]\\leqq1.0\\times10^{-3}C$ に代入して $C/K'\\leqq1.0\\times10^{-6}C^{2}$，すなわち $K'C\\geqq1.0\\times10^{6}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\mathrm{pH}\\ 8$．$\\mathrm{pH}\\ 6$ では $1.3\\,\\%$"
+   },
+   {
+    "id": "3",
+    "tex": "$K'=4.8\\times10^{11}\\,\\mathrm{L/mol}$，$K'C=2.4\\times10^{9}\\geqq1.0\\times10^{6}$ なので正確に滴定できる．$[\\ce{CaY}]/[\\ce{Ca^2+}]=1.9\\times10^{-10}$．$\\mathrm{pH}\\ 2$ では $\\ce{Ca^2+}$ の $K'$ が $1.9\\times10^{-3}\\,\\mathrm{L/mol}$ ときわめて小さく，$\\ce{Ca^2+}$ はほとんど錯イオンにならないから"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{Fe^3+}$ と $\\ce{Ca^2+}$ の物質量の和しか求まらず，区別できない．また $\\mathrm{pH}\\ 10$ では $\\ce{Fe^3+}$ が水酸化鉄(III) として沈殿してしまう"
+   },
+   {
+    "id": "5",
+    "tex": "$\\mathrm{pH}\\ 2.7$．$\\mathrm{pH}$ が 4 より低くなると $\\ce{Ca^2+}$ の $K'$ は $1.8\\times10^{2}\\,\\mathrm{L/mol}$ 以下で，$K'C$ は $1$ 程度以下と $1.0\\times10^{6}$ よりはるかに小さく，錯イオンの生成がほとんど進まない"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 当量点の遊離金属イオン}　当量点では加えた EDTA と金属イオンが等しい物質量なので，錯イオンの一部が解離して生じる $\\ce{M}$ と $\\ce{Y}'$ は等しい：$[\\ce{M}]=[\\ce{Y}']$．$[\\ce{MY}]\\fallingdotseq C$ とおくと\n\\[ K'=\\dfrac{C}{[\\ce{M}]^{2}} \\quad\\Longrightarrow\\quad [\\ce{M}]=\\sqrt{\\dfrac{C}{K'}} \\]\n（$[\\ce{M}]\\ll C$ のとき，すなわち $K'C\\gg1$ のとき成り立つ近似．）条件 $\\dfrac{[\\ce{M}]}{C}\\leqq1.0\\times10^{-3}$ は $\\dfrac{1}{\\sqrt{K'C}}\\leqq1.0\\times10^{-3}$ となり，$\\boldsymbol{K'C\\geqq1.0\\times10^{6}}$．\n\n\\textbf{(2) $\\ce{Ca^2+}$ を滴定できる $\\mathrm{pH}$}　当量点では体積が $100\\,\\mathrm{mL}$ になり $C=5.00\\times10^{-3}\\,\\mathrm{mol/L}$．必要な $K'\\geqq\\dfrac{1.0\\times10^{6}}{5.00\\times10^{-3}}=2.0\\times10^{8}$，すなわち $\\alpha\\geqq\\dfrac{2.0\\times10^{8}}{5.0\\times10^{10}}=4.0\\times10^{-3}$．\n\\[ \\text{pH 8：}\\alpha=5.4\\times10^{-3}\\ (K'=2.7\\times10^{8})\\ \\text{で満たす},\\qquad \\text{pH 6：}\\alpha=2.2\\times10^{-5}\\ (K'=1.1\\times10^{6})\\ \\text{で満たさない} \\]\nよって $\\boldsymbol{\\mathrm{pH}\\ 8}$．$\\mathrm{pH}\\ 6$ での遊離 $\\ce{Ca^2+}$ の割合は\n\\[ \\dfrac{1}{\\sqrt{K'C}}=\\dfrac{1}{\\sqrt{1.1\\times10^{6}\\times5.00\\times10^{-3}}}=1.35\\times10^{-2} \\quad\\Longrightarrow\\quad \\boldsymbol{1.3\\,\\%} \\]\nで，当量点付近で遊離の $\\ce{Ca^2+}$ が多く残るため指示薬の変色がだらだらと起こり，終点がはっきりしない．（$\\mathrm{pH}\\ 10$ なら $K'=1.75\\times10^{10}$ で $0.011\\,\\%$．）\n\n\\textbf{(3) $\\mathrm{pH}\\ 2$ での $\\ce{Fe^3+}$ の選択的滴定}\n\\[ K'_{\\ce{Fe}}=3.7\\times10^{-14}\\times1.3\\times10^{25}=\\boldsymbol{4.8\\times10^{11}\\,\\mathrm{L/mol}},\\qquad K'_{\\ce{Fe}}C=4.8\\times10^{11}\\times5.00\\times10^{-3}=2.4\\times10^{9}\\geqq1.0\\times10^{6} \\]\nなので $\\ce{Fe^3+}$ は正確に滴定できる．$\\ce{Fe^3+}$ の当量点で遊離の EDTA は\n\\[ [\\ce{Y}']=[\\ce{Fe^3+}]=\\sqrt{\\dfrac{5.00\\times10^{-3}}{4.8\\times10^{11}}}=1.02\\times10^{-7}\\,\\mathrm{mol/L} \\]\n$\\ce{Ca^2+}$ の条件付き生成定数は $K'_{\\ce{Ca}}=3.7\\times10^{-14}\\times5.0\\times10^{10}=1.85\\times10^{-3}\\,\\mathrm{L/mol}$ なので\n\\[ \\dfrac{[\\ce{CaY}]}{[\\ce{Ca^2+}]}=K'_{\\ce{Ca}}[\\ce{Y}']=1.85\\times10^{-3}\\times1.02\\times10^{-7}=\\boldsymbol{1.9\\times10^{-10}} \\]\n$\\ce{Ca^2+}$ はまったく錯イオンにならず，加えた EDTA はすべて $\\ce{Fe^3+}$ に使われる．生成定数が $10^{14}$ 倍以上違うので，$\\alpha$ を小さくする（$\\mathrm{pH}$ を下げる）と，安定な $\\ce{FeY}$ だけが十分な $K'$ を保ち，$\\ce{CaY}$ はできなくなる．\n\n\\textbf{(4) $\\mathrm{pH}\\ 10$ で滴定すると}　$\\mathrm{pH}\\ 10$ では $K'_{\\ce{Fe}}$ も $K'_{\\ce{Ca}}=1.75\\times10^{10}$ も十分大きいので，両方が EDTA と反応し，終点の EDTA の物質量は \\textbf{$\\ce{Fe^3+}$ と $\\ce{Ca^2+}$ の和}になる．さらに，$\\ce{Fe^3+}$ は $\\mathrm{pH}\\ 10$ では水酸化鉄(III) として沈殿してしまい，滴定そのものがうまくいかない．$\\mathrm{pH}\\ 2$ で $\\ce{Fe^3+}$ を滴定してから $\\mathrm{pH}\\ 10$ にして $\\ce{Ca^2+}$ を滴定すれば，両者を別々に定量できる．\n\n\\textbf{(5) 緩衝液が必要な理由}　EDTA $5.0\\,\\mathrm{mL}$ 分の反応で $\\ce{Ca^2+}$ $5.0\\times10^{-5}\\,\\mathrm{mol}$ が錯イオンになると，$\\ce{H+}$ が $1.0\\times10^{-4}\\,\\mathrm{mol}$ 生じる．体積 $55.0\\,\\mathrm{mL}$ で\n\\[ [\\ce{H+}]=\\dfrac{1.0\\times10^{-4}}{0.0550}=1.82\\times10^{-3}\\,\\mathrm{mol/L} \\quad\\Longrightarrow\\quad \\mathrm{pH}=3-0.26=\\boldsymbol{2.7} \\]\n$\\mathrm{pH}$ が 4 より低いと $K'_{\\ce{Ca}}\\leqq3.6\\times10^{-9}\\times5.0\\times10^{10}=1.8\\times10^{2}\\,\\mathrm{L/mol}$ で，$C$ は $10^{-3}$ 程度なので $K'C$ は 1 程度以下と，(1) の条件 $10^{6}$ に遠く及ばない．実際には $\\mathrm{pH}$ が下がるにつれて錯形成が進まなくなり，この $\\mathrm{pH}$ まで反応すること自体が起こらない．EDTA は錯形成と同時に $\\ce{H+}$ を放出するので，$\\mathrm{pH}$ を一定に保つ緩衝液が不可欠である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "EDTA は弱酸なので，錯形成に使える Y⁴⁻ の割合 α が pH で変わり，実効的な生成定数 K'=αK で考える．当量点の遊離金属イオンは √(C/K') で，正確な滴定には K'C が十分大きいこと（10⁶ 以上）が必要．生成定数の大きく違う金属イオンは pH を下げて一方だけ K' を保つことで選択的に滴定でき，錯形成で H⁺ が生じるため緩衝液がないと K' が自ら下がって滴定が成り立たない．"
+ },
+ "concepts": [
+  "precipitation",
+  "ph",
+  "ionization-equilibrium"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "EDTA",
+  "条件付き生成定数",
+  "キレート滴定",
+  "選択的定量",
+  "緩衝液"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

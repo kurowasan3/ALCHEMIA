@@ -1,0 +1,108 @@
+{
+ "id": "THE-SOL-107",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-09",
+ "topic": "海水の浸透圧と逆浸透に必要な最小の仕事（蒸留との比較）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "海水から淡水を得る方法に，海水に浸透圧より大きな圧力をかけて水だけを半透膜の反対側へ押し出す逆浸透法と，海水を加熱して水を蒸発させる蒸留法がある．\nある海水 $1.00\\,\\mathrm L$ には $\\ce{Cl-}$ が $19.5\\,\\mathrm g$ 含まれ，海水中に溶けているすべての粒子（イオンと分子）の物質量のうち $\\ce{Cl-}$ が $49.0\\,\\%$ を占める．浸透圧 $\\Pi$ はファントホッフの式 $\\Pi = cRT$（$c$ は溶けている粒子の合計のモル濃度）に従うとし，温度は $25\\,^\\circ\\mathrm C$（$298\\,\\mathrm K$）とする．\n原子量・定数：$\\mathrm{H}=1.0$，$\\mathrm{O}=16$，$\\mathrm{Cl}=35.5$，気体定数 $R = 8.31\\times10^3\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$，$25\\,^\\circ\\mathrm C$ における水の蒸発熱 $44.0\\,\\mathrm{kJ/mol}$，水の密度 $1.00\\,\\mathrm{g/cm^3}$．数値は有効数字3桁で答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "この海水の浸透圧は何 Pa か．"
+     },
+     {
+      "id": "2",
+      "tex": "大量の海水（濃度は変わらないとみなす）から逆浸透法で淡水 $1.00\\,\\mathrm L$ を押し出すのに必要な最小の仕事は何 J か．ただし，圧力 $P$ で体積 $\\Delta V$ の水を押し出す仕事は $P\\Delta V$ であり，圧力は浸透圧に等しい値まで下げられるものとする．"
+     },
+     {
+      "id": "3",
+      "tex": "同じ $1.00\\,\\mathrm L$ の水を蒸留法で得るのに必要な熱量（蒸発熱だけを考える）は，(2) の仕事の何倍か．"
+     },
+     {
+      "id": "4",
+      "tex": "最大 $2.00\\times10^6\\,\\mathrm{Pa}$ までしか圧力をかけられないポンプで逆浸透法を行う．この海水そのもの，および海水を真水で 2 倍に薄めた汽水のそれぞれについて，淡水が得られるかどうかを判断せよ．また，海水を何倍以上に薄めた水なら淡水が得られるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$2.78\\times10^6\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "2",
+    "tex": "$2.78\\times10^3\\,\\mathrm J$"
+   },
+   {
+    "id": "3",
+    "tex": "$8.81\\times10^2$ 倍"
+   },
+   {
+    "id": "4",
+    "tex": "海水：得られない（浸透圧 $2.78\\times10^6\\,\\mathrm{Pa}$ がポンプの最大圧力より大きい），汽水：得られる（浸透圧 $1.39\\times10^6\\,\\mathrm{Pa}$）．$1.39$ 倍以上に薄めた水"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\ce{Cl-}$ は $19.5/35.5 = 0.5493\\,\\mathrm{mol}$．これが全粒子の $49.0\\,\\%$ なので，粒子の合計は $0.5493/0.490 = 1.121\\,\\mathrm{mol}$（$1.00\\,\\mathrm L$ 中）．\n\\[ \\Pi = cRT = 1.121\\times8.31\\times10^3\\times298 = \\boldsymbol{2.78\\times10^6\\,\\mathrm{Pa}} \\]\n浸透圧は溶質の種類ではなく粒子の数で決まるので，$\\ce{Na+}$，$\\ce{Mg^2+}$，$\\ce{SO4^2-}$ などを一つずつ数えなくても，全粒子に占める割合から合計が求まる．\n\n\\textbf{(2)} 圧力が浸透圧を超えると水が海水側から淡水側へ移る．海水が大量で濃度が変わらなければ，必要な圧力は浸透圧のまま一定なので，$\\Delta V = 1.00\\,\\mathrm L = 1.00\\times10^{-3}\\,\\mathrm{m^3}$ として\n\\[ W = \\Pi\\Delta V = 2.776\\times10^6\\,\\mathrm{Pa}\\times1.00\\times10^{-3}\\,\\mathrm{m^3} = \\boldsymbol{2.78\\times10^3\\,\\mathrm J} \\]\n（$\\mathrm{Pa\\cdot m^3} = \\mathrm{N/m^2\\cdot m^3} = \\mathrm{N\\cdot m} = \\mathrm J$）．\n\n\\textbf{(3)} 水 $1.00\\,\\mathrm L$（$1000\\,\\mathrm g$）は $1000/18.0 = 55.6\\,\\mathrm{mol}$，蒸発熱は $55.6\\times44.0 = 2.444\\times10^3\\,\\mathrm{kJ}$．\n\\[ \\frac{2.444\\times10^6\\,\\mathrm J}{2.776\\times10^3\\,\\mathrm J} = \\boldsymbol{8.81\\times10^2}\\ \\text{倍} \\]\n蒸留は水分子どうしの水素結合を切って気体にするエネルギーが必要なのに対し，逆浸透は溶質と水を分けるのに必要な分（浸透圧に相当する分）だけで済むため，理想的には桁違いに少ないエネルギーで淡水が得られる（実際には膜の抵抗などで必要な圧力はこれより大きい）．\n\n\\textbf{(4)} 浸透圧は粒子の濃度に比例する．海水は $2.78\\times10^6\\,\\mathrm{Pa} > 2.00\\times10^6\\,\\mathrm{Pa}$ なので，ポンプの圧力では水が淡水側へ移らず，\\textbf{淡水は得られない}．2 倍に薄めた汽水は $1.39\\times10^6\\,\\mathrm{Pa} < 2.00\\times10^6\\,\\mathrm{Pa}$ なので\\textbf{得られる}．\n薄める倍率を $k$ とすると $2.776\\times10^6/k \\leqq 2.00\\times10^6$ より $k \\geqq \\boldsymbol{1.39}$ 倍．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "浸透圧は溶けている全粒子の濃度で決まるので，ある成分の量と全粒子に占める割合から海水の浸透圧が求まる．逆浸透で淡水を得る最小の仕事は浸透圧×押し出す体積で，蒸発熱と比べると桁違いに小さい．かけられる圧力が浸透圧を下回ると淡水は得られない．"
+ },
+ "concepts": [
+  "solution-colligative",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "浸透圧",
+  "逆浸透",
+  "ファントホッフの式",
+  "海水の淡水化",
+  "蒸発熱"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

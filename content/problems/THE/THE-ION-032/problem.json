@@ -1,0 +1,122 @@
+{
+ "id": "THE-ION-032",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "電離定数の近い2価の弱酸の存在割合と中和点",
+ "course": "化学",
+ "level": 5,
+ "minutes": 35,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "2価の弱酸 $\\ce{H2A}$ は水溶液中で次のように電離する．\n\\[ \\ce{H2A <=>[\\text{}] H+ + HA-}\\ \\ K_1=\\dfrac{[\\ce{H+}][\\ce{HA-}]}{[\\ce{H2A}]},\\qquad \\ce{HA- <=>[\\text{}] H+ + A^2-}\\ \\ K_2=\\dfrac{[\\ce{H+}][\\ce{A^2-}]}{[\\ce{HA-}]} \\]\n図は，pH を変えたときの $\\ce{H2A}$，$\\ce{HA-}$，$\\ce{A^2-}$ の存在割合（3種の濃度の和に対する割合）である．$\\ce{HA-}$ の割合は pH 3.70 で最大値 0.714 をとる．この酸の $K_1$ と $K_2$ は近い値であり，曲線の交点は割合 0.5 の位置にない．$\\log_{10}2=0.30$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$[\\ce{H+}]=h$ として $\\ce{HA-}$ の存在割合 $f$ を $h$，$K_1$，$K_2$ で表せ．さらに，$f$ が最大になるのは $h=\\sqrt{K_1K_2}$ のときであり，その最大値が $\\dfrac{1}{1+2\\sqrt{K_2/K_1}}$ であることを示せ．"
+     },
+     {
+      "id": "2",
+      "tex": "図の値から $\\mathrm{p}K_1$ と $\\mathrm{p}K_2$（$\\mathrm pK=-\\log_{10}K$）をそれぞれ小数第2位まで求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "pH $=\\mathrm pK_1$ のとき，$\\ce{H2A}$ と $\\ce{HA-}$ の割合は等しい．その値と $\\ce{A^2-}$ の割合をそれぞれ有効数字2桁で求め，$\\ce{H2A}$ と $\\ce{HA-}$ の曲線の交点が 0.5 より下にある理由を説明せよ．"
+     },
+     {
+      "id": "4",
+      "tex": "分子内に同等で互いに影響し合わない2つの酸性基をもつ2価の酸を考える．この場合，pH が決まると各酸性基が電離している確率 $p$ が決まり，$\\ce{H2A}$，$\\ce{HA-}$，$\\ce{A^2-}$ の割合はそれぞれ $(1-p)^2$，$2p(1-p)$，$p^2$ になる．このモデルで $\\ce{HA-}$ の割合の最大値を求め，(1) の結果を用いて $K_1/K_2$ の値を求めよ．また，図の酸では $K_1/K_2$ がこの値より大きい．その理由として考えられることを述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：電離定数の近い2価の弱酸の存在割合と中和点",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$f=\\dfrac{K_1h}{h^2+K_1h+K_1K_2}$；$\\dfrac1f=1+\\dfrac{h}{K_1}+\\dfrac{K_2}{h}$ の最小を考えると，相加平均・相乗平均の関係から $h=\\sqrt{K_1K_2}$ のとき最小値 $1+2\\sqrt{K_2/K_1}$ をとる"
+   },
+   {
+    "id": "2",
+    "tex": "$\\mathrm pK_1=3.00$，$\\mathrm pK_2=4.40$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{H2A}$，$\\ce{HA-}$ とも $0.49$，$\\ce{A^2-}$ は $0.020$；$K_2$ が $K_1$ に近いので pH $=\\mathrm pK_1$ でもすでに $\\ce{A^2-}$ が 2 % 存在し，その分 $\\ce{H2A}$ と $\\ce{HA-}$ の割合が 0.5 より小さくなるから"
+   },
+   {
+    "id": "4",
+    "tex": "最大値 $0.5$（$p=\\tfrac12$ のとき）；$K_1/K_2=4$；1つ目の $\\ce{H+}$ が離れて負の電荷をもつと，その静電気的な引力で2つ目の $\\ce{H+}$ が離れにくくなり（2つの酸性基が互いに影響し合い），$K_2$ が統計的な値より小さくなるから"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $[\\ce{HA-}]=\\dfrac{K_1}{h}[\\ce{H2A}]$，$[\\ce{A^2-}]=\\dfrac{K_1K_2}{h^2}[\\ce{H2A}]$ より\n\\[ f=\\dfrac{[\\ce{HA-}]}{[\\ce{H2A}]+[\\ce{HA-}]+[\\ce{A^2-}]}=\\boldsymbol{\\dfrac{K_1h}{h^2+K_1h+K_1K_2}} \\]\n\\[ \\dfrac1f=1+\\dfrac{h}{K_1}+\\dfrac{K_2}{h}\\geqq1+2\\sqrt{\\dfrac{h}{K_1}\\cdot\\dfrac{K_2}{h}}=1+2\\sqrt{\\dfrac{K_2}{K_1}} \\]\n等号は $\\dfrac{h}{K_1}=\\dfrac{K_2}{h}$，すなわち $h=\\sqrt{K_1K_2}$ のときに成り立つ．よって $f$ の最大値は $\\dfrac{1}{1+2\\sqrt{K_2/K_1}}$．このとき $[\\ce{H2A}]=[\\ce{A^2-}]$ でもある．\n\n\\textbf{(2)} 最大となる pH から $\\dfrac{\\mathrm pK_1+\\mathrm pK_2}{2}=3.70$．最大値から\n\\[ 2\\sqrt{\\dfrac{K_2}{K_1}}=\\dfrac{1}{0.714}-1=0.400\\quad\\Rightarrow\\quad \\dfrac{K_1}{K_2}=25,\\quad \\mathrm pK_2-\\mathrm pK_1=\\log_{10}25=2-2\\log_{10}2=1.40 \\]\nよって $\\mathrm pK_1=\\boldsymbol{3.00}$，$\\mathrm pK_2=\\boldsymbol{4.40}$．この2つの式で $\\mathrm pK_1$，$\\mathrm pK_2$ は一つに決まる．\n\n\\textbf{(3)} $h=K_1$ を代入すると，3つの割合の比は $[\\ce{H2A}]:[\\ce{HA-}]:[\\ce{A^2-}]=h^2:K_1h:K_1K_2=1:1:\\dfrac{K_2}{K_1}=1:1:0.040$．\n\\[ \\ce{H2A},\\ \\ce{HA-}：\\dfrac{1}{2.04}=\\boldsymbol{0.49},\\qquad \\ce{A^2-}：\\dfrac{0.040}{2.04}=\\boldsymbol{0.020} \\]\n「pH $=\\mathrm pK_1$ で $[\\ce{H2A}]=[\\ce{HA-}]$」は成り立っているが，割合 0.5 になるのは第3の化学種 $\\ce{A^2-}$ が無視できるとき（$K_2\\ll K_1$）だけである．$K_1/K_2=25$ と近いので，交点は 0.49 に下がる（一方，$\\ce{H2A}$ と $\\ce{A^2-}$ の交点は $h=\\sqrt{K_1K_2}$ で $f$ が最大の点の真下，割合 0.143 にある）．\n\n\\textbf{(4)} $2p(1-p)=\\dfrac14-\\left(p-\\dfrac12\\right)^2$ なので，$p=\\dfrac12$ のとき最大値 $\\boldsymbol{0.5}$ をとる．(1) より最大値は $\\dfrac{1}{1+2\\sqrt{K_2/K_1}}$ なので\n\\[ \\dfrac{1}{1+2\\sqrt{K_2/K_1}}=\\dfrac12\\ \\Rightarrow\\ \\sqrt{\\dfrac{K_2}{K_1}}=\\dfrac12\\ \\Rightarrow\\ \\dfrac{K_1}{K_2}=\\boldsymbol{4} \\]\n（直接 $K_1=\\dfrac{h\\cdot2p(1-p)}{(1-p)^2}=\\dfrac{2hp}{1-p}$，$K_2=\\dfrac{h\\,p^2}{2p(1-p)}=\\dfrac{hp}{2(1-p)}$ としても $K_1/K_2=4$ が得られる．）2つの基がまったく同じで独立でも $K_1\\neq K_2$ となるのは，$\\ce{H2A}$ には $\\ce{H+}$ を出せる所が2か所あり，$\\ce{A^2-}$ には $\\ce{H+}$ を受け取れる所が2か所あるという「数え方」の効果である．\n図の酸では $K_1/K_2=25>4$ である．1つ目の $\\ce{H+}$ が離れると分子が負の電荷をもち，残った $\\ce{H+}$ を静電気的に引きつけるので2つ目が離れにくくなる（2つの酸性基が近く，互いに影響し合っている）．その分 $K_2$ が小さくなり，$K_1/K_2$ は 4 より大きくなる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "2価の弱酸で K1 と K2 が近いと，中間の化学種 HA- の割合の最大値は 1/(1+2√(K2/K1)) と 1 より小さくなり，曲線の交点も 0.5 からずれる．存在割合の図の最大点から K1/K2 と pK を逆に決める．同等で独立な2つの酸性基のモデルでは統計的に K1/K2=4 となり，それより大きい比は酸性基どうしの影響（電荷）を表す．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "acid-base"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "多価の弱酸",
+  "存在割合",
+  "電離定数",
+  "統計的な効果",
+  "相加相乗平均"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

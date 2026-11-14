@@ -1,0 +1,123 @@
+{
+ "id": "THE-BND-063",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-03",
+ "topic": "ペロブスカイト型酸化物の組成・配位数・陽イオンの価数と密度",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図は，2 種類の陽イオン A，B と酸化物イオン $\\ce{O^2-}$ からなる立方晶の結晶の単位格子である．A は立方体の頂点，B は立方体の中心，$\\ce{O^2-}$ は立方体の各面の中心にある．単位格子の一辺の長さを $a$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "この結晶の組成式を A，B，O を用いて表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "B に最も近い $\\ce{O^2-}$ の数（B の配位数）と，A に最も近い $\\ce{O^2-}$ の数（A の配位数）をそれぞれ答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "A が $\\ce{Ba^2+}$ のとき，B の酸化数を答えよ．また，A が $\\ce{La^3+}$ の場合と $\\ce{K+}$ の場合について，同じ構造をとるために B に必要な酸化数をそれぞれ答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "A が $\\ce{Ba^2+}$，B が $\\ce{Ti}$ の結晶（チタン酸バリウム）について，$a=0.401\\,\\mathrm{nm}$ として密度〔$\\mathrm{g/cm^3}$〕を有効数字 2 桁で求めよ．原子量は $\\mathrm{O}=16.0$，$\\mathrm{Ti}=47.9$，$\\mathrm{Ba}=137.3$，アボガドロ定数は $6.02\\times10^{23}\\,\\mathrm{/mol}$，$0.401^3=0.0645$ とする．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：ペロブスカイト型酸化物の組成・配位数・陽イオンの価数と密度",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\mathrm{ABO_3}$"
+   },
+   {
+    "id": "2",
+    "tex": "B：6，A：12"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{Ba^2+}$ のとき $+4$．$\\ce{La^3+}$ のとき $+3$，$\\ce{K+}$ のとき $+5$"
+   },
+   {
+    "id": "4",
+    "tex": "$6.0\\,\\mathrm{g/cm^3}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　単位格子に含まれる粒子の数は，頂点 $\\tfrac18$，面心 $\\tfrac12$，体心 $1$ として数える．組成式の電荷の和が $0$ になることから陽イオンの価数の組み合わせが決まる．\n\n(1) A：$\\tfrac18\\times8=1$，B：$1$，O：$\\tfrac12\\times6=3$．よって $\\boldsymbol{\\mathrm{ABO_3}}$（ペロブスカイト型）．\n\n(2) B（体心）から 6 つの面心までの距離はいずれも $a/2$ で最も近いので，B の配位数は $\\boldsymbol{6}$（正八面体）．A（頂点）に最も近い $\\ce{O^2-}$ は，A を共有する 8 つの単位格子のうち，A を含む面の中心にある．A を頂点にもつ面は 12 枚あり，距離はいずれも $a/\\sqrt2$ なので配位数は $\\boldsymbol{12}$．\n\n(3) 電荷の和 $=(\\text{A の価数})+(\\text{B の価数})+3\\times(-2)=0$ より，A と B の価数の和は $6$．$\\ce{Ba^2+}$ なら B は $\\boldsymbol{+4}$（$\\ce{Ti^4+}$），$\\ce{La^3+}$ なら $\\boldsymbol{+3}$（例：$\\ce{LaAlO3}$），$\\ce{K+}$ なら $\\boldsymbol{+5}$（例：$\\ce{KNbO3}$）．\n\n(4) 式量 $\\ce{BaTiO3}=137.3+47.9+48.0=233.2$．単位格子に 1 組成単位を含むので\n\\[ \\rho=\\dfrac{233.2}{6.02\\times10^{23}\\times(0.401\\times10^{-7}\\,\\mathrm{cm})^3}=\\dfrac{233.2}{6.02\\times10^{23}\\times6.45\\times10^{-23}}=6.0\\,\\mathrm{g/cm^3} \\]\nよって $\\boldsymbol{6.0\\,\\mathrm{g/cm^3}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ペロブスカイト型構造の単位格子に含まれる粒子数から組成式と配位数（B は 6，A は 12）を求め，電気的中性から 2 種類の陽イオンの価数の和が 6 になることを使って組み合わせを決め，密度を計算する．"
+ },
+ "concepts": [
+  "chemical-bond",
+  "complex-ion",
+  "elemental-analysis"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ペロブスカイト型構造",
+  "単位格子",
+  "配位数",
+  "電気的中性",
+  "密度"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

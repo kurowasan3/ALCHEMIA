@@ -1,0 +1,109 @@
+{
+ "id": "THE-GAS-046",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-08",
+ "topic": "容積・温度のわからない反応管の校正（ヘリウムによる圧力と物質量の関係）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "容積 $2.49\\,\\mathrm L$ の容器 A（つねに $300\\,\\mathrm K$）が，コックを通して反応管 B につながっている．B の中には触媒があり，B は一定の高温に保たれているが，B の容積と温度はわからない．\n［操作 1］B を真空にし，A にヘリウムを $2.00\\times10^{5}\\,\\mathrm{Pa}$ 入れてからコックを開くと，圧力は $1.25\\times10^{5}\\,\\mathrm{Pa}$ になった．\n［操作 2］A，B からヘリウムを除き，コックを閉じて A に窒素と水素を物質量比 $1:3$ で全圧 $2.40\\times10^{5}\\,\\mathrm{Pa}$ になるまで入れた．コックを開いたままにすると，B の中で\n\\[\\ce{N2 + 3H2 <=> 2NH3}\\]\nの反応が起こり，しばらくして全圧は $1.30\\times10^{5}\\,\\mathrm{Pa}$ になった．\nA と B の温度は操作の間変わらず，反応後の気体の組成は A と B で等しいとする．気体はすべて理想気体とし，気体定数は $8.3\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "操作 1 で B に入ったヘリウムは何 mol か．有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "操作 2 で生じたアンモニアは何 mol か．有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "操作 2 の反応後のアンモニアの分圧 [Pa] と，窒素のうち反応した割合 [%] を，それぞれ有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "B の温度だけをさらに上げてから操作 2 と同じ実験を行い，生成したアンモニアの量を，操作 1 の結果をそのまま使って計算した．この計算値は真の値より大きいか小さいか．理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$0.075\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "2",
+    "tex": "$0.032\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "アンモニアの分圧 $2.0\\times10^{4}\\,\\mathrm{Pa}$，窒素の反応した割合 $27\\,\\%$"
+   },
+   {
+    "id": "4",
+    "tex": "小さい．B の温度を上げると同じ圧力でも B に入る気体の物質量が減るので，操作 1 の関係を使うと反応後の全物質量を実際より大きく見積もり，物質量の減少（アンモニアの生成量）を小さく見積もるから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　B の容積 $V_{\\mathrm B}$ と温度 $T_{\\mathrm B}$ はわからないが，A と B 全体に入っている気体の物質量 $n$ と圧力 $P$ は\n\\[n=P\\left(\\dfrac{V_{\\mathrm A}}{RT_{\\mathrm A}}+\\dfrac{V_{\\mathrm B}}{RT_{\\mathrm B}}\\right)=kP\\]\nのように比例し，比例定数 $k$ は気体の種類によらない．操作 1 はこの $k$ を既知の量のヘリウムで決める「校正」である．\n\n\\textbf{(1)}　A について $\\dfrac{V_{\\mathrm A}}{RT_{\\mathrm A}}=\\dfrac{2.49}{8.3\\times10^{3}\\times300}=1.00\\times10^{-6}\\,\\mathrm{mol/Pa}$．\nヘリウム全体：$1.00\\times10^{-6}\\times2.00\\times10^{5}=0.200\\,\\mathrm{mol}$．コックを開いた後 A に残るのは $1.00\\times10^{-6}\\times1.25\\times10^{5}=0.125\\,\\mathrm{mol}$．よって B に入ったのは $0.200-0.125=\\boldsymbol{0.075\\,\\mathrm{mol}}$．\nまた $k=\\dfrac{0.200}{1.25\\times10^{5}}=1.60\\times10^{-6}\\,\\mathrm{mol/Pa}$．\n\n\\textbf{(2)}　はじめの混合気体は $1.00\\times10^{-6}\\times2.40\\times10^{5}=0.240\\,\\mathrm{mol}$（$\\ce{N2}$ $0.060$，$\\ce{H2}$ $0.180\\,\\mathrm{mol}$）．反応後の全物質量は $k\\times1.30\\times10^{5}=0.208\\,\\mathrm{mol}$．\nアンモニアが $x$ mol できると，$\\ce{N2}$ $\\dfrac{x}{2}$，$\\ce{H2}$ $\\dfrac{3x}{2}$ が減るので，全物質量は $\\dfrac{x}{2}+\\dfrac{3x}{2}-x=x$ だけ減る．\n\\[x=0.240-0.208=\\boldsymbol{0.032\\,\\mathrm{mol}}\\]\n\n\\textbf{(3)}　組成は A と B で等しいので，分圧＝全圧×モル分率：\n\\[p_{\\ce{NH3}}=1.30\\times10^{5}\\times\\dfrac{0.032}{0.208}=\\boldsymbol{2.0\\times10^{4}\\,\\mathrm{Pa}}\\]\n反応した $\\ce{N2}$ は $0.016\\,\\mathrm{mol}$ なので，$\\dfrac{0.016}{0.060}\\times100=26.7\\fallingdotseq\\boldsymbol{27\\,\\%}$．\n\n\\textbf{(4)}　$k$ のうち B の寄与 $\\dfrac{V_{\\mathrm B}}{RT_{\\mathrm B}}$ は $T_{\\mathrm B}$ を上げると小さくなる．真の $k$ は操作 1 の値より小さいのに古い $k$ を使うと，反応後の全物質量 $kP$ を大きく見積もる．はじめの物質量（A だけで決まる）は正しいので，その差であるアンモニアの量は$\\boldsymbol{\\text{小さく}}$見積もられる．温度を変えたら校正をやり直す必要がある．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "容積・温度のわからない部分を含む連結容器でも，全体の物質量は圧力に比例し，その比例定数は気体の種類によらないので，既知の量のヘリウムの圧力で「圧力あたりの物質量」を校正すれば，反応後の全圧から物質量の変化（生成量）が求まる．校正した条件（温度）が変わると比例定数も変わり，誤差の向きが決まる．"
+ },
+ "concepts": [
+  "ideal-gas",
+  "nitrogen-phosphorus",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "気体の状態方程式",
+  "連結容器",
+  "校正",
+  "アンモニアの合成",
+  "分圧"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

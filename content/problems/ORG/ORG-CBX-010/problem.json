@@ -1,0 +1,109 @@
+{
+ "id": "ORG-CBX-010",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-04",
+ "topic": "加水分解生成物の質量によるエステルの構造決定",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "structure"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "エステル P，Q は，いずれも炭素 $62.1\\,\\%$，水素 $10.3\\,\\%$，酸素 $27.6\\,\\%$（質量パーセント）からなり，分子量は 116 である．P，Q はいずれも，飽和1価カルボン酸と飽和1価アルコールからできたエステルである．原子量は $\\mathrm{H}=1.0$，$\\mathrm{C}=12$，$\\mathrm{O}=16$ とする．\n\\\\・P $2.32\\,\\mathrm{g}$ を完全に加水分解すると，カルボン酸 $1.48\\,\\mathrm{g}$ とアルコール $1.20\\,\\mathrm{g}$ が得られた．このアルコールはヨードホルム反応を示した．\n\\\\・Q $2.32\\,\\mathrm{g}$ を完全に加水分解すると，化合物 X $1.76\\,\\mathrm{g}$ と化合物 Y $0.92\\,\\mathrm{g}$ が得られた（X，Y の一方がカルボン酸，他方がアルコールである）．Y は銀鏡反応を示さなかった．X は炭素鎖に枝分かれをもっていた．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "P，Q の分子式を答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "P の加水分解で得られたカルボン酸とアルコールの分子量を求め，P の示性式を答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "Q の示性式を答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "Q の加水分解で得られた Y が，もし銀鏡反応を示したとすると，Q はどのような構造のエステルと考えられるか．酸の部分とアルコールの部分に分けて答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{C6H12O2}$"
+   },
+   {
+    "id": "2",
+    "tex": "カルボン酸 74，アルコール 60．P：$\\ce{CH3CH2COOCH(CH3)2}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{(CH3)2CHCOOCH2CH3}$"
+   },
+   {
+    "id": "4",
+    "tex": "酸の部分はギ酸 $\\ce{HCOOH}$（Y），アルコールの部分は分子量 88 のアルコール $\\ce{C5H11OH}$（X）で，Q はギ酸のエステル $\\ce{HCOOC5H11}$ となる．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 1分子中の原子数は C：$\\dfrac{116\\times0.621}{12}\\fallingdotseq6$，H：$\\dfrac{116\\times0.103}{1.0}\\fallingdotseq12$，O：$\\dfrac{116\\times0.276}{16}\\fallingdotseq2$ で $\\boldsymbol{\\ce{C6H12O2}}$．\n\n\\textbf{(2) 生成物の分子量} エステル $\\dfrac{2.32}{116}=0.0200\\,\\mathrm{mol}$ から，カルボン酸とアルコールが $0.0200\\,\\mathrm{mol}$ ずつできる（$\\ce{\\text{R}COOR' + H2O -> \\text{R}COOH + \\text{R'}OH}$）．\nカルボン酸：$\\dfrac{1.48}{0.0200}=\\boldsymbol{74}$ → $\\ce{C2H5COOH}$（プロピオン酸），アルコール：$\\dfrac{1.20}{0.0200}=\\boldsymbol{60}$ → $\\ce{C3H7OH}$．\n（確認：$2.32+0.0200\\times18=2.68=1.48+1.20$．）\nヨードホルム反応を示すので $\\ce{CH3CH(OH)CH3}$（2-プロパノール）．P は $\\boldsymbol{\\ce{CH3CH2COOCH(CH3)2}}$．\n\n\\textbf{(3)} X：$\\dfrac{1.76}{0.0200}=88$，Y：$\\dfrac{0.92}{0.0200}=46$．分子量 46 の候補はギ酸 $\\ce{HCOOH}$ とエタノール $\\ce{C2H5OH}$ で，Y は銀鏡反応を示さないのでエタノール．よって X は分子量 88 のカルボン酸 $\\ce{C3H7COOH}$ で，枝分かれをもつので $\\ce{(CH3)2CHCOOH}$．Q は $\\boldsymbol{\\ce{(CH3)2CHCOOCH2CH3}}$．\n\n\\textbf{(4) 条件を変えると} Y が銀鏡反応を示すなら Y はホルミル基をもつギ酸で，酸の部分になる．すると X（分子量 88）はアルコール $\\ce{C5H11OH}$ で，Q は\\textbf{ギ酸と $\\ce{C5H11OH}$ のエステル $\\ce{HCOOC5H11}$} となる．同じ質量の組でも，どちらが酸かで構造がまったく変わる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "エステルの加水分解では，酸とアルコールがエステルと同じ物質量ずつできるので，生成物の質量から分子量を出せる．分子量が同じでも酸とアルコールの両方の可能性（46：ギ酸とエタノール）があり，銀鏡反応・ヨードホルム反応・枝分かれの情報でどちらかを決める．"
+ },
+ "concepts": [
+  "carboxylic-ester",
+  "alcohol-carbonyl",
+  "organic-test"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "エステル",
+  "加水分解",
+  "分子量",
+  "構造決定",
+  "銀鏡反応"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

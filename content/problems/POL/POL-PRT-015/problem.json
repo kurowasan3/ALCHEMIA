@@ -1,0 +1,124 @@
+{
+ "id": "POL-PRT-015",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-05",
+ "topic": "ジペプチドエステルの構造決定",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "structure",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "化合物 E は，2 種類の $\\alpha$-アミノ酸からなるジペプチドの一方のカルボキシ基をメタノールでエステルにしたものである．原子量は H = 1.0，C = 12，N = 14，O = 16 とする．\\\\\n実験 1：E の元素分析の結果は，質量パーセントで C 61.0 %，H 6.8 %，N 11.9 %，O 20.3 % であった．また，E の分子量は 236 であった．\\\\\n実験 2：E を酸で完全に加水分解すると，グリシン，アミノ酸 B，メタノールが得られた．B はキサントプロテイン反応を示した．\\\\\n実験 3：E を酵素でペプチド結合だけ加水分解すると，グリシンと化合物 D（分子式 $\\ce{C10H13NO2}$）が得られた．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "E の組成式と分子式を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "B の名称を答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "E の構造を示性式で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "E とは逆に，B のアミノ基とグリシンのカルボキシ基がペプチド結合をつくり，グリシンのカルボキシ基がメチルエステルになった異性体 E$'$ があったとする．E$'$ を実験 3 と同様に処理すると，B と何が得られるか．示性式で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：ジペプチドエステルの構造決定",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "組成式 $\\ce{C12H16N2O3}$，分子式 $\\ce{C12H16N2O3}$"
+   },
+   {
+    "id": "2",
+    "tex": "フェニルアラニン"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{H2N-CH2-CO-NH-CH(CH2C6H5)-COOCH3}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{H2NCH2COOCH3}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "(1)　原子数の比は\n\\[ \\mathrm{C:H:N:O}=\\frac{61.0}{12}:\\frac{6.8}{1.0}:\\frac{11.9}{14}:\\frac{20.3}{16}=5.08:6.8:0.850:1.27\\approx12:16:2:3 \\]\n組成式 $\\boldsymbol{\\ce{C12H16N2O3}}$（式量 236）．分子量 236 と一致するので分子式も $\\boldsymbol{\\ce{C12H16N2O3}}$．\n\n(2)　加水分解はペプチド結合とエステル結合で 1 分子ずつ水が加わる：\n\\[ \\ce{C12H16N2O3 + 2H2O -> C2H5NO2 + \\text{B} + CH4O} \\]\n原子数の差から B は $\\ce{C9H11NO2}$．ベンゼン環をもつ（キサントプロテイン反応）$\\alpha$-アミノ酸で，$\\boldsymbol{\\text{フェニルアラニン}}$ $\\ce{C6H5CH2CH(NH2)COOH}$．\n\n(3)　D（$\\ce{C10H13NO2}$）はフェニルアラニン（$\\ce{C9H11NO2}$）より $\\ce{CH2}$ 多く，フェニルアラニンのメチルエステル $\\ce{C6H5CH2CH(NH2)COOCH3}$ である．ペプチド結合を切るとグリシン（遊離のアミノ酸）とフェニルアラニンメチルエステルが生じるので，エステルはフェニルアラニン側（C 末端）にあり，グリシンが N 末端．\n\\[ \\boldsymbol{\\ce{H2N-CH2-CO-NH-CH(CH2C6H5)-COOCH3}} \\]\n（構造式は解答図．）\n\n(4)　E$'$ のペプチド結合を切ると，B（フェニルアラニン）とグリシンのメチルエステル $\\boldsymbol{\\ce{H2NCH2COOCH3}}$（$\\ce{C3H7NO2}$）が得られる．部分加水分解でどちらのアミノ酸がエステルのまま得られるかで，配列の向きが区別できる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ジペプチドエステルは，完全加水分解で構成アミノ酸とアルコールを，ペプチド結合だけの加水分解で遊離アミノ酸とアミノ酸エステルを生じる．どちらがエステルとして残るかで C 末端（エステル側）と配列の向きが決まる．"
+ },
+ "concepts": [
+  "protein-amino",
+  "elemental-analysis",
+  "alcohol-carbonyl"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ジペプチド",
+  "エステル",
+  "元素分析",
+  "構造決定",
+  "フェニルアラニン",
+  "加水分解"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

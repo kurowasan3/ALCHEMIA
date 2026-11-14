@@ -1,0 +1,106 @@
+{
+ "id": "THE-EQL-013",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "正逆の速度定数と平衡定数・触媒の効果",
+ "course": "化学",
+ "level": 1,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水溶液中で物質 X，Y，Z の間に可逆反応 $\\mathrm{X+Y}\\rightleftarrows\\mathrm{Z}$ が成り立つ．正反応の速度は $v_1=k_1[\\mathrm{X}][\\mathrm{Y}]$，逆反応の速度は $v_2=k_2[\\mathrm{Z}]$ で表される．温度は一定とする．\n実験1：X と Y の初濃度をともに $0.20\\,\\mathrm{mol/L}$（Z は 0）にすると，反応開始直後の Z の生成速度は $1.2\\times10^{-3}\\,\\mathrm{mol/(L\\cdot min)}$ であった．\n実験2：Z だけを初濃度 $0.50\\,\\mathrm{mol/L}$ にすると，反応開始直後の X の生成速度は $2.0\\times10^{-3}\\,\\mathrm{mol/(L\\cdot min)}$ であった．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$k_1$，$k_2$ を単位とともに求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "正反応と逆反応の速度が等しくなった状態が平衡状態であることを用いて，平衡定数 $K=\\dfrac{[\\mathrm{Z}]}{[\\mathrm{X}][\\mathrm{Y}]}$ を $k_1$，$k_2$ で表し，その値を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "実験1の溶液が平衡に達したときの Z の濃度を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "実験2と同じ条件で触媒を加えると，正反応の速度定数が 5 倍になった．このとき，反応開始直後の X の生成速度はいくらになるか．また，実験1に同じ触媒を加えた場合，平衡時の Z の濃度は (3) と比べてどうなるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$k_1=3.0\\times10^{-2}\\,\\mathrm{L/(mol\\cdot min)}$，$k_2=4.0\\times10^{-3}\\,/\\mathrm{min}$"
+   },
+   {
+    "id": "2",
+    "tex": "$K=\\dfrac{k_1}{k_2}=7.5\\,\\mathrm{L/mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "$9.0\\times10^{-2}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "4",
+    "tex": "$1.0\\times10^{-2}\\,\\mathrm{mol/(L\\cdot min)}$．平衡時の Z の濃度は変わらない（平衡に達するまでの時間が短くなるだけ）．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 実験1：$1.2\\times10^{-3}=k_1\\times0.20\\times0.20$ より $k_1=\\boldsymbol{3.0\\times10^{-2}\\,\\mathrm{L/(mol\\cdot min)}}$．\n実験2：$\\mathrm{Z}$ 1 個から $\\mathrm{X}$ 1 個ができるので，$\\mathrm{X}$ の生成速度は $v_2$ に等しい．$2.0\\times10^{-3}=k_2\\times0.50$ より $k_2=\\boldsymbol{4.0\\times10^{-3}\\,/\\mathrm{min}}$．\n\\textbf{(2)} 平衡では $v_1=v_2$，すなわち $k_1[\\mathrm{X}][\\mathrm{Y}]=k_2[\\mathrm{Z}]$ なので\n\\[ K=\\frac{[\\mathrm{Z}]}{[\\mathrm{X}][\\mathrm{Y}]}=\\frac{k_1}{k_2}=\\frac{3.0\\times10^{-2}}{4.0\\times10^{-3}}=\\boldsymbol{7.5\\,\\mathrm{L/mol}} \\]\n\\textbf{(3)} 平衡時の $[\\mathrm{Z}]=x$ とすると $[\\mathrm{X}]=[\\mathrm{Y}]=0.20-x$．\n\\[ \\frac{x}{(0.20-x)^2}=7.5 \\quad\\Rightarrow\\quad 7.5x^2-4x+0.30=0 \\quad\\Rightarrow\\quad x=\\frac{4-\\sqrt{7}}{15}=0.0903 \\]\n（もう一方の解 $0.44$ は $0.20$ をこえるので不適）．$[\\mathrm{Z}]=\\boldsymbol{9.0\\times10^{-2}\\,\\mathrm{mol/L}}$．\n\\textbf{(4)} 触媒は活性化エネルギーを下げ，正反応と逆反応の速度を同じ割合で大きくするので，$K=k_1/k_2$ は変わらない．$k_1$ が 5 倍なら $k_2$ も 5 倍で，X の生成速度は $5\\times2.0\\times10^{-3}=\\boldsymbol{1.0\\times10^{-2}\\,\\mathrm{mol/(L\\cdot min)}}$．平衡定数が同じなので平衡時の Z の濃度は (3) と\\textbf{変わらない}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "正反応と逆反応の速度式がそれぞれ1段階の反応で表されるとき，平衡では速度が等しくなるので平衡定数は速度定数の比 k₁/k₂ になる．触媒は k₁ と k₂ を同じ倍率で変えるので，平衡に達する速さは変わっても平衡組成は変わらない．"
+ },
+ "concepts": [
+  "chemical-equilibrium"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "平衡定数",
+  "速度定数",
+  "触媒",
+  "化学平衡"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

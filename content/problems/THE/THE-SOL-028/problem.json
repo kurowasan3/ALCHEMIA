@@ -1,0 +1,109 @@
+{
+ "id": "THE-SOL-028",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-09",
+ "topic": "理想溶液の蒸気組成と分留（ラウールの法則）",
+ "course": "化学",
+ "level": 1,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ベンゼンとトルエンの混合溶液は理想溶液とみなせ，各成分の分圧は「純粋な液体の蒸気圧 × 溶液中のモル分率」で表される（ラウールの法則）．$90$ ℃ における純粋なベンゼンとトルエンの蒸気圧は，それぞれ $1.36\\times10^{5}\\,\\mathrm{Pa}$，$5.4\\times10^{4}\\,\\mathrm{Pa}$ である．外圧は $1.0\\times10^{5}\\,\\mathrm{Pa}$ とし，数値は有効数字2桁で答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "外圧 $1.0\\times10^{5}\\,\\mathrm{Pa}$ のもとで $90$ ℃ で沸騰する混合溶液中のベンゼンのモル分率を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) の溶液が沸騰しているとき，出てくる蒸気中のベンゼンのモル分率を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の蒸気をすべて凝縮させた液体の $90$ ℃ における蒸気圧（全圧）を求めよ．この液体の沸点は $90$ ℃ より高いか低いか．"
+     },
+     {
+      "id": "4",
+      "tex": "ベンゼンのモル分率 $0.30$ の溶液の $90$ ℃ における蒸気圧を求め，この溶液の沸点が $90$ ℃ より高いか低いかを答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$0.56$"
+   },
+   {
+    "id": "2",
+    "tex": "$0.76$"
+   },
+   {
+    "id": "3",
+    "tex": "$1.2\\times10^{5}\\,\\mathrm{Pa}$，$90$ ℃ より低い"
+   },
+   {
+    "id": "4",
+    "tex": "$7.9\\times10^{4}\\,\\mathrm{Pa}$，$90$ ℃ より高い"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} ベンゼンのモル分率を $x$ とすると，全蒸気圧が外圧に等しいとき沸騰するので\n\\[ 1.36\\times10^{5}x+5.4\\times10^{4}(1-x)=1.0\\times10^{5} \\quad\\Rightarrow\\quad x=\\frac{46}{82}=\\boldsymbol{0.56} \\]\n\\textbf{(2)} 蒸気中のモル分率は分圧の比なので $y=\\dfrac{1.36\\times10^{5}\\times0.561}{1.0\\times10^{5}}=\\boldsymbol{0.76}$．蒸気は揮発しやすい（蒸気圧の大きい）ベンゼンに富む．\n\\textbf{(3)} ベンゼンのモル分率 $0.763$ の液体の蒸気圧は $1.36\\times10^{5}\\times0.763+5.4\\times10^{4}\\times0.237=1.17\\times10^{5}\\fallingdotseq\\boldsymbol{1.2\\times10^{5}\\,\\mathrm{Pa}}$．$90$ ℃ ですでに外圧をこえているので，沸点は $90$ ℃ より\\textbf{低い}．\n\\textbf{(4)} $1.36\\times10^{5}\\times0.30+5.4\\times10^{4}\\times0.70=7.86\\times10^{4}\\fallingdotseq\\boldsymbol{7.9\\times10^{4}\\,\\mathrm{Pa}}$．外圧に届かないので，沸騰させるにはもっと温度を上げる必要があり，沸点は $90$ ℃ より\\textbf{高い}．\nこのように，蒸発と凝縮をくり返すたびにベンゼンの割合が増え，沸点が下がっていく．これが分留の原理である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "理想溶液では各成分の分圧はモル分率に比例し，全蒸気圧が外圧に等しい温度で沸騰する．蒸気は蒸気圧の大きい成分に富むので，凝縮した液体は沸点が低くなり，くり返すと揮発しやすい成分が濃縮される．"
+ },
+ "concepts": [
+  "solution-colligative",
+  "ideal-gas",
+  "vapor-pressure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ラウールの法則",
+  "蒸気圧",
+  "分留",
+  "理想溶液",
+  "モル分率"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,132 @@
+{
+ "id": "THE-BND-076",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-03",
+ "topic": "赤銅鉱型（Cu₂O 型）結晶の組成・配位数・原子間距離と密度（酸化銀）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図の立方体の単位格子（一辺 $a$）をもつ結晶がある．原子 B は立方体の各頂点と中心（体心）にある．原子 A は，体心と頂点を結ぶ 8 本の線分の中点のうち，図のように互いに隣り合わない 4 つ（正四面体の頂点をなす位置）にある．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "この結晶の組成式を A，B を用いて表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "原子 A に最も近い原子 B の数と，原子 B に最も近い原子 A の数をそれぞれ答えよ．また，原子 A のまわりの原子 B の配置（直線形・正三角形・正四面体形）を答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "最も近い A と B の中心間距離を $r$ とするとき，$a$ を $r$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "最も近い A どうしの中心間距離を $a$ で表せ．"
+     },
+     {
+      "id": "5",
+      "tex": "酸化銀 $\\ce{Ag2O}$ はこの構造をとり（A が Ag，B が O），$a=0.472\\,\\mathrm{nm}$ である．最も近い Ag と O の中心間距離 [nm] と，結晶の密度 [$\\mathrm{g/cm^3}$] を有効数字 3 桁で求めよ．原子量 O$=16$，Ag$=108$，アボガドロ定数 $6.0\\times10^{23}\\,\\mathrm{/mol}$，$\\sqrt3=1.73$，$0.472^3=0.105$ とする．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：赤銅鉱型（Cu₂O 型）結晶の組成・配位数・原子間距離と密度（酸化銀）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{A2B}$"
+   },
+   {
+    "id": "2",
+    "tex": "A に最も近い B 2 個，B に最も近い A 4 個；直線形"
+   },
+   {
+    "id": "3",
+    "tex": "$a=\\dfrac{4\\sqrt3}{3}r$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\dfrac{\\sqrt2}{2}a$"
+   },
+   {
+    "id": "5",
+    "tex": "$0.204\\,\\mathrm{nm}$，$7.37\\,\\mathrm{g/cm^3}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} B は $8\\times\\dfrac18+1=2$ 個，A は単位格子の内部に 4 個．$\\mathrm A:\\mathrm B=4:2$ より $\\boldsymbol{\\ce{A2B}}$．\n\n\\textbf{(2)} A は体心の B と 1 つの頂点の B を結ぶ線分の中点にあり，この 2 個の B から等距離 $\\dfrac{\\sqrt3}{4}a$ にある（ほかの B はもっと遠い）．A に最も近い B は \\textbf{2 個}で，B–A–B は一直線（\\textbf{直線形}）．体心の B は 4 個の A に正四面体形に囲まれ，頂点の B も隣の単位格子の A を含めて 4 個に囲まれる．B に最も近い A は \\textbf{4 個}．「A の数 × A の配位数 ＝ B の数 × B の配位数」より $4\\times2=2\\times4$ と確かめられる．\n\n\\textbf{(3)} A–B は体対角線（$\\sqrt3a$）の $\\dfrac14$ なので $r=\\dfrac{\\sqrt3}{4}a$，$\\boldsymbol{a=\\dfrac{4\\sqrt3}{3}r}$．\n\n\\textbf{(4)} A の座標は $\\left(\\tfrac14,\\tfrac14,\\tfrac14\\right)a$，$\\left(\\tfrac34,\\tfrac34,\\tfrac14\\right)a$ などで，差は $\\left(\\tfrac12,\\tfrac12,0\\right)a$．距離は $\\boldsymbol{\\dfrac{\\sqrt2}{2}a}$．\n\n\\textbf{(5)} Ag–O は $\\dfrac{\\sqrt3}{4}\\times0.472=\\dfrac{1.73\\times0.472}{4}=\\boldsymbol{0.204\\,\\mathrm{nm}}$．単位格子には $\\ce{Ag2O}$（式量 232）が 2 組含まれるので\n\\[ \\frac{2\\times232}{6.0\\times10^{23}\\times0.105\\times10^{-21}}=\\boldsymbol{7.37\\,\\mathrm{g/cm^3}} \\]\n（$a^3=0.105\\times10^{-21}\\,\\mathrm{cm^3}$．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "体心立方に並ぶ B と，体心–頂点を結ぶ線分の中点の半分に入る A からなる結晶（Cu₂O 型）で，単位格子中の粒子数から組成を，体対角線の 1/4 を最近接距離として配位数（A は直線 2 配位，B は正四面体 4 配位）と格子定数・密度を求める．"
+ },
+ "concepts": [
+  "chemical-bond",
+  "complex-ion",
+  "transition-metals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "赤銅鉱型",
+  "酸化銀",
+  "配位数",
+  "単位格子",
+  "密度",
+  "原子間距離"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

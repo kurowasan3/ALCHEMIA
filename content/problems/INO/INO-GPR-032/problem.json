@@ -1,0 +1,109 @@
+{
+ "id": "INO-GPR-032",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-09",
+ "topic": "気体の発生反応で生成・消費される水の量（反応式の係数の比較）",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "equation",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応ア〜クで気体を発生させる．\nア：銅に濃硝酸を加える．　イ：銅に希硝酸を加える．\\\\\nウ：銅に濃硫酸を加えて加熱する．　エ：硫化鉄(II)に希硫酸を加える．\\\\\nオ：アルミニウムに水酸化ナトリウム水溶液を加える（テトラヒドロキシドアルミン酸ナトリウムが生じる）．\\\\\nカ：炭化カルシウムに水を加える．　キ：塩化アンモニウムと水酸化カルシウムの混合物を加熱する．\\\\\nク：窒化マグネシウム $\\ce{Mg3N2}$ に水を加える．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ア，イ，オの反応式を書け．"
+     },
+     {
+      "id": "2",
+      "tex": "発生する気体 $1\\,\\mathrm{mol}$ あたりに生成する水の物質量を，ア とイ についてそれぞれ答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "ア〜クのうち，反応で水を消費する（水が反応物として係数をもつ）ものをすべて選べ．また，その中で発生する気体 $1\\,\\mathrm{mol}$ あたりの水の消費量が最も多いものを選び，その量を答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "キ とク はどちらもアンモニアを発生させる．アンモニア $1\\,\\mathrm{mol}$ あたりの水の物質量変化（生成を正，消費を負とする）をそれぞれ答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "ア：$\\ce{Cu + 4HNO3 -> Cu(NO3)2 + 2NO2 + 2H2O}$，イ：$\\ce{3Cu + 8HNO3 -> 3Cu(NO3)2 + 2NO + 4H2O}$，オ：$\\ce{2Al + 2NaOH + 6H2O -> 2Na[Al(OH)4] + 3H2}$"
+   },
+   {
+    "id": "2",
+    "tex": "ア：$1\\,\\mathrm{mol}$，イ：$2\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "オ，カ，ク；最も多いのはク で $3\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "4",
+    "tex": "キ：$+1\\,\\mathrm{mol}$，ク：$-3\\,\\mathrm{mol}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{反応式}\nア：$\\ce{Cu + 4HNO3 -> Cu(NO3)2 + 2NO2 + 2H2O}$\\\\\nイ：$\\ce{3Cu + 8HNO3 -> 3Cu(NO3)2 + 2NO + 4H2O}$\\\\\nウ：$\\ce{Cu + 2H2SO4 -> CuSO4 + SO2 + 2H2O}$\\\\\nエ：$\\ce{FeS + H2SO4 -> FeSO4 + H2S}$（水の出入りなし）\\\\\nオ：$\\ce{2Al + 2NaOH + 6H2O -> 2Na[Al(OH)4] + 3H2}$\\\\\nカ：$\\ce{CaC2 + 2H2O -> Ca(OH)2 + C2H2}$\\\\\nキ：$\\ce{2NH4Cl + Ca(OH)2 -> CaCl2 + 2NH3 + 2H2O}$\\\\\nク：$\\ce{Mg3N2 + 6H2O -> 3Mg(OH)2 + 2NH3}$\n\n\\textbf{(2)}　ア：$\\ce{NO2}$ 2 mol で $\\ce{H2O}$ 2 mol → $\\boldsymbol{1\\,\\mathrm{mol}}$．イ：$\\ce{NO}$ 2 mol で $\\ce{H2O}$ 4 mol → $\\boldsymbol{2\\,\\mathrm{mol}}$．硝酸の N の酸化数の変化は $\\ce{NO2}$（+5→+4）で 1，$\\ce{NO}$（+5→+2）で 3 と大きく，硝酸から外れる O が多いぶん，それを受け取る水が多くできる．\n\n\\textbf{(3)}　水が反応物になるのは，水と反応して気体を出す$\\boldsymbol{\\text{オ，カ，ク}}$．気体 1 mol あたりの消費量はオ $6/3=2$，カ $2/1=2$，ク $6/2=3$ なので，最も多いのは$\\boldsymbol{\\text{ク}}$（$\\boldsymbol{3\\,\\mathrm{mol}}$）．酸化還元反応のア〜ウでは，酸から外れた O が水になるので水が生成し，弱酸の遊離のエでは水は出入りしない．\n\n\\textbf{(4)}　キ：$\\ce{NH3}$ 2 mol で $\\ce{H2O}$ が 2 mol 生成 → $\\boldsymbol{+1\\,\\mathrm{mol}}$．ク：$\\ce{NH3}$ 2 mol で $\\ce{H2O}$ 6 mol 消費 → $\\boldsymbol{-3\\,\\mathrm{mol}}$．同じ気体でも，$\\ce{NH4+}$ から $\\ce{H+}$ を $\\ce{OH-}$ が奪う（水ができる）反応と，$\\ce{N^3-}$ が水から $\\ce{H+}$ を奪う（水を使う）反応とで，水の出入りは逆になる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "気体の発生反応の反応式を完成させ，水が生成物になる反応（酸化剤の酸から外れた O や中和でできる水）と反応物になる反応（水と反応して気体を出す）を区別する．同じ気体でも製法によって水の出入りは逆になり，酸化数の変化が大きいほど水が多くできることを係数で比べる．"
+ },
+ "concepts": [
+  "gas-preparation",
+  "nitrogen-phosphorus",
+  "acid-base"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "気体の製法",
+  "反応式",
+  "水の生成と消費",
+  "硝酸",
+  "アンモニア"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,108 @@
+{
+ "id": "THE-GAS-020",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-08",
+ "topic": "定積冷却と定圧冷却での凝縮の始まり方の比較",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "compare",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水 $0.050\\,\\mathrm{mol}$ と窒素 $0.050\\,\\mathrm{mol}$ を用いて，次の2つの実験を行った．どちらも 100 ℃ では水はすべて気体であった．\n実験 I：容積 $6.2\\,\\mathrm L$ の密閉容器に入れ，100 ℃ から 30 ℃ までゆっくり冷却した．\n実験 II：なめらかに動くピストン付き容器に入れ，外圧 $1.0\\times10^{5}\\,\\mathrm{Pa}$ のもとで 100 ℃ から 30 ℃ までゆっくり冷却した．\n水の飽和蒸気圧は次の表のとおりとし，$R=8.3\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$，液体の水の体積と窒素の水への溶解は無視する．\n\\[\\begin{array}{c|ccccccccc}\\text{温度}\\,(^\\circ\\mathrm C) & 20 & 30 & 40 & 50 & 60 & 70 & 80 & 90 & 100\\\\\\hline \\text{飽和蒸気圧}\\,(\\times10^{3}\\,\\mathrm{Pa}) & 2.3 & 4.2 & 7.4 & 12 & 20 & 31 & 47 & 70 & 101\\end{array}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "100 ℃ における水蒸気の分圧は，実験 I，II でそれぞれ何 Pa か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "冷却の途中で水滴が生じ始める温度は，実験 I，II でそれぞれ何 ℃ から何 ℃ の間か．表の 10 ℃ きざみで答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) で，水滴が生じ始める温度が高いのはどちらの実験か．その理由を，冷却中の水蒸気の分圧の変化にふれて説明せよ．"
+     },
+     {
+      "id": "4",
+      "tex": "30 ℃ で液体として存在する水は，実験 I，II でそれぞれ何 mol か．有効数字2桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "I：$2.5\\times10^{4}\\,\\mathrm{Pa}$，II：$5.0\\times10^{4}\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "2",
+    "tex": "I：60 ℃ と 70 ℃ の間，II：80 ℃ と 90 ℃ の間"
+   },
+   {
+    "id": "3",
+    "tex": "実験 II．定圧では水蒸気のモル分率が一定なので分圧は $5.0\\times10^{4}\\,\\mathrm{Pa}$ のまま保たれるが，定積では分圧が絶対温度に比例して下がるため，飽和蒸気圧に達する温度が低くなる．"
+   },
+   {
+    "id": "4",
+    "tex": "I：$0.040\\,\\mathrm{mol}$，II：$0.048\\,\\mathrm{mol}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　I：$p=\\dfrac{0.050\\times8.3\\times10^{3}\\times373}{6.2}=2.50\\times10^{4}\\approx\\boldsymbol{2.5\\times10^{4}\\,\\mathrm{Pa}}$．\nII：全圧 $1.0\\times10^{5}\\,\\mathrm{Pa}$ で水のモル分率が $\\dfrac12$ なので $\\boldsymbol{5.0\\times10^{4}\\,\\mathrm{Pa}}$．\n\n\\textbf{(2)}　水がすべて気体だと仮定した分圧が飽和蒸気圧を超えたところで凝縮が始まる．\nI：分圧は絶対温度に比例し，70 ℃ で $2.50\\times10^{4}\\times\\dfrac{343}{373}=2.30\\times10^{4}<3.1\\times10^{4}$（凝縮しない），60 ℃ で $2.23\\times10^{4}>2.0\\times10^{4}$（凝縮する）．よって\\textbf{60 ℃ と 70 ℃ の間}．\nII：分圧は $5.0\\times10^{4}\\,\\mathrm{Pa}$ で一定．90 ℃ では $7.0\\times10^{4}$ より小さく，80 ℃ では $4.7\\times10^{4}$ より大きいので\\textbf{80 ℃ と 90 ℃ の間}．\n\n\\textbf{(3)}　\\textbf{実験 II}．定圧で冷やすとピストンが下がって体積が小さくなり，水蒸気の分圧（＝全圧×モル分率）は変わらない．定積で冷やすと分圧は温度に比例して下がる．飽和蒸気圧は温度とともに下がるので，分圧が高く保たれる II の方が高い温度で飽和に達する．\n\n\\textbf{(4)}　30 ℃ では水蒸気の分圧は飽和蒸気圧 $4.2\\times10^{3}\\,\\mathrm{Pa}$．\nI：気体の水は $\\dfrac{4.2\\times10^{3}\\times6.2}{8.3\\times10^{3}\\times303}=1.04\\times10^{-2}\\,\\mathrm{mol}$，液体は $0.050-0.010=\\boldsymbol{0.040\\,\\mathrm{mol}}$．\nII：窒素の分圧は $1.0\\times10^{5}-4.2\\times10^{3}=9.58\\times10^{4}\\,\\mathrm{Pa}$．物質量の比＝分圧の比より，気体の水は $0.050\\times\\dfrac{4.2\\times10^{3}}{9.58\\times10^{4}}=2.2\\times10^{-3}\\,\\mathrm{mol}$，液体は $\\boldsymbol{0.048\\,\\mathrm{mol}}$．\n定圧の方が体積が小さくなるので，気体として残れる水が少なく，液体が多い．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "容積一定で冷やすと蒸気の分圧は絶対温度に比例して下がるが，全圧一定で冷やすと分圧はモル分率で決まり一定に保たれることを比べ，凝縮が始まる温度と凝縮量の違いを判断する．"
+ },
+ "concepts": [
+  "ideal-gas",
+  "vapor-pressure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "蒸気圧",
+  "分圧",
+  "凝縮",
+  "定積変化",
+  "定圧変化"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

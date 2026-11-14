@@ -1,0 +1,116 @@
+{
+ "id": "THE-MOL-045",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-04",
+ "topic": "水素 1 kg を貯蔵する方法（高圧気体・液体・有機ハイドライド・水素化物）の体積の比較",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水素 $\\ce{H2}$ $1.0\\,\\mathrm{kg}$ を，次の 4 つの方法で貯蔵する場合の体積を比べる．原子量は $\\ce{H}=1.0$，$\\ce{C}=12$，$\\ce{Mg}=24.3$，気体定数は $R = 8.31 \\times 10^{3}\\,\\mathrm{Pa \\cdot L/(K \\cdot mol)}$ とし，容器の体積は考えない．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "方法 A：$25\\,^\\circ\\mathrm{C}$，$3.5 \\times 10^{7}\\,\\mathrm{Pa}$ の圧縮気体として貯蔵する．水素を理想気体とみなすと体積は何 L か，有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "方法 B：液体水素（密度 $0.071\\,\\mathrm{kg/L}$）として貯蔵する．体積は何 L か，有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "方法 C：ナフタレン $\\ce{C10H8}$ に水素を付加して得られるデカリン $\\ce{C10H18}$（液体，密度 $0.88\\,\\mathrm{kg/L}$）として貯蔵する．このときの化学反応式を書け．また，$1.0\\,\\mathrm{kg}$ の水素をすべてデカリンにしたとき，デカリンの質量は何 kg，体積は何 L か，それぞれ有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "方法 D：マグネシウムに吸蔵させた水素化マグネシウム $\\ce{MgH2}$（固体，密度 $1.45\\,\\mathrm{kg/L}$）として貯蔵する．体積は何 L か，有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "方法 A〜D を，水素 $1.0\\,\\mathrm{kg}$ を貯蔵する体積の小さいものから順に並べよ．また，貯蔵に使う物質（水素以外の部分も含めた全体）の質量が最も大きいのはどの方法か，記号で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$35\\,\\mathrm{L}$"
+   },
+   {
+    "id": "2",
+    "tex": "$14\\,\\mathrm{L}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{C10H8 + 5H2 -> C10H18}$，質量 $14\\,\\mathrm{kg}$，体積 $16\\,\\mathrm{L}$"
+   },
+   {
+    "id": "4",
+    "tex": "$9.1\\,\\mathrm{L}$"
+   },
+   {
+    "id": "5",
+    "tex": "D，B，C，A の順．質量が最も大きいのは C"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "水素 $1.0\\,\\mathrm{kg}$ は $\\dfrac{1000}{2.0} = 500\\,\\mathrm{mol}$．\n\n\\textbf{(1) 圧縮気体}　$V = \\dfrac{nRT}{P} = \\dfrac{500 \\times 8.31 \\times 10^{3} \\times 298}{3.5 \\times 10^{7}} = 35.4 \\fallingdotseq \\boldsymbol{35\\,\\mathrm{L}}$．\n\n\\textbf{(2) 液体水素}　$\\dfrac{1.0}{0.071} = 14.1 \\fallingdotseq \\boldsymbol{14\\,\\mathrm{L}}$．\n\n\\textbf{(3) デカリン}　$\\ce{C10H8 + 5H2 -> C10H18}$．$\\ce{H2}$ $500\\,\\mathrm{mol}$ からデカリン $100\\,\\mathrm{mol}$（分子量 $138$）が生じるので，質量は $100 \\times 138 = 13.8 \\times 10^{3}\\,\\mathrm{g} \\fallingdotseq \\boldsymbol{14\\,\\mathrm{kg}}$，体積は $\\dfrac{13.8}{0.88} = 15.7 \\fallingdotseq \\boldsymbol{16\\,\\mathrm{L}}$．デカリンは常温で液体なので，ガソリンと同じように運べるのが利点である．\n\n\\textbf{(4) 水素化マグネシウム}　$\\ce{MgH2}$ 1 mol に $\\ce{H2}$ 1 mol が含まれるので $\\ce{MgH2}$ は $500\\,\\mathrm{mol}$（式量 $26.3$）で $13.15\\,\\mathrm{kg}$．体積は $\\dfrac{13.15}{1.45} = 9.07 \\fallingdotseq \\boldsymbol{9.1\\,\\mathrm{L}}$．\n\n\\textbf{(5) 比較}　体積は D（9.1 L）＜ B（14 L）＜ C（16 L）＜ A（35 L）．固体の水素化物は，水素原子が金属の結晶の中に詰め込まれているので，液体水素よりも水素の密度が高い．一方，貯蔵に使う物質全体の質量は A・B が $1.0\\,\\mathrm{kg}$，D が $13\\,\\mathrm{kg}$，C が $14\\,\\mathrm{kg}$ で，$\\boldsymbol{\\text{C}}$ が最も大きい（質量で見ると水素の割合は C で約 $7.2\\,\\%$，D で約 $7.6\\,\\%$）．体積で有利な方法が質量で有利とは限らない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "水素を同じ質量だけ貯蔵するとき，気体は状態方程式，液体・固体は密度，化合物にする方法は反応式の係数で貯蔵物質の物質量・質量を求め，密度で体積に換算して比べる．体積で有利な方法（水素化物）と質量で有利な方法（水素そのもの）が異なることを読み取る．"
+ },
+ "concepts": [
+  "mole",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "水素の貯蔵",
+  "気体の状態方程式",
+  "密度",
+  "有機ハイドライド",
+  "水素化物"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

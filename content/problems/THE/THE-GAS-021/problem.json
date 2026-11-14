@@ -1,0 +1,117 @@
+{
+ "id": "THE-GAS-021",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-08",
+ "topic": "温度の異なる連結容器での気体の分配",
+ "course": "化学",
+ "level": 3,
+ "minutes": 18,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "容積 $2.0\\,\\mathrm L$ の容器 A と容積 $3.0\\,\\mathrm L$ の容器 B がコックでつながれている．コックを閉じて A にメタン $0.040\\,\\mathrm{mol}$，B に酸素 $0.20\\,\\mathrm{mol}$ を入れ，ともに 27 ℃ に保った．$R=8.3\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$，27 ℃ の水の飽和蒸気圧を $3.6\\times10^{3}\\,\\mathrm{Pa}$ とし，連結部の容積と容器の熱膨張，液体の水の体積は無視する．答えは有効数字2桁で示せ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A 内の圧力は何 Pa か．"
+     },
+     {
+      "id": "2",
+      "tex": "27 ℃ のままコックを開いて十分に時間がたったとき，メタンの分圧は何 Pa か．"
+     },
+     {
+      "id": "3",
+      "tex": "コックを開いたまま，A を 27 ℃，B を 227 ℃ に保った．十分に時間がたったときの圧力は何 Pa か．また，このとき A 内にある気体は何 mol か．A に入っている気体の割合は，A の容積の割合 $\\dfrac{2.0}{5.0}$ と比べて大きいか小さいか．"
+     },
+     {
+      "id": "4",
+      "tex": "次に A，B をともに 227 ℃ にしてメタンを完全燃焼させた．燃焼後の 227 ℃ での圧力は何 Pa か．水はすべて気体であったとする．"
+     },
+     {
+      "id": "5",
+      "tex": "(4) の後でコックを閉じ，B だけを 27 ℃ まで冷却した．B 内で液体として存在する水は何 mol か．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$5.0\\times10^{4}\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "2",
+    "tex": "$2.0\\times10^{4}\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "3",
+    "tex": "$1.6\\times10^{5}\\,\\mathrm{Pa}$，$0.13\\,\\mathrm{mol}$，大きい"
+   },
+   {
+    "id": "4",
+    "tex": "$2.0\\times10^{5}\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "5",
+    "tex": "$0.044\\,\\mathrm{mol}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　$P=\\dfrac{0.040\\times8.3\\times10^{3}\\times300}{2.0}=4.98\\times10^{4}\\approx\\boldsymbol{5.0\\times10^{4}\\,\\mathrm{Pa}}$．\n\n\\textbf{(2)}　メタンが $5.0\\,\\mathrm L$ に広がるので $\\dfrac{0.040\\times8.3\\times10^{3}\\times300}{5.0}=1.99\\times10^{4}\\approx\\boldsymbol{2.0\\times10^{4}\\,\\mathrm{Pa}}$．\n\n\\textbf{(3)}　コックが開いているので A と B の圧力 $P$ は等しい．各容器の物質量は $n=\\dfrac{PV}{RT}$ なので\n\\[\\dfrac{P}{R}\\left(\\dfrac{2.0}{300}+\\dfrac{3.0}{500}\\right)=0.24\\quad\\Rightarrow\\quad P=\\dfrac{0.24\\times8.3\\times10^{3}}{0.01267}=1.57\\times10^{5}\\approx\\boldsymbol{1.6\\times10^{5}\\,\\mathrm{Pa}}\\]\nA 内は $n_\\mathrm A=\\dfrac{1.57\\times10^{5}\\times2.0}{8.3\\times10^{3}\\times300}=0.126\\approx\\boldsymbol{0.13\\,\\mathrm{mol}}$．全体の $\\dfrac{0.126}{0.24}=53\\,\\%$ で，容積の割合 $40\\,\\%$ より\\textbf{大きい}．同じ圧力なら低温の容器ほど単位体積あたりの物質量が多い（$n/V\\propto1/T$）からである．\n\n\\textbf{(4)}　$\\ce{CH4 + 2O2 -> CO2 + 2H2O}$ で気体の総物質量は変わらず $0.24\\,\\mathrm{mol}$．\n\\[P=\\dfrac{0.24\\times8.3\\times10^{3}\\times500}{5.0}=1.99\\times10^{5}\\approx\\boldsymbol{2.0\\times10^{5}\\,\\mathrm{Pa}}\\]\n\n\\textbf{(5)}　燃焼で生じた水は $0.080\\,\\mathrm{mol}$．同じ温度で均一になっているので，B には容積の割合 $\\dfrac{3.0}{5.0}$ の $0.048\\,\\mathrm{mol}$ がある．27 ℃ で B に気体として存在できる水は\n\\[\\dfrac{3.6\\times10^{3}\\times3.0}{8.3\\times10^{3}\\times300}=4.3\\times10^{-3}\\,\\mathrm{mol}\\]\nしたがって液体は $0.048-0.0043=0.0437\\approx\\boldsymbol{0.044\\,\\mathrm{mol}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "つながった容器では圧力が等しく，各容器の物質量は容積／絶対温度に比例して分配される．燃焼で気体の総物質量が変わらないことと，冷却した容器内で気体として残れる水の量（飽和蒸気圧）から凝縮量を求める．"
+ },
+ "concepts": [
+  "ideal-gas",
+  "mole",
+  "vapor-pressure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "気体の状態方程式",
+  "連結容器",
+  "温度差",
+  "燃焼",
+  "飽和蒸気圧"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 260" font-family="Noto Sans CJK JP, sans-serif" font-size="14">
+  <g stroke="currentColor" fill="none" stroke-width="1.5">
+    <line x1="50" y1="225" x2="335" y2="225"/>
+    <polyline points="329,220 335,225 329,230"/>
+    <line x1="50" y1="225" x2="50" y2="20"/>
+    <polyline points="45,26 50,20 55,26"/>
+    <line x1="70" y1="40" x2="300" y2="200" stroke-width="2"/>
+    <line x1="70" y1="95" x2="300" y2="155" stroke-width="2"/>
+  </g>
+  <line x1="196.5" y1="128.0" x2="196.5" y2="225" stroke="currentColor" stroke-dasharray="4 3" opacity="0.5"/>
+  <circle cx="196.5" cy="128.0" r="3" fill="currentColor"/>
+  <g fill="currentColor">
+    <text x="300" y="218" text-anchor="end">P</text>
+    <text x="306" y="160">Q</text>
+    <text x="196.5" y="243" text-anchor="middle">x<tspan baseline-shift="sub" font-size="10">0</tspan></text>
+    <text x="335" y="248" text-anchor="end">1/T</text>
+    <text x="58" y="18">log<tspan baseline-shift="sub" font-size="10">10</tspan> k</text>
+    <text x="40" y="240">O</text>
+  </g>
+</svg>

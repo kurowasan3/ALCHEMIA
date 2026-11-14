@@ -1,0 +1,109 @@
+{
+ "id": "THE-ELC-079",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-07",
+ "topic": "リチウムイオン電池の正極材料の過充電による分解（非整数組成の反応式と酸素の量）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "equation",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "リチウムイオン電池の正極の $\\ce{LiCoO2}$ は，充電されると $\\ce{Li+}$ が抜けて $\\ce{Li_{1-x}CoO2}$ となる．充電しすぎる（過充電）と，$\\ce{Li_{0.5}CoO2}$ のように Li の少ない状態から次の分解が起こり，$\\ce{O2}$ が発生して容量が減る．\n\\[ a\\,\\ce{Li_{0.5}CoO2} \\longrightarrow b\\,\\ce{LiCoO2} + c\\,\\ce{Co3O4} + d\\,\\ce{O2} \\]\nLi=6.9，Co=58.9，O=16 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{Li_{0.5}CoO2}$ 中の Co の（平均の）酸化数を答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "係数 $a\\sim d$ を最も簡単な整数で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\ce{O2}$ が $1\\,\\mathrm{mol}$ 発生するとき，反応した Co 原子全体の酸化数の減少の合計を答えよ．また，それが何の変化とつり合っているかを答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\ce{Li_{0.5}CoO2}$ $18.9\\,\\mathrm g$ のうち $50\\,\\%$ が分解したとき，発生する $\\ce{O2}$ の物質量を有効数字2桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$+3.5$"
+   },
+   {
+    "id": "2",
+    "tex": "$a=6$，$b=3$，$c=1$，$d=1$"
+   },
+   {
+    "id": "3",
+    "tex": "4（O 原子 2 個の酸化数が $-2$ から 0 に増える合計 4 とつり合う）"
+   },
+   {
+    "id": "4",
+    "tex": "$1.7\\times10^{-2}\\,\\mathrm{mol}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　Li は $+1$，O は $-2$ なので，Co の酸化数を $y$ とすると $0.5\\times(+1)+y+2\\times(-2)=0$，$y=\\boldsymbol{+3.5}$（$\\ce{Co^3+}$ と $\\ce{Co^4+}$ が半分ずつと考えてよい）．\n\n\\textbf{(2)}　原子の数のつり合いを立てる．\nLi：$0.5a=b$，　Co：$a=b+3c$，　O：$2a=2b+4c+2d$．\n$b=0.5a$ を Co の式に入れて $c=\\dfrac{a}{6}$．O の式から $2a=a+\\dfrac{2a}{3}+2d$，$d=\\dfrac{a}{6}$．$a=6$ とおくと\n\\[ \\ce{6Li_{0.5}CoO2 ->[\\text{}] 3LiCoO2 + Co3O4 + O2} \\]\n$\\boldsymbol{a=6,\\ b=3,\\ c=1,\\ d=1}$．\n\n\\textbf{(3)}　Co の酸化数は，$\\ce{LiCoO2}$ で $+3$，$\\ce{Co3O4}$ で平均 $+\\dfrac{8}{3}$．反応前の Co 6 個の酸化数の合計は $6\\times3.5=21$，反応後は $3\\times3+3\\times\\dfrac{8}{3}=17$ なので，減少の合計は $\\boldsymbol{4}$．これは $\\ce{O2}$ 1 分子をつくる O 原子 2 個の酸化数が $-2\\to0$ と合計 4 増える（電子 4 個を失う）変化とつり合っている．Co が還元され，酸化物イオンが酸化されて $\\ce{O2}$ が出る反応である．\n\n\\textbf{(4)}　$\\ce{Li_{0.5}CoO2}$ の式量は $0.5\\times6.9+58.9+32=94.35$．$\\dfrac{18.9}{94.35}=0.200\\,\\mathrm{mol}$ のうち $0.100\\,\\mathrm{mol}$ が分解し，係数比 $6:1$ より\n\\[ n(\\ce{O2})=\\frac{0.100}{6}=0.0167\\fallingdotseq\\boldsymbol{1.7\\times10^{-2}\\,\\mathrm{mol}} \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "非整数の組成をもつ正極材料の分解でも，各元素の原子数のつり合いから係数が決まり，Co の酸化数の減少の合計が O の酸化（O₂ の発生）とつり合うことで電子の収支を確かめられる．発生する O₂ の量は係数比から求まる．"
+ },
+ "concepts": [
+  "electrolysis",
+  "oxygen-sulfur",
+  "redox"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "リチウムイオン電池",
+  "過充電",
+  "酸化数",
+  "反応式の係数",
+  "コバルト酸リチウム"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

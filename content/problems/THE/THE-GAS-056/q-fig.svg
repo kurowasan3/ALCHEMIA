@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 220" font-family="Noto Sans CJK JP, sans-serif" font-size="14">
+  <g fill="none" stroke="currentColor" stroke-width="2">
+    <rect x="30" y="90" width="110" height="90" rx="14"/>
+    <rect x="230" y="70" width="130" height="110" rx="14"/>
+    <line x1="140" y1="135" x2="230" y2="135"/>
+    <line x1="295" y1="70" x2="295" y2="20"/>
+    <path d="M175 125 L195 145 L195 125 L175 145 Z"/>
+    <path d="M285 35 L305 55 L285 55 L305 35 Z"/>
+  </g>
+  <g fill="currentColor">
+    <ellipse cx="85" cy="166" rx="34" ry="9"/>
+    <text x="54" y="122">容器 I</text>
+    <text x="40" y="208" font-size="13">活性炭 0.050 g</text>
+    <text x="262" y="122">容器 II</text>
+    <text x="256" y="145" font-size="13">0.100 L</text>
+    <text x="176" y="118">A</text>
+    <text x="313" y="50">B</text>
+    <text x="310" y="22" font-size="13">導入・排気</text>
+    <text x="250" y="208" font-size="13">全体を 77 K に保つ</text>
+  </g>
+</svg>

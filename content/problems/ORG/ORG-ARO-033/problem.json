@@ -1,0 +1,117 @@
+{
+ "id": "ORG-ARO-033",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-05",
+ "topic": "芳香族アミン C₈H₁₁N の異性体と反応性",
+ "course": "化学",
+ "level": 3,
+ "minutes": 18,
+ "format": [
+  "structure",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "分子式 $\\ce{C8H11N}$ で，ベンゼン環を1つもつ化合物について考える（鏡像異性体は区別しない）．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ベンゼンの一置換体は何種類あるか．すべての示性式を書け．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) のうち，不斉炭素原子をもつものの示性式を書け．"
+     },
+     {
+      "id": "3",
+      "tex": "(1) のうち，無水酢酸を作用させてもアミドを生じないものの示性式を書け．"
+     },
+     {
+      "id": "4",
+      "tex": "(1) のうち，希塩酸と亜硝酸ナトリウムを $0\\sim5\\,^\\circ\\mathrm{C}$ で作用させて安定なジアゾニウム塩を生じ，フェノールとカップリングしてアゾ化合物を与えるものはどれか．あれば示性式を，なければ「なし」と答え，理由を述べよ．"
+     },
+     {
+      "id": "5",
+      "tex": "分子式 $\\ce{C8H11N}$ でベンゼン環をもつ化合物のうち，(4) の反応でアゾ化合物を与えるものは全部で何種類あるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "5 種類：$\\ce{C6H5CH2CH2NH2}$，$\\ce{C6H5CH(NH2)CH3}$，$\\ce{C6H5CH2NHCH3}$，$\\ce{C6H5NHCH2CH3}$，$\\ce{C6H5N(CH3)2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{C6H5CH(NH2)CH3}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{C6H5N(CH3)2}$"
+   },
+   {
+    "id": "4",
+    "tex": "なし．安定なジアゾニウム塩をつくるのはベンゼン環に $\\ce{-NH2}$ が直接結合した第一級芳香族アミンだけだが，(1) の第一級アミン2つは $\\ce{-NH2}$ が側鎖の炭素についており，$\\ce{C6H5NHCH2CH3}$ は第二級アミンだから．"
+   },
+   {
+    "id": "5",
+    "tex": "9 種類"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 側鎖は $\\ce{C2H6N}$．N の位置で分けると\n環–C–C–N：$\\ce{C6H5CH2CH2NH2}$，$\\ce{C6H5CH(NH2)CH3}$／環–C–N–C：$\\ce{C6H5CH2NHCH3}$／環–N–C–C：$\\ce{C6H5NHCH2CH3}$／環–N(C)C：$\\ce{C6H5N(CH3)2}$ の \\textbf{5 種類}．\n\\textbf{(2)} $\\ce{C6H5-}$，$\\ce{-CH3}$，$\\ce{-NH2}$，$\\ce{-H}$ が結合した炭素をもつ $\\boldsymbol{\\ce{C6H5CH(NH2)CH3}}$．\n\\textbf{(3)} アセチル化は N–H の H が $\\ce{-COCH3}$ に置き換わる反応．N に H がない第三級アミン $\\boldsymbol{\\ce{C6H5N(CH3)2}}$ はアミドにならない．\n\\textbf{(4)} 脂肪族の第一級アミン（$\\ce{-CH2NH2}$ など）は低温でもジアゾニウム塩が分解してしまい，第二級アミンはジアゾニウム塩をつくらない．よって一置換体には\\textbf{ない}．\n\\textbf{(5)} 環に $\\ce{-NH2}$ が直接つき，残りが $\\ce{C2H5}$ 分：$\\ce{C2H5C6H4NH2}$（$o,m,p$ の 3 種）と $\\ce{(CH3)2C6H3NH2}$（6 種）で \\textbf{9 種類}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "C₈H₁₁N の芳香族化合物を，N の位置（環に直接か側鎖か）とアミンの級数で整理する．アセチル化は N–H をもつアミンだけ，安定なジアゾニウム塩は環に −NH₂ が直接つく第一級芳香族アミンだけが与える．"
+ },
+ "concepts": [
+  "aromatic",
+  "organic-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "芳香族アミン",
+  "異性体",
+  "第一級アミン",
+  "アセチル化",
+  "ジアゾ化",
+  "不斉炭素"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

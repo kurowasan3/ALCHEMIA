@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 220">
+<line x1="51" y1="90" x2="67" y2="90" stroke="currentColor" stroke-width="1.5"/><line x1="89" y1="90" x2="105" y2="90" stroke="currentColor" stroke-width="1.5"/><line x1="127" y1="90" x2="143" y2="90" stroke="currentColor" stroke-width="1.5"/><line x1="165" y1="90" x2="181" y2="90" stroke="currentColor" stroke-width="1.5"/><line x1="203" y1="90" x2="219" y2="90" stroke="currentColor" stroke-width="1.5"/><line x1="241" y1="90" x2="257" y2="90" stroke="currentColor" stroke-width="1.5"/><line x1="279" y1="90" x2="295" y2="90" stroke="currentColor" stroke-width="1.5"/><line x1="317" y1="90" x2="333" y2="90" stroke="currentColor" stroke-width="1.5"/><line x1="355" y1="90" x2="371" y2="90" stroke="currentColor" stroke-width="1.5"/><line x1="393" y1="90" x2="409" y2="90" stroke="currentColor" stroke-width="1.5"/><line x1="431" y1="90" x2="447" y2="90" stroke="currentColor" stroke-width="1.5"/><line x1="469" y1="90" x2="485" y2="90" stroke="currentColor" stroke-width="1.5"/><line x1="507" y1="90" x2="523" y2="90" stroke="currentColor" stroke-width="1.5"/>
+<circle cx="40" cy="90" r="11" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<circle cx="78" cy="90" r="11" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<circle cx="116" cy="90" r="11" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<circle cx="154" cy="90" r="11" fill="currentColor" stroke="currentColor" stroke-width="1.5"/>
+<line x1="154" y1="79" x2="154" y2="45" stroke="#1f5fbf" stroke-width="4"/>
+<circle cx="192" cy="90" r="11" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<circle cx="230" cy="90" r="11" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<circle cx="268" cy="90" r="11" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<circle cx="306" cy="90" r="11" fill="currentColor" stroke="currentColor" stroke-width="1.5"/>
+<line x1="306" y1="79" x2="306" y2="45" stroke="#1f5fbf" stroke-width="4"/>
+<circle cx="344" cy="90" r="11" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<circle cx="382" cy="90" r="11" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<circle cx="420" cy="90" r="11" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<circle cx="458" cy="90" r="11" fill="currentColor" stroke="currentColor" stroke-width="1.5"/>
+<line x1="458" y1="79" x2="458" y2="45" stroke="#1f5fbf" stroke-width="4"/>
+<circle cx="496" cy="90" r="11" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<circle cx="534" cy="90" r="11" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<text x="306" y="30" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="#1f5fbf">橋かけ（ほかの分子へ）</text>
+<path d="M 28 112 L 28 120 L 128 120 L 128 112" fill="none" stroke="#c0392b" stroke-width="1.5"/>
+<text x="78.0" y="140" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#c0392b">末端の鎖</text>
+<path d="M 180 112 L 180 120 L 280 120 L 280 112" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<text x="230.0" y="140" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="currentColor">有効な鎖</text>
+<path d="M 332 112 L 332 120 L 432 120 L 432 112" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<text x="382.0" y="140" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="currentColor">有効な鎖</text>
+<path d="M 484 112 L 484 120 L 546 120 L 546 112" fill="none" stroke="#c0392b" stroke-width="1.5"/>
+<text x="515.0" y="140" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="13" fill="#c0392b">末端の鎖</text>
+<text x="300" y="200" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="currentColor">架橋された単位が k 個（図は k = 3）→ 有効な鎖 k − 1 本，末端の鎖 2 本</text>
+</svg>

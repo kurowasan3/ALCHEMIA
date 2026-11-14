@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 388" width="560" height="388">
+<text x="105" y="28" font-size="15" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">L-アラニン（基準）</text>
+<text x="105" y="110" font-size="15" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">C</text>
+<line x1="105" y1="95" x2="105" y2="63" stroke="currentColor" stroke-width="1.6"/>
+<text x="105" y="57" font-size="14" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">COOH</text>
+<line x1="114" y1="105" x2="145" y2="105" stroke="currentColor" stroke-width="1.6"/>
+<text x="149" y="110" font-size="14" text-anchor="start" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">NH<tspan baseline-shift="sub" font-size="10">2</tspan></text>
+<line x1="90.8" y1="103.3" x2="90.8" y2="106.7" stroke="currentColor" stroke-width="1.4"/>
+<line x1="85.7" y1="102.7" x2="85.7" y2="107.3" stroke="currentColor" stroke-width="1.4"/>
+<line x1="80.5" y1="102.0" x2="80.5" y2="108.0" stroke="currentColor" stroke-width="1.4"/>
+<line x1="75.3" y1="101.3" x2="75.3" y2="108.7" stroke="currentColor" stroke-width="1.4"/>
+<line x1="70.2" y1="100.7" x2="70.2" y2="109.3" stroke="currentColor" stroke-width="1.4"/>
+<line x1="65.0" y1="100.0" x2="65.0" y2="110.0" stroke="currentColor" stroke-width="1.4"/>
+<text x="61" y="110" font-size="14" text-anchor="end" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">H</text>
+<polygon points="105,114 100,147 110,147" fill="currentColor"/>
+<text x="105" y="165" font-size="14" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">CH<tspan baseline-shift="sub" font-size="10">3</tspan></text>
+<text x="285" y="28" font-size="15" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">（ア）</text>
+<text x="285" y="110" font-size="15" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">C</text>
+<line x1="285" y1="95" x2="285" y2="63" stroke="currentColor" stroke-width="1.6"/>
+<text x="285" y="57" font-size="14" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">NH<tspan baseline-shift="sub" font-size="10">2</tspan></text>
+<line x1="294" y1="105" x2="325" y2="105" stroke="currentColor" stroke-width="1.6"/>
+<text x="329" y="110" font-size="14" text-anchor="start" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">COOH</text>
+<line x1="270.8" y1="103.3" x2="270.8" y2="106.7" stroke="currentColor" stroke-width="1.4"/>
+<line x1="265.7" y1="102.7" x2="265.7" y2="107.3" stroke="currentColor" stroke-width="1.4"/>
+<line x1="260.5" y1="102.0" x2="260.5" y2="108.0" stroke="currentColor" stroke-width="1.4"/>
+<line x1="255.3" y1="101.3" x2="255.3" y2="108.7" stroke="currentColor" stroke-width="1.4"/>
+<line x1="250.2" y1="100.7" x2="250.2" y2="109.3" stroke="currentColor" stroke-width="1.4"/>
+<line x1="245.0" y1="100.0" x2="245.0" y2="110.0" stroke="currentColor" stroke-width="1.4"/>
+<text x="241" y="110" font-size="14" text-anchor="end" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">H</text>
+<polygon points="285,114 280,147 290,147" fill="currentColor"/>
+<text x="285" y="165" font-size="14" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">CH<tspan baseline-shift="sub" font-size="10">3</tspan></text>
+<text x="465" y="28" font-size="15" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">（イ）</text>
+<text x="465" y="110" font-size="15" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">C</text>
+<line x1="465" y1="95" x2="465" y2="63" stroke="currentColor" stroke-width="1.6"/>
+<text x="465" y="57" font-size="14" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">CH<tspan baseline-shift="sub" font-size="10">3</tspan></text>
+<line x1="474" y1="105" x2="505" y2="105" stroke="currentColor" stroke-width="1.6"/>
+<text x="509" y="110" font-size="14" text-anchor="start" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">NH<tspan baseline-shift="sub" font-size="10">2</tspan></text>
+<line x1="450.8" y1="103.3" x2="450.8" y2="106.7" stroke="currentColor" stroke-width="1.4"/>
+<line x1="445.7" y1="102.7" x2="445.7" y2="107.3" stroke="currentColor" stroke-width="1.4"/>
+<line x1="440.5" y1="102.0" x2="440.5" y2="108.0" stroke="currentColor" stroke-width="1.4"/>
+<line x1="435.3" y1="101.3" x2="435.3" y2="108.7" stroke="currentColor" stroke-width="1.4"/>
+<line x1="430.2" y1="100.7" x2="430.2" y2="109.3" stroke="currentColor" stroke-width="1.4"/>
+<line x1="425.0" y1="100.0" x2="425.0" y2="110.0" stroke="currentColor" stroke-width="1.4"/>
+<text x="421" y="110" font-size="14" text-anchor="end" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">H</text>
+<polygon points="465,114 460,147 470,147" fill="currentColor"/>
+<text x="465" y="165" font-size="14" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">COOH</text>
+<text x="105" y="208" font-size="15" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">（ウ）</text>
+<text x="105" y="290" font-size="15" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">C</text>
+<line x1="105" y1="275" x2="105" y2="243" stroke="currentColor" stroke-width="1.6"/>
+<text x="105" y="237" font-size="14" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">NH<tspan baseline-shift="sub" font-size="10">2</tspan></text>
+<line x1="114" y1="285" x2="145" y2="285" stroke="currentColor" stroke-width="1.6"/>
+<text x="149" y="290" font-size="14" text-anchor="start" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">COOH</text>
+<line x1="90.8" y1="283.3" x2="90.8" y2="286.7" stroke="currentColor" stroke-width="1.4"/>
+<line x1="85.7" y1="282.7" x2="85.7" y2="287.3" stroke="currentColor" stroke-width="1.4"/>
+<line x1="80.5" y1="282.0" x2="80.5" y2="288.0" stroke="currentColor" stroke-width="1.4"/>
+<line x1="75.3" y1="281.3" x2="75.3" y2="288.7" stroke="currentColor" stroke-width="1.4"/>
+<line x1="70.2" y1="280.7" x2="70.2" y2="289.3" stroke="currentColor" stroke-width="1.4"/>
+<line x1="65.0" y1="280.0" x2="65.0" y2="290.0" stroke="currentColor" stroke-width="1.4"/>
+<text x="61" y="290" font-size="14" text-anchor="end" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">CH<tspan baseline-shift="sub" font-size="10">3</tspan></text>
+<polygon points="105,294 100,327 110,327" fill="currentColor"/>
+<text x="105" y="345" font-size="14" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">H</text>
+<text x="285" y="208" font-size="15" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">（エ）</text>
+<text x="285" y="290" font-size="15" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">C</text>
+<line x1="285" y1="275" x2="285" y2="243" stroke="currentColor" stroke-width="1.6"/>
+<text x="285" y="237" font-size="14" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">NH<tspan baseline-shift="sub" font-size="10">2</tspan></text>
+<line x1="294" y1="285" x2="325" y2="285" stroke="currentColor" stroke-width="1.6"/>
+<text x="329" y="290" font-size="14" text-anchor="start" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">CH<tspan baseline-shift="sub" font-size="10">3</tspan></text>
+<line x1="270.8" y1="283.3" x2="270.8" y2="286.7" stroke="currentColor" stroke-width="1.4"/>
+<line x1="265.7" y1="282.7" x2="265.7" y2="287.3" stroke="currentColor" stroke-width="1.4"/>
+<line x1="260.5" y1="282.0" x2="260.5" y2="288.0" stroke="currentColor" stroke-width="1.4"/>
+<line x1="255.3" y1="281.3" x2="255.3" y2="288.7" stroke="currentColor" stroke-width="1.4"/>
+<line x1="250.2" y1="280.7" x2="250.2" y2="289.3" stroke="currentColor" stroke-width="1.4"/>
+<line x1="245.0" y1="280.0" x2="245.0" y2="290.0" stroke="currentColor" stroke-width="1.4"/>
+<text x="241" y="290" font-size="14" text-anchor="end" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">H</text>
+<polygon points="285,294 280,327 290,327" fill="currentColor"/>
+<text x="285" y="345" font-size="14" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">COOH</text>
+<text x="465" y="208" font-size="15" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">（オ）システイン</text>
+<text x="465" y="290" font-size="15" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">C</text>
+<line x1="465" y1="275" x2="465" y2="243" stroke="currentColor" stroke-width="1.6"/>
+<text x="465" y="237" font-size="14" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">CH<tspan baseline-shift="sub" font-size="10">2</tspan>SH</text>
+<line x1="474" y1="285" x2="505" y2="285" stroke="currentColor" stroke-width="1.6"/>
+<text x="509" y="290" font-size="14" text-anchor="start" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">COOH</text>
+<line x1="450.8" y1="283.3" x2="450.8" y2="286.7" stroke="currentColor" stroke-width="1.4"/>
+<line x1="445.7" y1="282.7" x2="445.7" y2="287.3" stroke="currentColor" stroke-width="1.4"/>
+<line x1="440.5" y1="282.0" x2="440.5" y2="288.0" stroke="currentColor" stroke-width="1.4"/>
+<line x1="435.3" y1="281.3" x2="435.3" y2="288.7" stroke="currentColor" stroke-width="1.4"/>
+<line x1="430.2" y1="280.7" x2="430.2" y2="289.3" stroke="currentColor" stroke-width="1.4"/>
+<line x1="425.0" y1="280.0" x2="425.0" y2="290.0" stroke="currentColor" stroke-width="1.4"/>
+<text x="421" y="290" font-size="14" text-anchor="end" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">H</text>
+<polygon points="465,294 460,327 470,327" fill="currentColor"/>
+<text x="465" y="345" font-size="14" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">NH<tspan baseline-shift="sub" font-size="10">2</tspan></text>
+<text x="280.0" y="382" font-size="13" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">▼のくさび：紙面の手前　破線のくさび：紙面の奥　ふつうの線：紙面内</text>
+</svg>

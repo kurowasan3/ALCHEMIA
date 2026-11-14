@@ -1,0 +1,101 @@
+{
+ "id": "THE-RDX-012",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-06",
+ "topic": "化学的酸素要求量（COD）と電子の授受",
+ "course": "化学",
+ "level": 1,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "化学的酸素要求量（COD）は，水中の被酸化性物質を酸化するのに使われた酸化剤の量を，同じ数の電子を受け取る酸素 $\\ce{O2}$ の質量に換算し，試料水 1 L あたりの mg で表したものである．原子量は H = 1.0，C = 12，O = 16 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "メタノールを $32.0\\,\\mathrm{mg/L}$ 含む水がある．メタノールが完全に酸化されて二酸化炭素と水になるとして，この水の COD を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "酢酸を $32.0\\,\\mathrm{mg/L}$ 含む水の COD は，(1) の値より大きいか，小さいか．数値を求めて答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "ある試料水 $100\\,\\mathrm{mL}$ を硫酸酸性にし，過マンガン酸カリウムで被酸化性物質を酸化したところ，$5.00\\times10^{-3}\\,\\mathrm{mol/L}$ 過マンガン酸カリウム水溶液 $6.25\\,\\mathrm{mL}$ 分が消費された．純水 $100\\,\\mathrm{mL}$ で同じ操作をすると $0.25\\,\\mathrm{mL}$ 分が消費された．$\\ce{MnO4-}$ は $\\ce{Mn^2+}$ に，$\\ce{O2}$ は $\\ce{H2O}$ に変わるとして，この試料水の COD を有効数字3桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$48.0\\,\\mathrm{mg/L}$"
+   },
+   {
+    "id": "2",
+    "tex": "小さい（$34.1\\,\\mathrm{mg/L}$）"
+   },
+   {
+    "id": "3",
+    "tex": "$12.0\\,\\mathrm{mg/L}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\ce{2CH3OH + 3O2 -> 2CO2 + 4H2O}$．メタノール $\\dfrac{32.0\\times10^{-3}}{32}=1.00\\times10^{-3}\\,\\mathrm{mol}$ に必要な $\\ce{O2}$ は $1.50\\times10^{-3}\\,\\mathrm{mol}$．\n\\[ 1.50\\times10^{-3}\\times32\\times10^{3}=\\boldsymbol{48.0\\,\\mathrm{mg/L}} \\]\n\n\\textbf{(2)} $\\ce{CH3COOH + 2O2 -> 2CO2 + 2H2O}$．酢酸 $\\dfrac{32.0\\times10^{-3}}{60}\\,\\mathrm{mol}$ に対し $\\ce{O2}$ はその2倍．\n\\[ \\dfrac{32.0\\times10^{-3}}{60}\\times2\\times32\\times10^{3}=34.1\\,\\mathrm{mg/L} \\]\n\\textbf{小さい}．酢酸は分子中にすでに酸素を多く含み（炭素がより酸化された状態にあり），同じ質量でも受け取らせる電子が少ないためである．\n\n\\textbf{(3)} 空試験の分を差し引くと，試料の酸化に使われた $\\ce{KMnO4}$ は\n\\[ 5.00\\times10^{-3}\\times\\dfrac{6.25-0.25}{1000}=3.00\\times10^{-5}\\,\\mathrm{mol} \\]\n$\\ce{MnO4- + 8H+ + 5e- -> Mn^2+ + 4H2O}$ より受け取った電子は $1.50\\times10^{-4}\\,\\mathrm{mol}$．$\\ce{O2 + 4H+ + 4e- -> 2H2O}$ より，これは $\\ce{O2}$ $3.75\\times10^{-5}\\,\\mathrm{mol}$ に相当する．\n\\[ 3.75\\times10^{-5}\\times32\\times10^{3}\\,\\mathrm{mg}\\times\\dfrac{1000}{100}=\\boldsymbol{12.0\\,\\mathrm{mg/L}} \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "COD は酸化剤が受け取った電子の物質量を O2（1 mol で 4 mol の電子）に換算して表すので，KMnO4 1 mol は O2 5/4 mol に相当する．理論 COD は物質の完全酸化に必要な O2 から求まり，同じ質量でも酸素を多く含む物質ほど小さい．"
+ },
+ "concepts": [
+  "redox",
+  "transition-metals",
+  "oxygen-sulfur"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "酸化還元反応",
+  "COD",
+  "過マンガン酸カリウム",
+  "電子の物質量",
+  "空試験"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

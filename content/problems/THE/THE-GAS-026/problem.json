@@ -1,0 +1,117 @@
+{
+ "id": "THE-GAS-026",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-08",
+ "topic": "水蒸気蒸留（互いに溶け合わない液体の蒸気圧）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "互いにほとんど溶け合わない2種類の液体 X と水の混合物を加熱すると，それぞれの液体は他方の影響を受けずに自分の飽和蒸気圧を示す．混合蒸気の全圧が外圧に等しくなると混合物は沸騰する．X の分子量を $M_{\\mathrm{X}}$，水の分子量を $18$，その温度での X と水の飽和蒸気圧を $P_{\\mathrm{X}}$，$P_{\\mathrm{W}}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "沸騰しているときに出てくる蒸気中の X と水の質量比 $W_{\\mathrm{X}}/W_{\\mathrm{W}}$ を，$M_{\\mathrm{X}}$，$P_{\\mathrm{X}}$，$P_{\\mathrm{W}}$ を用いて表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "ブロモベンゼン（分子量 $157$，沸点 $156\\,^\\circ\\mathrm{C}$）と水の混合物を $1.0\\times10^{5}\\,\\mathrm{Pa}$ のもとで加熱すると，$95\\,^\\circ\\mathrm{C}$ で沸騰が始まった．$95\\,^\\circ\\mathrm{C}$ の水の飽和蒸気圧を $8.5\\times10^{4}\\,\\mathrm{Pa}$ として，この温度でのブロモベンゼンの飽和蒸気圧を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の留出液で，水 $1.0\\,\\mathrm{g}$ あたりに含まれるブロモベンゼンは何 g か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) では，ブロモベンゼンの分圧は水の分圧よりずっと小さいのに，留出液の質量は水よりブロモベンゼンのほうが多い．その理由を簡潔に述べよ．"
+     },
+     {
+      "id": "5",
+      "tex": "蒸留を続けて液中のブロモベンゼンが減っていくと，2つの液体が両方残っている間，沸騰する温度はどうなるか．理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\dfrac{W_{\\mathrm{X}}}{W_{\\mathrm{W}}}=\\dfrac{M_{\\mathrm{X}}P_{\\mathrm{X}}}{18P_{\\mathrm{W}}}$"
+   },
+   {
+    "id": "2",
+    "tex": "$1.5\\times10^{4}\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "3",
+    "tex": "$1.5\\,\\mathrm{g}$"
+   },
+   {
+    "id": "4",
+    "tex": "蒸気中の物質量の比は分圧の比に等しいが，ブロモベンゼンの分子量（157）が水（18）の約 9 倍と大きいので，質量ではブロモベンゼンのほうが多くなる．"
+   },
+   {
+    "id": "5",
+    "tex": "変わらず $95\\,^\\circ\\mathrm{C}$ のまま．それぞれの蒸気圧は量によらず温度だけで決まり，全圧が外圧に等しくなる温度は液体が両方残っている限り同じだから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 同じ体積・温度の気相では物質量の比 = 分圧の比：$n_{\\mathrm{X}}/n_{\\mathrm{W}}=P_{\\mathrm{X}}/P_{\\mathrm{W}}$．質量は物質量×モル質量なので\n\\[\\frac{W_{\\mathrm{X}}}{W_{\\mathrm{W}}}=\\frac{M_{\\mathrm{X}}P_{\\mathrm{X}}}{18P_{\\mathrm{W}}}\\]\n\\textbf{(2)} $P_{\\mathrm{X}}+P_{\\mathrm{W}}=1.0\\times10^{5}$ より $P_{\\mathrm{X}}=1.0\\times10^{5}-8.5\\times10^{4}=\\boldsymbol{1.5\\times10^{4}\\,\\mathrm{Pa}}$．\n\\textbf{(3)} \\[\\frac{W_{\\mathrm{X}}}{W_{\\mathrm{W}}}=\\frac{157\\times1.5\\times10^{4}}{18\\times8.5\\times10^{4}}=1.53\\cdots\\]\nよって水 $1.0\\,\\mathrm g$ あたり $\\boldsymbol{1.5\\,\\mathrm{g}}$．\n\\textbf{(4)} 分圧が小さくても，分子1個が重ければ質量では多くなる．\n\\textbf{(5)} 純物質の沸点が量によらないのと同じで，2液相が共存する限り各成分の蒸気圧は温度だけの関数．よって沸騰温度は \\textbf{$95\\,^\\circ\\mathrm{C}$ で一定}．一方が無くなると温度が上がる．こうして沸点 $156\\,^\\circ\\mathrm{C}$ の物質を $100\\,^\\circ\\mathrm{C}$ 未満で留出でき，熱に弱い物質の精製に使われる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "互いに溶け合わない液体の混合物は，各成分の飽和蒸気圧の和が外圧に達した温度で沸騰する（どちらの沸点よりも低い）．蒸気中の物質量比は蒸気圧の比，質量比はそれに分子量をかけたものになる．"
+ },
+ "concepts": [
+  "ideal-gas",
+  "mole",
+  "vapor-pressure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "水蒸気蒸留",
+  "飽和蒸気圧",
+  "分圧",
+  "物質量比",
+  "沸騰"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

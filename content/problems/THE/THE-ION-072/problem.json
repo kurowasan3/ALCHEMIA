@@ -1,0 +1,118 @@
+{
+ "id": "THE-ION-072",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "金属硫化物の強酸への溶解（平衡定数 Ksp/K₁K₂）と酸化力のある酸による溶解",
+ "course": "化学",
+ "level": 3,
+ "minutes": 18,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "25 ℃ で，硫化水素の電離定数を $K_1=1.0\\times10^{-7}\\,\\mathrm{mol/L}$（$\\ce{H2S <=> H+ + HS-}$），$K_2=1.0\\times10^{-14}\\,\\mathrm{mol/L}$（$\\ce{HS- <=> H+ + S^2-}$）とし，硫化物の溶解度積を $\\ce{FeS}$：$5.0\\times10^{-18}$，$\\ce{ZnS}$：$2.0\\times10^{-24}$，$\\ce{CuS}$：$6.0\\times10^{-36}$（単位はいずれも $(\\mathrm{mol/L})^2$）とする．溶液の体積変化は無視し，生じた $\\ce{H2S}$ はすべて溶液中にとどまる（この問題の濃度範囲では飽和しない）ものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "2 価の金属の硫化物 $\\ce{MS}$ が強酸に溶ける反応 $\\ce{MS(s) + 2H+ <=>[\\text{}] M^2+ + H2S}$ の平衡定数 $K=\\dfrac{[\\ce{M^2+}][\\ce{H2S}]}{[\\ce{H+}]^2}$ を，溶解度積 $K_\\mathrm{sp}$ と $K_1$，$K_2$ を用いて表し，$\\ce{FeS}$，$\\ce{ZnS}$，$\\ce{CuS}$ のそれぞれについて値を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$\\ce{FeS}$，$\\ce{ZnS}$，$\\ce{CuS}$ をそれぞれ $1.0\\times10^{-2}\\,\\mathrm{mol}$ ずつ別々に $1.0\\,\\mathrm{mol/L}$ 塩酸 $1.0\\,\\mathrm{L}$ に加えた．完全に溶けるものをすべて選べ．"
+     },
+     {
+      "id": "3",
+      "tex": "同じことを $0.10\\,\\mathrm{mol/L}$ 塩酸 $1.0\\,\\mathrm{L}$ で行った．完全に溶けるものをすべて選べ．また，$\\ce{ZnS}$ は何 mol 溶けるか，有効数字2桁で求めよ（$\\sqrt{2.0\\times10^{-3}}=4.47\\times10^{-2}$ とする）．"
+     },
+     {
+      "id": "4",
+      "tex": "(2) で $\\ce{CuS}$ が溶けて生じる $\\ce{Cu^2+}$ のモル濃度を有効数字2桁で求めよ（$\\sqrt{60}=7.75$ とする）．"
+     },
+     {
+      "id": "5",
+      "tex": "$\\ce{CuS}$ は希硝酸と加熱すると溶け，硫黄が遊離して一酸化窒素が発生する．この変化をイオン反応式で表せ．また，塩酸には溶けない $\\ce{CuS}$ が希硝酸に溶ける理由を，(1) の平衡と関連づけて簡潔に述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$K=\\dfrac{K_\\mathrm{sp}}{K_1K_2}$；$\\ce{FeS}$：$5.0\\times10^{3}$，$\\ce{ZnS}$：$2.0\\times10^{-3}$，$\\ce{CuS}$：$6.0\\times10^{-15}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{FeS}$，$\\ce{ZnS}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{FeS}$ のみ；$\\ce{ZnS}$ は $4.1\\times10^{-3}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "4",
+    "tex": "$7.7\\times10^{-8}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\ce{3CuS + 8H+ + 2NO3- -> 3Cu^2+ + 3S + 2NO + 4H2O}$；硝酸イオンが $\\ce{S^2-}$（$\\ce{H2S}$）を酸化して $\\ce{S}$ にするので，溶けて生じた硫化物イオンが除かれ，溶解の平衡が右へ移動し続けるから（$\\ce{H+}$ との反応だけでは $K$ が小さすぎて溶けない）．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　$K=\\dfrac{[\\ce{M^2+}][\\ce{H2S}]}{[\\ce{H+}]^2}$ の分子・分母に $[\\ce{S^2-}][\\ce{HS-}]$ をかけて組み替えると\n\\[ K=[\\ce{M^2+}][\\ce{S^2-}]\\times\\dfrac{[\\ce{H2S}]}{[\\ce{H+}][\\ce{HS-}]}\\times\\dfrac{[\\ce{HS-}]}{[\\ce{H+}][\\ce{S^2-}]}=\\dfrac{K_\\mathrm{sp}}{K_1K_2} \\]\n$K_1K_2=1.0\\times10^{-21}$ なので，$\\ce{FeS}$：$\\boldsymbol{5.0\\times10^{3}}$，$\\ce{ZnS}$：$\\boldsymbol{2.0\\times10^{-3}}$，$\\ce{CuS}$：$\\boldsymbol{6.0\\times10^{-15}}$．\n\n\\textbf{(2)}　完全に溶けたと仮定したときの反応商 $Q$ を $K$ と比べる．$1.0\\times10^{-2}\\,\\mathrm{mol}$ が溶けると $[\\ce{M^2+}]=[\\ce{H2S}]=1.0\\times10^{-2}$，$[\\ce{H+}]=1.0-0.020=0.98\\,\\mathrm{mol/L}$ で\n\\[ Q=\\dfrac{(1.0\\times10^{-2})^2}{0.98^2}=1.04\\times10^{-4} \\]\n$Q<K$ なら完全に溶けた状態でもまだ右へ進もうとするので，完全に溶ける．$\\ce{FeS}$（$5.0\\times10^{3}$）と $\\ce{ZnS}$（$2.0\\times10^{-3}$）は $Q<K$ で完全に溶け，$\\ce{CuS}$ は $Q>K$ で溶けきれない．答えは$\\boldsymbol{\\text{FeS，ZnS}}$．\n\n\\textbf{(3)}　完全に溶けたとすると $[\\ce{H+}]=0.10-0.020=0.080$ で $Q=\\dfrac{1.0\\times10^{-4}}{0.080^2}=1.56\\times10^{-2}$．$\\ce{FeS}$ は $Q<K$ で完全に溶けるが，$\\ce{ZnS}$ は $Q>K$ で一部しか溶けない．答えは$\\boldsymbol{\\text{FeSのみ}}$．\n$\\ce{ZnS}$ が $s\\,\\mathrm{mol}$ 溶けるとすると $[\\ce{Zn^2+}]=[\\ce{H2S}]=s$，$[\\ce{H+}]=0.10-2s$ で\n\\[ \\dfrac{s^2}{(0.10-2s)^2}=2.0\\times10^{-3}\\ \\Rightarrow\\ \\dfrac{s}{0.10-2s}=4.47\\times10^{-2}\\ \\Rightarrow\\ s=\\dfrac{4.47\\times10^{-3}}{1+2\\times4.47\\times10^{-2}}=\\boldsymbol{4.1\\times10^{-3}\\,\\mathrm{mol}} \\]\n（加えた量の約 4 割）．$\\ce{ZnS}$ は強い酸性では溶けるが，酸が薄いと溶けきれない．系統分析で $\\ce{ZnS}$ が酸性では沈殿しにくく，中性〜塩基性で沈殿するのと同じ理由である．\n\n\\textbf{(4)}　$\\ce{CuS}$ が $s\\,\\mathrm{mol/L}$ 溶けるとすると $[\\ce{Cu^2+}]=[\\ce{H2S}]=s$，$[\\ce{H+}]\\fallingdotseq1.0$ で $s^2=6.0\\times10^{-15}$，\n\\[ s=\\sqrt{6.0\\times10^{-15}}=\\sqrt{60\\times10^{-16}}=7.75\\times10^{-8}\\fallingdotseq\\boldsymbol{7.7\\times10^{-8}\\,\\mathrm{mol/L}} \\]\n加えた $1.0\\times10^{-2}\\,\\mathrm{mol}$ のうち，ほとんど溶けない．\n\n\\textbf{(5)}　$\\ce{H+}$ だけでは $K$ が極めて小さく，$\\ce{S^2-}$ を $\\ce{H2S}$ として取り除く力が足りない．硝酸イオンは酸化剤として硫化物イオンを $\\ce{S}$ に酸化し（$\\ce{S^2- -> S + 2e-}$，$\\ce{NO3- + 4H+ + 3e- -> NO + 2H2O}$），$\\ce{S^2-}$ を事実上ゼロにするので，$\\ce{CuS <=> Cu^2+ + S^2-}$ が右へ移動し続けて溶ける．電子の数をそろえて\n\\[ \\ce{3CuS + 8H+ + 2NO3- -> 3Cu^2+ + 3S + 2NO + 4H2O} \\]\n同じ理由で，$\\ce{H2S}$ の発生に $\\ce{FeS}$ と希硫酸（または塩酸）を使い，硝酸は使わない（$\\ce{H2S}$ が酸化されてしまう）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "硫化物が強酸に溶ける反応 MS＋2H⁺ ⇄ M²⁺＋H₂S の平衡定数は Ksp/(K₁K₂) で，完全に溶けたと仮定した反応商と比べて溶けるかどうかを判断する．ZnS は濃い強酸には溶けるが薄い酸には一部しか溶けず，CuS は強酸でもほとんど溶けないので，S²⁻ を酸化して除く硝酸が必要になる．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "precipitation",
+  "nitrogen-phosphorus"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "硫化物",
+  "溶解度積",
+  "硫化水素",
+  "平衡定数",
+  "反応商",
+  "硝酸"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

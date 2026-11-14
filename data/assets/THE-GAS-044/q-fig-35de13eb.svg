@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 170" font-family="Noto Sans CJK JP, sans-serif" font-size="14">
+  <rect x="20" y="30" width="380" height="110" fill="none" stroke="currentColor" stroke-width="2.5"/>
+  <rect x="204" y="32" width="12" height="106" fill="currentColor" opacity="0.35" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M22 122 H202" stroke="currentColor" stroke-width="1.2"/>
+  <path d="M22 122 H202 V138 H22 Z" fill="#1f5fbf" opacity="0.18"/>
+  <path d="M218 125 H398" stroke="currentColor" stroke-width="1.2"/>
+  <path d="M218 125 H398 V138 H218 Z" fill="#1f5fbf" opacity="0.18"/>
+  <text x="112" y="70" text-anchor="middle">A</text>
+  <text x="112" y="92" text-anchor="middle" font-size="13">ベンゼンの蒸気</text>
+  <text x="308" y="70" text-anchor="middle">B</text>
+  <text x="308" y="92" text-anchor="middle" font-size="13">エタノールの蒸気</text>
+  <text x="112" y="160" text-anchor="middle" font-size="13">液体のベンゼン</text>
+  <text x="308" y="160" text-anchor="middle" font-size="13">液体のエタノール</text>
+  <text x="210" y="20" text-anchor="middle" font-size="13">ピストン</text>
+  <path d="M210 23 V31" stroke="currentColor" stroke-width="1"/>
+</svg>

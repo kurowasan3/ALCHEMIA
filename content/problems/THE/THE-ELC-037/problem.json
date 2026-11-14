@@ -1,0 +1,109 @@
+{
+ "id": "THE-ELC-037",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-07",
+ "topic": "同じ電気量で電気分解したときの電解液の質量変化",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次のア〜カの電解槽について，それぞれ電子 $0.100\\,\\mathrm{mol}$ に相当する電気量で電気分解を行った．発生した気体は水溶液に溶けず，すべて外に出ていくものとする．また，水の蒸発は無視する．原子量は H＝1.0，O＝16，Cl＝35.5，Cu＝64，Ag＝108 とする．\n\\[\n\\begin{array}{c|l|l}\n & \\text{電解液} & \\text{電極（陽極／陰極）} \\\\ \\hline\n\\text{ア} & \\ce{CuSO4}\\ \\text{水溶液} & \\text{白金／白金} \\\\\n\\text{イ} & \\ce{AgNO3}\\ \\text{水溶液} & \\text{白金／白金} \\\\\n\\text{ウ} & \\ce{KOH}\\ \\text{水溶液} & \\text{白金／白金} \\\\\n\\text{エ} & \\ce{CuSO4}\\ \\text{水溶液} & \\text{銅／銅} \\\\\n\\text{オ} & \\text{塩酸} & \\text{白金／白金} \\\\\n\\text{カ} & \\text{希硫酸} & \\text{銅／白金}\n\\end{array}\n\\]\nただし，カでは通電の初期であり，陰極では水素だけが発生したものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "電解液（水溶液全体）の質量が変化しないものをア〜カからすべて選べ．"
+     },
+     {
+      "id": "2",
+      "tex": "電解液の質量が増加するものをア〜カからすべて選び，その増加量 [g] を有効数字2桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "溶質の質量は変化しないが，電解液の質量は減少するものをア〜カからすべて選べ．"
+     },
+     {
+      "id": "4",
+      "tex": "ア，イ，ウ，オを電解液の質量の減少量の大きい順に並べ，それぞれの減少量 [g] を有効数字2桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "エ"
+   },
+   {
+    "id": "2",
+    "tex": "カ，$3.1\\,\\mathrm{g}$"
+   },
+   {
+    "id": "3",
+    "tex": "ウ"
+   },
+   {
+    "id": "4",
+    "tex": "イ（$12\\,\\mathrm{g}$）＞ア（$4.0\\,\\mathrm{g}$）＞オ（$3.7\\,\\mathrm{g}$）＞ウ（$0.90\\,\\mathrm{g}$）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方} 電解液の質量変化＝（陽極から溶け込んだ金属）−（陰極に析出した金属）−（出ていった気体）．電子 $0.100\\,\\mathrm{mol}$ について各電極の変化を数える．\n\\[\n\\begin{array}{c|l|l|l}\n & \\text{陽極} & \\text{陰極} & \\text{電解液の質量変化} \\\\ \\hline\n\\text{ア} & \\ce{O2}\\ 0.025\\,\\mathrm{mol}\\ (0.80\\,\\mathrm{g}) & \\ce{Cu}\\ 0.050\\,\\mathrm{mol}\\ (3.2\\,\\mathrm{g}) & -4.0\\,\\mathrm{g} \\\\\n\\text{イ} & \\ce{O2}\\ 0.025\\,\\mathrm{mol}\\ (0.80\\,\\mathrm{g}) & \\ce{Ag}\\ 0.100\\,\\mathrm{mol}\\ (10.8\\,\\mathrm{g}) & -11.6\\,\\mathrm{g} \\\\\n\\text{ウ} & \\ce{O2}\\ 0.025\\,\\mathrm{mol}\\ (0.80\\,\\mathrm{g}) & \\ce{H2}\\ 0.050\\,\\mathrm{mol}\\ (0.10\\,\\mathrm{g}) & -0.90\\,\\mathrm{g} \\\\\n\\text{エ} & \\ce{Cu}\\ \\text{が}\\ 0.050\\,\\mathrm{mol}\\ \\text{溶ける} & \\ce{Cu}\\ 0.050\\,\\mathrm{mol}\\ \\text{析出} & 0 \\\\\n\\text{オ} & \\ce{Cl2}\\ 0.050\\,\\mathrm{mol}\\ (3.55\\,\\mathrm{g}) & \\ce{H2}\\ 0.050\\,\\mathrm{mol}\\ (0.10\\,\\mathrm{g}) & -3.65\\,\\mathrm{g} \\\\\n\\text{カ} & \\ce{Cu}\\ \\text{が}\\ 0.050\\,\\mathrm{mol}\\ (3.2\\,\\mathrm{g})\\ \\text{溶ける} & \\ce{H2}\\ 0.050\\,\\mathrm{mol}\\ (0.10\\,\\mathrm{g}) & +3.1\\,\\mathrm{g}\n\\end{array}\n\\]\n主な電極反応：ア，イの白金陽極では $\\ce{2H2O -> O2 + 4H+ + 4e-}$，ウの陽極では $\\ce{4OH- -> O2 + 2H2O + 4e-}$，オの陽極では $\\ce{2Cl- -> Cl2 + 2e-}$，ウ・オ・カの陰極では水素が発生する．\n\n\\textbf{(1)} 陽極で溶ける銅と陰極に析出する銅が同量のエだけ．答えは $\\boldsymbol{\\text{エ}}$．\n\n\\textbf{(2)} 陽極の銅が溶け込み（$+3.2\\,\\mathrm{g}$），陰極からは軽い水素しか出ていかない（$-0.10\\,\\mathrm{g}$）カで，$\\boldsymbol{\\text{カ}，3.1\\,\\mathrm{g}}$ 増加する．\n\n\\textbf{(3)} ウでは陽極・陰極の反応を合わせると $\\ce{2H2O -> 2H2 + O2}$ となり水だけが減るので，溶質 $\\ce{KOH}$ の質量は変わらず，溶液の質量は減る（濃度は上がる）．エは溶質も溶液も変化しない．ア（$\\ce{CuSO4}\\to\\ce{H2SO4}$），イ（$\\ce{AgNO3}\\to\\ce{HNO3}$），オ（$\\ce{HCl}$ が減少），カ（$\\ce{H2SO4}\\to\\ce{CuSO4}$）は溶質が変化する．答えは $\\boldsymbol{\\text{ウ}}$．\n\n\\textbf{(4)} 表より $\\boldsymbol{\\text{イ}\\ (12\\,\\mathrm{g})>\\text{ア}\\ (4.0\\,\\mathrm{g})>\\text{オ}\\ (3.7\\,\\mathrm{g})>\\text{ウ}\\ (0.90\\,\\mathrm{g})}$．同じ電気量でも，電子 1 個あたりに出ていく物質の質量（Ag は $108$，$\\tfrac12\\ce{Cu}$ は $32$，$\\tfrac12\\ce{Cl2}$ は $35.5$，$\\tfrac12\\ce{H2}$ は $1.0$，$\\tfrac14\\ce{O2}$ は $8.0$）の違いが差になる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "電解液の質量変化は，陽極から溶け込む金属の質量から，陰極に析出する金属と両極から出ていく気体の質量を引いたものになる．電子の物質量を共通の基準にして各電極の生成物を数え，溶ける電極か不溶性電極かで質量が減る・変わらない・増えるの場合分けをし，溶質が変わるかどうかも判断する．"
+ },
+ "concepts": [
+  "electrolysis",
+  "transition-metals",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電気分解",
+  "電解液の質量",
+  "ファラデーの法則",
+  "銅電極",
+  "不溶性電極"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

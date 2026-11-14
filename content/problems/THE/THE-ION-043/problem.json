@@ -1,0 +1,122 @@
+{
+ "id": "THE-ION-043",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "弱酸の濃度と電離度の関係（グラフから電離定数を読む）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "1価の弱酸 HA の水溶液について，濃度 $C$ と電離度 $\\alpha$ の関係を調べると，図のような曲線になった（横軸は対数目盛）．この曲線で $\\alpha=0.50$ となる濃度は $2.0\\times10^{-4}\\,\\mathrm{mol/L}$ であった．水の電離は無視でき，温度は一定とする．必要なら $\\sqrt{5}=2.24$，$\\sqrt{10}=3.16$ を用いよ．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "HA の電離定数 $K_a$ を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$C=0.10\\,\\mathrm{mol/L}$ のときの電離度を，$\\alpha$ が 1 より十分小さいとする近似を用いて有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$C=1.0\\times10^{-4}\\,\\mathrm{mol/L}$ のときの電離度を有効数字2桁で求めよ．このとき (2) と同じ近似を用いるとどんな値になり，なぜ使えないかも述べよ．"
+     },
+     {
+      "id": "4",
+      "tex": "電離定数が $1.0\\times10^{-6}\\,\\mathrm{mol/L}$ の別の1価の弱酸 HB について同じグラフをかくと，曲線は HA の曲線と比べてどのようになるか．$\\alpha=0.50$ となる濃度を示して説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：弱酸の濃度と電離度の関係（グラフから電離定数を読む）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$1.0\\times10^{-4}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "2",
+    "tex": "$0.032$"
+   },
+   {
+    "id": "3",
+    "tex": "$0.62$．近似では $\\sqrt{K_a/C}=1.0$ となり，電離度が 1 に近く $1-\\alpha\\fallingdotseq1$ とみなせないので使えない"
+   },
+   {
+    "id": "4",
+    "tex": "$\\alpha=0.50$ となる濃度は $2.0\\times10^{-6}\\,\\mathrm{mol/L}$ で，曲線は形を変えずに低濃度側へ 2 桁（目盛 2 つ分）平行移動する"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{基本の式}　濃度 $C$，電離度 $\\alpha$ のとき $[\\ce{H+}]=[\\ce{A-}]=C\\alpha$，$[\\ce{HA}]=C(1-\\alpha)$ なので\n\\[ K_a=\\dfrac{(C\\alpha)^2}{C(1-\\alpha)}=\\dfrac{C\\alpha^2}{1-\\alpha} \\]\n$\\alpha$ は $C/K_a$ だけで決まる（$\\dfrac{C}{K_a}=\\dfrac{1-\\alpha}{\\alpha^2}$）．\n\n\\textbf{(1)}　$\\alpha=0.50$ のとき $K_a=\\dfrac{C\\times0.25}{0.50}=\\dfrac{C}{2}$．$C=2.0\\times10^{-4}$ より $K_a=\\boldsymbol{1.0\\times10^{-4}\\,\\mathrm{mol/L}}$．（電離度がちょうど半分になる濃度は $2K_a$．）\n\n\\textbf{(2)}　$1-\\alpha\\fallingdotseq1$ とすると $K_a=C\\alpha^2$，\n\\[ \\alpha=\\sqrt{\\dfrac{K_a}{C}}=\\sqrt{\\dfrac{1.0\\times10^{-4}}{0.10}}=\\sqrt{10}\\times10^{-2}=\\boldsymbol{0.032} \\]\n$\\alpha$ は 1 よりずっと小さく，近似は妥当（2 次方程式を解いても $0.031$）．\n\n\\textbf{(3)}　$C=K_a$ なので $\\dfrac{\\alpha^2}{1-\\alpha}=1$，$\\alpha^2+\\alpha-1=0$，\n\\[ \\alpha=\\dfrac{-1+\\sqrt5}{2}=\\dfrac{-1+2.24}{2}=\\boldsymbol{0.62} \\]\n(2) の近似を使うと $\\alpha=\\sqrt{K_a/C}=1.0$（すべて電離）となってしまう．$\\alpha$ が 1 に近いと $1-\\alpha$ を 1 とみなすことができず，2 次方程式を解かなければならない．濃度が $K_a$ に近づくほど（薄いほど）近似は悪くなる．\n\n\\textbf{(4)}　HB で $\\alpha=0.50$ となるのは $C=2K_a=\\boldsymbol{2.0\\times10^{-6}\\,\\mathrm{mol/L}}$．$\\alpha$ は $C/K_a$ だけで決まるので，$K_a$ が $\\dfrac{1}{100}$ になれば，同じ $\\alpha$ を与える濃度も $\\dfrac{1}{100}$ になる．横軸が対数目盛なので，曲線は形を変えずに低濃度側（左）へ 2 桁平行移動する．同じ濃度で比べると，弱い酸 HB の電離度は HA より小さい．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "弱酸の電離度は C/Kₐ だけで決まり，α=0.5 となる濃度が 2Kₐ であることから濃度と電離度のグラフで電離定数を読み取れる．α≪1 の近似は C≫Kₐ のときだけ使え，Kₐ が異なる酸の曲線は対数目盛で平行移動したものになる．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電離度",
+  "電離定数",
+  "希釈",
+  "近似の妥当性",
+  "グラフの読み取り"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

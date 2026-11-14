@@ -1,0 +1,131 @@
+{
+ "id": "THE-ION-024",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "密閉容器中の二酸化炭素と水酸化ナトリウム水溶液（気体の溶解と炭酸の電離平衡の連成）",
+ "course": "化学",
+ "level": 5,
+ "minutes": 35,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "内容積 $2.00\\,\\mathrm L$ の密閉容器に $1.00\\times10^{-2}\\,\\mathrm{mol/L}$ の水酸化ナトリウム水溶液 $1.00\\,\\mathrm L$ を入れ，残りの $1.00\\,\\mathrm L$ の気相を真空にした．ここに二酸化炭素を注入し，よく振り混ぜて 27 ℃ で平衡にする．次の条件・データを用いよ．\n\n・気相の体積と水溶液の体積は変わらないものとし，水蒸気は考えなくてよい．\n・水に溶けた $\\ce{CO2}$（$\\ce{H2CO3}$ を含む）の濃度は気相の $\\ce{CO2}$ 分圧に比例し，分圧 $1.0\\times10^{5}\\,\\mathrm{Pa}$ のとき $3.3\\times10^{-2}\\,\\mathrm{mol/L}$ である．この関係は，水溶液中で炭酸が電離していても成り立つ．\n・$\\ce{CO2 + H2O <=> H+ + HCO3-}$ $K_1=4.5\\times10^{-7}\\,\\mathrm{mol/L}$，$\\ce{HCO3- <=> H+ + CO3^2-}$ $K_2=4.7\\times10^{-11}\\,\\mathrm{mol/L}$，$K_{\\text{w}}=1.0\\times10^{-14}\\,(\\mathrm{mol/L})^{2}$．\n・$R=8.3\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$，$\\log_{10}1.0=0$，$\\log_{10}2=0.30$，$\\log_{10}5=0.70$．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{CO2}$ を少しずつ注入していくと，水溶液中では2段階の反応が起こる．それぞれをイオン反応式で書け．"
+     },
+     {
+      "id": "2",
+      "tex": "$\\ce{CO2}$ を $1.50\\times10^{-2}\\,\\mathrm{mol}$ 注入した．水溶液中の陰イオンはほぼすべて $\\ce{HCO3-}$ であると仮定して，平衡時の気相の $\\ce{CO2}$ 分圧（有効数字2桁）と水溶液の pH（小数第1位まで）を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の仮定が妥当であることを，$[\\ce{CO3^2-}]$，$[\\ce{OH-}]$ を見積もって確かめよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\ce{CO2}$ を $4.0\\times10^{-3}\\,\\mathrm{mol}$ だけ注入した場合，気相の $\\ce{CO2}$ 分圧は $1\\,\\mathrm{Pa}$ よりはるかに小さいことを示せ．ただし $[\\ce{OH-}]\\fallingdotseq2.0\\times10^{-3}\\,\\mathrm{mol/L}$，$[\\ce{CO3^2-}]\\fallingdotseq4.0\\times10^{-3}\\,\\mathrm{mol/L}$ とみなしてよい．"
+     },
+     {
+      "id": "5",
+      "tex": "別の実験で，ある量の $\\ce{CO2}$ を注入したところ，平衡時の気相の $\\ce{CO2}$ 分圧は $3.0\\times10^{3}\\,\\mathrm{Pa}$ であった．注入した $\\ce{CO2}$ の物質量を有効数字2桁で求めよ．また，注入量と分圧の関係から，この答えが1つに決まる理由を述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：密閉容器中の二酸化炭素と水酸化ナトリウム水溶液（気体の溶解と炭酸の電離平衡の連成）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{CO2 + 2OH- -> CO3^2- + H2O}$，$\\ce{CO3^2- + CO2 + H2O -> 2HCO3-}$"
+   },
+   {
+    "id": "2",
+    "tex": "$6.8\\times10^{3}\\,\\mathrm{Pa}$，pH 7.0"
+   },
+   {
+    "id": "3",
+    "tex": "$[\\ce{CO3^2-}]=K_2[\\ce{HCO3-}]/[\\ce{H+}]\\fallingdotseq4.6\\times10^{-6}\\,\\mathrm{mol/L}$，$[\\ce{OH-}]\\fallingdotseq1\\times10^{-7}\\,\\mathrm{mol/L}$ で，いずれも $[\\ce{HCO3-}]=1.0\\times10^{-2}\\,\\mathrm{mol/L}$ の $10^{-3}$ 倍以下なので妥当"
+   },
+   {
+    "id": "4",
+    "tex": "$[\\ce{H+}]=5.0\\times10^{-12}$，$[\\ce{HCO3-}]\\fallingdotseq4.3\\times10^{-4}$，$[\\ce{CO2}]\\fallingdotseq4.7\\times10^{-9}\\,\\mathrm{mol/L}$ より分圧は約 $1\\times10^{-2}\\,\\mathrm{Pa}$ で，$1\\,\\mathrm{Pa}$ よりはるかに小さい"
+   },
+   {
+    "id": "5",
+    "tex": "$1.2\\times10^{-2}\\,\\mathrm{mol}$．注入量が NaOH の物質量（$1.0\\times10^{-2}\\,\\mathrm{mol}$）以下の間は分圧がごく小さく，それをこえると注入量とともに分圧が単調に増えるので，$3.0\\times10^{3}\\,\\mathrm{Pa}$ を与える注入量は1つしかない"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "$RT=8.3\\times10^{3}\\times300=2.49\\times10^{6}\\,\\mathrm{Pa\\cdot L/mol}$．溶けた $\\ce{CO2}$ は $[\\ce{CO2}]=k\\,p$，$k=3.3\\times10^{-7}\\,\\mathrm{mol/(L\\cdot Pa)}$．\n\n\\textbf{(1)}　まず $\\ce{OH-}$ が中和され，$\\ce{OH-}$ がなくなると $\\ce{CO3^2-}$ がさらに $\\ce{CO2}$ を受け取る．\n\\[\\ce{CO2 + 2OH- -> CO3^2- + H2O},\\qquad \\ce{CO3^2- + CO2 + H2O -> 2HCO3-}\\]\n$\\ce{NaOH}$ $1.0\\times10^{-2}\\,\\mathrm{mol}$ は，$\\ce{CO2}$ $5.0\\times10^{-3}\\,\\mathrm{mol}$ で $\\ce{Na2CO3}$ の組成に，$1.0\\times10^{-2}\\,\\mathrm{mol}$ で $\\ce{NaHCO3}$ の組成になる．\n\n\\textbf{(2)}　$\\ce{CO2}$ は $\\ce{NaOH}$ より多いので，$\\ce{Na+}$ と電荷がつり合う陰イオンはほぼ $\\ce{HCO3-}$ で $[\\ce{HCO3-}]\\fallingdotseq1.0\\times10^{-2}\\,\\mathrm{mol/L}$（$1.0\\times10^{-2}\\,\\mathrm{mol}$）．残りの $1.50\\times10^{-2}-1.00\\times10^{-2}=5.0\\times10^{-3}\\,\\mathrm{mol}$ が，気相と水溶液中の $\\ce{CO2}$ 分子に分かれる．\n\\[\\dfrac{p\\times1.00}{2.49\\times10^{6}}+3.3\\times10^{-7}p\\times1.00=5.0\\times10^{-3}\\quad\\Longrightarrow\\quad(4.02+3.30)\\times10^{-7}p=5.0\\times10^{-3}\\]\n\\[p=\\boldsymbol{6.8\\times10^{3}\\,\\mathrm{Pa}}\\]\n$[\\ce{CO2}]=3.3\\times10^{-7}\\times6.83\\times10^{3}=2.25\\times10^{-3}\\,\\mathrm{mol/L}$．$K_1$ の式から\n\\[[\\ce{H+}]=K_1\\dfrac{[\\ce{CO2}]}{[\\ce{HCO3-}]}=4.5\\times10^{-7}\\times\\dfrac{2.25\\times10^{-3}}{1.0\\times10^{-2}}=1.0\\times10^{-7}\\,\\mathrm{mol/L}\\qquad\\text{pH}=\\boldsymbol{7.0}\\]\n（$\\ce{CO2}$ と $\\ce{HCO3-}$ の緩衝液になっている．）\n\n\\textbf{(3)}　$\\dfrac{[\\ce{CO3^2-}]}{[\\ce{HCO3-}]}=\\dfrac{K_2}{[\\ce{H+}]}=\\dfrac{4.7\\times10^{-11}}{1.0\\times10^{-7}}=4.7\\times10^{-4}$ なので $[\\ce{CO3^2-}]\\fallingdotseq4.6\\times10^{-6}\\,\\mathrm{mol/L}$．$[\\ce{OH-}]=[\\ce{H+}]\\fallingdotseq1\\times10^{-7}\\,\\mathrm{mol/L}$．電荷のつり合い $[\\ce{Na+}]+[\\ce{H+}]=[\\ce{HCO3-}]+2[\\ce{CO3^2-}]+[\\ce{OH-}]$ で，$\\ce{HCO3-}$ 以外の項はすべて $1.0\\times10^{-2}$ の $10^{-3}$ 倍以下なので，$[\\ce{HCO3-}]\\fallingdotseq[\\ce{Na+}]$ の仮定は妥当である．また，溶けた $\\ce{CO2}$ の電離で $\\ce{HCO3-}$ が増える分も $[\\ce{H+}]$ 程度（$10^{-7}$）で無視できる．\n\n\\textbf{(4)}　$\\ce{CO2}$ は $\\ce{NaOH}$ の半分より少ないので，溶液は $\\ce{CO3^2-}$ と過剰の $\\ce{OH-}$ を含む強い塩基性．$[\\ce{H+}]=\\dfrac{K_{\\text{w}}}{2.0\\times10^{-3}}=5.0\\times10^{-12}\\,\\mathrm{mol/L}$．$\\ce{CO3^2- + H2O <=> HCO3- + OH-}$ の平衡（$K_{\\text{w}}/K_2$）から\n\\[[\\ce{HCO3-}]=\\dfrac{[\\ce{H+}][\\ce{CO3^2-}]}{K_2}=\\dfrac{5.0\\times10^{-12}\\times4.0\\times10^{-3}}{4.7\\times10^{-11}}=4.3\\times10^{-4}\\,\\mathrm{mol/L}\\]\n\\[[\\ce{CO2}]=\\dfrac{[\\ce{H+}][\\ce{HCO3-}]}{K_1}=\\dfrac{5.0\\times10^{-12}\\times4.3\\times10^{-4}}{4.5\\times10^{-7}}=4.7\\times10^{-9}\\,\\mathrm{mol/L}\\]\n\\[p=\\dfrac{4.7\\times10^{-9}}{3.3\\times10^{-7}}\\fallingdotseq1\\times10^{-2}\\,\\mathrm{Pa}\\ \\ll1\\,\\mathrm{Pa}\\]\n（$\\ce{HCO3-}$ の生成で $[\\ce{OH-}]$ がやや増えることを考えても桁は変わらない．）塩基が残っている間は，注入した $\\ce{CO2}$ がほぼすべてイオンとして水溶液に取り込まれ，気相にはほとんど残らない．\n\n\\textbf{(5)}　$3.0\\times10^{3}\\,\\mathrm{Pa}$ は十分大きな分圧なので，(2) と同じく $\\ce{NaOH}$ はすべて $\\ce{HCO3-}$ になっている（このとき $[\\ce{H+}]=4.5\\times10^{-7}\\times\\dfrac{3.3\\times10^{-7}\\times3.0\\times10^{3}}{1.0\\times10^{-2}}=4.5\\times10^{-8}$ で，$[\\ce{CO3^2-}]/[\\ce{HCO3-}]\\fallingdotseq1\\times10^{-3}$ と小さく，仮定は成り立つ）．注入量は\n\\[n=1.00\\times10^{-2}+(4.02+3.30)\\times10^{-7}\\times3.0\\times10^{3}=1.00\\times10^{-2}+2.2\\times10^{-3}=\\boldsymbol{1.2\\times10^{-2}\\,\\mathrm{mol}}\\]\n注入量と分圧の関係は図のようになり，$\\ce{NaOH}$ の物質量（$\\ce{NaHCO3}$ の組成）までは分圧がごく小さく（$9.0\\times10^{-3}\\,\\mathrm{mol}$ でも $20\\,\\mathrm{Pa}$ 程度），それをこえると注入量とともに分圧がほぼ直線的に増える．分圧は注入量の単調増加関数なので，分圧から注入量が1つに決まる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "密閉容器の CO₂ について，気相の量・溶けた分子の量（ヘンリーの法則）・電離してできたイオンの量の収支を，炭酸の電離平衡と電荷のつり合いと連立して扱う．塩基が残る間は CO₂ がほぼすべてイオンとして取り込まれ分圧がごく小さいこと，塩基を使い切ると分子として気液に分配されることを場合分けし，近似の妥当性を確かめる．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "alkali-metals",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ヘンリーの法則",
+  "炭酸の電離平衡",
+  "緩衝液",
+  "物質収支",
+  "近似の妥当性"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

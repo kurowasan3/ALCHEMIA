@@ -1,0 +1,109 @@
+{
+ "id": "INO-TRN-017",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-07",
+ "topic": "鉄(II)イオンと鉄(III)イオンの相互変換と検出",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "equation",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の 3 本の試験管 P〜R を用意した．\\\\\nP：硫酸鉄(II) 水溶液\\\\\nQ：硫酸で酸性にした硫酸鉄(II) 水溶液に，過酸化水素水を十分に加えたもの\\\\\nR：塩化鉄(III) 水溶液に，塩化スズ(II) 水溶液を十分に加えたもの"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "P と，塩化鉄(III) 水溶液はそれぞれ何色か．"
+     },
+     {
+      "id": "2",
+      "tex": "Q，R で起こった変化を，それぞれイオン反応式で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "P〜R のそれぞれに（ア）ヘキサシアニド鉄(III) 酸カリウム水溶液，（イ）チオシアン酸カリウム水溶液 を加えた．濃青色の沈殿が生じるもの，血赤色の溶液になるものを，P〜R からそれぞれすべて選べ．"
+     },
+     {
+      "id": "4",
+      "tex": "硫酸酸性の硫酸鉄(II) 水溶液に含まれる $\\ce{Fe^2+}$ $0.020\\,\\mathrm{mol}$ をすべて $\\ce{Fe^3+}$ にするのに必要な過酸化水素は何 mol か．また，過酸化水素のかわりに過マンガン酸カリウムを用いると何 mol 必要か．ただし，過マンガン酸イオンは $\\ce{Mn^2+}$ に変化するものとする．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "P は淡緑色，塩化鉄(III) 水溶液は黄褐色"
+   },
+   {
+    "id": "2",
+    "tex": "Q：$\\ce{2Fe^2+ + H2O2 + 2H+ -> 2Fe^3+ + 2H2O}$　R：$\\ce{2Fe^3+ + Sn^2+ -> 2Fe^2+ + Sn^4+}$"
+   },
+   {
+    "id": "3",
+    "tex": "濃青色の沈殿：P，R　血赤色の溶液：Q"
+   },
+   {
+    "id": "4",
+    "tex": "過酸化水素 $0.010\\,\\mathrm{mol}$，過マンガン酸カリウム $0.0040\\,\\mathrm{mol}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\ce{Fe^2+}$ は\\textbf{淡緑色}，$\\ce{Fe^3+}$ は\\textbf{黄褐色}．\n\n\\textbf{(2)} Q：過酸化水素は酸化剤（$\\ce{H2O2 + 2H+ + 2e- -> 2H2O}$）で，$\\ce{Fe^2+ -> Fe^3+ + e-}$ と組み合わせて\n\\[ \\ce{2Fe^2+ + H2O2 + 2H+ -> 2Fe^3+ + 2H2O} \\]\nR：$\\ce{Sn^2+}$ は還元剤（$\\ce{Sn^2+ -> Sn^4+ + 2e-}$）で，$\\ce{Fe^3+}$ が還元される．\n\\[ \\ce{2Fe^3+ + Sn^2+ -> 2Fe^2+ + Sn^4+} \\]\n\n\\textbf{(3)} ヘキサシアニド鉄(III) 酸カリウムは $\\ce{Fe^2+}$ と濃青色沈殿をつくり，チオシアン酸カリウムは $\\ce{Fe^3+}$ と血赤色の溶液になる．P と R には $\\ce{Fe^2+}$，Q には $\\ce{Fe^3+}$ が含まれるので，濃青色の沈殿は \\textbf{P，R}，血赤色は \\textbf{Q}．同じ鉄でも，前の操作で酸化・還元されたかどうかで検出結果が逆になる．\n\n\\textbf{(4)} $\\ce{Fe^2+}$ $0.020\\,\\mathrm{mol}$ が失う電子は $0.020\\,\\mathrm{mol}$．$\\ce{H2O2}$ は 1 mol で電子 2 mol を受け取るので\n\\[ \\frac{0.020}{2}=\\boldsymbol{0.010\\,\\mathrm{mol}} \\]\n$\\ce{MnO4- + 8H+ + 5e- -> Mn^2+ + 4H2O}$ より $\\ce{KMnO4}$ は 1 mol で電子 5 mol を受け取るので\n\\[ \\frac{0.020}{5}=\\boldsymbol{0.0040\\,\\mathrm{mol}} \\]\n（全体では $\\ce{MnO4- + 5Fe^2+ + 8H+ -> Mn^2+ + 5Fe^3+ + 4H2O}$．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "Fe²⁺ と Fe³⁺ は酸化剤（H₂O₂ など）・還元剤（Sn²⁺ など）で相互に変換でき，変換後はヘキサシアニド鉄(III) 酸イオン（Fe²⁺）とチオシアン酸イオン（Fe³⁺）で検出結果が入れ替わる．必要な酸化剤の量は受け取る電子の数で決まる．"
+ },
+ "concepts": [
+  "transition-metals",
+  "organic-test"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "鉄(II)イオン",
+  "鉄(III)イオン",
+  "過酸化水素",
+  "塩化スズ(II)",
+  "イオンの検出",
+  "電子の授受"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

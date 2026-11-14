@@ -1,0 +1,109 @@
+{
+ "id": "THE-EQL-020",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "全圧の測定から解離度と圧平衡定数を求める",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "容積を変えられる容器に四酸化二窒素 $\\ce{N2O4}$ を $0.0200\\,\\mathrm{mol}$ 入れ，温度 $350\\,\\mathrm K$，容積 $1.00\\,\\mathrm L$ に保ったところ，$\\ce{N2O4 <=> 2NO2}$ の平衡が成り立ち，全圧は $9.30\\times10^4\\,\\mathrm{Pa}$ を示した．気体定数 $R=8.3\\times10^3\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$ とし，答えは有効数字2桁で求めよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{N2O4}$ の解離度 $\\alpha$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "この温度での圧平衡定数 $K_p$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "温度を $350\\,\\mathrm K$ に保ったまま容積を $0.50\\,\\mathrm L$ にして，新たな平衡に達したときの $\\ce{N2O4}$ の解離度を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の平衡状態の全圧を求めよ．また，それは初めの全圧の2倍と比べて大きいか，等しいか，小さいか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$0.60$"
+   },
+   {
+    "id": "2",
+    "tex": "$2.1\\times10^5\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "3",
+    "tex": "$0.48$"
+   },
+   {
+    "id": "4",
+    "tex": "$1.7\\times10^5\\,\\mathrm{Pa}$，2倍より小さい"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 全物質量 $n=\\dfrac{PV}{RT}=\\dfrac{9.30\\times10^4\\times1.00}{8.3\\times10^3\\times350}=0.0320\\,\\mathrm{mol}$．平衡時は $\\ce{N2O4}$ $0.0200(1-\\alpha)$，$\\ce{NO2}$ $0.0400\\alpha$ で合計 $0.0200(1+\\alpha)$ なので $1+\\alpha=1.60$，$\\boldsymbol{\\alpha=0.60}$．\\\\\n\\textbf{(2)} モル分率は $\\ce{N2O4}$ $\\dfrac{1-\\alpha}{1+\\alpha}=\\dfrac14$，$\\ce{NO2}$ $\\dfrac{2\\alpha}{1+\\alpha}=\\dfrac34$．\n\\[ K_p=\\dfrac{p_{\\ce{NO2}}^2}{p_{\\ce{N2O4}}}=\\dfrac{(0.75P)^2}{0.25P}=2.25\\times9.30\\times10^4=2.09\\times10^5\\fallingdotseq\\boldsymbol{2.1\\times10^5\\,\\mathrm{Pa}} \\]\n\\textbf{(3)} 温度一定なので濃度平衡定数 $K_c$ も一定：\n\\[ K_c=\\dfrac{[\\ce{NO2}]^2}{[\\ce{N2O4}]}=\\dfrac{4n_0\\alpha^2}{(1-\\alpha)V}=\\dfrac{4\\times0.0200\\times0.60^2}{0.40\\times1.00}=0.072\\,\\mathrm{mol/L} \\]\n$V=0.50\\,\\mathrm L$ では $\\dfrac{0.080\\alpha'^2}{0.50(1-\\alpha')}=0.072$ より $0.080\\alpha'^2+0.036\\alpha'-0.036=0$，$\\boldsymbol{\\alpha'=0.48}$．\\\\\n\\textbf{(4)} $n=0.0200\\times1.48=0.0297\\,\\mathrm{mol}$，$P'=\\dfrac{0.0297\\times8.3\\times10^3\\times350}{0.50}=1.7\\times10^5\\,\\mathrm{Pa}$．初めの2倍（$1.86\\times10^5\\,\\mathrm{Pa}$）より\\textbf{小さい}．圧縮で平衡が分子数の減る左へ移動し，全物質量が減ったためである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "解離平衡にある気体の全圧の測定値から全物質量と解離度を求め，圧平衡定数を得る．温度一定で圧縮したときの新しい解離度を平衡定数から求め，全圧が単純な反比例より小さくなることを確かめる．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "nitrogen-phosphorus",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "解離度",
+  "圧平衡定数",
+  "四酸化二窒素",
+  "平衡の移動",
+  "気体の状態方程式"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

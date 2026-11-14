@@ -1,0 +1,118 @@
+{
+ "id": "ORG-ARO-012",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-05",
+ "topic": "ニトロ化合物の分子式決定とジアゾ化・カップリング",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "pathway"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ベンゼンのパラ二置換体 X は，ベンゼン環に直接結合したニトロ基をもち，その元素組成（質量%）は炭素 63.6 %，水素 6.0 %，窒素 9.3 %，酸素 21.2 % である．X $0.755\\,\\mathrm{g}$ をベンゼン $100\\,\\mathrm{g}$ に溶かした溶液の凝固点降下度は $0.256\\,\\mathrm{K}$ であった．ベンゼンのモル凝固点降下は $5.12\\,\\mathrm{K\\cdot kg/mol}$，原子量は H = 1.0，C = 12，N = 14，O = 16 とする．\\\\\nX をスズと濃塩酸で還元したのち，水酸化ナトリウム水溶液を加えると化合物 Y が得られた．Y を希塩酸に溶かし，氷で冷やしながら亜硝酸ナトリウム水溶液を加えると化合物 Z の水溶液が得られた．Z の水溶液にナトリウムフェノキシドの水溶液を加えると，橙色の化合物 W が生じた．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "X の組成式を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "X の分子量を整数で求め，分子式を答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "X と Y の構造を示性式で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "Y から Z が生じる反応の化学反応式を書け．また，Z から W が生じる反応の名称と，W の示性式を答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "Z の水溶液を冷やさずに温めると，気体が発生して別の芳香族化合物が生じる．この反応の化学反応式を書け．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{C8H9NO2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$151$，$\\ce{C8H9NO2}$"
+   },
+   {
+    "id": "3",
+    "tex": "X：$\\ce{C2H5C6H4NO2}$（p-エチルニトロベンゼン），Y：$\\ce{C2H5C6H4NH2}$（p-エチルアニリン）"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{C2H5C6H4NH2 + NaNO2 + 2HCl -> C2H5C6H4N2Cl + NaCl + 2H2O}$，ジアゾカップリング（カップリング），W：$\\ce{C2H5C6H4N=NC6H4OH}$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\ce{C2H5C6H4N2Cl + H2O -> C2H5C6H4OH + N2 + HCl}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\ce{C}:\\ce{H}:\\ce{N}:\\ce{O} = \\dfrac{63.6}{12}:\\dfrac{6.0}{1.0}:\\dfrac{9.3}{14}:\\dfrac{21.2}{16} = 5.30:6.0:0.664:1.33 \\fallingdotseq 8:9:1:2$．組成式 $\\boldsymbol{\\ce{C8H9NO2}}$（式量 151）．\\\\\n\\textbf{(2)} $\\Delta t = K_f m$ より\n\\[M = \\frac{K_f \\times w}{\\Delta t \\times W} = \\frac{5.12\\times 0.755}{0.256\\times 0.100} = 151\\]\n分子量 $\\boldsymbol{151}$ で組成式の式量と一致するので，分子式も $\\boldsymbol{\\ce{C8H9NO2}}$．\\\\\n\\textbf{(3)} ニトロ基 $\\ce{-NO2}$ を除くと $\\ce{C6H4}$ と $\\ce{C2H5}$ が残る．パラ二置換体なので X は $\\ce{C2H5C6H4NO2}$（p-エチルニトロベンゼン）．$\\ce{Sn}$ と $\\ce{HCl}$ で還元すると塩酸塩 $\\ce{C2H5C6H4NH3Cl}$ になり，強塩基で弱塩基のアミンが遊離する：Y は $\\ce{C2H5C6H4NH2}$．\\\\\n\\textbf{(4)} 低温でジアゾ化して塩化ジアゾニウム Z をつくる：\n\\[\\ce{C2H5C6H4NH2 + NaNO2 + 2HCl -> C2H5C6H4N2Cl + NaCl + 2H2O}\\]\nZ とナトリウムフェノキシドから，アゾ基 $\\ce{-N=N-}$ をもつ橙色のアゾ化合物ができる（\\textbf{ジアゾカップリング}）：\n\\[\\ce{C2H5C6H4N2Cl + C6H5ONa -> C2H5C6H4N=NC6H4OH + NaCl}\\]\n（フェノールのパラ位で結合する）．\\\\\n\\textbf{(5)} 塩化ジアゾニウムは不安定で，5 ℃ 程度より高い温度では水と反応して窒素を放出し，フェノール類になる：\n\\[\\ce{C2H5C6H4N2Cl + H2O -> C2H5C6H4OH + N2 + HCl}\\]\n（p-エチルフェノールが生じる）．ジアゾ化を氷冷して行うのはこの分解を防ぐためである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "元素組成から組成式，凝固点降下から分子量を求めて分子式を決め，ニトロ化合物→アミン→ジアゾニウム塩→アゾ化合物の経路を追う．ジアゾニウム塩は温めると N₂ を放出してフェノール類になるので，ジアゾ化は低温で行う．"
+ },
+ "concepts": [
+  "aromatic",
+  "nitrogen-phosphorus",
+  "elemental-analysis"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "凝固点降下",
+  "分子量",
+  "ニトロ化合物",
+  "ジアゾ化",
+  "カップリング",
+  "アゾ化合物"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

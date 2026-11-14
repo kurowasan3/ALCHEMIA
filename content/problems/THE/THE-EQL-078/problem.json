@@ -1,0 +1,123 @@
+{
+ "id": "THE-EQL-078",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "酸と塩基の両方が触媒となる反応の速度定数の pH 依存性（V 字形）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 20,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある医薬品 P の水溶液中での加水分解は，P について一次反応 $v=k[\\mathrm P]$ で進み，$\\ce{H+}$ と $\\ce{OH-}$ がどちらも触媒としてはたらく．pH を一定に保った 25 ℃ の水溶液中では，速度定数 $k$ は\n\\[k=k_{\\mathrm A}[\\ce{H+}]+k_{\\mathrm B}[\\ce{OH-}]\\]\nで表され，$k_{\\mathrm A}=1.0\\times10^{2}\\,\\mathrm{L/(mol\\cdot s)}$，$k_{\\mathrm B}=1.0\\times10^{6}\\,\\mathrm{L/(mol\\cdot s)}$ である．水のイオン積は $K_{\\mathrm w}=1.0\\times10^{-14}\\,(\\mathrm{mol/L})^2$，$\\log_{10}2=0.30$，$\\log_e2=0.69$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "pH が十分低い領域と十分高い領域で，$\\log_{10}k$ を pH の 1 次式でそれぞれ表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "$k$ が最小になる pH と，そのときの $k$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "pH 3.0 と pH 8.0 の水溶液中での P の半減期をそれぞれ有効数字 2 桁で求め，どちらで P が速く分解するか答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "横軸に pH，縦軸に $\\log_{10}k$ をとったグラフで，(1) の 2 本の直線の交点と，実際の曲線の最低点を比べる．最低点の pH は交点の pH と一致するか．また，最低点の $\\log_{10}k$ は交点の値より何だけ大きいか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：酸と塩基の両方が触媒となる反応の速度定数の pH 依存性（V 字形）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "低い領域：$\\log_{10}k=-\\mathrm{pH}+2.0$，高い領域：$\\log_{10}k=\\mathrm{pH}-8.0$"
+   },
+   {
+    "id": "2",
+    "tex": "pH 5.0，$k=2.0\\times10^{-3}\\,\\mathrm{s^{-1}}$"
+   },
+   {
+    "id": "3",
+    "tex": "pH 3.0：$6.9\\,\\mathrm s$，pH 8.0：$0.69\\,\\mathrm s$，pH 8.0 のほうが速い"
+   },
+   {
+    "id": "4",
+    "tex": "一致する．$\\log_{10}2=0.30$ だけ大きい．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　低い pH では $[\\ce{OH-}]$ がきわめて小さく第 1 項だけが効き，$k\\fallingdotseq k_{\\mathrm A}[\\ce{H+}]$．\n\\[\\log_{10}k=\\log_{10}k_{\\mathrm A}+\\log_{10}[\\ce{H+}]=\\boldsymbol{-\\mathrm{pH}+2.0}\\]\n高い pH では $k\\fallingdotseq k_{\\mathrm B}[\\ce{OH-}]=k_{\\mathrm B}K_{\\mathrm w}/[\\ce{H+}]$．\n\\[\\log_{10}k=\\log_{10}(k_{\\mathrm B}K_{\\mathrm w})+\\mathrm{pH}=\\boldsymbol{\\mathrm{pH}-8.0}\\]\n傾き $-1$ と $+1$ の直線になる（解答図）．\n\n\\textbf{(2)}　$[\\ce{H+}]=x$ とおくと $k=k_{\\mathrm A}x+\\dfrac{k_{\\mathrm B}K_{\\mathrm w}}{x}$．相加平均と相乗平均の関係より\n\\[k\\geqq2\\sqrt{k_{\\mathrm A}k_{\\mathrm B}K_{\\mathrm w}}=2\\sqrt{1.0\\times10^{2}\\times1.0\\times10^{6}\\times1.0\\times10^{-14}}=2.0\\times10^{-3}\\,\\mathrm{s^{-1}}\\]\n等号は $k_{\\mathrm A}x=\\dfrac{k_{\\mathrm B}K_{\\mathrm w}}{x}$，すなわち $x^2=\\dfrac{k_{\\mathrm B}K_{\\mathrm w}}{k_{\\mathrm A}}=1.0\\times10^{-10}$，$x=1.0\\times10^{-5}$ のとき．よって $\\boldsymbol{\\text{pH 5.0}}$，$\\boldsymbol{k=2.0\\times10^{-3}\\,\\mathrm{s^{-1}}}$．中性（pH 7）ではないことに注意する．$k_{\\mathrm B}$ が $k_{\\mathrm A}$ より大きいので，最小は酸性側にずれる．\n\n\\textbf{(3)}　一次反応の半減期は $t_{1/2}=\\dfrac{\\log_e2}{k}$．\\\\\npH 3.0：$k=1.0\\times10^{2}\\times10^{-3}+1.0\\times10^{6}\\times10^{-11}\\fallingdotseq0.10\\,\\mathrm{s^{-1}}$，$t_{1/2}=\\dfrac{0.69}{0.10}=\\boldsymbol{6.9\\,\\mathrm s}$．\\\\\npH 8.0：$k=1.0\\times10^{2}\\times10^{-8}+1.0\\times10^{6}\\times10^{-6}\\fallingdotseq1.0\\,\\mathrm{s^{-1}}$，$t_{1/2}=\\boldsymbol{0.69\\,\\mathrm s}$．\\\\\n最小の pH 5.0 から pH が 2 離れても 3 離れても，効く項の大きさで速さが決まる．$\\boldsymbol{\\text{pH 8.0 のほうが速い}}$．\n\n\\textbf{(4)}　2 直線の交点は $-\\mathrm{pH}+2.0=\\mathrm{pH}-8.0$ より pH 5.0 で，$\\log_{10}k=-3.0$．(2) の最低点の pH 5.0 と $\\boldsymbol{\\text{一致する}}$．ここでは 2 つの項が等しいので，実際の $k$ は片方の項の 2 倍で\n\\[\\log_{10}(2.0\\times10^{-3})=-3.0+\\log_{10}2=-2.70\\]\nつまり $\\boldsymbol{0.30}$ だけ大きい．交点から pH が 1 離れると 2 つの項は 100 倍違い，曲線はほぼ直線に重なる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "H⁺ と OH⁻ がともに触媒となる反応の速度定数は k = k_A[H⁺] + k_B K_w/[H⁺] で，log k–pH のグラフは傾き −1 と +1 の直線の V 字形になる．最小となる pH は 2 項が等しい点（相加・相乗平均）で中性とは限らず，そこでの k は交点の値の 2 倍になる．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "ph",
+  "acid-base"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応速度",
+  "触媒",
+  "pH",
+  "速度定数",
+  "半減期"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

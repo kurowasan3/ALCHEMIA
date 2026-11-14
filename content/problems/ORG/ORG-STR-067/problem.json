@@ -1,0 +1,109 @@
+{
+ "id": "ORG-STR-067",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-01",
+ "topic": "旋光度の加成性による鏡像異性体の混合比",
+ "course": "化学",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "鏡像異性体の溶液に平面偏光を通すと，偏光面が回転する．回転角は，同じ条件（溶媒・温度・光路の長さ）では溶けている各鏡像異性体の濃度に比例し，一方の鏡像異性体による回転と他方による回転は足し合わされる．鏡像異性体どうしでは回転の大きさが等しく向きが逆である．\n\nあるアミノ酸の L 体だけを $0.20\\,\\mathrm{mol/L}$ 含む溶液の回転角は $+12.0^\\circ$ であった．以下の測定はすべてこれと同じ条件で行う．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "D 体だけを $0.20\\,\\mathrm{mol/L}$ 含む溶液の回転角を答えよ．また，L 体と D 体を等量ずつ含む混合物（ラセミ体）を合計 $0.20\\,\\mathrm{mol/L}$ 含む溶液の回転角を答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "L 体と D 体の混合物を合計 $0.20\\,\\mathrm{mol/L}$ 含む溶液の回転角は $-4.8^\\circ$ であった．この混合物に含まれる L 体の割合（物質量の \\%）を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "別の混合物を合計 $0.10\\,\\mathrm{mol/L}$ になるように溶かした溶液の回転角は $+3.0^\\circ$ であった．この混合物に含まれる L 体の割合（\\%）を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(2) の溶液 $100\\,\\mathrm{mL}$ に，L 体だけを $0.20\\,\\mathrm{mol/L}$ 含む溶液 $100\\,\\mathrm{mL}$ を混ぜた．混合後の溶液の回転角を有効数字2桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "D 体：$-12.0^\\circ$，ラセミ体：$0^\\circ$"
+   },
+   {
+    "id": "2",
+    "tex": "$30\\,\\%$"
+   },
+   {
+    "id": "3",
+    "tex": "$75\\,\\%$"
+   },
+   {
+    "id": "4",
+    "tex": "$+3.6^\\circ$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　回転角は「L 体の濃度に比例する正の回転」と「D 体の濃度に比例する負の回転」の和である．L 体 $0.20\\,\\mathrm{mol/L}$ で $+12.0^\\circ$ なので，濃度 $1\\,\\mathrm{mol/L}$ あたり L 体は $+60^\\circ$，D 体は $-60^\\circ$ の寄与をもつ．\n\\[ \\alpha = 60\\,([\\mathrm{L}]-[\\mathrm{D}]) \\]\n\n\\textbf{(1)}　D 体だけなら符号が逆で $\\boldsymbol{-12.0^\\circ}$．ラセミ体は $[\\mathrm{L}]=[\\mathrm{D}]$ で寄与が打ち消し合い $\\boldsymbol{0^\\circ}$（旋光性を示さない）．\n\n\\textbf{(2)}　L 体の割合を $x$ とすると $[\\mathrm{L}]=0.20x$，$[\\mathrm{D}]=0.20(1-x)$．\n\\[ -4.8 = 60\\times0.20\\,(2x-1)=12.0\\,(2x-1)\\quad\\Rightarrow\\quad 2x-1=-0.40,\\ x=0.30 \\]\nL 体は $\\boldsymbol{30\\,\\%}$（D 体が多いので回転は負になる）．\n\n\\textbf{(3)}　全濃度が半分なので，純粋な L 体でも $+6.0^\\circ$ にしかならない．\n\\[ +3.0=60\\times0.10\\,(2x-1)=6.0\\,(2x-1)\\quad\\Rightarrow\\quad x=0.75 \\]\nL 体は $\\boldsymbol{75\\,\\%}$．回転角だけを比べて「$+3.0^\\circ$ は $+12.0^\\circ$ の $1/4$ だから…」としてはいけない．濃度の違いを先にそろえることが必要である．\n\n\\textbf{(4)}　混合後の体積は $200\\,\\mathrm{mL}$．L 体は $0.20\\times0.30\\times0.100+0.20\\times0.100=0.026\\,\\mathrm{mol}$，D 体は $0.20\\times0.70\\times0.100=0.014\\,\\mathrm{mol}$．\n\\[ [\\mathrm{L}]-[\\mathrm{D}]=\\dfrac{0.026-0.014}{0.200}=0.060\\,\\mathrm{mol/L},\\qquad \\alpha=60\\times0.060=\\boldsymbol{+3.6^\\circ} \\]\n（2 つの溶液の回転角の平均 $\\{(-4.8)+(+12.0)\\}/2=+3.6^\\circ$ と一致する．同じ光路で混ぜると各寄与が体積で薄まって足し合わされるためである．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "同じ条件での旋光度は各鏡像異性体の濃度に比例する寄与の和（鏡像異性体どうしは符号が逆）なので，回転角は [L]−[D] に比例する．全濃度の違いをそろえてから混合比を求め，溶液を混ぜたときは物質量の収支から回転角を予測する．"
+ },
+ "concepts": [
+  "organic-structure",
+  "mole",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "鏡像異性体",
+  "旋光性",
+  "ラセミ体",
+  "加成性",
+  "光学純度"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

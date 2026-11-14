@@ -1,0 +1,117 @@
+{
+ "id": "THE-ION-057",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "目的の pH のリン酸緩衝液をつくるのに必要な塩基の量",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "リン酸は 3 段階に電離し，25 ℃ での電離定数を $K$ として $\\mathrm{p}K=-\\log_{10}K$ で表すと，$\\mathrm{p}K_1=2.1$，$\\mathrm{p}K_2=7.20$，$\\mathrm{p}K_3=12.4$ である．\n\\[ \\ce{H3PO4 <=> H+ + H2PO4-}\\qquad \\ce{H2PO4- <=> H+ + HPO4^2-}\\qquad \\ce{HPO4^2- <=> H+ + PO4^3-} \\]\n原子量は H = 1.0，O = 16，Na = 23 とし，$\\log_{10}2=0.30$ を用いよ．水溶液の体積変化は無視する．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\mathrm{pH}$ が $\\mathrm{p}K_2$ に近い水溶液で，$\\mathrm{pH}=\\mathrm{p}K_2+\\log_{10}\\dfrac{[\\ce{HPO4^2-}]}{[\\ce{H2PO4-}]}$ が成り立つことを示せ．"
+     },
+     {
+      "id": "2",
+      "tex": "$0.10\\,\\mathrm{mol/L}$ のリン酸二水素ナトリウム $\\ce{NaH2PO4}$ 水溶液 $1.0\\,\\mathrm{L}$ に水酸化ナトリウムを加えて，$\\mathrm{pH}=7.50$ の緩衝液をつくりたい．加える $\\ce{NaOH}$ は何 g か．有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の緩衝液に最も多く含まれるリン酸の化学種は何か．また，$[\\ce{H3PO4}]$ と $[\\ce{PO4^3-}]$ が無視できることを，それぞれ隣の化学種との濃度比を見積もって確かめよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$0.10\\,\\mathrm{mol/L}$ のリン酸 $\\ce{H3PO4}$ 水溶液 $1.0\\,\\mathrm{L}$ から出発して，同じく $\\mathrm{pH}=7.50$ の緩衝液をつくるには，$\\ce{NaOH}$ は何 g 必要か．有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "$\\mathrm{pH}$ 12 付近の緩衝液をリン酸の塩でつくるには，どの 2 つの化学種を含む溶液にすればよいか．理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$K_2=\\dfrac{[\\ce{H+}][\\ce{HPO4^2-}]}{[\\ce{H2PO4-}]}$ の両辺の常用対数をとって整理すると得られる．"
+   },
+   {
+    "id": "2",
+    "tex": "$2.7\\,\\mathrm{g}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{HPO4^2-}$．$[\\ce{H3PO4}]/[\\ce{H2PO4-}]\\approx4\\times10^{-6}$，$[\\ce{PO4^3-}]/[\\ce{HPO4^2-}]\\approx1\\times10^{-5}$ でともに無視できる．"
+   },
+   {
+    "id": "4",
+    "tex": "$6.7\\,\\mathrm{g}$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\ce{HPO4^2-}$ と $\\ce{PO4^3-}$（$\\mathrm{p}K_3=12.4$ に近い pH で両者の濃度が同程度になり，緩衝作用が大きいから）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $K_2=\\dfrac{[\\ce{H+}][\\ce{HPO4^2-}]}{[\\ce{H2PO4-}]}$ より $[\\ce{H+}]=K_2\\dfrac{[\\ce{H2PO4-}]}{[\\ce{HPO4^2-}]}$．両辺の常用対数をとり $-1$ を掛けると\n\\[ \\mathrm{pH}=\\mathrm{p}K_2+\\log_{10}\\frac{[\\ce{HPO4^2-}]}{[\\ce{H2PO4-}]} \\]\n（pH が $\\mathrm{p}K_2$ に近いときは，他の 2 つの電離平衡の化学種は少なく，この 2 種だけを考えればよい．）\n\n\\textbf{(2)} $\\mathrm{pH}=7.50$ では $\\log_{10}\\dfrac{[\\ce{HPO4^2-}]}{[\\ce{H2PO4-}]}=7.50-7.20=0.30$ なので，比は $2.0$．\n加える $\\ce{NaOH}$ を $x\\,\\mathrm{mol}$ とすると，$\\ce{H2PO4- + OH- -> HPO4^2- + H2O}$ により\n\\[ \\frac{x}{0.10-x}=2.0\\qquad x=\\frac{0.20}{3}=0.0667\\,\\mathrm{mol} \\]\n$\\ce{NaOH}$ のモル質量は $40\\,\\mathrm{g/mol}$ なので $0.0667\\times40=2.67\\fallingdotseq\\boldsymbol{2.7\\,\\mathrm{g}}$．\n\n\\textbf{(3)} $[\\ce{HPO4^2-}]:[\\ce{H2PO4-}]=2:1$ なので最も多いのは $\\boldsymbol{\\ce{HPO4^2-}}$．\n$[\\ce{H+}]=10^{-7.50}$ を用いて\n\\[ \\frac{[\\ce{H3PO4}]}{[\\ce{H2PO4-}]}=\\frac{[\\ce{H+}]}{K_1}=10^{-7.50+2.1}=10^{-5.4}\\approx4\\times10^{-6},\\qquad \\frac{[\\ce{PO4^3-}]}{[\\ce{HPO4^2-}]}=\\frac{K_3}{[\\ce{H+}]}=10^{-12.4+7.50}=10^{-4.9}\\approx1\\times10^{-5} \\]\nどちらも非常に小さく，$\\ce{H2PO4-}$ と $\\ce{HPO4^2-}$ だけを考えた (2) の扱いは妥当である．\n\n\\textbf{(4)} リン酸から出発すると，まず $\\ce{H3PO4 + OH- -> H2PO4- + H2O}$ で $0.10\\,\\mathrm{mol}$ の $\\ce{NaOH}$ が使われてすべて $\\ce{H2PO4-}$ になり，そのあと (2) と同じく $0.0667\\,\\mathrm{mol}$ が必要になる．\n\\[ (0.10+0.0667)\\times40=6.67\\fallingdotseq\\boldsymbol{6.7\\,\\mathrm{g}} \\]\n同じ pH・同じリン酸の総量でも，出発する化学種によって必要な塩基の量が 1 段階分ずつ違う．\n\n\\textbf{(5)} 緩衝作用は，共役な酸と塩基の対が同程度の濃度で存在する $\\mathrm{pH}\\approx\\mathrm{p}K$ の付近で大きい．$\\mathrm{pH}$ 12 は $\\mathrm{p}K_3=12.4$ に近いので，$\\boldsymbol{\\ce{HPO4^2-}\\text{ と }\\ce{PO4^3-}}$（例えば $\\ce{Na2HPO4}$ と $\\ce{Na3PO4}$）の混合溶液にすればよい．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "多価の弱酸の緩衝液は，目的の pH に最も近い pK の段の共役対で，pH＝pK＋log（塩基型/酸型）から必要な比を決め，出発する化学種から何段階分の塩基が必要かを数えて加える量を求める．目的の pH で他の段の化学種が無視できることも濃度比で確かめる．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "nitrogen-phosphorus",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "リン酸",
+  "緩衝液",
+  "多段階電離",
+  "pK",
+  "中和"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

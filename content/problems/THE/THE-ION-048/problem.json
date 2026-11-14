@@ -1,0 +1,116 @@
+{
+ "id": "THE-ION-048",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "モル伝導率から求める弱酸の電離度と電離定数",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "電解質の水溶液の電気の通しやすさを，溶質 $1\\,\\mathrm{mol}$ あたりに換算した量をモル伝導率 $\\Lambda$（単位 $\\mathrm{S\\,cm^2/mol}$）という．次のモデルで考える．\n\n\n\\textbf{(i)}　強電解質の $\\Lambda$ は，無限に薄めた極限の値 $\\Lambda_0$ に近く，$\\Lambda_0$ は陽イオンの寄与と陰イオンの寄与の和で表される（各イオンの寄与は相手のイオンによらない）．\n\n\\textbf{(ii)}　弱電解質では，電離して生じたイオン $1\\,\\mathrm{mol}$ あたりの電気の運びやすさは濃度によらないとし，電離度を $\\alpha$ として $\\Lambda=\\alpha\\Lambda_0$ と表される．\n\n$25\\,^\\circ\\mathrm{C}$ で，強電解質の $\\Lambda_0$ は $\\ce{HCl}$ $425$，$\\ce{NaCl}$ $126$，$\\ce{NaA}$ $101$（いずれも $\\mathrm{S\\,cm^2/mol}$．$\\ce{A-}$ は1価の弱酸 HA の陰イオン）である．また HA の水溶液のモル伝導率を測ると，濃度 $4.0\\times10^{-3}\\,\\mathrm{mol/L}$ で $80.0$，$4.0\\times10^{-4}\\,\\mathrm{mol/L}$ で $200$ であった．水の電離は無視する．$\\sqrt{4.8}=2.19$ を用いてよい．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "モデル (i) を用いて，HA の $\\Lambda_0$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "2 つの濃度での HA の電離度と，それぞれから求めた電離定数 $K_a$ を有効数字2桁で答え，HA が弱電解質としてモデル (ii) に従っていると考えてよいか判断せよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\ce{NaA}$ のデータがなく $\\Lambda_0$ が未知であっても，HA の 2 つの測定値だけから $\\Lambda_0$ と $K_a$ を同時に決められる．$K_a$ を $C$，$\\Lambda$，$\\Lambda_0$ で表す式をつくり，$\\Lambda_0$ を求めて (1) と一致することを確かめよ．"
+     },
+     {
+      "id": "4",
+      "tex": "弱酸で $\\alpha\\ll1$ とする近似を用いると，濃度を $\\dfrac{1}{10}$ にしたときモル伝導率は何倍になると予想されるか．実測値と比べて，この測定範囲で近似が使えるかどうかを述べよ．"
+     },
+     {
+      "id": "5",
+      "tex": "$1.0\\times10^{-5}\\,\\mathrm{mol/L}$ の HA のモル伝導率を有効数字2桁で予測せよ．また，弱電解質の $\\Lambda_0$ は，強電解質のように「測定値を濃度 0 へ延長する」方法では求めにくい．その理由を述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$400\\,\\mathrm{S\\,cm^2/mol}$"
+   },
+   {
+    "id": "2",
+    "tex": "$4.0\\times10^{-3}\\,\\mathrm{mol/L}$：$\\alpha=0.20$，$K_a=2.0\\times10^{-4}\\,\\mathrm{mol/L}$．$4.0\\times10^{-4}\\,\\mathrm{mol/L}$：$\\alpha=0.50$，$K_a=2.0\\times10^{-4}\\,\\mathrm{mol/L}$．濃度によらず $K_a$ が一定なので，モデル (ii) に従うと考えてよい"
+   },
+   {
+    "id": "3",
+    "tex": "$K_a=\\dfrac{C\\Lambda^2}{\\Lambda_0(\\Lambda_0-\\Lambda)}$，$\\Lambda_0=400\\,\\mathrm{S\\,cm^2/mol}$ となり，イオンの寄与の和から求めた値と一致する"
+   },
+   {
+    "id": "4",
+    "tex": "$\\sqrt{10}\\fallingdotseq3.2$ 倍と予想されるが，実測は $2.5$ 倍．$\\alpha$ が $0.2$〜$0.5$ と大きく近似は使えない"
+   },
+   {
+    "id": "5",
+    "tex": "$3.8\\times10^{2}\\,\\mathrm{S\\,cm^2/mol}$．弱電解質の $\\Lambda$ は薄いところでも濃度とともに急に変化し続け，$\\Lambda_0$ に近づくのは非常に薄い濃度でしかないので，測定値から極限値を延長して読み取れないから"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　モデル (i) より，$\\Lambda_0$ は $\\ce{H+}$ と $\\ce{A-}$ の寄与の和．\n\\[ \\Lambda_0(\\ce{HA})=\\Lambda_0(\\ce{HCl})+\\Lambda_0(\\ce{NaA})-\\Lambda_0(\\ce{NaCl})=425+101-126=\\boldsymbol{400\\,\\mathrm{S\\,cm^2/mol}} \\]\n（$\\ce{Na+}$ と $\\ce{Cl-}$ の寄与が打ち消し合う．HA 自身は弱電解質なので，その $\\Lambda_0$ は直接測れない．）\n\n\\textbf{(2)}　$\\alpha=\\Lambda/\\Lambda_0$，$K_a=\\dfrac{C\\alpha^2}{1-\\alpha}$ より\n\\[ C=4.0\\times10^{-3}:\\ \\alpha=\\dfrac{80.0}{400}=\\boldsymbol{0.20},\\quad K_a=\\dfrac{4.0\\times10^{-3}\\times0.040}{0.80}=\\boldsymbol{2.0\\times10^{-4}\\,\\mathrm{mol/L}} \\]\n\\[ C=4.0\\times10^{-4}:\\ \\alpha=\\dfrac{200}{400}=\\boldsymbol{0.50},\\quad K_a=\\dfrac{4.0\\times10^{-4}\\times0.25}{0.50}=\\boldsymbol{2.0\\times10^{-4}\\,\\mathrm{mol/L}} \\]\n濃度が 10 倍違っても $K_a$ が同じ値になるので，「電離平衡が成り立ち，電離したイオンだけが電気を運ぶ」というモデル (ii) に従うと考えてよい．\n\n\\textbf{(3)}　$\\alpha=\\dfrac{\\Lambda}{\\Lambda_0}$ を $K_a=\\dfrac{C\\alpha^2}{1-\\alpha}$ に代入して\n\\[ K_a=\\dfrac{C\\Lambda^2}{\\Lambda_0(\\Lambda_0-\\Lambda)} \\]\n2 つの測定値で $K_a$ が等しいので\n\\[ \\dfrac{4.0\\times10^{-3}\\times80.0^2}{\\Lambda_0(\\Lambda_0-80.0)}=\\dfrac{4.0\\times10^{-4}\\times200^2}{\\Lambda_0(\\Lambda_0-200)} \\quad\\Longrightarrow\\quad \\dfrac{25.6}{\\Lambda_0-80.0}=\\dfrac{16.0}{\\Lambda_0-200} \\]\n$25.6\\Lambda_0-5120=16.0\\Lambda_0-1280$，$9.6\\Lambda_0=3840$，$\\Lambda_0=\\boldsymbol{400\\,\\mathrm{S\\,cm^2/mol}}$ となり (1) と一致する．このとき $K_a=\\dfrac{25.6}{400\\times320}=2.0\\times10^{-4}\\,\\mathrm{mol/L}$．未知数が $\\Lambda_0$ と $K_a$ の 2 つなので，濃度の異なる 2 点の測定で決まる．\n\n\\textbf{(4)}　$\\alpha\\ll1$ なら $\\alpha=\\sqrt{K_a/C}$，$\\Lambda=\\Lambda_0\\sqrt{K_a/C}$ で，$\\Lambda$ は $\\dfrac{1}{\\sqrt C}$ に比例する．濃度を $\\dfrac{1}{10}$ にすると $\\sqrt{10}\\fallingdotseq\\boldsymbol{3.2}$ 倍になるはずだが，実測は $\\dfrac{200}{80.0}=2.5$ 倍にとどまる．この範囲では $\\alpha$ が $0.2$〜$0.5$ と 1 に比べて小さくなく，$1-\\alpha\\fallingdotseq1$ の近似は使えない（(2) のように $1-\\alpha$ を残して計算すべきである）．\n\n\\textbf{(5)}　$C=1.0\\times10^{-5}$ では $C\\alpha^2=K_a(1-\\alpha)$，$C\\alpha^2+K_a\\alpha-K_a=0$ より\n\\[ \\alpha=\\dfrac{-K_a+\\sqrt{K_a^2+4K_aC}}{2C}=\\dfrac{-2.0\\times10^{-4}+\\sqrt{4.8\\times10^{-8}}}{2.0\\times10^{-5}}=\\dfrac{(2.19-2.00)\\times10^{-4}}{2.0\\times10^{-5}}=0.95 \\]\n$\\Lambda=0.95\\times400\\fallingdotseq\\boldsymbol{3.8\\times10^{2}\\,\\mathrm{S\\,cm^2/mol}}$．\n\n濃度を $4.0\\times10^{-3}\\to4.0\\times10^{-4}\\to1.0\\times10^{-5}$ と薄めると $\\Lambda$ は $80\\to200\\to380$ と大きく変わり続け，$\\Lambda_0$ に十分近づくのは $C$ が $K_a$ よりずっと小さい（ここでは $10^{-6}\\,\\mathrm{mol/L}$ 以下の）ときだけである．そのような薄い溶液では測定そのものが難しく（水自身の電離や不純物の寄与が無視できなくなる），測定値を濃度 0 へ延長して $\\Lambda_0$ を読み取ることができない．強電解質は $\\alpha=1$ で $\\Lambda$ がほとんど変わらないので延長できる．そのため弱電解質の $\\Lambda_0$ は (1) のように強電解質の値の組み合わせか，(3) のように平衡の式を使って求める．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "弱電解質ではモル伝導率が電離度に比例する（Λ=αΛ₀）とするモデルから，Λ₀ を強電解質の値の加成性で求めて電離度と電離定数を決め，濃度によらず Kₐ が一定であることでモデルを検証する．Λ₀ が未知でも，Kₐ=CΛ²/{Λ₀(Λ₀−Λ)} を2点で連立すれば Λ₀ と Kₐ を同時に決められ，α≪1 の近似（Λ∝1/√C）が破れていることも判断できる．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "モル伝導率",
+  "電離度",
+  "電離定数",
+  "近似の妥当性",
+  "モデル"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

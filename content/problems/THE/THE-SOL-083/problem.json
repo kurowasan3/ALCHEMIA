@@ -1,0 +1,108 @@
+{
+ "id": "THE-SOL-083",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-09",
+ "topic": "霧状の吸収液による気体の吸収（ヘンリーの法則と液滴の大きさ）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "容積 $8.31\\,\\mathrm{L}$ の密閉容器に，気体 A をわずかに含む空気を入れ，温度を $300\\,\\mathrm{K}$ に保つ．容器内に，A だけを溶かし A と反応しない吸収液を，同じ直径の球形の液滴にして霧状に散布する．A の溶解はヘンリーの法則 $P_\\mathrm{A}=H[\\mathrm{A}]_\\mathrm{max}$（$P_\\mathrm{A}$：A の分圧〔Pa〕，$[\\mathrm{A}]_\\mathrm{max}$：その分圧で溶けうる最大の濃度〔mol/L〕）に従い，$H=3.00\\times10^{5}\\,\\mathrm{Pa\\cdot L/mol}$ とする．また，液滴の表面積 $1\\,\\mathrm{m^2}$ あたりの A の吸収速度は $k([\\mathrm{A}]_\\mathrm{max}-[\\mathrm{A}])$（$k$ は定数，$[\\mathrm{A}]$ は液滴中の A の濃度）で表される．液滴の体積は気体の体積に比べて無視でき，散布の前後で液滴の大きさは変わらないものとする．気体定数は $8.31\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "散布前の A の物質量を $n_0$〔mol〕，吸収液の総体積を $L$〔L〕とする．十分に時間がたった後の A の分圧 $P$ を，$n_0$，$L$ と数値を用いて表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "吸収液 $1.00\\,\\mathrm{L}$ を散布したとき，十分に時間がたつまでに吸収される A は $n_0$ の何 \\% か．整数で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "吸収液を $2.00\\,\\mathrm{L}$ にすると，最終的に吸収される A の物質量は (2) の何倍になるか．分数で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "吸収液の総体積を $1.00\\,\\mathrm{L}$ のまま，液滴の直径を $\\dfrac{1}{3}$ にした．次の (a)〜(c) は，直径を変える前の何倍になるか．(a) 最終的に吸収される A の物質量　(b) 同じ $P_\\mathrm{A}$，$[\\mathrm{A}]$ における液滴 1 個あたりの吸収速度〔mol/s〕　(c) 同じ $P_\\mathrm{A}$，$[\\mathrm{A}]$ における吸収液全体の吸収速度〔mol/s〕"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$P=\\dfrac{n_0}{3.33\\times10^{-6}+3.33\\times10^{-6}L}\\,\\mathrm{Pa}$（$=\\dfrac{3.00\\times10^{5}\\,n_0}{1+L}$）"
+   },
+   {
+    "id": "2",
+    "tex": "50 \\%"
+   },
+   {
+    "id": "3",
+    "tex": "$\\dfrac{4}{3}$ 倍"
+   },
+   {
+    "id": "4",
+    "tex": "(a) 1 倍　(b) $\\dfrac{1}{9}$ 倍　(c) 3 倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 十分に時間がたつと液滴中の A の濃度は $[\\mathrm{A}]=P/H$ になる．A の物質量の保存（気相＋液相＝$n_0$）より\n\\[ \\frac{P\\times8.31}{8.31\\times10^{3}\\times300}+\\frac{P}{3.00\\times10^{5}}\\times L=n_0 \\]\n$\\dfrac{8.31}{8.31\\times10^{3}\\times300}=3.33\\times10^{-6}$，$\\dfrac{1}{3.00\\times10^{5}}=3.33\\times10^{-6}$ なので\n\\[ P=\\boldsymbol{\\frac{n_0}{3.33\\times10^{-6}(1+L)}}=\\frac{3.00\\times10^{5}\\,n_0}{1+L}\\ \\mathrm{Pa} \\]\n\n\\textbf{(2)} 吸収量 $=\\dfrac{P}{H}L=\\dfrac{L}{1+L}n_0$．$L=1.00$ で $\\dfrac{1}{2}n_0$，すなわち $\\boldsymbol{50\\ \\%}$．\n\n\\textbf{(3)} $L=2.00$ で $\\dfrac{2}{3}n_0$．$\\dfrac{2/3}{1/2}=\\boldsymbol{\\dfrac{4}{3}}$ 倍．液を 2 倍にしても吸収量は 2 倍にならない．液が増えて多く吸収されると気相の分圧が下がり，液 1 L あたりに溶ける量が減るからである．\n\n\\textbf{(4)} (a) 最終状態は (1) の物質収支とヘンリーの法則だけで決まり，液滴の大きさは関係しない．$\\boldsymbol{1}$ 倍．\n\n(b) 1 個あたりの吸収速度は表面積 $\\pi d^{2}$ に比例するので $\\left(\\dfrac{1}{3}\\right)^{2}=\\boldsymbol{\\dfrac{1}{9}}$ 倍．\n\n(c) 総体積一定で直径を $\\dfrac{1}{3}$ にすると，1 個の体積が $\\dfrac{1}{27}$ になるので個数は 27 倍．全体の速度は $27\\times\\dfrac{1}{9}=\\boldsymbol{3}$ 倍（総表面積は直径に反比例する）．\n\n\\textbf{ポイント}　液滴を細かくすると吸収は速くなる（平衡に早く近づく）が，最終的な吸収量（平衡の位置）は変わらない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "気体の吸収の最終状態は「気相＋液相＝一定」の物質収支とヘンリーの法則だけで決まり，液量を2倍にしても分圧が下がるので吸収量は2倍にならない．液滴を細かくすると総表面積が直径に反比例して増えるので吸収速度は大きくなるが，最終的な吸収量は変わらない．"
+ },
+ "concepts": [
+  "solution-colligative",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ヘンリーの法則",
+  "気体の吸収",
+  "物質収支",
+  "表面積",
+  "吸収速度"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

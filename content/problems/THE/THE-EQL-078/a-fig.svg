@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 400" width="560" height="400">
+<rect x="70" y="30" width="450" height="310" fill="none" stroke="currentColor" stroke-width="1.2"/>
+<line x1="70" y1="340.0" x2="520" y2="340.0" stroke="currentColor" stroke-dasharray="3 4" opacity="0.5"/>
+<text x="62" y="345.0" text-anchor="end" font-size="13" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">-4</text>
+<line x1="70" y1="288.3" x2="520" y2="288.3" stroke="currentColor" stroke-dasharray="3 4" opacity="0.5"/>
+<text x="62" y="293.3" text-anchor="end" font-size="13" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">-3</text>
+<line x1="70" y1="236.7" x2="520" y2="236.7" stroke="currentColor" stroke-dasharray="3 4" opacity="0.5"/>
+<text x="62" y="241.7" text-anchor="end" font-size="13" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">-2</text>
+<line x1="70" y1="185.0" x2="520" y2="185.0" stroke="currentColor" stroke-dasharray="3 4" opacity="0.5"/>
+<text x="62" y="190.0" text-anchor="end" font-size="13" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">-1</text>
+<line x1="70" y1="133.3" x2="520" y2="133.3" stroke="currentColor" stroke-dasharray="3 4" opacity="0.5"/>
+<text x="62" y="138.3" text-anchor="end" font-size="13" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">0</text>
+<line x1="70" y1="81.7" x2="520" y2="81.7" stroke="currentColor" stroke-dasharray="3 4" opacity="0.5"/>
+<text x="62" y="86.7" text-anchor="end" font-size="13" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">1</text>
+<line x1="70" y1="30.0" x2="520" y2="30.0" stroke="currentColor" stroke-dasharray="3 4" opacity="0.5"/>
+<text x="62" y="35.0" text-anchor="end" font-size="13" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">2</text>
+<line x1="70.0" y1="340" x2="70.0" y2="345" stroke="currentColor"/>
+<text x="70.0" y="361" text-anchor="middle" font-size="13" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">1</text>
+<line x1="160.0" y1="340" x2="160.0" y2="345" stroke="currentColor"/>
+<text x="160.0" y="361" text-anchor="middle" font-size="13" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">3</text>
+<line x1="250.0" y1="340" x2="250.0" y2="345" stroke="currentColor"/>
+<text x="250.0" y="361" text-anchor="middle" font-size="13" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">5</text>
+<line x1="340.0" y1="340" x2="340.0" y2="345" stroke="currentColor"/>
+<text x="340.0" y="361" text-anchor="middle" font-size="13" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">7</text>
+<line x1="430.0" y1="340" x2="430.0" y2="345" stroke="currentColor"/>
+<text x="430.0" y="361" text-anchor="middle" font-size="13" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">9</text>
+<line x1="520.0" y1="340" x2="520.0" y2="345" stroke="currentColor"/>
+<text x="520.0" y="361" text-anchor="middle" font-size="13" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">11</text>
+<text x="295.0" y="394" text-anchor="middle" font-size="14" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">pH</text>
+<text x="20" y="185.0" text-anchor="middle" font-size="14" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif" transform="rotate(-90 20 185.0)">log₁₀ k</text>
+<line x1="70.0" y1="81.7" x2="295.0" y2="340.0" stroke="#1f5fbf" stroke-width="1.5" stroke-dasharray="6 4"/>
+<line x1="205.0" y1="340.0" x2="475.0" y2="30.0" stroke="#1f5fbf" stroke-width="1.5" stroke-dasharray="6 4"/>
+<polyline points="70.0,81.7 72.2,84.2 74.5,86.8 76.8,89.4 79.0,92.0 81.3,94.6 83.5,97.2 85.8,99.7 88.0,102.3 90.3,104.9 92.5,107.5 94.8,110.1 97.0,112.7 99.3,115.2 101.5,117.8 103.8,120.4 106.0,123.0 108.3,125.6 110.5,128.2 112.8,130.7 115.0,133.3 117.3,135.9 119.5,138.5 121.8,141.1 124.0,143.7 126.2,146.2 128.5,148.8 130.7,151.4 133.0,154.0 135.2,156.6 137.5,159.2 139.7,161.7 142.0,164.3 144.2,166.9 146.5,169.5 148.7,172.1 151.0,174.7 153.2,177.2 155.5,179.8 157.7,182.4 160.0,185.0 162.2,187.6 164.5,190.2 166.7,192.7 169.0,195.3 171.2,197.9 173.5,200.5 175.7,203.1 178.0,205.7 180.2,208.2 182.5,210.8 184.7,213.4 187.0,216.0 189.2,218.5 191.5,221.1 193.7,223.7 196.0,226.2 198.2,228.8 200.5,231.4 202.7,233.9 205.0,236.4 207.2,239.0 209.5,241.5 211.7,244.0 214.0,246.4 216.2,248.9 218.5,251.3 220.7,253.7 223.0,256.0 225.2,258.2 227.5,260.4 229.7,262.4 232.0,264.4 234.2,266.2 236.5,267.8 238.7,269.3 241.0,270.5 243.2,271.5 245.5,272.2 247.7,272.6 250.0,272.8 252.2,272.6 254.5,272.2 256.7,271.5 259.0,270.5 261.2,269.3 263.5,267.8 265.7,266.2 268.0,264.4 270.2,262.4 272.5,260.4 274.7,258.2 277.0,256.0 279.2,253.7 281.5,251.3 283.7,248.9 286.0,246.4 288.2,244.0 290.5,241.5 292.7,239.0 295.0,236.4 297.2,233.9 299.5,231.4 301.7,228.8 304.0,226.2 306.2,223.7 308.5,221.1 310.7,218.5 313.0,216.0 315.2,213.4 317.5,210.8 319.7,208.2 322.0,205.7 324.2,203.1 326.5,200.5 328.7,197.9 331.0,195.3 333.2,192.7 335.5,190.2 337.7,187.6 340.0,185.0 342.2,182.4 344.5,179.8 346.7,177.2 349.0,174.7 351.2,172.1 353.5,169.5 355.7,166.9 358.0,164.3 360.2,161.7 362.5,159.2 364.7,156.6 367.0,154.0 369.2,151.4 371.5,148.8 373.7,146.2 376.0,143.7 378.2,141.1 380.5,138.5 382.7,135.9 385.0,133.3 387.2,130.7 389.5,128.2 391.7,125.6 394.0,123.0 396.2,120.4 398.5,117.8 400.7,115.2 403.0,112.7 405.2,110.1 407.5,107.5 409.7,104.9 412.0,102.3 414.2,99.7 416.5,97.2 418.7,94.6 421.0,92.0 423.2,89.4 425.5,86.8 427.7,84.2 430.0,81.7 432.2,79.1 434.5,76.5 436.7,73.9 439.0,71.3 441.2,68.7 443.5,66.2 445.7,63.6 448.0,61.0 450.2,58.4 452.5,55.8 454.8,53.2 457.0,50.7 459.3,48.1 461.5,45.5 463.8,42.9 466.0,40.3 468.3,37.7 470.5,35.2 472.8,32.6 475.0,30.0" fill="none" stroke="currentColor" stroke-width="2.2"/>
+<circle cx="250.0" cy="272.8" r="4" fill="#c0392b"/>
+<circle cx="250.0" cy="288.3" r="3.5" fill="none" stroke="#1f5fbf" stroke-width="1.5"/>
+<line x1="254.0" y1="272.8" x2="322.0" y2="290.9" stroke="#c0392b" stroke-width="1"/>
+<text x="326.5" y="295.9" font-size="13" fill="#c0392b" font-family="Noto Sans CJK JP, sans-serif">最低点 (5.0, −2.70)</text>
+<line x1="254.0" y1="290.3" x2="322.0" y2="319.3" stroke="#1f5fbf" stroke-width="1"/>
+<text x="326.5" y="324.3" font-size="13" fill="#1f5fbf" font-family="Noto Sans CJK JP, sans-serif">交点 (5.0, −3.0)</text>
+<text x="83.5" y="200.5" font-size="13" fill="#1f5fbf" font-family="Noto Sans CJK JP, sans-serif">傾き −1</text>
+<text x="439.0" y="123.0" font-size="13" fill="#1f5fbf" font-family="Noto Sans CJK JP, sans-serif">傾き +1</text>
+</svg>

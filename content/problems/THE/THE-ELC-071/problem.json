@@ -1,0 +1,118 @@
+{
+ "id": "THE-ELC-071",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-07",
+ "topic": "塩化カリウム水溶液の電気分解と金属カリウムの追加（気体の合計と中和滴定による収支）",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "equation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "電解槽に $0.200\\,\\mathrm{mol/L}$ の塩化カリウム水溶液 $200\\,\\mathrm{mL}$ を入れ，炭素電極を用いて一定電流で $3860$ 秒間電気分解したところ，両極で発生した気体の体積の合計は標準状態で $0.448\\,\\mathrm{L}$ であった．続いて，電気分解を終えた水溶液に単体のカリウムを加えたところ気体が発生し，カリウムはすべて反応した．この水溶液を $0.500\\,\\mathrm{mol/L}$ の硫酸で中和滴定すると，中和点までに $30.0\\,\\mathrm{mL}$ を要した．\n発生した気体は水に溶けず，互いに反応しないものとし，標準状態の気体のモル体積は $22.4\\,\\mathrm{L/mol}$，ファラデー定数は $9.65\\times10^{4}\\,\\mathrm{C/mol}$，原子量は $\\ce{K}=39.1$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "電気分解全体の変化を 1 つの化学反応式で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "流した電流は何 A か．有効数字 3 桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "加えたカリウムの質量を有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "カリウムを加えたときに発生した気体の体積（標準状態）を有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "カリウムの代わりに同じ物質量のカルシウムを加えて（すべて反応したとして）同じ操作をすると，中和に要する硫酸の体積は何 mL になるか．有効数字 3 桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{2KCl + 2H2O -> 2KOH + H2 + Cl2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$0.500\\,\\mathrm{A}$"
+   },
+   {
+    "id": "3",
+    "tex": "$0.391\\,\\mathrm{g}$"
+   },
+   {
+    "id": "4",
+    "tex": "$0.112\\,\\mathrm{L}$"
+   },
+   {
+    "id": "5",
+    "tex": "$40.0\\,\\mathrm{mL}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 陰極：$\\ce{2H2O + 2e- -> H2 + 2OH-}$，陽極：$\\ce{2Cl- -> Cl2 + 2e-}$．まとめると\n\\[ \\ce{2KCl + 2H2O -> 2KOH + H2 + Cl2} \\]\n\\textbf{(2)} 電子 2 mol で $\\ce{H2}$ と $\\ce{Cl2}$ が 1 mol ずつ，計 2 mol の気体が生じるので，\\textbf{気体の合計の物質量＝電子の物質量}．\n\\[ \\frac{0.448}{22.4} = 0.0200\\,\\mathrm{mol} \\qquad I = \\frac{0.0200\\times9.65\\times10^{4}}{3860} = \\boldsymbol{0.500\\,\\mathrm{A}} \\]\n（$\\ce{Cl-}$ は $0.0400\\,\\mathrm{mol}$ あり，消費された $0.0200\\,\\mathrm{mol}$ より多いので，陽極で酸素は発生していない．）\n\n\\textbf{(3)} 電気分解で $\\ce{KOH}$ が電子と同じ $0.0200\\,\\mathrm{mol}$ 生じる．カリウムは\n\\[ \\ce{2K + 2H2O -> 2KOH + H2} \\]\nで 1 mol から $\\ce{KOH}$ 1 mol を生じる．中和に使われた $\\ce{H+}$ は $0.500\\times2\\times\\dfrac{30.0}{1000} = 0.0300\\,\\mathrm{mol}$ で，$\\ce{OH-}$ の合計に等しい．\n\\[ n(\\ce{K}) = 0.0300 - 0.0200 = 0.0100\\,\\mathrm{mol} \\qquad 0.0100\\times39.1 = \\boldsymbol{0.391\\,\\mathrm{g}} \\]\n\\textbf{(4)} $\\ce{H2}$ は $\\dfrac{0.0100}{2} = 0.00500\\,\\mathrm{mol}$，$0.00500\\times22.4 = \\boldsymbol{0.112\\,\\mathrm{L}}$．\n\n\\textbf{(5)} $\\ce{Ca + 2H2O -> Ca(OH)2 + H2}$ で，$\\ce{Ca}$ 1 mol は $\\ce{OH-}$ 2 mol を生じる．$\\ce{OH-}$ の合計は $0.0200 + 2\\times0.0100 = 0.0400\\,\\mathrm{mol}$，必要な $\\ce{H2SO4}$ は $0.0200\\,\\mathrm{mol}$ で，$\\dfrac{0.0200}{0.500} = 0.0400\\,\\mathrm{L} = \\boldsymbol{40.0\\,\\mathrm{mL}}$．\n（中和滴定では $\\ce{OH-}$ がどこから来たかは区別されず，合計だけが測られる．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "塩化物水溶液の電気分解では電子 1 mol ごとに気体（H₂ と Cl₂ の合計）が 1 mol 生じ，同時に OH⁻ が 1 mol 生じる．後から加えた金属が生じる OH⁻ と合わせた全量が中和滴定で測られるので，差から金属の量が決まる（2 価の金属なら OH⁻ は 2 倍）．"
+ },
+ "concepts": [
+  "electrolysis",
+  "alkali-metals",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電気分解",
+  "塩化カリウム",
+  "水酸化物イオン",
+  "中和滴定",
+  "アルカリ金属",
+  "ファラデー定数"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

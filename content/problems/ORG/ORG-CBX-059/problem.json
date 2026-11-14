@@ -1,0 +1,109 @@
+{
+ "id": "ORG-CBX-059",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-04",
+ "topic": "シュウ酸エステルの加水分解と過マンガン酸カリウム滴定による分子量・構造の決定",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "structure"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "C，H，O だけからなるエステル E に炭酸水素ナトリウム水溶液を加えても気体は発生しなかった．E $1.74\\,\\mathrm g$ に水酸化ナトリウム水溶液を加えて加熱し，完全に加水分解したところ，2 価カルボン酸 B の塩と 1 種類のアルコール C が得られた．C を蒸留して取り除いたのち，残りの溶液を希硫酸で酸性にして水を加え，正確に $100\\,\\mathrm{mL}$ とした．このうち $10.0\\,\\mathrm{mL}$ を温めながら $0.0200\\,\\mathrm{mol/L}$ の過マンガン酸カリウム水溶液で滴定すると，$20.0\\,\\mathrm{mL}$ で赤紫色が消えなくなった．また，C を二クロム酸カリウムの硫酸酸性水溶液で酸化するとケトンが得られた．原子量は H = 1.0，C = 12，O = 16 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "過マンガン酸カリウムと反応したことから，B は還元性をもつ 2 価カルボン酸である．B の名称を答えよ．また，硫酸酸性での B と $\\ce{MnO4-}$ の反応をイオン反応式で書け．"
+     },
+     {
+      "id": "2",
+      "tex": "E の分子量を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "E の構造を示性式で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "E と同じ分子式をもち，炭酸水素ナトリウム水溶液と反応して $\\ce{CO2}$ を発生する化合物 F は，加水分解すると B と 1 種類のアルコールを生じた．F $1.74\\,\\mathrm g$ を加水分解して E と同じ操作で滴定すると，必要な過マンガン酸カリウム水溶液は何 mL か．また，F $1.74\\,\\mathrm g$ を加水分解せずに $0.100\\,\\mathrm{mol/L}$ の水酸化ナトリウム水溶液で中和滴定すると，何 mL を要するか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "シュウ酸，$\\ce{2MnO4- + 5(COOH)2 + 6H+ -> 2Mn^2+ + 10CO2 + 8H2O}$"
+   },
+   {
+    "id": "2",
+    "tex": "174"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{(CH3)2CHOOC-COOCH(CH3)2}$"
+   },
+   {
+    "id": "4",
+    "tex": "加水分解後の滴定：$20.0\\,\\mathrm{mL}$，加水分解前の中和：$100\\,\\mathrm{mL}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　2 価カルボン酸で還元性をもつ（酸化されて $\\ce{CO2}$ になる）のは $\\boldsymbol{\\text{シュウ酸}}$ $\\ce{(COOH)2}$ である．\n\\[ \\ce{MnO4- + 8H+ + 5e- -> Mn^2+ + 4H2O},\\qquad \\ce{(COOH)2 -> 2CO2 + 2H+ + 2e-} \\]\n電子の数をそろえて\n\\[ \\ce{2MnO4- + 5(COOH)2 + 6H+ -> 2Mn^2+ + 10CO2 + 8H2O} \\]\n\n\\textbf{(2)}　$\\ce{MnO4-}$ は $0.0200\\times\\dfrac{20.0}{1000}=4.00\\times10^{-4}\\,\\mathrm{mol}$．シュウ酸はその $\\dfrac52$ 倍で $1.00\\times10^{-3}\\,\\mathrm{mol}$（$10.0\\,\\mathrm{mL}$ 中）．全体（$100\\,\\mathrm{mL}$）では $1.00\\times10^{-2}\\,\\mathrm{mol}$．E は $\\ce{CO2}$ を出さない（COOH をもたない）ので，シュウ酸の 2 つの COOH がどちらもエステルになったジエステルで，E 1 mol からシュウ酸 1 mol が生じる．分子量は $1.74/(1.00\\times10^{-2})=\\boldsymbol{174}$．\n\n\\textbf{(3)}　ジエステル $\\ce{ROOC-COOR}$ の $\\ce{-OOC-COO-}$ 部分（$\\ce{C2O4}$）の式量は 88 なので，2 つの R で $174-88=86$，R 1 つは 43 で $\\ce{C3H7}$．C を酸化するとケトンになるので C は第二級アルコールの 2-プロパノール $\\ce{CH3CH(OH)CH3}$ で，E は\n\\[ \\boldsymbol{\\ce{(CH3)2CHOOC-COOCH(CH3)2}}\\quad(\\ce{C8H14O4}) \\]\n加水分解は $\\ce{C8H14O4 + 2NaOH -> Na2C2O4 + 2C3H8O}$．アルコールを残したまま滴定すると 2-プロパノールも $\\ce{MnO4-}$ に酸化されてしまうので，先に取り除いておく必要がある．\n\n\\textbf{(4)}　F は COOH を 1 つ残したシュウ酸のモノエステル $\\ce{HOOC-COOC6H13}$（分子量 174）で，F 1 mol からもシュウ酸 1 mol が生じる．物質量が E と同じ $1.00\\times10^{-2}\\,\\mathrm{mol}$ なので，滴定量も同じ $\\boldsymbol{20.0\\,\\mathrm{mL}}$ で，この滴定では E と F は区別できない．\n\n一方，加水分解する前の F は COOH を 1 つもつ 1 価の酸なので，$\\ce{NaOH}$ $1.00\\times10^{-2}\\,\\mathrm{mol}$ と中和する．$1.00\\times10^{-2}/0.100=0.100\\,\\mathrm L$ より $\\boldsymbol{100\\,\\mathrm{mL}}$（E は中和しないので 0 mL）．「加水分解してから測る量」はもとの酸の量を，「加水分解の前に測る量」は残っている COOH の数を表す．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "エステルの加水分解で生じるシュウ酸は還元性をもつので KMnO4 滴定で定量でき（MnO4− : シュウ酸 = 2 : 5），その物質量から分子量とアルコール部分の式量が決まる．加水分解後の定量ではジエステルとモノエステルは区別できず，加水分解前の中和や NaHCO3 との反応で残っている COOH の数を調べて区別する．"
+ },
+ "concepts": [
+  "carboxylic-ester",
+  "transition-metals",
+  "alcohol-carbonyl"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "シュウ酸",
+  "エステル",
+  "酸化還元滴定",
+  "過マンガン酸カリウム",
+  "構造決定"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

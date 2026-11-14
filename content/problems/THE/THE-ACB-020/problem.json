@@ -1,0 +1,117 @@
+{
+ "id": "THE-ACB-020",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-05",
+ "topic": "弱酸の中和滴定の滴定誤差と定量できる電離定数の下限",
+ "course": "化学",
+ "level": 5,
+ "minutes": 35,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "1価の弱酸 $\\ce{HA}$ の水溶液を水酸化ナトリウム水溶液で滴定するとき，指示薬が変色する pH（終点の pH）が中和点の pH と一致しないと，終点までの滴下量が中和点の滴下量からずれる．このずれの割合を滴定誤差 $E$ とよぶ．\n\\[ E=\\dfrac{(\\text{終点までに加えた NaOH の物質量})-(\\text{はじめの HA の物質量})}{\\text{はじめの HA の物質量}} \\]\n温度は 25 ℃，$K_w=1.0\\times10^{-14}\\,(\\mathrm{mol/L})^2$，$\\log_{10}2=0.30$ とする．体積変化は混合した水溶液の体積の和とし，終点付近では溶液の体積は中和点の体積に等しいとみなしてよい．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$0.100\\,\\mathrm{mol/L}$ の酢酸（$K_a=2.0\\times10^{-5}\\,\\mathrm{mol/L}$）$20.0\\,\\mathrm{mL}$ を $0.100\\,\\mathrm{mol/L}$ 水酸化ナトリウム水溶液で滴定する．中和点の pH を小数第2位まで求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "終点の溶液で，$\\ce{Na+}$ の濃度を $c_{\\mathrm B}$，$\\ce{HA}$ と $\\ce{A-}$ の濃度の和を $C$ とする．電荷のつり合いを用いて，$E$ を $[\\ce{OH-}]$，$[\\ce{H+}]$，$[\\ce{HA}]$，$C$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "(1) の滴定で，終点の pH が 9.70 のときと 7.00 のときの $E$ をそれぞれ百分率で有効数字2桁で求めよ（符号もつけよ）．"
+     },
+     {
+      "id": "4",
+      "tex": "終点の pH が 9.00 になる指示薬を用いて，(1) と同じ濃度・体積の弱酸を滴定する．$|E|\\leqq0.10\\,\\%$ となるために必要な $K_a$ の最小値を有効数字2桁で求めよ．また，フェノール（$K_a=1.0\\times10^{-10}\\,\\mathrm{mol/L}$）をこの方法で定量できるか，$E$ の値を示して判断せよ．"
+     },
+     {
+      "id": "5",
+      "tex": "酢酸と水酸化ナトリウム水溶液の濃度をともに $0.0100\\,\\mathrm{mol/L}$ にして，終点の pH が 9.00 の指示薬で滴定した．$E$ を百分率で有効数字2桁で求め，$0.100\\,\\mathrm{mol/L}$ のとき（終点の pH 9.00）の $E$ と比べて，誤差が大きくなる理由を述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$8.70$"
+   },
+   {
+    "id": "2",
+    "tex": "$E=\\dfrac{[\\ce{OH-}]-[\\ce{H+}]-[\\ce{HA}]}{C}$"
+   },
+   {
+    "id": "3",
+    "tex": "pH 9.70：$+0.099\\,\\%$，pH 7.00：$-0.50\\,\\%$"
+   },
+   {
+    "id": "4",
+    "tex": "$K_a=8.3\\times10^{-7}\\,\\mathrm{mol/L}$；フェノールは $E\\fallingdotseq-91\\,\\%$ となり定量できない"
+   },
+   {
+    "id": "5",
+    "tex": "$+0.20\\,\\%$（$0.100\\,\\mathrm{mol/L}$ では $+0.015\\,\\%$）；うすいと過剰の $\\ce{OH-}$ の濃度 $10^{-5}\\,\\mathrm{mol/L}$ が全濃度 $C$ に対して相対的に大きくなり，中和点の pH も 8.20 に下がって終点の pH 9.00 から遠ざかるから"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 中和点では $\\ce{CH3COONa}$ が $C=\\dfrac{2.00\\,\\mathrm{mmol}}{40.0\\,\\mathrm{mL}}=0.0500\\,\\mathrm{mol/L}$．加水分解 $\\ce{CH3COO- + H2O <=> CH3COOH + OH-}$ の $K_h=\\dfrac{K_w}{K_a}=5.0\\times10^{-10}\\,\\mathrm{mol/L}$ より\n\\[ [\\ce{OH-}]=\\sqrt{K_hC}=\\sqrt{2.5\\times10^{-11}}=5.0\\times10^{-6}\\,\\mathrm{mol/L},\\qquad \\mathrm{pOH}=6-\\log_{10}5=5.30 \\]\nよって $\\mathrm{pH}=\\boldsymbol{8.70}$．（加水分解の割合は $10^{-4}$ 程度で $[\\ce{CH3COO-}]\\fallingdotseq C$ の近似は妥当．）\n\n\\textbf{(2)} 電荷のつり合い $[\\ce{Na+}]+[\\ce{H+}]=[\\ce{A-}]+[\\ce{OH-}]$ に $[\\ce{Na+}]=c_{\\mathrm B}$，$[\\ce{A-}]=C-[\\ce{HA}]$ を代入すると $c_{\\mathrm B}-C=[\\ce{OH-}]-[\\ce{H+}]-[\\ce{HA}]$．終点の溶液は1つなので物質量の比は濃度の比に等しく，\n\\[ \\boldsymbol{E=\\dfrac{c_{\\mathrm B}-C}{C}=\\dfrac{[\\ce{OH-}]-[\\ce{H+}]-[\\ce{HA}]}{C}} \\]\n（$[\\ce{OH-}]$ は加えすぎた塩基，$[\\ce{HA}]$ は中和されずに残った酸を表す．）また $[\\ce{HA}]=\\dfrac{C[\\ce{H+}]}{K_a+[\\ce{H+}]}$ である．\n\n\\textbf{(3)} $C=0.0500\\,\\mathrm{mol/L}$．\npH 9.70：$[\\ce{OH-}]=10^{-4.30}=5.0\\times10^{-5}$，$[\\ce{HA}]=\\dfrac{0.0500\\times2.0\\times10^{-10}}{2.0\\times10^{-5}}=5.0\\times10^{-7}$，$[\\ce{H+}]$ は無視できる．\n\\[ E=\\dfrac{5.0\\times10^{-5}-5.0\\times10^{-7}}{0.0500}=9.9\\times10^{-4}=\\boldsymbol{+0.099\\,\\%} \\]\npH 7.00：$[\\ce{OH-}]=[\\ce{H+}]$ で打ち消し合い，$[\\ce{HA}]=\\dfrac{0.0500\\times1.0\\times10^{-7}}{2.0\\times10^{-5}+1.0\\times10^{-7}}=2.49\\times10^{-4}$．\n\\[ E=-\\dfrac{2.49\\times10^{-4}}{0.0500}=\\boldsymbol{-0.50\\,\\%} \\]\n中和点（pH 8.70）より塩基性側で止めると加えすぎ（正），酸性側で止めると不足（負）になる．\n\n\\textbf{(4)} pH 9.00 では $\\dfrac{[\\ce{OH-}]}{C}=\\dfrac{1.0\\times10^{-5}}{0.0500}=2.0\\times10^{-4}$（$+0.020\\,\\%$）．$E\\geqq-1.0\\times10^{-3}$ が必要なので\n\\[ \\dfrac{[\\ce{H+}]}{K_a+[\\ce{H+}]}\\leqq1.2\\times10^{-3}\\quad\\Rightarrow\\quad K_a\\geqq[\\ce{H+}]\\left(\\dfrac{1}{1.2\\times10^{-3}}-1\\right)=\\boldsymbol{8.3\\times10^{-7}\\,\\mathrm{mol/L}} \\]\n（$E$ が正側に $0.10\\,\\%$ を超えることは，どんな $K_a$ でも $E\\leqq+0.020\\,\\%$ なので起こらない．）フェノールでは $\\dfrac{[\\ce{HA}]}{C}=\\dfrac{1.0\\times10^{-9}}{1.0\\times10^{-10}+1.0\\times10^{-9}}=0.91$ で $E\\fallingdotseq\\boldsymbol{-91\\,\\%}$．終点でもほとんどが中和されずに残っているので，\\textbf{定量できない}．$K_a$ が小さい酸は中和点の pH が高くなりすぎ，指示薬で終点を決められない．\n\n\\textbf{(5)} $C=0.00500\\,\\mathrm{mol/L}$．$\\dfrac{[\\ce{OH-}]}{C}=\\dfrac{1.0\\times10^{-5}}{0.00500}=2.0\\times10^{-3}$，$\\dfrac{[\\ce{HA}]}{C}=\\dfrac{1.0\\times10^{-9}}{2.0\\times10^{-5}}=5.0\\times10^{-5}$ より\n\\[ E=2.0\\times10^{-3}-5.0\\times10^{-5}=1.95\\times10^{-3}\\fallingdotseq\\boldsymbol{+0.20\\,\\%} \\]\n$0.100\\,\\mathrm{mol/L}$ のときは $2.0\\times10^{-4}-5.0\\times10^{-5}=+0.015\\,\\%$ なので，誤差は約13倍になる．終点の pH が同じなら過剰の $\\ce{OH-}$ の濃度は濃度によらず $1.0\\times10^{-5}\\,\\mathrm{mol/L}$ だが，それを割る全濃度 $C$ が $\\tfrac{1}{10}$ になるからである．また，うすい溶液の中和点の pH は $[\\ce{OH-}]=\\sqrt{K_hC}=\\sqrt{2.5\\times10^{-12}}$ から $8.20$ に下がり，終点の pH 9.00 との差が大きくなる．うすい溶液ほど，中和点に近い変色域の指示薬を選ぶ必要がある．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "電荷のつり合いから，滴定誤差は（終点に残る過剰の OH-）−（中和されずに残る HA）を全濃度で割った量で表せる．これを使うと，指示薬の終点 pH と酸の濃度から，誤差を一定以内にするのに必要な Ka の下限や，うすい溶液で誤差が大きくなることが定量的に判断できる．"
+ },
+ "concepts": [
+  "acid-base",
+  "concentration",
+  "ph"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "中和滴定",
+  "滴定誤差",
+  "指示薬",
+  "弱酸",
+  "電荷のつり合い"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

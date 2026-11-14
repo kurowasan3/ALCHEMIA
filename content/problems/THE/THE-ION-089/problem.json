@@ -1,0 +1,117 @@
+{
+ "id": "THE-ION-089",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "大気の二酸化炭素と平衡にある雨に硝酸が加わったときの pH（炭酸の寄与の見積もり）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "雨滴は大気中の二酸化炭素と溶解平衡にあり，溶けた二酸化炭素（$\\ce{H2CO3}$ と表す）の濃度は二酸化炭素の分圧 $p$ に比例して $[\\ce{H2CO3}]=3.0\\times10^{-7}\\times p$（$[\\ce{H2CO3}]$ は mol/L，$p$ は Pa）で表される．大気中の二酸化炭素の分圧は $40\\,\\mathrm{Pa}$ で一定とする．$\\ce{H2CO3}$ は $\\ce{H2CO3 <=> H+ + HCO3-}$（$K_1=4.5\\times10^{-7}\\,\\mathrm{mol/L}$）のように電離し，2 段目の電離と水の電離は無視できるものとする．必要なら $\\sqrt{5.4}=2.32$，$\\sqrt{25.6}=5.06$，$\\log_{10}2.32=0.37$，$\\log_{10}3.53=0.55$，$10^{-4.5}=3.16\\times10^{-5}$ を用いよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "雨滴中の $[\\ce{H2CO3}]$ を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "大気汚染のない雨の pH を小数第1位まで求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "窒素酸化物から生じた硝酸が溶け込み，雨の pH が $4.5$ になった．このとき雨中の $[\\ce{NO3-}]$ を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の雨について，次の (a)，(b) に答えよ．(a) $[\\ce{H2CO3}]$ は汚染のない雨と比べて増加するか，減少するか，変わらないか．(b) $[\\ce{H+}]$ のうち $\\ce{H2CO3}$ の電離に由来する割合は何％か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "雨中の $[\\ce{NO3-}]$ が $2.0\\times10^{-6}\\,\\mathrm{mol/L}$ のとき，雨の pH を小数第1位まで求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$1.2\\times10^{-5}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "2",
+    "tex": "5.6"
+   },
+   {
+    "id": "3",
+    "tex": "$3.1\\times10^{-5}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "4",
+    "tex": "(a) 変わらない　(b) $0.54\\,\\%$"
+   },
+   {
+    "id": "5",
+    "tex": "5.5"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　$[\\ce{H2CO3}]=3.0\\times10^{-7}\\times40=\\boldsymbol{1.2\\times10^{-5}\\,\\mathrm{mol/L}}$．大気と接している限り，この値は雨の pH に関係なく一定である（開いた系）．\n\n\\textbf{電荷のつり合い}　$[\\ce{H+}]=[\\ce{HCO3-}]+[\\ce{NO3-}]$，$[\\ce{HCO3-}]=\\dfrac{K_1[\\ce{H2CO3}]}{[\\ce{H+}]}=\\dfrac{5.4\\times10^{-12}}{[\\ce{H+}]}$．\n\n\\textbf{(2)}　$[\\ce{NO3-}]=0$ なので $[\\ce{H+}]^2=5.4\\times10^{-12}$，$[\\ce{H+}]=2.32\\times10^{-6}$，$\\mathrm{pH}=6-0.37=\\boldsymbol{5.6}$．（「pH 5.6 以下の雨を酸性雨とする」目安はこの値による．）\n\n\\textbf{(3)}　$[\\ce{H+}]=3.16\\times10^{-5}$ のとき $[\\ce{HCO3-}]=\\dfrac{5.4\\times10^{-12}}{3.16\\times10^{-5}}=1.7\\times10^{-7}$．\n$[\\ce{NO3-}]=3.16\\times10^{-5}-0.017\\times10^{-5}=\\boldsymbol{3.1\\times10^{-5}\\,\\mathrm{mol/L}}$．\n\n\\textbf{(4)}　(a) $[\\ce{H2CO3}]$ は二酸化炭素の分圧だけで決まるので\\textbf{変わらない}．(b) $\\ce{H2CO3}$ 由来の $\\ce{H+}$ は $[\\ce{HCO3-}]$ に等しく $\\dfrac{1.7\\times10^{-7}}{3.16\\times10^{-5}}\\times100=\\boldsymbol{0.54\\,\\%}$．強酸の $\\ce{H+}$ によって炭酸の電離が抑えられ（$[\\ce{HCO3-}]$ は汚染のない雨の $2.32\\times10^{-6}$ から約 $\\frac1{14}$ に減る），pH が 5 より十分小さい雨では炭酸の寄与は無視できる．\n\n\\textbf{(5)}　$[\\ce{NO3-}]$ が汚染のない雨の $[\\ce{H+}]$ と同程度なので，どちらも無視できない．$[\\ce{H+}]=x$ として $x=\\dfrac{5.4\\times10^{-12}}{x}+2.0\\times10^{-6}$，$x^2-2.0\\times10^{-6}x-5.4\\times10^{-12}=0$．\n\\[ x=\\frac{2.0\\times10^{-6}+\\sqrt{4.0\\times10^{-12}+21.6\\times10^{-12}}}{2}=\\frac{(2.0+5.06)\\times10^{-6}}{2}=3.53\\times10^{-6} \\]\n$\\mathrm{pH}=6-0.55=\\boldsymbol{5.5}$．硝酸の $\\ce{H+}$（$2.0\\times10^{-6}$）をそのまま足した $4.3\\times10^{-6}$ にはならない．$\\ce{H+}$ が増えた分だけ炭酸の電離が抑えられるからである．\n\n（雨中で硝酸ができる過程の例：$\\ce{2NO + O2 -> 2NO2}$，$\\ce{4NO2 + O2 + 2H2O -> 4HNO3}$．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "大気と接した雨では溶けた CO₂ の濃度がヘンリーの法則で固定されるので，[HCO₃⁻]=K₁[H₂CO₃]/[H⁺] は強酸が加わると減り，炭酸の電離は抑えられる．電荷のつり合い [H⁺]=[HCO₃⁻]+[NO₃⁻] から，強酸が十分多ければ炭酸の寄与は無視でき，同程度なら二次方程式を解く必要がある．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "nitrogen-phosphorus",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "酸性雨",
+  "ヘンリーの法則",
+  "炭酸の電離",
+  "電荷のつり合い",
+  "共通イオン効果"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

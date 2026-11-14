@@ -1,0 +1,117 @@
+{
+ "id": "THE-EQL-148",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "不可逆阻害と競合阻害（酵素量の減少と見かけのミカエリス定数の増加）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある酵素 E の反応の速さ $v$ は，基質の濃度 $[\\mathrm S]$ を用いて\n\\[v=\\frac{V_{\\max}[\\mathrm S]}{K_{\\mathrm m}+[\\mathrm S]},\\qquad V_{\\max}=k[\\mathrm E]_0\\]\nと表される（$[\\mathrm E]_0$ は活性をもつ酵素の全濃度，$k$ は定数）．阻害剤がないとき，$[\\mathrm E]_0=1.0\\,\\mu\\mathrm{mol/L}$ で $V_{\\max}=0.50\\,\\mathrm{mmol/(L\\,min)}$，$K_{\\mathrm m}=2.0\\,\\mathrm{mmol/L}$ であった．\n阻害剤 X は酵素の活性部位に共有結合で 1 対 1 に結合し，結合した酵素は二度と働かない（不可逆阻害）．阻害剤 Y は基質とよく似た形で，活性部位に可逆的に結合して基質と奪い合う（競合阻害）．Y が存在すると，見かけの $K_{\\mathrm m}$ が $K_{\\mathrm m}\\left(1+\\dfrac{[\\mathrm Y]}{K_{\\mathrm i}}\\right)$ になり（$K_{\\mathrm i}=0.10\\,\\mathrm{mmol/L}$），$V_{\\max}$ は変わらない．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "酵素液に X を $0.40\\,\\mu\\mathrm{mol/L}$ 加えて十分に反応させた．$V_{\\max}$ と $K_{\\mathrm m}$ はそれぞれいくらになるか．また，$[\\mathrm S]=2.0\\,\\mathrm{mmol/L}$ と $[\\mathrm S]=50\\,\\mathrm{mmol/L}$ のときの $v$ を，阻害剤がない場合とともに有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "Y を $0.30\\,\\mathrm{mmol/L}$ 含む溶液で，$[\\mathrm S]=2.0\\,\\mathrm{mmol/L}$ と $50\\,\\mathrm{mmol/L}$ のときの $v$ を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(1)，(2) の結果をもとに，基質の濃度を大きくすると阻害の効果を打ち消せるのはどちらの阻害剤か答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "阻害剤を加えた酵素液を，酵素は通さず低分子は通す膜に入れて大量の水に浸し（透析），その後に活性を測った．X と Y のそれぞれで，活性は元に戻るか．"
+     },
+     {
+      "id": "5",
+      "tex": "X を $1.2\\,\\mu\\mathrm{mol/L}$ 加えた場合，基質をどれだけ多くしても反応はほとんど進まない．その理由を述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$V_{\\max}=0.30\\,\\mathrm{mmol/(L\\,min)}$，$K_{\\mathrm m}=2.0\\,\\mathrm{mmol/L}$（変わらない）．$[\\mathrm S]=2.0$：阻害なし $0.25$，X あり $0.15$；$[\\mathrm S]=50$：阻害なし $0.48$，X あり $0.29\\,\\mathrm{mmol/(L\\,min)}$"
+   },
+   {
+    "id": "2",
+    "tex": "$[\\mathrm S]=2.0$：$0.10$，$[\\mathrm S]=50$：$0.43\\,\\mathrm{mmol/(L\\,min)}$"
+   },
+   {
+    "id": "3",
+    "tex": "Y（競合阻害）"
+   },
+   {
+    "id": "4",
+    "tex": "X：戻らない，Y：戻る"
+   },
+   {
+    "id": "5",
+    "tex": "X が酵素（$1.0\\,\\mu\\mathrm{mol/L}$）より多いので，すべての酵素の活性部位が共有結合でふさがれ，働く酵素が残らない（$V_{\\max}=0$）．基質は活性部位から X を追い出せないので，基質を増やしても速さは 0 のまま．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} X は酵素と 1 対 1 で不可逆に結合するので，働く酵素は $1.0-0.40=0.60\\,\\mu\\mathrm{mol/L}$ に減る．残った酵素は阻害を受けていないふつうの酵素なので，$K_{\\mathrm m}$ は\\textbf{変わらず} $2.0\\,\\mathrm{mmol/L}$，$V_{\\max}$ は酵素量に比例して $0.50\\times0.60=\\boldsymbol{0.30\\,\\mathrm{mmol/(L\\,min)}}$．\n$[\\mathrm S]=2.0$：阻害なし $\\dfrac{0.50\\times2.0}{2.0+2.0}=0.25$，X あり $\\dfrac{0.30\\times2.0}{4.0}=0.15$．\n$[\\mathrm S]=50$：阻害なし $\\dfrac{0.50\\times50}{52}=0.48$，X あり $\\dfrac{0.30\\times50}{52}=0.29$．\nどちらの基質濃度でも，速さは阻害なしの $60\\,\\%$ のまま．\n\n\\textbf{(2)} 見かけの $K_{\\mathrm m}=2.0\\times\\left(1+\\dfrac{0.30}{0.10}\\right)=8.0\\,\\mathrm{mmol/L}$，$V_{\\max}=0.50$．\n$[\\mathrm S]=2.0$：$\\dfrac{0.50\\times2.0}{8.0+2.0}=\\boldsymbol{0.10}$（阻害なしの $40\\,\\%$）．\n$[\\mathrm S]=50$：$\\dfrac{0.50\\times50}{58}=\\boldsymbol{0.43}$（阻害なしの $90\\,\\%$）．\n\n\\textbf{(3)} Y では基質を増やすと基質が活性部位の奪い合いに勝ち，速さは阻害なしの値に近づく．X では働く酵素そのものが減っているので，基質をいくら増やしても上限は $0.30$ のままである．よって打ち消せるのは \\textbf{Y}．\n\n\\textbf{(4)} Y は可逆的に結合しているので，透析で溶液中の Y が除かれると酵素から離れ，活性は\\textbf{戻る}．X は共有結合しているので透析しても外れず，活性は\\textbf{戻らない}．透析は「阻害が可逆か不可逆か」を見分ける実験になる．\n\n\\textbf{(5)} 不可逆阻害剤は酵素と物質量の比で反応するので，X（$1.2\\,\\mu\\mathrm{mol/L}$）が酵素（$1.0\\,\\mu\\mathrm{mol/L}$）を上回ると，すべての酵素が失活する．競合阻害と違って基質は X を追い出せないので，$v$ は基質の濃度によらず 0 である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "不可逆阻害剤は酵素と物質量の比で結合して働く酵素の量そのものを減らすので，Km は変わらず Vmax だけが酵素の残りの割合に下がり，基質の増加でも透析でも回復しない．競合阻害剤は可逆的に活性部位を奪い合うだけなので見かけの Km が大きくなり，基質を増やせば阻害なしの速さに近づき，透析で活性が戻る．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "protein-amino",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "酵素",
+  "阻害剤",
+  "不可逆阻害",
+  "競合阻害",
+  "ミカエリス・メンテンの式"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

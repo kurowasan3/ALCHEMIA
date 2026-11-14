@@ -1,0 +1,109 @@
+{
+ "id": "THE-MOL-016",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-04",
+ "topic": "オゾン生成の体積変化とヨウ化カリウムとの反応",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "質量パーセント濃度 3.4 % の過酸化水素水 $50.0\\,\\mathrm g$ に少量の酸化マンガン(IV) を加え，過酸化水素をすべて分解して酸素を得た．$\\ce{H}=1.0$，$\\ce{O}=16$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "発生した酸素は何 mol か．"
+     },
+     {
+      "id": "2",
+      "tex": "得られた酸素を乾燥させてオゾン発生器に通じたところ，一部がオゾンに変化し，同温・同圧で気体の体積が 6.0 % 減少した．生じたオゾンは何 mol か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2)の混合気体の平均分子量を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(2)の混合気体を十分な量のヨウ化カリウム水溶液に通じると，オゾンはすべて反応した．反応後の気体（水蒸気を除く）の体積は，通じる前と比べて増えるか，減るか，変わらないか．反応式をもとに答えよ．また，生じたヨウ素は何 mol か．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$2.50\\times10^{-2}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "2",
+    "tex": "$3.0\\times10^{-3}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "34"
+   },
+   {
+    "id": "4",
+    "tex": "変わらない（$\\ce{O3 + 2KI + H2O -> I2 + 2KOH + O2}$ でオゾン 1 mol が酸素 1 mol に置きかわるため）．ヨウ素 $3.0\\times10^{-3}\\,\\mathrm{mol}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $\\ce{H2O2}$（分子量 34）は $50.0\\times0.034=1.70\\,\\mathrm g$ で $0.0500\\,\\mathrm{mol}$．\n\\[\\ce{2H2O2 -> 2H2O + O2}\\]\nより $\\ce{O2}$ は $\\boldsymbol{2.50\\times10^{-2}\\,\\mathrm{mol}}$．\n\n(2) \\[\\ce{3O2 -> 2O3}\\]\n$\\ce{O3}$ が $2z\\,\\mathrm{mol}$ 生じると $\\ce{O2}$ は $3z$ 減り，気体は全体で $z$ mol 減る．体積の減少は物質量の減少に比例するので\n\\[z=0.0250\\times0.060=1.5\\times10^{-3}\\ \\Rightarrow\\ \\ce{O3}=2z=\\boldsymbol{3.0\\times10^{-3}\\,\\mathrm{mol}}\\]\n\n(3) 質量は変わらず $0.0250\\times32=0.800\\,\\mathrm g$，物質量は $0.0250-0.0015=0.0235\\,\\mathrm{mol}$．平均分子量は $0.800/0.0235\\fallingdotseq\\boldsymbol{34}$．\n\n(4) \\[\\ce{O3 + 2KI + H2O -> I2 + 2KOH + O2}\\]\n$\\ce{O3}$ 1 mol が反応すると $\\ce{O2}$ 1 mol が生じるので，気体の物質量は変わらず，体積は$\\boldsymbol{\\text{変わらない}}$．$\\ce{I2}$ は $\\ce{O3}$ と同じ $\\boldsymbol{3.0\\times10^{-3}\\,\\mathrm{mol}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "気体どうしの反応では，同温・同圧の体積変化が物質量の変化に比例するので，3O₂→2O₃ の体積減少から生成量が求まる．オゾンとヨウ化カリウムの反応ではオゾン1分子が酸素1分子に置きかわり，気体の体積が変わらないことを反応式から判断する．"
+ },
+ "concepts": [
+  "mole",
+  "oxygen-sulfur",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "オゾン",
+  "気体の体積",
+  "量的関係",
+  "ヨウ化カリウム",
+  "条件判断"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,117 @@
+{
+ "id": "THE-BND-015",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-03",
+ "topic": "粒子間の力と融点・沸点の比較",
+ "course": "化学",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の(1)〜(5)の各組について，［　］内の値が高いのはどちらか．物質名または化学式で答え，その理由を粒子間にはたらく力（結合）の違いにふれて簡潔に述べよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "［沸点］ フッ素 $\\ce{F2}$ と 塩素 $\\ce{Cl2}$"
+     },
+     {
+      "id": "2",
+      "tex": "［沸点］ 窒素 $\\ce{N2}$ と 一酸化炭素 $\\ce{CO}$"
+     },
+     {
+      "id": "3",
+      "tex": "［沸点］ ジメチルエーテル $\\ce{CH3OCH3}$ と エタノール $\\ce{C2H5OH}$"
+     },
+     {
+      "id": "4",
+      "tex": "［融点］ ダイヤモンド と ケイ素 $\\ce{Si}$ の結晶"
+     },
+     {
+      "id": "5",
+      "tex": "［融点］ フッ化ナトリウム $\\ce{NaF}$ と 酸化マグネシウム $\\ce{MgO}$（陽イオンと陰イオンの中心間距離はほぼ等しい）"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{Cl2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{CO}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{C2H5OH}$"
+   },
+   {
+    "id": "4",
+    "tex": "ダイヤモンド"
+   },
+   {
+    "id": "5",
+    "tex": "$\\ce{MgO}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) どちらも無極性分子で，分子間力はファンデルワールス力のみ．分子量が大きい $\\ce{Cl2}$（71）のほうが分子間力が強く沸点が高い（$\\ce{F2}$ $-188\\,^\\circ\\mathrm C$，$\\ce{Cl2}$ $-34\\,^\\circ\\mathrm C$）．\n\n(2) 分子量はどちらも28で等しい．$\\ce{N2}$ は無極性分子だが，$\\ce{CO}$ は異なる原子からなる極性分子なので，極性による静電気的な引力が加わり $\\ce{CO}$ のほうがわずかに沸点が高い（$-196\\,^\\circ\\mathrm C$ と $-192\\,^\\circ\\mathrm C$）．\n\n(3) 分子式はどちらも $\\ce{C2H6O}$．エタノールは $\\ce{O-H}$ をもち分子間で水素結合をつくるが，ジメチルエーテルは $\\ce{O}$ に $\\ce{H}$ が結合していないので分子間で水素結合をつくれない．よって $\\ce{C2H5OH}$（$78\\,^\\circ\\mathrm C$．ジメチルエーテルは $-24\\,^\\circ\\mathrm C$）．\n\n(4) どちらも共有結合の結晶（同じダイヤモンド型構造）．$\\ce{C}$ は $\\ce{Si}$ より原子が小さく，$\\ce{C-C}$ 結合は $\\ce{Si-Si}$ 結合より短く強いので $\\boldsymbol{\\text{ダイヤモンド}}$の融点が高い．\n\n(5) どちらもイオン結晶（$\\ce{NaCl}$ 型）．クーロン力はイオン間距離が同じならイオンの価数の積に比例し，$\\ce{NaF}$ は $1\\times1$，$\\ce{MgO}$ は $2\\times2$ なので $\\ce{MgO}$ の融点がはるかに高い（約 $990\\,^\\circ\\mathrm C$ と約 $2800\\,^\\circ\\mathrm C$）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "同じ種類の結晶・分子どうしで融点・沸点を比べるとき，分子量（ファンデルワールス力），極性，水素結合，共有結合の長さ，イオンの価数のどれが差を生むかを見分ける．分子量が等しい組や分子式が同じ組で，分子量以外の要因を判断する．"
+ },
+ "concepts": [
+  "chemical-bond",
+  "crystal",
+  "intermolecular"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "融点",
+  "沸点",
+  "分子間力",
+  "水素結合",
+  "イオン結晶",
+  "比較問題"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

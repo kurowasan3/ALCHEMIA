@@ -1,0 +1,102 @@
+{
+ "id": "ORG-DET-023",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-06",
+ "topic": "両性の芳香族化合物の電離平衡と pH による抽出分離",
+ "course": "化学",
+ "level": 5,
+ "minutes": 35,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "$p$-アミノ安息香酸は，水溶液中で次の2段階の電離平衡にある．以下，$\\ce{H3NC6H4COOH+}$ を $\\ce{H2A+}$，$\\ce{H2NC6H4COOH}$ を HA，$\\ce{H2NC6H4COO-}$ を $\\ce{A-}$ と書く（HA の双性イオンは考えない）．\n\\[\\ce{H3NC6H4COOH+ <=> H2NC6H4COOH + H+}\\qquad K_1 = 4.0\\times10^{-3}\\,\\mathrm{mol/L}\\]\n\\[\\ce{H2NC6H4COOH <=> H2NC6H4COO- + H+}\\qquad K_2 = 1.6\\times10^{-5}\\,\\mathrm{mol/L}\\]\n一方，$p$-アミノ安息香酸エチル（局所麻酔薬ベンゾカイン，以下 B と書く）は弱塩基で，その共役酸 $\\ce{BH+}$ の電離定数は $K_3 = 3.2\\times10^{-3}\\,\\mathrm{mol/L}$ である．\\\\\npH を一定に保った水溶液と同体積のエーテルを用いて1回抽出する．電荷をもたない分子（HA と B）だけが両層に分配され，その濃度比（エーテル層／水層）は HA で 4.0，B で 200 である．イオンはエーテル層に移らない．$\\log_{10}2 = 0.30$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "水層中の $p$-アミノ安息香酸全体のうち HA として存在する割合 $\\alpha$ を，$[\\ce{H+}]$，$K_1$，$K_2$ を用いて表せ．また，$\\alpha$ が最大になる pH と，そのときの $\\alpha$ を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) で求めた pH と pH 7.0 のそれぞれについて，1回の抽出で $p$-アミノ安息香酸の何 % がエーテル層に移るか．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "HA と B を含む水溶液から，1回の抽出で B の 99 % 以上をエーテル層に移し，HA は 1.0 % 以下しか移らないようにしたい．水層の pH をいくら以上にすればよいか，小数第1位まで求めよ．また，この分離で水層を強い塩基性にしすぎてはいけない理由を，B の構造から述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\alpha = \\dfrac{K_1[\\ce{H+}]}{[\\ce{H+}]^2 + K_1[\\ce{H+}] + K_1K_2}$；pH 3.6 で最大，$\\alpha = 0.89$"
+   },
+   {
+    "id": "2",
+    "tex": "pH 3.6 で 78 %，pH 7.0 で 2.4 %"
+   },
+   {
+    "id": "3",
+    "tex": "pH 7.4 以上；B はエステルなので，強い塩基性ではけん化されて $p$-アミノ安息香酸の陰イオン（$\\ce{A-}$）とエタノールになり，水層に移って失われるから"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $[\\ce{H2A+}] = \\dfrac{[\\ce{HA}][\\ce{H+}]}{K_1}$，$[\\ce{A-}] = \\dfrac{K_2[\\ce{HA}]}{[\\ce{H+}]}$ を全濃度に代入して\n\\[\\alpha = \\frac{[\\ce{HA}]}{[\\ce{H2A+}] + [\\ce{HA}] + [\\ce{A-}]} = \\frac{1}{\\dfrac{[\\ce{H+}]}{K_1} + 1 + \\dfrac{K_2}{[\\ce{H+}]}} = \\frac{K_1[\\ce{H+}]}{[\\ce{H+}]^2 + K_1[\\ce{H+}] + K_1K_2}\\]\n分母の $\\dfrac{[\\ce{H+}]}{K_1} + \\dfrac{K_2}{[\\ce{H+}]}$ は，相加平均・相乗平均の関係から $[\\ce{H+}] = \\sqrt{K_1K_2}$ のとき最小（$= 2\\sqrt{K_2/K_1}$）になる．\n$\\sqrt{K_1K_2} = \\sqrt{6.4\\times10^{-8}} = 8\\sqrt{10}\\times10^{-5}$ より $\\mathrm{pH} = 5 - 3\\log_{10}2 - \\dfrac{1}{2} = 3.6$（$\\mathrm{p}K_1 = 2.40$ と $\\mathrm{p}K_2 = 4.80$ の平均）．\n\\[\\alpha_\\text{max} = \\frac{1}{1 + 2\\sqrt{K_2/K_1}} = \\frac{1}{1 + 2\\sqrt{4.0\\times10^{-3}}} = \\frac{1}{1.126} \\fallingdotseq \\boldsymbol{0.89}\\]\npH 3.6 でも約 11 % はイオン（$\\ce{H2A+}$ と $\\ce{A-}$ が同量ずつ）として残る．\n\n\\textbf{(2)} 同体積なので，エーテル層に移る割合は $\\dfrac{D}{1 + D}$（$D$ = エーテル層の濃度／水層の全濃度 $= 4.0\\alpha$）．\\\\\npH 3.6：$D = 4.0\\times0.888 = 3.55$，$\\dfrac{3.55}{4.55} \\fallingdotseq \\boldsymbol{78\\,\\%}$．\\\\\npH 7.0：$[\\ce{H+}]^2 = 10^{-14}$，$K_1[\\ce{H+}] = 4.0\\times10^{-10}$ は $K_1K_2 = 6.4\\times10^{-8}$ に比べて小さいので $\\alpha \\fallingdotseq \\dfrac{4.0\\times10^{-10}}{6.44\\times10^{-8}} = 6.2\\times10^{-3}$．$D = 0.025$ で $\\dfrac{0.025}{1.025} \\fallingdotseq \\boldsymbol{2.4\\,\\%}$．ほとんどが $\\ce{A-}$ として水層に残る．\n\n\\textbf{(3)} B の条件：B として存在する割合を $\\beta = \\dfrac{K_3}{K_3 + [\\ce{H+}]}$ とすると $\\dfrac{200\\beta}{1 + 200\\beta} \\ge 0.99$ より $\\beta \\ge 0.495$，すなわち $[\\ce{H+}] \\le 1.02K_3 = 3.3\\times10^{-3}$，$\\mathrm{pH} \\ge 2.5$．\\\\\nHA の条件：$\\dfrac{4.0\\alpha}{1 + 4.0\\alpha} \\le 0.010$ より $\\alpha \\le \\dfrac{1}{396} = 2.5\\times10^{-3}$．酸性側でこれを満たすには $\\alpha \\fallingdotseq K_1/[\\ce{H+}] \\le 2.5\\times10^{-3}$，つまり $[\\ce{H+}] \\ge 1.6\\,\\mathrm{mol/L}$ が必要で，B の条件（pH 2.5 以上）と両立しない．塩基性側では $[\\ce{H+}] \\ll K_1$ なので $\\alpha \\fallingdotseq \\dfrac{[\\ce{H+}]}{[\\ce{H+}] + K_2}$ と近似でき（$[\\ce{H+}]^2$ の項は $K_1K_2$ の $10^{-7}$ 倍以下で無視できる），\n\\[[\\ce{H+}] \\le \\frac{K_2}{395} = \\frac{1.6\\times10^{-5}}{395} = 4.1\\times10^{-8}\\,\\mathrm{mol/L}\\]\n$\\mathrm{pH} \\ge 8 - \\log_{10}4.1 \\fallingdotseq 7.4$．両方を満たすのは \\textbf{pH 7.4 以上}．\\\\\nこの範囲では B は分子のまま，$p$-アミノ安息香酸は $\\ce{A-}$ として水層に残るので分けられる．ただし B はエステルなので，NaOH を多量に加えた強い塩基性ではけん化されて $\\ce{A-}$ とエタノールになり，B が失われる．したがって炭酸水素ナトリウム水溶液程度の弱い塩基性（pH 8 前後）で抽出するのがよい．両性の化合物は「中性付近」で抽出すればよいとは限らず，2つの電離定数で抽出に適した pH が決まる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "アミノ基とカルボキシ基をもつ化合物の分子形の割合は2つの電離定数で決まり，pH＝(pK₁＋pK₂)/2 で最大でも1未満になる．分配平衡と組み合わせると，塩基だけをもつ化合物と両性の化合物を分ける pH の範囲が定量的に決まり，エステルのけん化が上限を与える．"
+ },
+ "concepts": [
+  "organic-test",
+  "amphoteric",
+  "carboxylic-ester"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "両性化合物",
+  "電離平衡",
+  "分配平衡",
+  "抽出",
+  "pH",
+  "ベンゾカイン"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

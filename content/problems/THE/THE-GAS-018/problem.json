@@ -1,0 +1,109 @@
+{
+ "id": "THE-GAS-018",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-08",
+ "topic": "水上捕集での水位差と水蒸気圧の補正",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "2価の金属 M $0.126\\,\\mathrm g$ を十分な量の希硫酸と反応させ（$\\ce{\\text{M} + H2SO4 -> \\text{M}SO4 + H2}$），発生した水素をすべて水上置換でメスシリンダーに捕集した．捕集後，メスシリンダー内の気体の体積は $50.0\\,\\mathrm{mL}$ で，メスシリンダー内の水面は外の水面より $13.6\\,\\mathrm{cm}$ 高かった．温度は 27 ℃，大気圧は $1.01\\times10^{5}\\,\\mathrm{Pa}\\,(=760\\,\\mathrm{mmHg})$，27 ℃ の水の飽和蒸気圧は $3.6\\times10^{3}\\,\\mathrm{Pa}$，水銀の密度は $13.6\\,\\mathrm{g/cm^3}$，水（希硫酸）の密度は $1.00\\,\\mathrm{g/cm^3}$，$R=8.3\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$ とし，水素は水に溶けないものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$13.6\\,\\mathrm{cm}$ の水柱の圧力は何 Pa に相当するか．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "捕集した水素の分圧は何 Pa か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "金属 M の原子量を有効数字2桁で求め，M を Mg，Fe，Zn から選べ．"
+     },
+     {
+      "id": "4",
+      "tex": "内外の水面を一致させるには，メスシリンダーを上げればよいか，下げればよいか．また，そのとき気体の体積は $50.0\\,\\mathrm{mL}$ より大きくなるか，小さくなるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$1.3\\times10^{3}\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "2",
+    "tex": "$9.6\\times10^{4}\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "3",
+    "tex": "65，Zn"
+   },
+   {
+    "id": "4",
+    "tex": "下げればよい，小さくなる"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　水の密度は水銀の $\\dfrac{1}{13.6}$ なので，水柱 $13.6\\,\\mathrm{cm}$ は水銀柱 $1.00\\,\\mathrm{cm}=10.0\\,\\mathrm{mmHg}$ に相当する．\n\\[\\dfrac{10.0}{760}\\times1.01\\times10^{5}=1.33\\times10^{3}\\approx\\boldsymbol{1.3\\times10^{3}\\,\\mathrm{Pa}}\\]\n\n\\textbf{(2)}　内側の水面が高いので，内部の気体の圧力は大気圧より水柱の分だけ\\textbf{低い}：$1.01\\times10^{5}-1.33\\times10^{3}=9.97\\times10^{4}\\,\\mathrm{Pa}$．このうち水蒸気が $3.6\\times10^{3}\\,\\mathrm{Pa}$ なので，水素の分圧は $9.97\\times10^{4}-3.6\\times10^{3}=9.61\\times10^{4}\\approx\\boldsymbol{9.6\\times10^{4}\\,\\mathrm{Pa}}$．\n\n\\textbf{(3)}　$n_{\\ce{H2}}=\\dfrac{9.61\\times10^{4}\\times0.0500}{8.3\\times10^{3}\\times300}=1.93\\times10^{-3}\\,\\mathrm{mol}$．M と $\\ce{H2}$ は同じ物質量なので，原子量は $\\dfrac{0.126}{1.93\\times10^{-3}}=65.3\\approx\\boldsymbol{65}$，M は \\textbf{Zn}．\n\n\\textbf{(4)}　内部の圧力は大気圧より低いので，メスシリンダーを\\textbf{下げて}（沈めて）気体を圧縮し，内部の圧力を大気圧まで上げれば水面がそろう．圧縮するので体積は\\textbf{小さく}なる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "水上捕集で内外の水位が異なるとき，水柱の高さを水銀柱に換算して気体の圧力を補正し，さらに水蒸気圧を引いて目的の気体の分圧を求める．得られた物質量から金属の原子量を逆算し，水位をそろえる操作の向きを判断する．"
+ },
+ "concepts": [
+  "ideal-gas",
+  "gas-preparation",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "水上置換",
+  "水蒸気圧",
+  "分圧",
+  "原子量の決定",
+  "水柱"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 250" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="none" stroke="currentColor" stroke-width="1.6">
+  <!-- external circuit -->
+  <polyline points="110,95 110,30 310,30 310,95"/>
+  <circle cx="210" cy="30" r="13" fill="none"/>
+  <text x="210" y="35" text-anchor="middle" fill="currentColor" stroke="none">V</text>
+  <!-- beakers -->
+  <path d="M50,90 L50,215 Q50,225 60,225 L170,225 Q180,225 180,215 L180,90"/>
+  <path d="M240,90 L240,215 Q240,225 250,225 L360,225 Q370,225 370,215 L370,90"/>
+  <line x1="50" y1="120" x2="180" y2="120" stroke-dasharray="5 4" opacity="0.5"/>
+  <line x1="240" y1="120" x2="370" y2="120" stroke-dasharray="5 4" opacity="0.5"/>
+  <!-- electrodes -->
+  <rect x="100" y="95" width="20" height="95"/>
+  <rect x="300" y="95" width="20" height="95"/>
+  <text x="80" y="160" text-anchor="end" fill="currentColor" stroke="none">Pt</text>
+  <text x="340" y="160" fill="currentColor" stroke="none">Ag</text>
+  <!-- salt bridge -->
+  <path d="M155,190 L155,75 Q155,60 170,60 L250,60 Q265,60 265,75 L265,190" stroke-width="10" opacity="0.35"/>
+  <text x="210" y="80" text-anchor="middle" fill="currentColor" stroke="none" font-size="13">塩橋</text>
+  <text x="115" y="245" text-anchor="middle" fill="currentColor" stroke="none">A</text>
+  <text x="305" y="245" text-anchor="middle" fill="currentColor" stroke="none">B</text>
+</svg>

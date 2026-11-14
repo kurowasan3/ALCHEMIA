@@ -1,0 +1,114 @@
+{
+ "id": "THE-THC-022",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-10",
+ "topic": "原子化エンタルピーの表から単体の結合と黒鉛の昇華を順に決める",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "気体分子 $1\\,\\mathrm{mol}$ のすべての結合を切ってばらばらの原子（気体）にするのに必要なエネルギー（原子化エンタルピー）$E$ と，いくつかの物質の生成エンタルピー $\\Delta_{\\mathrm f}H$ が次のように与えられている（単位は kJ/mol）．\n\\[ \\begin{array}{c|cccc} & \\ce{N2} & \\ce{NH3} & \\ce{H2O} & \\ce{CO2} \\\\ \\hline E & 946 & 1170 & 928 & 1608 \\end{array} \\qquad \\begin{array}{c|cccc} & \\ce{NH3(気)} & \\ce{H2O(気)} & \\ce{CO2(気)} & \\ce{CH4(気)} \\\\ \\hline \\Delta_{\\mathrm f}H & -46 & -242 & -394 & -75 \\end{array} \\]\n表にない値は，与えられた値から順に決めていくこと．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "H–H の結合エネルギーを求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "O＝O の結合エネルギーを求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "黒鉛 $1\\,\\mathrm{mol}$ をばらばらの炭素原子（気体）にするのに必要なエネルギーを求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "メタンの C–H 結合 1 本あたりの平均の結合エネルギーを整数で求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "一酸化炭素 $\\ce{CO}$ の原子化エンタルピーを $1074\\,\\mathrm{kJ/mol}$ とする．$\\ce{CO(気)}$ の生成エンタルピーを求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$434\\,\\mathrm{kJ/mol}$"
+   },
+   {
+    "id": "2",
+    "tex": "$504\\,\\mathrm{kJ/mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "$710\\,\\mathrm{kJ}$"
+   },
+   {
+    "id": "4",
+    "tex": "$413\\,\\mathrm{kJ/mol}$"
+   },
+   {
+    "id": "5",
+    "tex": "$-112\\,\\mathrm{kJ/mol}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　反応物をいったんばらばらの原子にし，それを組み立てて生成物にする経路を考えると\n\\[ \\Delta H=(\\text{反応物の原子化エンタルピーの和})-(\\text{生成物の原子化エンタルピーの和}) \\]\n生成エンタルピーの式では反応物が単体なので，単体の原子化エンタルピーが 1 つだけ未知なら決められる．まだ値のわからない単体が 1 つだけになる式を順に選ぶ．\n\n\\textbf{(1)} $\\ce{1/2N2 + 3/2H2 -> NH3}$　$\\Delta H=-46$ より\n\\[ \\tfrac12\\times946+\\tfrac32E_{\\mathrm{H-H}}-1170=-46 \\quad\\Rightarrow\\quad E_{\\mathrm{H-H}}=\\boldsymbol{434\\,\\mathrm{kJ/mol}} \\]\n\n\\textbf{(2)} $\\ce{H2 + 1/2O2 -> H2O}$（水は気体）$\\Delta H=-242$ より\n\\[ 434+\\tfrac12E_{\\mathrm{O=O}}-928=-242 \\quad\\Rightarrow\\quad E_{\\mathrm{O=O}}=\\boldsymbol{504\\,\\mathrm{kJ/mol}} \\]\n\n\\textbf{(3)} $\\ce{C(黒鉛) + O2 -> CO2}$　$\\Delta H=-394$．黒鉛の原子化エンタルピーを $E_{\\mathrm C}$ として\n\\[ E_{\\mathrm C}+504-1608=-394 \\quad\\Rightarrow\\quad E_{\\mathrm C}=\\boldsymbol{710\\,\\mathrm{kJ}} \\]\n\n\\textbf{(4)} $\\ce{C(黒鉛) + 2H2 -> CH4}$　$\\Delta H=-75$ より，メタンの原子化エンタルピーは\n\\[ E_{\\ce{CH4}}=710+2\\times434+75=1653\\,\\mathrm{kJ/mol} \\]\nC–H は 4 本なので $1653/4=413.25$，$\\boldsymbol{413\\,\\mathrm{kJ/mol}}$．\n\n\\textbf{(5)} $\\ce{C(黒鉛) + 1/2O2 -> CO}$ の $\\Delta H$ は\n\\[ 710+\\tfrac12\\times504-1074=\\boldsymbol{-112\\,\\mathrm{kJ/mol}} \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "反応エンタルピーは「反応物の原子化エンタルピーの和−生成物の原子化エンタルピーの和」で表せるので，生成エンタルピーの式のうち未知の単体が1つだけのものを順に選べば，H–H，O＝O，黒鉛の昇華（原子化）のエネルギーを連鎖的に決められ，それを使って別の分子の平均結合エネルギーや生成エンタルピーが求まる．"
+ },
+ "concepts": [
+  "enthalpy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "結合エネルギー",
+  "原子化エンタルピー",
+  "ヘスの法則",
+  "生成エンタルピー",
+  "黒鉛の昇華"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

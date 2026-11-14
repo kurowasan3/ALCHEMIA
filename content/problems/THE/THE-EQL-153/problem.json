@@ -1,0 +1,109 @@
+{
+ "id": "THE-EQL-153",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "触媒表面での2分子反応の機構の判別（競争吸着による反応速度の極大）",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "気体 A と気体 B が金属触媒の表面で反応して生成物 P になる（$\\ce{A + B ->[\\text{}] P}$）．表面には吸着点が $N$ 個あり，1つの吸着点には分子が1個だけ吸着できる．吸着しているかどうかは速やかに平衡になり，気体 X（A または B）の吸着の速さは $k_\\mathrm{aX}\\,p_\\mathrm{X}\\,N\\,(\\text{空いている吸着点の割合})$，脱着の速さは $k_\\mathrm{dX}\\,N\\theta_\\mathrm{X}$（$\\theta_\\mathrm{X}$ は X が占める吸着点の割合）とし，$K_\\mathrm{X}=k_\\mathrm{aX}/k_\\mathrm{dX}$ とする．反応の機構として次の2つを考える．\n\\textbf{機構 I}：B は吸着せず，気体の B が吸着した A に直接衝突して反応する．速さは $v=k_1N\\theta_\\mathrm{A}\\,p_\\mathrm{B}$．\n\\textbf{機構 II}：A と B が同じ吸着点を奪い合って吸着し，吸着した A と B が表面で反応する．速さは $v=k_2N\\theta_\\mathrm{A}\\theta_\\mathrm{B}$．\nいずれも反応で吸着平衡はほとんど乱されないとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "機構 II について，$\\theta_\\mathrm{A}$ と $\\theta_\\mathrm{B}$ を $K_\\mathrm{A},\\ K_\\mathrm{B},\\ p_\\mathrm{A},\\ p_\\mathrm{B}$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "$p_\\mathrm{A}$ を一定にして $p_\\mathrm{B}$ を大きくしていくと，機構 I と機構 II のそれぞれで $v$ はどう変化するか．極大がある場合は，そのときの $p_\\mathrm{B}$ が満たす条件を $K_\\mathrm{A},\\ K_\\mathrm{B},\\ p_\\mathrm{A}$ で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "実験では，$p_\\mathrm{A}=2.0\\,\\mathrm{kPa}$ のとき $v$ は $p_\\mathrm{B}=3.0\\,\\mathrm{kPa}$ で極大になり，$p_\\mathrm{A}=6.0\\,\\mathrm{kPa}$ のときは $p_\\mathrm{B}=5.0\\,\\mathrm{kPa}$ で極大になった．どちらの機構で説明できるか．また，$K_\\mathrm{A}$ と $K_\\mathrm{B}$ を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の結果を用いて，$p_\\mathrm{A}=6.0\\,\\mathrm{kPa}$ での極大の速さは $p_\\mathrm{A}=2.0\\,\\mathrm{kPa}$ での極大の速さの何倍か，有効数字2桁で求めよ．また，$p_\\mathrm{A}=2.0\\,\\mathrm{kPa}$ のまま $p_\\mathrm{B}$ を $3.0\\,\\mathrm{kPa}$ から $12\\,\\mathrm{kPa}$ にすると，速さは何倍になるか．有効数字2桁で求め，その理由を述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\theta_\\mathrm{A}=\\dfrac{K_\\mathrm{A}p_\\mathrm{A}}{1+K_\\mathrm{A}p_\\mathrm{A}+K_\\mathrm{B}p_\\mathrm{B}}$，$\\theta_\\mathrm{B}=\\dfrac{K_\\mathrm{B}p_\\mathrm{B}}{1+K_\\mathrm{A}p_\\mathrm{A}+K_\\mathrm{B}p_\\mathrm{B}}$"
+   },
+   {
+    "id": "2",
+    "tex": "機構 I：$v$ は $p_\\mathrm{B}$ に比例して増え続ける（極大なし）．機構 II：$v$ ははじめ増加し，極大を経て減少する．極大の条件は $K_\\mathrm{B}p_\\mathrm{B}=1+K_\\mathrm{A}p_\\mathrm{A}$．"
+   },
+   {
+    "id": "3",
+    "tex": "機構 II．$K_\\mathrm{A}=0.25\\,\\mathrm{kPa^{-1}}$，$K_\\mathrm{B}=0.50\\,\\mathrm{kPa^{-1}}$"
+   },
+   {
+    "id": "4",
+    "tex": "$1.8$ 倍．$0.64$ 倍．B が吸着点の多くを占めて A の吸着を妨げ，$\\theta_\\mathrm{A}$ の減少が $\\theta_\\mathrm{B}$ の増加を上回るから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　空いている吸着点の割合は $1-\\theta_\\mathrm{A}-\\theta_\\mathrm{B}$．A について吸着と脱着の速さが等しいので\n\\[ k_\\mathrm{aA}p_\\mathrm{A}(1-\\theta_\\mathrm{A}-\\theta_\\mathrm{B})=k_\\mathrm{dA}\\theta_\\mathrm{A}\\ \\Rightarrow\\ \\theta_\\mathrm{A}=K_\\mathrm{A}p_\\mathrm{A}(1-\\theta_\\mathrm{A}-\\theta_\\mathrm{B}) \\]\n同様に $\\theta_\\mathrm{B}=K_\\mathrm{B}p_\\mathrm{B}(1-\\theta_\\mathrm{A}-\\theta_\\mathrm{B})$．2式を足して $1-\\theta_\\mathrm{A}-\\theta_\\mathrm{B}=\\dfrac{1}{1+K_\\mathrm{A}p_\\mathrm{A}+K_\\mathrm{B}p_\\mathrm{B}}$ を得るので\n\\[ \\theta_\\mathrm{A}=\\frac{K_\\mathrm{A}p_\\mathrm{A}}{1+K_\\mathrm{A}p_\\mathrm{A}+K_\\mathrm{B}p_\\mathrm{B}},\\qquad \\theta_\\mathrm{B}=\\frac{K_\\mathrm{B}p_\\mathrm{B}}{1+K_\\mathrm{A}p_\\mathrm{A}+K_\\mathrm{B}p_\\mathrm{B}} \\]\n\n\\textbf{(2)}　機構 I では B は吸着しないので $\\theta_\\mathrm{A}=\\dfrac{K_\\mathrm{A}p_\\mathrm{A}}{1+K_\\mathrm{A}p_\\mathrm{A}}$ は $p_\\mathrm{B}$ によらず，$v=k_1N\\theta_\\mathrm{A}p_\\mathrm{B}$ は $p_\\mathrm{B}$ に\\textbf{比例して増え続ける}．\n機構 II では $a=1+K_\\mathrm{A}p_\\mathrm{A}$，$x=K_\\mathrm{B}p_\\mathrm{B}$ とおくと\n\\[ v=k_2N\\,\\frac{K_\\mathrm{A}p_\\mathrm{A}\\,x}{(a+x)^2} \\]\n$\\dfrac{x}{(a+x)^2}$ は $x$ が小さいとき $x$ にほぼ比例して増え，$x$ が大きいとき $\\dfrac{1}{x}$ のように減る．$\\dfrac{x}{(a+x)^2}=\\dfrac{1}{\\dfrac{a^2}{x}+2a+x}$ で，分母の $\\dfrac{a^2}{x}+x$ は相加平均・相乗平均の関係より $x=a$ で最小になるので，$v$ は $\\boldsymbol{K_\\mathrm{B}p_\\mathrm{B}=1+K_\\mathrm{A}p_\\mathrm{A}}$ で極大になる．\n\n\\textbf{(3)}　$p_\\mathrm{B}$ に対して極大があるので\\textbf{機構 II}（機構 I では極大は生じない）．極大の条件に代入して\n\\[ 3.0K_\\mathrm{B}=1+2.0K_\\mathrm{A},\\qquad 5.0K_\\mathrm{B}=1+6.0K_\\mathrm{A} \\]\n1式目を $\\dfrac{5}{3}$ 倍して2式目と比べると $\\dfrac{5}{3}(1+2.0K_\\mathrm{A})=1+6.0K_\\mathrm{A}$，$K_\\mathrm{A}=\\boldsymbol{0.25\\,\\mathrm{kPa^{-1}}}$，$K_\\mathrm{B}=\\dfrac{1+0.50}{3.0}=\\boldsymbol{0.50\\,\\mathrm{kPa^{-1}}}$．\n極大の位置が $p_\\mathrm{A}$ とともに大きい $p_\\mathrm{B}$ へずれることは，「A が多いほど，B が A を押しのけすぎない範囲が広がる」ことを表している．\n\n\\textbf{(4)}　極大では $x=a$ なので $v_\\mathrm{max}=k_2N\\dfrac{K_\\mathrm{A}p_\\mathrm{A}}{4(1+K_\\mathrm{A}p_\\mathrm{A})}$．$K_\\mathrm{A}p_\\mathrm{A}$ は $p_\\mathrm{A}=2.0$ で $0.50$，$6.0$ で $1.5$ なので\n\\[ \\frac{v_\\mathrm{max}(6.0)}{v_\\mathrm{max}(2.0)}=\\frac{1.5/(4\\times2.5)}{0.50/(4\\times1.5)}=\\frac{0.150}{0.0833}=\\boldsymbol{1.8}\\ \\text{倍} \\]\n$p_\\mathrm{A}=2.0\\,\\mathrm{kPa}$ では $a=1.5$．$p_\\mathrm{B}=3.0$ で $x=1.5$，$\\dfrac{x}{(a+x)^2}=\\dfrac{1.5}{9.0}=0.167$．$p_\\mathrm{B}=12$ で $x=6.0$，$\\dfrac{6.0}{7.5^2}=0.107$．比は $\\boldsymbol{0.64}$ 倍．\n反応物 B を増やしたのに速さが下がるのは，B が吸着点の多くを占めて A が吸着できなくなり（$\\theta_\\mathrm{A}$ は $0.167\\to0.0667$），$\\theta_\\mathrm{B}$ の増加（$0.50\\to0.80$）よりも $\\theta_\\mathrm{A}$ の減少の影響が大きいからである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "2つの反応物が同じ吸着点を奪い合う機構では，被覆率が θ_A=K_Ap_A/(1+K_Ap_A+K_Bp_B) となり，速さ ∝θ_Aθ_B は一方の圧力に対して極大をもつ（K_Bp_B=1+K_Ap_A）．一方が吸着しない機構では極大が生じないので，極大の有無で機構を判別でき，2つの条件での極大の位置から2つの吸着平衡定数を連立して決められる．反応物を増やすと速さが下がる逆転は，吸着点の占有による相手の排除で説明される．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "reaction-rate"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "触媒",
+  "吸着平衡",
+  "競争吸着",
+  "反応機構",
+  "反応速度の極大",
+  "ラングミュア"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

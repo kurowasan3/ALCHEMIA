@@ -1,0 +1,108 @@
+{
+ "id": "INO-HAL-011",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-01",
+ "topic": "塩素の発生量から酸化剤混合物の組成を求める",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "過マンガン酸カリウムと酸化マンガン(IV) は，いずれも濃塩酸を酸化して塩素を発生させる．\n\\[\\ce{MnO2 + 4HCl -> MnCl2 + Cl2 + 2H2O}\\]\nK = 39，O = 16，Mn = 55，標準状態の気体のモル体積を $22.4\\,\\mathrm{L/mol}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "過マンガン酸カリウムと濃塩酸の反応を，次の2つのイオン反応式をもとに化学反応式で書け．\\\\ $\\ce{MnO4- + 8H+ + 5e- -> Mn^2+ + 4H2O}$，$\\ce{2Cl- -> Cl2 + 2e-}$"
+     },
+     {
+      "id": "2",
+      "tex": "酸化剤 1 mol あたりに発生する塩素は，$\\ce{KMnO4}$ と $\\ce{MnO2}$ でそれぞれ何 mol か．また，その違いが生じる理由を簡潔に述べよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\ce{MnO2}$ だけを不純物として含む $\\ce{KMnO4}$ の試料 $5.61\\,\\mathrm{g}$ に十分な量の濃塩酸を加えて加熱すると，試料はすべて反応し，標準状態で $1.904\\,\\mathrm{L}$ の塩素が発生した．試料中の $\\ce{KMnO4}$ の質量パーセントは何 % か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "発生した塩素を乾燥させるのに適さないものを，濃硫酸，塩化カルシウム，ソーダ石灰から選び，その理由を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{2KMnO4 + 16HCl -> 2KCl + 2MnCl2 + 5Cl2 + 8H2O}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{KMnO4}$：2.5 mol，$\\ce{MnO2}$：1 mol．1 mol が受け取る電子が $\\ce{KMnO4}$ は 5 mol，$\\ce{MnO2}$ は 2 mol だから．"
+   },
+   {
+    "id": "3",
+    "tex": "$84\\,\\%$"
+   },
+   {
+    "id": "4",
+    "tex": "ソーダ石灰．塩基性で，酸性の気体である塩素と反応するから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 電子数をそろえるため，上の式を 2 倍，下の式を 5 倍して足すと $\\ce{2MnO4- + 16H+ + 10Cl- -> 2Mn^2+ + 5Cl2 + 8H2O}$．両辺に $\\ce{2K+}$ と $\\ce{6Cl-}$ を加えて $\\ce{2KMnO4 + 16HCl -> 2KCl + 2MnCl2 + 5Cl2 + 8H2O}$．\n\n\\textbf{(2)} $\\ce{KMnO4}$（Mn：$+7\\to+2$）は 1 mol で電子 5 mol を受け取り，$\\ce{Cl2}$ $\\boldsymbol{2.5\\,\\mathrm{mol}}$．$\\ce{MnO2}$（$+4\\to+2$）は電子 2 mol で $\\ce{Cl2}$ $\\boldsymbol{1\\,\\mathrm{mol}}$．\n\n\\textbf{(3)} $\\ce{KMnO4}=158$，$\\ce{MnO2}=87$．$\\ce{KMnO4}$ を $x\\,\\mathrm{mol}$，$\\ce{MnO2}$ を $y\\,\\mathrm{mol}$ とすると\n\\[158x+87y=5.61,\\qquad 2.5x+y=\\dfrac{1.904}{22.4}=0.0850\\]\nこれを解いて $x=0.0300$，$y=0.0100$．$\\ce{KMnO4}$ は $4.74\\,\\mathrm{g}$ で，$\\dfrac{4.74}{5.61}\\times100=84.5\\approx\\boldsymbol{84\\,\\%}$．\n\n\\textbf{(4)} ソーダ石灰（$\\ce{CaO}$ と $\\ce{NaOH}$）は塩基性なので，酸性の $\\ce{Cl2}$ を吸収してしまう．濃硫酸と塩化カルシウムは使える．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "酸化剤ごとに受け取る電子数が違うので，同じ物質量でも発生する塩素の量が異なる．2種類の酸化剤の混合物について，試料の質量と塩素の発生量の2つの関係式から組成を求める．"
+ },
+ "concepts": [
+  "halogen",
+  "gas-preparation",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "塩素の製法",
+  "酸化還元",
+  "混合物の組成",
+  "乾燥剤"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

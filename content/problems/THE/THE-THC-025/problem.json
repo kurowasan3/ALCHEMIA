@@ -1,0 +1,108 @@
+{
+ "id": "THE-THC-025",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-10",
+ "topic": "生成エンタルピーの符号と化学エネルギーの大小（エタン・エチレン・アセチレン）",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "compare",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "25 ℃，$1.013\\times10^{5}\\,\\mathrm{Pa}$ における燃焼エンタルピー〔kJ/mol〕は次のとおりである．燃焼で生じる水はすべて液体とする．\n\\[ \\begin{array}{c|ccccc} \\text{物質} & \\ce{C(黒鉛)} & \\ce{H2(気)} & \\ce{C2H2(気)} & \\ce{C2H4(気)} & \\ce{C2H6(気)} \\\\ \\hline \\text{燃焼エンタルピー} & -394 & -286 & -1301 & -1411 & -1561 \\end{array} \\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "アセチレン，エチレン，エタンの生成エンタルピーをそれぞれ求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "次の反応 ①，② の反応エンタルピーを求めよ．\\\\\n① $\\ce{C2H2(気) + H2(気) -> C2H4(気)}$　　② $\\ce{C2H4(気) + H2(気) -> C2H6(気)}$"
+     },
+     {
+      "id": "3",
+      "tex": "次の (a)〜(d) を，もっている化学エネルギーの大きい順に並べよ．\\\\\n(a) $\\ce{C2H2}$ 1 mol と $\\ce{H2}$ 2 mol　(b) $\\ce{C2H4}$ 1 mol と $\\ce{H2}$ 1 mol　(c) $\\ce{C2H6}$ 1 mol　(d) 黒鉛 2 mol と $\\ce{H2}$ 3 mol"
+     },
+     {
+      "id": "4",
+      "tex": "アセチレン，エチレン，エタンのうち，黒鉛と水素に分解する反応が発熱反応になるものをすべて選べ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "アセチレン $+227\\,\\mathrm{kJ/mol}$，エチレン $+51\\,\\mathrm{kJ/mol}$，エタン $-85\\,\\mathrm{kJ/mol}$"
+   },
+   {
+    "id": "2",
+    "tex": "① $-176\\,\\mathrm{kJ}$　② $-136\\,\\mathrm{kJ}$"
+   },
+   {
+    "id": "3",
+    "tex": "(a)＞(b)＞(d)＞(c)"
+   },
+   {
+    "id": "4",
+    "tex": "アセチレン，エチレン"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 炭化水素の燃焼と，成分元素の単体の燃焼は同じ生成物（$\\ce{CO2}$ と $\\ce{H2O(液)}$）になるので，ヘスの法則より\n\\[ (\\text{生成エンタルピー})=(\\text{単体の燃焼エンタルピーの和})-(\\text{その物質の燃焼エンタルピー}) \\]\nアセチレン：$2\\times(-394)+(-286)-(-1301)=\\boldsymbol{+227\\,\\mathrm{kJ/mol}}$\\\\\nエチレン：$2\\times(-394)+2\\times(-286)-(-1411)=\\boldsymbol{+51\\,\\mathrm{kJ/mol}}$\\\\\nエタン：$2\\times(-394)+3\\times(-286)-(-1561)=\\boldsymbol{-85\\,\\mathrm{kJ/mol}}$\n\n\\textbf{(2)} ①：$51-227=\\boldsymbol{-176\\,\\mathrm{kJ}}$　②：$-85-51=\\boldsymbol{-136\\,\\mathrm{kJ}}$（$\\ce{H2}$ は単体なので 0）．燃焼エンタルピーから直接 $-1301+(-286)-(-1411)=-176$ としても同じ．\n\n\\textbf{(3)} 単体（黒鉛 2 mol と $\\ce{H2}$ 3 mol）のエネルギーを 0 とすると，各組のエネルギーは含まれる化合物の生成エンタルピーの和で表せる（$\\ce{H2}$ は 0）．\n\\[ \\text{(a)}\\ +227,\\quad \\text{(b)}\\ +51,\\quad \\text{(c)}\\ -85,\\quad \\text{(d)}\\ 0 \\quad [\\mathrm{kJ}] \\]\n4 つの組はどれも C 原子 2 mol・H 原子 6 mol を含む同じ原子の集まりなので，この値で比べられる．よって $\\boldsymbol{\\text{(a)＞(b)＞(d)＞(c)}}$．水素が付加するたびにエネルギーが下がる（①，② が発熱）ことと一致する．\n\n\\textbf{(4)} 分解反応 $\\ce{C2H2(気) -> 2C(黒鉛) + H2(気)}$ などの $\\Delta H$ は生成エンタルピーの符号を変えたもの．生成エンタルピーが正の物質は単体より化学エネルギーが高く，分解すると発熱する．よって $\\boldsymbol{\\text{アセチレン，エチレン}}$．アセチレンは圧縮すると分解して爆発する危険があるので，溶媒に溶かしてボンベに詰める．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "燃焼エンタルピーから生成エンタルピーを求め，同じ原子の組をもつ物質の組合せの化学エネルギーを単体を基準にして比べる．生成エンタルピーが正の物質は単体より高エネルギーで，単体への分解が発熱になる．"
+ },
+ "concepts": [
+  "enthalpy",
+  "hydrocarbon"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "生成エンタルピー",
+  "燃焼エンタルピー",
+  "ヘスの法則",
+  "化学エネルギー",
+  "水素付加"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

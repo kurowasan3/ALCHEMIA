@@ -1,0 +1,116 @@
+{
+ "id": "THE-EQL-134",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "共通の反応物から2つの可逆反応が起こる系の平衡組成（速度定数の比・触媒・物質の追加・温度）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 18,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "気体の化合物 A は，次の 2 つの可逆反応によって異性体 B，C に変化する．どちらの正反応・逆反応も 1 段階で起こり，その反応速度は反応物の濃度に比例する．\n\\[\\ce{A <=>[\\text{}] B}\\ \\ (1)\\qquad \\ce{A <=>[\\text{}] C}\\ \\ (2)\\]\nある温度で，反応 (1) の逆反応の速度定数は正反応の速度定数の 2 倍，反応 (2) の逆反応の速度定数は正反応の速度定数の 0.25 倍である．反応 (1) は吸熱反応，反応 (2) は発熱反応である．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "反応 (1)，(2) の平衡定数 $K_1 = \\dfrac{[\\mathrm{B}]}{[\\mathrm{A}]}$，$K_2 = \\dfrac{[\\mathrm{C}]}{[\\mathrm{A}]}$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "温度・圧力を一定に保った容器に A だけを $11\\,\\mathrm{mol}$ 入れて平衡に達したとき，A，B，C の物質量を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) と同じ実験を，反応 (2) の正反応を 10 倍速くする触媒を入れて行った．平衡に達したときの C の物質量はどうなるか．理由とともに答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(2) の平衡状態に C を $8.0\\,\\mathrm{mol}$ 加え，同じ温度・圧力で再び平衡に達したときの A，B，C の物質量を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "(2) の平衡状態から，圧力を一定に保って温度を上げた．新しい平衡での $\\dfrac{n_{\\mathrm{C}}}{n_{\\mathrm{B}}}$ は，温度を上げる前と比べてどうなるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$K_1 = 0.50$，$K_2 = 4.0$"
+   },
+   {
+    "id": "2",
+    "tex": "A $2.0\\,\\mathrm{mol}$，B $1.0\\,\\mathrm{mol}$，C $8.0\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "変わらない（$8.0\\,\\mathrm{mol}$）．触媒は正反応と逆反応の速度定数を同じ倍率で大きくし，平衡定数を変えないから．"
+   },
+   {
+    "id": "4",
+    "tex": "A $3.5\\,\\mathrm{mol}$，B $1.7\\,\\mathrm{mol}$，C $14\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "5",
+    "tex": "小さくなる"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 平衡では正逆の速度が等しいので，$k_1[\\mathrm{A}] = k_{-1}[\\mathrm{B}]$ より $K_1 = \\dfrac{k_1}{k_{-1}} = \\dfrac{1}{2} = \\boldsymbol{0.50}$，同様に $K_2 = \\dfrac{1}{0.25} = \\boldsymbol{4.0}$．\n\n\\textbf{(2)} 2 つの平衡は A を共有して同時に成り立つ．どちらの反応も気体の分子数が変わらないので，濃度比は物質量比に等しい．$n_{\\mathrm{A}}:n_{\\mathrm{B}}:n_{\\mathrm{C}} = 1:0.50:4.0$，合計 $11\\,\\mathrm{mol}$ より $n_{\\mathrm{A}} = \\dfrac{11}{5.5} = 2.0$．\\textbf{A 2.0 mol，B 1.0 mol，C 8.0 mol}．\n\n\\textbf{(3)} 触媒は活性化エネルギーを下げ，正反応と逆反応を同じ倍率で速くする（逆反応も 10 倍になる）．平衡定数は変わらないので，平衡に達するまでの時間が短くなるだけで，C は\\textbf{ 8.0 mol のまま変わらない}．\n\n\\textbf{(4)} 全物質量は $11 + 8.0 = 19\\,\\mathrm{mol}$ で，比 $1:0.50:4.0$ は変わらないので $n_{\\mathrm{A}} = \\dfrac{19}{5.5} = 3.45$．A $\\boldsymbol{3.5\\,\\mathrm{mol}}$，B $\\boldsymbol{1.7\\,\\mathrm{mol}}$，C $\\boldsymbol{14\\,\\mathrm{mol}}$．加えた C の一部が A を経て B にも移る（C だけを加えても B が増える）．\n\n\\textbf{(5)} 吸熱反応 (1) の平衡は温度上昇で右に移り $K_1$ が増え，発熱反応 (2) の平衡は左に移り $K_2$ が減る．$\\dfrac{n_{\\mathrm{C}}}{n_{\\mathrm{B}}} = \\dfrac{K_2}{K_1}$ なので\\textbf{小さくなる}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "共通の反応物 A から2つの可逆反応が起こる系では，各平衡定数（正逆の速度定数の比）が同時に成り立つので組成は A:B:C=1:K₁:K₂ で決まり，どの物質を加えても全量を同じ比に配り直せばよい．触媒は正逆を同倍率で速めるので組成を変えず，温度変化では吸熱・発熱の向きによって C/B=K₂/K₁ が変わる．"
+ },
+ "concepts": [
+  "chemical-equilibrium"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "化学平衡",
+  "平衡定数",
+  "速度定数",
+  "触媒",
+  "ルシャトリエの原理",
+  "並発反応"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

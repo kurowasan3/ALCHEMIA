@@ -1,0 +1,109 @@
+{
+ "id": "THE-ION-011",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "滴定曲線の半中和点から電離定数を求める",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "濃度不明の酢酸水溶液 $10.0\\,\\mathrm{mL}$ に純水 $40.0\\,\\mathrm{mL}$ を加え，$0.100\\,\\mathrm{mol/L}$ 水酸化ナトリウム水溶液で滴定した．中和点までの滴下量は $16.0\\,\\mathrm{mL}$ で，$8.0\\,\\mathrm{mL}$ 滴下したときの pH は 4.70 であった．$\\log_{10}2=0.30$，$\\log_{10}3=0.48$ とし，水素イオン濃度は酢酸・酢酸イオンの濃度に比べて十分小さいものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "もとの酢酸水溶液のモル濃度を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "酢酸の電離定数 $K_a=\\dfrac{[\\ce{CH3COO-}][\\ce{H+}]}{[\\ce{CH3COOH}]}$ を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "水酸化ナトリウム水溶液を $4.0\\,\\mathrm{mL}$ 滴下したときの pH を小数第1位まで求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "純水 $40.0\\,\\mathrm{mL}$ を加えずに同じ滴定を行った場合，次の (a)〜(c) はそれぞれ（大きくなる／小さくなる／変わらない）のどれか．\\\\ (a) 中和点までの滴下量　(b) $8.0\\,\\mathrm{mL}$ 滴下したときの pH　(c) 滴定前の pH"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$0.160\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "2",
+    "tex": "$2.0\\times10^{-5}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "3",
+    "tex": "4.2"
+   },
+   {
+    "id": "4",
+    "tex": "(a) 変わらない　(b) 変わらない　(c) 小さくなる"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $c\\times10.0=0.100\\times16.0$ より $c=\\boldsymbol{0.160\\,\\mathrm{mol/L}}$．\\\\\n\\textbf{(2)} $8.0\\,\\mathrm{mL}$ は中和点のちょうど半分なので，$\\ce{CH3COOH + OH- -> CH3COO- + H2O}$ により酢酸の半分が酢酸イオンになり $[\\ce{CH3COOH}]=[\\ce{CH3COO-}]$．よって\n\\[ K_a=[\\ce{H+}]=10^{-4.70}=10^{0.30}\\times10^{-5}=\\boldsymbol{2.0\\times10^{-5}\\,\\mathrm{mol/L}} \\]\n\\textbf{(3)} 酢酸 $1.60\\,\\mathrm{mmol}$ のうち $0.40\\,\\mathrm{mmol}$ が酢酸イオンになり，$[\\ce{CH3COOH}]:[\\ce{CH3COO-}]=1.20:0.40=3:1$．\n\\[ [\\ce{H+}]=K_a\\times3=6.0\\times10^{-5},\\quad \\mathrm{pH}=5-\\log_{10}6=5-0.78=\\boldsymbol{4.2} \\]\n\\textbf{(4)} (a) 酢酸の物質量は変わらないので\\textbf{変わらない}．(b) 半中和点では $[\\ce{H+}]=K_a\\times\\dfrac{[\\ce{CH3COOH}]}{[\\ce{CH3COO-}]}$ で，比は薄めても変わらないので\\textbf{変わらない}．(c) 濃い酢酸ほど $[\\ce{H+}]=\\sqrt{cK_a}$ が大きいので，pH は\\textbf{小さくなる}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "弱酸の滴定曲線で中和点の半分まで滴下した点では酸と共役塩基の濃度が等しく，[H+]＝Ka となることから電離定数を読み取る．緩衝域の pH は濃度比だけで決まるので，希釈しても変わらないことを確かめる．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "concentration",
+  "ph"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "滴定曲線",
+  "半中和点",
+  "電離定数",
+  "緩衝液",
+  "希釈"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

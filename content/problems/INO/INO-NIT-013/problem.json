@@ -1,0 +1,101 @@
+{
+ "id": "INO-NIT-013",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-03",
+ "topic": "リン鉱石と硫酸の量的関係（過リン酸石灰とリン酸）",
+ "course": "化学",
+ "level": 1,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水に溶けないリン酸カルシウム $\\ce{Ca3(PO4)2}$ に硫酸を作用させると，加える硫酸の量によって次の 2 通りの生成物が得られる．\n\n（A）硫酸が少ないとき：水溶性のリン酸二水素カルシウム $\\ce{Ca(H2PO4)2}$ と硫酸カルシウムの混合物（過リン酸石灰）\n\n（B）硫酸が多いとき：リン酸 $\\ce{H3PO4}$ と硫酸カルシウム\n\nリン酸カルシウムを $62.0\\,\\%$（質量パーセント）含むリン鉱石 $500\\,\\mathrm{kg}$ を用いる．式量・分子量は $\\ce{Ca3(PO4)2}=310$，$\\ce{H2SO4}=98.0$，$\\ce{Ca(H2PO4)2}=234$，$\\ce{CaSO4}=136$，原子量は P = 31.0 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "（A），（B）の変化をそれぞれ化学反応式で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "（A），（B）のそれぞれで，必要な質量パーセント濃度 $70.0\\,\\%$ の硫酸は何 kg か．有効数字 3 桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "（B）で得たリン酸をさらに別のリン酸カルシウムと反応させると，硫酸カルシウムを含まないリン酸二水素カルシウム（重過リン酸石灰）が得られる．過リン酸石灰と重過リン酸石灰では，肥料 1 kg あたりに含まれるリンの質量はどちらが大きいか．それぞれのリンの質量パーセントを有効数字 3 桁で求めて比べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "（A）$\\ce{Ca3(PO4)2 + 2H2SO4 -> Ca(H2PO4)2 + 2CaSO4}$，（B）$\\ce{Ca3(PO4)2 + 3H2SO4 -> 2H3PO4 + 3CaSO4}$"
+   },
+   {
+    "id": "2",
+    "tex": "（A）$280\\,\\mathrm{kg}$，（B）$420\\,\\mathrm{kg}$"
+   },
+   {
+    "id": "3",
+    "tex": "過リン酸石灰 $12.3\\,\\%$，重過リン酸石灰 $26.5\\,\\%$ で，重過リン酸石灰のほうが大きい"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\ce{PO4^3-}$ が $\\ce{H+}$ を受け取る数で生成物が決まる．$\\ce{H2PO4-}$ まで（$\\ce{PO4^3-}$ 1 個あたり $\\ce{H+}$ 2 個）なら\n\\[ \\ce{Ca3(PO4)2 + 2H2SO4 -> Ca(H2PO4)2 + 2CaSO4} \\]\n$\\ce{H3PO4}$ まで（$\\ce{H+}$ 3 個）なら\n\\[ \\ce{Ca3(PO4)2 + 3H2SO4 -> 2H3PO4 + 3CaSO4} \\]\n\n\\textbf{(2)} $\\ce{Ca3(PO4)2}$ は $\\dfrac{500\\times0.620}{310}=1.00\\,\\mathrm{kmol}$．\n\n（A）$\\ce{H2SO4}$ $2.00\\,\\mathrm{kmol}$ $=196\\,\\mathrm{kg}$，硫酸は $\\dfrac{196}{0.700}=\\boldsymbol{280\\,\\mathrm{kg}}$．\n\n（B）$\\ce{H2SO4}$ $3.00\\,\\mathrm{kmol}$ $=294\\,\\mathrm{kg}$，硫酸は $\\dfrac{294}{0.700}=\\boldsymbol{420\\,\\mathrm{kg}}$．\n\n（B）は（A）の 1.5 倍の硫酸が必要になる．\n\n\\textbf{(3)} 過リン酸石灰は $\\ce{Ca(H2PO4)2}$ 1 mol と $\\ce{CaSO4}$ 2 mol の混合物で，質量は $234+2\\times136=506\\,\\mathrm g$，その中のリンは $2\\times31.0=62.0\\,\\mathrm g$．\n\\[ \\frac{62.0}{506}\\times100=12.25\\cdots\\approx12.3\\,\\% \\]\n重過リン酸石灰（$\\ce{Ca3(PO4)2 + 4H3PO4 -> 3Ca(H2PO4)2}$ で得られ，$\\ce{CaSO4}$ を含まない）は\n\\[ \\frac{62.0}{234}\\times100=26.49\\cdots\\approx26.5\\,\\% \\]\nしたがって\\textbf{重過リン酸石灰のほうがリンの含有率が大きい}（硫酸カルシウムという「肥料にならない成分」を含まないため）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "リン酸イオンが受け取る H⁺ の数（H₂PO₄⁻ まで か H₃PO₄ まで か）で必要な硫酸の量と生成物が決まる．同じリンを含んでも，副生する CaSO₄ を含むかどうかで肥料のリン含有率が変わる．"
+ },
+ "concepts": [
+  "nitrogen-phosphorus",
+  "oxygen-sulfur",
+  "alkali-metals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "過リン酸石灰",
+  "重過リン酸石灰",
+  "リン酸カルシウム",
+  "量的関係",
+  "肥料"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

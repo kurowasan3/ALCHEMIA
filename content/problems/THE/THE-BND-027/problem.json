@@ -1,0 +1,117 @@
+{
+ "id": "THE-BND-027",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-03",
+ "topic": "金属結晶のすき間への水素の吸蔵",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "パラジウム $\\ce{Pd}$ の結晶は面心立方格子（単位格子の一辺 $0.389\\,\\mathrm{nm}$）であり，水素を吸蔵すると水素原子が結晶の八面体形のすき間（6個の $\\ce{Pd}$ 原子に囲まれたすき間）に入る．$\\ce{Pd}=106$，アボガドロ定数 $6.0\\times10^{23}\\,/\\mathrm{mol}$，標準状態の気体のモル体積 $22.4\\,\\mathrm{L/mol}$，$0.389^3=0.0589$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "面心立方格子の単位格子あたりの八面体形のすき間の数と，その位置を答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "パラジウムの密度は何 $\\mathrm{g/cm^3}$ か．有効数字3桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "ある条件で，八面体形のすき間の 60 % に水素原子が入った．このときの組成を $\\ce{PdH_x}$ で表したときの $x$ を答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3)のとき，吸蔵前のパラジウム $1\\,\\mathrm{cm^3}$ あたり，標準状態で何 $\\mathrm{cm^3}$ の水素 $\\ce{H2}$ を吸蔵したことになるか．(2)の値を用い，有効数字2桁で答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "仮に水素原子が八面体形のすき間ではなく四面体形のすき間（4個の $\\ce{Pd}$ 原子に囲まれたすき間）に入り，それをすべて占めたとすると，$x$ の最大値はいくらになるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "4 個．単位格子の中心と，12 本の辺の中点"
+   },
+   {
+    "id": "2",
+    "tex": "$12.0\\,\\mathrm{g/cm^3}$"
+   },
+   {
+    "id": "3",
+    "tex": "$x=0.60$"
+   },
+   {
+    "id": "4",
+    "tex": "$7.6\\times10^{2}\\,\\mathrm{cm^3}$"
+   },
+   {
+    "id": "5",
+    "tex": "2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 単位格子の中心に 1 個，各辺の中点に $\\tfrac14\\times12=3$ 個で，計 $\\boldsymbol{\\text{4}}$ 個（$\\ce{Pd}$ 原子の数と同じ）．\n\n(2) \\[d=\\frac{4\\times106}{6.0\\times10^{23}\\times0.0589\\times10^{-21}}\\fallingdotseq\\boldsymbol{12.0\\,\\mathrm{g/cm^3}}\\]\n\n(3) $\\ce{Pd}$ 4 個に対しすき間 4 個の 60 % に $\\ce{H}$ が入るので $\\ce{H}$ は 2.4 個．$x=2.4/4=\\boldsymbol{0.60}$．\n\n(4) $1\\,\\mathrm{cm^3}$ の $\\ce{Pd}$ は $\\dfrac{12.0}{106}\\,\\mathrm{mol}$．$\\ce{H}$ 原子はその 0.60 倍で，$\\ce{H2}$ はさらにその半分．\n\\[\\frac{12.0}{106}\\times0.60\\times\\frac12\\times22.4\\times10^{3}\\fallingdotseq\\boldsymbol{7.6\\times10^{2}\\,\\mathrm{cm^3}}\\]\n自身の体積の約 760 倍もの水素を吸蔵できる．\n\n(5) 面心立方格子の四面体形のすき間は，単位格子を8等分した小立方体の中心にあり 8 個（$\\ce{Pd}$ の2倍）．すべて占めると $x=8/4=\\boldsymbol{2}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "金属の面心立方格子には原子と同数の八面体形すき間（と2倍の四面体形すき間）があり，そこに入る水素原子の割合から組成と吸蔵量（気体の体積）が決まる．"
+ },
+ "concepts": [
+  "chemical-bond",
+  "crystal",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "水素吸蔵",
+  "面心立方格子",
+  "すき間",
+  "密度",
+  "物質量"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

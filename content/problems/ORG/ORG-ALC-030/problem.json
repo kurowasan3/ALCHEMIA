@@ -1,0 +1,110 @@
+{
+ "id": "ORG-ALC-030",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-03",
+ "topic": "C₄H₁₀O₂ の異性体（ジオール・エーテルアルコール）のナトリウム・ヨードホルム反応・酸化による構造決定",
+ "course": "化学",
+ "level": 3,
+ "minutes": 20,
+ "format": [
+  "structure",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "分子式 $\\ce{C4H10O2}$ で表される化合物 A，B，C がある．いずれも鎖式で，O–O 結合や，1つの炭素原子に2個の O が結合した構造はもたない．次の実験を行った．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A，B，C 各 $1\\,\\mathrm{mol}$ に十分な量のナトリウムを加えると，A と B からはそれぞれ $1\\,\\mathrm{mol}$，C からは $0.5\\,\\mathrm{mol}$ の水素が発生した．A，B，C はそれぞれ何個のヒドロキシ基をもつか．また，C がもつもう1つの酸素原子はどのような結合として含まれるか．"
+     },
+     {
+      "id": "2",
+      "tex": "塩基性でヨウ素を加えて温めると，B だけが黄色沈殿を生じた．この沈殿の化学式を答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "十分な酸化剤で酸化すると，第一級アルコールの部分はカルボキシ基に，第二級アルコールの部分はケトンに変わり，第三級アルコールの部分とエーテル結合は変化しない．A，B，C からは，それぞれ分子式 $\\ce{C4H6O4}$ の D，$\\ce{C4H6O3}$ の E，$\\ce{C4H8O3}$ の F が得られ，いずれも酸性を示した．A の炭素鎖は枝分かれしておらず，C は不斉炭素原子をもつ．A，B，C の構造を示性式で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "D，E，F の示性式を答え，不斉炭素原子をもつものをすべて選べ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "A：2個，B：2個，C：1個．C のもう1つの O はエーテル結合 $\\ce{C-O-C}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{CHI3}$"
+   },
+   {
+    "id": "3",
+    "tex": "A：$\\ce{HOCH2CH2CH2CH2OH}$（1,4-ブタンジオール），B：$\\ce{CH3CH(OH)CH2CH2OH}$（1,3-ブタンジオール），C：$\\ce{CH3CH(OCH3)CH2OH}$（2-メトキシ-1-プロパノール）"
+   },
+   {
+    "id": "4",
+    "tex": "D：$\\ce{HOOCCH2CH2COOH}$，E：$\\ce{CH3COCH2COOH}$，F：$\\ce{CH3CH(OCH3)COOH}$．不斉炭素原子をもつのは F"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} OH 1 個から $\\ce{H2}$ は $\\dfrac12\\,\\mathrm{mol}$ 生じる（$\\ce{2R-OH + 2Na ->[\\text{}] 2R-ONa + H2}$）．A，B は $\\boldsymbol{2}$ 個（ジオール），C は $\\boldsymbol{1}$ 個で，残りの O はヒドロキシ基でもカルボニルでもない（分子式は飽和の $\\ce{C_nH_{2n+2}O2}$）ので$\\boldsymbol{\\text{エーテル結合}}$．\n\n\\textbf{(2)} ヨードホルム反応の黄色沈殿 $\\boldsymbol{\\ce{CHI3}}$．B は $\\ce{CH3CH(OH)-}$ の部分をもつ．\n\n\\textbf{(3)} 条件を満たす $\\ce{C4H10O2}$ はジオール6種とエーテルアルコール4種の計10種．\n\\begin{itemize}\n\\item A：枝分かれのないジオールは 1,2-，1,3-，1,4-，2,3-ブタンジオール．酸化でカルボキシ基2個（O 4個，$\\ce{C4H6O4}$）になるには OH が2つとも第一級でなければならず，$\\boldsymbol{\\ce{HOCH2CH2CH2CH2OH}}$（D はコハク酸）．\n\\item B：$\\ce{CH3CH(OH)-}$ をもつジオールは 1,3-ブタンジオールと 2,3-ブタンジオール．2,3-ブタンジオールは第二級 OH が2つで，酸化すると $\\ce{CH3COCOCH3}$（$\\ce{C4H6O2}$，酸性を示さない）．1,3-ブタンジオールは第一級→COOH，第二級→C=O で $\\ce{CH3COCH2COOH}$（$\\ce{C4H6O3}$）となり条件に合う．よって B は $\\boldsymbol{\\ce{CH3CH(OH)CH2CH2OH}}$．\n\\item C：エーテルアルコールは $\\ce{CH3CH2OCH2CH2OH}$，$\\ce{CH3OCH2CH2CH2OH}$，$\\ce{CH3OCH2CH(OH)CH3}$，$\\ce{CH3CH(OCH3)CH2OH}$．F が酸（$\\ce{C4H8O3}$，COOH 1個）なので OH は第一級．そのうち不斉炭素原子をもつのは $\\boldsymbol{\\ce{CH3CH(OCH3)CH2OH}}$ だけ．\n\\end{itemize}\n\n\\textbf{(4)} D：$\\ce{HOOCCH2CH2COOH}$，E：$\\ce{CH3COCH2COOH}$，F：$\\ce{CH3CH(OCH3)COOH}$．B は不斉炭素原子（OH の付いた C）をもつが，酸化でケトンになると不斉でなくなる．C の不斉炭素原子（$\\ce{OCH3}$ の付いた C）は酸化で変化しないので，F も不斉炭素原子をもつ．よって $\\boldsymbol{\\text{F}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "Na で発生する H2 の量から OH の数を，ヨードホルム反応から CH3CH(OH)- の有無を，酸化生成物の分子式から各 OH が第一級か第二級かを読み取り，C4H10O2 のジオール・エーテルアルコールの候補を1つに絞る．酸化で不斉炭素が消えるか残るかも判断する．"
+ },
+ "concepts": [
+  "alcohol-carbonyl",
+  "alkali-metals",
+  "organic-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "構造決定",
+  "ジオール",
+  "エーテル",
+  "ヨードホルム反応",
+  "アルコールの酸化",
+  "不斉炭素原子"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

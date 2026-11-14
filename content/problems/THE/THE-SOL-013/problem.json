@@ -1,0 +1,101 @@
+{
+ "id": "THE-SOL-013",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-09",
+ "topic": "濃硝酸のモル濃度・質量モル濃度と希釈での体積の非加成性",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "質量パーセント濃度 $63.0\\,\\%$，密度 $1.38\\,\\mathrm{g/mL}$ の濃硝酸（A 液）がある．$\\ce{HNO3}=63.0$，水の密度は $1.00\\,\\mathrm{g/mL}$ とし，数値の答えは有効数字3桁で求めよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A 液のモル濃度〔mol/L〕と質量モル濃度〔mol/kg〕をそれぞれ求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "A 液を薄めてつくった $0.100\\,\\mathrm{mol/L}$ の希硝酸（密度 $1.00\\,\\mathrm{g/mL}$ とする）の質量モル濃度を求めよ．また，A 液ではモル濃度と質量モル濃度の値が大きく異なるのに，この希硝酸ではほぼ等しくなる理由を述べよ．"
+     },
+     {
+      "id": "3",
+      "tex": "A 液を水で薄めて，質量パーセント濃度 $20.0\\,\\%$，密度 $1.12\\,\\mathrm{g/mL}$ の希硝酸を $100\\,\\mathrm{mL}$ つくりたい．必要な A 液の体積と水の体積をそれぞれ求めよ．また，求めた2つの体積の和が $100\\,\\mathrm{mL}$ にならない理由を述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "モル濃度 $13.8\\,\\mathrm{mol/L}$，質量モル濃度 $27.0\\,\\mathrm{mol/kg}$"
+   },
+   {
+    "id": "2",
+    "tex": "$0.101\\,\\mathrm{mol/kg}$．モル濃度は溶液 $1\\,\\mathrm L$，質量モル濃度は溶媒 $1\\,\\mathrm{kg}$ あたりの量であり，薄い水溶液では溶液 $1\\,\\mathrm L$ の質量がほぼ $1\\,\\mathrm{kg}$ で，その大部分が溶媒の水なので，両者の基準がほぼ一致するため．"
+   },
+   {
+    "id": "3",
+    "tex": "A 液 $25.8\\,\\mathrm{mL}$，水 $76.4\\,\\mathrm{mL}$．混合すると分子・イオンと水分子の間の引き合い（水和）で粒子がつまって並ぶため，体積は加成的でなく，混合後の体積は混合前の体積の和より小さくなる（質量は保存される）．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} A 液 $1\\,\\mathrm L$ の質量は $1.38\\times1000=1380\\,\\mathrm g$，そのうち $\\ce{HNO3}$ は $1380\\times0.630=869.4\\,\\mathrm g$，$869.4/63.0=13.8\\,\\mathrm{mol}$．よってモル濃度は $\\boldsymbol{13.8\\,\\mathrm{mol/L}}$．\n質量モル濃度は溶液 $1000\\,\\mathrm g$ を基準にすると，$\\ce{HNO3}$ $630\\,\\mathrm g$（$10.0\\,\\mathrm{mol}$），水 $370\\,\\mathrm g$ なので $\\dfrac{10.0}{0.370}=\\boldsymbol{27.0\\,\\mathrm{mol/kg}}$．\n\\textbf{(2)} 希硝酸 $1\\,\\mathrm L$（$1000\\,\\mathrm g$）中に $\\ce{HNO3}$ $0.100\\,\\mathrm{mol}$（$6.30\\,\\mathrm g$），水 $993.7\\,\\mathrm g$．$\\dfrac{0.100}{0.9937}=\\boldsymbol{0.101\\,\\mathrm{mol/kg}}$ で，モル濃度とほぼ等しい．A 液では溶液 $1\\,\\mathrm L$ が $1.38\\,\\mathrm{kg}$ で，しかもその $63\\,\\%$ が溶質なので溶媒は $0.51\\,\\mathrm{kg}$ しかなく，「溶液 $1\\,\\mathrm L$」と「溶媒 $1\\,\\mathrm{kg}$」が大きくずれる（$13.8$ と $27.0$ でほぼ2倍）．\n\\textbf{(3)} つくる希硝酸の質量は $1.12\\times100=112\\,\\mathrm g$，その中の $\\ce{HNO3}$ は $112\\times0.200=22.4\\,\\mathrm g$．希釈で $\\ce{HNO3}$ の質量は変わらないので，必要な A 液は $\\dfrac{22.4}{0.630}=35.6\\,\\mathrm g$，体積は $\\dfrac{35.56}{1.38}=\\boldsymbol{25.8\\,\\mathrm{mL}}$．水は質量の差 $112-35.56=76.4\\,\\mathrm g$ で，$\\boldsymbol{76.4\\,\\mathrm{mL}}$．\n体積の和は $25.8+76.4=102.2\\,\\mathrm{mL}$ で $100\\,\\mathrm{mL}$ より大きい．質量は加成的だが体積は加成的でなく，混合で体積が縮むためである．したがって希釈の計算は\\textbf{体積ではなく質量（または溶質の物質量）の保存}で行う．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "モル濃度は溶液1 L，質量モル濃度は溶媒1 kgが基準なので，濃い溶液ほど両者の値は大きくずれ，薄い水溶液ではほぼ一致する．希釈では溶質と全体の質量は保存されるが体積は加成的でないので，必要量は質量から求める．"
+ },
+ "concepts": [
+  "solution-colligative",
+  "nitrogen-phosphorus",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "濃度の換算",
+  "質量モル濃度",
+  "希釈",
+  "硝酸",
+  "体積の非加成性"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "id": "THE-MOL-017",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-04",
+ "topic": "混合気体の燃焼による体積変化と組成",
+ "course": "化学",
+ "level": 1,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水素，一酸化炭素，メタンからなる混合気体 $50.0\\,\\mathrm{mL}$ に酸素 $100.0\\,\\mathrm{mL}$ を加えて完全燃焼させたところ，気体の体積は $75.0\\,\\mathrm{mL}$ になった．この気体を水酸化ナトリウム水溶液に通じると，体積は $45.0\\,\\mathrm{mL}$ になった．体積はすべて同温・同圧で測定し，生じた水はすべて液体でその体積は無視できるものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "水素，一酸化炭素，メタンの燃焼と，二酸化炭素と水酸化ナトリウムの反応を，化学反応式で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "水酸化ナトリウム水溶液に吸収された気体は何か．また，最後に残った $45.0\\,\\mathrm{mL}$ の気体は何か．"
+     },
+     {
+      "id": "3",
+      "tex": "もとの混合気体中の水素，一酸化炭素，メタンの体積をそれぞれ求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "加える酸素を $100.0\\,\\mathrm{mL}$ ではなく $50.0\\,\\mathrm{mL}$ にしたとすると，この混合気体を完全燃焼させることはできるか．理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{2H2 + O2 -> 2H2O}$，$\\ce{2CO + O2 -> 2CO2}$，$\\ce{CH4 + 2O2 -> CO2 + 2H2O}$，$\\ce{CO2 + 2NaOH -> Na2CO3 + H2O}$"
+   },
+   {
+    "id": "2",
+    "tex": "吸収された気体：二酸化炭素，残った気体：酸素"
+   },
+   {
+    "id": "3",
+    "tex": "水素 $20.0\\,\\mathrm{mL}$，一酸化炭素 $10.0\\,\\mathrm{mL}$，メタン $20.0\\,\\mathrm{mL}$"
+   },
+   {
+    "id": "4",
+    "tex": "できない．完全燃焼に必要な酸素は $55.0\\,\\mathrm{mL}$ で，$50.0\\,\\mathrm{mL}$ では不足するから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) \\[\\ce{2H2 + O2 -> 2H2O}\\qquad\\ce{2CO + O2 -> 2CO2}\\]\n\\[\\ce{CH4 + 2O2 -> CO2 + 2H2O}\\qquad\\ce{CO2 + 2NaOH -> Na2CO3 + H2O}\\]\n\n(2) 酸性酸化物の$\\boldsymbol{\\text{二酸化炭素}}$が吸収される．残りは未反応の$\\boldsymbol{\\text{酸素}}$（水は液体）．\n\n(3) $\\ce{H2}$ $a$，$\\ce{CO}$ $b$，$\\ce{CH4}$ $c$（mL）とする．\n\\[a+b+c=50.0\\]\n$\\ce{CO2}$ の体積：$b+c=75.0-45.0=30.0$\n消費された酸素：$\\tfrac12a+\\tfrac12b+2c=100.0-45.0=55.0$\n第1式と第2式から $a=20.0$．第3式に代入して $\\tfrac12b+2c=45.0$，$b+c=30.0$ を解くと $c=20.0$，$b=10.0$．\n答えは \\textbf{水素 $20.0\\,\\mathrm{mL}$，一酸化炭素 $10.0\\,\\mathrm{mL}$，メタン $20.0\\,\\mathrm{mL}$}．\n（確認：燃焼後は $\\ce{CO2}$ $30.0$ と $\\ce{O2}$ $45.0$ で計 $75.0\\,\\mathrm{mL}$．）\n\n(4) 必要な酸素は (3) より $55.0\\,\\mathrm{mL}$．$50.0\\,\\mathrm{mL}$ では$\\boldsymbol{\\text{不足}}$し，完全燃焼できない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "混合気体の燃焼では，燃焼後の体積と吸収による体積減少から，生じた CO₂ と残った O₂ の量を読み取り，各成分の体積を連立方程式で求める．必要な酸素量と加えた酸素量を比べて完全燃焼が可能か判断する．"
+ },
+ "concepts": [
+  "mole",
+  "oxygen-sulfur",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "混合気体",
+  "燃焼",
+  "体積変化",
+  "気体の吸収",
+  "連立方程式"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

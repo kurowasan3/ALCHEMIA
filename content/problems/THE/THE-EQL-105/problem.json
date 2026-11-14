@@ -1,0 +1,109 @@
+{
+ "id": "THE-EQL-105",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "強く結合する分子の結合平衡（結合で減る分を無視できない場合と平衡定数の見積もり）",
+ "course": "化学",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "タンパク質 R と分子 L は 1:1 で結合して複合体 RL をつくる．\n\\[\\mathrm{R}+\\mathrm{L}\\rightleftarrows\\mathrm{RL}\\qquad K=\\frac{[\\mathrm{RL}]}{[\\mathrm R][\\mathrm L]}\\]\nR の全濃度を $R_0$，L の全濃度（加えた濃度）を $L_0$ とし，結合率を $\\theta=\\dfrac{[\\mathrm{RL}]}{R_0}$ とする．$[\\mathrm R]$，$[\\mathrm L]$ は結合していないものの濃度である．L が R より十分に多ければ $[\\mathrm L]\\approx L_0$ とみなせるが，ここではそうとは限らない．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$K=1.0\\times10^{8}\\,\\mathrm{L/mol}$，$R_0=2.0\\times10^{-8}\\,\\mathrm{mol/L}$，$L_0=2.0\\times10^{-8}\\,\\mathrm{mol/L}$ のとき，(a) $[\\mathrm L]=L_0$ とみなして求めた $\\theta$，(b) 結合による L の減少を考慮して求めた $\\theta$ を，それぞれ有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) と同じ $K$，$R_0$ で $\\theta=0.80$ にするのに必要な $L_0$ を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "別のタンパク質と分子の組で，$R_0=2.0\\times10^{-8}\\,\\mathrm{mol/L}$，$L_0=3.0\\times10^{-8}\\,\\mathrm{mol/L}$ のとき $\\theta=0.60$ であった．この組の $K$ を有効数字 2 桁で求めよ．また，$[\\mathrm L]=L_0$ とみなして $K$ を求めると，真の値より大きくなるか小さくなるか．"
+     },
+     {
+      "id": "4",
+      "tex": "$K=1.0\\times10^{8}\\,\\mathrm{L/mol}$ の組で $\\theta$ が約 $0.5$ になる実験を行う．$[\\mathrm L]=L_0$ とみなしたときの誤差が最も小さいのは，$R_0$ が次のどれのときか．\n（ア）$2.0\\times10^{-10}\\,\\mathrm{mol/L}$　（イ）$2.0\\times10^{-8}\\,\\mathrm{mol/L}$　（ウ）$2.0\\times10^{-7}\\,\\mathrm{mol/L}$"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "(a) $0.67$　(b) $0.50$"
+   },
+   {
+    "id": "2",
+    "tex": "$5.6\\times10^{-8}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "3",
+    "tex": "$8.3\\times10^{7}\\,\\mathrm{L/mol}$，小さくなる"
+   },
+   {
+    "id": "4",
+    "tex": "（ア）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　結合した分だけ遊離の L が減る．$[\\mathrm{RL}]=\\theta R_0$ とすると $[\\mathrm R]=(1-\\theta)R_0$，$[\\mathrm L]=L_0-\\theta R_0$ である．$\\theta R_0$ が $L_0$ に比べて無視できるとき（$K R_0\\ll1$ または $L_0\\gg R_0$）に限って $[\\mathrm L]\\approx L_0$ とおける．\n\n\\textbf{(1)} (a) $KL_0=2.0$ より $\\theta=\\dfrac{KL_0}{1+KL_0}=\\dfrac{2}{3}=\\boldsymbol{0.67}$．\n(b) $[\\mathrm{RL}]=x$ とすると $\\dfrac{x}{(2.0\\times10^{-8}-x)^2}=1.0\\times10^{8}$．$y=2.0\\times10^{-8}-x$ とおくと\n\\[y^2=1.0\\times10^{-8}(2.0\\times10^{-8}-y),\\quad y^2+1.0\\times10^{-8}y-2.0\\times10^{-16}=0\\]\n$y=\\dfrac{-1.0+3.0}{2}\\times10^{-8}=1.0\\times10^{-8}$，$x=1.0\\times10^{-8}$，$\\theta=\\boldsymbol{0.50}$．\n（$R_0$ が $1/K=1.0\\times10^{-8}$ より大きいので，L の大部分が結合して遊離の L が半分に減り，結合率は思ったより低い．）\n\n\\textbf{(2)} $\\theta=0.80$ では $\\dfrac{\\theta}{1-\\theta}=K[\\mathrm L]=4$ より $[\\mathrm L]=4.0\\times10^{-8}$．結合した L は $0.80\\times2.0\\times10^{-8}=1.6\\times10^{-8}$．\n$L_0=4.0\\times10^{-8}+1.6\\times10^{-8}=\\boldsymbol{5.6\\times10^{-8}\\,\\mathrm{mol/L}}$（$[\\mathrm L]=L_0$ とみなすと $4.0\\times10^{-8}$ で足りると誤る）．\n\n\\textbf{(3)} $[\\mathrm{RL}]=1.2\\times10^{-8}$，$[\\mathrm R]=0.8\\times10^{-8}$，$[\\mathrm L]=3.0\\times10^{-8}-1.2\\times10^{-8}=1.8\\times10^{-8}$．\n$K=\\dfrac{1.2\\times10^{-8}}{0.8\\times10^{-8}\\times1.8\\times10^{-8}}=\\boldsymbol{8.3\\times10^{7}\\,\\mathrm{L/mol}}$．\n$[\\mathrm L]=L_0$ とすると $K=\\dfrac{0.60}{0.40\\times3.0\\times10^{-8}}=5.0\\times10^{7}$ となり，遊離の L を多く見積もる分だけ $K$ は真の値より $\\boldsymbol{\\text{小さくなる}}$．\n\n\\textbf{(4)} $\\theta=0.5$ では $[\\mathrm L]=1/K=1.0\\times10^{-8}$ で，結合した L は $0.5R_0$．\n（ア）$1.0\\times10^{-10}$（$[\\mathrm L]$ の $1\\,\\%$），（イ）$1.0\\times10^{-8}$（$100\\,\\%$），（ウ）$1.0\\times10^{-7}$（$1000\\,\\%$）．\n誤差が最も小さいのは $K R_0=0.02\\ll1$ の $\\boldsymbol{\\text{（ア）}}$．強く結合する（$K$ の大きい）組ほど，$R_0$ を $1/K$ より十分小さくしないと正しい結合の強さは測れない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "1:1 の結合平衡で結合する側が強い（K が大きい）と，結合した分だけ遊離の分子が減り，全濃度をそのまま遊離濃度とみなす近似が破れる．保存則と平衡定数の式から二次方程式で正しい結合率を求め，近似が成り立つ条件（K·R₀≪1）と，近似による平衡定数の過小評価を判断する．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "protein-amino",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "結合平衡",
+  "二次方程式",
+  "近似の破れ",
+  "平衡定数の測定",
+  "タンパク質"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

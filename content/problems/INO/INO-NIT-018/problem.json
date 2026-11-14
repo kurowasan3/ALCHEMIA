@@ -1,0 +1,109 @@
+{
+ "id": "INO-NIT-018",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-03",
+ "topic": "オストワルト法での NO の再利用と収率・酸素の消費量",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "オストワルト法では，次の3段階の反応で硝酸をつくる．\n\\[\\ce{4NH3 + 5O2 -> 4NO + 6H2O}\\quad\\text{…①}\\]\n\\[\\ce{2NO + O2 -> 2NO2}\\quad\\text{…②}\\]\n\\[\\ce{3NO2 + H2O -> 2HNO3 + NO}\\quad\\text{…③}\\]\n③で生じる $\\ce{NO}$ を回収せずにそのまま排出する工程（工程 X）と，すべて回収して②に戻す工程（工程 Y）を比べる．アンモニアは①で完全に $\\ce{NO}$ になり，②・③も完全に進むものとする．原子量は H = 1.0，N = 14，O = 16 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "工程 X で，アンモニア $1\\,\\mathrm{mol}$ から得られる硝酸は何 mol か．分数で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "工程 Y について，①〜③をまとめた1つの反応式を書け．"
+     },
+     {
+      "id": "3",
+      "tex": "アンモニア $3.4\\,\\mathrm{t}$ から質量パーセント濃度 63 % の硝酸は，工程 X と工程 Y でそれぞれ何 t 得られるか．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "硝酸 $1\\,\\mathrm{mol}$ をつくるのに消費される酸素 $\\ce{O2}$ は，工程 X と工程 Y でそれぞれ何 mol か．工程 X は分数で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\dfrac{2}{3}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{NH3 + 2O2 -> HNO3 + H2O}$"
+   },
+   {
+    "id": "3",
+    "tex": "工程 X：$13\\,\\mathrm{t}$，工程 Y：$20\\,\\mathrm{t}$"
+   },
+   {
+    "id": "4",
+    "tex": "工程 X：$\\dfrac{21}{8}\\,\\mathrm{mol}$，工程 Y：$2\\,\\mathrm{mol}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　③では $\\ce{NO2}$ の N のうち $\\frac{2}{3}$ だけが $\\ce{HNO3}$（酸化数 +5）になり，残り $\\frac{1}{3}$ は $\\ce{NO}$（+2）にもどる（不均化）．$\\ce{NO}$ を回収するかどうかで，N の行き先が変わる．\n\n(1) 工程 X では，$\\ce{NH3}$ 1 mol → $\\ce{NO}$ 1 mol → $\\ce{NO2}$ 1 mol → ③で $\\ce{HNO3}$ $\\frac{2}{3}$ mol と $\\ce{NO}$ $\\frac{1}{3}$ mol．$\\ce{NO}$ は排出されるので，硝酸は $\\boldsymbol{\\dfrac{2}{3}\\,\\mathrm{mol}}$．\n\n(2) 工程 Y では $\\ce{NO}$ と $\\ce{NO2}$ が中間体として消える．②×3＋③×2 で $\\ce{NO2}$ を消すと $\\ce{4NO + 3O2 + 2H2O -> 4HNO3}$．これに①を加えて $\\ce{NO}$ を消すと $\\ce{4NH3 + 8O2 -> 4HNO3 + 4H2O}$，両辺を4で割って $\\boldsymbol{\\ce{NH3 + 2O2 -> HNO3 + H2O}}$．\n\n(3) $\\ce{NH3}$ は $3.4\\times10^{6}\\,\\mathrm{g}\\div17\\,\\mathrm{g/mol}=2.0\\times10^{5}\\,\\mathrm{mol}$．\n工程 Y：$\\ce{HNO3}$ $2.0\\times10^{5}\\,\\mathrm{mol}$，質量 $2.0\\times10^{5}\\times63=1.26\\times10^{7}\\,\\mathrm{g}=12.6\\,\\mathrm{t}$．63 % 硝酸は $12.6\\div0.63=\\boldsymbol{20\\,\\mathrm{t}}$．\n工程 X：その $\\frac{2}{3}$ で $20\\times\\frac{2}{3}=13.3\\ldots\\fallingdotseq\\boldsymbol{13\\,\\mathrm{t}}$．\n\n(4) 工程 X：$\\ce{NH3}$ 1 mol あたり①で $\\frac{5}{4}$ mol，②で $\\frac{1}{2}$ mol，計 $\\frac{7}{4}$ mol の $\\ce{O2}$ を使い，硝酸は $\\frac{2}{3}$ mol．硝酸 1 mol あたり $\\frac{7}{4}\\div\\frac{2}{3}=\\boldsymbol{\\dfrac{21}{8}\\,\\mathrm{mol}}$．\n工程 Y：(2)の式から $\\boldsymbol{2\\,\\mathrm{mol}}$．排出した $\\ce{NO}$ をつくるのに使った $\\ce{O2}$ と $\\ce{NH3}$ がむだになるので，工程 X は原料・酸素ともに効率が悪い（排出される $\\ce{NO}$ は大気汚染の原因にもなる）．実際の工場では $\\ce{NO}$ を回収して再利用している．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "3NO2+H2O→2HNO3+NO の不均化では N の 1/3 が NO にもどるので，NO を回収しなければ NH3 の 2/3 しか硝酸にならない．NO を ② に戻して循環させると中間体が消えて NH3+2O2→HNO3+H2O にまとまり，原料・酸素の消費量の比較ができる．"
+ },
+ "concepts": [
+  "nitrogen-phosphorus",
+  "oxygen-sulfur",
+  "industrial-process"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "オストワルト法",
+  "硝酸",
+  "不均化",
+  "量的関係",
+  "物質収支"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

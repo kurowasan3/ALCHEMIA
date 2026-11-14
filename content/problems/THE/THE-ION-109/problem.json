@@ -1,0 +1,109 @@
+{
+ "id": "THE-ION-109",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "溶解エンタルピーから求める塩化銀の溶解度積の温度変化と冷却による沈殿",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "塩化銀の溶解 $\\ce{AgCl(s) <=> Ag+ + Cl-}$ の溶解エンタルピーは $+65\\,\\mathrm{kJ/mol}$（吸熱）である．これは，格子エンタルピー（固体をばらばらの気体イオンにするのに必要なエネルギー）が大きく，$\\ce{Ag+}$ と $\\ce{Cl-}$ の水和で放出されるエネルギーではまかないきれないためである．一方，塩化ナトリウムの溶解エンタルピーは $+3.9\\,\\mathrm{kJ/mol}$ である．\n\n平衡定数 $K$ の温度変化は，溶解エンタルピーを $\\Delta H$（J/mol）として次式で表されるとする（$R=8.31\\,\\mathrm{J/(K\\cdot mol)}$）．\n\\[\\log_{10}\\frac{K_{T_2}}{K_{T_1}}=\\frac{\\Delta H}{2.3R}\\left(\\frac{1}{T_1}-\\frac{1}{T_2}\\right)\\]\n$25\\,^{\\circ}\\mathrm{C}$（298 K）で $\\ce{AgCl}$ の溶解度積は $K_{\\mathrm{sp}}=1.8\\times10^{-10}\\,\\mathrm{mol^{2}/L^{2}}$ とする．式量は $\\ce{AgCl}=143.5$．必要なら $10^{0.20}=1.58$，$\\sqrt{1.8}=1.34$，$\\sqrt{28.5}=5.34$，$\\sqrt{71.2}=8.44$ を用い，溶液の体積は温度によらないものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$60\\,^{\\circ}\\mathrm{C}$（333 K）での $\\ce{AgCl}$ の溶解度積を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$60\\,^{\\circ}\\mathrm{C}$ で $\\ce{AgCl}$ を飽和させた水溶液 $1.0\\,\\mathrm{L}$ を $25\\,^{\\circ}\\mathrm{C}$ まで冷やすと，何 mg の $\\ce{AgCl}$ が析出するか．有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$60\\,^{\\circ}\\mathrm{C}$ で $[\\ce{Ag+}]=1.0\\times10^{-4}\\,\\mathrm{mol/L}$，$[\\ce{Cl-}]=2.0\\times10^{-5}\\,\\mathrm{mol/L}$ となるように 2 つの溶液を混ぜた．この温度で沈殿は生じるか．また，この溶液を $25\\,^{\\circ}\\mathrm{C}$ に冷やしたとき，はじめの $\\ce{Cl-}$ のうち何 \\% が沈殿するか．有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "同じ式を塩化ナトリウムにあてはめると，$25\\,^{\\circ}\\mathrm{C}$ から $60\\,^{\\circ}\\mathrm{C}$ への温度上昇で平衡定数は約何倍になるか（有効数字 2 桁，$10^{0.072}=1.18$ とする）．$\\ce{AgCl}$ と比べ，溶解度が温度によって大きく変わるのはどちらか，理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$2.8\\times10^{-9}\\,\\mathrm{mol^{2}/L^{2}}$"
+   },
+   {
+    "id": "2",
+    "tex": "$5.7\\,\\mathrm{mg}$"
+   },
+   {
+    "id": "3",
+    "tex": "$60\\,^{\\circ}\\mathrm{C}$ では沈殿しない（イオン濃度の積 $2.0\\times10^{-9}$ が溶解度積より小さい）．冷やすと $89\\,\\%$ が沈殿する．"
+   },
+   {
+    "id": "4",
+    "tex": "約 $1.2$ 倍．溶解エンタルピーの大きい（吸熱の大きい）$\\ce{AgCl}$ のほうが温度による変化が大きい．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\dfrac{\\Delta H}{2.3R}\\left(\\dfrac{1}{298}-\\dfrac{1}{333}\\right)=\\dfrac{65000}{2.3\\times8.31}\\times3.53\\times10^{-4}=1.20$．\n$\\dfrac{K_{333}}{K_{298}}=10^{1.20}=15.8$，$K_{\\mathrm{sp}}(60\\,^{\\circ}\\mathrm{C})=1.8\\times10^{-10}\\times15.8=2.85\\times10^{-9}\\to\\boldsymbol{2.8\\times10^{-9}}$．\n吸熱的な溶解なので，温度を上げると平衡が溶ける向きに移る（ルシャトリエの原理）と同じ向きである．\n\n\\textbf{(2)} 飽和溶液では $[\\ce{Ag+}]=[\\ce{Cl-}]=s$，$s=\\sqrt{K_{\\mathrm{sp}}}$．\n$s_{60}=\\sqrt{28.5\\times10^{-10}}=5.34\\times10^{-5}$，$s_{25}=\\sqrt{1.8\\times10^{-10}}=1.34\\times10^{-5}\\,\\mathrm{mol/L}$．\n冷やすと両イオンが同じだけ減って $s_{25}$ になるので，析出は $(5.34-1.34)\\times10^{-5}=4.0\\times10^{-5}\\,\\mathrm{mol}$，$4.0\\times10^{-5}\\times143.5=5.7\\times10^{-3}\\,\\mathrm{g}=\\boldsymbol{5.7\\,\\mathrm{mg}}$．\n\n\\textbf{(3)} $60\\,^{\\circ}\\mathrm{C}$：$[\\ce{Ag+}][\\ce{Cl-}]=2.0\\times10^{-9}<2.85\\times10^{-9}$ なので\\textbf{沈殿しない}．\n$25\\,^{\\circ}\\mathrm{C}$：$2.0\\times10^{-9}>1.8\\times10^{-10}$ なので沈殿する．沈殿する量を $x\\,\\mathrm{mol/L}$ とすると\n\\[(1.0\\times10^{-4}-x)(2.0\\times10^{-5}-x)=1.8\\times10^{-10}\\ \\Rightarrow\\ x^{2}-1.2\\times10^{-4}x+1.82\\times10^{-9}=0.\\]\n$x=\\dfrac{1.2\\times10^{-4}-\\sqrt{71.2\\times10^{-10}}}{2}=\\dfrac{(1.20-0.844)\\times10^{-4}}{2}=1.78\\times10^{-5}$（他方の解は $\\ce{Cl-}$ の量を超えるので不適）．\n$\\dfrac{1.78\\times10^{-5}}{2.0\\times10^{-5}}=\\boldsymbol{89\\,\\%}$．$\\ce{Cl-}$ は少ないほうのイオンで，ほとんど沈殿するため「$[\\ce{Ag+}]$ はほぼ変わらない」と置けても，「$x\\ll[\\ce{Cl-}]$」とは置けない．$[\\ce{Ag+}]\\approx1.0\\times10^{-4}$ と近似すると $[\\ce{Cl-}]=1.8\\times10^{-6}$ で $91\\,\\%$ となり，わずかにずれる．\n\n\\textbf{(4)} $\\dfrac{3900}{2.3\\times8.31}\\times3.53\\times10^{-4}=0.072$，$10^{0.072}=\\boldsymbol{1.2}$ 倍．$\\ce{AgCl}$ は約 16 倍になる．$\\log K$ の変化は溶解エンタルピーに比例するので，溶解の吸熱が大きい\\textbf{塩化銀}のほうが溶解度の温度変化が大きい．塩化ナトリウムの溶解度が温度でほとんど変わらないのは，溶解エンタルピーがほぼ 0 だからである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "溶解平衡も化学平衡なので，溶解エンタルピー（格子エンタルピーと水和エンタルピーの差）が正なら溶解度積は温度とともに大きくなり，その変化の大きさは溶解エンタルピーに比例する．冷却による析出量は両イオンの濃度変化を連立して求め，少ないほうのイオンがほとんど沈殿するときは近似が使えない．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "precipitation",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "溶解度積",
+  "溶解エンタルピー",
+  "平衡定数の温度変化",
+  "沈殿",
+  "塩化銀"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

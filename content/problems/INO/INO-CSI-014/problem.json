@@ -1,0 +1,117 @@
+{
+ "id": "INO-CSI-014",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-04",
+ "topic": "ゼオライトの組成（Al の置換と電荷）とイオン交換容量",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ゼオライトは，$\\ce{SiO4}$ 四面体と $\\ce{AlO4}$ 四面体がすべての頂点の O を隣の四面体と共有してできた立体網目構造をもつアルミノケイ酸塩で，網目のすき間に陽イオンと水分子を含む．アルカリ金属 M を含むゼオライトの組成を $\\ce{M_aAl_bSi_cO_d}\\cdot e\\ce{H2O}$ で表す．原子量は H $=1.0$，O $=16.0$，Na $=23.0$，Al $=27.0$，Si $=28.1$，Ca $=40.1$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "網目の Si（酸化数 $+4$）の一部が Al（$+3$）に置き換わると，網目はどのような電荷をもつか．それを打ち消す陽イオンを考えて $a$ を $b$ で表せ．また，O がすべて 2 つの四面体に共有されていることから，$d$ を $b,\\ c$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "$b=8$，$c=40$，$e=24$ の Na 型ゼオライト（ゼオライト X とする）の組成式を書き，式量を有効数字 4 桁で求めよ．また，このゼオライトを加熱して結晶水をすべて除くと質量は何 \\% 減るか．有効数字 3 桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "ゼオライト X の $\\ce{Na+}$ がすべて $\\ce{Ca^2+}$ と交換されるとすると，ゼオライト X $1.00\\,\\mathrm{g}$ は最大何 mg の $\\ce{Ca^2+}$ を取り込めるか．有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "組成 $\\ce{Na12Al12Si12O48}\\cdot27\\ce{H2O}$ のゼオライト Y についても (3) と同じ量を有効数字 2 桁で求めよ．また，ゼオライト X と Y のどちらが質量あたりの交換容量が大きいか，その理由を組成にもとづいて答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "$\\ce{Ca^2+}$ を $80\\,\\mathrm{mg/L}$ 含む硬水 $1.0\\,\\mathrm{L}$ の $\\ce{Ca^2+}$ をすべて取り除くのに必要なゼオライト Y は最低何 g か．有効数字 2 桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "Al 1 個につき網目が $-1$ の電荷をもつ（負に帯電）．$a=b$，$d=2(b+c)$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{Na8Al8Si40O96}\\cdot24\\ce{H2O}$，式量 $3492$，$12.4\\,\\%$ 減る"
+   },
+   {
+    "id": "3",
+    "tex": "$46\\,\\mathrm{mg}$"
+   },
+   {
+    "id": "4",
+    "tex": "$1.1\\times10^{2}\\,\\mathrm{mg}$．Y の方が大きい（交換容量は Al の数に比例し，Y は Si:Al $=1:1$ で質量あたりの Al が X（Si:Al $=5:1$）より多いため）"
+   },
+   {
+    "id": "5",
+    "tex": "$0.73\\,\\mathrm{g}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\ce{SiO2}$ だけの網目は電気的に中性．Si（$+4$）が Al（$+3$）に置き換わるたびに正電荷が 1 つ足りなくなり，網目は Al 1 個につき $\\boldsymbol{-1}$ の電荷をもつ．これを 1 価の $\\ce{M+}$ が打ち消すので $\\boldsymbol{a=b}$．各四面体は O を 4 個もつが，どの O も 2 つの四面体に共有されるので，四面体 1 個あたりの O は $4\\times\\frac12=2$ 個．四面体の数は $b+c$ なので $\\boldsymbol{d=2(b+c)}$．\n\n\\textbf{(2)} $a=8$，$d=2\\times48=96$ より $\\boldsymbol{\\ce{Na8Al8Si40O96}\\cdot24\\ce{H2O}}$．\n\\[ 8\\times23.0+8\\times27.0+40\\times28.1+96\\times16.0+24\\times18.0=184+216+1124+1536+432=\\boldsymbol{3492} \\]\n結晶水の割合 $\\dfrac{432}{3492}\\times100=\\boldsymbol{12.4\\,\\%}$．（結晶水を除いても網目は壊れないので，乾燥剤として使える．）\n\n\\textbf{(3)} $\\ce{Ca^2+}$ 1 個は $\\ce{Na+}$ 2 個と交換される．1 mol（3492 g）のゼオライト X の $\\ce{Na+}$ は 8 mol で，$\\ce{Ca^2+}$ 4 mol と交換．\n\\[ \\frac{1.00}{3492}\\times4\\times40.1\\times10^{3}=\\boldsymbol{46\\,\\mathrm{mg}} \\]\n\n\\textbf{(4)} ゼオライト Y の式量は $276+324+337.2+768+486=2191.2$．$\\ce{Na+}$ 12 mol → $\\ce{Ca^2+}$ 6 mol．\n\\[ \\frac{1.00}{2191.2}\\times6\\times40.1\\times10^{3}=110\\,\\mathrm{mg}=\\boldsymbol{1.1\\times10^{2}\\,\\mathrm{mg}} \\]\n交換できる陽イオンの数は網目の負電荷，すなわち Al の数で決まる．Y は Si:Al $=1:1$，X は $5:1$ で，質量あたりの Al が Y の方が多いので \\textbf{Y の方が交換容量が大きい}．（網目の Al は Si と同じくらいの数までしか置き換わらず，Al が隣り合わない $b\\le c$ の範囲にある．Y はその上限にあたる．）\n\n\\textbf{(5)} $\\dfrac{80\\,\\mathrm{mg}}{110\\,\\mathrm{mg/g}}=0.728\\to\\boldsymbol{0.73\\,\\mathrm{g}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ゼオライトの網目では Si⁴⁺ を Al³⁺ に置き換えた数だけ負電荷が生じ，それを打ち消す陽イオンがイオン交換に使われる．頂点共有から O の数を，Al の数から陽イオンの数と交換容量を求め，Si/Al 比の違う 2 つのゼオライトの交換容量を比べる．"
+ },
+ "concepts": [
+  "carbon-silicon",
+  "elemental-analysis",
+  "functional-polymer"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ゼオライト",
+  "アルミノケイ酸塩",
+  "イオン交換",
+  "硬水の軟化",
+  "組成式"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

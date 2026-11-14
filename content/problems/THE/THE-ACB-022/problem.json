@@ -1,0 +1,102 @@
+{
+ "id": "THE-ACB-022",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-05",
+ "topic": "リン酸の段階的中和と当量点の pH（近似の破れ）",
+ "course": "化学",
+ "level": 5,
+ "minutes": 35,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "塩酸とリン酸の混合水溶液 X がある．X $10.0\\,\\mathrm{mL}$ を $0.100\\,\\mathrm{mol/L}$ 水酸化ナトリウム水溶液で滴定したところ，メチルオレンジの変色（第 1 終点）までに $8.00\\,\\mathrm{mL}$，フェノールフタレインの変色（第 2 終点）までに合計 $11.00\\,\\mathrm{mL}$ を要した．リン酸の電離定数は $K_1=7.0\\times10^{-3}\\,\\mathrm{mol/L}$，$K_2=6.0\\times10^{-8}\\,\\mathrm{mol/L}$，$K_3=4.0\\times10^{-13}\\,\\mathrm{mol/L}$，水のイオン積は $K_{\\mathrm w}=1.0\\times10^{-14}\\,(\\mathrm{mol/L})^2$ とする．必要なら $\\sqrt3=1.73$，$\\log_{10}2.4=0.38$，$\\log_{10}6.6=0.82$ を用いよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "第 1 終点，第 2 終点でそれぞれ完了している反応をイオン反応式で示し，X 中の塩化水素とリン酸のモル濃度を有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "この滴定では，リン酸の 3 段目の中和（第 3 終点）ははっきりした pH の変化として観測できない．仮に第 3 当量点まで（合計 $14.00\\,\\mathrm{mL}$）水酸化ナトリウム水溶液を加えたとき，生じた $\\ce{PO4^3-}$ のうち何 \\% が $\\ce{PO4^3- + H2O <=> HPO4^2- + OH-}$ によって $\\ce{HPO4^2-}$ にもどっているかを有効数字 2 桁で求め，第 3 終点が観測できない理由を説明せよ．"
+     },
+     {
+      "id": "3",
+      "tex": "第 2 当量点の水溶液（$\\ce{Na2HPO4}$ 水溶液とみなす）の pH について次の問いに答えよ．\n(a) $\\ce{2HPO4^2- <=> H2PO4- + PO4^3-}$ だけが起こると考えて $[\\ce{H2PO4-}]=[\\ce{PO4^3-}]$ とおくと，pH はいくらと見積もられるか．小数第 2 位まで求めよ．\n(b) (a) で求めた pH での $[\\ce{PO4^3-}]$ と $[\\ce{OH-}]$ を有効数字 2 桁で求めて比べ，(a) の近似が妥当かどうかを判断せよ．\n(c) 水の電離も含めた関係 $[\\ce{H2PO4-}]=[\\ce{PO4^3-}]+[\\ce{OH-}]$（$[\\ce{H+}]$ は無視でき，$[\\ce{HPO4^2-}]$ は当量点での濃度に等しいとする）を用いて pH を小数第 1 位まで求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "第 1 終点：$\\ce{H+ + OH- -> H2O}$ と $\\ce{H3PO4 + OH- -> H2PO4- + H2O}$，第 2 終点：$\\ce{H2PO4- + OH- -> HPO4^2- + H2O}$．塩化水素 $5.00\\times10^{-2}\\,\\mathrm{mol/L}$，リン酸 $3.00\\times10^{-2}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "2",
+    "tex": "約 $73\\,\\%$．$\\ce{PO4^3-}$ の加水分解定数 $K_{\\mathrm w}/K_3=2.5\\times10^{-2}\\,\\mathrm{mol/L}$ が大きく，加えた $\\ce{OH-}$ の大部分が $\\ce{OH-}$ のまま残る（$\\ce{PO4^3-}$ が強い塩基で，$\\ce{HPO4^2-}$ がほとんど酸としてはたらかない）ため，当量点の前後で pH がなだらかにしか変化しない．"
+   },
+   {
+    "id": "3",
+    "tex": "(a) pH $=9.81$　(b) $[\\ce{PO4^3-}]=3.7\\times10^{-5}\\,\\mathrm{mol/L}$，$[\\ce{OH-}]=6.5\\times10^{-5}\\,\\mathrm{mol/L}$．$[\\ce{OH-}]$ の方が大きく，水の電離（$\\ce{HPO4^2-}$ の加水分解）を無視した (a) の近似は妥当でない．(c) pH $=9.6$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $K_1$ は $K_2$ よりはるかに大きく，$K_2$ は $K_3$ よりはるかに大きいので，中和は段階的に進む．メチルオレンジの終点（第 1 当量点）では\n\\[ \\ce{H+ + OH- -> H2O},\\qquad \\ce{H3PO4 + OH- -> H2PO4- + H2O} \\]\nが終わり，フェノールフタレインの終点（第 2 当量点）までに\n\\[ \\ce{H2PO4- + OH- -> HPO4^2- + H2O} \\]\nが起こる．第 1→第 2 終点の $3.00\\,\\mathrm{mL}$ はリン酸の物質量に対応するので\n\\[ n(\\ce{H3PO4})=0.100\\times\\frac{3.00}{1000}=3.00\\times10^{-4}\\,\\mathrm{mol}\\ \\to\\ \\boldsymbol{3.00\\times10^{-2}\\,\\mathrm{mol/L}} \\]\n第 1 終点の $8.00\\,\\mathrm{mL}$ のうち $3.00\\,\\mathrm{mL}$ がリン酸の 1 段目なので，塩化水素は $5.00\\,\\mathrm{mL}$ 分：$5.00\\times10^{-4}\\,\\mathrm{mol}\\to\\boldsymbol{5.00\\times10^{-2}\\,\\mathrm{mol/L}}$．\n\n\\textbf{(2) 第 3 段目が見えない理由}　第 3 当量点では $\\ce{PO4^3-}$ の濃度 $C=\\dfrac{3.00\\times10^{-4}}{0.0240}=1.25\\times10^{-2}\\,\\mathrm{mol/L}$．加水分解定数は\n\\[ K_{\\mathrm h}=\\frac{[\\ce{HPO4^2-}][\\ce{OH-}]}{[\\ce{PO4^3-}]}=\\frac{K_{\\mathrm w}}{K_3}=2.5\\times10^{-2}\\,\\mathrm{mol/L} \\]\nで $C$ と同程度なので，加水分解の割合 $\\alpha$ を「$\\alpha\\ll1$」と近似することはできない．$\\dfrac{C\\alpha^2}{1-\\alpha}=K_{\\mathrm h}$ に代入すると $1.25\\times10^{-2}\\alpha^2=2.5\\times10^{-2}(1-\\alpha)$，すなわち $\\alpha^2+2\\alpha-2=0$．\n\\[ \\alpha=-1+\\sqrt3=0.73\\ \\to\\ \\boldsymbol{73\\,\\%} \\]\nつまり 3 段目のために加えた $\\ce{OH-}$ の 7 割以上は $\\ce{HPO4^2-}$ と反応せずに $\\ce{OH-}$ のまま残る．$\\ce{HPO4^2-}$ はほとんど酸としてはたらかない（$K_3$ が小さすぎる）ので，3 段目の中和は「強塩基を水に加えていく」のとほぼ同じになり，当量点で pH の急激な変化（ジャンプ）が生じない．\n\n\\textbf{(3)(a)} $[\\ce{H2PO4-}]=\\dfrac{[\\ce{H+}][\\ce{HPO4^2-}]}{K_2}$，$[\\ce{PO4^3-}]=\\dfrac{K_3[\\ce{HPO4^2-}]}{[\\ce{H+}]}$ を等しいとおくと $[\\ce{H+}]^2=K_2K_3=2.4\\times10^{-20}$．\n\\[ \\mathrm{pH}=\\frac{20-\\log_{10}2.4}{2}=\\frac{20-0.38}{2}=\\boldsymbol{9.81} \\]\n\\textbf{(b)} 第 2 当量点の $\\ce{HPO4^2-}$ の濃度は $C=\\dfrac{3.00\\times10^{-4}}{0.0210}=1.43\\times10^{-2}\\,\\mathrm{mol/L}$．$[\\ce{H+}]=1.55\\times10^{-10}$ として\n\\[ [\\ce{PO4^3-}]=\\frac{4.0\\times10^{-13}\\times1.43\\times10^{-2}}{1.55\\times10^{-10}}=\\boldsymbol{3.7\\times10^{-5}},\\qquad [\\ce{OH-}]=\\frac{1.0\\times10^{-14}}{1.55\\times10^{-10}}=\\boldsymbol{6.5\\times10^{-5}}\\ (\\mathrm{mol/L}) \\]\n$\\ce{HPO4^2-}$ が受け取った $\\ce{H+}$（$\\ce{H2PO4-}$ の量）は，$\\ce{HPO4^2-}$ が放出した $\\ce{H+}$（$\\ce{PO4^3-}$）と水が放出した $\\ce{H+}$（$\\ce{OH-}$）の和に等しい．$[\\ce{OH-}]$ が $[\\ce{PO4^3-}]$ より大きいので，「$[\\ce{H2PO4-}]=[\\ce{PO4^3-}]$」は成り立たず，(a) の近似は\\textbf{妥当でない}．$K_3$ が非常に小さく，$K_3C$ が $K_{\\mathrm w}$ と同程度になっているのが原因である．\n\n\\textbf{(c)} 与えられた関係に代入して\n\\[ \\frac{[\\ce{H+}]C}{K_2}=\\frac{K_3C}{[\\ce{H+}]}+\\frac{K_{\\mathrm w}}{[\\ce{H+}]}\\quad\\Longrightarrow\\quad[\\ce{H+}]^2=\\frac{K_2(K_3C+K_{\\mathrm w})}{C} \\]\n$K_3C=4.0\\times10^{-13}\\times\\dfrac{1}{70}=5.7\\times10^{-15}$，$K_3C+K_{\\mathrm w}=1.57\\times10^{-14}$，$\\dfrac{1}{C}=70$ から\n\\[ [\\ce{H+}]^2=6.0\\times10^{-8}\\times1.57\\times10^{-14}\\times70=6.6\\times10^{-20},\\qquad \\mathrm{pH}=\\frac{20-0.82}{2}=9.59\\to\\boldsymbol{9.6} \\]\n（このとき $[\\ce{H+}]=2.6\\times10^{-10}$ で $[\\ce{OH-}]=3.9\\times10^{-5}$ は $C$ に比べて十分小さく，$[\\ce{HPO4^2-}]=C$ とした仮定も成り立つ．）水の電離を無視した (a) より 0.2 ほど低い値になる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "三価の酸の段階的な中和では，各段の終点の差から成分量を決められるが，電離定数がきわめて小さい段は共役塩基の加水分解が大きすぎて当量点のジャンプが現れない．両性イオンの当量点の pH を (pK₂+pK₃)/2 とする近似は，K₃C が K_w と同程度になると水の電離を無視できず破れる．"
+ },
+ "concepts": [
+  "acid-base",
+  "amphoteric",
+  "nitrogen-phosphorus"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "リン酸",
+  "中和滴定",
+  "二段階滴定",
+  "加水分解",
+  "両性イオン",
+  "近似の妥当性"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

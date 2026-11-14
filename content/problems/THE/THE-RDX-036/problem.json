@@ -1,0 +1,118 @@
+{
+ "id": "THE-RDX-036",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-06",
+ "topic": "ヨウ素滴定による銅酸化物超伝導体の酸素量（銅の平均酸化数）の決定",
+ "course": "化学",
+ "level": 3,
+ "minutes": 20,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "超伝導体として知られる酸化物 $\\ce{YBa2Cu3O}_{y}$ では，Y は +3，Ba は +2，O は −2 の酸化数をとり，Cu の一部が +3 の状態にあるため，Cu の平均の酸化数は 2 より大きい．Cu の平均の酸化数を $2+p$ とする．$y$ を求めるため次の実験を行った．\n\n試料 $0.1000\\,\\mathrm g$ を，過剰のヨウ化カリウムを含む塩酸に溶かすと，銅はすべてヨウ化銅(I) $\\ce{CuI}$（白色沈殿）となり，ヨウ素 $\\ce{I2}$ が遊離した．\n\\[\\ce{Cu^{(2+\\mathit{p})+} + (2+\\mathit{p})I- ->[\\text{}] CuI + \\dfrac{1+\\mathit{p}}{2}I2}\\]\n遊離した $\\ce{I2}$ を $0.0200\\,\\mathrm{mol/L}$ のチオ硫酸ナトリウム水溶液で滴定したところ，$28.6\\,\\mathrm{mL}$ を要した．\n\\[\\ce{I2 + 2S2O3^2- -> 2I- + S4O6^2-}\\]\n原子量は O = 16.0，Cu = 63.5，Y = 88.9，Ba = 137.3 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "滴定の終点を知るために加える指示薬の名称と，終点での色の変化を答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "Cu 1 mol あたり，滴定に要するチオ硫酸ナトリウムは何 mol か．$p$ を用いて表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "電気的中性の条件から，$p$ を $y$ で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "$y$ の値を小数第2位まで求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "同じ操作を酸化銅(II) $\\ce{CuO}$ と酸化銅(I) $\\ce{Cu2O}$ の試料で行った．Cu 1 mol あたりに要するチオ硫酸ナトリウムはそれぞれ何 mol か．また，$\\ce{Cu^2+}$ だけでも $\\ce{I2}$ が遊離する理由を簡潔に答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "デンプン水溶液，青（青紫）色が消えて無色になったところが終点"
+   },
+   {
+    "id": "2",
+    "tex": "$(1+p)\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "$p = \\dfrac{2y-13}{3}$"
+   },
+   {
+    "id": "4",
+    "tex": "$y = 6.90$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\ce{CuO}$：1 mol，$\\ce{Cu2O}$：0 mol．$\\ce{Cu^2+}$ が $\\ce{I-}$ を酸化して生じる $\\ce{Cu+}$ が難溶性の $\\ce{CuI}$ として沈殿し取り除かれるため，反応が右に進む"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\ce{I2}$ が残っている間はデンプンで青紫色を示し，すべて $\\ce{I-}$ に還元されると無色になる．指示薬は$\\boldsymbol{\\text{デンプン}}$で，青色が消えた点を終点とする（$\\ce{I2}$ の色が薄くなってから加える）．\n\n\\textbf{(2)} Cu 1 mol から $\\ce{I2}$ が $\\dfrac{1+p}{2}\\,\\mathrm{mol}$ 生じ，$\\ce{I2}$ 1 mol に $\\ce{S2O3^2-}$ 2 mol が対応するので $\\boldsymbol{(1+p)\\,\\mathrm{mol}}$．Cu は最終的に $+1$（$\\ce{CuI}$）になるので，「酸化数の減少分 $1+p$」がそのまま電子の数になると考えてもよい．\n\n\\textbf{(3)} 正電荷の合計：$3 + 2\\times2 + 3(2+p) = 13 + 3p$，負電荷：$2y$．等しいとおくと $\\boldsymbol{p = \\dfrac{2y-13}{3}}$．\n\n\\textbf{(4)} 式量は $M = 88.9 + 2\\times137.3 + 3\\times63.5 + 16.0y = 554.0 + 16.0y$．試料 1 mol あたりのチオ硫酸ナトリウムは $3(1+p) = 3 + (2y-13) = 2y - 10\\ \\mathrm{mol}$．\n\\[\\frac{0.1000}{554.0+16.0y}\\times(2y-10) = 0.0200\\times\\frac{28.6}{1000} = 5.72\\times10^{-4}\\]\n\\[0.1000(2y-10) = 5.72\\times10^{-4}(554.0+16.0y)\\quad\\Rightarrow\\quad 0.1908y = 1.317\\quad\\Rightarrow\\quad \\boldsymbol{y = 6.90}\\]\nこのとき $p = (13.80-13)/3 = 0.27$ で，Cu の平均の酸化数は約 +2.27（Cu の約 27 \\% が +3 の状態）．\n\n\\textbf{(5)} $\\ce{CuO}$ では $p = 0$ なので $\\boldsymbol{1\\,\\mathrm{mol}}$：$\\ce{2Cu^2+ + 4I- -> 2CuI + I2}$．$\\ce{Cu2O}$ の Cu はすでに +1 で，$\\ce{CuI}$ になるだけで $\\ce{I2}$ は生じないので $\\boldsymbol{0\\,\\mathrm{mol}}$．\n\n$\\ce{Cu^2+}$ の酸化力だけでは $\\ce{I-}$ を酸化しにくいが，生じた $\\ce{Cu+}$ が $\\ce{I-}$ と難溶性の $\\ce{CuI}$ をつくって溶液から除かれるため，反応が完全に右へ進む．この性質のため，$\\ce{Cu^3+}$ を含む試料では「$\\ce{Cu^2+}$ の分（1 mol）＋ $\\ce{Cu^3+}$ の余分」の $\\ce{I2}$ が生じ，滴定量から $p$ がわかる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "Cu²⁺ は I⁻ を酸化して難溶性の CuI になるので，ヨウ素滴定では Cu 1 mol あたり（平均酸化数−1）mol のチオ硫酸塩を要する．これと電気的中性の条件（酸素量と銅の平均酸化数の関係）・式量を連立すると，酸素の不定比の組成が決まる．"
+ },
+ "concepts": [
+  "redox",
+  "transition-metals",
+  "halogen"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ヨウ素滴定",
+  "チオ硫酸ナトリウム",
+  "ヨウ化銅(I)",
+  "平均酸化数",
+  "不定比化合物",
+  "超伝導体"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

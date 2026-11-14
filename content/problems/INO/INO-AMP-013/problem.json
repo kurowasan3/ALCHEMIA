@@ -1,0 +1,109 @@
+{
+ "id": "INO-AMP-013",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-06",
+ "topic": "塩化スズ(II)の還元作用と量的関係",
+ "course": "化学",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "塩化スズ(II) $\\ce{SnCl2}$ は塩酸酸性の水溶液中で還元剤としてはたらき，$\\ce{Sn^2+}$ は $\\ce{Sn^4+}$ になる．$0.020\\,\\mathrm{mol/L}$ の塩化鉄(III)水溶液（塩酸酸性）$50.0\\,\\mathrm{mL}$ を2つ用意し，一方には $0.010\\,\\mathrm{mol/L}$ の塩化スズ(II)水溶液（塩酸酸性）を $30.0\\,\\mathrm{mL}$，もう一方には同じ水溶液を $80.0\\,\\mathrm{mL}$ 加えて十分に反応させた．それぞれを混合液 X，Y とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{Sn^2+}$ と $\\ce{Fe^3+}$ の反応をイオン反応式で書け．"
+     },
+     {
+      "id": "2",
+      "tex": "$50.0\\,\\mathrm{mL}$ の塩化鉄(III)水溶液中の $\\ce{Fe^3+}$ がちょうどなくなるのに必要な塩化スズ(II)水溶液の体積は何 $\\mathrm{mL}$ か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "混合液 X，Y のそれぞれにチオシアン酸カリウム水溶液を加えたとき，血赤色になるか．血赤色になるものについては，残っている $\\ce{Fe^3+}$ の物質量を有効数字2桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "塩化スズ(II)水溶液は，空気中の酸素で $\\ce{Sn^2+}$ が $\\ce{Sn^4+}$ に変わって還元力が弱まりやすいので，粒状のスズを入れて保存する．スズの粒がこの劣化を防ぐ理由を，イオン反応式を用いて説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{Sn^2+ + 2Fe^3+ -> Sn^4+ + 2Fe^2+}$"
+   },
+   {
+    "id": "2",
+    "tex": "$50\\,\\mathrm{mL}$"
+   },
+   {
+    "id": "3",
+    "tex": "X：血赤色になる（残っている $\\ce{Fe^3+}$ は $4.0\\times10^{-4}\\,\\mathrm{mol}$），Y：血赤色にならない"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{Sn + Sn^4+ -> 2Sn^2+}$ の反応で，生じた $\\ce{Sn^4+}$ がスズに還元されて $\\ce{Sn^2+}$ に戻るから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 電子の授受} $\\ce{Sn^2+ -> Sn^4+ + 2e-}$，$\\ce{Fe^3+ + e- -> Fe^2+}$ より，電子の数をそろえて\n\\[\\ce{Sn^2+ + 2Fe^3+ -> Sn^4+ + 2Fe^2+}\\]\n$\\ce{Sn^2+}$ 1 mol が $\\ce{Fe^3+}$ 2 mol を還元する．\n\n\\textbf{(2)} $\\ce{Fe^3+}$ は $0.020\\times\\dfrac{50.0}{1000}=1.0\\times10^{-3}\\,\\mathrm{mol}$．必要な $\\ce{Sn^2+}$ は $5.0\\times10^{-4}\\,\\mathrm{mol}$ なので，体積は $\\dfrac{5.0\\times10^{-4}}{0.010}\\,\\mathrm{L}=\\boldsymbol{50\\,\\mathrm{mL}}$．\n\n\\textbf{(3) どちらが不足か} X では $\\ce{Sn^2+}$ が $0.010\\times\\dfrac{30.0}{1000}=3.0\\times10^{-4}\\,\\mathrm{mol}$ しかなく（50 mL に足りない），還元される $\\ce{Fe^3+}$ は $6.0\\times10^{-4}\\,\\mathrm{mol}$．$\\ce{Fe^3+}$ が $1.0\\times10^{-3}-6.0\\times10^{-4}=\\boldsymbol{4.0\\times10^{-4}\\,\\mathrm{mol}}$ 残るので，$\\ce{SCN-}$ と錯イオンをつくって\\textbf{血赤色}になる．\\\\\nY では $\\ce{Sn^2+}$ が $8.0\\times10^{-4}\\,\\mathrm{mol}$ あり，$\\ce{Fe^3+}$ はすべて $\\ce{Fe^2+}$ になる（$\\ce{Sn^2+}$ が $3.0\\times10^{-4}\\,\\mathrm{mol}$ 余る）．$\\ce{Fe^2+}$ は $\\ce{SCN-}$ で呈色しないので\\textbf{血赤色にならない}．\n\n\\textbf{(4)} 単体のスズは還元剤としてはたらき，$\\ce{Sn^4+}$ を還元して自身も $\\ce{Sn^2+}$ になる：\n\\[\\ce{Sn + Sn^4+ -> 2Sn^2+}\\]\n空気酸化（$\\ce{2Sn^2+ + O2 + 4H+ -> 2Sn^4+ + 2H2O}$）で $\\ce{Sn^4+}$ が生じても，スズの粒が $\\ce{Sn^2+}$ に戻すので，還元剤としての力が保たれる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "還元剤 Sn²⁺ と Fe³⁺ の量的関係（Sn²⁺ 1 mol が Fe³⁺ 2 mol を還元）から，どちらが過不足になるかで検出反応（SCN⁻ の血赤色）の結果が変わる．Sn²⁺/Sn⁴⁺ の酸化還元を，保存の工夫まで含めて扱う．"
+ },
+ "concepts": [
+  "amphoteric",
+  "transition-metals",
+  "organic-test"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "スズ",
+  "還元剤",
+  "酸化還元の量的関係",
+  "チオシアン酸カリウム",
+  "鉄(III)イオン"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

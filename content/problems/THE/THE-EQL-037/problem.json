@@ -1,0 +1,109 @@
+{
+ "id": "THE-EQL-037",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "並発する一次反応の生成物比と活性化エネルギー（温度による選択性）",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある化合物 A は，溶液中で次の2つの反応により同時に分解する（並発反応）．どちらも1段階で起こる一次反応である．\n\\[ \\mathrm{A}\\xrightarrow{\\ k_1\\ }\\mathrm{B}\\qquad\\qquad \\mathrm{A}\\xrightarrow{\\ k_2\\ }\\mathrm{C} \\]\nB の生成速度は $k_1[\\mathrm A]$，C の生成速度は $k_2[\\mathrm A]$ で表される．はじめは A だけが存在し，次の実験結果を得た．\n・$300\\,\\mathrm K$：A の濃度は $20.0$ 分ごとに半分になり，反応終了後の物質量の比は $\\mathrm B:\\mathrm C=3:1$ であった．\n・$320\\,\\mathrm K$：A の濃度は $5.0$ 分ごとに半分になり，反応終了後の物質量の比は $\\mathrm B:\\mathrm C=1:1$ であった．\n速度定数はアレニウスの式 $k=A_0\\,e^{-E_a/(RT)}$（$A_0$ は温度によらない定数）に従うとし，$R=8.3\\,\\mathrm{J/(K\\cdot mol)}$，$\\log_e2=0.693$，$\\log_e3=1.10$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "反応の途中のどの時点でも，それまでに生じた B と C の物質量の比は $k_1:k_2$ に等しいことを示せ．また，A の減少は速度定数 $k_1+k_2$ の一次反応として表されることを示し，$300\\,\\mathrm K$ での $k_1$，$k_2$〔/分〕を有効数字3桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "2つの反応の活性化エネルギー $E_{a1}$，$E_{a2}$〔kJ/mol〕をそれぞれ有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "生成物の比が $\\mathrm B:\\mathrm C=1:3$ になる温度を有効数字3桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "生成物のうち B の割合を $80\\,\\%$ 以上にするには，温度を何 K 以下にすればよいか，有効数字3桁で求めよ（$\\log_e2$，$\\log_e3$ の値を用いよ）．また，温度を下げて B の割合を高めることの欠点を述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "B と C の生成速度の比は $\\dfrac{k_1[\\mathrm A]}{k_2[\\mathrm A]}=\\dfrac{k_1}{k_2}$ で $[\\mathrm A]$ によらず一定なので，生じた量の比も常に $k_1:k_2$ になる．A の減少速度は $k_1[\\mathrm A]+k_2[\\mathrm A]=(k_1+k_2)[\\mathrm A]$ で，速度定数 $k_1+k_2$ の一次反応である．$k_1=2.60\\times10^{-2}$/分，$k_2=8.66\\times10^{-3}$/分"
+   },
+   {
+    "id": "2",
+    "tex": "$E_{a1}=39\\,\\mathrm{kJ/mol}$，$E_{a2}=83\\,\\mathrm{kJ/mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "$343\\,\\mathrm K$"
+   },
+   {
+    "id": "4",
+    "tex": "$295\\,\\mathrm K$ 以下．温度を下げると $k_1$ も $k_2$ も小さくなり，反応全体が遅くなる（A がなくなるまでの時間が長くなる）．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 微小時間に生じる B と C の量の比は，常に生成速度の比 $\\dfrac{k_1[\\mathrm A]}{k_2[\\mathrm A]}=\\dfrac{k_1}{k_2}$ に等しい．比が $[\\mathrm A]$ によらないので，足し合わせた量の比も $k_1:k_2$ である．\nA の減少速度は $-\\dfrac{\\Delta[\\mathrm A]}{\\Delta t}=(k_1+k_2)[\\mathrm A]$ で，速度定数 $k=k_1+k_2$ の一次反応になる．一次反応の半減期は $t_{1/2}=\\dfrac{\\log_e2}{k}$ で濃度によらない．\n$300\\,\\mathrm K$：$k_1+k_2=\\dfrac{0.693}{20.0}=3.465\\times10^{-2}$/分，$k_1:k_2=3:1$ より\n\\[ k_1=\\frac{3}{4}\\times3.465\\times10^{-2}=\\boldsymbol{2.60\\times10^{-2}}\\ \\text{/分},\\qquad k_2=\\frac{1}{4}\\times3.465\\times10^{-2}=\\boldsymbol{8.66\\times10^{-3}}\\ \\text{/分} \\]\n\\textbf{(2)} $320\\,\\mathrm K$：$k_1+k_2=\\dfrac{0.693}{5.0}=0.1386$/分，$k_1=k_2=6.93\\times10^{-2}$/分．\nアレニウスの式から $\\log_e\\dfrac{k(T_2)}{k(T_1)}=\\dfrac{E_a}{R}\\left(\\dfrac{1}{T_1}-\\dfrac{1}{T_2}\\right)$，$\\dfrac{1}{300}-\\dfrac{1}{320}=\\dfrac{1}{4800}\\,\\mathrm{K^{-1}}$．\n$k_1$ は $\\dfrac{6.93\\times10^{-2}}{2.60\\times10^{-2}}=\\dfrac{8}{3}$ 倍，$k_2$ は $\\dfrac{6.93\\times10^{-2}}{8.66\\times10^{-3}}=8$ 倍になったので\n\\[ E_{a1}=8.3\\times4800\\times\\log_e\\frac{8}{3}=8.3\\times4800\\times(3\\times0.693-1.10)=3.90\\times10^{4}\\ \\Rightarrow\\ \\boldsymbol{39\\,\\mathrm{kJ/mol}} \\]\n\\[ E_{a2}=8.3\\times4800\\times3\\times0.693=8.28\\times10^{4}\\ \\Rightarrow\\ \\boldsymbol{83\\,\\mathrm{kJ/mol}} \\]\n活性化エネルギーの大きい C の生成の方が，温度上昇で速度が大きく増える．\n\\textbf{(3)} $\\dfrac{k_1}{k_2}$ はアレニウスの式から\n\\[ \\log_e\\frac{k_1}{k_2}=\\log_e3+\\frac{E_{a2}-E_{a1}}{R}\\left(\\frac{1}{T}-\\frac{1}{300}\\right),\\qquad \\frac{E_{a2}-E_{a1}}{R}=4800\\log_e3 \\]\n（(2) の計算で $E_{a2}-E_{a1}=8.3\\times4800\\times\\log_e3$ である．）よって $\\log_e\\dfrac{k_1}{k_2}=\\log_e3\\left\\{1+4800\\left(\\dfrac{1}{T}-\\dfrac{1}{300}\\right)\\right\\}$．\n$\\dfrac{k_1}{k_2}=\\dfrac{1}{3}$ のとき $\\{\\ \\}=-1$，すなわち $4800\\left(\\dfrac{1}{T}-\\dfrac{1}{300}\\right)=-2$．\n\\[ \\frac{1}{T}=\\frac{1}{300}-\\frac{1}{2400}=\\frac{7}{2400}\\ \\Rightarrow\\ T=342.9\\ \\Rightarrow\\ \\boldsymbol{343\\,\\mathrm K} \\]\n（$300\\,\\mathrm K$ で $3$，$320\\,\\mathrm K$ で $1$ だった比が，$343\\,\\mathrm K$ で $\\dfrac{1}{3}$ になる．）\n\\textbf{(4)} B の割合 $\\dfrac{k_1}{k_1+k_2}\\ge0.80$ は $\\dfrac{k_1}{k_2}\\ge4$ と同じ．$\\log_e4=1.386$ より\n\\[ 1.10\\left\\{1+4800\\left(\\frac{1}{T}-\\frac{1}{300}\\right)\\right\\}\\ge1.386\\ \\Rightarrow\\ \\frac{1}{T}-\\frac{1}{300}\\ge\\frac{0.260}{4800}=5.42\\times10^{-5} \\]\n\\[ \\frac{1}{T}\\ge3.388\\times10^{-3}\\ \\Rightarrow\\ T\\le295.2\\ \\Rightarrow\\ \\boldsymbol{295\\,\\mathrm K}\\ \\text{以下} \\]\n温度を下げると，活性化エネルギーの大きい C の生成がより強くおさえられるので B の割合は上がるが，$k_1$ 自身も小さくなり，A の分解全体が遅くなる（半減期が長くなる）．選択性（純度）と反応の速さ（生産性）はトレードオフの関係にある．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "同じ反応物から並発する一次反応では，生成物の比は常に速度定数の比に等しく，反応物の減少は速度定数の和で決まる．2つの温度での半減期と生成物比から各反応の活性化エネルギーを分離でき，活性化エネルギーの差によって温度で選択性が変わるので，目的物の割合を一定以上にする温度条件を求められる．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "organic-test",
+  "reaction-rate"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応速度",
+  "並発反応",
+  "一次反応",
+  "活性化エネルギー",
+  "選択性"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

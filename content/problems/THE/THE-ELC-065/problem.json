@@ -1,0 +1,117 @@
+{
+ "id": "THE-ELC-065",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-07",
+ "topic": "並列の電解槽で電気量の分かれ方が未知のときの決定と陰極反応の切り替わり",
+ "course": "化学",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "十分に充電した鉛蓄電池に，2つの電解槽①，②を並列につないで電気分解を行った．電解槽①は白金電極 A（陰極），B（陽極）と，$\\ce{Cu^2+}$ を $2.00\\times10^{-3}\\,\\mathrm{mol}$ 含む硫酸銅(II)水溶液からなる．電解槽②は白金電極 C（陰極），D（陽極）と硫酸ナトリウム水溶液からなる．陰極では，$\\ce{Cu^2+}$ が残っている間は銅の析出だけが起こり，$\\ce{Cu^2+}$ がなくなると水素が発生するものとする．並列回路の電流の分かれ方は，途中で変わってもかまわない．\n\n電気分解を終えると，鉛蓄電池の電解液の質量は $0.960\\,\\mathrm g$ 減少していた．また，電解槽②の両極から発生した気体の物質量の合計は，電解槽①の両極から発生した気体の物質量の合計の $1.80$ 倍であった．気体は水に溶けないものとし，原子量は H＝1.0，O＝16，S＝32，Cu＝63.5 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "鉛蓄電池から流れ出た電子の物質量 $[\\mathrm{mol}]$ を有効数字3桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "電気分解の終わりまで電解槽①に $\\ce{Cu^2+}$ が残っていたと仮定すると，電解槽①を流れた電子の物質量は何 mol と計算されるか（有効数字3桁）．また，この仮定は正しいか．「正しい」「正しくない」で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "電解槽①，②を流れた電子の物質量 $[\\mathrm{mol}]$ をそれぞれ有効数字3桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "電極 A から発生した水素の体積は，標準状態（$0\\,^\\circ\\mathrm C$，$1.013\\times10^5\\,\\mathrm{Pa}$，$22.4\\,\\mathrm{L/mol}$）で何 mL か．有効数字3桁で答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "鉛蓄電池の正極の質量は何 g 増加したか．有効数字3桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$1.20\\times10^{-2}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "2",
+    "tex": "$7.50\\times10^{-3}\\,\\mathrm{mol}$，正しくない"
+   },
+   {
+    "id": "3",
+    "tex": "電解槽① $6.00\\times10^{-3}\\,\\mathrm{mol}$，電解槽② $6.00\\times10^{-3}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "4",
+    "tex": "$22.4\\,\\mathrm{mL}$"
+   },
+   {
+    "id": "5",
+    "tex": "$0.384\\,\\mathrm g$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 鉛蓄電池}　放電の全体の反応は $\\ce{Pb + PbO2 + 2H2SO4 -> 2PbSO4 + 2H2O}$ で，電子 2 mol あたり $\\ce{H2SO4}$ 2 mol（196 g）が減り $\\ce{H2O}$ 2 mol（36 g）が増えるので，電解液は電子 1 mol あたり 80 g 減る．\n\\[ n_{\\mathrm e}=\\frac{0.960}{80}=\\boldsymbol{1.20\\times10^{-2}\\,\\mathrm{mol}} \\]\n\n\\textbf{気体の量の式}　電解槽①，②を流れた電子を $x$，$y$ [mol] とする（並列なので $x+y=1.20\\times10^{-2}$．電流の分かれ方が途中で変わっても，電気量の合計で考えればよい）．\n電解槽②：陰極 $\\ce{2H2O + 2e- -> H2 + 2OH-}$，陽極 $\\ce{2H2O -> O2 + 4H+ + 4e-}$ なので，気体は $\\dfrac y2+\\dfrac y4=\\dfrac{3}{4}y$．\n電解槽①：陽極は $\\ce{O2}$ が $\\dfrac x4$．陰極は $\\ce{Cu^2+ + 2e- -> Cu}$ で，$\\ce{Cu^2+}$ $2.00\\times10^{-3}\\,\\mathrm{mol}$ が受け取れる電子は $4.00\\times10^{-3}\\,\\mathrm{mol}$ まで．\n\n\\textbf{(2) 場合分け 1：$\\ce{Cu^2+}$ が残っている（$x\\leqq4.00\\times10^{-3}$）}　電解槽①の気体は $\\dfrac x4$ だけなので\n\\[ \\frac34(1.20\\times10^{-2}-x)=1.80\\times\\frac x4\\quad\\Rightarrow\\quad x=\\boldsymbol{7.50\\times10^{-3}\\,\\mathrm{mol}} \\]\nこれは $4.00\\times10^{-3}\\,\\mathrm{mol}$ をこえ，$\\ce{Cu^2+}$ がすべて析出しても足りない電子の量なので，仮定と矛盾する．よって仮定は\\textbf{正しくない}．\n\n\\textbf{(3) 場合分け 2：$\\ce{Cu^2+}$ がなくなった（$x>4.00\\times10^{-3}$）}　電極 A ではその後 $\\ce{2H2O + 2e- -> H2 + 2OH-}$ が起こり，$\\ce{H2}$ が $\\dfrac{x-4.00\\times10^{-3}}{2}$ 生じる．電解槽①の気体は $\\dfrac x4+\\dfrac{x-4.00\\times10^{-3}}{2}=\\dfrac34x-2.00\\times10^{-3}$．\n\\[ \\frac34(1.20\\times10^{-2}-x)=1.80\\left(\\frac34x-2.00\\times10^{-3}\\right)\\quad\\Rightarrow\\quad 2.10x=1.26\\times10^{-2} \\]\n$x=\\boldsymbol{6.00\\times10^{-3}\\,\\mathrm{mol}}$（$>4.00\\times10^{-3}$ で仮定に合う），$y=\\boldsymbol{6.00\\times10^{-3}\\,\\mathrm{mol}}$．\n確認：電解槽①の気体 $1.50\\times10^{-3}+1.00\\times10^{-3}=2.50\\times10^{-3}\\,\\mathrm{mol}$，電解槽②の気体 $4.50\\times10^{-3}\\,\\mathrm{mol}$ で，比は 1.80．\n\n\\textbf{(4)}　$\\ce{H2}$ は $\\dfrac{6.00\\times10^{-3}-4.00\\times10^{-3}}{2}=1.00\\times10^{-3}\\,\\mathrm{mol}$，体積は $\\boldsymbol{22.4\\,\\mathrm{mL}}$．\n\n\\textbf{(5)}　正極 $\\ce{PbO2 + 4H+ + SO4^2- + 2e- -> PbSO4 + 2H2O}$ では，電子 2 mol あたり $\\ce{PbO2}$ が $\\ce{PbSO4}$ に変わり $\\ce{SO2}$ 分（64 g）増える．電子 1 mol あたり 32 g なので $1.20\\times10^{-2}\\times32=\\boldsymbol{0.384\\,\\mathrm g}$．\n\n\\textbf{まとめ}　並列回路では電気量の分かれ方が未知なので，2つの槽の生成物の量の関係から決める．陰極の反応が途中で切り替わる可能性があるときは，切り替わらない場合・切り替わる場合の両方を立式し，答えが仮定の範囲に入るほうを採る．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "並列につないだ電解槽では各槽の電気量が未知なので，全電気量（電池の電解液の質量変化）と両槽の気体量の比から連立して決める．陰極で Cu²⁺ がなくなると H₂ の発生に切り替わり気体量の式が変わるので，切り替わりの有無を場合分けし，解が仮定の範囲に入るかで判定する．"
+ },
+ "concepts": [
+  "electrolysis",
+  "battery",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "並列回路",
+  "電気分解",
+  "鉛蓄電池",
+  "場合分け",
+  "陰極反応の切り替わり"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

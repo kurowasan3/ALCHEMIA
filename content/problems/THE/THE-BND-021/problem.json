@@ -1,0 +1,116 @@
+{
+ "id": "THE-BND-021",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-03",
+ "topic": "フラーレン C₆₀ の分子結晶とカリウムの取り込み",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "フラーレン $\\ce{C60}$ の結晶は，$\\ce{C60}$ 分子が面心立方格子の配列をとった分子結晶であり，単位格子の一辺の長さは $1.42\\,\\mathrm{nm}$ である．$\\ce{C}=12$，$\\ce{K}=39$，アボガドロ定数 $6.0\\times10^{23}\\,/\\mathrm{mol}$，$\\sqrt2=1.41$，$1.42^3=2.86$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "単位格子中に含まれる炭素原子は何個か．"
+     },
+     {
+      "id": "2",
+      "tex": "最も近い $\\ce{C60}$ 分子どうしの中心間距離は何 $\\mathrm{nm}$ か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "この結晶の密度は何 $\\mathrm{g/cm^3}$ か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\ce{C60}$ の結晶 $3.60\\,\\mathrm g$ をカリウムの蒸気にさらすと，格子の大きさを変えずにカリウム原子が均一に取り込まれ，質量が $4.19\\,\\mathrm g$ になった．単位格子あたり何個のカリウム原子が取り込まれたか．整数で答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "同じ炭素の単体であるダイヤモンド（密度 $3.5\\,\\mathrm{g/cm^3}$）と比べて，$\\ce{C60}$ の結晶の密度が小さい理由を，粒子の結びつき方から説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "240 個"
+   },
+   {
+    "id": "2",
+    "tex": "$1.0\\,\\mathrm{nm}$"
+   },
+   {
+    "id": "3",
+    "tex": "$1.7\\,\\mathrm{g/cm^3}$"
+   },
+   {
+    "id": "4",
+    "tex": "12 個"
+   },
+   {
+    "id": "5",
+    "tex": "ダイヤモンドは炭素原子どうしが短い共有結合ですき間なく結びついた共有結合の結晶だが，$\\ce{C60}$ の結晶は球状の大きな分子が弱い分子間力で並んだ分子結晶で，分子の内部（かご）や分子どうしの間に大きなすき間があるから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 面心立方格子なので単位格子に $\\ce{C60}$ が 4 個．炭素原子は $4\\times60=\\boldsymbol{240}$ 個．\n\n(2) 面の対角線上で隣り合う分子が並ぶので，中心間距離は $\\dfrac{\\sqrt2}{2}\\times1.42=\\dfrac{1.42}{1.41}\\fallingdotseq\\boldsymbol{1.0\\,\\mathrm{nm}}$．\n\n(3) $\\ce{C60}=720$ より\n\\[d=\\frac{4\\times720}{6.0\\times10^{23}\\times2.86\\times10^{-21}}\\fallingdotseq\\boldsymbol{1.7\\,\\mathrm{g/cm^3}}\\]\n\n(4) $\\ce{C60}$ 1 mol あたり $x$ mol の $\\ce{K}$ が入ったとすると，質量比は $\\dfrac{720+39x}{720}=\\dfrac{4.19}{3.60}$．\n\\[x=\\frac{720}{39}\\left(\\frac{4.19}{3.60}-1\\right)\\fallingdotseq3.0\\]\n組成は $\\ce{K3C60}$．単位格子には $\\ce{C60}$ が 4 個あるので $\\ce{K}$ は $4\\times3=\\boldsymbol{12}$ 個．\n\n(5) ダイヤモンドは各炭素原子が4本の共有結合で結ばれ密に詰まっている．$\\ce{C60}$ の結晶は中空のかご状分子が分子間力で集まった$\\boldsymbol{\\text{分子結晶}}$で，分子の中や分子の間のすき間が大きいので密度が小さい．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "大きな球状分子が面心立方格子をつくる分子結晶では，分子を1つの粒子として格子の計算を行う．取り込まれた原子の数は質量の増加から組成式を求め，単位格子中の分子数を掛けて得る．"
+ },
+ "concepts": [
+  "chemical-bond",
+  "elemental-analysis",
+  "crystal"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "フラーレン",
+  "分子結晶",
+  "面心立方格子",
+  "密度",
+  "組成式"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "id": "THE-ELC-064",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-07",
+ "topic": "異なる難溶性銀塩の電池が止まる条件と沈殿が消える場合分け",
+ "course": "化学",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ビーカー A には塩化カリウム水溶液（$[\\ce{Cl-}]=1.0\\times10^{-3}\\,\\mathrm{mol/L}$）$1.00\\,\\mathrm{L}$ と塩化銀の固体，ビーカー B には臭化カリウム水溶液（$[\\ce{Br-}]=1.0\\times10^{-1}\\,\\mathrm{mol/L}$）$1.00\\,\\mathrm{L}$ と十分な量の臭化銀の固体を入れ，それぞれ飽和させた．各液に銀電極を浸し，塩橋（$\\ce{KNO3}$）で両液をつなぎ，銀電極どうしを導線でつないだ．\n電極では $\\ce{Ag+ + e- <=> Ag}$ だけが起こり，$\\ce{Ag+}$，$\\ce{Cl-}$，$\\ce{Br-}$ は塩橋を通らない．溶解度積は $\\ce{AgCl}$：$1.8\\times10^{-10}\\,(\\mathrm{mol/L})^2$，$\\ce{AgBr}$：$5.4\\times10^{-13}\\,(\\mathrm{mol/L})^2$，原子量は Ag = 108，ファラデー定数は $9.65\\times10^4\\,\\mathrm{C/mol}$ とし，体積変化は無視する．電流は，両電極の液の $[\\ce{Ag+}]$ が等しくなったときに流れなくなるものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "つなぐ前の A，B の $[\\ce{Ag+}]$ を求め，正極（還元が起こる電極）がどちらかを答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "A に塩化銀の固体が十分にあり，最後まで残っていた場合について，電流が止まったときの A の $[\\ce{Cl-}]$ と B の $[\\ce{Br-}]$ を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "実際には，A に入れた塩化銀は $0.0500\\,\\mathrm{mol}$ だけであった．電流が止まったときの A の $[\\ce{Cl-}]$，B の $[\\ce{Br-}]$，両液に共通の $[\\ce{Ag+}]$ を有効数字 2 桁で求めよ．また，このとき A の水溶液は塩化銀について飽和しているか．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の場合に，A の銀電極の質量は何 g 増加または減少したか．有効数字 3 桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "A：$1.8\\times10^{-7}\\,\\mathrm{mol/L}$，B：$5.4\\times10^{-12}\\,\\mathrm{mol/L}$；正極は A"
+   },
+   {
+    "id": "2",
+    "tex": "$[\\ce{Cl-}]=1.0\\times10^{-1}\\,\\mathrm{mol/L}$，$[\\ce{Br-}]=3.0\\times10^{-4}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "3",
+    "tex": "$[\\ce{Cl-}]=5.1\\times10^{-2}\\,\\mathrm{mol/L}$，$[\\ce{Br-}]=5.0\\times10^{-2}\\,\\mathrm{mol/L}$，$[\\ce{Ag+}]=1.1\\times10^{-11}\\,\\mathrm{mol/L}$；飽和していない（塩化銀はすべて溶けている）"
+   },
+   {
+    "id": "4",
+    "tex": "$5.40\\,\\mathrm{g}$ 増加"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　$[\\ce{Ag+}]_\\mathrm{A}=\\dfrac{1.8\\times10^{-10}}{1.0\\times10^{-3}}=\\boldsymbol{1.8\\times10^{-7}}$，$[\\ce{Ag+}]_\\mathrm{B}=\\dfrac{5.4\\times10^{-13}}{1.0\\times10^{-1}}=\\boldsymbol{5.4\\times10^{-12}}\\ (\\mathrm{mol/L})$．\n$\\ce{Ag+}$ の濃い \\textbf{A が正極}で，A では $\\ce{AgCl + e- -> Ag + Cl-}$（析出した分を補うように AgCl が溶ける），B では $\\ce{Ag + Br- -> AgBr + e-}$ が進む．\n\n\\textbf{(2)}　流れた電子を $x\\,\\mathrm{mol}$ とすると，$[\\ce{Cl-}]_\\mathrm{A}=1.0\\times10^{-3}+x$，$[\\ce{Br-}]_\\mathrm{B}=0.10-x$．両方に固体が残るなら，電流が止まる条件 $[\\ce{Ag+}]_\\mathrm{A}=[\\ce{Ag+}]_\\mathrm{B}$ は\n\\[ \\frac{1.8\\times10^{-10}}{1.0\\times10^{-3}+x}=\\frac{5.4\\times10^{-13}}{0.10-x} \\quad\\Longleftrightarrow\\quad \\frac{1.0\\times10^{-3}+x}{0.10-x}=\\frac{1.8\\times10^{-10}}{5.4\\times10^{-13}}=333 \\]\nこれを解いて $x=0.0997\\,\\mathrm{mol}$．$[\\ce{Cl-}]_\\mathrm{A}=\\boldsymbol{1.0\\times10^{-1}}$，$[\\ce{Br-}]_\\mathrm{B}=0.10-0.0997=\\boldsymbol{3.0\\times10^{-4}}\\ (\\mathrm{mol/L})$．\nこのためには A の塩化銀が $0.0997\\,\\mathrm{mol}$ 以上必要である．\n\n\\textbf{(3)}　A の塩化銀は $0.0500\\,\\mathrm{mol}$ しかないので，$x=0.0997$ に達する前の $x=0.0500$ で\\textbf{塩化銀がすべて溶けてしまう}．このとき $[\\ce{Cl-}]_\\mathrm{A}=0.051$，$[\\ce{Br-}]_\\mathrm{B}=0.050$ で，B の $[\\ce{Ag+}]=5.4\\times10^{-13}/0.050=1.08\\times10^{-11}$ に対し，A の $[\\ce{Ag+}]$ は飽和の値 $1.8\\times10^{-10}/0.051=3.5\\times10^{-9}$ で，まだ A のほうが大きい．\n固体がなくなると A の $\\ce{Ag+}$ は補給されないので，さらに電流が流れると A の溶液中の $\\ce{Ag+}$ だけが還元されて減る．溶液中の $\\ce{Ag+}$ は $3.5\\times10^{-9}\\,\\mathrm{mol}$ しかないので，その後に流れる電子は無視でき，A の $[\\ce{Ag+}]$ が B の値まで下がったところで電流は止まる．よって\n\\[ [\\ce{Cl-}]_\\mathrm{A}=\\boldsymbol{5.1\\times10^{-2}},\\quad [\\ce{Br-}]_\\mathrm{B}=\\boldsymbol{5.0\\times10^{-2}},\\quad [\\ce{Ag+}]=\\frac{5.4\\times10^{-13}}{0.050}\\fallingdotseq\\boldsymbol{1.1\\times10^{-11}}\\ (\\mathrm{mol/L}) \\]\nA では $[\\ce{Ag+}][\\ce{Cl-}]=1.1\\times10^{-11}\\times0.051\\fallingdotseq5.5\\times10^{-13}<K_\\mathrm{sp}$ なので，\\textbf{飽和していない}（固体は残っていない）．固体の有無で「$[\\ce{Ag+}]=K_\\mathrm{sp}/[\\ce{Cl-}]$」が使えるかどうかが変わることが要点である．\n\n\\textbf{(4)}　A は正極で，流れた電子 $0.0500\\,\\mathrm{mol}$ に相当する銀が析出する．$0.0500\\times108=\\boldsymbol{5.40\\,\\mathrm{g}}$ \\textbf{増加}（B の電極は同じだけ減少する）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "固体の難溶性塩があるかぎり各極の [Ag+] は Ksp/[X-] に固定され，電流は両極の [Ag+] が等しくなる（[Cl-]/[Br-] が Ksp の比になる）まで流れる．正極側の沈殿がその前に溶け尽くすと [Ag+] は Ksp で決まらなくなり，わずかな溶存 Ag+ の還元だけで電流が止まるので，終状態は沈殿の消失点で決まる．"
+ },
+ "concepts": [
+  "electrolysis",
+  "precipitation",
+  "battery"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "濃淡電池",
+  "溶解度積",
+  "場合分け",
+  "臭化銀",
+  "塩化銀"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

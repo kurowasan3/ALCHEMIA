@@ -1,0 +1,110 @@
+{
+ "id": "THE-BND-060",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-03",
+ "topic": "ドライアイス（分子結晶）の単位格子と気体との分子の詰まり方の比較",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ドライアイス（二酸化炭素の固体）は，$\\ce{CO2}$ 分子の重心が立方体の単位格子の各頂点と各面の中心に位置する分子結晶で，単位格子の一辺の長さは $0.56\\,\\mathrm{nm}$ である．$\\ce{CO2}$ のモル質量を $44\\,\\mathrm{g/mol}$，アボガドロ定数を $6.0\\times10^{23}\\,\\mathrm{/mol}$，気体定数を $0.082\\,\\mathrm{atm\\cdot L/(K\\cdot mol)}$，0 ℃，$1\\,\\mathrm{atm}$ の理想気体のモル体積を $22.4\\,\\mathrm{L/mol}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "単位格子に含まれる $\\ce{CO2}$ 分子の数を答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "ドライアイスの密度（$\\mathrm{g/cm^3}$）を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "ドライアイス $1.0\\,\\mathrm{cm^3}$ がすべて昇華すると，0 ℃，$1\\,\\mathrm{atm}$ で何 L の気体になるか．有効数字2桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\ce{CO2}$ は 31 ℃ より高温ではいくら圧縮しても液体にならない．50 ℃ で容積 $1.0\\,\\mathrm{cm^3}$ の容器に，ドライアイス $1.0\\,\\mathrm{cm^3}$ 中と同じ数の $\\ce{CO2}$ 分子を気体として詰めるとき，理想気体とみなすと圧力は何 atm になるか，有効数字2桁で求めよ．また，実際に必要な圧力はこの値より大きいか小さいか，理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "4 個"
+   },
+   {
+    "id": "2",
+    "tex": "$1.7\\,\\mathrm{g/cm^3}$"
+   },
+   {
+    "id": "3",
+    "tex": "$0.85\\,\\mathrm L$"
+   },
+   {
+    "id": "4",
+    "tex": "$1.0\\times10^{3}\\,\\mathrm{atm}$．実際に必要な圧力はこれより大きい（分子どうしが結晶中と同じくらい近づき，分子自身の体積による反発の効果が分子間力の効果を上回るため，$PV/nRT > 1$ となる）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 頂点 $8\\times\\dfrac18 = 1$，面の中心 $6\\times\\dfrac12 = 3$ で，$\\boldsymbol{4}$ 個（面心立方格子）．\n\n\\textbf{(2)} 単位格子の体積は $(0.56\\times10^{-7}\\,\\mathrm{cm})^3 = 1.76\\times10^{-22}\\,\\mathrm{cm^3}$．\n\\[\\rho = \\frac{4\\times44}{6.0\\times10^{23}\\times1.76\\times10^{-22}} = 1.67 \\fallingdotseq \\boldsymbol{1.7\\,\\mathrm{g/cm^3}}\\]\n\n\\textbf{(3)} $1.0\\,\\mathrm{cm^3}$ 中の $\\ce{CO2}$ は $\\dfrac{1.67}{44} = 3.80\\times10^{-2}\\,\\mathrm{mol}$．気体の体積は $3.80\\times10^{-2}\\times22.4 = 0.850 \\fallingdotseq \\boldsymbol{0.85\\,\\mathrm L}$．固体のときの約 850 倍の体積で，気体では分子の間がそれだけ空いている．\n\n\\textbf{(4)} 理想気体なら\n\\[P = \\frac{nRT}{V} = \\frac{3.80\\times10^{-2}\\times0.082\\times323}{1.0\\times10^{-3}} = 1.0\\times10^{3}\\,\\mathrm{atm}\\]\nこのときの分子1個あたりの空間は結晶中と同じ（$1.76\\times10^{-22}/4\\,\\mathrm{cm^3}$，すなわち約 $0.044\\,\\mathrm{nm^3}$）で，分子自身の大きさと同程度である．分子は互いに入りこめないので自由に動ける空間は容器の体積よりずっと小さく，反発の効果が大きい．したがって $PV/nRT$ は1より大きくなり，実際に必要な圧力は$\\boldsymbol{\\text{大きい}}$．（低圧では分子間力の効果で $PV/nRT<1$ となるが，ここまで密度が高いと分子の体積の効果が上回る．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "分子結晶では分子を1つの粒子として単位格子中の数を数え，密度や1 cm³中の物質量を求める．気体に戻すと体積は約千倍になり，同じ密度の気体を理想気体として計算した圧力と比べ，高密度では分子の体積の効果で実在気体の必要圧力が大きくなることを判断する．"
+ },
+ "concepts": [
+  "chemical-bond",
+  "crystal",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "分子結晶",
+  "面心立方格子",
+  "ドライアイス",
+  "密度",
+  "実在気体",
+  "圧縮"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

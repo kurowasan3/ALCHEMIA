@@ -1,0 +1,101 @@
+{
+ "id": "THE-ION-018",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "両性イオン（炭酸水素イオン）の水溶液の pH",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "炭酸の電離平衡と電離定数は次のとおりである．\n\\[ \\ce{H2CO3 <=> H+ + HCO3-}\\quad K_1=4.0\\times10^{-7}\\,\\mathrm{mol/L},\\qquad \\ce{HCO3- <=> H+ + CO3^2-}\\quad K_2=5.0\\times10^{-11}\\,\\mathrm{mol/L} \\]\n炭酸水素ナトリウムの水溶液中では，$\\ce{HCO3-}$ が酸としても塩基としてもはたらき，主に次の平衡が成り立つ．\n\\[ \\ce{2HCO3- <=> H2CO3 + CO3^2-}\\qquad\\cdots\\text{(A)} \\]\n$\\log_{10}2=0.30$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "(A) の平衡定数 $K=\\dfrac{[\\ce{H2CO3}][\\ce{CO3^2-}]}{[\\ce{HCO3-}]^2}$ を $K_1$，$K_2$ で表し，その値を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "(A) の反応だけを考えると $[\\ce{H2CO3}]=[\\ce{CO3^2-}]$ となる．このことを用いて $[\\ce{H+}]$ を $K_1$，$K_2$ で表し，$0.10\\,\\mathrm{mol/L}$ 炭酸水素ナトリウム水溶液の pH を小数第2位まで求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$0.010\\,\\mathrm{mol/L}$ 炭酸水素ナトリウム水溶液の pH は，(2) の値と比べて大きいか，小さいか，ほぼ同じか．理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$K=\\dfrac{K_2}{K_1}=1.25\\times10^{-4}$"
+   },
+   {
+    "id": "2",
+    "tex": "$[\\ce{H+}]=\\sqrt{K_1K_2}$，pH 8.35"
+   },
+   {
+    "id": "3",
+    "tex": "ほぼ同じ（$[\\ce{H+}]=\\sqrt{K_1K_2}$ は濃度を含まないから）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 分母・分子に $[\\ce{H+}]$ を掛けて整理すると\n\\[ K=\\dfrac{[\\ce{H2CO3}][\\ce{CO3^2-}]}{[\\ce{HCO3-}]^2}=\\dfrac{[\\ce{H+}][\\ce{CO3^2-}]}{[\\ce{HCO3-}]}\\times\\dfrac{[\\ce{H2CO3}]}{[\\ce{H+}][\\ce{HCO3-}]}=\\dfrac{K_2}{K_1}=\\dfrac{5.0\\times10^{-11}}{4.0\\times10^{-7}}=\\boldsymbol{1.25\\times10^{-4}} \\]\n$K$ が小さいので，(A) はわずかしか進まず，水溶液中の炭酸種のほとんどは $\\ce{HCO3-}$ のままである．\n\n\\textbf{(2)} $K_1K_2=\\dfrac{[\\ce{H+}]^2[\\ce{CO3^2-}]}{[\\ce{H2CO3}]}$ に $[\\ce{H2CO3}]=[\\ce{CO3^2-}]$ を代入して\n\\[ [\\ce{H+}]=\\boldsymbol{\\sqrt{K_1K_2}}=\\sqrt{2.0\\times10^{-17}} \\]\n\\[ \\mathrm{pH}=\\tfrac12(\\mathrm{p}K_1+\\mathrm{p}K_2)=\\tfrac12\\{(7-0.60)+(11-0.70)\\}=\\tfrac12(6.40+10.30)=\\boldsymbol{8.35} \\]\n（$\\log_{10}4=0.60$，$\\log_{10}5=0.70$．）弱い塩基性になる．\n\n\\textbf{(3)} $[\\ce{H+}]=\\sqrt{K_1K_2}$ には $\\ce{NaHCO3}$ の濃度が含まれないので，うすめても pH は \\textbf{ほぼ同じ}（8.35 付近）．$\\ce{HCO3-}$ が酸としてはたらく程度と塩基としてはたらく程度が釣り合うところで pH が決まるためである（極端にうすい場合は水の電離が無視できなくなり，この近似は成り立たない）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "酸としても塩基としてもはたらく HCO3- の水溶液では 2HCO3- ⇄ H2CO3 + CO3^2- により [H2CO3]=[CO3^2-] となり，[H+]=√(K1K2)，pH=(pK1+pK2)/2 と濃度によらない値になる．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "amphoteric",
+  "alkali-metals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電離平衡",
+  "炭酸水素ナトリウム",
+  "両性",
+  "pH",
+  "平衡定数"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

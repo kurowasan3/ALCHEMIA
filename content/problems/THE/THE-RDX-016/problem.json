@@ -1,0 +1,117 @@
+{
+ "id": "THE-RDX-016",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-06",
+ "topic": "王水による金・白金の溶解（反応式と量的関係の比較）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "equation",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "金や白金は濃硝酸にも溶けないが，王水には溶ける．このとき金はテトラクロリド金(III) 酸 $\\ce{H[AuCl4]}$，白金はヘキサクロリド白金(IV) 酸 $\\ce{H2[PtCl6]}$ となって溶け，いずれも一酸化窒素が発生する．原子量は Au = 197，Pt = 195 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "王水は何をどのような体積比で混合したものか．"
+     },
+     {
+      "id": "2",
+      "tex": "金が王水に溶ける変化を化学反応式で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "白金が王水に溶ける変化を化学反応式で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "金 $1.97\\,\\mathrm g$ と白金 $1.95\\,\\mathrm g$ をそれぞれ完全に王水に溶かしたとき，発生する一酸化窒素の物質量はそれぞれ何 mol か．有効数字 3 桁で答え，差が生じる理由を述べよ．"
+     },
+     {
+      "id": "5",
+      "tex": "濃硝酸だけでは金は溶けないが，王水では溶ける．王水に含まれる塩化物イオンのはたらきを簡潔に述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "濃硝酸と濃塩酸を体積比 $1:3$ で混合したもの"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{Au + HNO3 + 4HCl -> H[AuCl4] + NO + 2H2O}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{3Pt + 4HNO3 + 18HCl -> 3H2[PtCl6] + 4NO + 8H2O}$"
+   },
+   {
+    "id": "4",
+    "tex": "金 $1.00\\times10^{-2}\\,\\mathrm{mol}$，白金 $1.33\\times10^{-2}\\,\\mathrm{mol}$．金は $+3$，白金は $+4$ に酸化され，1 mol あたり放出する電子が金 3 mol，白金 4 mol と異なるから．"
+   },
+   {
+    "id": "5",
+    "tex": "金(III) イオンと安定な錯イオン $\\ce{[AuCl4]-}$ をつくって金のイオンを取り除くので，金が酸化されて溶ける反応が進みやすくなる．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} \\textbf{濃硝酸：濃塩酸 $=1:3$}（体積比）．\n\n\\textbf{(2)} Au：$0\\to+3$（電子 3 個を失う），N：$+5\\to+2$（電子 3 個を得る）なので，Au と $\\ce{HNO3}$ は $1:1$．Cl を $\\ce{HCl}$ でそろえ，H と O を $\\ce{H2O}$ で合わせる．\n\\[ \\ce{Au + HNO3 + 4HCl -> H[AuCl4] + NO + 2H2O} \\]\n\n\\textbf{(3)} Pt：$0\\to+4$（4 個），N：3 個なので Pt：$\\ce{HNO3}=3:4$．\n\\[ \\ce{3Pt + 4HNO3 + 18HCl -> 3H2[PtCl6] + 4NO + 8H2O} \\]\n\n\\textbf{(4)} 金は $\\dfrac{1.97}{197}=1.00\\times10^{-2}\\,\\mathrm{mol}$，(2) より NO は $\\boldsymbol{1.00\\times10^{-2}\\,\\mathrm{mol}}$．白金は $\\dfrac{1.95}{195}=1.00\\times10^{-2}\\,\\mathrm{mol}$，(3) より NO は $1.00\\times10^{-2}\\times\\dfrac43=\\boldsymbol{1.33\\times10^{-2}\\,\\mathrm{mol}}$．\n\n同じ物質量の金属でも，酸化されたあとの酸化数（Au は $+3$，Pt は $+4$）が違うので放出する電子の数が異なり，それを受け取る $\\ce{HNO3}$（→ NO）の量も変わる．\n\n\\textbf{(5)} 王水では，硝酸が酸化剤としてはたらき，塩化物イオンが金のイオンを錯イオン $\\ce{[AuCl4]-}$ として安定化する．生じた金のイオンが次々に錯イオンになって除かれるので，\\textbf{金が酸化される反応が進む}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "王水では HNO₃ が酸化剤（N：+5→+2），Cl⁻ が錯イオンをつくる配位子としてはたらく．金属の酸化後の酸化数（Au +3，Pt +4）によって放出する電子数が違い，発生する NO の量が変わる．"
+ },
+ "concepts": [
+  "redox",
+  "complex-ion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "王水",
+  "金",
+  "白金",
+  "錯イオン",
+  "酸化数",
+  "電子の授受"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

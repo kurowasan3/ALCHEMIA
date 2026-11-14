@@ -1,0 +1,109 @@
+{
+ "id": "INO-OXS-018",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-02",
+ "topic": "硫酸のはたらきの違い（酸・酸化剤・電解液・生成物）と消費される硫酸の量の比較",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "compare",
+  "equation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の操作 A〜F で消費される硫酸 $\\ce{H2SO4}$ の物質量を比べる．硫酸の量は消費量に比べて十分に多いものとし，原子量は O = 16，K = 39，Cr = 52，Cu = 63.5，Zn = 65.4，Ag = 108，ファラデー定数は $9.65\\times10^{4}\\,\\mathrm{C/mol}$ とする．\n\\\\A　亜鉛 $6.54\\,\\mathrm g$ と銀 $10.8\\,\\mathrm g$ の混合物に希硫酸を加える．\n\\\\B　鉛蓄電池を $1.50\\,\\mathrm A$ の電流で $9650$ 秒間放電する．\n\\\\C　白金電極を用いて希硫酸を $2.00\\,\\mathrm A$ の電流で $9650$ 秒間電気分解する．\n\\\\D　二クロム酸カリウム $5.88\\,\\mathrm g$ を希硫酸に溶かし，十分な量の過酸化水素水を加える（$\\ce{Cr2O7^2-}$ はすべて $\\ce{Cr^3+}$ になり，$\\ce{O2}$ が発生する）．\n\\\\E　白金電極を用いて硫酸銅(II) 水溶液（$\\ce{Cu^2+}$ は十分にある）を $1.00\\,\\mathrm A$ の電流で $9650$ 秒間電気分解する．\n\\\\F　銅 $3.81\\,\\mathrm g$ に濃硫酸を加えて加熱し，すべて溶かす．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "D，E，F の変化を，それぞれ硫酸を含む化学反応式で書け．"
+     },
+     {
+      "id": "2",
+      "tex": "A〜F で消費される $\\ce{H2SO4}$ の物質量をそれぞれ求めよ．$\\ce{H2SO4}$ が生成する場合は負の値で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "A〜F を，消費される $\\ce{H2SO4}$ の物質量が多い順に並べよ．"
+     },
+     {
+      "id": "4",
+      "tex": "A〜F のうち，硫酸（の S 原子）が酸化剤としてはたらいているものをすべて選べ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "D：$\\ce{K2Cr2O7 + 4H2SO4 + 3H2O2 -> K2SO4 + Cr2(SO4)3 + 3O2 + 7H2O}$，E：$\\ce{2CuSO4 + 2H2O -> 2Cu + O2 + 2H2SO4}$，F：$\\ce{Cu + 2H2SO4 -> CuSO4 + SO2 + 2H2O}$"
+   },
+   {
+    "id": "2",
+    "tex": "A：$0.100\\,\\mathrm{mol}$，B：$0.150\\,\\mathrm{mol}$，C：$0\\,\\mathrm{mol}$，D：$0.0800\\,\\mathrm{mol}$，E：$-0.0500\\,\\mathrm{mol}$，F：$0.120\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "B ＞ F ＞ A ＞ D ＞ C ＞ E"
+   },
+   {
+    "id": "4",
+    "tex": "F"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　D：$\\ce{Cr2O7^2- + 14H+ + 6e- -> 2Cr^3+ + 7H2O}$ と $\\ce{H2O2 -> O2 + 2H+ + 2e-}$ を組み合わせると $\\ce{Cr2O7^2- + 3H2O2 + 8H+ -> 2Cr^3+ + 3O2 + 7H2O}$．$\\ce{K+}$ と $\\ce{SO4^2-}$ を加えて\n\\[ \\ce{K2Cr2O7 + 4H2SO4 + 3H2O2 -> K2SO4 + Cr2(SO4)3 + 3O2 + 7H2O} \\]\nE：陰極 $\\ce{Cu^2+ + 2e- -> Cu}$，陽極 $\\ce{2H2O -> O2 + 4H+ + 4e-}$ より\n\\[ \\ce{2CuSO4 + 2H2O -> 2Cu + O2 + 2H2SO4} \\]\nF：熱濃硫酸は酸化剤としてはたらき，$\\ce{SO2}$ を生じる．\n\\[ \\ce{Cu + 2H2SO4 -> CuSO4 + SO2 + 2H2O} \\]\n\n\\textbf{(2)}　A：銀はイオン化傾向が水素より小さく希硫酸と反応しない．$\\ce{Zn + H2SO4 -> ZnSO4 + H2}$ より，Zn $6.54/65.4=0.100\\,\\mathrm{mol}$ で $\\boldsymbol{0.100\\,\\mathrm{mol}}$．\n\\\\B：電子は $1.50\\times9650/(9.65\\times10^{4})=0.150\\,\\mathrm{mol}$．$\\ce{Pb + PbO2 + 2H2SO4 -> 2PbSO4 + 2H2O}$ では電子 2 mol で $\\ce{H2SO4}$ 2 mol が消費されるので $\\boldsymbol{0.150\\,\\mathrm{mol}}$．\n\\\\C：水の電気分解 $\\ce{2H2O -> 2H2 + O2}$ が起こるだけで，$\\ce{H2SO4}$ は電解液として残る（濃度は上がる）．$\\boldsymbol{0\\,\\mathrm{mol}}$．\n\\\\D：$\\ce{K2Cr2O7}$（式量 294）$5.88/294=0.0200\\,\\mathrm{mol}$ に対し 4 倍で $\\boldsymbol{0.0800\\,\\mathrm{mol}}$．\n\\\\E：電子 $0.100\\,\\mathrm{mol}$ で $\\ce{H2SO4}$ が $0.0500\\,\\mathrm{mol}$ 生成するので $\\boldsymbol{-0.0500\\,\\mathrm{mol}}$．\n\\\\F：Cu $3.81/63.5=0.0600\\,\\mathrm{mol}$ の 2 倍で $\\boldsymbol{0.120\\,\\mathrm{mol}}$（半分は $\\ce{CuSO4}$ の $\\ce{SO4^2-}$ に，半分は $\\ce{SO2}$ になる）．\n\n\\textbf{(3)}　$\\boldsymbol{\\text{B＞F＞A＞D＞C＞E}}$．\n\n\\textbf{(4)}　S の酸化数が変わる（+6 → +4）のは F だけで，答えは $\\boldsymbol{\\text{F}}$．A・D では $\\ce{H2SO4}$ は $\\ce{H+}$ を出す酸（A で酸化剤としてはたらくのは $\\ce{H+}$ で，S ではない），B では電極反応で $\\ce{PbSO4}$ をつくる反応物，C では電気を通すための電解液，E では生成物である．同じ「硫酸」でも，はたらきによって消費量の数え方がまったく異なる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "硫酸は反応によって，酸（H+ の供給源），熱濃硫酸の酸化剤（S が +6→+4），鉛蓄電池の電極反応の反応物，水の電気分解の電解液（消費されない），硫酸銅水溶液の電気分解の生成物とはたらきが異なる．反応式や電子の物質量から，それぞれで消費（または生成）される H2SO4 の量を数え分けて比べる．"
+ },
+ "concepts": [
+  "oxygen-sulfur",
+  "transition-metals",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "硫酸",
+  "鉛蓄電池",
+  "電気分解",
+  "熱濃硫酸",
+  "二クロム酸カリウム"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

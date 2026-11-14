@@ -1,0 +1,116 @@
+{
+ "id": "THE-ION-074",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "電離定数の表による多価の弱酸の塩と酸の反応（どの段まで進むか）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "condition",
+  "equation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "25 ℃ における弱酸の電離定数（$\\mathrm{mol/L}$）は次のとおりである．\n\\[\\begin{array}{ll}\n\\ce{CH3COOH} & 1.8\\times10^{-5}\\\\\n\\ce{H2CO3}\\ (\\ce{CO2 + H2O}) & K_1=4.5\\times10^{-7},\\ K_2=4.7\\times10^{-11}\\\\\n\\ce{H3PO4} & K_1=7.1\\times10^{-3},\\ K_2=6.3\\times10^{-8},\\ K_3=4.5\\times10^{-13}\\\\\n\\ce{HCN} & 4.9\\times10^{-10}\n\\end{array}\\]\n酸 HA と別の弱酸の陰イオン $\\ce{B-}$ の間の反応 $\\ce{HA + B- <=>[\\text{}] A- + HB}$ の平衡定数は $K=\\dfrac{K_a(\\ce{HA})}{K_a(\\ce{HB})}$ で表され，ここでは $K>10^2$ なら反応は右へほぼ完全に進み，$K<1$ なら反応はほとんど起こらないとする（多価の酸や陰イオンでは，各段階の電離定数 $K_1,K_2,\\dots$ をそれぞれの「HA」「HB」の電離定数として使う）．\n次の物質どうしを水溶液中で等しい物質量ずつ混ぜたとき，起こる反応の化学反応式を書け．ほとんど起こらない場合は「起こらない」と答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "リン酸ナトリウム $\\ce{Na3PO4}$ と酢酸"
+     },
+     {
+      "id": "2",
+      "tex": "リン酸水素二ナトリウム $\\ce{Na2HPO4}$ と酢酸"
+     },
+     {
+      "id": "3",
+      "tex": "リン酸二水素ナトリウム $\\ce{NaH2PO4}$ と酢酸"
+     },
+     {
+      "id": "4",
+      "tex": "シアン化ナトリウム $\\ce{NaCN}$ と二酸化炭素（水溶液に吹き込む）"
+     },
+     {
+      "id": "5",
+      "tex": "リン酸二水素ナトリウムと炭酸ナトリウム $\\ce{Na2CO3}$"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{Na3PO4 + CH3COOH -> Na2HPO4 + CH3COONa}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{Na2HPO4 + CH3COOH -> NaH2PO4 + CH3COONa}$"
+   },
+   {
+    "id": "3",
+    "tex": "起こらない"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{NaCN + CO2 + H2O -> HCN + NaHCO3}$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\ce{NaH2PO4 + Na2CO3 -> Na2HPO4 + NaHCO3}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　H⁺ を渡す側の酸の電離定数と，H⁺ を受け取ってできる酸（共役酸）の電離定数を比べる．多価の陰イオンが H⁺ を受け取ってできるのは「1 つ上の段の酸」なので，対応する段の電離定数を使う．\n\n\\textbf{(1)}　$\\ce{PO4^3-}$ が H⁺ を受け取ると $\\ce{HPO4^2-}$（電離定数 $K_3=4.5\\times10^{-13}$）．$K=\\dfrac{1.8\\times10^{-5}}{4.5\\times10^{-13}}=4\\times10^{7}$ で完全に進む．酢酸は等物質量しかないので 1 段で終わり，$\\boldsymbol{\\ce{Na3PO4 + CH3COOH -> Na2HPO4 + CH3COONa}}$．\n\n\\textbf{(2)}　$\\ce{HPO4^2-}$ が H⁺ を受け取ると $\\ce{H2PO4-}$（$K_2=6.3\\times10^{-8}$）．$K=\\dfrac{1.8\\times10^{-5}}{6.3\\times10^{-8}}\\fallingdotseq 2.9\\times10^{2}>10^2$ で進む．$\\boldsymbol{\\ce{Na2HPO4 + CH3COOH -> NaH2PO4 + CH3COONa}}$．\n\n\\textbf{(3)}　$\\ce{H2PO4-}$ が H⁺ を受け取ると $\\ce{H3PO4}$（$K_1=7.1\\times10^{-3}$）．$K=\\dfrac{1.8\\times10^{-5}}{7.1\\times10^{-3}}\\fallingdotseq2.5\\times10^{-3}<1$ なので\\textbf{起こらない}．酢酸はリン酸の第 1 段より弱い酸だからで，逆に $\\ce{H3PO4 + CH3COO- -> H2PO4- + CH3COOH}$ が起こる向きである．\n\n\\textbf{(4)}　$\\ce{CO2 + H2O}$（$K_1=4.5\\times10^{-7}$）と $\\ce{CN-}$（共役酸 HCN，$4.9\\times10^{-10}$）で $K\\fallingdotseq9\\times10^{2}$ なので進む．生じた $\\ce{HCO3-}$ がさらに $\\ce{CN-}$ に H⁺ を渡すかは $\\dfrac{4.7\\times10^{-11}}{4.9\\times10^{-10}}<1$ で起こらない．よって炭酸水素塩で止まり，$\\boldsymbol{\\ce{NaCN + CO2 + H2O -> HCN + NaHCO3}}$．\n\n\\textbf{(5)}　酸として $\\ce{H2PO4-}$（$K_2=6.3\\times10^{-8}$），塩基として $\\ce{CO3^2-}$（共役酸 $\\ce{HCO3-}$，$4.7\\times10^{-11}$）．$K\\fallingdotseq1.3\\times10^{3}$ で進む．続いて $\\ce{HPO4^2-}$（$K_3$）が $\\ce{CO3^2-}$ に H⁺ を渡す反応は $K<1$，$\\ce{H2PO4-}$ が $\\ce{HCO3-}$ に渡して $\\ce{H2CO3}$ をつくる反応も $\\dfrac{6.3\\times10^{-8}}{4.5\\times10^{-7}}<1$ で起こらない．$\\boldsymbol{\\ce{NaH2PO4 + Na2CO3 -> Na2HPO4 + NaHCO3}}$ となり，$\\ce{CO2}$ は発生しない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "弱酸と弱酸の塩の反応は，H⁺ を渡す酸と受け取ってできる共役酸の電離定数の比で向きが決まる．多価の酸・陰イオンでは受け取る段に対応する電離定数を選ぶ必要があり，その大小関係から反応がどの段で止まるか（CO₂ が出るか，炭酸水素塩で止まるか）が決まる．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "nitrogen-phosphorus"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "弱酸の遊離",
+  "電離定数",
+  "多価の酸",
+  "リン酸塩",
+  "炭酸塩"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

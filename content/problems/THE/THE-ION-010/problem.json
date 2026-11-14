@@ -1,0 +1,108 @@
+{
+ "id": "THE-ION-010",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "酸性塩の水溶液の液性を電離定数から判断する",
+ "course": "化学",
+ "level": 3,
+ "minutes": 12,
+ "format": [
+  "compare",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "塩は組成によって正塩・酸性塩・塩基性塩に分類されるが，水溶液の液性はこの分類とは必ずしも一致しない．25 ℃ の電離定数を次のように与える．水のイオン積 $K_w=1.0\\times10^{-14}\\,(\\mathrm{mol/L})^2$．\n\\[\\begin{array}{l} \\ce{H2CO3}：K_1=4.5\\times10^{-7},\\ K_2=4.7\\times10^{-11} \\\\ \\ce{H3PO4}：K_1=7.1\\times10^{-3},\\ K_2=6.3\\times10^{-8},\\ K_3=4.5\\times10^{-13} \\\\ \\ce{CH3COOH}：K_a=1.8\\times10^{-5},\\qquad \\ce{NH3}：K_b=1.8\\times10^{-5} \\end{array}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "次の塩を正塩・酸性塩・塩基性塩に分類せよ．\\\\ ア $\\ce{NaHCO3}$　イ $\\ce{MgCl(OH)}$　ウ $\\ce{Na2SO4}$　エ $\\ce{NaH2PO4}$"
+     },
+     {
+      "id": "2",
+      "tex": "$\\ce{HCO3-}$ は酸としても塩基としてもはたらく．$\\ce{HCO3-}$ が酸としてはたらくときの電離定数と，塩基としてはたらくときの電離定数 $K_b$ を比べ，$\\ce{NaHCO3}$ 水溶液が酸性か塩基性かを判断せよ．"
+     },
+     {
+      "id": "3",
+      "tex": "同様に考えて，$\\ce{NaH2PO4}$ 水溶液と $\\ce{Na2HPO4}$ 水溶液はそれぞれ酸性か塩基性か．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\ce{CH3COONH4}$ 水溶液の液性を，与えられた電離定数を用いて判断せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "ア 酸性塩　イ 塩基性塩　ウ 正塩　エ 酸性塩"
+   },
+   {
+    "id": "2",
+    "tex": "酸として $4.7\\times10^{-11}$，塩基として $K_b=2.2\\times10^{-8}$ で $K_b$ の方が大きいので塩基性"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{NaH2PO4}$ は酸性，$\\ce{Na2HPO4}$ は塩基性"
+   },
+   {
+    "id": "4",
+    "tex": "ほぼ中性"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 酸の H が残っている塩が酸性塩，塩基の OH が残っている塩が塩基性塩，どちらも残っていない塩が正塩．ア・エは\\textbf{酸性塩}，イは\\textbf{塩基性塩}，ウは\\textbf{正塩}．\\\\\n\\textbf{(2)} 酸として：$\\ce{HCO3- <=> H+ + CO3^2-}$ の電離定数は $K_2=4.7\\times10^{-11}$．\\\\\n塩基として：$\\ce{HCO3- + H2O <=> H2CO3 + OH-}$ の $K_b=\\dfrac{K_w}{K_1}=\\dfrac{1.0\\times10^{-14}}{4.5\\times10^{-7}}=2.2\\times10^{-8}$．\\\\\n$K_b\\gg K_2$ なので $\\ce{OH-}$ を生じる反応が優勢で，\\textbf{塩基性}（酸性塩でも塩基性を示す）．\\\\\n\\textbf{(3)} $\\ce{H2PO4-}$：酸として $K_2=6.3\\times10^{-8}$，塩基として $\\dfrac{K_w}{K_1}=1.4\\times10^{-12}$ → 酸の性質が優勢で \\textbf{酸性}．\\\\\n$\\ce{HPO4^2-}$：酸として $K_3=4.5\\times10^{-13}$，塩基として $\\dfrac{K_w}{K_2}=1.6\\times10^{-7}$ → 塩基の性質が優勢で \\textbf{塩基性}．\\\\\n\\textbf{(4)} $\\ce{NH4+}$ の酸としての電離定数 $\\dfrac{K_w}{K_b}=5.6\\times10^{-10}$ と，$\\ce{CH3COO-}$ の塩基としての電離定数 $\\dfrac{K_w}{K_a}=5.6\\times10^{-10}$ が等しいので，生じる $\\ce{H+}$ と $\\ce{OH-}$ がつり合い\\textbf{ほぼ中性}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "塩の分類（正塩・酸性塩・塩基性塩）は組成によるもので液性とは別である．酸としても塩基としてもはたらくイオンでは，酸としての電離定数と塩基としての電離定数（Kw/K）の大小で水溶液の液性を判断する．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "amphoteric"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "塩の加水分解",
+  "酸性塩",
+  "電離定数",
+  "両性のイオン",
+  "液性"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,124 @@
+{
+ "id": "ORG-ARO-030",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-05",
+ "topic": "分子内エステル（ラクトン）と酸性の官能基の判別",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "structure",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "化合物 B（分子式 $\\ce{C9H10O3}$）はベンゼンのオルト二置換体で，炭酸水素ナトリウム水溶液に気体を発生しながら溶け，塩化鉄(III) 水溶液で呈色する．B の側鎖は枝分かれのない炭素鎖である．B を加熱すると分子内から水1分子が取れて，2つの環をもつ化合物 C（$\\ce{C9H8O2}$）が生じた．\\\\\nまた，B をエタノールに溶かし少量の濃硫酸を加えて加熱すると化合物 A が，B を無水酢酸と反応させると化合物 D が得られた（いずれも B の官能基の1つだけが反応した）．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "B と C の示性式（または構造の説明）を答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "A，B，C，D のそれぞれについて，(a) 炭酸水素ナトリウム水溶液に溶けるか，(b) 冷たい水酸化ナトリウム水溶液に溶けるか，(c) 塩化鉄(III) 水溶液で呈色するか，を ○ × で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "C を水酸化ナトリウム水溶液と加熱したのち塩酸で酸性にすると，何が得られるか．"
+     },
+     {
+      "id": "4",
+      "tex": "B のパラ異性体を加熱しても，C に相当する化合物は生じない．その理由を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：分子内エステル（ラクトン）と酸性の官能基の判別",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "B：$\\ce{HOC6H4CH2CH2COOH}$（$o$ 体），C：B のフェノール性 OH とカルボキシ基が分子内でエステル結合をつくった6員環の化合物（ベンゼン環と縮合した環状エステル）"
+   },
+   {
+    "id": "2",
+    "tex": "A：(a) × (b) ○ (c) ○，B：(a) ○ (b) ○ (c) ○，C：(a) × (b) × (c) ×，D：(a) ○ (b) ○ (c) ×"
+   },
+   {
+    "id": "3",
+    "tex": "B"
+   },
+   {
+    "id": "4",
+    "tex": "パラ位の OH と側鎖の COOH は離れていて，分子内で環をつくれないから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} B は $\\ce{-COOH}$（$\\ce{NaHCO3}$ に溶ける）とフェノール性 $\\ce{-OH}$（呈色）をもつ．$\\ce{C9H10O3}$ から $\\ce{C6H4}$，$\\ce{OH}$，$\\ce{COOH}$ を除くと $\\ce{C2H4}$ なので，B $=\\boldsymbol{\\ce{HOC6H4CH2CH2COOH}}$．オルト位の OH と COOH が分子内でエステル化すると，$\\ce{-O-CO-CH2-CH2-}$ と環の2つの炭素からなる6員環の環状エステル（ラクトン）C ができる．\n\\textbf{(2)} 酸の強さ：カルボン酸 ＞ 炭酸 ＞ フェノール類．$\\ce{NaHCO3}$ に溶けるのは $\\ce{-COOH}$ をもつもの，冷 NaOH に溶けるのは $\\ce{-COOH}$ かフェノール性 $\\ce{-OH}$ をもつもの，FeCl$_3$ で呈色するのはフェノール性 $\\ce{-OH}$ をもつもの．\nA（エチルエステル，$\\ce{-OH}$ 残る）：× ○ ○ ／ B：○ ○ ○ ／ C（両方ともエステルに）：× × × ／ D（$\\ce{-OCOCH3}$，$\\ce{-COOH}$ 残る）：○ ○ ×．\n\\textbf{(3)} エステルなので塩基で加水分解（けん化）されて環が開き，酸性にすると \\textbf{B} に戻る．\n\\textbf{(4)} 分子内エステルができるのは，2つの官能基が環をつくれる距離（ふつう5員環・6員環）にあるときだけ．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "カルボキシ基とフェノール性ヒドロキシ基をオルト位にもつ化合物は加熱で分子内エステル（ラクトン）をつくる．エステル化・アセチル化・環化でどちらの官能基がふさがれたかを，NaHCO₃・NaOH への溶解と塩化鉄(III) の呈色から判定する．"
+ },
+ "concepts": [
+  "aromatic",
+  "transition-metals",
+  "alkali-metals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ラクトン",
+  "分子内エステル",
+  "フェノール",
+  "炭酸水素ナトリウム",
+  "塩化鉄(III)",
+  "アセチル化"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,108 @@
+{
+ "id": "THE-GAS-031",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-08",
+ "topic": "定積容器内の熱分解の進み具合と全圧・平均分子量",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "equation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ジメチルエーテル $\\ce{CH3OCH3}$ は高温で分解し，メタン，一酸化炭素ともう 1 種類の気体を 1:1:1 の物質量比で生じる．\n真空にした容積 $2.0\\,\\mathrm{L}$ の容器にジメチルエーテルを入れて密封し，$127\\,^\\circ\\mathrm{C}$ で圧力を測ると $4.0\\times10^{4}\\,\\mathrm{Pa}$ であった（このときはまったく分解していない）．続いて容器を $527\\,^\\circ\\mathrm{C}$ に保って分解させ，ある時刻に全圧を測ると $1.44\\times10^{5}\\,\\mathrm{Pa}$ であった．容器の体積変化は無視でき，気体はすべて理想気体とする．原子量は $\\mathrm{H}=1.0$，$\\mathrm{C}=12$，$\\mathrm{O}=16$，気体定数は $8.31\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "この分解の反応式の空欄に当てはまる化学式を答えよ．\\[ \\ce{CH3OCH3} \\ce{->} \\ce{CH4} + \\ce{CO} + \\boxed{\\phantom{X}} \\]"
+     },
+     {
+      "id": "2",
+      "tex": "容器に入れたジメチルエーテルの物質量は何 mol か．有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "全圧を測った時刻までに，はじめのジメチルエーテルの何 % が分解したか．また，そのときのメタンの分圧は何 Pa か．いずれも有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "全圧を測った時刻での容器内の気体の平均分子量を有効数字 2 桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{H2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$2.4\\times10^{-2}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "$40\\,\\%$，メタンの分圧 $3.2\\times10^{4}\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "4",
+    "tex": "$26$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 左辺は $\\ce{C2H6O}$．$\\ce{CH4}$ と $\\ce{CO}$ で C 2 個・H 4 個・O 1 個を使うので，残りは H 2 個．\n\\[ \\ce{CH3OCH3 -> CH4 + CO + H2} \\]\n空欄は $\\boldsymbol{\\ce{H2}}$．分解で気体 1 mol から 3 mol が生じ，気体の物質量は分解した量の 2 倍だけ増える．\n\n\\textbf{(2)} \n\\[ n = \\dfrac{PV}{RT} = \\dfrac{4.0\\times10^{4}\\times2.0}{8.31\\times10^{3}\\times400} \\fallingdotseq \\boldsymbol{2.4\\times10^{-2}\\,\\mathrm{mol}} \\]\n\n\\textbf{(3)} 体積一定なので，分解していなければ $800\\,\\mathrm{K}$ での圧力は絶対温度に比例して\n\\[ 4.0\\times10^{4}\\times\\dfrac{800}{400} = 8.0\\times10^{4}\\,\\mathrm{Pa} \\]\nになる（同じ温度・体積では圧力は物質量に比例するので，これをジメチルエーテルのはじめの量を表す「圧力の単位」として使える）．分解した割合を $\\alpha$ とすると，気体の物質量ははじめの $(1-\\alpha)+3\\alpha = 1+2\\alpha$ 倍になるから\n\\[ 8.0\\times10^{4}\\times(1+2\\alpha) = 1.44\\times10^{5} \\quad\\therefore\\quad \\alpha = 0.40 \\]\n分解したのは $\\boldsymbol{40\\,\\%}$．メタンは分解したジメチルエーテルと同じ物質量なので\n\\[ p_{\\ce{CH4}} = 8.0\\times10^{4}\\times0.40 = \\boldsymbol{3.2\\times10^{4}\\,\\mathrm{Pa}} \\]\n温度上昇による圧力の増加（2 倍）を先に考えずに $4.0\\times10^{4}\\,\\mathrm{Pa}$ を基準にすると，$\\alpha=1.3$ と 1 を超える（100 % より多く分解する）ありえない値になる．\n\n\\textbf{(4)} 分解しても容器内の気体の質量は変わらない（質量保存）．ジメチルエーテルの分子量は 46 で，物質量だけが $1+2\\alpha=1.8$ 倍になるので\n\\[ \\overline{M} = \\dfrac{46}{1.8} = 25.5\\cdots \\fallingdotseq \\boldsymbol{26} \\]\n（確認：$\\ce{CH3OCH3}$ 0.60，$\\ce{CH4}$・$\\ce{CO}$・$\\ce{H2}$ 各 0.40 の割合で $\\dfrac{0.60\\times46+0.40\\times(16+28+2.0)}{1.8} = \\dfrac{46}{1.8}$．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "定積容器内で気体の物質量が増える分解では，全圧の増加が分解量に比例する．まず温度変化による圧力の増加をシャルルの法則で補正して「分解しなかった場合の圧力」を基準にし，そこからの増加分で分解の割合と各成分の分圧を求める．質量が保存されることから平均分子量は物質量の増加に反比例して下がる．"
+ },
+ "concepts": [
+  "ideal-gas",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "熱分解",
+  "全圧",
+  "分圧",
+  "定積変化",
+  "平均分子量"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

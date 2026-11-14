@@ -1,0 +1,108 @@
+{
+ "id": "ORG-HYD-057",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-02",
+ "topic": "共役ポリエンの吸収波長と臭素付加による色の変化",
+ "course": "化学",
+ "level": 3,
+ "minutes": 12,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある植物色素の系列は，共役した $\\ce{C=C}$ 結合を $N$ 個もつ鎖状の分子である．この系列で測定した，最も長波長側の吸収の極大波長 $\\lambda$ は次のとおりであった（$N\\le 3$ はすべて紫外部）．\n\\[\\begin{array}{c|cccccccc} N & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 \\\\ \\hline \\lambda/\\mathrm{nm} & 300 & 335 & 365 & 395 & 420 & 440 & 460 & 475 \\end{array}\\]\n物質は吸収した光の補色に見え，可視光（$400\\sim 750\\,\\mathrm{nm}$）を吸収しなければ無色に見える．吸収する光と見える色の関係は次のとおりとする．\n\\[\\begin{array}{c|c|c} \\text{吸収する光の波長}/\\mathrm{nm} & \\text{吸収する色} & \\text{見える色} \\\\ \\hline 400\\sim 435 & \\text{紫} & \\text{黄緑} \\\\ 435\\sim 480 & \\text{青} & \\text{黄} \\\\ 480\\sim 500 & \\text{青緑} & \\text{橙〜赤} \\\\ 500\\sim 560 & \\text{緑} & \\text{赤紫} \\\\ 560\\sim 610 & \\text{黄〜橙} & \\text{青} \\\\ 610\\sim 750 & \\text{赤} & \\text{青緑} \\end{array}\\]\n2 つの $\\ce{C=C}$ の間に $\\mathrm{sp^3}$ 炭素（$\\ce{-CH2-}$ や臭素が付加した炭素）が入ると共役はそこで切れ，吸収の波長は，残った共役部分のうち最も長いものの $N$ で決まるものとする．プランク定数 $h=6.63\\times10^{-34}\\,\\mathrm{J\\,s}$，光の速さ $c=3.00\\times10^{8}\\,\\mathrm{m/s}$，アボガドロ定数 $N_\\mathrm{A}=6.02\\times10^{23}\\,\\mathrm{/mol}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$N=11$ の色素 X は何色に見えるか．また，X が吸収する $475\\,\\mathrm{nm}$ の光の光子 $1\\,\\mathrm{mol}$ のエネルギーは何 $\\mathrm{kJ}$ か．有効数字 3 桁で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "X に臭素 $\\ce{Br2}$ が 1 分子だけ付加した．臭素は 1 つの $\\ce{C=C}$ にだけ付加する（1,2-付加）とする．付加したのが鎖の端から 1 番目の $\\ce{C=C}$ であったとき，生成物の吸収波長は何 nm になり，何色に見えるか．"
+     },
+     {
+      "id": "3",
+      "tex": "X の 11 個の $\\ce{C=C}$ に端から 1〜11 の番号をつける．臭素 1 分子が付加して生成物が無色になるのは，何番目の $\\ce{C=C}$ に付加した場合か．すべて答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\ce{C=C}$ を 10 個ずつもつ異性体 P と Q がある．P では 10 個の $\\ce{C=C}$ がすべて共役しており，Q では 5 個ずつ共役した 2 つの部分が $\\ce{-CH2-}$ 1 個でつながっている．P と Q のどちらが色をもつか．理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "黄色，$252\\,\\mathrm{kJ}$"
+   },
+   {
+    "id": "2",
+    "tex": "$460\\,\\mathrm{nm}$，黄色（色はほとんど変わらない）"
+   },
+   {
+    "id": "3",
+    "tex": "4，5，6，7，8 番目"
+   },
+   {
+    "id": "4",
+    "tex": "P．P は $N=10$ で $460\\,\\mathrm{nm}$（青）を吸収して黄色に見えるが，Q は共役が $\\ce{-CH2-}$ で切れて $N=5$（$335\\,\\mathrm{nm}$，紫外部）なので無色．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　吸収の波長は「つながっている（共役している）$\\ce{C=C}$ の数」で決まる．$\\ce{C=C}$ の総数ではない．\n\n(1) $475\\,\\mathrm{nm}$ は $435\\sim480\\,\\mathrm{nm}$（青）の範囲にあるので，補色の $\\boldsymbol{\\text{黄色}}$ に見える．光子 1 個のエネルギーは $E=h\\nu=hc/\\lambda$ なので，$1\\,\\mathrm{mol}$ あたり\n\\[ N_\\mathrm{A}\\dfrac{hc}{\\lambda}=\\dfrac{6.02\\times10^{23}\\times6.63\\times10^{-34}\\times3.00\\times10^{8}}{475\\times10^{-9}}=2.52\\times10^{5}\\,\\mathrm{J}=\\boldsymbol{252\\,\\mathrm{kJ}} \\]\n波長が長いほど光子のエネルギーは小さい（$E\\propto 1/\\lambda$）．\n\n(2) 端の $\\ce{C=C}$ が $\\ce{-CHBr-CHBr-}$ になると，残る共役部分は $N=10$ の 1 つだけである．表より $\\boldsymbol{460\\,\\mathrm{nm}}$ で，これも青の範囲なので $\\boldsymbol{\\text{黄色}}$ のまま．端に付加しても共役はほとんど短くならない．\n\n(3) 端から $k$ 番目に付加すると，共役部分は $k-1$ 個と $11-k$ 個の 2 つに分かれ，吸収の波長は長い方 $\\max(k-1,\\ 11-k)$ で決まる．無色になるのは $\\lambda<400\\,\\mathrm{nm}$，すなわち表から $N\\le7$ のときなので\n\\[ k-1\\le 7 \\quad\\text{かつ}\\quad 11-k\\le 7 \\quad\\Longrightarrow\\quad 4\\le k\\le 8 \\]\nよって $\\boldsymbol{4,\\ 5,\\ 6,\\ 7,\\ 8}$ 番目．$k=3$ では長い方が $N=8$（$420\\,\\mathrm{nm}$，紫を吸収）で黄緑色に，$k=9$ でも同じになる．中央に近いほど共役が大きく断ち切られる．\n\n(4) P は $N=10$ なので $460\\,\\mathrm{nm}$（青）を吸収して黄色に見える．Q は $\\ce{C=C}$ の総数は同じでも，$\\ce{-CH2-}$ の $\\mathrm{sp^3}$ 炭素で共役が切れ，共役部分は $N=5$ が 2 つになる．吸収は $335\\,\\mathrm{nm}$ の紫外部で可視光を吸収しないので無色．色をもつのは $\\boldsymbol{\\text{P}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "吸収の波長は共役した C=C の総数ではなく，sp3 炭素で区切られた最長の共役部分の長さで決まる．臭素付加の位置によって残る最長の共役部分が変わるので，どこに付加すると可視光を吸収しなくなる（無色になる）かを逆に決められる．"
+ },
+ "concepts": [
+  "hydrocarbon",
+  "halogen"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "共役二重結合",
+  "補色",
+  "吸収波長",
+  "臭素付加",
+  "光子のエネルギー"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

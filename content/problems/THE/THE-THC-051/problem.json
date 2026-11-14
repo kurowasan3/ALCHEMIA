@@ -1,0 +1,110 @@
+{
+ "id": "THE-THC-051",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-10",
+ "topic": "エチレンの水素化：密度と圧力変化からの反応量と生成エンタルピーによる発熱量",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "容積 $10.0\\,\\mathrm L$ の容器に，エチレンと水素を物質量の比 $1:3$ で混ぜた気体を入れて $27\\,^\\circ\\mathrm{C}$ に保ったところ，気体の密度は $0.680\\,\\mathrm{g/L}$ であった．触媒を入れて反応 $\\ce{C2H4 + H2 -> C2H6}$ を一部進ませ，再び $27\\,^\\circ\\mathrm{C}$ にしたところ，圧力は $1.62\\times10^{5}\\,\\mathrm{Pa}$ になった．気体はすべて理想気体とし，気体定数 $R=8.31\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$，原子量 H$=1.0$，C$=12$ とする．また，$25\\,^\\circ\\mathrm{C}$ 付近での生成エンタルピーは $\\ce{C2H4}$（気）$+52.5\\,\\mathrm{kJ/mol}$，$\\ce{C2H6}$（気）$-83.8\\,\\mathrm{kJ/mol}$，$\\ce{H-H}$ の結合エネルギーは $436\\,\\mathrm{kJ/mol}$ とし，$27\\,^\\circ\\mathrm{C}$ でも同じ値を用いる．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "はじめのエチレンの物質量を有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "反応したエチレンの物質量と，反応後の水素の分圧 [Pa] を有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "反応で発生した熱量 [kJ] を有効数字 2 桁で求めよ．また，この計算に $\\ce{H-H}$ の結合エネルギーが必要かどうかを答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "反応後の気体の密度 [g/L] と平均モル質量 [g/mol] を有効数字 3 桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$0.200\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "2",
+    "tex": "$0.150\\,\\mathrm{mol}$，$1.12\\times10^{5}\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "3",
+    "tex": "$20\\,\\mathrm{kJ}$，必要ない"
+   },
+   {
+    "id": "4",
+    "tex": "$0.680\\,\\mathrm{g/L}$，$10.5\\,\\mathrm{g/mol}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 気体の質量は $0.680\\times10.0=6.80\\,\\mathrm g$．エチレンを $x\\,\\mathrm{mol}$ とすると水素は $3x\\,\\mathrm{mol}$ で，$28x+2.0\\times3x=34x=6.80$ より $x=\\boldsymbol{0.200\\,\\mathrm{mol}}$（水素 $0.600\\,\\mathrm{mol}$）．\n\n\\textbf{(2)} 反応 1 mol ごとに気体は 1 mol 減る．反応後の全物質量は $\\dfrac{1.62\\times10^{5}\\times10.0}{8.31\\times10^{3}\\times300}=0.650\\,\\mathrm{mol}$ なので，反応したエチレンは $0.800-0.650=\\boldsymbol{0.150\\,\\mathrm{mol}}$．水素は $0.600-0.150=0.450\\,\\mathrm{mol}$ 残り，分圧は $\\dfrac{0.450\\times8.31\\times10^{3}\\times300}{10.0}=\\boldsymbol{1.12\\times10^{5}\\,\\mathrm{Pa}}$．\n\n\\textbf{(3)} 反応エンタルピーは（生成物の生成エンタルピーの和）−（反応物の和）で，単体 $\\ce{H2}$ の生成エンタルピーは 0 なので\n\\[ \\Delta H=-83.8-52.5=-136.3\\,\\mathrm{kJ/mol} \\]\n発熱量は $0.150\\times136.3=20.4\\fallingdotseq\\boldsymbol{20\\,\\mathrm{kJ}}$．生成エンタルピーには $\\ce{H-H}$ 結合を切る過程も含まれているので，結合エネルギーは\\textbf{必要ない}．\n\n\\textbf{(4)} 容器の容積も気体の質量（$6.80\\,\\mathrm g$）も変わらないので，密度は $\\boldsymbol{0.680\\,\\mathrm{g/L}}$ のまま．物質量は $0.800\\to0.650\\,\\mathrm{mol}$ と減るので平均モル質量は $\\dfrac{6.80}{0.650}=\\boldsymbol{10.5\\,\\mathrm{g/mol}}$（はじめは $8.50\\,\\mathrm{g/mol}$）．定積の容器では密度から反応の進行はわからず，圧力（物質量）の変化を使う．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "付加反応で気体の分子数が減るので，定積・定温での圧力低下から反応量が決まる．発熱量は生成エンタルピーの差だけで求まり（結合エネルギーは不要），定積では質量保存により密度は変わらず平均モル質量だけが増えることを判断する．"
+ },
+ "concepts": [
+  "enthalpy",
+  "hydrocarbon",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "水素化",
+  "生成エンタルピー",
+  "圧力変化",
+  "気体の密度",
+  "平均モル質量",
+  "エチレン"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

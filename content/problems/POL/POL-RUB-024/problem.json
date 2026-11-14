@@ -1,0 +1,108 @@
+{
+ "id": "POL-RUB-024",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-03",
+ "topic": "ゴムのエントロピー弾性（加熱で縮むゴム・熱弾性の逆転・伸長による発熱）",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "加硫ゴムの弾性は，網目の鎖が伸ばされるとそのとりうる形の数（乱雑さ）が減ることに由来する（エントロピー弾性）．これを次のモデルで考える．\n・自然の長さ $L_0$ のゴムひもを長さ $L$ に伸ばしたとき（伸長比 $\\lambda=L/L_0$），張力は $f=kT\\left(\\lambda-\\dfrac1{\\lambda^2}\\right)$ で表される．$T$ は絶対温度，$k=\\dfrac{nR}{L_0}$ で，$n$ は網目の鎖の物質量である．\\\\\n・温度が一定なら，ゴムの内部エネルギーは伸ばしても変わらない（理想ゴム）．\\\\\n・ゴムは加熱すると熱膨張し，自然の長さは $L_0(T)=L_0(300)\\{1+\\alpha(T-300)\\}$，$\\alpha=2.2\\times10^{-4}\\,\\mathrm{K^{-1}}$ に従って変わる．$k$ の変化は無視してよい．\n気体定数は $R=8.31\\,\\mathrm{J/(K\\cdot mol)}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ゴムひもにおもりをつるし，$300\\,\\mathrm K$ で $\\lambda=2.00$ となった．おもりはそのままで加熱したとき，熱膨張を無視すると，ひもは伸びるか縮むか．理由を述べ，$\\lambda$ が $1.80$ になる温度を有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "熱膨張を考えると，伸長比が小さいときには，おもりをつるしたまま少し加熱するとゴムひもは伸びる．張力一定のもとで温度をわずかに上げても長さ $L$ が変わらない伸長比 $\\lambda^{*}$ を $300\\,\\mathrm K$ について求め，有効数字 3 桁で答えよ．また，$\\lambda<\\lambda^{*}$ と $\\lambda>\\lambda^{*}$ で加熱したときの長さの変化をそれぞれ答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$n=4.0\\times10^{-4}\\,\\mathrm{mol}$ のゴムひもを $300\\,\\mathrm K$ で $\\lambda=1$ から $\\lambda=3$ までゆっくり（温度一定で）伸ばした．ゴムがされた仕事は $W=\\displaystyle\\int_{L_0}^{3L_0}f\\,dL$ である．$W$ を求め，このときゴムが放出する熱量を有効数字 2 桁で答えよ（熱膨張は無視する）．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) と同じ伸長を，熱の出入りがないほど急速に行うと，ゴムの温度は何 K 上がるか．ゴムひもの熱容量を $4.0\\,\\mathrm{J/K}$ とし，有効数字 2 桁で答えよ．また，(3) の伸長でゴムのエントロピーは増えるか減るか，分子の形に着目して説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "縮む．張力 $f$ は一定なので $T\\left(\\lambda-\\dfrac1{\\lambda^2}\\right)$ が一定に保たれ，$T$ が上がると $\\lambda$ は小さくならなければならない（同じ伸びでも高温ほど縮もうとする力が大きい）．温度は $352\\,\\mathrm K$．"
+   },
+   {
+    "id": "2",
+    "tex": "$\\lambda^{*}=1.07$．$\\lambda<\\lambda^{*}$ では熱膨張の効果がまさってひもは伸び，$\\lambda>\\lambda^{*}$ ではエントロピー弾性の効果がまさってひもは縮む．"
+   },
+   {
+    "id": "3",
+    "tex": "$W=\\dfrac{10}{3}nRT\\fallingdotseq3.3\\,\\mathrm J$，放出する熱量 $3.3\\,\\mathrm J$"
+   },
+   {
+    "id": "4",
+    "tex": "$0.83\\,\\mathrm K$ 上がる．エントロピーは減る．伸ばされた網目の鎖はまっすぐに近い形に限られ，とりうる形の数（乱雑さ）が減るから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 加熱で縮む}　おもりが同じなので $f$ は一定．$f=kT\\,g(\\lambda)$，$g(\\lambda)=\\lambda-\\lambda^{-2}$（$\\lambda>1$ で増加関数）だから，$T\\,g(\\lambda)$ が一定に保たれる．$T$ が大きくなれば $g(\\lambda)$，すなわち $\\lambda$ は小さくなり，ひもは\\textbf{縮む}．ゴムの張力は鎖が乱雑な形にもどろうとする傾向（エントロピー）によるので，高温ほど強い（金属のばねとは逆）．\n\\[ g(2.00)=2.00-0.25=1.75,\\qquad g(1.80)=1.80-\\frac1{3.24}=1.4914 \\]\n\\[ T=300\\times\\frac{1.75}{1.4914}=352.0\\fallingdotseq\\boldsymbol{352\\,\\mathrm K} \\]\n\n\\textbf{(2) 熱膨張との競合}　$L=\\lambda L_0(T)$ の対数をとって $T$ で微分すると\n\\[ \\frac{1}{L}\\frac{dL}{dT}=\\frac1\\lambda\\frac{d\\lambda}{dT}+\\alpha \\]\n（$300\\,\\mathrm K$ 付近では $\\dfrac{1}{L_0}\\dfrac{dL_0}{dT}\\fallingdotseq\\alpha$）．張力一定で $T\\,g(\\lambda)$ が一定だから $g(\\lambda)\\,dT+T\\,g'(\\lambda)\\,d\\lambda=0$，$g'(\\lambda)=1+2\\lambda^{-3}$ より\n\\[ \\frac1\\lambda\\frac{d\\lambda}{dT}=-\\frac{g(\\lambda)}{T\\lambda g'(\\lambda)}=-\\frac1T\\cdot\\frac{\\lambda^3-1}{\\lambda^3+2} \\]\n長さが変わらない条件は\n\\[ \\frac{\\lambda^3-1}{\\lambda^3+2}=\\alpha T=2.2\\times10^{-4}\\times300=0.066 \\]\n\\[ \\lambda^3=\\frac{1+2\\times0.066}{1-0.066}=\\frac{1.132}{0.934}=1.212,\\qquad \\lambda^{*}=\\boldsymbol{1.07} \\]\n$\\dfrac{\\lambda^3-1}{\\lambda^3+2}$ は $\\lambda$ とともに増えるので，$\\lambda<\\lambda^{*}$ では縮む効果が $\\alpha T$ より小さく，\\textbf{熱膨張がまさって伸びる}．$\\lambda>\\lambda^{*}$ では\\textbf{エントロピー弾性がまさって縮む}（(1) の場合）．少し伸ばしたゴムとよく伸ばしたゴムで，加熱したときのふるまいが逆転する．\n\n\\textbf{(3) 等温で伸ばす仕事と熱}　$dL=L_0\\,d\\lambda$，$kL_0=nR$ より\n\\[ W=nRT\\int_1^3\\left(\\lambda-\\frac1{\\lambda^2}\\right)d\\lambda=nRT\\left[\\frac{\\lambda^2}2+\\frac1\\lambda\\right]_1^3=nRT\\left(\\frac92+\\frac13-\\frac12-1\\right)=\\frac{10}{3}nRT \\]\n\\[ W=\\frac{10}{3}\\times4.0\\times10^{-4}\\times8.31\\times300=3.32\\fallingdotseq\\boldsymbol{3.3\\,\\mathrm J} \\]\n温度一定で内部エネルギーが変わらない（$\\Delta U=0$）ので，熱力学第一法則 $\\Delta U=W+q$（$q$ はゴムが受け取る熱）より $q=-W$．ゴムはされた仕事と同じ $\\boldsymbol{3.3\\,\\mathrm J}$ の熱を放出する．（金属のばねでは，仕事はおもに原子間の距離を変える内部エネルギーとして蓄えられる．）\n\n\\textbf{(4) 断熱的に伸ばす場合とエントロピー}　熱が逃げなければ，(3) の熱がゴム自身の温度を上げる．\n\\[ \\Delta T=\\frac{3.32}{4.0}=0.83\\,\\mathrm K \\quad\\Longrightarrow\\quad \\boldsymbol{0.83\\,\\mathrm K}\\ \\text{上がる} \\]\n（温度上昇による張力の変化は小さいので無視した．輪ゴムを急に伸ばして唇に当てると温かく感じるのはこのためである．）\\\\\n(3) の等温変化では熱を放出したので，ゴムのエントロピーは $\\Delta S=\\dfrac{q}{T}=-\\dfrac{3.32}{300}\\fallingdotseq-0.011\\,\\mathrm{J/K}$ と\\textbf{減る}．網目の鎖は，縮んでいるときは乱雑に折れ曲がったさまざまな形をとれるが，伸ばされるとまっすぐに近い限られた形しかとれなくなる．この乱雑さの減少が，元にもどろうとする力（エントロピー弾性）の起源である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ゴムの張力は f = kT(λ−1/λ²) と絶対温度に比例するエントロピー弾性なので，張力一定で加熱すると縮む．熱膨張と競合させると (λ³−1)/(λ³+2) = αT を境に加熱で伸びるか縮むかが逆転する．理想ゴムでは等温で内部エネルギーが変わらないので，伸ばす仕事はすべて熱として放出され，断熱的に伸ばすと温度が上がり，伸長でエントロピーは減る．"
+ },
+ "concepts": [
+  "rubber"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ゴム弾性",
+  "エントロピー",
+  "熱力学第一法則",
+  "熱膨張",
+  "天然ゴム",
+  "加硫"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,108 @@
+{
+ "id": "INO-PPT-025",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-08",
+ "topic": "金属の析出と相互の混合による水溶液の推定",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水溶液 A〜E は，硝酸銀，硝酸銅(II)，硝酸鉛(II)，塩化ナトリウム，硫酸マグネシウムのいずれか1種類ずつを溶かしたもので，濃度はいずれも $0.10\\,\\mathrm{mol/L}$ である．次の実験を行った．\n\\\\実験1：A〜E に亜鉛板を入れると，A，B，C では亜鉛板の表面に金属が析出したが，D，E では変化がなかった．なお，A〜E のうち A だけが青色であった．\n\\\\実験2：B に D を加えると白色沈殿が生じ，この沈殿は過剰のアンモニア水に溶けた．\n\\\\実験3：C に D を加えても，C に E を加えても白色沈殿が生じた．C と D から生じた沈殿は熱湯に溶けた．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A〜E の溶質を化学式で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "実験1で，D，E に亜鉛板を入れても金属が析出しなかった理由を述べよ．"
+     },
+     {
+      "id": "3",
+      "tex": "A，B をそれぞれ $100\\,\\mathrm{mL}$ とり，十分な量の亜鉛板を入れて反応を完結させた．析出した金属はすべて亜鉛板に付着するものとして，それぞれ亜鉛板の質量は何 g 増加または減少したか．増加・減少の別とともに有効数字2桁で答えよ．原子量は $\\mathrm{Cu}=63.5$，$\\mathrm{Zn}=65.4$，$\\mathrm{Ag}=108$ とする．"
+     },
+     {
+      "id": "4",
+      "tex": "C に亜鉛板を入れたときの変化をイオン反応式で書け．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "A：$\\ce{Cu(NO3)2}$，B：$\\ce{AgNO3}$，C：$\\ce{Pb(NO3)2}$，D：$\\ce{NaCl}$，E：$\\ce{MgSO4}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{Na}$ と $\\ce{Mg}$ はイオン化傾向が亜鉛より大きく，$\\ce{Na+}$・$\\ce{Mg^2+}$ は亜鉛から電子を受け取らない（亜鉛に還元されない）から．"
+   },
+   {
+    "id": "3",
+    "tex": "A：$0.019\\,\\mathrm{g}$ 減少，B：$0.75\\,\\mathrm{g}$ 増加"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{Zn + Pb^2+ -> Zn^2+ + Pb}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 亜鉛より\\textbf{イオン化傾向の小さい}金属のイオン（$\\ce{Cu^2+}$，$\\ce{Ag+}$，$\\ce{Pb^2+}$）だけが亜鉛に還元されて析出する．よって A，B，C は銅・銀・鉛の塩で，青色の A は $\\ce{Cu(NO3)2}$．\n実験2：B と D で生じ，アンモニア水に溶ける白色沈殿は $\\ce{AgCl}$（$\\ce{AgCl + 2NH3 -> [Ag(NH3)2]+ + Cl-}$）→ B は $\\ce{AgNO3}$，D は $\\ce{NaCl}$．\n実験3：C は $\\ce{Cl-}$ とも $\\ce{SO4^2-}$ とも白色沈殿（$\\ce{PbCl2}$，$\\ce{PbSO4}$）をつくり，$\\ce{PbCl2}$ は熱湯に溶ける → C は $\\ce{Pb(NO3)2}$，E は $\\ce{MgSO4}$．\n\n\\textbf{(2)} イオン化傾向は $\\ce{Na}>\\ce{Mg}>\\ce{Zn}$．亜鉛より陽イオンになりやすい金属のイオンは，亜鉛によって還元されない．\n\n\\textbf{(3) 溶け出す亜鉛と析出する金属の差} 各水溶液の金属イオンは $0.10\\times\\dfrac{100}{1000}=0.010\\,\\mathrm{mol}$．\n\\begin{itemize}\n\\item A：$\\ce{Zn + Cu^2+ -> Zn^2+ + Cu}$．$\\ce{Zn}$ $0.010\\,\\mathrm{mol}$ が溶け，$\\ce{Cu}$ $0.010\\,\\mathrm{mol}$ が付着する．$0.010\\times(63.5-65.4)=-0.019\\,\\mathrm{g}$ → $\\boldsymbol{0.019\\,\\mathrm{g}}$ \\textbf{減少}．\n\\item B：$\\ce{Zn + 2Ag+ -> Zn^2+ + 2Ag}$．$\\ce{Ag}$ $0.010\\,\\mathrm{mol}$ が付着し，溶ける $\\ce{Zn}$ は $0.0050\\,\\mathrm{mol}$．$0.010\\times108-0.0050\\times65.4=0.753\\,\\mathrm{g}$ → $\\boldsymbol{0.75\\,\\mathrm{g}}$ \\textbf{増加}．\n\\end{itemize}\n同じ物質量の金属イオンが析出しても，イオンの価数（亜鉛 1 mol が還元できるイオンの物質量）と原子量の違いで増減の向きまで変わる．\n\n\\textbf{(4)} $\\ce{Zn + Pb^2+ -> Zn^2+ + Pb}$\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "亜鉛より陽イオンになりにくい金属のイオンだけが亜鉛に還元されて析出することと，水溶液どうしを混ぜたときの沈殿（AgCl・PbCl₂・PbSO₄）を組み合わせて溶質を決め，さらに析出による金属板の質量変化が価数と原子量で増加にも減少にもなることを扱う．"
+ },
+ "concepts": [
+  "precipitation",
+  "amphoteric"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "イオン化傾向",
+  "金属の析出",
+  "沈殿反応",
+  "水溶液の推定",
+  "質量変化"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

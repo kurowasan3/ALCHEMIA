@@ -1,0 +1,110 @@
+{
+ "id": "ORG-HYD-015",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-02",
+ "topic": "オゾン分解によるアルケンの構造決定",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "structure",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "分子式 $\\ce{C5H10}$ で表される鎖式炭化水素 P，Q，R，S は互いに構造異性体である．アルケンをオゾン分解すると，次のように炭素原子間の二重結合が切れて 2 つのカルボニル化合物が生じる（$\\mathrm{R^1}$〜$\\mathrm{R^4}$ は水素原子または炭化水素基）．\n\\[\\mathrm{R^1R^2C{=}CR^3R^4} \\;\\longrightarrow\\; \\mathrm{R^1R^2C{=}O} + \\mathrm{O{=}CR^3R^4}\\]\n実験1：P，Q，R に触媒を用いて水素を付加させると，いずれも同じ化合物 T が得られた．S からは T とは異なる化合物が得られた．\\\\\n実験2：オゾン分解すると，P からはケトン K とホルムアルデヒドが，Q からはアルデヒド L とホルムアルデヒドが，R からは化合物 M と N が得られた．S からは炭素数の異なる 2 種類のアルデヒドが得られ，ホルムアルデヒドは生じなかった．\\\\\n実験3：M と N のうち，アンモニア性硝酸銀水溶液を還元したのは N だけであった．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "P，Q，R，S の構造を示性式で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "K，L，M，N のうち，ヨードホルム反応を示すものをすべて選べ．"
+     },
+     {
+      "id": "3",
+      "tex": "P〜S のうち，シス-トランス異性体が存在するものを選べ．"
+     },
+     {
+      "id": "4",
+      "tex": "分子式 $\\ce{C6H12}$ のアルケンのうち，オゾン分解で 1 種類の化合物だけを生じ，その化合物が銀鏡反応を示さないものの構造を示性式で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "P：$\\ce{CH2=C(CH3)CH2CH3}$，Q：$\\ce{CH2=CHCH(CH3)2}$，R：$\\ce{(CH3)2C=CHCH3}$，S：$\\ce{CH3CH=CHCH2CH3}$"
+   },
+   {
+    "id": "2",
+    "tex": "K，M，N"
+   },
+   {
+    "id": "3",
+    "tex": "S"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{(CH3)2C=C(CH3)2}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 鎖式の $\\ce{C5H10}$ はアルケンで，炭素骨格は直鎖（水素化でペンタン）か枝分かれ 1 つ（2-メチルブタン）．直鎖のアルケンは 1-ペンテンと 2-ペンテンの 2 種類しかないので，3 種類が同じ T を与えることから T は 2-メチルブタン，P・Q・R は\n$\\ce{CH2=C(CH3)CH2CH3}$，$\\ce{CH2=CHCH(CH3)2}$，$\\ce{(CH3)2C=CHCH3}$ のどれかである．\\\\\n・$\\ce{CH2=C(CH3)CH2CH3}$ → $\\ce{CH3COCH2CH3}$（ケトン）＋ $\\ce{HCHO}$：これが \\textbf{P}（K は 2-ブタノン）．\\\\\n・$\\ce{CH2=CHCH(CH3)2}$ → $\\ce{(CH3)2CHCHO}$（アルデヒド）＋ $\\ce{HCHO}$：これが \\textbf{Q}（L は 2-メチルプロパナール）．\\\\\n・$\\ce{(CH3)2C=CHCH3}$ → $\\ce{CH3COCH3}$ ＋ $\\ce{CH3CHO}$：これが \\textbf{R}．銀鏡反応を示す N がアセトアルデヒド，M がアセトン．\\\\\nS は直鎖．1-ペンテンはホルムアルデヒドを生じるので除かれ，S は 2-ペンテン $\\ce{CH3CH=CHCH2CH3}$（$\\ce{CH3CHO}$ と $\\ce{CH3CH2CHO}$ を生じる）．\\\\\n\\textbf{(2)} ヨードホルム反応は $\\ce{CH3CO-}$ をもつ（$\\ce{CH3CO-}$ の相手が H または炭素原子）化合物で起こる．K（$\\ce{CH3COC2H5}$），M（$\\ce{CH3COCH3}$），N（$\\ce{CH3CHO}$）は示す．L（$\\ce{(CH3)2CHCHO}$）は $\\ce{CH3CO-}$ をもたないので示さない．答え \\textbf{K，M，N}．\\\\\n\\textbf{(3)} 二重結合の両端の炭素がそれぞれ異なる 2 つの原子・原子団をもつのは 2-ペンテンだけ．P・Q は $\\ce{CH2=}$ の炭素に H が 2 つ，R は $\\ce{(CH3)2C=}$ の炭素に $\\ce{CH3}$ が 2 つ結合している．答え \\textbf{S}．\\\\\n\\textbf{(4)} 1 種類の化合物だけが生じるには，二重結合の左右が同じ形でなければならない．$\\ce{C6H12}$ でこれを満たすのは $\\ce{CH3CH2CH=CHCH2CH3}$（プロパナールを生じ，銀鏡反応を示す）と $\\ce{(CH3)2C=C(CH3)2}$（アセトンを生じ，銀鏡反応を示さない）の 2 つだけ．よって $\\boldsymbol{\\ce{(CH3)2C=C(CH3)2}}$（2,3-ジメチル-2-ブテン）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "水素化で同じ炭素骨格になる異性体をまとめ，オゾン分解生成物の種類（ケトンかアルデヒドか・ホルムアルデヒドの有無）で二重結合の位置を決める．逆に「1 種類の生成物だけ」という条件から左右対称のアルケンを導く．"
+ },
+ "concepts": [
+  "hydrocarbon",
+  "oxygen-sulfur",
+  "organic-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "オゾン分解",
+  "アルケン",
+  "構造決定",
+  "ヨードホルム反応",
+  "銀鏡反応",
+  "シス-トランス異性体"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,117 @@
+{
+ "id": "ORG-ALC-012",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-03",
+ "topic": "C₃H₈O の異性体の酸化と沸点の変化（水素結合の有無）",
+ "course": "化学",
+ "level": 1,
+ "minutes": 15,
+ "format": [
+  "compare",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "分子式 $\\ce{C3H8O}$ の構造異性体 3 種を，沸点の高い順に $\\mathrm{X_1}$（$97\\,^\\circ\\mathrm{C}$），$\\mathrm{X_2}$（$82\\,^\\circ\\mathrm{C}$），$\\mathrm{X_3}$（$7\\,^\\circ\\mathrm{C}$）とする．次の操作を行った．\n\n【操作 1】$\\mathrm{X_1}$〜$\\mathrm{X_3}$ のそれぞれに，硫酸酸性の二クロム酸カリウム水溶液をおだやかな条件で作用させ，有機化合物を蒸留で取り出した．$\\mathrm{X_1}$ からのものを $\\mathrm{Y_1}$ とし，同様に $\\mathrm{Y_2}$，$\\mathrm{Y_3}$ とする（反応しなかったものはそのまま取り出す）．\n\n【操作 2】$\\mathrm{Y_1}$〜$\\mathrm{Y_3}$ のそれぞれに，十分な量のアンモニア性硝酸銀水溶液を作用させたのち酸性にし，有機化合物を取り出した．同様に $\\mathrm{Z_1}$〜$\\mathrm{Z_3}$ とする．\n\n必要なら次の沸点を用いよ：プロパナール $48\\,^\\circ\\mathrm{C}$，アセトン $56\\,^\\circ\\mathrm{C}$，プロピオン酸 $141\\,^\\circ\\mathrm{C}$．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\mathrm{X_1}$〜$\\mathrm{X_3}$ の示性式を答えよ．また，$\\mathrm{X_3}$ の沸点だけが著しく低い理由を述べよ．"
+     },
+     {
+      "id": "2",
+      "tex": "操作 1 で化学変化が起こったものについて，$\\mathrm{X}$ から $\\mathrm{Y}$ になると沸点は高くなるか低くなるか．理由とともに答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "操作 2 で化学変化が起こるのは $\\mathrm{Y_1}$〜$\\mathrm{Y_3}$ のどれか．また，生じた化合物の沸点が，もとの $\\mathrm{X}$ よりも高くなる理由を述べよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\mathrm{X}$，$\\mathrm{Y}$，$\\mathrm{Z}$ 各群の中で最も沸点の高い化合物の沸点をそれぞれ $T_{\\mathrm X}$，$T_{\\mathrm Y}$，$T_{\\mathrm Z}$ とする．これらの大小関係を不等号で示せ．"
+     },
+     {
+      "id": "5",
+      "tex": "9 個の試料 $\\mathrm{X_1}$〜$\\mathrm{Z_3}$ には，実際には何種類の化合物が含まれるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\mathrm{X_1}$：$\\ce{CH3CH2CH2OH}$，$\\mathrm{X_2}$：$\\ce{CH3CH(OH)CH3}$，$\\mathrm{X_3}$：$\\ce{CH3OCH2CH3}$．$\\mathrm{X_3}$（エーテル）は O–H をもたず，分子間で水素結合をつくらないから"
+   },
+   {
+    "id": "2",
+    "tex": "低くなる．アルコールの O–H がアルデヒド・ケトンの C=O に変わり，分子間の水素結合がなくなるから（極性による引力は残るので，同程度の分子量のエーテルよりは高い）"
+   },
+   {
+    "id": "3",
+    "tex": "$\\mathrm{Y_1}$（プロパナール）．生じたプロピオン酸はカルボキシ基をもち，2 分子が 2 本の水素結合で強く結びつく（二量体をつくる）うえ，分子量も大きいから"
+   },
+   {
+    "id": "4",
+    "tex": "$T_{\\mathrm Z}>T_{\\mathrm X}>T_{\\mathrm Y}$"
+   },
+   {
+    "id": "5",
+    "tex": "6 種類"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\ce{C3H8O}$ の異性体は 1-プロパノール，2-プロパノール，エチルメチルエーテルの 3 種．アルコールは O–H どうしの水素結合で沸点が高く，枝分かれした 2-プロパノールは分子どうしが接しにくいので 1-プロパノールより低い．よって $\\mathrm{X_1}$：$\\boldsymbol{\\ce{CH3CH2CH2OH}}$，$\\mathrm{X_2}$：$\\boldsymbol{\\ce{CH3CH(OH)CH3}}$，$\\mathrm{X_3}$：$\\boldsymbol{\\ce{CH3OCH2CH3}}$．エーテルは O に H が結合していないので分子間に水素結合ができず，沸点が著しく低い．\n\n\\textbf{(2)} 第一級アルコールの $\\mathrm{X_1}$ はアルデヒド（プロパナール，$48\\,^\\circ\\mathrm C$），第二級アルコールの $\\mathrm{X_2}$ はケトン（アセトン，$56\\,^\\circ\\mathrm C$）になる．エーテルの $\\mathrm{X_3}$ は酸化されない．O–H が C=O になると水素結合ができなくなるので，沸点は \\textbf{低くなる}（$97\\to48$，$82\\to56$）．ただし C=O の極性による引力があるので，エーテル（$7\\,^\\circ\\mathrm C$）よりは高い．\n\n\\textbf{(3)} アンモニア性硝酸銀で酸化される（銀鏡反応を示す）のはアルデヒドの $\\boldsymbol{\\mathrm{Y_1}}$ だけで，酸性にするとプロピオン酸 $\\ce{CH3CH2COOH}$（$141\\,^\\circ\\mathrm C$）が得られる．ケトンの $\\mathrm{Y_2}$ とエーテルの $\\mathrm{Y_3}$ は変化しない．カルボン酸は C=O と O–H の両方をもち，2 分子が互いに 2 本の水素結合で結びついた二量体をつくるため，同じ炭素数のアルコールより沸点が高い．\n\n\\textbf{(4)} $T_{\\mathrm X}=97$（$\\mathrm{X_1}$），$T_{\\mathrm Y}=56$（アセトン $\\mathrm{Y_2}$．プロパナールより高い），$T_{\\mathrm Z}=141$（プロピオン酸 $\\mathrm{Z_1}$）．よって $\\boldsymbol{T_{\\mathrm Z}>T_{\\mathrm X}>T_{\\mathrm Y}}$．\n\n\\textbf{(5)} $\\mathrm{X_1}$（1-プロパノール），$\\mathrm{X_2}$（2-プロパノール），$\\mathrm{X_3}=\\mathrm{Y_3}=\\mathrm{Z_3}$（エーテル），$\\mathrm{Y_1}$（プロパナール），$\\mathrm{Y_2}=\\mathrm{Z_2}$（アセトン），$\\mathrm{Z_1}$（プロピオン酸）の $\\boldsymbol{6}$ \\textbf{種類}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "アルコールを酸化すると O–H が C=O に変わって水素結合を失うので沸点は下がり，アルデヒドをさらに酸化してカルボン酸にすると二量体をつくる強い水素結合が生じて沸点はもとのアルコールより上がる．級数による酸化生成物の違いと，反応しない化合物を追跡して，各段階の沸点の順と化合物の種類を判断する．"
+ },
+ "concepts": [
+  "alcohol-carbonyl",
+  "organic-structure",
+  "carboxylic-ester"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "アルコールの酸化",
+  "沸点",
+  "水素結合",
+  "銀鏡反応",
+  "異性体"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

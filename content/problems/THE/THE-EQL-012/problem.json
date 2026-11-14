@@ -1,0 +1,109 @@
+{
+ "id": "THE-EQL-012",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "滴定で追うエステルの加水分解と半減期",
+ "course": "化学",
+ "level": 1,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "塩酸を触媒として，酢酸エチルの加水分解 $\\ce{CH3COOC2H5 + H2O -> CH3COOH + C2H5OH}$ を一定温度で行った．反応液を一定時間ごとに $2.0\\,\\mathrm{mL}$ ずつ取り出し，ただちに冷却してから $0.050\\,\\mathrm{mol/L}$ 水酸化ナトリウム水溶液で滴定して，次の結果を得た．反応液の体積変化は無視する．\n\\[ \\begin{array}{c|ccccc} \\text{反応時間（分）} & 0 & 30 & 60 & 90 & \\text{完了時} \\\\ \\hline \\text{滴定量（mL）} & 4.00 & 12.00 & 16.00 & 18.00 & 20.00 \\end{array} \\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "時間 0 分でも滴定量が 0 でないのはなぜか．また，0，30，60，90 分における酢酸エチルの濃度〔mol/L〕を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "表の結果から，この反応が酢酸エチルの濃度の 1 乗に比例する速度（$v=k[\\ce{CH3COOC2H5}]$）で進むと判断できる理由を述べよ．また，速度定数 $k$〔/min〕を有効数字2桁で求めよ．$\\log_e2=0.693$ とする．"
+     },
+     {
+      "id": "3",
+      "tex": "酢酸エチルの濃度が $0.025\\,\\mathrm{mol/L}$ になるのは反応開始から何分後か．"
+     },
+     {
+      "id": "4",
+      "tex": "同じ温度で，はじめの塩酸の濃度だけを 2 倍にして同じ実験をした．時間 0 分の滴定量と，完了時の滴定量と時間 0 分の滴定量の差は，それぞれどうなるか．また，反応の半減期は長くなるか短くなるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "触媒の塩酸（$\\ce{HCl}$）も水酸化ナトリウムと中和するため．0 分 $0.40$，30 分 $0.20$，60 分 $0.10$，90 分 $0.050\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "2",
+    "tex": "濃度が半分になるのにかかる時間（半減期）が濃度によらず 30 分で一定だから．$k=2.3\\times10^{-2}\\,/\\mathrm{min}$"
+   },
+   {
+    "id": "3",
+    "tex": "$120$ 分後"
+   },
+   {
+    "id": "4",
+    "tex": "0 分の滴定量は $8.00\\,\\mathrm{mL}$ と 2 倍になり，差は $16.00\\,\\mathrm{mL}$ で変わらない．触媒が増えて反応が速くなるので，半減期は短くなる．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 触媒の $\\ce{HCl}$ は反応で消費されないので，滴定量のうち $4.00\\,\\mathrm{mL}$ 分は常に $\\ce{HCl}$ の分．残りが生じた酢酸の分で，完了時には酢酸エチルがすべて酢酸になっている．\nはじめの酢酸エチルは酢酸 $(20.00-4.00)\\,\\mathrm{mL}$ 分に相当するので\n\\[ [\\ce{CH3COOC2H5}]_0=\\frac{0.050\\times16.00\\times10^{-3}}{2.0\\times10^{-3}}=\\boldsymbol{0.40\\,\\mathrm{mol/L}} \\]\n時刻 $t$ では（完了時 − その時刻）の滴定量が残っている酢酸エチルに相当する：30 分 $8.00\\,\\mathrm{mL}\\to\\boldsymbol{0.20}$，60 分 $4.00\\,\\mathrm{mL}\\to\\boldsymbol{0.10}$，90 分 $2.00\\,\\mathrm{mL}\\to\\boldsymbol{0.050\\,\\mathrm{mol/L}}$．\n\\textbf{(2)} $0.40\\to0.20\\to0.10\\to0.050$ と，30 分ごとに半分になっている．半減期が濃度によらず一定なのは一次反応の特徴である（$C=C_0e^{-kt}$ より，半減期 $=\\log_e2/k$）．\n\\[ k=\\frac{0.693}{30}=0.0231\\fallingdotseq\\boldsymbol{2.3\\times10^{-2}\\,/\\mathrm{min}} \\]\n\\textbf{(3)} $0.40\\to0.025$ は $\\dfrac{1}{16}=\\left(\\dfrac12\\right)^4$ なので，半減期 4 回分の $\\boldsymbol{120}$ 分後．\n\\textbf{(4)} $\\ce{HCl}$ が 2 倍なので 0 分の滴定量は $\\boldsymbol{8.00\\,\\mathrm{mL}}$．酢酸エチルの量は同じなので，完了時との差は $\\boldsymbol{16.00\\,\\mathrm{mL}}$ のまま（完了時は $24.00\\,\\mathrm{mL}$）．触媒の $\\ce{H+}$ が増えると速度定数が大きくなり，半減期は\\textbf{短くなる}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "触媒の酸を含む反応液の滴定では，0 分の滴定量（触媒分）と完了時の滴定量の差から残っている反応物の濃度を求める．半減期が濃度によらず一定なら一次反応で，半減期から速度定数が求まる．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "carboxylic-ester",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応速度",
+  "一次反応",
+  "半減期",
+  "エステルの加水分解",
+  "中和滴定"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

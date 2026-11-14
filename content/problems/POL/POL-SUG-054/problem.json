@@ -1,0 +1,107 @@
+{
+ "id": "POL-SUG-054",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-04",
+ "topic": "トリアセチル化と部分的な加水分解を経るジアセチルセルロースの製造の量的関係",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "equation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "アセテート繊維の原料のジアセチルセルロースは，セルロースのヒドロキシ基をいったんすべてアセチル化してトリアセチルセルロースとし，そのエステル結合の一部を加水分解してつくる．グルコース単位1個あたりの変化は次のように表される．\n\\[ \\ce{C6H7O2(OH)3 + 3(CH3CO)2O -> C6H7O2(OCOCH3)3 + 3CH3COOH} \\]\n\\[ \\ce{C6H7O2(OCOCH3)3 + H2O -> C6H7O2(OH)(OCOCH3)2 + \\boxed{\\phantom{X}}} \\]\nH=1.0，C=12，O=16 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "2つ目の反応式の空欄にあてはまる化学式を答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "ジアセチルセルロース $49.2\\,\\mathrm g$ をつくるのに必要なセルロースの質量を有効数字3桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) のとき必要な無水酢酸の質量を有効数字3桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(2) の製造の全体（アセチル化と加水分解）で生じる酢酸の質量を有効数字3桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{CH3COOH}$"
+   },
+   {
+    "id": "2",
+    "tex": "$32.4\\,\\mathrm g$"
+   },
+   {
+    "id": "3",
+    "tex": "$61.2\\,\\mathrm g$"
+   },
+   {
+    "id": "4",
+    "tex": "$48.0\\,\\mathrm g$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　エステル結合1つが加水分解されて $-\\mathrm{OH}$ にもどり，酢酸 $\\boldsymbol{\\ce{CH3COOH}}$ が1分子はずれる．\n\n\\textbf{(2)}　ジアセチルセルロースの単位 $\\ce{C6H7O2(OH)(OCOCH3)2}$（$\\ce{C10H14O7}$）の式量は $246$ なので，単位の物質量は $\\dfrac{49.2}{246}=0.200\\,\\mathrm{mol}$．セルロースの単位 $\\ce{C6H10O5}$（式量 162）も同じ $0.200\\,\\mathrm{mol}$ 必要で\n\\[ 0.200\\times162=\\boldsymbol{32.4\\,\\mathrm g} \\]\n\n\\textbf{(3)}　単位あたり 2 個しかアセチル基は残らないが，いったん 3 個すべてをアセチル化するので，無水酢酸は単位の 3 倍の $0.600\\,\\mathrm{mol}$ 必要（2 倍の $0.400\\,\\mathrm{mol}$ ではない）．$\\ce{(CH3CO)2O}=102$ より\n\\[ 0.600\\times102=\\boldsymbol{61.2\\,\\mathrm g} \\]\n\n\\textbf{(4)}　アセチル化で無水酢酸 1 分子あたり酢酸 1 分子，すなわち $0.600\\,\\mathrm{mol}$．加水分解で単位あたり 1 分子，すなわち $0.200\\,\\mathrm{mol}$．合計 $0.800\\,\\mathrm{mol}$ で，$\\ce{CH3COOH}=60$ より\n\\[ 0.800\\times60=\\boldsymbol{48.0\\,\\mathrm g} \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ジアセチルセルロースは全部アセチル化してから一部を加水分解してつくるので，必要な無水酢酸は残るアセチル基の数（2）ではなく OH の数（3）で決まり，酢酸はアセチル化と加水分解の両方で生じる．2段階の反応をたどって量的関係を立てる．"
+ },
+ "concepts": [
+  "saccharide"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "セルロース",
+  "アセチル化",
+  "ジアセチルセルロース",
+  "無水酢酸",
+  "アセテート繊維"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

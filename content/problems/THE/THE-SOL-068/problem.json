@@ -1,0 +1,100 @@
+{
+ "id": "THE-SOL-068",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-09",
+ "topic": "水洗による水素の精製（全圧一定でのヘンリーの法則と水の量・圧力の効果）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "メタンと水蒸気から，全体として $\\ce{CH4 + 2H2O -> CO2 + 4H2}$ の反応で水素をつくると，得られる気体は $\\ce{CO2}$ と $\\ce{H2}$ の混合気体になる．これを水で洗って $\\ce{CO2}$ を溶かし，水素の純度（気相中の $\\ce{H2}$ の物質量の割合）を上げる．\n\n$\\ce{CH4}$ $0.10\\,\\mathrm{mol}$ から得た混合気体を，ピストン付きの容器に水とともに入れ，$0\\,^\\circ\\mathrm{C}$ で全圧を一定に保ったまま十分に振り混ぜて平衡にした．$\\ce{CO2}$ はヘンリーの法則に従い，$0\\,^\\circ\\mathrm{C}$ で $\\ce{CO2}$ の分圧が $1.0\\times10^{5}\\,\\mathrm{Pa}$ のとき水 $1.0\\,\\mathrm{L}$ に $0.075\\,\\mathrm{mol}$ 溶けるものとする．$\\ce{H2}$ の溶解，水の蒸気圧，気体を溶かしたことによる水の体積変化は無視する．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "全圧 $1.0\\times10^{5}\\,\\mathrm{Pa}$，水 $5.0\\,\\mathrm{L}$ で洗ったときの水素の純度は何 \\% か．有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "全圧 $1.0\\times10^{5}\\,\\mathrm{Pa}$ のまま水素の純度を $95\\,\\%$ にするには，水は何 L 必要か．有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "次の 2 つの操作 (a)，(b) で得られる水素の純度を比べよ．また，その純度を有効数字 2 桁で答えよ．\\quad (a) 全圧を $2.0\\times10^{5}\\,\\mathrm{Pa}$ に保ち，水 $5.0\\,\\mathrm{L}$ で洗う．\\quad (b) 全圧 $1.0\\times10^{5}\\,\\mathrm{Pa}$ のまま，水 $10\\,\\mathrm{L}$ で洗う．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$88\\,\\%$"
+   },
+   {
+    "id": "2",
+    "tex": "$21\\,\\mathrm{L}$"
+   },
+   {
+    "id": "3",
+    "tex": "(a) と (b) の純度は等しく，どちらも $92\\,\\%$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　全圧 $P$ が一定のとき，気相中の $\\ce{CO2}$ の分圧は「$P\\times$（気相中の $\\ce{CO2}$ のモル分率 $y$）」である．溶けた $\\ce{CO2}$ はこの分圧に比例し，$\\ce{CO2}$ の全量は「気相＋溶解」で保存される．$\\ce{CH4}$ $0.10\\,\\mathrm{mol}$ からは $\\ce{CO2}$ $0.10\\,\\mathrm{mol}$，$\\ce{H2}$ $0.40\\,\\mathrm{mol}$ が得られる．\n\n水 $V\\,\\mathrm{L}$，全圧 $P$（$1.0\\times10^{5}\\,\\mathrm{Pa}$ を 1 とする）のとき，溶ける $\\ce{CO2}$ は $0.075\\,V P y\\,\\mathrm{mol}$ なので，気相の $\\ce{CO2}$ は $0.10-0.075\\,VPy$．よって\n\\[ y=\\frac{0.10-0.075\\,VPy}{(0.10-0.075\\,VPy)+0.40} \\]\n\n\\textbf{(1)}　$VP=5.0$ を代入すると $0.375y^{2}-0.875y+0.10=0$．$0<y<1$ の解は $y\\fallingdotseq0.121$．純度は $1-y\\fallingdotseq\\boldsymbol{88\\,\\%}$．（溶けた $\\ce{CO2}$ は約 $0.045\\,\\mathrm{mol}$ で，半分近くが気相に残っている．）\n\n\\textbf{(2)}　$y=0.050$ のとき，気相の $\\ce{CO2}$ は $0.40\\times\\dfrac{0.050}{0.950}\\fallingdotseq0.0211\\,\\mathrm{mol}$．溶かすべき $\\ce{CO2}$ は $0.10-0.0211=0.0789\\,\\mathrm{mol}$ で，これが $0.075\\times V\\times0.050$ に等しいから\n\\[ V=\\frac{0.0789}{0.00375}\\fallingdotseq\\boldsymbol{21\\,\\mathrm{L}} \\]\n純度を上げるほど気相の $\\ce{CO2}$ の分圧が下がり，水 1 L あたりに溶ける量が減るので，必要な水の量は急に増える．\n\n\\textbf{(3)}　上の式で $V$ と $P$ は積 $VP$ の形でしか現れない．(a) も (b) も $VP=10$ なので\\textbf{純度は等しい}．$0.75y^{2}-1.25y+0.10=0$ より $y\\fallingdotseq0.084$，純度は $\\boldsymbol{92\\,\\%}$．全圧を 2 倍にすると同じモル分率でも分圧が 2 倍になり，水 1 L に溶ける量が 2 倍になるので，水を 2 倍にしたのと同じ効果になる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "全圧一定で溶けない気体と混ざっている場合，溶ける気体の分圧は全圧×モル分率で決まり，「気相＋溶解＝全量」の収支とヘンリーの法則を連立して洗浄後の純度を求める．純度を上げるほど分圧が下がって水 1 L あたりの溶解量が減るので必要な水は急増し，全圧と水の量は積の形でしか効かない（全圧 2 倍＝水 2 倍）．"
+ },
+ "concepts": [
+  "solution-colligative",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ヘンリーの法則",
+  "混合気体",
+  "分圧",
+  "物質収支",
+  "水素の精製"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

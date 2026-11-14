@@ -1,0 +1,101 @@
+{
+ "id": "THE-RDX-010",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-06",
+ "topic": "実験結果から酸化力の強さの順を決める",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "compare",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の実験 (a)〜(d) を行った．\n\\\\(a) ヨウ化カリウム水溶液に塩化鉄(III)水溶液を加えると，溶液は褐色になり，デンプン水溶液を加えると青紫色になった．\n\\\\(b) 臭化カリウム水溶液に塩化鉄(III)水溶液を加えても，変化は見られなかった．\n\\\\(c) 塩化鉄(II)水溶液に臭素水を加えると，臭素の赤褐色が消え，溶液は黄褐色になった．\n\\\\(d) 臭化カリウム水溶液に塩素水を加えると，溶液は赤褐色になった．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "実験 (a) と (c) で起こった変化を，それぞれイオン反応式で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "$\\ce{Cl2}$，$\\ce{Br2}$，$\\ce{I2}$，$\\ce{Fe^3+}$ を，酸化力の強い順に並べよ．"
+     },
+     {
+      "id": "3",
+      "tex": "次の (i)〜(iii) の操作で反応が起こるかどうかを，(2) の結果から判断せよ．\\\\\n(i) 塩化鉄(II)水溶液にヨウ素溶液（ヨウ化カリウムを含む）を加える．\\\\\n(ii) 塩化鉄(II)水溶液に塩素水を加える．\\\\\n(iii) ヨウ化カリウム水溶液に臭素水を加える．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "(a) $\\ce{2Fe^3+ + 2I- -> 2Fe^2+ + I2}$，(c) $\\ce{2Fe^2+ + Br2 -> 2Fe^3+ + 2Br-}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{Cl2}>\\ce{Br2}>\\ce{Fe^3+}>\\ce{I2}$"
+   },
+   {
+    "id": "3",
+    "tex": "(i) 起こらない　(ii) 起こる　(iii) 起こる"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} (a) $\\ce{Fe^3+}$ が $\\ce{I-}$ を酸化してヨウ素が生じた（デンプンで青紫色）．\n\\[ \\ce{2Fe^3+ + 2I- -> 2Fe^2+ + I2} \\]\n(c) 臭素が $\\ce{Fe^2+}$ を酸化し，$\\ce{Fe^3+}$（黄褐色）が生じた．\n\\[ \\ce{2Fe^2+ + Br2 -> 2Fe^3+ + 2Br-} \\]\n\n\\textbf{(2)} 「酸化剤 X が還元剤 Y$^-$ を酸化して Y をつくる」とき，X の酸化力は Y より強い．\n\\\\(a) $\\ce{Fe^3+}>\\ce{I2}$　(b) $\\ce{Fe^3+}$ は $\\ce{Br-}$ を酸化できない：$\\ce{Br2}>\\ce{Fe^3+}$　(c) $\\ce{Br2}>\\ce{Fe^3+}$　(d) $\\ce{Cl2}>\\ce{Br2}$\n\\\\よって $\\ce{Cl2}>\\ce{Br2}>\\ce{Fe^3+}>\\ce{I2}$．\n\n\\textbf{(3)} (i) $\\ce{I2}$ は $\\ce{Fe^3+}$ より酸化力が弱いので $\\ce{Fe^2+}$ を酸化できない．(a) の逆反応は \\textbf{起こらない}．\n\\\\(ii) $\\ce{Cl2}>\\ce{Fe^3+}$ なので $\\ce{2Fe^2+ + Cl2 -> 2Fe^3+ + 2Cl-}$ が \\textbf{起こる}．\n\\\\(iii) $\\ce{Br2}>\\ce{I2}$ なので $\\ce{Br2 + 2I- -> 2Br- + I2}$ が \\textbf{起こる}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "酸化剤が相手の還元剤を酸化できる（反応が起こる）ことは，酸化剤の酸化力が生成する酸化剤（相手の酸化体）より強いことを意味する．いくつかの反応の起こる・起こらないから酸化力の序列を組み立て，未知の組み合わせで反応が起こるかを予測できる．"
+ },
+ "concepts": [
+  "redox",
+  "transition-metals",
+  "halogen"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "酸化還元反応",
+  "酸化力",
+  "ハロゲン",
+  "鉄イオン",
+  "反応の予測"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

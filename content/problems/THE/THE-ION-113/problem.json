@@ -1,0 +1,110 @@
+{
+ "id": "THE-ION-113",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "ホウ酸のルイス酸としての電離とポリオールの錯形成による見かけの電離定数の増大",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ホウ酸 $\\ce{B(OH)3}$ の B 原子はオクテットに達しておらず，水分子の $\\ce{OH-}$ を受け取って（電子対を受け入れて）$\\ce{[B(OH)4]^-}$ となり，そのとき水の H 原子が $\\ce{H+}$ として放出される．ホウ酸のこの電離定数を $K_\\mathrm{a}=6.0\\times10^{-10}\\,\\mathrm{mol/L}$ とする．\n一方，マンニトールのように隣り合う OH を多くもつ化合物（以下 L）を加えると，$\\ce{[B(OH)4]^-}$ は L 2 分子と環状のエステルをつくる．\n\\[ [\\ce{B(OH)4}]^- + 2\\mathrm{L} \\rightleftharpoons [\\mathrm{BL_2}]^- + 4\\ce{H2O}\\qquad \\beta=\\frac{[\\mathrm{BL_2}^-]}{[\\ce{B(OH)4-}][\\mathrm{L}]^2}=1.0\\times10^{5}\\,(\\mathrm{L/mol})^2 \\]\nホウ素を含む化学種は $\\ce{B(OH)3}$，$\\ce{[B(OH)4]^-}$，$\\mathrm{BL_2}^-$ の 3 つだけとし，$[\\mathrm{L}]$ は結合していない L の濃度を表す．マンニトールの分子量は 182 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ホウ酸が水中で電離する変化をイオン反応式で書け．"
+     },
+     {
+      "id": "2",
+      "tex": "L が共存するとき，ホウ素の陰イオン全体（$[\\ce{B(OH)4-}]+[\\mathrm{BL_2}^-]$）と $\\ce{B(OH)3}$ についての見かけの電離定数 $K'=\\dfrac{[\\ce{H+}]([\\ce{B(OH)4-}]+[\\mathrm{BL_2}^-])}{[\\ce{B(OH)3}]}$ を $K_\\mathrm{a}$，$\\beta$，$[\\mathrm{L}]$ で表し，$[\\mathrm{L}]=0.50\\,\\mathrm{mol/L}$ のときの値を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "ホウ酸を水酸化ナトリウム水溶液で中和滴定し，フェノールフタレインの変色（pH $9.0$ とする）を終点とする．終点で全ホウ素のうち陰イオンになっている割合 $[\\%]$ を，L がないとき，および $[\\mathrm{L}]=0.50\\,\\mathrm{mol/L}$ に保たれているときについて，それぞれ有効数字2桁で求め，どちらの条件ならホウ酸を正確に定量できるか答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$0.10\\,\\mathrm{mol/L}$ のホウ酸水溶液 $10.0\\,\\mathrm{mL}$ にマンニトールを加え，$0.10\\,\\mathrm{mol/L}$ の水酸化ナトリウム水溶液で滴定する．終点（溶液の体積 $20.0\\,\\mathrm{mL}$，pH $9.0$）で全ホウ素の $99.9\\,\\%$ 以上が陰イオンになっているために，最初に加えるマンニトールの物質量 $[\\mathrm{mol}]$ は少なくともいくら必要か．有効数字2桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{B(OH)3 + H2O <=> [B(OH)4]^- + H+}$"
+   },
+   {
+    "id": "2",
+    "tex": "$K'=K_\\mathrm{a}(1+\\beta[\\mathrm{L}]^2)$，$1.5\\times10^{-5}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "3",
+    "tex": "L なし $38\\,\\%$，L あり $99.99\\,\\%$（$1.0\\times10^{2}\\,\\%$），L を加えたとき定量できる"
+   },
+   {
+    "id": "4",
+    "tex": "$4.6\\times10^{-3}\\,\\mathrm{mol}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　L は酸の電離そのものには関わらず，生じた陰イオン $\\ce{[B(OH)4]^-}$ を別の形にして取り除く．陰イオンの側の化学種が増えるので，ルシャトリエの原理どおり電離が進み，見かけの酸性が強くなる．定量では，結合して消費される L の分も見込む必要がある．\n\n\\textbf{(1)}　$\\ce{B(OH)3 + H2O <=> [B(OH)4]^- + H+}$．ホウ酸の H がそのまま電離するのではなく，B が $\\ce{OH-}$ を受け取るルイス酸としてふるまう（1価の酸）．\n\n\\textbf{(2)}　$[\\ce{B(OH)4-}]=K_\\mathrm{a}\\dfrac{[\\ce{B(OH)3}]}{[\\ce{H+}]}$，$[\\mathrm{BL_2}^-]=\\beta[\\mathrm{L}]^2[\\ce{B(OH)4-}]$ より\n\\[ K'=K_\\mathrm{a}(1+\\beta[\\mathrm{L}]^2) \\]\n$[\\mathrm{L}]=0.50$ では $K'=6.0\\times10^{-10}\\times(1+1.0\\times10^{5}\\times0.25)=\\boldsymbol{1.5\\times10^{-5}\\,\\mathrm{mol/L}}$．$K_\\mathrm{a}$ の約 $2.5\\times10^{4}$ 倍で，酢酸と同程度の強さの酸として振る舞う．\n\n\\textbf{(3)}　陰イオンの割合は $\\dfrac{K'}{K'+[\\ce{H+}]}$（L がなければ $K'=K_\\mathrm{a}$）．$[\\ce{H+}]=1.0\\times10^{-9}$ として\nL なし：$\\dfrac{6.0\\times10^{-10}}{6.0\\times10^{-10}+1.0\\times10^{-9}}=0.375$ → $\\boldsymbol{38\\,\\%}$．\nL あり：$\\dfrac{1.5\\times10^{-5}}{1.5\\times10^{-5}+1.0\\times10^{-9}}=0.99993$ → $\\boldsymbol{99.99\\,\\%}$．\nL がないと pH 9 の時点で 6 割以上が未反応で，しかも中和点付近の pH 変化がゆるやかで終点がはっきりしない．L を加えたときだけ正確に定量できる．\n\n\\textbf{(4)}　99.9 % 以上が陰イオンである条件は $\\dfrac{K'}{K'+[\\ce{H+}]}\\ge0.999$，すなわち $K'\\ge999\\times1.0\\times10^{-9}\\fallingdotseq1.0\\times10^{-6}$．\n\\[ 1+\\beta[\\mathrm{L}]^2\\ge\\frac{1.0\\times10^{-6}}{6.0\\times10^{-10}}=1.67\\times10^{3}\\quad\\Rightarrow\\quad[\\mathrm{L}]\\ge\\sqrt{\\frac{1.67\\times10^{3}-1}{1.0\\times10^{5}}}=0.129\\,\\mathrm{mol/L} \\]\nこれは結合していない L の濃度である．終点で全ホウ素は $0.10\\times\\dfrac{10.0}{20.0}=0.050\\,\\mathrm{mol/L}$ で，そのうち $\\mathrm{BL_2}^-$ になっている割合は $\\dfrac{K_\\mathrm{a}\\beta[\\mathrm{L}]^2}{[\\ce{H+}]+K'}\\fallingdotseq0.998$ とほぼ全部なので，結合している L は $2\\times0.050\\times0.998=0.0998\\,\\mathrm{mol/L}$．\nL の全濃度は $0.129+0.100=0.229\\,\\mathrm{mol/L}$ 以上，$20.0\\,\\mathrm{mL}$ 中の物質量は $0.229\\times0.0200=\\boldsymbol{4.6\\times10^{-3}\\,\\mathrm{mol}}$（約 $0.83\\,\\mathrm{g}$）．\n結合に使われる L（ホウ素の 2 倍）を見落とすと $2.6\\times10^{-3}\\,\\mathrm{mol}$ となり，必要量の半分あまりしか加えないことになる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ホウ酸は OH⁻ を受け取るルイス酸で K_a が非常に小さいが，ポリオール L が [B(OH)₄]⁻ を BL₂⁻ として取り込むと，陰イオン全体についての見かけの電離定数は K_a(1+β[L]²) に増え，中和滴定で定量できるようになる．必要な L の量は，終点の pH で陰イオンの割合を満たす遊離の L に，ホウ素の 2 倍の結合した L を加えて求める．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "ph",
+  "acid-base"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ホウ酸",
+  "ルイス酸",
+  "錯形成",
+  "見かけの電離定数",
+  "中和滴定",
+  "マンニトール"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

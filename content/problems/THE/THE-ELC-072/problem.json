@@ -1,0 +1,102 @@
+{
+ "id": "THE-ELC-072",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-07",
+ "topic": "完全析出に要する電気量（物質量×価数）による溶液の判別と直列電解槽の析出量",
+ "course": "化学",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水溶液 X，Y は，$0.150\\,\\mathrm{mol/L}$ の硫酸銅(II) 水溶液と $0.200\\,\\mathrm{mol/L}$ の硝酸銀水溶液のどちらかである．電極にはすべて白金を用いる．原子量は $\\ce{Cu}=64$，$\\ce{Ag}=108$，ファラデー定数は $F=9.65\\times10^{4}\\,\\mathrm{C/mol}$ とする．\n\n実験 1：X，Y をそれぞれ $100\\,\\mathrm{mL}$ ずつ別の電解槽に入れ，それぞれの水溶液中の金属イオンをすべて陰極に析出させた．このとき必要な電気量は，X の方が Y より多かった．\n\n実験 2：X $100\\,\\mathrm{mL}$ を入れた電解槽と，Y $100\\,\\mathrm{mL}$ を入れた電解槽を直列につなぎ，$1.50\\,\\mathrm{A}$ の電流で $965$ 秒間電気分解した．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "X，Y はそれぞれどちらの水溶液か．実験 1 で X，Y の金属イオンをすべて析出させるのに必要な電子の物質量を示して答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "実験 2 で，2 つの陰極で増加した質量の合計は何 g か．有効数字 3 桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "X と Y の体積を変えて，それぞれの金属イオンをすべて析出させるのに必要な電気量を等しくしたい．X と Y の体積の比 $V_{\\mathrm X}:V_{\\mathrm Y}$ を最も簡単な整数比で答えよ．また，このとき析出する銅と銀の質量の比を最も簡単な整数比で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "X：硫酸銅(II) 水溶液（$3.00\\times10^{-2}\\,\\mathrm{mol}$），Y：硝酸銀水溶液（$2.00\\times10^{-2}\\,\\mathrm{mol}$）"
+   },
+   {
+    "id": "2",
+    "tex": "$2.10\\,\\mathrm{g}$"
+   },
+   {
+    "id": "3",
+    "tex": "$V_{\\mathrm X}:V_{\\mathrm Y}=2:3$，銅：銀 $=8:27$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 陰極の反応は $\\ce{Cu^2+ + 2e- -> Cu}$，$\\ce{Ag+ + e- -> Ag}$ で，金属イオン 1 mol の析出に必要な電子は価数と同じ mol である．$100\\,\\mathrm{mL}$ 中には $\\ce{Cu^2+}$ $0.0150\\,\\mathrm{mol}$，$\\ce{Ag+}$ $0.0200\\,\\mathrm{mol}$ があるので，必要な電子は\n\\[ \\ce{Cu^2+}:\\ 0.0150\\times2 = 3.00\\times10^{-2}\\,\\mathrm{mol},\\qquad \\ce{Ag+}:\\ 0.0200\\times1 = 2.00\\times10^{-2}\\,\\mathrm{mol} \\]\nイオンの物質量は $\\ce{Ag+}$ の方が多いが，価数のため電気量は硫酸銅(II) 水溶液の方が多い．よって \\textbf{X が硫酸銅(II) 水溶液，Y が硝酸銀水溶液}．\\par\n\\textbf{(2)} 流れた電子は $\\dfrac{1.50\\times965}{9.65\\times10^{4}} = 1.50\\times10^{-2}\\,\\mathrm{mol}$．直列なので両方の電解槽に同じ電気量が流れる．X では $\\ce{Cu}$ $7.50\\times10^{-3}\\,\\mathrm{mol}$（$0.480\\,\\mathrm{g}$），Y では $\\ce{Ag}$ $1.50\\times10^{-2}\\,\\mathrm{mol}$（$1.62\\,\\mathrm{g}$）が析出し，どちらも (1) の量に達していないので金属イオンは残っている．合計 $\\boldsymbol{2.10\\,\\mathrm{g}}$．\\par\n\\textbf{(3)} 1 L あたりに必要な電子は，X が $0.150\\times2=0.300\\,\\mathrm{mol}$，Y が $0.200\\times1=0.200\\,\\mathrm{mol}$．$0.300V_{\\mathrm X}=0.200V_{\\mathrm Y}$ より $\\boldsymbol{V_{\\mathrm X}:V_{\\mathrm Y}=2:3}$．このとき両方に同じ物質量 $n$ の電子が流れるので，銅は $\\dfrac{n}{2}\\times64=32n$，銀は $108n$ となり，$\\boldsymbol{\\text{銅}:\\text{銀}=8:27}$．同じ電気量で析出する質量は「モル質量÷価数」に比例する．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "金属イオンをすべて析出させるのに必要な電気量は「イオンの物質量×価数」なので，イオンの物質量の大小と電気量の大小は一致しないことがあり，それで溶液を判別でき，必要な電気量がそろう体積比も決まる．直列の電解槽には同じ電気量が流れ，析出する質量は「モル質量÷価数」に比例する．"
+ },
+ "concepts": [
+  "electrolysis",
+  "transition-metals",
+  "oxygen-sulfur"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電気分解",
+  "ファラデーの法則",
+  "直列",
+  "硫酸銅(II)",
+  "硝酸銀",
+  "価数"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

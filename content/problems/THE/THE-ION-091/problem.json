@@ -1,0 +1,109 @@
+{
+ "id": "THE-ION-091",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "1価の弱酸の電離度と電気泳動による分離",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "1価の弱酸 $\\ce{HP}$（電離定数 $K_{\\mathrm{P}}=1.0\\times10^{-4}\\,\\mathrm{mol/L}$）と $\\ce{HQ}$（電離定数 $K_{\\mathrm{Q}}=1.0\\times10^{-6}\\,\\mathrm{mol/L}$）を，さまざまな pH の緩衝液中で電気泳動する．試料の帯は，酸が完全に陰イオン（$\\ce{P-}$ または $\\ce{Q-}$）になっているときに速さ $v_0$ で動き，電離していない分子は動かない．酸と陰イオンが共存するときは常に電離平衡が保たれ，帯の速さは陰イオンの存在比率（電離度）$\\alpha$ に比例して $v=\\alpha v_0$ になるものとする（温度は一定）．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "水素イオン濃度を $[\\ce{H+}]$ として，$\\ce{HP}$ の電離度 $\\alpha_{\\mathrm{P}}$ を $K_{\\mathrm{P}}$ と $[\\ce{H+}]$ で表せ．また，$\\ce{HP}$ の帯が速さ $\\dfrac{1}{2}v_0$ で動く pH を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "pH 5.0 の緩衝液中で，$\\ce{HP}$ と $\\ce{HQ}$ の帯の速さはそれぞれ $v_0$ の何倍か．有効数字2桁で答えよ．また，帯は陽極・陰極のどちらへ向かって動くか．"
+     },
+     {
+      "id": "3",
+      "tex": "pH 3.0，5.0，7.0，9.0 の緩衝液のうち，$\\ce{HP}$ と $\\ce{HQ}$ の帯の速さの差が最も大きくなるものを選べ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の結果は，2つの酸の $\\mathrm{p}K_a$ とどのような関係にあるか．次の (ア)〜(ウ) から1つ選べ．\\\\\n(ア) 小さいほうの $\\mathrm{p}K_a$ に等しい pH　(イ) 2つの $\\mathrm{p}K_a$ の平均に等しい pH　(ウ) 大きいほうの $\\mathrm{p}K_a$ に等しい pH"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\alpha_{\\mathrm{P}}=\\dfrac{K_{\\mathrm{P}}}{K_{\\mathrm{P}}+[\\ce{H+}]}$，pH $4.0$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{HP}$：$0.91$ 倍，$\\ce{HQ}$：$0.091$ 倍，どちらも陽極へ動く"
+   },
+   {
+    "id": "3",
+    "tex": "pH 5.0"
+   },
+   {
+    "id": "4",
+    "tex": "(イ)"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\ce{HP <=> H+ + P-}$ で $K_{\\mathrm{P}}=\\dfrac{[\\ce{H+}][\\ce{P-}]}{[\\ce{HP}]}$ だから\n\\[\\alpha_{\\mathrm{P}}=\\frac{[\\ce{P-}]}{[\\ce{HP}]+[\\ce{P-}]}=\\frac{K_{\\mathrm{P}}}{K_{\\mathrm{P}}+[\\ce{H+}]}\\]\n$\\alpha_{\\mathrm{P}}=\\dfrac12$ となるのは $[\\ce{H+}]=K_{\\mathrm{P}}=1.0\\times10^{-4}\\,\\mathrm{mol/L}$，すなわち $\\boldsymbol{\\mathrm{pH}=4.0}$（$=\\mathrm{p}K_{\\mathrm{P}}$）のときである．\n\n\\textbf{(2)} $[\\ce{H+}]=1.0\\times10^{-5}\\,\\mathrm{mol/L}$ なので\n\\[\\alpha_{\\mathrm{P}}=\\frac{1.0\\times10^{-4}}{1.0\\times10^{-4}+1.0\\times10^{-5}}=\\frac{10}{11}\\fallingdotseq\\boldsymbol{0.91},\\qquad \\alpha_{\\mathrm{Q}}=\\frac{1.0\\times10^{-6}}{1.0\\times10^{-6}+1.0\\times10^{-5}}=\\frac{1}{11}\\fallingdotseq\\boldsymbol{0.091}\\]\n帯は陰イオンとして負に帯電しているので，$\\boldsymbol{\\text{陽極}}$へ動く．\n\n\\textbf{(3)} 速さの差 $(\\alpha_{\\mathrm{P}}-\\alpha_{\\mathrm{Q}})v_0$ を求めると\n\\[\\begin{array}{c|cccc}\\mathrm{pH}&3.0&5.0&7.0&9.0\\\\\\hline \\alpha_{\\mathrm{P}}&0.091&0.91&0.999&1.00\\\\ \\alpha_{\\mathrm{Q}}&0.0010&0.091&0.91&0.999\\\\ \\alpha_{\\mathrm{P}}-\\alpha_{\\mathrm{Q}}&0.090&0.82&0.090&0.0010\\end{array}\\]\nよって $\\boldsymbol{\\mathrm{pH}\\ 5.0}$ が最もよい．酸性すぎると両方ともほとんど電離せず（どちらも動かない），塩基性すぎると両方ともほぼ完全に電離する（どちらも $v_0$ で動く）ので，どちらの極端でも分離できない．\n\n\\textbf{(4)} $[\\ce{H+}]=h$ とおくと $\\alpha_{\\mathrm{P}}-\\alpha_{\\mathrm{Q}}=\\dfrac{K_{\\mathrm{P}}}{K_{\\mathrm{P}}+h}-\\dfrac{K_{\\mathrm{Q}}}{K_{\\mathrm{Q}}+h}=\\dfrac{(K_{\\mathrm{P}}-K_{\\mathrm{Q}})h}{(K_{\\mathrm{P}}+h)(K_{\\mathrm{Q}}+h)}$．これを $h$ で割った形 $\\dfrac{K_{\\mathrm{P}}-K_{\\mathrm{Q}}}{h+K_{\\mathrm{P}}K_{\\mathrm{Q}}/h+K_{\\mathrm{P}}+K_{\\mathrm{Q}}}$ の分母は $h=\\sqrt{K_{\\mathrm{P}}K_{\\mathrm{Q}}}$ で最小になる（相加・相乗平均）．したがって差が最大になるのは $\\mathrm{pH}=\\dfrac{\\mathrm{p}K_{\\mathrm{P}}+\\mathrm{p}K_{\\mathrm{Q}}}{2}=\\dfrac{4.0+6.0}{2}=5.0$ で，答えは $\\boldsymbol{\\text{(イ)}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "弱酸の帯の泳動速度は電離度 Ka/(Ka+[H+]) に比例するので，2つの弱酸の速さの差は pH の関数となり，両方の pKa の平均の pH で最大になる．強酸性・強塩基性ではどちらも同じ速さ（0 または最大）になり分離できない．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "organic-test",
+  "ph"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電離度",
+  "電気泳動",
+  "弱酸",
+  "緩衝液",
+  "分離"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

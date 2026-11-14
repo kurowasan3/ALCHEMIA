@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 290" width="560" height="290">
+<g fill="none" stroke="currentColor" stroke-width="1.6">
+<path d="M40 70 V250 H520 V70"/>
+<line x1="40" y1="95" x2="520" y2="95" stroke-dasharray="4 3" opacity="0.5"/>
+<rect x="133" y="62" width="6" height="188"/>
+<rect x="229" y="62" width="6" height="188"/>
+<rect x="325" y="62" width="6" height="188"/>
+<rect x="421" y="62" width="6" height="188"/>
+<rect x="78" y="80" width="22" height="130"/><rect x="460" y="80" width="22" height="130"/>
+<path d="M89 80 V30 H268 M292 30 H471 V80"/>
+<line x1="270" y1="14" x2="270" y2="46"/><line x1="284" y1="22" x2="284" y2="38" stroke-width="4"/>
+</g>
+<g fill="currentColor" font-family="Noto Sans CJK JP, sans-serif" font-size="15" text-anchor="middle">
+<text x="136" y="56">X</text>
+<text x="232" y="56">Y</text>
+<text x="328" y="56">X</text>
+<text x="424" y="56">Y</text>
+<text x="88" y="272">A 室</text>
+<text x="184" y="272">B 室</text>
+<text x="280" y="272">C 室</text>
+<text x="376" y="272">D 室</text>
+<text x="472" y="272">E 室</text>
+<text x="256" y="22" font-size="14">+</text><text x="298" y="22" font-size="14">−</text>
+<text x="89" y="232" font-size="13">炭素</text>
+<text x="471" y="232" font-size="13">鉄</text>
+
+</g>
+<g fill="currentColor" font-family="Noto Sans CJK JP, sans-serif" font-size="12" text-anchor="start">
+<text x="104" y="76">陽極</text><text x="486" y="76">陰極</text>
+</g></svg>

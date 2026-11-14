@@ -1,0 +1,108 @@
+{
+ "id": "POL-FIB-010",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-02",
+ "topic": "界面重合（ナイロン610）の操作の意味と理論収量",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "セバシン酸ジクロリド $\\ce{ClCO(CH2)8COCl}$（分子量 239）$2.39\\,\\mathrm g$ をジクロロメタン（密度 $1.33\\,\\mathrm{g/cm^3}$，水に溶けない）$20\\,\\mathrm{mL}$ に溶かした溶液と，ヘキサメチレンジアミン $\\ce{H2N(CH2)6NH2}$（分子量 116）$0.870\\,\\mathrm g$ と水酸化ナトリウム $0.80\\,\\mathrm g$ を水 $50\\,\\mathrm{mL}$ に溶かした溶液を用意した．2 つの溶液を静かに重ねると，境界面にナイロン610 の膜ができ，これをピンセットで引き上げると糸が得られた．繰り返し単位 $\\ce{-[CO(CH2)8CO-NH(CH2)6NH]-}$ の式量は 282，NaOH の式量は 40 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ナイロン610 ができる反応を，重合度 $n$ を用いた化学反応式で書け．"
+     },
+     {
+      "id": "2",
+      "tex": "2 つの溶液はどのように重ねればよいか．「先にビーカーに入れる溶液」を答え，理由を述べよ．"
+     },
+     {
+      "id": "3",
+      "tex": "水酸化ナトリウムを加えないと，ナイロン610 の生成量はどうなるか．理由とともに答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "反応が完全に進むとすると，ナイロン610 は理論上何 g 得られるか．有効数字 3 桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$n\\,\\ce{ClCO(CH2)8COCl} + n\\,\\ce{H2N(CH2)6NH2} \\ce{->} \\ce{-[CO(CH2)8CO-NH(CH2)6NH]-}_n + 2n\\,\\ce{HCl}$"
+   },
+   {
+    "id": "2",
+    "tex": "先にセバシン酸ジクロリドのジクロロメタン溶液を入れ，その上に水溶液を静かに注ぐ．ジクロロメタンは水より密度が大きく下の層になるから．"
+   },
+   {
+    "id": "3",
+    "tex": "少なくなる．生じた HCl がアミノ基と反応して $\\ce{-NH3+}$ の塩になり，酸塩化物と反応できなくなるから（NaOH は HCl を中和してこれを防ぐ）．"
+   },
+   {
+    "id": "4",
+    "tex": "$2.12\\,\\mathrm g$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 酸塩化物の $\\ce{-COCl}$ とアミノ基 $\\ce{-NH2}$ から HCl が取れてアミド結合ができる（繰り返し単位 1 つあたり HCl 2 分子）：\n\\[ \\ce{C10H16Cl2O2 + C6H16N2 -> C16H30N2O2 + 2HCl} \\]\nを $n$ 回くり返したもので，$n\\,\\ce{ClCO(CH2)8COCl} + n\\,\\ce{H2N(CH2)6NH2} \\ce{->} \\ce{-[CO(CH2)8CO-NH(CH2)6NH]-}_n + 2n\\,\\ce{HCl}$．\\\\\n\\textbf{(2)} 2 層は混ざらず，密度の大きいジクロロメタン層（$1.33\\,\\mathrm{g/cm^3}$）が下になる．したがって $\\boldsymbol{\\text{ジクロロメタン溶液を先に入れ}}$，その上に水溶液を静かに注ぐ（ヘキサンなど水より軽い溶媒なら逆の順になる）．\\\\\n\\textbf{(3)} 反応で生じる HCl は，残っているヘキサメチレンジアミンのアミノ基と反応して $\\ce{-NH3+}$ にしてしまう．$\\ce{-NH3+}$ は非共有電子対をもたず酸塩化物と反応しないので，重合が途中で止まり，生成量は $\\boldsymbol{\\text{少なくなる}}$．NaOH は HCl を中和してアミノ基を守る．\\\\\n\\textbf{(4)} セバシン酸ジクロリド $\\dfrac{2.39}{239} = 1.00\\times10^{-2}\\,\\mathrm{mol}$，ジアミン $\\dfrac{0.870}{116} = 7.50\\times10^{-3}\\,\\mathrm{mol}$．1 : 1 で反応するのでジアミンがすべて使われ，繰り返し単位は $7.50\\times10^{-3}\\,\\mathrm{mol}$．$282\\times7.50\\times10^{-3} = 2.115 \\fallingdotseq \\boldsymbol{2.12\\,\\mathrm g}$．このとき生じる HCl は $1.50\\times10^{-2}\\,\\mathrm{mol}$ で，NaOH $\\dfrac{0.80}{40} = 2.0\\times10^{-2}\\,\\mathrm{mol}$ で十分に中和できる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "界面重合では，溶媒の密度で層の上下（先に入れる溶液）が決まり，生じる HCl を塩基で中和しないとアミンが塩になって反応できなくなる．2 つの単量体のうち少ない方で生成量が決まる．"
+ },
+ "concepts": [
+  "condensation-polymer",
+  "acid-base"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "界面重合",
+  "ナイロン610",
+  "酸塩化物",
+  "密度",
+  "理論収量"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

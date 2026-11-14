@@ -1,0 +1,110 @@
+{
+ "id": "ORG-STR-011",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-01",
+ "topic": "元素分析とヨードホルム反応によるヒドロキシ酸とそのアミドの構造決定",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "structure"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "化合物 A（分子量 161）は分子内にアミド結合を 1 個もつ．A のアミド結合を加水分解すると，ヒドロキシ酸 B とグリシン $\\ce{H2NCH2COOH}$ が生じた．\\\\\nB は炭素・水素・酸素からなり，カルボキシ基とヒドロキシ基を 1 個ずつもつ鎖状の化合物で，分子量は 104 である．B $26.0\\,\\mathrm{mg}$ を完全燃焼させると，二酸化炭素 $44.0\\,\\mathrm{mg}$ と水 $18.0\\,\\mathrm{mg}$ が生じた．B は不斉炭素原子を 1 個もち，ヨードホルム反応を示した．原子量は H = 1.0，C = 12，N = 14，O = 16 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "B の分子式を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "B の構造を示性式で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "A の構造を示性式で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "B の構造異性体のうち，カルボキシ基とヒドロキシ基を 1 個ずつもち，不斉炭素原子をもつが，ヨードホルム反応を示さないものをすべて示性式で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{C4H8O3}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{CH3CH(OH)CH2COOH}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{CH3CH(OH)CH2CONHCH2COOH}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{CH3CH2CH(OH)COOH}$，$\\ce{HOCH2CH(CH3)COOH}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} C：$44.0\\times\\dfrac{12}{44} = 12.0\\,\\mathrm{mg}$，H：$18.0\\times\\dfrac{2.0}{18} = 2.0\\,\\mathrm{mg}$，O：$26.0 - 12.0 - 2.0 = 12.0\\,\\mathrm{mg}$．\\\\\n物質量の比は $\\mathrm{C : H : O} = \\dfrac{12.0}{12} : \\dfrac{2.0}{1.0} : \\dfrac{12.0}{16} = 1 : 2 : 0.75 = 4 : 8 : 3$．組成式 $\\ce{C4H8O3}$（式量 104）が分子量に等しいので，分子式は $\\boldsymbol{\\ce{C4H8O3}}$．\\\\\n\\textbf{(2)} $\\ce{C4H8O3}$ で $\\ce{-COOH}$ と $\\ce{-OH}$ を 1 個ずつもつ鎖状化合物は次の 5 種類．\\\\\n$\\ce{CH3CH2CH(OH)COOH}$（不斉あり），$\\ce{CH3CH(OH)CH2COOH}$（不斉あり），$\\ce{HOCH2CH2CH2COOH}$，$\\ce{(CH3)2C(OH)COOH}$，$\\ce{HOCH2CH(CH3)COOH}$（不斉あり）．\\\\\nヨードホルム反応には $\\ce{CH3CH(OH)-}$ の構造が必要で，これをもつのは $\\boldsymbol{\\ce{CH3CH(OH)CH2COOH}}$（3-ヒドロキシブタン酸）だけ．\\\\\n\\textbf{(3)} A は B のカルボキシ基とグリシンのアミノ基がアミド結合したもの：\n\\[ \\ce{C4H8O3 + C2H5NO2 -> C6H11NO4 + H2O} \\]\n分子量は $104 + 75 - 18 = 161$ で一致する．A は $\\boldsymbol{\\ce{CH3CH(OH)CH2CONHCH2COOH}}$．\\\\\n\\textbf{(4)} (2) の 5 種類のうち，不斉炭素原子をもち $\\ce{CH3CH(OH)-}$ をもたないもの：$\\boldsymbol{\\ce{CH3CH2CH(OH)COOH}}$ と $\\boldsymbol{\\ce{HOCH2CH(CH3)COOH}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "燃焼生成物の質量から組成式・分子式を決め，官能基の条件で異性体を列挙したうえで，不斉炭素原子の有無とヨードホルム反応（CH₃CH(OH)− 構造）で 1 つに絞る．加水分解生成物からアミド結合のつながり方を決める．"
+ },
+ "concepts": [
+  "organic-structure",
+  "elemental-analysis",
+  "organic-test"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "元素分析",
+  "ヒドロキシ酸",
+  "ヨードホルム反応",
+  "不斉炭素原子",
+  "アミド結合",
+  "構造決定"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

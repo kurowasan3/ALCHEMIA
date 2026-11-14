@@ -1,0 +1,124 @@
+{
+ "id": "THE-ELC-024",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-07",
+ "topic": "隔膜を通るイオンの移動と各室の濃度変化",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "$1.00\\,\\mathrm{mol/L}$ の塩酸を，隔膜で陰極室と陽極室（各 $500\\,\\mathrm{mL}$）に分けた電解槽に入れ，白金電極を用いて $9.65\\times10^{3}\\,\\mathrm{C}$ の電気量を流して電気分解した．隔膜は $\\ce{H+}$ も $\\ce{Cl-}$ も通すが，両室の溶液は混ざらないものとする．溶液中の電流は，$\\ce{H+}$ が陽極室から陰極室へ移動することと，$\\ce{Cl-}$ が陰極室から陽極室へ移動することによって運ばれる．$F=9.65\\times10^{4}\\,\\mathrm{C/mol}$ とし，発生した気体は溶けず，溶液の体積は変化しないものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "流れた電子の物質量は何 mol か．有効数字3桁で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "仮に，溶液中の電流がすべて $\\ce{H+}$ の移動だけで運ばれたとすると，陰極室の $\\ce{HCl}$ の物質量は電気分解の前後でどうなるか．「増加」「減少」「変化なし」で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "電気分解後，陰極室の溶液 $25.0\\,\\mathrm{mL}$ をとり，$1.00\\,\\mathrm{mol/L}$ の水酸化ナトリウム水溶液で中和滴定すると $24.1\\,\\mathrm{mL}$ を要した．陰極室の $\\ce{HCl}$ は何 mol 減少したか．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "陽極室から陰極室へ移動した $\\ce{H+}$ は何 mol か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "水溶液中での $\\ce{H+}$ と $\\ce{Cl-}$ の移動速度の比を，$\\ce{Cl-}$ を 1 として有効数字2桁で答えよ．"
+     },
+     {
+      "id": "6",
+      "tex": "電気分解後の陽極室の $\\ce{HCl}$ のモル濃度は何 mol/L か．有効数字2桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$1.00\\times10^{-1}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "2",
+    "tex": "変化なし"
+   },
+   {
+    "id": "3",
+    "tex": "$1.8\\times10^{-2}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "4",
+    "tex": "$8.2\\times10^{-2}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "5",
+    "tex": "$4.6:1$"
+   },
+   {
+    "id": "6",
+    "tex": "$0.84\\,\\mathrm{mol/L}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $9.65\\times10^3/9.65\\times10^4=\\boldsymbol{1.00\\times10^{-1}\\,\\mathrm{mol}}$．\n\n電流のうち $\\ce{H+}$ が運ぶ割合を $t$ とすると，電子 $0.100\\,\\mathrm{mol}$ について\n陰極室：$\\ce{2H+ + 2e- -> H2}$ で $\\ce{H+}$ が $0.100$ 減り，$\\ce{H+}$ が $0.100t$ 入り，$\\ce{Cl-}$ が $0.100(1-t)$ 出る．\n陽極室：$\\ce{2Cl- -> Cl2 + 2e-}$ で $\\ce{Cl-}$ が $0.100$ 減り，$\\ce{Cl-}$ が $0.100(1-t)$ 入り，$\\ce{H+}$ が $0.100t$ 出る．\nよって陰極室の HCl は $0.100(1-t)$，陽極室の HCl は $0.100t$ 減少する．\n\n\\textbf{(2)} $t=1$ なら陰極室で消費された $\\ce{H+}$ と同じ量が入ってくるので\\textbf{変化なし}（陽極室だけが $0.100\\,\\mathrm{mol}$ 減る）．\n\n\\textbf{(3)} 電解後の陰極室：$1.00\\times24.1/25.0=0.964\\,\\mathrm{mol/L}$，HCl は $0.482\\,\\mathrm{mol}$．電解前は $0.500\\,\\mathrm{mol}$ なので $\\boldsymbol{1.8\\times10^{-2}\\,\\mathrm{mol}}$ 減少．\n\n\\textbf{(4)} $0.100(1-t)=0.018$ より $t=0.82$．$\\ce{H+}$ は $0.100\\times0.82=\\boldsymbol{8.2\\times10^{-2}\\,\\mathrm{mol}}$．\n\n\\textbf{(5)} 同じ濃度の $\\ce{H+}$ と $\\ce{Cl-}$ が運ぶ電気量の比は移動速度の比に等しい．$0.082:0.018=\\boldsymbol{4.6:1}$．\n\n\\textbf{(6)} 陽極室の HCl は $0.500-0.082=0.418\\,\\mathrm{mol}$，$0.418/0.500=0.836\\approx\\boldsymbol{0.84\\,\\mathrm{mol/L}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "隔膜を通るイオンの移動を含めて各電極室の物質収支をとると，電極反応による消費と陽イオン・陰イオンの移動量の差が濃度変化になる．測定した濃度変化から，イオンが運ぶ電流の割合（移動速度の比）を逆算する．"
+ },
+ "concepts": [
+  "electrolysis",
+  "concentration",
+  "acid-base"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電気分解",
+  "イオンの移動",
+  "物質収支",
+  "中和滴定"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

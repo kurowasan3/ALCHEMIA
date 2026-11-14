@@ -1,0 +1,109 @@
+{
+ "id": "THE-BND-037",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-03",
+ "topic": "結合エネルギーから求める電気陰性度の差（ポーリングの方法）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "異なる原子 A，B の間の結合 A–B の結合エネルギー $D_{\\mathrm{A-B}}$ は，A–A と B–B の結合エネルギーの平均より大きくなることが多い．その超過分\n\\[ \\Delta=D_{\\mathrm{A-B}}-\\frac{D_{\\mathrm{A-A}}+D_{\\mathrm{B-B}}}{2} \\]\nは，A と B の電荷のかたより（イオン結合性）によって結合が強くなった分と考えられる．ポーリングは，$\\Delta$ [kJ/mol] から A と B の電気陰性度の差を\n\\[ |\\chi_{\\mathrm A}-\\chi_{\\mathrm B}|=0.102\\sqrt{\\Delta} \\]\nで求めた．結合エネルギー [kJ/mol] は次のとおりとする．\n\\[\n\\begin{array}{ccccccc}\n\\text{H–H} & \\text{F–F} & \\text{Cl–Cl} & \\text{Br–Br} & \\text{H–F} & \\text{H–Cl} & \\text{Cl–F} \\\\ \\hline\n436 & 155 & 243 & 194 & 567 & 432 & 252\n\\end{array}\n\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "H–F，H–Cl，Cl–F の各結合について $\\Delta$ を求め，電気陰性度の差を小数第 2 位まで求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) で求めた 3 つの差は，H，F，Cl をある順に並べたときに矛盾なく成り立つ．差の大きさの関係からその並び順を決め，さらに「H–F 結合では H 原子が正に帯電している」ことを用いて，H，F，Cl を電気陰性度の大きい順に並べよ．"
+     },
+     {
+      "id": "3",
+      "tex": "臭素 Br と水素 H の電気陰性度の差は 0.76 である．この式を逆に用いて，H–Br の結合エネルギーを有効数字 3 桁で予想せよ．"
+     },
+     {
+      "id": "4",
+      "tex": "H–F，H–Cl，Cl–F の 3 つの結合を，結合の極性が大きい順に並べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "H–F：$\\Delta=271.5\\,\\mathrm{kJ/mol}$，差 1.68　H–Cl：$\\Delta=92.5\\,\\mathrm{kJ/mol}$，差 0.98　Cl–F：$\\Delta=53\\,\\mathrm{kJ/mol}$，差 0.74"
+   },
+   {
+    "id": "2",
+    "tex": "Cl が H と F の間にある（$0.74+0.98=1.72\\fallingdotseq1.68$）．H が正に帯電するので F の方が H より大きく，F ＞ Cl ＞ H．"
+   },
+   {
+    "id": "3",
+    "tex": "$371\\,\\mathrm{kJ/mol}$"
+   },
+   {
+    "id": "4",
+    "tex": "H–F ＞ H–Cl ＞ Cl–F"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) $\\Delta$ と電気陰性度の差}\n\\[ \\text{H–F}：\\Delta=567-\\frac{436+155}{2}=567-295.5=271.5,\\quad 0.102\\sqrt{271.5}=0.102\\times16.48=\\boldsymbol{1.68} \\]\n\\[ \\text{H–Cl}：\\Delta=432-\\frac{436+243}{2}=432-339.5=92.5,\\quad 0.102\\sqrt{92.5}=0.102\\times9.62=\\boldsymbol{0.98} \\]\n\\[ \\text{Cl–F}：\\Delta=252-\\frac{243+155}{2}=252-199=53,\\quad 0.102\\sqrt{53}=0.102\\times7.28=\\boldsymbol{0.74} \\]\n\n\\textbf{(2) 並び順の決定}\n3 つの数を一直線上に並べると，最も大きい差（H と F の 1.68）は両端の 2 つの間の差で，残りの 2 つの差の和にほぼ等しくなるはずである．\n・Cl が中央：$0.74+0.98=1.72$ ≒ 1.68 → 成り立つ．\n・F が中央：H–Cl の差 0.98 が $1.68+0.74=2.42$ に等しいはず → 成り立たない．\n・H が中央：Cl–F の差 0.74 が $1.68+0.98=2.66$ に等しいはず → 成り立たない．\nよって並びは H – Cl – F（または逆）．差の大きさだけでは向きが決まらないが，H–F 結合で H が正（F が負）に帯電するので F の方が電子を引きつける．よって $\\boldsymbol{\\text{F ＞ Cl ＞ H}}$．（実際の値は F 3.98，Cl 3.16，H 2.20．）\n\n\\textbf{(3) 結合エネルギーの予想}\n$0.76=0.102\\sqrt{\\Delta}$ より $\\Delta=\\left(\\dfrac{0.76}{0.102}\\right)^2=55.5$．\n\\[ D_{\\mathrm{H-Br}}=\\frac{436+194}{2}+55.5=315+55.5=370.5\\fallingdotseq\\boldsymbol{371\\,\\mathrm{kJ/mol}} \\]\n（実測値は約 $366\\,\\mathrm{kJ/mol}$ で，よく合う．）\n\n\\textbf{(4) 結合の極性}\n結合の極性は電気陰性度の差が大きいほど大きい．差は H–F 1.68 ＞ H–Cl 0.98 ＞ Cl–F 0.74 なので，$\\boldsymbol{\\text{H–F ＞ H–Cl ＞ Cl–F}}$．\nハロゲンどうしの Cl–F 結合にも，H–Cl の 4 分の 3 ほどの極性があることに注意する．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "異核結合の結合エネルギーが等核結合の平均を上回る分 Δ をイオン結合性の寄与とみなし，その平方根から電気陰性度の差を求める．3 組の差が一直線上の並びとして矛盾なく成り立つ順序を探して相対的な並びを決め，逆に電気陰性度の差から未知の結合エネルギーを予想する．"
+ },
+ "concepts": [
+  "chemical-bond",
+  "halogen",
+  "nitrogen-phosphorus"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電気陰性度",
+  "結合エネルギー",
+  "極性",
+  "ポーリング",
+  "ハロゲン化水素"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

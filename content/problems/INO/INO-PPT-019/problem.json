@@ -1,0 +1,109 @@
+{
+ "id": "INO-PPT-019",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-08",
+ "topic": "フォルハルト法による逆滴定とハロゲン化物の同定",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ハロゲン化カリウム KX（X は Cl，Br，I のいずれか）の結晶 $1.19\\,\\mathrm g$ を水に溶かして $100\\,\\mathrm{mL}$ とした．この水溶液 $20.0\\,\\mathrm{mL}$ に希硝酸を加えて酸性にし，$0.100\\,\\mathrm{mol/L}$ 硝酸銀水溶液 $30.0\\,\\mathrm{mL}$ を加えると，淡黄色の沈殿が生じた．沈殿を含むこの溶液に硫酸鉄(III)アンモニウムを少量加え，$0.0500\\,\\mathrm{mol/L}$ チオシアン酸カリウム水溶液で滴定すると，$20.0\\,\\mathrm{mL}$ 加えたところで溶液がかすかに赤色を帯びたので終点とした．原子量は Cl = 35.5，K = 39，Br = 80，I = 127 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "KX 水溶液のモル濃度を有効数字3桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "X は何か．元素記号で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "終点で赤色が現れる理由を，反応するイオンに注目して説明せよ．"
+     },
+     {
+      "id": "4",
+      "tex": "希硝酸の代わりに希塩酸で酸性にして同じ操作を行うと，(1) で求めた濃度は真の値より大きくなるか，小さくなるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$0.100\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "2",
+    "tex": "Br"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{Ag+}$ がすべて $\\ce{AgSCN}$ として沈殿したあと，余った $\\ce{SCN-}$ が $\\ce{Fe^3+}$ と錯イオン $\\ce{[Fe(SCN)]^2+}$ をつくり赤色を示すから"
+   },
+   {
+    "id": "4",
+    "tex": "大きくなる"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 加えた $\\ce{Ag+}$ は，$\\ce{\\text{X}-}$ との沈殿と，$\\ce{SCN-}$ との沈殿に分かれた．\n\\[ \\ce{Ag+ + \\text{X}- -> AgX},\\qquad \\ce{Ag+ + SCN- -> AgSCN} \\]\n\\[ n(\\ce{Ag+})=0.100\\times\\dfrac{30.0}{1000}=3.00\\times10^{-3}\\,\\mathrm{mol},\\qquad n(\\ce{SCN-})=0.0500\\times\\dfrac{20.0}{1000}=1.00\\times10^{-3}\\,\\mathrm{mol} \\]\n\\[ n(\\ce{\\text{X}-})=3.00\\times10^{-3}-1.00\\times10^{-3}=2.00\\times10^{-3}\\,\\mathrm{mol},\\qquad \\dfrac{2.00\\times10^{-3}}{0.0200}=\\boldsymbol{0.100\\,\\mathrm{mol/L}} \\]\n\n\\textbf{(2)} $100\\,\\mathrm{mL}$ 中の KX は $1.00\\times10^{-2}\\,\\mathrm{mol}$ なので，式量は $\\dfrac{1.19}{1.00\\times10^{-2}}=119$．$119-39=80$ より X は \\textbf{Br}（KBr）．淡黄色の沈殿（$\\ce{AgBr}$）とも合う．（KCl なら 74.5，KI なら 166．）\n\n\\textbf{(3)} $\\ce{SCN-}$ はまず $\\ce{Ag+}$ と白色の $\\ce{AgSCN}$ をつくる．$\\ce{Ag+}$ がなくなると，1滴分の過剰の $\\ce{SCN-}$ が $\\ce{Fe^3+ + SCN- -> [Fe(SCN)]^2+}$ のように反応し，赤色の錯イオンが生じる．$\\ce{Fe^3+}$ が加水分解して $\\ce{Fe(OH)3}$ にならないよう，溶液は酸性にしておく．\n\n\\textbf{(4)} 希塩酸の $\\ce{Cl-}$ も $\\ce{Ag+}$ と $\\ce{AgCl}$ をつくるので，残る $\\ce{Ag+}$ が減り，$\\ce{KSCN}$ の滴下量が少なくなる．計算では「加えた $\\ce{Ag+}$ − $\\ce{SCN-}$」をすべて $\\ce{\\text{X}-}$ とみなすので，求まる濃度は \\textbf{大きくなる}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "フォルハルト法では，過剰の Ag+ を加えて X- を沈殿させ，残った Ag+ を SCN- で逆滴定し，Fe3+ と SCN- の赤色錯イオンで終点を知る．X- = 加えた Ag+ − 消費した SCN- の関係から，濃度とともに式量からハロゲンを決められ，Ag+ を消費する別の陰イオンが混ざると結果が過大になる．"
+ },
+ "concepts": [
+  "precipitation",
+  "complex-ion",
+  "transition-metals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "沈殿滴定",
+  "フォルハルト法",
+  "逆滴定",
+  "チオシアン酸鉄",
+  "ハロゲン化銀"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,117 @@
+{
+ "id": "THE-BND-022",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-03",
+ "topic": "ダイヤモンド型結晶の結合距離と結合の比較",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ケイ素の結晶はダイヤモンドと同じ構造（ダイヤモンド型）をとる．単位格子は一辺 $a$ の立方体で，頂点と各面の中心に原子があり，さらに立方体を8等分した小立方体の中心に1つおきに原子がある．$\\ce{Si}=28.1$，アボガドロ定数 $6.0\\times10^{23}\\,/\\mathrm{mol}$，$\\sqrt3=1.73$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "単位格子中の原子の数と，1個の原子に最も近い原子の数（配位数）を答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "ケイ素の単位格子の一辺は $0.543\\,\\mathrm{nm}$ である．$\\ce{Si-Si}$ の結合距離は何 $\\mathrm{nm}$ か．有効数字3桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "ケイ素の結晶の密度は何 $\\mathrm{g/cm^3}$ か．$0.543^3=0.160$ として有効数字2桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "ダイヤモンドの単位格子の一辺は $0.357\\,\\mathrm{nm}$ である．$\\ce{C-C}$ の結合距離を有効数字3桁で求めよ．また，この値に最も近い炭素原子間の距離をもつものを次から選べ．\\\\\n（ア）エチレンの $\\ce{C=C}$　（イ）エタンの $\\ce{C-C}$　（ウ）ベンゼンの炭素間　（エ）黒鉛の層内の炭素間"
+     },
+     {
+      "id": "5",
+      "tex": "ダイヤモンドの融点がケイ素の融点より高い理由を，(2)と(4)の結果を用いて説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "8 個，配位数 4"
+   },
+   {
+    "id": "2",
+    "tex": "$0.235\\,\\mathrm{nm}$"
+   },
+   {
+    "id": "3",
+    "tex": "$2.3\\,\\mathrm{g/cm^3}$"
+   },
+   {
+    "id": "4",
+    "tex": "$0.154\\,\\mathrm{nm}$，（イ）"
+   },
+   {
+    "id": "5",
+    "tex": "$\\ce{C-C}$ 結合のほうが $\\ce{Si-Si}$ 結合より短く強いので，結晶を壊すのにより大きなエネルギーが必要だから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 頂点 $\\tfrac18\\times8$，面の中心 $\\tfrac12\\times6$，小立方体の中心 4 で，計 $\\boldsymbol{\\text{8}}$ 個．各原子は正四面体の頂点方向の $\\boldsymbol{\\text{4}}$ 個と共有結合する．\n\n(2) 小立方体（一辺 $\\tfrac a2$）の中心の原子と頂点の原子が結合しているので，結合距離は小立方体の対角線の半分．\n\\[\\frac12\\times\\sqrt3\\times\\frac a2=\\frac{\\sqrt3}{4}a=\\frac{1.73\\times0.543}{4}\\fallingdotseq\\boldsymbol{0.235\\,\\mathrm{nm}}\\]\n\n(3) \\[d=\\frac{8\\times28.1}{6.0\\times10^{23}\\times0.160\\times10^{-21}}\\fallingdotseq\\boldsymbol{2.3\\,\\mathrm{g/cm^3}}\\]\n\n(4) $\\dfrac{\\sqrt3}{4}\\times0.357\\fallingdotseq\\boldsymbol{0.154\\,\\mathrm{nm}}$．ダイヤモンドの $\\ce{C-C}$ はすべて単結合なので，同じ単結合のエタン（$0.154\\,\\mathrm{nm}$）に最も近い．答えは $\\boldsymbol{\\text{（イ）}}$．エチレンの二重結合（$0.134$），ベンゼン（$0.140$），黒鉛の層内（$0.142$）は単結合より短い．\n\n(5) 同じ型の共有結合の結晶では，結合が短いほど強い．$\\ce{C-C}$（$0.154\\,\\mathrm{nm}$）は $\\ce{Si-Si}$（$0.235\\,\\mathrm{nm}$）より短く強いので，ダイヤモンドの融点が高い．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ダイヤモンド型結晶では結合距離が単位格子の一辺の √3/4 倍になる．求めた結合距離を単結合・二重結合・芳香族の結合距離と比べて結合の種類を判断し，同型結晶の融点の差を結合距離（強さ）で説明する．"
+ },
+ "concepts": [
+  "chemical-bond",
+  "carbon-silicon",
+  "aromatic"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ダイヤモンド型",
+  "ケイ素",
+  "結合距離",
+  "共有結合の結晶",
+  "比較問題"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

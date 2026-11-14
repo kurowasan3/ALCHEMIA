@@ -1,0 +1,108 @@
+{
+ "id": "POL-FIB-009",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-02",
+ "topic": "ベンゼンからナイロン66の 2 つの原料をつくる経路と量的関係",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "pathway",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ナイロン66 の 2 つの原料は，どちらもベンゼンからつくることができる．\n\\[ \\ce{C6H6} \\xrightarrow{\\ce{H2}\\text{（Ni 触媒）}} \\boxed{\\,\\text{A}\\,} \\xrightarrow{\\ce{O2}\\text{（触媒）}} \\boxed{\\,\\text{B}\\,}\\ (\\text{第二級アルコール}) \\xrightarrow{\\text{穏やかに酸化}} \\boxed{\\,\\text{C}\\,}\\ (\\text{ケトン}) \\xrightarrow{\\ce{HNO3}\\text{ で酸化}} \\boxed{\\,\\text{D}\\,} \\]\n\\[ \\boxed{\\,\\text{D}\\,} \\xrightarrow{\\ce{NH3}\\text{（脱水）}} \\ce{NC(CH2)4CN} \\xrightarrow{\\ce{H2}\\text{（Ni 触媒）}} \\boxed{\\,\\text{E}\\,} \\]\nD（2 価カルボン酸）と E を縮合重合させるとナイロン66 になる．原子量は H = 1.0，C = 12，N = 14，O = 16 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A〜E の名称と示性式を答えよ（環状の化合物は名称と分子式でよい）．"
+     },
+     {
+      "id": "2",
+      "tex": "D からアジポニトリル $\\ce{NC(CH2)4CN}$ ができる反応と，アジポニトリルから E ができる反応を，分子式を用いた化学反応式で書け．"
+     },
+     {
+      "id": "3",
+      "tex": "ベンゼン $156\\,\\mathrm{kg}$ を原料とし，D と E の両方をこのベンゼンからつくってナイロン66 を合成すると，ナイロン66 は何 kg 得られるか．各反応は完全に進むものとする．"
+     },
+     {
+      "id": "4",
+      "tex": "E を別の原料から用意し，ベンゼン $156\\,\\mathrm{kg}$ をすべて D にしてナイロン66 を合成すると，ナイロン66 は何 kg 得られるか．(3) と比べて何倍か．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "A：シクロヘキサン $\\ce{C6H12}$，B：シクロヘキサノール $\\ce{C6H11OH}$，C：シクロヘキサノン $\\ce{C6H10O}$，D：アジピン酸 $\\ce{HOOC(CH2)4COOH}$，E：ヘキサメチレンジアミン $\\ce{H2N(CH2)6NH2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{C6H10O4 + 2NH3 -> C6H8N2 + 4H2O}$，$\\ce{C6H8N2 + 4H2 -> C6H16N2}$"
+   },
+   {
+    "id": "3",
+    "tex": "$226\\,\\mathrm{kg}$"
+   },
+   {
+    "id": "4",
+    "tex": "$452\\,\\mathrm{kg}$，2 倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} ベンゼンに水素を付加すると $\\boldsymbol{\\text{シクロヘキサン}}$ $\\ce{C6H12}$（A）．酸化して $\\boldsymbol{\\text{シクロヘキサノール}}$ $\\ce{C6H11OH}$（B），さらに $\\boldsymbol{\\text{シクロヘキサノン}}$ $\\ce{C6H10O}$（C）．環が開くように酸化されて $\\boldsymbol{\\text{アジピン酸}}$ $\\ce{HOOC(CH2)4COOH}$（D）．ニトリルの $\\ce{-C#N}$ に水素が付加すると $\\ce{-CH2NH2}$ になり，$\\boldsymbol{\\text{ヘキサメチレンジアミン}}$ $\\ce{H2N(CH2)6NH2}$（E）．\\\\\n\\textbf{(2)}\n\\[ \\ce{C6H10O4 + 2NH3 -> C6H8N2 + 4H2O} \\qquad \\ce{C6H8N2 + 4H2 -> C6H16N2} \\]\n\\textbf{(3)} ベンゼンは $\\dfrac{156\\times10^{3}}{78} = 2.00\\times10^{3}\\,\\mathrm{mol}$．ベンゼン 1 分子から D または E が 1 分子できる．ナイロン66 の繰り返し単位 $\\ce{-[CO(CH2)4CO-NH(CH2)6NH]-}$（式量 226）1 つに D と E が 1 分子ずつ必要なので，ベンゼンを半分ずつ使い，繰り返し単位は $1.00\\times10^{3}\\,\\mathrm{mol}$．$226\\times1.00\\times10^{3}\\,\\mathrm g = \\boldsymbol{226\\,\\mathrm{kg}}$．\\\\\n\\textbf{(4)} ベンゼンすべてを D にすると D は $2.00\\times10^{3}\\,\\mathrm{mol}$，繰り返し単位も $2.00\\times10^{3}\\,\\mathrm{mol}$ で $\\boldsymbol{452\\,\\mathrm{kg}}$，(3) の $\\boldsymbol{2}$ 倍．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ベンゼン→シクロヘキサン→シクロヘキサノール→シクロヘキサノン→アジピン酸，アジピン酸→アジポニトリル→ヘキサメチレンジアミンの経路を追い，2 つの単量体を同じ原料から分けてつくるときは原料が半分ずつ使われることを量的関係に反映させる．"
+ },
+ "concepts": [
+  "condensation-polymer",
+  "aromatic"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ナイロン66",
+  "アジピン酸",
+  "ヘキサメチレンジアミン",
+  "反応経路",
+  "量的関係"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

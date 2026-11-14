@@ -1,0 +1,101 @@
+{
+ "id": "INO-TRN-020",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-07",
+ "topic": "過マンガン酸イオンの還元生成物と液性（マンガン酸イオンの自己酸化還元）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 18,
+ "format": [
+  "condition",
+  "equation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "過マンガン酸カリウム $\\ce{KMnO4}$ を還元剤と反応させると，水溶液の液性によってマンガンの生成物が異なる．亜硫酸ナトリウム $\\ce{Na2SO3}$（$\\ce{SO3^2-}$ は $\\ce{SO4^2-}$ に酸化される）を還元剤として，次の 3 つの条件で反応させた．\\\\\n条件 X（硫酸酸性）：赤紫色が消えて，ほぼ無色の水溶液になった．\\\\\n条件 Y（中性）：赤紫色が消えて，黒褐色の沈殿が生じた．\\\\\n条件 Z（濃い水酸化カリウム水溶液）：沈殿を生じずに，緑色の水溶液になった．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "X，Y，Z で生じたマンガンを含む物質（イオン）の化学式と，その中のマンガンの酸化数を答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$\\ce{KMnO4}$ $0.010\\,\\mathrm{mol}$ とちょうど反応する $\\ce{Na2SO3}$ は，X，Y，Z でそれぞれ何 mol か．"
+     },
+     {
+      "id": "3",
+      "tex": "Z で得た緑色の水溶液を硫酸で酸性にすると，赤紫色の水溶液と黒褐色の沈殿が生じた．この変化をイオン反応式で表せ．また，はじめの緑色のイオンに含まれていたマンガンのうち，何分の何が赤紫色のイオンになったか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "X：$\\ce{Mn^2+}$，$+2$　Y：$\\ce{MnO2}$，$+4$　Z：$\\ce{MnO4^2-}$，$+6$"
+   },
+   {
+    "id": "2",
+    "tex": "X $0.025\\,\\mathrm{mol}$，Y $0.015\\,\\mathrm{mol}$，Z $0.0050\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{3MnO4^2- + 4H+ -> 2MnO4- + MnO2 + 2H2O}$，$\\dfrac23$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\ce{MnO4-}$ の Mn は $+7$．受け取る電子の数は液性で変わる．\n\nX（酸性）：$\\ce{MnO4- + 8H+ + 5e- -> Mn^2+ + 4H2O}$ → $\\ce{Mn^2+}$（ほぼ無色），$\\boldsymbol{+2}$\n\nY（中性）：$\\ce{MnO4- + 2H2O + 3e- -> MnO2 + 4OH-}$ → $\\ce{MnO2}$（黒褐色），$\\boldsymbol{+4}$\n\nZ（強塩基性）：$\\ce{MnO4- + e- -> MnO4^2-}$ → マンガン酸イオン（緑），$\\boldsymbol{+6}$\n\n\\textbf{(2)} $\\ce{SO3^2-}$ は $\\ce{SO3^2- + H2O -> SO4^2- + 2H+ + 2e-}$ のように 1 mol で電子 2 mol を放出する．$\\ce{KMnO4}$ $0.010\\,\\mathrm{mol}$ が受け取る電子は X：$0.050$，Y：$0.030$，Z：$0.010\\,\\mathrm{mol}$ なので，$\\ce{Na2SO3}$ はその半分．\n\\[ \\mathrm X:\\boldsymbol{0.025\\,\\mathrm{mol}},\\quad \\mathrm Y:\\boldsymbol{0.015\\,\\mathrm{mol}},\\quad \\mathrm Z:\\boldsymbol{0.0050\\,\\mathrm{mol}} \\]\n全体の反応式は\n\\[ \\ce{2MnO4- + 5SO3^2- + 6H+ -> 2Mn^2+ + 5SO4^2- + 3H2O} \\]\n\\[ \\ce{2MnO4- + 3SO3^2- + H2O -> 2MnO2 + 3SO4^2- + 2OH-} \\]\n\\[ \\ce{2MnO4- + SO3^2- + 2OH- -> 2MnO4^2- + SO4^2- + H2O} \\]\n同じ量の酸化剤でも，酸性ほど多くの還元剤と反応する．\n\n\\textbf{(3)} $\\ce{MnO4^2-}$（$+6$）は酸性では不安定で，一部が $\\ce{MnO4-}$（$+7$）に酸化され，一部が $\\ce{MnO2}$（$+4$）に還元される（自己酸化還元）．\n\\[ \\ce{3MnO4^2- + 4H+ -> 2MnO4- + MnO2 + 2H2O} \\]\n電子の授受は $(+7-6)\\times2=(6-4)\\times1$ でつり合う．3 個のうち 2 個が $\\ce{MnO4-}$ になるので $\\boldsymbol{\\dfrac23}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "MnO₄⁻ が受け取る電子の数は液性で変わり（酸性 5 個→Mn²⁺，中性 3 個→MnO₂，強塩基性 1 個→MnO₄²⁻），同じ量の酸化剤でも反応する還元剤の量が変わる．MnO₄²⁻（+6）は酸性で MnO₄⁻ と MnO₂ に自己酸化還元する．"
+ },
+ "concepts": [
+  "transition-metals",
+  "redox"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "過マンガン酸イオン",
+  "マンガン酸イオン",
+  "酸化数",
+  "液性",
+  "自己酸化還元",
+  "電子の授受"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,110 @@
+{
+ "id": "THE-EQL-144",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "DNA 二本鎖形成の平衡と融解温度の濃度依存性（分子間と分子内の区別）",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "互いに相補的な短い DNA の 1 本鎖 F と G は，水溶液中で二本鎖 D をつくる平衡にある．\n\\[ \\mathrm{F}+\\mathrm{G} \\rightleftharpoons \\mathrm{D}\\qquad K=\\frac{[\\mathrm{D}]}{[\\mathrm{F}][\\mathrm{G}]} \\]\nまた，1 本の鎖の中に相補的な部分を 2 か所もつ鎖 U は，分子内で折れ曲がって塩基対をつくり，ヘアピン形 Hp との平衡 $\\mathrm{U} \\rightleftharpoons \\mathrm{Hp}$，$K'=\\dfrac{[\\mathrm{Hp}]}{[\\mathrm{U}]}$ にある．\nこれらの平衡定数は温度 $T$ とともに\n\\[ \\ln K=-\\frac{\\Delta H}{RT}+\\frac{\\Delta S}{R} \\]\nのように変わるものとする（$\\ln$ は自然対数，$\\Delta H$，$\\Delta S$ は塩基対の形成に固有の定数で温度によらない）．「融解温度 $T_\\mathrm{m}$」を，鎖の半分が塩基対をつくっている（D または Hp になっている）温度と定義する．\nF と G は等しい濃度 $c_0$（それぞれの全濃度）で混ぜるものとし，$R=8.31\\,\\mathrm{J/(K\\cdot mol)}$，$\\ln2=0.693$，$\\ln10=2.30$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$T_\\mathrm{m}$ における $K$ を $c_0$ で表せ．また，$T_\\mathrm{m}$ における $K'$ の値を答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$\\mathrm{F}+\\mathrm{G} \\rightleftharpoons \\mathrm{D}$ について $\\Delta H=-3.6\\times10^{5}\\,\\mathrm{J/mol}$，$\\Delta S=-1.00\\times10^{3}\\,\\mathrm{J/(K\\cdot mol)}$ とする．$c_0=1.0\\times10^{-6}\\,\\mathrm{mol/L}$ と $c_0=1.0\\times10^{-4}\\,\\mathrm{mol/L}$ のときの $T_\\mathrm{m}$ $[\\mathrm{K}]$ を，それぞれ有効数字3桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "2 種類の DNA 試料 X，Y があり，一方は F と G の混合物，他方は U である．どちらも溶液を 100 倍にうすめて融解温度を測ると，X では約 $11\\,\\mathrm{K}$ 低くなり，Y ではほとんど変わらなかった．U はどちらか答えよ．また，X の融解温度がうすめると低くなる理由として最も適当なものを選べ．\\\\\n(ア) うすめると塩基対 1 組あたりの水素結合が弱くなるから．\\\\\n(イ) 二本鎖の形成は粒子の数が減る変化なので，うすめると平衡が 1 本鎖の側へ移り，同じ割合を二本鎖にするにはより大きな $K$（より低い温度）が必要になるから．\\\\\n(ウ) うすめると水のイオン積が変わり，塩基の電離の状態が変わるから．"
+     },
+     {
+      "id": "4",
+      "tex": "別の相補的な鎖の組について，各鎖の濃度 $1.0\\times10^{-6}\\,\\mathrm{mol/L}$ で $T_\\mathrm{m}=320.0\\,\\mathrm{K}$，$1.0\\times10^{-4}\\,\\mathrm{mol/L}$ で $T_\\mathrm{m}=330.0\\,\\mathrm{K}$ であった．この二本鎖形成の $\\Delta H$ $[\\mathrm{kJ/mol}]$ を有効数字2桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$K=\\dfrac{2}{c_0}$，$K'=1$"
+   },
+   {
+    "id": "2",
+    "tex": "$c_0=1.0\\times10^{-6}$ で $321\\,\\mathrm{K}$，$c_0=1.0\\times10^{-4}$ で $333\\,\\mathrm{K}$"
+   },
+   {
+    "id": "3",
+    "tex": "U は Y，理由は (イ)"
+   },
+   {
+    "id": "4",
+    "tex": "$-4.0\\times10^{2}\\,\\mathrm{kJ/mol}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　「半分が塩基対をつくる」という同じ条件でも，二分子の会合では平衡定数の値が濃度に依存し，分子内の折れ曲がりでは依存しない．$T_\\mathrm{m}$ を $K$ の式に入れて $T$ について解く．\n\n\\textbf{(1)}　$T_\\mathrm{m}$ では $[\\mathrm{D}]=\\dfrac{c_0}{2}$，$[\\mathrm{F}]=[\\mathrm{G}]=\\dfrac{c_0}{2}$ なので\n\\[ K=\\frac{c_0/2}{(c_0/2)^2}=\\boldsymbol{\\frac{2}{c_0}} \\]\nヘアピンでは $[\\mathrm{Hp}]=[\\mathrm{U}]$ なので $K'=\\boldsymbol{1}$（濃度によらない）．\n\n\\textbf{(2)}　$\\ln K=-\\dfrac{\\Delta H}{RT}+\\dfrac{\\Delta S}{R}$ を $T$ について解くと\n\\[ T_\\mathrm{m}=\\frac{\\Delta H}{\\Delta S-R\\ln K}=\\frac{\\Delta H}{\\Delta S-R\\ln(2/c_0)} \\]\n$c_0=1.0\\times10^{-6}$：$\\ln(2\\times10^{6})=0.693+6\\times2.30=14.49$，$R\\ln K=120.4$．\n$T_\\mathrm{m}=\\dfrac{-3.6\\times10^{5}}{-1000-120.4}=\\boldsymbol{321\\,\\mathrm{K}}$．\n$c_0=1.0\\times10^{-4}$：$\\ln(2\\times10^{4})=9.89$，$R\\ln K=82.2$，$T_\\mathrm{m}=\\dfrac{3.6\\times10^{5}}{1082.2}=\\boldsymbol{333\\,\\mathrm{K}}$．\n濃度が高いほど，より小さい $K$（より高い温度）で半分が二本鎖になれる．なお同じ $\\Delta H$，$\\Delta S$ のヘアピンなら $K'=1$ より $T_\\mathrm{m}=\\Delta H/\\Delta S=360\\,\\mathrm{K}$ で，濃度によらない．\n\n\\textbf{(3)}　(1) より，二分子の会合（F＋G）の $T_\\mathrm{m}$ は $c_0$ に依存し，分子内の平衡（U）は依存しない．よって 100 倍にうすめて $T_\\mathrm{m}$ が変わらない $\\boldsymbol{\\text{Y が U}}$．(2) の計算どおり，100 倍の濃度変化で約 11 K ずれる X が F と G の混合物である．理由は \\textbf{(イ)}：$\\mathrm{F}+\\mathrm{G}\\longrightarrow\\mathrm{D}$ は粒子が 2 個から 1 個に減る変化で，うすめると逆向きに平衡が移る（ルシャトリエの原理）．塩基対そのものの強さ（$\\Delta H$）は変わらないので (ア) は誤り．\nこの性質を使えば，融解温度の濃度依存性を調べるだけで，塩基対が分子間でできているか分子内でできているかを判定できる．\n\n\\textbf{(4)}　2 つの濃度で $\\dfrac{1}{T_\\mathrm{m}}=\\dfrac{\\Delta S-R\\ln(2/c_0)}{\\Delta H}$ が成り立つので，辺々引くと $\\Delta S$ が消えて\n\\[ \\frac{1}{T_1}-\\frac{1}{T_2}=\\frac{-R\\left[\\ln(2/c_1)-\\ln(2/c_2)\\right]}{\\Delta H}=-\\frac{R\\ln(c_2/c_1)}{\\Delta H} \\]\n$\\dfrac{1}{320.0}-\\dfrac{1}{330.0}=9.47\\times10^{-5}\\,\\mathrm{K^{-1}}$，$\\ln100=4.60$ より\n\\[ \\Delta H=-\\frac{8.31\\times4.60}{9.47\\times10^{-5}}=-4.04\\times10^{5}\\,\\mathrm{J/mol}=\\boldsymbol{-4.0\\times10^{2}\\,\\mathrm{kJ/mol}} \\]\n（負なので二本鎖の形成は発熱．$T_\\mathrm{m}$ の濃度依存性が小さいほど $|\\Delta H|$ が大きい．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "融解温度を「半分が塩基対をつくる温度」とすると，二分子の会合 F+G⇄D では K=2/c₀ と濃度に依存し，分子内のヘアピン形成では K'=1 で依存しない．このため T_m はうすめると二分子系だけが下がり，2 つの濃度の T_m の差から ΔS を消去して ΔH を逆算できる．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "nucleic-acid",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "DNA",
+  "融解温度",
+  "平衡定数",
+  "会合",
+  "ヘアピン",
+  "ルシャトリエの原理"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

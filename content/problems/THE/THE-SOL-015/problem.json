@@ -1,0 +1,100 @@
+{
+ "id": "THE-SOL-015",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-09",
+ "topic": "空気の溶解（分圧とヘンリーの法則）と加温時に必要な圧力",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "compare",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の表は，窒素と酸素について，その気体の分圧が $1.0\\times10^{5}\\,\\mathrm{Pa}$ のときに水 $1.0\\,\\mathrm L$ に溶ける物質量を示したものである．気体の溶解はヘンリーの法則に従い，空気は窒素と酸素が物質量比 $4:1$ の混合気体とする．水の蒸気圧と水の体積変化は無視し，数値の答えは有効数字2桁で求めよ．\n\\[\\begin{array}{c|cc} \\text{温度} & \\ce{N2}\\,\\text{〔mol〕} & \\ce{O2}\\,\\text{〔mol〕} \\\\ \\hline 10\\,{}^\\circ\\mathrm{C} & 8.2\\times10^{-4} & 1.7\\times10^{-3} \\\\ 40\\,{}^\\circ\\mathrm{C} & 5.2\\times10^{-4} & 1.0\\times10^{-3} \\end{array}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$10$ ℃，$1.0\\times10^{5}\\,\\mathrm{Pa}$ の空気と接して平衡に達した水 $1.0\\,\\mathrm L$ に溶けている窒素と酸素の物質量をそれぞれ求めよ．また，水に溶けている気体のうち酸素が占める物質量の割合〔\\%〕を求め，空気中の酸素の割合と比べて大きいか小さいかを答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "前問の水を，接している空気の圧力を $1.0\\times10^{5}\\,\\mathrm{Pa}$ に保ったまま $40$ ℃ に温めて平衡にした．水から出ていった窒素と酸素の物質量の合計を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "最初の $10$ ℃ の水を $40$ ℃ に温めるとき，溶けている窒素も酸素も水から出ていかないようにするには，水と接する空気（組成は変わらないとする）の圧力を少なくとも何 Pa にすればよいか．また，その圧力を決めているのは窒素と酸素のどちらか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "窒素 $6.6\\times10^{-4}\\,\\mathrm{mol}$，酸素 $3.4\\times10^{-4}\\,\\mathrm{mol}$，酸素の割合 $34\\,\\%$ で，空気中（$20\\,\\%$）より大きい"
+   },
+   {
+    "id": "2",
+    "tex": "$3.8\\times10^{-4}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "$1.7\\times10^{5}\\,\\mathrm{Pa}$，決めているのは酸素"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　混合気体では，各気体の溶解量はそれぞれの\\textbf{分圧}に比例する（ヘンリーの法則）．空気の分圧は全圧の $\\dfrac45$（窒素）と $\\dfrac15$（酸素）．\n\\textbf{(1)} 窒素の分圧 $0.80\\times10^{5}\\,\\mathrm{Pa}$，酸素の分圧 $0.20\\times10^{5}\\,\\mathrm{Pa}$ なので\n窒素 $8.2\\times10^{-4}\\times0.80=6.56\\times10^{-4}\\fallingdotseq\\boldsymbol{6.6\\times10^{-4}\\,\\mathrm{mol}}$，酸素 $1.7\\times10^{-3}\\times0.20=\\boldsymbol{3.4\\times10^{-4}\\,\\mathrm{mol}}$．\n酸素の割合は $\\dfrac{3.4}{6.56+3.4}\\times100=\\boldsymbol{34\\,\\%}$．酸素は窒素より約2倍水に溶けやすいので，水に溶けた空気は空気中（$20\\,\\%$）より\\textbf{酸素に富む}．\n\\textbf{(2)} $40$ ℃ で溶けていられる量は，窒素 $5.2\\times10^{-4}\\times0.80=4.16\\times10^{-4}\\,\\mathrm{mol}$，酸素 $1.0\\times10^{-3}\\times0.20=2.0\\times10^{-4}\\,\\mathrm{mol}$．出ていく量は窒素 $2.4\\times10^{-4}\\,\\mathrm{mol}$，酸素 $1.4\\times10^{-4}\\,\\mathrm{mol}$，合計 $\\boldsymbol{3.8\\times10^{-4}\\,\\mathrm{mol}}$．\n\\textbf{(3)} 空気の圧力を $P$ とすると，$40$ ℃ で溶けていられる量が (1) の量以上であればよい．\n窒素：$5.2\\times10^{-4}\\times\\dfrac{0.80P}{1.0\\times10^{5}}\\geqq6.56\\times10^{-4}$ より $P\\geqq1.58\\times10^{5}\\,\\mathrm{Pa}$\n酸素：$1.0\\times10^{-3}\\times\\dfrac{0.20P}{1.0\\times10^{5}}\\geqq3.4\\times10^{-4}$ より $P\\geqq1.7\\times10^{5}\\,\\mathrm{Pa}$\n両方を満たすには $P\\geqq\\boldsymbol{1.7\\times10^{5}\\,\\mathrm{Pa}}$．空気の大部分は窒素だが，温度上昇による溶解度の減り方（$10$ ℃ に対する $40$ ℃ の比）は酸素の方が大きい（窒素 $\\dfrac{5.2}{8.2}=0.63$，酸素 $\\dfrac{1.0}{1.7}=0.59$）ので，\\textbf{酸素}が条件を決める．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "混合気体の各成分は分圧に比例して溶けるので，溶けた気体の組成は気相とは異なり溶けやすい成分に富む．温めても溶けた気体が出ていかない圧力は成分ごとに求め，温度による溶解度の減り方が大きい成分が条件を決める．"
+ },
+ "concepts": [
+  "solution-colligative",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ヘンリーの法則",
+  "分圧",
+  "気体の溶解度",
+  "空気",
+  "温度"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

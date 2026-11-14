@@ -1,0 +1,117 @@
+{
+ "id": "THE-EQL-063",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "同じ酵素を奪い合う 2 つの基質の反応速度の比",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "1 種類の酵素 E が，同じ活性部位で 2 種類の基質 A，B の両方を反応させる場合を考える．それぞれの反応は次のように表される．\n\\[ \\mathrm{E}+\\mathrm{A}\\ \\underset{k_{3\\mathrm A}}{\\overset{k_{1\\mathrm A}}{\\rightleftarrows}}\\ \\mathrm{E{\\cdot}A}\\ \\xrightarrow{\\ k_{2\\mathrm A}\\ }\\ \\mathrm{E}+\\mathrm{P_A} \\qquad\\quad \\mathrm{E}+\\mathrm{B}\\ \\underset{k_{3\\mathrm B}}{\\overset{k_{1\\mathrm B}}{\\rightleftarrows}}\\ \\mathrm{E{\\cdot}B}\\ \\xrightarrow{\\ k_{2\\mathrm B}\\ }\\ \\mathrm{E}+\\mathrm{P_B} \\]\nE·A と E·B の濃度はどちらも一定（生成の速さと分解の速さが等しい）とみなせ，酵素の全濃度は $[\\mathrm E]_\\mathrm T=[\\mathrm E]+[\\mathrm{E{\\cdot}A}]+[\\mathrm{E{\\cdot}B}]$ である．$K_\\mathrm A=\\dfrac{k_{2\\mathrm A}+k_{3\\mathrm A}}{k_{1\\mathrm A}}$，$K_\\mathrm B=\\dfrac{k_{2\\mathrm B}+k_{3\\mathrm B}}{k_{1\\mathrm B}}$ とおき，$\\mathrm{P_A}$ の生成速度を $v_\\mathrm A=k_{2\\mathrm A}[\\mathrm{E{\\cdot}A}]$，$\\mathrm{P_B}$ の生成速度を $v_\\mathrm B=k_{2\\mathrm B}[\\mathrm{E{\\cdot}B}]$ とする．\\\\\nある酵素について，$K_\\mathrm A=1.0\\times10^{-4}\\,\\mathrm{mol/L}$，$k_{2\\mathrm A}=50\\,\\mathrm{s^{-1}}$，$K_\\mathrm B=2.0\\times10^{-3}\\,\\mathrm{mol/L}$，$k_{2\\mathrm B}=400\\,\\mathrm{s^{-1}}$ である．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$[\\mathrm{E{\\cdot}A}]$ と $[\\mathrm{E{\\cdot}B}]$ をそれぞれ $[\\mathrm E]$，$[\\mathrm A]$，$[\\mathrm B]$，$K_\\mathrm A$，$K_\\mathrm B$ で表し，$v_\\mathrm A$ を $[\\mathrm E]_\\mathrm T$，$[\\mathrm A]$，$[\\mathrm B]$，$k_{2\\mathrm A}$，$K_\\mathrm A$，$K_\\mathrm B$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "速度の比 $\\dfrac{v_\\mathrm A}{v_\\mathrm B}$ を $[\\mathrm A]$，$[\\mathrm B]$ と定数で表せ．この比は $[\\mathrm E]_\\mathrm T$ や，基質の濃度が大きく酵素がほぼ飽和しているかどうかに依存するか．"
+     },
+     {
+      "id": "3",
+      "tex": "A，B をそれぞれ単独で $1.0\\times10^{-2}\\,\\mathrm{mol/L}$ 含む溶液で反応させたとき，$v_\\mathrm A/[\\mathrm E]_\\mathrm T$，$v_\\mathrm B/[\\mathrm E]_\\mathrm T$ を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "A と B を $1.0\\times10^{-2}\\,\\mathrm{mol/L}$ ずつ含む混合溶液で反応させたとき，$v_\\mathrm A/[\\mathrm E]_\\mathrm T$，$v_\\mathrm B/[\\mathrm E]_\\mathrm T$ を有効数字 2 桁で求めよ．また，(3) と比べて，速く反応する基質が入れ替わる理由を説明せよ．"
+     },
+     {
+      "id": "5",
+      "tex": "(4) の混合溶液で反応が進むと，濃度の比 $[\\mathrm A]/[\\mathrm B]$ は増加するか，減少するか．理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$[\\mathrm{E{\\cdot}A}]=\\dfrac{[\\mathrm E][\\mathrm A]}{K_\\mathrm A}$，$[\\mathrm{E{\\cdot}B}]=\\dfrac{[\\mathrm E][\\mathrm B]}{K_\\mathrm B}$，$v_\\mathrm A=\\dfrac{k_{2\\mathrm A}[\\mathrm E]_\\mathrm T[\\mathrm A]}{K_\\mathrm A\\left(1+\\dfrac{[\\mathrm B]}{K_\\mathrm B}\\right)+[\\mathrm A]}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\dfrac{v_\\mathrm A}{v_\\mathrm B}=\\dfrac{(k_{2\\mathrm A}/K_\\mathrm A)[\\mathrm A]}{(k_{2\\mathrm B}/K_\\mathrm B)[\\mathrm B]}$．$[\\mathrm E]_\\mathrm T$ にも飽和の程度にも依存しない"
+   },
+   {
+    "id": "3",
+    "tex": "$v_\\mathrm A/[\\mathrm E]_\\mathrm T=50\\,\\mathrm{s^{-1}}$，$v_\\mathrm B/[\\mathrm E]_\\mathrm T=3.3\\times10^{2}\\,\\mathrm{s^{-1}}$"
+   },
+   {
+    "id": "4",
+    "tex": "$v_\\mathrm A/[\\mathrm E]_\\mathrm T=47\\,\\mathrm{s^{-1}}$，$v_\\mathrm B/[\\mathrm E]_\\mathrm T=19\\,\\mathrm{s^{-1}}$．理由：単独では最大速度（$k_2$）の大きい B が速いが，混合物では A と B が同じ酵素を奪い合い，酵素はそれぞれの基質と $[\\mathrm S]/K$ に比例した割合で複合体をつくる．$K$ の小さい A が酵素の大部分を占めるので，比は $k_2/K$ の大きい A に有利になる"
+   },
+   {
+    "id": "5",
+    "tex": "減少する（$\\dfrac{v_\\mathrm A/[\\mathrm A]}{v_\\mathrm B/[\\mathrm B]}=\\dfrac{k_{2\\mathrm A}/K_\\mathrm A}{k_{2\\mathrm B}/K_\\mathrm B}=2.5>1$ で，A の方が存在量に対する割合として速く減るから）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} E·A の生成の速さ $k_{1\\mathrm A}[\\mathrm E][\\mathrm A]$ と分解の速さ $(k_{2\\mathrm A}+k_{3\\mathrm A})[\\mathrm{E{\\cdot}A}]$ が等しいので\n\\[ [\\mathrm{E{\\cdot}A}]=\\dfrac{[\\mathrm E][\\mathrm A]}{K_\\mathrm A},\\qquad \\text{同様に}\\ [\\mathrm{E{\\cdot}B}]=\\dfrac{[\\mathrm E][\\mathrm B]}{K_\\mathrm B} \\]\n酵素の保存から $[\\mathrm E]_\\mathrm T=[\\mathrm E]\\left(1+\\dfrac{[\\mathrm A]}{K_\\mathrm A}+\\dfrac{[\\mathrm B]}{K_\\mathrm B}\\right)$．これを代入して\n\\[ v_\\mathrm A=\\dfrac{k_{2\\mathrm A}[\\mathrm E][\\mathrm A]}{K_\\mathrm A}=\\dfrac{k_{2\\mathrm A}[\\mathrm E]_\\mathrm T[\\mathrm A]}{K_\\mathrm A\\left(1+\\dfrac{[\\mathrm B]}{K_\\mathrm B}\\right)+[\\mathrm A]} \\]\nB は A にとって，見かけの $K$ を $\\left(1+\\dfrac{[\\mathrm B]}{K_\\mathrm B}\\right)$ 倍にする「競争相手」としてはたらく．\\\\\n\\textbf{(2)} (1) の式で，$v_\\mathrm A=\\dfrac{k_{2\\mathrm A}}{K_\\mathrm A}[\\mathrm E][\\mathrm A]$，$v_\\mathrm B=\\dfrac{k_{2\\mathrm B}}{K_\\mathrm B}[\\mathrm E][\\mathrm B]$ なので，比をとると共通の $[\\mathrm E]$ が消えて\n\\[ \\dfrac{v_\\mathrm A}{v_\\mathrm B}=\\dfrac{(k_{2\\mathrm A}/K_\\mathrm A)[\\mathrm A]}{(k_{2\\mathrm B}/K_\\mathrm B)[\\mathrm B]} \\]\n遊離の酵素 $[\\mathrm E]$ の大きさ（酵素の量や，基質が多くて酵素がほぼ飽和しているかどうか）は両方に共通に効くので，\\textbf{比は依存しない}．\\\\\n\\textbf{(3)} 単独なら $v=\\dfrac{k_2[\\mathrm E]_\\mathrm T[\\mathrm S]}{K+[\\mathrm S]}$．\n\\[ \\dfrac{v_\\mathrm A}{[\\mathrm E]_\\mathrm T}=\\dfrac{50\\times1.0\\times10^{-2}}{1.0\\times10^{-4}+1.0\\times10^{-2}}=49.5\\fallingdotseq\\boldsymbol{50\\,\\mathrm{s^{-1}}},\\qquad \\dfrac{v_\\mathrm B}{[\\mathrm E]_\\mathrm T}=\\dfrac{400\\times1.0\\times10^{-2}}{2.0\\times10^{-3}+1.0\\times10^{-2}}=333\\fallingdotseq\\boldsymbol{3.3\\times10^{2}\\,\\mathrm{s^{-1}}} \\]\nどちらもほぼ飽和しており，B が約 7 倍速い．\\\\\n\\textbf{(4)} (1) の式で $[\\mathrm A]=[\\mathrm B]=1.0\\times10^{-2}$ とすると\n\\[ \\dfrac{v_\\mathrm A}{[\\mathrm E]_\\mathrm T}=\\dfrac{50\\times10^{-2}}{10^{-4}\\times(1+5.0)+10^{-2}}=\\dfrac{0.50}{1.06\\times10^{-2}}=47.2\\fallingdotseq\\boldsymbol{47\\,\\mathrm{s^{-1}}} \\]\n\\[ \\dfrac{v_\\mathrm B}{[\\mathrm E]_\\mathrm T}=\\dfrac{400\\times10^{-2}}{2.0\\times10^{-3}\\times(1+100)+10^{-2}}=\\dfrac{4.0}{0.212}=18.9\\fallingdotseq\\boldsymbol{19\\,\\mathrm{s^{-1}}} \\]\n比は $47.2/18.9=2.5$ で，(2) の $\\dfrac{50/1.0\\times10^{-4}}{400/2.0\\times10^{-3}}=\\dfrac{5.0\\times10^{5}}{2.0\\times10^{5}}=2.5$ と一致する．\\\\\n単独では，基質が十分あれば酵素はすべて複合体になり，速さは $k_2$（最大速度）だけで決まるので B が速い．混合物では酵素を A と B が奪い合い，複合体の割合は $[\\mathrm{E{\\cdot}A}]:[\\mathrm{E{\\cdot}B}]=\\dfrac{[\\mathrm A]}{K_\\mathrm A}:\\dfrac{[\\mathrm B]}{K_\\mathrm B}=100:5$ となって酵素の大部分が A に占められる．このため B の速さは大きく落ち，比は $k_2/K$ の大小で決まって A が速くなる．\\\\\n\\textbf{(5)} $\\dfrac{v_\\mathrm A}{[\\mathrm A]}$ と $\\dfrac{v_\\mathrm B}{[\\mathrm B]}$ は，それぞれの基質が単位時間に減る\\textbf{割合}を表す．(2) より\n\\[ \\dfrac{v_\\mathrm A/[\\mathrm A]}{v_\\mathrm B/[\\mathrm B]}=\\dfrac{k_{2\\mathrm A}/K_\\mathrm A}{k_{2\\mathrm B}/K_\\mathrm B}=2.5 \\]\nは濃度によらず常に 1 より大きいので，A の方が割合として速く減り，$[\\mathrm A]/[\\mathrm B]$ は\\textbf{減少し続ける}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "2 つの基質が同じ酵素を奪い合うと，それぞれの複合体の濃度は遊離の酵素濃度に [S]/K を掛けたものになるので，速度の比は (k₂/K)[S] の比で決まり，酵素量や飽和の程度に依存しない．単独では最大速度の大きい基質が速くても，混合物では k₂/K の大きい基質が優先して反応する．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "protein-amino",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "酵素反応",
+  "定常状態",
+  "競争",
+  "基質特異性",
+  "反応速度"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

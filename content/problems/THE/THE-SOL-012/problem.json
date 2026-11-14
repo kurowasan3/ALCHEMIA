@@ -1,0 +1,109 @@
+{
+ "id": "THE-SOL-012",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-09",
+ "topic": "溶解度曲線の形の違いを使った混合物の精製",
+ "course": "化学",
+ "level": 1,
+ "minutes": 15,
+ "format": [
+  "condition",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "硝酸カリウム $\\ce{KNO3}$ と塩化ナトリウム $\\ce{NaCl}$ の溶解度（水 $100\\,\\mathrm g$ に溶ける最大の質量〔g〕）を下の表に示す．2つの塩を同じ水に溶かしても，それぞれの溶解度は互いに影響しないものとし，析出した結晶に付着する溶液は無視する．数値の答えは整数で求めよ．\n\\[\\begin{array}{c|cccc} \\text{温度〔}{}^\\circ\\mathrm{C}\\text{〕} & 20 & 40 & 60 & 80 \\\\ \\hline \\ce{KNO3} & 32 & 64 & 109 & 169 \\\\ \\ce{NaCl} & 36 & 36 & 37 & 38 \\end{array}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{NaCl}$ $10\\,\\mathrm g$ を不純物として含む $\\ce{KNO3}$ $90\\,\\mathrm g$（合計 $100\\,\\mathrm g$）を，$80$ ℃ の水 $100\\,\\mathrm g$ にすべて溶かした．この水溶液をゆっくり冷却するとき，結晶が析出し始める温度はどの範囲にあるか．表の温度を用いて答え，析出する物質も答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "前問の水溶液を $20$ ℃ まで冷却したとき，析出する結晶は何 g か．また，その結晶に $\\ce{NaCl}$ は含まれるか．"
+     },
+     {
+      "id": "3",
+      "tex": "同じ混合物 $100\\,\\mathrm g$ を $80$ ℃ ですべて溶かすのに必要な水の最小量は何 g か．また，その量の水に $80$ ℃ で溶かしてから $20$ ℃ まで冷却すると，析出する $\\ce{KNO3}$ は何 g か．このとき $\\ce{NaCl}$ は析出するか．"
+     },
+     {
+      "id": "4",
+      "tex": "今度は $\\ce{KNO3}$ $10\\,\\mathrm g$ を不純物として含む $\\ce{NaCl}$ $50\\,\\mathrm g$ を，$80$ ℃ の水 $200\\,\\mathrm g$ にすべて溶かした．この水溶液を $20$ ℃ まで冷却すると何 g の結晶が析出するか．また，冷却する代わりに $80$ ℃ に保ったまま水を蒸発させて水を $50\\,\\mathrm g$ にすると，何 g の結晶が析出するか．その結晶に $\\ce{KNO3}$ は含まれるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$40$ ℃ と $60$ ℃ の間，析出するのは $\\ce{KNO3}$"
+   },
+   {
+    "id": "2",
+    "tex": "$58\\,\\mathrm g$（$\\ce{KNO3}$ のみ），$\\ce{NaCl}$ は含まれない"
+   },
+   {
+    "id": "3",
+    "tex": "水 $53\\,\\mathrm g$，$\\ce{KNO3}$ $73\\,\\mathrm g$，$\\ce{NaCl}$ は析出しない"
+   },
+   {
+    "id": "4",
+    "tex": "冷却では $0\\,\\mathrm g$（析出しない），蒸発では $\\ce{NaCl}$ が $31\\,\\mathrm g$ 析出し，$\\ce{KNO3}$ は含まれない"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　それぞれの塩について「溶けている量」と「その温度・その水の量での溶解度」を比べ，溶解度をこえた塩だけが析出する．$\\ce{KNO3}$ は溶解度が温度で大きく変わるので冷却で析出させ，$\\ce{NaCl}$ はほとんど変わらないので水の蒸発で析出させる．\n\\textbf{(1)} 水 $100\\,\\mathrm g$ に $\\ce{KNO3}$ $90\\,\\mathrm g$ が溶けている．溶解度が $90$ になる温度は，$64$（$40$ ℃）と $109$（$60$ ℃）の間なので，\\textbf{40 ℃ と 60 ℃ の間} で $\\ce{KNO3}$ が析出し始める．$\\ce{NaCl}$ $10\\,\\mathrm g$ はどの温度でも溶解度（$36$ 以上）より少ない．\n\\textbf{(2)} $20$ ℃ で溶けていられる $\\ce{KNO3}$ は $32\\,\\mathrm g$ なので $90-32=\\boldsymbol{58\\,\\mathrm g}$ 析出．$\\ce{NaCl}$ は $10<36$ で溶けたままなので，結晶は純粋な $\\ce{KNO3}$（再結晶による精製）．\n\\textbf{(3)} $80$ ℃ で $\\ce{KNO3}$ $90\\,\\mathrm g$ を溶かすのに必要な水は $90\\times\\dfrac{100}{169}=53.3\\,\\mathrm g$（$\\ce{NaCl}$ に必要な水 $10\\times\\dfrac{100}{38}=26\\,\\mathrm g$ より多い）なので，最小量は $\\boldsymbol{53\\,\\mathrm g}$．$20$ ℃ でこの水に溶けていられる $\\ce{KNO3}$ は $53.3\\times\\dfrac{32}{100}=17.0\\,\\mathrm g$ なので，析出量は $90-17.0=\\boldsymbol{73\\,\\mathrm g}$（水 $100\\,\\mathrm g$ のときの $58\\,\\mathrm g$ より多く回収できる）．$\\ce{NaCl}$ は $53.3\\times\\dfrac{36}{100}=19.2\\,\\mathrm g$ まで溶けるので $10\\,\\mathrm g$ は析出しない．\n\\textbf{(4)} $20$ ℃ の水 $200\\,\\mathrm g$ には $\\ce{NaCl}$ が $72\\,\\mathrm g$ まで溶けるので，$50\\,\\mathrm g$ は析出しない（$\\ce{KNO3}$ も $10<64$）．よって冷却では $\\boldsymbol{0\\,\\mathrm g}$．$\\ce{NaCl}$ は温度による溶解度の変化が小さいので，冷却では精製できない．\n$80$ ℃ で水を $50\\,\\mathrm g$ にすると，$\\ce{NaCl}$ は $38\\times\\dfrac{50}{100}=19\\,\\mathrm g$ までしか溶けないので $50-19=\\boldsymbol{31\\,\\mathrm g}$ 析出する．$\\ce{KNO3}$ は $169\\times\\dfrac{50}{100}=84.5\\,\\mathrm g$ まで溶けるので $10\\,\\mathrm g$ は溶けたままで，\\textbf{結晶に $\\ce{KNO3}$ は含まれない}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "混合物の各成分について「溶けている量」と「その温度・水の量での溶解度」を比べ，溶解度をこえた成分だけが析出する．溶解度が温度で大きく変わる物質は冷却で，ほとんど変わらない物質は溶媒の蒸発で析出させて精製し，水を減らすと回収量が増えるが下限は高温ですべて溶ける量で決まる．"
+ },
+ "concepts": [
+  "solution-colligative",
+  "nitrogen-phosphorus",
+  "alkali-metals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "溶解度",
+  "再結晶",
+  "硝酸カリウム",
+  "塩化ナトリウム",
+  "精製"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

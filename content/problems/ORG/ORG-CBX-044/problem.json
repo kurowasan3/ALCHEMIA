@@ -1,0 +1,109 @@
+{
+ "id": "ORG-CBX-044",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-04",
+ "topic": "酢酸の製法の変遷（木酢液からの分離・カーバイド法・メタノール法）",
+ "course": "化学",
+ "level": 1,
+ "minutes": 15,
+ "format": [
+  "pathway",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "酢酸の工業的製法は時代とともに変わってきた．\n〔方法 1〕木材を乾留して得た木酢液には，酢酸のほかメタノールやアセトンなどの揮発性の物質が含まれる．これに水酸化カルシウムを加えて中和し，加熱して揮発性の物質を追い出したあと，残った固体に濃硫酸を加えて加熱し，酢酸を留出させた．\n〔方法 2〕次の経路（カーバイド法）で酢酸をつくった．\n\\[ \\ce{CaCO3} \\xrightarrow{\\text{加熱}} \\boxed{\\,\\text{A}\\,} \\xrightarrow{\\text{コークス，約 }2000\\,{}^\\circ\\mathrm{C}} \\boxed{\\,\\text{B}\\,} \\xrightarrow{\\ce{H2O}} \\boxed{\\,\\text{C}\\,} \\xrightarrow{\\ce{H2O}\\text{（}\\ce{HgSO4}\\text{ 触媒）}} \\boxed{\\,\\text{D}\\,} \\xrightarrow{\\ce{O2}} \\ce{CH3COOH} \\]\n〔方法 3〕現在は，ロジウム触媒を用いてメタノールと一酸化炭素から酢酸を直接つくっている．\n原子量は H = 1.0，C = 12，O = 16，Ca = 40 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "方法 1 の中和の反応と，濃硫酸を加えたときの反応を反応式で表せ．また，酢酸をいったんカルシウム塩にしてから加熱する理由と，濃硫酸を加えると酢酸が得られる理由を，それぞれ簡潔に述べよ．"
+     },
+     {
+      "id": "2",
+      "tex": "方法 2 の A〜D の物質名と化学式（示性式）を答え，A→B，B→C の反応を反応式で表せ．A→B では一酸化炭素が副生する．"
+     },
+     {
+      "id": "3",
+      "tex": "方法 2 で石灰石（$\\ce{CaCO3}$ のみとする）$1.00\\,\\mathrm{t}$ から酢酸は何 kg 得られるか．B の生成の収率を $90\\,\\%$，C→D の収率を $80\\,\\%$，ほかの段階の収率を $100\\,\\%$ とし，有効数字 3 桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "方法 3 の全体の反応式を書け．また，収率がすべて $100\\,\\%$ のとき，原料に含まれる炭素原子のうち酢酸に入る割合（％）を，方法 2（原料は石灰石とコークス）と方法 3 のそれぞれについて求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{2CH3COOH + Ca(OH)2 -> (CH3COO)2Ca + 2H2O}$，$\\ce{(CH3COO)2Ca + H2SO4 -> CaSO4 + 2CH3COOH}$．カルシウム塩はイオン結晶で揮発しないので，加熱してもメタノールやアセトンだけを追い出せる．硫酸は酢酸より強い酸で揮発しにくいので，弱酸の酢酸を遊離させ，揮発性の酢酸だけが留出する．"
+   },
+   {
+    "id": "2",
+    "tex": "A：酸化カルシウム $\\ce{CaO}$　B：炭化カルシウム $\\ce{CaC2}$　C：アセチレン $\\ce{C2H2}$　D：アセトアルデヒド $\\ce{CH3CHO}$，$\\ce{CaO + 3C -> CaC2 + CO}$，$\\ce{CaC2 + 2H2O -> Ca(OH)2 + C2H2}$"
+   },
+   {
+    "id": "3",
+    "tex": "$432\\,\\mathrm{kg}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{CH3OH + CO -> CH3COOH}$，方法 2：$50\\,\\%$，方法 3：$100\\,\\%$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　中和：$\\ce{2CH3COOH + Ca(OH)2 -> (CH3COO)2Ca + 2H2O}$．\n酢酸自身も揮発性なので，そのまま加熱するとメタノールやアセトンといっしょに出てしまう．イオン結晶の酢酸カルシウムにしておけば揮発しないので，\\textbf{揮発性の不純物だけを追い出せる}．\n次に，酢酸より強く，しかも揮発しにくい濃硫酸を加えると，弱酸の遊離が起こる：$\\ce{(CH3COO)2Ca + H2SO4 -> CaSO4 + 2CH3COOH}$．加熱すると\\textbf{揮発性の酢酸だけが留出}し，$\\ce{CaSO4}$ と過剰の硫酸は残る（揮発性の酸の遊離）．\n\n\\textbf{(2)}　$\\ce{CaCO3 -> CaO + CO2}$ で A は\\textbf{酸化カルシウム $\\ce{CaO}$}．コークスと強熱して $\\ce{CaO + 3C -> CaC2 + CO}$，B は\\textbf{炭化カルシウム（カーバイド）$\\ce{CaC2}$}．水を加えると $\\ce{CaC2 + 2H2O -> Ca(OH)2 + C2H2}$ で C は\\textbf{アセチレン $\\ce{C2H2}$}．$\\ce{HgSO4}$ 触媒で水を付加すると，生じたビニルアルコール（エノール）が異性化して D の\\textbf{アセトアルデヒド $\\ce{CH3CHO}$} になる：$\\ce{C2H2 + H2O -> CH3CHO}$．最後に $\\ce{2CH3CHO + O2 -> 2CH3COOH}$．\n\n\\textbf{(3)}　$\\ce{CaCO3}$（式量 100）$1.00\\,\\mathrm{t} = 1.00\\times10^{6}\\,\\mathrm{g}$ は $1.00\\times10^{4}\\,\\mathrm{mol}$．各段階で 1 mol から 1 mol ずつ進む（$\\ce{CH3CHO}$ 1 mol から $\\ce{CH3COOH}$ 1 mol も同じ）ので，酢酸（分子量 60）は\n\\[ 1.00\\times10^{4}\\times0.90\\times0.80\\times60 = 4.32\\times10^{5}\\,\\mathrm{g} = \\boldsymbol{432\\,\\mathrm{kg}}. \\]\n\n\\textbf{(4)}　$\\ce{CH3OH + CO -> CH3COOH}$．\n方法 2 では酢酸 1 分子（C 2 個）をつくるのに，石灰石の C 1 個（$\\ce{CO2}$ として失われる）とコークスの C 3 個（うち 1 個は $\\ce{CO}$ として失われる）の計 4 個を使うので，$2/4 = \\boldsymbol{50\\,\\%}$．\n方法 3 はメタノールの C と一酸化炭素の C がどちらも酢酸に入るので $\\boldsymbol{100\\,\\%}$．方法 3 は加成型の反応で副生成物がなく，約 2000 ℃ の高温や水銀触媒も使わないため，カーバイド法に取って代わった．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "揮発性の弱酸をいったん不揮発性の塩にして揮発性の不純物を除き，強くて揮発しにくい酸で遊離させて留出させる分離法と，石灰石・コークスからアセチレン・アセトアルデヒドを経る多段階の製法の量的関係を，原料の炭素が製品に入る割合で現在の直接合成と比べる．"
+ },
+ "concepts": [
+  "carboxylic-ester",
+  "industrial-process",
+  "alcohol-carbonyl"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "酢酸",
+  "カーバイド法",
+  "弱酸の遊離",
+  "工業的製法",
+  "収率"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

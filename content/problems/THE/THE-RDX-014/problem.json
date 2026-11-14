@@ -1,0 +1,123 @@
+{
+ "id": "THE-RDX-014",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-06",
+ "topic": "溶存酸素の定量（ウィンクラー法）の反応経路",
+ "course": "化学",
+ "level": 1,
+ "minutes": 15,
+ "format": [
+  "pathway",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水中に溶けている酸素（溶存酸素）を次の方法で定量する．\\\\\n試料水 $200\\,\\mathrm{mL}$ を空気が入らないように試料びんに満たし，硫酸マンガン(II)水溶液と，ヨウ化カリウムを含む水酸化ナトリウム水溶液を加えると，白色沈殿 A が生じ，A は溶存酸素によってただちに酸化されて褐色沈殿 B（$\\ce{MnO(OH)2}$）になった．次に硫酸を加えて沈殿を溶かすと，B は $\\ce{I-}$ を酸化して $\\ce{I2}$ を生じ，$\\ce{Mn^2+}$ に戻った．生じた $\\ce{I2}$ をデンプンを指示薬として $0.0200\\,\\mathrm{mol/L}$ チオ硫酸ナトリウム水溶液で滴定すると，$6.00\\,\\mathrm{mL}$ を要した（$\\ce{I2 + 2S2O3^2- -> 2I- + S4O6^2-}$）．O = 16 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "沈殿 A の化学式を答えよ．また，A が B になる反応と，B が $\\ce{I-}$ を酸化する反応を，それぞれ化学反応式（イオン反応式）で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "溶存酸素 1 mol は，最終的にチオ硫酸イオン何 mol と対応するか．"
+     },
+     {
+      "id": "3",
+      "tex": "この試料水の溶存酸素の濃度（mg/L）を有効数字3桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "試料びんに空気の泡が入ったまま操作すると，求まる溶存酸素の濃度は真の値より大きくなるか，小さくなるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：溶存酸素の定量（ウィンクラー法）の反応経路",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "A：$\\ce{Mn(OH)2}$；$\\ce{2Mn(OH)2 + O2 -> 2MnO(OH)2}$，$\\ce{MnO(OH)2 + 2I- + 4H+ -> Mn^2+ + I2 + 3H2O}$"
+   },
+   {
+    "id": "2",
+    "tex": "4 mol"
+   },
+   {
+    "id": "3",
+    "tex": "$4.80\\,\\mathrm{mg/L}$"
+   },
+   {
+    "id": "4",
+    "tex": "大きくなる"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\ce{Mn^2+ + 2OH- -> Mn(OH)2}$ で白色の $\\ce{Mn(OH)2}$ が沈殿する．これが酸素で酸化され（Mn：$+2\\to+4$），\n\\[ \\ce{2Mn(OH)2 + O2 -> 2MnO(OH)2} \\]\n酸性にすると $\\ce{MnO(OH)2}$ が $\\ce{I-}$ を酸化する（Mn：$+4\\to+2$）．\n\\[ \\ce{MnO(OH)2 + 2I- + 4H+ -> Mn^2+ + I2 + 3H2O} \\]\nマンガンは酸素の「運び役」で，最終的には $\\ce{Mn^2+}$ に戻る．\n\n\\textbf{(2)} 反応の流れは解答図のとおり．$\\ce{O2}$ 1 mol → $\\ce{MnO(OH)2}$ 2 mol → $\\ce{I2}$ 2 mol → $\\ce{S2O3^2-}$ $\\boldsymbol{4\\ \\mathrm{mol}}$．（$\\ce{O2}$ は電子 4 mol を受け取る酸化剤であり，$\\ce{S2O3^2-}$ は1 mol あたり電子 1 mol を与えるので，電子の数からも 1：4 となる．）\n\n\\textbf{(3)} $n(\\ce{S2O3^2-})=0.0200\\times\\dfrac{6.00}{1000}=1.20\\times10^{-4}\\,\\mathrm{mol}$，$n(\\ce{O2})=3.00\\times10^{-5}\\,\\mathrm{mol}$．\n\\[ 3.00\\times10^{-5}\\times32\\times10^{3}\\,\\mathrm{mg}\\times\\dfrac{1000}{200}=\\boldsymbol{4.80\\,\\mathrm{mg/L}} \\]\n\n\\textbf{(4)} 泡の中の酸素も $\\ce{Mn(OH)2}$ を酸化して $\\ce{I2}$ の量を増やすので，\\textbf{大きくなる}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "溶存酸素の定量では，O2 を Mn(OH)2 に固定して MnO(OH)2 とし，酸性で I- を酸化させて I2 に置き換え，チオ硫酸イオンで滴定する．反応の連鎖をたどると O2 1 mol が S2O3^2- 4 mol に対応する（電子の数の保存）．"
+ },
+ "concepts": [
+  "redox",
+  "transition-metals",
+  "halogen"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "酸化還元滴定",
+  "溶存酸素",
+  "ヨウ素滴定",
+  "チオ硫酸ナトリウム",
+  "マンガン"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

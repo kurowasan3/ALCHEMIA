@@ -1,0 +1,109 @@
+{
+ "id": "POL-PRT-073",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-05",
+ "topic": "二本鎖 DNA の塩基組成から求める水素結合の数と融解温度の比較",
+ "course": "化学",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "二重らせん構造をもつ DNA では，アデニン（A）とチミン（T）が 2 本，グアニン（G）とシトシン（C）が 3 本の水素結合で塩基対をつくる．二本鎖 DNA の溶液を加熱すると，ある温度範囲で塩基対がこわれて 1 本ずつの鎖に分かれる．十分に長い DNA では，その温度（融解温度）は，主に塩基対 1 組あたりの平均の水素結合の数（G–C 対の割合）で決まり，長さにはほとんどよらないものとする．\n二本鎖 DNA P，Q，R，S の長さと，全塩基に対する A のモル分率は次のとおりである．\n\\[\\begin{array}{c|cccc} \\text{DNA} & \\text{P} & \\text{Q} & \\text{R} & \\text{S}\\\\ \\hline \\text{塩基対の数} & 1000 & 1000 & 1000 & 1200\\\\ \\text{A のモル分率}[\\%] & 30 & 18 & 25 & 35 \\end{array}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "P の全塩基に対する G のモル分率 $[\\%]$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "P の 1 分子中で塩基対をつくっている水素結合の総数を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "P，Q，R を融解温度の高いものから順に並べよ．"
+     },
+     {
+      "id": "4",
+      "tex": "S の 1 分子中の水素結合の総数を求め，P と比べて多いか少ないかを答えよ．また，S と P のどちらの融解温度が高いと考えられるか答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$20\\,\\%$"
+   },
+   {
+    "id": "2",
+    "tex": "$2400$ 本"
+   },
+   {
+    "id": "3",
+    "tex": "Q，R，P"
+   },
+   {
+    "id": "4",
+    "tex": "$2760$ 本で P より多い．融解温度は P のほうが高い"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　二本鎖では A と T，G と C の数がそれぞれ等しい（相補性）．A のモル分率がわかれば A–T 対と G–C 対の数が決まり，水素結合の総数は $2\\times(\\text{A–T 対})+3\\times(\\text{G–C 対})$ で数えられる．\n\n\\textbf{(1)}　A＝T＝30 % なので G＋C＝40 %，G＝C より G は $\\boldsymbol{20\\,\\%}$．\n\n\\textbf{(2)}　塩基は全部で $2000$ 個．A は $2000\\times0.30=600$ 個なので A–T 対 600 組，G–C 対 $1000-600=400$ 組．水素結合は $2\\times600+3\\times400=\\boldsymbol{2400}$ 本．\n\n\\textbf{(3)}　G–C 対の割合は P：$40\\,\\%$，Q：$100-2\\times18=64\\,\\%$，R：$50\\,\\%$．塩基対 1 組あたりの水素結合は P 2.40，Q 2.64，R 2.50 本で，G–C 対が多いほど 1 組あたりの結合が強く，らせんをほどくのに高い温度が必要になる．よって $\\boldsymbol{\\text{Q，R，P}}$ の順．\n\n\\textbf{(4)}　S の塩基は $2400$ 個，A は $2400\\times0.35=840$ 個なので A–T 対 840 組，G–C 対 $1200-840=360$ 組．水素結合は $2\\times840+3\\times360=\\boldsymbol{2760}$ 本で，P（2400 本）より\\textbf{多い}．しかしこれは S が長いためで，1 組あたりでは $2760/1200=2.30$ 本と P の 2.40 本より少ない（G–C 対の割合 30 % < 40 %）．十分長い DNA の融解温度は 1 組あたりの強さで決まるので，$\\boldsymbol{\\text{P のほうが高い}}$．総数が多いことは融解温度が高いことを意味しない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "相補性（A=T，G=C）から A のモル分率だけで A–T 対・G–C 対の数が決まり，水素結合の総数は 2×(A–T)+3×(G–C) で数えられる．十分長い DNA の熱安定性は総数ではなく塩基対 1 組あたりの水素結合（G–C 対の割合）で比べる．"
+ },
+ "concepts": [
+  "protein-amino",
+  "nucleic-acid",
+  "intermolecular"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "DNA",
+  "塩基対",
+  "水素結合",
+  "相補性",
+  "融解温度"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,118 @@
+{
+ "id": "THE-ION-101",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "炭酸水素ナトリウム水溶液を大気中に放置したときの pH（開放系の炭酸平衡）",
+ "course": "化学",
+ "level": 5,
+ "minutes": 35,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水に溶けた二酸化炭素をまとめて $\\ce{H2CO3}$ と表し，次の電離平衡を考える（25 ℃）．\n\\[ \\ce{H2CO3 <=> H+ + HCO3-}\\quad K_1=5.0\\times10^{-7}\\,\\mathrm{mol/L},\\qquad \\ce{HCO3- <=> H+ + CO3^2-}\\quad K_2=5.0\\times10^{-11}\\,\\mathrm{mol/L} \\]\n水のイオン積は $1.0\\times10^{-14}\\,(\\mathrm{mol/L})^{2}$ とする．また，大気と平衡にある水溶液では，溶液の pH によらず $[\\ce{H2CO3}]=1.0\\times10^{-5}\\,\\mathrm{mol/L}$ に保たれるものとする．水の蒸発と $\\ce{Na+}$ の量の変化は無視する．必要なら $\\log_{10}2=0.30$，$\\sqrt{1.8}=1.34$，$\\log_{10}1.71=0.23$ を用いよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "密閉容器中の $0.10\\,\\mathrm{mol/L}$ $\\ce{NaHCO3}$ 水溶液では，$\\ce{2HCO3- <=> H2CO3 + CO3^2-}$ により $[\\ce{H2CO3}]\\fallingdotseq[\\ce{CO3^2-}]$ とみなせる．この近似で pH を求め，そのときの $[\\ce{H2CO3}]$ を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "この水溶液を大気中に開放すると，二酸化炭素は溶液から出ていくか，溶け込むか．(1) の結果を用いて判断せよ．また，そのとき溶液の pH は上がるか下がるか．"
+     },
+     {
+      "id": "3",
+      "tex": "十分に時間がたって大気と平衡になったときの水溶液について，$\\ce{Na+}$ と陰イオンの電荷のつり合いを $[\\ce{H+}]$ だけを含む式で表せ．ただし $[\\ce{H+}]$ と $[\\ce{OH-}]$ は $[\\ce{Na+}]$ に比べて無視してよい．これを解いて pH を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の状態で $[\\ce{HCO3-}]$，$[\\ce{CO3^2-}]$ を求め，はじめに溶けていた炭素（$\\ce{H2CO3}$，$\\ce{HCO3-}$，$\\ce{CO3^2-}$ の合計）のうち何 \\% が二酸化炭素として失われたかを答えよ．また，(3) で $[\\ce{OH-}]$ を無視した近似が妥当であることを確かめよ．"
+     },
+     {
+      "id": "5",
+      "tex": "濃度が $0.010\\,\\mathrm{mol/L}$ の $\\ce{NaHCO3}$ 水溶液を同様に大気と平衡にしたときの pH を小数第 1 位まで求め，(3) と比べてどちらがフェノールフタレイン（変色域 pH 8.0〜9.8）を赤くしやすいか答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "pH 8.3，$[\\ce{H2CO3}]=1.0\\times10^{-3}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "2",
+    "tex": "大気と平衡な値 $1.0\\times10^{-5}\\,\\mathrm{mol/L}$ の 100 倍あるので二酸化炭素は出ていく．pH は上がる"
+   },
+   {
+    "id": "3",
+    "tex": "$0.10=\\dfrac{K_1s}{[\\ce{H+}]}+\\dfrac{2K_1K_2s}{[\\ce{H+}]^{2}}$（$s=1.0\\times10^{-5}$），pH 10.0"
+   },
+   {
+    "id": "4",
+    "tex": "$[\\ce{HCO3-}]=5.0\\times10^{-2}$，$[\\ce{CO3^2-}]=2.5\\times10^{-2}\\,\\mathrm{mol/L}$，25 \\%．$[\\ce{OH-}]=1.0\\times10^{-4}\\,\\mathrm{mol/L}$ で $0.10$ の 0.1 \\% にすぎず無視できる"
+   },
+   {
+    "id": "5",
+    "tex": "pH 9.2．$0.10\\,\\mathrm{mol/L}$ の溶液（pH 10.0）のほうが赤くなりやすい"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $K_1K_2=\\dfrac{[\\ce{H+}]^{2}[\\ce{CO3^2-}]}{[\\ce{H2CO3}]}$ で $[\\ce{H2CO3}]=[\\ce{CO3^2-}]$ とすると $[\\ce{H+}]=\\sqrt{K_1K_2}=\\sqrt{2.5\\times10^{-17}}=5.0\\times10^{-9}$，pH $=9-\\log_{10}5=\\boldsymbol{8.3}$．\n$[\\ce{HCO3-}]\\fallingdotseq0.10$ として $[\\ce{H2CO3}]=\\dfrac{[\\ce{H+}][\\ce{HCO3-}]}{K_1}=\\dfrac{5.0\\times10^{-9}\\times0.10}{5.0\\times10^{-7}}=\\boldsymbol{1.0\\times10^{-3}\\,\\mathrm{mol/L}}$．\n\n\\textbf{(2)} 密閉容器中の $[\\ce{H2CO3}]$ は大気と平衡な値の 100 倍なので，開放すると二酸化炭素は\\textbf{出ていく}．$\\ce{H2CO3}$ が減ると $\\ce{2HCO3- -> H2CO3 + CO3^2-}$ が右へ進み，より強い塩基の $\\ce{CO3^2-}$ が増えるので pH は\\textbf{上がる}．（このとき $\\ce{Na+}$ の量は変わらないので，陰イオンの電荷の合計も変わらない．）\n\n\\textbf{(3)} $[\\ce{H2CO3}]=s=1.0\\times10^{-5}$ に固定されるので $[\\ce{HCO3-}]=\\dfrac{K_1s}{[\\ce{H+}]}$，$[\\ce{CO3^2-}]=\\dfrac{K_1K_2s}{[\\ce{H+}]^{2}}$．電荷のつり合い $[\\ce{Na+}]=[\\ce{HCO3-}]+2[\\ce{CO3^2-}]$ より\n\\[ \\boldsymbol{0.10=\\frac{K_1s}{[\\ce{H+}]}+\\frac{2K_1K_2s}{[\\ce{H+}]^{2}}} \\]\n$K_1s=5.0\\times10^{-12}$，$2K_1K_2s=5.0\\times10^{-22}$．$\\dfrac{1}{[\\ce{H+}]}=t\\times10^{10}$ とおくと $0.05t+0.05t^{2}=0.10$，$t^{2}+t-2=0$，$t=1$．よって $[\\ce{H+}]=1.0\\times10^{-10}$，pH $=\\boldsymbol{10.0}$．\n\n\\textbf{(4)} $[\\ce{HCO3-}]=\\dfrac{5.0\\times10^{-12}}{1.0\\times10^{-10}}=\\boldsymbol{5.0\\times10^{-2}}$，$[\\ce{CO3^2-}]=\\dfrac{2.5\\times10^{-22}}{1.0\\times10^{-20}}=\\boldsymbol{2.5\\times10^{-2}\\,\\mathrm{mol/L}}$．\n炭素の合計は $1.0\\times10^{-5}+0.050+0.025\\fallingdotseq0.075$ で，はじめの $0.10$ から $0.025$ 減ったので $\\boldsymbol{25\\ \\%}$ が失われた（$\\ce{2HCO3- -> CO3^2- + H2O + CO2}$ で生じた $\\ce{CO3^2-}$ の量と等しい）．\n$[\\ce{OH-}]=\\dfrac{1.0\\times10^{-14}}{1.0\\times10^{-10}}=1.0\\times10^{-4}$ は $[\\ce{Na+}]=0.10$ の 0.1 \\%，$[\\ce{H+}]$ はさらに小さいので無視は妥当．\n\n\\textbf{(5)} $0.05t+0.05t^{2}=0.010$ より $t^{2}+t-0.2=0$，$t=\\dfrac{-1+\\sqrt{1.8}}{2}=0.17$．$[\\ce{H+}]=\\dfrac{1}{1.71\\times10^{9}}$，pH $=9+\\log_{10}1.71=\\boldsymbol{9.2}$．\n（$[\\ce{OH-}]=1.7\\times10^{-5}$ は $0.010$ の 0.2 \\% で無視できる．）大気と平衡になった後の pH は $\\ce{Na+}$ の濃度で決まり，濃いほど高い．$0.10\\,\\mathrm{mol/L}$ の溶液は pH 10.0 でフェノールフタレインの変色域を超えて赤くなり，$0.010\\,\\mathrm{mol/L}$（pH 9.2）はうすい赤色にとどまる．密閉容器中ではどちらも pH 8.3 で濃度によらないのと対照的である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "開放系では大気との平衡で [H₂CO₃] が一定に固定され，保存されるのは Na⁺（陰イオンの電荷の合計）なので，pH は [Na⁺]＝K₁s/[H⁺]＋2K₁K₂s/[H⁺]² から決まる．密閉系の NaHCO₃ 水溶液の pH（(pK₁＋pK₂)/2，濃度によらない）と違い，CO₂ が抜けて CO₃²⁻ が増えるため pH が上がり，その値は Na⁺ の濃度に依存する．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "alkali-metals",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "炭酸の電離平衡",
+  "開放系",
+  "炭酸水素ナトリウム",
+  "電荷のつり合い",
+  "二酸化炭素",
+  "pH"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

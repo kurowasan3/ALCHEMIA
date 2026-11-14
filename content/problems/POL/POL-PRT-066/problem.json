@@ -1,0 +1,117 @@
+{
+ "id": "POL-PRT-066",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-05",
+ "topic": "元素分析と加水分解生成物（酸化でつながるアルコールと酸）による N-アシルアミノ酸エステルの構造決定",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "structure",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "化合物 A はエステル結合とアミド結合を 1 つずつもち，分子量は 200 以下である．次の記述ア〜エを読み，下の問いに答えよ．原子量は H = 1，C = 12，N = 14，O = 16 とする．\\\\\nア　A $29.0\\,\\mathrm{mg}$ を完全燃焼させると，二酸化炭素 $52.8\\,\\mathrm{mg}$，水 $19.8\\,\\mathrm{mg}$ と窒素酸化物が生じた．窒素酸化物をすべて窒素 $\\ce{N2}$ に還元すると $2.80\\,\\mathrm{mg}$ であった．\\\\\nイ　A を完全に加水分解すると，B，C，D の 3 種類の化合物が得られた．\\\\\nウ　B はタンパク質を構成する $\\alpha$-アミノ酸で，不斉炭素原子をもたない．\\\\\nエ　C と D は鎖式化合物で，C を二クロム酸カリウムの硫酸酸性水溶液で十分に酸化すると D が得られた．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A の組成式と分子式を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "B，C，D の名称を答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "A の構造を示性式で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "A $1\\,\\mathrm{mol}$ を水酸化ナトリウム水溶液で完全に加水分解するのに必要な $\\ce{NaOH}$ は何 mol か．"
+     },
+     {
+      "id": "5",
+      "tex": "A と，A を加水分解した後の水溶液について，ニンヒドリン反応を示すかどうかをそれぞれ答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "組成式・分子式とも $\\ce{C6H11NO3}$"
+   },
+   {
+    "id": "2",
+    "tex": "B グリシン，C エタノール，D 酢酸"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{CH3CONHCH2COOC2H5}$"
+   },
+   {
+    "id": "4",
+    "tex": "$2\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "5",
+    "tex": "A は示さない，加水分解後の水溶液は示す"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　各元素の質量：\n\\[ \\ce{C}：52.8\\times\\frac{12}{44}=14.4\\,\\mathrm{mg},\\quad \\ce{H}：19.8\\times\\frac{2}{18}=2.20\\,\\mathrm{mg},\\quad \\ce{N}：2.80\\,\\mathrm{mg},\\quad \\ce{O}：29.0-19.4=9.60\\,\\mathrm{mg} \\]\n物質量比 $\\ce{C}:\\ce{H}:\\ce{N}:\\ce{O}=1.20:2.20:0.200:0.600=6:11:1:3$．組成式 $\\ce{C6H11NO3}$（式量 145）．$2\\times145>200$ なので分子式も $\\boldsymbol{\\ce{C6H11NO3}}$．\n\n\\textbf{(2)}　不斉炭素原子をもたない $\\alpha$-アミノ酸は $\\boldsymbol{\\text{グリシン}}$ $\\ce{H2NCH2COOH}$（$\\ce{C2H5NO2}$）．A はエステル結合とアミド結合の 2 か所が加水分解されるので\n\\[ \\ce{C6H11NO3} + 2\\ce{H2O} = \\ce{C2H5NO2} + (\\text{C と D の合計 } \\ce{C4H10O3}) \\]\nC を酸化すると D になるので，C は第一級アルコール，D は同じ炭素数のカルボン酸．炭素数は 2 ずつで，$\\ce{C2H6O}$（$\\boldsymbol{\\text{エタノール}}$）と $\\ce{C2H4O2}$（$\\boldsymbol{\\text{酢酸}}$）とすると H・O の数も合う．\n\n\\textbf{(3)}　アミド結合はグリシンのアミノ基と酢酸の間，エステル結合はグリシンのカルボキシ基とエタノールの間にできる（エタノールと酢酸どうしがエステルになると 1 分子にまとまらない）．\n\\[ \\boldsymbol{\\ce{CH3CONHCH2COOC2H5}} \\]\n\\[ \\ce{CH3CONHCH2COOC2H5 + 2H2O -> CH3COOH + H2NCH2COOH + C2H5OH} \\]\n\n\\textbf{(4)}　塩基で加水分解すると，生じる 2 つのカルボン酸がどちらもナトリウム塩になる．\n\\[ \\ce{CH3CONHCH2COOC2H5 + 2NaOH -> CH3COONa + H2NCH2COONa + C2H5OH} \\]\nよって $\\boldsymbol{2\\,\\mathrm{mol}}$．\n\n\\textbf{(5)}　ニンヒドリン反応は遊離のアミノ基で起こる．A のアミノ基はアセチル化（アミド）されているので $\\boldsymbol{\\text{示さない}}$．加水分解後はグリシンの $\\ce{-NH2}$ が遊離するので $\\boldsymbol{\\text{示す}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "燃焼分析で分子式を決め，加水分解で 2 分子の水が加わることから生成物の分子式の合計を出す．アミノ酸のアミノ基はアミド，カルボキシ基はエステルになっており，残りのアルコールと酸が酸化の関係にあることから炭素数が決まり，構造が一意に定まる．"
+ },
+ "concepts": [
+  "protein-amino",
+  "nitrogen-phosphorus",
+  "elemental-analysis"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "元素分析",
+  "アミド結合",
+  "エステル結合",
+  "グリシン",
+  "ニンヒドリン反応"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

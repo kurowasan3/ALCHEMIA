@@ -1,0 +1,121 @@
+{
+ "id": "THE-MOL-030",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-04",
+ "topic": "過不足のある反応のグラフ（傾きと折れ曲がりの意味）",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "7 個のビーカーに同じ濃度の希硫酸を $50.0\\,\\mathrm{mL}$ ずつとり，それぞれにマグネシウムの粉末を $0.060\\,\\mathrm{g}$ から $0.420\\,\\mathrm{g}$ まで $0.060\\,\\mathrm{g}$ きざみで加えて完全に反応させた．発生した水素の体積（標準状態）と加えたマグネシウムの質量の関係は図のようになった．原子量は Mg = 24，Al = 27 とし，標準状態の気体のモル体積は $22.4\\,\\mathrm{L/mol}$ とする．反応式は $\\ce{Mg + H2SO4 -> MgSO4 + H2}$ である．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "用いた希硫酸のモル濃度を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "同じ希硫酸を $25.0\\,\\mathrm{mL}$ ずつにして同じ実験を行うと，グラフの「直線部分の傾き」「水素の体積の最大値」「グラフが折れ曲がるマグネシウムの質量」はそれぞれどうなるか．"
+     },
+     {
+      "id": "3",
+      "tex": "希硫酸の代わりに，同じモル濃度の塩酸を $50.0\\,\\mathrm{mL}$ ずつ用いると，(2) の 3 つの量はそれぞれどうなるか．"
+     },
+     {
+      "id": "4",
+      "tex": "希硫酸は $50.0\\,\\mathrm{mL}$ のままで，マグネシウムの代わりに同じ質量のアルミニウムを加えると，(2) の 3 つの量はそれぞれどうなるか．アルミニウムは $\\ce{2Al + 3H2SO4 -> Al2(SO4)3 + 3H2}$ と反応する．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：過不足のある反応のグラフ（傾きと折れ曲がりの意味）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$0.20\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "2",
+    "tex": "傾きは変わらない，最大値は $112\\,\\mathrm{mL}$（半分），折れ曲がる質量は $0.12\\,\\mathrm{g}$（半分）"
+   },
+   {
+    "id": "3",
+    "tex": "傾きは変わらない，最大値は $112\\,\\mathrm{mL}$（半分），折れ曲がる質量は $0.12\\,\\mathrm{g}$（半分）"
+   },
+   {
+    "id": "4",
+    "tex": "傾きは $\\dfrac{4}{3}$ 倍，最大値は $224\\,\\mathrm{mL}$（変わらない），折れ曲がる質量は $0.18\\,\\mathrm{g}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{グラフの読み方}\n直線部分ではマグネシウムがすべて反応し，硫酸が余っている（Mg が不足）．水平部分では硫酸がすべて反応し，Mg が余っている（硫酸が不足）．\n\\begin{itemize}\n\\item \\textbf{傾き}は「金属 1 g あたりに発生する水素の量」で，金属の種類だけで決まる（酸の量・濃度に関係しない）．\n\\item \\textbf{最大値}は「酸がすべて反応したときの水素の量」で，酸の H$^+$ の物質量だけで決まる．\n\\item \\textbf{折れ曲がり}は両者が過不足なく反応する点である．\n\\end{itemize}\n\n\\textbf{(1)} 折れ曲がりは $0.24\\,\\mathrm{g}$，最大値は $224\\,\\mathrm{mL}$．$\\ce{H2}$ は $\\dfrac{0.224}{22.4}=0.0100\\,\\mathrm{mol}$ で，$\\ce{H2SO4}$ も同じ $0.0100\\,\\mathrm{mol}$（Mg も $\\dfrac{0.24}{24}=0.010\\,\\mathrm{mol}$ で一致）．\n\\[c=\\frac{0.0100}{0.0500}=\\boldsymbol{0.20\\,\\mathrm{mol/L}}\\]\n\n\\textbf{(2) 酸の体積を半分に}\n金属は同じなので傾きは\\textbf{変わらない}．硫酸が $0.00500\\,\\mathrm{mol}$ になるので最大値は $\\boldsymbol{112\\,\\mathrm{mL}}$，折れ曲がりは $0.00500\\times24=\\boldsymbol{0.12\\,\\mathrm{g}}$．\n\n\\textbf{(3) 同じ濃度の塩酸に}\n$\\ce{Mg + 2HCl -> MgCl2 + H2}$．塩酸 $0.0100\\,\\mathrm{mol}$ は 1 価の酸なので $\\ce{H+}$ は $0.0100\\,\\mathrm{mol}$ で，硫酸（2 価，$\\ce{H+}$ $0.0200\\,\\mathrm{mol}$）の半分．傾きは\\textbf{変わらず}，最大値は $\\boldsymbol{112\\,\\mathrm{mL}}$，折れ曲がりは $\\boldsymbol{0.12\\,\\mathrm{g}}$．同じモル濃度でも，酸の価数が違えば反応できる金属の量が変わる．\n\n\\textbf{(4) 金属をアルミニウムに}\n1 g あたりの $\\ce{H2}$ は，Mg：$\\dfrac{1}{24}\\,\\mathrm{mol}$，Al：$\\dfrac{1}{27}\\times\\dfrac{3}{2}=\\dfrac{1}{18}\\,\\mathrm{mol}$．傾きは $\\dfrac{1/18}{1/24}=\\boldsymbol{\\dfrac{4}{3}}$ 倍．硫酸の量は同じなので最大値は $\\boldsymbol{224\\,\\mathrm{mL}}$ のまま．折れ曲がりは $\\ce{H2}$ $0.0100\\,\\mathrm{mol}$ を出す Al の質量で\n\\[0.0100\\times\\frac{2}{3}\\times27=\\boldsymbol{0.18\\,\\mathrm{g}}\\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "過不足のある反応の折れ線グラフで，直線部分の傾きは加える側（金属）の1 g あたりの生成量で決まり，水平部分の高さは一定量の側（酸の H⁺ の量，価数を含む）で決まる．条件を変えたとき傾き・最大値・折れ曲がりの位置のどれが変わるかを，どちらの物質が不足しているかから判断する．"
+ },
+ "concepts": [
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "過不足",
+  "量的関係",
+  "グラフ",
+  "酸の価数",
+  "水素の発生"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

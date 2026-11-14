@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="none" stroke="currentColor">
+<line x1="70.0" y1="300.0" x2="170.0" y2="236.0" stroke-width="1.5" stroke-dasharray="5 4" opacity="0.5"/>
+<line x1="70.0" y1="300.0" x2="70.0" y2="100.0" stroke-width="1.5"/>
+<line x1="70.0" y1="300.0" x2="270.0" y2="300.0" stroke-width="1.5"/>
+<line x1="170.0" y1="236.0" x2="170.0" y2="36.0" stroke-width="1.5" stroke-dasharray="5 4" opacity="0.5"/>
+<line x1="170.0" y1="236.0" x2="370.0" y2="236.0" stroke-width="1.5" stroke-dasharray="5 4" opacity="0.5"/>
+<line x1="70.0" y1="100.0" x2="170.0" y2="36.0" stroke-width="1.5"/>
+<line x1="70.0" y1="100.0" x2="270.0" y2="100.0" stroke-width="1.5"/>
+<line x1="170.0" y1="36.0" x2="370.0" y2="36.0" stroke-width="1.5"/>
+<line x1="270.0" y1="300.0" x2="370.0" y2="236.0" stroke-width="1.5"/>
+<line x1="270.0" y1="300.0" x2="270.0" y2="100.0" stroke-width="1.5"/>
+<line x1="370.0" y1="236.0" x2="370.0" y2="36.0" stroke-width="1.5"/>
+<line x1="270.0" y1="100.0" x2="370.0" y2="36.0" stroke-width="1.5"/>
+<circle cx="70.0" cy="300.0" r="11" fill="none" stroke-width="1.5"/>
+<circle cx="170.0" cy="236.0" r="11" fill="none" stroke-width="1.5"/>
+<circle cx="70.0" cy="100.0" r="11" fill="none" stroke-width="1.5"/>
+<circle cx="170.0" cy="36.0" r="11" fill="none" stroke-width="1.5"/>
+<circle cx="270.0" cy="300.0" r="11" fill="none" stroke-width="1.5"/>
+<circle cx="370.0" cy="236.0" r="11" fill="none" stroke-width="1.5"/>
+<circle cx="270.0" cy="100.0" r="11" fill="none" stroke-width="1.5"/>
+<circle cx="370.0" cy="36.0" r="11" fill="none" stroke-width="1.5"/>
+<circle cx="220.0" cy="168.0" r="11" fill="currentColor"/>
+<line x1="70.0" y1="100.0" x2="370.0" y2="36.0" stroke-dasharray="3 4" opacity="0.5"/>
+<line x1="270.0" y1="100.0" x2="170.0" y2="36.0" stroke-dasharray="3 4" opacity="0.5"/>
+<line x1="170.0" y1="100.0" x2="270.0" y2="36.0" stroke-dasharray="3 4" opacity="0.5"/>
+<path d="M213.0,61.0 L227.0,75.0 M213.0,75.0 L227.0,61.0" stroke="#c0392b" stroke-width="2.5"/>
+<text x="230.0" y="60.0" fill="#c0392b" stroke="none">O</text>
+<polygon points="190.0,80.2 197.0,92.2 183.0,92.2" fill="#1f5fbf" stroke="none"/>
+<text x="200.0" y="99.2" fill="#1f5fbf" stroke="none">T</text>
+<text x="166.0" y="330.0" fill="currentColor" stroke="none" font-style="italic">a</text>
+<text x="420" y="190" fill="currentColor" stroke="none">○ 頂点の Fe 原子</text>
+<text x="420" y="215" fill="currentColor" stroke="none">● 体心の Fe 原子</text>
+<text x="420" y="240" fill="#c0392b" stroke="none">× O：上面の中心</text>
+<text x="420" y="265" fill="#1f5fbf" stroke="none">▲ T：上面の中心と</text>
+<text x="442" y="285" fill="#1f5fbf" stroke="none">辺の中点の中間</text>
+<text x="420" y="320" fill="currentColor" stroke="none" font-size="13">（体心立方格子）</text>
+</svg>

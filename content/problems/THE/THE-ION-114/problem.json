@@ -1,0 +1,117 @@
+{
+ "id": "THE-ION-114",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "ハロゲン化物イオンの分別沈殿の完全さ（溶解度積の比と量の比で決まり濃度によらない）",
+ "course": "化学",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ハロゲン化銀の溶解度積を $K_\\mathrm{AgCl}=1.8\\times10^{-10}\\,(\\mathrm{mol/L})^2$，$K_\\mathrm{AgBr}=5.4\\times10^{-13}\\,(\\mathrm{mol/L})^2$，$K_\\mathrm{AgI}=8.1\\times10^{-17}\\,(\\mathrm{mol/L})^2$ とする．\n\\\\ 臭化物イオンと塩化物イオンを含む水溶液（試料 S）$25.0\\,\\mathrm{mL}$ の濃度は $[\\ce{Br-}]=4.00\\times10^{-3}\\,\\mathrm{mol/L}$，$[\\ce{Cl-}]=4.00\\times10^{-2}\\,\\mathrm{mol/L}$ である．これに硝酸銀水溶液をよくかき混ぜながら少しずつ加えていくと，まず $\\ce{AgBr}$ が沈殿し，ある時点から $\\ce{AgCl}$ も沈殿しはじめた．沈殿と溶液はつねに平衡にあり，沈殿がほかのイオンを取り込むことはないものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{AgCl}$ が沈殿しはじめる瞬間の溶液中の $[\\ce{Br-}]/[\\ce{Cl-}]$ を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "試料 S で，$\\ce{AgCl}$ が沈殿しはじめる瞬間までに，はじめにあった $\\ce{Br-}$ の何 % が沈殿しているか．有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "試料 S を純水で 10 倍に薄めてから同じ操作を行うと，(2) の値はどうなるか．次の (a)〜(c) から選び，理由を答えよ．\\\\ (a) 大きくなる　(b) 変わらない　(c) 小さくなる"
+     },
+     {
+      "id": "4",
+      "tex": "$\\ce{Br-}$ と $\\ce{Cl-}$ の混合溶液で，$\\ce{AgCl}$ が沈殿しはじめるまでに $\\ce{Br-}$ の 99.0 % 以上を沈殿させるには，はじめの物質量の比 $n_{\\ce{Cl-}}/n_{\\ce{Br-}}$ がいくら以下でなければならないか．また，$\\ce{I-}$ と $\\ce{Cl-}$ の混合溶液で，$\\ce{I-}$ の 99.0 % 以上を沈殿させるための $n_{\\ce{Cl-}}/n_{\\ce{I-}}$ の上限を求めよ．いずれも有効数字2桁で答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "試料 S で，はじめにあった $\\ce{Cl-}$ のちょうど半分が沈殿した時点で，溶液中に残っている $\\ce{Br-}$ の物質量（mol）を有効数字2桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$3.0\\times10^{-3}$"
+   },
+   {
+    "id": "2",
+    "tex": "97 %"
+   },
+   {
+    "id": "3",
+    "tex": "(b)：AgCl が沈殿しはじめるとき $[\\ce{Br-}]/[\\ce{Cl-}]=K_\\mathrm{AgBr}/K_\\mathrm{AgCl}$ で，濃度の比は物質量の比に等しく体積によらないから．"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{Br-}$：3.3，$\\ce{I-}$：$2.2\\times10^{4}$"
+   },
+   {
+    "id": "5",
+    "tex": "$1.5\\times10^{-6}\\,\\mathrm{mol}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\ce{AgCl}$ が沈殿しはじめる瞬間には，$\\ce{AgBr}$ と $\\ce{AgCl}$ の両方の溶解平衡が同じ $[\\ce{Ag+}]$ で成り立つ：\n\\[ [\\ce{Ag+}]=\\frac{K_\\mathrm{AgBr}}{[\\ce{Br-}]}=\\frac{K_\\mathrm{AgCl}}{[\\ce{Cl-}]}\\quad\\Longrightarrow\\quad \\frac{[\\ce{Br-}]}{[\\ce{Cl-}]}=\\frac{K_\\mathrm{AgBr}}{K_\\mathrm{AgCl}}=\\frac{5.4\\times10^{-13}}{1.8\\times10^{-10}}=\\boldsymbol{3.0\\times10^{-3}} \\]\n\\textbf{(2)} この瞬間まで $\\ce{Cl-}$ は沈殿していないので，溶液中の $\\ce{Cl-}$ はすべて残っている（$n_{\\ce{Cl-}}=0.0250\\times4.00\\times10^{-2}=1.00\\times10^{-3}\\,\\mathrm{mol}$）．$[\\ce{Br-}]$ と $[\\ce{Cl-}]$ は同じ体積の溶液中の濃度なので，比は物質量の比に等しい：\n\\[ n_{\\ce{Br-},\\,\\text{残}}=3.0\\times10^{-3}\\times1.00\\times10^{-3}=3.0\\times10^{-6}\\,\\mathrm{mol} \\]\nはじめの $\\ce{Br-}$ は $1.00\\times10^{-4}\\,\\mathrm{mol}$ なので，残りは 3.0 %，沈殿したのは $\\boldsymbol{97\\,\\%}$．\n\\\\ \\textbf{(3)} (2) の計算に体積（硝酸銀水溶液の滴下量も含む）は現れない．薄めると $[\\ce{Cl-}]$ が下がり，$\\ce{AgCl}$ が沈殿しはじめる $[\\ce{Ag+}]$ は高くなるが，そのときの $[\\ce{Br-}]$ も同じ割合で下がるため，残る $\\ce{Br-}$ の割合は変わらない．\\textbf{(b)}．分別沈殿の完全さは濃度ではなく，溶解度積の比と2つのイオンの量の比だけで決まる．\n\\\\ \\textbf{(4)} 残る割合 $=\\dfrac{K_\\mathrm{AgBr}}{K_\\mathrm{AgCl}}\\times\\dfrac{n_{\\ce{Cl-}}}{n_{\\ce{Br-}}}\\le0.010$ より\n\\[ \\frac{n_{\\ce{Cl-}}}{n_{\\ce{Br-}}}\\le\\frac{0.010}{3.0\\times10^{-3}}=3.3 \\]\n$\\ce{I-}$ では $K_\\mathrm{AgI}/K_\\mathrm{AgCl}=4.5\\times10^{-7}$ なので，上限は $0.010/4.5\\times10^{-7}=\\boldsymbol{2.2\\times10^{4}}$．$\\ce{Br-}$ と $\\ce{Cl-}$ は溶解度積の差が約 300 倍しかないため，$\\ce{Cl-}$ が $\\ce{Br-}$ の 3.3 倍を超えて共存するだけで分離は不完全になる．試料 S（比 10）はこれにあたる．\n\\\\ \\textbf{(5)} $\\ce{AgCl}$ が沈殿している間は両方の沈殿と平衡なので，$[\\ce{Br-}]/[\\ce{Cl-}]=3.0\\times10^{-3}$ が保たれたまま両者が減っていく．$\\ce{Cl-}$ が半分（$5.0\\times10^{-4}\\,\\mathrm{mol}$）残るとき\n\\[ n_{\\ce{Br-}}=3.0\\times10^{-3}\\times5.0\\times10^{-4}=\\boldsymbol{1.5\\times10^{-6}\\,\\mathrm{mol}} \\]\n（この間，$\\ce{AgBr}$ も $\\ce{Cl-}$ と比例して沈殿し続ける．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "2 種の陰イオンが同じ陽イオンで順に沈殿するとき，後の沈殿が生じはじめる瞬間の濃度比は溶解度積の比に等しく，同じ溶液中の濃度比は物質量の比なので，先の陰イオンが残る割合は（溶解度積の比）×（はじめの物質量の比）で決まり，希釈や滴下量によらない．後の沈殿が生じている間もこの比が保たれたまま両方が減る．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "precipitation",
+  "halogen"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "溶解度積",
+  "分別沈殿",
+  "ハロゲン化銀",
+  "沈殿滴定",
+  "希釈の効果"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

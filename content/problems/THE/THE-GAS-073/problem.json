@@ -1,0 +1,115 @@
+{
+ "id": "THE-GAS-073",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-08",
+ "topic": "気体分子の固体表面への衝突頻度と超高真空が必要な理由",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "気体分子の平均の速さ $\\langle v\\rangle$，単位体積あたりの分子数（数密度）$\\rho$，固体表面の単位面積に単位時間あたり衝突する分子の数 $Z$ は，次の式で表される．\n\\[ \\langle v\\rangle=\\sqrt{\\frac{8RT}{\\pi M}},\\qquad \\rho=\\frac{PN_{\\mathrm A}}{RT},\\qquad Z=\\frac{\\rho\\langle v\\rangle}{4} \\]\nここで $M$ はモル質量〔kg/mol〕，$P$ は圧力〔Pa〕である．$R=8.31\\,\\mathrm{J/(K\\cdot mol)}$，$N_{\\mathrm A}=6.02\\times10^{23}\\,\\mathrm{/mol}$，$\\pi=3.14$，$\\sqrt{2.27}=1.51$，$\\sqrt{14}=3.74$ とし，温度はすべて $300\\,\\mathrm K$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "窒素 $\\ce{N2}$（$M=2.80\\times10^{-2}\\,\\mathrm{kg/mol}$）の $\\langle v\\rangle$ を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$1.0\\times10^{5}\\,\\mathrm{Pa}$ の窒素が金属表面に衝突する頻度 $Z$〔$\\mathrm{/(m^{2}\\cdot s)}$〕を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "この金属表面には分子を 1 個ずつ吸着できる場所（サイト）が $1.0\\times10^{19}\\,\\mathrm{/m^{2}}$ あり，衝突した分子はすべて空いたサイトに吸着するとする．きれいな表面が分子で覆われる（サイトの数だけ分子が衝突する）までの時間は，$1.0\\times10^{5}\\,\\mathrm{Pa}$ でおよそ何秒か．有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "表面の実験を 1 時間行う間，表面がほとんど汚れない（覆われるまでの時間が 1 時間以上）ようにするには，容器内の気体の圧力を何 Pa 以下にすればよいか．有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "同じ温度・同じ圧力で，気体が水素 $\\ce{H2}$（$M=2.0\\times10^{-3}\\,\\mathrm{kg/mol}$）なら，$Z$ は窒素の何倍か．有効数字 2 桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$4.8\\times10^{2}\\,\\mathrm{m/s}$"
+   },
+   {
+    "id": "2",
+    "tex": "$2.9\\times10^{27}\\,\\mathrm{/(m^{2}\\cdot s)}$"
+   },
+   {
+    "id": "3",
+    "tex": "$3.5\\times10^{-9}\\,\\mathrm{s}$"
+   },
+   {
+    "id": "4",
+    "tex": "$9.7\\times10^{-8}\\,\\mathrm{Pa}$ 以下"
+   },
+   {
+    "id": "5",
+    "tex": "$3.7$ 倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} \n\\[ \\langle v\\rangle=\\sqrt{\\frac{8\\times8.31\\times300}{3.14\\times2.80\\times10^{-2}}}=\\sqrt{2.27\\times10^{5}}=1.51\\times\\sqrt{10}\\times10^{2}\\fallingdotseq\\boldsymbol{4.8\\times10^{2}\\,\\mathrm{m/s}} \\]\n（$\\sqrt{10}=3.16$ より $476\\,\\mathrm{m/s}$．単位をそろえるため $M$ は kg/mol で代入する．）\n\\textbf{(2)} $\\rho=\\dfrac{1.0\\times10^{5}\\times6.02\\times10^{23}}{8.31\\times300}=2.41\\times10^{25}\\,\\mathrm{/m^{3}}$．\n\\[ Z=\\frac{2.41\\times10^{25}\\times476}{4}=\\boldsymbol{2.9\\times10^{27}\\,\\mathrm{/(m^{2}\\cdot s)}} \\]\n\\textbf{(3)} $t=\\dfrac{1.0\\times10^{19}}{2.87\\times10^{27}}=\\boldsymbol{3.5\\times10^{-9}\\,\\mathrm{s}}$．大気圧では，きれいな表面は数ナノ秒で気体分子に覆われてしまう．\n\\textbf{(4)} $Z$ は $\\rho$，すなわち $P$ に比例するので，覆われるまでの時間は $P$ に反比例する．$t\\ge3600\\,\\mathrm{s}$ とするには\n\\[ P\\le1.0\\times10^{5}\\times\\frac{3.48\\times10^{-9}}{3600}=\\boldsymbol{9.7\\times10^{-8}\\,\\mathrm{Pa}} \\]\n大気圧の $10^{-12}$ 倍程度という「超高真空」が必要になる．表面の性質を調べる実験や触媒の研究で，このような真空装置が使われる理由である．\n\\textbf{(5)} 同じ $T$・$P$ では $\\rho$ は同じで，$\\langle v\\rangle\\propto1/\\sqrt{M}$ なので\n\\[ \\frac{Z_{\\ce{H2}}}{Z_{\\ce{N2}}}=\\sqrt{\\frac{2.80\\times10^{-2}}{2.0\\times10^{-3}}}=\\sqrt{14}=\\boldsymbol{3.7}\\text{ 倍} \\]\n軽い分子ほど速く動くので，同じ圧力でも表面によく衝突する．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "表面への衝突頻度は数密度と平均の速さの積に比例し，数密度は圧力に比例するので，表面が気体分子で覆われるまでの時間は圧力に反比例する．大気圧ではナノ秒で覆われるので，清浄な表面を保つには超高真空が必要になり，同じ圧力でも軽い分子ほど衝突頻度が大きい．"
+ },
+ "concepts": [
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "気体の分子運動",
+  "衝突頻度",
+  "吸着",
+  "真空",
+  "モル質量"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

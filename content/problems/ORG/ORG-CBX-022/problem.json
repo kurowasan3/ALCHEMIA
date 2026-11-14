@@ -1,0 +1,109 @@
+{
+ "id": "ORG-CBX-022",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-04",
+ "topic": "置換基の電子を引く効果とカルボン酸の強さ（種類・数・距離）",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "compare",
+  "qa"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "カルボン酸 $\\ce{R-COOH}$ の強さは，O–H 結合の電子が O 側にどれだけ引き寄せられているか，また生じた $\\ce{R-COO-}$ の負電荷がどれだけ安定化されるかで決まる．R に電気陰性度の大きい原子が結合していると，結合を通して電子が引き寄せられ（この効果は間にある結合の数が増えると急に弱まる），酸は強くなる．逆に，アルキル基は H 原子に比べて電子をわずかに押し出す．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{FCH2COOH}$，$\\ce{ClCH2COOH}$，$\\ce{BrCH2COOH}$，$\\ce{ICH2COOH}$ を酸として強い順に並べよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$\\ce{CH3COOH}$，$\\ce{ClCH2COOH}$，$\\ce{Cl2CHCOOH}$，$\\ce{Cl3CCOOH}$ のうち，最も強い酸と最も弱い酸を答えよ．また，$\\ce{Cl3CCOOH}$ の $\\mathrm{p}K_{\\mathrm a}$ は $0.66$，$\\ce{CH3COOH}$ は $4.76$ である．$\\ce{Cl3CCOOH}$ の電離定数は $\\ce{CH3COOH}$ の約何倍か．$\\log_{10}1.26=0.10$ として有効数字2桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "塩素原子の位置が異なる 3 種類のクロロブタン酸 $\\ce{CH3CH2CHClCOOH}$（A），$\\ce{CH3CHClCH2COOH}$（B），$\\ce{ClCH2CH2CH2COOH}$（C）の $\\mathrm{p}K_{\\mathrm a}$ は，$2.86$，$4.05$，$4.52$ のいずれかである．A〜C に当てはまる値をそれぞれ答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "ギ酸 $\\ce{HCOOH}$，酢酸 $\\ce{CH3COOH}$，2,2-ジメチルプロパン酸 $\\ce{(CH3)3CCOOH}$ を酸として強い順に並べ，理由を述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{FCH2COOH}>\\ce{ClCH2COOH}>\\ce{BrCH2COOH}>\\ce{ICH2COOH}$"
+   },
+   {
+    "id": "2",
+    "tex": "最も強い：$\\ce{Cl3CCOOH}$，最も弱い：$\\ce{CH3COOH}$．約 $1.3\\times10^{4}$ 倍"
+   },
+   {
+    "id": "3",
+    "tex": "A：$2.86$，B：$4.05$，C：$4.52$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{HCOOH}>\\ce{CH3COOH}>\\ce{(CH3)3CCOOH}$．アルキル基は電子を押し出して $\\ce{COO-}$ の負電荷を不安定にするので，カルボキシ基に結合する炭素上のメチル基が多いほど酸は弱くなる（ギ酸はアルキル基をもたない）．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} ハロゲンの電気陰性度は F ＞ Cl ＞ Br ＞ I なので，電子を引く効果もこの順に大きい．$\\ce{FCH2COOH}>\\ce{ClCH2COOH}>\\ce{BrCH2COOH}>\\ce{ICH2COOH}$（$\\mathrm{p}K_{\\mathrm a}$ はおよそ $2.6,\\ 2.9,\\ 2.9,\\ 3.2$）．\n\n\\textbf{(2)} 塩素原子の数が多いほど電子を強く引くので，最も強いのは $\\ce{Cl3CCOOH}$，最も弱いのは $\\ce{CH3COOH}$．電離定数の比は\n\\[ \\frac{K_{\\mathrm a}(\\ce{Cl3CCOOH})}{K_{\\mathrm a}(\\ce{CH3COOH})}=10^{4.76-0.66}=10^{4.10}=1.26\\times10^{4}\\fallingdotseq\\boldsymbol{1.3\\times10^{4}}\\ \\text{倍} \\]\n\n\\textbf{(3)} 塩素がカルボキシ基に近いほど効果が大きく，酸は強い（$\\mathrm{p}K_{\\mathrm a}$ が小さい）．塩素とカルボキシ基の炭素の間の結合の数は A が最も少なく，C が最も多い．よって $\\boldsymbol{\\text{A：}2.86}$，$\\boldsymbol{\\text{B：}4.05}$，$\\boldsymbol{\\text{C：}4.52}$．C は置換基のないブタン酸（$\\mathrm{p}K_{\\mathrm a}$ 約 $4.8$）とあまり変わらず，効果が距離とともに急に弱まることがわかる．\n\n\\textbf{(4)} 電子を押し出すアルキル基は，$\\ce{COO-}$ の負電荷をさらに集中させて不安定にするので酸を弱める．ギ酸（アルキル基なし）＞ 酢酸（メチル基 1 個）＞ 2,2-ジメチルプロパン酸（カルボキシ基の隣の炭素にメチル基 3 個）の順．$\\mathrm{p}K_{\\mathrm a}$ はおよそ $3.75$，$4.76$，$5.0$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "カルボン酸の強さは，置換基が結合を通して電子を引く効果で決まり，置換原子の電気陰性度が大きいほど，数が多いほど，カルボキシ基に近いほど強くなる．逆に電子を押し出すアルキル基は酸を弱める．pKa の値を置換位置に対応させたり，電離定数の比に直したりして比べる．"
+ },
+ "concepts": [
+  "carboxylic-ester",
+  "periodicity",
+  "ionization-equilibrium"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "酸の強さ",
+  "カルボン酸",
+  "電気陰性度",
+  "置換基効果",
+  "pKa"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

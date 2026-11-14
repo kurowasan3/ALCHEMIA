@@ -1,0 +1,124 @@
+{
+ "id": "INO-GPR-029",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-09",
+ "topic": "性質の手がかりから気体を推定する",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "qa",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "気体 A〜H は，次の 10 種類の気体のうちのいずれかであり，すべて異なる．\n\\[\\ce{H2},\\ \\ce{O2},\\ \\ce{CO},\\ \\ce{CO2},\\ \\ce{NO},\\ \\ce{NO2},\\ \\ce{NH3},\\ \\ce{HCl},\\ \\ce{H2S},\\ \\ce{Cl2}\\]\n(ア) A〜G は無色で，H だけが有色である．\n(イ) A〜E は無臭で，F，G，H には刺激臭または腐卵臭がある．\n(ウ) E は空気に触れるとすぐに赤褐色の気体に変わる．\n(エ) A と C は燃える気体で，A が燃えると水だけが，C が燃えると D だけが生じる．\n(オ) D は石灰水を白濁させる．B は火のついた線香を激しく燃え上がらせる．\n(カ) F の水溶液は赤色リトマス紙を青色に変える．\n(キ) G は湿った酢酸鉛(II) 紙を黒くする．G を H の水溶液に通じると白濁する．\n(ク) H の水溶液には漂白作用がある．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A と C をそれぞれ化学式で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "B と D をそれぞれ化学式で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "E を化学式で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "F，G，H をそれぞれ化学式で答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "(キ) で G を H の水溶液に通じたときの反応を化学反応式で書け．"
+     },
+     {
+      "id": "6",
+      "tex": "10 種類の気体のうち，A〜H のどれにもあてはまらなかったものを2つ，化学式で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "A：$\\ce{H2}$，C：$\\ce{CO}$"
+   },
+   {
+    "id": "2",
+    "tex": "B：$\\ce{O2}$，D：$\\ce{CO2}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{NO}$"
+   },
+   {
+    "id": "4",
+    "tex": "F：$\\ce{NH3}$，G：$\\ce{H2S}$，H：$\\ce{Cl2}$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\ce{H2S + Cl2 -> S + 2HCl}$"
+   },
+   {
+    "id": "6",
+    "tex": "$\\ce{NO2}$，$\\ce{HCl}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 燃える気体は $\\ce{H2}$，$\\ce{CO}$，$\\ce{H2S}$（$\\ce{NH3}$ も酸素中では燃える）だが，A と C は無臭．燃焼生成物が水だけの A は $\\ce{H2}$，燃焼生成物が 1 種類の気体 D だけの C は $\\ce{CO}$（$\\ce{2CO + O2 -> 2CO2}$）．\n\n\\textbf{(2)} D は石灰水を白濁させる $\\ce{CO2}$．線香を激しく燃やす B は $\\ce{O2}$．\n\n\\textbf{(3)} 空気に触れて赤褐色の $\\ce{NO2}$ になる無色・無臭の気体は $\\ce{NO}$：$\\ce{2NO + O2 -> 2NO2}$．\n\n\\textbf{(4)} 有色の候補は $\\ce{NO2}$（赤褐色）と $\\ce{Cl2}$（黄緑色）．水溶液に漂白作用があるのは $\\ce{Cl2}$（$\\ce{HClO}$ を生じる）なので H は $\\ce{Cl2}$．F は水溶液が塩基性の $\\ce{NH3}$．G は酢酸鉛(II) 紙を黒くする（PbS）腐卵臭の $\\ce{H2S}$．\n\n\\textbf{(5)} 還元剤の $\\ce{H2S}$ が $\\ce{Cl2}$ に酸化され，硫黄が析出して白濁する：$\\ce{H2S + Cl2 -> S + 2HCl}$．\n\n\\textbf{(6)} 残りは $\\ce{NO2}$ と $\\ce{HCl}$．$\\ce{NO2}$ は有色なので (ア) で H 以外に入れず，(ク) により H でもない．$\\ce{HCl}$ は刺激臭のある無色の気体だが，F・G の条件にあわない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "色・におい・燃焼生成物・空気や他の試薬との反応といった複数の手がかりを組み合わせて気体を一意に絞り込み，候補の中で条件にあわない気体を消去する．"
+ },
+ "concepts": [
+  "gas-preparation",
+  "organic-test",
+  "redox"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "気体の推定",
+  "気体の性質",
+  "検出反応",
+  "酸化還元"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "id": "THE-ION-108",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "ヘキサアクア鉄(III)イオンの酸としての電離と，濃度・塩酸による電離度の変化",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "塩化鉄(III) を水に溶かすと $\\ce{[Fe(H2O)6]^3+}$ が生じ，その一部が次のように電離して溶液は酸性を示す．\n\\[\\ce{[Fe(H2O)6]^3+ <=> [Fe(OH)(H2O)5]^2+ + H+}\\qquad K_{\\mathrm{a}}=1.0\\times10^{-3}\\,\\mathrm{mol/L}\\]\nこの反応だけが起こるものとし，$\\ce{Cl-}$ は関与しない．全鉄イオン濃度 $C$ を $\\ce{[Fe(H2O)6]^3+}$ と $\\ce{[Fe(OH)(H2O)5]^2+}$ の濃度の和とし，この電離の電離度を $\\alpha$ とする．必要なら $\\sqrt{4.01}=2.0025$，$\\sqrt{0.41}=0.6403$，$\\log_{10}9.5=0.98$，$\\log_{10}2.7=0.43$ を用いよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$C=0.10\\,\\mathrm{mol/L}$ のとき，$\\alpha$ を有効数字 2 桁で求め，pH を小数第 1 位まで求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$C=0.010\\,\\mathrm{mol/L}$ のとき，$\\alpha$ を有効数字 2 桁で求めよ．また，「$1-\\alpha\\approx1$」と近似して求めた $\\alpha$ の値を示し，この濃度でその近似が使えるかどうかを答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "全鉄イオン濃度を $0$ に近づけていくと，$\\alpha$ はどのような値に近づくか．また，$C$ を大きくすると $\\alpha$ はどうなるか．"
+     },
+     {
+      "id": "4",
+      "tex": "塩化鉄(III) の水溶液をつくるときは，ふつう少量の塩酸を加えておく．$C=0.10\\,\\mathrm{mol/L}$ の溶液で $\\alpha$ を $0.010$ 以下に抑えるには，溶液中の $[\\ce{H+}]$ を何 $\\mathrm{mol/L}$ 以上にすればよいか（有効数字 2 桁）．また，塩酸を加える目的を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\alpha=0.095$，pH $2.0$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\alpha=0.27$．近似すると $\\alpha=\\sqrt{K_{\\mathrm{a}}/C}=0.32$ となり，真の値と大きくずれるので近似は使えない．"
+   },
+   {
+    "id": "3",
+    "tex": "$\\alpha$ は $1$ に近づく．$C$ を大きくすると $\\alpha$ は小さくなる．"
+   },
+   {
+    "id": "4",
+    "tex": "$9.9\\times10^{-2}\\,\\mathrm{mol/L}$ 以上．電離（加水分解）をおさえ，さらに進んで水酸化鉄(III) などが沈殿したり濁ったりするのを防ぐため．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $[\\ce{H+}]=[\\ce{[Fe(OH)(H2O)5]^2+}]=C\\alpha$，$[\\ce{[Fe(H2O)6]^3+}]=C(1-\\alpha)$ より\n\\[K_{\\mathrm{a}}=\\frac{C\\alpha^{2}}{1-\\alpha}\\ \\Rightarrow\\ C\\alpha^{2}+K_{\\mathrm{a}}\\alpha-K_{\\mathrm{a}}=0.\\]\n$C=0.10$：$0.10\\alpha^{2}+1.0\\times10^{-3}\\alpha-1.0\\times10^{-3}=0$，\n$\\alpha=\\dfrac{-1.0\\times10^{-3}+\\sqrt{1.0\\times10^{-6}+4.0\\times10^{-4}}}{0.20}=\\dfrac{(-1+20.025)\\times10^{-3}}{0.20}=0.0951\\to\\boldsymbol{0.095}$．\n$[\\ce{H+}]=9.5\\times10^{-3}$，pH $=3-0.98=2.02\\to\\boldsymbol{2.0}$．（近似しても $\\sqrt{0.010}=0.10$ で，差は 5 \\% 程度．）\n\n\\textbf{(2)} $0.010\\alpha^{2}+1.0\\times10^{-3}\\alpha-1.0\\times10^{-3}=0$，\n$\\alpha=\\dfrac{-1.0\\times10^{-3}+\\sqrt{1.0\\times10^{-6}+4.0\\times10^{-5}}}{0.020}=\\dfrac{(-1+6.403)\\times10^{-3}}{0.020}=0.270\\to\\boldsymbol{0.27}$．\n近似すると $\\alpha=\\sqrt{1.0\\times10^{-3}/0.010}=0.316\\to0.32$ で，$\\alpha$ が 1 に比べて小さくないため 2 割近くずれる．\\textbf{近似は使えない}．$K_{\\mathrm{a}}$ が $1.0\\times10^{-3}$ と大きいので，濃度が低いと電離度が大きくなる．\n\n\\textbf{(3)} $\\dfrac{\\alpha^{2}}{1-\\alpha}=\\dfrac{K_{\\mathrm{a}}}{C}$ で $C\\to0$ とすると右辺が限りなく大きくなるので，$\\alpha\\to\\boldsymbol{1}$．$C$ を大きくすると右辺が小さくなり，$\\alpha$ は\\textbf{小さく}なる（$C=0$ 付近で 1 から急に下がり，その後ゆるやかに減る曲線）．\n\n\\textbf{(4)} 塩酸の $\\ce{H+}$ があると $[\\ce{H+}]$ は鉄イオンの電離による分と別に決まり，\n\\[\\frac{[\\ce{[Fe(OH)(H2O)5]^2+}]}{[\\ce{[Fe(H2O)6]^3+}]}=\\frac{\\alpha}{1-\\alpha}=\\frac{K_{\\mathrm{a}}}{[\\ce{H+}]}.\\]\n$\\alpha\\le0.010$ には $[\\ce{H+}]\\ge K_{\\mathrm{a}}\\times\\dfrac{1-0.010}{0.010}=1.0\\times10^{-3}\\times99=\\boldsymbol{9.9\\times10^{-2}\\,\\mathrm{mol/L}}$．共通の $\\ce{H+}$ によって電離平衡が左に移る．塩酸を加えないと，電離がさらに段階的に進んで水酸化鉄(III) などのコロイドや沈殿が生じ，溶液が濁るので，それを防ぐ目的で加える．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "水和した金属イオンは弱酸としてはたらき，電離定数が大きい（10⁻³ 程度）と，低濃度では電離度が大きくなって「1−α≈1」の近似が破れる．電離度は濃度 0 で 1 に近づき濃度とともに減る．強酸の H⁺ を加えると平衡が左に移り，電離（加水分解）が抑えられる．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "complex-ion",
+  "transition-metals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "加水分解",
+  "アクア錯イオン",
+  "電離度",
+  "近似の妥当性",
+  "共通イオン効果"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

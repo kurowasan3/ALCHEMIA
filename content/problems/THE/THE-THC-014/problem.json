@@ -1,0 +1,108 @@
+{
+ "id": "THE-THC-014",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-10",
+ "topic": "格子エネルギーと水和から見た塩化カリウムの溶解",
+ "course": "化学",
+ "level": 1,
+ "minutes": 15,
+ "format": [
+  "equation",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "塩化カリウム $\\ce{KCl}$ について，次の値が与えられている．\n① カリウムの昇華エンタルピー：$+89\\,\\mathrm{kJ/mol}$\n② $\\ce{Cl2}$ の結合エネルギー：$243\\,\\mathrm{kJ/mol}$\n③ カリウム原子の（第一）イオン化エネルギー：$419\\,\\mathrm{kJ/mol}$\n④ 塩素原子の電子親和力：$349\\,\\mathrm{kJ/mol}$\n⑤ $\\ce{KCl}$（固）の生成エンタルピー：$-437\\,\\mathrm{kJ/mol}$\n⑥ 水和エンタルピー：$\\ce{K+}$（気）$-322\\,\\mathrm{kJ/mol}$，$\\ce{Cl-}$（気）$-378\\,\\mathrm{kJ/mol}$"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "③ と ④ の内容を，それぞれ $\\Delta H$ を付した化学反応式で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "$\\ce{KCl}$ の結晶 $1\\,\\mathrm{mol}$ を気体のイオン $\\ce{K+}$ と $\\ce{Cl-}$ にばらばらにするのに必要なエネルギー（格子エネルギー）は何 kJ/mol か．小数第1位まで求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\ce{KCl}$（固）の水への溶解エンタルピーを求め，溶解が発熱か吸熱かを答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$25$ ℃ の水 $100\\,\\mathrm g$ に $\\ce{KCl}$ $7.45\\,\\mathrm g$ を溶かすと，水溶液の温度は何 ℃ になるか．(3) の値を用い，水溶液の比熱を $4.2\\,\\mathrm{J/(g\\cdot K)}$，$\\ce{KCl}=74.5$ として小数第1位まで答えよ．熱は外部と出入りしないものとする．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "③ $\\ce{K(気) -> K+(気) + e-}$　$\\Delta H=+419\\,\\mathrm{kJ}$，④ $\\ce{Cl(気) + e- -> Cl-(気)}$　$\\Delta H=-349\\,\\mathrm{kJ}$"
+   },
+   {
+    "id": "2",
+    "tex": "$717.5\\,\\mathrm{kJ/mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "$+17.5\\,\\mathrm{kJ/mol}$，吸熱"
+   },
+   {
+    "id": "4",
+    "tex": "$21.1$ ℃"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} イオン化エネルギーは電子を取り去るのに必要なエネルギー（吸熱），電子親和力は電子を受け取るときに放出されるエネルギー（発熱）．\n\\[ \\ce{K(気) -> K+(気) + e-}\\quad \\Delta H=+419\\,\\mathrm{kJ} \\qquad \\ce{Cl(気) + e- -> Cl-(気)}\\quad \\Delta H=-349\\,\\mathrm{kJ} \\]\n\\textbf{(2)} 単体 $\\ce{K(固) + 1/2Cl2(気)}$ から気体のイオンにする経路と，いったん $\\ce{KCl}$（固）にしてからばらばらにする経路で，エンタルピー変化は等しい（ヘスの法則）．格子エネルギーを $U$ とすると\n\\[ 89+\\frac{243}{2}+419-349=-437+U \\quad\\Rightarrow\\quad U=\\boldsymbol{717.5\\,\\mathrm{kJ/mol}} \\]\n\\textbf{(3)} 溶解 ＝（結晶をばらばらにする）＋（イオンの水和）なので\n\\[ \\Delta H=717.5+(-322)+(-378)=\\boldsymbol{+17.5\\,\\mathrm{kJ/mol}} \\]\n正なので\\textbf{吸熱}．格子エネルギーが水和による発熱をわずかに上回る．\n\\textbf{(4)} $\\ce{KCl}$ $0.100\\,\\mathrm{mol}$ が溶けて $1.75\\,\\mathrm{kJ}$ を吸収する．水溶液 $107.45\\,\\mathrm g$ の温度低下は $\\dfrac{1750}{107.45\\times4.2}=3.88\\,\\mathrm K$．$25-3.88=\\boldsymbol{21.1}$ ℃．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "格子エネルギーは直接測れないので，昇華・解離・イオン化・電子親和・生成のエンタルピーをつないだ循環（ボルン・ハーバーサイクル）とヘスの法則で求める．溶解エンタルピーは格子エネルギーと水和エンタルピーの差で決まり，正（吸熱）になることもある．"
+ },
+ "concepts": [
+  "enthalpy",
+  "industrial-process"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "格子エネルギー",
+  "ヘスの法則",
+  "水和エンタルピー",
+  "溶解エンタルピー",
+  "ボルン・ハーバーサイクル"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

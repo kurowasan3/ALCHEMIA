@@ -1,0 +1,109 @@
+{
+ "id": "ORG-CBX-039",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-04",
+ "topic": "一般式 CₙH₂ₙ₋₂O₂ の化合物の n の決定と不飽和カルボン酸・エステルの構造",
+ "course": "化学",
+ "level": 3,
+ "minutes": 20,
+ "format": [
+  "calc",
+  "structure"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "一般式 $\\ce{C_nH_{2n-2}O2}$ で表される鎖式の化合物 A，B，C がある．いずれも分子内に $\\ce{C=C}$ を1個と $\\ce{C=O}$ を1個もつ．C=C に直接 $\\ce{-OH}$ が結合した構造（エノール）は不安定で存在しないものとする．原子量は H = 1.0，C = 12，O = 16 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "この一般式の化合物の分子量を $n$ を用いて表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "A は1価のカルボン酸で，A $0.258\\,\\mathrm g$ を中和するのに $0.100\\,\\mathrm{mol/L}$ 水酸化ナトリウム水溶液 $30.0\\,\\mathrm{mL}$ を要した．A は枝分かれのない炭素鎖をもち，シス-トランス異性体のうちトランス形である．A の示性式を書け．"
+     },
+     {
+      "id": "3",
+      "tex": "B はエステルで，B $0.430\\,\\mathrm g$ を完全にけん化するのに $1.00\\,\\mathrm{mol/L}$ 水酸化ナトリウム水溶液 $5.00\\,\\mathrm{mL}$ を要した．B を加水分解すると，銀鏡反応を示すカルボン酸と，臭素水を脱色するアルコールが得られた．B の示性式を書け．"
+     },
+     {
+      "id": "4",
+      "tex": "C はエステルで，ニッケル触媒で水素を完全に付加させると質量が 2.33 % 増加した．C を加水分解するとメタノールが得られた．C の示性式を書け．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$14n+30$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{CH3-CH=CH-COOH}$（トランス形）"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{HCOO-CH2-CH=CH2}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{CH2=CH-COO-CH3}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　$\\ce{C_nH_{2n-2}O2}$ は飽和の $\\ce{C_nH_{2n+2}O2}$ より H が 4 個少なく，不飽和度は 2（C=O 1 個，C=C 1 個）．分子量は $n$ だけで決まるので，量的なデータ1つで $n$ がわかり，そのあと性質で構造を絞る．\n\n(1) $12n+1.0\\times(2n-2)+32=\\boldsymbol{14n+30}$．\n\n(2) 1価なので物質量は NaOH と等しく $0.100\\times\\frac{30.0}{1000}=3.00\\times10^{-3}\\,\\mathrm{mol}$，分子量 $0.258\\div(3.00\\times10^{-3})=86$．$14n+30=86$ より $n=4$（$\\ce{C4H6O2}$）．$\\ce{-COOH}$ 以外の $\\ce{C3H5}$ 部分に C=C がある．枝分かれのないものは $\\ce{CH2=CH-CH2-COOH}$ と $\\ce{CH3-CH=CH-COOH}$ で，シス-トランス異性体をもつのは後者だけ（$\\ce{CH2=C(CH3)-COOH}$ は枝分かれ，異性体なし）．よって A はトランス形の $\\boldsymbol{\\ce{CH3-CH=CH-COOH}}$（クロトン酸）．\n\n(3) エステル1 mol は NaOH 1 mol でけん化されるので，物質量 $1.00\\times\\frac{5.00}{1000}=5.00\\times10^{-3}\\,\\mathrm{mol}$，分子量 $0.430\\div(5.00\\times10^{-3})=86$，$n=4$．銀鏡反応を示すカルボン酸はギ酸 $\\ce{HCOOH}$ なので，アルコール部分は $\\ce{C3H5O-}$ で C=C を含む．$\\ce{C3H5OH}$ の鎖式アルコールのうち，エノールを除くと $\\ce{CH2=CH-CH2-OH}$（アリルアルコール）だけ．よって B は $\\boldsymbol{\\ce{HCOO-CH2-CH=CH2}}$．\n\n(4) 水素付加（C=C 1個に $\\ce{H2}$ 1分子）で質量は $\\frac{2.0}{M}$ の割合で増えるので $\\frac{2.0}{M}=0.0233$，$M\\fallingdotseq86$，$n=4$．加水分解でメタノールが生じるので，カルボン酸部分は $\\ce{C3H3O-}$ で C=C を含む $\\ce{CH2=CH-COOH}$（アクリル酸）．よって C は $\\boldsymbol{\\ce{CH2=CH-COO-CH3}}$（アクリル酸メチル）．\n\nA，B，C はいずれも $\\ce{C4H6O2}$ の異性体で，C=C と C=O をどこに置くか（酸の側かアルコールの側か）で性質が変わる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "一般式で表される化合物では分子量が n の1次式になるので，中和・けん化に要する塩基の量や水素付加による質量増加の割合から n を決められる．n が決まった後は，カルボン酸かエステルか・加水分解生成物の性質・シス-トランス異性の有無で C=C と C=O の位置を絞る．"
+ },
+ "concepts": [
+  "carboxylic-ester",
+  "organic-structure",
+  "hydrocarbon"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "一般式",
+  "分子量の決定",
+  "不飽和カルボン酸",
+  "エステルのけん化",
+  "シス-トランス異性体"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

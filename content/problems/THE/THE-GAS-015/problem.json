@@ -1,0 +1,117 @@
+{
+ "id": "THE-GAS-015",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-08",
+ "topic": "水上置換で捕集した混合気体の平均分子量と組成",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "メタン $\\ce{CH4}$ とプロパン $\\ce{C3H8}$ だけからなる混合気体の入ったボンベがある．ボンベから気体を取り出し，水上置換でメスシリンダーに捕集したところ，内外の水面を一致させたときの体積は 27 ℃，$1.00\\times10^{5}\\,\\mathrm{Pa}$ でちょうど $1.00\\,\\mathrm L$ であった．このときボンベの質量は $1.12\\,\\mathrm g$ 減少していた．27 ℃ における水の飽和蒸気圧は $3.6\\times10^{3}\\,\\mathrm{Pa}$，$R=8.3\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$，原子量は $\\mathrm H=1.0$，$\\mathrm C=12$ とし，気体の水への溶解は無視する．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "混合気体の平均分子量を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "混合気体中のメタンの体積百分率を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "混合気体中のメタンの質量百分率を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "この混合気体 $1.0\\,\\mathrm L$ を完全燃焼させるのに必要な空気は，同温・同圧で何 L か．空気は酸素と窒素の体積比 $1:4$ の混合気体とし，有効数字2桁で答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "水蒸気圧を考えずに (1) を計算すると，平均分子量と (2) のメタンの体積百分率はそれぞれ真の値より大きくなるか，小さくなるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "29"
+   },
+   {
+    "id": "2",
+    "tex": "$54\\,\\%$"
+   },
+   {
+    "id": "3",
+    "tex": "$30\\,\\%$"
+   },
+   {
+    "id": "4",
+    "tex": "$17\\,\\mathrm L$"
+   },
+   {
+    "id": "5",
+    "tex": "平均分子量は小さくなり，メタンの体積百分率は大きくなる．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　捕集した気体には水蒸気が含まれるので，混合気体（炭化水素）の分圧は $1.00\\times10^{5}-3.6\\times10^{3}=9.64\\times10^{4}\\,\\mathrm{Pa}$．\n\\[n=\\dfrac{9.64\\times10^{4}\\times1.00}{8.3\\times10^{3}\\times300}=3.87\\times10^{-2}\\,\\mathrm{mol}\\qquad \\bar M=\\dfrac{1.12}{3.87\\times10^{-2}}=28.9\\approx\\boldsymbol{29}\\]\n\n\\textbf{(2)}　メタンのモル分率（＝体積分率）を $x$ とすると $16x+44(1-x)=28.9$ より $x=0.538$，$\\boldsymbol{54\\,\\%}$．\n\n\\textbf{(3)}　1 mol あたりメタンは $0.538\\times16=8.61\\,\\mathrm g$ なので $\\dfrac{8.61}{28.9}\\times100=\\boldsymbol{30\\,\\%}$．\n\n\\textbf{(4)}　$\\ce{CH4 + 2O2 -> CO2 + 2H2O}$，$\\ce{C3H8 + 5O2 -> 3CO2 + 4H2O}$ より，混合気体 $1.0\\,\\mathrm L$ に必要な酸素は $2\\times0.538+5\\times0.462=3.39\\,\\mathrm L$．空気はその 5 倍で $16.9\\approx\\boldsymbol{17\\,\\mathrm L}$．\n\n\\textbf{(5)}　水蒸気圧を無視すると，炭化水素の分圧を $1.00\\times10^{5}\\,\\mathrm{Pa}$ と大きく見積もるので物質量を多く見積もり，平均分子量は $\\dfrac{1.12\\times8.3\\times10^{3}\\times300}{1.00\\times10^{5}}=27.9$ と\\textbf{小さく}なる．平均分子量が小さいほど軽いメタンが多いと判断するので，メタンの体積百分率は\\textbf{大きく}なる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "水上置換で捕集した気体の分圧を水蒸気圧で補正して物質量を求め，質量から平均分子量を出して2成分の組成を決める．補正を忘れたときに平均分子量と組成がどちらにずれるかを判断する．"
+ },
+ "concepts": [
+  "ideal-gas",
+  "gas-preparation",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "気体の状態方程式",
+  "水上置換",
+  "平均分子量",
+  "混合気体",
+  "燃焼"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

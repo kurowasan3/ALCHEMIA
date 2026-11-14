@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400">
+<line x1="70" y1="340" x2="600" y2="340" stroke="currentColor" stroke-width="1.5"/>
+<line x1="70" y1="340" x2="70" y2="30" stroke="currentColor" stroke-width="1.5"/>
+<line x1="70.0" y1="340" x2="70.0" y2="345" stroke="currentColor"/>
+<text x="70.0" y="362" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">80</text>
+<line x1="176.0" y1="340" x2="176.0" y2="345" stroke="currentColor"/>
+<text x="176.0" y="362" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">90</text>
+<line x1="282.0" y1="340" x2="282.0" y2="345" stroke="currentColor"/>
+<text x="282.0" y="362" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">100</text>
+<line x1="388.0" y1="340" x2="388.0" y2="345" stroke="currentColor"/>
+<text x="388.0" y="362" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">110</text>
+<line x1="494.0" y1="340" x2="494.0" y2="345" stroke="currentColor"/>
+<text x="494.0" y="362" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">120</text>
+<line x1="600.0" y1="340" x2="600.0" y2="345" stroke="currentColor"/>
+<text x="600.0" y="362" font-size="13" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">130</text>
+<line x1="65" y1="340.0" x2="70" y2="340.0" stroke="currentColor"/>
+<text x="61" y="344.0" font-size="13" text-anchor="end" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">0</text>
+<line x1="65" y1="288.3" x2="70" y2="288.3" stroke="currentColor"/>
+<text x="61" y="292.3" font-size="13" text-anchor="end" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">5</text>
+<line x1="65" y1="236.7" x2="70" y2="236.7" stroke="currentColor"/>
+<text x="61" y="240.7" font-size="13" text-anchor="end" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">10</text>
+<line x1="65" y1="185.0" x2="70" y2="185.0" stroke="currentColor"/>
+<text x="61" y="189.0" font-size="13" text-anchor="end" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">15</text>
+<line x1="65" y1="133.3" x2="70" y2="133.3" stroke="currentColor"/>
+<text x="61" y="137.3" font-size="13" text-anchor="end" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">20</text>
+<line x1="65" y1="81.7" x2="70" y2="81.7" stroke="currentColor"/>
+<text x="61" y="85.7" font-size="13" text-anchor="end" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">25</text>
+<line x1="65" y1="30.0" x2="70" y2="30.0" stroke="currentColor"/>
+<text x="61" y="34.0" font-size="13" text-anchor="end" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">30</text>
+<text x="335.0" y="392" font-size="14" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">温度 [℃]</text>
+<text x="18" y="185.0" font-size="14" text-anchor="middle" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif" transform="rotate(-90 18 185.0)">蒸気圧 [×10⁴ Pa]</text>
+<line x1="70" y1="236.7" x2="600" y2="236.7" stroke="currentColor" stroke-dasharray="6 4" opacity="0.5"/>
+<text x="596" y="230.7" font-size="13" text-anchor="end" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">外圧 1.0×10⁵ Pa</text>
+<polyline points="70.0,291.4 123.0,280.1 176.0,267.7 229.0,252.2 282.0,236.7 335.0,215.0 388.0,192.2 494.0,134.4 600.0,61.0" fill="none" stroke="currentColor" stroke-width="1.6"/>
+<polyline points="70.0,320.4 123.0,315.2 176.0,309.0 229.0,302.8 282.0,295.6 335.0,287.3 388.0,278.0 494.0,257.3 600.0,236.7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 3"/>
+<polyline points="70.0,271.8 123.0,255.3 176.0,236.7 229.0,215.0 282.0,192.2 335.0,162.3 388.0,130.2" fill="none" stroke="#c0392b" stroke-width="2"/>
+<polyline points="70.0,301.1 123.0,291.8 176.0,281.4 229.0,269.0 282.0,256.3 335.0,239.1 388.0,220.8" fill="none" stroke="#1f5fbf" stroke-width="2"/>
+<circle cx="176.0" cy="236.7" r="4" fill="#c0392b"/>
+<text x="170.0" y="226.7" font-size="13" text-anchor="end" fill="#c0392b" font-family="Noto Sans CJK JP, sans-serif">90 ℃</text>
+<text x="504.6" y="117.8" font-size="13" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">水</text>
+<text x="504.6" y="267.7" font-size="13" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">クロロベンゼン</text>
+<line x1="90" y1="52" x2="125" y2="52" stroke="#c0392b" stroke-width="2"/>
+<text x="132" y="57" font-size="13" fill="#c0392b" font-family="Noto Sans CJK JP, sans-serif">蒸気圧の和（溶け合わない場合）</text>
+<line x1="90" y1="76" x2="125" y2="76" stroke="#1f5fbf" stroke-width="2"/>
+<text x="132" y="81" font-size="13" fill="#1f5fbf" font-family="Noto Sans CJK JP, sans-serif">ラウールの法則に従う溶液の全圧</text>
+</svg>

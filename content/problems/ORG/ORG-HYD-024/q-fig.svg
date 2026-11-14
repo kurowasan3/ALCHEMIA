@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 240">
+<g transform="translate(0,30)">
+<path d='M 66.7,61.0 L 66.7,89.0' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 70.9,65.2 L 70.9,84.8' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 66.7,89.0 L 94.7,89.0' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 94.7,89.0 L 122.7,89.0' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 122.7,89.0 L 122.7,61.0' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 118.5,84.8 L 118.5,65.2' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 122.7,61.0 L 94.7,61.0' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 94.7,61.0 L 66.7,61.0' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 94.7,61.0 L 94.7,89.0' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 66.7,62.4 L 66.7,61.0 L 68.1,61.0' style='fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 66.7,87.6 L 66.7,89.0 L 68.1,89.0' style='fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 121.3,89.0 L 122.7,89.0 L 122.7,87.6' style='fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 122.7,62.4 L 122.7,61.0 L 121.3,61.0' style='fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+</g>
+<text x="95" y="30" font-family="Noto Sans CJK JP, sans-serif" font-size="15" text-anchor="middle" fill="currentColor">P</text>
+<line x1="260" y1="77" x2="314" y2="77" stroke="currentColor" stroke-width="1.6"/>
+<line x1="314" y1="77" x2="296" y2="95" stroke="currentColor" stroke-width="1.6"/>
+<line x1="296" y1="95" x2="260" y2="77" stroke="currentColor" stroke-width="1.6"/>
+<line x1="260" y1="131" x2="314" y2="131" stroke="currentColor" stroke-width="1.6" stroke-dasharray="5,4"/>
+<line x1="314" y1="131" x2="296" y2="149" stroke="currentColor" stroke-width="1.6"/>
+<line x1="296" y1="149" x2="260" y2="131" stroke="currentColor" stroke-width="1.6"/>
+<line x1="260" y1="77" x2="260" y2="131" stroke="currentColor" stroke-width="1.6"/>
+<line x1="314" y1="77" x2="314" y2="131" stroke="currentColor" stroke-width="1.6"/>
+<line x1="296" y1="95" x2="296" y2="149" stroke="currentColor" stroke-width="1.6"/>
+<text x="285" y="30" font-family="Noto Sans CJK JP, sans-serif" font-size="15" text-anchor="middle" fill="currentColor">Q</text>
+<g transform="translate(380,30)">
+<path d='M 97.9,51.3 L 115.0,57.0' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 99.4,55.9 L 111.2,59.8' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 115.0,57.0 L 115.4,81.5' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 115.4,81.5 L 96.1,98.7' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 96.1,98.7 L 84.3,70.8' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 84.3,70.8 L 74.0,81.5' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 84.3,70.8 L 97.9,51.3' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 74.0,81.5 L 115.4,81.5' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 74.0,81.5 L 96.1,98.7' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 98.7,51.6 L 97.9,51.3 L 97.2,52.3' style='fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 114.1,56.7 L 115.0,57.0 L 115.0,58.2' style='fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+</g>
+<text x="475" y="30" font-family="Noto Sans CJK JP, sans-serif" font-size="15" text-anchor="middle" fill="currentColor">R</text>
+<g transform="translate(570,30)">
+<path d='M 126.0,48.9 L 101.7,34.9' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 117.6,48.9 L 105.9,42.2' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 101.7,34.9 L 101.7,62.9' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 101.7,62.9 L 87.7,87.1' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 87.7,87.1 L 87.7,115.1' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 87.7,115.1 L 63.4,101.1' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 83.5,107.8 L 71.8,101.1' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 101.7,62.9 L 126.0,48.9' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 63.4,101.1 L 87.7,87.1' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 124.8,48.2 L 126.0,48.9 L 124.8,49.6' style='fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 102.9,35.6 L 101.7,34.9 L 101.7,36.3' style='fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 87.7,113.7 L 87.7,115.1 L 86.5,114.4' style='fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 64.6,101.8 L 63.4,101.1 L 64.6,100.4' style='fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+</g>
+<text x="665" y="30" font-family="Noto Sans CJK JP, sans-serif" font-size="15" text-anchor="middle" fill="currentColor">S</text>
+<text x="380" y="205" font-family="Noto Sans CJK JP, sans-serif" font-size="13" text-anchor="middle" fill="currentColor">線の頂点・端はすべて C 原子で，それぞれ H 原子が 1 個ずつ結合している（H は省略）．</text>
+<text x="380" y="225" font-family="Noto Sans CJK JP, sans-serif" font-size="13" text-anchor="middle" fill="currentColor">Q は三角柱形の分子で，破線の辺は紙面の奥側にある．</text>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 340" width="520" height="340">
+<line x1="146.7" y1="280.0" x2="146.7" y2="60.0" stroke="currentColor" stroke-width="1" stroke-dasharray="3 3" opacity="0.5"/>
+<line x1="213.3" y1="280.0" x2="213.3" y2="60.0" stroke="currentColor" stroke-width="1" stroke-dasharray="3 3" opacity="0.5"/>
+<line x1="280.0" y1="280.0" x2="280.0" y2="60.0" stroke="currentColor" stroke-width="1" stroke-dasharray="3 3" opacity="0.5"/>
+<line x1="346.7" y1="280.0" x2="346.7" y2="60.0" stroke="currentColor" stroke-width="1" stroke-dasharray="3 3" opacity="0.5"/>
+<line x1="413.3" y1="280.0" x2="413.3" y2="60.0" stroke="currentColor" stroke-width="1" stroke-dasharray="3 3" opacity="0.5"/>
+<line x1="480.0" y1="280.0" x2="480.0" y2="60.0" stroke="currentColor" stroke-width="1" stroke-dasharray="3 3" opacity="0.5"/>
+<line x1="80.0" y1="243.3" x2="480.0" y2="243.3" stroke="currentColor" stroke-width="1" stroke-dasharray="3 3" opacity="0.5"/>
+<line x1="80.0" y1="206.7" x2="480.0" y2="206.7" stroke="currentColor" stroke-width="1" stroke-dasharray="3 3" opacity="0.5"/>
+<line x1="80.0" y1="170.0" x2="480.0" y2="170.0" stroke="currentColor" stroke-width="1" stroke-dasharray="3 3" opacity="0.5"/>
+<line x1="80.0" y1="133.3" x2="480.0" y2="133.3" stroke="currentColor" stroke-width="1" stroke-dasharray="3 3" opacity="0.5"/>
+<line x1="80.0" y1="96.7" x2="480.0" y2="96.7" stroke="currentColor" stroke-width="1" stroke-dasharray="3 3" opacity="0.5"/>
+<line x1="80.0" y1="60.0" x2="480.0" y2="60.0" stroke="currentColor" stroke-width="1" stroke-dasharray="3 3" opacity="0.5"/>
+<line x1="80.0" y1="280.0" x2="490.0" y2="280.0" stroke="currentColor" stroke-width="1.5"/>
+<line x1="80.0" y1="280.0" x2="80.0" y2="50.0" stroke="currentColor" stroke-width="1.5"/>
+<text x="80.0" y="300.0" text-anchor="middle" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">0.00</text>
+<text x="146.7" y="300.0" text-anchor="middle" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">0.08</text>
+<text x="213.3" y="300.0" text-anchor="middle" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">0.16</text>
+<text x="280.0" y="300.0" text-anchor="middle" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">0.24</text>
+<text x="346.7" y="300.0" text-anchor="middle" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">0.32</text>
+<text x="413.3" y="300.0" text-anchor="middle" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">0.40</text>
+<text x="480.0" y="300.0" text-anchor="middle" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">0.48</text>
+<text x="72.0" y="285.0" text-anchor="end" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">0</text>
+<text x="72.0" y="248.3" text-anchor="end" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">50</text>
+<text x="72.0" y="211.7" text-anchor="end" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">100</text>
+<text x="72.0" y="175.0" text-anchor="end" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">150</text>
+<text x="72.0" y="138.3" text-anchor="end" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">200</text>
+<text x="72.0" y="101.7" text-anchor="end" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">250</text>
+<text x="72.0" y="65.0" text-anchor="end" font-size="13" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">300</text>
+<text x="280.0" y="332" text-anchor="middle" font-size="14" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor">加えたマグネシウムの質量〔g〕</text>
+<text x="18" y="170.0" text-anchor="middle" font-size="14" font-family="Noto Sans CJK JP, sans-serif" fill="currentColor" transform="rotate(-90 18 170.0)">発生した水素の体積〔mL〕（標準状態）</text>
+<polyline points="80.0,280.0 280.0,115.7 455.0,115.7" fill="none" stroke="currentColor" stroke-width="1.8"/>
+<circle cx="130.0" cy="238.9" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<circle cx="180.0" cy="197.9" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<circle cx="230.0" cy="156.8" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<circle cx="280.0" cy="115.7" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<circle cx="330.0" cy="115.7" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<circle cx="380.0" cy="115.7" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<circle cx="430.0" cy="115.7" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>

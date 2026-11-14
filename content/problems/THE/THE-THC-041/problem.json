@@ -1,0 +1,123 @@
+{
+ "id": "THE-THC-041",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-10",
+ "topic": "炭素による金属酸化物の還元温度（CO と CO₂ の乱雑さの違い）とテルミット反応の比較",
+ "course": "化学",
+ "level": 4,
+ "minutes": 35,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "反応が右向きに進むかどうかを，次の量 $G$ で判断する．\n\\[G=\\Delta H-T\\Delta S\\]\n$\\Delta H$ は反応エンタルピー，$\\Delta S$ は乱雑さの変化を表す量，$T$ は絶対温度で，$G<0$ なら右向きに進み，$G>0$ なら進まないとする．$\\Delta H$，$\\Delta S$ は温度によらず一定，気体はすべて $1.0\\times10^{5}\\,\\mathrm{Pa}$，金属と酸化物はすべて固体のままで，炭化物などは生じないものとする．$\\ce{O2}$ 1 mol あたりの値は次のとおりである．\n\\[\\begin{array}{lcc}\n\\text{反応} & \\Delta H\\,(\\mathrm{kJ}) & \\Delta S\\,(\\mathrm{J/K})\\\\ \\hline\n\\text{①}\\ \\ce{2C + O2 -> 2CO} & -221 & +179\\\\\n\\text{②}\\ \\ce{C + O2 -> CO2} & -394 & +3\\\\\n\\text{③}\\ \\ce{2Ni + O2 -> 2NiO} & -479 & -189\\\\\n\\text{④}\\ \\ce{2Fe + O2 -> 2FeO} & -544 & -138\\\\\n\\text{⑤}\\ \\ce{4/3Cr + O2 -> 2/3Cr2O3} & -760 & -183\\\\\n\\text{⑥}\\ \\ce{4/3Al + O2 -> 2/3Al2O3} & -1117 & -209\n\\end{array}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "反応①と②の $\\Delta S$ の値が大きく異なる理由を述べよ．また，黒鉛と $\\ce{CO2}$ から CO ができる反応 $\\ce{C + CO2 -> 2CO}$ が右向きに進む温度の範囲を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "黒鉛で NiO，FeO，$\\ce{Cr2O3}$ をそれぞれ還元して金属を得ることができる最低の温度を有効数字 3 桁で求めよ．また，それぞれその温度で生じる気体は CO と $\\ce{CO2}$ のどちらか．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\ce{Cr2O3}$ をアルミニウムで還元する反応（テルミット反応）の $G$ を，$\\ce{O2}$ 1 mol 分の酸素の移動あたりで，$300\\,\\mathrm{K}$ と $2000\\,\\mathrm{K}$ について求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(2) と (3) の結果を比べて，炭素による還元では高温が必要なのに，テルミット反応では温度をあまり気にせず反応熱だけで還元できるかどうかを判断してよい理由を，$\\Delta S$ に注目して説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：炭素による金属酸化物の還元温度（CO と CO₂ の乱雑さの違い）とテルミット反応の比較",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "①では固体の C から気体が $1\\to2$ mol に増えるが，②では気体が $1\\to1$ mol で変わらないから．$T>983\\,\\mathrm{K}$"
+   },
+   {
+    "id": "2",
+    "tex": "NiO：$443\\,\\mathrm{K}$，$\\ce{CO2}$　FeO：$1.02\\times10^{3}\\,\\mathrm{K}$，CO　$\\ce{Cr2O3}$：$1.49\\times10^{3}\\,\\mathrm{K}$，CO"
+   },
+   {
+    "id": "3",
+    "tex": "$300\\,\\mathrm{K}$：$-349\\,\\mathrm{kJ}$，$2000\\,\\mathrm{K}$：$-305\\,\\mathrm{kJ}$"
+   },
+   {
+    "id": "4",
+    "tex": "炭素による還元は気体が生じて $\\Delta S$ が大きな正の値になり，$\\Delta H>0$ を $-T\\Delta S$ で打ち消すために高温が必要になる．テルミット反応は固体どうしの反応で $\\Delta S$ が小さい（$-26\\,\\mathrm{J/K}$）ので $G\\fallingdotseq\\Delta H$ となり，$\\Delta H$ が大きな負の値なら温度によらず進むと判断できる．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　乱雑さは気体の分子の数でほぼ決まる．①は固体の炭素と $\\ce{O2}$ 1 mol から気体の CO が 2 mol できるので気体が増え $\\Delta S$ が大きな正の値，②は気体 1 mol が気体 1 mol になるだけなので $\\Delta S\\fallingdotseq0$．\\\\\n$\\ce{C + CO2 -> 2CO}$ は ①$-$② なので $\\Delta H=-221-(-394)=+173\\,\\mathrm{kJ}$，$\\Delta S=179-3=+176\\,\\mathrm{J/K}$．\n\\[G=173-0.176\\,T<0\\quad\\Longrightarrow\\quad \\boldsymbol{T>983\\,\\mathrm{K}}\\]\nつまり 983 K より高温では炭素は CO に，低温では $\\ce{CO2}$ になるほうが有利である．\n\n\\textbf{(2)}　金属酸化物の還元は「炭素の酸化」から「金属の酸化」を引いた反応である．たとえば NiO で生じる気体が $\\ce{CO2}$ なら ②$-$③：$\\ce{2NiO + C -> 2Ni + CO2}$．炭素の酸化は CO と $\\ce{CO2}$ の 2 通りがあるので，両方を調べて低いほうの温度をとる．\n\\[\\begin{array}{lcc}\n & \\text{CO が生じる場合（①から引く）} & \\text{CO}_2\\text{ が生じる場合（②から引く）}\\\\\n\\text{NiO} & \\dfrac{-221+479}{0.179+0.189}=701\\,\\mathrm{K} & \\dfrac{-394+479}{0.003+0.189}=443\\,\\mathrm{K}\\\\\n\\text{FeO} & \\dfrac{-221+544}{0.179+0.138}=1019\\,\\mathrm{K} & \\dfrac{-394+544}{0.003+0.138}=1064\\,\\mathrm{K}\\\\\n\\text{Cr}_2\\text{O}_3 & \\dfrac{-221+760}{0.179+0.183}=1489\\,\\mathrm{K} & \\dfrac{-394+760}{0.003+0.183}=1968\\,\\mathrm{K}\n\\end{array}\\]\n（いずれも $G=\\Delta H-T\\Delta S<0$ を満たす $T$ の下限．たとえば NiO で CO が生じる場合，$\\Delta H=-221-(-479)=+258\\,\\mathrm{kJ}$，$\\Delta S=179-(-189)=+368\\,\\mathrm{J/K}$．）\\\\\nよって最低温度は $\\boldsymbol{\\text{NiO：443 K（}\\ce{CO2}\\text{）}}$，$\\boldsymbol{\\text{FeO：}1.02\\times10^{3}\\text{ K（CO）}}$，$\\boldsymbol{\\ce{Cr2O3}\\text{：}1.49\\times10^{3}\\text{ K（CO）}}$．\\\\\nNiO は 983 K より低い温度で還元できるので $\\ce{CO2}$ が有利，FeO と $\\ce{Cr2O3}$ は 983 K より高温が必要で，その温度では CO のほうが有利になり，小問 1 の結果と矛盾しない．安定な酸化物ほど高温が必要だが，高温ほど CO の生成で得られる乱雑さが効いてくる．解答図は各反応の $G$ と温度の関係で，炭素の線（①と②の低いほう）が金属の線より下にくる温度で還元が可能になる．\n\n\\textbf{(3)}　⑥$-$⑤：$\\ce{2/3Cr2O3 + 4/3Al -> 4/3Cr + 2/3Al2O3}$\n\\[\\Delta H=-1117-(-760)=-357\\,\\mathrm{kJ},\\quad \\Delta S=-209-(-183)=-26\\,\\mathrm{J/K}\\]\n\\[G(300\\,\\mathrm{K})=-357+0.026\\times300=\\boldsymbol{-349\\,\\mathrm{kJ}},\\qquad G(2000\\,\\mathrm{K})=-357+0.026\\times2000=\\boldsymbol{-305\\,\\mathrm{kJ}}\\]\n\n\\textbf{(4)}　炭素による還元は気体が生じる反応で $\\Delta S$ が大きな正の値をもつ．$\\Delta H$ は正（吸熱）なので，$T\\Delta S$ が $\\Delta H$ を上回る高温でなければ $G<0$ にならない．一方，テルミット反応は固体どうしの反応で，気体の量が変わらないので $\\Delta S$ が小さく，$G\\fallingdotseq\\Delta H$ となる．$\\Delta H$ が大きな負の値なら，どの温度でも $G<0$ なので，生成熱（反応熱）の比較だけで判断してよい（ただし，反応を始めるには点火して温度を上げる必要がある．これは速さの問題である）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "金属酸化物の還元の可否は「還元剤の酸化」と「金属の酸化」の G の差で決まり，炭素の酸化は気体分子が増える CO 生成の ΔS が大きいので高温ほど有利になる．CO と CO₂ の両方の経路を調べて有利なほうをとると，安定な酸化物ほど高温が必要になり，気体の量が変わらないテルミット反応だけは ΔS≈0 で温度によらず反応熱で判断できる．"
+ },
+ "concepts": [
+  "enthalpy",
+  "nitrogen-phosphorus",
+  "carbon-silicon"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "乱雑さ",
+  "還元",
+  "エリンガム図",
+  "テルミット反応",
+  "一酸化炭素"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,124 @@
+{
+ "id": "THE-THC-073",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-10",
+ "topic": "酸化反応のギブズエネルギーの直線（エリンガム図）と炭素による還元の温度",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "金属の酸化物を炭素で還元できるかどうかは，酸素 $1\\,\\mathrm{mol}$ あたりの酸化反応の標準反応ギブズエネルギー $\\Delta G^\\circ=\\Delta H^\\circ-T\\Delta S^\\circ$ を比べて判断できる．$\\Delta G^\\circ<0$ の反応は（標準状態で）自発的に進む．次の表の値を用い，$\\Delta H^\\circ$，$\\Delta S^\\circ$ は温度によらず一定で，物質の状態も変わらないものとする．\n\\[\\begin{array}{c|cccccc} & \\ce{C(s)} & \\ce{O2(g)} & \\ce{CO(g)} & \\ce{CO2(g)} & \\ce{Cr(s)} & \\ce{Cr2O3(s)} \\\\ \\hline \\Delta H_\\mathrm{f}^\\circ/(\\mathrm{kJ/mol}) & 0 & 0 & -110.5 & -393.5 & 0 & -1139.7 \\\\ S^\\circ/(\\mathrm{J/(K\\,mol)}) & 5.7 & 205.1 & 197.7 & 213.8 & 23.8 & 81.2 \\end{array}\\]\n\\[ \\text{(a)}\\ \\ce{2C(s) + O2(g) -> 2CO(g)} \\qquad \\text{(b)}\\ \\ce{C(s) + O2(g) -> CO2(g)} \\qquad \\text{(c)}\\ \\tfrac{4}{3}\\ce{Cr(s)} + \\ce{O2(g)} \\ce{->} \\tfrac{2}{3}\\ce{Cr2O3(s)} \\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "(a)〜(c) それぞれの $\\Delta G^\\circ$（kJ）を $T$ の一次式で表せ．また，$\\Delta G^\\circ$ を $T$ に対してグラフにしたとき，(a) は右下がり，(b) はほぼ水平，(c) は右上がりになる理由を，気体の物質量の変化に注目して説明せよ．"
+     },
+     {
+      "id": "2",
+      "tex": "ある温度より高温では，炭素が酸素と反応して生じる主な生成物は $\\ce{CO2}$ より $\\ce{CO}$ になる．その温度を有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\ce{Cr2O3}$ を炭素で還元して金属クロムを得る反応 $\\tfrac{2}{3}\\ce{Cr2O3} + \\ce{2C} \\ce{->} \\tfrac{4}{3}\\ce{Cr} + \\ce{2CO}$ の $\\Delta G^\\circ$ が負になる温度の範囲を有効数字 3 桁で求めよ．また，$\\ce{CO2}$ を生じる還元 $\\tfrac{2}{3}\\ce{Cr2O3} + \\ce{C} \\ce{->} \\tfrac{4}{3}\\ce{Cr} + \\ce{CO2}$ について同様に求め，実際の還元を考えるうえでどちらの反応が重要かを答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "ある金属 M の酸化反応（酸素 $1\\,\\mathrm{mol}$ あたり，生成物は固体）の $\\Delta S^\\circ$ は $-180\\,\\mathrm{J/K}$ である．M の酸化物は $1200\\,\\mathrm{K}$ では炭素で（$\\ce{CO}$ を生じて）還元できるが，$1100\\,\\mathrm{K}$ では還元できなかった．M の酸化反応の $\\Delta H^\\circ$（酸素 $1\\,\\mathrm{mol}$ あたり）の範囲を有効数字 3 桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：酸化反応のギブズエネルギーの直線（エリンガム図）と炭素による還元の温度",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "(a) $\\Delta G^\\circ=-221.0-0.1789T$，(b) $\\Delta G^\\circ=-393.5-0.0030T$，(c) $\\Delta G^\\circ=-759.8+0.1827T$．傾きは $-\\Delta S^\\circ$ で，$\\Delta S^\\circ$ はおもに気体の物質量の変化で決まる．(a) は気体が 1 mol→2 mol にふえて $\\Delta S^\\circ>0$，(b) は 1 mol→1 mol で $\\Delta S^\\circ\\approx0$，(c) は 1 mol→0 mol に減って $\\Delta S^\\circ<0$ だから．"
+   },
+   {
+    "id": "2",
+    "tex": "$981\\,\\mathrm{K}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{CO}$ を生じる反応：$T>1.49\\times10^{3}\\,\\mathrm{K}$，$\\ce{CO2}$ を生じる反応：$T>1.97\\times10^{3}\\,\\mathrm{K}$．低い温度で進む $\\ce{CO}$ を生じる反応が重要．"
+   },
+   {
+    "id": "4",
+    "tex": "$-652\\,\\mathrm{kJ}<\\Delta H^\\circ\\le-616\\,\\mathrm{kJ}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　$\\Delta S^\\circ$ は J から kJ に直して使う．\n(a) $\\Delta H^\\circ=2\\times(-110.5)=-221.0\\,\\mathrm{kJ}$，$\\Delta S^\\circ=2\\times197.7-2\\times5.7-205.1=178.9\\,\\mathrm{J/K}$ より $\\boldsymbol{\\Delta G^\\circ=-221.0-0.1789T}$．\n\n(b) $\\Delta H^\\circ=-393.5\\,\\mathrm{kJ}$，$\\Delta S^\\circ=213.8-5.7-205.1=3.0\\,\\mathrm{J/K}$ より $\\boldsymbol{\\Delta G^\\circ=-393.5-0.0030T}$．\n\n(c) $\\Delta H^\\circ=\\tfrac{2}{3}\\times(-1139.7)=-759.8\\,\\mathrm{kJ}$，$\\Delta S^\\circ=\\tfrac{2}{3}\\times81.2-\\tfrac{4}{3}\\times23.8-205.1=-182.7\\,\\mathrm{J/K}$ より $\\boldsymbol{\\Delta G^\\circ=-759.8+0.1827T}$．\n\nグラフの傾きは $-\\Delta S^\\circ$ である．固体のエントロピーは気体に比べてずっと小さいので，$\\Delta S^\\circ$ はほぼ「ふえた気体の物質量 × 約 $200\\,\\mathrm{J/(K\\,mol)}$」で決まる．(a) は気体が $1\\to2\\,\\mathrm{mol}$（$\\Delta S^\\circ>0$，右下がり），(b) は $1\\to1\\,\\mathrm{mol}$（$\\Delta S^\\circ\\approx0$，水平），(c) は気体の $\\ce{O2}$ が固体の酸化物になって $1\\to0\\,\\mathrm{mol}$（$\\Delta S^\\circ<0$，右上がり）．金属の酸化はほとんどがこの (c) の形なので，金属の酸化物の線はほぼ同じ傾きで右上がりに並ぶ．\n\n\\textbf{(2)}　(a) の線が (b) の線より下にくれば，炭素は $\\ce{CO}$ になる方が有利である．$-221.0-0.1789T<-393.5-0.0030T$ より\n\\[ T>\\dfrac{172.5}{0.1759}=980.7\\ \\Rightarrow\\ \\boldsymbol{981\\,\\mathrm{K}} \\]\nこれは (a)$-$(b) の反応 $\\ce{C + CO2 -> 2CO}$ の $\\Delta G^\\circ$ が負になる温度でもあり，高温の炉の中では $\\ce{CO}$ が主になる．\n\n\\textbf{(3)}　$\\tfrac{2}{3}\\ce{Cr2O3} + \\ce{2C} \\ce{->} \\tfrac{4}{3}\\ce{Cr} + \\ce{2CO}$ は (a)$-$(c) なので\n\\[ \\Delta G^\\circ=(-221.0-0.1789T)-(-759.8+0.1827T)=538.8-0.3616T \\]\nこれが負になるのは $T>\\dfrac{538.8}{0.3616}=1490\\,\\mathrm{K}$，すなわち $\\boldsymbol{T>1.49\\times10^{3}\\,\\mathrm{K}}$．図では (a) の線が (c) の線の下にくる温度である．\n\n$\\ce{CO2}$ を生じる還元は (b)$-$(c) で $\\Delta G^\\circ=366.3-0.1857T$，負になるのは $\\boldsymbol{T>1.97\\times10^{3}\\,\\mathrm{K}}$．$\\ce{CO}$ を生じる反応の方がずっと低い温度で可能になるので，$\\boldsymbol{\\ce{CO}\\ \\text{を生じる反応}}$ が重要である．$\\ce{CO}$ を生じる線は右下がりなので，十分に高温にすればいずれは多くの金属酸化物の線より下にくる．これが炭素が強力な還元剤として製錬に使われる理由である．\n\n\\textbf{(4)}　M の酸化の $\\Delta G^\\circ_\\mathrm{M}=\\Delta H^\\circ+0.180T$．炭素で還元できる条件は (a) の線が M の線より下にあること，すなわち\n\\[ -221.0-0.1789T<\\Delta H^\\circ+0.180T \\iff \\Delta H^\\circ>-221.0-0.3589T \\]\n$1200\\,\\mathrm{K}$ で還元できるので $\\Delta H^\\circ>-221.0-430.7=-651.7$．$1100\\,\\mathrm{K}$ で還元できないので $\\Delta H^\\circ\\le-221.0-394.8=-615.8$．よって $\\boldsymbol{-652\\,\\mathrm{kJ}<\\Delta H^\\circ\\le-616\\,\\mathrm{kJ}}$．$\\Delta H^\\circ$ がこれより大きい（酸化物がより不安定な）金属は 1100 K でも還元でき，これより小さい金属は 1200 K でも還元できない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "酸素 1 mol あたりの酸化反応の ΔG°=ΔH°−TΔS° を温度の直線として比べ，傾きが気体の物質量の変化で決まることを理解する．CO を生じる右下がりの線と金属酸化物の右上がりの線の交点から炭素で還元できる最低温度を求め，逆に還元できる・できない温度から金属の酸化の ΔH° の範囲を決める．"
+ },
+ "concepts": [
+  "enthalpy",
+  "oxygen-sulfur",
+  "nitrogen-phosphorus"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ギブズエネルギー",
+  "エントロピー",
+  "エリンガム図",
+  "製錬",
+  "炭素による還元",
+  "一酸化炭素"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,117 @@
+{
+ "id": "THE-ACB-018",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-05",
+ "topic": "二段階滴定による炭酸塩混合物の組成判定と CO₂ の吸収",
+ "course": "化学",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水溶液 X，Y，Z は，それぞれ水酸化ナトリウム，炭酸ナトリウム，炭酸水素ナトリウムのうち1種類または2種類を溶かしたものである．各水溶液 $10.0\\,\\mathrm{mL}$ にフェノールフタレインを加え，$0.100\\,\\mathrm{mol/L}$ 塩酸で赤色が消えるまで滴定した（滴下量 $V_1$）．続けてメチルオレンジを加え，色が変わるまで滴定した（追加の滴下量 $V_2$）．結果は次のとおりである．\n\nX：$V_1=6.0\\,\\mathrm{mL}$，$V_2=14.0\\,\\mathrm{mL}$\n\nY：$V_1=15.0\\,\\mathrm{mL}$，$V_2=5.0\\,\\mathrm{mL}$\n\nZ：はじめからフェノールフタレインで赤色を示さず $V_1=0$，$V_2=8.0\\,\\mathrm{mL}$\n\nフェノールフタレインの変色点までに $\\ce{CO3^2-}$ は $\\ce{HCO3-}$ になり，メチルオレンジの変色点までに $\\ce{HCO3-}$ は $\\ce{H2O}$ と $\\ce{CO2}$ になるものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "水酸化ナトリウムと炭酸水素ナトリウムは同じ水溶液中に共存できない．その理由を化学反応式で示せ．"
+     },
+     {
+      "id": "2",
+      "tex": "X，Y，Z それぞれ $10.0\\,\\mathrm{mL}$ に含まれる溶質の種類と物質量を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "Y は，純粋な水酸化ナトリウム水溶液 $10.0\\,\\mathrm{mL}$ を空気中に放置して二酸化炭素を吸収させたものであった（体積の変化はない）．もとの水酸化ナトリウム水溶液の濃度と，吸収された二酸化炭素の物質量を求めよ．また，二酸化炭素を吸収しても $V_1+V_2$ が変わらない理由を述べよ．"
+     },
+     {
+      "id": "4",
+      "tex": "Y をさらに放置して二酸化炭素を吸収させたところ，$V_1:V_2=1:3$ になった．このときの $V_1$，$V_2$ と，(3) のもとの水溶液から数えて吸収された二酸化炭素の総物質量を求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "濃度を正確に決めた水酸化ナトリウム水溶液が，その後に空気中の二酸化炭素を少し吸収した．この水溶液を，濃度を決めたときの値のまま用いて，(a) 塩酸をメチルオレンジを指示薬として，(b) 酢酸水溶液をフェノールフタレインを指示薬として滴定し，酸の濃度を求めた．求めた酸の濃度は真の値と比べてどうなるか．それぞれ「大きくなる」「小さくなる」「変わらない」で答え，理由を述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{NaOH + NaHCO3 -> Na2CO3 + H2O}$"
+   },
+   {
+    "id": "2",
+    "tex": "X：$\\ce{Na2CO3}$ $6.0\\times10^{-4}\\,\\mathrm{mol}$，$\\ce{NaHCO3}$ $8.0\\times10^{-4}\\,\\mathrm{mol}$；Y：$\\ce{NaOH}$ $1.0\\times10^{-3}\\,\\mathrm{mol}$，$\\ce{Na2CO3}$ $5.0\\times10^{-4}\\,\\mathrm{mol}$；Z：$\\ce{NaHCO3}$ $8.0\\times10^{-4}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "$0.20\\,\\mathrm{mol/L}$，$5.0\\times10^{-4}\\,\\mathrm{mol}$；メチルオレンジの変色点では Na はすべて NaCl になり，必要な HCl は $\\ce{Na+}$ の物質量で決まるから"
+   },
+   {
+    "id": "4",
+    "tex": "$V_1=5.0\\,\\mathrm{mL}$，$V_2=15.0\\,\\mathrm{mL}$，$1.5\\times10^{-3}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "5",
+    "tex": "(a) 変わらない　(b) 大きくなる"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　$\\ce{HCO3-}$ は酸としてはたらき，$\\ce{OH-}$ と中和する：$\\boldsymbol{\\ce{NaOH + NaHCO3 -> Na2CO3 + H2O}}$．したがって2種類を含む場合は「$\\ce{NaOH}$ と $\\ce{Na2CO3}$」か「$\\ce{Na2CO3}$ と $\\ce{NaHCO3}$」のどちらかである．\n\n\\textbf{各段階の反応}　第1段階（フェノールフタレイン）：$\\ce{NaOH + HCl -> NaCl + H2O}$，$\\ce{Na2CO3 + HCl -> NaHCO3 + NaCl}$．第2段階（メチルオレンジ）：$\\ce{NaHCO3 + HCl -> NaCl + H2O + CO2}$．\n\n$\\ce{NaOH}$ を $a$，$\\ce{Na2CO3}$ を $b$，$\\ce{NaHCO3}$ を $c$（mmol）とすると，$0.100V_1=a+b$，$0.100V_2=b+c$．$a$ と $c$ の少なくとも一方は 0 なので，\n\\begin{itemize}\n\\item $V_1>V_2$：$c=0$，$\\ce{NaOH}$ と $\\ce{Na2CO3}$（$V_2=0$ なら $\\ce{NaOH}$ のみ）\n\\item $V_1=V_2$：$\\ce{Na2CO3}$ のみ\n\\item $V_1<V_2$：$a=0$，$\\ce{Na2CO3}$ と $\\ce{NaHCO3}$（$V_1=0$ なら $\\ce{NaHCO3}$ のみ）\n\\end{itemize}\nと，$V_1$ と $V_2$ の大小だけで組成が決まる．\n\n\\textbf{(2)}　X：$V_1<V_2$．$b=0.60$，$c=1.40-0.60=0.80\\,\\mathrm{mmol}$．$\\boldsymbol{\\ce{Na2CO3}\\ 6.0\\times10^{-4}\\,\\mathrm{mol}}$，$\\boldsymbol{\\ce{NaHCO3}\\ 8.0\\times10^{-4}\\,\\mathrm{mol}}$．\n\nY：$V_1>V_2$．$b=0.50$，$a=1.50-0.50=1.00\\,\\mathrm{mmol}$．$\\boldsymbol{\\ce{NaOH}\\ 1.0\\times10^{-3}\\,\\mathrm{mol}}$，$\\boldsymbol{\\ce{Na2CO3}\\ 5.0\\times10^{-4}\\,\\mathrm{mol}}$．\n\nZ：$V_1=0$ で $\\ce{NaHCO3}$ のみ．$\\boldsymbol{\\ce{NaHCO3}\\ 8.0\\times10^{-4}\\,\\mathrm{mol}}$．\n\n\\textbf{(3)}　吸収の反応は $\\ce{CO2 + 2NaOH -> Na2CO3 + H2O}$．Na の保存より，もとの $\\ce{NaOH}$ は $1.00+2\\times0.50=2.00\\,\\mathrm{mmol}$，濃度は $\\dfrac{2.00\\times10^{-3}}{0.0100}=\\boldsymbol{0.20\\,\\mathrm{mol/L}}$．吸収した $\\ce{CO2}$ は $\\ce{Na2CO3}$ と同じ $\\boldsymbol{5.0\\times10^{-4}\\,\\mathrm{mol}}$．\n\n$V_1+V_2$ はメチルオレンジの変色点までの全量で，このとき Na はすべて NaCl になっている（炭素は $\\ce{CO2}$ として出ていく）．必要な HCl は $\\ce{Na+}$ の物質量に等しく，$\\ce{CO2}$ を吸収しても $\\ce{Na+}$ は変わらないので $V_1+V_2=20.0\\,\\mathrm{mL}$ のまま変わらない．\n\n\\textbf{(4)}　$V_1<V_2$ になったので，$\\ce{NaOH}$ はなくなり，$\\ce{Na2CO3 + CO2 + H2O -> 2NaHCO3}$ が進んだ．$\\ce{Na2CO3}$ $b$，$\\ce{NaHCO3}$ $c$ とすると $V_1:V_2=b:(b+c)=1:3$ より $c=2b$．Na の保存 $2b+c=2.00$ より $b=0.50$，$c=1.00\\,\\mathrm{mmol}$．\n\\[ V_1=\\frac{0.50}{0.100}=\\boldsymbol{5.0\\,\\mathrm{mL}},\\qquad V_2=\\frac{0.50+1.00}{0.100}=\\boldsymbol{15.0\\,\\mathrm{mL}} \\]\n（$V_1+V_2=20.0\\,\\mathrm{mL}$ で変わらない．）吸収した $\\ce{CO2}$ の総量は炭素の量 $b+c=\\boldsymbol{1.5\\times10^{-3}\\,\\mathrm{mol}}$．\n\n\\textbf{(5)}　(a) メチルオレンジの変色点では，$\\ce{CO3^2-}$ も 2 個の $\\ce{H+}$ を受け取って $\\ce{CO2}$ になる．$\\ce{Na+}$ 1 個あたり $\\ce{H+}$ 1 個を中和する能力は $\\ce{CO2}$ を吸収する前と同じなので，求めた濃度は $\\boldsymbol{\\text{変わらない}}$．\n\n(b) フェノールフタレインの変色点（弱塩基性）では，$\\ce{CO3^2-}$ は $\\ce{H+}$ を 1 個受け取って $\\ce{HCO3-}$ になるところまでしか反応しない．$\\ce{CO2}$ 1 個を吸収すると，中和に使える塩基が 1 個分減る（$\\ce{2OH-}$ が $\\ce{CO3^2-}$ になり，実際に使えるのは 1 個分）．そのため中和点までの滴下量が多くなり，それを最初の濃度で計算するので酸の濃度は $\\boldsymbol{\\text{大きくなる}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "NaOH と NaHCO₃ は共存できないので，二段階滴定の第1・第2終点までの滴下量の大小だけで組成の組み合わせが決まる．CO₂ を吸収しても Na⁺ の量は変わらないため第2終点までの全量は不変だが，第1終点の量は減るので，指示薬によって CO₂ 吸収の誤差の出方が異なる．"
+ },
+ "concepts": [
+  "acid-base",
+  "carbon-silicon",
+  "alkali-metals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "二段階滴定",
+  "炭酸ナトリウム",
+  "炭酸水素ナトリウム",
+  "二酸化炭素の吸収",
+  "指示薬"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

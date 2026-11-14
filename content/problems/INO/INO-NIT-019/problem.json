@@ -1,0 +1,106 @@
+{
+ "id": "INO-NIT-019",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-03",
+ "topic": "マグネシウムの空気中での燃焼生成物（窒化物の加水分解）と組成の決定",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "マグネシウムを空気中で強く熱すると，おもに酸素と反応して酸化マグネシウム $\\ce{MgO}$ になるが，一部は窒素とも反応して窒化マグネシウム $\\ce{Mg3N2}$ になる．マグネシウム $1.20\\,\\mathrm g$ を空気中で完全に反応させたところ，$\\ce{MgO}$ と $\\ce{Mg3N2}$ だけからなる白色の固体が $1.90\\,\\mathrm g$ 得られた．この固体に水を加えて加熱し，発生した気体をすべて $0.100\\,\\mathrm{mol/L}$ の硫酸 $100\\,\\mathrm{mL}$ に吸収させた．原子量は H = 1.0，N = 14，O = 16，Mg = 24 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "マグネシウムと窒素の反応，および窒化マグネシウムと水の反応を，それぞれ化学反応式で書け．"
+     },
+     {
+      "id": "2",
+      "tex": "マグネシウム $1.20\\,\\mathrm g$ がすべて $\\ce{MgO}$ になった場合と，すべて $\\ce{Mg3N2}$ になった場合の固体の質量をそれぞれ求めよ（有効数字3桁）．また，得られた固体の質量 $1.90\\,\\mathrm g$ がその間にあることから何がいえるか．"
+     },
+     {
+      "id": "3",
+      "tex": "マグネシウム原子のうち何 % が $\\ce{Mg3N2}$ になったか．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "気体を吸収させた後の硫酸を $0.200\\,\\mathrm{mol/L}$ の水酸化ナトリウム水溶液で滴定すると，中和に何 mL 必要か．有効数字3桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{3Mg + N2 -> Mg3N2}$，$\\ce{Mg3N2 + 6H2O -> 3Mg(OH)2 + 2NH3}$"
+   },
+   {
+    "id": "2",
+    "tex": "すべて $\\ce{MgO}$：$2.00\\,\\mathrm g$，すべて $\\ce{Mg3N2}$：$1.67\\,\\mathrm g$．生成物は $\\ce{MgO}$ と $\\ce{Mg3N2}$ の混合物であり，Mg の一部が窒素と反応したといえる"
+   },
+   {
+    "id": "3",
+    "tex": "$30\\,\\%$"
+   },
+   {
+    "id": "4",
+    "tex": "$50.0\\,\\mathrm{mL}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　Mg 原子の数は保存される．Mg 1 原子あたりにつく相手の質量は，$\\ce{MgO}$ では O の $16$，$\\ce{Mg3N2}$ では N の $\\frac{2}{3}\\times14\\fallingdotseq9.3$ と小さいので，窒化物が混じるほど生成物は軽くなる．\n\n(1) $\\ce{3Mg + N2 -> Mg3N2}$．窒化物イオン $\\ce{N^3-}$ は非常に強い塩基で，水から $\\ce{H+}$ を受け取ってアンモニアになる：$\\ce{Mg3N2 + 6H2O -> 3Mg(OH)2 + 2NH3}$．\n\n(2) Mg は $1.20\\div24=0.0500\\,\\mathrm{mol}$．すべて $\\ce{MgO}$（$40\\,\\mathrm{g/mol}$）なら $0.0500\\times40=\\boldsymbol{2.00\\,\\mathrm g}$．すべて $\\ce{Mg3N2}$（$100\\,\\mathrm{g/mol}$）なら $\\frac{0.0500}{3}\\times100=\\boldsymbol{1.67\\,\\mathrm g}$．$1.90\\,\\mathrm g$ は両者の間なので，$\\ce{MgO}$ だけでも $\\ce{Mg3N2}$ だけでもなく，混合物である（Mg の一部が窒素と反応した）．\n\n(3) $\\ce{Mg3N2}$ になった Mg を $x\\,\\mathrm{mol}$ とすると，$\\ce{MgO}$ になった Mg は $(0.0500-x)\\,\\mathrm{mol}$．\n\\[40(0.0500-x)+\\frac{100}{3}x=1.90\\quad\\Rightarrow\\quad\\frac{20}{3}x=0.100\\quad\\Rightarrow\\quad x=0.0150\\,\\mathrm{mol}\\]\n割合は $0.0150\\div0.0500\\times100=\\boldsymbol{30\\,\\%}$．\n\n(4) $\\ce{Mg3N2}$ は $0.0150\\div3=0.00500\\,\\mathrm{mol}$，発生する $\\ce{NH3}$ は $0.0100\\,\\mathrm{mol}$．硫酸の $\\ce{H+}$ は $0.100\\times\\frac{100}{1000}\\times2=0.0200\\,\\mathrm{mol}$ で，$\\ce{NH3}$ が $0.0100\\,\\mathrm{mol}$ を中和するので残りは $0.0100\\,\\mathrm{mol}$．必要な NaOH 水溶液は $0.0100\\div0.200=0.0500\\,\\mathrm L=\\boldsymbol{50.0\\,\\mathrm{mL}}$（逆滴定）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "Mg を空気中で燃やすと MgO と Mg3N2 の混合物になり，Mg 1 原子あたりの相手の質量の違い（O 16 と N 9.3）から生成物の質量で組成が決まる．窒化物イオンは強塩基で水と反応して NH3 を出すので，発生した NH3 の逆滴定で組成を確かめられる．"
+ },
+ "concepts": [
+  "nitrogen-phosphorus"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "窒化マグネシウム",
+  "アンモニア",
+  "逆滴定",
+  "混合物の組成"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

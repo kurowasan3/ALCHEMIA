@@ -1,0 +1,109 @@
+{
+ "id": "THE-EQL-079",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "エチルベンゼンの脱水素平衡と全圧一定での水蒸気による希釈の効果",
+ "course": "化学",
+ "level": 3,
+ "minutes": 20,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "スチレンは，エチルベンゼンの脱水素反応\n\\[\\ce{C6H5C2H5(g) <=> C6H5CH=CH2(g) + H2(g)}\\]\nでつくられる．ある温度 $T_1$ でのこの反応の圧平衡定数は $K_{\\mathrm p}=4.0\\times10^{4}\\,\\mathrm{Pa}$ であり，$K_{\\mathrm p}$ は温度が高いほど大きい．工業的には，エチルベンゼンに大量の水蒸気を混ぜて反応させる．水蒸気は反応しないものとし，気体はすべて理想気体とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "右向きの反応は発熱反応か吸熱反応か．"
+     },
+     {
+      "id": "2",
+      "tex": "温度 $T_1$，全圧 $1.0\\times10^{5}\\,\\mathrm{Pa}$ で，エチルベンゼンだけを反応させたとき，平衡でのエチルベンゼンの反応した割合（転化率）を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "温度 $T_1$ で，エチルベンゼン 1 mol に水蒸気 9 mol を混ぜ，全圧を $1.0\\times10^{5}\\,\\mathrm{Pa}$ に保って反応させたときの転化率を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の結果が (2) と異なる理由を述べよ．また，エチルベンゼンが平衡に達した容器に，容積を一定に保ったまま水蒸気を加えた場合，平衡はどうなるか．理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "吸熱反応"
+   },
+   {
+    "id": "2",
+    "tex": "0.53"
+   },
+   {
+    "id": "3",
+    "tex": "0.84"
+   },
+   {
+    "id": "4",
+    "tex": "全圧が一定なので，水蒸気が加わると反応に関わる気体の分圧の合計が下がり，気体の分子の数が増える右向きに平衡が移動するから．容積一定で加えた場合は，各成分の分圧（濃度）が変わらないので平衡は移動しない．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　温度が高いほど $K_{\\mathrm p}$ が大きい（右に偏る）ので，右向きは $\\boldsymbol{\\text{吸熱反応}}$．\n\n\\textbf{(2)}　エチルベンゼン 1 mol のうち $\\alpha$ mol が反応すると，エチルベンゼン $1-\\alpha$，スチレン $\\alpha$，水素 $\\alpha$，合計 $1+\\alpha$ mol．全圧を $P$ とすると\n\\[K_{\\mathrm p}=\\frac{\\left(\\dfrac{\\alpha}{1+\\alpha}P\\right)^2}{\\dfrac{1-\\alpha}{1+\\alpha}P}=\\frac{\\alpha^2}{1-\\alpha^2}P\\]\n$\\dfrac{\\alpha^2}{1-\\alpha^2}=\\dfrac{4.0\\times10^{4}}{1.0\\times10^{5}}=0.40$ より $\\alpha^2=\\dfrac{0.40}{1.40}$，$\\alpha=0.535\\fallingdotseq\\boldsymbol{0.53}$．\n\n\\textbf{(3)}　水蒸気 9 mol が加わり，合計は $10+\\alpha$ mol．\n\\[K_{\\mathrm p}=\\frac{\\left(\\dfrac{\\alpha}{10+\\alpha}P\\right)^2}{\\dfrac{1-\\alpha}{10+\\alpha}P}=\\frac{\\alpha^2}{(1-\\alpha)(10+\\alpha)}P=4.0\\times10^{4}\\]\n$\\alpha^2=0.40(1-\\alpha)(10+\\alpha)$ を整理して $1.4\\alpha^2+3.6\\alpha-4.0=0$，$\\alpha=\\dfrac{-3.6+\\sqrt{3.6^2+4\\times1.4\\times4.0}}{2\\times1.4}=0.838\\fallingdotseq\\boldsymbol{0.84}$．\n\n\\textbf{(4)}　全圧一定のまま水蒸気を混ぜると，反応に関わる 3 つの気体の分圧がまとめて下がる．これは反応する気体だけを減圧したのと同じで，気体の分子の数が増える右向きに平衡が移動する（反応商 $\\dfrac{p_{\\text{スチレン}}\\,p_{\\ce{H2}}}{p_{\\text{エチルベンゼン}}}$ は分圧が一律に下がると小さくなり，$K_{\\mathrm p}$ より小さくなるので右へ進む）．\\\\\n容積一定で水蒸気を加えると全圧は上がるが，反応に関わる気体の物質量と容積は変わらないので，それぞれの分圧（濃度）は変わらず，反応商は $K_{\\mathrm p}$ のままで $\\boldsymbol{\\text{平衡は移動しない}}$．\\\\\nなお，水蒸気は加熱用の熱媒体として吸熱反応に熱を与える役目もある．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "分子の数が増える気相平衡では，全圧一定で反応しない気体を混ぜると反応に関わる気体の分圧が一律に下がり，減圧と同じく分子の数が増える向きに平衡が移る．圧平衡定数の式に希釈後のモル分率を入れると転化率の上昇を定量でき，容積一定で加えた場合は分圧が変わらず移動しないことと区別する．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "aromatic",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "圧平衡定数",
+  "平衡移動",
+  "不活性気体",
+  "スチレン",
+  "転化率"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

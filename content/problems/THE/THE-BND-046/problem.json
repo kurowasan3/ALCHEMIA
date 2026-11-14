@@ -1,0 +1,101 @@
+{
+ "id": "THE-BND-046",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-03",
+ "topic": "電子配置で示した原子の組合せと化合物の組成・結合",
+ "course": "化学",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "condition",
+  "qa"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "K 殻，L 殻，M 殻，N 殻の電子の数で電子配置を表すと，原子 A〜E は次のようになる．\n\\[\\begin{array}{c|c}\n\\text{原子} & \\text{電子配置（K, L, M, N）}\\\\ \\hline\n\\text{A} & 2,\\ 8,\\ 2\\\\\n\\text{B} & 2,\\ 6\\\\\n\\text{C} & 2,\\ 8,\\ 7\\\\\n\\text{D} & 2,\\ 4\\\\\n\\text{E} & 2,\\ 8,\\ 8,\\ 1\n\\end{array}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "次の (a)〜(f) の組合せで安定な化合物（または単体）をつくるとき，その化学式（組成式または分子式）と，原子間の結合の種類（イオン結合・共有結合）を答えよ．ただし (c) は，B が D より多く結合したものとする．\\\\\n(a) A と B　(b) A と C　(c) D と B　(d) D と C　(e) E と B　(f) C と C"
+     },
+     {
+      "id": "2",
+      "tex": "(1) でイオン結合からなる化合物のうち，陽イオンと陰イオンが同じ電子配置になっているものをすべて選び，そのイオンの電子配置が同じである貴ガスの元素記号を答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "E と C からなる化合物も陽イオンと陰イオンが同じ電子配置になる．その化合物の組成式と，その電子配置が同じである貴ガスの元素記号を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "(a) $\\ce{MgO}$，イオン結合　(b) $\\ce{MgCl2}$，イオン結合　(c) $\\ce{CO2}$，共有結合　(d) $\\ce{CCl4}$，共有結合　(e) $\\ce{K2O}$，イオン結合　(f) $\\ce{Cl2}$，共有結合"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{MgO}$（Ne）"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{KCl}$，Ar"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{原子の特定}\n電子の総数が原子番号である．A：$2+8+2=12$（Mg），B：$8$（O），C：$17$（Cl），D：$6$（C），E：$19$（K）．\n\n\\textbf{(1) 組成と結合の種類}\n価電子の数は A 2，B 6，C 7，D 4，E 1．\n\\begin{itemize}\n\\item 金属元素（Mg，K）と非金属元素（O，Cl）の組 → 電子を受けわたしてイオン結合．$\\ce{Mg^2+}$ と $\\ce{O^2-}$ で $\\ce{MgO}$，$\\ce{Mg^2+}$ と $\\ce{Cl-}$ で $\\ce{MgCl2}$，$\\ce{K+}$ と $\\ce{O^2-}$ で $\\ce{K2O}$．\n\\item 非金属元素どうしの組 → 電子を共有して共有結合．C（価電子 4，原子価 4）と O（原子価 2）で $\\ce{CO2}$，C と Cl（原子価 1）で $\\ce{CCl4}$，Cl どうしで $\\ce{Cl2}$．\n\\end{itemize}\n\n\\textbf{(2) 同じ電子配置のイオンの組}\n\\begin{itemize}\n\\item $\\ce{MgO}$：$\\ce{Mg^2+}$（2, 8）と $\\ce{O^2-}$（2, 8）→ どちらも Ne と同じ．\n\\item $\\ce{MgCl2}$：$\\ce{Mg^2+}$（2, 8）と $\\ce{Cl-}$（2, 8, 8）→ 異なる．\n\\item $\\ce{K2O}$：$\\ce{K+}$（2, 8, 8）と $\\ce{O^2-}$（2, 8）→ 異なる．\n\\end{itemize}\nよって $\\boldsymbol{\\ce{MgO}}$ だけで，そのイオンの電子配置は Ne と同じ．\n\n\\textbf{(3) E と C}\n$\\ce{K+}$（2, 8, 8）と $\\ce{Cl-}$（2, 8, 8）はどちらも Ar と同じ電子配置なので，組成式 $\\ce{KCl}$．\n\n陽イオンは電子を失って 1 つ内側の貴ガス（前の周期の貴ガス）と，陰イオンは電子を受け取って同じ周期の貴ガスと同じ電子配置になる．したがって，陰イオンになる元素が陽イオンになる元素より 1 つ前の周期にあるときに，両方のイオンが同じ電子配置になる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "電子配置から原子と価電子の数を決め，金属元素と非金属元素の組はイオン結合（組成式は電荷のつり合い），非金属元素どうしは共有結合（原子価）で化学式を決める．陽イオンは前の周期の貴ガス，陰イオンは同じ周期の貴ガスの電子配置になるので，両イオンが同じ電子配置になるのは陰イオンの元素が 1 つ前の周期にある組合せである．"
+ },
+ "concepts": [
+  "chemical-bond",
+  "elemental-analysis",
+  "electron-config"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電子配置",
+  "イオン結合",
+  "共有結合",
+  "組成式",
+  "貴ガス型電子配置"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

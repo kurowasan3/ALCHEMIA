@@ -1,0 +1,109 @@
+{
+ "id": "INO-PPT-033",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-08",
+ "topic": "相互混合の結果表と過剰の実験による水溶液の決定",
+ "course": "化学",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "condition",
+  "equation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の 9 種類の物質のうち異なる 6 種類を，それぞれ水に溶かして同じモル濃度（$0.1\\,\\mathrm{mol/L}$）の水溶液 A〜F をつくった．\n\\[ \\ce{HCl},\\ \\ce{NaOH},\\ \\ce{NH3},\\ \\ce{AgNO3},\\ \\ce{Zn(NO3)2},\\ \\ce{Al(NO3)3},\\ \\ce{Mg(NO3)2},\\ \\ce{BaCl2},\\ \\ce{Na2SO4} \\]\nA〜F から 2 つずつ選んで，沈殿が生じうる場合には沈殿が生じる割合で混ぜたところ，結果は次の表のようになった（白：白色沈殿，褐：褐色沈殿，−：目に見える変化なし）．\n\\[ \\begin{array}{c|cccccc} & \\text{A} & \\text{B} & \\text{C} & \\text{D} & \\text{E} & \\text{F} \\\\ \\hline \\text{A} & & - & \\text{褐} & - & \\text{褐} & - \\\\ \\text{B} & & & \\text{白} & - & \\text{白} & - \\\\ \\text{C} & & & & \\text{白} & - & \\text{白} \\\\ \\text{D} & & & & & \\text{白} & - \\\\ \\text{E} & & & & & & \\text{白} \\end{array} \\]\nさらに，沈殿が生じた組のうち 3 組について，それぞれの水溶液を過剰に加えて沈殿が溶けるかを調べた．\n\n実験 a：A と C の沈殿は，A・C どちらを過剰に加えても溶けなかった．\n\n実験 b：C と D の沈殿は，C を過剰に加えると溶けたが，D を過剰に加えても溶けなかった．\n\n実験 c：E と F の沈殿は，E を過剰に加えると溶けたが，F を過剰に加えても溶けなかった．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "表の結果だけ（実験 a〜c を使わない）では，A〜F に溶かした物質の割り当てとして考えられるものは何通りあるか．どの物質が使われていないかを含めて，理由とともに答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "実験 a〜c の結果も用いて，A〜F に溶かした物質を化学式で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "実験 a を行わなかったとすると，表と実験 b，c の結果に合う割り当ては何通りになるか．そのすべてを示せ．"
+     },
+     {
+      "id": "4",
+      "tex": "実験 b，c で沈殿が溶けた変化を，それぞれイオンを含む反応式で書け．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$12$ 通り．褐色沈殿から A は $\\ce{AgNO3}$，C・E は $\\ce{NaOH}$ と $\\ce{NH3}$ のどちらか（2 通り），B・D・F は $\\ce{Zn(NO3)2}$・$\\ce{Al(NO3)3}$・$\\ce{Mg(NO3)2}$ のどれか（6 通り）に決まり，$\\ce{HCl}$・$\\ce{BaCl2}$・$\\ce{Na2SO4}$ は使われていない"
+   },
+   {
+    "id": "2",
+    "tex": "A $\\ce{AgNO3}$，B $\\ce{Mg(NO3)2}$，C $\\ce{NaOH}$，D $\\ce{Al(NO3)3}$，E $\\ce{NH3}$，F $\\ce{Zn(NO3)2}$"
+   },
+   {
+    "id": "3",
+    "tex": "2 通り．（A，B，C，D，E，F）＝（$\\ce{AgNO3}$，$\\ce{Mg(NO3)2}$，$\\ce{NaOH}$，$\\ce{Al(NO3)3}$，$\\ce{NH3}$，$\\ce{Zn(NO3)2}$）と（$\\ce{AgNO3}$，$\\ce{Mg(NO3)2}$，$\\ce{NH3}$，$\\ce{Zn(NO3)2}$，$\\ce{NaOH}$，$\\ce{Al(NO3)3}$）"
+   },
+   {
+    "id": "4",
+    "tex": "b：$\\ce{Al(OH)3 + OH- -> [Al(OH)4]-}$，c：$\\ce{Zn(OH)2 + 4NH3 -> [Zn(NH3)4]^2+ + 2OH-}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{各物質の組合せで起こること}　9 種類のうち沈殿が生じるのは次の組だけである．\n$\\ce{Ag+}$ と $\\ce{Cl-}$（$\\ce{HCl}$，$\\ce{BaCl2}$）：白色 $\\ce{AgCl}$．$\\ce{Ba^2+}$ と $\\ce{SO4^2-}$：白色 $\\ce{BaSO4}$．$\\ce{Ag+}$ と $\\ce{NaOH}$・$\\ce{NH3}$：褐色 $\\ce{Ag2O}$．$\\ce{Zn^2+}$・$\\ce{Al^3+}$・$\\ce{Mg^2+}$ と $\\ce{NaOH}$・$\\ce{NH3}$：白色の水酸化物．過剰の $\\ce{NaOH}$ には $\\ce{Zn(OH)2}$・$\\ce{Al(OH)3}$ が溶け（両性），過剰の $\\ce{NH3}$ には $\\ce{Ag2O}$・$\\ce{Zn(OH)2}$ が溶ける（アンミン錯イオン）．$\\ce{Mg(OH)2}$ はどちらにも溶けない．\n\n\\textbf{(1) 表だけで決まること}　褐色沈殿は $\\ce{Ag+}$ と $\\ce{NaOH}$ または $\\ce{NH3}$ の組でしか生じない．褐色の組は A–C と A–E で，A が共通なので A が $\\ce{AgNO3}$（A が $\\ce{NaOH}$ などなら C と E がともに $\\ce{AgNO3}$ になってしまう）．よって C・E は $\\ce{NaOH}$ と $\\ce{NH3}$ である．\nB・D・F はどれも C・E の両方と白色沈殿をつくり，A（$\\ce{Ag+}$）とは変化がなく，互いにも変化がない．$\\ce{HCl}$・$\\ce{BaCl2}$ は $\\ce{Ag+}$ と白色沈殿をつくり，$\\ce{Na2SO4}$ は $\\ce{NaOH}$・$\\ce{NH3}$ と沈殿しないので当てはまらず，B・D・F は $\\ce{Zn(NO3)2}$・$\\ce{Al(NO3)3}$・$\\ce{Mg(NO3)2}$ の 3 つである．表の結果はこの 3 つの入れかえと C・E の入れかえでは変わらないので，割り当ては $2\\times3!=\\boldsymbol{12}$ 通り残る．\n\n\\textbf{(2) 過剰の実験で絞り込む}\n\n実験 a：$\\ce{Ag2O}$ が C の過剰で溶けない → C は $\\ce{NH3}$ ではない．C $=\\ce{NaOH}$，E $=\\ce{NH3}$．\n\n実験 b：D の水酸化物が $\\ce{NaOH}$ の過剰で溶ける → D は両性の $\\ce{Zn}$ か $\\ce{Al}$．\n\n実験 c：F の水酸化物が $\\ce{NH3}$ の過剰で溶ける → F はアンミン錯イオンをつくる $\\ce{Zn}$．\nよって F $=\\ce{Zn(NO3)2}$，D $=\\ce{Al(NO3)3}$，残る B $=\\ce{Mg(NO3)2}$．A $\\ce{AgNO3}$，B $\\ce{Mg(NO3)2}$，C $\\ce{NaOH}$，D $\\ce{Al(NO3)3}$，E $\\ce{NH3}$，F $\\ce{Zn(NO3)2}$ と\\textbf{ただ 1 通り}に決まる．\n\n\\textbf{(3) 実験 a がない場合}　C と E の区別は実験 a だけに頼っていた．実験 b，c は「C の過剰で D が溶け，E の過剰で F が溶ける」という情報なので，C・E を入れかえても次のように説明がつく．\n\n・C $=\\ce{NaOH}$，E $=\\ce{NH3}$ のとき：F $=\\ce{Zn}$，D $=\\ce{Al}$，B $=\\ce{Mg}$（(2) の答え）\n\n・C $=\\ce{NH3}$，E $=\\ce{NaOH}$ のとき：D は $\\ce{NH3}$ の過剰で溶けるので $\\ce{Zn}$，F は $\\ce{NaOH}$ の過剰で溶けるので $\\ce{Zn}$ か $\\ce{Al}$ だが $\\ce{Zn}$ は D なので $\\ce{Al}$，B $=\\ce{Mg}$\nこのとき，b では D（$\\ce{Zn^2+}$）を過剰にしても沈殿は溶けず，c でも F（$\\ce{Al^3+}$）を過剰にしても溶けないので矛盾しない．よって\\textbf{ 2 通り}残る．$\\ce{Ag2O}$ が $\\ce{NH3}$ の過剰に溶けるかどうか（実験 a）が，$\\ce{NaOH}$ と $\\ce{NH3}$ を区別する決め手である．\n\n\\textbf{(4) 沈殿が溶ける反応}\nb：両性水酸化物がヒドロキシド錯イオンになる．\n\\[ \\ce{Al(OH)3 + OH- -> [Al(OH)4]-} \\]\nc：水酸化亜鉛がテトラアンミン亜鉛(II) イオン（正四面体形）になる．\n\\[ \\ce{Zn(OH)2 + 4NH3 -> [Zn(NH3)4]^2+ + 2OH-} \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "相互に混ぜた結果の表から，沈殿の色（Ag₂O の褐色）と「どの組とも反応するか」で物質の役割を絞り，残る入れかえの自由度（何通り残るか）を数える．NaOH と NH₃，両性水酸化物とアンミン錯イオンをつくるものの区別は過剰に加えたときの溶解でしか決まらず，どの実験がどの入れかえを消すかを論理的に追って割り当てを一意に決める．"
+ },
+ "concepts": [
+  "precipitation",
+  "complex-ion",
+  "amphoteric"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "相互混合",
+  "両性水酸化物",
+  "アンミン錯イオン",
+  "酸化銀",
+  "一意性"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

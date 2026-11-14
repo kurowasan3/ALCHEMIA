@@ -1,0 +1,109 @@
+{
+ "id": "INO-PPT-052",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-08",
+ "topic": "銀イオンのアンミン錯体の逐次生成：中間体の割合の最大値と pH による配位子濃度の制御",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "銀イオンはアンモニアと2段階で錯イオンをつくる．\n\\[ \\ce{Ag+ + NH3 <=> [Ag(NH3)]+}\\quad K_1=\\frac{[\\ce{[Ag(NH3)]+}]}{[\\ce{Ag+}][\\ce{NH3}]}=2.0\\times10^{3}\\,\\mathrm{L/mol} \\]\n\\[ \\ce{[Ag(NH3)]+ + NH3 <=> [Ag(NH3)2]+}\\quad K_2=\\frac{[\\ce{[Ag(NH3)2]+}]}{[\\ce{[Ag(NH3)]+}][\\ce{NH3}]}=8.0\\times10^{3}\\,\\mathrm{L/mol} \\]\n以下，$\\ce{Ag+}$，$\\ce{[Ag(NH3)]+}$，$\\ce{[Ag(NH3)2]+}$ を $\\mathrm{A_0}$，$\\mathrm{A_1}$，$\\mathrm{A_2}$ と書き，銀を含む粒子の濃度の和に対する $\\mathrm{A_1}$ の割合を $f_1$，$[\\ce{NH3}]=L$ とする．\n銀の全濃度 $1.0\\times10^{-5}\\,\\mathrm{mol/L}$ を，$\\ce{NH3}$ と $\\ce{NH4+}$ の濃度の和が $N=0.100\\,\\mathrm{mol/L}$ の水溶液に溶かし，強酸を加えて pH を調節する．錯イオンに含まれる $\\ce{NH3}$ は $N$ に比べて無視でき，$\\ce{NH3}$ の電離定数は $K_{\\mathrm b}=1.8\\times10^{-5}\\,\\mathrm{mol/L}$，水のイオン積は $K_{\\mathrm w}=1.0\\times10^{-14}\\,\\mathrm{(mol/L)^2}$，$\\log_{10}2=0.30$，$\\log_{10}3=0.48$ とする（温度一定）．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$f_1$ を $K_1$，$K_2$，$L$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "$[\\mathrm{A_1}]=[\\mathrm{A_2}]$ となる $L$ $[\\mathrm{mol/L}]$ と，そのときの水溶液の pH を，それぞれ有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$f_1$ が最大になる $L$ $[\\mathrm{mol/L}]$ と $f_1$ の最大値を求めよ．また，このとき $[\\mathrm{A_0}]$ と $[\\mathrm{A_2}]$ の大小関係を答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "一般に，$L$ をどのように選んでも $\\mathrm{A_1}$ が3種の中で最も多い粒子にならないための，$K_1$ と $K_2$ の間の条件を答えよ．銀とアンモニアの系はこの条件を満たすか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$f_1=\\dfrac{K_1L}{1+K_1L+K_1K_2L^{2}}$"
+   },
+   {
+    "id": "2",
+    "tex": "$L=1.3\\times10^{-4}\\,\\mathrm{mol/L}$，pH $6.4$"
+   },
+   {
+    "id": "3",
+    "tex": "$L=2.5\\times10^{-4}\\,\\mathrm{mol/L}$，最大値 $0.20$，$[\\mathrm{A_0}]=[\\mathrm{A_2}]$"
+   },
+   {
+    "id": "4",
+    "tex": "$K_2\\ge K_1$（満たす）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　$[\\mathrm{A_1}]=K_1L[\\mathrm{A_0}]$，$[\\mathrm{A_2}]=K_2L[\\mathrm{A_1}]=K_1K_2L^{2}[\\mathrm{A_0}]$ なので\n\\[ f_1=\\frac{[\\mathrm{A_1}]}{[\\mathrm{A_0}]+[\\mathrm{A_1}]+[\\mathrm{A_2}]}=\\boldsymbol{\\frac{K_1L}{1+K_1L+K_1K_2L^{2}}} \\]\n\n\\textbf{(2)}　$[\\mathrm{A_2}]/[\\mathrm{A_1}]=K_2L=1$ より $L=\\dfrac{1}{K_2}=1.25\\times10^{-4}\\fallingdotseq\\boldsymbol{1.3\\times10^{-4}\\,\\mathrm{mol/L}}$．\n$\\ce{NH4+ <=> NH3 + H+}$ の電離定数は $K_{\\mathrm a}=\\dfrac{K_{\\mathrm w}}{K_{\\mathrm b}}=5.56\\times10^{-10}\\,\\mathrm{mol/L}$．$[\\ce{NH4+}]=N-L\\fallingdotseq0.100\\,\\mathrm{mol/L}$ なので\n\\[ [\\ce{H+}]=K_{\\mathrm a}\\frac{[\\ce{NH4+}]}{[\\ce{NH3}]}=\\frac{K_{\\mathrm w}K_2(N-L)}{K_{\\mathrm b}}=\\frac{1.0\\times10^{-14}\\times8.0\\times10^{3}\\times0.0999}{1.8\\times10^{-5}}=4.4\\times10^{-7}\\,\\mathrm{mol/L} \\]\n$\\mathrm{pH}=7-\\log_{10}4.4\\fallingdotseq\\boldsymbol{6.4}$（$\\log_{10}4.4\\fallingdotseq0.65$）．アンモニアの大部分を $\\ce{NH4+}$ にしておくと，遊離の $\\ce{NH3}$ をこのような低い濃度に保てる．\n\n\\textbf{(3)}　$\\dfrac{1}{f_1}=1+\\dfrac{1}{K_1L}+K_2L$ を最小にすればよい．相加平均・相乗平均の関係より $\\dfrac{1}{K_1L}+K_2L\\ge2\\sqrt{\\dfrac{K_2}{K_1}}$，等号は $\\dfrac{1}{K_1L}=K_2L$，すなわち\n\\[ L=\\frac{1}{\\sqrt{K_1K_2}}=\\frac{1}{\\sqrt{1.6\\times10^{7}}}=\\boldsymbol{2.5\\times10^{-4}\\,\\mathrm{mol/L}} \\]\nこのとき $K_1L=0.5$，$K_1K_2L^{2}=1$ なので $f_1=\\dfrac{0.5}{1+0.5+1}=\\boldsymbol{0.20}$．また $[\\mathrm{A_2}]/[\\mathrm{A_0}]=K_1K_2L^{2}=1$ より $\\boldsymbol{[\\mathrm{A_0}]=[\\mathrm{A_2}]}$（それぞれ $0.40$）．中間体の割合が最大になるのは，両側の粒子が等量になる点である．\n\n\\textbf{(4)}　$\\mathrm{A_1}$ の割合が最も大きくなりやすいのは (3) の $L$ で，そこでは $[\\mathrm{A_0}]=[\\mathrm{A_2}]$，$\\dfrac{[\\mathrm{A_1}]}{[\\mathrm{A_0}]}=K_1L=\\sqrt{\\dfrac{K_1}{K_2}}$ である．ほかの $L$ では $[\\mathrm{A_0}]$ と $[\\mathrm{A_2}]$ の大きい方は必ずこの値以上になるので，$\\mathrm{A_1}$ が最多になる $L$ が存在する条件は $\\sqrt{K_1/K_2}>1$，すなわち $K_1>K_2$．したがって最多にならない条件は $\\boldsymbol{K_2\\ge K_1}$．銀では $K_2=8.0\\times10^{3}>K_1=2.0\\times10^{3}$ なので条件を満たし，$\\ce{[Ag(NH3)]+}$ は最大でも全体の 20\\,\\% にしかならない（2個目の $\\ce{NH3}$ の方が結合しやすいため，$\\ce{Ag+}$ は実質的に $\\ce{[Ag(NH3)2]+}$ に一気に変わる）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "逐次錯形成で中間体の割合は，両側の粒子（配位子0個と2個）の濃度が等しくなる配位子濃度 L=1/√(K₁K₂) で最大となり，最大値は √(K₁/K₂)/(2+√(K₁/K₂)) で決まる．K₂≧K₁ なら中間体はどの L でも最多にならない．遊離の配位子濃度は NH₄⁺/NH₃ の緩衝液の pH で制御できる．"
+ },
+ "concepts": [
+  "precipitation",
+  "complex-ion",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "錯イオン",
+  "逐次平衡",
+  "ジアンミン銀",
+  "緩衝液",
+  "生成定数"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

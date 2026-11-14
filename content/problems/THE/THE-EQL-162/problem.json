@@ -1,0 +1,109 @@
+{
+ "id": "THE-EQL-162",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "不斉水素化の選択性（少ない錯体から主生成物ができる理由と水素圧による鏡像異性体過剰率の低下）",
+ "course": "化学",
+ "level": 5,
+ "minutes": 35,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "鏡像異性体の一方だけからなる金属錯体触媒 $\\mathrm{Cat}$ は，平面形の基質 $\\mathrm{S}$ の $\\ce{C=C}$ 結合の表側・裏側のどちらにも結合でき，互いにジアステレオマーの関係にある 2 種類の錯体 $\\mathrm{X}$，$\\mathrm{Y}$ をつくる．$\\mathrm{X}$ に $\\ce{H2}$ が反応すると生成物の鏡像異性体の一方 $\\mathrm{P}$ が，$\\mathrm{Y}$ からは他方 $\\mathrm{Q}$ が生じ，$\\mathrm{Cat}$ は再生する．$\\mathrm{X}$ と $\\mathrm{Y}$ が直接入れかわることはなく，いったん $\\mathrm{Cat}+\\mathrm{S}$ に戻ってから結合し直す．\n\\[\\mathrm{Cat}+\\mathrm{S}\\ \\underset{k_{-1}}{\\overset{k_1}{\\rightleftharpoons}}\\ \\mathrm{X},\\qquad \\mathrm{X}\\ \\xrightarrow{\\ \\ce{H2}\\ }\\ \\mathrm{P}+\\mathrm{Cat}\\quad(\\text{速さ } v_{\\mathrm P}=x[\\mathrm X])\\]\n\\[\\mathrm{Cat}+\\mathrm{S}\\ \\underset{k_{-2}}{\\overset{k_2}{\\rightleftharpoons}}\\ \\mathrm{Y},\\qquad \\mathrm{Y}\\ \\xrightarrow{\\ \\ce{H2}\\ }\\ \\mathrm{Q}+\\mathrm{Cat}\\quad(\\text{速さ } v_{\\mathrm Q}=y[\\mathrm Y])\\]\n$x$，$y$ は $\\ce{H2}$ の圧力に比例する見かけの速度定数で，つねに $x=1000\\,y$ である．$k_1=k_2$，$k_{-1}=20\\,\\mathrm{s^{-1}}$，$k_{-2}=1.0\\,\\mathrm{s^{-1}}$ とする．基質は大過剰で $[\\mathrm S]$ は一定，$\\mathrm X$・$\\mathrm Y$ の濃度は反応中一定（定常状態）とみなす．生成物の鏡像異性体過剰率は $\\dfrac{|v_{\\mathrm P}-v_{\\mathrm Q}|}{v_{\\mathrm P}+v_{\\mathrm Q}}\\times100\\,\\%$ で表す．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{H2}$ の反応が十分に遅く，$\\mathrm X$・$\\mathrm Y$ がそれぞれ $\\mathrm{Cat}+\\mathrm S$ と平衡にあるとき，$[\\mathrm Y]/[\\mathrm X]$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) の条件で，$v_{\\mathrm P}/v_{\\mathrm Q}$ と鏡像異性体過剰率（有効数字 2 桁）を求めよ．主生成物は，多く存在する錯体と少ない錯体のどちらから生じるか．"
+     },
+     {
+      "id": "3",
+      "tex": "定常状態の条件から $[\\mathrm X]$，$[\\mathrm Y]$ を $[\\mathrm{Cat}][\\mathrm S]$ を用いて表し，$v_{\\mathrm P}/v_{\\mathrm Q}$ を $x$（単位 $\\mathrm{s^{-1}}$ の数値）だけの式で表せ．また，$\\ce{H2}$ の圧力を非常に大きくした極限での $v_{\\mathrm P}/v_{\\mathrm Q}$ と鏡像異性体過剰率を求め，その理由を説明せよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\ce{H2}$ の圧力が $1.0\\times10^{5}\\,\\mathrm{Pa}$ のとき $x=2.0\\,\\mathrm{s^{-1}}$ である．$1.0\\times10^{5}\\,\\mathrm{Pa}$ と $1.0\\times10^{6}\\,\\mathrm{Pa}$ での鏡像異性体過剰率をそれぞれ有効数字 2 桁で求めよ．また，鏡像異性体過剰率が $90\\,\\%$ に下がる $\\ce{H2}$ の圧力を有効数字 2 桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$[\\mathrm Y]/[\\mathrm X]=20$"
+   },
+   {
+    "id": "2",
+    "tex": "$v_{\\mathrm P}/v_{\\mathrm Q}=50$，鏡像異性体過剰率 $96\\,\\%$．主生成物 P は少ない錯体 X から生じる．"
+   },
+   {
+    "id": "3",
+    "tex": "$[\\mathrm X]=\\dfrac{k_1[\\mathrm{Cat}][\\mathrm S]}{k_{-1}+x}$，$[\\mathrm Y]=\\dfrac{k_2[\\mathrm{Cat}][\\mathrm S]}{k_{-2}+y}$，$\\dfrac{v_{\\mathrm P}}{v_{\\mathrm Q}}=\\dfrac{x+1000}{x+20}$．極限では $v_{\\mathrm P}/v_{\\mathrm Q}=1$，鏡像異性体過剰率 $0\\,\\%$（X・Y ができるとすぐ水素化されて元に戻れず，生成比が X・Y のできる速さの比 $k_1:k_2=1:1$ で決まるから）．"
+   },
+   {
+    "id": "4",
+    "tex": "$1.0\\times10^5\\,\\mathrm{Pa}$ で $96\\,\\%$，$1.0\\times10^6\\,\\mathrm{Pa}$ で $92\\,\\%$．$90\\,\\%$ になるのは $1.7\\times10^{6}\\,\\mathrm{Pa}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 平衡での存在比}　$K_{\\mathrm X}=k_1/k_{-1}$，$K_{\\mathrm Y}=k_2/k_{-2}$ なので\n\\[\\frac{[\\mathrm Y]}{[\\mathrm X]}=\\frac{K_{\\mathrm Y}}{K_{\\mathrm X}}=\\frac{k_2/k_{-2}}{k_1/k_{-1}}=\\frac{k_{-1}}{k_{-2}}=\\boldsymbol{20}\\]\nY のほうが安定（離れにくい）で，20 倍多く存在する．\n\n\\textbf{(2) 存在比と反応性の積}　$v_{\\mathrm P}/v_{\\mathrm Q}=x[\\mathrm X]/(y[\\mathrm Y])=1000\\times\\dfrac1{20}=\\boldsymbol{50}$．\n\\[\\text{鏡像異性体過剰率}=\\frac{50-1}{50+1}\\times100=\\boldsymbol{96\\,\\%}\\]\nX は Y の $1/20$ しかないが，$\\ce{H2}$ との反応が 1000 倍速いので，\\textbf{少ない錯体 X から主生成物 P が生じる}．X・Y の入れかわりが水素化より十分速いとき，生成比は「平衡の存在比 × 反応の速さの比」で決まり，多く見える中間体が主生成物を与えるとは限らない．\n\n\\textbf{(3) 定常状態}　X の生成と消失のつり合い $k_1[\\mathrm{Cat}][\\mathrm S]=(k_{-1}+x)[\\mathrm X]$ などから\n\\[[\\mathrm X]=\\frac{k_1[\\mathrm{Cat}][\\mathrm S]}{k_{-1}+x},\\qquad [\\mathrm Y]=\\frac{k_2[\\mathrm{Cat}][\\mathrm S]}{k_{-2}+y}\\]\n\\[\\frac{v_{\\mathrm P}}{v_{\\mathrm Q}}=\\frac{k_1}{k_2}\\cdot\\frac{x}{k_{-1}+x}\\cdot\\frac{k_{-2}+y}{y}\\]\n$k_1=k_2$，$y=x/1000$，$k_{-1}=20$，$k_{-2}=1.0$ を代入すると\n\\[\\frac{v_{\\mathrm P}}{v_{\\mathrm Q}}=\\frac{x}{x+20}\\cdot\\frac{1+x/1000}{x/1000}=\\boldsymbol{\\frac{x+1000}{x+20}}\\]\n各因子の意味：$x/(k_{-1}+x)$ は，できた X が離れる前に水素化される割合である．$x\\to0$ では $50$ になり (2) と一致する．$x\\to\\infty$（$\\ce{H2}$ の圧力が非常に大きい）では $\\boldsymbol{v_{\\mathrm P}/v_{\\mathrm Q}\\to1}$，鏡像異性体過剰率は $\\boldsymbol{0\\,\\%}$．X も Y もできた瞬間に水素化されて Cat+S に戻る機会がなく，生成比は錯体が\\textbf{できる速さの比} $k_1:k_2$ で決まってしまう．選択性の源だった「Y が戻って X として結合し直す」過程が働かなくなるためである．\n\n\\textbf{(4) 圧力依存性}　$1.0\\times10^5\\,\\mathrm{Pa}$ では $x=2.0$：$\\dfrac{v_{\\mathrm P}}{v_{\\mathrm Q}}=\\dfrac{1002}{22}=45.5$，過剰率 $\\dfrac{44.5}{46.5}=\\boldsymbol{96\\,\\%}$．\n$1.0\\times10^6\\,\\mathrm{Pa}$ では $x=20$：$\\dfrac{1020}{40}=25.5$，過剰率 $\\dfrac{24.5}{26.5}=\\boldsymbol{92\\,\\%}$．\n過剰率 $90\\,\\%$ は $v_{\\mathrm P}/v_{\\mathrm Q}=19$ にあたるので\n\\[\\frac{x+1000}{x+20}=19\\quad\\Longrightarrow\\quad x=\\frac{620}{18}=34.4\\,\\mathrm{s^{-1}}\\]\n$x$ は圧力に比例するので，圧力は $1.0\\times10^5\\times\\dfrac{34.4}{2.0}=\\boldsymbol{1.7\\times10^{6}\\,\\mathrm{Pa}}$．水素圧を上げると反応は速くなるが，X・Y の行き来が追いつかなくなって選択性が下がる．速さと選択性が両立しない例である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "2 つの中間体が互いに（出発物を経て）速く入れかわりながら別々の生成物へ不可逆に進むとき，生成比は中間体の平衡存在比と各反応の速度定数の積で決まり，少ない中間体が主生成物を与えうる．定常状態で解くと，後段を速くする（水素圧を上げる）ほど中間体が戻る前に反応してしまい，生成比は中間体ができる速さの比に近づいて選択性が失われる．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "organic-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "定常状態",
+  "前駆平衡",
+  "選択性",
+  "鏡像異性体過剰率",
+  "不斉水素化",
+  "反応機構"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

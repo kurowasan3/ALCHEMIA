@@ -1,0 +1,107 @@
+{
+ "id": "THE-GAS-016",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-08",
+ "topic": "揮発性液体の分子量測定と室温での蒸気圧の補正",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "揮発性の液体 Y の分子量を次の方法で測定した．実験はすべて大気圧 $1.0\\times10^{5}\\,\\mathrm{Pa}$，室温 27 ℃ で行った．\n(a) 内容積 $200\\,\\mathrm{mL}$ の乾いたフラスコに，小さな穴をあけたアルミニウム箔でふたをして質量をはかると $50.000\\,\\mathrm g$ であった．\n(b) Y を約 $2\\,\\mathrm g$ 入れ，100 ℃ の沸騰水に首まで浸した．Y がすべて蒸発して余分な蒸気が穴から出ていき，フラスコ内が Y の蒸気だけで満たされるまで待った．\n(c) フラスコを取り出して室温まで冷やし，外側の水をよくふき取ってから質量をはかると $50.537\\,\\mathrm g$ であった．\n$R=8.3\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$ とし，フラスコの熱膨張は無視する．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "冷却後のフラスコ内の Y はすべて液体になっていると考えて，Y の分子量を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "実際には，27 ℃ のフラスコ内には Y の蒸気が飽和蒸気圧 $1.3\\times10^{4}\\,\\mathrm{Pa}$ で存在し，その分だけ空気が入ってこない．27 ℃，$1.0\\times10^{5}\\,\\mathrm{Pa}$ の空気の密度を $1.2\\,\\mathrm{g/L}$ として，Y の分子量を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "Y は次のどれと考えられるか．$\\ce{C5H12}$（沸点 36 ℃），$\\ce{C6H6}$（沸点 80 ℃），$\\ce{CH3COOC2H5}$（沸点 77 ℃）．原子量は $\\mathrm H=1.0$，$\\mathrm C=12$，$\\mathrm O=16$ とする．"
+     },
+     {
+      "id": "4",
+      "tex": "(c) で外側の水をふき取らずに質量をはかったとすると，(2) の方法で求めた分子量は真の値より大きくなるか，小さくなるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "83"
+   },
+   {
+    "id": "2",
+    "tex": "88"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{CH3COOC2H5}$"
+   },
+   {
+    "id": "4",
+    "tex": "大きくなる"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "100 ℃ でフラスコを満たした Y の蒸気の物質量は\n\\[n=\\dfrac{1.0\\times10^{5}\\times0.200}{8.3\\times10^{3}\\times373}=6.46\\times10^{-3}\\,\\mathrm{mol}\\]\n\n\\textbf{(1)}　質量の増加 $0.537\\,\\mathrm g$ をすべて Y とすると $M=\\dfrac{0.537}{6.46\\times10^{-3}}=83.1\\approx\\boldsymbol{83}$．\n\n\\textbf{(2)}　(a) ではフラスコに空気が $1.0\\times10^{5}\\,\\mathrm{Pa}$ 分入っていた．(c) では Y の蒸気が $1.3\\times10^{4}\\,\\mathrm{Pa}$ を占めるので，空気は $1.0\\times10^{5}-1.3\\times10^{4}\\,\\mathrm{Pa}$ 分しか入っていない．不足した空気の質量は\n\\[1.2\\times0.200\\times\\dfrac{1.3\\times10^{4}}{1.0\\times10^{5}}=0.0312\\,\\mathrm g\\]\nしたがって Y の質量は $0.537+0.031=0.568\\,\\mathrm g$（液体と蒸気の合計）で，$M=\\dfrac{0.568}{6.46\\times10^{-3}}=88.0\\approx\\boldsymbol{88}$．\n\n\\textbf{(3)}　分子量は $\\ce{C5H12}=72$，$\\ce{C6H6}=78$，$\\ce{CH3COOC2H5}=88$．Y は $\\ce{CH3COOC2H5}$（酢酸エチル）．補正前の値 83 では判断を誤りやすく，蒸気圧の補正が必要なことがわかる．\n\n\\textbf{(4)}　水滴の分だけ測定した質量の増加が大きくなるので，Y の質量を多く見積もり，分子量は\\textbf{大きく}なる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "揮発性液体の蒸気でフラスコを満たして分子量を求める方法で，冷却後に残る蒸気が空気を押しのけて質量の測定値を小さくすることを補正する．操作の誤りが分子量をどちらにずらすかを判断する．"
+ },
+ "concepts": [
+  "ideal-gas",
+  "vapor-pressure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "気体の状態方程式",
+  "分子量の測定",
+  "蒸気圧",
+  "誤差の向き"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

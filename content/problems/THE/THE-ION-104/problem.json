@@ -1,0 +1,109 @@
+{
+ "id": "THE-ION-104",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "共通イオン効果の近似が使えない場合（加えた塩化物イオンがごく薄いとき）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある温度で，塩化銀 $\\ce{AgCl}$ の溶解度積は $K_{\\mathrm{sp}}=[\\ce{Ag+}][\\ce{Cl-}]=3.0\\times10^{-10}\\,(\\mathrm{mol/L})^2$ である．この温度で，底に $\\ce{AgCl}$ の固体が残っている飽和水溶液に塩化ナトリウムを溶かし，溶液中の $[\\ce{Na+}]$ を $c$ にする．塩化ナトリウムは完全に電離し，溶液の体積は変わらないものとする．必要なら $\\sqrt{3}=1.73$，$\\sqrt{27.3}=5.22$ を用いよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "塩化ナトリウムを加える前の $[\\ce{Ag+}]$ を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$c=2.0\\times10^{-5}\\,\\mathrm{mol/L}$ にしたときの $[\\ce{Ag+}]$ を，有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) で「$[\\ce{Cl-}]$ は加えた塩化物イオンの濃度 $c$ に等しい」と近似して $[\\ce{Ag+}]=K_{\\mathrm{sp}}/c$ と計算すると，値はいくらになるか．また，(2) の値に対するこの近似値の誤差は何 \\% か．それぞれ有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の近似による相対誤差が $[\\ce{Ag+}]/c$ に等しいことを用いて，誤差が $10\\,\\%$ 以下になるために必要な $c$ の最小値を有効数字 2 桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$1.7\\times10^{-5}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "2",
+    "tex": "$1.0\\times10^{-5}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "3",
+    "tex": "近似値 $1.5\\times10^{-5}\\,\\mathrm{mol/L}$，誤差 $50\\,\\%$"
+   },
+   {
+    "id": "4",
+    "tex": "$5.2\\times10^{-5}\\,\\mathrm{mol/L}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\[ \\ce{AgCl <=> Ag+ + Cl-} \\]\n\\textbf{(1)} $[\\ce{Ag+}]=[\\ce{Cl-}]=s_0$ として $s_0^2=3.0\\times10^{-10}$，$s_0=\\sqrt{3}\\times10^{-5}=\\boldsymbol{1.7\\times10^{-5}\\,\\mathrm{mol/L}}$．\n\n\\textbf{(2) 電荷のつり合いで考える}　溶液中の陽イオンは $\\ce{Ag+}$ と $\\ce{Na+}$，陰イオンは $\\ce{Cl-}$ だけなので（水の電離は無視できる）\n\\[ [\\ce{Cl-}]=[\\ce{Ag+}]+c \\]\n$[\\ce{Ag+}]=x$ とおくと $x(x+c)=K_{\\mathrm{sp}}$，すなわち\n\\[ x^2+2.0\\times10^{-5}x-3.0\\times10^{-10}=0 \\]\n$x>0$ より $x=\\dfrac{-2.0\\times10^{-5}+\\sqrt{(2.0\\times10^{-5})^2+4\\times3.0\\times10^{-10}}}{2}=\\dfrac{-2.0+4.0}{2}\\times10^{-5}=\\boldsymbol{1.0\\times10^{-5}\\,\\mathrm{mol/L}}$．\nこのとき $[\\ce{Cl-}]=3.0\\times10^{-5}\\,\\mathrm{mol/L}$ で，$\\ce{AgCl}$ から来た $\\ce{Cl-}$ が加えた分より多い．（飽和溶液から $\\ce{AgCl}$ が析出して $[\\ce{Ag+}]$ が下がっても，$\\ce{Ag+}$ と $\\ce{Cl-}$ は同じ量ずつ減るので，この電荷のつり合いの式はそのまま成り立つ．）\n\n\\textbf{(3)} 近似値は $\\dfrac{3.0\\times10^{-10}}{2.0\\times10^{-5}}=\\boldsymbol{1.5\\times10^{-5}\\,\\mathrm{mol/L}}$．誤差は $\\dfrac{1.5-1.0}{1.0}\\times100=\\boldsymbol{50\\,\\%}$．加えた $\\ce{Cl-}$ が，$\\ce{AgCl}$ 自身から溶け出す $\\ce{Cl-}$ と同じ程度しかないので，$[\\ce{Cl-}]\\approx c$ という近似が成り立たない．\n\n\\textbf{(4)} 正確な関係 $K_{\\mathrm{sp}}=x(x+c)$ を使うと，近似値は $\\dfrac{K_{\\mathrm{sp}}}{c}=\\dfrac{x(x+c)}{c}=x+\\dfrac{x^2}{c}$ なので，相対誤差は $\\dfrac{x^2/c}{x}=\\dfrac{x}{c}$ である．$\\dfrac{x}{c}\\le0.10$ の境界 $x=0.10c$ を $x(x+c)=K_{\\mathrm{sp}}$ に入れると\n\\[ 0.10c\\times1.10c=K_{\\mathrm{sp}}\\quad\\Longrightarrow\\quad c=\\sqrt{\\frac{3.0\\times10^{-10}}{0.11}}=\\sqrt{27.3}\\times10^{-5}\\approx\\boldsymbol{5.2\\times10^{-5}\\,\\mathrm{mol/L}} \\]\n$c$ が大きいほど $x$ は小さく $x/c$ も小さくなるので，誤差 $10\\,\\%$ 以下となるのは $c\\ge5.2\\times10^{-5}\\,\\mathrm{mol/L}$ のときで，これは $s_0$ の約 3 倍にあたる．加えるイオンが溶解度の数倍以上あるときにだけ「共通イオンの濃度＝加えた濃度」と置ける．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "共通イオンを加えたときの [Cl⁻]≈（加えた濃度）という近似は，加えた量が溶解度と同程度だと破れるので，電荷のつり合い [Cl⁻]=[Ag⁺]+c から 2 次方程式を解く．近似の相対誤差は [Ag⁺]/c となり，これから近似が許される濃度の下限が決まる．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "precipitation",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "溶解度積",
+  "共通イオン効果",
+  "近似の妥当性",
+  "2次方程式",
+  "電荷のつり合い"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

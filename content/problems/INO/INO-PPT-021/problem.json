@@ -1,0 +1,101 @@
+{
+ "id": "INO-PPT-021",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-08",
+ "topic": "塩化クロム(III) 六水和物の異性体（塩化銀の沈殿量から錯塩の組成を決める）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "組成式 $\\ce{CrCl3.6H2O}$（式量 266.5）で表される結晶には，色の異なる 3 種類 X（紫色），Y（青緑色），Z（暗緑色）がある．いずれも $\\ce{Cr^3+}$ に 6 個の配位子（$\\ce{H2O}$ または $\\ce{Cl-}$）が配位した正八面体形の錯イオンを含み，配位していない $\\ce{Cl-}$ と $\\ce{H2O}$ は錯イオンの外にある．X，Y，Z をそれぞれ $5.33\\,\\mathrm g$ ずつとって水に溶かし，十分な量の硝酸銀水溶液を加えると，塩化銀がそれぞれ $8.61\\,\\mathrm g$，$5.74\\,\\mathrm g$，$2.87\\,\\mathrm g$ 沈殿した．ただし，配位している $\\ce{Cl-}$ は硝酸銀と反応しないものとし，原子量は Cl = 35.5，Ag = 108 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "X，Y，Z それぞれについて，組成式 1 つあたり錯イオンの外にある $\\ce{Cl-}$ の数を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "X，Y，Z を，錯イオンがわかる形の化学式（例：$\\ce{[CrCl3(H2O)3].3H2O}$）で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "X，Y，Z を同じ物質量ずつそれぞれ同じ質量の水に溶かした．凝固点が最も低い水溶液はどれか．また，凝固点の低い順に並べよ．ただし，錯イオンは水中で分解せず，塩は完全に電離するものとする．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "X 3 個，Y 2 個，Z 1 個"
+   },
+   {
+    "id": "2",
+    "tex": "X $\\ce{[Cr(H2O)6]Cl3}$　Y $\\ce{[CrCl(H2O)5]Cl2.H2O}$　Z $\\ce{[CrCl2(H2O)4]Cl.2H2O}$"
+   },
+   {
+    "id": "3",
+    "tex": "X が最も低い．X，Y，Z の順"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 各結晶は $\\dfrac{5.33}{266.5}=0.0200\\,\\mathrm{mol}$．$\\ce{AgCl}$（式量 143.5）の物質量は\n\\[ \\mathrm X:\\frac{8.61}{143.5}=0.0600,\\quad \\mathrm Y:\\frac{5.74}{143.5}=0.0400,\\quad \\mathrm Z:\\frac{2.87}{143.5}=0.0200\\ (\\mathrm{mol}) \\]\n$\\ce{Ag+ + Cl- -> AgCl}$ で沈殿するのは錯イオンの外の $\\ce{Cl-}$ だけなので，組成式 1 つあたり $\\mathrm X:\\boldsymbol{3}$，$\\mathrm Y:\\boldsymbol{2}$，$\\mathrm Z:\\boldsymbol{1}$ 個．\n\n\\textbf{(2)} 配位数は 6．外にある $\\ce{Cl-}$ が 3，2，1 個なら，配位している $\\ce{Cl-}$ は 0，1，2 個で，残りの配位子が $\\ce{H2O}$．配位しない水は結晶水として外に書く．\n\\[ \\mathrm X:\\ce{[Cr(H2O)6]Cl3}\\qquad \\mathrm Y:\\ce{[CrCl(H2O)5]Cl2.H2O}\\qquad \\mathrm Z:\\ce{[CrCl2(H2O)4]Cl.2H2O} \\]\n錯イオンの電荷は $\\ce{Cr^3+}$ の $+3$ から配位した $\\ce{Cl-}$ の数を引いた $+3$，$+2$，$+1$ で，外の $\\ce{Cl-}$ の数と一致する．\n\n\\textbf{(3)} 1 mol が電離して生じる粒子は，X：$\\ce{[Cr(H2O)6]^3+}$ と $\\ce{Cl-}$ 3 個で 4 mol，Y：3 mol，Z：2 mol（結晶水は溶媒の水になるだけ）．凝固点降下は溶質粒子の質量モル濃度に比例するので，\\textbf{X が最も低く}，凝固点の低い順に \\textbf{X，Y，Z}．組成式が同じでも，錯イオンの組成の違いで溶液の性質が変わる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "錯塩では，錯イオンの外にある Cl⁻ だけが Ag⁺ で AgCl として沈殿するので，AgCl の物質量から外圏の Cl⁻ の数と錯イオンの組成が決まる．組成式が同じ異性体でも電離して生じる粒子数が違い，凝固点降下などの束一的性質に差が出る．"
+ },
+ "concepts": [
+  "precipitation",
+  "complex-ion",
+  "transition-metals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "錯塩",
+  "水和異性体",
+  "塩化銀",
+  "配位数",
+  "凝固点降下"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

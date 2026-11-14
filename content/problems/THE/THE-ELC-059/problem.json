@@ -1,0 +1,109 @@
+{
+ "id": "THE-ELC-059",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-07",
+ "topic": "二酸化炭素の電解還元の生成物とファラデー効率（電子と炭素の収支による未知生成物の決定）",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "二酸化炭素を溶かした水溶液を，銅を陰極，白金を陽極として電気分解すると，陰極では $\\ce{CO2}$ の還元生成物と水素が，陽極では酸素が生じる．ある条件で一定時間電気分解したところ，次の結果を得た．\n（a）陽極で発生した $\\ce{O2}$：$2.50\\times10^{-2}\\,\\mathrm{mol}$（陽極では $\\ce{O2}$ だけが生じた）\\\\\n（b）陰極で発生した気体：$\\ce{H2}$ $1.50\\times10^{-2}\\,\\mathrm{mol}$，$\\ce{CO}$ $1.00\\times10^{-2}\\,\\mathrm{mol}$，$\\ce{CH4}$ $2.50\\times10^{-3}\\,\\mathrm{mol}$\\\\\n（c）陰極ではこのほかに，水溶液中に残る生成物 $\\mathrm{X}$ が 1 種類だけ生じた．$\\mathrm{X}$ は分子中に炭素原子を 1 個だけもつ．\\\\\n（d）消費された $\\ce{CO2}$ は $2.75\\times10^{-2}\\,\\mathrm{mol}$ であった．\\\\\nある生成物を得るために使われた電子の物質量が，流れた電子の全物質量に占める割合を，その生成物のファラデー効率という．ファラデー定数は $9.65\\times10^{4}\\,\\mathrm{C/mol}$ とし，電流はすべて電極反応に使われたとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "陰極で $\\ce{CO2}$ が $\\ce{CO}$ および $\\ce{CH4}$ になる反応と，陽極の反応を，$\\ce{H+}$ と電子 $\\ce{e-}$ を用いた反応式で書け．"
+     },
+     {
+      "id": "2",
+      "tex": "流れた電子の物質量と，$\\ce{H2}$，$\\ce{CO}$，$\\ce{CH4}$ のファラデー効率（\\%）をそれぞれ求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\mathrm{X}$ の生成に使われた電子の物質量と，$\\mathrm{X}$ の物質量を求めよ．また，$\\mathrm{X}$ の示性式を答えよ．$\\mathrm{X}$ の候補として $\\ce{HCOOH}$，$\\ce{HCHO}$，$\\ce{CH3OH}$ を考え，選んだ根拠を示せ．"
+     },
+     {
+      "id": "4",
+      "tex": "この条件のまま，$\\mathrm{X}$ を $1.0\\,\\mathrm{mol}$ つくるのに必要な電気量〔C〕と，そのとき陽極で発生する $\\ce{O2}$ の物質量を有効数字 2 桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{CO2 + 2H+ + 2e- -> CO + H2O}$，$\\ce{CO2 + 8H+ + 8e- -> CH4 + 2H2O}$，陽極：$\\ce{2H2O -> O2 + 4H+ + 4e-}$"
+   },
+   {
+    "id": "2",
+    "tex": "電子 0.100 mol；$\\ce{H2}$ 30 \\%，$\\ce{CO}$ 20 \\%，$\\ce{CH4}$ 20 \\%"
+   },
+   {
+    "id": "3",
+    "tex": "電子 $3.0\\times10^{-2}$ mol，$\\mathrm{X}$ $1.5\\times10^{-2}$ mol，$\\ce{HCOOH}$"
+   },
+   {
+    "id": "4",
+    "tex": "$6.4\\times10^{5}\\,\\mathrm{C}$，$\\ce{O2}$ 1.7 mol"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　流れた電子の総量は陽極の $\\ce{O2}$ から，各生成物に使われた電子は「生成物 1 mol あたりの電子数 × 物質量」から求まる．測れない生成物 $\\mathrm{X}$ は，電子の収支と炭素の収支の 2 つから「炭素 1 個あたりの電子数」を出して決める．\n\n(1) 炭素の酸化数は $\\ce{CO2}$ $+4$，$\\ce{CO}$ $+2$，$\\ce{CH4}$ $-4$ なので，必要な電子は 2 個と 8 個．\n\\[ \\ce{CO2 + 2H+ + 2e- -> CO + H2O} \\qquad \\ce{CO2 + 8H+ + 8e- -> CH4 + 2H2O} \\]\n\\[ \\text{陽極：}\\ \\ce{2H2O -> O2 + 4H+ + 4e-} \\]\n（水素は $\\ce{2H+ + 2e- -> H2}$．）\n\n(2) 電子の総量は $4\\times2.50\\times10^{-2}=\\boldsymbol{0.100\\,\\mathrm{mol}}$．\n$\\ce{H2}$：$2\\times1.50\\times10^{-2}=3.00\\times10^{-2}$ → $\\boldsymbol{30\\,\\%}$．\n$\\ce{CO}$：$2\\times1.00\\times10^{-2}=2.00\\times10^{-2}$ → $\\boldsymbol{20\\,\\%}$．\n$\\ce{CH4}$：$8\\times2.50\\times10^{-3}=2.00\\times10^{-2}$ → $\\boldsymbol{20\\,\\%}$．\n\n(3) 残りの電子 $0.100-0.0700=\\boldsymbol{3.0\\times10^{-2}\\,\\mathrm{mol}}$ が $\\mathrm{X}$ に使われた．炭素の収支：消費 $\\ce{CO2}$ $2.75\\times10^{-2}$ から $\\ce{CO}$ と $\\ce{CH4}$ の分 $1.25\\times10^{-2}$ を引くと，$\\mathrm{X}$ に入った炭素は $1.50\\times10^{-2}\\,\\mathrm{mol}$．$\\mathrm{X}$ は炭素 1 個なので $\\boldsymbol{\\mathrm{X}=1.5\\times10^{-2}\\,\\mathrm{mol}}$．\n$\\mathrm{X}$ 1 mol あたりの電子数は $\\dfrac{3.0\\times10^{-2}}{1.5\\times10^{-2}}=2$．候補の炭素の酸化数と必要な電子数は，$\\ce{HCOOH}$（$+2$，2 個），$\\ce{HCHO}$（$0$，4 個），$\\ce{CH3OH}$（$-2$，6 個）なので，$\\mathrm{X}$ は $\\boldsymbol{\\ce{HCOOH}}$（$\\ce{CO2 + 2H+ + 2e- -> HCOOH}$）．電子の量だけ，あるいは炭素の量だけでは決まらず，両方の比が必要である．\n\n(4) $\\ce{HCOOH}$ のファラデー効率は $30\\,\\%$ なので，$\\ce{HCOOH}$ 1.0 mol（電子 2.0 mol 分）には全体で $2.0/0.30=6.67\\,\\mathrm{mol}$ の電子が必要．電気量は $6.67\\times9.65\\times10^{4}=\\boldsymbol{6.4\\times10^{5}\\,\\mathrm{C}}$，$\\ce{O2}$ は $6.67/4=\\boldsymbol{1.7\\,\\mathrm{mol}}$．副生する $\\ce{H2}$ などに電子の 7 割が使われるため，目的物に対して多くの電気量が必要になる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "電気分解で複数の生成物ができるとき，陽極の O2 から流れた電子の総量を求め，各生成物の電子数（酸化数の変化）から電子の配分（ファラデー効率）を決める．測れない生成物は，電子の収支と炭素の収支から「炭素1個あたりの電子数」を求めて同定する．"
+ },
+ "concepts": [
+  "electrolysis",
+  "carbon-silicon",
+  "redox"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電気分解",
+  "ファラデー効率",
+  "二酸化炭素の還元",
+  "酸化数",
+  "物質収支"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

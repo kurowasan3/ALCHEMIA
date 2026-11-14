@@ -1,0 +1,108 @@
+{
+ "id": "THE-ION-012",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "きわめて薄い強酸の pH と水の電離",
+ "course": "化学",
+ "level": 3,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水はわずかに電離して $\\ce{H2O <=> H+ + OH-}$ の平衡にあり，25 ℃ の水のイオン積は $K_w=[\\ce{H+}][\\ce{OH-}]=1.0\\times10^{-14}\\,(\\mathrm{mol/L})^2$ である．塩酸・水酸化ナトリウムは完全に電離するものとし，$\\sqrt{401}=20.02$，$\\log_{10}1.05=0.02$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$1.0\\times10^{-8}\\,\\mathrm{mol/L}$ の塩酸の pH を「8.0」とするのは誤りである．その理由を述べよ．"
+     },
+     {
+      "id": "2",
+      "tex": "この塩酸中で水の電離によって生じた $\\ce{H+}$ の濃度を $x\\,\\mathrm{(mol/L)}$ として $x$ を求め，水溶液の $[\\ce{H+}]$ と pH（小数第2位まで）を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$1.0\\times10^{-8}\\,\\mathrm{mol/L}$ の水酸化ナトリウム水溶液の pH を小数第2位まで求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$1.0\\times10^{-5}\\,\\mathrm{mol/L}$ の塩酸では，水の電離による $\\ce{H+}$ を無視して pH を求めてよいか．水の電離による $[\\ce{H+}]$ の大きさを示して判断せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "酸の水溶液が塩基性になることはなく，このように薄い酸では水の電離で生じる $\\ce{H+}$ が無視できないから"
+   },
+   {
+    "id": "2",
+    "tex": "$x=9.5\\times10^{-8}\\,\\mathrm{mol/L}$，$[\\ce{H+}]=1.05\\times10^{-7}\\,\\mathrm{mol/L}$，pH 6.98"
+   },
+   {
+    "id": "3",
+    "tex": "7.02"
+   },
+   {
+    "id": "4",
+    "tex": "無視してよい（水の電離による $[\\ce{H+}]$ は約 $1.0\\times10^{-9}\\,\\mathrm{mol/L}$ で，$1.0\\times10^{-5}$ の $0.01\\,\\%$ にすぎない）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 純水でも $[\\ce{H+}]=1.0\\times10^{-7}\\,\\mathrm{mol/L}$ あるので，それより少ない $1.0\\times10^{-8}\\,\\mathrm{mol/L}$ の $\\ce{HCl}$ だけで pH を求めると塩基性（pH 8）になってしまう．実際には水の電離による $\\ce{H+}$ を合わせて考える必要がある．\\\\\n\\textbf{(2)} 水の電離で $\\ce{H+}$ と $\\ce{OH-}$ が $x$ ずつ生じるので $[\\ce{H+}]=1.0\\times10^{-8}+x$，$[\\ce{OH-}]=x$．\n\\[ x(x+1.0\\times10^{-8})=1.0\\times10^{-14}\\quad\\Rightarrow\\quad x=\\dfrac{-1.0\\times10^{-8}+\\sqrt{4.01\\times10^{-14}}}{2}=\\dfrac{(20.02-1)\\times10^{-8}}{2}=9.5\\times10^{-8} \\]\n$[\\ce{H+}]=\\boldsymbol{1.05\\times10^{-7}\\,\\mathrm{mol/L}}$，$\\mathrm{pH}=7-\\log_{10}1.05=\\boldsymbol{6.98}$（わずかに酸性）．\\\\\n\\textbf{(3)} 同様に $[\\ce{OH-}]=1.05\\times10^{-7}$ で $\\mathrm{pOH}=6.98$，$\\mathrm{pH}=14-6.98=\\boldsymbol{7.02}$．\\\\\n\\textbf{(4)} $[\\ce{H+}]\\fallingdotseq1.0\\times10^{-5}$ とすると，水の電離による分は $[\\ce{OH-}]=\\dfrac{K_w}{1.0\\times10^{-5}}=1.0\\times10^{-9}\\,\\mathrm{mol/L}$ と同じだけで，$1.0\\times10^{-5}$ に比べて十分小さい．\\textbf{無視してよく}，pH は 5.0．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "きわめて薄い強酸では酸由来の H+ と水の電離による H+ が同程度になるので，水のイオン積を使って両方を合わせて [H+] を求める．どの程度の濃度なら水の電離を無視できるかも判断する．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "concentration",
+  "ph"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "水のイオン積",
+  "水の電離",
+  "薄い強酸",
+  "pH"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

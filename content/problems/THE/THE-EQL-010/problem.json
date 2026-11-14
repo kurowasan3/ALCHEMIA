@@ -1,0 +1,117 @@
+{
+ "id": "THE-EQL-010",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "平均の反応速度と速度定数・温度による速度の変化",
+ "course": "化学",
+ "level": 1,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "過酸化水素の分解 $\\ce{2H2O2 -> 2H2O + O2}$ の速度 $v$ は，$v=k[\\ce{H2O2}]$（$k$ は速度定数）で表される．ある温度で $0.80\\,\\mathrm{mol/L}$ の過酸化水素水 $0.40\\,\\mathrm L$ に少量の触媒を加えたところ，2.0 分後の濃度は $0.60\\,\\mathrm{mol/L}$ になった．溶液の体積は変わらないものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "最初の 2.0 分間の $\\ce{H2O2}$ の平均分解速度〔$\\mathrm{mol/(L\\cdot min)}$〕を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "この間の $\\ce{H2O2}$ の濃度を，はじめと 2.0 分後の濃度の平均値で近似して，速度定数 $k$〔/min〕を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "同じ近似を 2.0 分〜4.0 分の間にも用いると，4.0 分後の $\\ce{H2O2}$ の濃度は何 mol/L になるか．また，2.0 分〜4.0 分の間に発生する酸素は何 mol か．$k$ は分数のまま用いて計算し，有効数字2桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "同じ温度・同じ触媒量で，はじめの濃度を $1.6\\,\\mathrm{mol/L}$ にすると，反応開始直後の分解速度ははじめの実験の何倍になるか．"
+     },
+     {
+      "id": "5",
+      "tex": "この反応の速度は温度が $10\\,\\mathrm K$ 上がるごとに 3 倍になるとする．温度を $20$ ℃ から $50$ ℃ に上げると速度は何倍になるか．また，速度をもとの 100 倍にするには温度を約何 K 上げればよいか．$\\log_{10}3=0.48$ とし，整数で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$0.10\\,\\mathrm{mol/(L\\cdot min)}$"
+   },
+   {
+    "id": "2",
+    "tex": "$0.14\\,/\\mathrm{min}$"
+   },
+   {
+    "id": "3",
+    "tex": "$0.45\\,\\mathrm{mol/L}$，$3.0\\times10^{-2}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "4",
+    "tex": "$2$ 倍"
+   },
+   {
+    "id": "5",
+    "tex": "$27$ 倍，約 $42\\,\\mathrm K$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\bar v=-\\dfrac{\\Delta[\\ce{H2O2}]}{\\Delta t}=\\dfrac{0.80-0.60}{2.0}=\\boldsymbol{0.10\\,\\mathrm{mol/(L\\cdot min)}}$．\n\\textbf{(2)} 平均濃度 $0.70\\,\\mathrm{mol/L}$ として $k=\\dfrac{0.10}{0.70}=\\dfrac{1}{7}=0.142\\fallingdotseq\\boldsymbol{0.14\\,/\\mathrm{min}}$．\n\\textbf{(3)} 4.0 分後の濃度を $c$ とすると\n\\[ \\frac{0.60-c}{2.0}=\\frac17\\times\\frac{0.60+c}{2} \\quad\\Rightarrow\\quad 7(0.60-c)=0.60+c,\\ c=\\boldsymbol{0.45\\,\\mathrm{mol/L}} \\]\n分解した $\\ce{H2O2}$ は $(0.60-0.45)\\times0.40=0.060\\,\\mathrm{mol}$．係数比 $\\ce{H2O2}:\\ce{O2}=2:1$ より，酸素は $\\boldsymbol{3.0\\times10^{-2}\\,\\mathrm{mol}}$．\nなお，同じ 2.0 分間でも濃度の減少（$0.20\\to0.15$）が小さくなっているのは，濃度が下がると速度が小さくなるからである．\n\\textbf{(4)} $v=k[\\ce{H2O2}]$ で $k$ は温度と触媒で決まり濃度によらないので，濃度 2 倍で速度は $\\boldsymbol{2}$ 倍．\n\\textbf{(5)} $30\\,\\mathrm K$ 上昇で $3^3=\\boldsymbol{27}$ 倍．$10\\,\\mathrm K$ ごとに 3 倍なので，$x\\,\\mathrm K$ 上げると $3^{x/10}$ 倍．$3^{x/10}=100$ より $\\dfrac{x}{10}\\times0.48=2$，$x=41.7\\fallingdotseq\\boldsymbol{42\\,\\mathrm K}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "平均の反応速度を，その区間の平均濃度で割ると一次反応の速度定数が近似でき，それを使って先の濃度や生成物量を予測できる．速度定数は濃度によらず温度で変わり，「10 K ごとに n 倍」は指数関数的な増加になる．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "concentration",
+  "reaction-rate"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応速度",
+  "速度定数",
+  "一次反応",
+  "温度と反応速度",
+  "過酸化水素"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

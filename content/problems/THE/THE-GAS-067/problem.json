@@ -1,0 +1,108 @@
+{
+ "id": "THE-GAS-067",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-08",
+ "topic": "圧力一定で不活性気体と共存する液体が蒸発しきる温度",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "なめらかに動くピストンのついた容器に，エタノール $0.100\\,\\mathrm{mol}$ と窒素 $0.100\\,\\mathrm{mol}$ を入れ，全圧を $94.0\\,\\mathrm{kPa}$ に保ったまま温度を変える．エタノールの飽和蒸気圧は下の表のとおりとし，気体はすべて理想気体，窒素の液体への溶解と液体の体積は無視する．気体定数は $R=8.31\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$ とする．\n\\[\\begin{array}{c|cccccc} \\text{温度}[^\\circ\\mathrm{C}] & 30 & 40 & 50 & 60 & 70 & 80 \\\\ \\hline \\text{蒸気圧}[\\mathrm{kPa}] & 10.4 & 17.9 & 29.5 & 47.0 & 72.3 & 108.3 \\end{array}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$40^\\circ\\mathrm{C}$ のとき，液体として存在するエタノールの物質量 $[\\mathrm{mol}]$ と，気体の体積 $[\\mathrm{L}]$ をそれぞれ有効数字2桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "温度を上げていくと，ある温度で液体のエタノールがちょうどなくなる．その温度を表の値から答えよ．また，そのときの条件を，エタノールの蒸気圧 $p_\\mathrm{v}$ と全圧 $P$ を使った式で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "$80^\\circ\\mathrm{C}$ でのエタノールの分圧 $[\\mathrm{kPa}]$ を有効数字3桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "窒素だけを $0.200\\,\\mathrm{mol}$ にかえて同じ操作を行うと，液体がなくなる温度は (2) より高くなるか低くなるか．また，その温度は表のどの2つの温度の間にあるか答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "液体 $0.076\\,\\mathrm{mol}$，体積 $3.4\\,\\mathrm{L}$"
+   },
+   {
+    "id": "2",
+    "tex": "$60^\\circ\\mathrm{C}$，$p_\\mathrm{v}=\\dfrac{1}{2}P$（$p_\\mathrm{v}=P\\times$ 全量が気体のときのエタノールのモル分率）"
+   },
+   {
+    "id": "3",
+    "tex": "$47.0\\,\\mathrm{kPa}$"
+   },
+   {
+    "id": "4",
+    "tex": "低くなる，$50^\\circ\\mathrm{C}$ と $60^\\circ\\mathrm{C}$ の間"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　全圧一定でピストンが動くので，体積は気体の物質量に合わせて変わる．液体が残っている間はエタノールの分圧＝その温度の飽和蒸気圧で，窒素の分圧はその残り $P-p_\\mathrm{v}$ になる．\n\n\\textbf{(1)}　$40^\\circ\\mathrm{C}$ ではエタノールの分圧 $17.9\\,\\mathrm{kPa}$，窒素の分圧 $94.0-17.9=76.1\\,\\mathrm{kPa}$．同じ気体中では分圧の比＝物質量の比なので，気体のエタノールは\n\\[ n_\\mathrm{v}=0.100\\times\\frac{17.9}{76.1}=0.0235\\,\\mathrm{mol} \\]\nこれは $0.100\\,\\mathrm{mol}$ より少ないので液体が残っている（仮定は正しい）．液体は $0.100-0.0235=\\boldsymbol{0.076\\,\\mathrm{mol}}$．体積は窒素について\n\\[ V=\\frac{0.100\\times8.31\\times10^{3}\\times313}{76.1\\times10^{3}}=\\boldsymbol{3.4\\,\\mathrm{L}} \\]\n\n\\textbf{(2)}　液体がちょうどなくなるときは，エタノール $0.100\\,\\mathrm{mol}$ が全部気体で，しかも分圧が飽和蒸気圧に等しい．全量が気体のときのモル分率は $\\dfrac{0.100}{0.200}=\\dfrac12$ なので，条件は $p_\\mathrm{v}(T)=\\dfrac12P=47.0\\,\\mathrm{kPa}$．表より $\\boldsymbol{60^\\circ\\mathrm{C}}$．\n\n\\textbf{(3)}　$60^\\circ\\mathrm{C}$ より上では液体がないので，物質量も全圧も変わらず，分圧はモル分率で決まったまま $\\dfrac12\\times94.0=\\boldsymbol{47.0\\,\\mathrm{kPa}}$（飽和蒸気圧 $108.3\\,\\mathrm{kPa}$ ではない．分圧が蒸気圧より小さいので凝縮も起こらない）．体積が絶対温度に比例して増えるだけである．\n\n\\textbf{(4)}　全量が気体のときのモル分率は $\\dfrac{0.100}{0.300}$ になり，液体がなくなる条件は $p_\\mathrm{v}=\\dfrac{94.0}{3}=31.3\\,\\mathrm{kPa}$．これは $29.5$（$50^\\circ\\mathrm{C}$）と $47.0$（$60^\\circ\\mathrm{C}$）の間なので，$\\boldsymbol{\\text{低くなり，}50^\\circ\\mathrm{C}\\text{ と }60^\\circ\\mathrm{C}\\text{ の間}}$（約 $51^\\circ\\mathrm{C}$）．窒素が多いと体積が大きくなり，同じ蒸気圧でも多くのエタノールが気体として存在できるからである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "圧力一定で不活性気体と共存する液体では，液体がある間は蒸気の分圧＝飽和蒸気圧，不活性気体の分圧＝全圧−蒸気圧で，分圧比から気体中の量が決まる．液体が消えるのは飽和蒸気圧が「全圧×全量気体のときのモル分率」に達する温度で，その後は分圧一定のまま体積だけが増え，不活性気体が多いほどその温度は低くなる．"
+ },
+ "concepts": [
+  "ideal-gas",
+  "vapor-pressure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "飽和蒸気圧",
+  "分圧",
+  "圧力一定",
+  "不活性気体",
+  "蒸発"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "id": "THE-EQL-083",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "加速試験による有効期限の予測と温度履歴をもつ一次反応の進行",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある医薬品 X は水溶液中で一次反応 $v=k[\\mathrm X]$ にしたがって分解する．X の 10.0 % が分解するまでの時間を「有効期間」とよぶ．有効期間を早く知るため，高温で分解の速さを調べたところ（加速試験），$360\\,\\mathrm K$ では 12 時間，$320\\,\\mathrm K$ では 16 日で X の 10.0 % が分解した．速度定数 $k$ と絶対温度 $T$ の間には\n\\[\\log_e k=-\\frac{E_a}{RT}+C\\qquad(C\\text{ は定数})\\]\nの関係があり，活性化エネルギー $E_a$ は温度によらないとする．$\\log_e 2=0.693$，$R=8.31\\,\\mathrm{J/(K\\cdot mol)}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$360\\,\\mathrm K$ と $320\\,\\mathrm K$ の速度定数の比を求め，$E_a$ を有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$300\\,\\mathrm K$ での有効期間は何日か．"
+     },
+     {
+      "id": "3",
+      "tex": "X の水溶液を $300\\,\\mathrm K$ で 64 日保存したあと，誤って $320\\,\\mathrm K$ の場所に 4 日間置き，その後また $300\\,\\mathrm K$ に戻した．X の 10.0 % が分解するのは，保存を始めてから何日目か．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) で，$320\\,\\mathrm K$ に置いた 4 日間が保存の最初の 4 日間だった場合，10.0 % が分解するのは何日目か．また，X の分解が二次反応 $v=k[\\mathrm X]^2$ だったとしても，高温に置いた時期によって結果が変わらないといえるか．理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "比 32，$E_a=8.29\\times10^{4}\\,\\mathrm{J/mol}$（82.9 kJ/mol）"
+   },
+   {
+    "id": "2",
+    "tex": "128 日"
+   },
+   {
+    "id": "3",
+    "tex": "100 日目"
+   },
+   {
+    "id": "4",
+    "tex": "100 日目（同じ）．二次反応でもいえる．速さが $v=k(T)f([\\mathrm X])$ の形なら，$\\dfrac{d[\\mathrm X]}{f([\\mathrm X])}=-k(T)\\,dt$ を積み上げると，残る濃度は各温度での $k\\times$（時間）の和だけで決まり，順序によらないから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　一次反応では，同じ割合（10.0 %）が分解するまでの時間 $t$ は初濃度によらず $k$ に反比例する（$\\log_e\\dfrac{[\\mathrm X]_0}{[\\mathrm X]}=kt$）．\n\\[\\frac{k_{360}}{k_{320}}=\\frac{16\\times24\\,\\mathrm h}{12\\,\\mathrm h}=\\boldsymbol{32}=2^{5}\\]\n与えられた式を 2 つの温度で引き算すると\n\\[\\log_e\\frac{k_{360}}{k_{320}}=\\frac{E_a}{R}\\left(\\frac{1}{320}-\\frac{1}{360}\\right)=\\frac{E_a}{R}\\cdot\\frac{1}{2880}\\]\n\\[E_a=5\\times0.693\\times8.31\\times2880=8.29\\times10^{4}\\,\\mathrm{J/mol}\\]\n\n\\textbf{(2)}　$\\dfrac{1}{300}-\\dfrac{1}{320}=\\dfrac{1}{4800}$ なので\n\\[\\log_e\\frac{k_{320}}{k_{300}}=\\frac{E_a}{R}\\cdot\\frac{1}{4800}=5\\log_e2\\times\\frac{2880}{4800}=3\\log_e2\\quad\\Longrightarrow\\quad\\frac{k_{320}}{k_{300}}=8\\]\n有効期間は $k$ に反比例するから $16\\times8=\\boldsymbol{128\\,\\text{日}}$．\n\n\\textbf{(3)}　一次反応では $\\log_e\\dfrac{[\\mathrm X]_0}{[\\mathrm X]}$ が各期間の $k\\times t$ の和になる．10.0 % 分解する条件を $\\log_e\\dfrac{1}{0.900}=K$ とおくと，$k_{300}=\\dfrac{K}{128}$，$k_{320}=\\dfrac{K}{16}$（1 日あたり）．300 K に戻してから $t$ 日で 10.0 % に達するとすると\n\\[\\frac{64}{128}+\\frac{4}{16}+\\frac{t}{128}=1\\quad\\Longrightarrow\\quad t=32\\]\nよって $64+4+32=\\boldsymbol{100\\,\\text{日目}}$．320 K の 4 日間で 300 K の 32 日分が進んだので，有効期間が 28 日縮んだことになる．\n\n\\textbf{(4)}　(3) の式は各期間の「$t$ / その温度での有効期間」の和で，順序によらない．よって $\\boldsymbol{100\\,\\text{日目}}$．\\\\\n一般に，速さが $v=-\\dfrac{d[\\mathrm X]}{dt}=k(T)f([\\mathrm X])$ と，温度だけで決まる $k$ と濃度だけで決まる $f$ の積で書けるなら，\n\\[\\int_{[\\mathrm X]_0}^{[\\mathrm X]}\\frac{d[\\mathrm X]}{f([\\mathrm X])}=-\\sum_i k(T_i)\\,t_i\\]\nとなり，左辺は濃度だけ，右辺は $k_it_i$ の和だけで決まる．二次反応（$f=[\\mathrm X]^2$）でも $\\dfrac{1}{[\\mathrm X]}-\\dfrac{1}{[\\mathrm X]_0}=\\sum k_it_i$ で順序によらないので，$\\boldsymbol{\\text{いえる}}$．ただし，二次反応では「10 % 分解までの時間」が初濃度によって変わる点が一次反応と異なる．また，反応が複数の段階からなり中間体がたまる場合などは，順序によって結果が変わることがある．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "一次反応では一定割合の分解に要する時間が速度定数に反比例するので，2温度の加速試験からアレニウスの式で低温の有効期間を予測できる．温度が途中で変わっても，到達する濃度は各期間の k×t の和で決まり，その和を「各温度での期間に対する割合」として足し合わせられ，速さが k(T)f(濃度) の形なら順序によらない．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "concentration",
+  "reaction-rate"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "アレニウスの式",
+  "活性化エネルギー",
+  "一次反応",
+  "有効期間",
+  "温度履歴"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

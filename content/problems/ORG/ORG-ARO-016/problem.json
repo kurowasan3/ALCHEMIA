@@ -1,0 +1,110 @@
+{
+ "id": "ORG-ARO-016",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-05",
+ "topic": "スチレンの合成と付加・脱水でつながる芳香族アルコール",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "pathway",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の反応経路について，あとの問いに答えよ．\n\\[\\ce{C6H6} \\xrightarrow[\\text{塩化アルミニウム}]{\\text{エチレン}} \\boxed{\\,\\text{A}\\,} \\xrightarrow[\\text{触媒・高温}]{\\text{脱水素}} \\boxed{\\,\\text{B}\\,} \\xrightarrow{\\text{付加重合}} \\boxed{\\,\\text{C}\\,}\\]\nB に塩化水素を付加させると主生成物として化合物 D が得られ，D を水酸化ナトリウム水溶液と加熱すると化合物 E が得られた．E はヨードホルム反応を示した．また，E の構造異性体でベンゼンの一置換体であるアルコール F を穏やかに酸化すると，銀鏡反応を示す化合物 G が得られた．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A，B，C の名称を答え，$\\ce{C6H6}$ から A，A から B が生じる反応の化学反応式を書け．"
+     },
+     {
+      "id": "2",
+      "tex": "D，E の示性式を答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "F，G の示性式を答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "E と F をそれぞれ濃硫酸とともに加熱して分子内で脱水させると，それぞれ何が得られるか．A〜G の記号で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "A：エチルベンゼン，B：スチレン，C：ポリスチレン，$\\ce{C6H6 + C2H4 -> C6H5CH2CH3}$，$\\ce{C6H5CH2CH3 -> C6H5CH=CH2 + H2}$"
+   },
+   {
+    "id": "2",
+    "tex": "D：$\\ce{C6H5CHClCH3}$，E：$\\ce{C6H5CH(OH)CH3}$"
+   },
+   {
+    "id": "3",
+    "tex": "F：$\\ce{C6H5CH2CH2OH}$，G：$\\ce{C6H5CH2CHO}$"
+   },
+   {
+    "id": "4",
+    "tex": "E，F のどちらからも B"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} ベンゼンとエチレンから（塩化アルミニウム触媒）\\textbf{エチルベンゼン} A ができる：$\\ce{C6H6 + C2H4 -> C6H5CH2CH3}$．A を触媒の存在下で高温にすると側鎖から水素がとれて \\textbf{スチレン} B になる：$\\ce{C6H5CH2CH3 -> C6H5CH=CH2 + H2}$．B の付加重合で \\textbf{ポリスチレン} C ができる．\\\\\n\\textbf{(2)} 非対称なアルケンに $\\ce{HX}$ が付加するとき，H は H の多い側（$\\ce{=CH2}$）の炭素に，Cl はもう一方（ベンゼン環側）の炭素に結合しやすい（マルコフニコフ則）．よって D は $\\boldsymbol{\\ce{C6H5CHClCH3}}$．NaOH 水溶液で Cl が OH に置換されて E は $\\boldsymbol{\\ce{C6H5CH(OH)CH3}}$（1-フェニルエタノール）：$\\ce{C6H5CHClCH3 + NaOH -> C6H5CH(OH)CH3 + NaCl}$．E は $\\ce{CH3CH(OH)-}$ をもつのでヨードホルム反応を示し，矛盾しない．\\\\\n\\textbf{(3)} E の構造異性体で一置換体のアルコールは $\\ce{C6H5CH2CH2OH}$（2-フェニルエタノール）だけ．第一級アルコールなので穏やかな酸化でアルデヒドになり銀鏡反応を示す．F：$\\boldsymbol{\\ce{C6H5CH2CH2OH}}$，G：$\\boldsymbol{\\ce{C6H5CH2CHO}}$．\\\\\n\\textbf{(4)} OH がついた炭素と隣の炭素から $\\ce{H2O}$ がとれて二重結合ができる：\n\\[\\ce{C6H5CH(OH)CH3 -> C6H5CH=CH2 + H2O},\\qquad \\ce{C6H5CH2CH2OH -> C6H5CH=CH2 + H2O}\\]\nOH の位置が異なっても，どちらからも \\textbf{B（スチレン）} が得られる．逆に B から HCl 付加を経て得られるのは E だけで，F は得られない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "エチルベンゼン→スチレンの工業的経路と，スチレンへの HCl 付加（マルコフニコフ則）→加水分解で 1-フェニルエタノールになること．OH の位置が異なる 2 つのアルコールが脱水で同じスチレンを与える一方，付加では一方しか得られない．"
+ },
+ "concepts": [
+  "aromatic",
+  "industrial-process",
+  "hydrocarbon"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "スチレン",
+  "エチルベンゼン",
+  "マルコフニコフ則",
+  "脱水",
+  "ヨードホルム反応",
+  "ポリスチレン"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

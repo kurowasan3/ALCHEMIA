@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 270" width="620" height="270">
+<circle cx="170" cy="130" r="46" fill="none" stroke="currentColor" stroke-width="2"/>
+<line x1="170" y1="130" x2="170.0" y2="54.0" stroke="currentColor" stroke-width="2"/>
+<text x="170.0" y="41.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" text-anchor="middle">OH</text>
+<line x1="170" y1="130" x2="235.8" y2="168.0" stroke="currentColor" stroke-width="2"/>
+<text x="251.4" y="182.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" text-anchor="middle">CH<tspan baseline-shift="sub" font-size="10">3</tspan></text>
+<line x1="170" y1="130" x2="104.2" y2="168.0" stroke="currentColor" stroke-width="2"/>
+<text x="88.6" y="182.0" font-family="Noto Sans CJK JP, sans-serif" font-size="15" text-anchor="middle">H</text>
+<circle cx="170" cy="130" r="4" fill="currentColor"/>
+<line x1="209.8" y1="107.0" x2="235.8" y2="92.0" stroke="currentColor" stroke-width="2"/>
+<text x="249.7" y="89.0" font-family="Noto Sans CJK JP, sans-serif" font-size="16" font-style="italic" fill="#1f5fbf" text-anchor="middle">p</text>
+<line x1="170.0" y1="176.0" x2="170.0" y2="206.0" stroke="currentColor" stroke-width="2"/>
+<text x="170.0" y="227.0" font-family="Noto Sans CJK JP, sans-serif" font-size="16" font-style="italic" fill="#1f5fbf" text-anchor="middle">q</text>
+<line x1="130.2" y1="107.0" x2="104.2" y2="92.0" stroke="currentColor" stroke-width="2"/>
+<text x="90.3" y="89.0" font-family="Noto Sans CJK JP, sans-serif" font-size="16" font-style="italic" fill="#1f5fbf" text-anchor="middle">r</text>
+<text x="170" y="258" font-family="Noto Sans CJK JP, sans-serif" font-size="13" text-anchor="middle">手前：C2（中心の点）　奥：C3（円）</text>
+<text x="330" y="48" font-family="Noto Sans CJK JP, sans-serif" font-size="14">C2 の置換基は図の位置に固定する．</text>
+<text x="330" y="72" font-family="Noto Sans CJK JP, sans-serif" font-size="14">奥の C3 の OH・CH<tspan baseline-shift="sub" font-size="10">3</tspan>・H は，p・q・r に</text>
+<text x="330" y="96" font-family="Noto Sans CJK JP, sans-serif" font-size="14">1 つずつ入る．C3 を 120° ずつ回すと</text>
+<text x="330" y="120" font-family="Noto Sans CJK JP, sans-serif" font-size="14">ねじれ形の 3 つの配座が得られる．</text>
+<text x="330" y="144" font-family="Noto Sans CJK JP, sans-serif" font-size="14"></text>
+<text x="330" y="168" font-family="Noto Sans CJK JP, sans-serif" font-size="14">手前と奥の置換基の組で</text>
+<text x="330" y="192" font-family="Noto Sans CJK JP, sans-serif" font-size="14">　なす角 60°：ゴーシュの関係</text>
+<text x="330" y="216" font-family="Noto Sans CJK JP, sans-serif" font-size="14">　なす角 180°：アンチの関係</text>
+</svg>

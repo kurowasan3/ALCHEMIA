@@ -1,0 +1,100 @@
+{
+ "id": "THE-ION-017",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "硫酸の第2段階の電離平衡",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "硫酸は水溶液中で次のように電離する．第1段階は完全に進むが，第2段階は電離平衡にある．\n\\[ \\ce{H2SO4 -> H+ + HSO4-},\\qquad \\ce{HSO4- <=> H+ + SO4^2-}\\quad K_2=\\dfrac{[\\ce{H+}][\\ce{SO4^2-}]}{[\\ce{HSO4-}]}=1.0\\times10^{-2}\\,\\mathrm{mol/L} \\]\n$\\log_{10}2=0.30$，$\\log_{10}3=0.48$ とし，水の電離は無視する．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$3.0\\times10^{-3}\\,\\mathrm{mol/L}$ の硫酸について，第2段階の電離度 $\\alpha$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) の硫酸の pH を小数第2位まで求めよ．また，硫酸を「2価の強酸として完全に電離する」とみなした場合の pH と比べよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$[\\ce{HSO4-}]=[\\ce{SO4^2-}]$ となる硫酸のモル濃度を有効数字2桁で求めよ．また，これより濃い硫酸では $\\ce{HSO4-}$ と $\\ce{SO4^2-}$ のどちらが多いか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\alpha=0.67$（$\\tfrac{2}{3}$）"
+   },
+   {
+    "id": "2",
+    "tex": "2.30；完全電離とみなすと 2.22 となり，実際の pH の方が大きい"
+   },
+   {
+    "id": "3",
+    "tex": "$6.7\\times10^{-3}\\,\\mathrm{mol/L}$；$\\ce{HSO4-}$ の方が多い"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 硫酸の濃度を $C$ とすると，第1段階で $[\\ce{H+}]=[\\ce{HSO4-}]=C$．第2段階の電離度を $\\alpha$ とすると\n\\[ [\\ce{H+}]=C(1+\\alpha),\\quad [\\ce{SO4^2-}]=C\\alpha,\\quad [\\ce{HSO4-}]=C(1-\\alpha),\\qquad K_2=\\dfrac{C(1+\\alpha)\\alpha}{1-\\alpha} \\]\n$C=3.0\\times10^{-3}$ を代入して $3.0\\times10^{-3}(1+\\alpha)\\alpha=1.0\\times10^{-2}(1-\\alpha)$，すなわち $3\\alpha^2+13\\alpha-10=0$，$(3\\alpha-2)(\\alpha+5)=0$ より $\\alpha=\\boldsymbol{\\tfrac{2}{3}\\fallingdotseq0.67}$．\n\n\\textbf{(2)} $[\\ce{H+}]=3.0\\times10^{-3}\\times\\tfrac{5}{3}=5.0\\times10^{-3}\\,\\mathrm{mol/L}$，\n\\[ \\mathrm{pH}=3-\\log_{10}5=3-(1-0.30)=\\boldsymbol{2.30} \\]\n完全電離とみなすと $[\\ce{H+}]=6.0\\times10^{-3}$ で $\\mathrm{pH}=3-(0.30+0.48)=2.22$．実際には $\\ce{HSO4-}$ の一部が電離しないため，pH は \\textbf{0.08 大きい}．\n\n\\textbf{(3)} $[\\ce{HSO4-}]=[\\ce{SO4^2-}]$ は $\\alpha=\\tfrac12$ のとき．\n\\[ K_2=\\dfrac{C\\times\\tfrac32\\times\\tfrac12}{\\tfrac12}=\\tfrac32C=1.0\\times10^{-2}\\quad\\Rightarrow\\quad C=\\boldsymbol{6.7\\times10^{-3}\\,\\mathrm{mol/L}} \\]\nこれより濃いと $[\\ce{H+}]$ が大きくなり，第2段階の平衡が左に偏るので $\\alpha<\\tfrac12$ となって $\\ce{HSO4-}$ \\textbf{の方が多い}．逆にうすめるほど第2段階の電離が進む．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "硫酸は第1段階だけが完全電離で，第2段階は Ka が 10^-2 程度の電離平衡なので，[H+]=C(1+α) として α を2次方程式で求める．濃い硫酸ほど H+ による共通イオン効果で第2段階が抑えられ，HSO4- が主になる．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "oxygen-sulfur"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電離平衡",
+  "硫酸",
+  "多段階電離",
+  "電離度",
+  "共通イオン効果"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

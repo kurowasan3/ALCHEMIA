@@ -1,0 +1,108 @@
+{
+ "id": "THE-MOL-020",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-04",
+ "topic": "連続して起こる2つの反応の量的関係（メタンの水蒸気改質）",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "メタン $1.0\\,\\mathrm{mol}$ と水蒸気 $3.0\\,\\mathrm{mol}$ を反応容器に入れて高温に保ったところ，次の2つの反応が起こった．\n\\[\\ce{CH4 + H2O -> CO + 3H2}\\qquad \\ce{CO + H2O -> CO2 + H2}\\]\n反応後の容器には $\\ce{CH4}$，$\\ce{H2O}$，$\\ce{CO}$，$\\ce{CO2}$，$\\ce{H2}$ だけが気体として存在し，未反応のメタンは $0.20\\,\\mathrm{mol}$，水素は $2.7\\,\\mathrm{mol}$ であった．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "生成した二酸化炭素は何 mol か．"
+     },
+     {
+      "id": "2",
+      "tex": "残っている水蒸気は何 mol か．"
+     },
+     {
+      "id": "3",
+      "tex": "反応後の気体の総物質量は何 mol か．"
+     },
+     {
+      "id": "4",
+      "tex": "2番目の反応だけがさらに進んで $\\ce{CO}$ が減ったとすると，気体の総物質量はどうなるか．理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$0.30\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "2",
+    "tex": "$1.9\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "$5.6\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "4",
+    "tex": "変わらない（2番目の反応は左辺と右辺の気体の物質量がともに 2 で等しい）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "1番目の反応で反応したメタンを $x$，2番目の反応で反応した $\\ce{CO}$ を $y\\,(\\mathrm{mol})$ とおく．$x=1.0-0.20=0.80\\,\\mathrm{mol}$．\n\n\\textbf{(1)}　$\\ce{H2}$ は1番目で $3x$，2番目で $y$ 生じるので $3\\times0.80+y=2.7$ より $y=0.30$．$\\ce{CO2}$ は $y$ に等しく $\\boldsymbol{0.30\\,\\mathrm{mol}}$．このとき $\\ce{CO}$ は $x-y=0.50\\,\\mathrm{mol}$ 残る．\n\n\\textbf{(2)}　水蒸気は両方の反応で消費される：$3.0-(x+y)=3.0-1.1=\\boldsymbol{1.9\\,\\mathrm{mol}}$．\n（確認：消費された $\\ce{H2O}$ の O 原子 $1.1\\,\\mathrm{mol}$ は，$\\ce{CO}$ の $0.50$ と $\\ce{CO2}$ の $2\\times0.30=0.60$ の合計に等しい．）\n\n\\textbf{(3)}　$0.20+1.9+0.50+0.30+2.7=\\boldsymbol{5.6\\,\\mathrm{mol}}$．1番目の反応は気体が 2 mol から 4 mol に増えるので，総物質量は $4.0+2x=5.6\\,\\mathrm{mol}$ とも求まる．\n\n\\textbf{(4)}　2番目の反応は $\\ce{CO + H2O}$（2 mol）$\\to$ $\\ce{CO2 + H2}$（2 mol）で気体の物質量が変化しない．したがって総物質量は $y$ によらず $4.0+2x$ で決まり，\\textbf{変わらない}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "連続する2つの反応の進行量を未知数に置き，生成物の量と原子の保存から各反応の進行量を決める．総物質量は気体分子数が変化する反応の進行量だけで決まることに気づかせる．"
+ },
+ "concepts": [
+  "mole",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "物質量",
+  "化学反応式",
+  "連続反応",
+  "量的関係",
+  "原子の保存"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

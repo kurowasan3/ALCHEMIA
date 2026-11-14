@@ -1,0 +1,110 @@
+{
+ "id": "INO-PPT-023",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-08",
+ "topic": "コバルト(III) アンミン錯体の合成（酸化剤と塩化アンモニウムのはたらき）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "equation",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "塩化コバルト(II) と塩化アンモニウムを溶かした水溶液に，アンモニア水と少量の活性炭（触媒）を加え，過酸化水素水を加えてしばらく加熱すると，ヘキサアンミンコバルト(III) 塩化物 $\\ce{[Co(NH3)6]Cl3}$ の橙黄色の結晶が得られる．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "この反応でのコバルトの酸化数の変化を答えよ．また，過酸化水素は酸化剤・還元剤のどちらとしてはたらいているか．"
+     },
+     {
+      "id": "2",
+      "tex": "この変化を 1 つの化学反応式で表せ．ただし，反応物は $\\ce{CoCl2}$，$\\ce{NH4Cl}$，$\\ce{NH3}$，$\\ce{H2O2}$，生成物は $\\ce{[Co(NH3)6]Cl3}$ と $\\ce{H2O}$ とする．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\ce{[Co(NH3)6]Cl3}$ を $0.0200\\,\\mathrm{mol}$ つくるのに必要な過酸化水素は何 mol か．"
+     },
+     {
+      "id": "4",
+      "tex": "塩化アンモニウムを加えずに，塩化コバルト(II) 水溶液にアンモニア水を加えると，水酸化コバルト(II) が沈殿してしまう．塩化アンモニウムを加えておくと沈殿が生じにくくなる理由を，アンモニアの電離平衡をもとに説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$+2$ から $+3$ に増加．過酸化水素は酸化剤．"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{2CoCl2 + 2NH4Cl + 10NH3 + H2O2 -> 2[Co(NH3)6]Cl3 + 2H2O}$"
+   },
+   {
+    "id": "3",
+    "tex": "$0.0100\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{NH3 + H2O <=> NH4+ + OH-}$ の平衡が，$\\ce{NH4Cl}$ から生じる多量の $\\ce{NH4+}$ によって左に移動し（共通イオン効果），$\\ce{OH-}$ の濃度が小さく保たれるので，$\\ce{Co(OH)2}$ が沈殿しにくくなるから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\ce{CoCl2}$ の Co は $+2$，$\\ce{[Co(NH3)6]^3+}$ の Co は $+3$（$\\ce{NH3}$ は電荷 0）．Co は\\textbf{酸化}されたので，過酸化水素は\\textbf{酸化剤}（$\\ce{H2O2 + 2e- -> 2OH-}$ のように電子を受け取る）．\n\n\\textbf{(2)} Co 1 個あたり電子 1 個を失い，$\\ce{H2O2}$ 1 個が電子 2 個を受け取るので $\\ce{Co}:\\ce{H2O2}=2:1$．錯塩 2 つ分の $\\ce{Cl-}$ 6 個は $\\ce{CoCl2}$ から 4 個，残り 2 個を $\\ce{NH4Cl}$ から補う．$\\ce{NH4+}$ 2 個は $\\ce{H+}$ を出して $\\ce{NH3}$ になり，その $\\ce{H+}$ が $\\ce{H2O2}$ の酸素と $\\ce{H2O}$ をつくる．$\\ce{NH3}$ は $12-2=10$ 個必要．\n\\[ \\ce{2CoCl2 + 2NH4Cl + 10NH3 + H2O2 -> 2[Co(NH3)6]Cl3 + 2H2O} \\]\n\n\\textbf{(3)} (2) より錯塩 2 mol に $\\ce{H2O2}$ 1 mol なので\n\\[ 0.0200\\times\\frac12=\\boldsymbol{0.0100\\,\\mathrm{mol}} \\]\n\n\\textbf{(4)} アンモニア水では $\\ce{NH3 + H2O <=> NH4+ + OH-}$ の電離平衡が成り立つ．$\\ce{NH4Cl}$ を加えると $\\ce{NH4+}$ が多量に存在するので平衡は\\textbf{左に移動}し，$\\ce{OH-}$ の濃度が小さくなる（緩衝液）．$\\ce{Co^2+ + 2OH- -> Co(OH)2}$ の沈殿が生じにくくなり，$\\ce{Co^2+}$ は溶液中でアンモニアと錯イオンをつくりながら酸化される．$\\ce{NH4Cl}$ は錯塩に必要な $\\ce{Cl-}$ の供給源にもなっている．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "Co(II) をアンモニア共存下で H₂O₂ により Co(III) に酸化してアンミン錯塩をつくる．係数は電子の授受（Co:H₂O₂ = 2:1）と Cl・N の保存で決まり，NH₄Cl は共通イオン効果で OH⁻ 濃度を下げて Co(OH)₂ の沈殿を防ぐ．"
+ },
+ "concepts": [
+  "precipitation",
+  "nitrogen-phosphorus",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "コバルト",
+  "アンミン錯体",
+  "過酸化水素",
+  "酸化数",
+  "共通イオン効果",
+  "錯塩の合成"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

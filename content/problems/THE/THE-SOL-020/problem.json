@@ -1,0 +1,100 @@
+{
+ "id": "THE-SOL-020",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-09",
+ "topic": "硫酸銅(II) 五水和物の溶解と再結晶",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "硫酸銅(II) $\\ce{CuSO4}$（無水物）の水への溶解度（水 $100\\,\\mathrm g$ に溶ける無水物の質量）は $60$ ℃ で $40.0\\,\\mathrm g$，$20$ ℃ で $20.0\\,\\mathrm g$ である．水溶液から析出する結晶は硫酸銅(II) 五水和物 $\\ce{CuSO4.5H2O}$ である．式量を $\\ce{CuSO4}=160$，$\\ce{H2O}=18$ とし，答えは有効数字3桁で求めよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$60$ ℃ の飽和水溶液 $140\\,\\mathrm g$ をつくるには，硫酸銅(II) 五水和物何 g を何 g の水に溶かせばよいか．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) の飽和水溶液を $20$ ℃ まで冷却すると，硫酸銅(II) 五水和物は何 g 析出するか．"
+     },
+     {
+      "id": "3",
+      "tex": "仮に (2) で結晶が水和水を含まない無水物として析出するとしたら，析出量は何 g になるか．また，実際の析出量 (2) の方が多くなる理由を述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "五水和物 $62.5\\,\\mathrm g$ を水 $77.5\\,\\mathrm g$ に溶かす"
+   },
+   {
+    "id": "2",
+    "tex": "$35.2\\,\\mathrm g$"
+   },
+   {
+    "id": "3",
+    "tex": "$20.0\\,\\mathrm g$．五水和物が析出すると結晶に水和水として水も取り込まれ，溶媒の水が減るので，さらに多くの硫酸銅(II) が溶けきれなくなるため．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $60$ ℃ の飽和水溶液 $140\\,\\mathrm g$ には $\\ce{CuSO4}$ $40.0\\,\\mathrm g$ と水 $100\\,\\mathrm g$ が含まれる．$\\ce{CuSO4.5H2O}$ の式量は $160+90=250$ なので，必要な五水和物は $40.0\\times\\dfrac{250}{160}=\\boldsymbol{62.5\\,\\mathrm g}$，加える水は $140-62.5=\\boldsymbol{77.5\\,\\mathrm g}$．\n\\textbf{(2)} 析出する五水和物を $x\\,\\mathrm g$ とすると，その中の $\\ce{CuSO4}$ は $\\dfrac{160}{250}x=0.640x$，水は $0.360x$．残った溶液は $20$ ℃ の飽和水溶液なので\n\\[ \\frac{40.0-0.640x}{100-0.360x}=\\frac{20.0}{100} \\quad\\Rightarrow\\quad 0.568x=20.0,\\ x=\\boldsymbol{35.2\\,\\mathrm g} \\]\n\\textbf{(3)} 水の量が $100\\,\\mathrm g$ のまま変わらなければ，析出量は $40.0-20.0=\\boldsymbol{20.0\\,\\mathrm g}$．実際には結晶 $35.2\\,\\mathrm g$ 中に水 $12.7\\,\\mathrm g$ が取り込まれて溶媒が減り，その水に溶けていた分の $\\ce{CuSO4}$ も析出するので，析出量は多くなる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "水和物の結晶では，溶かすときは水和水が溶媒に加わり，析出するときは溶媒の水も結晶に取り込まれる．析出量は「残った溶液が飽和」という式で求め，無水物として析出する場合より多くなる．"
+ },
+ "concepts": [
+  "solution-colligative",
+  "transition-metals",
+  "oxygen-sulfur"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "溶解度",
+  "水和物",
+  "再結晶",
+  "硫酸銅(II)"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

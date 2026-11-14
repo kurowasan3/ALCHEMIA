@@ -1,0 +1,108 @@
+{
+ "id": "THE-ATM-031",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-01",
+ "topic": "箱の中の電子モデルによるシアニン色素の吸収波長",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "シアニン色素とよばれる陽イオン $(\\mathrm{CH_3})_2\\mathrm{N}{-}(\\mathrm{CH}{=}\\mathrm{CH})_k{-}\\mathrm{CH}{=}\\mathrm{N}^+(\\mathrm{CH_3})_2$（$k=1,2,3,\\cdots$）では，両端の窒素原子にはさまれた鎖の全体に $\\pi$ 電子が広がっている．鎖に含まれる原子は $2k+3$ 個（炭素 $2k+1$ 個と窒素 2 個），$\\pi$ 電子は $2k+4$ 個である．\n\nこの $\\pi$ 電子のふるまいを次のモデルで考える．\n\n・$\\pi$ 電子は長さ $L=(2k+4)\\,b$ の一次元の「箱」の中だけを自由に動く（$b$ は結合 1 本あたりの長さ）．\n\n・箱の中の電子がとりうるエネルギーは $E_n=\\dfrac{n^2h^2}{8mL^2}$（$n=1,2,3,\\cdots$）に限られ，1 つの $n$ に電子は 2 個まで入る．電子はエネルギーの低い順に入る．\n\n・電子が入っている最も高い準位（HOMO）から空の最も低い準位（LUMO）へ電子 1 個が移るとき，そのエネルギー差 $\\Delta E$ に等しいエネルギー $hc/\\lambda$ の光が吸収される．\n\n電子の質量 $m=9.11\\times10^{-31}\\,\\mathrm{kg}$，プランク定数 $h=6.63\\times10^{-34}\\,\\mathrm{J\\,s}$，光の速さ $c=3.00\\times10^{8}\\,\\mathrm{m/s}$ とする．物質は吸収した光の補色に見え，吸収する光（波長/nm）と見える色の関係は，$400\\sim435$（紫）→黄緑，$435\\sim480$（青）→黄，$480\\sim500$（青緑）→橙〜赤，$500\\sim560$（緑）→赤紫，$560\\sim610$（黄〜橙）→青，$610\\sim750$（赤）→青緑 とする．可視光を吸収しなければ無色である．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "HOMO と LUMO はそれぞれ $n$ がいくつの準位か．$k$ を用いて表せ．また，吸収される光の波長 $\\lambda$ を $k,\\ b,\\ m,\\ h,\\ c$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "$k=2$ の色素の吸収波長は $416\\,\\mathrm{nm}$ であった．このモデルが成り立つとして $b$ を nm 単位で有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の $b$ を用いて，$k=1,\\ 3,\\ 4$ の色素の吸収波長を有効数字 2 桁で求め，それぞれ何色に見えるかを答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$k$ が大きくなると，$\\mathrm{CH}{=}\\mathrm{CH}$ を 1 単位ふやすごとに吸収波長はほぼ一定の値ずつ長くなることを示し，その値を有効数字 2 桁で求めよ．また，吸収波長がはじめて $700\\,\\mathrm{nm}$ を超えるのは $k$ がいくつのときか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "HOMO：$n=k+2$，LUMO：$n=k+3$，$\\lambda=\\dfrac{8mc\\,(2k+4)^2b^2}{(2k+5)\\,h}$"
+   },
+   {
+    "id": "2",
+    "tex": "$0.133\\,\\mathrm{nm}$"
+   },
+   {
+    "id": "3",
+    "tex": "$k=1$：$3.0\\times10^{2}\\,\\mathrm{nm}$，無色　$k=3$：$5.3\\times10^{2}\\,\\mathrm{nm}$，赤紫　$k=4$：$6.5\\times10^{2}\\,\\mathrm{nm}$，青緑"
+   },
+   {
+    "id": "4",
+    "tex": "約 $1.2\\times10^{2}\\,\\mathrm{nm}$ ずつ長くなる．$k=5$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 準位の決定}　$\\pi$ 電子は $2k+4$ 個で，1 つの準位に 2 個ずつ入るので $n=1$ から $n=k+2$ まで満たされる．よって HOMO は $\\boldsymbol{n=k+2}$，LUMO は $\\boldsymbol{n=k+3}$．\n\\[ \\Delta E=E_{k+3}-E_{k+2}=\\dfrac{\\{(k+3)^2-(k+2)^2\\}h^2}{8mL^2}=\\dfrac{(2k+5)h^2}{8m(2k+4)^2b^2} \\]\n$\\Delta E=hc/\\lambda$ より\n\\[ \\lambda=\\dfrac{hc}{\\Delta E}=\\boldsymbol{\\dfrac{8mc\\,(2k+4)^2b^2}{(2k+5)\\,h}} \\]\n窒素の非共有電子対が $\\pi$ 電子に加わるので，$\\pi$ 電子数は偶数になり，HOMO が必ず 2 個の電子で満たされることに注意する．\n\n\\textbf{(2)}　$k=2$ では $(2k+4)^2=64$，$2k+5=9$ なので\n\\[ b^2=\\dfrac{9h\\lambda}{8mc\\times64}=\\dfrac{9\\times6.63\\times10^{-34}\\times416\\times10^{-9}}{8\\times9.11\\times10^{-31}\\times3.00\\times10^{8}\\times64}=1.774\\times10^{-20}\\,\\mathrm{m^2} \\]\n$b=1.33\\times10^{-10}\\,\\mathrm{m}=\\boldsymbol{0.133\\,\\mathrm{nm}}$．炭素どうしの単結合（約 $0.15\\,\\mathrm{nm}$）と二重結合（約 $0.13\\,\\mathrm{nm}$）の中間に近く，結合が平均化されているという見方と合う．\n\n\\textbf{(3)}　$\\lambda\\propto\\dfrac{(2k+4)^2}{2k+5}$ なので，$k=2$ の値 $416\\,\\mathrm{nm}$（$64/9$）を基準に比で求めてもよい．\n\n・$k=1$：$\\dfrac{36}{7}\\Big/\\dfrac{64}{9}\\times416=301\\,\\mathrm{nm}\\approx\\boldsymbol{3.0\\times10^{2}\\,\\mathrm{nm}}$．紫外部なので $\\boldsymbol{\\text{無色}}$．\n\n・$k=3$：$\\dfrac{100}{11}\\Big/\\dfrac{64}{9}\\times416=532\\,\\mathrm{nm}\\approx\\boldsymbol{5.3\\times10^{2}\\,\\mathrm{nm}}$．緑を吸収して $\\boldsymbol{\\text{赤紫}}$．\n\n・$k=4$：$\\dfrac{144}{13}\\Big/\\dfrac{64}{9}\\times416=648\\,\\mathrm{nm}\\approx\\boldsymbol{6.5\\times10^{2}\\,\\mathrm{nm}}$．赤を吸収して $\\boldsymbol{\\text{青緑}}$．\n\n\\textbf{(4)}　$x=2k+4$ とおくと $\\dfrac{(2k+4)^2}{2k+5}=\\dfrac{x^2}{x+1}=x-1+\\dfrac{1}{x+1}$．$k$ が大きいと $\\dfrac{1}{x+1}$ は無視でき，$k$ が 1 ふえると $x$ は 2 ふえるので，$\\lambda$ の増加は\n\\[ \\Delta\\lambda\\approx\\dfrac{8mcb^2}{h}\\times2=\\dfrac{16\\times9.11\\times10^{-31}\\times3.00\\times10^{8}\\times(1.33\\times10^{-10})^2}{6.63\\times10^{-34}}=1.17\\times10^{-7}\\,\\mathrm{m} \\]\nで一定（約 $\\boldsymbol{1.2\\times10^{2}\\,\\mathrm{nm}}$）．箱が長くなるほど準位の間隔は $1/L^2$ で狭くなるが，電子の数もふえて HOMO が上の準位に移るため，$\\Delta E$ は $1/L$ にほぼ比例して小さくなり，$\\lambda$ は $L$ にほぼ比例して長くなる．\n\n同じ比で計算すると $k=5$ で $\\dfrac{196}{15}\\Big/\\dfrac{64}{9}\\times416=764\\,\\mathrm{nm}$（$b=0.133\\,\\mathrm{nm}$ を使うと $762\\,\\mathrm{nm}$）となり，$k=4$（$648\\,\\mathrm{nm}$）では $700\\,\\mathrm{nm}$ に届かないので，はじめて超えるのは $\\boldsymbol{k=5}$．\n\n\\textbf{補足}　$\\ce{C=C}$ と $\\ce{C-C}$ が交互に並ぶポリエン（両端が炭素）では結合の長さがそろわず，このモデルほど $\\lambda$ は伸びずにやがて頭打ちになる．両端の窒素が電荷を分け合うシアニンでは結合が平均化されているので，このモデルがよくあてはまる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "共役鎖の π 電子を一次元の箱に閉じこめたモデルで，電子数から HOMO・LUMO の準位を決めて吸収波長を共役鎖の長さの式で表す．1 つの測定値からモデルの結合長を逆算し，他の鎖長の吸収波長と色を予測して，鎖を伸ばすと λ がほぼ一定値ずつ長くなることを導く．"
+ },
+ "concepts": [
+  "electron-config"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "HOMO",
+  "LUMO",
+  "共役",
+  "シアニン色素",
+  "吸収波長",
+  "補色"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

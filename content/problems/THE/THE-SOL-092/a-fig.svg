@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 300" font-family="Noto Sans CJK JP, sans-serif" font-size="14">
+  <!-- axes -->
+  <line x1="60" y1="260" x2="420" y2="260" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="60" y1="260" x2="60" y2="20" stroke="currentColor" stroke-width="1.5"/>
+  <polygon points="420,260 412,256 412,264" fill="currentColor"/>
+  <polygon points="60,20 56,28 64,28" fill="currentColor"/>
+  <text x="400" y="282" fill="currentColor">T</text>
+  <text x="22" y="30" fill="currentColor">p</text>
+  <!-- solvent line -->
+  <line x1="90" y1="230" x2="330" y2="50" stroke="currentColor" stroke-width="2"/>
+  <text x="300" y="44" fill="currentColor">溶媒</text>
+  <!-- solution line (parallel, lowered) -->
+  <line x1="130" y1="230" x2="370" y2="50" stroke="#1f5fbf" stroke-width="2"/>
+  <text x="372" y="66" fill="#1f5fbf">溶液</text>
+  <!-- P0 line -->
+  <line x1="60" y1="140" x2="400" y2="140" stroke="currentColor" stroke-dasharray="5,4" opacity="0.5"/>
+  <text x="18" y="145" fill="currentColor">P<tspan baseline-shift="sub" font-size="10">0</tspan></text>
+  <!-- intersection points: solvent at y=140 -> x = 90 + (230-140)/0.75 = 210 ; solution -> 250 -->
+  <line x1="210" y1="140" x2="210" y2="260" stroke="currentColor" stroke-dasharray="4,4" opacity="0.5"/>
+  <line x1="250" y1="140" x2="250" y2="260" stroke="currentColor" stroke-dasharray="4,4" opacity="0.5"/>
+  <text x="196" y="278" fill="currentColor">T<tspan baseline-shift="sub" font-size="10">b</tspan></text>
+  <text x="240" y="278" fill="currentColor">T<tspan baseline-shift="sub" font-size="10">b</tspan>+ΔT</text>
+  <!-- Δp vertical at T_b: solution at x=210 -> y = 230 - 0.75*(210-130) = 170 -->
+  <line x1="210" y1="140" x2="210" y2="170" stroke="#c0392b" stroke-width="2.5"/>
+  <text x="150" y="162" fill="#c0392b">Δp</text>
+  <!-- ΔT horizontal -->
+  <line x1="210" y1="140" x2="250" y2="140" stroke="#c0392b" stroke-width="2.5"/>
+  <text x="232" y="132" fill="#c0392b">ΔT</text>
+  <text x="250" y="210" fill="currentColor" font-size="13">傾き A</text>
+  <text x="250" y="228" fill="currentColor" font-size="13">ΔT = Δp / A</text>
+</svg>

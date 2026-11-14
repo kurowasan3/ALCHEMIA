@@ -1,0 +1,117 @@
+{
+ "id": "THE-EQL-093",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "温度ジャンプ後の電離平衡の移動と正逆反応の速さ（アンモニア水）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "アンモニア水では次の電離平衡が成り立つ．\n\\[\\ce{NH3 + H2O <=> NH4+ + OH-}\\]\n正反応の速さを $v_1 = k_1[\\ce{NH3}]$，逆反応の速さを $v_2 = k_2[\\ce{NH4+}][\\ce{OH-}]$ とする．\n\n全濃度 $1.00\\times10^{-2}\\,\\mathrm{mol/L}$ のアンモニア水を $20\\,^\\circ\\mathrm{C}$ で平衡にしたところ $[\\ce{OH-}] = 4.05\\times10^{-4}\\,\\mathrm{mol/L}$ であった．この水溶液の温度を一瞬で $25\\,^\\circ\\mathrm{C}$ に上げてしばらくおくと，$[\\ce{OH-}]$ は $4.12\\times10^{-4}\\,\\mathrm{mol/L}$ で一定になった．水の電離による $\\ce{OH-}$ と，体積の変化は無視する．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$20\\,^\\circ\\mathrm{C}$ と $25\\,^\\circ\\mathrm{C}$ のアンモニアの電離定数 $K_\\mathrm{b}$ をそれぞれ有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "アンモニアの電離は発熱反応か吸熱反応か．理由とともに答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "温度を上げた直後と，十分に時間がたった後のそれぞれについて，$v_1$ と $v_2$ の大小関係を答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "平衡では $v_1 = v_2$ であることから，$K_\\mathrm{b}$ を $k_1$，$k_2$ で表せ．また，$25\\,^\\circ\\mathrm{C}$ で $k_2 = 3.4\\times10^{10}\\,\\mathrm{L/(mol\\cdot s)}$ であるとき，$k_1$ を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "逆に，$25\\,^\\circ\\mathrm{C}$ で平衡にしたこのアンモニア水を一瞬で $20\\,^\\circ\\mathrm{C}$ に冷やした．冷やした直後の $v_1$ と $v_2$ の大小関係と，その後 $[\\ce{OH-}]$ が増えるか減るかを答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$20\\,^\\circ\\mathrm{C}$：$1.71\\times10^{-5}\\,\\mathrm{mol/L}$，$25\\,^\\circ\\mathrm{C}$：$1.77\\times10^{-5}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "2",
+    "tex": "吸熱反応．温度を上げると $K_\\mathrm{b}$ が大きくなり，平衡が電離の向きに移ったから"
+   },
+   {
+    "id": "3",
+    "tex": "直後は $v_1 > v_2$，十分に時間がたつと $v_1 = v_2$"
+   },
+   {
+    "id": "4",
+    "tex": "$K_\\mathrm{b} = k_1/k_2$，$k_1 = 6.0\\times10^{5}\\,\\mathrm{/s}$"
+   },
+   {
+    "id": "5",
+    "tex": "$v_1 < v_2$．$[\\ce{OH-}]$ は減る"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 平衡では $[\\ce{NH4+}] = [\\ce{OH-}]$，$[\\ce{NH3}] = 1.00\\times10^{-2} - [\\ce{OH-}]$ なので\n\\[K_\\mathrm{b} = \\frac{[\\ce{OH-}]^2}{1.00\\times10^{-2}-[\\ce{OH-}]}\\]\n$20\\,^\\circ\\mathrm{C}$：$\\dfrac{(4.05\\times10^{-4})^2}{9.595\\times10^{-3}} = \\boldsymbol{1.71\\times10^{-5}\\,\\mathrm{mol/L}}$\n$25\\,^\\circ\\mathrm{C}$：$\\dfrac{(4.12\\times10^{-4})^2}{9.588\\times10^{-3}} = \\boldsymbol{1.77\\times10^{-5}\\,\\mathrm{mol/L}}$\n\n\\textbf{(2)} 温度を上げると $K_\\mathrm{b}$ が大きくなった（$[\\ce{OH-}]$ が増えた）．ルシャトリエの原理より，温度を上げたときは吸熱の向きに平衡が移るので，電離は $\\boldsymbol{\\text{吸熱反応}}$．\n\n\\textbf{(3)} 温度を上げた瞬間は濃度はまだ $20\\,^\\circ\\mathrm{C}$ の平衡のままだが，速度定数は変わり，$25\\,^\\circ\\mathrm{C}$ の平衡に向かって $[\\ce{OH-}]$ が増えていく．$[\\ce{OH-}]$ が増えるのは正反応の方が速いときなので，直後は $\\boldsymbol{v_1 > v_2}$．その後 $[\\ce{NH3}]$ が減って $v_1$ は小さく，$[\\ce{NH4+}][\\ce{OH-}]$ が増えて $v_2$ は大きくなり，十分に時間がたつと $\\boldsymbol{v_1 = v_2}$（新しい平衡）．\n\n\\textbf{(4)} $k_1[\\ce{NH3}] = k_2[\\ce{NH4+}][\\ce{OH-}]$ より\n\\[K_\\mathrm{b} = \\frac{[\\ce{NH4+}][\\ce{OH-}]}{[\\ce{NH3}]} = \\boldsymbol{\\frac{k_1}{k_2}}\\]\n$k_1 = K_\\mathrm{b}k_2 = 1.77\\times10^{-5}\\times3.4\\times10^{10} = \\boldsymbol{6.0\\times10^{5}\\,\\mathrm{/s}}$．\n（$k_2$ は非常に大きく，イオンどうしは出会うとほぼすぐ反応する．そのため平衡への移動は $10^{-7}\\,\\mathrm{s}$ 程度の短い時間で終わる．）\n\n\\textbf{(5)} 冷やすと $K_\\mathrm{b}$ は小さくなるので，平衡は電離が減る向き（発熱の向き）に移る．冷やした直後は $\\boldsymbol{v_1 < v_2}$ で，$[\\ce{OH-}]$ は $\\boldsymbol{\\text{減る}}$（$4.05\\times10^{-4}\\,\\mathrm{mol/L}$ に近づく）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "温度を急に変えると速度定数が変わり，濃度は前の平衡のままなので正逆反応の速さがつり合わなくなる．どちらが速いかは新しい平衡に向かう濃度変化の向きで決まり，その向き（K の増減）から電離が吸熱か発熱かを判断する．平衡では v₁=v₂ から K=k₁/k₂ が成り立つ．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "nitrogen-phosphorus",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "化学平衡",
+  "ルシャトリエの原理",
+  "反応速度",
+  "電離定数",
+  "アンモニア"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,107 @@
+{
+ "id": "INO-OXS-012",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-02",
+ "topic": "二酸化硫黄の還元作用（漂白・定量）",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "compare",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "二酸化硫黄も塩素も，水分があると色素を漂白する．二酸化硫黄はヨウ素とも次のように反応する．\n\\[\\ce{SO2 + I2 + 2H2O -> H2SO4 + 2HI}\\]\n標準状態の気体のモル体積を $22.4\\,\\mathrm{L/mol}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "二酸化硫黄と塩素水の漂白作用の違いを，酸化・還元の観点から比べて説明せよ．また，漂白した後，空気中に長く置くと色がもどることがあるのはどちらか．"
+     },
+     {
+      "id": "2",
+      "tex": "二酸化硫黄を塩素水に通じると，塩素水の黄緑色が消え，漂白作用もなくなる．この反応を化学反応式で書け．"
+     },
+     {
+      "id": "3",
+      "tex": "ある工場の排気を標準状態で $10.0\\,\\mathrm{L}$ とり，デンプンを加えた $5.00\\times10^{-3}\\,\\mathrm{mol/L}$ のヨウ素水溶液 $20.0\\,\\mathrm{mL}$ に通じたところ，ちょうど青色が消えた．排気 $10.0\\,\\mathrm{L}$ に含まれていた二酸化硫黄は標準状態で何 mL か．有効数字3桁で答えよ．ただし，排気中でヨウ素と反応するのは二酸化硫黄だけとする．"
+     },
+     {
+      "id": "4",
+      "tex": "硫黄の同素体のうち常温で最も安定なものの名称と，その結晶をつくる分子の構造を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "二酸化硫黄は色素を還元して漂白し，塩素水は生じた次亜塩素酸が色素を酸化して漂白する．色がもどることがあるのは二酸化硫黄．"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{SO2 + Cl2 + 2H2O -> H2SO4 + 2HCl}$"
+   },
+   {
+    "id": "3",
+    "tex": "$2.24\\,\\mathrm{mL}$"
+   },
+   {
+    "id": "4",
+    "tex": "斜方硫黄，8 個の S 原子が環状に結合した $\\ce{S8}$ 分子"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\ce{SO2}$ は還元剤として色素を\\textbf{還元}して無色にする．還元された色素は空気中の酸素で再び酸化されて色がもどることがある．塩素水では $\\ce{Cl2 + H2O <=> HCl + HClO}$ で生じた $\\ce{HClO}$ が色素を\\textbf{酸化}して分解するので，色はもどらない．\n\n\\textbf{(2)} 還元剤の $\\ce{SO2}$ と酸化剤の $\\ce{Cl2}$ が反応して，どちらも漂白作用を失う：$\\ce{SO2 + Cl2 + 2H2O -> H2SO4 + 2HCl}$．\n\n\\textbf{(3)} $\\ce{I2}$：$5.00\\times10^{-3}\\times\\dfrac{20.0}{1000}=1.00\\times10^{-4}\\,\\mathrm{mol}$．$\\ce{SO2}$ も $1.00\\times10^{-4}\\,\\mathrm{mol}$ で，$1.00\\times10^{-4}\\times22.4\\times10^3=\\boldsymbol{2.24\\,\\mathrm{mL}}$．\n\n\\textbf{(4)} \\textbf{斜方硫黄}．単斜硫黄と同じく，8 個の S 原子が環状につながった $\\ce{S8}$ 分子からなる（ゴム状硫黄は長い鎖状の分子）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "SO2 は還元作用で漂白するので，酸化による塩素の漂白と比べて色が戻ることがあり，酸化剤（Cl2，I2）と出会うと漂白作用を失う．その還元作用を使ってヨウ素で SO2 を定量する．"
+ },
+ "concepts": [
+  "oxygen-sulfur",
+  "halogen"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "二酸化硫黄",
+  "漂白",
+  "還元剤",
+  "ヨウ素"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

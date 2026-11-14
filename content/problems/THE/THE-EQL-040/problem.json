@@ -1,0 +1,117 @@
+{
+ "id": "THE-EQL-040",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "全圧の測定から反応次数を決める（気相の二量化）",
+ "course": "化学",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "気体 A は，一定体積・一定温度の容器の中で $2\\mathrm{A} \\longrightarrow \\mathrm{B}$（A，B はともに気体）のように反応する．逆反応は無視でき，B は反応速度に影響しない．A の分圧を $p_\\mathrm{A}$ とすると，反応速度は\n\\[ v=-\\frac{dp_\\mathrm{A}}{dt}=k\\,p_\\mathrm{A}^{\\,n} \\]\nで表され，反応次数 $n$ は 1 または 2 である．$p_\\mathrm{A}$ の初めの値を $p_{\\mathrm{A}0}$ とすると，時刻 $t$ における $p_\\mathrm{A}$ は次の式で表される．\n\\[ n=1\\ \\text{のとき}\\ \\ \\log_e\\frac{p_{\\mathrm{A}0}}{p_\\mathrm{A}}=kt, \\qquad n=2\\ \\text{のとき}\\ \\ \\frac{1}{p_\\mathrm{A}}-\\frac{1}{p_{\\mathrm{A}0}}=kt \\]\n容器内の全圧 $P$ だけを測定して，次の2つの実験を行った（温度は同じ）．\n\n実験1：A だけを $4.0\\times10^{4}\\,\\mathrm{Pa}$ 入れて反応を始めたところ，$50\\,\\mathrm{s}$ 後に全圧が $3.0\\times10^{4}\\,\\mathrm{Pa}$ になった．\n\n実験2：A と B の混合気体を入れて反応を始めた．反応開始時の全圧は $2.0\\times10^{4}\\,\\mathrm{Pa}$，十分に時間がたった後の全圧は $1.5\\times10^{4}\\,\\mathrm{Pa}$ であった．また，反応開始から $200\\,\\mathrm{s}$ 後の全圧は $1.75\\times10^{4}\\,\\mathrm{Pa}$ であった．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "実験2の反応開始時の A と B の分圧をそれぞれ求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "実験1，実験2のそれぞれについて，A の分圧が初めの半分になるまでの時間を求め，反応次数 $n$ を決定せよ．判断の根拠も示せ．"
+     },
+     {
+      "id": "3",
+      "tex": "速度定数 $k$ を単位をつけて有効数字2桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "実験1で，反応開始から $150\\,\\mathrm{s}$ 後の全圧を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "実験2で，全圧が $1.60\\times10^{4}\\,\\mathrm{Pa}$ になるのは反応開始から何 s 後か．有効数字2桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "A：$1.0\\times10^{4}\\,\\mathrm{Pa}$，B：$1.0\\times10^{4}\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "2",
+    "tex": "実験1：$50\\,\\mathrm{s}$，実験2：$200\\,\\mathrm{s}$，$n=2$（初圧が $\\frac14$ で半減期が 4 倍，すなわち半減期が初圧に反比例するから）"
+   },
+   {
+    "id": "3",
+    "tex": "$5.0\\times10^{-7}\\,\\mathrm{Pa^{-1}\\,s^{-1}}$"
+   },
+   {
+    "id": "4",
+    "tex": "$2.5\\times10^{4}\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "5",
+    "tex": "$8.0\\times10^{2}\\,\\mathrm{s}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{全圧と A の分圧の関係}　A が $2x$ だけ（分圧で）減ると B が $x$ 増えるので，気体全体は $x$ 減る．初めの A，B の分圧を $p_{\\mathrm{A}0}$，$p_{\\mathrm{B}0}$ とすると，A の分圧が $p_\\mathrm{A}$ のとき\n\\[ P=p_\\mathrm{A}+p_{\\mathrm{B}0}+\\frac{p_{\\mathrm{A}0}-p_\\mathrm{A}}{2} \\quad\\Longrightarrow\\quad p_\\mathrm{A}=2P-2p_{\\mathrm{B}0}-p_{\\mathrm{A}0} \\]\n全圧の測定値をこの式で A の分圧に直すのが要点である．\n\n(1) 反応開始時 $p_{\\mathrm{A}0}+p_{\\mathrm{B}0}=2.0\\times10^{4}$．反応が終わると A はすべて B になり，$P_\\infty=p_{\\mathrm{B}0}+\\dfrac{p_{\\mathrm{A}0}}{2}=1.5\\times10^{4}$．2式を引くと $\\dfrac{p_{\\mathrm{A}0}}{2}=0.5\\times10^{4}$ より A：$\\boldsymbol{1.0\\times10^{4}\\,\\mathrm{Pa}}$，B：$\\boldsymbol{1.0\\times10^{4}\\,\\mathrm{Pa}}$．\n\n(2) 実験1（$p_{\\mathrm{B}0}=0$）：$50\\,\\mathrm{s}$ 後 $p_\\mathrm{A}=2\\times3.0\\times10^{4}-4.0\\times10^{4}=2.0\\times10^{4}$ で，ちょうど半分．半減期 $\\boldsymbol{50\\,\\mathrm{s}}$．\n\n実験2：$200\\,\\mathrm{s}$ 後 $p_\\mathrm{A}=2\\times1.75\\times10^{4}-2\\times1.0\\times10^{4}-1.0\\times10^{4}=0.50\\times10^{4}$ で，ちょうど半分．半減期 $\\boldsymbol{200\\,\\mathrm{s}}$．\n\n$n=1$ なら $\\log_e 2=kt_{1/2}$ より半減期は初圧によらないはずだが，実際は初圧 $4.0\\times10^{4}\\to1.0\\times10^{4}$（$\\frac14$ 倍）で半減期が 4 倍になった．$n=2$ なら $\\dfrac{2}{p_{\\mathrm{A}0}}-\\dfrac{1}{p_{\\mathrm{A}0}}=kt_{1/2}$ より $t_{1/2}=\\dfrac{1}{kp_{\\mathrm{A}0}}$ で，初圧に反比例する．データはこれと一致するので $\\boldsymbol{n=2}$．\n\n（注意：実験2で全圧の値をそのまま「初めの全圧の何割」と読むと誤る．B が初めから含まれているので，(1) で初めの組成を決めてから A の分圧に直す必要がある．）\n\n(3) $k=\\dfrac{1}{t_{1/2}\\,p_{\\mathrm{A}0}}=\\dfrac{1}{50\\times4.0\\times10^{4}}=\\boldsymbol{5.0\\times10^{-7}\\,\\mathrm{Pa^{-1}\\,s^{-1}}}$（実験2でも $\\dfrac{1}{200\\times1.0\\times10^{4}}$ で同じ値になる）．\n\n(4) $\\dfrac{1}{p_\\mathrm{A}}=\\dfrac{1}{4.0\\times10^{4}}+5.0\\times10^{-7}\\times150=2.5\\times10^{-5}+7.5\\times10^{-5}=1.0\\times10^{-4}$ より $p_\\mathrm{A}=1.0\\times10^{4}\\,\\mathrm{Pa}$．\n\\[ P=\\frac{p_{\\mathrm{A}0}+p_\\mathrm{A}}{2}=\\frac{4.0\\times10^{4}+1.0\\times10^{4}}{2}=\\boldsymbol{2.5\\times10^{4}\\,\\mathrm{Pa}} \\]\n（$150\\,\\mathrm{s}$ は半減期の 3 倍だが，二次反応では半減期がだんだん長くなるので，A は $\\frac18$ ではなく $\\frac14$ までしか減らない．）\n\n(5) $p_\\mathrm{A}=2\\times1.60\\times10^{4}-2.0\\times10^{4}-1.0\\times10^{4}=2.0\\times10^{3}\\,\\mathrm{Pa}$．\n\\[ t=\\frac{1}{k}\\left(\\frac{1}{2.0\\times10^{3}}-\\frac{1}{1.0\\times10^{4}}\\right)=\\frac{5.0\\times10^{-4}-1.0\\times10^{-4}}{5.0\\times10^{-7}}=\\boldsymbol{8.0\\times10^{2}\\,\\mathrm{s}} \\]\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "物質量が変化する気相反応では，測定できる全圧を反応物の分圧に換算してから速度を議論する．生成物が初めから混じる場合は反応終了時の全圧から初めの組成を逆算し，初圧の異なる実験の半減期の比から反応次数を決める．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "mole",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応次数",
+  "二次反応",
+  "半減期",
+  "全圧",
+  "気相反応"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

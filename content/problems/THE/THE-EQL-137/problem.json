@@ -1,0 +1,109 @@
+{
+ "id": "THE-EQL-137",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "N₂O₄ ⇄ 2NO₂ の平衡混合物の「圧力÷質量」と温度の関係（2本の漸近線と解離度）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "容積 $2.00\\,\\mathrm L$ の密閉容器に $\\ce{N2O4}$ と $\\ce{NO2}$ の平衡混合物を $w\\,[\\mathrm g]$ 入れ，温度 $T\\,[\\mathrm K]$ を変えながら圧力 $P\\,[\\mathrm{Pa}]$ を測り，$P/w$ を $T$ に対してプロットした．容器内では $\\ce{N2O4 <=> 2NO2}$ の平衡が常に成り立ち，気体は理想気体とする．$\\ce{N2O4}=92.0$，気体定数 $R=8.31\\times10^{3}\\,\\mathrm{Pa\\cdot L/(mol\\cdot K)}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "低温では $\\ce{N2O4}$ だけ，高温では $\\ce{NO2}$ だけが存在するとみなせるので，グラフは低温側・高温側でそれぞれ原点を通る直線に近づく．低温側・高温側の直線の傾き $[\\mathrm{Pa/(g\\cdot K)}]$ をそれぞれ有効数字2桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$T=320\\,\\mathrm K$ で $P/w=2.00\\times10^{4}\\,\\mathrm{Pa/g}$ であった．このときの $\\ce{N2O4}$ の解離度 $\\alpha$ を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "封入量だけを $w$ の 10 倍にして同じ測定を行った．$320\\,\\mathrm K$ での $P/w$ は (2) の値と比べて大きくなるか，小さくなるか，変わらないか．理由とともに答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "測定したグラフは，温度を上げると低温側の直線から離れて高温側の直線に近づいた．このことから $\\ce{N2O4 -> 2NO2}$ の正反応は発熱反応か吸熱反応かを答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "低温側 $45\\,\\mathrm{Pa/(g\\cdot K)}$，高温側 $90\\,\\mathrm{Pa/(g\\cdot K)}$"
+   },
+   {
+    "id": "2",
+    "tex": "$0.38$"
+   },
+   {
+    "id": "3",
+    "tex": "小さくなる（濃度が大きいほど平衡が分子数の少ない左へ移り，解離度が小さくなる）"
+   },
+   {
+    "id": "4",
+    "tex": "吸熱反応"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　物質量 $n$ の気体では $P=\\dfrac{nRT}{V}$．すべて $\\ce{N2O4}$ なら $n=\\dfrac{w}{92.0}$，すべて $\\ce{NO2}$ なら $n=\\dfrac{w}{46.0}$ なので\n\\[ \\frac{P}{w}=\\frac{R}{92.0\\,V}T=\\frac{8.31\\times10^{3}}{92.0\\times2.00}T=45.2\\,T,\\qquad \\frac{P}{w}=\\frac{R}{46.0\\,V}T=90.3\\,T \\]\n傾きは低温側 $\\boldsymbol{45\\,\\mathrm{Pa/(g\\cdot K)}}$，高温側 $\\boldsymbol{90\\,\\mathrm{Pa/(g\\cdot K)}}$（質量が一定なので，高温側は低温側のちょうど 2 倍）．\n\n\\textbf{(2)}　はじめの $\\ce{N2O4}$ を $n_0=w/92.0$ とすると，解離度 $\\alpha$ で全物質量は $n_0(1+\\alpha)$．よって\n\\[ \\frac{P}{w}=(1+\\alpha)\\times45.2\\,T,\\qquad 1+\\alpha=\\frac{2.00\\times10^{4}}{45.16\\times320}=1.384 \\]\n$\\alpha=\\boldsymbol{0.38}$．（グラフ上の点が2本の直線の間のどこにあるかが解離度を表す．）\n\n\\textbf{(3)}　容積が同じで $w$ が 10 倍になると濃度（圧力）が大きくなる．$\\ce{N2O4 <=> 2NO2}$ は分子数が増える向きの反応なので，ルシャトリエの原理により平衡は左に移り，解離度は\\textbf{小さくなる}．$P/w$ は $(1+\\alpha)$ に比例するので $P/w$ も小さくなり，曲線は高温側にずれる．\n\n\\textbf{(4)}　温度を上げると $P/w$ が高温側の直線（$\\alpha=1$）に近づく，すなわち解離度が大きくなる．温度を上げると平衡は吸熱の向きに移るので，正反応は\\textbf{吸熱反応}である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "質量 w の N₂O₄–NO₂ 混合物の P/w は全物質量に比例するので，すべて N₂O₄・すべて NO₂ の 2 本の直線（傾きの比 1:2）の間にあり，その位置から解離度が読める．封入量を増やすと濃度が上がって解離度が下がり，温度とともに上の直線に近づくことから解離が吸熱であるとわかる．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "nitrogen-phosphorus",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "化学平衡",
+  "四酸化二窒素",
+  "解離度",
+  "ルシャトリエの原理",
+  "理想気体"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

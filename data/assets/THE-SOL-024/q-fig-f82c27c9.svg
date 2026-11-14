@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 310" width="480" height="310" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="none" stroke="currentColor">
+  <!-- 軸 -->
+  <line x1="60" y1="275" x2="460" y2="275" stroke-width="1.5"/>
+  <line x1="60" y1="275" x2="60" y2="20" stroke-width="1.5"/>
+  <path d="M455 270 L462 275 L455 280" stroke-width="1.5"/>
+  <path d="M55 27 L60 18 L65 27" stroke-width="1.5"/>
+  <g fill="currentColor" stroke="none">
+    <text x="400" y="298">時間</text>
+    <text x="14" y="60">温度</text>
+    <text x="16" y="114">5.50</text>
+    <text x="10" y="132" font-size="12">（℃）</text>
+  </g>
+  <line x1="60" y1="110" x2="150" y2="110" stroke-dasharray="4 3" opacity="0.5"/>
+  <!-- 曲線 A（純ベンゼン） -->
+  <path d="M85 30 L118 110 L128 128 Q137 142 144 124 L150 110 L320 110 L430 175" stroke-width="2"/>
+  <!-- 曲線 B（溶液） -->
+  <path d="M130 30 L192 170 L200 186 Q212 214 226 182 L380 214 L440 262" stroke-width="2"/>
+  <!-- 外挿 -->
+  <line x1="226" y1="182" x2="186" y2="173.7" stroke-dasharray="4 3" opacity="0.5"/>
+  <g fill="currentColor" stroke="none">
+    <circle cx="187.5" cy="174" r="3.5"/>
+    <circle cx="226" cy="182" r="3.5"/>
+    <circle cx="212" cy="199" r="3.5"/>
+    <circle cx="380" cy="214" r="3.5"/>
+    <circle cx="137" cy="134" r="3.5"/>
+    <circle cx="240" cy="110" r="3.5"/>
+    <text x="160" y="170">T<tspan baseline-shift="sub" font-size="10">1</tspan></text>
+    <text x="232" y="176">T<tspan baseline-shift="sub" font-size="10">2</tspan></text>
+    <text x="200" y="228">T<tspan baseline-shift="sub" font-size="10">3</tspan></text>
+    <text x="378" y="236">T<tspan baseline-shift="sub" font-size="10">4</tspan></text>
+    <text x="134" y="158">P</text>
+    <text x="236" y="100">Q</text>
+    <text x="92" y="22" text-anchor="middle">曲線 A</text>
+    <text x="146" y="22" text-anchor="middle">曲線 B</text>
+  </g>
+</svg>

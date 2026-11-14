@@ -1,0 +1,109 @@
+{
+ "id": "THE-ION-102",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "電離度が小さくない弱酸の電離定数と，電離度を指定するための濃度・混合量",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある温度で，濃度 $1.80\\times10^{-3}\\,\\mathrm{mol/L}$ の酢酸水溶液の電離度は $0.100$ であった．以下も同じ温度で考え，水の電離は無視できるものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "酢酸の電離定数 $K_\\mathrm{a}$ を，近似を用いずに有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) で $1-\\alpha \\fallingdotseq 1$ と近似して計算すると，得られる値は正しい値の何 \\% になるか．整数で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "電離度が $0.0500$ になる酢酸水溶液の濃度を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "はじめの酢酸水溶液 $100\\,\\mathrm{mL}$ に，$0.100\\,\\mathrm{mol/L}$ の酢酸水溶液を何 mL 加えると電離度が $0.0500$ になるか．混合後の体積は混合前の体積の和とし，有効数字 2 桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$2.0\\times10^{-5}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "2",
+    "tex": "90 \\%"
+   },
+   {
+    "id": "3",
+    "tex": "$7.6\\times10^{-3}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "4",
+    "tex": "$6.3\\,\\mathrm{mL}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 濃度 $c$，電離度 $\\alpha$ のとき $[\\ce{H+}] = [\\ce{CH3COO-}] = c\\alpha$，$[\\ce{CH3COOH}] = c(1-\\alpha)$ なので\n\\[ K_\\mathrm{a} = \\frac{c\\alpha^2}{1-\\alpha} = \\frac{1.80\\times10^{-3}\\times0.100^2}{0.900} = \\boldsymbol{2.0\\times10^{-5}\\,\\mathrm{mol/L}} \\]\n\n(2) 近似すると $c\\alpha^2 = 1.8\\times10^{-5}$ で，正しい値の $1-\\alpha = 0.900$ 倍，すなわち $\\boldsymbol{90}$ \\% になる．このようにうすい溶液で電離度が $0.1$ 程度になると，$1-\\alpha \\fallingdotseq 1$ の近似による誤差は 10 \\% に達する．\n\n(3) $c = \\dfrac{K_\\mathrm{a}(1-\\alpha)}{\\alpha^2} = \\dfrac{2.0\\times10^{-5}\\times0.950}{0.0500^2} = \\boldsymbol{7.6\\times10^{-3}\\,\\mathrm{mol/L}}$．\n電離度を半分にするには，濃度を 4 倍ではなく約 4.2 倍にする必要がある（近似式 $\\alpha=\\sqrt{K_\\mathrm{a}/c}$ では 4 倍）．\n\n(4) 加える体積を $V$ mL とすると，酢酸の物質量の保存から\n\\[ \\frac{1.80\\times10^{-3}\\times100 + 0.100\\,V}{100 + V} = 7.6\\times10^{-3} \\]\n$0.180 + 0.100V = 0.760 + 0.0076V$ より $V = \\dfrac{0.580}{0.0924} = 6.28 \\to \\boldsymbol{6.3\\,\\mathrm{mL}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "弱酸の電離度が 0.1 程度と小さくないときは 1−α≒1 と近似できず，Kₐ=cα²/(1−α) で電離定数を求める．逆に指定した電離度になる濃度を同じ式から求め，物質量の保存から混合量を決める．近似を使ったときの誤差の大きさを比べて判断する．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "mole",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電離定数",
+  "電離度",
+  "近似の誤差",
+  "酢酸",
+  "混合"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

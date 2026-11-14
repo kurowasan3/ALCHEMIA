@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 270" width="520" height="270" font-family="Noto Sans CJK JP, sans-serif" font-size="15" fill="currentColor" stroke="currentColor">
+  <g stroke-width="1.6">
+    <line x1="200" y1="62" x2="200" y2="110"/>
+    <line x1="200" y1="140" x2="200" y2="188"/>
+    <line x1="140" y1="125" x2="190" y2="125"/>
+    <line x1="210" y1="125" x2="258" y2="125"/>
+  </g>
+  <g stroke="none">
+    <text x="194" y="55">CH<tspan baseline-shift="sub" font-size="10">2</tspan>–O–CO–R<tspan baseline-shift="super" font-size="10">1</tspan></text>
+    <text x="200" y="131" text-anchor="middle">C</text>
+    <text x="264" y="131">H</text>
+    <text x="135" y="131" text-anchor="end">R<tspan baseline-shift="super" font-size="10">2</tspan>–CO–O</text>
+    <text x="194" y="208">CH<tspan baseline-shift="sub" font-size="10">2</tspan>–O–CO–R<tspan baseline-shift="super" font-size="10">3</tspan></text>
+    <text x="400" y="55">位置 1</text>
+    <text x="400" y="131">位置 2</text>
+    <text x="400" y="208">位置 3</text>
+    <text x="20" y="240" font-size="13">縦の結合は紙面の奥へ，横の結合は紙面の手前へ向かう．</text>
+    <text x="20" y="260" font-size="13">（中央の炭素の向きをこのように固定して描き，上を位置 1，下を位置 3 とする）</text>
+  </g>
+  <g stroke-width="1" stroke-dasharray="4 4" opacity="0.5">
+    <line x1="340" y1="50" x2="392" y2="50"/>
+    <line x1="284" y1="126" x2="392" y2="126"/>
+    <line x1="340" y1="203" x2="392" y2="203"/>
+  </g>
+</svg>

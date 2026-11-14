@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 174" width="660" height="174">
+<g transform="translate(0,0)">
+<path d='M 136.1,61.8 L 111.8,75.8' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 111.8,75.8 L 93.9,65.5' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 111.8,71.0 L 96.0,61.9' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 113.0,75.1 L 111.8,75.8 L 110.9,75.3' style='fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 83.1 60.0
+Q 83.1 57.2, 84.6 55.6
+Q 86.0 54.0, 88.6 54.0
+Q 91.2 54.0, 92.7 55.6
+Q 94.1 57.2, 94.1 60.0
+Q 94.1 62.9, 92.6 64.6
+Q 91.2 66.2, 88.6 66.2
+Q 86.0 66.2, 84.6 64.6
+Q 83.1 62.9, 83.1 60.0
+M 88.6 64.9
+Q 90.4 64.9, 91.4 63.7
+Q 92.4 62.4, 92.4 60.0
+Q 92.4 57.7, 91.4 56.5
+Q 90.4 55.3, 88.6 55.3
+Q 86.8 55.3, 85.8 56.5
+Q 84.8 57.7, 84.8 60.0
+Q 84.8 62.4, 85.8 63.7
+Q 86.8 64.9, 88.6 64.9
+' fill='currentColor'/>
+
+</g>
+<text x="110.0" y="138" text-anchor="middle" font-size="14" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">アセトアルデヒド</text>
+<text x="110.0" y="157" text-anchor="middle" font-size="13" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">銀鏡反応 ○・ヨードホルム ○</text>
+<g transform="translate(220,0)">
+<path d='M 94.7,61.8 L 119.0,47.8' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 119.0,47.8 L 119.0,68.9' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 112.6,72.1 L 94.7,61.8' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 96.0,61.1 L 94.7,61.8 L 95.6,62.3' style='fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 117.8,48.5 L 119.0,47.8 L 119.0,48.9' style='fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 113.5 75.8
+Q 113.5 73.0, 115.0 71.4
+Q 116.4 69.8, 119.0 69.8
+Q 121.6 69.8, 123.0 71.4
+Q 124.5 73.0, 124.5 75.8
+Q 124.5 78.7, 123.0 80.4
+Q 121.6 82.0, 119.0 82.0
+Q 116.4 82.0, 115.0 80.4
+Q 113.5 78.7, 113.5 75.8
+M 119.0 80.7
+Q 120.8 80.7, 121.8 79.4
+Q 122.8 78.2, 122.8 75.8
+Q 122.8 73.5, 121.8 72.3
+Q 120.8 71.1, 119.0 71.1
+Q 117.2 71.1, 116.2 72.3
+Q 115.2 73.5, 115.2 75.8
+Q 115.2 78.2, 116.2 79.4
+Q 117.2 80.7, 119.0 80.7
+' fill='currentColor'/>
+
+</g>
+<text x="330.0" y="138" text-anchor="middle" font-size="14" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">エチレンオキシド</text>
+<text x="330.0" y="157" text-anchor="middle" font-size="13" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">銀鏡反応 ×・ヨードホルム ×</text>
+<g transform="translate(440,0)">
+<path d='M 139.9,61.5 L 122.0,71.8' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 122.0,71.8 L 97.8,57.8' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 97.8,57.8 L 79.9,68.1' style='fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+<path d='M 122.9,71.3 L 122.0,71.8 L 120.8,71.1' style='fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 99.0,58.5 L 97.8,57.8 L 96.9,58.3' style='fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+<path d='M 140.8 57.9
+Q 140.8 55.0, 142.2 53.4
+Q 143.6 51.8, 146.3 51.8
+Q 148.9 51.8, 150.3 53.4
+Q 151.7 55.0, 151.7 57.9
+Q 151.7 60.8, 150.3 62.4
+Q 148.9 64.0, 146.3 64.0
+Q 143.7 64.0, 142.2 62.4
+Q 140.8 60.8, 140.8 57.9
+M 146.3 62.7
+Q 148.1 62.7, 149.1 61.5
+Q 150.1 60.3, 150.1 57.9
+Q 150.1 55.5, 149.1 54.4
+Q 148.1 53.2, 146.3 53.2
+Q 144.5 53.2, 143.5 54.3
+Q 142.5 55.5, 142.5 57.9
+Q 142.5 60.3, 143.5 61.5
+Q 144.5 62.7, 146.3 62.7
+' fill='currentColor'/>
+<path d='M 153.6 52.0
+L 155.2 52.0
+L 155.2 57.0
+L 161.3 57.0
+L 161.3 52.0
+L 162.9 52.0
+L 162.9 63.9
+L 161.3 63.9
+L 161.3 58.4
+L 155.2 58.4
+L 155.2 63.9
+L 153.6 63.9
+L 153.6 52.0
+' fill='currentColor'/>
+<path d='M 56.3 65.9
+L 57.9 65.9
+L 57.9 71.0
+L 64.0 71.0
+L 64.0 65.9
+L 65.6 65.9
+L 65.6 77.8
+L 64.0 77.8
+L 64.0 72.3
+L 57.9 72.3
+L 57.9 77.8
+L 56.3 77.8
+L 56.3 65.9
+' fill='currentColor'/>
+<path d='M 68.1 71.8
+Q 68.1 69.0, 69.5 67.4
+Q 70.9 65.8, 73.5 65.8
+Q 76.2 65.8, 77.6 67.4
+Q 79.0 69.0, 79.0 71.8
+Q 79.0 74.7, 77.5 76.3
+Q 76.1 78.0, 73.5 78.0
+Q 70.9 78.0, 69.5 76.3
+Q 68.1 74.7, 68.1 71.8
+M 73.5 76.6
+Q 75.3 76.6, 76.3 75.4
+Q 77.3 74.2, 77.3 71.8
+Q 77.3 69.5, 76.3 68.3
+Q 75.3 67.1, 73.5 67.1
+Q 71.7 67.1, 70.7 68.3
+Q 69.7 69.5, 69.7 71.8
+Q 69.7 74.2, 70.7 75.4
+Q 71.7 76.6, 73.5 76.6
+' fill='currentColor'/>
+
+</g>
+<text x="550.0" y="138" text-anchor="middle" font-size="14" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">エチレングリコール</text>
+<text x="550.0" y="157" text-anchor="middle" font-size="13" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">Na と反応して H<tspan baseline-shift="sub" font-size="10">2</tspan> 発生</text>
+</svg>

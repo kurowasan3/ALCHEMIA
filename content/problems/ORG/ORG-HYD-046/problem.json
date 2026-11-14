@@ -1,0 +1,102 @@
+{
+ "id": "ORG-HYD-046",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-02",
+ "topic": "二重結合の炭素上の水素の数と水素付加生成物による C₅H₁₀ アルケンの決定",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "structure",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "分子式 $\\ce{C5H10}$ のアルケン P，Q，R，S について，次の記述ア〜エがある．\n\\\\ア　P の二重結合をつくる 2 個の炭素原子には，水素原子が合わせて 3 個結合している．P に触媒の存在下で水素を付加させると，枝分かれのあるアルカンになる．\n\\\\イ　Q の二重結合をつくる炭素原子の一方には水素原子が 1 個結合し，他方には水素原子が結合していない．\n\\\\ウ　R の二重結合をつくる炭素原子の一方には水素原子が 2 個結合し，他方には水素原子が結合していない．\n\\\\エ　S にはシス-トランス異性体が存在する．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "P，Q，R，S の構造を示性式で答えよ（S はシス・トランスを区別しなくてよい）．"
+     },
+     {
+      "id": "2",
+      "tex": "P〜S のうち，触媒の存在下で水素を付加させると同じアルカンになるものをすべて選び，そのアルカンの名称を答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "P〜S にそれぞれ臭素を付加させた生成物に含まれる不斉炭素原子の数を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "P：$\\ce{CH2=CH-CH(CH3)2}$，Q：$\\ce{(CH3)2C=CH-CH3}$，R：$\\ce{CH2=C(CH3)-CH2-CH3}$，S：$\\ce{CH3-CH=CH-CH2-CH3}$"
+   },
+   {
+    "id": "2",
+    "tex": "P，Q，R（2-メチルブタン）"
+   },
+   {
+    "id": "3",
+    "tex": "P：1 個，Q：1 個，R：1 個，S：2 個"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\ce{C5H10}$ のアルケンは，1-ペンテン $\\ce{CH2=CH-CH2CH2CH3}$，2-ペンテン $\\ce{CH3-CH=CH-CH2CH3}$，2-メチル-1-ブテン $\\ce{CH2=C(CH3)CH2CH3}$，3-メチル-1-ブテン $\\ce{CH2=CH-CH(CH3)2}$，2-メチル-2-ブテン $\\ce{(CH3)2C=CH-CH3}$ の 5 種類（構造異性体）である．二重結合の炭素上の H の数（左右の組）はそれぞれ (2,1)，(1,1)，(2,0)，(2,1)，(1,0) である．\n\\\\ア：H が合わせて 3 個なのは 1-ペンテンと 3-メチル-1-ブテン．枝分かれのあるアルカンになるのは後者なので，P は $\\boldsymbol{\\ce{CH2=CH-CH(CH3)2}}$．\n\\\\イ：(1,0) は 2-メチル-2-ブテンだけなので Q は $\\boldsymbol{\\ce{(CH3)2C=CH-CH3}}$．\n\\\\ウ：(2,0) は 2-メチル-1-ブテンだけなので R は $\\boldsymbol{\\ce{CH2=C(CH3)-CH2-CH3}}$．\n\\\\エ：二重結合の両方の炭素に異なる 2 つの原子団がつくのは 2-ペンテンだけなので S は $\\boldsymbol{\\ce{CH3-CH=CH-CH2-CH3}}$．\n\n\\textbf{(2)} P，Q，R はどれも炭素骨格が $\\ce{C-C(C)-C-C}$ なので，水素付加でいずれも \\textbf{2-メチルブタン} $\\ce{(CH3)2CH-CH2CH3}$ になる．S からはペンタンが生じる．\n\n\\textbf{(3)} 臭素付加物はそれぞれ\n\\\\P：$\\ce{CH2Br-CHBr-CH(CH3)2}$ … $\\ce{CHBr}$ の C が不斉（H，Br，$\\ce{CH2Br}$，$\\ce{CH(CH3)2}$）→ 1 個\n\\\\Q：$\\ce{(CH3)2CBr-CHBr-CH3}$ … $\\ce{CHBr}$ の C が不斉．$\\ce{(CH3)2CBr}$ の C は同じ $\\ce{CH3}$ を 2 つもつので不斉ではない → 1 個\n\\\\R：$\\ce{CH2Br-CBr(CH3)-CH2CH3}$ … $\\ce{CBr}$ の C が不斉（Br，$\\ce{CH3}$，$\\ce{CH2Br}$，$\\ce{C2H5}$）→ 1 個\n\\\\S：$\\ce{CH3-CHBr-CHBr-CH2CH3}$ … 2 個の $\\ce{CHBr}$ がどちらも不斉 → 2 個\n水素付加では同じアルカンになる P，Q，R も，付加する位置が違うので臭素付加物は互いに異なる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "C₅H₁₀ のアルケン 5 種を，二重結合の炭素上の水素の数の組（置換様式）と水素付加後の炭素骨格で区別して決める．水素付加では同じアルカンになる異性体も，臭素付加物では付加位置の違いで不斉炭素の数や位置が変わることを判断する．"
+ },
+ "concepts": [
+  "hydrocarbon",
+  "halogen",
+  "carbon-silicon"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "アルケン",
+  "構造異性体",
+  "シス-トランス異性体",
+  "不斉炭素原子",
+  "臭素付加",
+  "水素付加"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

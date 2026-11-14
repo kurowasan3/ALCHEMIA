@@ -1,0 +1,117 @@
+{
+ "id": "THE-EQL-152",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "酸素同位体交換平衡の温度依存による古水温の推定（2種の鉱物で水温と海水の同位体組成を同時に決める）",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "酸素には $^{16}$O と $^{18}$O などの安定同位体がある．海水中で炭酸カルシウム（方解石）が沈殿するとき，次のような同位体交換平衡が成り立つ．\n\\[\\ce{CaC^{16}O3 + H2^{18}O <=>[\\text{}] CaC^{18}O^{16}O2 + H2^{16}O}\\]\nこの平衡定数は 1 よりわずかに大きく，温度によって変わる．そこで，試料の $^{18}$O/$^{16}$O 比 $R$ を，標準物質の比 $R_{\\mathrm{std}}$ からのずれとして千分率（‰）で表す．\n\\[\\delta=\\left(\\frac{R}{R_{\\mathrm{std}}}-1\\right)\\times1000\\]\n海水（$\\delta_{\\mathrm{w}}$）と平衡にある方解石（$\\delta_{\\mathrm{c}}$），および別の鉱物 Y（$\\delta_{\\mathrm{Y}}$）について，絶対温度 $T$〔K〕で次の関係が成り立つとする．\n\\[\\delta_{\\mathrm{c}}-\\delta_{\\mathrm{w}}=\\frac{18.0\\times10^{3}}{T}-32.0,\\qquad \\delta_{\\mathrm{Y}}-\\delta_{\\mathrm{w}}=\\frac{13.0\\times10^{3}}{T}-17.0\\]\nある時代の地層から，同じ海水中で同じ温度で生じたと考えられる方解石と鉱物 Y が得られ，$\\delta_{\\mathrm{c}}=28.43$‰，$\\delta_{\\mathrm{Y}}=26.37$‰ であった．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$273\\,\\mathrm{K}$ と $303\\,\\mathrm{K}$ での $\\delta_{\\mathrm{c}}-\\delta_{\\mathrm{w}}$ を求め，上の同位体交換平衡の平衡定数が温度とともにどう変わるかを答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "当時の海水の同位体組成が現在と同じ（$\\delta_{\\mathrm{w}}=0$）と仮定し，方解石のデータだけから水温を有効数字3桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "方解石と鉱物 Y の両方のデータを用いて，当時の水温 $T$ と海水の $\\delta_{\\mathrm{w}}$ を求めよ（$T$ は有効数字3桁，$\\delta_{\\mathrm{w}}$ は小数第1位まで）．また，(2) の推定値との差の原因を述べよ．"
+     },
+     {
+      "id": "4",
+      "tex": "氷期には，$^{16}$O を多く含む水が蒸発し雪となって大陸の氷床にたくわえられるため，海水の $\\delta_{\\mathrm{w}}$ は正の値になる．氷期の方解石について，$\\delta_{\\mathrm{w}}=0$ と仮定して方解石だけから水温を推定すると，真の水温より高く出るか低く出るか．理由とともに答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "鉱物 Y の代わりに，$\\delta-\\delta_{\\mathrm{w}}=\\dfrac{18.0\\times10^{3}}{T}-25.0$ に従う鉱物 Z を用いたとすると，水温と $\\delta_{\\mathrm{w}}$ を決められるか．理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$273\\,\\mathrm{K}$：$33.9$‰，$303\\,\\mathrm{K}$：$27.4$‰．温度が高いほど $\\delta_{\\mathrm{c}}-\\delta_{\\mathrm{w}}$ は小さく，平衡定数は小さくなる（1 に近づく）"
+   },
+   {
+    "id": "2",
+    "tex": "$298\\,\\mathrm{K}$"
+   },
+   {
+    "id": "3",
+    "tex": "$T=293\\,\\mathrm{K}$，$\\delta_{\\mathrm{w}}=-1.0$‰．当時の海水の $\\delta_{\\mathrm{w}}$ は 0 ではなく $-1.0$‰ だったのに 0 と仮定したため，約 $5\\,\\mathrm{K}$ 高く見積もった"
+   },
+   {
+    "id": "4",
+    "tex": "低く出る．$\\dfrac{18.0\\times10^3}{T}=\\delta_{\\mathrm{c}}-\\delta_{\\mathrm{w}}+32.0$ で，真の $\\delta_{\\mathrm{w}}>0$ を 0 とすると右辺が大きくなり，$T$ が小さく出るから"
+   },
+   {
+    "id": "5",
+    "tex": "決められない．方解石との差 $\\delta_{\\mathrm{c}}-\\delta_{\\mathrm{Z}}=-7.0$ が温度によらない一定値になり，温度の情報を含まないから（2 式から $T$ を消せない）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　$\\dfrac{18.0\\times10^3}{273}-32.0=65.93-32.0=\\boldsymbol{33.9}$‰，$\\dfrac{18.0\\times10^3}{303}-32.0=59.41-32.0=\\boldsymbol{27.4}$‰．$\\delta_{\\mathrm{c}}-\\delta_{\\mathrm{w}}$ は，方解石の $^{18}$O/$^{16}$O 比が水の何倍かを表す（ほぼ「平衡定数 $-1$」の千倍）．温度が上がるとこの値が小さくなるので，\\textbf{平衡定数は温度とともに小さくなり 1 に近づく}．同位体の化学的性質の差は高温ほど目立たなくなる．\n\n\\textbf{(2)}　$\\delta_{\\mathrm{w}}=0$ とすると\n\\[\\frac{18.0\\times10^3}{T}=28.43+32.0=60.43\\ \\Rightarrow\\ T=297.9\\fallingdotseq\\boldsymbol{298\\,\\mathrm{K}}\\]\n\n\\textbf{(3)}　2 式の差をとると $\\delta_{\\mathrm{w}}$ が消える：\n\\[\\delta_{\\mathrm{c}}-\\delta_{\\mathrm{Y}}=\\frac{5.0\\times10^3}{T}-15.0\\ \\Rightarrow\\ \\frac{5.0\\times10^3}{T}=2.06+15.0=17.06\\ \\Rightarrow\\ T=293.1\\fallingdotseq\\boldsymbol{293\\,\\mathrm{K}}\\]\nこれを方解石の式に戻すと\n\\[\\delta_{\\mathrm{w}}=28.43-\\frac{18.0\\times10^3}{293.1}+32.0=28.43-61.41+32.0=\\boldsymbol{-1.0}\\]（単位は ‰）\n未知数が $T$ と $\\delta_{\\mathrm{w}}$ の 2 つなので，1 種類の鉱物の 1 つの式では決まらない．(2) は $\\delta_{\\mathrm{w}}$ を 0 と決めつけたため，$\\delta_{\\mathrm{w}}$ の違い $1.0$‰ が温度の違い（約 $5\\,\\mathrm{K}$）にすりかわった．\n\n\\textbf{(4)}　方解石の式を $\\dfrac{18.0\\times10^3}{T}=\\delta_{\\mathrm{c}}-\\delta_{\\mathrm{w}}+32.0$ と書くと，氷期の真の $\\delta_{\\mathrm{w}}$ は正なので，$\\delta_{\\mathrm{w}}=0$ とおくと右辺を真の値より大きく見積もり，$T$ は\\textbf{低く出る}（実際より寒く見える）．氷床の発達による海水の重い同位体の濃縮と，水温の低下は，どちらも方解石の $\\delta_{\\mathrm{c}}$ を大きくする向きにはたらくので，方解石だけでは両者を区別できない．\n\n\\textbf{(5)}　$\\delta_{\\mathrm{c}}-\\delta_{\\mathrm{Z}}=\\left(\\dfrac{18.0\\times10^3}{T}-32.0\\right)-\\left(\\dfrac{18.0\\times10^3}{T}-25.0\\right)=-7.0$ となり $T$ を含まない．$1/T$ の係数（温度への感じ方）が方解石と同じ鉱物を組み合わせても独立な式が得られないので，\\textbf{決められない}．2 つ目の鉱物は，$1/T$ の係数が方解石と異なることが必要である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "同位体交換平衡の平衡定数は温度で変わるので，沈殿の ¹⁸O/¹⁶O 比は水温を記録するが，水自身の同位体組成という第2の未知数もある．温度依存性（1/T の係数）の異なる2つの鉱物の式の差をとると水の組成が消えて温度が決まり，1つの鉱物だけで水の組成を仮定すると温度の推定がずれる向きも判断できる．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "precipitation",
+  "oxygen-sulfur"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "同位体交換平衡",
+  "酸素同位体",
+  "古水温",
+  "平衡定数の温度変化",
+  "連立方程式"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

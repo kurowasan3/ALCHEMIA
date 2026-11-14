@@ -1,0 +1,118 @@
+{
+ "id": "THE-ION-070",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "大気と平衡にある水（雨水）の pH と二酸化炭素の分圧",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "25 ℃ で，二酸化炭素は分圧 $1.0\\times10^{5}\\,\\mathrm{Pa}$ のとき水 1 L に $3.2\\times10^{-2}\\,\\mathrm{mol}$ 溶け，溶解量はヘンリーの法則に従う．溶けた二酸化炭素はすべて $\\ce{H2CO3}$ として扱い，その第1段階の電離定数を $K_1=5.0\\times10^{-7}\\,\\mathrm{mol/L}$ とする．第2段階の電離と水の電離は無視してよい．$\\log_{10}2=0.30$ とする．\n大気（全圧 $1.0\\times10^{5}\\,\\mathrm{Pa}$）は二酸化炭素を体積で $0.040\\,\\%$ 含むものとし，雨水は大気と十分に接して平衡に達しているとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "雨水中の $\\ce{H2CO3}$（電離していないもの）のモル濃度を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "雨水の pH を小数第2位まで求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) で $[\\ce{H+}]$ を求めるとき，電離した分だけ $\\ce{H2CO3}$ の濃度が減ることを考えなくてよいのはなぜか．簡潔に説明せよ．"
+     },
+     {
+      "id": "4",
+      "tex": "大気中の二酸化炭素の割合が 2 倍（$0.080\\,\\%$）になると，雨水の pH はいくらになるか．小数第2位まで求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "二酸化炭素を分圧 $1.0\\times10^{5}\\,\\mathrm{Pa}$ で溶かして密栓した炭酸水の pH を小数第2位まで求めよ．また，この炭酸水の栓を開けて長時間放置すると pH は上がるか，下がるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$1.3\\times10^{-5}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "2",
+    "tex": "5.60"
+   },
+   {
+    "id": "3",
+    "tex": "大気と接しているので，電離して減った分は大気から溶けこんで補われ，$[\\ce{H2CO3}]$ はヘンリーの法則で決まる一定値に保たれるから．"
+   },
+   {
+    "id": "4",
+    "tex": "5.45"
+   },
+   {
+    "id": "5",
+    "tex": "pH 3.90，上がる"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　ヘンリーの法則より，溶ける量は分圧に比例する．$\\ce{CO2}$ の分圧は $1.0\\times10^{5}\\times4.0\\times10^{-4}=40\\,\\mathrm{Pa}$ なので\n\\[ [\\ce{H2CO3}]=3.2\\times10^{-2}\\times\\dfrac{40}{1.0\\times10^{5}}=1.28\\times10^{-5}\\fallingdotseq \\boldsymbol{1.3\\times10^{-5}\\,\\mathrm{mol/L}} \\]\n\n\\textbf{(2)}　$\\ce{H2CO3 <=> H+ + HCO3-}$ で，電離で生じる $\\ce{H+}$ と $\\ce{HCO3-}$ は等しいので $[\\ce{H+}]=[\\ce{HCO3-}]$．$[\\ce{H2CO3}]=C$ は (3) で述べる理由で (1) の値に保たれるから\n\\[ K_1=\\dfrac{[\\ce{H+}]^2}{C}\\quad\\Rightarrow\\quad [\\ce{H+}]=\\sqrt{K_1C}=\\sqrt{5.0\\times10^{-7}\\times1.28\\times10^{-5}}=\\sqrt{6.4\\times10^{-12}} \\]\n\\[ \\mathrm{pH}=-\\tfrac12\\log_{10}(64\\times10^{-13})=-\\tfrac12(6\\times0.30-13)=\\boldsymbol{5.60} \\]\n（$[\\ce{OH-}]\\approx4\\times10^{-9}\\,\\mathrm{mol/L}$ は $[\\ce{H+}]$ に比べて十分小さく，水の電離の無視は妥当．）\n\n\\textbf{(3)}　密閉した容器の中の弱酸なら，電離した分だけ未電離の分子が減る（$C(1-\\alpha)$）．しかし雨水は大気と平衡にあり，$\\ce{H2CO3}$ が電離して減ると大気からそのぶん $\\ce{CO2}$ が溶けこむので，\\textbf{未電離の $\\ce{H2CO3}$ の濃度そのものがヘンリーの法則で一定に決まっている}．このため $[\\ce{H+}]=\\sqrt{K_1C}$ は近似ではなく，（水の電離と第2段階を無視する範囲で）そのまま成り立つ．もし密閉系として $C(1-\\alpha)$ と置くと，この場合 $\\alpha\\approx0.2$ と小さくないため pH は 5.64 となり，違いが出る．\n\n\\textbf{(4)}　$C$ は $\\ce{CO2}$ 分圧に比例し，$[\\ce{H+}]=\\sqrt{K_1C}$ は分圧の平方根に比例する．分圧 2 倍で $[\\ce{H+}]$ は $\\sqrt2$ 倍になるから\n\\[ \\mathrm{pH}=5.60-\\tfrac12\\log_{10}2=5.60-0.15=\\boldsymbol{5.45} \\]\n$\\ce{CO2}$ が 2 倍になっても $[\\ce{H+}]$ は 2 倍にはならない点に注意する．\n\n\\textbf{(5)}　$C=3.2\\times10^{-2}\\,\\mathrm{mol/L}$ なので $[\\ce{H+}]=\\sqrt{5.0\\times10^{-7}\\times3.2\\times10^{-2}}=\\sqrt{1.6\\times10^{-8}}$．\n\\[ \\mathrm{pH}=-\\tfrac12\\log_{10}(16\\times10^{-9})=-\\tfrac12(4\\times0.30-9)=\\boldsymbol{3.90} \\]\n（電離度は $1.3\\times10^{-4}/3.2\\times10^{-2}\\approx0.004$ で小さく，密閉していてもこの値でよい．）栓を開けると $\\ce{CO2}$ の分圧が大気の値（40 Pa）まで下がるので $\\ce{CO2}$ が抜け，最終的に (2) の雨水と同じ状態に近づく．したがって pH は$\\boldsymbol{\\text{上がる}}$（約 5.6 まで）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "大気と接して平衡にある水では，未電離の H₂CO₃（溶けた CO₂）の濃度がヘンリーの法則で一定に保たれるので，[H⁺]＝√(K₁C) は電離による減少を考えずに成り立ち，[H⁺] は CO₂ 分圧の平方根に比例する（分圧 2 倍で pH は 0.15 だけ下がる）．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "carbon-silicon",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "二酸化炭素",
+  "ヘンリーの法則",
+  "雨水のpH",
+  "炭酸",
+  "電離平衡",
+  "開いた系"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

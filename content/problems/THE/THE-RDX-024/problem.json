@@ -1,0 +1,117 @@
+{
+ "id": "THE-RDX-024",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-06",
+ "topic": "半反応式から化学反応式へ（還元剤が硫酸イオンを生じる場合）",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "equation",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "硫酸酸性の二クロム酸カリウム水溶液は，次の半反応式のように酸化剤としてはたらく．\n\\[ \\ce{Cr2O7^2- + 14H+ + 6e- -> 2Cr^3+ + 7H2O} \\]\n還元剤の半反応式は次のとおりである．\n\\[ \\ce{SO2 + 2H2O -> SO4^2- + 4H+ + 2e-}\\qquad \\ce{H2C2O4 -> 2CO2 + 2H+ + 2e-} \\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "二クロム酸イオンと二酸化硫黄の反応をイオン反応式で書け．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) の反応を，イオンを含まない化学反応式（$\\ce{K2Cr2O7}$，$\\ce{H2SO4}$，$\\ce{SO2}$ から $\\ce{K2SO4}$，$\\ce{Cr2(SO4)3}$，$\\ce{H2O}$ が生じる式）で書け．"
+     },
+     {
+      "id": "3",
+      "tex": "二クロム酸カリウムとシュウ酸の反応を，イオンを含まない化学反応式（生成物は $\\ce{K2SO4}$，$\\ce{Cr2(SO4)3}$，$\\ce{CO2}$，$\\ce{H2O}$）で書け．"
+     },
+     {
+      "id": "4",
+      "tex": "(2) と (3) で，$\\ce{K2Cr2O7}$ $1\\,\\mathrm{mol}$ あたりに必要な $\\ce{H2SO4}$ の物質量を比べ，違いが生じる理由を説明せよ．"
+     },
+     {
+      "id": "5",
+      "tex": "$0.0500\\,\\mathrm{mol/L}$ の硫酸酸性二クロム酸カリウム水溶液 $20.0\\,\\mathrm{mL}$ にちょうど吸収されて反応する二酸化硫黄は，標準状態（$0\\,^\\circ\\mathrm{C}$，$1.013\\times10^5\\,\\mathrm{Pa}$）で何 mL か．気体のモル体積を $22.4\\,\\mathrm{L/mol}$ として有効数字3桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{Cr2O7^2- + 2H+ + 3SO2 -> 2Cr^3+ + 3SO4^2- + H2O}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{K2Cr2O7 + H2SO4 + 3SO2 -> K2SO4 + Cr2(SO4)3 + H2O}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{K2Cr2O7 + 4H2SO4 + 3H2C2O4 -> K2SO4 + Cr2(SO4)3 + 6CO2 + 7H2O}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{SO2}$ では $1\\,\\mathrm{mol}$，シュウ酸では $4\\,\\mathrm{mol}$．$\\ce{SO2}$ は酸化されると自身が $\\ce{SO4^2-}$ と $\\ce{H+}$ を生じ，$\\ce{K+}$・$\\ce{Cr^3+}$ と組む硫酸イオンの大部分と，酸化剤が必要とする $\\ce{H+}$ の大部分をまかなうため，外から加える硫酸が少なくてすむ．"
+   },
+   {
+    "id": "5",
+    "tex": "$67.2\\,\\mathrm{mL}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) イオン反応式}\n電子の数をそろえるため，還元剤の式を3倍して酸化剤の式と足す．\n\\[ \\ce{Cr2O7^2- + 14H+ + 3SO2 + 6H2O -> 2Cr^3+ + 7H2O + 3SO4^2- + 12H+} \\]\n両辺に共通な $\\ce{H+}$ と $\\ce{H2O}$ を消すと\n\\[ \\boldsymbol{\\ce{Cr2O7^2- + 2H+ + 3SO2 -> 2Cr^3+ + 3SO4^2- + H2O}} \\]\n\n\\textbf{(2) 化学反応式}\n$\\ce{Cr2O7^2-}$ の相手の $\\ce{2K+}$ と，$\\ce{2H+}$ の相手の $\\ce{SO4^2-}$ を両辺に加える．右辺の陽イオン $\\ce{2K+}$ と $\\ce{2Cr^3+}$（電荷 $+8$）には $\\ce{SO4^2-}$ が4個必要で，反応で生じた3個と硫酸由来の1個でちょうど足りる．\n\\[ \\ce{K2Cr2O7 + H2SO4 + 3SO2 -> K2SO4 + Cr2(SO4)3 + H2O} \\]\n\n\\textbf{(3) シュウ酸との反応}\n還元剤の式を3倍して足すと $\\ce{Cr2O7^2- + 8H+ + 3H2C2O4 -> 2Cr^3+ + 6CO2 + 7H2O}$．$\\ce{8H+}$ と $\\ce{2K+}$ の相手として $\\ce{SO4^2-}$ を4個加えて\n\\[ \\ce{K2Cr2O7 + 4H2SO4 + 3H2C2O4 -> K2SO4 + Cr2(SO4)3 + 6CO2 + 7H2O} \\]\n\n\\textbf{(4) 必要な硫酸の比較}\n$\\ce{K2Cr2O7}$ $1\\,\\mathrm{mol}$ あたり，(2) では $\\ce{H2SO4}$ $\\boldsymbol{1\\,\\mathrm{mol}}$，(3) では $\\boldsymbol{4\\,\\mathrm{mol}}$．\n二クロム酸イオンの還元には $\\ce{H+}$ が 14 個必要だが，$\\ce{SO2}$ が酸化されると $\\ce{H+}$ が 12 個と $\\ce{SO4^2-}$ が 3 個生じるので，外から加える $\\ce{H+}$ は 2 個，生成物の硫酸塩に必要な $\\ce{SO4^2-}$ も 1 個だけでよい．シュウ酸は $\\ce{CO2}$ になって出ていき硫酸イオンを生じないので，$\\ce{SO4^2-}$ 4 個をすべて硫酸から補う必要がある．\n\n\\textbf{(5) 吸収される二酸化硫黄}\n$\\ce{K2Cr2O7}$：$0.0500\\times\\dfrac{20.0}{1000}=1.00\\times10^{-3}\\,\\mathrm{mol}$．(1) より $\\ce{SO2}$ はその 3 倍の $3.00\\times10^{-3}\\,\\mathrm{mol}$（電子で数えても $6\\times1.00\\times10^{-3}\\div2$）．\n\\[ 3.00\\times10^{-3}\\times22.4\\times10^{3}=\\boldsymbol{67.2\\,\\mathrm{mL}} \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "半反応式を電子数で合わせてイオン反応式をつくり，相手のイオンを加えて化学反応式に直す．還元剤（SO2）自身が酸化されて SO4^2- と H+ を生じる場合は，加える硫酸がその分少なくてすみ，同じ酸化剤でも還元剤によって必要な硫酸の量が変わる．"
+ },
+ "concepts": [
+  "redox",
+  "transition-metals",
+  "oxygen-sulfur"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "半反応式",
+  "二クロム酸カリウム",
+  "二酸化硫黄",
+  "化学反応式",
+  "シュウ酸"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

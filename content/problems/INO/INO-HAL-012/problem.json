@@ -1,0 +1,116 @@
+{
+ "id": "INO-HAL-012",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-01",
+ "topic": "ハロゲン化物イオンの識別（ハロゲン化銀と酸化力）",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "condition",
+  "equation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "4本の試験管 A〜D には，$\\ce{NaF}$，$\\ce{NaCl}$，$\\ce{NaBr}$，$\\ce{NaI}$ の水溶液のいずれかが1つずつ入っている．次の実験を行った．\n\n実験1：それぞれに硝酸銀水溶液を加えると，A では沈殿が生じず，B では白色，C では淡黄色，D では黄色の沈殿が生じた．\n\n実験2：B と D の沈殿に過剰のアンモニア水を加えると，B の沈殿は溶けたが，D の沈殿は溶けなかった．\n\n実験3：C の沈殿はチオ硫酸ナトリウム水溶液に溶けた．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A〜D に入っている物質を化学式で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "実験2で B の沈殿が溶けた変化を，イオン反応式で書け．"
+     },
+     {
+      "id": "3",
+      "tex": "実験3で C の沈殿が溶けた変化を，イオン反応式で書け．"
+     },
+     {
+      "id": "4",
+      "tex": "A〜D の水溶液のそれぞれに臭素水を少量加えて振り混ぜたのち，ヘキサンを加えて振ると，ヘキサン層が紫色になったものが1つあった．それはどれか．記号で答え，臭素水との反応をイオン反応式で書け．"
+     },
+     {
+      "id": "5",
+      "tex": "A の水溶液に塩素水を加えても変化は見られない．その理由を簡潔に述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "A：$\\ce{NaF}$，B：$\\ce{NaCl}$，C：$\\ce{NaBr}$，D：$\\ce{NaI}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{AgCl + 2NH3 -> [Ag(NH3)2]+ + Cl-}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{AgBr + 2S2O3^2- -> [Ag(S2O3)2]^3- + Br-}$"
+   },
+   {
+    "id": "4",
+    "tex": "D，$\\ce{2I- + Br2 -> I2 + 2Br-}$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\ce{F2}$ は $\\ce{Cl2}$ より酸化力が強く，$\\ce{F-}$ は $\\ce{Cl2}$ に酸化されないから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} ハロゲン化銀のうち $\\ce{AgF}$ だけは水に溶ける → A は $\\ce{NaF}$．$\\ce{AgCl}$ 白色，$\\ce{AgBr}$ 淡黄色，$\\ce{AgI}$ 黄色より B：$\\ce{NaCl}$，C：$\\ce{NaBr}$，D：$\\ce{NaI}$．\n\n\\textbf{(2)} $\\ce{AgCl}$ はアンモニア水にジアンミン銀(I) イオンとなって溶ける：$\\ce{AgCl + 2NH3 -> [Ag(NH3)2]+ + Cl-}$．$\\ce{AgI}$ はアンモニア水に溶けない．\n\n\\textbf{(3)} $\\ce{AgBr + 2S2O3^2- -> [Ag(S2O3)2]^3- + Br-}$（写真の定着に利用された反応）．\n\n\\textbf{(4)} 酸化力は $\\ce{F2}>\\ce{Cl2}>\\ce{Br2}>\\ce{I2}$．$\\ce{Br2}$ が酸化できるのは $\\ce{I-}$ だけで，$\\ce{2I- + Br2 -> I2 + 2Br-}$．生じた $\\ce{I2}$ がヘキサンに溶けて紫色になる．\\textbf{D}．\n\n\\textbf{(5)} $\\ce{Cl2}$ は $\\ce{F2}$ より酸化力が弱いので，$\\ce{F-}$ から電子を奪えない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ハロゲン化銀の水への溶解性・色・アンモニア水やチオ硫酸イオンへの溶け方の違いと，ハロゲン単体の酸化力の順を組み合わせて，ハロゲン化物イオンを識別する．"
+ },
+ "concepts": [
+  "halogen",
+  "complex-ion",
+  "oxygen-sulfur"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ハロゲン",
+  "ハロゲン化銀",
+  "錯イオン",
+  "酸化力"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

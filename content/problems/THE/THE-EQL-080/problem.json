@@ -1,0 +1,109 @@
+{
+ "id": "THE-EQL-080",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "炭酸塩の解離圧の違いと密閉容器内での二酸化炭素の移動",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "金属の炭酸塩 $\\ce{MCO3}$ を加熱すると，$\\ce{MCO3(s) <=>[\\text{}] MO(s) + CO2(g)}$ の平衡が成り立つ．固体の $\\ce{MCO3}$ と $\\ce{MO}$ がともに存在しているとき，$\\ce{CO2}$ の分圧は温度だけで決まる一定の値（解離圧）になる．$1000\\,\\mathrm{K}$ における解離圧は次のとおりとする．\n\\[\\ce{MgCO3}:\\ 1\\times10^{7}\\,\\mathrm{Pa}\\ \\text{以上}\\qquad \\ce{CaCO3}:\\ 5.0\\times10^{3}\\,\\mathrm{Pa}\\qquad \\ce{SrCO3}:\\ 5.0\\times10^{1}\\,\\mathrm{Pa}\\]\n容器の容積は $8.31\\,\\mathrm{L}$，気体定数は $8.31\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$ とし，固体の体積は無視する．温度はすべて $1000\\,\\mathrm{K}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{CO2}$ の分圧が $1.0\\times10^{4}\\,\\mathrm{Pa}$ に保たれた空間に，$\\ce{MgCO3}$，$\\ce{CaCO3}$，$\\ce{SrCO3}$，$\\ce{MgO}$，$\\ce{CaO}$，$\\ce{SrO}$ をそれぞれ少量ずつ別々に置いた．$\\ce{CO2}$ を放出して分解するもの，$\\ce{CO2}$ を吸収するものをそれぞれすべて答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "真空の容器に $\\ce{MgCO3}$ $0.100\\,\\mathrm{mol}$，$\\ce{CaO}$ $0.050\\,\\mathrm{mol}$，$\\ce{SrO}$ $0.020\\,\\mathrm{mol}$ を入れて平衡に達したときの，$\\ce{CO2}$ の圧力と，容器内の各固体の物質量を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "前問で $\\ce{CaO}$ を $0.090\\,\\mathrm{mol}$ に変えた場合について，同様に答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "前問の条件で $\\ce{CaO}$ の物質量だけを $n\\,\\mathrm{mol}$ に変える．平衡での $\\ce{CO2}$ の圧力が $5.0\\times10^{3}\\,\\mathrm{Pa}$ になる $n$ の範囲を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "分解するもの：$\\ce{MgCO3}$　吸収するもの：$\\ce{CaO}$，$\\ce{SrO}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{CO2}$ $3.0\\times10^{4}\\,\\mathrm{Pa}$；$\\ce{MgO}$ $0.100\\,\\mathrm{mol}$，$\\ce{CaCO3}$ $0.050\\,\\mathrm{mol}$，$\\ce{SrCO3}$ $0.020\\,\\mathrm{mol}$（$\\ce{MgCO3}$，$\\ce{CaO}$，$\\ce{SrO}$ は $0$）"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{CO2}$ $5.0\\times10^{3}\\,\\mathrm{Pa}$；$\\ce{MgO}$ $0.100\\,\\mathrm{mol}$，$\\ce{CaCO3}$ $0.075\\,\\mathrm{mol}$，$\\ce{CaO}$ $0.015\\,\\mathrm{mol}$，$\\ce{SrCO3}$ $0.020\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "4",
+    "tex": "$n\\geqq0.075$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　$K_p=p_{\\ce{CO2}}$ なので，周囲の $\\ce{CO2}$ の分圧 $p$ が解離圧 $P_d$ より小さければ $\\ce{MCO3}$ は分解し，大きければ $\\ce{MO}$ が $\\ce{CO2}$ を吸収する．固体の量は平衡定数に入らない．\n\n\\textbf{(1)}　$1.0\\times10^{4}\\,\\mathrm{Pa}$ より解離圧が大きいのは $\\ce{MgCO3}$ だけなので，$\\boldsymbol{\\ce{MgCO3}}$ は分解する．$\\ce{CaCO3}$・$\\ce{SrCO3}$ は解離圧が小さいので分解せず，逆に $\\boldsymbol{\\ce{CaO}}$・$\\boldsymbol{\\ce{SrO}}$ は $\\ce{CO2}$ を吸収して炭酸塩になる．$\\ce{MgO}$ は $\\ce{CO2}$ を吸収しない．\n\n\\textbf{(2)}　$\\ce{MgCO3}$ が分解して出した $\\ce{CO2}$ は，解離圧の小さい $\\ce{SrO}$・$\\ce{CaO}$ に吸収される．かりに $\\ce{MgCO3}$ がすべて分解し，$\\ce{SrO}$・$\\ce{CaO}$ がすべて炭酸塩になったとすると，気体の $\\ce{CO2}$ は\n\\[0.100-0.020-0.050=0.030\\,\\mathrm{mol},\\qquad p=\\frac{0.030\\times8.31\\times10^{3}\\times1000}{8.31}=\\boldsymbol{3.0\\times10^{4}\\,\\mathrm{Pa}}\\]\nこの圧力は $\\ce{MgCO3}$ の解離圧より小さい（$\\ce{MgCO3}$ は残れない）．また $\\ce{CaCO3}$・$\\ce{SrCO3}$ の解離圧より大きい（$\\ce{CaO}$・$\\ce{SrO}$ は残れない）．したがって仮定は正しく，固体は $\\ce{MgO}$ $0.100\\,\\mathrm{mol}$，$\\ce{CaCO3}$ $0.050\\,\\mathrm{mol}$，$\\ce{SrCO3}$ $0.020\\,\\mathrm{mol}$．\n\n\\textbf{(3)}　同じように考えると気体は $0.100-0.020-0.090<0$ となり，$\\ce{CaO}$ をすべて炭酸塩にするには $\\ce{CO2}$ が足りない．よって $\\ce{CaO}$ と $\\ce{CaCO3}$ が共存し，圧力は $\\ce{CaCO3}$ の解離圧 $\\boldsymbol{5.0\\times10^{3}\\,\\mathrm{Pa}}$ に決まる．このとき気体の $\\ce{CO2}$ は\n\\[\\frac{5.0\\times10^{3}\\times8.31}{8.31\\times10^{3}\\times1000}=0.0050\\,\\mathrm{mol}\\]\n$\\ce{CaO}$ に吸収された $\\ce{CO2}$ は $0.100-0.020-0.0050=0.075\\,\\mathrm{mol}$ なので，$\\ce{CaCO3}$ $\\boldsymbol{0.075\\,\\mathrm{mol}}$，$\\ce{CaO}$ $\\boldsymbol{0.015\\,\\mathrm{mol}}$．$5.0\\times10^{3}\\,\\mathrm{Pa}$ は $\\ce{SrCO3}$ の解離圧より大きいので $\\ce{SrO}$ はすべて $\\ce{SrCO3}$（$0.020\\,\\mathrm{mol}$），$\\ce{MgCO3}$ の解離圧より小さいので $\\ce{MgO}$ $0.100\\,\\mathrm{mol}$．\n\n\\textbf{(4)}　圧力が $5.0\\times10^{3}\\,\\mathrm{Pa}$ になるのは，$\\ce{CaO}$ が使い切られずに残る（または使い切られたちょうどそのとき）場合である．$\\ce{CaO}$ が吸収できる $\\ce{CO2}$ は最大 $0.100-0.020-0.0050=0.075\\,\\mathrm{mol}$ なので，$\\boldsymbol{n\\geqq0.075}$．$n<0.075$ では $\\ce{CaO}$ がすべて $\\ce{CaCO3}$ になり，圧力は (2) と同じように残りの気体の量で決まり，$5.0\\times10^{3}\\,\\mathrm{Pa}$ より大きくなる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "固体の炭酸塩と酸化物が共存するとき CO₂ の分圧は解離圧に固定されるので，解離圧の異なる炭酸塩・酸化物を同じ容器に入れると，解離圧の大きい炭酸塩から小さい側の酸化物へ CO₂ が移る．どの固体の組が残るかを仮定して圧力を求め，解離圧との大小で仮定を確かめる．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "carbon-silicon",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "解離圧",
+  "固体を含む平衡",
+  "炭酸塩",
+  "二酸化炭素",
+  "場合分け"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

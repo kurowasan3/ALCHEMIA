@@ -1,0 +1,131 @@
+{
+ "id": "ORG-ARO-014",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-05",
+ "topic": "C₈H₁₀O の異性体（フェノール類・アルコール・エーテル）の数え上げ",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "structure",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "分子式 $\\ce{C8H10O}$ で表され，ベンゼン環を 1 つもつ化合物について，次の問いに答えよ．ただし，鏡像異性体は区別しないものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "塩化鉄(III) 水溶液で呈色するものは何種類あるか．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) のうちベンゼンの二置換体であって，ベンゼン環の水素原子 1 個を塩素原子で置換した化合物が 2 種類しか存在しないものを示性式で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(1) のうちベンゼンの三置換体であって，ベンゼン環の水素原子 1 個を塩素原子で置換した化合物が 2 種類しか存在しないものをすべて名称で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "金属ナトリウムと反応しないものは何種類あるか．"
+     },
+     {
+      "id": "5",
+      "tex": "金属ナトリウムと反応するが塩化鉄(III) 水溶液で呈色しないものは何種類あるか．また，そのうち不斉炭素原子をもつものを示性式で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：C₈H₁₀O の異性体（フェノール類・アルコール・エーテル）の数え上げ",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$9$ 種類"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{HOC6H4C2H5}$（p-エチルフェノール）"
+   },
+   {
+    "id": "3",
+    "tex": "2,6-ジメチルフェノール，3,5-ジメチルフェノール"
+   },
+   {
+    "id": "4",
+    "tex": "$5$ 種類"
+   },
+   {
+    "id": "5",
+    "tex": "$5$ 種類，$\\ce{C6H5CH(OH)CH3}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 呈色するのはベンゼン環に $\\ce{-OH}$ が直接結合したフェノール類．残りの炭素 2 個は「$\\ce{-C2H5}$ 1 つ」か「$\\ce{-CH3}$ 2 つ」．\\\\\n・エチルフェノール：$\\ce{OH}$ に対して o-，m-，p- の 3 種類．\\\\\n・ジメチルフェノール：3 つの置換基（$\\ce{OH}$，$\\ce{CH3}$，$\\ce{CH3}$）の配置は 2,3-，2,4-，2,5-，2,6-，3,4-，3,5- の 6 種類．\\\\\n合計 $\\boldsymbol{9}$ 種類．\\\\\n\\textbf{(2)} 環に残る H は 4 個．o-，m- 体は 4 個の H がすべて異なる位置（4 種類）だが，p- 体は対称軸があり，$\\ce{OH}$ の隣とその隣の 2 種類だけ．答え $\\boldsymbol{\\ce{HOC6H4C2H5}}$（p-エチルフェノール）．\\\\\n\\textbf{(3)} 環に残る H は 3 個．$\\ce{OH}$ を通る対称軸をもつ配置なら 2 個の H が同じになって 2 種類になる．それは 2,6-（H は 3,5 位が等価，4 位）と 3,5-（H は 2,6 位が等価，4 位）．答え \\textbf{2,6-ジメチルフェノール，3,5-ジメチルフェノール}．\\\\\n\\textbf{(4)} Na と反応しない（$\\ce{-OH}$ をもたない）のはエーテル：$\\ce{C6H5OCH2CH3}$，$\\ce{C6H5CH2OCH3}$，$\\ce{CH3C6H4OCH3}$（o-，m-，p-）の $\\boldsymbol{5}$ 種類．\\\\\n\\textbf{(5)} アルコール（側鎖に $\\ce{-OH}$）は $\\ce{C6H5CH2CH2OH}$，$\\ce{C6H5CH(OH)CH3}$，$\\ce{CH3C6H4CH2OH}$（o-，m-，p-）の $\\boldsymbol{5}$ 種類．不斉炭素原子をもつのは $\\ce{H, OH, CH3, C6H5}$ が結合した炭素をもつ $\\boldsymbol{\\ce{C6H5CH(OH)CH3}}$（1-フェニルエタノール）．（異性体は全部で $9+5+5=19$ 種類．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "C₈H₁₀O の芳香族化合物を，フェノール類（FeCl₃ 呈色）・アルコール（Na と反応・非呈色）・エーテル（Na と反応しない）に分けて数え上げ，環の H を Cl で置換した異性体の数（対称性）から置換基の位置を決める．"
+ },
+ "concepts": [
+  "aromatic",
+  "transition-metals",
+  "organic-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "異性体の数",
+  "フェノール類",
+  "対称性",
+  "塩化鉄(III)",
+  "構造決定"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

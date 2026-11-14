@@ -1,0 +1,123 @@
+{
+ "id": "THE-RDX-018",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-06",
+ "topic": "塩化スズ(II)による水銀(II)の逐次還元と沈殿量の場合分け",
+ "course": "化学",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "塩化スズ(II) $\\ce{SnCl2}$ は強い還元剤で，塩化水銀(II) $\\ce{HgCl2}$ の水溶液に加えると，まず水に溶けにくい白色の塩化水銀(I) $\\ce{Hg2Cl2}$ が沈殿し，さらに $\\ce{SnCl2}$ を加えると $\\ce{Hg2Cl2}$ が還元されて黒色の微細な水銀 $\\ce{Hg}$ に変わる．スズは $\\ce{SnCl4}$（スズ(IV)）になる．\n以下では，加えた $\\ce{SnCl2}$ はすべて反応し，$\\ce{Hg2Cl2}$ と $\\ce{Hg}$ はすべて沈殿として回収され，$\\ce{Hg2Cl2}$ と $\\ce{Hg}$ を含む沈殿は灰黒色に見えるものとする．原子量は Hg = 201，Cl = 35.5 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "上の 2 段階の反応を，それぞれ化学反応式で表せ．また，$\\ce{HgCl2}$ が溶液中に残っている間は，沈殿に $\\ce{Hg}$ が含まれないと考えてよい．その理由を，$\\ce{Hg}$ と $\\ce{HgCl2}$ の間の反応式を示して説明せよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$\\ce{HgCl2}$ $1.00\\times10^{-2}$ mol を含む塩酸酸性の水溶液に $\\ce{SnCl2}$ を $s$ [mol] 加えたときの沈殿の質量 $m$ [g] を，$0\\le s\\le1.50\\times10^{-2}$ の範囲で $s$ の式で表せ（範囲ごとに場合分けすること）．また，$m$ が最大になる $s$ と，そのときの $m$ を答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) と同じ水溶液に，ある量の $\\ce{SnCl2}$ を加えたところ，沈殿 2.15 g が得られた．沈殿をろ過し，ろ液にさらに $\\ce{SnCl2}$ を加えても新たな沈殿は生じなかった．加えた $\\ce{SnCl2}$ の物質量を有効数字 3 桁で求めよ．また，沈殿中の $\\ce{Hg2Cl2}$ と $\\ce{Hg}$ の質量をそれぞれ有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\ce{HgCl2}$ を含む別の水溶液（物質量は未知）に $\\ce{SnCl2}$ $6.00\\times10^{-3}$ mol を加えたところ，灰黒色の沈殿が 2.37 g 得られた．もとの $\\ce{HgCl2}$ の物質量を有効数字 3 桁で求めよ．考えられる場合をすべて検討し，答えが 1 つに決まることを示すこと．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：塩化スズ(II)による水銀(II)の逐次還元と沈殿量の場合分け",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{2HgCl2 + SnCl2 -> Hg2Cl2 + SnCl4}$，$\\ce{Hg2Cl2 + SnCl2 -> 2Hg + SnCl4}$．$\\ce{Hg}$ が生じても $\\ce{HgCl2}$ が残っていれば $\\ce{Hg + HgCl2 -> Hg2Cl2}$ により $\\ce{Hg2Cl2}$ に戻るから"
+   },
+   {
+    "id": "2",
+    "tex": "$0\\le s\\le5.00\\times10^{-3}$：$m=473s$，$5.00\\times10^{-3}\\le s\\le1.00\\times10^{-2}$：$m=2.72-71s$，$1.00\\times10^{-2}\\le s\\le1.50\\times10^{-2}$：$m=2.01$．最大は $s=5.00\\times10^{-3}$ mol のとき $m=2.37$ g（2.365 g）"
+   },
+   {
+    "id": "3",
+    "tex": "$8.03\\times10^{-3}$ mol．$\\ce{Hg2Cl2}$ 0.933 g，$\\ce{Hg}$ 1.22 g"
+   },
+   {
+    "id": "4",
+    "tex": "$1.03\\times10^{-2}$ mol"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　Sn は $+2\\to+4$（電子 2 個を放出），Hg は第 1 段階で $+2\\to+1$，第 2 段階で $+1\\to0$．\n\\[\\ce{2HgCl2 + SnCl2 -> Hg2Cl2 + SnCl4}\\qquad \\ce{Hg2Cl2 + SnCl2 -> 2Hg + SnCl4}\\]\n仮に途中で $\\ce{Hg}$ ができても，まだ $\\ce{HgCl2}$ があれば $\\ce{Hg + HgCl2 -> Hg2Cl2}$（酸化数 $0$ と $+2$ から $+1$ ができる反応）で $\\ce{Hg2Cl2}$ に戻る．したがって全体としては，$\\ce{HgCl2}$ がすべて $\\ce{Hg2Cl2}$ になった後で初めて $\\ce{Hg}$ が沈殿に残る．逐次反応の「順番」がこの反応で保証される．\n\n\\textbf{(2)}　$\\ce{Hg2Cl2}=473$．$n=1.00\\times10^{-2}$ mol とする．\n\\begin{itemize}\n\\item $0\\le s\\le n/2=5.00\\times10^{-3}$：$\\ce{Hg2Cl2}$ が $s$ mol．$m=\\boldsymbol{473s}$（白色）\n\\item $5.00\\times10^{-3}\\le s\\le1.00\\times10^{-2}$：超えた分 $s-5.00\\times10^{-3}$ mol の $\\ce{SnCl2}$ が $\\ce{Hg2Cl2}$ を同じ物質量だけ $\\ce{Hg}$ に変える．$\\ce{Hg2Cl2}$ は $5.00\\times10^{-3}-(s-5.00\\times10^{-3})=1.00\\times10^{-2}-s$ mol，$\\ce{Hg}$ は $2(s-5.00\\times10^{-3})$ mol で\n\\[m=473(1.00\\times10^{-2}-s)+201\\times2(s-5.00\\times10^{-3})=\\boldsymbol{2.72-71s}\\]\n（$\\ce{Hg2Cl2}$ 1 mol が $\\ce{Hg}$ 2 mol に変わると $\\ce{Cl2}$ 分 71 g だけ軽くなる）（灰黒色）\n\\item $s\\ge1.00\\times10^{-2}$：すべて $\\ce{Hg}$（$1.00\\times10^{-2}$ mol），$m=\\boldsymbol{2.01}$ で一定．\n\\end{itemize}\n$m$ は $s=5.00\\times10^{-3}$ mol で最大 $473\\times5.00\\times10^{-3}=2.365\\approx\\boldsymbol{2.37}$ g となり，その後は減少して 2.01 g で一定になる（解答図）．\n\n\\textbf{(3)}　$m=2.15$ g となる $s$ は 2 つある．\n\\begin{itemize}\n\\item 第 1 区間：$473s=2.15$ より $s=4.55\\times10^{-3}$ mol．このとき $\\ce{HgCl2}$ が $1.00\\times10^{-2}-2\\times4.55\\times10^{-3}=9.1\\times10^{-4}$ mol 残っているので，ろ液に $\\ce{SnCl2}$ を加えると $\\ce{Hg2Cl2}$ が沈殿するはずである．\n\\item 第 2 区間：$2.72-71s=2.15$ より $s=8.03\\times10^{-3}$ mol．このとき $\\ce{Hg(II)}$ はろ液に残っておらず，観察と合う．\n\\end{itemize}\nよって $s=\\boldsymbol{8.03\\times10^{-3}}$ mol．沈殿は $\\ce{Hg2Cl2}$ $1.00\\times10^{-2}-8.03\\times10^{-3}=1.97\\times10^{-3}$ mol（$\\boldsymbol{0.933}$ g），$\\ce{Hg}$ $2\\times(8.03-5.00)\\times10^{-3}=6.06\\times10^{-3}$ mol（$\\boldsymbol{1.22}$ g）．質量だけでは答えが 2 つあり，追加の観察で 1 つに絞れる点が要点である．\n\n\\textbf{(4)}　$\\ce{HgCl2}$ を $n$ mol，$s=6.00\\times10^{-3}$ mol とし，3 つの場合を調べる．\n\\begin{itemize}\n\\item $s\\le n/2$：沈殿は白色の $\\ce{Hg2Cl2}$ だけで $473\\times6.00\\times10^{-3}=2.84$ g．灰黒色でも 2.37 g でもないので不適．\n\\item $s\\ge n$：沈殿は $\\ce{Hg}$ だけで $201n=2.37$ より $n=1.18\\times10^{-2}$．しかしこれは $n>s$ となり前提に反するので不適．\n\\item $n/2\\le s\\le n$：(2) と同様に $m=473(n-s)+201(2s-n)=272n-71s$．$272n-71\\times6.00\\times10^{-3}=2.37$ より $n=1.028\\times10^{-2}$．$n/2=5.14\\times10^{-3}\\le6.00\\times10^{-3}\\le n$ を満たし，灰黒色（$\\ce{Hg2Cl2}$ と $\\ce{Hg}$ の混合物）とも合う．\n\\end{itemize}\nよって $n=\\boldsymbol{1.03\\times10^{-2}}$ mol．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "還元剤 Sn²⁺ が Hg(II) を Hg(I)（Hg₂Cl₂），さらに Hg(0) へと逐次的に還元する系で，加えた還元剤の量に対する沈殿の質量が増加から減少に転じる折れ線になることを導く．同じ沈殿質量に 2 つの添加量が対応するため，ろ液の性質や沈殿の色などの追加情報で答えを 1 つに絞り，未知量の決定では場合分けと前提との整合性の確認を行う．"
+ },
+ "concepts": [
+  "redox",
+  "precipitation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "酸化還元反応",
+  "逐次反応",
+  "場合分け",
+  "スズ",
+  "水銀",
+  "沈殿"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

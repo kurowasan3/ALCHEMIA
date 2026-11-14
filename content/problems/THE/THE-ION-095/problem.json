@@ -1,0 +1,109 @@
+{
+ "id": "THE-ION-095",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "金属イオンを含む酸の滴定曲線にあらわれる沈殿生成の緩衝域と溶解度積",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "塩化水素 $2.0\\times10^{-3}\\,\\mathrm{mol}$ と塩化銅(II) $1.0\\times10^{-3}\\,\\mathrm{mol}$ を含む水溶液 $50.0\\,\\mathrm{mL}$ に，$0.100\\,\\mathrm{mol/L}$ の水酸化ナトリウム水溶液を少しずつ加えながら pH を測定する．水酸化銅(II) の溶解度積を $K_{\\mathrm{sp}}=[\\ce{Cu^2+}][\\ce{OH-}]^2=2.2\\times10^{-20}\\,(\\mathrm{mol/L})^3$，水のイオン積を $K_{\\mathrm w}=1.0\\times10^{-14}\\,(\\mathrm{mol/L})^2$ とする．溶液の体積は混合した溶液の体積の和とし，$\\ce{Cu^2+}$ の加水分解や錯イオンの生成は考えない．対数・平方根の計算には電卓を用いてよい．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "塩化水素がちょうど中和されるときの水酸化ナトリウム水溶液の体積を求めよ．また，そのときの溶液で $\\ce{Cu(OH)2}$ が沈殿し始める pH を小数第2位まで求め，それより $0.10\\,\\mathrm{mL}$ 少ない滴下量の pH と比べることで，沈殿がいつ生じ始めるかを答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "水酸化ナトリウム水溶液を $30.0\\,\\mathrm{mL}$ 加えたときの pH を小数第2位まで求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\ce{Cu^2+}$ の $99.9\\,\\%$ が沈殿するのは水酸化ナトリウム水溶液を何 mL 加えたときか．そのときの pH を小数第1位まで求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\ce{Cu^2+}$ の $25\\,\\%$ が沈殿したときと $75\\,\\%$ が沈殿したときの pH の差を小数第2位まで求め，この差が $K_{\\mathrm{sp}}$ の値によらないことを示せ．また，$\\ce{Cu^2+}$ のかわりに同じ物質量の 2 価の金属イオン $\\ce{M^2+}$ を用いて同じ実験をしたところ，$\\ce{M^2+}$ の $50\\,\\%$ が沈殿したときの pH が 7.53 であった．$\\ce{M(OH)2}$ の溶解度積を有効数字2桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$20.0\\,\\mathrm{mL}$．沈殿し始める pH は 5.09．$0.10\\,\\mathrm{mL}$ 手前の pH は約 3.84 でこれより低いので，沈殿は塩化水素の中和がほぼ完了した $20.0\\,\\mathrm{mL}$ 付近から生じ始める．"
+   },
+   {
+    "id": "2",
+    "tex": "5.27"
+   },
+   {
+    "id": "3",
+    "tex": "$40.0\\,\\mathrm{mL}$（$39.98\\,\\mathrm{mL}$），pH 6.6"
+   },
+   {
+    "id": "4",
+    "tex": "0.27．$\\mathrm{pH}=14+\\frac12\\log_{10}K_{\\mathrm{sp}}-\\frac12\\log_{10}[\\ce{Cu^2+}]$ の差では $K_{\\mathrm{sp}}$ の項が消え，濃度の比だけで決まるから．$\\ce{M(OH)2}$ の溶解度積は $7.2\\times10^{-16}\\,(\\mathrm{mol/L})^3$．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{沈殿が生じている間の pH}　沈殿が共存する間は $[\\ce{OH-}]=\\sqrt{K_{\\mathrm{sp}}/[\\ce{Cu^2+}]}$ なので\n\\[ \\mathrm{pH}=14+\\tfrac12\\log_{10}K_{\\mathrm{sp}}-\\tfrac12\\log_{10}[\\ce{Cu^2+}] \\]\n加えた $\\ce{OH-}$ は $\\ce{Cu^2+ + 2OH- -> Cu(OH)2}$ に使われるので，$[\\ce{Cu^2+}]$ はゆっくり減り，pH もゆっくり上がる（緩衝作用に似た平らな部分）．\n\n\\textbf{(1)} $\\ce{H+ + OH- -> H2O}$ に $\\ce{OH-}$ $2.0\\times10^{-3}\\,\\mathrm{mol}$ → $\\boldsymbol{20.0\\,\\mathrm{mL}}$．このとき $[\\ce{Cu^2+}]=\\dfrac{1.0\\times10^{-3}}{0.0700}=1.43\\times10^{-2}\\,\\mathrm{mol/L}$．\n$[\\ce{OH-}]=\\sqrt{\\dfrac{2.2\\times10^{-20}}{1.43\\times10^{-2}}}=1.24\\times10^{-9}$，$\\mathrm{pH}=\\boldsymbol{5.09}$．\n$19.9\\,\\mathrm{mL}$ では残る $\\ce{H+}$ が $1.0\\times10^{-5}\\,\\mathrm{mol}$，$[\\ce{H+}]=\\dfrac{1.0\\times10^{-5}}{0.0699}=1.43\\times10^{-4}$，pH は約 3.84 で 5.09 よりずっと低く沈殿しない．pH は当量点の直前で急に上がるので，\\textbf{沈殿は 20.0 mL 付近から生じ始める}（酸の中和と沈殿の生成はほとんど重ならない）．\n\n\\textbf{(2)} $30.0\\,\\mathrm{mL}$ では沈殿に使われた $\\ce{OH-}$ が $1.0\\times10^{-3}\\,\\mathrm{mol}$，沈殿した $\\ce{Cu^2+}$ は $5.0\\times10^{-4}\\,\\mathrm{mol}$（半分）．$[\\ce{Cu^2+}]=\\dfrac{5.0\\times10^{-4}}{0.0800}=6.25\\times10^{-3}$．\n$[\\ce{OH-}]=\\sqrt{\\dfrac{2.2\\times10^{-20}}{6.25\\times10^{-3}}}=1.88\\times10^{-9}$，$\\mathrm{pH}=\\boldsymbol{5.27}$．\n\n\\textbf{(3)} 沈殿に必要な $\\ce{OH-}$ は $2\\times0.999\\times1.0\\times10^{-3}\\,\\mathrm{mol}$ で，$20.0+19.98=\\boldsymbol{40.0\\,\\mathrm{mL}}$．$[\\ce{Cu^2+}]=\\dfrac{1.0\\times10^{-6}}{0.0900}=1.1\\times10^{-5}$，$[\\ce{OH-}]=\\sqrt{\\dfrac{2.2\\times10^{-20}}{1.1\\times10^{-5}}}=4.5\\times10^{-8}$，$\\mathrm{pH}=\\boldsymbol{6.6}$．\n20 mL 加える間に pH は 5.1 から 6.6 までしか上がらず，沈殿がほぼ終わったところで pH が急上昇する（第 2 の当量点，40.0 mL）．平らな部分の長さから $\\ce{Cu^2+}$ の量が，高さから $K_{\\mathrm{sp}}$ が分かる．\n\n\\textbf{(4)} 25 % 沈殿（25.0 mL）：$[\\ce{Cu^2+}]=\\dfrac{7.5\\times10^{-4}}{0.0750}=1.00\\times10^{-2}$．75 % 沈殿（35.0 mL）：$[\\ce{Cu^2+}]=\\dfrac{2.5\\times10^{-4}}{0.0850}=2.94\\times10^{-3}$．\n\\[ \\Delta\\mathrm{pH}=\\tfrac12\\log_{10}\\dfrac{1.00\\times10^{-2}}{2.94\\times10^{-3}}=\\tfrac12\\log_{10}\\dfrac{0.085}{0.025}=\\tfrac12\\log_{10}3.4=\\boldsymbol{0.27} \\]\npH の式の差をとると $\\tfrac12\\log_{10}K_{\\mathrm{sp}}$ が打ち消し合うので，平らな部分の傾き（形）は量的関係（沈殿した割合と体積）だけで決まり，$K_{\\mathrm{sp}}$ は平らな部分の高さだけを決める．\n$\\ce{M^2+}$ の 50 % 沈殿時も $[\\ce{M^2+}]=6.25\\times10^{-3}\\,\\mathrm{mol/L}$，$[\\ce{OH-}]=10^{7.53-14}=10^{-6.47}=3.39\\times10^{-7}$ なので\n\\[ K_{\\mathrm{sp}}=6.25\\times10^{-3}\\times(3.39\\times10^{-7})^2=\\boldsymbol{7.2\\times10^{-16}\\,(\\mathrm{mol/L})^3} \\]\n（このとき pH 7.53 は (1) の $\\ce{Cu^2+}$ の沈殿開始よりも十分高く，同様に酸の中和の後で沈殿が始まる．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "酸と金属イオンの混合溶液を強塩基で滴定すると，酸の中和の後に水酸化物の沈殿が生じる区間ができ，そこでは pH が [M²⁺] の減少に応じて ½log の割合でゆっくり上がる．平らな部分の長さは金属イオンの量，高さは溶解度積で決まり，形（一定割合の沈殿の間の pH 差）は溶解度積によらない．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "precipitation",
+  "transition-metals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "溶解度積",
+  "水酸化銅(II)",
+  "沈殿滴定",
+  "滴定曲線",
+  "pH"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

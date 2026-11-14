@@ -1,0 +1,99 @@
+{
+ "id": "THE-EQL-017",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "アレニウスの式と触媒の効果",
+ "course": "化学",
+ "level": 3,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "反応の速度定数 $k$ はアレニウスの式 $k=Ae^{-\\frac{E_a}{RT}}$ で表され，両辺の常用対数をとると\n\\[ \\log_{10}k=-\\dfrac{E_a}{2.3RT}+\\log_{10}A \\]\nとなる（$E_a$：活性化エネルギー，$A$：定数，$T$：絶対温度）．$R=8.3\\,\\mathrm{J/(K\\cdot mol)}$，$\\log_{10}2=0.30$，$10^{0.65}=4.5$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ある反応で，温度を $300\\,\\mathrm{K}$ から $330\\,\\mathrm{K}$ に上げると速度定数が $8.0$ 倍になった．この反応の活性化エネルギーは何 kJ/mol か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "この反応に触媒を加えると，活性化エネルギーが $23\\,\\mathrm{kJ/mol}$ 小さくなった（$A$ は変わらないとする）．$300\\,\\mathrm{K}$ で速度定数は約何倍になるか．有効数字1桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "同じ触媒を $330\\,\\mathrm{K}$ で加えた場合，速度定数の倍率は (2) と比べて大きいか小さいか．倍率の値（有効数字1桁）と理由も答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$57\\,\\mathrm{kJ/mol}$"
+   },
+   {
+    "id": "2",
+    "tex": "約 $1\\times10^{4}$ 倍"
+   },
+   {
+    "id": "3",
+    "tex": "小さい（約 $4\\times10^{3}$ 倍）．倍率の対数は $\\dfrac{\\Delta E_a}{2.3RT}$ で，温度が高いほど小さくなるから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 2つの温度で式を引き算すると\n\\[ \\log_{10}\\dfrac{k_2}{k_1}=\\dfrac{E_a}{2.3R}\\left(\\dfrac{1}{T_1}-\\dfrac{1}{T_2}\\right) \\]\n$\\log_{10}8.0=3\\times0.30=0.90$，$\\dfrac{1}{300}-\\dfrac{1}{330}=\\dfrac{30}{99000}=3.03\\times10^{-4}\\,/\\mathrm{K}$ より\n\\[ E_a=\\dfrac{2.3\\times8.3\\times0.90}{3.03\\times10^{-4}}=5.67\\times10^{4}\\,\\mathrm{J/mol}\\fallingdotseq\\boldsymbol{57\\,\\mathrm{kJ/mol}} \\]\n\\textbf{(2)} 同じ温度・同じ $A$ で $E_a$ だけが $\\Delta E_a$ 小さくなると\n\\[ \\log_{10}\\dfrac{k_{\\text{触媒}}}{k}=\\dfrac{\\Delta E_a}{2.3RT}=\\dfrac{23\\times10^3}{2.3\\times8.3\\times300}=4.0 \\]\nよって約 $\\boldsymbol{1\\times10^4}$ 倍．\\\\\n\\textbf{(3)} $330\\,\\mathrm{K}$ では $\\dfrac{23\\times10^3}{2.3\\times8.3\\times330}=3.65$，$10^{3.65}=10^{0.65}\\times10^3=4.5\\times10^3$ で約 $\\boldsymbol{4\\times10^3}$ 倍となり，\\textbf{(2) より小さい}．高温ほど活性化エネルギーを超える分子の割合がもともと大きいので，触媒で $E_a$ を下げる効果は低温ほど大きく現れる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "2温度の速度定数の比から活性化エネルギーを求め，触媒で活性化エネルギーが一定量下がったときの速度定数の倍率が温度によってどう違うか（低温ほど効果が大きい）を比較する．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "reaction-rate"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "アレニウスの式",
+  "活性化エネルギー",
+  "触媒",
+  "温度と反応速度"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "id": "THE-ACB-030",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-05",
+ "topic": "沈殿を生じる中和と沈殿量を決める成分の見きわめ",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "硝酸と硫酸の混合水溶液（溶液A）と，水酸化バリウム水溶液（溶液B）がある．どちらも濃度はわからない．\n［実験1］溶液A $10.0\\,\\mathrm{mL}$ に溶液B を滴下すると，中和点までに $16.0\\,\\mathrm{mL}$ を要し，このとき白色沈殿が $0.233\\,\\mathrm{g}$ 生じた．\n［実験2］溶液B $10.0\\,\\mathrm{mL}$ に溶液A を十分な量加えると，白色沈殿が $0.350\\,\\mathrm{g}$ 生じた．\n原子量は O = 16，S = 32，Ba = 137 とし，沈殿の溶解は無視する．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "生じた沈殿の化学式を記せ．また，実験1・実験2 のそれぞれで，沈殿の量は $\\ce{Ba^2+}$ と $\\ce{SO4^2-}$ のどちらの量で決まるか答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "溶液B のモル濃度を有効数字3桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "溶液A の硫酸と硝酸のモル濃度をそれぞれ有効数字3桁で求めよ．また，(1) で実験1 の沈殿の量を決める成分を正しく判断できることを，数値で確かめよ．"
+     },
+     {
+      "id": "4",
+      "tex": "実験2 で，溶液A を十分な量ではなく $5.0\\,\\mathrm{mL}$ だけ加えて同じ計算をすると，溶液B の濃度は正しい値の何倍と求められてしまうか．また，加えた溶液A が十分な量であったことを実験で確かめる方法を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{BaSO4}$．実験1：$\\ce{SO4^2-}$，実験2：$\\ce{Ba^2+}$"
+   },
+   {
+    "id": "2",
+    "tex": "$0.150\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "3",
+    "tex": "硫酸 $0.100\\,\\mathrm{mol/L}$，硝酸 $0.280\\,\\mathrm{mol/L}$．実験1 で加えた $\\ce{Ba^2+}$ は $2.40\\times10^{-3}\\,\\mathrm{mol}$ で，沈殿 $1.00\\times10^{-3}\\,\\mathrm{mol}$ より多い．"
+   },
+   {
+    "id": "4",
+    "tex": "$\\dfrac13$ 倍．ろ液（上澄み）にさらに溶液A を加えても，新たな沈殿が生じないことを確かめる．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　$\\ce{Ba^2+ + SO4^2- -> BaSO4}$（白色），式量 233．\n実験1 では中和点までに $\\ce{Ba(OH)2}$ を，硝酸と硫酸の両方の $\\ce{H+}$ を中和するだけ加えるので，$\\ce{Ba^2+}$ は $\\ce{SO4^2-}$ より多くなる（硝酸がある分だけ余る）．沈殿量は $\\boldsymbol{\\ce{SO4^2-}}$ で決まる．実験2 では溶液A が十分にあるので，沈殿量は $\\boldsymbol{\\ce{Ba^2+}}$ で決まる．\n\n\\textbf{(2)}　実験2：$\\ce{BaSO4}$ $\\dfrac{0.350}{233}=1.50\\times10^{-3}\\,\\mathrm{mol}$ が $\\ce{Ba(OH)2}$ の量に等しいので，$\\dfrac{1.50\\times10^{-3}}{0.0100}=\\boldsymbol{0.150\\,\\mathrm{mol/L}}$．\n\n\\textbf{(3)}　実験1 の沈殿 $\\dfrac{0.233}{233}=1.00\\times10^{-3}\\,\\mathrm{mol}$ が $\\ce{H2SO4}$ の量なので，硫酸は $\\boldsymbol{0.100\\,\\mathrm{mol/L}}$．\n中和の量的関係：$\\ce{H+}$ の総量 $=$ $\\ce{OH-}$ の量 $=2\\times0.150\\times0.0160=4.80\\times10^{-3}\\,\\mathrm{mol}$．硫酸の分 $2\\times1.00\\times10^{-3}$ を引いて，$\\ce{HNO3}$ は $2.80\\times10^{-3}\\,\\mathrm{mol}$，濃度 $\\boldsymbol{0.280\\,\\mathrm{mol/L}}$．\n確認：実験1 で加えた $\\ce{Ba^2+}$ は $0.150\\times0.0160=2.40\\times10^{-3}\\,\\mathrm{mol}$ で，$\\ce{SO4^2-}$ $1.00\\times10^{-3}\\,\\mathrm{mol}$ より多いので，$\\ce{SO4^2-}$ がすべて沈殿したという仮定は正しい．\n\n\\textbf{(4)}　溶液A $5.0\\,\\mathrm{mL}$ 中の $\\ce{SO4^2-}$ は $5.0\\times10^{-4}\\,\\mathrm{mol}$ で，$\\ce{Ba^2+}$ $1.50\\times10^{-3}\\,\\mathrm{mol}$ より少ない．沈殿は $\\ce{SO4^2-}$ で決まって $5.0\\times10^{-4}\\,\\mathrm{mol}$ しか生じず，これを $\\ce{Ba(OH)2}$ の量とみなすと濃度は $0.050\\,\\mathrm{mol/L}$，正しい値の $\\boldsymbol{\\dfrac13}$ 倍になる．\nどちらが沈殿量を決めているかは，ろ液（上澄み）に溶液A をさらに加えて沈殿が生じないこと（$\\ce{Ba^2+}$ が残っていないこと）で確かめられる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "酸の混合物を水酸化バリウムで中和するとき，沈殿（硫酸バリウム）の量は陽イオンと陰イオンのうち少ない方で決まる．実験ごとにどちらが不足するかを量的関係から見きわめ，中和の量的関係と組み合わせて各成分の濃度を求める．不足側を取り違えたときの誤りと，過剰であることの確かめ方を考える．"
+ },
+ "concepts": [
+  "acid-base",
+  "precipitation",
+  "oxygen-sulfur"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "中和の量的関係",
+  "硫酸バリウム",
+  "過不足",
+  "混酸",
+  "沈殿"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,108 @@
+{
+ "id": "POL-PRT-075",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-05",
+ "topic": "保護基（Boc 基・メチルエステル）と縮合剤 DCC を使うジペプチド合成の経路・副生成物と量的関係",
+ "course": "化学",
+ "level": 3,
+ "minutes": 20,
+ "format": [
+  "pathway",
+  "equation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "アラニン $\\ce{H2N-CH(CH3)-COOH}$ のアミノ基とグリシン $\\ce{H2N-CH2-COOH}$ のカルボキシ基の間だけにペプチド結合をもつジペプチド Ala-Gly（$\\ce{H2N-CH(CH3)-CO-NH-CH2-COOH}$）を，次の考え方で合成したい．\n・アミノ基は Boc 基（$\\ce{(CH3)3C-O-CO-}$）を結合させて保護する．Boc 基は酸（トリフルオロ酢酸）で処理すると外れ，二酸化炭素と 2-メチルプロペン $\\ce{CH2=C(CH3)2}$ が生じてもとのアミノ基に戻る．\n・カルボキシ基はメチルエステルにして保護する．メチルエステルは塩基の水溶液で加水分解でき，酸処理では外れない．\n・ジシクロヘキシルカルボジイミド（DCC，$\\ce{C6H11-N=C=N-C6H11}$，分子式 $\\ce{C13H22N2}$）を縮合剤として加えると，カルボキシ基とアミノ基が室温でアミド結合をつくる．このとき DCC は N,N'-ジシクロヘキシル尿素 $\\ce{C6H11-NH-CO-NH-C6H11}$（DCU）に変わる．\n原子量は H = 1.0，C = 12，N = 14，O = 16 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "原料として用いる「保護したアラニン」と「保護したグリシン」の示性式をそれぞれ書け．また，Boc 基をつける相手とメチルエステルにする相手を逆にすると，何ができてしまうか．"
+     },
+     {
+      "id": "2",
+      "tex": "DCC と DCU の分子式の違いから，縮合の際に DCC がどのような役割をしているか説明し，DCC が DCU に変わる正味の変化を化学反応式（分子式）で書け．"
+     },
+     {
+      "id": "3",
+      "tex": "縮合で得られた保護ジペプチド（分子式 $\\ce{C11H20N2O5}$）から Boc 基を外す反応と，続いてメチルエステルを加水分解して Ala-Gly（分子式 $\\ce{C5H10N2O3}$）を得る反応を，それぞれ分子式を用いた化学反応式で書け．"
+     },
+     {
+      "id": "4",
+      "tex": "保護したアラニン $1.89\\,\\mathrm g$ に，保護したグリシンと DCC を過剰に加えて合成した．縮合，Boc 基の除去，加水分解の収率がそれぞれ $80\\,\\%$，$90\\,\\%$，$95\\,\\%$ のとき，得られる Ala-Gly は何 g か．また，縮合の段階で生じる DCU は何 g か．いずれも有効数字 2 桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "保護したアラニン：$\\ce{(CH3)3C-O-CO-NH-CH(CH3)-COOH}$，保護したグリシン：$\\ce{H2N-CH2-COOCH3}$．逆にすると，グリシンのアミノ基とアラニンのカルボキシ基の間で結合した Gly-Ala（の保護体）ができてしまう．"
+   },
+   {
+    "id": "2",
+    "tex": "縮合で取れる $\\ce{H2O}$ 1 分子分（H 2 個と O 1 個）を DCC が受け取る脱水剤としてはたらく．$\\ce{C13H22N2 + H2O -> C13H24N2O}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{C11H20N2O5 -> C6H12N2O3 + CO2 + C4H8}$，$\\ce{C6H12N2O3 + H2O -> C5H10N2O3 + CH3OH}$"
+   },
+   {
+    "id": "4",
+    "tex": "Ala-Gly：$1.0\\,\\mathrm g$，DCU：$1.8\\,\\mathrm g$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} Ala-Gly では，アラニンの $\\ce{-COOH}$ とグリシンの $\\ce{-NH2}$ が結合する．したがって，反応してはいけないアラニンの $\\ce{-NH2}$ を Boc 基で，グリシンの $\\ce{-COOH}$ をメチルエステルで保護する．\n\\[\\text{保護したアラニン：}\\boldsymbol{\\ce{(CH3)3C-O-CO-NH-CH(CH3)-COOH}},\\qquad\\text{保護したグリシン：}\\boldsymbol{\\ce{H2N-CH2-COOCH3}}\\]\n逆に保護すると，自由な $\\ce{-COOH}$ はグリシン側，自由な $\\ce{-NH2}$ はアラニン側になるので，結合の向きが逆の \\textbf{Gly-Ala} の保護体ができる．Ala-Gly と Gly-Ala は構成アミノ酸は同じでも別の化合物である．\n\n\\textbf{(2)} $\\ce{C13H24N2O}$（DCU）$-\\ce{C13H22N2}$（DCC）$=\\ce{H2O}$．アミド結合ができるときに $\\ce{-COOH}$ の OH と $\\ce{-NH2}$ の H が取れるが，それが水として出るのではなく DCC に取り込まれる．DCC は\\textbf{脱水剤}としてはたらき，カルボキシ基を反応しやすい形（活性化された中間体）に変えている．正味の変化は\n\\[\\ce{C13H22N2 + H2O -> C13H24N2O}\\]\n縮合全体は（保護したアラニン $\\ce{C8H15NO4}$，保護したグリシン $\\ce{C3H7NO2}$）\n\\[\\ce{C8H15NO4 + C3H7NO2 + C13H22N2 -> C11H20N2O5 + C13H24N2O}\\]\n\n\\textbf{(3)} Boc 基 $\\ce{(CH3)3C-O-CO-}$ が外れると，$\\ce{CO2}$ と $\\ce{CH2=C(CH3)2}$（$\\ce{C4H8}$）が生じ，N には H が戻る．\n\\[\\ce{C11H20N2O5 -> C6H12N2O3 + CO2 + C4H8}\\]\n（生じる $\\ce{C6H12N2O3}$ は $\\ce{H2N-CH(CH3)-CO-NH-CH2-COOCH3}$．）メチルエステルの加水分解では\n\\[\\ce{C6H12N2O3 + H2O -> C5H10N2O3 + CH3OH}\\]\n（塩基の水溶液中では Ala-Gly の塩ができ，酸で中和して取り出す．）\n\n\\textbf{(4)} 保護したアラニン $\\ce{C8H15NO4}$ の分子量は $96+15+14+64=189$ で，$1.89/189=1.00\\times10^{-2}\\,\\mathrm{mol}$．各段の収率を掛けて，Ala-Gly（分子量 146）は\n\\[1.00\\times10^{-2}\\times0.80\\times0.90\\times0.95\\times146=0.999\\fallingdotseq\\boldsymbol{1.0\\,\\mathrm g}\\]\nDCU（分子量 224）は縮合した分だけ生じるので\n\\[1.00\\times10^{-2}\\times0.80\\times224=1.79\\fallingdotseq\\boldsymbol{1.8\\,\\mathrm g}\\]\n目的物より多い質量の DCU が出ることがわかる．DCU は多くの溶媒に溶けにくいので，ろ過で除ける．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "目的のペプチド結合の向きから，どちらのアミノ酸のどの官能基を保護するかを決める．縮合剤 DCC は縮合で取れる水を受け取って尿素になる脱水剤であり，Boc 基は酸で CO₂ と 2-メチルプロペンになって外れ，メチルエステルは塩基で加水分解されることを分子式の反応式で追い，各段の収率から量的関係を求める．"
+ },
+ "concepts": [
+  "protein-amino",
+  "carboxylic-ester"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ペプチド合成",
+  "保護基",
+  "縮合剤",
+  "脱水",
+  "収率"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

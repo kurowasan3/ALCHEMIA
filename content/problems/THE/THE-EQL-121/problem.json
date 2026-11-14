@@ -1,0 +1,108 @@
+{
+ "id": "THE-EQL-121",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "速度定数の比で決まる速度論的光学分割の光学純度と反応の進み具合",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "不斉炭素原子を1個もつアルコールのラセミ体（R 体と S 体の等量混合物）を，大過剰のアセチル化剤と触媒 Y の存在下で反応させる．R 体，S 体はそれぞれ独立にアセチル化され，反応の速さは $v_{\\mathrm R}=k_{\\mathrm R}[\\mathrm R]$，$v_{\\mathrm S}=k_{\\mathrm S}[\\mathrm S]$（$k_{\\mathrm R}$，$k_{\\mathrm S}$ は温度一定で一定）で表される．このような一次反応では，時刻 $t$ における残存率（残っている量／はじめの量）$x$ は $\\log_{10}x=-\\dfrac{kt}{2.30}$ を満たす．R 体，S 体の残存率を $x_{\\mathrm R}$，$x_{\\mathrm S}$ とし，$s=k_{\\mathrm S}/k_{\\mathrm R}$ とする．\n\nアルコール（またはエステル）の光学純度を $\\dfrac{|n_{\\mathrm R}-n_{\\mathrm S}|}{n_{\\mathrm R}+n_{\\mathrm S}}$（$n$ は各異性体の物質量）で，アルコール全体の反応率を $c=1-\\dfrac{x_{\\mathrm R}+x_{\\mathrm S}}{2}$ で表す．必要なら $0.25^{1/3}=0.630$，$0.0101^{1/3}=0.216$，$\\log_{10}3=0.477$ を用いよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$x_{\\mathrm S}$ を $x_{\\mathrm R}$ と $s$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "触媒 Y では $s=4$ であった．残ったアルコールの光学純度が $60.0\\,\\%$ になった時点の $x_{\\mathrm R}$（有効数字3桁），反応率 $c$（有効数字2桁），生じたエステルの光学純度（％，有効数字2桁）を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "触媒 Y（$s=4$）を用いて，残ったアルコールの光学純度を $98.0\\,\\%$ 以上にしたい．このとき回収できるアルコールの物質量は，はじめのラセミ体の物質量の最大何％か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "別の触媒 Z（S 体のほうが速く反応する）を用いると，反応率がちょうど $50.0\\,\\%$ のとき残ったアルコールの光学純度は $80.0\\,\\%$ であった．触媒 Z の $s$ を有効数字2桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$x_{\\mathrm S}=x_{\\mathrm R}^{\\,s}$"
+   },
+   {
+    "id": "2",
+    "tex": "$x_{\\mathrm R}=0.630$，$c=0.61$，エステルの光学純度 $39\\,\\%$"
+   },
+   {
+    "id": "3",
+    "tex": "$11\\,\\%$"
+   },
+   {
+    "id": "4",
+    "tex": "$s=22$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　同じ時刻 $t$ について $\\log_{10}x_{\\mathrm R}=-\\dfrac{k_{\\mathrm R}t}{2.30}$，$\\log_{10}x_{\\mathrm S}=-\\dfrac{k_{\\mathrm S}t}{2.30}=s\\log_{10}x_{\\mathrm R}$．よって $\\boldsymbol{x_{\\mathrm S}=x_{\\mathrm R}^{\\,s}}$．時間 $t$ や速度定数そのものは消え，2つの残存率の関係は比 $s$ だけで決まる．\n\n\\textbf{(2)}　はじめ R，S を 1 ずつとすると残りは $x_{\\mathrm R}$，$x_{\\mathrm R}^4$（S が速いので残りは R が多い）．\n\\[ \\frac{x_{\\mathrm R}-x_{\\mathrm R}^4}{x_{\\mathrm R}+x_{\\mathrm R}^4}=\\frac{1-x_{\\mathrm R}^3}{1+x_{\\mathrm R}^3}=0.600\\quad\\Rightarrow\\quad x_{\\mathrm R}^3=0.25,\\quad x_{\\mathrm R}=\\boldsymbol{0.630} \\]\n$x_{\\mathrm S}=0.630^4=0.158$ なので $c=1-\\dfrac{0.630+0.158}{2}=0.606\\fallingdotseq\\boldsymbol{0.61}$．\nエステルは S 由来が $1-0.158=0.842$，R 由来が $1-0.630=0.370$ なので，光学純度は $\\dfrac{0.842-0.370}{0.842+0.370}\\times100\\fallingdotseq\\boldsymbol{39\\,\\%}$（S 体が多い）．\n\n\\textbf{(3)}　$\\dfrac{1-x_{\\mathrm R}^3}{1+x_{\\mathrm R}^3}\\geqq0.980$ より $x_{\\mathrm R}^3\\leqq\\dfrac{0.020}{1.980}=0.0101$，$x_{\\mathrm R}\\leqq0.216$．光学純度は反応が進むほど上がり，回収量は減るので，最大の回収量は $x_{\\mathrm R}=0.216$ のとき．残ったアルコールは $\\dfrac{0.216+0.216^4}{2}=\\dfrac{0.216+0.0022}{2}=0.109$，すなわち $\\boldsymbol{11\\,\\%}$．\n一方の鏡像異性体だけが反応する触媒（$s\\to\\infty$）なら 50 \\% をすべて回収できる．$s$ が有限だと，高い光学純度を得るには遅いほうの R 体も大部分を犠牲にしなければならない．\n\n\\textbf{(4)}　$c=0.500$ より $x_{\\mathrm R}+x_{\\mathrm S}=1.000$，光学純度より $x_{\\mathrm R}-x_{\\mathrm S}=0.800$．よって $x_{\\mathrm R}=0.900$，$x_{\\mathrm S}=0.100$．(1) より\n\\[ s=\\frac{\\log_{10}0.100}{\\log_{10}0.900}=\\frac{-1}{2\\times0.477-1}=\\frac{1}{0.046}\\fallingdotseq\\boldsymbol{22} \\]\n（はじめに測った2つの量 $c$ と光学純度だけから，反応時間を知らなくても選択性 $s$ が決まる．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "鏡像異性体がそれぞれ一次反応で消費されるとき，同じ時刻の残存率は x_S = x_R^s（s は速度定数の比）で結ばれ，時間に依らない．これから，残った基質の光学純度は反応の進行とともに上がるが回収量は減るというトレードオフを定量でき，反応率と光学純度の測定値から逆に s を求められる．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "organic-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "速度論的光学分割",
+  "一次反応",
+  "速度定数の比",
+  "光学純度",
+  "鏡像異性体"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

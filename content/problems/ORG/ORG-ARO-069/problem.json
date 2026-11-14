@@ -1,0 +1,123 @@
+{
+ "id": "ORG-ARO-069",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-05",
+ "topic": "アミノフェノールのアセチル化の選択性と生成物の分離",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "pathway",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "3-アミノフェノール（$m$-アミノフェノール）$\\ce{H2N-C6H4-OH}$ について，次の実験を行った．\n実験 1：3-アミノフェノールに，物質量で 1 倍の無水酢酸を水中で作用させると，化合物 $\\mathrm{A}$ が主に得られた．$\\mathrm{A}$ は塩化鉄(III)水溶液で呈色した．\\\\\n実験 2：3-アミノフェノールに過剰の無水酢酸を作用させると，化合物 $\\mathrm{B}$（分子式 $\\ce{C10H11NO3}$）が得られた．$\\mathrm{B}$ は塩化鉄(III)水溶液で呈色しなかった．\\\\\n実験 3：$\\mathrm{B}$ をうすい水酸化ナトリウム水溶液に加えて室温でしばらく置いたのち，塩酸で中和すると $\\mathrm{A}$ が得られた．\\\\\n実験 4：$\\mathrm{A}$ のベンゼン環に触媒を用いて水素を付加させると，化合物 $\\mathrm{C}$（分子式 $\\ce{C8H15NO2}$）が得られた．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\mathrm{A}$ と $\\mathrm{B}$ の示性式を答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "実験 1 で，アミノ基とヒドロキシ基のどちらが先にアセチル化されたか．実験結果のうち，そのことを示す根拠を答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "実験 3 で，$\\mathrm{B}$ の 2 か所のアセチル基のうち，どちらの結合が加水分解されたか．結合の種類の名称で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\mathrm{A}$ と $\\mathrm{C}$ を含むジエチルエーテル溶液に水酸化ナトリウム水溶液を加えてよく振り混ぜた．$\\mathrm{A}$，$\\mathrm{C}$ はそれぞれ水層・エーテル層のどちらに多く含まれるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：アミノフェノールのアセチル化の選択性と生成物の分離",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\mathrm{A}$：$\\ce{CH3CONH-C6H4-OH}$，$\\mathrm{B}$：$\\ce{CH3CONH-C6H4-OCOCH3}$"
+   },
+   {
+    "id": "2",
+    "tex": "アミノ基．$\\mathrm{A}$ が塩化鉄(III)水溶液で呈色し，フェノール性ヒドロキシ基が残っていること"
+   },
+   {
+    "id": "3",
+    "tex": "エステル結合"
+   },
+   {
+    "id": "4",
+    "tex": "$\\mathrm{A}$：水層，$\\mathrm{C}$：エーテル層"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　アミノ基の N は非共有電子対を出しやすく，フェノールの OH よりも無水酢酸と速く反応する（アミドができる）．また，エステル結合はアミド結合よりも加水分解されやすい．\n\n(1)(2) 実験 1 の $\\mathrm{A}$ は塩化鉄(III)で呈色するので，フェノール性ヒドロキシ基が残っている．したがって先にアセチル化されたのは $\\boldsymbol{\\text{アミノ基}}$ で，$\\mathrm{A}$ は $\\boldsymbol{\\ce{CH3CONH-C6H4-OH}}$（3-アセトアミドフェノール，$\\ce{C8H9NO2}$）．過剰の無水酢酸では OH もアセチル化され，$\\mathrm{B}$ は $\\boldsymbol{\\ce{CH3CONH-C6H4-OCOCH3}}$（$\\ce{C10H11NO3}$）となり，フェノール性 OH を失って呈色しない．\n\\[ \\ce{H2N-C6H4-OH + (CH3CO)2O -> CH3CONH-C6H4-OH + CH3COOH} \\]\n\n(3) うすい塩基・室温の穏やかな条件では，$\\boldsymbol{\\text{エステル結合}}$ だけが加水分解され，アミド結合は残る．中和すると再び $\\mathrm{A}$ になる．\n\\[ \\ce{CH3CONH-C6H4-OCOCH3 + 2NaOH -> CH3CONH-C6H4-ONa + CH3COONa + H2O} \\]\n\n(4) $\\mathrm{A}$ はフェノール性 OH をもつ弱酸で，$\\ce{NaOH}$ と反応してナトリウム塩になり $\\boldsymbol{\\text{水層}}$ へ移る．$\\mathrm{C}$（3-アセトアミドシクロヘキサノール）の OH はアルコール性で $\\ce{NaOH}$ とは反応しないので $\\boldsymbol{\\text{エーテル層}}$ に残る．ベンゼン環に直接結合した OH かどうかで酸性の有無が変わることを利用した分離である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "同じ分子にアミノ基とフェノール性ヒドロキシ基があると，アセチル化はアミノ基が先に起こり，逆にエステル結合はアミド結合より加水分解されやすいので，条件を選べば片方だけを反応させられる．どちらが反応したかは塩化鉄(III)の呈色で判定でき，環を水素化してフェノール性を失わせると塩基による抽出で分離できる．"
+ },
+ "concepts": [
+  "aromatic",
+  "transition-metals",
+  "carboxylic-ester"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "アセチル化",
+  "アミド",
+  "エステルの加水分解",
+  "塩化鉄(III)",
+  "抽出"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

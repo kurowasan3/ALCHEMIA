@@ -1,0 +1,117 @@
+{
+ "id": "POL-SUG-056",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-04",
+ "topic": "アルドール反応・逆アルドール反応による糖の炭素骨格の組み立てと切断",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "structure",
+  "pathway"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "カルボニル化合物の $\\alpha$ 炭素（$\\ce{C=O}$ のとなりの炭素）に結合した H が $\\ce{H+}$ として外れると，その $\\alpha$ 炭素は別の分子のカルボニル炭素と $\\ce{C-C}$ 結合をつくることができる（アルドール反応）．生成物は，$\\ce{C=O}$ から数えて 2 つ目の炭素（$\\beta$ 炭素）に $\\ce{-OH}$ をもつ（$\\beta$-ヒドロキシカルボニル構造）．\n\\[ \\ce{R-CO-CH2-R' + R''-CHO ->[\\text{}] R-CO-CH(R')-CH(OH)-R''} \\]\nこの反応は可逆で，$\\beta$-ヒドロキシカルボニル構造をもつ化合物は，逆の反応（逆アルドール反応）で $\\alpha$ 炭素と $\\beta$ 炭素の間の結合が切れ，2 つのカルボニル化合物に分かれる．生体内では酵素がこの反応を触媒して糖の炭素骨格をつくりかえている．\n\n以下，ジヒドロキシアセトン $\\ce{HOCH2COCH2OH}$ を DHA と書く．DHA は $\\alpha$ 炭素で反応する側としてはたらくものとし，糖はすべて鎖状構造で考える．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "DHA とグリセルアルデヒド $\\ce{HOCH2CH(OH)CHO}$ がアルドール反応すると，分子式 $\\ce{C6H12O6}$ のケトース（フルクトースなど）が生じる．生成物の示性式を示し，炭素に $\\ce{C=O}$ の側の端から番号 1〜6 をつけたとき，DHA に由来する炭素はどれか答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) で，グリセルアルデヒドの不斉炭素原子の立体配置は反応で変わらないとする．酵素を使わずに立体を選ばない反応を行うと，(1) の生成物には立体異性体が何種類生じうるか．"
+     },
+     {
+      "id": "3",
+      "tex": "DHA がホルムアルデヒドと反応した生成物，およびヒドロキシアセトアルデヒド $\\ce{HOCH2CHO}$ と反応した生成物の示性式と，それぞれの不斉炭素原子の数を答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "炭素数 7 のケトース（セドヘプツロース，$\\ce{HOCH2CO(CHOH)4CH2OH}$）が逆アルドール反応で 2 つに分かれるとき，切れるのは何番目と何番目の炭素の間の結合か（番号は $\\ce{C=O}$ の側の端から）．また，生じる 2 つの化合物の示性式を答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "グルコース（鎖状構造 $\\ce{OHC(CHOH)4CH2OH}$）が逆アルドール反応で分かれるとき，生じる 2 つの化合物の示性式を答えよ．また，この結果から，炭素数 3 の化合物 2 つのアルドール反応で直接つくることができるヘキソースは，フルクトースのようなケトースであってグルコースのようなアルドースではない理由を説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{HOCH2COCH(OH)CH(OH)CH(OH)CH2OH}$，C1・C2・C3"
+   },
+   {
+    "id": "2",
+    "tex": "4 種類"
+   },
+   {
+    "id": "3",
+    "tex": "ホルムアルデヒド：$\\ce{HOCH2COCH(OH)CH2OH}$，1 個　ヒドロキシアセトアルデヒド：$\\ce{HOCH2COCH(OH)CH(OH)CH2OH}$，2 個"
+   },
+   {
+    "id": "4",
+    "tex": "3 番目と 4 番目の間，$\\ce{HOCH2COCH2OH}$（DHA）と $\\ce{OHCCH(OH)CH(OH)CH2OH}$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\ce{OHCCH2OH}$ と $\\ce{OHCCH(OH)CH(OH)CH2OH}$．アルドースでは $\\alpha$ 炭素が 2 番目，$\\beta$ 炭素が 3 番目なので必ず「炭素数 2＋炭素数 4」に分かれ，3＋3 には分かれない．3＋3 に分かれる（3 番目と 4 番目の間が $\\alpha$-$\\beta$ の結合になる）のは $\\ce{C=O}$ が 2 番目にあるケトースだからである．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　DHA の $\\alpha$ 炭素（$\\ce{CH2OH}$ の炭素）がグリセルアルデヒドの $\\ce{CHO}$ の炭素と結合し，その $\\ce{C=O}$ は $\\ce{CH-OH}$ になる．\n\\[ \\ce{HOCH2COCH2OH + OHCCH(OH)CH2OH -> HOCH2COCH(OH)CH(OH)CH(OH)CH2OH} \\]\n生成物は $\\boldsymbol{\\ce{HOCH2COCH(OH)CH(OH)CH(OH)CH2OH}}$．$\\ce{C=O}$ 側から C1（$\\ce{CH2OH}$），C2（$\\ce{C=O}$），C3 が DHA 由来で，新しい結合は C3–C4，C4〜C6 がグリセルアルデヒド由来．答えは $\\boldsymbol{\\text{C1・C2・C3}}$．C4 の OH は C2 の $\\ce{C=O}$ から見て $\\beta$ 位にあり，確かに $\\beta$-ヒドロキシカルボニル構造ができている．\n\n\\textbf{(2)}　生成物の不斉炭素原子は C3・C4・C5 の 3 つ．C5 はグリセルアルデヒドの不斉炭素で配置は決まっている．C3（DHA の $\\ce{CH2}$ だった炭素）と C4（$\\ce{CHO}$ だった炭素）は反応で新たに不斉炭素になり，立体を選ばなければそれぞれ 2 通りの配置をとりうる．よって $2\\times2=\\boldsymbol{4}$ 種類（フルクトース，ソルボース，プシコース，タガトースに相当）．生体内の酵素はこのうち 1 種類だけをつくる．\n\n\\textbf{(3)}　ホルムアルデヒドと：$\\ce{HOCH2COCH2OH + HCHO -> HOCH2COCH(OH)CH2OH}$．生成物は $\\boldsymbol{\\ce{HOCH2COCH(OH)CH2OH}}$（炭素数 4 のケトース）で，不斉炭素原子は C3 の $\\boldsymbol{1}$ 個（C4 は $\\ce{CH2OH}$ なので不斉ではない）．\n\nヒドロキシアセトアルデヒドと：$\\ce{HOCH2COCH2OH + OHCCH2OH -> HOCH2COCH(OH)CH(OH)CH2OH}$．生成物は $\\boldsymbol{\\ce{HOCH2COCH(OH)CH(OH)CH2OH}}$（炭素数 5 のケトース）で，不斉炭素原子は C3・C4 の $\\boldsymbol{2}$ 個．DHA に炭素数 $n$ のアルデヒドがつけば炭素数 $n+3$ のケトースになる．\n\n\\textbf{(4)}　逆アルドール反応で切れるのは，$\\ce{C=O}$ のとなり（$\\alpha$）の炭素と，OH をもつ次（$\\beta$）の炭素の間である．セドヘプツロースの $\\ce{C=O}$ は C2 なので，$\\alpha$ 炭素は C3，$\\beta$ 炭素は C4（OH をもつ）．切れるのは $\\boldsymbol{\\text{3 番目と 4 番目の間}}$．C1〜C3 は $\\ce{HOCH2COCH2OH}$（$\\boldsymbol{\\text{DHA}}$）に，C4〜C7 は C4 の $\\ce{CH-OH}$ が $\\ce{CHO}$ になって $\\boldsymbol{\\ce{OHCCH(OH)CH(OH)CH2OH}}$（炭素数 4 のアルドース）になる．\n\\[ \\ce{HOCH2CO(CHOH)4CH2OH -> HOCH2COCH2OH + OHCCH(OH)CH(OH)CH2OH} \\]\n（C1 側の $\\ce{CH2OH}$ は $\\ce{C=O}$ のとなりだが，その先に炭素がないので切れる結合にはならない．）\n\n\\textbf{(5)}　グルコースの $\\ce{C=O}$ は C1（$\\ce{CHO}$）なので，$\\alpha$ 炭素は C2，$\\beta$ 炭素は C3 で，切れるのは C2–C3．C1〜C2 は $\\boldsymbol{\\ce{OHCCH2OH}}$（ヒドロキシアセトアルデヒド）に，C3〜C6 は $\\boldsymbol{\\ce{OHCCH(OH)CH(OH)CH2OH}}$ になる．\n\\[ \\ce{OHC(CHOH)4CH2OH -> OHCCH2OH + OHCCH(OH)CH(OH)CH2OH} \\]\nアルドースでは $\\ce{C=O}$ が鎖の端（C1）にあるので，逆アルドール反応では必ず「2＋（残り）」に分かれる．アルドール反応はその逆なので，アルドースは炭素数 2 の化合物を $\\alpha$ 炭素の側として使わなければつくれない．一方，$\\ce{C=O}$ が C2 にあるケトースでは $\\alpha$-$\\beta$ 結合が C3–C4 なので「3＋（残り）」に分かれ，ヘキソースなら 3＋3 になる．だから炭素数 3 の化合物 2 つ（DHA とグリセルアルデヒド）から直接できるヘキソースはケトース（フルクトースなど）である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "β-ヒドロキシカルボニル構造を見つけて，逆アルドール反応で切れる α-β 炭素間の結合を特定し，糖を 2 つのカルボニル化合物に分ける．C=O の位置（アルドースは C1，ケトースは C2）で切れる位置が決まるため，炭素数 3 の化合物 2 つから直接できるヘキソースはケトースであることを導き，新たにできる不斉炭素から立体異性体の数を数える．"
+ },
+ "concepts": [
+  "saccharide",
+  "organic-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "アルドール反応",
+  "逆アルドール反応",
+  "ケトース",
+  "アルドース",
+  "ジヒドロキシアセトン",
+  "不斉炭素"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

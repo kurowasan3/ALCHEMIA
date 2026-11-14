@@ -1,0 +1,99 @@
+{
+ "id": "THE-EQL-035",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "黒鉛と水蒸気の連立平衡（水性ガス反応とシフト反応）",
+ "course": "化学",
+ "level": 5,
+ "minutes": 35,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "なめらかに動くピストン付きの容器に，十分な量の黒鉛と水蒸気 $1.00\\,\\mathrm{mol}$ を入れ，全圧を $2.0\\times10^{5}\\,\\mathrm{Pa}$ に保ちながら高温 $T$ に保ったところ，次の2つの平衡が同時に成り立った．\n\\[\\text{(i)}\\quad \\ce{C(s) + H2O(g) <=> CO(g) + H2(g)}\\qquad K_{p1}=\\dfrac{p_{\\ce{CO}}\\,p_{\\ce{H2}}}{p_{\\ce{H2O}}}\\]\n\\[\\text{(ii)}\\quad \\ce{CO(g) + H2O(g) <=> CO2(g) + H2(g)}\\qquad K_{p2}=\\dfrac{p_{\\ce{CO2}}\\,p_{\\ce{H2}}}{p_{\\ce{CO}}\\,p_{\\ce{H2O}}}\\]\n平衡状態では，はじめの水蒸気の $60.0\\,\\%$ が消費されており，$\\ce{CO}$ と $\\ce{CO2}$ の物質量の比は $3:1$ であった．容器内には黒鉛と $\\ce{H2O}$，$\\ce{CO}$，$\\ce{CO2}$，$\\ce{H2}$ 以外の物質は存在せず，気体はすべて理想気体とする．以下，温度はつねに $T$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "反応 (i)，(ii) の進行量（反応した量）をそれぞれ $x\\,\\mathrm{mol}$，$y\\,\\mathrm{mol}$ として，平衡時の各気体の物質量と気体の総物質量を $x,\\,y$ で表し，$x,\\,y$ の値を求めよ．さらに $K_{p1}$（単位も），$K_{p2}$ を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "十分な量の黒鉛と水蒸気 $1.00\\,\\mathrm{mol}$ から始めて，全圧だけを (1) とは別の値に保ったところ，水蒸気の $80.0\\,\\%$ が消費されて平衡に達した．このときの全圧（有効数字2桁）と，$\\ce{CO}$ と $\\ce{CO2}$ の物質量の比を求めよ．また，$K_{p2}$ の式には全圧が含まれないのに，全圧を変えると $\\ce{CO}$ と $\\ce{CO2}$ の比が変わる理由を説明せよ．"
+     },
+     {
+      "id": "3",
+      "tex": "黒鉛 $0.50\\,\\mathrm{mol}$ と水蒸気 $1.00\\,\\mathrm{mol}$ を入れ，(2) と同じ全圧に保った．平衡状態で黒鉛は残っているか．理由とともに答え，平衡時の $\\ce{CO2}$ の物質量を有効数字2桁で求めよ．必要なら $\\sqrt5=2.236$ を用いよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{H2O}$：$1.00-x-y$，$\\ce{CO}$：$x-y$，$\\ce{CO2}$：$y$，$\\ce{H2}$：$x+y$，総物質量 $1.00+x$．$x=0.48$，$y=0.12$．$K_{p1}=7.3\\times10^{4}\\,\\mathrm{Pa}$，$K_{p2}=0.50$"
+   },
+   {
+    "id": "2",
+    "tex": "全圧 $4.9\\times10^{4}\\,\\mathrm{Pa}$，$\\ce{CO}:\\ce{CO2}=8:1$．全圧を下げると気体分子が増える (i) が右に進み，$\\ce{H2O}$ が減って $\\ce{H2}$ が増えるので，$K_{p2}$ を一定に保つには $\\ce{CO2}/\\ce{CO}$ の比が小さくならなければならないから"
+   },
+   {
+    "id": "3",
+    "tex": "残らない（黒鉛がすべて反応しても (i) の平衡に達しない）．$\\ce{CO2}$ は $0.12\\,\\mathrm{mol}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　(i) が $x$，(ii) が $y\\,\\mathrm{mol}$ 進むと，$\\ce{H2O}$ は $1.00-x-y$，$\\ce{CO}$ は $x-y$，$\\ce{CO2}$ は $y$，$\\ce{H2}$ は $x+y$．気体の総物質量は (i) でだけ増えるので $1.00+x$．\n\n条件より $x+y=0.600$，$x-y=3y$．よって $\\boldsymbol{x=0.48}$，$\\boldsymbol{y=0.12}$．各物質量は $\\ce{H2O}$ 0.40，$\\ce{CO}$ 0.36，$\\ce{CO2}$ 0.12，$\\ce{H2}$ 0.60（mol），総物質量 1.48 mol．\n\n$K_{p2}$ は両辺の気体の係数の和が等しいので，物質量の比で計算できる．\n\\[K_{p2}=\\dfrac{0.12\\times0.60}{0.36\\times0.40}=\\boldsymbol{0.50}\\]\n$K_{p1}$ は分圧 $p_i=\\dfrac{n_i}{1.48}\\times2.0\\times10^{5}$ を用いて\n\\[K_{p1}=\\dfrac{0.36\\times0.60}{0.40}\\times\\dfrac{2.0\\times10^{5}}{1.48}=7.30\\times10^{4}\\approx\\boldsymbol{7.3\\times10^{4}\\,\\mathrm{Pa}}\\]\n\n\\textbf{(2)}　$x+y=0.800$．(ii) の平衡は全圧によらず\n\\[\\dfrac{y(x+y)}{(x-y)(1-x-y)}=0.50\\quad\\Longrightarrow\\quad 0.800y=0.50\\times0.200\\,(x-y)\\quad\\Longrightarrow\\quad x=9y\\]\nよって $y=0.080$，$x=0.72$．$\\ce{CO}:\\ce{CO2}=0.64:0.08=\\boldsymbol{8:1}$．全圧を $P'$ とすると (i) より\n\\[K_{p1}=\\dfrac{0.64\\times0.80}{0.20}\\times\\dfrac{P'}{1.72}\\quad\\Longrightarrow\\quad P'=\\dfrac{7.30\\times10^{4}\\times1.72}{2.56}=\\boldsymbol{4.9\\times10^{4}\\,\\mathrm{Pa}}\\]\n（$x+y$ を与えると (ii) から $x,\\,y$ が1通りに決まり，(i) から $P'$ が1つに決まる．）\n\n全圧を下げると，ルシャトリエの原理により気体分子が増える (i) が右へ進む．すると $\\ce{H2O}$ が減り $\\ce{H2}$ が増えるので，$K_{p2}=\\dfrac{n_{\\ce{CO2}}}{n_{\\ce{CO}}}\\cdot\\dfrac{n_{\\ce{H2}}}{n_{\\ce{H2O}}}$ を一定に保つために $\\dfrac{n_{\\ce{CO2}}}{n_{\\ce{CO}}}$ が小さくなる．(ii) は直接には圧力の影響を受けないが，(i) と物質を共有しているので，間接的に組成が変わる．\n\n\\textbf{(3)}　黒鉛が十分にあれば，(2) と同じく $x=0.72\\,\\mathrm{mol}$ の黒鉛が反応して平衡になるはずである．しかし黒鉛は $0.50\\,\\mathrm{mol}$ しかないので，すべて反応しても (i) の平衡に達しない．したがって\\textbf{黒鉛は残らず}，$x=0.50$ に固定され，成り立つのは (ii) の平衡だけである．\n\nこのとき $\\ce{H2O}$：$0.50-y$，$\\ce{CO}$：$0.50-y$，$\\ce{CO2}$：$y$，$\\ce{H2}$：$0.50+y$ で\n\\[\\dfrac{y(0.50+y)}{(0.50-y)^{2}}=0.50\\quad\\Longrightarrow\\quad y^{2}+2y-0.25=0\\quad\\Longrightarrow\\quad y=-1+\\dfrac{\\sqrt5}{2}=0.118\\]\nよって $\\ce{CO2}$ は $\\boldsymbol{0.12\\,\\mathrm{mol}}$．\n\n確認：このときの (i) の濃度商は $\\dfrac{p_{\\ce{CO}}p_{\\ce{H2}}}{p_{\\ce{H2O}}}=\\dfrac{0.382\\times0.618}{0.382}\\times\\dfrac{4.9\\times10^{4}}{1.50}=2.0\\times10^{4}\\,\\mathrm{Pa}<K_{p1}$．黒鉛があればさらに (i) が右へ進む状態なので，「黒鉛が使い尽くされた」という判断と矛盾しない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "固体を含む平衡と気相の平衡が物質を共有して同時に成り立つとき，2つの進行量を未知数として連立し，観測された組成から2つの平衡定数を逆算する．全圧の変化は分子数の変わる平衡を通して間接的に他方の平衡の組成も変え，固体が不足すると一方の平衡が成立しなくなる場合分けを判断する．"
+ },
+ "concepts": [
+  "chemical-equilibrium"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "化学平衡",
+  "連立平衡",
+  "圧平衡定数",
+  "水性ガス",
+  "場合分け"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

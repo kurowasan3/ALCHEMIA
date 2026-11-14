@@ -1,0 +1,113 @@
+{
+ "id": "POL-PRT-019",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-05",
+ "topic": "C 末端からの切断とトリプシン切断によるアミノ酸配列の決定",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "structure",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "グリシン（Gly），アラニン（Ala），セリン（Ser），グルタミン酸（Glu），リシン（Lys），フェニルアラニン（Phe）が 1 個ずつ縮合した鎖状ヘキサペプチド X がある．X について次の実験を行った．\\\\\n実験1：X の N 末端のアミノ酸は酸性アミノ酸であった．\\\\\n実験2：C 末端から 1 個ずつ順にアミノ酸を切り離す酵素を X に作用させると，図のような速さでアミノ酸が遊離した（この時間内に，ほかのアミノ酸はほとんど遊離しなかった）．\\\\\n実験3：塩基性アミノ酸のカルボキシ基側のペプチド結合だけを切断する酵素（トリプシン）を X に作用させると，2 つのトリペプチドに分かれた．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "図で，Ser や Ala の曲線は反応のはじめにほとんど増えず，遅れて立ち上がる．その理由を答え，X の C 末端側の 3 個のアミノ酸の配列を答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "X のアミノ酸配列を，N 末端を左にして略号で答えよ（例：Gly-Ala-Ser）．"
+     },
+     {
+      "id": "3",
+      "tex": "もし X の Lys が N 末端から 2 番目にあったとすると，実験3ではどのような断片が得られるか．また，それらのうちビウレット反応を示すものはどれか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：C 末端からの切断とトリプシン切断によるアミノ酸配列の決定",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "C 末端のアミノ酸が外れてはじめて次のアミノ酸が C 末端になり切り離されるので，内側のアミノ酸ほど遅れて遊離する．C 末端側は -Ala-Ser-Phe（C 末端が Phe）．"
+   },
+   {
+    "id": "2",
+    "tex": "Glu-Gly-Lys-Ala-Ser-Phe"
+   },
+   {
+    "id": "3",
+    "tex": "ジペプチド Glu-Lys とテトラペプチド Gly-Ala-Ser-Phe．ビウレット反応を示すのはテトラペプチドだけ．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} この酵素は C 末端のアミノ酸しか切り離せない．最初は C 末端の Phe だけが遊離し，Phe が外れてできた鎖の C 末端（Ser）が次に切り離され，さらにそのあと Ala が外れる．したがって遊離の順 Phe → Ser → Ala が C 末端からの並びで，C 末端側は $\\boldsymbol{\\text{-Ala-Ser-Phe}}$．\\\\\n\\textbf{(2)} 実験1より N 末端は Glu．残る Gly と Lys が 2 番目と 3 番目にある．Lys が 3 番目なら，トリプシンで Glu-Gly-Lys と Ala-Ser-Phe の 2 つのトリペプチドになり実験3に合う（Lys が 2 番目なら (3) のようにジペプチドとテトラペプチドになる）．よって $\\boldsymbol{\\text{Glu-Gly-Lys-Ala-Ser-Phe}}$．\\\\\n\\textbf{(3)} Glu-Lys-Gly-Ala-Ser-Phe となり，Lys のカルボキシ基側で切れて Glu-Lys（ジペプチド）と Gly-Ala-Ser-Phe（テトラペプチド）になる．ビウレット反応にはペプチド結合が 2 つ以上必要なので，示すのは $\\boldsymbol{\\text{テトラペプチド}}$ だけである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "C 末端から順に切る酵素では，内側のアミノ酸ほど遅れて遊離する（逐次反応）ことから C 末端側の並びを読み取り，トリプシン（塩基性アミノ酸の C 側で切断）の断片の大きさで塩基性アミノ酸の位置を決める．"
+ },
+ "concepts": [
+  "protein-amino"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ペプチド",
+  "アミノ酸配列",
+  "トリプシン",
+  "ビウレット反応",
+  "酵素"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

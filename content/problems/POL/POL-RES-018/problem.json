@@ -1,0 +1,117 @@
+{
+ "id": "POL-RES-018",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-01",
+ "topic": "数平均分子量と重量平均分子量（縮合重合の分子量分布）",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "合成高分子はさまざまな分子量の分子の集まりなので，平均分子量には定義の異なるものがある．分子量 $M_i$ の分子が $N_i$ 個含まれるとき，\n\\[ \\text{数平均分子量 } \\overline{M}_n=\\dfrac{\\sum N_iM_i}{\\sum N_i},\\qquad \\text{重量平均分子量 } \\overline{M}_w=\\dfrac{\\sum N_iM_i^{\\,2}}{\\sum N_iM_i} \\]\nと定める．$\\overline{M}_w/\\overline{M}_n$ は分子量の広がりの目安で，すべての分子の分子量が等しいときに 1 となる．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "分子量がそろった 2 種類のポリスチレン（分子量 $1.0\\times10^{4}$ と $1.0\\times10^{5}$）を同じ質量ずつ混ぜた試料について，$\\overline{M}_n$，$\\overline{M}_w$，$\\overline{M}_w/\\overline{M}_n$ をそれぞれ有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "希薄溶液の浸透圧から求めた分子量は $\\overline{M}_n$，$\\overline{M}_w$ のどちらに一致するか．理由とともに答えよ．また，(1) の試料に分子量 $1.0\\times10^{3}$ の低分子量成分が質量で $1\\,\\%$ だけ混入したとき，$\\overline{M}_n$ と $\\overline{M}_w$ のどちらが大きく変化するか．それぞれの値を有効数字 2 桁で求めて比べよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\ce{H2N-(CH2)5-COOH}$ のように 1 分子にアミノ基とカルボキシ基をもつ単量体の縮合重合で，反応した官能基の割合（反応度）を $p$ とする．このとき，重合度 $n$ の分子が全分子に占める数の割合は $(1-p)p^{\\,n-1}$ で表される．単量体単位 1 個の式量を $M_0$（末端は無視する）として，$\\overline{M}_n=\\dfrac{M_0}{1-p}$，$\\overline{M}_w=\\dfrac{M_0(1+p)}{1-p}$ となることを示せ．必要なら $0<p<1$ で成り立つ次の和を用いよ．\n\\[ \\sum_{n=1}^{\\infty}np^{\\,n-1}=\\dfrac{1}{(1-p)^2},\\qquad \\sum_{n=1}^{\\infty}n^2p^{\\,n-1}=\\dfrac{1+p}{(1-p)^3} \\]"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の重合でナイロン 6 をつくり，$\\overline{M}_n=1.13\\times10^{4}$ とするには反応度 $p$ をいくらにすればよいか．ただし $M_0=113$ とする．また，このときの $\\overline{M}_w$ を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "(4) の試料で，(i) 分子の数が最も多いのは重合度がいくつの分子か．(ii) 質量の割合が最も大きいのは重合度がいくつの分子か．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\overline{M}_n=1.8\\times10^{4}$，$\\overline{M}_w=5.5\\times10^{4}$，$\\overline{M}_w/\\overline{M}_n=3.0$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\overline{M}_n$．浸透圧は溶質の分子の大きさによらず分子の数（物質量）だけで決まり，全質量÷全物質量で分子量を求めることになるから．混入後は $\\overline{M}_n=1.6\\times10^{4}$（約 $15\\,\\%$ 減少），$\\overline{M}_w=5.4\\times10^{4}$（約 $1\\,\\%$ 減少）で，$\\overline{M}_n$ のほうが大きく変化する"
+   },
+   {
+    "id": "3",
+    "tex": "$\\overline{M}_n=M_0\\sum n(1-p)p^{n-1}=\\dfrac{M_0(1-p)}{(1-p)^2}=\\dfrac{M_0}{1-p}$，$\\overline{M}_w=M_0\\dfrac{\\sum n^2(1-p)p^{n-1}}{\\sum n(1-p)p^{n-1}}=M_0\\cdot\\dfrac{1+p}{(1-p)^3}\\cdot(1-p)^2=\\dfrac{M_0(1+p)}{1-p}$"
+   },
+   {
+    "id": "4",
+    "tex": "$p=0.990$，$\\overline{M}_w=2.2\\times10^{4}$"
+   },
+   {
+    "id": "5",
+    "tex": "(i) 重合度 1（単量体）　(ii) 重合度 99 と 100（等しく最大）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 各成分の質量を $w$ とすると，分子数は $N_1=\\dfrac{w}{1.0\\times10^4}$，$N_2=\\dfrac{w}{1.0\\times10^5}$．\n\\[ \\overline{M}_n=\\dfrac{2w}{N_1+N_2}=\\dfrac{2}{1.0\\times10^{-4}+1.0\\times10^{-5}}=1.82\\times10^{4}\\fallingdotseq\\boldsymbol{1.8\\times10^{4}} \\]\n$\\sum N_iM_i^2=w(M_1+M_2)$ なので\n\\[ \\overline{M}_w=\\dfrac{w(1.0\\times10^4+1.0\\times10^5)}{2w}=\\boldsymbol{5.5\\times10^{4}},\\qquad \\dfrac{\\overline{M}_w}{\\overline{M}_n}=\\dfrac{5.5\\times10^4}{1.82\\times10^4}=\\boldsymbol{3.0} \\]\n$\\overline{M}_n$ は分子の数で平均するので数の多い小さな分子に，$\\overline{M}_w$ は質量で重みをつけるので大きな分子に引き寄せられる．\n\n\\textbf{(2)} 浸透圧 $\\Pi=\\dfrac{n}{V}RT$ は溶けている分子の物質量 $n=\\sum N_i/N_{\\mathrm A}$ だけで決まる．質量 $W$ を溶かして $M=\\dfrac{W}{n}$ とすると，$\\dfrac{\\sum N_iM_i}{\\sum N_i}$ すなわち $\\boldsymbol{\\overline{M}_n}$ が得られる．\n\n混入後：試料全体 $100$ に対し各ポリスチレン $49.5$，低分子 $1.0$（質量の比）とする．\n\\[ \\overline{M}_n=\\dfrac{100}{\\frac{49.5}{10^4}+\\frac{49.5}{10^5}+\\frac{1.0}{10^3}}=\\dfrac{100}{6.445\\times10^{-3}}=1.55\\times10^{4}\\fallingdotseq\\boldsymbol{1.6\\times10^{4}} \\]\n\\[ \\overline{M}_w=\\dfrac{\\sum w_iM_i}{\\sum w_i}=\\dfrac{49.5(10^4+10^5)+1.0\\times10^3}{100}=5.446\\times10^{4}\\fallingdotseq\\boldsymbol{5.4\\times10^{4}} \\]\n（$\\overline{M}_w$ は質量分率 $w_i$ を重みとした $M_i$ の平均になる．）質量でわずか $1\\,\\%$ でも，分子量の小さい成分は分子の数としては多い（全分子の約 $16\\,\\%$）ので，$\\overline{M}_n$ は約 $15\\,\\%$ 下がるが，$\\overline{M}_w$ はほとんど変わらない．\n\n\\textbf{(3)} 重合度 $n$ の分子の数の割合を $x_n=(1-p)p^{n-1}$ とすると，その分子量は $nM_0$．\n\\[ \\overline{M}_n=\\sum x_n\\,nM_0=M_0(1-p)\\cdot\\dfrac{1}{(1-p)^2}=\\dfrac{M_0}{1-p} \\]\n\\[ \\overline{M}_w=\\dfrac{\\sum x_n(nM_0)^2}{\\sum x_n\\,nM_0}=M_0\\cdot\\dfrac{(1-p)\\dfrac{1+p}{(1-p)^3}}{(1-p)\\dfrac{1}{(1-p)^2}}=\\dfrac{M_0(1+p)}{1-p} \\]\nしたがって $\\overline{M}_w/\\overline{M}_n=1+p$ で，重合が進む（$p\\to1$）ほど 2 に近づく．\n\n\\textbf{(4)} $\\dfrac{113}{1-p}=1.13\\times10^{4}$ より $1-p=0.0100$，$p=\\boldsymbol{0.990}$．\n\\[ \\overline{M}_w=\\dfrac{113\\times1.990}{0.0100}=2.25\\times10^{4}\\fallingdotseq\\boldsymbol{2.2\\times10^{4}} \\]\n官能基の $99\\,\\%$ が反応しても平均重合度は 100 にすぎない．縮合重合で高分子量を得るには反応度を 1 にきわめて近づける必要がある．\n\n\\textbf{(5)} (i) 数の割合 $x_n=(1-p)p^{n-1}$ は $n$ が増えるほど小さくなるので，最も多いのは $\\boldsymbol{n=1}$（単量体）．\n(ii) 重合度 $n$ の分子が占める質量は $nM_0x_n$ に比例し，$f(n)=np^{n-1}$ とおくと\n\\[ \\dfrac{f(n+1)}{f(n)}=\\dfrac{(n+1)p}{n}\\ \\gtreqless\\ 1 \\iff n\\ \\lesseqgtr\\ \\dfrac{p}{1-p}=99 \\]\n$n<99$ では増加，$n=99$ で $f(100)=f(99)$，$n>99$ では減少する．よって質量の割合が最大なのは重合度 $\\boldsymbol{99\\ \\text{と}\\ 100}$（等しい）．数では単量体が最も多いのに，質量の大部分は平均重合度付近の分子が担っている．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "平均分子量は数で平均する（数平均：小さな分子に敏感，浸透圧で得られる）か質量で重みをつける（重量平均：大きな分子に敏感）かで値が異なり，その比が分子量の広がりを表す．縮合重合の重合度分布 (1−p)p^(n−1) から Mn＝M0/(1−p)，Mw/Mn＝1+p を導き，数で最多の分子（単量体）と質量で最多の分子（平均重合度付近）が異なることを判断する．"
+ },
+ "concepts": [
+  "addition-polymer",
+  "condensation-polymer",
+  "solution-colligative"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "平均分子量",
+  "重量平均分子量",
+  "縮合重合",
+  "反応度",
+  "浸透圧"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

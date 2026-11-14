@@ -1,0 +1,108 @@
+{
+ "id": "INO-PPT-056",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-08",
+ "topic": "連続変化法（ジョブ法）による錯体の組成と安定度定数の決定",
+ "course": "化学",
+ "level": 4,
+ "minutes": 35,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "金属イオン M と配位子 L は水溶液中で錯体 $\\ce{ML2}$ だけをつくる（電荷は省略）．\n\\[ \\ce{M + 2L <=>[\\text{}] ML2} \\qquad K=\\frac{[\\ce{ML2}]}{[\\ce{M}][\\ce{L}]^{2}} \\]\nある波長の光を吸収するのは $\\ce{ML2}$ だけで，そのモル吸光係数は $\\varepsilon=1.50\\times10^{3}\\,\\mathrm{L/(mol\\cdot cm)}$，吸光度は $A=\\varepsilon\\,[\\ce{ML2}]\\,\\ell$（光路長 $\\ell=1.00\\,\\mathrm{cm}$）で表される．M と L の全濃度の和を $C_{0}=[\\ce{M}]_{\\mathrm t}+[\\ce{L}]_{\\mathrm t}=2.00\\times10^{-3}\\,\\mathrm{mol/L}$ に保ったまま，混合比 $x=[\\ce{L}]_{\\mathrm t}/C_{0}$ を変えた溶液の吸光度を測定する（連続変化法）．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$K$ が非常に大きく，少ない方の成分がすべて $\\ce{ML2}$ になるとする．$0<x<1$ での $A$ を $x$ の式で表し（場合分けせよ），$A$ が最大になる $x$ とそのときの $A$ を求めよ．また，錯体が $\\ce{ML3}$ であったなら最大になる $x$ はいくらか．"
+     },
+     {
+      "id": "2",
+      "tex": "実際に測定すると，$x=2/3$ での吸光度は $0.800$ であった．$K$ を有効数字 2 桁で求めよ（単位も示せ）．"
+     },
+     {
+      "id": "3",
+      "tex": "$K$ が有限のときでも，$[\\ce{ML2}]=y$ が最大になる $x$ は (1) と同じであることを示せ．（ヒント：$m=[\\ce{M}]$，$l=[\\ce{L}]$ とすると $y=Km\\,l^{2}$，$m=[\\ce{M}]_{\\mathrm t}-y$，$l=[\\ce{L}]_{\\mathrm t}-2y$．最大の点では，$[\\ce{M}]_{\\mathrm t}$ をわずかに $\\delta$ 増やし $[\\ce{L}]_{\\mathrm t}$ を $\\delta$ 減らしても $y$ が変わらない．）"
+     },
+     {
+      "id": "4",
+      "tex": "同じ M と L を使い，$C_{0}$ を $1/10$ にして同じ測定をした．$x=2/3$ での吸光度の，(1) の理想値に対する比は $0.800$ より大きくなるか小さくなるか．理由とともに答えよ．また，$K$ を精度よく求めるには，この比が 1 にきわめて近くなるほど濃い条件はなぜ不向きか説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$0<x\\le\\frac{2}{3}$：$A=\\varepsilon\\ell\\cdot\\dfrac{xC_{0}}{2}=1.50x$，$\\frac{2}{3}\\le x<1$：$A=\\varepsilon\\ell(1-x)C_{0}=3.00(1-x)$．$x=\\frac{2}{3}$ で最大 $A=1.00$．$\\ce{ML3}$ なら $x=\\frac{3}{4}$．"
+   },
+   {
+    "id": "2",
+    "tex": "$K=5.6\\times10^{7}\\,\\mathrm{L^{2}/mol^{2}}$"
+   },
+   {
+    "id": "3",
+    "tex": "最大の点で $dy=0$ とすると $l^{2}\\,dm+2ml\\,dl=0$，$dm=\\delta$，$dl=-\\delta$ より $l=2m$．$l=[\\ce{L}]_{\\mathrm t}-2y$，$m=[\\ce{M}]_{\\mathrm t}-y$ を代入すると $[\\ce{L}]_{\\mathrm t}=2[\\ce{M}]_{\\mathrm t}$，すなわち $x=\\frac{2}{3}$ で，$K$ によらない．"
+   },
+   {
+    "id": "4",
+    "tex": "小さくなる（約 $0.32$）．$\\ce{ML2}$ の生成は 3 個の粒子が 1 個になる反応なので，薄めると解離する向きに平衡が移るから．比が 1 に近いと，$K$ を決める遊離の M・L の濃度が「理想値と実測値の小さな差」から求まるので，吸光度のわずかな測定誤差で $K$ が大きく変わる（極大が鋭い三角形に近づき，曲がり具合から $K$ が読めない）．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $[\\ce{M}]_{\\mathrm t}=(1-x)C_{0}$，$[\\ce{L}]_{\\mathrm t}=xC_{0}$．L が足りないのは $[\\ce{L}]_{\\mathrm t}<2[\\ce{M}]_{\\mathrm t}$，すなわち $x<\\frac{2}{3}$ のときで，$[\\ce{ML2}]=xC_{0}/2$．M が足りない $x>\\frac{2}{3}$ では $[\\ce{ML2}]=(1-x)C_{0}$．\n\\[ A=\\begin{cases}1.50\\times10^{3}\\times\\dfrac{x\\times2.00\\times10^{-3}}{2}=1.50x & (x\\le\\tfrac{2}{3})\\\\[4pt] 1.50\\times10^{3}\\times(1-x)\\times2.00\\times10^{-3}=3.00(1-x) & (x\\ge\\tfrac{2}{3})\\end{cases} \\]\n増加する直線と減少する直線の交点 $\\boldsymbol{x=2/3}$ で最大，$\\boldsymbol{A=1.00}$．一般に $\\ce{ML_{n}}$ なら $[\\ce{L}]_{\\mathrm t}=n[\\ce{M}]_{\\mathrm t}$ の $x=n/(n+1)$ が頂点で，$\\ce{ML3}$ では $\\boldsymbol{x=3/4}$．\n\n\\textbf{(2)} $x=\\frac{2}{3}$ では $[\\ce{M}]_{\\mathrm t}=\\frac{C_{0}}{3}=6.67\\times10^{-4}$，$[\\ce{L}]_{\\mathrm t}=1.333\\times10^{-3}\\,\\mathrm{mol/L}$．\n\\[ y=\\frac{0.800}{1.50\\times10^{3}\\times1.00}=5.33\\times10^{-4}\\,\\mathrm{mol/L} \\]\n$m=6.67\\times10^{-4}-5.33\\times10^{-4}=1.33\\times10^{-4}$，$l=1.333\\times10^{-3}-2\\times5.33\\times10^{-4}=2.67\\times10^{-4}\\,\\mathrm{mol/L}$．\n\\[ K=\\frac{5.33\\times10^{-4}}{1.33\\times10^{-4}\\times(2.67\\times10^{-4})^{2}}=\\boldsymbol{5.6\\times10^{7}\\,\\mathrm{L^{2}/mol^{2}}} \\]\n（比を使うと $y:m:l=0.8:0.2:0.4$（単位 $C_{0}/3$）で，$K=\\dfrac{0.8}{0.2\\times0.4^{2}}\\times\\Big(\\dfrac{3}{C_{0}}\\Big)^{2}=\\dfrac{225}{C_{0}^{2}}$ となり同じ値．）\n\n\\textbf{(3)} $y=Kml^{2}$ の両辺の微小変化をとると $dy=K(l^{2}\\,dm+2ml\\,dl)$．ここで $dm=\\delta-dy$，$dl=-\\delta-2\\,dy$．最大の点では $dy=0$ なので\n\\[ 0=K\\,l\\,(l\\,\\delta-2m\\,\\delta)\\quad\\Rightarrow\\quad l=2m \\]\n$l=[\\ce{L}]_{\\mathrm t}-2y$，$m=[\\ce{M}]_{\\mathrm t}-y$ を代入すると $[\\ce{L}]_{\\mathrm t}-2y=2[\\ce{M}]_{\\mathrm t}-2y$，よって $[\\ce{L}]_{\\mathrm t}=2[\\ce{M}]_{\\mathrm t}$，$\\boldsymbol{x=2/3}$．$K$ も $C_{0}$ も式から消えるので，解離があっても極大の位置は組成だけで決まる（極大の高さと丸み方が $K$ で変わる）．\n\n\\textbf{(4)} 比を $r$ とすると，$x=\\frac{2}{3}$ では $y=r\\,\\frac{C_{0}}{3}$，$m=(1-r)\\frac{C_{0}}{3}$，$l=2(1-r)\\frac{C_{0}}{3}$ なので\n\\[ K=\\frac{r}{4(1-r)^{3}}\\Big(\\frac{3}{C_{0}}\\Big)^{2}\\quad\\Rightarrow\\quad \\frac{r}{(1-r)^{3}}=\\frac{4KC_{0}^{2}}{9} \\]\n$C_{0}$ を $1/10$ にすると右辺は $1/100$ になるので $r$ は\\textbf{小さくなる}（$r/(1-r)^{3}$ が $100\\to1.0$ となり，$r\\fallingdotseq0.32$）．粒子数が減る向きの反応なので，薄めるほど解離する．\\\\\n逆に濃くして $r$ が 1 に近づくと，$1-r$（遊離の M・L の量）は「理想値と実測値の差」というわずかな量になり，$K\\propto1/(1-r)^{3}$ なので吸光度の小さな誤差が $K$ に 3 乗で拡大される．組成（$x$ の頂点）は濃い条件の鋭い三角形の方が読みやすいが，$K$ は $r$ が 1 から十分離れる（曲がりがはっきり見える）濃度で求める方がよい．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "連続変化法では全濃度一定で混合比を変えると，錯体濃度は ML_n の組成比 x=n/(n+1) で極大になり，この位置は安定度定数によらない（最大条件から遊離の L と M の比が n:1 になることで示せる）．頂点での理想値からの低下量から遊離の M・L を求めて安定度定数を決め，濃度を変えたときの解離の進み方と K の決定精度を判断する．"
+ },
+ "concepts": [
+  "precipitation",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "連続変化法",
+  "錯体の組成",
+  "安定度定数",
+  "吸光度",
+  "ランベルト・ベールの法則"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

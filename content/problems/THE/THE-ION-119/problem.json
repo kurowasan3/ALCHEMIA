@@ -1,0 +1,118 @@
+{
+ "id": "THE-ION-119",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "構造の似た指示薬の重ね合わせによる酸度関数の物差しの拡張と濃い酸での pH とのずれ",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "濃い酸の強さは，弱塩基の指示薬 B のプロトン化の程度から定める酸度関数 $H_0$ で表す．\n\\[ \\ce{BH+ <=>[\\text{}] B + H+},\\qquad H_0=\\mathrm{p}K_\\mathrm{a}-\\log_{10}r,\\qquad r=\\frac{[\\ce{BH+}]}{[\\ce{B}]} \\]\nここで $\\mathrm{p}K_\\mathrm{a}$ は希薄な水溶液での $\\ce{BH+}$ の値で，希薄な水溶液では $H_0=\\mathrm{pH}$ となる．$r$ は吸光度から求めるが，精度よく測れるのは $0.1\\leqq r\\leqq10$ の範囲だけとする．\n\n構造のよく似た3種類の弱塩基（置換ニトロアニリン）B1，B2，B3 を使って，次の測定を行った．\n\n測定1：pH $1.00$ の希塩酸中で，B1 の $r=0.50$．\n\n測定2：硫酸水溶液 $\\mathrm{S_1}$ 中で，B1 の $r=8.0$，B2 の $r=0.125$．\n\n測定3：硫酸水溶液 $\\mathrm{S_2}$ 中で，B2 の $r=6.0$，B3 の $r=0.125$．\n\n測定4：硫酸水溶液 $\\mathrm{S_3}$（濃度 $8.0\\,\\mathrm{mol/L}$）中で，B3 の $r=8.0$．B1，B2 の $r$ は測定範囲の外だった．\n\n必要なら $\\log_{10}2=0.30$，$\\log_{10}3=0.48$ を用い（他の対数・指数は計算してよい），$\\mathrm{p}K_\\mathrm{a}$ と $H_0$ は小数第2位まで求めよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "B1 の $\\mathrm{p}K_\\mathrm{a}$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$\\mathrm{S_1}$ の $H_0$ と B2 の $\\mathrm{p}K_\\mathrm{a}$ を求めよ．また，この求め方では「同じ溶液中では B1 から求めた $H_0$ と B2 から求めた $H_0$ が等しい」と仮定している．この仮定が成り立つためには指示薬どうしがどのような関係にあることが必要か，答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\mathrm{S_2}$ の $H_0$ と B3 の $\\mathrm{p}K_\\mathrm{a}$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\mathrm{S_3}$ の $H_0$ を求めよ．また，$\\mathrm{S_3}$ で硫酸の1段目の電離だけが完全に起こるとして $[\\ce{H+}]$ を求め，$H_0=-\\log_{10}\\left([\\ce{H+}]\\times\\varGamma\\right)$ とおいたときの補正の係数 $\\varGamma$ を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "B2 の $\\mathrm{p}K_\\mathrm{a}$ を，B1 のように希薄な水溶液中で直接求めることができない理由を，$r$ を精度よく測るために必要な $H_0$ の範囲と，それを $-\\log_{10}[\\ce{H+}]$ で実現するのに必要な $[\\ce{H+}]$ から説明せよ．また，$\\mathrm{S_1}$ で B3 を使って $H_0$ を測ろうとすると B3 の $r$ はいくらになるか有効数字2桁で求め，B1→B2→B3 と順に測定する必要がある理由を述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$0.70$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\mathrm{S_1}$：$H_0=-0.20$，B2：$\\mathrm{p}K_\\mathrm{a}=-1.10$．2つの指示薬の構造がよく似ていて，溶液中での B と $\\ce{BH+}$ の振る舞い（活量の補正の比）が同じとみなせること．"
+   },
+   {
+    "id": "3",
+    "tex": "$\\mathrm{S_2}$：$H_0=-1.88$，B3：$\\mathrm{p}K_\\mathrm{a}=-2.78$"
+   },
+   {
+    "id": "4",
+    "tex": "$H_0=-3.68$，$[\\ce{H+}]=8.0\\,\\mathrm{mol/L}$，$\\varGamma=6.0\\times10^{2}$"
+   },
+   {
+    "id": "5",
+    "tex": "B2 で $0.1\\leqq r\\leqq10$ になるのは $-2.10\\leqq H_0\\leqq-0.10$ のときで，これを $-\\log_{10}[\\ce{H+}]$ で実現するには $[\\ce{H+}]\\geqq1.3\\,\\mathrm{mol/L}$（$r=1$ 付近なら約 $13\\,\\mathrm{mol/L}$）が必要になり，もはや希薄な水溶液ではなく $H_0=\\mathrm{pH}$ が成り立たないから．$\\mathrm{S_1}$ での B3 の $r$ は $2.6\\times10^{-3}$ で測定範囲外である．1つの指示薬で精度よく測れる $H_0$ の幅は $\\mathrm{p}K_\\mathrm{a}\\pm1$ の約2しかないので，両方が測れる溶液で隣り合う指示薬の $\\mathrm{p}K_\\mathrm{a}$ を順に結びつけていく必要がある．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{方針}　同じ溶液中で2つの指示薬の $r$ が両方測れれば，$H_0$ が共通なので\n\\[ \\mathrm{p}K_\\mathrm{a}(\\text{B}_\\text{new})=H_0+\\log_{10}r_\\text{new}=\\mathrm{p}K_\\mathrm{a}(\\text{B}_\\text{old})-\\log_{10}r_\\text{old}+\\log_{10}r_\\text{new} \\]\nとなり，既知の指示薬から未知の指示薬の $\\mathrm{p}K_\\mathrm{a}$ が決まる（重ね合わせの方法）．\n\n\\textbf{(1)}　希薄な水溶液なので $H_0=\\mathrm{pH}=1.00$．\n\\[ \\mathrm{p}K_\\mathrm{a1}=H_0+\\log_{10}r=1.00+\\log_{10}0.50=1.00-0.30=\\boldsymbol{0.70} \\]\n$r=0.50$ は測定範囲内なので精度よく求まる．\n\n\\textbf{(2)}　$\\mathrm{S_1}$ で B1 から $H_0=0.70-\\log_{10}8.0=0.70-0.90=\\boldsymbol{-0.20}$．\nB2 について $\\log_{10}0.125=\\log_{10}(1/8)=-0.90$ なので $\\mathrm{p}K_\\mathrm{a2}=-0.20+(-0.90)=\\boldsymbol{-1.10}$．\n濃い酸の中では，$r$ は $[\\ce{H+}]$ だけでなく B と $\\ce{BH+}$ が溶液から受ける影響（活量の補正）にも左右される．B1 と B2 で同じ $H_0$ が得られるためには，この影響の比 $\\gamma_{\\ce{B}}/\\gamma_{\\ce{BH+}}$ が指示薬によらず同じでなければならない．そのため，電荷の型が同じ（中性の塩基とその1価の陽イオン）で\\textbf{構造のよく似た指示薬}の系列を用いる．\n\n\\textbf{(3)}　$\\mathrm{S_2}$ で B2 から $H_0=-1.10-\\log_{10}6.0=-1.10-(0.30+0.48)=\\boldsymbol{-1.88}$．\nB3：$\\log_{10}0.125=-0.90$ より $\\mathrm{p}K_\\mathrm{a3}=-1.88-0.90=\\boldsymbol{-2.78}$．\n\n\\textbf{(4)}　$\\mathrm{S_3}$ で B3 から $H_0=-2.78-\\log_{10}8.0=-2.78-0.90=\\boldsymbol{-3.68}$．\n1段目だけが完全に電離すると $[\\ce{H+}]=\\boldsymbol{8.0\\,\\mathrm{mol/L}}$，$-\\log_{10}[\\ce{H+}]=-0.90$．\n\\[ \\log_{10}\\varGamma=-\\log_{10}[\\ce{H+}]-H_0=-0.90+3.68=2.78,\\qquad \\varGamma=10^{2.78}=\\boldsymbol{6.0\\times10^{2}} \\]\nこの硫酸は，濃度から予想されるより約 $600$ 倍も強く塩基をプロトン化する．水が少なくなると $\\ce{H+}$ が水和で安定化されにくくなり，塩基に $\\ce{H+}$ を渡しやすくなるためで，濃い酸の強さを $\\ce{H+}$ の濃度だけで表せないことを示している．\n\n\\textbf{(5)}　B2 で $0.1\\leqq r\\leqq10$ となるのは $\\mathrm{p}K_\\mathrm{a2}-1\\leqq H_0\\leqq\\mathrm{p}K_\\mathrm{a2}+1$，すなわち $-2.10\\leqq H_0\\leqq-0.10$．もし $H_0=-\\log_{10}[\\ce{H+}]$ が成り立つなら，最も条件のよい端でも $[\\ce{H+}]\\geqq10^{0.10}=1.3\\,\\mathrm{mol/L}$，$r=1$ 付近で測るには $[\\ce{H+}]\\fallingdotseq10^{1.10}\\fallingdotseq13\\,\\mathrm{mol/L}$ が必要になる．これほど濃い酸は希薄な水溶液とはいえず，$H_0=\\mathrm{pH}$ を前提にできない（実際 (4) のように大きくずれる）ので，B2 の $\\mathrm{p}K_\\mathrm{a}$ は直接は決められない．\n$\\mathrm{S_1}$（$H_0=-0.20$）で B3 を使うと $\\log_{10}r=-2.78+0.20=-2.58$，$r=10^{-2.58}=\\boldsymbol{2.6\\times10^{-3}}$ で，ほとんど B のままなので測定範囲外である．1つの指示薬で測れる $H_0$ の幅は $\\mathrm{p}K_\\mathrm{a}\\pm1$ の約2単位しかないので，$\\mathrm{p}K_\\mathrm{a}$ が少しずつずれた指示薬を用意し，2つを同時に測れる溶液（$\\mathrm{S_1}$，$\\mathrm{S_2}$）で順に $\\mathrm{p}K_\\mathrm{a}$ を受け渡して，水溶液の pH と結びついた物差しを強酸側へ延ばしていく必要がある．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "1つの指示薬で精度よく測れるのは pKa±1 の範囲だけなので，希薄な水溶液で pKa を決めた指示薬から出発し，2つの指示薬を同時に測れる溶液で H₀ が共通であることを使って次の指示薬の pKa を順に決め，物差しを強酸側へ延ばす．この方法が成り立つ条件（構造の似た指示薬で活量補正の比が同じ）と，濃い酸では H₀ が −log[H⁺] から大きくずれることを定量的に判断する．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "oxygen-sulfur",
+  "ph"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "酸度関数",
+  "指示薬",
+  "重ね合わせ法",
+  "濃硫酸",
+  "活量",
+  "測定範囲"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

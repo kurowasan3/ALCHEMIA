@@ -1,0 +1,118 @@
+{
+ "id": "THE-ION-051",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "塩化銀の溶解度と塩化物イオン濃度（共通イオン効果と錯形成の競合）",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "塩化銀 $\\ce{AgCl}$ は塩化物イオンを含む水溶液に溶けにくくなるが，$\\ce{Cl-}$ が非常に多いと錯イオン $\\ce{[AgCl2]-}$ をつくって溶けるようになる．25 ℃ で次の 2 つの平衡だけを考える．\n\\[\\ce{AgCl(s) <=> Ag+ + Cl-}\\qquad K_{sp}=[\\ce{Ag+}][\\ce{Cl-}]=1.8\\times10^{-10}\\,(\\mathrm{mol/L})^2\\]\n\\[\\ce{Ag+ + 2Cl- <=> [AgCl2]-}\\qquad \\beta=\\frac{[\\ce{[AgCl2]-}]}{[\\ce{Ag+}][\\ce{Cl-}]^2}=1.0\\times10^{5}\\,(\\mathrm{mol/L})^{-2}\\]\n$\\ce{AgCl}$ の溶解度 $S$ は，溶液中に溶けている銀の全濃度 $S=[\\ce{Ag+}]+[\\ce{[AgCl2]-}]$ で表す．溶液中の $\\ce{Cl-}$ の濃度 $x=[\\ce{Cl-}]$ は（塩酸などを加えて）自由に設定でき，$\\ce{AgCl}$ が溶けても変わらないものとする（(2) を除く）．必要なら $\\sqrt{1.8}=1.34$，$\\sqrt{10}=3.16$ を用いよ．数値は有効数字2桁で答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "AgCl の固体が存在するとき，$S$ を $K_{sp}$，$\\beta$，$x$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "純水に AgCl を飽和させたときの溶解度を求めよ．また，このとき $\\ce{[AgCl2]-}$ の濃度を求め，錯イオンの生成を無視してよいことを確かめよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$S$ が最小になる $x$ と，そのときの $S$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$x=1.0\\,\\mathrm{mol/L}$ のときの $S$ を求め，純水に対する溶解度と比べよ．また，このとき溶けている銀のうち錯イオンとして存在する割合を百分率で答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "銀を AgCl として沈殿させて重量分析するとき，溶液に残る銀の全濃度を $2.0\\times10^{-6}\\,\\mathrm{mol/L}$ 以下にしたい．$x$ の範囲を求めよ．範囲の下限と上限のそれぞれで，$S$ のどちらの項が無視できるかを示して近似で求め，近似が妥当であることも確かめよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$S=\\dfrac{K_{sp}}{x}+K_{sp}\\beta x$"
+   },
+   {
+    "id": "2",
+    "tex": "$1.3\\times10^{-5}\\,\\mathrm{mol/L}$，$[\\ce{[AgCl2]-}]=2.4\\times10^{-10}\\,\\mathrm{mol/L}$（$[\\ce{Ag+}]$ の約 $2\\times10^{-5}$ 倍で無視できる）"
+   },
+   {
+    "id": "3",
+    "tex": "$x=3.2\\times10^{-3}\\,\\mathrm{mol/L}$，$S=1.1\\times10^{-7}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "4",
+    "tex": "$S=1.8\\times10^{-5}\\,\\mathrm{mol/L}$ で純水中（$1.3\\times10^{-5}$）より大きい．錯イオンの割合は約 100 %（99.999 %）"
+   },
+   {
+    "id": "5",
+    "tex": "$9.0\\times10^{-5}\\,\\mathrm{mol/L}\\leqq x\\leqq 0.11\\,\\mathrm{mol/L}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 固体があるので $[\\ce{Ag+}]=K_{sp}/x$．$[\\ce{[AgCl2]-}]=\\beta[\\ce{Ag+}]x^2=K_{sp}\\beta x$．よって\n\\[S=\\frac{K_{sp}}{x}+K_{sp}\\beta x\\]\n第1項は共通イオン効果で $x$ に反比例して減り，第2項は錯形成で $x$ に比例して増える．\n\n\\textbf{(2)} 錯イオンを無視すると $[\\ce{Ag+}]=[\\ce{Cl-}]=\\sqrt{K_{sp}}=1.34\\times10^{-5}$，$S=\\boldsymbol{1.3\\times10^{-5}\\,\\mathrm{mol/L}}$．このとき $[\\ce{[AgCl2]-}]=K_{sp}\\beta x=1.8\\times10^{-5}\\times1.34\\times10^{-5}=\\boldsymbol{2.4\\times10^{-10}\\,\\mathrm{mol/L}}$ で，$[\\ce{Ag+}]$ の $2\\times10^{-5}$ 倍にすぎない（錯イオンが $\\ce{Cl-}$ を消費する量も無視できる）ので，無視してよい．\n\n\\textbf{(3)} 相加平均と相乗平均の関係より\n\\[S=\\frac{K_{sp}}{x}+K_{sp}\\beta x\\geqq 2\\sqrt{\\frac{K_{sp}}{x}\\cdot K_{sp}\\beta x}=2K_{sp}\\sqrt{\\beta}\\]\n等号は $\\dfrac{K_{sp}}{x}=K_{sp}\\beta x$，すなわち $x=\\dfrac1{\\sqrt\\beta}=\\dfrac{1}{3.16\\times10^{2}}=\\boldsymbol{3.2\\times10^{-3}\\,\\mathrm{mol/L}}$ のとき．$S_{\\min}=2\\times1.8\\times10^{-10}\\times316=\\boldsymbol{1.1\\times10^{-7}\\,\\mathrm{mol/L}}$．このとき $\\ce{Ag+}$ と錯イオンが半分ずつである．（$\\log S$ を $\\log x$ に対してかくと，傾き $-1$ と $+1$ の直線をなめらかにつないだ V 字形になる．）\n\n\\textbf{(4)} $S=1.8\\times10^{-10}+1.8\\times10^{-10}\\times10^5\\times1.0=\\boldsymbol{1.8\\times10^{-5}\\,\\mathrm{mol/L}}$．純水中の $1.3\\times10^{-5}$ より\\textbf{大きい}．塩酸を多量に加えすぎると，かえって AgCl が溶けることになる．錯イオンの割合は $\\dfrac{1.8\\times10^{-5}}{1.8\\times10^{-5}+1.8\\times10^{-10}}\\times100\\fallingdotseq\\boldsymbol{100\\,\\%}$（第1項は $10^{-5}$ 倍）．\n\n\\textbf{(5)} $S\\leqq2.0\\times10^{-6}$ を満たす $x$ は，$S_{\\min}$ をはさむ区間になる．\n\n下限側（$x$ が小さい）では第2項が小さいので無視して $\\dfrac{K_{sp}}{x}\\leqq2.0\\times10^{-6}$，$x\\geqq\\boldsymbol{9.0\\times10^{-5}\\,\\mathrm{mol/L}}$．このとき第2項は $1.8\\times10^{-5}\\times9.0\\times10^{-5}=1.6\\times10^{-9}$ で，$2.0\\times10^{-6}$ の 0.1 % 程度．\n\n上限側では第1項を無視して $K_{sp}\\beta x\\leqq2.0\\times10^{-6}$，$x\\leqq\\dfrac{2.0\\times10^{-6}}{1.8\\times10^{-5}}=\\boldsymbol{0.11\\,\\mathrm{mol/L}}$．このとき第1項は $1.8\\times10^{-10}/0.11=1.6\\times10^{-9}$ で，やはり 0.1 % 程度．\n\n（2 次方程式 $K_{sp}\\beta x^2-2.0\\times10^{-6}x+K_{sp}=0$ を厳密に解いても $x=9.0\\times10^{-5},\\ 0.111$ で，有効数字2桁では一致する．）\n\nしたがって $\\boldsymbol{9.0\\times10^{-5}\\leqq x\\leqq0.11\\ (\\mathrm{mol/L})}$．沈殿剤の $\\ce{Cl-}$ は「少し過剰」がよく，多すぎても少なすぎても損失が大きくなる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "同じ Cl⁻ が，共通イオン効果では AgCl の溶解度を下げ，錯イオン [AgCl₂]⁻ の生成では上げるため，溶解度は Ksp/x と Ksp·β·x の和となり，x=1/√β で最小になる．Cl⁻ が多すぎると純水より溶けやすくなること，溶解度を一定以下に抑える Cl⁻ 濃度の範囲の両端でどちらの項を無視できるかを判断させる．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "complex-ion",
+  "precipitation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "溶解度積",
+  "錯イオン",
+  "共通イオン効果",
+  "塩化銀",
+  "重量分析",
+  "近似"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,108 @@
+{
+ "id": "POL-PRT-069",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-05",
+ "topic": "グリシン2個・アラニン2個のテトラペプチドの配列の数え上げと部分加水分解による決定",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "structure",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "グリシン（Gly，分子量 75）2 分子とアラニン（Ala，分子量 89）2 分子が縮合してできた鎖状のテトラペプチド X がある．アミノ酸の配列は N 末端（遊離のアミノ基をもつ末端）から順に書くものとし，光学異性体は区別しない．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "X として考えられるアミノ酸の配列は何通りあるか．"
+     },
+     {
+      "id": "2",
+      "tex": "X の分子量を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "X の N 末端のアミノ酸を調べると，旋光性を示さないアミノ酸であった．考えられる配列は何通りあるか．"
+     },
+     {
+      "id": "4",
+      "tex": "X を部分的に加水分解して得られるジペプチドを調べたところ，ジペプチドは 2 種類（配列の異なるもの）だけであった．(3) の結果と合わせて X の配列を決定せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "6 通り"
+   },
+   {
+    "id": "2",
+    "tex": "274"
+   },
+   {
+    "id": "3",
+    "tex": "3 通り"
+   },
+   {
+    "id": "4",
+    "tex": "Gly-Ala-Gly-Ala"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 4 か所のうち Gly が入る 2 か所を選ぶ方法の数だけあるので ${}_4\\mathrm{C}_2 = \\boldsymbol{6}$ 通り：GGAA，GAGA，GAAG，AGGA，AGAG，AAGG（G＝Gly，A＝Ala）．ペプチドには N 末端と C 末端の区別があるので，GGAA と AAGG は別の化合物である．\n\n\\textbf{(2)} 4 分子が縮合するとペプチド結合が 3 つでき，水 3 分子がとれる：$2\\times75 + 2\\times89 - 3\\times18 = \\boldsymbol{274}$．\n\n\\textbf{(3)} 旋光性を示さない（不斉炭素原子をもたない）アミノ酸はグリシンなので，N 末端が G の GGAA，GAGA，GAAG の $\\boldsymbol{3}$ 通り．\n\n\\textbf{(4)} 隣り合う 2 残基の組（部分加水分解で生じうるジペプチド）を書き出すと\n\\[\\text{GGAA}:\\ \\text{GG, GA, AA}\\qquad \\text{GAGA}:\\ \\text{GA, AG, GA}\\qquad \\text{GAAG}:\\ \\text{GA, AA, AG}\\]\nジペプチドが 2 種類（GA と AG）だけになるのは GAGA だけなので，X は \\textbf{Gly-Ala-Gly-Ala}．（GA と AG は構成アミノ酸が同じでも配列が異なる別のジペプチドである．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "2種類のアミノ酸を2個ずつ含むテトラペプチドの配列は位置の組み合わせで数え，N末端・C末端の区別があるので逆順も別物とする．N末端の旋光性と部分加水分解で生じるジペプチドの種類（隣接する2残基の組）で候補を1つに絞る．"
+ },
+ "concepts": [
+  "protein-amino"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ペプチド",
+  "アミノ酸配列",
+  "部分加水分解",
+  "グリシン",
+  "アラニン",
+  "数え上げ"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

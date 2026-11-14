@@ -1,0 +1,132 @@
+{
+ "id": "THE-ELC-082",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-07",
+ "topic": "電気分解で発生する酸素の溶解量の時間変化（水素の発生による希釈と極大の有無）",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ピストン付きの容器に，気体を溶かしていない $4.00\\times10^{-2}\\,\\mathrm{mol/L}$ の硫酸銅(II) 水溶液 $0.500\\,\\mathrm{L}$ とアルゴンを入れて封じ，気体の全圧を $1.00\\,\\mathrm{atm}$，温度を $20\\,^\\circ\\mathrm{C}$ に保ちながら，2本の白金電極を用いて $0.500\\,\\mathrm{A}$ の一定電流で電気分解を続ける．はじめ陰極には銅が析出するが，$\\ce{Cu^2+}$ がなくなると陰極から水素が発生しはじめる．\n\n$20\\,^\\circ\\mathrm{C}$ で水溶液に溶けている酸素の物質量は，気相の酸素の分圧に比例し，分圧 $1.00\\,\\mathrm{atm}$ のとき水溶液 $1.00\\,\\mathrm{L}$ あたり $1.36\\times10^{-3}\\,\\mathrm{mol}$ とする．気相の各気体の物質量を求めるときは，水に溶けた量（気相の量の 1 \\% 程度）は無視してよい．水素・アルゴンの溶解と水の蒸気圧も無視する．ファラデー定数は $9.65\\times10^4\\,\\mathrm{C/mol}$ とする．\n\nアルゴンの量が $1.00\\times10^{-2}\\,\\mathrm{mol}$ の場合を場合 I，$3.00\\times10^{-2}\\,\\mathrm{mol}$ の場合を場合 II とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "電気分解を始めてから $\\ce{Cu^2+}$ がなくなるまでの時間 [分] を有効数字3桁で求めよ．また，その後に陰極で起こる反応をイオン反応式で示せ（水溶液は酸性になっている）．"
+     },
+     {
+      "id": "2",
+      "tex": "十分に長い時間電気分解を続けると，気相の酸素のモル分率はある値に近づく．その値を答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "場合 I と場合 II のそれぞれについて，$\\ce{Cu^2+}$ がなくなった時点で水溶液に溶けている酸素の物質量と，十分に長い時間の後に溶けている酸素の物質量を有効数字3桁で求めよ．また，$\\ce{Cu^2+}$ がなくなった後，溶けている酸素の物質量はそれぞれ増えるか減るか．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\ce{Cu^2+}$ がなくなった後も溶けている酸素の物質量が一定に保たれるのは，アルゴンの量が何 mol のときか．また，$\\ce{Cu^2+}$ がなくなった後に溶けている酸素が減るための条件を，アルゴンの物質量 $n_{\\mathrm{Ar}}$ と，はじめの $\\ce{Cu^2+}$ の物質量 $n_{\\mathrm{Cu}}$ の大小で答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "場合 I で，電気分解を始めてから 300 分後に水溶液に溶けている酸素の物質量を有効数字3桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：電気分解で発生する酸素の溶解量の時間変化（水素の発生による希釈と極大の有無）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$129$ 分，$\\ce{2H+ + 2e- -> H2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\dfrac13$"
+   },
+   {
+    "id": "3",
+    "tex": "場合 I：$3.40\\times10^{-4}\\,\\mathrm{mol}$ → $2.27\\times10^{-4}\\,\\mathrm{mol}$（減る），場合 II：$1.70\\times10^{-4}\\,\\mathrm{mol}$ → $2.27\\times10^{-4}\\,\\mathrm{mol}$（増える）"
+   },
+   {
+    "id": "4",
+    "tex": "$2.00\\times10^{-2}\\,\\mathrm{mol}$，$n_{\\mathrm{Ar}}<n_{\\mathrm{Cu}}$"
+   },
+   {
+    "id": "5",
+    "tex": "$2.64\\times10^{-4}\\,\\mathrm{mol}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　$\\ce{Cu^2+}$ は $4.00\\times10^{-2}\\times0.500=2.00\\times10^{-2}\\,\\mathrm{mol}$ で，析出に電子 $4.00\\times10^{-2}\\,\\mathrm{mol}$ が必要．\n\\[ t=\\dfrac{4.00\\times10^{-2}\\times9.65\\times10^4}{0.500}=7720\\,\\mathrm{s}=\\boldsymbol{129\\,\\text{分}} \\]\n陽極で生じた $\\ce{H+}$ により水溶液は硫酸酸性になっているので，その後の陰極では $\\boldsymbol{\\ce{2H+ + 2e- -> H2}}$．\n\n\\textbf{(2)}　$\\ce{Cu^2+}$ がなくなった後は，電子 4 mol ごとに陽極で $\\ce{O2}$ 1 mol，陰極で $\\ce{H2}$ 2 mol が生じる．長時間ののちは気相の大部分がこの $1:2$ の混合物になり，アルゴンやはじめの酸素の割合は無視できるので，$\\ce{O2}$ のモル分率は $\\boldsymbol{\\dfrac13}$ に近づく．\n\n\\textbf{(3)}　溶けている酸素は $1.36\\times10^{-3}\\times0.500\\times x_{\\ce{O2}}=6.80\\times10^{-4}\\,x_{\\ce{O2}}\\ \\mathrm{mol}$（全圧 1.00 atm なので分圧はモル分率 $x_{\\ce{O2}}$ に等しい）．$\\ce{Cu^2+}$ がなくなった時点で発生した酸素は $1.00\\times10^{-2}\\,\\mathrm{mol}$，水素はまだない．\n\n場合 I：$x_{\\ce{O2}}=\\dfrac{1.00}{1.00+1.00}=0.500$ → $\\boldsymbol{3.40\\times10^{-4}\\,\\mathrm{mol}}$．長時間後は $6.80\\times10^{-4}\\times\\dfrac13=\\boldsymbol{2.27\\times10^{-4}\\,\\mathrm{mol}}$ で，$\\ce{Cu^2+}$ がなくなった後は\\textbf{減る}（その時点が極大）．\n\n場合 II：$x_{\\ce{O2}}=\\dfrac{1.00}{1.00+3.00}=0.250$ → $\\boldsymbol{1.70\\times10^{-4}\\,\\mathrm{mol}}$．長時間後は同じ $\\boldsymbol{2.27\\times10^{-4}\\,\\mathrm{mol}}$ で，その後も\\textbf{増える}．\n\n\\textbf{(4)}　$\\ce{Cu^2+}$ がなくなった時点の酸素を $a=\\dfrac{n_{\\mathrm{Cu}}}{2}$，その後に生じた酸素を $q$ とすると，水素は $2q$ なので\n\\[ x_{\\ce{O2}}=\\dfrac{a+q}{a+3q+n_{\\mathrm{Ar}}} \\]\n$q$ を増やすと，分子に1，分母に3加わる．$x_{\\ce{O2}}$ の変化の向きは $\\dfrac{a}{a+n_{\\mathrm{Ar}}}$ と $\\dfrac13$ の大小で決まり，$\\dfrac{dx}{dq}$ の符号は $(a+n_{\\mathrm{Ar}})-3a=n_{\\mathrm{Ar}}-n_{\\mathrm{Cu}}$ の符号に等しい．したがって $n_{\\mathrm{Ar}}=n_{\\mathrm{Cu}}=\\boldsymbol{2.00\\times10^{-2}\\,\\mathrm{mol}}$ のとき $x_{\\ce{O2}}=\\dfrac13$ のまま一定になり，$\\boldsymbol{n_{\\mathrm{Ar}}<n_{\\mathrm{Cu}}}$ のとき減少する（場合 I），$n_{\\mathrm{Ar}}>n_{\\mathrm{Cu}}$ のとき増加する（場合 II）．\n\n\\textbf{(5)}　300 分で流れた電子は $\\dfrac{0.500\\times18000}{9.65\\times10^4}=9.326\\times10^{-2}\\,\\mathrm{mol}$．$\\ce{O2}$ は $2.332\\times10^{-2}\\,\\mathrm{mol}$，$\\ce{H2}$ は $\\dfrac{9.326\\times10^{-2}-4.00\\times10^{-2}}{2}=2.663\\times10^{-2}\\,\\mathrm{mol}$．\n\\[ x_{\\ce{O2}}=\\dfrac{2.332}{2.332+2.663+1.00}=0.389,\\qquad 6.80\\times10^{-4}\\times0.389=\\boldsymbol{2.64\\times10^{-4}\\,\\mathrm{mol}} \\]\n解答図のように，場合 I では $\\ce{Cu^2+}$ がなくなる 129 分で極大となったあと $2.27\\times10^{-4}\\,\\mathrm{mol}$ に向かって減り，場合 II では折れ曲がりながら増え続ける．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "全圧一定で溶ける酸素の量は気相の酸素のモル分率で決まる．Cu²⁺ がなくなると O₂ と H₂ が 1:2 で発生してモル分率は 1/3 に近づくので，その時点のモル分率 (n_Cu/2)/(n_Cu/2+n_Ar) と 1/3 の大小（n_Ar と n_Cu の大小）で，溶解量がその時点で極大になるか増え続けるかが決まる．"
+ },
+ "concepts": [
+  "electrolysis",
+  "oxygen-sulfur",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電気分解",
+  "ヘンリーの法則",
+  "モル分率",
+  "分圧",
+  "ファラデーの法則",
+  "場合分け"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

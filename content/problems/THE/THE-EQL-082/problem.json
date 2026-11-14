@@ -1,0 +1,132 @@
+{
+ "id": "THE-EQL-082",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "ビクトル・マイヤー法で求める五塩化リンの解離度と圧平衡定数（定圧の加熱部と定積容器の違い）",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図の装置で，管 A を高温 $T_1$ に保ち，ガスビュレット B（室温 $T_2=300\\,\\mathrm K$）の気体の圧力を水銀だめ C で大気圧 $p$ にそろえて体積を読む．五塩化リン $\\ce{PCl5}$ をガラス小球に封入して A の底に落として割ると，$\\ce{PCl5}$ はすべて気体になり，A の中で\n\\[\\ce{PCl5 <=> PCl3 + Cl2}\\]\nの平衡にすみやかに達する．A の下部にたまった気体（$\\ce{PCl5}$，$\\ce{PCl3}$，$\\ce{Cl2}$）は空気とほとんど混じらず，全圧 $p$ でこの 3 種類だけからなるとしてよい．また，これらの気体は B に届かず，押し出された空気だけが B に入る．すべての気体は理想気体とし，気体定数は $8.3\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$，原子量は P 31.0，Cl 35.5 とする．\n$\\ce{PCl5}$ $0.417\\,\\mathrm g$ を用い，$p=1.00\\times10^{5}\\,\\mathrm{Pa}$ で実験したところ，B の体積の増加は，$T_1=523\\,\\mathrm K$ のとき $89.6\\,\\mathrm{mL}$，$T_1=473\\,\\mathrm K$ のとき $70.7\\,\\mathrm{mL}$ であった．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{PCl5}$ のはじめの物質量を $n_0$，解離度を $\\alpha$ とする．B の体積の増加 $v$ を $n_0,\\ \\alpha,\\ p,\\ T_2$ と気体定数 $R$ で表せ．また，平衡が成り立っているのは温度 $T_1$ の A の中なのに，$\\alpha$ を求めるのに $T_1$ の値が必要ない理由を説明せよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$523\\,\\mathrm K$ と $473\\,\\mathrm K$ のそれぞれについて，$\\alpha$ を有効数字 2 桁，圧平衡定数 $K_p$ [Pa] を有効数字 2 桁で求めよ．また，$523\\,\\mathrm K$ でこの測定から計算される「見かけの分子量」を整数で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\ce{PCl5}$ の解離は吸熱反応か発熱反応か．理由とともに答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$T_1=523\\,\\mathrm K$，$p=1.00\\times10^{5}\\,\\mathrm{Pa}$ のまま，$\\ce{PCl5}$ を 2 倍の $0.834\\,\\mathrm g$ にすると，$\\alpha$ と $v$ はそれぞれどうなるか．また，$\\ce{PCl5}$ を容積一定の密閉容器に入れて $523\\,\\mathrm K$ に保つ場合には，量を 2 倍にすると $\\alpha$ はどうなるか．理由とともに答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "装置全体の圧力を $p=0.500\\times10^{5}\\,\\mathrm{Pa}$ にして，$\\ce{PCl5}$ $0.417\\,\\mathrm g$，$T_1=523\\,\\mathrm K$ で実験すると，$\\alpha$ と $v$ はいくらになるか．(2) の $K_p$ を用い，$\\alpha$ は有効数字 2 桁，$v$ [mL] は有効数字 2 桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：ビクトル・マイヤー法で求める五塩化リンの解離度と圧平衡定数（定圧の加熱部と定積容器の違い）",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$v=\\dfrac{n_0(1+\\alpha)RT_2}{p}$．A の中は温度・体積・圧力が一定なので気体の総物質量は変わらず，A で増えた気体粒子と同じ物質量の空気が押し出される．その空気の物質量を B（温度 $T_2$）で測ればよく，$\\alpha$ は増えた粒子の数だけで決まるから．"
+   },
+   {
+    "id": "2",
+    "tex": "$523\\,\\mathrm K$：$\\alpha=0.80$，$K_p=1.8\\times10^{5}\\,\\mathrm{Pa}$　$473\\,\\mathrm K$：$\\alpha=0.42$，$K_p=2.1\\times10^{4}\\,\\mathrm{Pa}$　見かけの分子量 116"
+   },
+   {
+    "id": "3",
+    "tex": "吸熱反応．温度が高いほど $K_p$（解離度）が大きく，高温で平衡が右に移動するから．"
+   },
+   {
+    "id": "4",
+    "tex": "$\\alpha$ は変わらず $0.80$，$v$ は 2 倍の $179\\,\\mathrm{mL}$．容積一定の容器では $\\alpha$ は小さくなる．A の中の気体は物質量によらず全圧 $p$ に保たれるので各分圧の割合が変わらないが，定積容器では量を増やすと全圧が上がり，気体の分子数が減る左向きに平衡が移動するから．"
+   },
+   {
+    "id": "5",
+    "tex": "$\\alpha=0.88$，$v=1.9\\times10^{2}\\,\\mathrm{mL}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　平衡時の A の中の気体は $\\ce{PCl5}$ $n_0(1-\\alpha)$，$\\ce{PCl3}$ $n_0\\alpha$，$\\ce{Cl2}$ $n_0\\alpha$ で，合計 $n_0(1+\\alpha)$ mol．A は温度・体積・圧力が一定なので，そこにある気体の総物質量は一定に保たれ，増えた $n_0(1+\\alpha)$ mol と同じ物質量の空気が B に押し出される．B では温度 $T_2$，圧力 $p$ なので\n\\[\\boldsymbol{v=\\dfrac{n_0(1+\\alpha)RT_2}{p}}\\]\n$T_1$ は A の中の粒子の数を数えるのに関係せず，押し出された空気の物質量は室温で測ればよい．ただし $\\alpha$ そのものは $T_1$ での値である（$T_1$ によって粒子の数が変わり，それが $v$ に表れる）．\n\n\\textbf{(2)}　$n_0=\\dfrac{0.417}{208.5}=2.00\\times10^{-3}\\,\\mathrm{mol}$．$\\dfrac{pv}{RT_2}=n_0(1+\\alpha)$ より\n$523\\,\\mathrm K$：$\\dfrac{1.00\\times10^{5}\\times0.0896}{8.3\\times10^{3}\\times300}=3.60\\times10^{-3}$ なので $1+\\alpha=1.80$，$\\boldsymbol{\\alpha=0.80}$．\n$473\\,\\mathrm K$：$\\dfrac{1.00\\times10^{5}\\times0.0707}{8.3\\times10^{3}\\times300}=2.84\\times10^{-3}$ なので $\\boldsymbol{\\alpha=0.42}$．\nA の中の全圧は $p$ なので，各分圧はモル分率から\n\\[p_{\\ce{PCl5}}=\\dfrac{1-\\alpha}{1+\\alpha}p,\\quad p_{\\ce{PCl3}}=p_{\\ce{Cl2}}=\\dfrac{\\alpha}{1+\\alpha}p,\\qquad K_p=\\dfrac{\\alpha^2}{1-\\alpha^2}p\\]\n$523\\,\\mathrm K$：$K_p=\\dfrac{0.799^2}{1-0.799^2}\\times1.00\\times10^{5}=\\boldsymbol{1.8\\times10^{5}\\,\\mathrm{Pa}}$，$473\\,\\mathrm K$：$K_p=\\dfrac{0.420^2}{1-0.420^2}\\times1.00\\times10^{5}=\\boldsymbol{2.1\\times10^{4}\\,\\mathrm{Pa}}$．\n見かけの分子量は（質量）÷（気体粒子の物質量）$=\\dfrac{208.5}{1+\\alpha}=\\dfrac{208.5}{1.80}\\fallingdotseq\\boldsymbol{116}$ で，$\\ce{PCl5}$ の分子量 208.5 よりずっと小さく出る．\n\n\\textbf{(3)}　温度が高いほど $K_p$ が大きい（約 8 倍）．ルシャトリエの原理より，温度を上げると吸熱の向きに平衡が移動するので，正反応（解離）は$\\boldsymbol{\\text{吸熱反応}}$である．\n\n\\textbf{(4)}　この装置では A の中の気体はつねに全圧 $p$ に保たれる．$K_p=\\dfrac{\\alpha^2}{1-\\alpha^2}p$ には $n_0$ が含まれないので，量を 2 倍にしても$\\boldsymbol{\\alpha=0.80}$ のまま（気体のかたまりの体積が 2 倍になるだけ）で，$v$ は $n_0$ に比例して 2 倍の $\\boldsymbol{179\\,\\mathrm{mL}}$ になる．\n一方，容積 $V$ 一定の容器では $K_p=\\dfrac{\\alpha^2}{1-\\alpha}\\cdot\\dfrac{n_0RT_1}{V}$ となり，$n_0$ を大きくすると右辺の $\\dfrac{n_0RT_1}{V}$ が大きくなるので，$K_p$ 一定を保つには $\\alpha$ が$\\boldsymbol{\\text{小さくなる}}$（全圧が上がり，分子数が減る左向きに平衡が移動する）．例えば $V=0.100\\,\\mathrm L$ なら $\\alpha$ は $0.73$ から $0.62$ に下がる．同じ「量を 2 倍」でも，圧力が一定か体積が一定かで結果が逆になる．\n\n\\textbf{(5)}　$K_p=1.77\\times10^{5}\\,\\mathrm{Pa}$ は温度だけで決まるので，$p=0.500\\times10^{5}\\,\\mathrm{Pa}$ では\n\\[\\dfrac{\\alpha^2}{1-\\alpha^2}=\\dfrac{1.77\\times10^{5}}{0.500\\times10^{5}}=3.54,\\qquad \\alpha^2=\\dfrac{3.54}{4.54}=0.780,\\qquad \\boldsymbol{\\alpha=0.88}\\]\n圧力を下げると分子数が増える右向きに平衡が移動し，解離度は大きくなる．\n\\[v=\\dfrac{2.00\\times10^{-3}\\times1.88\\times8.3\\times10^{3}\\times300}{0.500\\times10^{5}}=0.187\\,\\mathrm L\\fallingdotseq\\boldsymbol{1.9\\times10^{2}\\,\\mathrm{mL}}\\]\n（圧力が半分になる効果で $v$ は約 2 倍になり，さらに $\\alpha$ の増加の分だけ大きくなる．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ビクトル・マイヤー法では加熱部で増えた気体粒子と同じ物質量の空気が室温のビュレットに押し出されるので，加熱部の温度を使わずに解離度が求まり，加熱部の気体は全圧 p に保たれるから K_p＝α²p/(1−α²) となる．このため解離度は試料の量によらず（定積容器では量を増やすと α が下がるのと対照的），外圧を下げると大きくなる．2 つの温度の K_p から反応熱の符号を判断する．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "nitrogen-phosphorus",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "解離度",
+  "圧平衡定数",
+  "五塩化リン",
+  "ビクトル・マイヤー法",
+  "ルシャトリエの原理",
+  "見かけの分子量"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

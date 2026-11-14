@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 240" width="480" height="240" fill="none" stroke="currentColor" font-family="Noto Sans CJK JP, sans-serif">
+<line x1="70.0" y1="210.0" x2="70.0" y2="60.0" stroke-width="1.5"/>
+<line x1="70.0" y1="210.0" x2="124.0" y2="169.5" stroke-width="1.5" stroke-dasharray="5 4" opacity="0.5"/>
+<line x1="70.0" y1="210.0" x2="220.0" y2="210.0" stroke-width="1.5"/>
+<line x1="70.0" y1="60.0" x2="124.0" y2="19.5" stroke-width="1.5"/>
+<line x1="70.0" y1="60.0" x2="220.0" y2="60.0" stroke-width="1.5"/>
+<line x1="124.0" y1="169.5" x2="124.0" y2="19.5" stroke-width="1.5" stroke-dasharray="5 4" opacity="0.5"/>
+<line x1="124.0" y1="169.5" x2="274.0" y2="169.5" stroke-width="1.5" stroke-dasharray="5 4" opacity="0.5"/>
+<line x1="124.0" y1="19.5" x2="274.0" y2="19.5" stroke-width="1.5"/>
+<line x1="220.0" y1="210.0" x2="220.0" y2="60.0" stroke-width="1.5"/>
+<line x1="220.0" y1="210.0" x2="274.0" y2="169.5" stroke-width="1.5"/>
+<line x1="220.0" y1="60.0" x2="274.0" y2="19.5" stroke-width="1.5"/>
+<line x1="274.0" y1="169.5" x2="274.0" y2="19.5" stroke-width="1.5"/>
+<circle cx="124.0" cy="169.5" r="7" stroke-width="1.4" fill="currentColor"/>
+<circle cx="124.0" cy="19.5" r="7" stroke-width="1.4" fill="currentColor"/>
+<circle cx="274.0" cy="169.5" r="7" stroke-width="1.4" fill="currentColor"/>
+<circle cx="274.0" cy="19.5" r="7" stroke-width="1.4" fill="currentColor"/>
+<circle cx="124.0" cy="94.5" r="9" stroke-width="1.4"/>
+<circle cx="199.0" cy="169.5" r="9" stroke-width="1.4"/>
+<circle cx="199.0" cy="19.5" r="9" stroke-width="1.4"/>
+<circle cx="274.0" cy="94.5" r="9" stroke-width="1.4"/>
+<circle cx="97.0" cy="189.8" r="9" stroke-width="1.4"/>
+<circle cx="97.0" cy="39.8" r="9" stroke-width="1.4"/>
+<circle cx="247.0" cy="189.8" r="9" stroke-width="1.4"/>
+<circle cx="247.0" cy="39.8" r="9" stroke-width="1.4"/>
+<circle cx="172.0" cy="114.8" r="13" stroke-width="1.4" fill="#1f5fbf"/>
+<circle cx="70.0" cy="210.0" r="7" stroke-width="1.4" fill="currentColor"/>
+<circle cx="70.0" cy="60.0" r="7" stroke-width="1.4" fill="currentColor"/>
+<circle cx="220.0" cy="210.0" r="7" stroke-width="1.4" fill="currentColor"/>
+<circle cx="220.0" cy="60.0" r="7" stroke-width="1.4" fill="currentColor"/>
+<circle cx="70.0" cy="135.0" r="9" stroke-width="1.4"/>
+<circle cx="145.0" cy="210.0" r="9" stroke-width="1.4"/>
+<circle cx="145.0" cy="60.0" r="9" stroke-width="1.4"/>
+<circle cx="220.0" cy="135.0" r="9" stroke-width="1.4"/>
+<circle cx="330" cy="70" r="7" fill="currentColor" stroke-width="1.4"/><text x="344.0" y="75.0" font-size="14" text-anchor="start" font-weight="normal" fill="currentColor" stroke="none">Ti<tspan baseline-shift="super" font-size="10">4+</tspan>（頂点）</text>
+<circle cx="330" cy="105" r="9" stroke-width="1.4"/><text x="344.0" y="110.0" font-size="14" text-anchor="start" font-weight="normal" fill="currentColor" stroke="none">O<tspan baseline-shift="super" font-size="10">2−</tspan>（辺の中点）</text>
+<circle cx="330" cy="142" r="13" stroke-width="1.4" fill="#1f5fbf"/><text x="348.0" y="147.0" font-size="14" text-anchor="start" font-weight="normal" fill="currentColor" stroke="none">Sr<tspan baseline-shift="super" font-size="10">2+</tspan>（中心）</text>
+</svg>

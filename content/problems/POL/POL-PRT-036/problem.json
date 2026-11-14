@@ -1,0 +1,108 @@
+{
+ "id": "POL-PRT-036",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-05",
+ "topic": "二重らせんの長さ・巻き数・質量と塩基対数の換算",
+ "course": "化学",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "calc",
+  "qa"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "DNA の二重らせんは，らせん 1 回転あたり塩基対を 10 個含み，1 回転の長さ（ピッチ）は $3.4\\,\\mathrm{nm}$ である．塩基対 1 個あたりの平均の式量を $6.6\\times10^{2}$，アボガドロ定数を $6.0\\times10^{23}\\,\\mathrm{/mol}$ とし，$1\\,\\mathrm{nm}=10^{-9}\\,\\mathrm m$ とする．\n大腸菌の染色体 DNA は，$4.6\\times10^{6}$ 個の塩基対からなる 1 分子の二本鎖 DNA である．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "大腸菌の染色体 DNA を引き伸ばしたときの長さは何 mm か．また，らせんは全体で何回転しているか．いずれも有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "大腸菌の細胞の長さは約 $2\\,\\mu\\mathrm m$ である．(1) の DNA の長さは細胞の長さの約何倍か．有効数字 1 桁で答え，この結果から DNA が細胞内でどのような状態で存在していると考えられるか述べよ．"
+     },
+     {
+      "id": "3",
+      "tex": "大腸菌の染色体 DNA 1 分子の質量は何 g か．有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "長さ $6.8\\,\\mathrm{nm}$ の二本鎖 DNA の断片について，塩基対の数を求めよ．また，一方の鎖の塩基配列（決まった向きに読む）として考えられるものは何通りあるか．$2^{10}=1024$ を用いて有効数字 2 桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$1.6\\,\\mathrm{mm}$，$4.6\\times10^{5}$ 回転"
+   },
+   {
+    "id": "2",
+    "tex": "約 $8\\times10^{2}$ 倍．DNA はそのままの長さでは細胞に入らないので，タンパク質とともに何重にも折りたたまれた（凝縮した）状態で存在している．"
+   },
+   {
+    "id": "3",
+    "tex": "$5.1\\times10^{-15}\\,\\mathrm g$"
+   },
+   {
+    "id": "4",
+    "tex": "20 個，$1.1\\times10^{12}$ 通り"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{塩基対 1 個あたりの長さ}\n1 回転 $3.4\\,\\mathrm{nm}$ に 10 塩基対が入っているので，塩基対 1 個あたり $0.34\\,\\mathrm{nm}$ 進む．\n\n\\textbf{(1) 長さと巻き数}\n\\[4.6\\times10^{6}\\times0.34\\,\\mathrm{nm}=1.564\\times10^{6}\\,\\mathrm{nm}=1.564\\times10^{-3}\\,\\mathrm m\\fallingdotseq\\boldsymbol{1.6}\\,\\mathrm{mm}\\]\n回転数は塩基対数を 10 で割って $\\boldsymbol{4.6\\times10^{5}}$ 回転．\n\n\\textbf{(2) 細胞の大きさとの比較}\n\\[\\frac{1.564\\times10^{-3}}{2\\times10^{-6}}\\fallingdotseq7.8\\times10^{2}\\quad\\to\\quad\\text{約 }\\boldsymbol{8\\times10^{2}}\\text{ 倍}\\]\n細胞の約 800 倍もの長さがあるので，DNA は引き伸ばされた状態ではなく，タンパク質とともに折りたたまれ，コンパクトに凝縮した状態で細胞内に収まっている．\n\n\\textbf{(3) 1 分子の質量}\n1 分子のモル質量は $4.6\\times10^{6}\\times6.6\\times10^{2}=3.04\\times10^{9}\\,\\mathrm{g/mol}$．これをアボガドロ定数で割って\n\\[\\frac{3.04\\times10^{9}}{6.0\\times10^{23}}\\fallingdotseq\\boldsymbol{5.1\\times10^{-15}}\\,\\mathrm g\\]\n\n\\textbf{(4) 短い断片}\n$6.8\\,\\mathrm{nm}$ はちょうど 2 回転分なので，塩基対は $\\boldsymbol{20}$ 個．\n二本鎖のもう一方の鎖の配列は相補性で自動的に決まるので，一方の鎖の 20 塩基の並びだけを考えればよい．各位置に A，T，G，C の 4 通りがあるので\n\\[4^{20}=2^{40}=(2^{10})^{4}=1024^{4}\\fallingdotseq\\boldsymbol{1.1\\times10^{12}}\\text{ 通り}\\]\nわずか 20 塩基対でも 1 兆通りを超える配列があり，DNA が膨大な遺伝情報を担えることがわかる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "二重らせんの幾何（1 回転 10 塩基対・3.4 nm，1 塩基対 0.34 nm）を使って，塩基対数・長さ・巻き数・質量を互いに換算する．二本鎖の配列は相補性で一方の鎖だけで決まるので，n 塩基対の配列は 4ⁿ 通りになる．"
+ },
+ "concepts": [
+  "protein-amino",
+  "nucleic-acid"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "DNA",
+  "二重らせん",
+  "塩基対",
+  "ゲノムの大きさ",
+  "塩基配列"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

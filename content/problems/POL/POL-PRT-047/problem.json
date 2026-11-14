@@ -1,0 +1,109 @@
+{
+ "id": "POL-PRT-047",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-05",
+ "topic": "受容体タンパク質への分子の結合率と，同じ部位を奪い合う阻害薬の効果",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある生理活性物質 L は，受容体タンパク質 R の特定の部位に 1:1 で結合して複合体 RL をつくる．L の分子中のアミノ基は，体内（pH 7.4）では $\\ce{H+}$ を受け取って陽イオン（$\\ce{-NH3+}$）になっており，R の側鎖とイオン結合をつくる．\n\\[\\mathrm{R}+\\mathrm{L}\\rightleftarrows\\mathrm{RL}\\qquad K_1=\\frac{[\\mathrm{RL}]}{[\\mathrm R][\\mathrm L]}=1.0\\times10^{7}\\,\\mathrm{L/mol}\\]\nR の量に比べて L は十分に多く，結合していない L の濃度 $[\\mathrm L]$ は加えた L の濃度に等しいとみなせる．R のうち L と結合しているものの割合を結合率 $\\theta_\\mathrm{L}=\\dfrac{[\\mathrm{RL}]}{[\\mathrm R]+[\\mathrm{RL}]}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "R を構成するアミノ酸のうち，pH 7.4 で L の陽イオンの部分とイオン結合をつくることができる側鎖をもつものを，次からすべて選べ．\nアラニン，アスパラギン酸，リシン，フェニルアラニン，セリン，グルタミン酸"
+     },
+     {
+      "id": "2",
+      "tex": "$\\theta_\\mathrm L$ を $K_1$ と $[\\mathrm L]$ で表せ．また，$\\theta_\\mathrm L$ が $0.50$ および $0.80$ になる $[\\mathrm L]$ をそれぞれ求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "L と同じ部位に結合するが生理作用を示さない阻害薬 M（$K_2=\\dfrac{[\\mathrm{RM}]}{[\\mathrm R][\\mathrm M]}=1.0\\times10^{9}\\,\\mathrm{L/mol}$）を考える．R には L か M の一方だけが結合できる．$[\\mathrm L]=4.0\\times10^{-7}\\,\\mathrm{mol/L}$ のとき，$\\theta_\\mathrm L$ を $0.20$ まで下げるのに必要な $[\\mathrm M]$（結合していない M の濃度）を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の状態から $[\\mathrm M]$ を変えずに $[\\mathrm L]$ を 10 倍にすると，$\\theta_\\mathrm L$ はいくらになるか．有効数字 2 桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "アスパラギン酸，グルタミン酸"
+   },
+   {
+    "id": "2",
+    "tex": "$\\theta_\\mathrm L=\\dfrac{K_1[\\mathrm L]}{1+K_1[\\mathrm L]}$，$0.50$：$1.0\\times10^{-7}\\,\\mathrm{mol/L}$，$0.80$：$4.0\\times10^{-7}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "3",
+    "tex": "$1.5\\times10^{-8}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "4",
+    "tex": "$0.71$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　R の全量を「空いている R」と「L・M が結合した R」に分けると，それぞれの量は $1:K_1[\\mathrm L]:K_2[\\mathrm M]$ の比になる．結合率はこの比の中で L の占める割合である．\n\n\\textbf{(1)} pH 7.4 で側鎖が陰イオン（$\\ce{-COO-}$）になっているのは酸性アミノ酸．$\\boldsymbol{\\text{アスパラギン酸，グルタミン酸}}$．リシンの側鎖は陽イオン（$\\ce{-NH3+}$）で反発し，他は電荷をもたない．\n\n\\textbf{(2)} $[\\mathrm{RL}]=K_1[\\mathrm R][\\mathrm L]$ より\n\\[\\theta_\\mathrm L=\\frac{K_1[\\mathrm R][\\mathrm L]}{[\\mathrm R]+K_1[\\mathrm R][\\mathrm L]}=\\boldsymbol{\\frac{K_1[\\mathrm L]}{1+K_1[\\mathrm L]}}\\]\n$\\theta_\\mathrm L=0.50$ では $K_1[\\mathrm L]=1$，$[\\mathrm L]=\\boldsymbol{1.0\\times10^{-7}\\,\\mathrm{mol/L}}$（$1/K_1$）．\n$\\theta_\\mathrm L=0.80$ では $K_1[\\mathrm L]=4$，$[\\mathrm L]=\\boldsymbol{4.0\\times10^{-7}\\,\\mathrm{mol/L}}$．\n結合率を 0.5 から 0.8 に上げるのに濃度は 4 倍必要で，結合率は濃度に比例しない（飽和する）．\n\n\\textbf{(3)} $[\\mathrm{RM}]=K_2[\\mathrm R][\\mathrm M]$ も加えて\n\\[\\theta_\\mathrm L=\\frac{K_1[\\mathrm L]}{1+K_1[\\mathrm L]+K_2[\\mathrm M]}=\\frac{4.0}{5.0+K_2[\\mathrm M]}=0.20\\]\nより $K_2[\\mathrm M]=15$，$[\\mathrm M]=\\boldsymbol{1.5\\times10^{-8}\\,\\mathrm{mol/L}}$．\nこのとき R は 空き：RL：RM $=1:4:15$ で，$75\\,\\%$ が M に占められる．$K_2$ が $K_1$ の 100 倍なので，L の $\\dfrac{1}{27}$ ほどの濃度で効く．\n\n\\textbf{(4)} $K_1[\\mathrm L]=40$ となり $\\theta_\\mathrm L=\\dfrac{40}{1+40+15}=\\dfrac{40}{56}=0.714$ → $\\boldsymbol{0.71}$．\n同じ部位を奪い合う阻害（競合阻害）は，L の濃度を十分に上げれば打ち消すことができる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "受容体への 1:1 の結合では，空いた受容体と各複合体の量の比が 1 : K[L] で決まり，結合率は K[L]/(1+K[L]) となって濃度とともに飽和する．同じ部位を奪い合う阻害薬があると分母に K₂[M] が加わり，阻害薬の効き方は K₂[M] と K₁[L] の大小で決まるので，L の濃度を上げれば阻害を打ち消せる．"
+ },
+ "concepts": [
+  "protein-amino",
+  "concentration",
+  "chemical-equilibrium"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "受容体",
+  "結合率",
+  "平衡定数",
+  "競合阻害",
+  "酸性アミノ酸"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "id": "THE-ION-110",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "両性水酸化物 Zn(OH)₂ の沈殿が存在する pH の範囲と亜鉛の濃度",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "亜鉛イオン $\\ce{Zn^2+}$ を含む弱酸性の水溶液に，濃い水酸化ナトリウム水溶液を少しずつ加えていくと，ある pH で水酸化亜鉛 $\\ce{Zn(OH)2}$ の白色沈殿が生じ始め，さらに加えると沈殿は $\\ce{[Zn(OH)4]^2-}$ となって溶けていく．$25^\\circ\\mathrm{C}$ で\n\\[ K_\\mathrm{sp}=[\\ce{Zn^2+}][\\ce{OH-}]^2=2.0\\times10^{-17}\\,(\\mathrm{mol/L})^3,\\qquad \\beta=\\frac{[\\ce{[Zn(OH)4]^2-}]}{[\\ce{Zn^2+}][\\ce{OH-}]^4}=2.5\\times10^{17}\\,(\\mathrm{L/mol})^4 \\]\nとする．水溶液の体積変化は無視し，水のイオン積は $K_\\mathrm{w}=1.0\\times10^{-14}\\,(\\mathrm{mol/L})^2$，$\\log_{10}2=0.30$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "沈殿 $\\ce{Zn(OH)2}$ が水酸化物イオンと反応して溶ける変化をイオン反応式で書き，その平衡定数 $K=\\dfrac{[\\ce{[Zn(OH)4]^2-}]}{[\\ce{OH-}]^2}$ の値を $K_\\mathrm{sp}$，$\\beta$ を用いて求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "亜鉛を全部で $0.010\\,\\mathrm{mol/L}$ 含む水溶液で，沈殿が生じ始める pH を小数第2位まで求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の水溶液で，生じた沈殿がちょうどすべて溶ける pH を小数第2位まで求めよ．このとき亜鉛はほぼすべて $\\ce{[Zn(OH)4]^2-}$ として存在するものとする．"
+     },
+     {
+      "id": "4",
+      "tex": "亜鉛の全濃度を $0.10\\,\\mathrm{mol/L}$ にかえると，沈殿が存在する pH の範囲（(2) の pH から (3) の pH まで）はどう変わるか．下限と上限の pH をそれぞれ小数第2位まで求め，範囲の幅が広がるか狭まるかを答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{Zn(OH)2 + 2OH- -> [Zn(OH)4]^2-}$，$K=K_\\mathrm{sp}\\beta=5.0\\,\\mathrm{L/mol}$"
+   },
+   {
+    "id": "2",
+    "tex": "$6.65$"
+   },
+   {
+    "id": "3",
+    "tex": "$12.65$"
+   },
+   {
+    "id": "4",
+    "tex": "下限 $6.15$，上限 $13.15$，幅は $6.00$ から $7.00$ に広がる"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　沈殿が生じ始める点は $\\ce{Zn^2+}$ がほぼ全量（溶解度積の式），沈殿が溶けきる点は $\\ce{[Zn(OH)4]^2-}$ がほぼ全量（錯イオン生成の式）で決まる．それぞれの式で全濃度 $c$ が $[\\ce{OH-}]$ にどう効くかに注目する．\n\n\\textbf{(1)}　$\\ce{Zn(OH)2 + 2OH- -> [Zn(OH)4]^2-}$．沈殿が存在するとき $[\\ce{Zn^2+}]=K_\\mathrm{sp}/[\\ce{OH-}]^2$ なので\n\\[ K=\\frac{[\\ce{[Zn(OH)4]^2-}]}{[\\ce{OH-}]^2}=\\beta[\\ce{Zn^2+}][\\ce{OH-}]^2=K_\\mathrm{sp}\\beta=\\boldsymbol{5.0\\,\\mathrm{L/mol}} \\]\n\n\\textbf{(2)}　生じ始めるとき $[\\ce{Zn^2+}]=0.010$ なので $[\\ce{OH-}]^2=\\dfrac{2.0\\times10^{-17}}{1.0\\times10^{-2}}=2.0\\times10^{-15}$．\n$\\mathrm{pOH}=\\dfrac{15-\\log_{10}2}{2}=7.35$，$\\mathrm{pH}=\\boldsymbol{6.65}$．（このとき $[\\ce{[Zn(OH)4]^2-}]=5.0\\times2.0\\times10^{-15}=1.0\\times10^{-14}$ で無視できる．）\n\n\\textbf{(3)}　溶けきるとき $[\\ce{[Zn(OH)4]^2-}]=0.010$ で，まだ沈殿と平衡にあるので $K$ の式が成り立つ：$[\\ce{OH-}]^2=\\dfrac{0.010}{5.0}=2.0\\times10^{-3}$．\n$\\mathrm{pOH}=\\dfrac{3-\\log_{10}2}{2}=1.35$，$\\mathrm{pH}=\\boldsymbol{12.65}$．（$[\\ce{Zn^2+}]=2.0\\times10^{-17}/2.0\\times10^{-3}=1.0\\times10^{-14}$ で無視できる．）\n\n\\textbf{(4)}　$c=0.10$ では\n下限：$[\\ce{OH-}]^2=2.0\\times10^{-16}$，$\\mathrm{pOH}=\\dfrac{16-0.30}{2}=7.85$，$\\mathrm{pH}=\\boldsymbol{6.15}$．\n上限：$[\\ce{OH-}]^2=\\dfrac{0.10}{5.0}=2.0\\times10^{-2}$，$\\mathrm{pOH}=\\dfrac{2-0.30}{2}=0.85$，$\\mathrm{pH}=\\boldsymbol{13.15}$．\n下限は $[\\ce{OH-}]\\propto c^{-1/2}$，上限は $[\\ce{OH-}]\\propto c^{1/2}$ なので，$c$ を 10 倍にすると下限は 0.5 下がり上限は 0.5 上がる．範囲の幅は $6.00\\to7.00$ と$\\boldsymbol{\\text{広がる}}$．濃い溶液ほど沈殿しやすく溶かしにくい．逆に $c$ が小さいほど範囲は狭くなる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "沈殿の生じ始めは溶解度積で [OH⁻]² = K_sp/c，溶けきる点は Zn(OH)₂ + 2OH⁻ ⇄ [Zn(OH)₄]²⁻ の平衡（K = K_sp·β）で [OH⁻]² = c/K と決まる．全濃度 c が逆向きに効くので，濃度を 10 倍にすると沈殿が存在する pH の範囲は両側に 0.5 ずつ広がる．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "complex-ion",
+  "precipitation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "水酸化亜鉛",
+  "両性水酸化物",
+  "溶解度積",
+  "錯イオン",
+  "pH"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

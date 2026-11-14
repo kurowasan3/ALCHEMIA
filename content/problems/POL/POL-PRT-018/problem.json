@@ -1,0 +1,101 @@
+{
+ "id": "POL-PRT-018",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-05",
+ "topic": "窒素量と脱炭酸の CO₂ 量からペプチドの組成を決める",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "アラニン（$\\ce{CH3CH(NH2)COOH}$，分子量 89）とリシン（$\\ce{H2N(CH2)4CH(NH2)COOH}$，分子量 146）だけが縮合してできた鎖状ペプチド Q（分子量 487）がある．気体の体積は標準状態で $22.4\\,\\mathrm{L/mol}$ とし，$\\ce{H2O}$ の分子量は 18 とする．\\\\\n実験1：Q $0.487\\,\\mathrm g$ に含まれる窒素をすべて窒素 $\\ce{N2}$ に変えると，$78.4\\,\\mathrm{mL}$ であった．\\\\\n実験2：Q $0.974\\,\\mathrm g$ を完全に加水分解したのち，生じたアミノ酸のカルボキシ基をすべて脱炭酸させると（アミノ酸 1 分子から $\\ce{CO2}$ 1 分子），$\\ce{CO2}$ が $224\\,\\mathrm{mL}$ 得られた．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "Q 1 分子は何個のアミノ酸からできているか．"
+     },
+     {
+      "id": "2",
+      "tex": "Q 1 分子に含まれる窒素原子の数を求め，Q を構成するアラニンとリシンの数をそれぞれ答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "実験1の結果だけから「窒素原子の数 ＝ アミノ酸の数」と考えると，アミノ酸の数を何個と誤ることになるか．また，その考え方が誤りである理由を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "5 個"
+   },
+   {
+    "id": "2",
+    "tex": "窒素原子 7 個；アラニン 3 個，リシン 2 個"
+   },
+   {
+    "id": "3",
+    "tex": "7 個．リシンは側鎖にもアミノ基をもち，1 分子に窒素原子を 2 個含むから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "Q の物質量は，実験1で $\\dfrac{0.487}{487} = 1.00\\times10^{-3}\\,\\mathrm{mol}$，実験2で $\\dfrac{0.974}{487} = 2.00\\times10^{-3}\\,\\mathrm{mol}$．\\\\\n\\textbf{(1)} $\\ce{CO2}$ は $\\dfrac{0.224}{22.4} = 1.00\\times10^{-2}\\,\\mathrm{mol}$．アミノ酸 1 分子から $\\ce{CO2}$ 1 分子なので，アミノ酸の数は\n\\[ \\frac{1.00\\times10^{-2}}{2.00\\times10^{-3}} = 5 \\]\nよって $\\boldsymbol{5}$ 個．\\\\\n\\textbf{(2)} $\\ce{N2}$ は $\\dfrac{0.0784}{22.4} = 3.50\\times10^{-3}\\,\\mathrm{mol}$，N 原子は $7.00\\times10^{-3}\\,\\mathrm{mol}$．Q 1 分子あたり $\\dfrac{7.00\\times10^{-3}}{1.00\\times10^{-3}} = 7$ 個．\\\\\nアラニンを $x$ 個，リシンを $y$ 個とすると（アラニンは N 1 個，リシンは N 2 個）\n\\[ x + y = 5,\\qquad x + 2y = 7 \\]\nより $\\boldsymbol{x = 3,\\ y = 2}$．\\\\\n確認：5 分子が縮合すると水 4 分子が取れるので，分子量は $89\\times3 + 146\\times2 - 18\\times4 = 487$ で与えられた値と一致する．\\\\\n\\textbf{(3)} N 原子が 7 個なので $\\boldsymbol{7}$ 個と誤る．リシンは $\\alpha$-アミノ基のほかに側鎖の $\\ce{-NH2}$ をもつ塩基性アミノ酸で，1 分子に N を 2 個含む．一方，カルボキシ基はアラニンもリシンも 1 個ずつなので，脱炭酸の $\\ce{CO2}$ の数ならアミノ酸の数に等しい．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ペプチドの物質量とともに，脱炭酸で生じる CO₂（アミノ酸 1 個につき 1 分子）からアミノ酸の数，窒素量から N 原子の数を求め，塩基性アミノ酸が N を 2 個もつことを使って組成を連立方程式で決める．"
+ },
+ "concepts": [
+  "protein-amino",
+  "nitrogen-phosphorus",
+  "elemental-analysis"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ペプチド",
+  "リシン",
+  "元素分析",
+  "物質量",
+  "塩基性アミノ酸"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "id": "INO-PPT-032",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-08",
+ "topic": "EDTA によるキレート滴定と水の硬度",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "エチレンジアミン四酢酸（EDTA，$\\ce{H4Y}$ と表す）の二ナトリウム塩 $\\ce{Na2H2Y}$ は，多くの金属イオンと電荷によらず物質量比 $1:1$ で安定な錯イオン（キレート）をつくる．例えば $\\ce{Ca^2+}$ とは次のように反応する．\n\\[ \\ce{Ca^2+ + H2Y^2- ->[\\text{}] CaY^2- + 2H+} \\]\nこの反応を利用して，ある天然水に含まれる $\\ce{Ca^2+}$ と $\\ce{Mg^2+}$ を次の 2 つの滴定で定量した．\n\n滴定 1：試料 $100\\,\\mathrm{mL}$ に $\\mathrm{pH}\\ 10$ の緩衝液と指示薬を加え，$1.00\\times10^{-2}\\,\\mathrm{mol/L}$ の EDTA 水溶液で滴定したところ，終点までに $12.0\\,\\mathrm{mL}$ を要した．\n\n滴定 2：別の試料 $100\\,\\mathrm{mL}$ に水酸化ナトリウム水溶液を加えて $\\mathrm{pH}$ を $12\\sim13$ にし，生じた沈殿をそのままにして別の指示薬を加え，同じ EDTA 水溶液で滴定したところ，$8.00\\,\\mathrm{mL}$ を要した．\n\n$\\mathrm{C}=12$，$\\mathrm{O}=16$，$\\mathrm{Mg}=24.3$，$\\mathrm{Ca}=40$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "滴定 2 で生じた沈殿の化学式を答え，滴定 2 で EDTA と反応したのはどのイオンか答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "試料中の $\\ce{Ca^2+}$ と $\\ce{Mg^2+}$ のモル濃度をそれぞれ有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "水の硬度を「$\\ce{Ca^2+}$ と $\\ce{Mg^2+}$ をすべて $\\ce{CaCO3}$ に換算したときの $1\\,\\mathrm{L}$ あたりの質量（$\\mathrm{mg}$）」で表すとき，この天然水の硬度を有効数字 3 桁で求めよ．また，$\\ce{Mg^2+}$ だけの質量濃度（$\\mathrm{mg/L}$）も有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "同じ EDTA 水溶液で，$1.00\\times10^{-3}\\,\\mathrm{mol/L}$ の $\\ce{Cu^2+}$ 水溶液 $10.0\\,\\mathrm{mL}$ と，$1.00\\times10^{-3}\\,\\mathrm{mol/L}$ の $\\ce{Fe^3+}$ 水溶液 $10.0\\,\\mathrm{mL}$ をそれぞれ滴定した．終点までに要する EDTA 水溶液の体積はどちらが多いか．同じなら「同じ」と答え，体積も答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "沈殿は $\\ce{Mg(OH)2}$．EDTA と反応したのは $\\ce{Ca^2+}$ だけ"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{Ca^2+}$ $8.00\\times10^{-4}\\,\\mathrm{mol/L}$，$\\ce{Mg^2+}$ $4.00\\times10^{-4}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "3",
+    "tex": "硬度 $120\\,\\mathrm{mg/L}$，$\\ce{Mg^2+}$ $9.72\\,\\mathrm{mg/L}$"
+   },
+   {
+    "id": "4",
+    "tex": "同じ．どちらも $1.00\\,\\mathrm{mL}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{2 つの滴定の意味}　EDTA は電荷によらず金属イオンと $1:1$ で反応するので，終点までに加えた EDTA の物質量が反応した金属イオンの物質量の合計になる．\n\n\\textbf{(1) $\\mathrm{pH}\\ 12\\sim13$ での沈殿}　強い塩基性にすると $\\ce{Mg^2+}$ は水酸化物として沈殿する．\n\\[ \\ce{Mg^2+ + 2OH- -> Mg(OH)2} \\]\n$\\ce{Ca(OH)2}$ は水にある程度溶けるので，この濃度の $\\ce{Ca^2+}$ は沈殿しない．沈殿した $\\ce{Mg^2+}$ は EDTA と反応しないので，滴定 2 では \\textbf{$\\ce{Ca^2+}$ だけ}が滴定される（$\\ce{Mg^2+}$ を沈殿にして「隠して」いる）．\n\n\\textbf{(2) 濃度}　滴定 1（$\\ce{Ca^2+}+\\ce{Mg^2+}$）：$1.00\\times10^{-2}\\times\\dfrac{12.0}{1000}=1.20\\times10^{-4}\\,\\mathrm{mol}$．\n滴定 2（$\\ce{Ca^2+}$ のみ）：$1.00\\times10^{-2}\\times\\dfrac{8.00}{1000}=8.00\\times10^{-5}\\,\\mathrm{mol}$．\n\\[ [\\ce{Ca^2+}]=\\dfrac{8.00\\times10^{-5}}{0.100}=\\boldsymbol{8.00\\times10^{-4}\\,\\mathrm{mol/L}},\\qquad [\\ce{Mg^2+}]=\\dfrac{(12.0-8.00)\\times10^{-5}}{0.100}=\\boldsymbol{4.00\\times10^{-4}\\,\\mathrm{mol/L}} \\]\n\n\\textbf{(3) 硬度}　$\\ce{Ca^2+}$ と $\\ce{Mg^2+}$ の合計 $1.20\\times10^{-3}\\,\\mathrm{mol/L}$ を $\\ce{CaCO3}$（式量 100）に換算して\n\\[ 1.20\\times10^{-3}\\times100=0.120\\,\\mathrm{g/L}=\\boldsymbol{120\\,\\mathrm{mg/L}} \\]\n$\\ce{Mg^2+}$ だけでは $4.00\\times10^{-4}\\times24.3=9.72\\times10^{-3}\\,\\mathrm{g/L}=\\boldsymbol{9.72\\,\\mathrm{mg/L}}$．（$\\ce{Mg^2+}$ も $\\ce{CaCO3}$ の式量で換算するのは，硬度を「2 価の陽イオンの物質量」で比べるためである．）\n\n\\textbf{(4) 電荷によらない $1:1$}　$\\ce{Cu^2+}$ も $\\ce{Fe^3+}$ も $1.00\\times10^{-3}\\times\\dfrac{10.0}{1000}=1.00\\times10^{-5}\\,\\mathrm{mol}$ で，EDTA は電荷によらず $1:1$ で反応するので，どちらも EDTA $1.00\\times10^{-5}\\,\\mathrm{mol}$，すなわち $\\dfrac{1.00\\times10^{-5}}{1.00\\times10^{-2}}=1.00\\times10^{-3}\\,\\mathrm{L}$，\\textbf{同じ $1.00\\,\\mathrm{mL}$} を要する．中和滴定のように価数の分だけ多く必要になるわけではない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "EDTA は金属イオンの電荷によらず 1:1 でキレートをつくるので，終点までの EDTA の物質量が反応した金属イオンの物質量の和になる．pH 10 では Ca²⁺ と Mg²⁺ の合計が，強塩基性では Mg²⁺ が Mg(OH)₂ として沈殿して反応しないため Ca²⁺ だけが滴定され，2 回の滴定の差から両者を分けて求め，硬度（CaCO₃ 換算）に直す．"
+ },
+ "concepts": [
+  "precipitation",
+  "complex-ion",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "EDTA",
+  "キレート滴定",
+  "水の硬度",
+  "錯イオン",
+  "水酸化マグネシウム"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

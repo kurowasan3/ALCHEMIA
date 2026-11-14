@@ -1,0 +1,108 @@
+{
+ "id": "THE-BND-052",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-03",
+ "topic": "混成軌道と配位結合による中心原子の混成・形の変化",
+ "course": "化学",
+ "level": 3,
+ "minutes": 12,
+ "format": [
+  "qa",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "中心原子の s 軌道と p 軌道が混ざり合ってできる混成軌道には，$\\mathrm{sp^3}$（正四面体の頂点方向に 4 本），$\\mathrm{sp^2}$（正三角形の頂点方向に 3 本），$\\mathrm{sp}$（直線方向に 2 本）がある．非共有電子対も混成軌道の 1 本を占める．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "次の①〜⑤の中心原子の混成軌道（$\\mathrm{sp^3}$，$\\mathrm{sp^2}$，$\\mathrm{sp}$）と，中心原子がもつ非共有電子対の数を答えよ．\\\\\n① $\\ce{H2O}$ の O　② $\\ce{BF3}$ の B　③ $\\ce{CO2}$ の C　④ $\\ce{BF4-}$ の B　⑤ $\\ce{NH4+}$ の N"
+     },
+     {
+      "id": "2",
+      "tex": "基底状態のホウ素原子の電子配置は $1s^2\\,2s^2\\,2p^1$ である．この配置のままでは，B は共有結合を何本つくれると考えられるか．また，実際に B が 3 本の結合をつくることを，電子の移動（昇位）と混成で説明せよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\ce{BF3}$ と $\\ce{NH3}$ は反応して $\\ce{BF3 + NH3 -> F3B-NH3}$ のように結合する．この結合で電子対を提供するのはどちらの原子か．また，この反応で B の混成軌道と B のまわりの形はどう変わるか．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\ce{H2O}$，$\\ce{NH3}$，$\\ce{NH4+}$，$\\ce{BF3}$，$\\ce{CO2}$ を結合角（$\\ce{CO2}$ は O–C–O，ほかは中心原子をはさむ 2 本の結合のなす角）の大きい順に並べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "① $\\mathrm{sp^3}$，2 組　② $\\mathrm{sp^2}$，0 組　③ $\\mathrm{sp}$，0 組　④ $\\mathrm{sp^3}$，0 組　⑤ $\\mathrm{sp^3}$，0 組"
+   },
+   {
+    "id": "2",
+    "tex": "1 本．2s 電子 1 個を 2p 軌道に移して不対電子を 3 個にし，2s と 2 つの 2p から $\\mathrm{sp^2}$ 混成軌道 3 本をつくって結合する．"
+   },
+   {
+    "id": "3",
+    "tex": "N 原子（$\\ce{NH3}$ の非共有電子対）．B は $\\mathrm{sp^2}$ から $\\mathrm{sp^3}$ になり，平面三角形から四面体形に変わる．"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{CO2}$ ＞ $\\ce{BF3}$ ＞ $\\ce{NH4+}$ ＞ $\\ce{NH3}$ ＞ $\\ce{H2O}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　中心原子のまわりの「結合の方向＋非共有電子対」の数（電子対の組の数）が 4 なら $\\mathrm{sp^3}$，3 なら $\\mathrm{sp^2}$，2 なら $\\mathrm{sp}$ である．二重結合は 1 つの方向として数える．\n\n\\textbf{(1)}　① O は H と 2 本の結合＋非共有電子対 2 組で計 4 → $\\boldsymbol{\\mathrm{sp^3}}$，\\textbf{2 組}．\n② B は F と 3 本，非共有電子対なしで計 3 → $\\boldsymbol{\\mathrm{sp^2}}$，\\textbf{0 組}（平面三角形）．\n③ C は 2 つの O と二重結合で 2 方向 → $\\boldsymbol{\\mathrm{sp}}$，\\textbf{0 組}（直線形）．\n④ $\\ce{BF4-}$ の B は 4 本の結合 → $\\boldsymbol{\\mathrm{sp^3}}$，\\textbf{0 組}．\n⑤ $\\ce{NH4+}$ の N は 4 本の結合 → $\\boldsymbol{\\mathrm{sp^3}}$，\\textbf{0 組}．\n\n\\textbf{(2)}　$2p^1$ の不対電子は 1 個だけなので，このままでは \\textbf{1 本}しか結合できない．\n実際には，2s 電子の 1 個を空いている 2p 軌道に移し（$2s^1\\,2p^2$），不対電子を 3 個にする．さらに 2s と 2p 2 つから同等な $\\mathrm{sp^2}$ 混成軌道を 3 本つくり，それぞれが F と結合するので，3 本の結合は同等で $120^\\circ$ をなす．このとき B には電子の入っていない 2p 軌道が 1 つ残る．\n\n\\textbf{(3)}　$\\ce{NH3}$ の N の非共有電子対が，B の空の 2p 軌道に入って配位結合ができる．電子対を提供するのは \\textbf{N 原子}．\nB のまわりは結合が 4 本になるので，B は $\\boldsymbol{\\mathrm{sp^2}\\ \\text{から}\\ \\mathrm{sp^3}}$ に変わり，平らな $\\ce{BF3}$ の F が N と反対側に折れ曲がって，B のまわりは\\textbf{平面三角形から四面体形}になる．N はもとから $\\mathrm{sp^3}$ で，非共有電子対が共有電子対に変わるだけである．$\\ce{NH3 + H+ -> NH4+}$ でも同様に，N のまわりは 4 本とも同等な結合になる．\n\n\\textbf{(4)}　$\\ce{CO2}$ は直線形で $180^\\circ$，$\\ce{BF3}$ は $120^\\circ$．$\\mathrm{sp^3}$ の 3 つでは，非共有電子対が多いほど結合どうしを押し縮めるので，$\\ce{NH4+}$（$109.5^\\circ$，非共有電子対 0）＞ $\\ce{NH3}$（約 $107^\\circ$，1 組）＞ $\\ce{H2O}$（約 $104.5^\\circ$，2 組）．\nよって $\\boldsymbol{\\ce{CO2} > \\ce{BF3} > \\ce{NH4+} > \\ce{NH3} > \\ce{H2O}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "中心原子の混成は，結合の方向と非共有電子対の組の数（4・3・2）で sp³・sp²・sp に決まる．B は 2s 電子を 2p に昇位させて sp² 混成で 3 本結合し，空の 2p 軌道が残るので NH3 の非共有電子対を受け取って配位結合をつくり，このとき sp³ に変わって平面三角形から四面体形になる．同じ sp³ でも非共有電子対が多いほど結合角は小さい．"
+ },
+ "concepts": [
+  "chemical-bond",
+  "complex-ion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "混成軌道",
+  "配位結合",
+  "非共有電子対",
+  "結合角",
+  "分子の形"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,115 @@
+{
+ "id": "THE-ION-020",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "炭酸の化学種の存在割合と pH",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "炭酸の電離定数を $K_1=\\dfrac{[\\ce{H+}][\\ce{HCO3-}]}{[\\ce{H2CO3}]}=4.0\\times10^{-7}\\,\\mathrm{mol/L}$，$K_2=\\dfrac{[\\ce{H+}][\\ce{CO3^2-}]}{[\\ce{HCO3-}]}=5.0\\times10^{-11}\\,\\mathrm{mol/L}$ とする．図は，炭酸を含む水溶液の pH を変えたときの $\\ce{H2CO3}$，$\\ce{HCO3-}$，$\\ce{CO3^2-}$ の存在割合を示したものである．$\\log_{10}2=0.30$，$10^{-7.4}=4.0\\times10^{-8}$ とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "2本の曲線が交わる点 A，B の pH をそれぞれ小数第1位まで求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "pH 7.4 の水溶液における $[\\ce{H2CO3}]:[\\ce{HCO3-}]:[\\ce{CO3^2-}]$ を，$[\\ce{H2CO3}]$ を 1 として求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "炭酸ナトリウム水溶液を塩酸で滴定すると，フェノールフタレインが変色する pH 8.3 付近に第1中和点がある．pH 8.3 付近でいちばん多く存在する化学種を答え，この中和点までに起こる反応をイオン反応式で示せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：炭酸の化学種の存在割合と pH",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "A：6.4，B：10.3"
+   },
+   {
+    "id": "2",
+    "tex": "$1:10:0.0125$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{HCO3-}$；$\\ce{CO3^2- + H+ -> HCO3-}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} A では $[\\ce{H2CO3}]=[\\ce{HCO3-}]$ なので $K_1$ の式から $[\\ce{H+}]=K_1$．\n\\[ \\mathrm{pH}=-\\log_{10}(4.0\\times10^{-7})=7-0.60=\\boldsymbol{6.4} \\]\nB では $[\\ce{HCO3-}]=[\\ce{CO3^2-}]$ なので $[\\ce{H+}]=K_2$，$\\mathrm{pH}=11-0.70=\\boldsymbol{10.3}$．\n\n\\textbf{(2)} $[\\ce{H+}]=4.0\\times10^{-8}\\,\\mathrm{mol/L}$ のとき\n\\[ \\dfrac{[\\ce{HCO3-}]}{[\\ce{H2CO3}]}=\\dfrac{K_1}{[\\ce{H+}]}=\\dfrac{4.0\\times10^{-7}}{4.0\\times10^{-8}}=10,\\qquad \\dfrac{[\\ce{CO3^2-}]}{[\\ce{HCO3-}]}=\\dfrac{K_2}{[\\ce{H+}]}=\\dfrac{5.0\\times10^{-11}}{4.0\\times10^{-8}}=1.25\\times10^{-3} \\]\nよって $[\\ce{H2CO3}]:[\\ce{HCO3-}]:[\\ce{CO3^2-}]=\\boldsymbol{1:10:0.0125}$．pH が A より 1 大きいので $\\ce{HCO3-}$ は $\\ce{H2CO3}$ の 10 倍になる．\n\n\\textbf{(3)} pH 8.3 は A と B のほぼ中間（$\\tfrac12(6.4+10.3)\\fallingdotseq8.35$）で，$\\ce{HCO3-}$ の割合が最大（約 98 %）になる pH である．したがって最も多いのは $\\ce{HCO3-}$．第1中和点までに\n\\[ \\ce{CO3^2- + H+ -> HCO3-} \\]\nがほぼ完全に進み，ここから先，メチルオレンジの変色域（pH 4 付近，$\\ce{H2CO3}$ がほとんど）までに $\\ce{HCO3- + H+ -> H2O + CO2}$ が進む．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "多価の弱酸では，隣り合う2つの化学種の濃度が等しくなる pH が pKa に等しく，ある pH での濃度比は Ka/[H+] で決まる．存在割合のグラフから，炭酸塩の二段階滴定の各中和点でどの化学種が主になるかが読み取れる．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "concentration",
+  "ph"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電離平衡",
+  "炭酸",
+  "存在割合",
+  "二段階中和",
+  "pKa"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

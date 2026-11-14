@@ -1,0 +1,108 @@
+{
+ "id": "THE-SOL-080",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-09",
+ "topic": "気相の入れかえをくり返す脱気の効率（分割の効果と連続的な脱気の極限）",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "$\\ce{CO2}$ を溶かした水 $V_\\mathrm{w}=10.0\\,\\mathrm{L}$ を，水面に接したピストン付きの容器に密閉した．$300\\,\\mathrm{K}$ に保ったまま，次の「1 回の操作」をくり返して $\\ce{CO2}$ を追い出す．\n\n【1 回の操作】ピストンを引き上げて水面の上に体積 $V$ の真空の空間をつくり，固定して平衡に達するまで置く．その後，気体部分の気体だけをすべて取り除き，ピストンを水面まで戻す（このとき水中の $\\ce{CO2}$ は出入りしない）．\n\nヘンリーの法則が成り立ち，水 $1\\,\\mathrm{L}$ に溶ける $\\ce{CO2}$ は分圧 $1\\,\\mathrm{Pa}$ あたり $k=3.00\\times10^{-7}\\,\\mathrm{mol}$ とする．水の蒸気圧と体積変化，$\\ce{CO2}$ と水の反応は無視し，$R=8.31\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$ とする．必要なら $\\ln10=2.30$，$\\ln2.34=0.850$，$e^{-4.01}=0.0181$ を用い，$n$ が大きいとき $\\left(1+\\dfrac{x}{n}\\right)^{n}$ は $e^{x}$ に近づくことを用いてよい．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "1 回の操作の前後で，水中に残る $\\ce{CO2}$ の割合 $f$ を $k$，$V_\\mathrm{w}$，$V$，$R$，$T$ で表せ．また，$V=10.0\\,\\mathrm{L}$ のときの $f$ を有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$V=10.0\\,\\mathrm{L}$ の操作を何回以上くり返すと，水中の $\\ce{CO2}$ がはじめの $1\\,\\%$ 以下になるか．"
+     },
+     {
+      "id": "3",
+      "tex": "取り除く気体部分の体積の合計を $30.0\\,\\mathrm{L}$ に決めたとき，(a) $V=30.0\\,\\mathrm{L}$ で 1 回，(b) $V=10.0\\,\\mathrm{L}$ で 3 回，(c) 合計 $30.0\\,\\mathrm{L}$ をきわめて多数回に細かく分ける，の 3 通りについて，水中に残る割合を有効数字 2 桁で求め，効率のよい順に並べよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(c) のように細かく分けるほど効率がよいが，その極限でも取り除く気体の体積の合計には下限がある．はじめの $1\\,\\%$ 以下にするのに必要な気体部分の体積の合計の下限は何 L か．有効数字 2 桁で答えよ．また，(2) で求めた方法での体積の合計と比べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$f=\\dfrac{kV_\\mathrm{w}}{kV_\\mathrm{w}+\\dfrac{V}{RT}}=\\dfrac{1}{1+\\dfrac{V}{kV_\\mathrm{w}RT}}$，$f=0.428$"
+   },
+   {
+    "id": "2",
+    "tex": "6 回"
+   },
+   {
+    "id": "3",
+    "tex": "(a) $0.20$，(b) $0.078$，(c) $0.018$．効率のよい順に (c)，(b)，(a)"
+   },
+   {
+    "id": "4",
+    "tex": "$34\\,\\mathrm{L}$．(2) の方法では $60\\,\\mathrm{L}$ 必要で，下限の約 1.7 倍である"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 平衡の分圧を $p$ とすると，水中に $kV_\\mathrm{w}p$，気体部分に $\\dfrac{pV}{RT}$．全量は保存されるので\n\\[ f=\\frac{kV_\\mathrm{w}p}{kV_\\mathrm{w}p+pV/RT}=\\boldsymbol{\\frac{1}{1+V/(kV_\\mathrm{w}RT)}} \\]\n$p$ によらない（溶けている量によらない）のがポイントである．$kV_\\mathrm{w}RT=3.00\\times10^{-7}\\times10.0\\times8.31\\times10^{3}\\times300=7.479\\,\\mathrm{L}$ なので，$V=10.0\\,\\mathrm{L}$ では $V/(kV_\\mathrm{w}RT)=1.337$，$f=1/2.337=\\boldsymbol{0.428}$．\n\n\\textbf{(2)} 毎回同じ割合 $f$ が残るので $n$ 回後は $f^{n}$．$f^{n}\\leqq0.01$ より\n\\[ n\\geqq\\frac{\\ln100}{\\ln2.34}=\\frac{4.60}{0.850}=5.4 \\]\nよって $\\boldsymbol{6}$ \\textbf{回}（5 回では $0.0143$，6 回で $0.0061$）．\n\n\\textbf{(3)} $x=30.0/7.479=4.01$ とおく．\n(a) $\\dfrac{1}{1+4.01}=\\boldsymbol{0.20}$．\n(b) $\\left(\\dfrac{1}{1+4.01/3}\\right)^{3}=0.428^{3}=\\boldsymbol{0.078}$．\n(c) $\\left(1+\\dfrac{4.01}{n}\\right)^{-n}\\to e^{-4.01}=\\boldsymbol{0.018}$．\n同じ体積でも分けるほど残る割合が小さく，効率は $\\boldsymbol{\\text{(c)}>\\text{(b)}>\\text{(a)}}$．（$\\left(1+\\frac{x}{n}\\right)^{n}$ は $n$ とともに増えるので，分割数を増やすほど良くなる．抽出をくり返すときと同じ考え方である．）\n\n\\textbf{(4)} 極限では残る割合は $e^{-V_\\mathrm{tot}/(kV_\\mathrm{w}RT)}$．$e^{-V_\\mathrm{tot}/7.479}\\leqq0.01$ より\n\\[ V_\\mathrm{tot}\\geqq7.479\\times\\ln100=7.479\\times4.60=34.4\\to\\boldsymbol{34\\,\\mathrm{L}} \\]\n(2) の方法は $10.0\\,\\mathrm{L}\\times6=60\\,\\mathrm{L}$ で，下限の約 $1.7$ 倍の気体を取り除く必要がある．気体を細かく何度も入れかえる（実際には不活性気体をゆっくり吹き込み続ける）ほど，下限に近づく．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "溶けた気体の脱気では，1 回の気相の入れかえで水中に残る割合が溶けている量によらず $1/(1+V/kV_\\mathrm{w}RT)$ と一定なので，くり返すと等比的に減る．同じ総体積なら分けるほど効率がよく，細かく分けた極限は $e^{-V_\\mathrm{tot}/kV_\\mathrm{w}RT}$ で，必要な総体積の下限が決まる．"
+ },
+ "concepts": [
+  "solution-colligative",
+  "ideal-gas"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ヘンリーの法則",
+  "脱気",
+  "くり返し操作",
+  "分配",
+  "物質収支"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

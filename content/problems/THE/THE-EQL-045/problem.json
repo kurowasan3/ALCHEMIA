@@ -1,0 +1,123 @@
+{
+ "id": "THE-EQL-045",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "電池の放電と平衡組成・沈殿による向きの逆転",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図のように，ビーカー A に硫酸鉄(II) と硫酸鉄(III) の混合水溶液 $100\\,\\mathrm{mL}$ を入れて白金電極を浸し，ビーカー B に溶液 $100\\,\\mathrm{mL}$ を入れて銀電極を浸し，A と B を硝酸カリウムの塩橋でつないで電池をつくった．白金は電子の受け渡しだけを行う．この電池では次の反応が両極に分かれて起こり，この温度での平衡定数は $K=4.0\\,\\mathrm{L/mol}$ である．\n\\[\\ce{Fe^2+ + Ag+ <=> Fe^3+ + Ag}\\qquad K=\\frac{[\\ce{Fe^3+}]}{[\\ce{Fe^2+}][\\ce{Ag+}]}\\]\n反応が平衡に達すると起電力は 0 になり，電流は流れなくなる．塩化銀の溶解度積は $K_\\mathrm{sp}=1.8\\times10^{-10}\\,(\\mathrm{mol/L})^2$，ファラデー定数は $F=9.65\\times10^{4}\\,\\mathrm{C/mol}$ とし，溶液の体積は変化しないものとする．\n\n\\textbf{実験I}　A は $[\\ce{Fe^2+}]=0.100\\,\\mathrm{mol/L}$，$[\\ce{Fe^3+}]=0.0200\\,\\mathrm{mol/L}$，B は $0.200\\,\\mathrm{mol/L}$ 硝酸銀水溶液とした．\n\n\\textbf{実験II}　A は実験I と同じとし，B を $0.100\\,\\mathrm{mol/L}$ 塩化ナトリウム水溶液に塩化銀の固体を少量加えたもの（飽和）にかえた．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "実験I で負極になるのはどちらの電極か．負極と正極で起こる反応を，電子 $\\mathrm{e^-}$ を含むイオン反応式で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "実験I で両極を導線でつなぎ，電流が流れなくなるまで放置した．この間に流れた電気量〔C〕と，最後の B の $[\\ce{Ag+}]$ を有効数字2桁で求めよ．二次方程式の2つの解のうち一方を選んだ根拠も示せ．"
+     },
+     {
+      "id": "3",
+      "tex": "実験II で負極になるのはどちらの電極か．反応商を計算して判断し，負極で起こる反応を電子 $\\mathrm{e^-}$ を含むイオン反応式で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "実験II で両極を導線でつなぎ，電流が流れなくなるまで放置した．この間に流れた電気量〔C〕を有効数字2桁で求めよ．また，最後の A の $[\\ce{Fe^3+}]$ を有効数字2桁で求め，反応が事実上完全に進んだといえることを示せ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：電池の放電と平衡組成・沈殿による向きの逆転",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "白金電極．負極：$\\ce{Fe^2+ -> Fe^3+ + e-}$，正極：$\\ce{Ag+ + e- -> Ag}$"
+   },
+   {
+    "id": "2",
+    "tex": "$2.8\\times10^{2}\\,\\mathrm{C}$，$[\\ce{Ag+}]=0.17\\,\\mathrm{mol/L}$（もう一方の解 $x\\approx0.52\\,\\mathrm{mol/L}$ は $\\ce{Fe^2+}$ の初濃度 $0.100\\,\\mathrm{mol/L}$ を超え，濃度が負になるので不適）"
+   },
+   {
+    "id": "3",
+    "tex": "銀電極．$Q=\\dfrac{0.0200}{0.100\\times1.8\\times10^{-9}}\\approx1.1\\times10^{8}>K$ なので左向きに進む．負極：$\\ce{Ag + Cl- -> AgCl + e-}$"
+   },
+   {
+    "id": "4",
+    "tex": "$1.9\\times10^{2}\\,\\mathrm{C}$，$[\\ce{Fe^3+}]=1.1\\times10^{-9}\\,\\mathrm{mol/L}$（はじめの $0.0200\\,\\mathrm{mol/L}$ の $10^{-7}$ 倍以下で，事実上すべて $\\ce{Fe^2+}$ に還元された）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} はじめの反応商 $Q=\\dfrac{0.0200}{0.100\\times0.200}=1.0<K=4.0$ なので，反応は右向きに進む．$\\ce{Fe^2+}$ が白金上で電子を放出するので\\textbf{白金電極}が負極．負極：$\\ce{Fe^2+ -> Fe^3+ + e-}$，正極（銀）：$\\ce{Ag+ + e- -> Ag}$．\n\n\\textbf{(2)} A，B の体積はともに $100\\,\\mathrm{mL}$ なので，流れた電子を $x\\,\\mathrm{mol/L}\\times0.100\\,\\mathrm{L}$ とすると，A の $\\ce{Fe^2+}$ が $x$ 減り $\\ce{Fe^3+}$ が $x$ 増え，B の $\\ce{Ag+}$ が $x$ 減る．電流が止まるのは平衡に達したときで\n\\[\\frac{0.0200+x}{(0.100-x)(0.200-x)}=4.0\\ \\Longrightarrow\\ 4x^2-2.2x+0.060=0\\]\n\\[x=\\frac{2.2\\pm\\sqrt{3.88}}{8}=0.0288\\ \\text{または}\\ 0.521\\]\n$x=0.521$ は $\\ce{Fe^2+}$ の初濃度 $0.100$ を超えて濃度が負になるので不適．$x=0.0288\\,\\mathrm{mol/L}$．\n電子：$0.0288\\times0.100=2.88\\times10^{-3}\\,\\mathrm{mol}$，電気量 $2.88\\times10^{-3}\\times9.65\\times10^{4}=278\\,\\mathrm{C}\\approx\\boldsymbol{2.8\\times10^{2}\\,\\mathrm{C}}$．\n$[\\ce{Ag+}]=0.200-0.0288=0.171\\approx\\boldsymbol{0.17\\,\\mathrm{mol/L}}$．\n（確認：$\\dfrac{0.0488}{0.0712\\times0.171}=4.0$．）\n\n\\textbf{(3)} B では $[\\ce{Ag+}]=\\dfrac{K_\\mathrm{sp}}{[\\ce{Cl-}]}=\\dfrac{1.8\\times10^{-10}}{0.100}=1.8\\times10^{-9}\\,\\mathrm{mol/L}$ ときわめて小さい．\n$Q=\\dfrac{0.0200}{0.100\\times1.8\\times10^{-9}}\\approx1.1\\times10^{8}\\gg K$ なので反応は\\textbf{左向き}（$\\ce{Fe^3+ + Ag -> Fe^2+ + Ag+}$）に進む．銀が酸化されるので\\textbf{銀電極}が負極で，生じた $\\ce{Ag+}$ はすぐ $\\ce{AgCl}$ として沈殿する：$\\ce{Ag + Cl- -> AgCl + e-}$．正極（白金）では $\\ce{Fe^3+ + e- -> Fe^2+}$．$\\ce{Ag+}$ の濃度を沈殿で小さくしたことで電池の向きが逆転した．\n\n\\textbf{(4)} 全体の反応は $\\ce{Fe^3+ + Ag + Cl- -> Fe^2+ + AgCl}$ で，その平衡定数は\n\\[K'=\\frac{[\\ce{Fe^2+}]}{[\\ce{Fe^3+}][\\ce{Cl-}]}=\\frac{1}{K\\,K_\\mathrm{sp}}=\\frac{1}{4.0\\times1.8\\times10^{-10}}\\approx1.4\\times10^{9}\\,(\\mathrm{L/mol})\\]\nときわめて大きいので，$\\ce{Fe^3+}$（$2.00\\times10^{-3}\\,\\mathrm{mol}$）がほぼすべて反応すると予想される．$\\ce{Cl-}$ は $1.00\\times10^{-2}\\,\\mathrm{mol}$ あるので足りる．\n電子 $2.00\\times10^{-3}\\,\\mathrm{mol}$，電気量 $2.00\\times10^{-3}\\times9.65\\times10^{4}=193\\,\\mathrm{C}\\approx\\boldsymbol{1.9\\times10^{2}\\,\\mathrm{C}}$．\n確認：最後は $[\\ce{Fe^2+}]=0.120$，$[\\ce{Cl-}]=0.0800\\,\\mathrm{mol/L}$，$[\\ce{Ag+}]=\\dfrac{1.8\\times10^{-10}}{0.0800}=2.25\\times10^{-9}\\,\\mathrm{mol/L}$．\n$[\\ce{Fe^3+}]=K[\\ce{Fe^2+}][\\ce{Ag+}]=4.0\\times0.120\\times2.25\\times10^{-9}=\\boldsymbol{1.1\\times10^{-9}\\,\\mathrm{mol/L}}$．\nはじめの $0.0200\\,\\mathrm{mol/L}$ に比べて無視できるので，「ほぼすべて反応した」という仮定は正しい．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "両極に分かれた酸化還元反応の電池を放電し尽くすと平衡組成になるので，平衡定数から取り出せる電気量が決まる（二次方程式の解の吟味を含む）．さらに一方の極に Cl⁻ を加えて Ag⁺ を AgCl として沈殿させると，反応商が K を大きく超えて電池の向きが逆転し，K と Ksp を組み合わせた大きな平衡定数のため反応が事実上完全に進むことを判断する．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "precipitation",
+  "redox"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電池",
+  "平衡定数",
+  "反応商",
+  "溶解度積",
+  "塩化銀"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

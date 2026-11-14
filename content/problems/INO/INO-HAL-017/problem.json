@@ -1,0 +1,109 @@
+{
+ "id": "INO-HAL-017",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-01",
+ "topic": "金属水素化物による水素の貯蔵（結晶中の水素密度と加水分解）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水素の貯蔵法として，金属水素化物の固体にする方法がある．水素化リチウム $\\ce{LiH}$ と水素化ナトリウム $\\ce{NaH}$ はどちらも塩化ナトリウム型の結晶で，単位格子（立方体）の中に陽イオンと $\\ce{H-}$ をそれぞれ 4 個ずつ含む．隣り合う陽イオンと $\\ce{H-}$ の中心間距離は $\\ce{LiH}$ で $0.204\\,\\mathrm{nm}$，$\\ce{NaH}$ で $0.244\\,\\mathrm{nm}$ である．液体水素の密度は $0.071\\,\\mathrm{g/cm^3}$ とする．原子量は H = 1.0，Li = 6.9，Na = 23.0，アボガドロ定数は $6.0\\times10^{23}\\,/\\mathrm{mol}$，$1\\,\\mathrm{nm}=1\\times10^{-7}\\,\\mathrm{cm}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{LiH}$ 中の水素原子の酸化数を答えよ．また，$\\ce{LiH}$ を水と反応させると $\\ce{LiH + H2O -> LiOH + H2}$ の反応で水素が発生する．この反応で酸化される H 原子と還元される H 原子は，それぞれ $\\ce{LiH}$ と $\\ce{H2O}$ のどちらに含まれていたものか．"
+     },
+     {
+      "id": "2",
+      "tex": "水素 $1.0\\,\\mathrm g$ を含む $\\ce{LiH}$ の結晶の体積は何 $\\mathrm{mL}$ か．有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "同じく水素 $1.0\\,\\mathrm g$ を含む $\\ce{NaH}$ の結晶の体積と，水素 $1.0\\,\\mathrm g$ の液体水素の体積をそれぞれ有効数字2桁で求め，$\\ce{LiH}$，$\\ce{NaH}$，液体水素を「一定体積に含まれる水素の質量」の大きい順に並べよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\ce{LiH}$ $1.0\\,\\mathrm g$ を十分な量の水と反応させると，水素は何 g 得られるか．有効数字2桁で求めよ．また，それは $\\ce{LiH}$ $1.0\\,\\mathrm g$ にもともと含まれていた水素の質量の何倍か．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$-1$，酸化される H は $\\ce{LiH}$，還元される H は $\\ce{H2O}$ に含まれていた"
+   },
+   {
+    "id": "2",
+    "tex": "$10\\,\\mathrm{mL}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{NaH}$ $17\\,\\mathrm{mL}$，液体水素 $14\\,\\mathrm{mL}$，$\\ce{LiH}$ ＞ 液体水素 ＞ $\\ce{NaH}$"
+   },
+   {
+    "id": "4",
+    "tex": "$0.25\\,\\mathrm g$，2 倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　Li は +1 なので H は $\\boldsymbol{-1}$（水素化物イオン $\\ce{H-}$）．反応では $\\ce{LiH}$ の H（$-1\\to0$）が\\textbf{酸化}され，$\\ce{H2O}$ の H（$+1\\to0$）が\\textbf{還元}される．$\\ce{H2}$ 1 分子の 2 個の H は，それぞれ $\\ce{LiH}$ と $\\ce{H2O}$ から 1 個ずつ来ている．\n\n\\textbf{(2)}　塩化ナトリウム型では単位格子の 1 辺は陽イオン–陰イオン間距離の 2 倍．$a=0.408\\,\\mathrm{nm}=4.08\\times10^{-8}\\,\\mathrm{cm}$，$a^3=6.79\\times10^{-23}\\,\\mathrm{cm^3}$．この中の H は 4 個で，質量 $\\dfrac{4\\times1.0}{6.0\\times10^{23}}=6.67\\times10^{-24}\\,\\mathrm g$．\n\\[\\frac{6.79\\times10^{-23}}{6.67\\times10^{-24}}=10.2\\ \\to\\ \\boldsymbol{10\\,\\mathrm{mL}}\\]\n\n\\textbf{(3)}　$\\ce{NaH}$：$a=0.488\\,\\mathrm{nm}$，$a^3=1.16\\times10^{-22}\\,\\mathrm{cm^3}$，$\\dfrac{1.16\\times10^{-22}}{6.67\\times10^{-24}}=17.4\\to\\boldsymbol{17\\,\\mathrm{mL}}$．\n液体水素：$1.0/0.071=14.1\\to\\boldsymbol{14\\,\\mathrm{mL}}$．\n同じ水素 $1.0\\,\\mathrm g$ が占める体積が小さいほど，一定体積中の水素は多い．$\\boldsymbol{\\ce{LiH}>\\text{液体水素}>\\ce{NaH}}$．\n$\\ce{LiH}$ の結晶は液体水素より水素を密につめこめるが，同じ構造でも陽イオンの大きい $\\ce{NaH}$ では格子が大きくなり，液体水素にも及ばない．\n\n\\textbf{(4)}　$\\ce{LiH}$ の式量 $7.9$，$1.0\\,\\mathrm g$ は $\\dfrac{1.0}{7.9}=0.127\\,\\mathrm{mol}$．$\\ce{H2}$ も $0.127\\,\\mathrm{mol}$ 生じるので $0.127\\times2.0=0.253\\to\\boldsymbol{0.25\\,\\mathrm g}$．\n$\\ce{LiH}$ に含まれていた H は $0.127\\times1.0=0.127\\,\\mathrm g$ なので $\\boldsymbol{2\\,\\text{倍}}$．(1) のとおり，残りの半分は水から来る．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "塩化ナトリウム型の水素化物では，単位格子の体積と含まれる H の数から一定体積中の水素の量が求まり，陽イオンの小さい LiH は液体水素より密に水素を蓄えられるが NaH はそうでない．水素化物イオン H⁻ は水の H⁺ と反応して H₂ になるので，取り出せる水素は結晶中の水素の 2 倍になる．"
+ },
+ "concepts": [
+  "halogen",
+  "alkali-metals",
+  "crystal"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "水素",
+  "水素化物",
+  "結晶格子",
+  "酸化数",
+  "水素貯蔵"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

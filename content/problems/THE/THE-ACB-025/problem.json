@@ -1,0 +1,124 @@
+{
+ "id": "THE-ACB-025",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-05",
+ "topic": "オキソ酸の強さの経験則（ポーリング則）とリンのオキソ酸の構造決定",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "structure",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "中心原子 X をもつオキソ酸を $\\ce{XO}_m(\\ce{OH})_n$（$m$ は H の付いていない O の数，$n$ は OH の数）と表すと，第一段の電離の $\\mathrm{p}K_{\\mathrm{a1}}$ はおよそ次の経験則に従う（X の種類によらない粗い近似）．\n【規則1】$\\mathrm{p}K_{\\mathrm{a1}}\\approx 8-5m$　　【規則2】多段階に電離する場合，次の段の $\\mathrm{p}K_{\\mathrm a}$ は前の段よりおよそ 5 大きい．\nまた，O–H の H だけが酸として電離し，X に直接結合した H は電離しないものとする．\nリンのオキソ酸として，リン酸 $\\ce{H3PO4}$，亜リン酸 $\\ce{H3PO3}$，ホスフィン酸 $\\ce{H3PO2}$ がある．$25\\,^\\circ\\mathrm{C}$ での実測値は次のとおりである．\n・$\\ce{H3PO4}$：$\\mathrm{p}K_{\\mathrm a}$ は $2.1,\\ 7.2,\\ 12.3$\n・$\\ce{H3PO3}$：$K_{\\mathrm{a1}}=5.0\\times10^{-2}$（$\\mathrm{p}K_{\\mathrm{a1}}=1.30$），$K_{\\mathrm{a2}}=2.0\\times10^{-7}$（$\\mathrm{p}K_{\\mathrm{a2}}=6.70$）\n・$\\ce{H3PO2}$：$\\mathrm{p}K_{\\mathrm{a1}}=1.2$\n・それぞれの $0.100\\,\\mathrm{mol/L}$ 水溶液 $10.0\\,\\mathrm{mL}$ を $0.100\\,\\mathrm{mol/L}$ 水酸化ナトリウム水溶液で滴定すると，中和点（pH の急変）は $\\ce{H3PO3}$ では $10.0\\,\\mathrm{mL}$ と $20.0\\,\\mathrm{mL}$ の 2 か所，$\\ce{H3PO2}$ では $10.0\\,\\mathrm{mL}$ の 1 か所だけであった．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "次亜塩素酸 $\\ce{HClO}$，硫酸 $\\ce{H2SO4}$，過塩素酸 $\\ce{HClO4}$ の $\\mathrm{p}K_{\\mathrm{a1}}$ を規則1で予想せよ．また，$\\ce{H3PO4}$ の 3 つの $\\mathrm{p}K_{\\mathrm a}$ を規則1・2で予想し，実測値と比べよ．"
+     },
+     {
+      "id": "2",
+      "tex": "亜リン酸の構造が 3 個の OH をもつ $\\ce{P(OH)3}$ であるとすると，$\\mathrm{p}K_{\\mathrm{a1}}$ はいくらと予想され，中和点はいくつ現れるはずか．実測値と滴定結果を用いて亜リン酸の実際の構造を決め，示性式の形（例：$\\ce{XO(OH)2}$ のように X に結合した H も明示）で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "ホスフィン酸の構造を同様に決めよ．また，$\\ce{NaH2PO2}$ は酸性塩・正塩のどちらか．各オキソ酸のリンの酸化数も答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "亜リン酸の滴定の第一中和点（$\\ce{NaH2PO3}$ の $0.0500\\,\\mathrm{mol/L}$ 水溶液とみなせる）の pH を考える．両性の物質の pH の近似式 $\\mathrm{pH}=\\frac12(\\mathrm{p}K_{\\mathrm{a1}}+\\mathrm{p}K_{\\mathrm{a2}})$ が使えるかどうかを判断し，pH を小数第2位まで求めよ．$\\log_{10}2=0.30$ とし，水の電離は無視してよい．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：オキソ酸の強さの経験則（ポーリング則）とリンのオキソ酸の構造決定",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{HClO}$：$8$，$\\ce{H2SO4}$：$-2$，$\\ce{HClO4}$：$-7$．$\\ce{H3PO4}$（$m=1$）は $3,\\ 8,\\ 13$ と予想され，実測の $2.1,\\ 7.2,\\ 12.3$ とおよそ一致する．"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{P(OH)3}$ なら $m=0$ で $\\mathrm{p}K_{\\mathrm{a1}}\\approx8$，中和点は 3 か所のはず．実測の $1.3$ は $m=1$ に合い，中和点が 2 か所なので電離する H は 2 個．構造は $\\ce{HPO(OH)2}$（P に H・O（二重結合）・OH 2 個が結合）"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{H2PO(OH)}$（P に H 2 個・O（二重結合）・OH 1 個が結合）．$\\ce{NaH2PO2}$ は正塩．リンの酸化数は $\\ce{H3PO4}$ $+5$，$\\ce{H3PO3}$ $+3$，$\\ce{H3PO2}$ $+1$"
+   },
+   {
+    "id": "4",
+    "tex": "使えない（$K_{\\mathrm{a1}}$ が濃度 $0.0500$ と同程度で，$K_{\\mathrm{a1}}\\ll c$ が成り立たない）．pH $=4.15$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\ce{HClO}=\\ce{Cl(OH)}$：$m=0$ で $\\boldsymbol{8}$（実測 $7.5$）．$\\ce{H2SO4}=\\ce{SO2(OH)2}$：$m=2$ で $\\boldsymbol{-2}$．$\\ce{HClO4}=\\ce{ClO3(OH)}$：$m=3$ で $\\boldsymbol{-7}$．\n$\\ce{H3PO4}=\\ce{PO(OH)3}$ は $m=1$ なので $\\mathrm{p}K_{\\mathrm{a1}}\\approx3$，規則2で $\\boldsymbol{3,\\ 8,\\ 13}$．実測 $2.1,\\ 7.2,\\ 12.3$ と 1 程度の範囲で合う．\n\n\\textbf{(2)} $\\ce{P(OH)3}$ なら $m=0$ で $\\mathrm{p}K_{\\mathrm{a1}}\\approx8$ の非常に弱い酸で，3 個の H がすべて電離して中和点は 3 か所のはずである．ところが実測の $\\mathrm{p}K_{\\mathrm{a1}}=1.3$ は $m=1$（予想 $3$）に近く，$m=0$ では説明できない．また中和点が $10.0$，$20.0\\,\\mathrm{mL}$ の 2 か所なので，電離する H（OH の H）は 2 個である．分子式 $\\ce{H3PO3}$ で OH が 2 個，H の付かない O が 1 個とすると，残りの H 1 個は P に直接結合している．よって構造は $\\boldsymbol{\\ce{HPO(OH)2}}$（解答図）．第 2 段は規則2で $\\approx 3+5=8$ と予想され，実測 $6.7$ とおよそ合い，第 3 段がないことも P–H の H が電離しないことで説明できる．\n\n\\textbf{(3)} $\\mathrm{p}K_{\\mathrm{a1}}=1.2$ は $m=1$ に合い，中和点が 1 か所なので OH は 1 個．$\\ce{H3PO2}$ のうち OH の H 1 個を除いた 2 個の H は P に直接結合する．構造は $\\boldsymbol{\\ce{H2PO(OH)}}$ で 1 価の酸．よって $\\ce{NaH2PO2}$ には電離できる H が残っておらず，\\textbf{正塩}である（化学式に H を含むが酸性塩ではない）．\nリンの酸化数は，H を $+1$，O を $-2$ として $\\ce{H3PO4}$：$\\boldsymbol{+5}$，$\\ce{H3PO3}$：$\\boldsymbol{+3}$，$\\ce{H3PO2}$：$\\boldsymbol{+1}$．（P–H 結合をもつ $\\ce{H3PO3}$，$\\ce{H3PO2}$ は還元剤としてはたらく．）\n\n\\textbf{(4)} $\\ce{H2PO3-}$ を $\\ce{HA-}$，全濃度を $c=0.0500\\,\\mathrm{mol/L}$ とする．$\\ce{HA-}$ どうしの反応 $\\ce{2HA- <=>[\\text{}] H2A + A^2-}$ で生じる $\\ce{H2A}$ と $\\ce{A^2-}$ と $\\ce{H+}$ の関係（水の電離を無視）は\n\\[ [\\ce{H+}]+[\\ce{H2A}]=[\\ce{A^2-}],\\qquad [\\ce{H2A}]=\\frac{[\\ce{H+}][\\ce{HA-}]}{K_{\\mathrm{a1}}},\\quad [\\ce{A^2-}]=\\frac{K_{\\mathrm{a2}}[\\ce{HA-}]}{[\\ce{H+}]} \\]\n$[\\ce{HA-}]\\fallingdotseq c$ として整理すると\n\\[ [\\ce{H+}]^{2}=\\frac{K_{\\mathrm{a1}}K_{\\mathrm{a2}}\\,c}{K_{\\mathrm{a1}}+c} \\]\n近似式 $\\mathrm{pH}=\\frac12(\\mathrm{p}K_{\\mathrm{a1}}+\\mathrm{p}K_{\\mathrm{a2}})$ は $K_{\\mathrm{a1}}\\ll c$ のときの形で，ここでは $K_{\\mathrm{a1}}=c=0.0500$ なので\\textbf{使えない}（$4.00$ になり誤差が大きい）．$K_{\\mathrm{a1}}+c=2c$ より\n\\[ [\\ce{H+}]^{2}=\\frac{K_{\\mathrm{a1}}K_{\\mathrm{a2}}}{2}=\\frac{5.0\\times10^{-2}\\times2.0\\times10^{-7}}{2}=5.0\\times10^{-9} \\]\n\\[ \\mathrm{pH}=-\\tfrac12\\log_{10}(5.0\\times10^{-9})=-\\tfrac12(0.70-9)=\\boldsymbol{4.15} \\]\n（$\\log_{10}5=1-0.30=0.70$．）このとき $[\\ce{H2A}]/[\\ce{HA-}]=[\\ce{H+}]/K_{\\mathrm{a1}}\\fallingdotseq1.4\\times10^{-3}$ なので，$[\\ce{HA-}]\\fallingdotseq c$ とした仮定は成り立っている．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "オキソ酸の強さは H の付かない O の数 m でほぼ決まる（pKa1≈8−5m）という経験則と，中和点の数（電離する H の数）を組み合わせると，亜リン酸・ホスフィン酸では一部の H が P に直接結合していることがわかり，構造と塩の分類（NaH₂PO₂ は正塩）・酸化数が決まる．両性物質の pH の近似式は Ka1≪c のときだけ使え，Ka1 が濃度と同程度なら補正した式を使う．"
+ },
+ "concepts": [
+  "acid-base",
+  "amphoteric",
+  "nitrogen-phosphorus"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "オキソ酸",
+  "酸の強さ",
+  "亜リン酸",
+  "構造決定",
+  "両性物質のpH",
+  "酸化数"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

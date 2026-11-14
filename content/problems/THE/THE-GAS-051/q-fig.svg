@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 250" font-family="Noto Sans CJK JP, sans-serif" font-size="14">
+  <rect x="40" y="50" width="420" height="140" fill="none" stroke="currentColor" stroke-width="2"/>
+  <rect x="246" y="50" width="8" height="140" fill="currentColor"/>
+  <text x="145" y="115" text-anchor="middle" fill="currentColor">X の単分子膜</text>
+  <text x="145" y="137" text-anchor="middle" fill="currentColor">（1.2×10<tspan baseline-shift="super" font-size="10">17</tspan> 個）</text>
+  <text x="355" y="115" text-anchor="middle" fill="currentColor">Y の単分子膜</text>
+  <text x="355" y="137" text-anchor="middle" fill="currentColor">（1.0×10<tspan baseline-shift="super" font-size="10">17</tspan> 個）</text>
+  <line x1="40" y1="30" x2="460" y2="30" stroke="currentColor" stroke-width="1.2"/>
+  <line x1="40" y1="24" x2="40" y2="36" stroke="currentColor" stroke-width="1.2"/>
+  <line x1="460" y1="24" x2="460" y2="36" stroke="currentColor" stroke-width="1.2"/>
+  <text x="250" y="22" text-anchor="middle" fill="currentColor">0.60 m</text>
+  <line x1="480" y1="50" x2="480" y2="190" stroke="currentColor" stroke-width="1.2"/>
+  <line x1="474" y1="50" x2="486" y2="50" stroke="currentColor" stroke-width="1.2"/>
+  <line x1="474" y1="190" x2="486" y2="190" stroke="currentColor" stroke-width="1.2"/>
+  <text x="492" y="125" fill="currentColor">0.20 m</text>
+  <line x1="40" y1="210" x2="250" y2="210" stroke="currentColor" stroke-width="1.2" stroke-dasharray="5 4" opacity="0.5"/>
+  <line x1="40" y1="204" x2="40" y2="216" stroke="currentColor" stroke-width="1.2"/>
+  <line x1="250" y1="204" x2="250" y2="216" stroke="currentColor" stroke-width="1.2"/>
+  <text x="145" y="232" text-anchor="middle" fill="currentColor">x（左端から仕切り板まで）</text>
+  <text x="262" y="232" fill="currentColor">仕切り板（左右に動ける）</text>
+</svg>

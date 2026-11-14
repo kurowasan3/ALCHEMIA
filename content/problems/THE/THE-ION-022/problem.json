@@ -1,0 +1,109 @@
+{
+ "id": "THE-ION-022",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "塩化アンモニウムによる水酸化マグネシウムの沈殿の抑制",
+ "course": "化学",
+ "level": 3,
+ "minutes": 18,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "$0.20\\,\\mathrm{mol/L}$ アンモニア水 $50\\,\\mathrm{mL}$ と $0.020\\,\\mathrm{mol/L}$ 塩化マグネシウム水溶液 $50\\,\\mathrm{mL}$ を混合する実験を考える．アンモニアの電離定数 $K_b=2.0\\times10^{-5}\\,\\mathrm{mol/L}$，$\\ce{Mg(OH)2}$ の溶解度積 $K_{sp}=[\\ce{Mg^2+}][\\ce{OH-}]^2=1.6\\times10^{-11}\\,(\\mathrm{mol/L})^3$，$\\ce{Fe(OH)3}$ の溶解度積 $1.0\\times10^{-38}\\,(\\mathrm{mol/L})^4$，$\\sqrt2=1.41$，$\\log_{10}2=0.30$ とする．塩の溶解による体積変化は無視し，沈殿の生成による濃度変化は考えなくてよい．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "混合直後の溶液で $\\ce{Mg(OH)2}$ の沈殿は生じるか．$[\\ce{OH-}]$ を求めて判断せよ．"
+     },
+     {
+      "id": "2",
+      "tex": "混合する前のアンモニア水に塩化アンモニウムを溶かしておくと，混合しても $\\ce{Mg(OH)2}$ が沈殿しなくなる．加える塩化アンモニウムは少なくとも何 mol か．有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の最小量を加えたときの混合溶液の pH を小数第1位まで求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(2) の条件で，$\\ce{Mg^2+}$ の代わりに $\\ce{Fe^3+}$ を $0.010\\,\\mathrm{mol/L}$ 含む場合，$\\ce{Fe(OH)3}$ は沈殿するか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$[\\ce{OH-}]=1.4\\times10^{-3}\\,\\mathrm{mol/L}$，$[\\ce{Mg^2+}][\\ce{OH-}]^2=2.0\\times10^{-8}>K_{sp}$ なので沈殿する"
+   },
+   {
+    "id": "2",
+    "tex": "$5.0\\times10^{-3}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "9.6"
+   },
+   {
+    "id": "4",
+    "tex": "沈殿する"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "混合後は体積 $100\\,\\mathrm{mL}$ で，$[\\ce{NH3}]=0.10\\,\\mathrm{mol/L}$，$[\\ce{Mg^2+}]=0.010\\,\\mathrm{mol/L}$．\n\n\\textbf{(1)} $[\\ce{OH-}]=\\sqrt{K_bC}=\\sqrt{2.0\\times10^{-5}\\times0.10}=1.41\\times10^{-3}\\,\\mathrm{mol/L}$．\n\\[ [\\ce{Mg^2+}][\\ce{OH-}]^2=0.010\\times2.0\\times10^{-6}=2.0\\times10^{-8}>1.6\\times10^{-11} \\]\n\\textbf{沈殿する}．\n\n\\textbf{(2)} 沈殿しないためには\n\\[ [\\ce{OH-}]\\leqq\\sqrt{\\dfrac{1.6\\times10^{-11}}{0.010}}=4.0\\times10^{-5}\\,\\mathrm{mol/L} \\]\n$\\ce{NH4+}$ が多量にあると $\\ce{NH3 + H2O <=> NH4+ + OH-}$ の平衡が左に偏り，$[\\ce{NH3}]\\fallingdotseq0.10$ とみなせるので\n\\[ [\\ce{OH-}]=K_b\\dfrac{[\\ce{NH3}]}{[\\ce{NH4+}]}\\leqq4.0\\times10^{-5}\\quad\\Rightarrow\\quad [\\ce{NH4+}]\\geqq\\dfrac{2.0\\times10^{-5}\\times0.10}{4.0\\times10^{-5}}=0.050\\,\\mathrm{mol/L} \\]\n$100\\,\\mathrm{mL}$ 中で $0.050\\times0.100=\\boldsymbol{5.0\\times10^{-3}\\,\\mathrm{mol}}$．\n\n\\textbf{(3)} $[\\ce{OH-}]=4.0\\times10^{-5}$ より $\\mathrm{pOH}=5-0.60=4.4$，$\\mathrm{pH}=14-4.4=\\boldsymbol{9.6}$．\n\n\\textbf{(4)} $[\\ce{Fe^3+}][\\ce{OH-}]^3=0.010\\times(4.0\\times10^{-5})^3=6.4\\times10^{-16}>1.0\\times10^{-38}$ なので \\textbf{沈殿する}．系統分析で $\\ce{NH4Cl}$ と $\\ce{NH3}$ を加えるのは，$\\ce{OH-}$ を低く抑えて $\\ce{Mg^2+}$ などを沈殿させずに，溶解度積の極めて小さい $\\ce{Fe(OH)3}$ や $\\ce{Al(OH)3}$ だけを沈殿させるためである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "アンモニア水に NH4Cl を加えると共通イオン効果で [OH-] が小さく抑えられ，溶解度積の比較的大きい Mg(OH)2 は沈殿しなくなるが，溶解度積の極めて小さい Fe(OH)3 は沈殿する．沈殿しない上限の [OH-] から必要な NH4+ の量を逆算できる．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "precipitation",
+  "nitrogen-phosphorus"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "溶解度積",
+  "共通イオン効果",
+  "緩衝液",
+  "水酸化マグネシウム",
+  "系統分析"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

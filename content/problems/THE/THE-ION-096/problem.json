@@ -1,0 +1,109 @@
+{
+ "id": "THE-ION-096",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "リン酸の両性イオン（HPO₄²⁻・H₂PO₄⁻）の水溶液の pH と近似式 (pK+pK)/2 の破れ",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "25 ℃ で，リン酸は次のように 3 段階で電離する．\n\\[\\ce{H3PO4 <=> H+ + H2PO4-}\\quad K_1=7.1\\times10^{-3}\\,\\mathrm{mol/L}\\]\n\\[\\ce{H2PO4- <=> H+ + HPO4^2-}\\quad K_2=6.3\\times10^{-8}\\,\\mathrm{mol/L}\\]\n\\[\\ce{HPO4^2- <=> H+ + PO4^3-}\\quad K_3=4.5\\times10^{-13}\\,\\mathrm{mol/L}\\]\n水のイオン積は $K_\\mathrm{w}=1.0\\times10^{-14}\\,(\\mathrm{mol/L})^2$ とする．$\\ce{HPO4^2-}$ や $\\ce{H2PO4-}$ のように酸としても塩基としてもはたらくイオンの塩の水溶液について，教科書などでは $\\mathrm{pH}=\\dfrac{\\mathrm{p}K_2+\\mathrm{p}K_3}{2}$ のような濃度によらない式が使われることがあるが，これが成り立つには条件がある．以下では，塩は完全に電離し，濃度 $C$ の $\\ce{Na2HPO4}$ 水溶液では $[\\ce{HPO4^2-}]\\fallingdotseq C$，$[\\ce{H3PO4}]$ は無視できるとしてよい．必要なら $\\log_{10}3.47=0.54$，$\\log_{10}6.58=0.82$，$\\log_{10}5.52=0.74$，$\\log_{10}6.3=0.80$，$\\log_{10}4.5=0.65$，$\\log_{10}7.1=0.85$ を用いよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "濃度 $C$ の $\\ce{Na2HPO4}$ 水溶液では，水から生じたものも含めて，失われた $\\ce{H+}$ の量と生じた $\\ce{H+}$ の量が等しいことから $[\\ce{H+}]+[\\ce{H2PO4-}]=[\\ce{PO4^3-}]+[\\ce{OH-}]$ が成り立つ．これを用いて，$[\\ce{H+}]$ を $K_2$，$K_3$，$K_\\mathrm{w}$，$C$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) の式を用いて，$C=0.10\\,\\mathrm{mol/L}$ と $C=1.0\\times10^{-3}\\,\\mathrm{mol/L}$ の $\\ce{Na2HPO4}$ 水溶液の pH をそれぞれ小数第 1 位まで求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\mathrm{pH}=\\dfrac{\\mathrm{p}K_2+\\mathrm{p}K_3}{2}$ で計算した値を小数第 1 位まで答えよ．また，(1) の式がこの式に一致するために $C$ が満たすべき 2 つの条件を，$K_2$，$K_3$，$K_\\mathrm{w}$ を用いた不等式で答え，$C=1.0\\times10^{-3}\\,\\mathrm{mol/L}$ でずれが大きい原因はどちらの条件が破れていることかを答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "濃度 $1.0\\times10^{-3}\\,\\mathrm{mol/L}$ の $\\ce{NaH2PO4}$ 水溶液について，(1) と同様の考え方で $[\\ce{H+}]$ を $K_1$，$K_2$，$K_\\mathrm{w}$，$C$ で表し，pH を小数第 1 位まで求めよ．また，$\\mathrm{pH}=\\dfrac{\\mathrm{p}K_1+\\mathrm{p}K_2}{2}$ の値（小数第 1 位まで）と比べ，ずれの原因を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$[\\ce{H+}]=\\sqrt{\\dfrac{K_2(K_3C+K_\\mathrm{w})}{K_2+C}}$"
+   },
+   {
+    "id": "2",
+    "tex": "$C=0.10\\,\\mathrm{mol/L}$：pH 9.7，$C=1.0\\times10^{-3}\\,\\mathrm{mol/L}$：pH 9.1"
+   },
+   {
+    "id": "3",
+    "tex": "9.8．条件は $C\\gg K_2$ と $K_3C\\gg K_\\mathrm{w}$．$C=1.0\\times10^{-3}\\,\\mathrm{mol/L}$ では $K_3C=4.5\\times10^{-16}\\ll K_\\mathrm{w}$ となり，$K_3C\\gg K_\\mathrm{w}$（水の電離を無視できる条件）が破れている．"
+   },
+   {
+    "id": "4",
+    "tex": "$[\\ce{H+}]=\\sqrt{\\dfrac{K_1(K_2C+K_\\mathrm{w})}{K_1+C}}$，pH 5.1．$(\\mathrm{p}K_1+\\mathrm{p}K_2)/2=4.7$ より大きい．原因は $C\\gg K_1$ が成り立たない（$K_1>C$）ため，生じた $\\ce{H+}$ の多くが $\\ce{H2PO4-}$ に受け取られず（$\\ce{H3PO4}$ にならず）$\\ce{H+}$ のまま残る項を無視できないこと．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　$K_2=\\dfrac{[\\ce{H+}][\\ce{HPO4^2-}]}{[\\ce{H2PO4-}]}$ より $[\\ce{H2PO4-}]=\\dfrac{[\\ce{H+}]C}{K_2}$，$K_3$ の式より $[\\ce{PO4^3-}]=\\dfrac{K_3C}{[\\ce{H+}]}$，$[\\ce{OH-}]=\\dfrac{K_\\mathrm{w}}{[\\ce{H+}]}$．これらを代入して $[\\ce{H+}]$ をかけると\n\\[[\\ce{H+}]^2\\left(1+\\frac{C}{K_2}\\right)=K_3C+K_\\mathrm{w}\\quad\\therefore\\ [\\ce{H+}]=\\sqrt{\\frac{K_2(K_3C+K_\\mathrm{w})}{K_2+C}}\\]\n左辺の「1」は生じた $\\ce{H+}$ が遊離のまま残る分，$C/K_2$ は $\\ce{HPO4^2-}$ に受け取られて $\\ce{H2PO4-}$ になる分，右辺の $K_3C$ は $\\ce{HPO4^2-}$ 自身の酸としての電離，$K_\\mathrm{w}$ は水の電離に対応する．\n\n\\textbf{(2)}　$C=0.10$：$K_3C+K_\\mathrm{w}=4.5\\times10^{-14}+1.0\\times10^{-14}=5.5\\times10^{-14}$，$K_2+C\\fallingdotseq0.10$ なので\n$[\\ce{H+}]^2=\\dfrac{6.3\\times10^{-8}\\times5.5\\times10^{-14}}{0.10}=3.47\\times10^{-20}$，$\\mathrm{pH}=\\dfrac{20-0.54}{2}=9.73$ → $\\boldsymbol{9.7}$．\n$C=1.0\\times10^{-3}$：$K_3C+K_\\mathrm{w}=4.5\\times10^{-16}+1.0\\times10^{-14}=1.045\\times10^{-14}$，$[\\ce{H+}]^2=\\dfrac{6.3\\times10^{-8}\\times1.045\\times10^{-14}}{1.0\\times10^{-3}}=6.58\\times10^{-19}$，$\\mathrm{pH}=\\dfrac{19-0.82}{2}=9.09$ → $\\boldsymbol{9.1}$．\n\n\\textbf{(3)}　$\\mathrm{p}K_2=8-0.80=7.20$，$\\mathrm{p}K_3=13-0.65=12.35$ より $\\dfrac{7.20+12.35}{2}=9.78$ → $\\boldsymbol{9.8}$．(1) の式で $K_2+C\\fallingdotseq C$（$C\\gg K_2$）かつ $K_3C+K_\\mathrm{w}\\fallingdotseq K_3C$（$K_3C\\gg K_\\mathrm{w}$）のとき $[\\ce{H+}]=\\sqrt{K_2K_3}$ となる．$K_3$ がきわめて小さいため，$K_3C=K_\\mathrm{w}$ となるのは $C=K_\\mathrm{w}/K_3\\fallingdotseq0.022\\,\\mathrm{mol/L}$ で，$C=0.10$ でも水の寄与が約 2 割あり（9.73 と 9.78 の差），$C=1.0\\times10^{-3}$ では水の電離の方がはるかに大きいので，近似式から 0.7 もずれる．$C\\gg K_2$ の方はどちらの濃度でも十分成り立っている．\n\n\\textbf{(4)}　$\\ce{NaH2PO4}$ では，$[\\ce{H+}]+[\\ce{H3PO4}]=[\\ce{HPO4^2-}]+[\\ce{OH-}]$ に $[\\ce{H3PO4}]=\\dfrac{[\\ce{H+}]C}{K_1}$，$[\\ce{HPO4^2-}]=\\dfrac{K_2C}{[\\ce{H+}]}$ を代入して\n\\[[\\ce{H+}]=\\sqrt{\\frac{K_1(K_2C+K_\\mathrm{w})}{K_1+C}}\\]\n$C=1.0\\times10^{-3}$：$K_2C+K_\\mathrm{w}=6.3\\times10^{-11}+1.0\\times10^{-14}\\fallingdotseq6.30\\times10^{-11}$，$\\dfrac{K_1}{K_1+C}=\\dfrac{7.1}{8.1}$，$[\\ce{H+}]^2=5.52\\times10^{-11}$，$\\mathrm{pH}=\\dfrac{11-0.74}{2}=5.13$ → $\\boldsymbol{5.1}$．\n一方 $\\dfrac{\\mathrm{p}K_1+\\mathrm{p}K_2}{2}=\\dfrac{2.15+7.20}{2}=4.68$ → 4.7．こちらでは水の電離は無視できる（$K_2C\\gg K_\\mathrm{w}$）が，$K_1=7.1\\times10^{-3}$ が $C$ より大きいので，分母の $K_1+C$ を $C$ と置けない．すなわち $\\ce{H2PO4-}$ が酸として出した $\\ce{H+}$ のうち，別の $\\ce{H2PO4-}$ に受け取られて $\\ce{H3PO4}$ になる割合が小さく（$\\ce{H3PO4}$ はかなり強い酸なので），遊離の $\\ce{H+}$ として残る分を無視できないのが原因である．このため実際の pH は 4.7 より高く，うすめるほど 7 に近づく．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "酸としても塩基としてもはたらくイオンの水溶液では，プロトンの収支 [H⁺]+[H₂A]=[A²⁻]+[OH⁻] から [H⁺]=√(K₁(K₂C+K_w)/(K₁+C)) 型の式が得られ，濃度によらない pH=(pK₁+pK₂)/2 は C≫K₁ と K₂C≫K_w の両方が成り立つときだけの近似である．HPO₄²⁻ では K₃ が小さいため水の電離が，H₂PO₄⁻ では K₁ が大きいため遊離の H⁺ が無視できず，うすい溶液で近似が大きく破れる．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "amphoteric",
+  "nitrogen-phosphorus"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "両性イオン",
+  "リン酸",
+  "プロトン収支",
+  "近似の破れ",
+  "水の電離"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

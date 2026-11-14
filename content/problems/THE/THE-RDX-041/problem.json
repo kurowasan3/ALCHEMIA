@@ -1,0 +1,118 @@
+{
+ "id": "THE-RDX-041",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-06",
+ "topic": "無電解銅めっき浴で競合する主反応・副反応の物質収支（電子の行き先の解析）",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "equation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ホルムアルデヒド $\\ce{HCHO}$ を還元剤とする塩基性の無電解銅めっき浴（$\\ce{Cu^2+}$ は錯イオンとして溶けている）では，次の反応が同時に起こりうる．以下ではすべて $\\ce{Cu^2+}$，$\\ce{OH-}$ などイオンの形で表す．\n\n(i)　$\\ce{Cu^2+ + 2HCHO + 4OH- -> Cu + 2HCOO- + H2 + 2H2O}$\n\n(ii)　副反応：$\\ce{Cu^2+}$ が酸化銅(I) $\\ce{Cu2O}$ として沈殿し，$\\ce{HCHO}$ は $\\ce{HCOO-}$ になる（気体は発生しない）．\n\n(iii)　$\\ce{2HCHO + OH- -> HCOO- + CH3OH}$（銅が関与しないホルムアルデヒドの自己酸化還元）"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "反応 (i) を，$\\ce{Cu^2+}$ が電子を受け取る半反応と $\\ce{HCHO}$ が電子を出す半反応に分けて書け．また，(i) で $\\ce{HCHO}$ 1 mol が $\\ce{Cu^2+}$ に与える電子は何 mol か．銀鏡反応のように $\\ce{HCHO}$ 1 mol が $\\ce{HCOO-}$ になるときに出す電子の物質量と比べ，違いが生じる理由を述べよ．"
+     },
+     {
+      "id": "2",
+      "tex": "副反応 (ii) のイオン反応式を書け．"
+     },
+     {
+      "id": "3",
+      "tex": "あるめっき浴で一定時間反応させたところ，基板に析出した Cu は $2.00\\times10^{-2}\\,\\mathrm{mol}$，沈殿した $\\ce{Cu2O}$ は $1.20\\times10^{-3}\\,\\mathrm{mol}$，発生した $\\ce{H2}$ は $2.00\\times10^{-2}\\,\\mathrm{mol}$，消費された $\\ce{HCHO}$ は $5.00\\times10^{-2}\\,\\mathrm{mol}$ であった．起こった反応は (i)〜(iii) だけとして，(i)〜(iii) がそれぞれ何 mol 進んだかを求めよ．さらに，生じた $\\ce{HCOO-}$ と $\\ce{CH3OH}$，消費された $\\ce{OH-}$ の物質量を有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) で，浴から失われた $\\ce{Cu^2+}$ のうち金属銅として基板に析出した割合，および消費された $\\ce{HCHO}$ のうち銅の析出（反応 (i)）に使われた割合を，それぞれ有効数字 3 桁の百分率で求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "別の添加剤を加えた浴では，$\\ce{Cu2O}$ も $\\ce{CH3OH}$ も生じなかったが，析出した Cu $2.00\\times10^{-2}\\,\\mathrm{mol}$ に対し $\\ce{H2}$ は $1.50\\times10^{-2}\\,\\mathrm{mol}$ しか発生しなかった．Cu の一部は (i) ではなく，$\\ce{H2}$ を出さない反応 (iv)：$\\ce{Cu^2+}$ と $\\ce{HCHO}$ と $\\ce{OH-}$ から $\\ce{Cu}$，$\\ce{HCOO-}$，$\\ce{H2O}$ が生じる反応 で析出したと考えられる．(iv) の反応式を書き，消費された $\\ce{HCHO}$ の物質量を有効数字 3 桁で求めよ．また，この浴で $\\ce{H2}$ と Cu の物質量の比 $n_{\\ce{H2}}/n_\\mathrm{Cu}$ がとりうる範囲を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{Cu^2+ + 2e- -> Cu}$，$\\ce{2HCHO + 4OH- -> 2HCOO- + H2 + 2H2O + 2e-}$．(i) では $\\ce{HCHO}$ 1 mol あたり電子 1 mol（銀鏡反応型では 2 mol）．(i) では $\\ce{HCHO}$ の C–H の水素の半分が電子として $\\ce{Cu^2+}$ に渡らず $\\ce{H2}$ として放出され，還元力の半分が $\\ce{H2}$ の生成に使われるため"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{2Cu^2+ + HCHO + 5OH- -> Cu2O + HCOO- + 3H2O}$"
+   },
+   {
+    "id": "3",
+    "tex": "(i) $2.00\\times10^{-2}\\,\\mathrm{mol}$，(ii) $1.20\\times10^{-3}\\,\\mathrm{mol}$，(iii) $4.40\\times10^{-3}\\,\\mathrm{mol}$；$\\ce{HCOO-}$ $4.56\\times10^{-2}\\,\\mathrm{mol}$，$\\ce{CH3OH}$ $4.40\\times10^{-3}\\,\\mathrm{mol}$，$\\ce{OH-}$ $9.04\\times10^{-2}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "4",
+    "tex": "銅の析出割合 $89.3\\,\\%$，$\\ce{HCHO}$ の利用割合 $80.0\\,\\%$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\ce{Cu^2+ + HCHO + 3OH- -> Cu + HCOO- + 2H2O}$，$\\ce{HCHO}$ $3.50\\times10^{-2}\\,\\mathrm{mol}$；$0\\le n_{\\ce{H2}}/n_\\mathrm{Cu}\\le1$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 還元：$\\ce{Cu^2+ + 2e- -> Cu}$．(i) からこれを引くと酸化の半反応\n\\[ \\ce{2HCHO + 4OH- -> 2HCOO- + H2 + 2H2O + 2e-} \\]\n$\\ce{HCHO}$ 2 mol で電子 2 mol，つまり $\\ce{HCHO}$ 1 mol あたり $\\boldsymbol{1\\,\\mathrm{mol}}$．一方，$\\ce{HCHO + 3OH- -> HCOO- + 2H2O + 2e-}$（銀鏡反応・フェーリング反応の型）では 1 mol あたり 2 mol．C の酸化数はどちらも $0\\to+2$ で同じだが，(i) では C に結合していた H の一部が $\\ce{H2}$（酸化数 0）として出ていく．H を $+1$ から $0$ にするのに電子が使われるので，外へ渡せる電子が半分になる．\n\n\\textbf{(2)} $\\ce{Cu^2+}$（+2）→ $\\ce{Cu2O}$（+1）で Cu 1 個あたり電子 1 個，$\\ce{HCHO}\\to\\ce{HCOO-}$ は 2 個出すので $\\ce{Cu^2+}:\\ce{HCHO}=2:1$．電荷を $\\ce{OH-}$，H・O を $\\ce{H2O}$ で合わせて\n\\[ \\ce{2Cu^2+ + HCHO + 5OH- -> Cu2O + HCOO- + 3H2O} \\]\n\n\\textbf{(3)} (i)・(ii)・(iii) の進んだ量を $x,\\ y,\\ z$（mol）とする．$\\ce{H2}$ は (i) だけで生じ，析出 Cu も (i) だけなので $x=2.00\\times10^{-2}$（両方の測定値が一致し，矛盾しないことも確認できる）．$\\ce{Cu2O}$ から $y=1.20\\times10^{-3}$．$\\ce{HCHO}$ の消費 $2x+y+2z=5.00\\times10^{-2}$ より $z=\\boldsymbol{4.40\\times10^{-3}\\,\\mathrm{mol}}$．\n\\[ n_{\\ce{HCOO-}}=2x+y+z=\\boldsymbol{4.56\\times10^{-2}\\,\\mathrm{mol}},\\quad n_{\\ce{CH3OH}}=z=\\boldsymbol{4.40\\times10^{-3}\\,\\mathrm{mol}} \\]\n\\[ n_{\\ce{OH-}}=4x+5y+z=0.0800+0.0060+0.0044=\\boldsymbol{9.04\\times10^{-2}\\,\\mathrm{mol}} \\]\n（測定値は 4 つ，未知数は 3 つなので，Cu と $\\ce{H2}$ の一致が (i) 以外に Cu や $\\ce{H2}$ を生む反応がないことの確認になっている．）\n\n\\textbf{(4)} 失われた $\\ce{Cu^2+}$ は $x+2y=2.24\\times10^{-2}\\,\\mathrm{mol}$．金属銅の割合 $\\dfrac{2.00}{2.24}=\\boldsymbol{89.3\\,\\%}$．$\\ce{HCHO}$ のうち (i) に使われたのは $2x=4.00\\times10^{-2}$ で $\\boldsymbol{80.0\\,\\%}$．\n\n\\textbf{(5)} (iv)：Cu は電子 2 個，$\\ce{HCHO}$ は 2 個なので 1:1．\n\\[ \\ce{Cu^2+ + HCHO + 3OH- -> Cu + HCOO- + 2H2O} \\]\n(i) の量 $=n_{\\ce{H2}}=1.50\\times10^{-2}$，(iv) の量 $=2.00\\times10^{-2}-1.50\\times10^{-2}=5.0\\times10^{-3}$．$\\ce{HCHO}$ は $2\\times1.50\\times10^{-2}+5.0\\times10^{-3}=\\boldsymbol{3.50\\times10^{-2}\\,\\mathrm{mol}}$．\n\nCu 1 mol あたり $\\ce{H2}$ は (i) なら 1 mol，(iv) なら 0 mol なので，両者がどんな割合で起こっても $\\boldsymbol{0\\le n_{\\ce{H2}}/n_\\mathrm{Cu}\\le1}$．比が 1 に近いほど (i) が，0 に近いほど $\\ce{HCHO}$ を効率よく使う (iv) が主であることを示し，$\\ce{H2}$ の量から還元剤の使われ方が判定できる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "同じ還元剤でも反応経路によって 1 分子が渡す電子の数が変わる（H₂ を放出する経路では半分）．主反応・副反応・還元剤の自己酸化還元が同時に起こる浴で，生成物の測定値から各反応の進行量を連立して決め，測定値の余り（Cu と H₂ の一致）を矛盾のチェックに使い，H₂/Cu 比から経路の割合を判定する．"
+ },
+ "concepts": [
+  "redox",
+  "transition-metals",
+  "alcohol-carbonyl"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "無電解めっき",
+  "酸化還元",
+  "半反応式",
+  "物質収支",
+  "副反応",
+  "ホルムアルデヒド"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

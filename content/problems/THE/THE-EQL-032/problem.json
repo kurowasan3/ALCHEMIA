@@ -1,0 +1,115 @@
+{
+ "id": "THE-EQL-032",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "電池の起電力と平衡（反応商による向きの判断）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 12,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ビーカー A に硫酸鉄(II) と硫酸鉄(III) の混合水溶液を入れて白金電極を，ビーカー B に硝酸銀水溶液を入れて銀電極を浸し，A と B を塩橋でつないで電池をつくった．この電池では次の反応が両極に分かれて起こり，白金は電子の受け渡しだけを行う．\n\\[\\ce{Fe^2+ + Ag+ <=> Fe^3+ + Ag}\\]\n温度は一定とし，この反応が平衡状態にあるとき電池の起電力は 0 になるものとする．A の $[\\ce{Fe^2+}]=0.0400\\,\\mathrm{mol/L}$，$[\\ce{Fe^3+}]=0.0600\\,\\mathrm{mol/L}$，B の $[\\ce{Ag+}]=0.500\\,\\mathrm{mol/L}$ のとき，起電力は 0 であった．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "この反応の平衡定数 $K$ をモル濃度を用いて表し，その値を単位とともに有効数字2桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "A の $[\\ce{Fe^2+}]=0.0800\\,\\mathrm{mol/L}$，$[\\ce{Fe^3+}]=0.0200\\,\\mathrm{mol/L}$，B の $[\\ce{Ag+}]=0.500\\,\\mathrm{mol/L}$ として電池をつくった．正極になるのは白金電極と銀電極のどちらか．"
+     },
+     {
+      "id": "3",
+      "tex": "A の $[\\ce{Fe^2+}]=0.0200\\,\\mathrm{mol/L}$，$[\\ce{Fe^3+}]=0.0800\\,\\mathrm{mol/L}$，B の $[\\ce{Ag+}]=0.500\\,\\mathrm{mol/L}$ として電池をつくった．正極で起こる反応を電子 $\\mathrm{e^-}$ を含むイオン反応式で書け．"
+     },
+     {
+      "id": "4",
+      "tex": "起電力が 0 の状態から，B にだけ水を加えて $[\\ce{Ag+}]$ を半分にした．正極になるのはどちらの電極か．電流が流れない場合は「流れない」と答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "起電力が 0 の状態から，A にだけ水を加えて体積を 2 倍にした．正極になるのはどちらの電極か．電流が流れない場合は「流れない」と答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$K=\\dfrac{[\\ce{Fe^3+}]}{[\\ce{Fe^2+}][\\ce{Ag+}]}$，$3.0\\,\\mathrm{L/mol}$"
+   },
+   {
+    "id": "2",
+    "tex": "銀電極"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{Fe^3+ + e- -> Fe^2+}$"
+   },
+   {
+    "id": "4",
+    "tex": "白金電極"
+   },
+   {
+    "id": "5",
+    "tex": "流れない"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 固体の Ag は式に入れない．$K=\\dfrac{[\\ce{Fe^3+}]}{[\\ce{Fe^2+}][\\ce{Ag+}]}=\\dfrac{0.0600}{0.0400\\times0.500}=\\boldsymbol{3.0\\,\\mathrm{L/mol}}$．\n\n以下，$Q=\\dfrac{[\\ce{Fe^3+}]}{[\\ce{Fe^2+}][\\ce{Ag+}]}$ を $K$ と比べる．$Q<K$ なら右向き（$\\ce{Fe^2+}$ が白金上で酸化 → 白金が負極，銀が正極），$Q>K$ なら左向き（Ag が酸化 → 銀が負極，白金が正極），$Q=K$ なら電流は流れない．\n\n\\textbf{(2)} $Q=\\dfrac{0.0200}{0.0800\\times0.500}=0.50<K$ → 右向き．銀電極で $\\ce{Ag+ + e- -> Ag}$ が起こり，\\textbf{銀電極}が正極．\n\n\\textbf{(3)} $Q=\\dfrac{0.0800}{0.0200\\times0.500}=8.0>K$ → 左向き．白金電極が正極となり $\\ce{Fe^3+ + e- -> Fe^2+}$（負極では $\\ce{Ag -> Ag+ + e-}$）．\n\n\\textbf{(4)} $Q=\\dfrac{0.0600}{0.0400\\times0.250}=6.0>K$ → 左向き．\\textbf{白金電極}が正極．\n\n\\textbf{(5)} $[\\ce{Fe^2+}]$ と $[\\ce{Fe^3+}]$ がともに半分になり，比が変わらないので $Q=\\dfrac{0.0300}{0.0200\\times0.500}=3.0=K$．平衡のままで，電流は\\textbf{流れない}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "電池の両極に分かれた反応でも，反応商 Q と平衡定数 K の大小で反応の向き（どちらの電極が正極になるか）が決まり，Q = K なら起電力は 0 になる．希釈で Q が変わるかどうかを判断する．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "battery"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "化学平衡",
+  "平衡定数",
+  "電池",
+  "反応商"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

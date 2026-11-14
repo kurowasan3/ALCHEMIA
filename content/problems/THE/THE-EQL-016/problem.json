@@ -1,0 +1,121 @@
+{
+ "id": "THE-EQL-016",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "アレニウスプロットと活性化エネルギー",
+ "course": "化学",
+ "level": 1,
+ "minutes": 8,
+ "format": [
+  "compare",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "反応の速度定数 $k$ と絶対温度 $T$ の間には，アレニウスの式\n\\[ \\log_{10}k=-\\dfrac{E_a}{2.3RT}+\\log_{10}A \\]\nが成り立つ（$E_a$：活性化エネルギー，$R$：気体定数，$A$：反応ごとの定数）．2つの反応 P，Q について，横軸に $\\dfrac{1}{T}$，縦軸に $\\log_{10}k$ をとってグラフにすると，図のような2本の直線が得られ，$\\dfrac{1}{T}=x_0$ で交わった．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "活性化エネルギーが大きいのは P，Q のどちらか．"
+     },
+     {
+      "id": "2",
+      "tex": "同じ温度から温度を $10\\,\\mathrm{K}$ 上げたとき，速度定数が何倍になるかの倍率が大きいのは P，Q のどちらか．"
+     },
+     {
+      "id": "3",
+      "tex": "交点よりも低温側（$\\dfrac{1}{T}>x_0$）で速度定数が大きいのは P，Q のどちらか．"
+     },
+     {
+      "id": "4",
+      "tex": "反応 P に触媒を加えて同様の測定をすると，直線の傾きの大きさ（絶対値）はどうなるか．また，同じ温度での速度定数はどうなるか．ただし，$A$ は変わらないものとする．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：アレニウスプロットと活性化エネルギー",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "P"
+   },
+   {
+    "id": "2",
+    "tex": "P"
+   },
+   {
+    "id": "3",
+    "tex": "Q"
+   },
+   {
+    "id": "4",
+    "tex": "傾きの大きさは小さくなり，同じ温度での速度定数は大きくなる"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "直線の傾きは $-\\dfrac{E_a}{2.3R}$ なので，\\textbf{傾きが急なほど $E_a$ が大きい}．\\\\\n\\textbf{(1)} 傾きが急な \\textbf{P} の方が $E_a$ が大きい．\\\\\n\\textbf{(2)} 温度を上げることは $\\dfrac1T$ を小さくする（グラフの左へ動く）ことである．同じだけ左へ動いたとき，$\\log_{10}k$ の増え方は傾きが急な P の方が大きい．よって倍率が大きいのは \\textbf{P}（$E_a$ が大きい反応ほど温度に敏感）．\\\\\n\\textbf{(3)} 交点より右側では P の直線が Q より下にあるので，\\textbf{Q} の方が $k$ が大きい．活性化エネルギーの小さい反応は，比較的低い温度でも速く進む．\\\\\n\\textbf{(4)} 触媒は $E_a$ を小さくするので，\\textbf{傾きの大きさは小さくなる}．$A$ が同じなら縦軸切片は変わらず，傾きがゆるやかになる分，どの温度でも直線は上に来るので，\\textbf{速度定数は大きくなる}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "log k–1/T のグラフ（アレニウスプロット）の傾きが −Ea/(2.3R) であることから，傾きの急な反応ほど活性化エネルギーが大きく温度に敏感で，低温では活性化エネルギーの小さい反応の方が速いことを読み取る．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "reaction-rate"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "アレニウスの式",
+  "活性化エネルギー",
+  "アレニウスプロット",
+  "触媒"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

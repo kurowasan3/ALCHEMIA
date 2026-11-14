@@ -1,0 +1,110 @@
+{
+ "id": "THE-SOL-075",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-09",
+ "topic": "蒸気圧降下の割合から求める沸点上昇・凝固点降下と三重点の移動",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "不揮発性の物質を水に少量溶かすと，溶液の蒸気圧 $P$ は純水の蒸気圧 $P_0$ より低くなり，$\\dfrac{P_0-P}{P_0}$ は溶液中の溶質粒子（電離する物質ではイオン）のモル分率に等しい（ラウールの法則）．グルコース水溶液 S について，同じ温度で $\\dfrac{P_0-P}{P_0}=0.180\\,\\%$ であった．\n水のモル質量は $18.0\\,\\mathrm{g/mol}$，モル沸点上昇は $K_\\mathrm{b}=0.52\\,\\mathrm{K\\cdot kg/mol}$，モル凝固点降下は $K_\\mathrm{f}=1.85\\,\\mathrm{K\\cdot kg/mol}$，NaCl の式量は 58.5 とし，蒸気圧降下の割合は温度によらないとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "水溶液 S の質量モル濃度は何 $\\mathrm{mol/kg}$ か．有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "大気圧のもとで，水溶液 S の沸点は純水より何 K 高いか．また凝固点は何 K 低いか．それぞれ有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "水溶液 S と同じ $\\dfrac{P_0-P}{P_0}$ を示す塩化ナトリウム水溶液をつくるには，水 $1.00\\,\\mathrm{kg}$ に NaCl を何 g 溶かせばよいか．NaCl は完全に電離するとして，有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "水の状態図で，固体・液体・気体が共存する三重点は，水溶液 S（溶媒の水と氷・水蒸気が共存する点）ではどのように移るか．温度・圧力のそれぞれについて「上がる」「下がる」「変わらない」で答え，理由を述べよ．ただし，氷には溶質が含まれないものとする．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$0.10\\,\\mathrm{mol/kg}$"
+   },
+   {
+    "id": "2",
+    "tex": "沸点上昇 $0.052\\,\\mathrm{K}$，凝固点降下 $0.19\\,\\mathrm{K}$"
+   },
+   {
+    "id": "3",
+    "tex": "$2.9\\,\\mathrm{g}$"
+   },
+   {
+    "id": "4",
+    "tex": "温度も圧力も下がる．溶液の蒸気圧曲線は純水より下にずれ，氷の昇華圧曲線は変わらないので，両曲線の交点（三重点）は昇華圧曲線に沿って低温・低圧の側に移る"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 溶質のモル分率 $x=1.80\\times10^{-3}$．水 $1\\,\\mathrm{kg}$（$1000/18.0=55.6\\,\\mathrm{mol}$）に溶質 $n\\,\\mathrm{mol}$ とすると $\\dfrac{n}{n+55.6}=1.80\\times10^{-3}$，$n=\\dfrac{1.80\\times10^{-3}\\times55.6}{1-1.80\\times10^{-3}}=0.100$．よって $\\boldsymbol{0.10\\,\\mathrm{mol/kg}}$（希薄なので $n\\approx55.6x$ でもよい）．\n\n\\textbf{(2)} $\\Delta T_\\mathrm{b}=0.52\\times0.100=\\boldsymbol{0.052\\,\\mathrm{K}}$，$\\Delta T_\\mathrm{f}=1.85\\times0.100=0.185\\to\\boldsymbol{0.19\\,\\mathrm{K}}$．\n\n\\textbf{(3)} 粒子の質量モル濃度が $0.100\\,\\mathrm{mol/kg}$ になればよい．NaCl は $\\ce{Na+}$ と $\\ce{Cl-}$ の 2 個に電離するので NaCl は $0.0501\\,\\mathrm{mol}$，$0.0501\\times58.5=2.93\\to\\boldsymbol{2.9\\,\\mathrm{g}}$．\n\n\\textbf{(4)} 三重点は，液体（ここでは溶液）の蒸気圧曲線と固体の昇華圧曲線の交点である．溶質を溶かすと蒸気圧曲線は全体に下がるが，純粋な氷の昇華圧曲線は変わらない．昇華圧曲線は右上がりなので，下がった蒸気圧曲線との交点は昇華圧曲線上を左下へ移り，三重点の\\textbf{温度も圧力も下がる}．温度が下がるのは凝固点降下に，蒸気圧曲線が下がることは沸点上昇（同じ圧力に達するのに高温が必要）に対応する．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "蒸気圧降下の割合は溶質粒子のモル分率に等しいので，ここから質量モル濃度を求め，沸点上昇・凝固点降下を計算できる（電解質では粒子数で数える）．溶液の蒸気圧曲線だけが下がり氷の昇華圧曲線は変わらないので，三重点は低温・低圧側に移る．"
+ },
+ "concepts": [
+  "solution-colligative",
+  "concentration",
+  "vapor-pressure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ラウールの法則",
+  "蒸気圧降下",
+  "沸点上昇",
+  "凝固点降下",
+  "三重点",
+  "状態図"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

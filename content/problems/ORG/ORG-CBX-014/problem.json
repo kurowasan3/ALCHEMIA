@@ -1,0 +1,117 @@
+{
+ "id": "ORG-CBX-014",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-04",
+ "topic": "エステルの還元と加水分解による構造決定",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "condition",
+  "structure"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "エステルを水素化アルミニウムリチウム $\\ce{LiAlH4}$ で還元すると，次のように 2 種類のアルコールが生じる（$\\mathrm{R}$，$\\mathrm{R'}$ は炭化水素基）．\n\\[\\mathrm{RCOOR'} \\;\\longrightarrow\\; \\mathrm{RCH_2OH} + \\mathrm{R'OH}\\]\nまた，$\\ce{LiAlH4}$ はアルデヒドを第一級アルコールに，ケトンを第二級アルコールに還元するが，炭素原子間の二重結合は還元しない．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "次の（ア）〜（オ）をそれぞれ $\\ce{LiAlH4}$ で還元したとき，生成物の組がまったく同じになる 2 つを選べ．\\\\\n（ア）$\\ce{CH3CH2COOCH2CH3}$　（イ）$\\ce{CH3CH2CH2CHO}$　（ウ）$\\ce{CH3COOCH2CH2CH3}$　（エ）$\\ce{CH3CH2COCH3}$　（オ）$\\ce{CH3CH2CH2COOCH3}$"
+     },
+     {
+      "id": "2",
+      "tex": "(1) で選んだ 2 つは，還元のかわりに加水分解すると区別できる．それぞれから得られるカルボン酸の名称を答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "エステル結合以外の官能基をもたない鎖式化合物 X（分子式 $\\ce{C6H10O4}$）は，エステル結合を 2 つもつ．X を $\\ce{LiAlH4}$ で還元すると，エタノールとエチレングリコール（1,2-エタンジオール）の 2 種類だけが得られた．X として考えられる構造をすべて示性式で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の X を加水分解すると 2 種類の化合物が得られ，そのうちアルコールはヨードホルム反応を示した．X の示性式を答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "酸素の同位体 $^{18}\\mathrm{O}$ を含むエタノール $\\ce{C2H5}{}^{18}\\ce{OH}$ とプロピオン酸からエステルを合成し，このエステルを $\\ce{LiAlH4}$ で還元した．$^{18}\\mathrm{O}$ を含むアルコールの名称を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "（ア）と（ウ）"
+   },
+   {
+    "id": "2",
+    "tex": "（ア）：プロピオン酸，（ウ）：酢酸"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{CH3COOCH2CH2OCOCH3}$，$\\ce{C2H5OCOCOOC2H5}$，$\\ce{CH3COOCH2COOC2H5}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{C2H5OCOCOOC2H5}$"
+   },
+   {
+    "id": "5",
+    "tex": "エタノール"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 還元生成物は（ア）$\\ce{CH3CH2CH2OH}$ と $\\ce{C2H5OH}$，（イ）$\\ce{CH3CH2CH2CH2OH}$，（ウ）$\\ce{C2H5OH}$ と $\\ce{CH3CH2CH2OH}$，（エ）$\\ce{CH3CH2CH(OH)CH3}$，（オ）$\\ce{CH3CH2CH2CH2OH}$ と $\\ce{CH3OH}$．還元ではカルボン酸側もアルコールになるので，「酸とアルコールが入れかわった」エステルどうしが同じ生成物を与える．答え \\textbf{（ア）と（ウ）}．\\\\\n\\textbf{(2)} 加水分解ではカルボン酸側はカルボン酸のまま残る：（ア）は \\textbf{プロピオン酸}（とエタノール），（ウ）は \\textbf{酢酸}（と 1-プロパノール）．\\\\\n\\textbf{(3)} 還元生成物がすべて炭素数 2 なので，X をエステル結合で切った断片はすべて炭素数 2．断片は，結合が 1 か所の末端（$\\ce{CH3CO-}$ → エタノール，$\\ce{C2H5O-}$ → エタノール）と，2 か所の中央部（$\\ce{-OCH2CH2O-}$，$\\ce{-COCO-}$，$\\ce{-OCH2CO-}$ → いずれもエチレングリコール）．エステル結合 2 つの鎖は「末端–中央–末端」で，エステル結合の向きが合うものは\n\\[\\ce{CH3COOCH2CH2OCOCH3},\\quad \\ce{C2H5OCOCOOC2H5},\\quad \\ce{CH3COOCH2COOC2H5}\\]\nの \\textbf{3 種類}（いずれも $\\ce{C6H10O4}$）．還元だけではこの 3 つを区別できない．\\\\\n\\textbf{(4)} 加水分解生成物は\\\\\n・$\\ce{CH3COOCH2CH2OCOCH3}$ → 酢酸，エチレングリコール（2 種類，アルコールはヨードホルム反応陰性）\\\\\n・$\\ce{C2H5OCOCOOC2H5}$ → シュウ酸，エタノール（2 種類，エタノールはヨードホルム反応陽性）\\\\\n・$\\ce{CH3COOCH2COOC2H5}$ → 酢酸，グリコール酸 $\\ce{HOCH2COOH}$，エタノール（3 種類）\\\\\nよって X は $\\boldsymbol{\\ce{C2H5OCOCOOC2H5}}$（シュウ酸ジエチル）：$\\ce{C2H5OCOCOOC2H5 + 2H2O -> (COOH)2 + 2C2H5OH}$．\\\\\n\\textbf{(5)} エステル化では酸の $\\ce{-OH}$ とアルコールの $\\ce{H}$ が水になるので，$^{18}\\mathrm{O}$ はエステル $\\ce{CH3CH2CO}{}^{18}\\ce{OC2H5}$ の中に残る．還元すると $\\ce{C=O}$ 側は 1-プロパノールに，$^{18}\\mathrm{O}$ が結合したエチル基側は $\\ce{C2H5}{}^{18}\\ce{OH}$ になる．答え \\textbf{エタノール}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "エステルの還元では酸側もアルコールになるため，酸とアルコールの組み合わせが入れかわったエステルや断片の組み方が異なるエステルが同じ生成物を与える．加水分解すれば酸側がカルボン酸として残るので区別できる．"
+ },
+ "concepts": [
+  "carboxylic-ester",
+  "alcohol-carbonyl",
+  "electron-config"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "エステル",
+  "還元",
+  "加水分解",
+  "構造決定",
+  "同位体標識"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

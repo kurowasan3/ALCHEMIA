@@ -1,0 +1,122 @@
+{
+ "id": "THE-EQL-103",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "定常状態近似による HI 生成の速度式と律速段階の切りかわり",
+ "course": "化学",
+ "level": 5,
+ "minutes": 35,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "気相での $\\ce{H2 + I2 -> 2HI}$ が，次の 3 つの段階で進むとする（[ ] はモル濃度）．\n\\[\\ce{I2 -> 2I}\\ \\ (\\text{速さ }v_{\\mathrm d}=k_{\\mathrm d}[\\ce{I2}])\\qquad \\ce{2I -> I2}\\ \\ (v_{\\mathrm r}=k_{\\mathrm r}[\\ce{I}]^2)\\qquad \\ce{H2 + 2I -> 2HI}\\ \\ (v_3=k_3[\\ce{H2}][\\ce{I}]^2)\\]\nここで $v_{\\mathrm d}$，$v_{\\mathrm r}$，$v_3$ は 1 秒・1 L あたりに各段階が起こる回数を mol で表したもので，HI の生成速度は $v_{\\mathrm{HI}}=2v_3$ である．ヨウ素原子 I はごく少量しか存在せず，その濃度は反応中ほぼ一定（生成の速さと消費の速さが等しい）とみなせる．逆反応 $\\ce{2HI -> H2 + 2I}$ は考えない．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$[\\ce{I}]^2$ を求め，$v_{\\mathrm{HI}}$ を $k_{\\mathrm d}$，$k_{\\mathrm r}$，$k_3$，$[\\ce{H2}]$，$[\\ce{I2}]$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) の式は，$[\\ce{H2}]$ が小さい極限と大きい極限で，それぞれ $[\\ce{H2}]$ と $[\\ce{I2}]$ について何次の速度式になるか．"
+     },
+     {
+      "id": "3",
+      "tex": "ある温度で $[\\ce{I2}]=1.0\\times10^{-3}\\,\\mathrm{mol/L}$ に保ち，$[\\ce{H2}]$ を変えて $v_{\\mathrm{HI}}$ を測ると，$[\\ce{H2}]=0.050\\,\\mathrm{mol/L}$ で $2.0\\times10^{-6}$，$[\\ce{H2}]=0.20\\,\\mathrm{mol/L}$ で $5.0\\times10^{-6}\\,\\mathrm{mol/(L\\cdot s)}$ であった．$k_{\\mathrm d}$ と $k_{\\mathrm r}/k_3$ を求めよ．また，この温度で $[\\ce{H2}]=1.0\\,\\mathrm{mol/L}$ のときの $v_{\\mathrm{HI}}$ を予想せよ．"
+     },
+     {
+      "id": "4",
+      "tex": "各段階の活性化エネルギーを $\\ce{I2 -> 2I}$：$155\\,\\mathrm{kJ/mol}$，$\\ce{2I -> I2}$：$5\\,\\mathrm{kJ/mol}$，$\\ce{H2 + 2I -> 2HI}$：$20\\,\\mathrm{kJ/mol}$ とする．$[\\ce{H2}]$ が小さい極限と大きい極限で，見かけの活性化エネルギー（$v_{\\mathrm{HI}}$ の温度変化から求めたもの）はそれぞれいくらか．"
+     },
+     {
+      "id": "5",
+      "tex": "$[\\ce{H2}]$ を一定にして温度を上げていくと，反応の様子は (2) のどちらの極限に近づくか．理由とともに答えよ．"
+     }
+    ]
+   },
+   {
+    "type": "text",
+    "tex": "数値は有効数字2桁で答えよ．"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$[\\ce{I}]^2=\\dfrac{k_{\\mathrm d}[\\ce{I2}]}{k_{\\mathrm r}+k_3[\\ce{H2}]}$，$v_{\\mathrm{HI}}=\\dfrac{2k_{\\mathrm d}k_3[\\ce{H2}][\\ce{I2}]}{k_{\\mathrm r}+k_3[\\ce{H2}]}$"
+   },
+   {
+    "id": "2",
+    "tex": "小さい極限：$\\ce{H2}$ について 1 次，$\\ce{I2}$ について 1 次（$v_{\\mathrm{HI}}=2\\frac{k_{\\mathrm d}}{k_{\\mathrm r}}k_3[\\ce{H2}][\\ce{I2}]$），大きい極限：$\\ce{H2}$ について 0 次，$\\ce{I2}$ について 1 次（$v_{\\mathrm{HI}}=2k_{\\mathrm d}[\\ce{I2}]$）"
+   },
+   {
+    "id": "3",
+    "tex": "$k_{\\mathrm d}=5.0\\times10^{-3}\\,/\\mathrm s$，$k_{\\mathrm r}/k_3=0.20\\,\\mathrm{mol/L}$，$8.3\\times10^{-6}\\,\\mathrm{mol/(L\\cdot s)}$"
+   },
+   {
+    "id": "4",
+    "tex": "小さい極限 $170\\,\\mathrm{kJ/mol}$，大きい極限 $155\\,\\mathrm{kJ/mol}$"
+   },
+   {
+    "id": "5",
+    "tex": "$[\\ce{H2}]$ が大きい極限（理由は解説）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　I は $\\ce{I2 -> 2I}$ で 2 個でき，$\\ce{2I -> I2}$ と $\\ce{H2 + 2I -> 2HI}$ でそれぞれ 2 個消える．濃度一定より\n\\[2k_{\\mathrm d}[\\ce{I2}]=2k_{\\mathrm r}[\\ce{I}]^2+2k_3[\\ce{H2}][\\ce{I}]^2\\quad\\Rightarrow\\quad[\\ce{I}]^2=\\frac{k_{\\mathrm d}[\\ce{I2}]}{k_{\\mathrm r}+k_3[\\ce{H2}]}\\]\n\\[v_{\\mathrm{HI}}=2k_3[\\ce{H2}][\\ce{I}]^2=\\boldsymbol{\\frac{2k_{\\mathrm d}k_3[\\ce{H2}][\\ce{I2}]}{k_{\\mathrm r}+k_3[\\ce{H2}]}}\\]\n\n\\textbf{(2)}　$k_3[\\ce{H2}]\\ll k_{\\mathrm r}$ のとき，分母は $k_{\\mathrm r}$ で $v_{\\mathrm{HI}}=2\\dfrac{k_{\\mathrm d}}{k_{\\mathrm r}}k_3[\\ce{H2}][\\ce{I2}]$：\\textbf{$\\ce{H2}$ 1 次，$\\ce{I2}$ 1 次}．I は再結合で $\\ce{I2}$ にもどる方がずっと速く，$\\ce{I2 <=> 2I}$ の平衡（平衡定数 $K=k_{\\mathrm d}/k_{\\mathrm r}$）が成り立った状態で，遅い第 3 段階が律速になる．\n$k_3[\\ce{H2}]\\gg k_{\\mathrm r}$ のとき，$v_{\\mathrm{HI}}=2k_{\\mathrm d}[\\ce{I2}]$：\\textbf{$\\ce{H2}$ 0 次，$\\ce{I2}$ 1 次}．できた I は再結合する前にすべて $\\ce{H2}$ と反応するので，$\\ce{I2}$ の解離が律速になる．\n\n\\textbf{(3)}　$v_{\\max}=2k_{\\mathrm d}[\\ce{I2}]$，$K_{\\mathrm H}=k_{\\mathrm r}/k_3$ とおくと $v_{\\mathrm{HI}}=\\dfrac{v_{\\max}[\\ce{H2}]}{K_{\\mathrm H}+[\\ce{H2}]}$．\n$\\dfrac{v_{\\max}\\times0.050}{K_{\\mathrm H}+0.050}=2.0\\times10^{-6}$，$\\dfrac{v_{\\max}\\times0.20}{K_{\\mathrm H}+0.20}=5.0\\times10^{-6}$．両式の比から $\\dfrac{0.20(K_{\\mathrm H}+0.050)}{0.050(K_{\\mathrm H}+0.20)}=2.5$，$4K_{\\mathrm H}+0.20=2.5K_{\\mathrm H}+0.50$，$K_{\\mathrm H}=\\boldsymbol{0.20\\,\\mathrm{mol/L}}$．$v_{\\max}=1.0\\times10^{-5}$ より $k_{\\mathrm d}=\\dfrac{1.0\\times10^{-5}}{2\\times1.0\\times10^{-3}}=\\boldsymbol{5.0\\times10^{-3}\\,/\\mathrm s}$．\n$[\\ce{H2}]=1.0$：$v_{\\mathrm{HI}}=\\dfrac{1.0\\times10^{-5}\\times1.0}{1.2}=\\boldsymbol{8.3\\times10^{-6}\\,\\mathrm{mol/(L\\cdot s)}}$．$[\\ce{H2}]$ を 5 倍にしても速さは 1.7 倍にしかならず，0 次の極限に近づいている．\n\n\\textbf{(4)}　速度定数 $k=A\\,e^{-E/RT}$ の積・商では活性化エネルギーが足し引きされる．\n小さい極限：$k_{\\mathrm d}k_3/k_{\\mathrm r}$ → $155+20-5=\\boldsymbol{170\\,\\mathrm{kJ/mol}}$（$155-5=150\\,\\mathrm{kJ/mol}$ は解離の反応熱で，「平衡定数の温度変化＋律速段階の活性化エネルギー」になる）．\n大きい極限：$k_{\\mathrm d}$ → $\\boldsymbol{155\\,\\mathrm{kJ/mol}}$．\n\n\\textbf{(5)}　どちらの極限に近いかは $k_3[\\ce{H2}]/k_{\\mathrm r}$ の大小で決まる．$k_3$ の活性化エネルギー（20）は $k_{\\mathrm r}$（5）より大きいので，温度を上げると $k_3/k_{\\mathrm r}$ が大きくなり，同じ $[\\ce{H2}]$ でも $k_3[\\ce{H2}]\\gg k_{\\mathrm r}$ に近づく．よって\\textbf{ $[\\ce{H2}]$ が大きい極限（$\\ce{I2}$ の解離律速，$\\ce{H2}$ について 0 次）}に近づく．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "中間体 I の濃度一定（定常状態）から速度式 v=2k_d k_3[H₂][I₂]/(k_r+k_3[H₂]) を導くと，k_3[H₂] と k_r の大小で『前段平衡＋遅い段階』と『解離律速（H₂ について 0 次）』の 2 つの極限が統一的に表れる．見かけの活性化エネルギーは極限ごとに各段階の値の和・差になり，温度で活性化エネルギーの大きい側の段階が相対的に速くなるため律速段階が切りかわる．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "concentration",
+  "reaction-rate"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "反応速度",
+  "定常状態近似",
+  "律速段階",
+  "活性化エネルギー",
+  "反応機構",
+  "ヨウ化水素"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,108 @@
+{
+ "id": "THE-PER-013",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-02",
+ "topic": "第3周期の酸化物とオキソ酸の強さ",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "compare",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "第3周期の元素の酸化物 $\\ce{Na2O}$，$\\ce{MgO}$，$\\ce{Al2O3}$，$\\ce{SiO2}$，$\\ce{P4O10}$，$\\ce{SO3}$，$\\ce{Cl2O7}$（いずれも元素の最高酸化数の酸化物）について答えよ．O = 16，P = 31，S = 32，Cl = 35.5 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "水と反応して強塩基を生じる酸化物を選び，その反応を化学反応式で書け．"
+     },
+     {
+      "id": "2",
+      "tex": "塩酸にも水酸化ナトリウム水溶液にも溶ける酸化物を選び，塩酸との反応を化学反応式で書け．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\ce{P4O10}$，$\\ce{SO3}$，$\\ce{Cl2O7}$ が水と反応して生じるオキソ酸を，酸として強い順に化学式で並べよ．また，その順になる理由を，中心原子の酸化数と電気陰性度に着目して簡潔に説明せよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\ce{P4O10}$，$\\ce{SO3}$，$\\ce{Cl2O7}$ のいずれか1つの酸化物 $1.42\\,\\mathrm{g}$ を熱水と完全に反応させ，生じた酸をすべて正塩にするまで中和するのに水酸化ナトリウム $0.0600\\,\\mathrm{mol}$ を要した．この酸化物はどれか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{Na2O}$，$\\ce{Na2O + H2O -> 2NaOH}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{Al2O3}$，$\\ce{Al2O3 + 6HCl -> 2AlCl3 + 3H2O}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{HClO4}>\\ce{H2SO4}>\\ce{H3PO4}$．中心原子の酸化数が大きく電気陰性度も大きいほど，O−H 結合の電子が中心原子側へ引き寄せられ，$\\ce{H+}$ が電離しやすくなるから．"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{P4O10}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 陽性の強い Na の酸化物はイオン結合性で，$\\ce{O^2-}$ が水と反応して $\\ce{OH-}$ を生じる：$\\ce{Na2O + H2O -> 2NaOH}$．（MgO も塩基性酸化物だが水にはほとんど溶けず，強塩基の水溶液は生じない．）\n\n\\textbf{(2)} 両性酸化物の $\\ce{Al2O3}$：$\\ce{Al2O3 + 6HCl -> 2AlCl3 + 3H2O}$．\n\n\\textbf{(3)} $\\ce{P4O10 + 6H2O -> 4H3PO4}$，$\\ce{SO3 + H2O -> H2SO4}$，$\\ce{Cl2O7 + H2O -> 2HClO4}$．中心原子の酸化数は P $+5$ < S $+6$ < Cl $+7$，電気陰性度も P < S < Cl．中心原子が O を通して電子を強く引くほど O−H の H が $\\ce{H+}$ として離れやすいので，$\\ce{HClO4}>\\ce{H2SO4}>\\ce{H3PO4}$．\n\n\\textbf{(4)} 酸化物 1 mol あたりに必要な NaOH は，$\\ce{P4O10}$：$4\\times3=12$ mol，$\\ce{SO3}$：2 mol，$\\ce{Cl2O7}$：2 mol．$1.42\\,\\mathrm{g}$ のとき，\n$\\ce{P4O10}$（284）：$0.00500\\times12=0.0600\\,\\mathrm{mol}$，\n$\\ce{SO3}$（80）：$0.01775\\times2=0.0355\\,\\mathrm{mol}$，\n$\\ce{Cl2O7}$（183）：$0.00776\\times2=0.0155\\,\\mathrm{mol}$．\nよって $\\ce{P4O10}$ である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "第3周期では左から右へ酸化物が塩基性→両性→酸性に変わり，オキソ酸は中心原子の酸化数・電気陰性度が大きいほど強い．さらに酸化物の質量と中和に要した塩基の量から，酸化物を逆に特定する．"
+ },
+ "concepts": [
+  "periodicity",
+  "amphoteric",
+  "acid-base"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "酸化物",
+  "オキソ酸",
+  "周期性",
+  "中和"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

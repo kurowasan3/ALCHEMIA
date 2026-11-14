@@ -1,0 +1,109 @@
+{
+ "id": "THE-ION-054",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "2種類の弱酸の混合水溶液の水素イオン濃度と電離の抑制",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "1 価の弱酸 HA（電離定数 $K_\\mathrm{A}$）と 1 価の弱酸 HB（電離定数 $K_\\mathrm{B}$）を，混合後のモル濃度がそれぞれ $C_\\mathrm{A}$，$C_\\mathrm{B}$ となるように含む水溶液がある．どちらの酸も電離度は 1 より十分小さく，水の電離は無視できるものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "水素イオンは HA と HB の両方から生じる．$[\\ce{H+}]=[\\ce{A-}]+[\\ce{B-}]$ を用いて，この水溶液の $[\\ce{H+}]$ を $K_\\mathrm{A}$，$K_\\mathrm{B}$，$C_\\mathrm{A}$，$C_\\mathrm{B}$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "$0.40\\,\\mathrm{mol/L}$ の酢酸水溶液 $50\\,\\mathrm{mL}$ と $0.40\\,\\mathrm{mol/L}$ のギ酸水溶液 $50\\,\\mathrm{mL}$ を混合した．混合水溶液の $[\\ce{H+}]$ を有効数字 2 桁で求めよ．酢酸の電離定数を $1.8\\times10^{-5}\\,\\mathrm{mol/L}$，ギ酸の電離定数を $1.8\\times10^{-4}\\,\\mathrm{mol/L}$，$\\sqrt{39.6}=6.29$ とする．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の混合水溶液中での酢酸の電離度を有効数字 2 桁で求めよ．また，$0.20\\,\\mathrm{mol/L}$ の酢酸水溶液（ギ酸を含まない）での電離度を有効数字 2 桁で求め，両者を比べて違いの理由を述べよ．$\\sqrt{0.90}=0.949$ とする．"
+     },
+     {
+      "id": "4",
+      "tex": "(2) の混合水溶液の $[\\ce{H+}]$ は，$0.20\\,\\mathrm{mol/L}$ のギ酸水溶液だけの $[\\ce{H+}]$ の何倍か．有効数字 2 桁で答えよ．また，「混合水溶液の $[\\ce{H+}]$ は，それぞれの酸を単独で同じ濃度にした水溶液の $[\\ce{H+}]$ の和になる」という考えは正しいか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$[\\ce{H+}]=\\sqrt{K_\\mathrm{A}C_\\mathrm{A}+K_\\mathrm{B}C_\\mathrm{B}}$"
+   },
+   {
+    "id": "2",
+    "tex": "$6.3\\times10^{-3}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "3",
+    "tex": "混合水溶液中 $2.9\\times10^{-3}$，酢酸だけのとき $9.5\\times10^{-3}$．ギ酸から生じた $\\ce{H+}$ によって酢酸の電離平衡が左に移動する（共通イオン効果）ので，混合水溶液中では電離度が小さい．"
+   },
+   {
+    "id": "4",
+    "tex": "1.0 倍．正しくない（2 つの酸の電離は互いに抑え合うので，和よりずっと小さい）．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} それぞれの酸の電離定数の式から\n\\[ [\\ce{A-}]=\\frac{K_\\mathrm{A}[\\ce{HA}]}{[\\ce{H+}]}\\fallingdotseq\\frac{K_\\mathrm{A}C_\\mathrm{A}}{[\\ce{H+}]},\\qquad [\\ce{B-}]\\fallingdotseq\\frac{K_\\mathrm{B}C_\\mathrm{B}}{[\\ce{H+}]} \\]\n（電離度が小さいので $[\\ce{HA}]\\fallingdotseq C_\\mathrm{A}$，$[\\ce{HB}]\\fallingdotseq C_\\mathrm{B}$）．これを $[\\ce{H+}]=[\\ce{A-}]+[\\ce{B-}]$ に代入すると $[\\ce{H+}]^2=K_\\mathrm{A}C_\\mathrm{A}+K_\\mathrm{B}C_\\mathrm{B}$ より\n\\[ \\boldsymbol{[\\ce{H+}]=\\sqrt{K_\\mathrm{A}C_\\mathrm{A}+K_\\mathrm{B}C_\\mathrm{B}}} \\]\n2 つの酸は同じ $[\\ce{H+}]$ のもとで電離平衡にあるので，$[\\ce{H+}]$ は「$K\\times C$ の和」の平方根で決まる．\n\n\\textbf{(2)} 混合で体積が 2 倍になるので，酢酸もギ酸も $0.20\\,\\mathrm{mol/L}$．\n\\[ [\\ce{H+}]=\\sqrt{1.8\\times10^{-5}\\times0.20+1.8\\times10^{-4}\\times0.20}=\\sqrt{39.6\\times10^{-6}}=6.29\\times10^{-3}\\fallingdotseq\\boldsymbol{6.3\\times10^{-3}\\,\\mathrm{mol/L}} \\]\n（ギ酸の電離度は $\\dfrac{1.8\\times10^{-4}}{6.29\\times10^{-3}}=0.029$ で，1 より十分小さいとした近似はほぼ妥当である．近似を使わずに解くと $6.2\\times10^{-3}\\,\\mathrm{mol/L}$ で，差は 1 % 程度である．）\n\n\\textbf{(3)} 混合水溶液中の酢酸の電離度は $\\alpha=\\dfrac{[\\ce{CH3COO-}]}{C}=\\dfrac{K_\\mathrm{A}}{[\\ce{H+}]}$ より\n\\[ \\alpha=\\frac{1.8\\times10^{-5}}{6.29\\times10^{-3}}=2.86\\times10^{-3}\\fallingdotseq\\boldsymbol{2.9\\times10^{-3}} \\]\n酢酸だけの $0.20\\,\\mathrm{mol/L}$ 水溶液では\n\\[ \\alpha=\\sqrt{\\frac{K_\\mathrm{A}}{C}}=\\sqrt{\\frac{1.8\\times10^{-5}}{0.20}}=\\sqrt{0.90}\\times10^{-2}=\\boldsymbol{9.5\\times10^{-3}} \\]\n混合水溶液では，より強い酸であるギ酸から生じた $\\ce{H+}$ のために $\\ce{CH3COOH <=> CH3COO- + H+}$ の平衡が左に移動し（共通イオン効果），酢酸の電離度は約 $\\dfrac13$ に小さくなる．\n\n\\textbf{(4)} ギ酸だけの $0.20\\,\\mathrm{mol/L}$ 水溶液では $[\\ce{H+}]=\\sqrt{1.8\\times10^{-4}\\times0.20}=\\sqrt{36\\times10^{-6}}=6.0\\times10^{-3}\\,\\mathrm{mol/L}$．\n\\[ \\frac{6.29\\times10^{-3}}{6.0\\times10^{-3}}=1.04\\cdots\\fallingdotseq\\boldsymbol{1.0\\text{ 倍}} \\]\n酢酸を加えても $[\\ce{H+}]$ は 5 % ほどしか増えない．酢酸だけの $[\\ce{H+}]$ は $\\sqrt{1.8\\times10^{-5}\\times0.20}=1.9\\times10^{-3}\\,\\mathrm{mol/L}$ なので，単独の値の和は $7.9\\times10^{-3}\\,\\mathrm{mol/L}$ となり，実際の $6.3\\times10^{-3}\\,\\mathrm{mol/L}$ より大きい．2 つの酸は互いの電離を抑え合うので，和にはならず，この考えは$\\boldsymbol{\\text{正しくない}}$．$[\\ce{H+}]^2$ が $K\\times C$ の和になる（(1)），と考えるのが正しい．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "2種類の弱酸の混合水溶液では，両方の酸が同じ [H⁺] のもとで電離平衡にあるので，電荷のつり合いから [H⁺]²＝K_AC_A＋K_BC_B となる．強いほうの酸が生じた H⁺ で弱いほうの酸の電離は共通イオン効果で抑えられ，[H⁺] は単独の値の和にはならない．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "concentration",
+  "ph"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "弱酸",
+  "電離定数",
+  "混合水溶液",
+  "共通イオン効果",
+  "電離度"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

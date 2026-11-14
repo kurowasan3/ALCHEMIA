@@ -1,0 +1,124 @@
+{
+ "id": "POL-SUG-022",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-04",
+ "topic": "過ヨウ素酸酸化によるグリコシドの環の大きさと立体配置の判定",
+ "course": "化学",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "過ヨウ素酸 $\\ce{HIO4}$ は，隣り合う 2 つの炭素原子がどちらもヒドロキシ基 $\\ce{-OH}$ をもつときに限り，その C–C 結合を切断する（切断 1 か所につき $\\ce{HIO4}$ 1 分子が $\\ce{HIO3}$ になる）．切断された炭素の OH は $\\ce{C=O}$ になり，次のようになる．\n・片側だけで切れた $\\ce{-CH(OH)-}$ はホルミル基 $\\ce{-CHO}$ に，$\\ce{-CH2OH}$ はホルムアルデヒド $\\ce{HCHO}$ になる．\n・両側で切れた $\\ce{-CH(OH)-}$ はギ酸 $\\ce{HCOOH}$ になる．\n・環の O やメトキシ基 $\\ce{-OCH3}$ の O は OH ではないので，その炭素は切断の条件を満たさない．\n\n図の A はメチル $\\alpha$-D-グルコピラノシド（六員環），B はメチル D-グルコフラノシド（五員環，1 位の立体配置は問わない）で，どちらも分子式 $\\ce{C7H14O6}$（分子量 194）である．原子量は H = 1.0，C = 12，O = 16 とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A，B それぞれ $1\\,\\mathrm{mol}$ を十分な量の $\\ce{HIO4}$ と反応させたときに消費される $\\ce{HIO4}$，生じる $\\ce{HCOOH}$ と $\\ce{HCHO}$ の物質量を答えよ．また，A の反応を化学反応式で示せ（有機生成物は分子式で書け）．"
+     },
+     {
+      "id": "2",
+      "tex": "A と B の混合物 $1.94\\,\\mathrm{g}$ を十分な量の $\\ce{HIO4}$ と反応させると，$\\ce{HCOOH}$ が $6.0\\times10^{-3}\\,\\mathrm{mol}$ 生じた．混合物中の B の質量，消費された $\\ce{HIO4}$ の物質量，生じた $\\ce{HCHO}$ の物質量を有効数字 2 桁で求めよ．また，この混合物の組成を $\\ce{HIO4}$ の消費量だけから求めることはできるか．理由とともに答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "メチル D-キシロシド（キシロースは 5 炭素のアルドース $\\ce{HOCH2-(CHOH)3-CHO}$．メチルキシロシドの分子式は $\\ce{C6H12O5}$，分子量 164）$0.82\\,\\mathrm{g}$ に十分な量の $\\ce{HIO4}$ を作用させると，$\\ce{HIO4}$ が $5.0\\times10^{-3}\\,\\mathrm{mol}$ 消費され，$\\ce{HCOOH}$ は生じなかった．このメチルキシロシドは六員環・五員環のどちらか．もう一方であった場合に予想される結果と比較して答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "A，メチル $\\alpha$-D-マンノピラノシド（A と 2 位の立体配置だけが異なる），メチル $\\alpha$-D-ガラクトピラノシド（A と 4 位の立体配置だけが異なる），メチル $\\beta$-D-グルコピラノシド（A と 1 位の立体配置だけが異なる）をそれぞれ $\\ce{HIO4}$ で完全に酸化した．ギ酸以外の有機生成物が互いに同一の化合物になるものをすべて選び，その理由を説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：過ヨウ素酸酸化によるグリコシドの環の大きさと立体配置の判定",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "A：$\\ce{HIO4}$ $2\\,\\mathrm{mol}$，$\\ce{HCOOH}$ $1\\,\\mathrm{mol}$，$\\ce{HCHO}$ $0\\,\\mathrm{mol}$　B：$\\ce{HIO4}$ $2\\,\\mathrm{mol}$，$\\ce{HCOOH}$ $0\\,\\mathrm{mol}$，$\\ce{HCHO}$ $1\\,\\mathrm{mol}$　反応式：$\\ce{C7H14O6 + 2HIO4 -> C6H10O5 + HCOOH + 2HIO3 + H2O}$"
+   },
+   {
+    "id": "2",
+    "tex": "B $0.78\\,\\mathrm{g}$，$\\ce{HIO4}$ $2.0\\times10^{-2}\\,\\mathrm{mol}$，$\\ce{HCHO}$ $4.0\\times10^{-3}\\,\\mathrm{mol}$．$\\ce{HIO4}$ の消費量は A・B ともに $1\\,\\mathrm{mol}$ あたり $2\\,\\mathrm{mol}$ で等しいので，消費量からは組成を求められない．"
+   },
+   {
+    "id": "3",
+    "tex": "五員環．$5.0\\times10^{-3}\\,\\mathrm{mol}$ のメチルキシロシドが五員環なら隣り合う OH は 2・3 位だけで $\\ce{HIO4}$ $5.0\\times10^{-3}\\,\\mathrm{mol}$ を消費し $\\ce{HCOOH}$ は生じない（観測と一致）．六員環なら 2・3・4 位の OH が連続するので $\\ce{HIO4}$ $1.0\\times10^{-2}\\,\\mathrm{mol}$ を消費し $\\ce{HCOOH}$ が $5.0\\times10^{-3}\\,\\mathrm{mol}$ 生じるはずである．"
+   },
+   {
+    "id": "4",
+    "tex": "A，メチル $\\alpha$-D-マンノピラノシド，メチル $\\alpha$-D-ガラクトピラノシドの 3 つ．六員環のピラノシドでは 2・3・4 位の不斉炭素がすべて $\\ce{C=O}$（$\\ce{-CHO}$ と $\\ce{HCOOH}$）になって立体配置の違いが消え，生成物に残る不斉炭素は 1 位と 5 位だけになる．この 3 つは 1 位と 5 位の立体配置が同じなので同一の化合物になるが，$\\beta$ 体は 1 位の立体配置が異なるので，生成物はこれらのジアステレオマーになる．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　A（六員環）で OH をもつ炭素は 2,3,4,6 位．1 位は $\\ce{-OCH3}$ と環の O，5 位は環の O をもち OH をもたない．隣り合う OH は 2–3，3–4 の 2 か所で切れ（$\\ce{HIO4}$ $2\\,\\mathrm{mol}$），両側で切れた 3 位が $\\ce{HCOOH}$ になる．6 位の $\\ce{CH2OH}$ は 5 位が OH をもたないので切れない．\n\\[ \\ce{C7H14O6 + 2HIO4 -> C6H10O5 + HCOOH + 2HIO3 + H2O} \\]\nB（五員環）で OH をもつ炭素は 2,3,5,6 位．4 位は環の O をもつ．隣り合う OH は 2–3 と 5–6 で，3 位は 4 位側では切れないので片側だけ．$\\ce{HIO4}$ $2\\,\\mathrm{mol}$ を消費し，$\\ce{HCOOH}$ は生じず，6 位が $\\ce{HCHO}$ になる．\n\\[ \\ce{C7H14O6 + 2HIO4 -> C6H8O5 + HCHO + 2HIO3 + 2H2O} \\]\nよって A：$\\boldsymbol{2,\\ 1,\\ 0\\,\\mathrm{mol}}$，B：$\\boldsymbol{2,\\ 0,\\ 1\\,\\mathrm{mol}}$（$\\ce{HIO4}$，$\\ce{HCOOH}$，$\\ce{HCHO}$ の順）．\n\n\\textbf{(2)}　全体は $\\dfrac{1.94}{194}=1.00\\times10^{-2}\\,\\mathrm{mol}$．$\\ce{HCOOH}$ は A だけから 1:1 で生じるので A は $6.0\\times10^{-3}\\,\\mathrm{mol}$，B は $4.0\\times10^{-3}\\,\\mathrm{mol}$．B の質量は $4.0\\times10^{-3}\\times194=\\boldsymbol{0.78\\,\\mathrm{g}}$．$\\ce{HIO4}$ は $2\\times1.00\\times10^{-2}=\\boldsymbol{2.0\\times10^{-2}\\,\\mathrm{mol}}$，$\\ce{HCHO}$ は B と同じ $\\boldsymbol{4.0\\times10^{-3}\\,\\mathrm{mol}}$．\n$\\ce{HIO4}$ の消費量は A・B どちらも $2\\,\\mathrm{mol/mol}$ なので，混合比によらず $2.0\\times10^{-2}\\,\\mathrm{mol}$ になり，組成は\\textbf{求められない}．六員環と五員環の違いは「どの結合が切れるか」に現れ，切れる数には現れないので，生成物（$\\ce{HCOOH}$ か $\\ce{HCHO}$ か）を調べる必要がある．\n\n\\textbf{(3)}　$\\dfrac{0.82}{164}=5.0\\times10^{-3}\\,\\mathrm{mol}$．ペントースには 6 位がないので事情が変わる．\n・六員環（5 位の O が環）：OH は 2,3,4 位の 3 連続 → $\\ce{HIO4}$ $2\\,\\mathrm{mol/mol}$，3 位が $\\ce{HCOOH}$．予想は $\\ce{HIO4}$ $1.0\\times10^{-2}\\,\\mathrm{mol}$，$\\ce{HCOOH}$ $5.0\\times10^{-3}\\,\\mathrm{mol}$．\n\\[ \\ce{C6H12O5 + 2HIO4 -> C5H8O4 + HCOOH + 2HIO3 + H2O} \\]\n・五員環（4 位の O が環）：OH は 2,3 位（隣接）と 5 位（4 位が OH をもたないので孤立）→ $\\ce{HIO4}$ $1\\,\\mathrm{mol/mol}$，$\\ce{HCOOH}$ なし．\n\\[ \\ce{C6H12O5 + HIO4 -> C6H10O5 + HIO3 + H2O} \\]\n観測（$\\ce{HIO4}$ $5.0\\times10^{-3}\\,\\mathrm{mol}$，$\\ce{HCOOH}$ なし）は\\textbf{五員環}と一致する．ヘキソースと違い，ペントースでは環の大きさが $\\ce{HIO4}$ の消費量そのものに現れる．\n\n\\textbf{(4)}　ピラノシドの不斉炭素は 1,2,3,4,5 位．$\\ce{HIO4}$ 酸化で 2 位と 4 位は $\\ce{-CHO}$，3 位は $\\ce{HCOOH}$ になり，平面的な $\\ce{C=O}$ の炭素には立体配置の違いが残らない．生成物（$\\ce{C6H10O5}$）に残る不斉炭素は 1 位（$\\ce{-OCH3}$ をもつ）と 5 位（$\\ce{-CH2OH}$ をもつ）だけである．\n・マンノシド（2 位が異なる）・ガラクトシド（4 位が異なる）は，違いのある炭素が $\\ce{C=O}$ になって消えるので，A と\\textbf{同一}の生成物を与える．\n・$\\beta$-グルコシドは 1 位の立体配置が異なり，それが生成物に残るので，A の生成物のジアステレオマーになる．\nよって同一になるのは $\\boldsymbol{\\text{A，メチル}\\ \\alpha\\text{-D-マンノピラノシド，メチル}\\ \\alpha\\text{-D-ガラクトピラノシド}}$．逆に，ある未知のヘキソースのメチルグリコシドが A と同じ生成物を与えれば，その 1 位と 5 位の立体配置（$\\alpha$ 型であること，D 系列であること）が A と同じだとわかる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "過ヨウ素酸は OH をもつ炭素が隣り合う結合だけを切るので，環をつくる O の位置（六員環か五員環か）によって切れる結合と生成物（ギ酸かホルムアルデヒドか）が変わる．ヘキソースでは消費量が同じで生成物でしか区別できず，ペントースでは消費量にも現れる．切断で C=O になった炭素の立体配置は消えるので，残る不斉炭素だけで生成物の同一性が決まる．"
+ },
+ "concepts": [
+  "saccharide",
+  "halogen",
+  "carbon-silicon"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "過ヨウ素酸酸化",
+  "グリコシド",
+  "環の大きさ",
+  "ピラノース",
+  "フラノース",
+  "立体配置"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

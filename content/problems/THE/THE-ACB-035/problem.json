@@ -1,0 +1,109 @@
+{
+ "id": "THE-ACB-035",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-05",
+ "topic": "二段階滴定による炭酸塩の複塩（水和物）の組成式と加熱後の滴定量",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "equation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "炭酸ナトリウム，炭酸水素ナトリウム，水和水だけからなる結晶 $\\mathrm{S}$（組成式 $\\ce{Na2CO3}\\cdot x\\ce{NaHCO3}\\cdot y\\ce{H2O}$）$6.78\\,\\mathrm{g}$ を水に溶かして $250\\,\\mathrm{mL}$ とした．このうち $25.0\\,\\mathrm{mL}$ をとり，フェノールフタレインを加えて $0.100\\,\\mathrm{mol/L}$ の塩酸で滴定すると，変色までに $30.0\\,\\mathrm{mL}$ を要した（第一段階）．続けてメチルオレンジを加えて滴定すると，変色までにさらに $60.0\\,\\mathrm{mL}$ を要した（第二段階）．空気中の二酸化炭素の影響は無視する．原子量は $\\mathrm{H}=1.0$，$\\mathrm{C}=12$，$\\mathrm{O}=16$，$\\mathrm{Na}=23$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "第一段階と第二段階で起こる反応の化学反応式をそれぞれ書け．"
+     },
+     {
+      "id": "2",
+      "tex": "$6.78\\,\\mathrm{g}$ の $\\mathrm{S}$ に含まれる $\\ce{Na2CO3}$ と $\\ce{NaHCO3}$ の物質量をそれぞれ求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$x$，$y$ を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "別に $\\mathrm{S}$ $6.78\\,\\mathrm{g}$ を質量が変化しなくなるまで強く加熱した．加熱後の固体の質量は何 g か（有効数字 3 桁）．また，この固体を水に溶かして $250\\,\\mathrm{mL}$ とし，$25.0\\,\\mathrm{mL}$ を同様に滴定すると，第一段階と第二段階の滴下量はそれぞれ何 mL になるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "第一段階：$\\ce{Na2CO3 + HCl -> NaHCO3 + NaCl}$，第二段階：$\\ce{NaHCO3 + HCl -> NaCl + H2O + CO2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{Na2CO3}$：$3.00\\times10^{-2}$ mol，$\\ce{NaHCO3}$：$3.00\\times10^{-2}$ mol"
+   },
+   {
+    "id": "3",
+    "tex": "$x=1$，$y=2$"
+   },
+   {
+    "id": "4",
+    "tex": "4.77 g；第一段階 45.0 mL，第二段階 45.0 mL"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　フェノールフタレインの変色までには $\\ce{CO3^2-}$ が $\\ce{HCO3-}$ になるだけで，元からあった $\\ce{NaHCO3}$ は反応しない．メチルオレンジの変色までには，元からあった $\\ce{HCO3-}$ と第一段階で生じた $\\ce{HCO3-}$ の両方が反応する．\n\n(1) 第一段階：$\\ce{Na2CO3 + HCl -> NaHCO3 + NaCl}$　第二段階：$\\ce{NaHCO3 + HCl -> NaCl + H2O + CO2}$\n\n(2) 25.0 mL 中：第一段階の $\\ce{HCl}$ $3.00\\times10^{-3}\\,\\mathrm{mol}$ $=$ $\\ce{Na2CO3}$．第二段階の $\\ce{HCl}$ $6.00\\times10^{-3}\\,\\mathrm{mol}$ $=$ （第一段階で生じた $\\ce{NaHCO3}$ $3.00\\times10^{-3}$）＋（元の $\\ce{NaHCO3}$）より，元の $\\ce{NaHCO3}$ は $3.00\\times10^{-3}\\,\\mathrm{mol}$．全量（10 倍）では $\\ce{Na2CO3}$ $\\boldsymbol{3.00\\times10^{-2}\\,\\mathrm{mol}}$，$\\ce{NaHCO3}$ $\\boldsymbol{3.00\\times10^{-2}\\,\\mathrm{mol}}$．\n\n(3) 質量は $\\ce{Na2CO3}$ $0.0300\\times106=3.18\\,\\mathrm{g}$，$\\ce{NaHCO3}$ $0.0300\\times84=2.52\\,\\mathrm{g}$．水は $6.78-3.18-2.52=1.08\\,\\mathrm{g}$，すなわち $0.0600\\,\\mathrm{mol}$．物質量比 $1:1:2$ より $\\boldsymbol{x=1}$，$\\boldsymbol{y=2}$（$\\ce{Na2CO3*NaHCO3*2H2O}$，鉱物名トロナ）．\n\n(4) 加熱すると水和水が失われ，$\\ce{NaHCO3}$ は分解する．\n\\[ \\ce{2NaHCO3 -> Na2CO3 + H2O + CO2} \\]\n$\\ce{Na2CO3}$ は $0.0300+0.0150=0.0450\\,\\mathrm{mol}$ となり，質量は $0.0450\\times106=\\boldsymbol{4.77\\,\\mathrm{g}}$．25.0 mL 中の $\\ce{Na2CO3}$ は $4.50\\times10^{-3}\\,\\mathrm{mol}$ なので，第一段階 $\\boldsymbol{45.0\\,\\mathrm{mL}}$，第二段階も $\\boldsymbol{45.0\\,\\mathrm{mL}}$．\nなお，第一段階＋第二段階の合計（加熱前 90.0 mL，加熱後 90.0 mL）は変わらない．合計は $\\ce{Na+}$ の物質量（中和される塩基の総量）に対応し，加熱で $\\ce{Na}$ は失われないからである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "炭酸塩の二段階滴定では，第一段階の量が CO3^2− の量，第二段階の量が（もとの HCO3− ＋ 第一段階で生じた HCO3−）の量に対応することから成分を分け，質量の残りから水和水を求めて複塩の組成式を決める．加熱で NaHCO3 が Na2CO3 に変わっても全滴定量（Na の量）は変わらないことを確かめる．"
+ },
+ "concepts": [
+  "acid-base",
+  "alkali-metals",
+  "elemental-analysis"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "二段階滴定",
+  "炭酸ナトリウム",
+  "炭酸水素ナトリウム",
+  "水和水",
+  "熱分解"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

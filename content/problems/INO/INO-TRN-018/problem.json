@@ -1,0 +1,102 @@
+{
+ "id": "INO-TRN-018",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-07",
+ "topic": "銅を酸に溶かす条件と硫酸銅(II)の製法の比較",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "condition",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "銅くずを次の（a）〜（e）の方法で処理した．\\\\\n（a）希塩酸に入れる\\\\\n（b）熱した希硫酸に入れ，空気を十分に吹き込み続ける\\\\\n（c）希硫酸に入れ，過酸化水素水を加える\\\\\n（d）熱濃硫酸に入れる\\\\\n（e）希硝酸に入れる"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "銅が溶けるものをすべて選べ．また，（a）で銅が溶けない理由を答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "（b）と（c）で起こる変化を，それぞれ化学反応式で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "硫酸銅(II) $\\ce{CuSO4}$ $0.100\\,\\mathrm{mol}$ をつくるとき，（b）と（d）の方法で必要な硫酸 $\\ce{H2SO4}$ の物質量と，発生する気体の物質量をそれぞれ答えよ．また，工業的に有利なのはどちらの方法か，理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "b，c，d，e．銅は水素よりイオン化傾向が小さく，希塩酸の $\\ce{H+}$ では酸化されないから．"
+   },
+   {
+    "id": "2",
+    "tex": "（b）$\\ce{2Cu + O2 + 2H2SO4 -> 2CuSO4 + 2H2O}$　（c）$\\ce{Cu + H2O2 + H2SO4 -> CuSO4 + 2H2O}$"
+   },
+   {
+    "id": "3",
+    "tex": "（b）硫酸 $0.100\\,\\mathrm{mol}$，気体は発生しない（酸素 $0.050\\,\\mathrm{mol}$ を消費）．（d）硫酸 $0.200\\,\\mathrm{mol}$，二酸化硫黄 $0.100\\,\\mathrm{mol}$．（b）のほうが有利：必要な硫酸が半分ですみ，有毒な二酸化硫黄も発生しないから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 銅はイオン化傾向が水素より小さいので，$\\ce{H+}$ しか酸化剤のない希塩酸（a）には溶けない．酸化剤（$\\ce{O2}$，$\\ce{H2O2}$，熱濃硫酸，硝酸）が共存すれば溶ける．よって \\textbf{b，c，d，e}．\n\n\\textbf{(2)} （b）酸素が酸化剤：$\\ce{O2 + 4H+ + 4e- -> 2H2O}$ と $\\ce{Cu -> Cu^2+ + 2e-}$ から\n\\[ \\ce{2Cu + O2 + 2H2SO4 -> 2CuSO4 + 2H2O} \\]\n（c）過酸化水素が酸化剤：\n\\[ \\ce{Cu + H2O2 + H2SO4 -> CuSO4 + 2H2O} \\]\n（参考：(e) は $\\ce{3Cu + 8HNO3 -> 3Cu(NO3)2 + 2NO + 4H2O}$ で，生じるのは硝酸銅(II)．）\n\n\\textbf{(3)} （b）の式より $\\ce{CuSO4}:\\ce{H2SO4}=1:1$ なので硫酸は $\\boldsymbol{0.100\\,\\mathrm{mol}}$．気体は発生せず，酸素を $0.050\\,\\mathrm{mol}$ 消費する．\n\n（d）は $\\ce{Cu + 2H2SO4 -> CuSO4 + SO2 + 2H2O}$ で，硫酸の半分は酸化剤として $\\ce{SO2}$ に還元される．硫酸は $\\boldsymbol{0.200\\,\\mathrm{mol}}$，$\\ce{SO2}$ が $\\boldsymbol{0.100\\,\\mathrm{mol}}$ 発生する．\n\n酸化剤を空気中の酸素でまかなう（b）は，硫酸が半分ですみ，有毒な $\\ce{SO2}$ の処理も不要なので\\textbf{（b）が有利}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "イオン化傾向が水素より小さい銅は，非酸化性の酸だけでは溶けず，酸化剤（O₂・H₂O₂・熱濃硫酸・硝酸）があると溶ける．酸化剤が何かによって，必要な酸の量や発生する気体が変わる．"
+ },
+ "concepts": [
+  "transition-metals",
+  "oxygen-sulfur",
+  "nitrogen-phosphorus"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "銅",
+  "硫酸銅(II)",
+  "酸化剤",
+  "熱濃硫酸",
+  "イオン化傾向",
+  "製法の比較"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

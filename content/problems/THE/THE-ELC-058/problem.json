@@ -1,0 +1,118 @@
+{
+ "id": "THE-ELC-058",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-07",
+ "topic": "燃料電池の起電力（取り出せる電気エネルギーと電子の数）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "equation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "燃料電池では，燃料 1 mol が反応するときに電気エネルギーとして取り出せる最大のエネルギー $W$ が燃料ごとに決まっている．燃料 1 mol あたり $n$ mol の電子が外部回路を流れるとすると，その電気量は $nF$ であり，起電力 $E$ との間に $W = nFE$ の関係がある．$25\\,^\\circ\\mathrm{C}$ における燃料 1 mol あたりの $W$ を次の値とし，ファラデー定数を $F = 9.65\\times10^{4}\\,\\mathrm{C/mol}$，$1\\,\\mathrm{J} = 1\\,\\mathrm{C\\cdot V}$ とする．\n\\[ \\ce{H2}:\\ 237\\,\\mathrm{kJ},\\quad \\ce{CO}:\\ 257\\,\\mathrm{kJ},\\quad \\ce{CH3OH}\\text{（液体）}:\\ 702\\,\\mathrm{kJ} \\]\n固体酸化物形燃料電池では，正極（空気極）で $\\ce{O2 + 4e- -> 2O^2-}$ の反応が起こり，生じた $\\ce{O^2-}$ が固体の電解質の中を負極（燃料極）へ移動して燃料と反応する．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "燃料が水素のとき，負極で起こる反応を電子 $\\ce{e-}$ を用いた反応式で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "燃料が一酸化炭素のとき，負極で起こる反応を電子 $\\ce{e-}$ を用いた反応式で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "燃料 1 mol あたりに流れる電子の物質量を，$\\ce{H2}$，$\\ce{CO}$，$\\ce{CH3OH}$（$\\ce{CO2}$ と $\\ce{H2O}$ まで完全に酸化される）のそれぞれについて答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\ce{H2}$，$\\ce{CO}$，$\\ce{CH3OH}$ を燃料とするときの起電力をそれぞれ有効数字 3 桁で求め，起電力が最も大きい燃料を答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "水素を燃料とする燃料電池から，$1.0\\,\\mathrm{kWh}$（$3.6\\times10^{6}\\,\\mathrm{J}$）の電気エネルギーを最大限の効率で取り出すのに必要な水素の物質量を有効数字 2 桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{H2 + O^2- -> H2O + 2e-}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{CO + O^2- -> CO2 + 2e-}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{H2}$：2 mol，$\\ce{CO}$：2 mol，$\\ce{CH3OH}$：6 mol"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{H2}$：1.23 V，$\\ce{CO}$：1.33 V，$\\ce{CH3OH}$：1.21 V，最も大きいのは $\\ce{CO}$"
+   },
+   {
+    "id": "5",
+    "tex": "15 mol"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{電子の数は酸化数の変化で数える}　固体酸化物形では電解質の中を $\\ce{O^2-}$ が運ばれ，水や二酸化炭素は負極側で生じる．\n\n(1) $\\ce{H}$ の酸化数は $0 \\to +1$．$\\boldsymbol{\\ce{H2 + O^2- -> H2O + 2e-}}$．\n\n(2) $\\ce{C}$ の酸化数は $+2 \\to +4$．$\\boldsymbol{\\ce{CO + O^2- -> CO2 + 2e-}}$．\n\n(3) $\\ce{H2}$：$2 \\times 1 = \\boldsymbol{2}$ mol．$\\ce{CO}$：$\\boldsymbol{2}$ mol．$\\ce{CH3OH}$ では $\\ce{C}$ が $-2 \\to +4$ と 6 だけ変わる（$\\ce{H}$・$\\ce{O}$ の酸化数は変わらない）ので $\\boldsymbol{6}$ mol．全体の反応 $\\ce{2CH3OH + 3O2 -> 2CO2 + 4H2O}$ で $\\ce{O2}$ 3 mol が受け取る電子 12 mol を $\\ce{CH3OH}$ 2 mol で割っても 6 mol となる．\n\n(4) $E = \\dfrac{W}{nF}$ より\n\\[ \\ce{H2}:\\ \\frac{237\\times10^{3}}{2\\times9.65\\times10^{4}} = \\boldsymbol{1.23}\\,\\mathrm{V},\\quad \\ce{CO}:\\ \\frac{257\\times10^{3}}{2\\times9.65\\times10^{4}} = \\boldsymbol{1.33}\\,\\mathrm{V},\\quad \\ce{CH3OH}:\\ \\frac{702\\times10^{3}}{6\\times9.65\\times10^{4}} = \\boldsymbol{1.21}\\,\\mathrm{V} \\]\n燃料 1 mol あたりのエネルギーは $\\ce{CH3OH}$ が最大だが，電子も 3 倍多く流れるので，電子 1 mol あたりのエネルギー（＝起電力）は最も大きくない．起電力が最大なのは $\\boldsymbol{\\ce{CO}}$ である．起電力は「燃料の量」ではなく「電子 1 mol が運ぶエネルギー」で決まる．\n\n(5) 水素 1 mol から最大 $237\\,\\mathrm{kJ}$ 取り出せるので，$\\dfrac{3.6\\times10^{6}}{2.37\\times10^{5}} = 15.2 \\approx \\boldsymbol{15}\\,\\mathrm{mol}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "燃料電池で取り出せる電気エネルギー W と，燃料1 mol あたりに流れる電子の物質量 n（酸化数の変化から数える）から，起電力を E = W/(nF) で求める．燃料1 mol あたりのエネルギーが大きくても電子の数が多ければ起電力は大きくならず，起電力は電子1 mol あたりのエネルギーで決まることを比較で確かめる．固体酸化物形では O²⁻ が負極へ移動して負極で H₂O・CO₂ が生じる．"
+ },
+ "concepts": [
+  "electrolysis",
+  "mole",
+  "redox"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "燃料電池",
+  "起電力",
+  "ファラデー定数",
+  "固体酸化物形",
+  "酸化数",
+  "電子の物質量"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 330">
+<defs><marker id="q-ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+<rect x="20" y="20" width="300" height="80" rx="8" fill="none" stroke="currentColor" stroke-width="1.4"/>
+<text x="170.0" y="48" text-anchor="middle" font-size="14" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">アルドース</text>
+<text x="170.0" y="78" text-anchor="middle" font-size="16" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">R–CH(OH)–CH(OH)–CHO</text>
+<rect x="500" y="20" width="300" height="80" rx="8" fill="none" stroke="currentColor" stroke-width="1.4"/>
+<text x="650.0" y="48" text-anchor="middle" font-size="14" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">1,2-エンジオール</text>
+<text x="650.0" y="78" text-anchor="middle" font-size="16" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">R–CH(OH)–C(OH)=CH–OH</text>
+<rect x="500" y="190" width="300" height="80" rx="8" fill="none" stroke="currentColor" stroke-width="1.4"/>
+<text x="650.0" y="218" text-anchor="middle" font-size="14" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">2-ケトース</text>
+<text x="650.0" y="248" text-anchor="middle" font-size="16" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">R–CH(OH)–CO–CH<tspan baseline-shift="sub" font-size="10">2</tspan>OH</text>
+<rect x="20" y="190" width="300" height="80" rx="8" fill="none" stroke="currentColor" stroke-width="1.4"/>
+<text x="170.0" y="218" text-anchor="middle" font-size="14" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">2,3-エンジオール</text>
+<text x="170.0" y="248" text-anchor="middle" font-size="16" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">R–C(OH)=C(OH)–CH<tspan baseline-shift="sub" font-size="10">2</tspan>OH</text>
+<line x1="330" y1="55" x2="490" y2="55" stroke="currentColor" stroke-width="1.4" marker-end="url(#q-ah)"/>
+<line x1="490" y1="65" x2="330" y2="65" stroke="currentColor" stroke-width="1.4" marker-end="url(#q-ah)"/>
+<line x1="645" y1="110" x2="645" y2="180" stroke="currentColor" stroke-width="1.4" marker-end="url(#q-ah)"/>
+<line x1="655" y1="180" x2="655" y2="110" stroke="currentColor" stroke-width="1.4" marker-end="url(#q-ah)"/>
+<line x1="490" y1="225" x2="330" y2="225" stroke="currentColor" stroke-width="1.4" marker-end="url(#q-ah)"/>
+<line x1="330" y1="235" x2="490" y2="235" stroke="currentColor" stroke-width="1.4" marker-end="url(#q-ah)"/>
+<text x="410" y="44" text-anchor="middle" font-size="13" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">C2 の配置が消える</text>
+<text x="410" y="256" text-anchor="middle" font-size="13" fill="currentColor" font-family="Noto Sans CJK JP, sans-serif">C3 の配置が消える</text>
+<text x="410.0" y="305" text-anchor="middle" font-size="13" fill="currentColor" opacity="0.8" font-family="Noto Sans CJK JP, sans-serif">各式は右端が C1．R は C4 以降の部分（反応に関与しない）</text>
+</svg>

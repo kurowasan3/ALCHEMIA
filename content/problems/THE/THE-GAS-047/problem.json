@@ -1,0 +1,117 @@
+{
+ "id": "THE-GAS-047",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-08",
+ "topic": "燃焼前後の圧力と水の凝縮を使ったC・H・O化合物の分子式の決定",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "容積 $2.49\\,\\mathrm{L}$ の密閉容器に酸素だけを入れ，$27\\,^\\circ\\mathrm{C}$ で $1.500\\times10^{5}\\,\\mathrm{Pa}$ とした．ここに C，H，O からなる液体の化合物 $\\mathrm{C}_x\\mathrm{H}_y\\mathrm{O}_z$ を $0.740\\,\\mathrm{g}$ 注入したところすべて蒸発し，$27\\,^\\circ\\mathrm{C}$ で圧力は $1.600\\times10^{5}\\,\\mathrm{Pa}$ になった．続いて点火して完全燃焼させ（酸素は十分にある），次の測定を順に行った．\n・測定1：$27\\,^\\circ\\mathrm{C}$ にもどしたときの圧力 $1.486\\times10^{5}\\,\\mathrm{Pa}$\n・測定2：$127\\,^\\circ\\mathrm{C}$ に加熱したときの圧力 $2.333\\times10^{5}\\,\\mathrm{Pa}$\n・測定3：$27\\,^\\circ\\mathrm{C}$ にもどし，容器内に置いた少量の固体の吸収剤で二酸化炭素だけを完全に吸収させたときの圧力 $1.186\\times10^{5}\\,\\mathrm{Pa}$\n\n水の飽和蒸気圧は $27\\,^\\circ\\mathrm{C}$ で $3.6\\times10^{3}\\,\\mathrm{Pa}$，$127\\,^\\circ\\mathrm{C}$ で $2.46\\times10^{5}\\,\\mathrm{Pa}$，気体定数は $8.3\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$，原子量は H=1.0，C=12，O=16 とする．気体はすべて理想気体とし，液体の水の体積と，液体の水への気体の溶解は無視する．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "注入した化合物の物質量とモル質量を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "燃焼後の気体の物質量の変化を $x,\\ y,\\ z$ で表すことにより，測定1の値だけから「$27\\,^\\circ\\mathrm{C}$ で生じた水の一部が液体になっている」と判断できる理由を述べよ．"
+     },
+     {
+      "id": "3",
+      "tex": "測定1と測定2から $y$ と $z$ を求めよ．測定2で水がすべて気体であることも確かめること．"
+     },
+     {
+      "id": "4",
+      "tex": "測定3から $x$ を求めて分子式を決め，(1) の結果と矛盾しないことを確かめよ．"
+     },
+     {
+      "id": "5",
+      "tex": "もし容器がはるかに大きく，$27\\,^\\circ\\mathrm{C}$ でも水がまったく凝縮しなかったとすると，燃焼後の $27\\,^\\circ\\mathrm{C}$ と $127\\,^\\circ\\mathrm{C}$ の圧力から $y,\\ z$ についてどんな情報が得られるか．また，この実験の量のままで $27\\,^\\circ\\mathrm{C}$ で水が凝縮しないための容積の最小値を有効数字2けたで求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "物質量 $1.00\\times10^{-2}\\,\\mathrm{mol}$，モル質量 $74\\,\\mathrm{g/mol}$"
+   },
+   {
+    "id": "2",
+    "tex": "水がすべて気体なら燃焼後の圧力は燃焼前の酸素の圧力 $1.500\\times10^{5}\\,\\mathrm{Pa}$ より必ず大きくなるはずだが，測定1はそれより小さいから"
+   },
+   {
+    "id": "3",
+    "tex": "$y=6$，$z=2$（$127\\,^\\circ\\mathrm{C}$ の水蒸気の分圧 $4.0\\times10^{4}\\,\\mathrm{Pa}$ は飽和蒸気圧より小さい）"
+   },
+   {
+    "id": "4",
+    "tex": "$x=3$，分子式 $\\ce{C3H6O2}$（モル質量 74 で一致）"
+   },
+   {
+    "id": "5",
+    "tex": "2つの圧力はどちらも $\\frac{y}{4}+\\frac{z}{2}$ の値しか与えず（127 ℃ の値は 27 ℃ の値の 4/3 倍になるだけ），$y$ と $z$ は分けられない（モル質量など別のデータが必要）．容積の最小値 $21\\,\\mathrm{L}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{圧力を「物質量のものさし」にする}　容積一定なので，$27\\,^\\circ\\mathrm{C}$ では分圧 $1.000\\times10^{5}\\,\\mathrm{Pa}$ が $\\dfrac{1.000\\times10^{5}\\times2.49}{8.3\\times10^{3}\\times300}=0.100\\,\\mathrm{mol}$ に当たる．以下，圧力は $10^{5}\\,\\mathrm{Pa}$ 単位で $27\\,^\\circ\\mathrm{C}$ 換算の値として扱う．\n\n\\textbf{(1)} 化合物の分圧は $1.600-1.500=0.100$ なので，物質量は $\\boldsymbol{1.00\\times10^{-2}\\,\\mathrm{mol}}$．モル質量は $0.740\\div0.0100=\\boldsymbol{74\\,\\mathrm{g/mol}}$．\n\n\\textbf{(2)} 燃焼の式は\n\\[\\mathrm{C}_x\\mathrm{H}_y\\mathrm{O}_z+\\left(x+\\frac{y}{4}-\\frac{z}{2}\\right)\\mathrm{O_2}\\longrightarrow x\\,\\mathrm{CO_2}+\\frac{y}{2}\\,\\mathrm{H_2O}\\]\n化合物の分圧を $a=0.100$ とすると，燃焼後は\n\\[\\mathrm{O_2}:\\ 1.500-a\\left(x+\\frac{y}{4}-\\frac{z}{2}\\right),\\quad \\mathrm{CO_2}:\\ ax,\\quad \\mathrm{H_2O}:\\ \\frac{ay}{2}\\ (\\text{すべて気体なら})\\]\n$\\ce{O2}$ と $\\ce{CO2}$ の和は $1.500-a\\left(\\dfrac{y}{4}-\\dfrac{z}{2}\\right)$ で，$x$ を含まない（C 1 個につき $\\ce{O2}$ 1 分子が $\\ce{CO2}$ 1 分子に置きかわる）．水がすべて気体なら全圧は $1.500+a\\left(\\dfrac{y}{4}+\\dfrac{z}{2}\\right)>1.500$ となるはずだが，測定1は $1.486<1.500$．よって $\\boldsymbol{\\text{水の一部が液体}}$で，水蒸気の分圧は飽和蒸気圧 $0.036$ に等しい．\n\n\\textbf{(3)} 測定1：$1.500-a\\left(\\dfrac{y}{4}-\\dfrac{z}{2}\\right)+0.036=1.486$ より $\\dfrac{y}{4}-\\dfrac{z}{2}=0.50$．\n\n測定2：水がすべて気体と仮定すると，$27\\,^\\circ\\mathrm{C}$ 換算の全圧は $\\dfrac{300}{400}\\times2.333=1.750$ で，\n$1.500+a\\left(\\dfrac{y}{4}+\\dfrac{z}{2}\\right)=1.750$ より $\\dfrac{y}{4}+\\dfrac{z}{2}=2.50$．\n\n2式から $\\dfrac{y}{4}=1.50$，$\\dfrac{z}{2}=1.00$，すなわち $\\boldsymbol{y=6,\\ z=2}$．\n\n仮定の確認：水は $\\dfrac{ay}{2}=0.300$（$27\\,^\\circ\\mathrm{C}$ 換算）で，$127\\,^\\circ\\mathrm{C}$ では $0.300\\times\\dfrac{400}{300}=0.400$，すなわち $4.0\\times10^{4}\\,\\mathrm{Pa}<2.46\\times10^{5}\\,\\mathrm{Pa}$ なので，確かにすべて気体．（$27\\,^\\circ\\mathrm{C}$ でも $0.300>0.036$ で凝縮しており，(2) と矛盾しない．）\n\n\\textbf{(4)} $\\ce{CO2}$ を除くと残るのは $\\ce{O2}$ と飽和の水蒸気：$1.500-a\\left(x+\\dfrac{y}{4}-\\dfrac{z}{2}\\right)+0.036=1.186$ より $x+0.50=3.50$，$\\boldsymbol{x=3}$．分子式は $\\boldsymbol{\\ce{C3H6O2}}$（例：酢酸メチル，ギ酸エチル）．モル質量 $12\\times3+1.0\\times6+16\\times2=74$ は (1) と一致する．燃焼の式は $\\ce{2C3H6O2 + 7O2 -> 6CO2 + 6H2O}$ で，消費した $\\ce{O2}$ $0.350$ は初めの $1.500$ より少なく，酸素が十分にあったことも確かめられる．\n\n\\textbf{(5)} 水がすべて気体なら，$27\\,^\\circ\\mathrm{C}$ でも $127\\,^\\circ\\mathrm{C}$ でも全物質量は $1.500+a\\left(\\dfrac{y}{4}+\\dfrac{z}{2}\\right)$ に比例し，$127\\,^\\circ\\mathrm{C}$ の圧力は $27\\,^\\circ\\mathrm{C}$ の値の $\\dfrac{400}{300}$ 倍になるだけで新しい情報を含まない．したがって得られるのは $\\boldsymbol{\\dfrac{y}{4}+\\dfrac{z}{2}\\ \\text{の値だけ}}$ で，$y$ と $z$ は分けられない．本問では，水が凝縮する温度（水が気相から抜けて $\\dfrac{y}{4}-\\dfrac{z}{2}$ が測れる）と凝縮しない温度（水も数えて $\\dfrac{y}{4}+\\dfrac{z}{2}$ が測れる）の2つの測定を組み合わせたことで，圧力だけで $y$ と $z$ が分かれた．（水が凝縮しない場合でも，(1) のモル質量 $12x+y+16z=74$ を使えば決められる．）\n\n水は $0.0100\\times3=0.0300\\,\\mathrm{mol}$．$27\\,^\\circ\\mathrm{C}$ で分圧が飽和蒸気圧以下になる容積は\n\\[V\\geqq\\frac{0.0300\\times8.3\\times10^{3}\\times300}{3.6\\times10^{3}}=20.75\\,\\mathrm{L}\\]\nよって最小値は $\\boldsymbol{21\\,\\mathrm{L}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "定積での燃焼後の圧力は，O₂ が CO₂ に 1:1 で置きかわるため C の数を含まず，水が凝縮している温度では y/4−z/2，水がすべて気体の温度では y/4+z/2 という別の組合せを与える．凝縮の有無を圧力の値そのものから判定し，凝縮する温度としない温度の2つの測定と CO₂ の吸収を組み合わせると，圧力だけで分子式が決まる（凝縮しなければ2つの測定は同じ情報しか持たない）．"
+ },
+ "concepts": [
+  "ideal-gas",
+  "vapor-pressure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "燃焼",
+  "飽和蒸気圧",
+  "凝縮の判定",
+  "分子式の決定",
+  "分圧",
+  "定積変化"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

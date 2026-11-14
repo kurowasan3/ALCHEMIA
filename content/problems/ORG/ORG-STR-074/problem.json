@@ -1,0 +1,109 @@
+{
+ "id": "ORG-STR-074",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-01",
+ "topic": "赤外吸収スペクトルの吸収位置と化学的性質による C₄H₈O の異性体の決定",
+ "course": "化学",
+ "level": 3,
+ "minutes": 20,
+ "format": [
+  "structure",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "分子に赤外線をあてると，結合の種類ごとに決まった波数（$\\mathrm{cm^{-1}}$）の赤外線が吸収される（赤外吸収スペクトル）．おもな結合の吸収位置は次のとおりである．\n\\begin{center}\n\\begin{tabular}{l|l}\n結合 & 吸収の位置〔$\\mathrm{cm^{-1}}$〕 \\\\ \\hline\nO−H（アルコール） & $3200\\sim3600$（強く幅広い） \\\\\nC−H（$\\ce{C=C}$ の炭素上） & $3000\\sim3100$ \\\\\nC−H（アルキル基） & $2850\\sim3000$ \\\\\nC−H（アルデヒドの $\\ce{-CHO}$） & $2700\\sim2850$（弱い 2 本） \\\\\n$\\ce{C=O}$ & $1680\\sim1750$（強い） \\\\\n$\\ce{C=C}$ & $1620\\sim1680$ \\\\\nC−O（アルコール・エーテル） & $1000\\sim1250$\n\\end{tabular}\n\\end{center}\n分子式 $\\ce{C4H8O}$ の化合物 A，B，C について，次の結果を得た（吸収は $1500\\,\\mathrm{cm^{-1}}$ 以上のおもなものだけを示す）．ただし，ヒドロキシ基が二重結合の炭素に結合した構造は不安定なので考えなくてよい．\n\\begin{center}\n\\begin{tabular}{l|l|l}\n & 赤外吸収〔$\\mathrm{cm^{-1}}$〕 & その他の結果 \\\\ \\hline\nA & 2970，1715（強） & ヨードホルム反応を示した \\\\\nB & 2960，2870，2820・2720（弱），1730（強） & 水素を付加させて得たアルコールを脱水すると，アルケンが 1 種類だけ生じ，それは 2-メチルプロペンであった \\\\\nC & 3350（強く幅広い），3080，2970，1645 & 不斉炭素原子をもつ\n\\end{tabular}\n\\end{center}"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A について，赤外吸収から考えられる官能基を答えよ．また，A の構造を示性式で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "B の赤外吸収から，B はどの種類の化合物と考えられるか．その種類で $\\ce{C4H8O}$ のものをすべて示性式で示し，B を決定せよ．"
+     },
+     {
+      "id": "3",
+      "tex": "C の赤外吸収から，C がもつ官能基・結合を 2 つ答えよ．また，C の構造を示性式で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\ce{C4H8O}$ のエチルビニルエーテル $\\ce{CH2=CH-O-CH2CH3}$ と 3-ブテン-1-オール $\\ce{CH2=CHCH2CH2OH}$ を赤外吸収スペクトルで区別するには，どの吸収に注目すればよいか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{C=O}$（ケトン）．$\\ce{CH3COCH2CH3}$（2-ブタノン）"
+   },
+   {
+    "id": "2",
+    "tex": "アルデヒド．$\\ce{CH3CH2CH2CHO}$（ブタナール）と $\\ce{(CH3)2CHCHO}$（2-メチルプロパナール）．B は $\\ce{(CH3)2CHCHO}$"
+   },
+   {
+    "id": "3",
+    "tex": "O−H（ヒドロキシ基）と $\\ce{C=C}$（二重結合）．$\\ce{CH2=CHCH(OH)CH3}$（3-ブテン-2-オール）"
+   },
+   {
+    "id": "4",
+    "tex": "$3200\\sim3600\\,\\mathrm{cm^{-1}}$ の O−H の強く幅広い吸収．3-ブテン-1-オールにはあり，エチルビニルエーテルにはない"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{C4H8O}$ の不飽和度は $\\dfrac{2\\times4+2-8}{2}=1$ なので，$\\ce{C=O}$・$\\ce{C=C}$・環のどれか 1 つをもつ．\n\n\\textbf{(1)}　$1715\\,\\mathrm{cm^{-1}}$ の強い吸収は $\\ce{C=O}$．$2700\\sim2850$ のアルデヒドの C−H がなく，O−H もないので\\textbf{ケトン}．鎖式の $\\ce{C4H8O}$ のケトンは $\\ce{CH3COCH2CH3}$ だけで，$\\ce{CH3CO-}$ をもつのでヨードホルム反応も合う．よって $\\boldsymbol{\\ce{CH3COCH2CH3}}$．\n\n\\textbf{(2)}　$1730$ の $\\ce{C=O}$ に加えて $2820$・$2720$ の弱い 2 本（$\\ce{-CHO}$ の C−H）があるので\\textbf{アルデヒド}．$\\ce{C4H8O}$ のアルデヒドは $\\ce{CH3CH2CH2CHO}$ と $\\ce{(CH3)2CHCHO}$ の 2 つ．水素を付加すると\n\\[\\ce{CH3CH2CH2CHO}\\to\\ce{CH3CH2CH2CH2OH},\\qquad \\ce{(CH3)2CHCHO}\\to\\ce{(CH3)2CHCH2OH}\\]\nで，脱水するとそれぞれ 1-ブテン，2-メチルプロペン $\\ce{CH2=C(CH3)2}$ を生じる．よって B は $\\boldsymbol{\\ce{(CH3)2CHCHO}}$．赤外吸収では官能基はわかるが炭素骨格（枝分かれ）はわからないので，化学反応の結果で決める．\n\n\\textbf{(3)}　$3350$（強く幅広い）は \\textbf{O−H}，$1645$ は \\textbf{$\\ce{C=C}$}，$3080$ は $\\ce{C=C}$ の炭素上の C−H．$\\ce{C=O}$ の吸収（$1680$ 以上）がないこととも合う．不飽和度 1 を $\\ce{C=C}$ が使うので環はない．ヒドロキシ基が二重結合の炭素にない鎖式のアルコールは\n\\[\\ce{CH2=CHCH2CH2OH},\\quad \\ce{CH3CH=CHCH2OH},\\quad \\ce{CH2=CHCH(OH)CH3},\\quad \\ce{CH2=C(CH3)CH2OH}\\]\nの 4 つ（2 番目にはシス・トランス異性体がある）．このうち不斉炭素原子（$\\ce{H}$，$\\ce{OH}$，$\\ce{CH3}$，$\\ce{CH=CH2}$ が結合した C）をもつのは $\\boldsymbol{\\ce{CH2=CHCH(OH)CH3}}$ だけである．なお，シクロブタノールなど環をもつアルコールは $\\ce{C=C}$ の吸収を示さないので除かれる．\n\n\\textbf{(4)}　どちらも $\\ce{C=C}$（$1620\\sim1680$）と $\\ce{C=C}$ 上の C−H（$3000\\sim3100$）をもつので，それらでは区別できない．アルコールだけが O−H をもつので，$\\boldsymbol{3200\\sim3600\\,\\mathrm{cm^{-1}}}$ の強く幅広い吸収の有無で区別する（エーテルにもアルコールにも C−O の吸収 $1000\\sim1250$ はあるので，こちらでは区別できない）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "赤外吸収の位置から O−H・C=O・アルデヒドの C−H・C=C の有無を読み取り，不飽和度と合わせて化合物の種類を絞る．赤外吸収では炭素骨格（枝分かれ・位置）は決まらないので，ヨードホルム反応・脱水生成物・不斉炭素の有無などの化学的情報と組み合わせて構造を1つに決める．"
+ },
+ "concepts": [
+  "organic-structure",
+  "carbon-silicon",
+  "alcohol-carbonyl"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "赤外吸収スペクトル",
+  "官能基",
+  "異性体",
+  "不飽和度",
+  "構造決定"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

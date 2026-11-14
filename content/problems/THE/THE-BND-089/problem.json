@@ -1,0 +1,117 @@
+{
+ "id": "THE-BND-089",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-03",
+ "topic": "単位体積あたりの自由電子の数と金属の融点（アルカリ金属とアルミニウム）",
+ "course": "化学",
+ "level": 1,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "金属の融点の高さは，金属結合にはたらく単位体積あたりの自由電子の数（自由電子の密度）と関係が深い．次の金属について，原子 1 個が出す自由電子の数（価電子の数）と結晶構造・単位格子の一辺の長さは表のとおりである．\n\\[\\begin{array}{cccc} \\text{金属} & \\text{自由電子の数（原子 1 個あたり）} & \\text{結晶構造} & \\text{一辺の長さ}\\,(\\mathrm{nm})\\\\ \\ce{Li} & 1 & \\text{体心立方格子} & 0.351\\\\ \\ce{Na} & 1 & \\text{体心立方格子} & 0.429\\\\ \\ce{K} & 1 & \\text{体心立方格子} & 0.533\\\\ \\ce{Al} & 3 & \\text{面心立方格子} & 0.405 \\end{array}\\]\nアボガドロ定数は $6.0\\times10^{23}\\,/\\mathrm{mol}$，ファラデー定数は $9.65\\times10^{4}\\,\\mathrm{C/mol}$，$1\\,\\mathrm{nm} = 1\\times10^{-7}\\,\\mathrm{cm}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "体心立方格子と面心立方格子の単位格子に含まれる原子の数をそれぞれ答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$\\ce{Na}$，$\\ce{K}$，$\\ce{Al}$ について，結晶 $1.0\\,\\mathrm{cm^3}$ に含まれる自由電子の数を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の結果から，$\\ce{Na}$，$\\ce{K}$，$\\ce{Al}$ を融点の高い順に並べよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$\\ce{Al}$ の結晶 $1.0\\,\\mathrm{cm^3}$ に含まれる自由電子の電気量の大きさ（C）を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "$\\ce{Li}$ の融点は $\\ce{Na}$ より高いか低いか．自由電子の密度に基づいて答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "体心立方格子 2 個，面心立方格子 4 個"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{Na}$ $2.5\\times10^{22}$，$\\ce{K}$ $1.3\\times10^{22}$，$\\ce{Al}$ $1.8\\times10^{23}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{Al} > \\ce{Na} > \\ce{K}$"
+   },
+   {
+    "id": "4",
+    "tex": "$2.9\\times10^{4}\\,\\mathrm{C}$"
+   },
+   {
+    "id": "5",
+    "tex": "高い"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 体心立方格子：頂点 $8\\times\\dfrac18$ ＋中心 1 ＝ \\textbf{2 個}．面心立方格子：頂点 $8\\times\\dfrac18$ ＋面 $6\\times\\dfrac12$ ＝ \\textbf{4 個}．\n\n\\textbf{(2)} 単位格子の体積を $a^3$ とすると，$1.0\\,\\mathrm{cm^3}$ あたりの自由電子の数は（単位格子中の原子数）×（自由電子の数）÷ $a^3$．\n\\[\\ce{Na}:\\ \\frac{2\\times1}{(0.429\\times10^{-7})^3} = \\boldsymbol{2.5\\times10^{22}}\\qquad \\ce{K}:\\ \\frac{2\\times1}{(0.533\\times10^{-7})^3} = \\boldsymbol{1.3\\times10^{22}}\\]\n\\[\\ce{Al}:\\ \\frac{4\\times3}{(0.405\\times10^{-7})^3} = \\boldsymbol{1.8\\times10^{23}}\\]\n\n\\textbf{(3)} 自由電子の密度が大きいほど，陽イオンと自由電子の間の引力（金属結合）が強く，融点が高い：$\\boldsymbol{\\ce{Al} > \\ce{Na} > \\ce{K}}$（実際の融点は Al 660 ℃，Na 98 ℃，K 64 ℃）．同じ族では原子が大きいほど自由電子が薄まり，価電子の多い Al では格段に密になる．\n\n\\textbf{(4)} $\\dfrac{1.81\\times10^{23}}{6.0\\times10^{23}}\\times9.65\\times10^{4} = \\boldsymbol{2.9\\times10^{4}\\,\\mathrm{C}}$．\n\n\\textbf{(5)} $\\ce{Li}$：$\\dfrac{2}{(0.351\\times10^{-7})^3} = 4.6\\times10^{22}$ で $\\ce{Na}$ より大きいので，融点は\\textbf{高い}（実際 Li 181 ℃）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "単位格子中の原子数と1原子あたりの自由電子数，格子の体積から自由電子の数密度を求め，それが大きいほど金属結合が強く融点が高くなる傾向（同族では原子が小さいほど，価電子が多いほど高い）を比較で確かめる．自由電子の数をファラデー定数で電気量に換算する．"
+ },
+ "concepts": [
+  "chemical-bond",
+  "amphoteric",
+  "alkali-metals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "金属結合",
+  "自由電子",
+  "融点",
+  "体心立方格子",
+  "面心立方格子"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

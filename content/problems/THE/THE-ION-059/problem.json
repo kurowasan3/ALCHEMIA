@@ -1,0 +1,117 @@
+{
+ "id": "THE-ION-059",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "水のイオン積の温度変化と高温での中性・pH",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水は $\\ce{H2O <=> H+ + OH-}$ のようにわずかに電離しており，水のイオン積 $K_w=[\\ce{H+}][\\ce{OH-}]$ は 25 ℃ で $1.0\\times10^{-14}\\,\\mathrm{mol^2/L^2}$，ある高温 $T$ では $1.0\\times10^{-13}\\,\\mathrm{mol^2/L^2}$ である．また，強酸と強塩基の中和は $\\ce{H+ + OH- -> H2O}$，$\\Delta H=-56\\,\\mathrm{kJ}$ で表される．$\\sqrt{10}=3.16$，$\\log_{10}6.3=0.80$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "水の電離 $\\ce{H2O -> H+ + OH-}$ の反応エンタルピー $\\Delta H$ はおよそ何 kJ か．また，温度を上げると $K_w$ が大きくなることを，この値を用いて説明せよ．"
+     },
+     {
+      "id": "2",
+      "tex": "温度 $T$ の純水の pH を小数第 1 位まで求めよ．また，この純水は酸性・中性・塩基性のどれか．"
+     },
+     {
+      "id": "3",
+      "tex": "25 ℃ の純水を温度 $T$ まで加熱すると，$[\\ce{H+}]$ は何倍になるか．有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "温度 $T$ で pH が 6.8 の水溶液は，酸性・中性・塩基性のどれか．$[\\ce{H+}]$ と $[\\ce{OH-}]$ を比べて答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "温度 $T$ における $0.010\\,\\mathrm{mol/L}$ の塩酸と $0.010\\,\\mathrm{mol/L}$ の水酸化ナトリウム水溶液の pH を，それぞれ小数第 1 位まで求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\Delta H=+56\\,\\mathrm{kJ}$（吸熱）．吸熱反応なので，温度を上げると平衡が右に移動し，$K_w$ が大きくなる．"
+   },
+   {
+    "id": "2",
+    "tex": "pH 6.5，中性"
+   },
+   {
+    "id": "3",
+    "tex": "3.2 倍"
+   },
+   {
+    "id": "4",
+    "tex": "塩基性（$[\\ce{H+}]=1.6\\times10^{-7}$，$[\\ce{OH-}]=6.3\\times10^{-7}\\,\\mathrm{mol/L}$ で $[\\ce{OH-}]>[\\ce{H+}]$）"
+   },
+   {
+    "id": "5",
+    "tex": "塩酸 pH 2.0，水酸化ナトリウム水溶液 pH 11.0"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 水の電離は中和の逆向きの反応なので，$\\Delta H=\\boldsymbol{+56\\,\\mathrm{kJ}}$（吸熱反応）．吸熱反応の平衡は温度を上げると吸熱の向き（右）に移動するので，$[\\ce{H+}]$ と $[\\ce{OH-}]$ がともに増え，$K_w$ は大きくなる．\n\n\\textbf{(2)} 純水では $[\\ce{H+}]=[\\ce{OH-}]$ なので $[\\ce{H+}]=\\sqrt{K_w}=\\sqrt{1.0\\times10^{-13}}=10^{-6.5}\\,\\mathrm{mol/L}$，pH $=\\boldsymbol{6.5}$．\npH が 7 より小さいが，$[\\ce{H+}]=[\\ce{OH-}]$ なので$\\boldsymbol{\\text{中性}}$である．「中性＝pH 7」は 25 ℃ でだけ成り立つ．\n\n\\textbf{(3)} $\\dfrac{10^{-6.5}}{10^{-7.0}}=10^{0.5}=\\sqrt{10}=3.16\\fallingdotseq\\boldsymbol{3.2\\text{ 倍}}$．\n\n\\textbf{(4)} $[\\ce{H+}]=10^{-6.8}=10^{0.2}\\times10^{-7}=1.6\\times10^{-7}\\,\\mathrm{mol/L}$（$10^{0.2}=\\dfrac{10}{6.3}=1.6$）．\n\\[ [\\ce{OH-}]=\\frac{1.0\\times10^{-13}}{10^{-6.8}}=10^{-6.2}=6.3\\times10^{-7}\\,\\mathrm{mol/L} \\]\n$[\\ce{OH-}]>[\\ce{H+}]$ なので$\\boldsymbol{\\text{塩基性}}$．温度 $T$ では中性の pH が 6.5 なので，pH 6.8 は中性より塩基性側である．\n\n\\textbf{(5)} 塩酸：$[\\ce{H+}]=0.010\\,\\mathrm{mol/L}$ で，水の電離による $\\ce{H+}$ は無視できるので pH $=\\boldsymbol{2.0}$（温度によらない）．\n水酸化ナトリウム水溶液：$[\\ce{OH-}]=0.010\\,\\mathrm{mol/L}$，$[\\ce{H+}]=\\dfrac{1.0\\times10^{-13}}{0.010}=1.0\\times10^{-11}\\,\\mathrm{mol/L}$ より pH $=\\boldsymbol{11.0}$．25 ℃ の 12.0 より 1 小さくなる．塩基の水溶液の pH は $K_w$ を通して温度の影響を受ける．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "水の電離は中和の逆で吸熱反応なので，温度が上がると水のイオン積が大きくなり，中性（[H⁺]＝[OH⁻]）の pH は 7 より小さくなる．高温では pH 7 前後でも液性の判定は [H⁺] と [OH⁻] の比較で行う必要があり，強塩基の水溶液の pH は温度で変わるが強酸の pH は変わらない．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "ph",
+  "acid-base"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "水のイオン積",
+  "中性",
+  "温度",
+  "吸熱反応",
+  "pH"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

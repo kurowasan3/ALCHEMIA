@@ -1,0 +1,109 @@
+{
+ "id": "THE-ION-100",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "硫化物の沈殿とヒドロキシド錯イオンの競合による残留亜鉛濃度の最小 pH",
+ "course": "化学",
+ "level": 5,
+ "minutes": 35,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "亜鉛イオン $\\ce{Zn^2+}$ を含む排水に硫化ナトリウムを加え，硫化亜鉛 $\\ce{ZnS}$ として沈殿させて除く．ただし pH が高いと，$\\ce{Zn^2+}$ はヒドロキシド錯イオン $\\ce{[Zn(OH)4]^2-}$ をつくって溶け込む．水溶液中の硫黄を含む化学種（$\\ce{H2S}$，$\\ce{HS-}$，$\\ce{S^2-}$）の濃度の和は常に $C_\\mathrm{S}=1.0\\times10^{-3}\\,\\mathrm{mol/L}$ に保たれ，次の値を用いる．$[\\mathrm{X}]$ は X のモル濃度（mol/L）を表す．\n\\[ \\ce{H2S <=> H+ + HS-}\\ \\ K_1=1.0\\times10^{-7}\\,\\mathrm{mol/L},\\qquad \\ce{HS- <=> H+ + S^2-}\\ \\ K_2=1.0\\times10^{-14}\\,\\mathrm{mol/L} \\]\n\\[ \\ce{ZnS}\\ \\text{の溶解度積}\\ K_\\mathrm{sp}=1.0\\times10^{-24}\\,(\\mathrm{mol/L})^2,\\qquad \\ce{Zn^2+ + 4OH- <=> [Zn(OH)4]^2-}\\ \\ \\beta=\\frac{[\\ce{[Zn(OH)4]^2-}]}{[\\ce{Zn^2+}][\\ce{OH-}]^4}=1.0\\times10^{15}\\,(\\mathrm{mol/L})^{-4} \\]\n水のイオン積は $1.0\\times10^{-14}\\,(\\mathrm{mol/L})^2$ とし，$\\ce{Zn^2+}$ と $\\ce{[Zn(OH)4]^2-}$ 以外の亜鉛の化学種や，水酸化亜鉛の沈殿は考えない．いずれの pH でも $\\ce{ZnS}$ の沈殿は残っているとし，溶けている亜鉛の全濃度を $[\\ce{Zn}]_\\mathrm{T}=[\\ce{Zn^2+}]+[\\ce{[Zn(OH)4]^2-}]$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "pH 3.0 のとき，$[\\ce{S^2-}]$ と $[\\ce{Zn}]_\\mathrm{T}$ を有効数字 2 桁で求めよ．用いた近似も述べよ．"
+     },
+     {
+      "id": "2",
+      "tex": "pH 9.0 と pH 12.0 のときの $[\\ce{Zn}]_\\mathrm{T}$ をそれぞれ有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$K_1\\gg[\\ce{H+}]\\gg K_2$ が成り立つ pH の範囲では，$[\\ce{Zn}]_\\mathrm{T}$ は $[\\ce{H+}]=h$ を用いてどのように表されるか．$K_2$，$K_\\mathrm{sp}$，$C_\\mathrm{S}$，$\\beta$，水のイオン積 $K_\\mathrm{w}$ を用いて式で示せ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) の式を用いて，$[\\ce{Zn}]_\\mathrm{T}$ が最小になる pH を小数第 1 位まで求めよ．$\\log_{10}3=0.48$ とする．また，その pH で (3) の近似が成り立っていることを確かめよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$[\\ce{S^2-}]=1.0\\times10^{-18}\\,\\mathrm{mol/L}$，$[\\ce{Zn}]_\\mathrm{T}=1.0\\times10^{-6}\\,\\mathrm{mol/L}$（$[\\ce{H+}]\\gg K_1$ より硫黄はほぼ $\\ce{H2S}$ で存在，錯イオンは無視できる）"
+   },
+   {
+    "id": "2",
+    "tex": "pH 9.0：$1.0\\times10^{-16}\\,\\mathrm{mol/L}$，pH 12.0：$1.0\\times10^{-12}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "3",
+    "tex": "$[\\ce{Zn}]_\\mathrm{T}=\\dfrac{K_\\mathrm{sp}}{C_\\mathrm{S}K_2}\\left(h+\\dfrac{\\beta K_\\mathrm{w}^{\\,4}}{h^3}\\right)$"
+   },
+   {
+    "id": "4",
+    "tex": "pH 10.1（$h=7.4\\times10^{-11}$ で $K_1\\gg h\\gg K_2$ を満たす）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　$\\ce{ZnS}$ が残っていれば $[\\ce{Zn^2+}]=K_\\mathrm{sp}/[\\ce{S^2-}]$．pH を上げると $[\\ce{S^2-}]$ が増えて $[\\ce{Zn^2+}]$ は減るが，錯イオンが増えて全濃度は再び増える．2 つの効果のつり合う pH を探す．\n$[\\ce{S^2-}]$ は，$C_\\mathrm{S}$ のうち $\\ce{S^2-}$ の割合として\n\\[ [\\ce{S^2-}]=C_\\mathrm{S}\\,\\frac{K_1K_2}{h^2+K_1h+K_1K_2} \\]\n\n\\textbf{(1)}　$h=1.0\\times10^{-3}\\gg K_1$ なので分母は $h^2$ で近似でき（硫黄はほぼ $\\ce{H2S}$），\n\\[ [\\ce{S^2-}]=\\frac{1.0\\times10^{-3}\\times1.0\\times10^{-21}}{(1.0\\times10^{-3})^2}=\\boldsymbol{1.0\\times10^{-18}\\,\\mathrm{mol/L}} \\]\n$[\\ce{Zn^2+}]=\\dfrac{1.0\\times10^{-24}}{1.0\\times10^{-18}}=1.0\\times10^{-6}$．$\\beta[\\ce{OH-}]^4=10^{15}\\times10^{-44}$ は無視でき，$[\\ce{Zn}]_\\mathrm{T}=\\boldsymbol{1.0\\times10^{-6}\\,\\mathrm{mol/L}}$．酸性では除去が不十分である．\n\n\\textbf{(2)}　pH 9.0：$K_1\\gg h\\gg K_2$ なので硫黄はほぼ $\\ce{HS-}$ で，$[\\ce{S^2-}]\\fallingdotseq C_\\mathrm{S}K_2/h=1.0\\times10^{-3}\\times10^{-14}/10^{-9}=1.0\\times10^{-8}$．$[\\ce{Zn^2+}]=1.0\\times10^{-16}$，錯イオンの割合 $\\beta[\\ce{OH-}]^4=10^{15}\\times(10^{-5})^4=10^{-5}$ は無視でき，$[\\ce{Zn}]_\\mathrm{T}=\\boldsymbol{1.0\\times10^{-16}\\,\\mathrm{mol/L}}$．\npH 12.0：$[\\ce{S^2-}]\\fallingdotseq1.0\\times10^{-3}\\times10^{-14}/10^{-12}=1.0\\times10^{-5}$（厳密には $9.9\\times10^{-6}$），$[\\ce{Zn^2+}]=1.0\\times10^{-19}$．ところが $\\beta[\\ce{OH-}]^4=10^{15}\\times(10^{-2})^4=10^{7}$ なので\n\\[ [\\ce{Zn}]_\\mathrm{T}=1.0\\times10^{-19}\\times(1+10^{7})\\fallingdotseq\\boldsymbol{1.0\\times10^{-12}\\,\\mathrm{mol/L}} \\]\npH 9.0 より 1 万倍も多く溶けている．\n\n\\textbf{(3)}　$[\\ce{S^2-}]=C_\\mathrm{S}K_2/h$，$[\\ce{OH-}]=K_\\mathrm{w}/h$ を用いて\n\\[ [\\ce{Zn}]_\\mathrm{T}=\\frac{K_\\mathrm{sp}h}{C_\\mathrm{S}K_2}\\left(1+\\frac{\\beta K_\\mathrm{w}^{\\,4}}{h^4}\\right)=\\boldsymbol{\\frac{K_\\mathrm{sp}}{C_\\mathrm{S}K_2}\\left(h+\\frac{\\beta K_\\mathrm{w}^{\\,4}}{h^3}\\right)} \\]\n\n\\textbf{(4)}　$f(h)=h+\\beta K_\\mathrm{w}^{\\,4}h^{-3}$ を最小にする．$\\dfrac{df}{dh}=1-3\\beta K_\\mathrm{w}^{\\,4}h^{-4}=0$ より\n\\[ h^4=3\\beta K_\\mathrm{w}^{\\,4}=3\\times10^{15}\\times10^{-56}=3\\times10^{-41} \\]\n$\\mathrm{pH}=-\\tfrac14\\log_{10}(3\\times10^{-41})=\\tfrac{41-0.48}{4}=10.13\\fallingdotseq\\boldsymbol{10.1}$．\n錯イオンの割合がちょうど 1（$h^4=\\beta K_\\mathrm{w}^{\\,4}$，pH 10.25）になる点ではなく，そこから $\\tfrac14\\log_{10}3$ だけ低い pH で最小になる（$[\\ce{Zn^2+}]$ は $h^1$，錯イオンは $h^{-3}$ に比例して変わるため）．\nこのとき $h=7.4\\times10^{-11}$ で，$K_1=10^{-7}$ より十分小さく $K_2=10^{-14}$ より十分大きいので，(3) の近似は成り立っている．最小値は約 $9.9\\times10^{-18}\\,\\mathrm{mol/L}$ である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "沈殿が残る限り [Zn2+]=Ksp/[S2-] で，[S2-] は pH とともに増える（H2S 主体では h^-2，HS- 主体では h^-1 に比例）が，高 pH では [Zn(OH)4]2- が h^-4 に比例して増える．全濃度 ∝ h+βKw^4/h^3 を最小にする条件 h^4=3βKw^4 から最適 pH を求め，用いた近似（K1≫h≫K2）の成立を確かめる．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "complex-ion",
+  "precipitation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "溶解度積",
+  "錯イオン",
+  "硫化物",
+  "最適pH",
+  "近似の妥当性"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

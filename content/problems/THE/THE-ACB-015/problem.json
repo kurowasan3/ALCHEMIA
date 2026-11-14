@@ -1,0 +1,101 @@
+{
+ "id": "THE-ACB-015",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-05",
+ "topic": "中和点付近の pH の跳躍と濃度",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "compare",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の2通りの中和滴定を 25 ℃ で行う．\n\\[ \\text{滴定 A：}0.100\\,\\mathrm{mol/L}\\ \\ce{HCl}\\ 20.0\\,\\mathrm{mL}\\ \\text{に}\\ 0.100\\,\\mathrm{mol/L}\\ \\ce{NaOH}\\ \\text{を滴下} \\]\n\\[ \\text{滴定 B：}0.0100\\,\\mathrm{mol/L}\\ \\ce{HCl}\\ 20.0\\,\\mathrm{mL}\\ \\text{に}\\ 0.0100\\,\\mathrm{mol/L}\\ \\ce{NaOH}\\ \\text{を滴下} \\]\n水酸化ナトリウム水溶液の1滴は $0.050\\,\\mathrm{mL}$ とし，中和点付近の溶液の体積は $40.0\\,\\mathrm{mL}$ とみなしてよい．$K_w=1.0\\times10^{-14}\\,(\\mathrm{mol/L})^2$，$\\log_{10}2=0.30$，$10^{-4.4}=4.0\\times10^{-5}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "滴定 A と滴定 B のそれぞれについて，中和点の1滴前と1滴後の pH を小数第1位まで求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "滴定 B でメチルオレンジを用いると，pH が 4.4 に達したところで変色が完了する．このときの水酸化ナトリウム水溶液の滴下量を有効数字3桁で求めよ．また，この結果から，滴定 B にはメチルオレンジとフェノールフタレイン（変色域 pH 8.0〜9.8）のどちらが適しているか答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "60 ℃ では $K_w=1.0\\times10^{-13}\\,(\\mathrm{mol/L})^2$ になる．60 ℃ で滴定 B を行ったとき，中和点の pH を小数第1位まで求めよ．また，この溶液は酸性・中性・塩基性のどれか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "A：1滴前 3.9，1滴後 10.1．B：1滴前 4.9，1滴後 9.1"
+   },
+   {
+    "id": "2",
+    "tex": "$19.8\\,\\mathrm{mL}$；フェノールフタレイン"
+   },
+   {
+    "id": "3",
+    "tex": "pH 6.5，中性"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 1滴に含まれる物質量は，A で $0.100\\times0.050\\times10^{-3}=5.0\\times10^{-6}\\,\\mathrm{mol}$，B で $5.0\\times10^{-7}\\,\\mathrm{mol}$．1滴前はこの分の $\\ce{H+}$ が，1滴後はこの分の $\\ce{OH-}$ が余る．\n\\[ \\text{A：}[\\ce{H+}]=\\dfrac{5.0\\times10^{-6}}{0.0400}=1.25\\times10^{-4}\\,\\mathrm{mol/L},\\quad \\mathrm{pH}=4-\\log_{10}1.25=4-0.10=3.9 \\]\n（$\\log_{10}1.25=\\log_{10}\\tfrac{10}{8}=1-3\\times0.30=0.10$）．1滴後は $[\\ce{OH-}]=1.25\\times10^{-4}$ で pOH 3.9，pH $\\boldsymbol{10.1}$．\\\\\nB は濃度が $\\tfrac{1}{10}$ なので，1滴前 pH $\\boldsymbol{4.9}$，1滴後 pH $\\boldsymbol{9.1}$．\\\\\n2滴の間の pH の跳躍は A で 6.2，B で 4.2 であり，濃度がうすいほど跳躍の幅は狭くなる．\n\n\\textbf{(2)} pH 4.4 のとき $[\\ce{H+}]=4.0\\times10^{-5}\\,\\mathrm{mol/L}$．残っている $\\ce{H+}$ は $4.0\\times10^{-5}\\times0.0400=1.6\\times10^{-6}\\,\\mathrm{mol}$ で，これは $0.0100\\,\\mathrm{mol/L}$ の $\\ce{NaOH}$ にして $0.16\\,\\mathrm{mL}$ 分にあたる．\n\\[ 20.0-0.16=\\boldsymbol{19.8\\,\\mathrm{mL}} \\]\n中和点より約3滴手前で変色が終わってしまうので，メチルオレンジは不適．1滴後に pH 9.1 となり変色域に入るフェノールフタレインが \\textbf{適している}．（滴定 A では1滴前が pH 3.9 なので，どちらの指示薬でも1滴以内の誤差で終点がわかる．）\n\n\\textbf{(3)} 中和点の水溶液は $\\ce{NaCl}$ 水溶液で，$[\\ce{H+}]=[\\ce{OH-}]$．\n\\[ [\\ce{H+}]=\\sqrt{1.0\\times10^{-13}}=10^{-6.5}\\,\\mathrm{mol/L},\\quad \\mathrm{pH}=\\boldsymbol{6.5} \\]\npH は 7 より小さいが，$[\\ce{H+}]=[\\ce{OH-}]$ なので \\textbf{中性} である．中性の pH が 7 になるのは 25 ℃ のときに限る．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "強酸と強塩基の滴定では中和点前後の1滴で pH が大きく跳躍するが，濃度がうすいほど跳躍の幅が狭くなり，変色域の外れた指示薬では終点が中和点からずれる．中性とは [H+]=[OH-] のことで，Kw が温度で変われば中性の pH も変わる．"
+ },
+ "concepts": [
+  "acid-base",
+  "concentration",
+  "ph"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "中和滴定",
+  "滴定曲線",
+  "pHの跳躍",
+  "指示薬",
+  "水のイオン積"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

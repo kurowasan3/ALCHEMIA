@@ -1,0 +1,109 @@
+{
+ "id": "THE-ATM-032",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-01",
+ "topic": "水素類似イオンのボーアモデル（核電荷によるスケーリング）とスペクトルからのイオンの決定",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水素原子のボーアモデルでは，電子（質量 $m$，電荷 $-e$）が原子核（電荷 $+e$）のまわりを半径 $r$ で円運動し，クーロン力 $k\\dfrac{e^2}{r^2}$ が向心力となる．量子条件 $mrv=\\dfrac{nh}{2\\pi}$（$n=1,2,\\ldots$）と組み合わせると\n\\[ r_n=\\frac{n^2h^2}{4\\pi^2kme^2},\\qquad E_n=-\\frac{2\\pi^2k^2me^4}{n^2h^2} \\]\nが得られ，数値では $r_n=0.0529\\,n^2\\,\\mathrm{nm}$，$E_n=-\\dfrac{13.6}{n^2}\\,\\mathrm{eV}$ となる．原子核の電荷が $+Ze$ で電子が 1 個だけのイオン（水素類似イオン：$\\ce{He+}$，$\\ce{Li^2+}$ など）にもこのモデルを当てはめる．光子のエネルギーと波長の関係は $E\\,[\\mathrm{eV}]=1240/\\lambda\\,[\\mathrm{nm}]$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "原子核の電荷が $+Ze$ になると，クーロン力と位置エネルギーで $e^2$ が $Ze^2$ に置き換わる．$r_n$ と $E_n$ は $Z$ の何乗に比例するか答えよ．また，$\\ce{He+}$ の $n=1$ の半径とイオン化エネルギー（eV）を有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$\\ce{He+}$ で準位 $n_2\\to n_1$ の遷移で出る光と，水素原子で準位 $n_2'\\to n_1'$ の遷移で出る光の波長が一致する条件を，$n_1, n_2, n_1', n_2'$ の関係で表せ．これを用いて，水素原子の $n=3\\to2$ の光と同じ波長の光を出す $\\ce{He+}$ の遷移を答えよ．また，$\\ce{He+}$ の $n=4\\to3$ の遷移で出る光の波長を有効数字 3 桁で求め，この光と同じ波長の光を水素原子が出すことはあるか判断せよ．"
+     },
+     {
+      "id": "3",
+      "tex": "ある水素類似イオンの発光スペクトルで，同じ下の準位 $n_\\mathrm{L}$ へ落ちる一連の線（系列）を調べたところ，系列の収束する波長（上の準位 $n\\to\\infty$）が $91.2\\,\\mathrm{nm}$，系列の中で最も波長の長い線が $208\\,\\mathrm{nm}$ であった．収束する波長だけからは $Z$ と $n_\\mathrm{L}$ が決まらない理由を述べ，2 つのデータから $Z$ と $n_\\mathrm{L}$ を決めて，このイオンを化学式で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) のイオンの $n=n_\\mathrm{L}$ の状態と水素原子の $n=1$ の状態について，電子のエネルギーと軌道半径をそれぞれ比べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$r_n\\propto Z^{-1}$，$E_n\\propto Z^{2}$．$\\ce{He+}$ の $n=1$：半径 $0.0265\\,\\mathrm{nm}$，イオン化エネルギー $54.4\\,\\mathrm{eV}$"
+   },
+   {
+    "id": "2",
+    "tex": "$4\\left(\\dfrac1{n_1^2}-\\dfrac1{n_2^2}\\right)=\\dfrac1{n_1'^2}-\\dfrac1{n_2'^2}$．とくに $n_1=2n_1'$，$n_2=2n_2'$（$\\ce{He+}$ の上下の準位がともに偶数）なら必ず一致する．$\\ce{He+}$ の $n=6\\to4$．$n=4\\to3$ の光は $469\\,\\mathrm{nm}$ で，水素原子は同じ波長の光を出さない"
+   },
+   {
+    "id": "3",
+    "tex": "収束波長はエネルギー $13.6Z^2/n_\\mathrm{L}^2$ だけで決まり $Z/n_\\mathrm{L}$ の比しか分からない（水素の $n_\\mathrm{L}=1$ の系列と区別できない）から．$Z=3$，$n_\\mathrm{L}=3$ で，$\\ce{Li^2+}$"
+   },
+   {
+    "id": "4",
+    "tex": "エネルギーは等しい（どちらも $-13.6\\,\\mathrm{eV}$）が，軌道半径は $\\ce{Li^2+}$ の方が 3 倍大きい（$0.159\\,\\mathrm{nm}$ と $0.0529\\,\\mathrm{nm}$）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $e^2\\to Ze^2$ とすると\n\\[ r_n=\\frac{n^2h^2}{4\\pi^2kmZe^2}=\\frac{0.0529\\,n^2}{Z}\\,\\mathrm{nm},\\qquad E_n=-\\frac{2\\pi^2k^2mZ^2e^4}{n^2h^2}=-\\frac{13.6\\,Z^2}{n^2}\\,\\mathrm{eV} \\]\nなので $\\boldsymbol{r_n\\propto Z^{-1}}$，$\\boldsymbol{E_n\\propto Z^{2}}$．核の引力が強いほど電子は内側の軌道を回り，強く束縛される．\n$\\ce{He+}$（$Z=2$）の $n=1$：半径 $0.0529/2=\\boldsymbol{0.0265\\,\\mathrm{nm}}$，イオン化エネルギー $13.6\\times4=\\boldsymbol{54.4\\,\\mathrm{eV}}$（He の第 2 イオン化エネルギーにあたる）．\n\n\\textbf{(2)} 光子のエネルギーが等しい条件は\n\\[ 13.6\\times2^2\\left(\\frac1{n_1^2}-\\frac1{n_2^2}\\right)=13.6\\left(\\frac1{n_1'^2}-\\frac1{n_2'^2}\\right) \\iff \\frac1{(n_1/2)^2}-\\frac1{(n_2/2)^2}=\\frac1{n_1'^2}-\\frac1{n_2'^2} \\]\nこれが一致の条件である．とくに $\\boldsymbol{n_1=2n_1',\\ n_2=2n_2'}$（$\\ce{He+}$ の上下の準位がともに偶数）の遷移は，水素の遷移と必ず重なる（このほかに $\\ce{He+}$ の $9\\to6$ と水素の $36\\to4$ のような偶然の一致もある）．水素の $3\\to2$ に対応するのは $\\ce{He+}$ の $\\boldsymbol{6\\to4}$．\n$\\ce{He+}$ の $4\\to3$：$E=54.4\\left(\\dfrac19-\\dfrac1{16}\\right)=54.4\\times\\dfrac{7}{144}=2.644\\,\\mathrm{eV}$，$\\lambda=1240/2.644=\\boldsymbol{469\\,\\mathrm{nm}}$（可視光）．\n水素がこの波長を出すには $\\dfrac1{n_1'^2}-\\dfrac1{n_2'^2}=\\dfrac{4\\times7}{144}=\\dfrac{7}{36}$ となる整数の組が必要である．$n_1'=1$ なら左辺は $\\tfrac34$ 以上，$n_1'\\geqq3$ なら $\\tfrac19$ 未満で，どちらも $\\tfrac{7}{36}$ にならない．$n_1'=2$ なら $\\dfrac1{n_2'^2}=\\dfrac14-\\dfrac{7}{36}=\\dfrac1{18}$ となるが，$n_2'=\\sqrt{18}$ は整数でない．よって\\textbf{水素原子は出さない}．このような線は，同じ放電管の中で $\\ce{He+}$ を水素と見分ける手がかりになる．\n\n\\textbf{(3)} 収束する光のエネルギーは $n_\\mathrm{L}$ からの電離エネルギー $\\dfrac{13.6Z^2}{n_\\mathrm{L}^2}$ で，$Z/n_\\mathrm{L}$ の比が同じなら同じ値になる．実際 $1240/91.2=13.6\\,\\mathrm{eV}$ は水素の $n_\\mathrm{L}=1$（ライマン系列）とも $\\ce{He+}$ の $n_\\mathrm{L}=2$ とも一致するので，\\textbf{$Z/n_\\mathrm{L}=1$ しか分からない}．\n最も長い波長の線は $n_\\mathrm{L}+1\\to n_\\mathrm{L}$ の遷移で，収束の光とのエネルギー比は\n\\[ \\frac{E_\\text{最長}}{E_\\infty}=\\frac{1/n_\\mathrm{L}^2-1/(n_\\mathrm{L}+1)^2}{1/n_\\mathrm{L}^2}=1-\\frac{n_\\mathrm{L}^2}{(n_\\mathrm{L}+1)^2}=\\frac{91.2}{208}=0.438 \\]\n$n_\\mathrm{L}=1,2,3,4$ ではこの値は $0.750,\\ 0.556,\\ 0.4375,\\ 0.360$ となり，$0.438$ に一致するのは $\\boldsymbol{n_\\mathrm{L}=3}$ だけ．よって $Z=3$ で，イオンは $\\boldsymbol{\\ce{Li^2+}}$．\n\n\\textbf{(4)} $\\ce{Li^2+}$ の $n=3$：$E=-13.6\\times\\dfrac{9}{9}=-13.6\\,\\mathrm{eV}$，$r=0.0529\\times\\dfrac{9}{3}=0.159\\,\\mathrm{nm}$．\n水素の $n=1$：$E=-13.6\\,\\mathrm{eV}$，$r=0.0529\\,\\mathrm{nm}$．\n\\textbf{エネルギーは等しいが，半径は $\\ce{Li^2+}$ の方が 3 倍}大きい（$E\\propto Z^2/n^2$，$r\\propto n^2/Z$ で依存のしかたが異なるため）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ボーアモデルで核電荷を $Ze$ にすると準位のエネルギーは $Z^2/n^2$，半径は $n^2/Z$ に比例するので，準位が偶数どうしの $\\ce{He+}$ の遷移は水素の遷移と重なる一方，重ならない線もある．系列の収束波長は $Z/n_\\mathrm{L}$ の比しか決めないため，最も長い波長の線とのエネルギー比を組み合わせて初めて核電荷と下の準位が一意に決まる．"
+ },
+ "concepts": [
+  "electron-config",
+  "transition-metals",
+  "nitrogen-phosphorus"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ボーアモデル",
+  "水素類似イオン",
+  "発光スペクトル",
+  "系列",
+  "イオン化エネルギー"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

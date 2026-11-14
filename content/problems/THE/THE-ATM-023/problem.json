@@ -1,0 +1,123 @@
+{
+ "id": "THE-ATM-023",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-01",
+ "topic": "水素原子のエネルギー準位と発光スペクトル・電離",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水素原子の電子のエネルギーは，主量子数 $n$（$n=1,2,3,\\cdots$，$n=1,2,3$ がそれぞれ K 殻，L 殻，M 殻）を用いて，原子 1 個あたり\n\\[ E_n=-\\frac{2.18\\times10^{-18}}{n^2}\\ \\mathrm{J} \\]\nと表される．電子が高い準位から低い準位に移るとき，エネルギー差に等しいエネルギーの光子が 1 個放出され，その波長 $\\lambda$ は $\\lambda=\\dfrac{hc}{\\Delta E}$ で与えられる．$hc=1.99\\times10^{-25}\\,\\mathrm{J\\cdot m}$，アボガドロ定数 $6.02\\times10^{23}\\,/\\mathrm{mol}$ とし，可視光の波長の範囲は $400\\sim700\\,\\mathrm{nm}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "電子が $n=4$ から $n=2$ に移るときに放出される光の波長は何 $\\mathrm{nm}$ か．有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "$n=2$ に移る遷移でできる一群の線（バルマー系列）のうち，可視光の範囲に入る線は何本か．また，この系列の線の波長はある値より短くならない．その値は何 $\\mathrm{nm}$ か（有効数字 3 桁）．"
+     },
+     {
+      "id": "3",
+      "tex": "$n=1$ の状態の水素原子 $1\\,\\mathrm{mol}$ をすべて電離させるのに必要なエネルギーは何 $\\mathrm{kJ}$ か．また，$n=2$ の状態からではどうか．それぞれ有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "波長 $300\\,\\mathrm{nm}$ の光子 1 個を吸収して電離できるのは，$n=1$ の状態の水素原子か，$n=2$ の状態の水素原子か．両方・どちらも不可も含めて答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：水素原子のエネルギー準位と発光スペクトル・電離",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$487\\,\\mathrm{nm}$"
+   },
+   {
+    "id": "2",
+    "tex": "4 本，$365\\,\\mathrm{nm}$"
+   },
+   {
+    "id": "3",
+    "tex": "$n=1$ から $1.31\\times10^{3}\\,\\mathrm{kJ}$，$n=2$ から $328\\,\\mathrm{kJ}$"
+   },
+   {
+    "id": "4",
+    "tex": "$n=2$ の状態の水素原子だけ"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　$\\Delta E=2.18\\times10^{-18}\\left(\\dfrac{1}{n_{\\text{下}}^2}-\\dfrac{1}{n_{\\text{上}}^2}\\right)\\,\\mathrm{J}$ で，波長は $\\Delta E$ に反比例する．準位の間隔は $n$ が大きいほど狭くなり，$n\\to\\infty$ で $E=0$（電子が原子から離れた状態）に近づく．\n\n\\textbf{(1)}　$\\Delta E=2.18\\times10^{-18}\\left(\\dfrac14-\\dfrac1{16}\\right)=4.09\\times10^{-19}\\,\\mathrm{J}$．\n\\[ \\lambda=\\frac{1.99\\times10^{-25}}{4.0875\\times10^{-19}}=4.87\\times10^{-7}\\,\\mathrm{m}=\\boldsymbol{487\\,\\mathrm{nm}} \\]\n\n\\textbf{(2)}　上の準位 $n$ からの波長を順に求めると，$n=3$：$657$，$n=4$：$487$，$n=5$：$435$，$n=6$：$411$，$n=7$：$398\\,\\mathrm{nm}$．$n$ が大きいほど $\\Delta E$ が大きく波長は短くなるので，$400\\,\\mathrm{nm}$ 以上に入るのは $n=3\\sim6$ の $\\boldsymbol{4\\,\\text{本}}$．\n$n\\to\\infty$ の極限で $\\Delta E=\\dfrac{2.18\\times10^{-18}}{4}=5.45\\times10^{-19}\\,\\mathrm{J}$ が最大なので，最も短い波長は $\\dfrac{1.99\\times10^{-25}}{5.45\\times10^{-19}}=3.65\\times10^{-7}\\,\\mathrm{m}=\\boldsymbol{365\\,\\mathrm{nm}}$（紫外部）．線は $365\\,\\mathrm{nm}$ に近づくほど密集する．\n\n\\textbf{(3)}　電離は $n\\to\\infty$ への移動である．$n=1$ から：$2.18\\times10^{-18}\\times6.02\\times10^{23}=1.312\\times10^{6}\\,\\mathrm{J}=\\boldsymbol{1.31\\times10^{3}\\,\\mathrm{kJ}}$（水素のイオン化エネルギー）．\n$n=2$ から：その $\\tfrac14$ で $\\boldsymbol{328\\,\\mathrm{kJ}}$．\n\n\\textbf{(4)}　$300\\,\\mathrm{nm}$ の光子のエネルギーは $\\dfrac{1.99\\times10^{-25}}{3.00\\times10^{-7}}=6.63\\times10^{-19}\\,\\mathrm{J}$．\n$n=2$ からの電離には $5.45\\times10^{-19}\\,\\mathrm{J}$ で足りるが，$n=1$ からの $2.18\\times10^{-18}\\,\\mathrm{J}$ には足りない．よって $\\boldsymbol{n=2\\ \\text{の状態の水素原子だけ}}$ が電離する．（余った $1.2\\times10^{-19}\\,\\mathrm{J}$ は飛び出した電子の運動エネルギーになる．）同じ原子でも，どの準位にあるかで電離に必要なエネルギーが大きく違う．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "水素原子の準位は E_n∝−1/n² で，遷移で出る光の波長はエネルギー差に反比例する．同じ下の準位へ落ちる系列では上の準位が高いほど波長が短くなって系列の限界（n→∞）に近づくので，可視光に入る線の数が限られる．電離は n→∞ への遷移で，必要なエネルギーは元の準位によって 1/n² 倍に変わる．"
+ },
+ "concepts": [
+  "electron-config",
+  "transition-metals",
+  "periodicity"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "原子スペクトル",
+  "エネルギー準位",
+  "バルマー系列",
+  "イオン化エネルギー",
+  "光子"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

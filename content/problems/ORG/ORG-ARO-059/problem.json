@@ -1,0 +1,123 @@
+{
+ "id": "ORG-ARO-059",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-05",
+ "topic": "アルコール成分を酸化すると酸成分になるエステル（RCOOCH₂R）の構造決定",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "structure",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "分子式 $\\ce{C16H16O2}$ で表される芳香族のエステル X がある．X を加水分解するとカルボン酸 P とアルコール Q が得られた．Q を硫酸酸性の二クロム酸カリウム水溶液でおだやかに酸化すると，アルデヒドを経て P と同じ化合物が得られた．ただし，このおだやかな酸化ではベンゼン環に結合したアルキル基は酸化されないものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "Q は第何級アルコールか．理由とともに答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "P と Q の炭素原子の数をそれぞれ答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "X として考えられる構造は何通りあるか．すべて示性式で示せ（ベンゼン環上の置換基の位置は o-，m-，p- で区別して示せ）．"
+     },
+     {
+      "id": "4",
+      "tex": "P を過マンガン酸カリウムで十分に酸化すると，2価カルボン酸 S が得られた．S のベンゼン環の水素原子1個を塩素原子で置き換えた化合物は1種類しかなかった．X の示性式を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：アルコール成分を酸化すると酸成分になるエステル（RCOOCH₂R）の構造決定",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "第一級アルコール（酸化でアルデヒドを経てカルボン酸になるのは第一級アルコールだけ）"
+   },
+   {
+    "id": "2",
+    "tex": "P：8，Q：8"
+   },
+   {
+    "id": "3",
+    "tex": "4通り：$\\ce{CH3C6H4COOCH2C6H4CH3}$（両方の $\\ce{CH3}$ が o-，m-，p- のいずれかでそろった3通り），$\\ce{C6H5CH2COOCH2CH2C6H5}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{CH3C6H4COOCH2C6H4CH3}$（2つのメチル基がともに p- 位）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 酸化されてアルデヒド，さらにカルボン酸になるのは $\\ce{-CH2OH}$ をもつ\\textbf{第一級アルコール}である（第二級はケトンで止まり，第三級は酸化されにくい）．\n\n\\textbf{(2)} Q を $\\ce{R-CH2OH}$ とすると，酸化生成物は $\\ce{R-COOH}$ で，これが P である．したがって X は\n\\[ \\ce{R-COO-CH2-R} \\]\nと書け，R は酸側とアルコール側で同じ基である．R を $\\mathrm{C}_c\\mathrm{H}_h$ とすると X は $\\mathrm{C}_{2c+2}\\mathrm{H}_{2h+2}\\mathrm{O_2}$ なので $2c+2=16$，$2h+2=16$ より $c=7$，$h=7$，R は $\\ce{C7H7}$．P（$\\ce{C7H7COOH}$）も Q（$\\ce{C7H7CH2OH}$）も炭素数は \\textbf{8} である．\n\n\\textbf{(3)} ベンゼン環を含む $\\ce{C7H7-}$ は，メチルフェニル基 $\\ce{CH3C6H4-}$（o-，m-，p- の3種）とベンジル基 $\\ce{C6H5CH2-}$ の4種類．R は酸側・アルコール側で同じなので，X は\n\\begin{itemize}\n\\item $\\ce{CH3C6H4COOCH2C6H4CH3}$：$\\ce{CH3}$ の位置が両側とも o-，m-，p- のいずれか（3通り．たとえば p-メチル安息香酸 + p-メチルベンジルアルコール）\n\\item $\\ce{C6H5CH2COOCH2CH2C6H5}$：フェニル酢酸 + 2-フェニルエタノール\n\\end{itemize}\nの \\textbf{4通り}．$\\ce{C6H5CH(CH3)OH}$ のような第二級アルコールは酸化してもケトンになるので含まれない．\n\n\\textbf{(4)} P を $\\ce{KMnO4}$ で十分に酸化すると，ベンゼン環に結合した炭素はすべて $\\ce{-COOH}$ になる．\n\\begin{itemize}\n\\item フェニル酢酸 → 安息香酸（1価）なので不適．\n\\item o-，m-，p-メチル安息香酸 → それぞれフタル酸，イソフタル酸，テレフタル酸（2価）．\n\\end{itemize}\n環の H を Cl に置き換えた化合物の数は，フタル酸 2種，イソフタル酸 3種，テレフタル酸 1種（4つの H がすべて同等）．よって S はテレフタル酸，P は p-メチル安息香酸，Q は p-メチルベンジルアルコールで，X は $\\boldsymbol{\\ce{CH3C6H4COOCH2C6H4CH3}}$（ともに p- 位）である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "アルコール成分を酸化すると酸成分と同じ化合物になるエステルは R−COO−CH₂−R の形に限られ，分子式から R が決まる．アルコール側は第一級に限られ，R の候補を数え上げたうえで，側鎖の完全酸化と環の置換体の数で1つに絞る．"
+ },
+ "concepts": [
+  "aromatic",
+  "alcohol-carbonyl",
+  "carboxylic-ester"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "エステル",
+  "構造決定",
+  "第一級アルコールの酸化",
+  "側鎖の酸化",
+  "テレフタル酸"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

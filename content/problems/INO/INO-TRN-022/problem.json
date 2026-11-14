@@ -1,0 +1,110 @@
+{
+ "id": "INO-TRN-022",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-07",
+ "topic": "銅(I) の不均化と沈殿による安定化（CuI・CuCl）",
+ "course": "化学",
+ "level": 5,
+ "minutes": 35,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "銅(I) イオン $\\ce{Cu+}$ は水溶液中で不安定で，自己酸化還元（不均化）を起こす．しかし，$\\ce{Cu+}$ が難溶性の塩をつくる陰イオンが共存すると，銅(I) の化合物が安定に存在できるようになる．$25\\,^\\circ\\mathrm{C}$ で次の値を用いる．\n\\[ \\ce{2Cu+ <=> Cu^2+ + Cu}\\quad K_{\\mathrm d}=\\frac{[\\ce{Cu^2+}]}{[\\ce{Cu+}]^2}=1.0\\times10^{6}\\,\\mathrm{L/mol} \\]\n$\\ce{CuI}$ の溶解度積 $K_{\\mathrm{sp}}(\\ce{CuI})=1.0\\times10^{-12}\\,(\\mathrm{mol/L})^2$，$\\ce{CuCl}$ の溶解度積 $K_{\\mathrm{sp}}(\\ce{CuCl})=2.0\\times10^{-7}\\,(\\mathrm{mol/L})^2$．\n\\[ \\ce{2Cu^2+ + 2I- <=> 2Cu+ + I2}\\quad K_{\\mathrm a}=\\frac{[\\ce{Cu+}]^2[\\ce{I2}]}{[\\ce{Cu^2+}]^2[\\ce{I-}]^2}=1.0\\times10^{-13}\\,\\mathrm{L/mol} \\]\n銅(I) の錯イオン（$\\ce{[CuCl2]-}$ など）や $\\ce{I3-}$ の生成は考えない．体積変化は無視する．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "酸化銅(I) $\\ce{Cu2O}$ $0.0100\\,\\mathrm{mol}$ を過剰の希硫酸に加えて全体を $1.0\\,\\mathrm{L}$ にすると，赤色の固体が残り，水溶液は青くなった．この変化をイオン反応式で示し，平衡での $[\\ce{Cu+}]$ を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "ヨウ化物イオンが存在すると，(1) の不均化とは逆向きの反応 $\\ce{Cu + Cu^2+ + 2I- <=> 2CuI}$ が進む．この反応の平衡定数を $K_{\\mathrm d}$ と $K_{\\mathrm{sp}}(\\ce{CuI})$ で表して値を求め，平衡で $[\\ce{I-}]=0.10\\,\\mathrm{mol/L}$ のときに銅の単体と共存できる $[\\ce{Cu^2+}]$ を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\ce{Cu^2+}$ を $1.0\\times10^{-2}\\,\\mathrm{mol/L}$ 含む水溶液 $1.0\\,\\mathrm{L}$ に銅の粉末を過剰に加え，塩化物イオンを加えて $\\ce{Cu + Cu^2+ + 2Cl- <=> 2CuCl}$ を進める．$\\ce{Cu^2+}$ の $99\\,\\%$ 以上を $\\ce{CuCl}$ に変えるには，塩化物イオンをはじめに何 $\\mathrm{mol/L}$ 以上加える必要があるか．有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "硫酸銅(II) 水溶液にヨウ化カリウム水溶液を加えると，白色の沈殿と $\\ce{I2}$ が生じる（ヨウ素滴定による $\\ce{Cu^2+}$ の定量に利用される）．$K_{\\mathrm a}$ の値から，沈殿ができない場合には $\\ce{Cu^2+}$ は $\\ce{I-}$ をほとんど酸化できないことがわかる．反応 $\\ce{2Cu^2+ + 4I- <=> 2CuI + I2}$ の平衡定数を求め，平衡で $[\\ce{I-}]=0.10\\,\\mathrm{mol/L}$，$[\\ce{I2}]=5.0\\times10^{-3}\\,\\mathrm{mol/L}$ のとき，はじめ $1.0\\times10^{-2}\\,\\mathrm{mol/L}$ あった $\\ce{Cu^2+}$ の何 \\% が未反応で残るかを有効数字 2 桁で求めよ．必要なら $\\sqrt5=2.24$ を用いよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{Cu2O + 2H+ -> Cu + Cu^2+ + H2O}$，$[\\ce{Cu+}]=1.0\\times10^{-4}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "2",
+    "tex": "$K=\\dfrac{1}{K_{\\mathrm d}K_{\\mathrm{sp}}(\\ce{CuI})^2}=1.0\\times10^{18}\\,(\\mathrm{mol/L})^{-3}$，$[\\ce{Cu^2+}]=1.0\\times10^{-16}\\,\\mathrm{mol/L}$（銅(II) はほぼ完全に $\\ce{CuI}$ に変わる）"
+   },
+   {
+    "id": "3",
+    "tex": "$4.0\\times10^{-2}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "4",
+    "tex": "$K=\\dfrac{K_{\\mathrm a}}{K_{\\mathrm{sp}}(\\ce{CuI})^2}=1.0\\times10^{11}\\,(\\mathrm{mol/L})^{-5}$，未反応の $\\ce{Cu^2+}$ は $0.22\\,\\%$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\ce{Cu2O}$ は酸に溶けて $\\ce{Cu+}$ を生じるが，$K_{\\mathrm d}$ が大きいので直ちに不均化する．全体として\n\\[ \\ce{Cu2O + 2H+ -> Cu + Cu^2+ + H2O} \\]\n（赤色の固体は銅，青色は $\\ce{Cu^2+}$）．$\\ce{Cu+}$ はほとんど残らないので $[\\ce{Cu^2+}]\\approx1.0\\times10^{-2}\\,\\mathrm{mol/L}$ とおくと\n\\[ [\\ce{Cu+}]=\\sqrt{\\frac{[\\ce{Cu^2+}]}{K_{\\mathrm d}}}=\\sqrt{\\frac{1.0\\times10^{-2}}{1.0\\times10^{6}}}=\\boldsymbol{1.0\\times10^{-4}\\,\\mathrm{mol/L}} \\]\n$\\ce{Cu+}$ は溶けている銅の約 1 \\% にすぎず，近似は妥当（厳密に $[\\ce{Cu+}]+2[\\ce{Cu^2+}]=0.0200$ を解いても $9.98\\times10^{-5}$）．\n\n\\textbf{(2) 沈殿による逆転}　$\\ce{Cu + Cu^2+ <=> 2Cu+}$（$1/K_{\\mathrm d}$）と $\\ce{Cu+ + I- <=> CuI}$（$1/K_{\\mathrm{sp}}$，2 回）の和なので\n\\[ K=\\frac{1}{[\\ce{Cu^2+}][\\ce{I-}]^2}=\\frac{1}{K_{\\mathrm d}K_{\\mathrm{sp}}(\\ce{CuI})^2}=\\frac{1}{1.0\\times10^{6}\\times(1.0\\times10^{-12})^2}=\\boldsymbol{1.0\\times10^{18}\\,(\\mathrm{mol/L})^{-3}} \\]\n$[\\ce{Cu^2+}]=\\dfrac{1}{K[\\ce{I-}]^2}=\\dfrac{1}{1.0\\times10^{18}\\times1.0\\times10^{-2}}=\\boldsymbol{1.0\\times10^{-16}\\,\\mathrm{mol/L}}$．\\\\\n$\\ce{CuI}$ が非常に溶けにくいため $[\\ce{Cu+}]$ が $K_{\\mathrm{sp}}/[\\ce{I-}]=1.0\\times10^{-11}$ まで下がり，不均化の平衡が左に大きく移動する．銅(I) は $\\ce{CuI}$ として安定になる．\n\n\\textbf{(3) 条件の判断（塩化物）}　同様に $K'=\\dfrac{1}{K_{\\mathrm d}K_{\\mathrm{sp}}(\\ce{CuCl})^2}=\\dfrac{1}{1.0\\times10^{6}\\times4.0\\times10^{-14}}=2.5\\times10^{7}\\,(\\mathrm{mol/L})^{-3}$．\\\\\n残る $\\ce{Cu^2+}$ を $1.0\\times10^{-4}\\,\\mathrm{mol/L}$（$1\\,\\%$）以下にするには，平衡での $[\\ce{Cl-}]$ が\n\\[ [\\ce{Cl-}]^2\\ge\\frac{1}{K'[\\ce{Cu^2+}]}=\\frac{1}{2.5\\times10^{7}\\times1.0\\times10^{-4}}=4.0\\times10^{-4},\\qquad[\\ce{Cl-}]\\ge2.0\\times10^{-2}\\,\\mathrm{mol/L} \\]\nであればよい．ただし反応で $\\ce{Cl-}$ が消費される：$\\ce{Cu^2+}$ $9.9\\times10^{-3}\\,\\mathrm{mol}$ が反応すると $\\ce{CuCl}$ が $2\\times9.9\\times10^{-3}$ mol でき，$\\ce{Cl-}$ も同じ $1.98\\times10^{-2}\\,\\mathrm{mol}$ だけ減る．はじめに必要な量は\n\\[ 2.0\\times10^{-2}+1.98\\times10^{-2}=3.98\\times10^{-2}\\to\\boldsymbol{4.0\\times10^{-2}\\,\\mathrm{mol/L}} \\]\n（このとき溶けている $\\ce{Cu+}$ は $K_{\\mathrm{sp}}/[\\ce{Cl-}]=1.0\\times10^{-5}\\,\\mathrm{mol/L}$ で無視できる．）消費される量が平衡で残すべき量と同程度なので，消費を忘れると答えが半分になってしまう．$\\ce{CuCl}$ は $\\ce{CuI}$ よりずっと溶けやすいので，$\\ce{I-}$ のときと違い，かなりの濃度の $\\ce{Cl-}$ が必要になる．\n\n\\textbf{(4) ヨウ素滴定の原理}　$K_{\\mathrm a}=1.0\\times10^{-13}$ はきわめて小さく，$\\ce{Cu+}$ が溶液中にとどまる限り $\\ce{Cu^2+}$ は $\\ce{I-}$ を酸化できない．しかし $\\ce{Cu+ + I- -> CuI}$ が 2 回加わると\n\\[ K=\\frac{[\\ce{I2}]}{[\\ce{Cu^2+}]^2[\\ce{I-}]^4}=\\frac{K_{\\mathrm a}}{K_{\\mathrm{sp}}(\\ce{CuI})^2}=\\frac{1.0\\times10^{-13}}{1.0\\times10^{-24}}=\\boldsymbol{1.0\\times10^{11}\\,(\\mathrm{mol/L})^{-5}} \\]\n与えられた条件で\n\\[ [\\ce{Cu^2+}]^2=\\frac{5.0\\times10^{-3}}{1.0\\times10^{11}\\times(0.10)^4}=5.0\\times10^{-10},\\qquad[\\ce{Cu^2+}]=2.24\\times10^{-5}\\,\\mathrm{mol/L} \\]\nはじめの $1.0\\times10^{-2}$ に対して $\\boldsymbol{0.22\\,\\%}$ しか残らず，反応はほぼ完全に進む．$\\ce{I-}$ を大過剰にするほど（$[\\ce{I-}]^4$ で効く）反応は完全になる．沈殿の生成が酸化還元の向きを逆転させる例である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "水溶液中の Cu⁺ は不均化して Cu と Cu²⁺ になるが，Cu⁺ と難溶性塩をつくる陰イオンが共存すると平衡定数が 1/(K_d·Ksp²) となって逆向き（Cu＋Cu²⁺→2CuX）が進む．同じ考えで，単独では起こらない Cu²⁺ による I⁻ の酸化が CuI の沈殿によって進むことを平衡定数の積から示す．"
+ },
+ "concepts": [
+  "transition-metals",
+  "precipitation",
+  "halogen"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "銅(I)",
+  "不均化",
+  "溶解度積",
+  "ヨウ素滴定",
+  "連立平衡",
+  "酸化還元"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

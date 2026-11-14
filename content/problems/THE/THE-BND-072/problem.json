@@ -1,0 +1,109 @@
+{
+ "id": "THE-BND-072",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-03",
+ "topic": "閃亜鉛鉱型とウルツ鉱型の硫化カドミウムの密度の比較",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "硫化カドミウム $\\ce{CdS}$ には，閃亜鉛鉱型とウルツ鉱型の 2 つの結晶構造がある．どちらも $\\ce{S^2-}$ が最密充填構造をつくり，そのすき間のうち 4 個の $\\ce{S^2-}$ に囲まれた四面体形のすき間に $\\ce{Cd^2+}$ が入っている．閃亜鉛鉱型では $\\ce{S^2-}$ が立方最密充填（面心立方格子），ウルツ鉱型では六方最密充填をとる．どちらの構造でも，最も近い $\\ce{S^2-}$ どうしの距離は $d=0.41\\,\\mathrm{nm}$ とする．\n原子量は S = 32，Cd = 112，アボガドロ定数は $6.0\\times10^{23}\\,/\\mathrm{mol}$，$\\sqrt2=1.41$，$0.41^3=0.0689$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "最密充填構造では，$\\ce{S^2-}$ 1 個あたり八面体形のすき間が 1 個，四面体形のすき間が 2 個ある．$\\ce{CdS}$ では，四面体形のすき間のうち何分の 1 が $\\ce{Cd^2+}$ で占められているか．"
+     },
+     {
+      "id": "2",
+      "tex": "閃亜鉛鉱型の単位格子（立方体）の一辺 $a$ を $d$ を用いて表し，単位格子に含まれる $\\ce{CdS}$ の組の数と，$\\ce{Cd^2+}$ の配位数を答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "閃亜鉛鉱型の $\\ce{CdS}$ の $\\ce{CdS}$ 1 組あたりの体積を $d$ で表し，結晶の密度を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "ウルツ鉱型の単位格子は，一辺 $d$，内角 60° と 120° のひし形を底面とし，高さ $c=\\sqrt{\\tfrac83}\\,d$ の柱で，$\\ce{S^2-}$ を 2 個（$\\ce{CdS}$ 2 組）含む．$\\ce{CdS}$ 1 組あたりの体積を $d$ で表し，閃亜鉛鉱型の密度と比べて大きい・小さい・等しいのいずれかを答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\dfrac12$"
+   },
+   {
+    "id": "2",
+    "tex": "$a=\\sqrt2\\,d$，4 組，配位数 4"
+   },
+   {
+    "id": "3",
+    "tex": "$\\dfrac{d^3}{\\sqrt2}$，$4.9\\,\\mathrm{g/cm^3}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\dfrac{d^3}{\\sqrt2}$，等しい"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　$\\ce{CdS}$ では $\\ce{Cd^2+}$ と $\\ce{S^2-}$ が同数．$\\ce{S^2-}$ 1 個あたり四面体形のすき間は 2 個なので，その $\\boldsymbol{\\tfrac12}$ が占められる（八面体形のすき間は空）．\n\n\\textbf{(2)}　面心立方格子では，面の対角線上で頂点と面の中心の $\\ce{S^2-}$ が最も近いので $\\sqrt2\\,a=2d$，すなわち $\\boldsymbol{a=\\sqrt2\\,d}$．\n$\\ce{S^2-}$ は $8\\times\\tfrac18+6\\times\\tfrac12=4$ 個．$\\ce{Cd^2+}$ は格子内の 8 個の四面体形すき間のうち 4 個に入るので，$\\ce{CdS}$ は $\\boldsymbol{4}$ \\textbf{組}．$\\ce{Cd^2+}$ は 4 個の $\\ce{S^2-}$ に囲まれるので配位数は $\\boldsymbol{4}$．\n\n\\textbf{(3)}　1 組あたりの体積は\n\\[ \\frac{a^3}{4}=\\frac{(\\sqrt2\\,d)^3}{4}=\\frac{2\\sqrt2\\,d^3}{4}=\\boldsymbol{\\frac{d^3}{\\sqrt2}} \\]\n$d=0.41\\times10^{-7}\\,\\mathrm{cm}$ より $d^3/\\sqrt2=0.0689\\times10^{-21}/1.41=4.89\\times10^{-23}\\,\\mathrm{cm^3}$．\n$\\ce{CdS}$ の式量は 144 なので\n\\[ \\rho=\\frac{144}{6.0\\times10^{23}\\times4.89\\times10^{-23}}\\fallingdotseq\\boldsymbol{4.9\\,\\mathrm{g/cm^3}} \\]\n\n\\textbf{(4)}　底面のひし形の面積は $d\\cdot d\\sin60^\\circ=\\dfrac{\\sqrt3}{2}d^2$．単位格子の体積は $\\dfrac{\\sqrt3}{2}d^2\\times\\sqrt{\\dfrac83}\\,d=\\sqrt2\\,d^3$ で，2 組を含むので 1 組あたり $\\dfrac{\\sqrt2\\,d^3}{2}=\\boldsymbol{\\dfrac{d^3}{\\sqrt2}}$．\n閃亜鉛鉱型と同じなので密度は\\textbf{等しい}．立方最密充填と六方最密充填は最密層の積み重ね方（ABCABC… と ABAB…）が違うだけで，どちらも充填率は同じ（74 %）であり，すき間への入り方も同じなので，1 組あたりの体積も同じになる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "陰イオンの最密充填の四面体形すき間の半分に陽イオンが入る構造では，立方最密（閃亜鉛鉱型，a=√2d，4 組）と六方最密（ウルツ鉱型，ひし形柱，2 組）のどちらでも 1 組あたりの体積は d³/√2 になる．積み重ね方が違っても充填の仕方が同じなら密度は等しい．"
+ },
+ "concepts": [
+  "chemical-bond",
+  "amphoteric",
+  "crystal"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "結晶格子",
+  "閃亜鉛鉱型",
+  "ウルツ鉱型",
+  "最密充填",
+  "密度"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

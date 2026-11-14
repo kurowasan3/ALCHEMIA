@@ -1,0 +1,124 @@
+{
+ "id": "ORG-HYD-033",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-02",
+ "topic": "塩化ビニルの製造（直接塩素化・熱分解・オキシ塩素化）と塩素の収支",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "pathway",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "塩化ビニルは，図のような 3 つの段階を組み合わせて工業的につくられている．\n(i) エチレンに塩素を付加させて化合物 X をつくる．\n(ii) X を熱分解して，塩化ビニルと塩化水素を得る．\n(iii) (ii)で生じた塩化水素を，触媒の存在下でエチレンおよび酸素と反応させ，X と水をつくる（オキシ塩素化）．できた X は(ii)に送る．\n原子量は H=1.0，C=12，O=16，Cl=35.5 とする．"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fig"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "X の名称と示性式を答え，(i)，(ii)の化学反応式を書け．"
+     },
+     {
+      "id": "2",
+      "tex": "(iii)の化学反応式を書け（係数は最も簡単な整数とする）．"
+     },
+     {
+      "id": "3",
+      "tex": "(ii)で生じた塩化水素を過不足なくすべて(iii)で使い，工場の外に塩化水素を出さないようにする．このとき(i)でつくる X と(iii)でつくる X の物質量の比を求めよ．また，工程全体を 1 つの化学反応式で表せ．"
+     },
+     {
+      "id": "4",
+      "tex": "塩化ビニル $1.00\\,\\mathrm{t}$ をつくるのに必要な塩素の質量は何 t か．(3)の工程の場合と，(iii)を行わず(ii)の塩化水素を副生成物として取り出す場合のそれぞれについて，有効数字 3 桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fig",
+   "role": "question",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "q-fig.svg",
+   "alt": "問題図：塩化ビニルの製造（直接塩素化・熱分解・オキシ塩素化）と塩素の収支",
+   "caption": ""
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "X：1,2-ジクロロエタン，$\\ce{CH2ClCH2Cl}$．(i) $\\ce{CH2=CH2 + Cl2 -> CH2ClCH2Cl}$　(ii) $\\ce{CH2ClCH2Cl -> CH2=CHCl + HCl}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{2CH2=CH2 + 4HCl + O2 -> 2CH2ClCH2Cl + 2H2O}$"
+   },
+   {
+    "id": "3",
+    "tex": "(i)：(iii)＝$1:1$．全体：$\\ce{4CH2=CH2 + 2Cl2 + O2 -> 4CH2=CHCl + 2H2O}$"
+   },
+   {
+    "id": "4",
+    "tex": "オキシ塩素化を組み合わせた場合：$0.568\\,\\mathrm{t}$，(iii)を行わない場合：$1.14\\,\\mathrm{t}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)(2) 各段階}　エチレンの二重結合に塩素が付加して 1,2-ジクロロエタン（X）ができ，これを熱分解すると隣り合う C から H と Cl が外れて（脱離）塩化ビニルになる．\n\\[\\ce{CH2=CH2 + Cl2 -> CH2ClCH2Cl}\\qquad \\ce{CH2ClCH2Cl -> CH2=CHCl + HCl}\\]\nオキシ塩素化では，$\\ce{HCl}$ の H が $\\ce{O2}$ に酸化されて水になり，Cl がエチレンに入る．\n\\[\\ce{2CH2=CH2 + 4HCl + O2 -> 2CH2ClCH2Cl + 2H2O}\\]\n\n\\textbf{(3) 塩化水素の収支}　(i)で X を $a\\,\\mathrm{mol}$，(iii)で $b\\,\\mathrm{mol}$ つくるとする．X はすべて(ii)で分解されるので $\\ce{HCl}$ が $(a+b)\\,\\mathrm{mol}$ 生じる．(iii)は X $1\\,\\mathrm{mol}$ あたり $\\ce{HCl}$ を $2\\,\\mathrm{mol}$ 使うので，過不足がない条件は\n\\[a+b=2b\\quad\\Longrightarrow\\quad a=b\\]\nよって $\\boldsymbol{1:1}$．$a=b=2$ として(i)×2，(ii)×4，(iii)×1 を足し，両辺の X と $\\ce{HCl}$ を消すと\n\\[\\ce{4CH2=CH2 + 2Cl2 + O2 -> 4CH2=CHCl + 2H2O}\\]\n\n\\textbf{(4) 塩素の必要量}　塩化ビニル $\\ce{C2H3Cl}$（分子量 62.5）$1.00\\,\\mathrm{t}$ は $\\dfrac{1.00\\times10^6}{62.5}=1.60\\times10^4\\,\\mathrm{mol}$．\n(3)の工程では全体の式より $\\ce{Cl2}$ は塩化ビニルの $\\dfrac{1}{2}$ で $8.00\\times10^3\\,\\mathrm{mol}$，$8.00\\times10^3\\times71=5.68\\times10^5\\,\\mathrm{g}$ より $\\boldsymbol{0.568\\,\\mathrm{t}}$．原料の Cl 原子がすべて塩化ビニルに入る．\n(iii)を行わないと，$\\ce{Cl2}$ $1\\,\\mathrm{mol}$ から塩化ビニル $1\\,\\mathrm{mol}$ しかできず，Cl の半分は $\\ce{HCl}$ として出ていく．$\\ce{Cl2}$ は $1.60\\times10^4\\,\\mathrm{mol}$，$1.60\\times10^4\\times71=1.136\\times10^6\\,\\mathrm{g}$ より $\\boldsymbol{1.14\\,\\mathrm{t}}$ で，2 倍必要になる．オキシ塩素化を組み合わせるのは，副生する塩化水素を原料として使い直し，塩素をむだなく使うためである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "エチレンへの塩素付加と熱分解（脱離）では Cl の半分が HCl として出てしまうが，その HCl をオキシ塩素化でエチレン・酸素と反応させて同じ中間体に戻すと，HCl の収支（生成＝消費）から 2 つの段階の比が 1:1 に決まり，原料の塩素がすべて塩化ビニルに入る．"
+ },
+ "concepts": [
+  "hydrocarbon",
+  "halogen",
+  "oxygen-sulfur"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "塩化ビニル",
+  "ジクロロエタン",
+  "オキシ塩素化",
+  "脱離反応",
+  "工業的製法",
+  "物質収支"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

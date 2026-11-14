@@ -1,0 +1,117 @@
+{
+ "id": "INO-TRN-041",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-07",
+ "topic": "鉄の高温酸化でできる二層の酸化皮膜：拡散律速の成長則（放物線則）と層の厚さの物質収支",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "表面積 $100\\,\\mathrm{cm^2}$ の鉄板を，酸素を入れた容器の中で一定の高温に保つと，鉄板の表面に内側から $\\ce{FeO}$ の層と $\\ce{Fe3O4}$ の層からなる緻密な酸化皮膜が生じた．消費された酸素の物質量を容器内の圧力から求めると，加熱開始からの時間 $t$ に対して次のようになった．\n\\[\n\\begin{array}{c|ccc}\nt\\ [\\mathrm h] & 1.0 & 4.0 & 9.0 \\\\ \\hline\n\\text{消費された } \\ce{O2}\\ [\\mathrm{mol}] & 2.0\\times10^{-3} & 4.0\\times10^{-3} & 6.0\\times10^{-3}\n\\end{array}\n\\]\n皮膜の中では鉄のイオンが外側へ移動して酸素と反応し，皮膜の成長の速さ（単位時間あたりの厚さ $L$ の増加）は $L$ に反比例するものとする．$\\ce{FeO}$ と $\\ce{Fe3O4}$ の層の厚さの比は常に $9:1$ で，密度は $\\ce{FeO}$ $5.70\\,\\mathrm{g/cm^3}$，$\\ce{Fe3O4}$ $5.18\\,\\mathrm{g/cm^3}$，$\\ce{Fe}$ $7.87\\,\\mathrm{g/cm^3}$，原子量は O$=16$，Fe$=56$ とする．皮膜の生成による表面積の変化は無視する．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "「成長の速さが $L$ に反比例する」とき，$L$ と $t$ の間にはどのような関係が成り立つか．次から選べ．また，表の測定結果がこの関係に合っていることを示せ．\\\\\nア　$L$ は $t$ に比例する　　イ　$L^2$ は $t$ に比例する　　ウ　$L$ は $t^2$ に比例する"
+     },
+     {
+      "id": "2",
+      "tex": "消費された酸素が $1.0\\times10^{-2}\\,\\mathrm{mol}$ に達するのは，加熱開始から何時間後か．有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "$t=4.0\\,\\mathrm h$ での $\\ce{FeO}$ 層と $\\ce{Fe3O4}$ 層の厚さ [$\\mu\\mathrm m$] を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$t=4.0\\,\\mathrm h$ までに酸化された鉄は，鉄板の厚さに換算して何 $\\mu\\mathrm m$ 分か．有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "皮膜にひびが入って酸素が直接鉄の表面に届くようになると，酸素の消費量と時間の関係はどうなると考えられるか．(1) の選択肢から選べ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "イ；消費された $\\ce{O2}$ の物質量 $n$ は皮膜の厚さに比例し，$n^2/t$ がどの時刻でも $4.0\\times10^{-6}\\,\\mathrm{mol^2/h}$ で一定である．"
+   },
+   {
+    "id": "2",
+    "tex": "$25$ 時間後"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{FeO}$ 層 $9.0\\,\\mu\\mathrm m$，$\\ce{Fe3O4}$ 層 $1.0\\,\\mu\\mathrm m$"
+   },
+   {
+    "id": "4",
+    "tex": "$5.5\\,\\mu\\mathrm m$"
+   },
+   {
+    "id": "5",
+    "tex": "ア"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 微小時間 $\\Delta t$ の厚さの増加を $\\Delta L=\\dfrac{k}{L}\\Delta t$（$k$ は定数）とすると $L\\,\\Delta L=k\\,\\Delta t$．$L\\,\\Delta L$ は $\\dfrac12L^2$ の増加分なので $\\dfrac12L^2=kt$，すなわち \\textbf{イ}：$L^2\\propto t$（放物線則）．皮膜が厚くなるほど鉄のイオンが通り抜ける距離が長くなり，成長が遅くなる．\\\\\n層の厚さの比が一定なので，消費された酸素 $n$ は皮膜の厚さ $L$ に比例し，$n^2\\propto t$ となるはず．表では $\\dfrac{n^2}{t}=\\dfrac{(2.0\\times10^{-3})^2}{1.0}=\\dfrac{(4.0\\times10^{-3})^2}{4.0}=\\dfrac{(6.0\\times10^{-3})^2}{9.0}=4.0\\times10^{-6}$ で一定であり，合っている（時間が 4 倍で $n$ は 2 倍にしかならないので，$n\\propto t$ のアではない）．\n\n\\textbf{(2)} $t=\\dfrac{(1.0\\times10^{-2})^2}{4.0\\times10^{-6}}=\\boldsymbol{25}$ 時間後．\n\n\\textbf{(3)} $t=4.0\\,\\mathrm h$ で消費された O 原子は $8.0\\times10^{-3}\\,\\mathrm{mol}$，表面 $1\\,\\mathrm{cm^2}$ あたり $8.0\\times10^{-5}\\,\\mathrm{mol}$．$\\ce{FeO}$ 層の厚さを $x\\,[\\mathrm{cm}]$ とすると $\\ce{Fe3O4}$ 層は $\\dfrac{x}{9}$．$1\\,\\mathrm{cm^3}$ あたりの O 原子は $\\ce{FeO}$ $\\dfrac{5.70}{72}=0.0792\\,\\mathrm{mol}$，$\\ce{Fe3O4}$ $\\dfrac{4\\times5.18}{232}=0.0893\\,\\mathrm{mol}$ なので\n\\[ 0.0792x+0.0893\\times\\frac{x}{9}=8.0\\times10^{-5} \\]\n$x=8.98\\times10^{-4}\\,\\mathrm{cm}$．$\\ce{FeO}$ 層 $\\boldsymbol{9.0\\,\\mu\\mathrm m}$，$\\ce{Fe3O4}$ 層 $\\boldsymbol{1.0\\,\\mu\\mathrm m}$．\n\n\\textbf{(4)} $1\\,\\mathrm{cm^2}$ あたりの Fe は，$\\ce{FeO}$ 中 $8.98\\times10^{-4}\\times\\dfrac{5.70}{72}=7.11\\times10^{-5}\\,\\mathrm{mol}$，$\\ce{Fe3O4}$ 中 $9.98\\times10^{-5}\\times\\dfrac{3\\times5.18}{232}=6.69\\times10^{-6}\\,\\mathrm{mol}$，計 $7.78\\times10^{-5}\\,\\mathrm{mol}$．鉄板の厚さにすると $\\dfrac{7.78\\times10^{-5}\\times56}{7.87}=5.53\\times10^{-4}\\,\\mathrm{cm}\\fallingdotseq\\boldsymbol{5.5\\,\\mu\\mathrm m}$．酸化皮膜（計約 $10.0\\,\\mu\\mathrm m$）は失われた鉄より厚く，表面をすき間なく覆うことができる．\n\n\\textbf{(5)} 酸素が直接鉄の表面に届くと，反応の速さは皮膜の厚さによらずほぼ一定になり，消費量は時間に比例する（\\textbf{ア}，直線則）．皮膜が保護的にはたらかなくなるので，酸化は速く進み続ける．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "緻密な酸化皮膜の中をイオンが拡散して成長するとき，成長の速さが厚さに反比例することから L² ∝ t（放物線則）を導き，酸素消費量の時間変化で成長則を判定する．層の厚さの比と密度・組成から O と Fe の物質収支をとって皮膜の厚さと失われた金属の厚さを結びつける．"
+ },
+ "concepts": [
+  "transition-metals",
+  "oxygen-sulfur"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "高温酸化",
+  "酸化皮膜",
+  "放物線則",
+  "拡散",
+  "物質収支",
+  "酸化鉄"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

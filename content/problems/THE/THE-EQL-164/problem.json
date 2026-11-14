@@ -1,0 +1,117 @@
+{
+ "id": "THE-EQL-164",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "トリクロロシランの水素還元によるケイ素の析出平衡（全圧・水素の割合の効果と析出・削れの判定）",
+ "course": "化学",
+ "level": 4,
+ "minutes": 25,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "高純度のケイ素をつくる工程では，加熱したケイ素の棒の表面でトリクロロシランを水素で還元してケイ素を析出させる．棒の表面に接する気体と固体のケイ素の間には，次の平衡が成り立つとみなせる（モデル）．\n\\[ \\ce{SiHCl3(g) + H2(g) <=> Si(s) + 3HCl(g)} \\]\nある温度でのこの反応の圧平衡定数を $K_p = \\dfrac{p_{\\mathrm{HCl}}^{\\,3}}{p_{\\mathrm{SiHCl_3}}\\,p_{\\mathrm{H_2}}}$（固体の Si は含めない）とする．反応器には $\\ce{SiHCl3}$ 1 mol あたり $\\ce{H2}$ を $r$ mol の割合で送り込み，全圧 $P$ 一定のもとで平衡に達するとし，送り込んだ $\\ce{SiHCl3}$ のうちケイ素として析出した割合を $x$ とする．ほかの反応は考えない．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "平衡時の気体の各成分の物質量と全物質量を $r$，$x$ で表し，$K_p$ を $r$，$x$，$P$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "$r = 10$，$P = 1.0\\times10^5\\,\\mathrm{Pa}$ で $x = 0.30$ であった．$K_p$ を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "同じ温度で $r = 10$ のまま全圧を $P = 5.0\\times10^4\\,\\mathrm{Pa}$ にしたときの $x$ を有効数字 2 桁で求めよ（$x$ を 0.01 刻みで代入して調べてよい）．また $x$ が (2) より大きくなるか小さくなるかを，平衡の移動の考え方でも説明せよ．"
+     },
+     {
+      "id": "4",
+      "tex": "同じ温度・全圧 $1.0\\times10^5\\,\\mathrm{Pa}$ で $r = 20$ にすると，$x = 0.44$ となる．$r = 10$ と $r = 20$ について，送り込んだ $\\ce{SiHCl3}$ 1 mol あたり，および送り込んだ $\\ce{H2}$ 1 mol あたりに析出するケイ素の物質量をそれぞれ求めて比べ，水素の割合を大きくすることの利点と欠点を述べよ．"
+     },
+     {
+      "id": "5",
+      "tex": "反応器の中の 2 か所で，ケイ素の表面に接する気体の分圧が次のようであった．同じ温度で，それぞれの場所でケイ素は析出するか，それとも削られて（気体に変わって）減るかを，理由とともに答えよ．\\\\\n(I) $p_{\\mathrm{SiHCl_3}} = 1.0\\times10^4\\,\\mathrm{Pa}$，$p_{\\mathrm{H_2}} = 8.5\\times10^4\\,\\mathrm{Pa}$，$p_{\\mathrm{HCl}} = 5.0\\times10^3\\,\\mathrm{Pa}$\\\\\n(II) $p_{\\mathrm{SiHCl_3}} = 2.0\\times10^3\\,\\mathrm{Pa}$，$p_{\\mathrm{H_2}} = 8.0\\times10^4\\,\\mathrm{Pa}$，$p_{\\mathrm{HCl}} = 1.8\\times10^4\\,\\mathrm{Pa}$"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{SiHCl3}$：$1-x$，$\\ce{H2}$：$r-x$，$\\ce{HCl}$：$3x$，全物質量 $1+r+x$．$K_p = \\dfrac{27x^3P}{(1-x)(r-x)(1+r+x)}$"
+   },
+   {
+    "id": "2",
+    "tex": "$9.5\\times10^2\\,\\mathrm{Pa}$"
+   },
+   {
+    "id": "3",
+    "tex": "$x = 0.37$．大きくなる．気体の分子の数が増える向き（右向き）の反応なので，全圧を下げるとその向きに平衡が移動する．"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{SiHCl3}$ 1 mol あたり：$r=10$ で $0.30\\,\\mathrm{mol}$，$r=20$ で $0.44\\,\\mathrm{mol}$．$\\ce{H2}$ 1 mol あたり：$r=10$ で $0.030\\,\\mathrm{mol}$，$r=20$ で $0.022\\,\\mathrm{mol}$．水素を増やすと高価な原料 $\\ce{SiHCl3}$ の利用率は上がるが，水素 1 mol あたりの析出量は減り，扱う気体の量（加熱・循環・分離の負担）が増える．"
+   },
+   {
+    "id": "5",
+    "tex": "(I) 析出する．(II) 削られて減る．反応商 $Q = \\dfrac{p_{\\mathrm{HCl}}^{\\,3}}{p_{\\mathrm{SiHCl_3}}\\,p_{\\mathrm{H_2}}}$ は (I) で $1.5\\times10^2\\,\\mathrm{Pa} < K_p$ なので右向きに，(II) で $3.6\\times10^4\\,\\mathrm{Pa} > K_p$ なので左向き（$\\ce{Si + 3HCl -> SiHCl3 + H2}$）に反応が進むから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\ce{SiHCl3}$ が $x$ mol 反応すると $\\ce{H2}$ も $x$ mol 減り，$\\ce{HCl}$ が $3x$ mol 生じる（Si は固体なので気体に数えない）．\n\\[ n_{\\mathrm{SiHCl_3}} = 1-x,\\quad n_{\\mathrm{H_2}} = r-x,\\quad n_{\\mathrm{HCl}} = 3x,\\quad n_{\\text{全}} = 1+r+x \\]\n分圧は（モル分率）$\\times P$ なので\n\\[ K_p = \\frac{\\left(\\dfrac{3x}{1+r+x}P\\right)^3}{\\dfrac{1-x}{1+r+x}P\\cdot\\dfrac{r-x}{1+r+x}P} = \\boldsymbol{\\frac{27x^3P}{(1-x)(r-x)(1+r+x)}} \\]\n気体の分子の数が 2 → 3 と 1 増えるので，$K_p$ は圧力の次元をもち，式に $P$ が 1 乗で残る．\n\n\\textbf{(2)} $K_p = \\dfrac{27\\times0.30^3\\times1.0\\times10^5}{0.70\\times9.70\\times11.30} = \\dfrac{7.29\\times10^4}{76.7} = 9.50\\times10^2 \\approx \\boldsymbol{9.5\\times10^2\\,\\mathrm{Pa}}$\n\n\\textbf{(3) 全圧を下げる}　$P = 5.0\\times10^4$ を入れて $f(x) = \\dfrac{27x^3\\times5.0\\times10^4}{(1-x)(10-x)(11+x)}$ を計算すると\n$f(0.36) = 9.0\\times10^2$，$f(0.37) = 9.9\\times10^2$ で，$9.5\\times10^2$ になるのは $x = 0.366$ 付近だから $\\boldsymbol{x = 0.37}$．\n右向きの反応では気体の物質量が増えるので，全圧を下げると（ルシャトリエの原理により）右へ平衡が移動し，析出の割合が大きくなる．式では $x$ を一定とすると $P$ が半分で右辺が半分になるので，$K_p$ を保つには $x$ が増えなければならない．なお，$r \\gg 1$ なので $(r-x)(1+r+x) \\approx r(1+r)$ と近似しても $x$ は 0.37 で変わらない（分母の誤差は 1 % 未満）．\n\n\\textbf{(4) 利用率の比較}\n\\begin{itemize}\n\\item $\\ce{SiHCl3}$ 1 mol あたりの析出量は $x$ そのもの：$r=10$ で $0.30\\,\\mathrm{mol}$，$r=20$ で $0.44\\,\\mathrm{mol}$．\n\\item $\\ce{H2}$ 1 mol あたりは $x/r$：$r=10$ で $0.030\\,\\mathrm{mol}$，$r=20$ で $0.022\\,\\mathrm{mol}$．\n\\end{itemize}\n水素を過剰にすると平衡が右へ移り，原料 $\\ce{SiHCl3}$ の利用率は上がる．しかし水素 1 mol あたりの析出量は下がり，反応器を流れる気体の総量がほぼ 2 倍になるので，加熱に要するエネルギーや，出口の気体から $\\ce{HCl}$・未反応の $\\ce{SiHCl3}$ を分けて水素を循環させる負担が増える．実際の工程ではこの兼ね合いで $r$ を選ぶ．\n\n\\textbf{(5) 反応商による向きの判定}　固体の Si があるので，反応商 $Q$ と $K_p$ を比べればよい．\n(I) $Q = \\dfrac{(5.0\\times10^3)^3}{1.0\\times10^4\\times8.5\\times10^4} = \\dfrac{1.25\\times10^{11}}{8.5\\times10^8} = 1.5\\times10^2\\,\\mathrm{Pa} < K_p$ → 右向きに進み，\\textbf{ケイ素が析出する}．\n(II) $Q = \\dfrac{(1.8\\times10^4)^3}{2.0\\times10^3\\times8.0\\times10^4} = \\dfrac{5.83\\times10^{12}}{1.6\\times10^8} = 3.6\\times10^4\\,\\mathrm{Pa} > K_p$ → 左向き，すなわち $\\ce{Si + 3HCl -> SiHCl3 + H2}$ が進み，\\textbf{ケイ素が削られる}．\n$\\ce{SiHCl3}$ が消費され $\\ce{HCl}$ がたまった気体（反応器の下流など）では，析出したケイ素がかえって削られうる．同じ反応の逆向きが，最初の工程（粗いケイ素と HCl から $\\ce{SiHCl3}$ をつくる反応）にあたることにも注意する．\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "固体が関わり気体の分子数が増える平衡 SiHCl₃ + H₂ ⇄ Si + 3HCl を，送り込む物質量の比と全圧一定の条件で圧平衡定数の式に直し，全圧を下げる・水素を過剰にする効果を数値で確かめる．原料の利用率と水素あたりの効率の兼ね合いを比べ，局所的な気体組成の反応商と平衡定数の大小から，ケイ素が析出するか逆に削られるかを判定する．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "carbon-silicon",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "圧平衡定数",
+  "固体を含む平衡",
+  "ルシャトリエの原理",
+  "反応商",
+  "高純度ケイ素"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

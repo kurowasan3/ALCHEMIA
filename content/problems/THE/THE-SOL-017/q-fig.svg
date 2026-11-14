@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 300" width="360" height="300" font-family="Noto Sans CJK JP, sans-serif" font-size="14" fill="none" stroke="currentColor">
+  <!-- U字管 -->
+  <path d="M110 30 V210 A60 60 0 0 0 230 210 V30" stroke-width="2"/>
+  <path d="M140 30 V210 A30 30 0 0 0 200 210 V30" stroke-width="2"/>
+  <!-- 液（左：水，右：水溶液） -->
+  <path d="M110 110 V210 A60 60 0 0 0 170 270 V240 A30 30 0 0 1 140 210 V110 Z" fill="currentColor" fill-opacity="0.08" stroke="none"/>
+  <path d="M170 270 A60 60 0 0 0 230 210 V110 H200 V210 A30 30 0 0 1 170 240 Z" fill="currentColor" fill-opacity="0.25" stroke="none"/>
+  <line x1="110" y1="110" x2="140" y2="110" stroke-width="1.5"/>
+  <!-- 半透膜 -->
+  <line x1="170" y1="240" x2="170" y2="270" stroke="#1f5fbf" stroke-width="4"/>
+  <!-- ピストンとおもり -->
+  <rect x="200" y="100" width="30" height="10" fill="currentColor" stroke="none"/>
+  <rect x="204" y="62" width="22" height="38" stroke-width="1.5"/>
+  <line x1="140" y1="110" x2="200" y2="110" stroke-dasharray="4 3" opacity="0.5"/>
+  <g fill="currentColor" stroke="none">
+    <text x="256" y="85">おもり 11 g</text>
+    <text x="256" y="110">ピストン</text>
+    <text x="30" y="160">水</text>
+    <text x="252" y="180">グルコース</text>
+    <text x="252" y="198">水溶液</text>
+    <text x="185" y="295">半透膜</text>
+  </g>
+  <line x1="254" y1="80" x2="228" y2="80" stroke-width="1"/>
+  <line x1="254" y1="106" x2="232" y2="106" stroke-width="1"/>
+  <line x1="48" y1="156" x2="122" y2="156" stroke-width="1"/>
+  <line x1="250" y1="186" x2="218" y2="186" stroke-width="1"/>
+  <line x1="183" y1="282" x2="172" y2="268" stroke-width="1"/>
+</svg>

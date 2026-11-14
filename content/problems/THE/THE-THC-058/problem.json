@@ -1,0 +1,118 @@
+{
+ "id": "THE-THC-058",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-10",
+ "topic": "ブタンの不完全燃焼を含む燃焼の発熱量から CO の量と消費した酸素を逆算",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ブタン $\\ce{C4H10}$ を酸素と反応させる．次の値のうち必要なものを用いて答えよ．反応熱はすべて $25\\,^\\circ\\mathrm{C}$，$1.013\\times10^{5}\\,\\mathrm{Pa}$ での値とし，生成する水はすべて液体とする．\n\n\n　$\\ce{O=O}$ の結合エネルギー $498\\,\\mathrm{kJ/mol}$，$\\ce{H-H}$ の結合エネルギー $436\\,\\mathrm{kJ/mol}$，ブタン（気）の生成熱 $126\\,\\mathrm{kJ/mol}$，一酸化炭素（気）の生成熱 $111\\,\\mathrm{kJ/mol}$，水素の燃焼熱 $286\\,\\mathrm{kJ/mol}$，炭素（黒鉛）の燃焼熱 $394\\,\\mathrm{kJ/mol}$"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ブタンの燃焼熱（$\\ce{CO2}$ と液体の $\\ce{H2O}$ が生じるとき）を整数で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "ブタン $1\\,\\mathrm{mol}$ が $\\ce{CO}$ と液体の $\\ce{H2O}$ だけを生じて反応するときの反応熱を整数で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "ブタン $2.00\\,\\mathrm{mol}$ を酸素と反応させたところ，ブタンはすべて消費され，生成物は $\\ce{CO}$，$\\ce{CO2}$，液体の $\\ce{H2O}$ だけで，全体で $5.19\\times10^{3}\\,\\mathrm{kJ}$ の熱が発生した．生じた $\\ce{CO}$ の物質量を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(3) で消費された酸素の物質量を有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "5",
+      "tex": "上の 6 つの値のうち，(1)〜(4) のどの計算にも使わないものをすべて答えよ．また，それらを使わずにすむ理由を「状態」という語を用いて簡潔に述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$2880\\,\\mathrm{kJ/mol}$"
+   },
+   {
+    "id": "2",
+    "tex": "$1748\\,\\mathrm{kJ}$"
+   },
+   {
+    "id": "3",
+    "tex": "$2.0\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "4",
+    "tex": "$12.0\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "5",
+    "tex": "$\\ce{O=O}$ と $\\ce{H-H}$ の結合エネルギー．結合エネルギーは気体状態の分子についての値であり，液体の水が生じる反応熱は生成熱・燃焼熱だけで（ヘスの法則により）求められるから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 燃焼熱を $Q_1$ とすると，「反応熱＝（生成物の生成熱の和）－（反応物の生成熱の和）」より，$\\ce{CO2}$ と液体の $\\ce{H2O}$ の生成熱はそれぞれ黒鉛と水素の燃焼熱 $394$，$286\\,\\mathrm{kJ/mol}$ に等しいので\n\\[ \\ce{C4H10 + 13/2O2 -> 4CO2 + 5H2O} \\qquad Q_1 = 4\\times394 + 5\\times286 - 126 = \\boldsymbol{2880\\,\\mathrm{kJ/mol}} \\]\n\\textbf{(2)} \\[ \\ce{C4H10 + 9/2O2 -> 4CO + 5H2O} \\qquad Q_2 = 4\\times111 + 5\\times286 - 126 = \\boldsymbol{1748\\,\\mathrm{kJ}} \\]\n\\textbf{(3)} 全部が完全燃焼すれば $2.00\\times2880 = 5760\\,\\mathrm{kJ}$ の発熱になる．$\\ce{CO}$ が生じた分だけ，その $\\ce{CO}$ が $\\ce{CO2}$ になるときの熱\n\\[ \\ce{CO + 1/2O2 -> CO2} \\qquad 394 - 111 = 283\\,\\mathrm{kJ/mol} \\]\nが出なかったと考えられる．不足分は $5760 - 5190 = 570\\,\\mathrm{kJ}$ なので\n\\[ n(\\ce{CO}) = \\frac{570}{283} = 2.01 \\approx \\boldsymbol{2.0\\,\\mathrm{mol}} \\]\n（完全燃焼したブタンを $x\\,\\mathrm{mol}$ として $2880x + 1748(2.00-x) = 5190$ を解いても $x = 1.50\\,\\mathrm{mol}$，$n(\\ce{CO}) = 4(2.00-x) = 2.0\\,\\mathrm{mol}$ となる．）\n\n\\textbf{(4)} 完全燃焼なら酸素は $2.00\\times\\dfrac{13}{2} = 13.0\\,\\mathrm{mol}$ 必要である．$\\ce{CO}$ が $1\\,\\mathrm{mol}$ 生じるごとに酸素は $\\dfrac{1}{2}\\,\\mathrm{mol}$ 少なくてすむので\n\\[ 13.0 - \\frac{1}{2}\\times2.01 = 11.99 \\approx \\boldsymbol{12.0\\,\\mathrm{mol}} \\]\n\\textbf{(5)} 結合エネルギーは気体分子の結合を切るエネルギーなので，これを使う計算は反応物・生成物がすべて気体のときに限られる．ここでは生成物に液体の水が含まれ，しかも必要な生成熱・燃焼熱がそろっているので，$\\ce{O=O}$ と $\\ce{H-H}$ の結合エネルギーは使わない．なお，単体の $\\ce{O2}$ の生成熱は 0 であり，酸素の量は熱には直接入らない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "完全燃焼したときの発熱量との差は，生じた CO が CO₂ にならなかった分の熱（CO の燃焼熱）に等しいので，差÷CO の燃焼熱で CO の量が決まり，CO 1 mol ごとに酸素が 1/2 mol 少なくてすむ．液体の水を含む反応では結合エネルギーは使えず，生成熱・燃焼熱を選んで使う．"
+ },
+ "concepts": [
+  "enthalpy",
+  "oxygen-sulfur",
+  "mole"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ヘスの法則",
+  "不完全燃焼",
+  "燃焼熱",
+  "生成熱",
+  "一酸化炭素",
+  "データの選択"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

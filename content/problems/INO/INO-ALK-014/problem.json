@@ -1,0 +1,101 @@
+{
+ "id": "INO-ALK-014",
+ "schema": "alchemia.problem/1",
+ "field": "INO",
+ "unit": "INO-05",
+ "topic": "塩化カルシウム水溶液と二酸化炭素（沈殿が生じる条件）",
+ "course": "化学",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "condition",
+  "equation"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "石灰水に二酸化炭素を通じると白色沈殿が生じるが，塩化カルシウム水溶液に二酸化炭素を通じても沈殿は生じない．一方，塩化カルシウム水溶液にアンモニアを十分に加えてから二酸化炭素を通じると，白色沈殿が生じる．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "塩化カルシウム水溶液に二酸化炭素を通じても沈殿が生じない理由を，「弱酸」「強酸」の語を用いて説明せよ．"
+     },
+     {
+      "id": "2",
+      "tex": "アンモニアを加えてから二酸化炭素を通じたときに沈殿が生じる変化を，1 つの化学反応式で表せ．また，アンモニアのはたらきを簡潔に述べよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の操作で，二酸化炭素 $0.448\\,\\mathrm L$（$0\\,^\\circ\\mathrm C$，$1.013\\times10^5\\,\\mathrm{Pa}$）がすべて沈殿の生成に使われたとすると，沈殿は何 g 生じるか．有効数字 2 桁で答えよ．Ca = 40，C = 12，O = 16，気体のモル体積を $22.4\\,\\mathrm{L/mol}$ とする．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "沈殿が生じるとすると $\\ce{CaCl2 + CO2 + H2O -> CaCO3 + 2HCl}$ となり，弱酸の炭酸から強酸の塩酸が生じることになるが，そのような反応は起こらない（生じた $\\ce{CaCO3}$ は強酸の $\\ce{HCl}$ に溶けてしまう）から．"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{CaCl2 + 2NH3 + CO2 + H2O -> CaCO3 + 2NH4Cl}$．アンモニアが塩基として $\\ce{H+}$ を受け取り（中和し），水溶液が酸性にならないようにする．"
+   },
+   {
+    "id": "3",
+    "tex": "$2.0\\,\\mathrm g$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 石灰水では $\\ce{Ca(OH)2 + CO2 -> CaCO3 + H2O}$ のように中和で沈殿が生じる．塩化カルシウムで同じことが起こるとすると\n\\[ \\ce{CaCl2 + CO2 + H2O -> CaCO3 + 2HCl} \\]\nとなり，\\textbf{弱酸（炭酸）から強酸（塩酸）が生じる}ことになる．実際には逆に $\\ce{CaCO3 + 2HCl -> CaCl2 + H2O + CO2}$ が進む（弱酸の塩＋強酸 → 強酸の塩＋弱酸）ので，沈殿は生じない．\n\n\\textbf{(2)} アンモニアがあると，炭酸の電離で生じる $\\ce{H+}$ をアンモニアが受け取って $\\ce{NH4+}$ になり，$\\ce{CO3^2-}$ が十分に生じて $\\ce{CaCO3}$ が沈殿する．\n\\[ \\ce{CaCl2 + 2NH3 + CO2 + H2O -> CaCO3 + 2NH4Cl} \\]\nアンモニアは\\textbf{生じる酸を中和する塩基}としてはたらく（アンモニアソーダ法で $\\ce{NaHCO3}$ を沈殿させるときと同じ考え方）．\n\n\\textbf{(3)} $\\ce{CO2}$ は $\\dfrac{0.448}{22.4}=0.0200\\,\\mathrm{mol}$．$\\ce{CO2}:\\ce{CaCO3}=1:1$ で，$\\ce{CaCO3}$ の式量は 100 なので\n\\[ 0.0200\\times100=\\boldsymbol{2.0\\,\\mathrm g} \\]\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "Ca²⁺ と CO₂ から CaCO₃ が沈殿するには，生じる H⁺ を受け取る塩基が必要．CaCl₂ 水溶液では弱酸から強酸ができることになるので沈殿せず，アンモニアなどの塩基を加えると沈殿する．"
+ },
+ "concepts": [
+  "alkali-metals",
+  "precipitation",
+  "nitrogen-phosphorus"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "炭酸カルシウム",
+  "塩化カルシウム",
+  "弱酸の遊離",
+  "アンモニア",
+  "沈殿の条件"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

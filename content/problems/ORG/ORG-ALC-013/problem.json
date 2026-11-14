@@ -1,0 +1,125 @@
+{
+ "id": "ORG-ALC-013",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-03",
+ "topic": "エチレンの触媒酸化（ワッカー法）の触媒サイクル",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "equation",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "アセトアルデヒドは，工業的には塩化パラジウム(II) $\\ce{PdCl2}$ と塩化銅(II) $\\ce{CuCl2}$ を触媒として，エチレンを酸素で酸化してつくられる．この反応は，次の 3 つの段階からなると考えられる．\n\\[ \\text{段階 1}：\\ce{CH2=CH2 + PdCl2 + H2O -> CH3CHO + Pd + 2HCl} \\]\n\\[ \\text{段階 2}：\\ce{Pd} + \\boxed{\\,\\text{ア}\\,}\\,\\ce{CuCl2} \\ce{->} \\ce{PdCl2} + \\boxed{\\,\\text{イ}\\,} \\]\n\\[ \\text{段階 3}：\\ce{4CuCl + 4HCl + O2} \\ce{->} \\ce{4CuCl2} + \\boxed{\\,\\text{ウ}\\,} \\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "空欄 ア〜ウ に当てはまる係数または化学式（係数を含む）を答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "段階 1〜3 をまとめて，全体の反応を 1 つの化学反応式で表せ．"
+     },
+     {
+      "id": "3",
+      "tex": "$\\ce{PdCl2}$ と $\\ce{CuCl2}$ が「触媒」とよばれる理由を，段階 1〜3 の式をもとに説明せよ．"
+     },
+     {
+      "id": "4",
+      "tex": "段階 1〜3 のそれぞれで，酸化される原子と還元される原子を元素記号で答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "アセトアルデヒド $1.00\\,\\mathrm{kg}$ をつくるのに必要な酸素は，標準状態で何 L か．ただし，エチレンはすべてアセトアルデヒドに変わるものとし，標準状態の気体のモル体積は $22.4\\,\\mathrm{L/mol}$，原子量は H = 1.0，C = 12，O = 16 とする（有効数字 3 桁）．"
+     },
+     {
+      "id": "6",
+      "tex": "この方法では，酸素原子は二重結合の炭素原子のうち，水素原子の少ないほうに結合する．プロペン $\\ce{CH2=CH-CH3}$ を同じ方法で酸化したときに得られる主な生成物の示性式と名称を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "ア 2　イ $\\ce{2CuCl}$　ウ $\\ce{2H2O}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{2CH2=CH2 + O2 -> 2CH3CHO}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{PdCl2}$ は段階 1 で $\\ce{Pd}$ に変わるが段階 2 でもとに戻り，$\\ce{CuCl2}$ は段階 2 で $\\ce{CuCl}$ に変わるが段階 3 でもとに戻るので，反応の前後で量が変わらず，全体の反応式に現れないから．"
+   },
+   {
+    "id": "4",
+    "tex": "段階 1：酸化 C，還元 Pd　段階 2：酸化 Pd，還元 Cu　段階 3：酸化 Cu，還元 O"
+   },
+   {
+    "id": "5",
+    "tex": "$2.55\\times10^{2}\\,\\mathrm{L}$"
+   },
+   {
+    "id": "6",
+    "tex": "$\\ce{CH3COCH3}$，アセトン"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 段階 2 では $\\ce{Pd}$（酸化数 0）が $\\ce{PdCl2}$（+2）に戻り，電子を 2 個失う．$\\ce{Cu}$ は $+2$ から $+1$ になり電子を 1 個受け取るので，$\\ce{CuCl2}$ は 2 個必要である．\n\\[ \\ce{Pd + 2CuCl2 -> PdCl2 + 2CuCl} \\]\nよって ア $\\boldsymbol{2}$，イ $\\boldsymbol{\\ce{2CuCl}}$．段階 3 は，H と O の数を合わせて\n\\[ \\ce{4CuCl + 4HCl + O2 -> 4CuCl2 + 2H2O} \\]\nで，ウ $\\boldsymbol{\\ce{2H2O}}$．\n\n\\textbf{(2)} 段階 1 と 2 を 2 倍して段階 3 と足すと，$\\ce{PdCl2}$，$\\ce{Pd}$，$\\ce{CuCl2}$，$\\ce{CuCl}$，$\\ce{HCl}$ がすべて両辺で打ち消され，$\\ce{H2O}$ も 2 個ずつ消える．\n\\[ \\boldsymbol{\\ce{2CH2=CH2 + O2 -> 2CH3CHO}} \\]\n\n\\textbf{(3)} $\\ce{PdCl2}$ はエチレンを酸化して自身は $\\ce{Pd}$ に還元され，$\\ce{CuCl2}$ がそれをもとの $\\ce{PdCl2}$ に戻す．$\\ce{CuCl2}$ は $\\ce{CuCl}$ になるが，酸素がもとの $\\ce{CuCl2}$ に戻す．このように反応の途中で形を変えても最後には再生されるので，少量で多くのエチレンを酸化でき，全体の式には現れない．実際に消費される酸化剤は酸素である．\n\n\\textbf{(4)} 酸化数の変化で判断する．\n段階 1：C（エチレンの C は $-2$，アセトアルデヒドのカルボニル C は $+1$）が酸化され，Pd（$+2 \\to 0$）が還元される．\n段階 2：Pd（$0 \\to +2$）が酸化され，Cu（$+2 \\to +1$）が還元される．\n段階 3：Cu（$+1 \\to +2$）が酸化され，O（$0 \\to -2$）が還元される．\n電子は「エチレン → Pd → Cu → O₂」の順に受け渡されている．\n\n\\textbf{(5)} $\\ce{CH3CHO}$ のモル質量は $44\\,\\mathrm{g/mol}$ なので，$1.00\\,\\mathrm{kg}$ は $1000/44=22.7\\,\\mathrm{mol}$．(2) より必要な $\\ce{O2}$ はその半分である．\n\\[ \\frac{1000}{44}\\times\\frac{1}{2}\\times22.4=254.5\\cdots\\ \\Rightarrow\\ \\boldsymbol{2.55\\times10^{2}\\,\\mathrm{L}} \\]\n\n\\textbf{(6)} プロペンでは，二重結合の炭素のうち H の少ない中央の炭素に O が結合するので，カルボニル基は鎖の中央にできる．よって主な生成物は $\\boldsymbol{\\ce{CH3COCH3}}$（$\\boldsymbol{\\text{アセトン}}$）であり，アルデヒド（プロピオンアルデヒド $\\ce{CH3CH2CHO}$）にはならない．\n\\[ \\ce{2CH2=CHCH3 + O2 -> 2CH3COCH3} \\]\nエチレンでは両方の炭素が同じなので，アルデヒドが生じる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "エチレンを PdCl₂・CuCl₂ 触媒と酸素でアセトアルデヒドにする反応では，Pd と Cu が酸化数を変えながら電子を酸素まで受け渡して再生されるので，段階の式を足すと触媒が消えて全体は「エチレン＋酸素」の反応になる．O が H の少ない炭素につくので，プロペンからはアルデヒドではなくケトンが生じる．"
+ },
+ "concepts": [
+  "alcohol-carbonyl",
+  "oxygen-sulfur",
+  "redox"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ワッカー法",
+  "アセトアルデヒド",
+  "触媒",
+  "酸化数",
+  "エチレン"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

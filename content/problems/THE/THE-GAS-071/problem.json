@@ -1,0 +1,109 @@
+{
+ "id": "THE-GAS-071",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-08",
+ "topic": "大気中の微量気体の体積分率（ppm・ppb）と数密度・質量濃度の換算",
+ "course": "化学",
+ "level": 1,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "大気中の微量気体の濃度は，空気の体積に対するその気体の体積の割合（体積分率）で表し，ppm（$10^{-6}$），ppb（$10^{-9}$）などの単位を用いる．理想気体では，体積分率は物質量の割合（モル分率）に等しい．また，$1\\,\\mathrm{cm^3}$ あたりの分子の数を数密度といい，単位は $\\mathrm{cm^{-3}}$ である．\nアボガドロ定数 $6.02\\times10^{23}\\,\\mathrm{/mol}$，気体定数 $R = 8.31\\,\\mathrm{Pa\\cdot m^3/(K\\cdot mol)}$，原子量 O 16.0 とし，気体はすべて理想気体とする．数値は有効数字3桁で答えよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "標準状態（$0\\,^\\circ\\mathrm C$，$1.013\\times10^5\\,\\mathrm{Pa}$）の空気の数密度を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "地表付近のメタンの体積分率は $1.90\\,\\mathrm{ppm}$ である．標準状態でのメタンの数密度を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "高度約 5.5 km の上空（$5.00\\times10^4\\,\\mathrm{Pa}$，$-20\\,^\\circ\\mathrm C = 253\\,\\mathrm K$）で，メタンの体積分率が地表と同じ $1.90\\,\\mathrm{ppm}$ であった．このときのメタンの数密度を求めよ．また，体積分率と数密度のそれぞれについて，地表（標準状態）と比べて変わるか変わらないかを答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$25\\,^\\circ\\mathrm C$，$1.013\\times10^5\\,\\mathrm{Pa}$ の空気 $1.00\\,\\mathrm{m^3}$ 中にオゾン $\\ce{O3}$ が $40.0\\,\\mathrm{ppb}$ 含まれている．このオゾンの質量は何 $\\mu\\mathrm g$ か．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$2.69\\times10^{19}\\,\\mathrm{cm^{-3}}$"
+   },
+   {
+    "id": "2",
+    "tex": "$5.11\\times10^{13}\\,\\mathrm{cm^{-3}}$"
+   },
+   {
+    "id": "3",
+    "tex": "$2.72\\times10^{13}\\,\\mathrm{cm^{-3}}$．体積分率は変わらないが，数密度は小さくなる（地表の約 0.53 倍）"
+   },
+   {
+    "id": "4",
+    "tex": "$78.5\\,\\mu\\mathrm g$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 理想気体では $\\dfrac{n}{V} = \\dfrac{P}{RT}$．\n\\[ \\frac{n}{V} = \\frac{1.013\\times10^5}{8.31\\times273} = 44.65\\,\\mathrm{mol/m^3} \\]\n$1\\,\\mathrm{m^3} = 10^6\\,\\mathrm{cm^3}$ なので，数密度は $44.65\\times6.02\\times10^{23}/10^6 = \\boldsymbol{2.69\\times10^{19}\\,\\mathrm{cm^{-3}}}$．\n\n\\textbf{(2)} 体積分率＝モル分率なので，メタンの数密度は空気の数密度の $1.90\\times10^{-6}$ 倍：\n$2.688\\times10^{19}\\times1.90\\times10^{-6} = \\boldsymbol{5.11\\times10^{13}\\,\\mathrm{cm^{-3}}}$．\n\n\\textbf{(3)} 上空の空気の数密度は\n\\[ \\frac{5.00\\times10^4}{8.31\\times253}\\times\\frac{6.02\\times10^{23}}{10^6} = 1.432\\times10^{19}\\,\\mathrm{cm^{-3}} \\]\nメタンは $1.432\\times10^{19}\\times1.90\\times10^{-6} = \\boldsymbol{2.72\\times10^{13}\\,\\mathrm{cm^{-3}}}$．\n体積分率（モル分率）は空気全体に対する割合なので，空気が薄くなっても割合が同じなら\\textbf{変わらない}．一方，数密度は空気全体の数密度 $P/RT$ に比例するので，圧力が下がった効果（約 0.49 倍）が温度が下がった効果（約 1.08 倍）を上回り，\\textbf{小さくなる}（$2.72/5.11 = 0.53$ 倍）．同じ ppm でも，単位体積中の分子の数は場所によって違う．\n\n\\textbf{(4)} 空気 $1.00\\,\\mathrm{m^3}$ の物質量は $\\dfrac{1.013\\times10^5\\times1.00}{8.31\\times298} = 40.91\\,\\mathrm{mol}$．オゾンは $40.91\\times40.0\\times10^{-9} = 1.636\\times10^{-6}\\,\\mathrm{mol}$，質量は $1.636\\times10^{-6}\\times48.0 = 7.85\\times10^{-5}\\,\\mathrm g = \\boldsymbol{78.5\\,\\mu\\mathrm g}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "理想気体では体積分率＝モル分率なので，ppm・ppb は空気全体の物質量（数密度）に掛けて微量成分の数密度・質量に換算できる．空気の数密度は P/RT で決まるため，同じ体積分率でも気圧や温度の違う場所では数密度が変わる．"
+ },
+ "concepts": [
+  "ideal-gas",
+  "mole",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "体積分率",
+  "ppm",
+  "数密度",
+  "理想気体の状態方程式",
+  "大気"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

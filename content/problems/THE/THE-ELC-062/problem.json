@@ -1,0 +1,109 @@
+{
+ "id": "THE-ELC-062",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-07",
+ "topic": "難溶性塩を含む銀の濃淡電池の電極反応と電流が止まる条件",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "condition",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "2 つのビーカー A，B にそれぞれ $1.00\\,\\mathrm{L}$ の水溶液を入れ，どちらにも十分な量の塩化銀の固体を加えて飽和させた．A の塩化物イオン濃度は $1.0\\times10^{-1}\\,\\mathrm{mol/L}$，B の塩化物イオン濃度は $1.0\\times10^{-3}\\,\\mathrm{mol/L}$ である（$\\ce{KCl}$ で調整した）．それぞれに銀電極を浸し，両液を塩橋（$\\ce{KNO3}$ を含む）でつなぎ，銀電極どうしを導線でつないだ．\n電極では $\\ce{Ag+ + e- <=> Ag}$ の反応だけが起こり，$\\ce{Ag+}$ と $\\ce{Cl-}$ は塩橋を通らないとする．塩化銀の溶解度積は $1.8\\times10^{-10}\\,(\\mathrm{mol/L})^2$，ファラデー定数は $9.65\\times10^{4}\\,\\mathrm{C/mol}$ とし，体積変化は無視する．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "導線でつなぐ前の A，B の銀イオン濃度をそれぞれ有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "導線でつなぐと電流が流れた．正極（還元が起こる電極）は A，B のどちらの銀電極か．また，導線中を電子はどちらからどちらへ移動するか．"
+     },
+     {
+      "id": "3",
+      "tex": "電流が流れている間に，(i) A の塩化物イオン濃度，(ii) B の塩化銀の固体の量，(iii) A の銀電極の質量は，それぞれ増加・減少・変化しないのどれか．"
+     },
+     {
+      "id": "4",
+      "tex": "やがて電流は流れなくなった．このときの A の塩化物イオン濃度（有効数字 3 桁）と，それまでに流れた電気量（有効数字 2 桁）を求めよ．ただし，塩化銀の固体はどちらのビーカーにも最後まで残っていた．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "A：$1.8\\times10^{-9}\\,\\mathrm{mol/L}$，B：$1.8\\times10^{-7}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "2",
+    "tex": "正極：B，電子：A の電極から B の電極へ"
+   },
+   {
+    "id": "3",
+    "tex": "(i) 減少　(ii) 減少　(iii) 減少"
+   },
+   {
+    "id": "4",
+    "tex": "$5.05\\times10^{-2}\\,\\mathrm{mol/L}$，$4.8\\times10^{3}\\,\\mathrm{C}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　塩化銀が残っているので，どちらの液でも $[\\ce{Ag+}][\\ce{Cl-}]=K_\\mathrm{sp}$ が成り立つ．\n\\[ \\text{A}:\\ \\frac{1.8\\times10^{-10}}{1.0\\times10^{-1}}=\\boldsymbol{1.8\\times10^{-9}\\,\\mathrm{mol/L}},\\qquad \\text{B}:\\ \\frac{1.8\\times10^{-10}}{1.0\\times10^{-3}}=\\boldsymbol{1.8\\times10^{-7}\\,\\mathrm{mol/L}} \\]\n\n\\textbf{(2)}　同じ電極反応でも，$\\ce{Ag+}$ の濃度が大きい側では $\\ce{Ag+}$ が還元されやすく，小さい側では Ag が酸化されやすい（濃淡電池）．$\\ce{Ag+}$ 濃度の大きい \\textbf{B が正極}（$\\ce{Ag+ + e- -> Ag}$），A が負極（$\\ce{Ag -> Ag+ + e-}$）で，電子は導線中を \\textbf{A の電極から B の電極へ}移動する．反応は両液の $\\ce{Ag+}$ の濃度差を小さくする向きに進む．\n\n\\textbf{(3)}　A では，電極から溶け出した $\\ce{Ag+}$ がただちに $\\ce{Cl-}$ と結びついて $\\ce{AgCl}$ が沈殿する（$\\ce{Ag + Cl- -> AgCl + e-}$）．よって (i) A の $[\\ce{Cl-}]$ は\\textbf{減少}し，(iii) A の銀電極は溶けて\\textbf{減少}する．\nB では $\\ce{Ag+}$ が電極に析出して減るので，$[\\ce{Ag+}][\\ce{Cl-}]=K_\\mathrm{sp}$ を保つように $\\ce{AgCl}$ が溶ける（$\\ce{AgCl + e- -> Ag + Cl-}$）．よって (ii) B の塩化銀は\\textbf{減少}する（B の $[\\ce{Cl-}]$ は増加）．\n\n\\textbf{(4)}　両液に塩化銀が残っている限り $[\\ce{Ag+}]=K_\\mathrm{sp}/[\\ce{Cl-}]$ なので，両液の $[\\ce{Ag+}]$ が等しくなる（電流が止まる）のは $[\\ce{Cl-}]$ が等しくなったときである．電子 $x\\,\\mathrm{mol}$ が流れると，A の $\\ce{Cl-}$ は $x$ 減り，B の $\\ce{Cl-}$ は $x$ 増える．\n\\[ 0.100-x=0.0010+x \\quad\\Longrightarrow\\quad x=0.0495\\,\\mathrm{mol} \\]\nA の $[\\ce{Cl-}]=0.100-0.0495=\\boldsymbol{5.05\\times10^{-2}\\,\\mathrm{mol/L}}$．\n電気量は $0.0495\\times9.65\\times10^4=4.78\\times10^3\\fallingdotseq\\boldsymbol{4.8\\times10^{3}\\,\\mathrm{C}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "難溶性塩が共存する銀電極では [Ag+]=Ksp/[Cl-] なので，Cl- の濃い側ほど [Ag+] が小さく負極になる．電流は [Ag+] の差を小さくする向きに流れ，負極側では沈殿の生成，正極側では沈殿の溶解が起こり，両液の [Cl-] が等しくなると止まる．"
+ },
+ "concepts": [
+  "electrolysis",
+  "precipitation",
+  "battery"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "濃淡電池",
+  "溶解度積",
+  "塩化銀",
+  "電極反応",
+  "電気量"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

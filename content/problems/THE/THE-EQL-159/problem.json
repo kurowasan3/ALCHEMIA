@@ -1,0 +1,117 @@
+{
+ "id": "THE-EQL-159",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "酵素–基質複合体だけに結合する阻害剤（不競合阻害）と基質濃度による阻害の強まり",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "酵素 E の反応 $\\ce{E + S <=>[\\text{}] ES ->[\\text{}] E + P}$ に，酵素–基質複合体 ES だけに可逆的に結合する阻害剤 I を加える場合を考える（I は遊離の E には結合しない）．\n\\[\\ce{ES + I <=>[\\text{}] ESI}\\qquad K_{\\mathrm i}=\\frac{[\\mathrm{ES}][\\mathrm I]}{[\\mathrm{ESI}]}\\]\nESI は生成物をつくらない．ES については定常状態が成り立ち，$[\\mathrm E]=\\dfrac{K_{\\mathrm m}[\\mathrm{ES}]}{[\\mathrm S]}$（$K_{\\mathrm m}$ はミカエリス定数）の関係が阻害剤の有無によらず成り立つとする．反応の速さは $v=k_2[\\mathrm{ES}]$，酵素の全濃度は $[\\mathrm E]_0=[\\mathrm E]+[\\mathrm{ES}]+[\\mathrm{ESI}]$，$V_{\\max}=k_2[\\mathrm E]_0$ とする．$[\\mathrm S]$，$[\\mathrm I]$ は酵素よりはるかに多く，反応中ほぼ一定とみなせる．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$v$ を $V_{\\max}$，$K_{\\mathrm m}$，$[\\mathrm S]$，$\\alpha=1+\\dfrac{[\\mathrm I]}{K_{\\mathrm i}}$ で表し，見かけの最大速度 $V'_{\\max}$ と見かけのミカエリス定数 $K'_{\\mathrm m}$ がそれぞれ阻害剤なしの何倍になるかを答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "ある酵素について，阻害剤なしと阻害剤 Q（$0.30\\,\\mathrm{mmol/L}$）存在下で次の速さ [$\\mu\\mathrm{mol/(L\\,min)}$] を得た．\n\\[\\begin{array}{c|c|c}\n[\\mathrm S]\\ /\\ \\mathrm{mmol/L} & \\text{阻害剤なし} & \\text{Q あり}\\\\ \\hline\n0.20 & 3.33 & 2.00\\\\\n4.0 & 9.09 & 3.23\n\\end{array}\\]\n$\\dfrac1v$ を $\\dfrac{1}{[\\mathrm S]}$ に対して表す直線の傾きと切片を比べ，Q が「遊離の酵素だけに結合して基質と奪い合う阻害剤（競合阻害剤）」か「ES だけに結合する阻害剤」かを判定せよ．また $V_{\\max}$，$K_{\\mathrm m}$ と Q の $K_{\\mathrm i}$ を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "阻害剤があるときとないときの速さの比 $v_{\\mathrm I}/v_0$ を，$[\\mathrm S]=0.1K_{\\mathrm m}$，$K_{\\mathrm m}$，$10K_{\\mathrm m}$ について $\\alpha=3$ として求めよ（有効数字 2 桁）．また，同じ $\\alpha=3$ の競合阻害剤（見かけの $K_{\\mathrm m}$ が $\\alpha$ 倍になり $V_{\\max}$ は変わらない）についても同じ比を求め，基質濃度が大きくなると阻害が強まるか弱まるかを両者で比べよ．"
+     },
+     {
+      "id": "4",
+      "tex": "ES だけに結合する阻害剤では，見かけのミカエリス定数が小さくなる（基質と結びつきやすくなったように見える）．この理由を，平衡の移動の考え方で説明せよ．"
+     },
+     {
+      "id": "5",
+      "tex": "ある細胞内の経路では，酵素が阻害されると，その前の段階でつくられ続ける基質がたまって $[\\mathrm S]$ が上がる．このような状況で経路の流れ（速さ）を止める効果が高いのは，競合阻害剤と ES だけに結合する阻害剤のどちらか．(3) の結果にもとづいて答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$v=\\dfrac{V_{\\max}[\\mathrm S]}{K_{\\mathrm m}+\\alpha[\\mathrm S]}=\\dfrac{(V_{\\max}/\\alpha)[\\mathrm S]}{K_{\\mathrm m}/\\alpha+[\\mathrm S]}$．$V'_{\\max}$，$K'_{\\mathrm m}$ はともに $\\dfrac1\\alpha$ 倍．"
+   },
+   {
+    "id": "2",
+    "tex": "傾き $\\dfrac{K_{\\mathrm m}}{V_{\\max}}$ は両者で等しく（$0.040$），切片だけが $0.10$ から $0.30$ に増える（平行な直線）ので，ES だけに結合する阻害剤．$V_{\\max}=10\\,\\mu\\mathrm{mol/(L\\,min)}$，$K_{\\mathrm m}=0.40\\,\\mathrm{mmol/L}$，$K_{\\mathrm i}=0.15\\,\\mathrm{mmol/L}$"
+   },
+   {
+    "id": "3",
+    "tex": "ES だけに結合：$0.85$，$0.50$，$0.35$（基質が多いほど阻害が強まる）．競合：$0.35$，$0.50$，$0.85$（基質が多いほど阻害が弱まる）．$[\\mathrm S]=K_{\\mathrm m}$ で両者は一致する．"
+   },
+   {
+    "id": "4",
+    "tex": "I が ES を ESI として取り除くと，$\\ce{E + S <=>[\\text{}] ES}$ の平衡が ES をつくる向きに移動し，同じ $[\\mathrm S]$ でも E が ES（＋ESI）に移る割合が大きくなるため．"
+   },
+   {
+    "id": "5",
+    "tex": "ES だけに結合する阻害剤．基質がたまるほど $v_{\\mathrm I}/v_0$ が小さくなり（最終的に $1/\\alpha$ まで），基質の蓄積で阻害を打ち消せないから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $[\\mathrm E]=\\dfrac{K_{\\mathrm m}[\\mathrm{ES}]}{[\\mathrm S]}$，$[\\mathrm{ESI}]=\\dfrac{[\\mathrm{ES}][\\mathrm I]}{K_{\\mathrm i}}$ を $[\\mathrm E]_0$ の式に入れると\n\\[[\\mathrm E]_0=[\\mathrm{ES}]\\left(\\frac{K_{\\mathrm m}}{[\\mathrm S]}+1+\\frac{[\\mathrm I]}{K_{\\mathrm i}}\\right)=[\\mathrm{ES}]\\,\\frac{K_{\\mathrm m}+\\alpha[\\mathrm S]}{[\\mathrm S]}\\]\nよって\n\\[v=k_2[\\mathrm{ES}]=\\frac{V_{\\max}[\\mathrm S]}{K_{\\mathrm m}+\\alpha[\\mathrm S]}=\\frac{(V_{\\max}/\\alpha)[\\mathrm S]}{K_{\\mathrm m}/\\alpha+[\\mathrm S]}\\]\nしたがって $V'_{\\max}=V_{\\max}/\\alpha$，$K'_{\\mathrm m}=K_{\\mathrm m}/\\alpha$ で，どちらも $\\boldsymbol{1/\\alpha}$ \\textbf{倍}になる．$\\dfrac{K'_{\\mathrm m}}{V'_{\\max}}=\\dfrac{K_{\\mathrm m}}{V_{\\max}}$ は変わらない．\n\n\\textbf{(2)} 逆数をとると $\\dfrac1v=\\dfrac{K_{\\mathrm m}}{V_{\\max}}\\cdot\\dfrac{1}{[\\mathrm S]}+\\dfrac{1}{V_{\\max}}$．\n阻害剤なし：$\\dfrac1v=0.300$（$1/[\\mathrm S]=5.0$），$0.110$（$1/[\\mathrm S]=0.25$）より，傾き $\\dfrac{0.300-0.110}{5.0-0.25}=0.040$，切片 $0.110-0.040\\times0.25=0.100$．\nQ あり：$\\dfrac1v=0.500$，$0.310$ より，傾き $\\dfrac{0.190}{4.75}=0.040$，切片 $0.310-0.010=0.300$．\n傾き（$=K_{\\mathrm m}/V_{\\max}$）が同じで切片だけが大きい，すなわち 2 本の直線は\\textbf{平行}である．競合阻害なら切片（$1/V_{\\max}$）が同じで傾きが大きくなるはずなので，Q は \\textbf{ES だけに結合する阻害剤}である．\n$V_{\\max}=\\dfrac{1}{0.100}=\\boldsymbol{10\\,\\mu\\mathrm{mol/(L\\,min)}}$，$K_{\\mathrm m}=0.040\\times10=\\boldsymbol{0.40\\,\\mathrm{mmol/L}}$．\n$\\alpha=\\dfrac{0.300}{0.100}=3.0$ より $\\dfrac{0.30}{K_{\\mathrm i}}=2.0$，$K_{\\mathrm i}=\\boldsymbol{0.15\\,\\mathrm{mmol/L}}$．\n\n\\textbf{(3)} ES だけに結合：$\\dfrac{v_{\\mathrm I}}{v_0}=\\dfrac{K_{\\mathrm m}+[\\mathrm S]}{K_{\\mathrm m}+\\alpha[\\mathrm S]}$．$[\\mathrm S]=0.1K_{\\mathrm m}$：$\\dfrac{1.1}{1.3}=\\boldsymbol{0.85}$，$K_{\\mathrm m}$：$\\dfrac{2}{4}=\\boldsymbol{0.50}$，$10K_{\\mathrm m}$：$\\dfrac{11}{31}=\\boldsymbol{0.35}$．\n競合：$\\dfrac{v_{\\mathrm I}}{v_0}=\\dfrac{K_{\\mathrm m}+[\\mathrm S]}{\\alpha K_{\\mathrm m}+[\\mathrm S]}$．$0.1K_{\\mathrm m}$：$\\dfrac{1.1}{3.1}=\\boldsymbol{0.35}$，$K_{\\mathrm m}$：$\\boldsymbol{0.50}$，$10K_{\\mathrm m}$：$\\dfrac{11}{13}=\\boldsymbol{0.85}$．\nちょうど鏡写しの関係で，ES だけに結合する阻害剤は\\textbf{基質が多いほど阻害が強まり}（$[\\mathrm S]\\to\\infty$ で $1/\\alpha$ に近づく），競合阻害剤は\\textbf{基質が多いほど弱まる}（1 に近づく）．基質が少ないと ES がほとんどないので，ES に結合する阻害剤は相手がいなくて効かない．\n\n\\textbf{(4)} I が ES と結合して ESI になると，ES の濃度が下がる．すると $\\ce{E + S <=>[\\text{}] ES}$ の平衡は，減った ES を補う向き（右）に移動する．その結果，同じ $[\\mathrm S]$ でも遊離の E の割合が小さくなり，酵素が基質で「半分飽和する」のに必要な $[\\mathrm S]$（見かけの $K_{\\mathrm m}$）が小さくなる．ただし取り込まれた酵素の一部は ESI として働かないので，最大速度も同じ割合で下がる．\n\n\\textbf{(5)} 阻害で流れが細ると基質がたまり $[\\mathrm S]$ が上がる．競合阻害剤は $[\\mathrm S]$ が上がると効きが弱まるので，基質の蓄積によって流れが自然に回復してしまう．ES だけに結合する阻害剤は逆に $[\\mathrm S]$ が上がるほど効きが強まるので，流れを止める効果が高いのは \\textbf{ES だけに結合する阻害剤}である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ES だけに結合する阻害剤では ESI の生成が E+S⇄ES の平衡を右へ移すので，見かけの Vmax と Km がともに 1/α 倍になり，逆数プロットは平行な直線になる．阻害の割合は基質が多いほど強まり，競合阻害（基質が多いほど弱まる）と鏡写しの関係になるので，基質がたまる状況では競合阻害剤より効果が高い．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "protein-amino",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "酵素",
+  "阻害剤",
+  "不競合阻害",
+  "ラインウィーバー・バークプロット",
+  "定常状態"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

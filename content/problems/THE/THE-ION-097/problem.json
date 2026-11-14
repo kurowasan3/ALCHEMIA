@@ -1,0 +1,110 @@
+{
+ "id": "THE-ION-097",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-12",
+ "topic": "大気中の二酸化炭素と平衡にあるセッケン水溶液の pH と脂肪酸の析出（場合分け）",
+ "course": "化学",
+ "level": 5,
+ "minutes": 40,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水に溶けにくい脂肪酸 HA のナトリウム塩 NaA（セッケン）の水溶液を，大気と十分に長く接触させて平衡に達させる．25 ℃ で次の平衡と定数を用いる．\n\\[\\ce{HA(aq) <=>[\\text{}] H+ + A-}\\quad K_\\mathrm{a}=1.0\\times10^{-5}\\,\\mathrm{mol/L}\\]\n固体の HA が共存するとき，溶けている分子の濃度は $[\\ce{HA(aq)}]=S=2.0\\times10^{-6}\\,\\mathrm{mol/L}$ で一定である．大気と平衡にある水溶液では，溶けている二酸化炭素（$\\ce{H2CO3}$ を含む）の濃度は $[\\ce{CO2}]=1.0\\times10^{-5}\\,\\mathrm{mol/L}$ に保たれ，\n\\[\\ce{CO2 + H2O <=> H+ + HCO3-}\\quad K_1=4.5\\times10^{-7}\\,\\mathrm{mol/L},\\qquad \\ce{HCO3- <=> H+ + CO3^2-}\\quad K_2=4.7\\times10^{-11}\\,\\mathrm{mol/L}\\]\nとする．水のイオン積は $K_\\mathrm{w}=1.0\\times10^{-14}\\,(\\mathrm{mol/L})^2$．NaA は水に完全に電離し，溶液は十分うすくミセルはできないものとする．NaA を濃度 $C$（$\\ce{Na+}$ の濃度）となるように溶かした水溶液について答えよ．必要なら $\\log_{10}2.45=0.39$，$\\log_{10}1.5=0.18$ を用いよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "固体の HA が析出しているとき，$[\\ce{A-}]$ を $[\\ce{H+}]$，$K_\\mathrm{a}$，$S$ で表せ．さらに，電荷のつり合い $[\\ce{Na+}]+[\\ce{H+}]=[\\ce{A-}]+[\\ce{HCO3-}]+2[\\ce{CO3^2-}]+[\\ce{OH-}]$ で $[\\ce{H+}]$，$[\\ce{CO3^2-}]$，$[\\ce{OH-}]$ を無視できるとして，$[\\ce{H+}]$ と，析出した HA の物質量の $C$ に対する割合 $x$ を，$K_\\mathrm{a}$，$S$，$K_1$，$[\\ce{CO2}]$，$C$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "$C=1.0\\times10^{-3}\\,\\mathrm{mol/L}$ のとき，pH（小数第 1 位まで）と $x$（%，有効数字 2 けた）を求めよ．また，(1) で $[\\ce{CO3^2-}]$ を無視したことが妥当であることを，$[\\ce{CO3^2-}]/[\\ce{HCO3-}]$ の値を示して確かめよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の水溶液（固体を含む）をかき混ぜながら水で 10 倍にうすめ，再び大気と平衡にした．pH（小数第 1 位まで）と $x$（%，有効数字 2 けた）を求めよ．pH と $x$ の変わり方の違いが生じる理由を，$[\\ce{HCO3-}]/[\\ce{A-}]$ に着目して簡潔に述べよ．"
+     },
+     {
+      "id": "4",
+      "tex": "$C=1.0\\times10^{-5}\\,\\mathrm{mol/L}$ のとき，(1) の式を用いると矛盾が生じ，HA は析出しないことを示せ．そのうえで，$[\\ce{H+}]\\ll K_\\mathrm{a}$ として pH を小数第 1 位まで求め，大気と平衡にある純水の pH（小数第 1 位まで）と比べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$[\\ce{A-}]=\\dfrac{K_\\mathrm{a}S}{[\\ce{H+}]}$，$[\\ce{H+}]=\\dfrac{K_\\mathrm{a}S+K_1[\\ce{CO2}]}{C}$，$x=\\dfrac{K_1[\\ce{CO2}]}{K_\\mathrm{a}S+K_1[\\ce{CO2}]}-\\dfrac{S}{C}$"
+   },
+   {
+    "id": "2",
+    "tex": "pH 7.6，$x=18\\,\\%$．$[\\ce{CO3^2-}]/[\\ce{HCO3-}]=K_2/[\\ce{H+}]=1.9\\times10^{-3}$ で，$\\ce{HCO3-}$ に比べて無視できる．"
+   },
+   {
+    "id": "3",
+    "tex": "pH 6.6，$x=16\\,\\%$．固体の HA が共存する限り $[\\ce{HCO3-}]/[\\ce{A-}]=K_1[\\ce{CO2}]/(K_\\mathrm{a}S)$ は濃度によらず一定なので，析出する割合はほとんど変わらないが，$[\\ce{A-}]$ が 1/10 になる分 $[\\ce{H+}]$ が 10 倍になり pH は 1 下がる．"
+   },
+   {
+    "id": "4",
+    "tex": "最初の小問の式で $x=0.184-0.20<0$ となり矛盾するので析出しない．pH 5.8（純水は 5.7 で，NaA の溶液の方がわずかに高い）．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　固体があると $[\\ce{HA(aq)}]=S$ なので $K_\\mathrm{a}=\\dfrac{[\\ce{H+}][\\ce{A-}]}{S}$ より $[\\ce{A-}]=\\dfrac{K_\\mathrm{a}S}{[\\ce{H+}]}$．$[\\ce{HCO3-}]=\\dfrac{K_1[\\ce{CO2}]}{[\\ce{H+}]}$ と合わせて，電荷のつり合い $C=[\\ce{A-}]+[\\ce{HCO3-}]$ から\n\\[[\\ce{H+}]=\\frac{K_\\mathrm{a}S+K_1[\\ce{CO2}]}{C}\\]\n$\\ce{Na+}$ と同じ数の陰イオンを $\\ce{A-}$ と $\\ce{HCO3-}$ が $K_\\mathrm{a}S:K_1[\\ce{CO2}]$ の比で分け合う．$\\ce{A-}$ にならなかった A は $\\ce{HCO3-}$ と同じ量で，そのうち $S$ が溶けた分子，残りが固体なので\n\\[x=\\frac{[\\ce{HCO3-}]-S}{C}=\\frac{K_1[\\ce{CO2}]}{K_\\mathrm{a}S+K_1[\\ce{CO2}]}-\\frac{S}{C}\\]\nすなわち大気の $\\ce{CO2}$ が $\\ce{A- + CO2 + H2O ->[\\text{}] HA + HCO3-}$ のように $\\ce{A-}$ から $\\ce{H+}$ を奪う形で脂肪酸を析出させる．\n\n\\textbf{(2)}　$K_\\mathrm{a}S=2.0\\times10^{-11}$，$K_1[\\ce{CO2}]=4.5\\times10^{-12}$，和は $2.45\\times10^{-11}$．\n$[\\ce{H+}]=\\dfrac{2.45\\times10^{-11}}{1.0\\times10^{-3}}=2.45\\times10^{-8}$，$\\mathrm{pH}=8-0.39=7.61$ → $\\boldsymbol{7.6}$．\n$x=\\dfrac{4.5}{24.5}-\\dfrac{2.0\\times10^{-6}}{1.0\\times10^{-3}}=0.184-0.002=0.182$ → $\\boldsymbol{18\\,\\%}$．\n$\\dfrac{[\\ce{CO3^2-}]}{[\\ce{HCO3-}]}=\\dfrac{K_2}{[\\ce{H+}]}=\\dfrac{4.7\\times10^{-11}}{2.45\\times10^{-8}}=1.9\\times10^{-3}$ で無視できる．$[\\ce{OH-}]=4\\times10^{-7}$，$[\\ce{H+}]$ も $C$ に比べて十分小さい．\n\n\\textbf{(3)}　$C=1.0\\times10^{-4}$：$[\\ce{H+}]=2.45\\times10^{-7}$，$\\mathrm{pH}=7-0.39=6.61$ → $\\boldsymbol{6.6}$．$x=0.184-0.020=0.164$ → $\\boldsymbol{16\\,\\%}$．\n固体がある限り $[\\ce{A-}]$ と $[\\ce{HCO3-}]$ はどちらも $1/[\\ce{H+}]$ に比例し，比 $\\dfrac{[\\ce{HCO3-}]}{[\\ce{A-}]}=\\dfrac{K_1[\\ce{CO2}]}{K_\\mathrm{a}S}=0.225$ は一定である．したがって A のうち $\\ce{A-}$ として残る割合は濃度によらずほぼ一定（溶けている分子 $S$ の分だけ変わる）で，うすめると $[\\ce{A-}]$ が 1/10 になる分だけ $[\\ce{H+}]$ が 10 倍になる．（$C\\to$ 大でも pH は上がり続けるが，$[\\ce{CO3^2-}]$ や $[\\ce{OH-}]$ を無視できなくなる．）\n\n\\textbf{(4)}　(1) の式で $x=0.184-\\dfrac{2.0\\times10^{-6}}{1.0\\times10^{-5}}=0.184-0.20<0$ となり，固体がある仮定と矛盾する．よって HA は析出せず，A は $\\ce{A-}$ と $\\ce{HA(aq)}$ だけで $C=[\\ce{A-}]+[\\ce{HA(aq)}]$．電荷のつり合いに代入すると $[\\ce{H+}]+[\\ce{HA(aq)}]=[\\ce{HCO3-}]$（$\\ce{OH-}$，$\\ce{CO3^2-}$ は無視）．$[\\ce{H+}]\\ll K_\\mathrm{a}$ なら $[\\ce{A-}]\\fallingdotseq C$，$[\\ce{HA(aq)}]=\\dfrac{[\\ce{H+}]C}{K_\\mathrm{a}}$ なので\n\\[[\\ce{H+}]^2\\left(1+\\frac{C}{K_\\mathrm{a}}\\right)=K_1[\\ce{CO2}],\\quad[\\ce{H+}]^2=\\frac{4.5\\times10^{-12}}{2}=2.25\\times10^{-12},\\quad[\\ce{H+}]=1.5\\times10^{-6}\\]\n$\\mathrm{pH}=6-0.18=5.82$ → $\\boldsymbol{5.8}$．このとき $[\\ce{HA(aq)}]=\\dfrac{1.5\\times10^{-6}\\times1.0\\times10^{-5}}{1.0\\times10^{-5}}\\fallingdotseq1.3\\times10^{-6}<S$ で，析出しないことと矛盾しない（$[\\ce{A-}]=C\\cdot\\dfrac{K_\\mathrm{a}}{K_\\mathrm{a}+[\\ce{H+}]}$ として求めると $1.3\\times10^{-6}$）．純水では $[\\ce{H+}]=\\sqrt{K_1[\\ce{CO2}]}=2.1\\times10^{-6}$，pH 5.7 で，$\\ce{A-}$ が $\\ce{CO2}$ から生じた $\\ce{H+}$ の一部を受け取る分だけわずかに高い．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "大気と平衡にある溶液では [CO₂] が一定に保たれるので，固体の脂肪酸が共存する限り [A⁻] と [HCO₃⁻] はともに 1/[H⁺] に比例し，Na⁺ を両者が K_aS : K₁[CO₂] の一定比で分け合う．そのため析出する割合は濃度によらずほぼ一定で pH だけが濃度とともに変わる．きわめてうすいと析出量が負となって仮定が崩れ，固体のない平衡に切り替えて解く．"
+ },
+ "concepts": [
+  "ionization-equilibrium",
+  "carboxylic-ester",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "セッケン",
+  "二酸化炭素",
+  "溶解平衡",
+  "電荷のつり合い",
+  "場合分け",
+  "脂肪酸"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

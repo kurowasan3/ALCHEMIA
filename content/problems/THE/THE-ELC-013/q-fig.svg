@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 250" width="560" height="250">
+<g font-family="Noto Sans CJK JP, sans-serif" fill="currentColor" font-size="14">
+<rect x="20" y="40" width="520" height="160" rx="18" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<text x="280" y="228" text-anchor="middle" font-size="13">寒天ゲル（NaCl・ヘキサシアニド鉄(III)酸カリウム・フェノールフタレインを含む）</text>
+<!-- nail A -->
+<g stroke="currentColor" stroke-width="1.5" fill="none">
+<path d="M60,100 H210 L230,107 L210,114 H60 Z"/><rect x="50" y="94" width="10" height="26"/>
+<path d="M110,92 q6,15 12,0 q6,15 12,0 q6,15 12,0 q6,15 12,0 q6,15 12,0" stroke-width="2.5"/>
+<path d="M110,122 q6,-15 12,0 q6,-15 12,0 q6,-15 12,0 q6,-15 12,0 q6,-15 12,0" stroke-width="2.5"/>
+</g>
+<text x="40" y="80">鉄くぎ A</text><text x="120" y="145" font-size="13">銅線を巻きつける</text>
+<!-- nail B -->
+<g stroke="currentColor" stroke-width="1.5" fill="none">
+<path d="M310,100 H460 L480,107 L460,114 H310 Z"/><rect x="300" y="94" width="10" height="26"/>
+<rect x="360" y="90" width="40" height="34" stroke-dasharray="0"/>
+</g>
+<text x="290" y="80">鉄くぎ B</text><text x="330" y="145" font-size="13">亜鉛板を巻きつける</text>
+</g></svg>

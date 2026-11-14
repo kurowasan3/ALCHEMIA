@@ -1,0 +1,115 @@
+{
+ "id": "POL-PRT-064",
+ "schema": "alchemia.problem/1",
+ "field": "POL",
+ "unit": "POL-05",
+ "topic": "環状ペプチドの配列の数え上げ（回転で重なる配列と周期をもつ配列）と酵素切断による決定",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "structure",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "グリシン（Gly），アラニン（Ala），フェニルアラニン（Phe）を 2 個ずつ含み，6 個のアミノ酸が主鎖のペプチド結合で環状につながった環状ヘキサペプチドを考える．配列は $\\ce{-CO-NH-}$ の向き（N 側→C 側の向き）に沿って読み，環を回転させて重なる配列は同一とみなすが，読む向きが逆になる配列は別の化合物とする（例えば cyclo(–Gly–Ala–Phe–) と cyclo(–Gly–Phe–Ala–) は異なる）．鏡像異性体は考えない．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "同じ組成の鎖状ヘキサペプチド（N 末端と C 末端をもつ）は何種類あるか．"
+     },
+     {
+      "id": "2",
+      "tex": "環状ヘキサペプチドの 6 個のペプチド結合のうち 1 か所だけを加水分解すると鎖状ヘキサペプチドが得られる．1 種類の環状ペプチドから得られる鎖状ペプチドが 6 種類より少なくなるのはどのような配列のときか．該当する環状ペプチドをすべて答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(1)，(2) を用いて，この組成の環状ヘキサペプチドが何種類あるかを求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "このうち，同じアミノ酸どうしが隣り合わないものは何種類か．"
+     },
+     {
+      "id": "5",
+      "tex": "環状ペプチド P は同じアミノ酸どうしが隣り合わない．P を，Phe のカルボキシ基側のペプチド結合（Phe–X の結合）だけを加水分解する酵素で処理したところ，2 種類のトリペプチドが等しい物質量ずつ得られた．P の配列を cyclo(–Ala–…–) の形で答え，得られた 2 種類のトリペプチドを N 末端から順に答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "90 種類"
+   },
+   {
+    "id": "2",
+    "tex": "3 個ずつの同じ並びが 2 回くり返す配列のとき：cyclo(–Gly–Ala–Phe–Gly–Ala–Phe–) と cyclo(–Gly–Phe–Ala–Gly–Phe–Ala–)（それぞれ 3 種類しか得られない）"
+   },
+   {
+    "id": "3",
+    "tex": "16 種類"
+   },
+   {
+    "id": "4",
+    "tex": "5 種類"
+   },
+   {
+    "id": "5",
+    "tex": "P：cyclo(–Ala–Phe–Ala–Gly–Phe–Gly–)，トリペプチド：Ala–Gly–Phe と Gly–Ala–Phe"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 6 か所に Gly 2，Ala 2，Phe 2 を並べる：$\\dfrac{6!}{2!\\,2!\\,2!}=\\boldsymbol{90}$ 種類．\n\n\\textbf{(2)} 環状ペプチドの切る位置は 6 か所あるが，配列が $\\ce{xyzxyz}$ のように 3 個ずつの同じ並びのくり返しになっていると，向かい合う 2 か所を切ったものが同じ鎖状ペプチドになり，3 種類しか得られない（周期 2 の $\\ce{xyxyxy}$ は同じアミノ酸が 3 個必要なので，周期 1 は 6 個必要なので不可能）．$x,y,z$ が Gly，Ala，Phe の並べかえで，回転で重なるものを除くと $\\boldsymbol{\\text{cyclo(–Gly–Ala–Phe–Gly–Ala–Phe–)}}$ と $\\boldsymbol{\\text{cyclo(–Gly–Phe–Ala–Gly–Phe–Ala–)}}$ の 2 種類（読む向きが逆なので別物）．\n\n\\textbf{(3)} どの鎖状ペプチドも，両端をつなげばちょうど 1 種類の環状ペプチドになる．逆に環状ペプチド 1 種類からは (2) のとおり 6 種類（くり返し型は 3 種類）の鎖状ペプチドが得られ，異なる環状ペプチドから同じ鎖状ペプチドは生じない．くり返し型でない環状ペプチドを $x$ 種類とすると\n\\[ 6x+3\\times2=90\\quad\\Longrightarrow\\quad x=14 \\]\nよって環状ヘキサペプチドは $14+2=\\boldsymbol{16}$ 種類．（単純に $90\\div6=15$ としてはいけない．）\n\n\\textbf{(4)} Ala を 1 つ固定して残りを並べ，回転で重なるものに注意して数えると，同じアミノ酸が隣り合わないものは\ncyclo(–Ala–Phe–Ala–Gly–Phe–Gly–)，cyclo(–Ala–Phe–Gly–Ala–Phe–Gly–)，cyclo(–Ala–Phe–Gly–Ala–Gly–Phe–)，cyclo(–Ala–Phe–Gly–Phe–Ala–Gly–)，cyclo(–Ala–Gly–Phe–Ala–Gly–Phe–) の $\\boldsymbol{5}$ 種類．\n\n\\textbf{(5)} Phe が 2 個あるので，2 か所で切れて 2 つの断片が生じ，どちらの断片も C 末端が Phe になる．(4) の 5 種類について断片を調べる．\n\\[ \\begin{array}{ll}\n\\text{cyclo(–Ala–Phe–Ala–Gly–Phe–Gly–)} & \\text{Ala–Gly–Phe，Gly–Ala–Phe}\\\\\n\\text{cyclo(–Ala–Phe–Gly–Ala–Phe–Gly–)} & \\text{Gly–Ala–Phe（2 分子）}\\\\\n\\text{cyclo(–Ala–Phe–Gly–Ala–Gly–Phe–)} & \\text{Ala–Phe，Gly–Ala–Gly–Phe}\\\\\n\\text{cyclo(–Ala–Phe–Gly–Phe–Ala–Gly–)} & \\text{Gly–Phe，Ala–Gly–Ala–Phe}\\\\\n\\text{cyclo(–Ala–Gly–Phe–Ala–Gly–Phe–)} & \\text{Ala–Gly–Phe（2 分子）}\n\\end{array} \\]\n2 種類のトリペプチドが等量得られるのは 1 番目だけ．P は $\\boldsymbol{\\text{cyclo(–Ala–Phe–Ala–Gly–Phe–Gly–)}}$，トリペプチドは $\\boldsymbol{\\text{Ala–Gly–Phe}}$ と $\\boldsymbol{\\text{Gly–Ala–Phe}}$．\nくり返し型の 2 種類は同じトリペプチドが 2 分子ずつ得られる点で区別でき，2 つは互いに逆向きの配列だが，得られるトリペプチド（Gly–Ala–Phe と Ala–Gly–Phe）が異なるので酵素切断で区別できる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "環状ペプチドの配列は回転で重なるものを同一とみなすので，鎖状の配列数を環の大きさで割るだけでは数えられず，くり返し（周期）をもつ配列は切り方の数が少ないことを補正して数える（6x＋3y＝90）．ペプチド結合には向きがあるので逆向きの配列は別物で，特定のアミノ酸の後ろだけを切る酵素で得られる断片の種類と量から配列を一意に決められる．"
+ },
+ "concepts": [
+  "protein-amino"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "環状ペプチド",
+  "配列の数",
+  "数え上げ",
+  "酵素による切断",
+  "ペプチド結合の向き"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

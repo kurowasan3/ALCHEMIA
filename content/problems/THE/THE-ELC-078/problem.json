@@ -1,0 +1,109 @@
+{
+ "id": "THE-ELC-078",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-07",
+ "topic": "密閉容器内での硫酸銅(II) 水溶液の電気分解と発生した酸素の溶解（ヘンリーの法則）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 18,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ピストン付きの容器に，気体を溶かしていない $4.00\\times10^{-2}\\,\\mathrm{mol/L}$ の硫酸銅(II) 水溶液 $0.500\\,\\mathrm{L}$ と，アルゴン $1.00\\times10^{-2}\\,\\mathrm{mol}$ を入れて封じた．容器内の温度は $20\\,^\\circ\\mathrm{C}$，気体の全圧はピストンにより $1.00\\,\\mathrm{atm}$ に保たれている．水溶液に浸した2本の白金電極で，$1.00\\,\\mathrm{A}$ の一定電流で 1930 秒間電気分解を行った．陽極からは気体が発生し，陰極には金属が析出した．水の蒸気圧とアルゴンの溶解は無視し，気体は理想気体とする．ファラデー定数 $9.65\\times10^4\\,\\mathrm{C/mol}$，原子量 Cu $=63.5$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "陽極・陰極で起こる反応をそれぞれイオン反応式で示せ．"
+     },
+     {
+      "id": "2",
+      "tex": "陰極に析出した金属の質量 [g] を有効数字3桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "陽極で発生した酸素のうち，気体として存在するものは $4.78\\times10^{-3}\\,\\mathrm{mol}$ であった．残りは水溶液に溶けている．このときの酸素の分圧 [atm] を求め，$20\\,^\\circ\\mathrm{C}$ での酸素の水への溶解度（分圧 $1.00\\,\\mathrm{atm}$ のとき水溶液 $1.00\\,\\mathrm{L}$ に溶ける物質量）を有効数字3桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "アルゴンを入れずに同じ電気分解を行ったとき（気体は酸素だけで $1.00\\,\\mathrm{atm}$），水溶液に溶ける酸素の物質量を (3) の溶解度を用いて有効数字3桁で求め，アルゴンがあるときと比べてどうなるか答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "陽極：$\\ce{2H2O -> O2 + 4H+ + 4e-}$，陰極：$\\ce{Cu^2+ + 2e- -> Cu}$"
+   },
+   {
+    "id": "2",
+    "tex": "$0.635\\,\\mathrm{g}$"
+   },
+   {
+    "id": "3",
+    "tex": "分圧 $0.323\\,\\mathrm{atm}$，溶解度 $1.36\\times10^{-3}\\,\\mathrm{mol/L}$"
+   },
+   {
+    "id": "4",
+    "tex": "$6.80\\times10^{-4}\\,\\mathrm{mol}$，アルゴンがあるときの約 3 倍に増える"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　陽極（白金）では水が酸化されて酸素が発生し，陰極では銅(II) イオンが還元されて銅が析出する．\n\\[ \\text{陽極：}\\boldsymbol{\\ce{2H2O -> O2 + 4H+ + 4e-}}\\qquad \\text{陰極：}\\boldsymbol{\\ce{Cu^2+ + 2e- -> Cu}} \\]\n\n\\textbf{(2)}　流れた電子は $\\dfrac{1.00\\times1930}{9.65\\times10^4}=2.00\\times10^{-2}\\,\\mathrm{mol}$．水溶液中の $\\ce{Cu^2+}$ は $2.00\\times10^{-2}\\,\\mathrm{mol}$ あり，析出するのは $1.00\\times10^{-2}\\,\\mathrm{mol}$ なので足りている．\n\\[ 1.00\\times10^{-2}\\times63.5=\\boldsymbol{0.635\\,\\mathrm{g}} \\]\n\n\\textbf{(3)}　発生した酸素は $\\dfrac{2.00\\times10^{-2}}{4}=5.00\\times10^{-3}\\,\\mathrm{mol}$，溶けたのは $5.00\\times10^{-3}-4.78\\times10^{-3}=2.2\\times10^{-4}\\,\\mathrm{mol}$．全圧一定なので酸素の分圧はモル分率から\n\\[ p_{\\ce{O2}}=1.00\\times\\dfrac{4.78\\times10^{-3}}{4.78\\times10^{-3}+1.00\\times10^{-2}}=\\boldsymbol{0.323\\,\\mathrm{atm}} \\]\nヘンリーの法則より溶ける量は分圧と水溶液の体積に比例するので，溶解度は\n\\[ \\dfrac{2.20\\times10^{-4}}{0.500\\times0.3234}=\\boldsymbol{1.36\\times10^{-3}\\,\\mathrm{mol/L}}\\ (\\text{分圧 } 1.00\\,\\mathrm{atm}) \\]\n\n\\textbf{(4)}　気体が酸素だけなら分圧は $1.00\\,\\mathrm{atm}$ で，溶ける量は $1.36\\times10^{-3}\\times1.00\\times0.500=\\boldsymbol{6.80\\times10^{-4}\\,\\mathrm{mol}}$（気体として残るのは $4.32\\times10^{-3}\\,\\mathrm{mol}$）．アルゴンがあると酸素の分圧が $0.323\\,\\mathrm{atm}$ に下がるので溶ける量は $2.20\\times10^{-4}\\,\\mathrm{mol}$ にとどまり，アルゴンがないときには約 $\\boldsymbol{3}$ 倍に増える．溶ける量を決めるのは全圧ではなく酸素の分圧である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "電気分解で発生した気体の物質量はファラデーの法則で決まり，その一部が水に溶ける．全圧一定で不活性気体と共存するとき，気相の物質量から求めたモル分率で分圧が決まり，溶けた量（発生量−気相の量）と分圧からヘンリーの法則の溶解度が求まる．溶ける量は全圧でなく分圧で決まる．"
+ },
+ "concepts": [
+  "electrolysis",
+  "transition-metals",
+  "oxygen-sulfur"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "電気分解",
+  "ファラデーの法則",
+  "ヘンリーの法則",
+  "分圧",
+  "硫酸銅(II)"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,123 @@
+{
+ "id": "ORG-HYD-060",
+ "schema": "alchemia.problem/1",
+ "field": "ORG",
+ "unit": "ORG-02",
+ "topic": "共役ジエンへの臭素の 1,2-付加と 1,4-付加（生成物の数え上げと立体異性）",
+ "course": "化学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "structure",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "共役ジエン（単結合をはさんで C=C が 2 つ並んだ化合物）に臭素 $\\ce{Br2}$ を 1 分子だけ付加させると，一方の C=C の 2 つの炭素原子に Br が結合する 1,2-付加体のほかに，共役した 4 個の炭素原子の両端に Br が結合し，中央の 2 個の炭素原子の間に新たに C=C ができる 1,4-付加体も生じる．たとえば 1,3-ブタジエンからは $\\ce{CH2Br-CHBr-CH=CH2}$（1,2-付加体）と $\\ce{CH2Br-CH=CH-CH2Br}$（1,4-付加体）が生じる．\n2-メチル-1,3-ブタジエン（イソプレン）$\\ce{CH2=C(CH3)-CH=CH2}$ に $\\ce{Br2}$ を物質量比 1:1 で反応させた．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "生じうる付加体（分子式 $\\ce{C5H8Br2}$）の構造異性体をすべて示性式で示し，それぞれが 1,2-付加体か 1,4-付加体かを答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) の各構造異性体について，不斉炭素原子の有無とシス-トランス異性体の有無を答えよ．また，立体異性体を区別すると付加体は全部で何種類になるか答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(1) の付加体のどれに $\\ce{Br2}$ をもう 1 分子付加させても，構造異性体としては同じ化合物が得られる．その示性式と，その化合物の立体異性体の数を答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "1,3-ペンタジエン $\\ce{CH2=CH-CH=CH-CH3}$ と 1,4-ペンタジエン $\\ce{CH2=CH-CH2-CH=CH2}$ のそれぞれに $\\ce{Br2}$ を物質量比 1:1 で付加させたとき，生じうる付加体の構造異性体はそれぞれ何種類か．数が異なる理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "a-fig",
+   "role": "answer",
+   "kind": "diagram",
+   "format": "svg",
+   "src": "a-fig.svg",
+   "alt": "解答図：共役ジエンへの臭素の 1,2-付加と 1,4-付加（生成物の数え上げと立体異性）",
+   "caption": "解答図"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{CH2Br-CBr(CH3)-CH=CH2}$（1,2-付加体），$\\ce{CH2=C(CH3)-CHBr-CH2Br}$（1,2-付加体），$\\ce{CH2Br-C(CH3)=CH-CH2Br}$（1,4-付加体）の 3 種類"
+   },
+   {
+    "id": "2",
+    "tex": "2 つの 1,2-付加体は不斉炭素原子を 1 個ずつもち，シス-トランス異性体はない．1,4-付加体は不斉炭素原子をもたず，シス-トランス異性体がある．立体異性体を区別すると全部で 6 種類"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{CH2Br-CBr(CH3)-CHBr-CH2Br}$，立体異性体は 4 種類"
+   },
+   {
+    "id": "4",
+    "tex": "1,3-ペンタジエン：3 種類，1,4-ペンタジエン：1 種類．1,4-ペンタジエンの 2 つの C=C は $\\ce{CH2}$ で隔てられていて共役していないので 1,4-付加が起こらず，しかも分子が左右対称なのでどちらの C=C に付加しても同じ化合物になるから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "figure",
+     "ref": "a-fig"
+    },
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 付加の位置を数え上げる}　炭素骨格に左から $\\mathrm{C^1}$〜$\\mathrm{C^4}$ と番号を付ける（$\\mathrm{C^2}$ にメチル基）．イソプレンは左右対称ではないので，2 つの C=C は区別される．\n\\begin{itemize}\n\\item $\\mathrm{C^1=C^2}$ への 1,2-付加：$\\boldsymbol{\\ce{CH2Br-CBr(CH3)-CH=CH2}}$\n\\item $\\mathrm{C^3=C^4}$ への 1,2-付加（番号では 3,4-付加）：$\\boldsymbol{\\ce{CH2=C(CH3)-CHBr-CH2Br}}$\n\\item 1,4-付加（$\\mathrm{C^1}$ と $\\mathrm{C^4}$ に Br，$\\mathrm{C^2=C^3}$ が新たにできる）：$\\boldsymbol{\\ce{CH2Br-C(CH3)=CH-CH2Br}}$\n\\end{itemize}\nいずれも $\\ce{C5H8 + Br2 -> C5H8Br2}$ で，構造異性体は \\textbf{3 種類}である．1,4-付加が起こるのは，Br が一端に結合したあとの正電荷が共役によって $\\mathrm{C^2}$ と $\\mathrm{C^4}$ の両方に分散し，$\\ce{Br-}$ がどちらにも結合できるからである．\n\n\\textbf{(2) 立体異性}\n\\begin{itemize}\n\\item $\\ce{CH2Br-CBr(CH3)-CH=CH2}$：$\\mathrm{C^2}$ に $\\ce{CH2Br}$，Br，$\\ce{CH3}$，$\\ce{CH=CH2}$ の 4 つの異なる基 → 不斉炭素原子 1 個．C=C は末端（$\\ce{=CH2}$）なのでシス-トランス異性体はない．→ 2 種類\n\\item $\\ce{CH2=C(CH3)-CHBr-CH2Br}$：$\\mathrm{C^3}$ に H，Br，$\\ce{CH2Br}$，$\\ce{C(CH3)=CH2}$ → 不斉炭素原子 1 個．C=C は末端．→ 2 種類\n\\item $\\ce{CH2Br-C(CH3)=CH-CH2Br}$：不斉炭素原子はない．二重結合の一方の炭素に $\\ce{CH2Br}$ と $\\ce{CH3}$，他方に H と $\\ce{CH2Br}$ と，それぞれ異なる 2 つの基が結合しているので\\textbf{シス-トランス異性体がある}．→ 2 種類\n\\end{itemize}\n合計 $2+2+2=\\boldsymbol{6}$ \\textbf{種類}．\n\n\\textbf{(3) 2 分子目の付加}　どの付加体にも C=C が 1 つ残っており，そこへ Br が付くと，どれも $\\mathrm{C^1}$〜$\\mathrm{C^4}$ のすべてに Br が 1 個ずつ結合した $\\boldsymbol{\\ce{CH2Br-CBr(CH3)-CHBr-CH2Br}}$ になる（1,2-付加体は残りの C=C に，1,4-付加体は $\\mathrm{C^2=C^3}$ に付加する）．\n$\\mathrm{C^2}$（$\\ce{CH2Br}$，Br，$\\ce{CH3}$，$\\ce{CHBrCH2Br}$）と $\\mathrm{C^3}$（H，Br，$\\ce{CH2Br}$，$\\ce{CBr(CH3)CH2Br}$）がともに不斉炭素原子で，2 つの不斉炭素原子の置換基の組は異なるので分子内に対称面をもつ立体異性体（メソ体）はない．よって立体異性体は $2^2=\\boldsymbol{4}$ \\textbf{種類}．\n\n\\textbf{(4) 共役しているかどうか}\n1,3-ペンタジエン $\\ce{CH2=CH-CH=CH-CH3}$ は共役ジエンで，左右対称でないので\n$\\ce{CH2Br-CHBr-CH=CH-CH3}$，$\\ce{CH2=CH-CHBr-CHBr-CH3}$，$\\ce{CH2Br-CH=CH-CHBr-CH3}$（1,4-付加体）の $\\boldsymbol{3}$ \\textbf{種類}．\n1,4-ペンタジエン $\\ce{CH2=CH-CH2-CH=CH2}$ では 2 つの C=C の間に $\\ce{CH2}$ があって共役していないため，それぞれの C=C は独立したアルケンとしてふるまい，1,4-付加体のような「二重結合の位置が移った付加体」はできない．さらに分子は左右対称なので，どちらの C=C に付加しても $\\ce{CH2Br-CHBr-CH2-CH=CH2}$ の $\\boldsymbol{1}$ \\textbf{種類}になる．\n\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "共役ジエンへの 1 分子の付加では，どちらかの C=C への 1,2-付加に加えて，共役した 4 炭素の両端に付加して二重結合が中央へ移る 1,4-付加が起こる．非対称なジエンでは付加の位置ごとに構造異性体を数え，さらに不斉炭素原子・シス-トランス異性を判定して立体異性体まで数える．C=C が共役していなければ 1,4-付加は起こらない．"
+ },
+ "concepts": [
+  "hydrocarbon",
+  "halogen",
+  "carbon-silicon"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "共役ジエン",
+  "臭素付加",
+  "付加の位置",
+  "不斉炭素原子",
+  "シス-トランス異性体"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

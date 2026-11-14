@@ -1,0 +1,110 @@
+{
+ "id": "THE-EQL-106",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "銅と硝酸から生じた NO・NO₂・N₂O₄ の混合気体の組成（電子の収支と二量化平衡の連立）",
+ "course": "化学",
+ "level": 5,
+ "minutes": 35,
+ "format": [
+  "calc",
+  "condition"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "銅 $1.905\\,\\mathrm g$ を硝酸と完全に反応させ，発生した気体（$\\ce{NO}$ と $\\ce{NO2}$ のみ）をすべて，真空にした容積 $2.00\\,\\mathrm L$ の容器に集めた．容器内では $\\ce{NO2}$ の一部が二量化して次の平衡が成り立つ．\n\\[\\ce{2NO2 <=> N2O4}\\qquad K_\\mathrm c=\\frac{[\\ce{N2O4}]}{[\\ce{NO2}]^2}=1.70\\times10^{2}\\,\\mathrm{L/mol}\\ (298\\,\\mathrm K)\\]\n$298\\,\\mathrm K$ で容器内の全圧は $3.76\\times10^{4}\\,\\mathrm{Pa}$ であった．$\\ce{NO}$ は他の気体と反応せず，空気・水・硝酸の蒸気は容器に入らないものとする．Cu = 63.5，気体定数 $R=8.31\\times10^{3}\\,\\mathrm{Pa\\cdot L/(K\\cdot mol)}$ とし，必要なら $\\sqrt{58.3}=7.64$ を用いよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "発生した $\\ce{NO}$ を $a$ [mol]，発生した $\\ce{NO2}$ を（二量化する前の量で）$b$ [mol] とする．銅が失った電子と硝酸が受け取った電子のつり合いから，$a$ と $b$ の関係式を書け．"
+     },
+     {
+      "id": "2",
+      "tex": "二量化を無視して「容器内の気体の物質量 $=a+b$」とみなすと，$a$ は何 mol と求まるか．有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "二量化平衡を考慮して，$a$ と，容器内の $\\ce{NO2}$，$\\ce{N2O4}$ の物質量をそれぞれ有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "この容器を $298\\,\\mathrm K$ から $323\\,\\mathrm K$ に温めると，全圧は何倍になるか．次から選べ．ただし $\\ce{N2O4}$ の生成は発熱反応である．\n（ア）$\\dfrac{323}{298}$ 倍より大きい　（イ）ちょうど $\\dfrac{323}{298}$ 倍　（ウ）$\\dfrac{323}{298}$ 倍より小さい"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$3a+b=6.00\\times10^{-2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$1.5\\times10^{-2}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "3",
+    "tex": "$a=1.0\\times10^{-2}\\,\\mathrm{mol}$，$\\ce{NO2}$ $1.1\\times10^{-2}\\,\\mathrm{mol}$，$\\ce{N2O4}$ $9.7\\times10^{-3}\\,\\mathrm{mol}$"
+   },
+   {
+    "id": "4",
+    "tex": "（ア）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　気体の量（圧力）からは「容器内の分子の総数」しかわからないが，$\\ce{NO2}$ の二量化で分子の数が減っているので，それだけでは NO と NO₂ の内訳は決まらない．電子の収支（物質収支）・分子の数・二量化の平衡定数の 3 本を連立する．\n\n\\textbf{(1)} Cu $1.905/63.5=0.0300\\,\\mathrm{mol}$ が失う電子は $0.0600\\,\\mathrm{mol}$．$\\ce{HNO3}$（$+5$）→ $\\ce{NO}$（$+2$）は 3 電子，→ $\\ce{NO2}$（$+4$）は 1 電子なので $\\boldsymbol{3a+b=6.00\\times10^{-2}}$．\n\n\\textbf{(2)} 容器内の分子の総物質量は $n=\\dfrac{3.76\\times10^{4}\\times2.00}{8.31\\times10^{3}\\times298}=3.037\\times10^{-2}\\,\\mathrm{mol}$．\n$a+b=n$ とすると $2a=0.0600-0.03037$，$a=\\boldsymbol{1.5\\times10^{-2}\\,\\mathrm{mol}}$．\n\n\\textbf{(3)} 容器内の $\\ce{NO2}$ を $x$，$\\ce{N2O4}$ を $y$ [mol] とすると $b=x+2y$，$n=a+x+y$．(1) と合わせて\n\\[y=0.0600-n-2a=0.02963-2a,\\qquad x=2n-0.0600+a=a+0.00074\\]\n平衡定数より $\\dfrac{y/2.00}{(x/2.00)^2}=1.70\\times10^{2}$，すなわち $2.00\\,y=170\\,x^2$．$s=a+0.00074\\ (=x)$ とおくと $y=0.02963-2(s-0.00074)=0.03111-2s$ で，\n\\[170s^2+4s-0.0622=0,\\qquad s=\\frac{-4+\\sqrt{16+42.3}}{340}=\\frac{-4+7.64}{340}=1.07\\times10^{-2}\\]\nよって $a=s-0.00074=\\boldsymbol{1.0\\times10^{-2}\\,\\mathrm{mol}}$，$\\ce{NO2}$ $x=\\boldsymbol{1.1\\times10^{-2}\\,\\mathrm{mol}}$，$\\ce{N2O4}$ $y=0.03111-2\\times0.0107=\\boldsymbol{9.7\\times10^{-3}\\,\\mathrm{mol}}$．\n（確かめ：$b=x+2y=3.0\\times10^{-2}$，$3a+b=6.0\\times10^{-2}$．）\n二量化を無視した (2) は，$\\ce{N2O4}$ 1 分子を 1 個と数えた分だけ分子数を少なく見て，その不足を NO（電子 3 個で 1 分子）で説明しようとするので，$a$ を 1.5 倍も大きく見積もる．\n\n\\textbf{(4)} 温度を上げると，発熱反応である二量化の平衡は $\\ce{N2O4}$ が解離する向き（分子の数が増える向き）に移る．分子数が一定ならシャルルの法則どおり $\\dfrac{323}{298}$ 倍だが，分子数が増えるのでそれより大きくなる．答えは $\\boldsymbol{\\text{（ア）}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "圧力から求まるのは容器内の分子の総数だけで，NO₂ の二量化で分子数が減っていると NO と NO₂ の内訳は決まらない．銅の電子の収支（3a+b）・分子の総数・二量化の平衡定数を連立して組成を決め，二量化を無視すると NO を大きく見積もることを確かめる．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "transition-metals",
+  "nitrogen-phosphorus"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "二酸化窒素",
+  "四酸化二窒素",
+  "化学平衡",
+  "電子の収支",
+  "連立方程式",
+  "銅と硝酸"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

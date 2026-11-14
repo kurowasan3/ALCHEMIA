@@ -1,0 +1,109 @@
+{
+ "id": "THE-EQL-098",
+ "schema": "alchemia.problem/1",
+ "field": "THE",
+ "unit": "THE-11",
+ "topic": "2 つの状態を往復して働く酵素の定常状態（遅い段階への酵素の偏りと速度の基質依存性）",
+ "course": "化学",
+ "level": 4,
+ "minutes": 30,
+ "format": [
+  "calc",
+  "compare"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある酵素は 2 つの状態 E，E* をとり，基質 S と補助基質 B を次の 2 段階で反応させる（P，Q は生成物）．\n\\[ \\text{(i)}\\ \\ce{E + S ->[\\text{}] E^* + P}\\quad v_{\\text{i}}=k_{1}[\\ce{S}][\\ce{E}] \\qquad \\text{(ii)}\\ \\ce{E^* + B ->[\\text{}] E + Q}\\quad v_{\\text{ii}}=k_{2}[\\ce{B}][\\ce{E^*}] \\]\n酵素の全濃度 $[\\ce{E}]+[\\ce{E^*}]=E_{\\mathrm T}$ は一定で，$[\\ce{B}]$ は補充によって一定に保たれる．反応が始まるとすぐに $[\\ce{E}]$，$[\\ce{E^*}]$ は一定（定常状態）になり，その後は S の減少に合わせてゆっくり変わるものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "定常状態での反応の速さ $v$（$=v_{\\text{i}}=v_{\\text{ii}}$）を，$k_{1}$，$k_{2}$，$[\\ce{S}]$，$[\\ce{B}]$，$E_{\\mathrm T}$ で表せ．また，$\\dfrac{[\\ce{E}]}{[\\ce{E^*}]}$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "ある実験で，$[\\ce{S}]$ がはじめの値の半分になるまでに，$v$ はわずか $2.0\\,\\%$ しか低下しなかった．はじめの時点での $\\dfrac{[\\ce{E}]}{[\\ce{E^*}]}$ を有効数字 2 桁で求めよ．また，このとき酵素の大部分はどちらの状態にあり，(i)，(ii) のどちらが反応全体の速さを決めているか答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の実験で，$v$ が上限値 $k_{2}[\\ce{B}]E_{\\mathrm T}$ の $90\\,\\%$ 以上に保たれるのは，S のはじめの量の何 \\% が消費されるまでか．有効数字 2 桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(2) のはじめの状態から，(a) $[\\ce{S}]$ を 2 倍にする，(b) $[\\ce{B}]$ を 2 倍にする，のそれぞれで $v$ は何倍になるか．有効数字 3 桁で答え，速くするのに有効な操作を選べ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$v=\\dfrac{k_{1}k_{2}[\\ce{S}][\\ce{B}]E_{\\mathrm T}}{k_{1}[\\ce{S}]+k_{2}[\\ce{B}]}$，$\\dfrac{[\\ce{E}]}{[\\ce{E^*}]}=\\dfrac{k_{2}[\\ce{B}]}{k_{1}[\\ce{S}]}$"
+   },
+   {
+    "id": "2",
+    "tex": "$0.021$（$\\frac1{48}$）．酵素の大部分（約 98 \\%）は E* の状態にあり，(ii) が全体の速さを決めている．"
+   },
+   {
+    "id": "3",
+    "tex": "$81\\,\\%$"
+   },
+   {
+    "id": "4",
+    "tex": "(a) $1.01$ 倍　(b) $1.96$ 倍．有効なのは (b)．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　定常状態では E が (i) で減る速さと (ii) で増える速さが等しい：$k_{1}[\\ce{S}][\\ce{E}]=k_{2}[\\ce{B}][\\ce{E^*}]$．よって\n\\[ \\frac{[\\ce{E}]}{[\\ce{E^*}]}=\\frac{k_{2}[\\ce{B}]}{k_{1}[\\ce{S}]} \\]\n$[\\ce{E}]+[\\ce{E^*}]=E_{\\mathrm T}$ と組み合わせて $[\\ce{E}]=\\dfrac{k_{2}[\\ce{B}]}{k_{1}[\\ce{S}]+k_{2}[\\ce{B}]}E_{\\mathrm T}$ なので\n\\[ v=k_{1}[\\ce{S}][\\ce{E}]=\\frac{k_{1}k_{2}[\\ce{S}][\\ce{B}]E_{\\mathrm T}}{k_{1}[\\ce{S}]+k_{2}[\\ce{B}]} \\]\n\n\\textbf{(2)}　$r=\\dfrac{[\\ce{E}]}{[\\ce{E^*}]}=\\dfrac{k_{2}[\\ce{B}]}{k_{1}[\\ce{S}]}$ とおくと $v=\\dfrac{k_{2}[\\ce{B}]E_{\\mathrm T}}{1+r}$．$[\\ce{B}]$ 一定で $[\\ce{S}]$ が半分になると $r$ は 2 倍になるので\n\\[ \\frac{1+r}{1+2r}=0.980\\quad\\Longrightarrow\\quad 0.020=0.960r,\\quad r=\\frac1{48}\\fallingdotseq\\boldsymbol{0.021} \\]\n$[\\ce{E^*}]$ は全体の $\\dfrac{48}{49}\\fallingdotseq98\\,\\%$ で，\\textbf{酵素の大部分は E* の状態}にある．E* はすぐに S と反応できる E に戻るのを待っている状態であり，E* を E に戻す \\textbf{(ii) が遅い段階}（律速段階）として全体の速さを決めている．このため $v$ は $[\\ce{S}]$ にほとんどよらず，$k_{2}[\\ce{B}]E_{\\mathrm T}$ に近い（S について 0 次に近い）．\n（逆に $r\\gg1$ なら酵素は E に偏り，$v\\fallingdotseq k_{1}[\\ce{S}]E_{\\mathrm T}$ で $[\\ce{S}]$ に比例する．$v$ の $[\\ce{S}]$ への依存の仕方から，酵素がどちらの状態にたまっているかがわかる．）\n\n\\textbf{(3)}　$\\dfrac{v}{k_{2}[\\ce{B}]E_{\\mathrm T}}=\\dfrac1{1+r}\\ge0.90$ より $r\\le\\dfrac19$．$r$ は $[\\ce{S}]$ に反比例するので\n\\[ \\frac{[\\ce{S}]}{[\\ce{S}]_{0}}\\ge\\frac{1/48}{1/9}=\\frac{9}{48}=0.1875 \\]\nS のはじめの量の $1-0.1875\\fallingdotseq\\boldsymbol{81\\,\\%}$ が消費されるまで，上限の 90 \\% 以上の速さが保たれる．\n\n\\textbf{(4)}　(a) $r\\to\\dfrac r2$：$\\dfrac{1+r}{1+r/2}=\\dfrac{49/48}{97/96}\\fallingdotseq\\boldsymbol{1.01}$ 倍．\n(b) 分子の $[\\ce{B}]$ が 2 倍，$r\\to2r$：$\\dfrac{2(1+r)}{1+2r}=\\dfrac{2\\times49/48}{50/48}=\\boldsymbol{1.96}$ 倍．\n律速段階 (ii) にかかわる B を増やす \\textbf{(b)} が有効で，すでに過剰な S を増やしてもほとんど速くならない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "2 つの状態を往復する触媒（酵素）では定常状態で両段階の速さが等しく，触媒は遅い段階の前の状態にたまる．全体の速さが一方の基質の濃度にほとんどよらないことから触媒の偏り（状態の比）を逆算でき，速さを上げるには律速段階にかかわる物質を増やす必要がある．"
+ },
+ "concepts": [
+  "chemical-equilibrium",
+  "protein-amino",
+  "concentration"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "酵素反応",
+  "定常状態",
+  "律速段階",
+  "反応速度式",
+  "触媒サイクル"
+ ],
+ "provenance": {
+  "created": "2026-11-07",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "chemistry": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

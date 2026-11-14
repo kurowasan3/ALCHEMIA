@@ -17,6 +17,7 @@
   単位    入力用の答えに書いた単位 [ ] が単位表にあるか
 エラーが1件でもあれば終了コード 1。警告は表示するだけ。
 """
+import json
 import re
 import sys
 import xml.etree.ElementTree as ET
@@ -289,6 +290,13 @@ def check_chem_data(R):
         for k in list(t['pos']) + list(t['tri']) + list(t['neg_note']):
             if k not in cids or k not in t['scope']:
                 R.err('chem/tests.json', f'{t["id"]} の {k} が化合物（または対象）にありません')
+    cdir = Path(CONTENT) / 'cards'
+    for f in sorted(cdir.glob('*.json')) if cdir.exists() else []:
+        for c in json.loads(f.read_text(encoding='utf-8'))['cards']:
+            for side in ('f', 'b'):
+                for eq in re.findall(r'\\ce\{((?:[^{}]|\{[^{}]*\})*)\}', c[side]):
+                    if should_check(eq) and check_equation(clean_ce(eq)):
+                        R.err(f'cards/{f.name}', f'{c["id"]} の反応式 {eq} が{check_equation(clean_ce(eq))}')
     try:
         from rdkit import Chem, RDLogger
         RDLogger.DisableLog('rdApp.*')

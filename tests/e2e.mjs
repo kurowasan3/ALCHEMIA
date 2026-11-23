@@ -1,6 +1,7 @@
 // ブラウザでの通し操作（Playwright・Chromium、iPhone 幅 390×844）
 //   node tests/e2e.mjs
-// 5つの出題形式の採点、図鑑の7ページ、一部のデータだけ古いときの警告、オフライン、同期を確かめる。
+// 5つの出題形式の採点、図鑑の7ページ、一部のデータだけ古いときの警告、オフライン、同期、
+// Lemma v0.27 に合わせた学習の流れ（今日の学習・前回の続き・ブックマーク・解答の形式・類題・バックアップ・消去）を確かめる。
 import fs from 'fs';
 import http from 'http';
 import path from 'path';
@@ -305,7 +306,7 @@ try {
     await page.locator('.onode[data-c="ethanol"]').click(); await page.waitForTimeout(800);
     const v = JSON.parse(fs.readFileSync(path.join(root, 'data/index.json'), 'utf8')).dataVersion;
     const keys = await page.evaluate(async () => caches.keys());
-    ok(keys.includes('alchemia-data-' + v) && keys.includes('alchemia-v0.2.0'), `コード用とデータ用のキャッシュ ${keys}`);
+    ok(keys.includes('alchemia-data-' + v) && keys.includes('alchemia-v0.3.0'), `コード用とデータ用のキャッシュ ${keys}`);
     ok(keys.includes('lemma-v0.9.0') && keys.includes('celestia-v0.5.0'), '同じドメインの他のアプリのキャッシュを消さない');
     await page.context().setOffline(true);
     await page.goto(U + '#today'); await page.waitForTimeout(1200);
@@ -329,18 +330,103 @@ try {
       await page.goto(U + '#settings'); await page.waitForTimeout(1500);
       await page.fill('#acct-email', 'me@example.com'); await page.click('#acct-send'); await page.waitForTimeout(500);
       await page.fill('#acct-code', '123456'); await page.click('#acct-verify'); await page.waitForTimeout(1500);
+      // 端末とアカウントの両方に記録があるときは、合わせるかを聞かれる（Lemma v0.27 と同じ）
+      page.asked = await page.locator('.chooser').count() > 0;
+      if (page.asked) { await page.click('.chooser [data-k="merge"]'); await page.waitForTimeout(1500); }
     };
     const A = await newPage({ state: { ...fixture, log: fixture.log.slice(0, 25) } });
     await login(A);
     ok((await A.locator('#acct').innerText()).includes('Lemma と共通'), 'アカウントが Lemma と共通であることを表示');
     const B = await newPage({ state: { ...fixture, log: fixture.log.slice(20) } });
     await login(B);
+    ok(!A.asked && B.asked, 'ログイン時：アカウントにも端末にも記録があるときだけ、合わせるかを聞く');
     const nB = (await LS(B)).log.length;
     ok(nB === fixture.log.length, `端末B：両方の端末の記録が合わさる（${nB}件）`);
     ok(await B.evaluate(() => !!localStorage.getItem('alchemia.auth') && !localStorage.getItem('lemma.auth')), 'ログイン情報は alchemia.auth に保存（Lemma と別）');
     ok([...mock.rows.values()][0] && mock.rows.size === 1, 'サーバーの表 alchemia_state に1行');
     const real = (es) => es.filter(e => !/status of 403/.test(e));
     ok(real(A.errors).length === 0 && real(B.errors).length === 0, `ページのエラーなし ${A.errors} ${B.errors}`);
+  }
+  // 8. Lemma v0.27 に合わせた学習の流れ：今日の学習・前回の続き・ブックマーク・解答の形式・類題・バックアップ・消去
+  {
+    mock.users.clear(); mock.rows.clear();
+    const P = await newPage();
+    await P.goto(U + '#today'); await P.waitForTimeout(1500);
+    ok(await P.locator('.first-run #firstgo').count() === 1 && (await P.locator('h1').innerText()) === '今日の学習', '初めて：「今日の学習」と「まず8問」');
+    await P.click('#firstgo'); await P.waitForTimeout(1500);
+    ok((await P.locator('.why').innerText()).includes('はじめての演習'), '出題の理由を表示する');
+    // 1問解いて中断 → 前回の続き
+    await P.evaluate("__alchemia.open(['INO-GPR-007', 'INO-HAL-001', 'THE-MOL-001'])"); await P.waitForTimeout(1200);
+    await P.click('[data-bm="INO-GPR-007"]'); await P.waitForTimeout(200);
+    ok(await P.locator('[data-bm="INO-GPR-007"].on').count() === 1, 'ブックマーク：問題画面で付けられる');
+    await P.locator('#conf button').first().click();
+    await P.fill('#inputs input', 'NH3'); await P.click('#judge'); await P.waitForTimeout(800);
+    ok((await P.locator('.conf-note').innerText()).includes('自信がないまま正解'), '自信なしで正解：早めに復習に出すと知らせる');
+    const g = (await LS(P)).log.at(-1);
+    ok(g.g === 2 && g.md === 'input', `自信なしの正解は「ヒントあり」と同じ評価（g=${g.g}）・答え方を記録`);
+    ok(await P.locator('#similar').count() === 1, '解いたあとに「類題を1問追加」');
+    await P.click('#similar'); await P.waitForTimeout(800);
+    ok((await P.locator('#similar').innerText()).includes('追加しました'), '類題を次に差し込む');
+    await P.click('#next'); await P.waitForTimeout(800);
+    ok((await P.locator('.why').innerText()).includes('類題'), '類題には理由「類題」');
+    await P.click('#quit'); await P.waitForTimeout(800);
+    ok((await P.locator('#resume').innerText()).includes('4問の 2問目'), `中断すると「前回の続き」（${await P.locator('#resume').innerText()}）`);
+    ok((await P.locator('#bmset').innerText()).includes('1問') && await P.locator('.goal').count() === 1, 'ホームに今日の目標とブックマーク');
+    await P.click('#resume'); await P.waitForTimeout(1200);
+    ok((await P.locator('.count').innerText()).startsWith('2 /'), '前回の続きから再開できる');
+    await P.click('#quit'); await P.waitForTimeout(500);
+    await P.click('#todaygo'); await P.waitForTimeout(1500);
+    ok(await P.locator('.why').count() === 1, '今日の演習：出題の理由つき');
+    await P.click('#quit'); await P.waitForTimeout(500);
+    // 解答の形式：選択式（語句の欄が4択に）・自己採点
+    await P.goto(U + '#settings'); await P.waitForTimeout(800);
+    await P.click('#amode [data-m="choice"]'); await P.waitForTimeout(300);
+    await P.evaluate("__alchemia.open(['INO-GPR-007'])"); await P.waitForTimeout(1200);
+    ok(await P.locator('#inputs .ch-opt').count() === 4 && await P.locator('#inputs input').count() === 0, '選択式：語句・化学式の欄が4つの選択肢になる');
+    await P.locator('#conf button').nth(2).click();
+    await P.locator('#inputs .ch-opt').filter({ hasNotText: 'NH' }).first().click(); await P.click('#judge'); await P.waitForTimeout(800);
+    ok(await P.locator('#inputs .ch-opt.right').count() === 1 && await P.locator('.verdict').count() === 1, '選択式：まちがえるとやり直しなしで答えを見せる');
+    ok((await P.locator('.conf-note.warn').innerText()).includes('確実'), '「確実」で不正解：思い込みの確認を促す');
+    ok((await LS(P)).log.at(-1).md === 'choice', '答え方（選択式）を記録');
+    await P.goto(U + '#settings'); await P.waitForTimeout(800);
+    await P.click('#amode [data-m="self"]'); await P.waitForTimeout(300);
+    await P.evaluate("__alchemia.open(['INO-GPR-007'])"); await P.waitForTimeout(1200);
+    ok(await P.locator('#inputs').count() === 0 && await P.locator('#reveal').count() === 1, '自己採点：入力欄なしで答え合わせ');
+    await P.goto(U + '#settings'); await P.waitForTimeout(800);
+    await P.click('#amode [data-m="input"]'); await P.waitForTimeout(300);
+    // バックアップ：形式つきで書き出し → 別のファイルは断る → 置き換え → 控えから戻す
+    const [exp] = await Promise.all([P.waitForEvent('download'), P.click('#exp')]);
+    const bk = JSON.parse(fs.readFileSync(await exp.path(), 'utf8'));
+    ok(bk.format === 'alchemia-backup' && bk.version === 1 && bk.schema === 2 && /^fnv1a32:/.test(bk.hash) && bk.state.log.length === 2, '書き出し：形式・版・確認用の値つきのバックアップ');
+    await P.setInputFiles('#imp', { name: 'x.json', mimeType: 'application/json', buffer: Buffer.from('{"hello":1}') });
+    await P.waitForTimeout(400);
+    ok((await P.locator('.toast').innerText()).includes('ALCHEMIA の学習記録のファイルではありません'), '読み込み：別のファイルは断る');
+    await P.setInputFiles('#imp', { name: 'b.json', mimeType: 'application/json', buffer: Buffer.from(JSON.stringify(fixture)) });
+    await P.waitForTimeout(400);
+    await P.click('.chooser [data-k="replace"]'); await P.waitForTimeout(800);
+    ok((await P.locator('.chooser').innerText()).includes('読み込みました'), '読み込み：結果（件数・点検）を表示する');
+    await P.click('.chooser [data-k="ok"]'); await P.waitForTimeout(400);
+    const st = await LS(P);
+    ok(st.log.length === fixture.log.length && st.resetAt > 0 && st.schema === 2, `読み込み：v0.2 の記録を移行して置き換え、消した印が付く（${st.log.length}件）`);
+    await P.goto(U + '#settings'); await P.waitForTimeout(800);
+    ok(await P.locator('.snap-back').count() >= 1 && (await P.locator('.integrity summary').innerText()).includes('記録の点検'), '設定：記録の点検と自動の控えが見える');
+    await P.click('.snap-back >> nth=0'); await P.waitForTimeout(300);
+    await P.click('.chooser [data-k="replace"]'); await P.waitForTimeout(800);
+    await P.click('.chooser [data-k="ok"]'); await P.waitForTimeout(400);
+    ok((await LS(P)).log.length === bk.state.log.length, '控えの時点に戻せる');
+    // 消去：控えを残してから消す
+    await P.goto(U + '#settings'); await P.waitForTimeout(800);
+    await P.click('#reset'); await P.waitForTimeout(300);
+    await P.click('.chooser [data-k="all"]'); await P.waitForTimeout(800);
+    const st2 = await LS(P);
+    ok(st2.log.length === 0 && st2.resetAt > 0 && (await P.evaluate(() => JSON.parse(localStorage.getItem('alchemia.snap.v1')).length)) >= 1, '記録をすべて消す：消す前の記録は控えに残る');
+    ok(P.errors.length === 0, `ページのエラーなし ${P.errors}`);
+    // 壊れた記録は上書きせずに退避する
+    const Q = await browser.newContext({ viewport: { width: 390, height: 844 }, serviceWorkers: 'block' });
+    await Q.addInitScript(() => { if (!sessionStorage.getItem('seeded')) { sessionStorage.setItem('seeded', '1'); localStorage.setItem('alchemia.v1', '{壊れた'); } });
+    const q = await Q.newPage();
+    await q.goto(U + '#today'); await q.waitForTimeout(1500);
+    ok((await q.locator('.banner').innerText()).includes('読めませんでした') && await q.evaluate(() => Object.keys(localStorage).some(k => k.startsWith('alchemia.v1.broken.'))), '読めない記録は退避して知らせる');
   }
 } finally {
   await browser.close();

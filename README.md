@@ -2,8 +2,8 @@
 
 <img src="icons/icon-192.png" width="96" alt="ALCHEMIA のアイコン：三角フラスコとベンゼン環">
 
-反応表・反応経路の地図・周期表と問題演習で、つながりから覚える高校化学アプリ（試作版 v0.1）。
-[CELESTIA](https://github.com/kurowasan3/CELESTIA)（高校物理）と同じ仕組み（復習・自動採点・同期・オフライン・問題管理表からの取り込み）で、シミュレーションの代わりに「図鑑」を持っています。
+反応表・反応経路の地図・周期表と問題演習で、つながりから覚える高校化学アプリ（試作版 v0.3）。
+[Lemma](https://github.com/kurowasan3/lemma)（受験数学）v0.27 と同じ仕組み（学習記録の保存・今日の学習・前回の続き・解答の形式・ブックマーク・バックアップ・同期・オフライン・配信用フォルダ）で、[CELESTIA](https://github.com/kurowasan3/CELESTIA)（高校物理）のシミュレーションの代わりに「図鑑」と「暗記カード」を持っています。
 iPhone・iPad・PC のブラウザで動き、ホーム画面に追加するとアプリとして使えます（PWA）。
 
 ## いまできること
@@ -27,8 +27,18 @@ iPhone・iPad・PC のブラウザで動き、ホーム画面に追加すると�
   - 条件判断（1つ選ぶ・すべて選ぶ）
   - 反応経路（経路の空欄の物質と試薬）
   - 計算（有効数字の桁数で判定。`1.2×10^-3`・`1.2e-3` も読める）
-- **問題 333問**：全32単元・基礎〜国公立2次（基礎 62・標準 151・入試基礎 89・国公立2次 31）。難関・最難関は問題管理表から取り込む前提
-- **全分野からランダム／形式ごと／単元ごと／復習／検索／問題セット（3つ）**、自信度、定着度、ライト・ダーク、アカウントと同期、オフライン（CELESTIA と同じ）
+- **問題 1861問**：全32単元（基礎 66・標準 460・入試基礎 89・国公立2次 763・難関 419・最難関 64）。入力して採点できる問題 333問（うち選択式にもなる問題 230問）、ほかは自己採点
+- **今日の学習（Lemma v0.27 と同じ流れ）**
+  - 今日の目標（1回の問題数）と進み具合、**今日の演習**：復習の時期が来た問題 → 苦手な単元 → 新しい問題を、単元が偏らないように組み合わせ、問題ごとに出題の理由を表示
+  - **前回の続き**：中断した演習を、答え終えた問題の次から再開（2週間まで）
+  - **自信度**：自信なしで正解した問題は「ヒントあり」と同じ扱いで早めに復習、「確実」で解けなかったときは思い込みの確認を促す
+  - **類題を1問追加**（同じ単元・共通のタグ・近い難易度）、**ブックマーク ☆**（ホームからまとめて出題。外した印も同期）
+  - **解答の形式**（設定）：記述式（入力して採点）・**選択式**（語句・化学式・数値の欄を4択に。`tools/make_choices.mjs` が作る 230問）・自己採点
+  - 頻出度（問題に `"value": 1〜3` があるとき。未着手の問題は頻出度の高いものほど先に出る）
+- **学習記録を失わない保存（`js/store.js`。Lemma と同じ）**：読めない記録は上書きせずに退避、保存に失敗したら前の記録のまま、別のタブの保存とは合わせてから保存、移行・読み込み・消去の前に端末に控えを残す。設定に「記録の点検」と「自動の控え（戻す）」
+- **バックアップ**：形式・版・件数・確認用の値（FNV-1a）つきで書き出し、読み込みは「合わせる／置き換える」を選べる（壊れた・別のアプリのファイルは断る）
+- **アカウント**：ログイン時に端末とアカウントの両方に記録があれば合わせるかを聞く、ログアウト時に端末の記録を消せる（共用の端末向け）、「記録をすべて消す」はほかの端末・サーバーの古い記録もよみがえらせない
+- **全分野からランダム／形式ごと／単元ごと／復習／検索／問題セット（3つ）**、定着度（レーダー・得意苦手）、テスト記録の CSV、ライト・ダーク、オフライン
 - マスコット：サラマンダーの「ラヴォ」（錬金術の火の精。名前はラボアジエから）
 
 ## データの正しさを守る仕組み
@@ -39,6 +49,7 @@ iPhone・iPad・PC のブラウザで動き、ホーム画面に追加すると�
 - **構造式と式の一致**：有機化合物の示性式・高分子の繰り返し単位の式が、SMILES から数えた原子の数と一致するか（RDKit があるとき）
 - **図鑑の参照**：反応表のすべてのイオン × 試薬がそろっているか、経路の化合物・検出反応の化合物が存在するか
 - **答えの整合**：すべての「入力用の答え」が読め、正解を入れると正解になり、選びすぎ・逆順では正解にならないか
+- **選択式の選択肢**：誤答の選択肢がすべてアプリの採点で不正解になり、正解・ほかの選択肢と重ならないか（`content/choices.json` が入力用の答えから作り直したものと同じか）
 - 反応表の陽性・陰性や、条件判断・比較の正解の多くは、図鑑のデータから自動で決めている（図鑑と問題が食い違わない）
 
 ## フォルダ
@@ -58,8 +69,9 @@ content/                 正規データ（マスター。ここを編集する�
     struct/              構造式の SVG（tools/structgen.py が SMILES から作る）
   problems/<分野>/<問題ID>/problem.json
 data/                    アプリ用（生成物。tools/build_data.py が作る。手で編集しない）
-js/                      アプリ（app.js・zukan.js（図鑑）・catalog.js・answer.js（採点）・parser.js・sync.js …）
-tools/                   変換・検査（chemlib.py：化学式と反応式／structgen.py：構造式／import_items.py：問題管理表の取り込み）
+  choices.json           選択式の選択肢（tools/make_choices.mjs が作る）
+js/                      アプリ（app.js・zukan.js（図鑑）・cards.js（暗記カード）・store.js（記録の保存）・catalog.js・answer.js（採点）・parser.js・sync.js …）
+tools/                   変換・検査（chemlib.py：化学式と反応式／structgen.py：構造式／import_items.py：問題管理表の取り込み／make_choices.mjs：選択式／build_dist.py：配信用フォルダ）
 tests/                   検査（node tests/run.mjs）
 docs/data-spec.md        データ仕様
 supabase/schema.sql      同期用の表（Supabase の SQL Editor で1回実行）
@@ -70,6 +82,7 @@ supabase/schema.sql      同期用の表（Supabase の SQL Editor で1回実行
 ```sh
 pip3 install jsonschema rdkit        # rdkit は構造式を作るときだけ
 python3 tools/structgen.py           # 図の "smiles" や図鑑の SMILES から構造式の SVG を作る
+node tools/make_choices.mjs          # 入力用の答えから選択式の選択肢を作る（答えを足した・変えたとき）
 python3 tools/build_data.py          # content/ → data/
 node tests/run.mjs                   # 検査（全部 ✓ になればOK。--e2e でブラウザの通し操作も）
 python3 tools/validate_content.py --write-golden   # 新しい問題ID を台帳に足す（問題を足したとき）
@@ -90,6 +103,7 @@ python3 tools/build_data.py && python3 tools/validate_content.py --write-golden 
 
 - 問題ID は item.json の id をそのまま使う（同じ ID は上書き）。単元は単元名で決まる（`taxonomy.json` の名前。よくある略し方は `ALIASES` で吸収）
 - 難易度 1〜5 → 基礎・標準・国公立2次・難関・最難関
+- 頻出度：item.json の `frequency`、または管理表の「頻出度」列（高・中・低）→ `value`
 - item.json に `"format": "pathway"` のように書くと、その出題形式に入る（qa・equation・compare・condition・pathway・calc・structure。無ければ記述）
 - 入力採点はしない（自己採点）。自動採点にしたい小問は、取り込んだあと `answer.parts[].grading` を書き足す
 - 問題 ID の分野の3文字は THE（理論）・INO（無機）・ORG（有機）・POL（高分子）
@@ -98,10 +112,16 @@ python3 tools/build_data.py && python3 tools/validate_content.py --write-golden 
 
 - Supabase プロジェクトは **Lemma・CELESTIA と共通**（`js/config.js` の値も同じ）。記録は別の表 `alchemia_state`
 - 準備：`supabase/schema.sql` を SQL Editor で1回実行（表を1つ足すだけ）
-- 端末の保存キーは `alchemia.v1`・`alchemia.auth`、キャッシュ名は `alchemia-` で始まる（同じドメインの Lemma・ぶつりば・CELESTIA と混ざらない・消し合わない）
+- 端末の保存キーは `alchemia.v1`（記録）・`alchemia.snap.v1`（自動の控え）・`alchemia.session.v1`（前回の続き）・`alchemia.auth`、キャッシュ名は `alchemia-` で始まる（同じドメインの Lemma・ぶつりば・CELESTIA と混ざらない・消し合わない）
+- 記録の形の版は schema 2（v0.2 までの schema 1 の記録は、起動時に控えを残してから移行する）
 
 ## GitHub Pages で公開する
 
 リポジトリ（例：`kurowasan3/ALCHEMIA`、Public）の直下にこのフォルダの中身を置き、Settings → Pages で `main` / `/ (root)` を選ぶ。
 
 - 更新したときは `sw.js` の `VERSION`、各 JS の `FILE_VERSION`、`css/style.css` の `--alchemia-version` を同じ値に上げる
+
+## 非公開にして配信する（Lemma と同じ形）
+
+`python3 tools/build_dist.py` で、アプリが動くのに必要なファイルだけの `dist/` を作る（`content/`・`tools/`・`tests/`・`docs/`・`verify/` は入らない）。
+`_headers`（CSP などのセキュリティヘッダー・noindex）と `robots.txt` も入るので、リポジトリを非公開にしたら `dist/` だけを Cloudflare Pages などに置く。利用規約は `terms.html`。

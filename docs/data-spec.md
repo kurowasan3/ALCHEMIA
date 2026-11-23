@@ -30,6 +30,7 @@ JSON Schema は `tools/schema/`、Schema で見られない関係の検査は `t
 | `idea` | | 核となる考え方 `{tex}` |
 | `zukan` | | 解いたあとに開く図鑑のページ `{page, key?, label?}`。page は `ions` `reactions` `organic` `tests` `polymers` `elements` `laws`、key はイオン（`Cu^2+`）・反応ID・化合物ID・高分子ID・元素記号・法則ID |
 | `choices` | | 選択問題の選択肢。誤答の選択肢に `misconception` を付けると、選んだときに誤概念として記録できる（Phase 5） |
+| `value` | | 頻出度 1=低 2=中 3=高（無いときは中）。演習で未着手の問題を選ぶとき、高いものほど先に選ばれやすい。問題画面に「頻出度」のチップ |
 | `concepts` `laws` `misconceptions` | ○ | 概念・法則・誤概念の ID（無ければ `[]`） |
 | `tags` `provenance` `quality` | ○ | `quality.status` は `draft`／`review`／`published`／`hidden`。アプリに出るのは `published` だけ |
 
@@ -119,6 +120,8 @@ JSON Schema は `tools/schema/`、Schema で見られない関係の検査は `t
 | `search.json` `collections.json` | 検索の索引（概念名・法則名も入る）、問題セット |
 | `assets/<問題ID>/` | 図のファイル。名前に中身のハッシュ（`q-setup-35755270.svg`）が付くので、図を直すとキャッシュも入れ替わる |
 
+選択式の選択肢は `content/choices.json`（`node tools/make_choices.mjs` が入力用の答えから作る。手で編集しない）。`{問題ID: {spec, f: [[正解, 誤答, 誤答, 誤答] | null, …]}}` で、`spec` が今の入力用の答えと違う問題は使わない。
+
 本文の HTML では、図は `<figure class="pfig" data-fig="図ID"></figure>` の空の枠で、`js/problem/figures.js` が中身を入れる。
 
 ## 版は3つを分ける（Lemma と同じ）
@@ -127,4 +130,4 @@ JSON Schema は `tools/schema/`、Schema で見られない関係の検査は `t
 | --- | --- | --- |
 | コードの版 | 各 JS の `FILE_VERSION`、CSS の `--alchemia-version`、`sw.js` の `VERSION` | アプリを更新したとき（食い違うと赤い警告） |
 | データ形式の版 | `index.json` の `format` | `data/` の項目の意味を変えたとき |
-| 学習記録の版 | localStorage `alchemia.v1` の `schema`（今は 1） | 学習記録の形を変えたとき |
+| 学習記録の版 | localStorage `alchemia.v1` の `schema`（今は 2。`js/store.js` の `MIGRATIONS` に移行を足す） | 学習記録の形を変えたとき |

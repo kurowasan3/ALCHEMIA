@@ -5,7 +5,7 @@
 // キャッシュ名は必ず alchemia- で始める。同じドメイン（github.io）の Lemma・ぶつりば・CELESTIA と
 // キャッシュ置き場を共有しているので、消すときは自分の接頭辞のものだけを消す。
 const PREFIX = 'alchemia-';
-const VERSION = PREFIX + 'v0.2.0';
+const VERSION = PREFIX + 'v0.3.0';
 const FILES = [
   "./",
   "index.html",
@@ -18,11 +18,13 @@ const FILES = [
   "js/answer.js",
   "js/ui.js",
   "js/sync.js",
+  "js/store.js",
   "js/problem/figures.js",
   "js/zukan.js",
   "js/cards.js",
   "js/config.js",
   "privacy.html",
+  "terms.html",
   "vendor/katex.min.js",
   "vendor/katex.min.css",
   "vendor/auto-render.min.js",

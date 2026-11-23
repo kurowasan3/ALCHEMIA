@@ -600,6 +600,12 @@
      "type": "string"
     }
    }
+  },
+  "value": {
+   "type": "integer",
+   "minimum": 1,
+   "maximum": 3,
+   "description": "頻出度（1=低 2=中 3=高）。無いときは中。演習で未着手の問題を選ぶとき、高いものほど先に選ばれやすい"
   }
  }
 }

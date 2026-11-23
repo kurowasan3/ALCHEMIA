@@ -35,12 +35,15 @@ for f in a:
 if not ok:
     print('→ python3 tools/build_data.py を実行して data/ を作り直してください')
 sys.exit(0 if ok else 1)`]],
+  ['選択式の選択肢（content/choices.json）が入力用の答えから作り直したものと同じ', 'node', ['tools/make_choices.mjs', '--check']],
   ['入力用の答え（読める・正解を入れると正解になる）', 'node', ['tools/check_answers.mjs', 'data']],
   ['すべての数式を KaTeX で描画できる', 'node', ['tools/check_katex.cjs']],
   ['自動採点の回帰テスト', 'node', ['tests/answer.test.mjs']],
   ['catalog.js の単体テスト（共通ビュー・図・概念・図鑑・出題形式・検索・問題セット）', 'node', ['tests/catalog.test.mjs']],
+  ['学習記録の保存・点検・バックアップ・移行の単体テスト', 'node', ['tests/store.test.mjs']],
   ['同期の単体テスト（記録の合わせ方・にせ Supabase との通信）', 'node', ['tests/sync.test.mjs']],
   ['すべての JS モジュールを読み込める（構文エラーがない）', 'node', ['tests/syntax.test.mjs']],
+  ['配信用のフォルダ（dist/）を作れる（sw.js のファイル・問題の図が揃い、配信しないものが入らない）', py, ['tools/build_dist.py', path.join(tmp, 'dist')]],
 ];
 if (process.argv.includes('--e2e')) steps.push(['ブラウザでの通し操作', 'node', ['tests/e2e.mjs']]);
 

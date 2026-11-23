@@ -264,6 +264,11 @@ def main(argv):
         }
         if p['idea'] is None:
             del p['idea']
+        # 頻出度（item.json の frequency、または管理表の「頻出度」列。高・中・低 か 3・2・1）
+        fq = it.get('frequency') or row.get('頻出度')
+        fq = {'高': 3, '中': 2, '低': 1}.get(str(fq).strip(), fq) if fq is not None else None
+        if fq in (1, 3, '1', '3'):
+            p['value'] = int(fq)
         (out / 'problem.json').write_text(json.dumps(p, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
         if verify and (verify / f'{pid}.py').exists():
             (ROOT / 'verify').mkdir(exist_ok=True)

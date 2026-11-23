@@ -1,5 +1,5 @@
 :root {
-  --alchemia-version: '0.2.0';
+  --alchemia-version: '0.3.0';
   --paper: #f6f4ee;
   --card: #ffffff;
   --ink: #1c1d21;
@@ -911,3 +911,45 @@ figure.pfig .fig-plot { max-width: 520px; }
 .grade[hidden], .fback[hidden], .fhint[hidden] { display: none; }
 a.btn { text-decoration: none; text-align: center; display: inline-flex; align-items: center; justify-content: center; }
 .deck-go { color: var(--accent); font-weight: 700; }
+
+/* ---------- v0.3：Lemma v0.27 に合わせた部品（今日の学習・前回の続き・ブックマーク・確認の選択肢・自信度の一言） ---------- */
+.segment.theme, .segment.amode { display: inline-grid; grid-template-columns: repeat(3, auto); gap: 4px; }
+.segment.theme button, .segment.amode button { min-height: 34px; padding: 0 12px; font-size: 13px; }
+.chooser { position: fixed; inset: 0; z-index: 60; background: rgb(0 0 0 / .45); display: flex; align-items: center; justify-content: center; padding: 20px; }
+.chooser-box { background: var(--card); color: var(--ink); border-radius: 16px; padding: 20px; width: min(420px, 100%); box-shadow: 0 12px 40px rgb(0 0 0 / .25); }
+.chooser-box h3 { margin: 0 0 8px; font-size: 17px; }
+.chooser-box p { margin: 0 0 14px; color: var(--ink-2); font-size: 14px; line-height: 1.6; }
+.chooser-btns { display: grid; gap: 8px; }
+.chooser-btns .btn.danger { color: var(--bad); border-color: var(--bad); }
+
+/* ---------- ブックマーク ---------- */
+.chip.bm { cursor: pointer; border: 1px solid var(--line); background: transparent; color: var(--ink-2); font: inherit; font-size: 12px; }
+.chip.bm.on { color: var(--warn); border-color: var(--warn); background: var(--warn-soft); }
+@media (max-width: 420px) { .chip.bm span { display: none; } }
+.chip.val { background: transparent; border: 1px solid var(--line); color: var(--ink-2); }
+.chip.val.v3 { border-color: var(--accent); color: var(--accent); font-weight: 600; }
+.chip.val.v1 { opacity: .75; }
+
+/* 今日の学習（v0.16） */
+.goal { display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 12px; margin: 2px 2px 14px; font-size: 14px; color: var(--ink-2); }
+.goal b { font-size: 18px; color: var(--ink); }
+.goal .bar { grid-column: auto; height: 6px; }
+.goal .bar > div { background: var(--good); }
+.resume-row { display: flex; flex-direction: column; gap: 6px; margin-bottom: 10px; }
+.resume-row .btn.small { align-self: flex-end; min-height: 32px; padding: 4px 12px; font-size: 12.5px; }
+.hero.alt { background: var(--card); color: var(--ink); border: 1.5px solid var(--accent); }
+.hero.alt b { color: var(--accent); }
+.hero[disabled] { opacity: .5; }
+.weak-note { margin: 10px 2px 14px; font-size: 13.5px; color: var(--ink-2); line-height: 1.7; }
+.weak-note .linkbtn { font-size: 13px; color: var(--accent); margin-left: 6px; text-decoration: none; font-weight: 600; }
+details.howto { margin-top: 26px; border-top: 1px solid var(--line); padding-top: 12px; font-size: 14px; color: var(--ink-2); }
+details.howto summary { cursor: pointer; font-weight: 600; color: var(--ink); padding: 4px 0; }
+details.howto ol { margin: 8px 0 0; padding-left: 1.2em; line-height: 1.8; }
+/* 解答後の一言（自信度と結果のずれ） */
+.conf-note { margin: 10px 0 0; padding: 10px 12px; border-radius: 10px; background: var(--accent-soft); font-size: 14px; line-height: 1.7; color: var(--ink-2); }
+.conf-note.warn { background: var(--warn-soft); }
+.conf-note.warn b { color: var(--ink); }
+.conf-note .keypoint { margin-top: 8px; }
+.why { margin: -4px 0 10px; font-size: 12.5px; color: var(--accent); }
+.why::before { content: '出題の理由：'; color: var(--ink-3); }
+.first-run { margin-bottom: 14px; }

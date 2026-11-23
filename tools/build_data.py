@@ -87,7 +87,7 @@ def plain(tex):
 
 def data_version(content, problem_dirs):
     h = hashlib.sha256()
-    files = [content / n for n in ('taxonomy.json', 'concepts.json', 'laws.json', 'misconceptions.json', 'tags.json')]
+    files = [content / n for n in ('taxonomy.json', 'concepts.json', 'laws.json', 'misconceptions.json', 'tags.json', 'choices.json')]
     files += sorted((content / 'chem').rglob('*.*'))
     files += sorted((content / 'cards').glob('*.json')) if (content / 'cards').exists() else []
     files += sorted((content / 'collections').glob('*.json')) if (content / 'collections').exists() else []
@@ -122,6 +122,7 @@ def build(content=CONTENT, out=ROOT / 'data'):
         shutil.rmtree(out / 'assets')
 
     index, bodies, search, hidden = [], {}, [], 0
+    choices = read(content / 'choices.json') if (content / 'choices.json').exists() else {}
     for d, p in probs:
         if p['quality']['status'] != 'published':
             hidden += 1
@@ -147,6 +148,9 @@ def build(content=CONTENT, out=ROOT / 'data'):
             e['zk'] = p['zukan']['page'] + ('/' + p['zukan']['key'] if p['zukan'].get('key') else '')
         if p['quality'].get('verified'):
             e['ok'] = 1
+        # 頻出度（1=低 2=中 3=高）：付いているときだけ。2（中）は書かない
+        if p.get('value') and p['value'] != 2:
+            e['v'] = p['value']
         # 図：ファイルを data/assets/<ID>/ に写し、本文からは ID で引く
         figs = {}
         for fg in p['figures']:
@@ -177,6 +181,11 @@ def build(content=CONTENT, out=ROOT / 'data'):
         if spec:
             b['in'] = spec
             e['in'] = 1
+            # 選択式の選択肢（tools/make_choices.mjs が作る）。入力用の答えが変わった問題は spec が合わないので使わない
+            ch = choices.get(p['id'])
+            if ch and ch['spec'] == spec and any(ch['f']):
+                b['ch'] = ch['f']      # 欄の順。先頭が正解（表示のときに混ぜる）。null の欄は入力式
+                e['ch'] = 1
         wrong = {pt['id']: pt['wrong'] for pt in p['answer']['parts'] if pt.get('wrong')}
         if wrong:
             b['wrong'] = wrong
@@ -222,7 +231,7 @@ def build(content=CONTENT, out=ROOT / 'data'):
             cols.append({k: v for k, v in {**c, 'items': items}.items() if k != 'schema'})
     cols.sort(key=lambda c: (c.get('order', 10 ** 6), c['id']))
     dump(out / 'collections.json', {'dataVersion': version, 'collections': cols})
-    return {'count': len(index), 'fields': len(fields), 'hidden': hidden, 'auto': sum(1 for e in index if e.get('in')),
+    return {'count': len(index), 'fields': len(fields), 'hidden': hidden, 'auto': sum(1 for e in index if e.get('in')), 'choice': sum(1 for e in index if e.get('ch')),
             'figures': sum(len(b.get('figs', {})) for v in bodies.values() for k, b in v.items() if k != '_meta'),
             'dataVersion': version, 'unknown': sorted(unknown), 'warn': list(WARN)}
 
@@ -274,7 +283,7 @@ def dump(path, obj):
 def main():
     args = sys.argv[1:]
     r = build(args[0] if args else CONTENT, args[1] if len(args) > 1 else ROOT / 'data')
-    print(f"{r['count']}問を書き出しました（{r['fields']}単元、図 {r['figures']}枚、入力して採点できる問題 {r['auto']}問、"
+    print(f"{r['count']}問を書き出しました（{r['fields']}単元、図 {r['figures']}枚、入力して採点できる問題 {r['auto']}問（選択式 {r['choice']}問）、"
           f"非公開 {r['hidden']}問、dataVersion {r['dataVersion']}）")
     if r['unknown']:
         print('文章中の未対応命令（名前だけ表示）:', ', '.join(r['unknown']))

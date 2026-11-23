@@ -34,7 +34,10 @@ const base = JSON.parse(fs.readFileSync(path.join(root, 'tests/fixtures/state-v1
   const keys = new Set(M.log.map(l => `${l.p}|${l.t}`));
   ok(M.log.length === base.log.length + 2 && keys.has('ORG-ARO-001|2000000000000') && keys.has('THE-ACB-002|2000000000500'), '解答の記録は両方の分を足し、同じ回は重複しない');
   ok(M.log.every((l, i) => i === 0 || M.log[i - 1].t <= l.t), '記録は時刻順');
-  ok(M.pstat['ORG-ARO-001'].S === 3 && M.pstat['THE-ACB-002'].S === 0.4, '復習状態は問題ごとに新しい方');
+  // v0.3（Lemma v0.26 と同じ）：古い方の状態から、そのあとの解答の記録を review() し直す（2台での復習を両方生かす）
+  const { review } = await import('../js/scheduler.js');
+  const re = review(B.pstat['ORG-ARO-001'], 4, 2000000000000);
+  ok(Math.abs(M.pstat['ORG-ARO-001'].S - re.S) < 1e-9 && M.pstat['ORG-ARO-001'].reps === 2 && M.pstat['THE-ACB-002'].last === 2000000000500, '復習状態は解答の記録から計算し直す');
   ok(M.settings.theme === 'dark' && M.settingsAt === 200, '設定は最後に変えた方');
   ok(M.misc['MC-SHM-PERIOD-LINEAR-M'].n === 3 && M.misc['MC-SHM-PERIOD-LINEAR-M'].cleared === true && M.misc['MC-NORMAL-EQ-MG'], '誤概念は回数は多い方・状態は新しい方、両方の項目を残す');
   ok(M.explains['ORG-ARO-001'].map(e => e.text).join() === 'a,b', 'メモは両方を残す');

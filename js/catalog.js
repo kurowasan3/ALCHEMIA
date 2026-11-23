@@ -2,7 +2,7 @@
 //   一覧 data/index.json、本文 data/f-<単元ID>.json、概念・法則・誤概念 data/knowledge.json、図鑑 data/zukan.json
 import { retrievability, dueAt, TARGET_R } from './scheduler.js';
 
-export const FILE_VERSION = '0.2.0';
+export const FILE_VERSION = '0.3.0';
 
 // 難易度（data/index.json の levels で上書きされる）
 export let LEVELS = { 0: '基礎', 1: '標準', 2: '入試基礎', 3: '国公立2次', 4: '難関', 5: '最難関' };
@@ -133,11 +133,16 @@ function interleave(list) {
   return out;
 }
 
+// 頻出度（難易度とは別。1=低 2=中 3=高。付いていない問題は中）
+export const VALUES = { 1: '低', 2: '中', 3: '高' };
+export const valueOf = (e) => (e && e.v) || 2;
 // 演習：まだ解いていない問題を無作為に、次に久しぶりの問題を優先
+// まだ解いていない問題は、頻出度の高いものほど先に選ばれやすい（重み 1・2・4 の重みつき無作為抽出）
+const VALUE_WEIGHT = { 1: 1, 2: 2, 3: 4 };
 export function pickPractice(state, { fields = null, levels = null, formats = null, size = 8 } = {}) {
   const cand = pool({ fields, levels, formats }).map(e => {
     const rec = state.problems[e.id];
-    return { e, key: rec ? rec.last : -1e15 + Math.random() * 1e14 };
+    return { e, key: rec ? rec.last : -1e15 - 1e14 * Math.pow(Math.random(), 1 / VALUE_WEIGHT[valueOf(e)]) };
   }).sort((a, b) => a.key - b.key).slice(0, size).map(x => x.e);
   // 分野の偏りを避けるため、選んだ問題をシャッフルしてから交互に並べる
   for (let i = cand.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [cand[i], cand[j]] = [cand[j], cand[i]]; }
@@ -158,6 +163,83 @@ export function nextReviewTime(state) {
   const ts = Object.values(state.pstat || {}).map(dueAt);
   return ts.length ? Math.min(...ts) : null;
 }
+
+// 今日の演習（Lemma v0.27 と同じ組み立て。解法カードの部分は無い）：
+//   復習の時期が来た問題（新しい学習の枠を残す）→ 苦手な単元 → 新しい問題。
+//   自信なしで正解した問題は復習の時期を早めてあるので（gradeOf）、ここで先に戻ってくる。
+//   復習も新しい問題も、1つの単元に偏らせない。各問題に、選んだ理由（why）を付ける。
+export function pickToday(state, { levels = null, size = 8, weak = null, weakName = '' } = {}) {
+  const last = new Map(); for (const l of state.log) last.set(l.p, l);
+  const out = [];
+  const used = new Set();
+  const add = (e, why, tag) => { out.push({ e, why, tag }); used.add(e.id); };
+  const dueAll = dueEntries(state);
+  const newMin = Math.min(size, dueAll.length > 4 * size ? 2 : 3);
+  const dueFieldCap = Math.max(2, Math.ceil(size / 2));
+  const dueN = {};
+  for (const e of dueAll) {
+    if (out.length >= Math.max(0, size - newMin)) break;
+    if ((dueN[e.f] || 0) >= dueFieldCap) continue;
+    dueN[e.f] = (dueN[e.f] || 0) + 1;
+    const l = last.get(e.id) || {};
+    add(e, l.g < 3 ? (l.ok && l.c === 'low' ? '自信なしで正解した問題の確認' : '前回完答できなかった問題の復習') : '復習の時期', 'due');
+  }
+  const room = () => size - out.length;
+  const fieldCap = Math.max(2, Math.ceil(size / 3));
+  const fieldN = (f) => {
+    const nd = out.filter(x => x.tag !== 'due' && x.e.f === f).length, all = out.filter(x => x.e.f === f).length;
+    return all >= dueFieldCap ? Infinity : nd;
+  };
+  const take = (cfg, n) => {
+    const got = [];
+    for (const st of pickPractice(state, { ...cfg, size: Number.MAX_SAFE_INTEGER })) {
+      const e = entryById.get(st.pid);
+      if (!e || used.has(e.id) || got.includes(e)) continue;
+      // 未着手が尽きたときは解いたことのある問題も候補になるが、3日以内に解いた問題は出さない
+      if (state.problems[e.id] && Date.now() - state.problems[e.id].last < 3 * 86400000) continue;
+      if (fieldN(e.f) + got.filter(x => x.f === e.f).length >= fieldCap) continue;
+      got.push(e);
+      if (got.length >= n) break;
+    }
+    return got;
+  };
+  if (weak && room() > 0) for (const e of take({ fields: [weak], levels }, Math.min(2, room()))) add(e, `苦手な単元「${weakName}」を補う`, 'weak');
+  if (room() > 0) for (const e of take({ levels }, room())) add(e, state.problems[e.id] ? '解いてから日がたった問題（選んだ難易度の未着手が残っていない）' : '新しい問題', 'fresh');
+  const byE = new Map(out.map(x => [x.e.id, x]));
+  const count = {}; for (const x of out) count[x.tag] = (count[x.tag] || 0) + 1;
+  let short = null;
+  if (out.length < size) {
+    const rest = pool({ levels }).filter(e => !used.has(e.id) && !(state.problems[e.id] && Date.now() - state.problems[e.id].last < 3 * 86400000)).length;
+    short = { want: size, got: out.length, cause: rest === 0 ? 'pool' : 'field',
+      text: rest === 0 ? `選んだ難易度で今出せる問題（未着手か、解いてから3日以上たった問題）がこれ以上ないため ${out.length}問です`
+        : `1回の中で同じ単元に偏らないよう、${out.length}問になりました。難易度の選択を広げると増えます` };
+  }
+  return {
+    short,
+    steps: interleave(out.map(x => x.e)).map(e => ({ kind: 'problem', pid: e.id, why: byE.get(e.id).why })),
+    due: count.due || 0, fresh: (count.fresh || 0) + (count.weak || 0), count, items: out.map(x => ({ pid: x.e.id, why: x.why, tag: x.tag })),
+  };
+}
+
+// 類題：同じ単元で、共通のタグ（と同じ出題形式）が多く、難易度が近い問題。未着手を優先し、次に最後に解いてから久しい順。
+export function similarTo(state, id, exclude = []) {
+  const e0 = entryById.get(id);
+  if (!e0) return null;
+  const ex = new Set([id, ...exclude]);
+  const tg0 = new Set(e0.tg || []), fm0 = new Set(e0.fm || []), c0 = new Set(e0.c || []);
+  let best = null, bestKey = null;
+  for (const e of ENTRIES) {
+    if (e.f !== e0.f || ex.has(e.id)) continue;
+    const d = Math.abs(e.lv - e0.lv);
+    if (d > 1) continue;
+    const common = (e.tg || []).filter(t => tg0.has(t)).length + 2 * (e.c || []).filter(t => c0.has(t)).length + (e.fm || []).filter(t => fm0.has(t)).length;
+    const rec = state.problems[e.id];
+    const key = [-common, rec ? 1 : 0, d, rec ? rec.last : 0, e.id];
+    if (!best || cmpKey(key, bestKey) < 0) { best = e; bestKey = key; }
+  }
+  return best && bestKey[0] < 0 ? best : null;
+}
+const cmpKey = (a, b) => { for (let i = 0; i < a.length; i++) if (a[i] !== b[i]) return a[i] < b[i] ? -1 : 1; return 0; };
 
 // ---------- 図鑑（data/zukan.json を初めて使うときに読む） ----------
 let zukan = null;

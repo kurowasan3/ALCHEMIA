@@ -31,7 +31,7 @@ import tags as TG  # noqa: E402
 from build_cards import build_cards  # noqa: E402
 
 FORMAT = 'alchemia.data/1'
-LEVELS = {0: '基礎', 1: '標準', 2: '入試基礎', 3: '国公立2次', 4: '難関', 5: '最難関'}
+LEVELS = {0: '基礎', 1: '標準', 2: '入試基礎', 3: '入試標準', 4: '入試発展', 5: '化学探究'}
 
 
 def esc(s):
@@ -93,6 +93,7 @@ def data_version(content, problem_dirs):
     files += sorted((content / 'collections').glob('*.json')) if (content / 'collections').exists() else []
     for d in problem_dirs:
         files += sorted(p for p in d.iterdir() if p.is_file() and not p.name.endswith('.fig.json'))
+    h.update(json.dumps(LEVELS, ensure_ascii=False).encode())   # 難易度の名前を変えたら、端末のデータのキャッシュも新しくする
     for p in files:
         if p.exists():
             h.update(str(p.relative_to(content)).encode())

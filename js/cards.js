@@ -3,7 +3,7 @@
 //   #deck=ID          デッキのカード一覧（覚えた・まだ）
 //   #study=ID|all     学習（表 → 答えを見る → もう一度・あいまい・覚えた）
 // 記録は state.cards[カードID] = { box, due, last, n }（box 0〜6。覚えるたびに次に出るまでの間隔がのびる）
-export const FILE_VERSION = '0.3.0';
+export const FILE_VERSION = '0.3.1';
 
 const FIELD_NAME = { THE: '理論化学', INO: '無機化学', ORG: '有機化学', POL: '高分子化合物' };
 const DAY = 86400000;

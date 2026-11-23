@@ -9,7 +9,7 @@
 // データは data/zukan.json（tools/build_data.py が content/chem/ から作る）。構造式は data/struct/*.svg
 import { sanitizeSVG } from './problem/figures.js';
 
-export const FILE_VERSION = '0.3.0';
+export const FILE_VERSION = '0.3.1';
 
 let Z = null, C = null;   // 図鑑のデータ、アプリから渡される道具（esc・math・toast・prefs・save・problemsFor・openIds）
 const $ = (s, el = document) => el.querySelector(s);

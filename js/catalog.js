@@ -2,10 +2,10 @@
 //   一覧 data/index.json、本文 data/f-<単元ID>.json、概念・法則・誤概念 data/knowledge.json、図鑑 data/zukan.json
 import { retrievability, dueAt, TARGET_R } from './scheduler.js';
 
-export const FILE_VERSION = '0.3.0';
+export const FILE_VERSION = '0.3.1';
 
 // 難易度（data/index.json の levels で上書きされる）
-export let LEVELS = { 0: '基礎', 1: '標準', 2: '入試基礎', 3: '国公立2次', 4: '難関', 5: '最難関' };
+export let LEVELS = { 0: '基礎', 1: '標準', 2: '入試基礎', 3: '入試標準', 4: '入試発展', 5: '化学探究' };
 // 分野（力学・熱力学…）の並び。画面では「分野 → 単元」の2段で出す（FIELDS は単元）
 export let SUBJECT_ORDER = ['理論化学', '無機化学', '有機化学', '高分子化合物'];
 // 出題形式（問題の format）。ホームの「形式ごとに演習」に並べる

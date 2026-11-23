@@ -5,7 +5,7 @@
 // キャッシュ名は必ず alchemia- で始める。同じドメイン（github.io）の Lemma・ぶつりば・CELESTIA と
 // キャッシュ置き場を共有しているので、消すときは自分の接頭辞のものだけを消す。
 const PREFIX = 'alchemia-';
-const VERSION = PREFIX + 'v0.3.0';
+const VERSION = PREFIX + 'v0.3.1';
 const FILES = [
   "./",
   "index.html",

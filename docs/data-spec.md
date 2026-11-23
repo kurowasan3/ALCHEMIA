@@ -20,7 +20,7 @@ JSON Schema は `tools/schema/`、Schema で見られない関係の検査は `t
 | --- | --- | --- |
 | `id` `schema` `field` `unit` | ○ | 問題ID、`"alchemia.problem/1"`、分野ID、単元ID |
 | `topic` `course` `minutes` | | テーマ、`化学基礎`／`化学`、想定時間（分） |
-| `level` | ○ | 0=基礎 1=標準 2=入試基礎 3=国公立2次 4=難関 5=最難関 |
+| `level` | ○ | 0=基礎 1=標準 2=入試基礎 3=入試標準 4=入試発展 5=化学探究 |
 | `format` | ○ | 出題形式：`qa` 一問一答・`equation` 反応式補完・`compare` 比較・`condition` 条件判断・`pathway` 反応経路・`calc` 計算・`structure` 構造決定・`written` 記述ほか（複数可）。ホームの「形式ごとに演習」はこれで選ぶ |
 | `examStyle` | | `common-test` `national-2nd` `private` `original` |
 | `statement.blocks` | ○ | 本文（下の「ブロック」） |
